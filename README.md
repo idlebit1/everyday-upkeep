@@ -11,6 +11,7 @@ The site doubles as a subtle marketing funnel for [Upkeep Ledger](https://upkeep
 - Two completed guides per category — home: `gutters.html`, `replace-hvac-filter.html`; kitchen: `sharpen-knives.html`, `clean-dishwasher-filter.html`; personal: `replace-toothbrush.html`, `dentist-visit.html`; vehicle: `oil-change.html`, `check-tire-pressure.html`; wardrobe: `wash-bedding.html`, `replace-running-shoes.html`; equipment: `clean-bike-chain.html`, `bike-tune-up.html`; tools: `sharpen-mower-blade.html`, `service-snow-blower.html`; yard: `clean-grill.html`, `fertilize-lawn.html`; pets: `trim-pet-nails.html`, `flea-tick-treatment.html`; other: `backup-data.html`, `review-insurance.html`
 - `_template.html` — skeleton for new guides, with the shared theme and TODO markers
 - `data/upkeepPresets.ts` — verbatim copy of Upkeep Ledger's preset library (source of truth: `~/code/upkeepledger/backend/src/data/upkeepPresets.ts`)
+- `assets/` — brand kit: mark SVGs, OG image, social banners/avatars (see `assets/README.md`); favicons + `site.webmanifest` live at the root
 
 No build step, no dependencies. Open any file in a browser.
 
