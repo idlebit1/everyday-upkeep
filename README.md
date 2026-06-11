@@ -19,7 +19,10 @@ No build step, no dependencies. Open any file in a browser.
 
 ## Conventions
 
-- One self-contained file per guide — inline CSS and JS, no external assets.
+- One self-contained file per guide — inline CSS and JS. The only external requests are Google Fonts (Fraunces); everything else, including all artwork, is inline.
 - Shared theme tokens live in `:root` at the top of every page; keep them identical across pages.
-- Page sections, in order: hero → why it matters → how often (quiz) → calendar (if seasonal) → cost → how-to (safety + tools + checklist) → when to call a pro → FAQ.
+- Typography: Fraunces (Google Fonts) for `h1`, `h2`, and the brand; system sans for body text.
+- Illustrations are hand-drawn inline SVG in a flat, friendly style using the theme palette (greens `#3e7c59`/`#2c5a40`/`#5e9a78`, terracotta `#c96f4a`/`#d9663f`, gold `#e0a93d`/`#d98e3b`, water blues `#7fb3c8`/`#dce8ee`, earth tones `#b9b1a3`/`#8a6a4f`). Every page gets: a hero scene, a spot icon per "why" card, and diagram cards for key techniques. Give meaningful `role="img"` + `aria-label` to scene/diagram SVGs and `aria-hidden="true"` to decorative icons.
+- Page sections, in order: hero → why it matters → how often (quiz) → calendar (if seasonal) → cost → how-to (safety + tools + technique diagrams + checklist) → when to call a pro → FAQ.
+- No scroll-driven animation; hover transitions only.
 - Cost figures are typical U.S. ranges, labeled as estimates.

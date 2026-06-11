@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Everyday Upkeep — practical home maintenance guides</title>
 <meta name="description" content="Interactive, practical guides to the maintenance your home actually needs: how often, when, why, and how.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #faf6f0;
@@ -30,12 +33,19 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
   header.site { background: var(--card); border-bottom: 1px solid var(--line); }
   header.site .wrap { padding-top: 12px; padding-bottom: 12px; }
-  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif; }
   .brand span { color: var(--accent); }
 
-  .hero { padding: 56px 0 28px; }
-  h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.12; margin: 0 0 12px; }
+  .hero { padding: 56px 0 28px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: center; }
+  h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.12; margin: 0 0 12px;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif; letter-spacing: -0.01em; }
   .hero p { font-size: 19px; color: var(--ink-soft); max-width: 600px; margin: 0; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 320px; margin: 0 auto; }
+  }
 
   .guides { padding: 24px 0 60px; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
   .guide {
@@ -44,8 +54,13 @@
     display: block; transition: all 0.15s ease;
   }
   a.guide:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .guide .icon { font-size: 30px; }
-  .guide h2 { font-size: 19px; margin: 10px 0 4px; }
+  .g-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .g-icon svg { width: 34px; height: 34px; display: block; }
+  .guide h2 { font-size: 19px; margin: 12px 0 4px;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif; }
   .guide p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
   .guide .meta { display: inline-block; margin-top: 12px; font-size: 12.5px; font-weight: 700;
     background: var(--accent-soft); color: var(--accent-deep); border-radius: 999px; padding: 3px 10px; }
@@ -65,43 +80,92 @@
 
 <div class="wrap">
   <div class="hero">
-    <h1>The maintenance your home actually needs.</h1>
-    <p>Interactive guides for the upkeep tasks everyone knows they should do — with personalized schedules, real cost numbers, and step-by-step checklists.</p>
+    <div class="hero-copy">
+      <h1>The maintenance your home actually needs.</h1>
+      <p>Interactive guides for the upkeep tasks everyone knows they should do — with personalized schedules, real cost numbers, and step-by-step checklists.</p>
+    </div>
+    <svg class="hero-art" viewBox="0 0 440 340" role="img" aria-label="Illustration of a tidy house with a tree, sun, and trimmed shrubs">
+      <ellipse cx="220" cy="312" rx="190" ry="20" fill="#efe7d8"/>
+      <circle cx="60" cy="56" r="22" fill="#f2cf7a"/>
+      <rect x="72" y="206" width="14" height="100" rx="6" fill="#8a6a4f"/>
+      <circle cx="79" cy="158" r="46" fill="#5e9a78"/>
+      <circle cx="46" cy="184" r="28" fill="#3e7c59"/>
+      <circle cx="114" cy="186" r="26" fill="#6fae8a"/>
+      <rect x="168" y="160" width="180" height="148" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="240" y="244" width="40" height="64" rx="3" fill="#3e7c59"/>
+      <circle cx="272" cy="278" r="2.5" fill="#f2cf7a"/>
+      <rect x="190" y="194" width="34" height="36" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="207" y1="194" x2="207" y2="230" stroke="#fffdf8" stroke-width="2"/>
+      <rect x="294" y="194" width="34" height="36" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="311" y1="194" x2="311" y2="230" stroke="#fffdf8" stroke-width="2"/>
+      <rect x="292" y="92" width="20" height="42" fill="#b9b1a3"/>
+      <polygon points="152,162 258,74 364,162" fill="#c96f4a"/>
+      <rect x="146" y="156" width="224" height="12" rx="6" fill="#2c5a40"/>
+      <circle cx="196" cy="306" r="13" fill="#5e9a78"/>
+      <circle cx="218" cy="310" r="10" fill="#3e7c59"/>
+      <circle cx="380" cy="304" r="12" fill="#5e9a78"/>
+    </svg>
   </div>
 
   <div class="guides">
     <a class="guide" href="gutters.html">
-      <div class="icon">🍂</div>
+      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+        <rect x="4" y="18" width="28" height="7" rx="3.5" fill="#2c5a40"/>
+        <ellipse cx="13" cy="15" rx="6" ry="4" fill="#e0a93d" transform="rotate(-15 13 15)"/>
+        <ellipse cx="23" cy="14" rx="5" ry="3.5" fill="#c96f4a" transform="rotate(12 23 14)"/>
+        <circle cx="9" cy="30" r="2.5" fill="#7fb3c8"/>
+      </svg></div>
       <h2>Gutter Upkeep</h2>
       <p>How often to clean, when to schedule it, what neglect costs, and a safe step-by-step how-to.</p>
       <span class="meta">Guide ready</span>
     </a>
     <div class="guide soon">
-      <div class="icon">🌬️</div>
+      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+        <rect x="10" y="7" width="20" height="22" rx="3" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+        <path d="M14 9 l4 18 M19 9 l4 18 M24 9 l4 18" stroke="#3e7c59" stroke-width="2" fill="none"/>
+        <path d="M3 13 h5 M3 18 h5 M3 23 h5" stroke="#7fb3c8" stroke-width="2" stroke-linecap="round"/>
+      </svg></div>
       <h2>HVAC Filters</h2>
       <p>Filter sizes, MERV ratings, and the change schedule that fits your home and allergies.</p>
       <span class="meta">Coming soon</span>
     </div>
     <div class="guide soon">
-      <div class="icon">🔥</div>
+      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+        <rect x="10" y="4" width="16" height="24" rx="7" fill="#dce8ee" stroke="#6b7376" stroke-width="2"/>
+        <path d="M18 22 c2.5 3 4 4.5 0 7 c-4 -2.5 -2.5 -4 0 -7" fill="#d9663f" transform="translate(0,2)"/>
+        <path d="M14 11 h8 M14 15 h8" stroke="#9cb6c4" stroke-width="1.8" stroke-linecap="round"/>
+      </svg></div>
       <h2>Water Heater Flush</h2>
       <p>Why sediment kills water heaters and the once-a-year flush that prevents it.</p>
       <span class="meta">Coming soon</span>
     </div>
     <div class="guide soon">
-      <div class="icon">🚨</div>
+      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+        <circle cx="18" cy="14" r="9" fill="#fffdf8" stroke="#6b7376" stroke-width="2.5"/>
+        <circle cx="18" cy="14" r="3" fill="#d9663f"/>
+        <path d="M10 28 q8 6 16 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M12 32 q6 4 12 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg></div>
       <h2>Smoke &amp; CO Detectors</h2>
       <p>Test schedules, battery swaps, and when the whole unit needs replacing.</p>
       <span class="meta">Coming soon</span>
     </div>
     <div class="guide soon">
-      <div class="icon">👕</div>
+      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+        <rect x="6" y="6" width="24" height="24" rx="4" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+        <circle cx="18" cy="18" r="7.5" fill="none" stroke="#5f93ad" stroke-width="2.5"/>
+        <path d="M15 18 q3 -3 6 0" stroke="#5f93ad" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg></div>
       <h2>Dryer Vent Cleaning</h2>
       <p>The lint you can't see is a fire risk and an energy hog. Annual cleaning, demystified.</p>
       <span class="meta">Coming soon</span>
     </div>
     <div class="guide soon">
-      <div class="icon">💧</div>
+      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+        <rect x="11" y="13" width="14" height="12" rx="2" fill="#6b7376"/>
+        <rect x="16" y="5" width="4" height="9" fill="#6b7376"/>
+        <path d="M6 29 q3 -4 6 0 q3 4 6 0 q3 -4 6 0 q3 4 6 0" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg></div>
       <h2>Sump Pump Check</h2>
       <p>A five-minute test, twice a year, so it actually works the night you need it.</p>
       <span class="meta">Coming soon</span>

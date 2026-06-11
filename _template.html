@@ -7,6 +7,9 @@
 <title>TASK NAME — Everyday Upkeep</title>
 <!-- TODO: one-sentence description -->
 <meta name="description" content="How often, when, why, and how for TASK NAME.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
 <style>
   /* ===== Everyday Upkeep shared theme — keep in sync across pages ===== */
   :root {
@@ -80,6 +83,30 @@
 
   @media (max-width: 640px) { nav.toc { display: none; } }
 
+  /* ===== Typography: Fraunces for display, system sans for body ===== */
+  h1, h2, .brand { font-family: "Fraunces", Georgia, "Times New Roman", serif; }
+  h1 { letter-spacing: -0.01em; }
+
+  /* ===== Illustration conventions =====
+     - Hero: two-column grid (copy left, inline SVG scene right), stacking on mobile.
+     - Why-cards: 54px rounded-square .why-icon with a 36x36-viewBox flat SVG glyph.
+     - How-to: .technique-grid of diagram cards (280x180-viewBox SVGs).
+     - Flat fills only, colors from the theme palette: #3e7c59/#2c5a40/#5e9a78 greens,
+       #c96f4a/#d9663f terracotta, #e0a93d/#d98e3b gold, #7fb3c8/#dce8ee water blues,
+       #b9b1a3/#8a6a4f/#c9a06b earth tones, #fffdf8 paper, #efe7d8 ground.
+     Copy the structural CSS for these from gutters.html. */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
   /* For quiz pills, calendar grid, calculator, and checklist styles,
      copy the relevant blocks from gutters.html. */
 </style>
@@ -100,15 +127,20 @@
 <div class="wrap">
 
   <div class="hero">
-    <!-- TODO: category tag, e.g. "Interior · Monthly" -->
-    <span class="kicker">CATEGORY · CADENCE</span>
-    <h1>TASK NAME</h1>
-    <p class="lede"><!-- TODO: 2–3 sentence hook: what the task protects and what happens if skipped. --></p>
-    <div class="stat-chips">
-      <span class="chip">🗓️ Typically <em>FREQUENCY</em></span>
-      <span class="chip">⏱️ <em>TIME</em> per session</span>
-      <span class="chip">💸 Skipping it risks <em>$COST+</em></span>
+    <div class="hero-copy">
+      <!-- TODO: category tag, e.g. "Interior · Monthly" -->
+      <span class="kicker">CATEGORY · CADENCE</span>
+      <h1>TASK NAME</h1>
+      <p class="lede"><!-- TODO: 2–3 sentence hook: what the task protects and what happens if skipped. --></p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>FREQUENCY</em></span>
+        <span class="chip">⏱️ <em>TIME</em> per session</span>
+        <span class="chip">💸 Skipping it risks <em>$COST+</em></span>
+      </div>
     </div>
+    <!-- TODO: hero illustration — inline SVG scene of the task's subject,
+         flat style, theme palette (see gutters.html hero-art for reference) -->
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="TODO"></svg>
   </div>
 
   <section id="why">
