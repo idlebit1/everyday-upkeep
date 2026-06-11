@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TODO: title — "<Task Name> — Everyday Upkeep" -->
+<title>TASK NAME — Everyday Upkeep</title>
+<!-- TODO: one-sentence description -->
+<meta name="description" content="How often, when, why, and how for TASK NAME.">
+<style>
+  /* ===== Everyday Upkeep shared theme — keep in sync across pages ===== */
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  header.site { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  .hero { padding: 56px 0 36px; }
+  .kicker { display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px; }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow); }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 24px; }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .safety { background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px; }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px; }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+
+  @media (max-width: 640px) { nav.toc { display: none; } }
+
+  /* For quiz pills, calendar grid, calculator, and checklist styles,
+     copy the relevant blocks from gutters.html. */
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#how-to">How-to</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <!-- TODO: category tag, e.g. "Interior · Monthly" -->
+    <span class="kicker">CATEGORY · CADENCE</span>
+    <h1>TASK NAME</h1>
+    <p class="lede"><!-- TODO: 2–3 sentence hook: what the task protects and what happens if skipped. --></p>
+    <div class="stat-chips">
+      <span class="chip">🗓️ Typically <em>FREQUENCY</em></span>
+      <span class="chip">⏱️ <em>TIME</em> per session</span>
+      <span class="chip">💸 Skipping it risks <em>$COST+</em></span>
+    </div>
+  </div>
+
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub"><!-- TODO --></p>
+    <div class="grid cols-3">
+      <!-- TODO: 3–6 consequence cards (see gutters.html .why-card) -->
+    </div>
+  </section>
+
+  <section id="how-often">
+    <h2>How often should <em>you</em> do it?</h2>
+    <p class="sub"><!-- TODO: rule of thumb + what changes it --></p>
+    <div class="card">
+      <!-- TODO: personalization quiz (see gutters.html quiz markup + JS) -->
+    </div>
+  </section>
+
+  <section id="how-to">
+    <h2>How to do it</h2>
+    <p class="sub"><!-- TODO --></p>
+    <div class="safety">
+      <h3>⚠️ Safety first</h3>
+      <ul><!-- TODO --></ul>
+    </div>
+    <!-- TODO: tools list + interactive checklist (see gutters.html).
+         Use a unique localStorage key: "everyday-upkeep:<slug>:checklist" -->
+  </section>
+
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details><summary><!-- TODO --></summary><p><!-- TODO --></p></details>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the maintenance your home actually needs. <a href="index.html">← All upkeep guides</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>

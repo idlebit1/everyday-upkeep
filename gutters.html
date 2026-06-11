@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gutter Upkeep — Everyday Upkeep</title>
+<meta name="description" content="How often to clean your gutters, when to schedule it, why it matters, and a step-by-step guide to doing it safely.">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calendar ---------- */
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+  .month {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 12px;
+    padding: 12px 10px; text-align: center; transition: all 0.2s ease; min-height: 86px;
+  }
+  .month .m-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .month .m-task { font-size: 12.5px; color: var(--ink-soft); line-height: 1.35; }
+  .month.clean { background: var(--accent-soft); border-color: var(--accent); }
+  .month.clean .m-task { color: var(--accent-deep); font-weight: 600; }
+  .month.check { background: var(--gold-soft); border-color: var(--gold); }
+  .month.check .m-task { color: #9a7117; font-weight: 600; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; color: var(--ink-soft); }
+  .legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 4px; margin-right: 6px; vertical-align: -1px; }
+  .dot.d-clean { background: var(--accent); }
+  .dot.d-check { background: var(--gold); }
+  .cal-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- calculator ---------- */
+  .calc-controls { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 22px; }
+  .calc-controls label.field { display: block; font-weight: 700; font-size: 14px; }
+  .calc-controls .field-row { margin-top: 8px; }
+  .calc-controls select, .calc-controls input[type="range"] { width: 100%; }
+  .calc-controls select {
+    font-family: inherit; font-size: 15px; padding: 8px 10px; border-radius: 10px;
+    border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
+  }
+  input[type="range"] { accent-color: var(--accent); }
+  .range-val { font-weight: 700; color: var(--accent-deep); }
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+    .cal-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <span class="kicker">Exterior · Seasonal</span>
+    <h1>Gutter Upkeep</h1>
+    <p class="lede">Gutters have one job: move rainwater away from your house. When they clog, that water goes into your fascia, your siding, your basement, and your foundation instead. Here's how often to clean them, when, why — and exactly how.</p>
+    <div class="stat-chips">
+      <span class="chip">🗓️ Typically <em>2× a year</em></span>
+      <span class="chip">⏱️ <em>1–3 hours</em> per cleaning</span>
+      <span class="chip">🧤 <em>DIY-friendly</em> on one-story homes</span>
+      <span class="chip">💸 Skipping it risks <em>$4,000+</em> repairs</span>
+    </div>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A clogged gutter doesn't just overflow — it concentrates hundreds of gallons of roof runoff in exactly the wrong places. These are the repairs that clean gutters prevent (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <h3>🏠 Foundation damage</h3>
+        <p>Water pooling at the base of your walls erodes soil, then cracks and shifts the foundation. The single most expensive consequence of neglected gutters.</p>
+        <span class="cost">$4,000 – $12,000+</span>
+      </div>
+      <div class="card why-card">
+        <h3>🌊 Basement flooding</h3>
+        <p>Overflow runs straight down the wall and into the basement or crawl space, bringing mold and ruined flooring with it.</p>
+        <span class="cost">$2,000 – $7,000</span>
+      </div>
+      <div class="card why-card">
+        <h3>🪵 Fascia &amp; soffit rot</h3>
+        <p>Standing water in the gutter wicks into the wooden boards it's attached to. Rotten fascia also means the gutter itself starts pulling away.</p>
+        <span class="cost">$600 – $2,500</span>
+      </div>
+      <div class="card why-card">
+        <h3>🧊 Ice dams</h3>
+        <p>In cold climates, clogged gutters trap water that freezes, backs up under shingles, and leaks into ceilings and walls.</p>
+        <span class="cost">$1,500 – $5,000</span>
+      </div>
+      <div class="card why-card">
+        <h3>🐝 Pests</h3>
+        <p>Wet leaf muck is prime real estate for mosquitoes, wasps, carpenter ants, and birds — right at your roofline.</p>
+        <span class="cost">$150 – $800 removal</span>
+      </div>
+      <div class="card why-card">
+        <h3>🌱 Landscape erosion</h3>
+        <p>A waterfall off the gutter edge trenches your beds, splashes mud on siding, and drowns plants below.</p>
+        <span class="cost">$300 – $1,500</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean them?</h2>
+    <p class="sub">"Twice a year" is the rule of thumb, but the right answer depends on your trees, your climate, and whether you have gutter guards. Answer three questions for a personalized schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="trees">
+        <div class="q-label">1. What's hanging over (or near) your roof?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">No trees nearby</button>
+          <button class="pill" data-v="light">A few deciduous trees</button>
+          <button class="pill" data-v="heavy">Heavy tree cover</button>
+          <button class="pill" data-v="pine">Pines / conifers</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="guards">
+        <div class="q-label">2. Do you have gutter guards or screens?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">3. What's your climate like?</div>
+        <div class="pills">
+          <button class="pill" data-v="snowy">Snowy winters</button>
+          <button class="pill" data-v="wet">Rainy / mild</button>
+          <button class="pill" data-v="dry">Mostly dry</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDAR ============ -->
+  <section id="calendar">
+    <h2>Your seasonal calendar</h2>
+    <p class="sub" id="calSub">Showing the standard twice-a-year plan. Take the quiz above and this calendar updates to match your home.</p>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="legend">
+      <span><span class="dot d-clean"></span>Full cleaning</span>
+      <span><span class="dot d-check"></span>Quick check (5 min, from the ground)</span>
+    </div>
+    <div class="cal-note">⛈️ <strong>Plus:</strong> after any major storm, do a quick walk-around. Look for overflowing sections, sagging runs, and downspouts that aren't draining during rain — that's the best diagnostic you'll ever get for free.</div>
+  </section>
+
+  <!-- ============ COST CALCULATOR ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Regular cleaning is one of the cheapest insurance policies your house has. Adjust the numbers for your home:</p>
+    <div class="card">
+      <div class="calc-controls">
+        <label class="field">Who does the cleaning?
+          <div class="field-row">
+            <select id="calcWho">
+              <option value="diy">Me (DIY)</option>
+              <option value="pro">A pro service</option>
+            </select>
+          </div>
+        </label>
+        <label class="field">Home height
+          <div class="field-row">
+            <select id="calcStories">
+              <option value="1">One story</option>
+              <option value="2">Two+ stories</option>
+            </select>
+          </div>
+        </label>
+        <label class="field">Gutter length: <span class="range-val" id="lenVal">160</span> ft
+          <div class="field-row">
+            <input type="range" id="calcLen" min="80" max="300" step="10" value="160">
+          </div>
+        </label>
+        <label class="field">Cleanings per year: <span class="range-val" id="freqVal">2</span>
+          <div class="field-row">
+            <input type="range" id="calcFreq" min="1" max="4" step="1" value="2">
+          </div>
+        </label>
+      </div>
+
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v" id="outPerClean">$0</div><div class="l" id="outPerCleanLabel">per cleaning</div></div>
+        <div class="calc-stat"><div class="v" id="outPerYear">$0</div><div class="l">per year</div></div>
+        <div class="calc-stat"><div class="v" id="outTenYear">$0</div><div class="l">over 10 years</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧤 10 years of regular cleaning</span><span id="barGoodVal"></span></div>
+          <div class="bar-track"><div class="bar-fill good" id="barGood"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏚️ One typical foundation repair</span><span>$8,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barBad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict" id="calcVerdict"></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your gutters</h2>
+    <p class="sub">A full cleaning on an average single-story home takes 1–3 hours. Work through the checklist — your progress saves automatically, so you can pick it back up if you take a break.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — ladders hurt more people than gutters ever will</h3>
+      <ul>
+        <li>Use a sturdy ladder on firm, level ground. A ladder standoff (stabilizer) is the best $40 you'll spend.</li>
+        <li>Keep <strong>three points of contact</strong> and never stand on the top two rungs.</li>
+        <li>Follow the <strong>belt-buckle rule</strong>: keep your hips between the rails. Move the ladder instead of reaching.</li>
+        <li>Have someone home who knows you're on a ladder. Skip windy or wet days.</li>
+        <li><strong>Two stories or steep terrain? Strongly consider hiring it out.</strong> Pro cleaning costs far less than an ER visit.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Sturdy ladder + standoff</span>
+      <span class="tool-chip">Work gloves</span>
+      <span class="tool-chip">Safety glasses</span>
+      <span class="tool-chip">Gutter scoop or trowel</span>
+      <span class="tool-chip">Bucket with hook (or tarp below)</span>
+      <span class="tool-chip">Garden hose w/ spray nozzle</span>
+      <span class="tool-chip">Gutter sealant (for leaks)</span>
+      <span class="tool-chip">Screwdriver / drill (loose hangers)</span>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Cleaning progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done! Your gutters — and your foundation — thank you. See you next season.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to call a pro instead</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Two or more stories.</strong> Fall risk goes up dramatically; pros have the equipment.</li>
+        <li><strong>Steep roof or sloped/uneven ground</strong> where a ladder can't sit safely.</li>
+        <li><strong>Signs of bigger problems:</strong> sagging runs, separated seams, gutters pulling off the fascia, or visible fascia rot. Cleaning won't fix those.</li>
+        <li><strong>Persistent downspout clogs</strong> that flushing and a drain auger can't clear (often underground drain lines).</li>
+        <li>Typical pro cleaning runs <strong>$120–$250</strong> for an average home — many services include a basic inspection and minor tightening.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Do gutter guards mean I never have to clean?</summary>
+      <p>No — they're a "less often," not a "never." Fine debris (shingle grit, seeds, pine needles) still gets through or mats on top. Plan on at least one inspection-and-clean a year, and check that water actually flows through the guards during a heavy rain.</p>
+    </details>
+    <details>
+      <summary>What's the single best time of year to clean gutters?</summary>
+      <p>Late fall, after the trees around you have finished dropping leaves but before the first hard freeze. That one cleaning prevents winter's worst problems: ice dams and frozen, clogged downspouts.</p>
+    </details>
+    <details>
+      <summary>How do I know my gutters are clogged without climbing up?</summary>
+      <p>Watch during a decent rain: water sheeting over the edges, a downspout that's barely trickling, or a "waterfall" at one corner all mean clogs. After rain, sagging sections and plants sprouting from the gutter are dead giveaways.</p>
+    </details>
+    <details>
+      <summary>How far should downspouts carry water from the house?</summary>
+      <p>At least 4–6 feet from the foundation. If your downspouts just dump at the base of the wall, adding extensions or splash blocks is a 10-minute, $10 fix with foundation-sized payoff.</p>
+    </details>
+    <details>
+      <summary>Can I clean gutters from the ground?</summary>
+      <p>Partially. Hose attachments and gutter-cleaning wands can flush light debris and are great between full cleanings, but they can't remove packed, composted muck — and you can't inspect what you can't see.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the maintenance your home actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { trees: null, guards: null, climate: null };
+
+  var MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  // months are 0-indexed
+  var PLANS = {
+    1: { clean: [10], check: [4] },
+    2: { clean: [4, 10], check: [7] },
+    3: { clean: [4, 8, 10], check: [1] },
+    4: { clean: [2, 5, 8, 10], check: [] }
+  };
+  var CLEAN_LABEL = {
+    2: "Full cleaning", 4: "Full cleaning", 5: "Full cleaning",
+    8: "Full cleaning (early leaf drop)", 10: "Full cleaning (after leaf drop)"
+  };
+
+  function computePlan(s) {
+    var base = { none: 1, light: 2, heavy: 3, pine: 4 }[s.trees];
+    var n = base;
+    var reasons = [];
+
+    if (s.trees === "pine") reasons.push("Pine needles shed year-round and slip through most guards — they're the #1 reason for quarterly cleaning.");
+    if (s.trees === "heavy") reasons.push("Heavy tree cover means a big fall leaf load plus spring seeds and blossoms.");
+    if (s.trees === "light") reasons.push("A few deciduous trees = the classic spring + fall schedule.");
+    if (s.trees === "none") reasons.push("With no overhanging trees, shingle grit and wind-blown debris build up slowly.");
+
+    if (s.guards === "yes" && n > 1) {
+      n = n - 1;
+      reasons.push("Gutter guards cut the frequency down — but don't skip inspections; fine debris still mats on top.");
+    } else if (s.guards === "yes") {
+      reasons.push("Guards help, but plan at least one annual inspection-and-clean.");
+    }
+
+    if (s.climate === "wet" && n < 2) {
+      n = 2;
+      reasons.push("Frequent rain means even small clogs overflow often — twice a year is the safe floor.");
+    }
+    if (s.climate === "snowy") {
+      reasons.push("Snowy winters: the late-fall cleaning is non-negotiable — clogged gutters are how ice dams start. Glance at them mid-winter too.");
+    }
+    if (s.climate === "dry") {
+      reasons.push("Dry climate: fewer overflows, but check before your rainy season — a year of dust and grit washes down all at once.");
+    }
+
+    var plan = JSON.parse(JSON.stringify(PLANS[n]));
+    if (s.climate === "snowy" && plan.check.indexOf(1) === -1) plan.check.push(1); // Feb ice-dam check
+    return { n: n, plan: plan, reasons: reasons };
+  }
+
+  function renderCalendar(plan, personalized) {
+    var grid = document.getElementById("calGrid");
+    grid.innerHTML = "";
+    for (var m = 0; m < 12; m++) {
+      var cell = document.createElement("div");
+      cell.className = "month";
+      var task = "—";
+      if (plan.clean.indexOf(m) !== -1) {
+        cell.className += " clean";
+        task = CLEAN_LABEL[m] || "Full cleaning";
+      } else if (plan.check.indexOf(m) !== -1) {
+        cell.className += " check";
+        task = (m === 1) ? "Ice-dam check" : "Quick check";
+      }
+      cell.innerHTML = '<div class="m-name">' + MONTH_NAMES[m] + '</div><div class="m-task">' + task + "</div>";
+      grid.appendChild(cell);
+    }
+    document.getElementById("calSub").textContent = personalized
+      ? "Personalized from your quiz answers. Green months are full cleanings; gold months are quick checks."
+      : "Showing the standard twice-a-year plan. Take the quiz above and this calendar updates to match your home.";
+  }
+
+  function onQuizChange() {
+    if (!quizState.trees || !quizState.guards || !quizState.climate) return;
+    var r = computePlan(quizState);
+    var freqWords = { 1: "Once a year", 2: "Twice a year", 3: "Three times a year", 4: "Four times a year" };
+    document.getElementById("resultFreq").textContent = "Your plan: " + freqWords[r.n] + (r.n === 1 ? " (plus inspections)" : "");
+    var monthsTxt = r.plan.clean.map(function (m) { return MONTH_NAMES[m]; }).join(", ");
+    document.getElementById("resultBody").innerHTML =
+      "Full cleanings in <strong>" + monthsTxt + "</strong> — see your calendar below. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+    renderCalendar(r.plan, true);
+
+    // sync calculator frequency
+    var freqInput = document.getElementById("calcFreq");
+    freqInput.value = r.n;
+    updateCalc();
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  renderCalendar(PLANS[2], false);
+
+  /* ================= Calculator ================= */
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  function updateCalc() {
+    var who = document.getElementById("calcWho").value;
+    var stories = document.getElementById("calcStories").value;
+    var len = parseInt(document.getElementById("calcLen").value, 10);
+    var freq = parseInt(document.getElementById("calcFreq").value, 10);
+
+    document.getElementById("lenVal").textContent = len;
+    document.getElementById("freqVal").textContent = freq;
+
+    var perClean, perCleanLabel;
+    if (who === "pro") {
+      var rate = stories === "2" ? 1.35 : 0.85; // $/linear ft, typical
+      perClean = Math.max(110, len * rate);
+      perCleanLabel = "per pro visit (typical)";
+    } else {
+      perClean = 0;
+      perCleanLabel = "per cleaning (≈$75 one-time for tools)";
+    }
+    var perYear = perClean * freq;
+    var tenYear = perYear * 10 + (who === "diy" ? 75 : 0);
+
+    document.getElementById("outPerClean").textContent = who === "diy" ? "$0" : money(perClean);
+    document.getElementById("outPerCleanLabel").textContent = perCleanLabel;
+    document.getElementById("outPerYear").textContent = money(perYear);
+    document.getElementById("outTenYear").textContent = money(tenYear);
+
+    var REPAIR = 8000; // midpoint of typical foundation repair
+    var pct = Math.min(100, (tenYear / REPAIR) * 100);
+    document.getElementById("barGood").style.width = pct + "%";
+    document.getElementById("barGoodVal").textContent = money(tenYear);
+
+    var verdict = document.getElementById("calcVerdict");
+    if (tenYear < REPAIR) {
+      var mult = tenYear > 0 ? (REPAIR / tenYear) : 0;
+      verdict.innerHTML = tenYear === 0
+        ? "A decade of DIY cleanings costs about <strong>$75 in tools</strong> — versus <strong>$8,000</strong> for a single typical foundation repair. That's the trade."
+        : "A decade of regular cleanings costs <strong>" + money(tenYear) + "</strong> — about <strong>" + mult.toFixed(0) + "× less</strong> than one typical foundation repair. And that's just one of the risks on the list above.";
+    } else {
+      verdict.innerHTML = "Even at this spend, regular cleaning pays for itself the first time it prevents a basement flood or fascia replacement — and it protects against several of those risks at once.";
+    }
+  }
+
+  ["calcWho", "calcStories", "calcLen", "calcFreq"].forEach(function (id) {
+    document.getElementById(id).addEventListener("input", updateCalc);
+  });
+  updateCalc();
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & safety", text: "Pick a dry, calm day", note: "Wet leaves are heavier and ladders are slicker. Wind is a hard no." },
+    { phase: "Prep & safety", text: "Gear up: gloves, safety glasses, closed shoes", note: "Gutter muck hides sharp shingle grit, screws, and the occasional wasp." },
+    { phase: "Prep & safety", text: "Set the ladder on firm, level ground — add a standoff", note: "Three points of contact, never the top two rungs." },
+    { phase: "Prep & safety", text: "Tell someone you're going up", note: "Or better, have them spot you and move the bucket." },
+    { phase: "Clear the debris", text: "Start at a downspout and scoop away from it", note: "Working away from the outlet keeps debris from packing into it." },
+    { phase: "Clear the debris", text: "Drop debris into a hooked bucket or onto a tarp below", note: "Don't dump it on the lawn unless you enjoy raking twice." },
+    { phase: "Clear the debris", text: "Move the ladder often — belt-buckle rule", note: "Reaching sideways is how falls happen. Climb down, slide, climb up." },
+    { phase: "Flush & test", text: "Hose-flush each run toward the downspout", note: "This clears the fine sludge a scoop can't get." },
+    { phase: "Flush & test", text: "Check each downspout's flow", note: "Weak trickle? Flush from the bottom up, or feed in a drain auger." },
+    { phase: "Flush & test", text: "Confirm water exits 4–6 ft from the foundation", note: "Add extensions or splash blocks if it's dumping at the wall." },
+    { phase: "Inspect & finish", text: "Look for standing water after flushing", note: "Gutters should slope ~¼ inch per 10 ft toward downspouts. Pooling = bad pitch." },
+    { phase: "Inspect & finish", text: "Check hangers and spikes; tighten anything loose", note: "A sagging gutter holds water and pulls away from the fascia." },
+    { phase: "Inspect & finish", text: "Inspect seams and end caps for leaks; seal when dry", note: "Gutter sealant on a dry, clean joint takes two minutes." },
+    { phase: "Inspect & finish", text: "Press-test the fascia boards for soft spots", note: "Soft or stained wood means water has been getting behind — worth a pro look." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:gutters:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
