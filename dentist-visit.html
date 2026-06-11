@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dentist Visit — Everyday Upkeep</title>
+<meta name="description" content="How often to see the dentist, why the 6-month checkup matters, what skipping it really costs, and how to get the most out of every visit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- escalation ladder ---------- */
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .ladder-note { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .ladder-note strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .safety.good { background: var(--accent-soft); border-color: var(--accent); }
+  .safety.good h3 { color: var(--accent-deep); }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">Make it count</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Every 6 months</span>
+      <h1>Dentist Visit</h1>
+      <p class="lede">A checkup and cleaning is one of the few maintenance tasks you genuinely can't DIY — no brush removes tartar, and no mirror at home spots a cavity between molars. Here's how often to go, what skipping it really costs, and how to get the most out of every visit.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>45–60 minutes</em> per visit</span>
+        <span class="chip">💸 Often <em>$0 with insurance</em></span>
+        <span class="chip">🦷 Skipping it risks <em>$2,000+</em> dental work</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly sparkling tooth beside a dental mirror and a calendar marked with a six-month reminder, in a warm sunlit scene">
+      <ellipse cx="290" cy="398" rx="245" ry="24" fill="#efe7d8"/>
+      <circle cx="76" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="462" cy="68" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="416" cy="80" rx="28" ry="15" fill="#dce8ee"/>
+      <!-- big friendly tooth -->
+      <path d="M218 130 c0 -52 38 -76 72 -76 c34 0 72 24 72 76 c0 38 -14 56 -20 96 c-5 34 -8 96 -28 96 c-18 0 -12 -64 -24 -64 c-12 0 -6 64 -24 64 c-20 0 -23 -62 -28 -96 c-6 -40 -20 -58 -20 -96 z" fill="#fffdf8" stroke="#dcd3c2" stroke-width="3"/>
+      <path d="M240 110 q10 -26 36 -30" stroke="#eef4f7" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <!-- smile -->
+      <circle cx="266" cy="148" r="5" fill="#33393b"/>
+      <circle cx="314" cy="148" r="5" fill="#33393b"/>
+      <path d="M272 172 q18 14 36 0" stroke="#33393b" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="248" cy="166" r="7" fill="#f6cdb4"/>
+      <circle cx="332" cy="166" r="7" fill="#f6cdb4"/>
+      <!-- sparkles -->
+      <g fill="#e0a93d">
+        <path d="M196 86 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z"/>
+        <path d="M376 66 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+        <path d="M364 196 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+      </g>
+      <!-- dental mirror leaning at left -->
+      <g transform="rotate(-18 130 280)">
+        <rect x="124" y="252" width="11" height="118" rx="5.5" fill="#3e7c59"/>
+        <circle cx="129.5" cy="232" r="30" fill="#2c5a40"/>
+        <circle cx="129.5" cy="232" r="22" fill="#7fb3c8"/>
+        <path d="M118 224 q6 -8 16 -8" stroke="#dce8ee" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- calendar card at right -->
+      <g>
+        <rect x="396" y="226" width="128" height="138" rx="12" fill="#fffdf8" stroke="#dcd3c2" stroke-width="3"/>
+        <rect x="396" y="226" width="128" height="34" rx="12" fill="#c96f4a"/>
+        <rect x="396" y="248" width="128" height="12" fill="#c96f4a"/>
+        <rect x="418" y="214" width="9" height="22" rx="4.5" fill="#8a6a4f"/>
+        <rect x="492" y="214" width="9" height="22" rx="4.5" fill="#8a6a4f"/>
+        <g fill="#e9e2d8">
+          <rect x="412" y="274" width="20" height="16" rx="4"/>
+          <rect x="440" y="274" width="20" height="16" rx="4"/>
+          <rect x="468" y="274" width="20" height="16" rx="4"/>
+          <rect x="412" y="298" width="20" height="16" rx="4"/>
+          <rect x="468" y="298" width="20" height="16" rx="4"/>
+          <rect x="412" y="322" width="20" height="16" rx="4"/>
+          <rect x="440" y="322" width="20" height="16" rx="4"/>
+        </g>
+        <rect x="440" y="298" width="20" height="16" rx="4" fill="#3e7c59"/>
+        <path d="M444 306 l4 4 l8 -8" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="468" cy="330" r="13" fill="#e0a93d"/>
+        <text x="468" y="335" font-size="11" font-weight="700" fill="#fffdf8" text-anchor="middle">6mo</text>
+      </g>
+      <!-- ground greenery -->
+      <circle cx="180" cy="386" r="13" fill="#5e9a78"/>
+      <circle cx="200" cy="390" r="10" fill="#3e7c59"/>
+      <circle cx="546" cy="384" r="10" fill="#5e9a78"/>
+      <path d="M62 388 q4 -18 0 -30 M62 388 q-8 -12 -18 -16 M62 388 q10 -10 20 -12" stroke="#5e9a78" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">The checkup isn't really about the polish — it's about catching small, cheap problems before they become big, expensive ones. Here's what those two visits a year actually buy you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M11 8 c0 -4 3.5 -5.5 7 -5.5 c3.5 0 7 1.5 7 5.5 c0 4 -1.5 6 -2 10 c-0.5 4 -1 9 -3 9 c-1.8 0 -1.2 -6 -2 -6 c-0.8 0 -0.2 6 -2 6 c-2 0 -2.5 -5 -3 -9 c-0.5 -4 -2 -6 -2 -10 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1.6"/>
+          <path d="M11.5 14 q2 2.5 5 1 M24.5 14 q-2 2.5 -5 1" stroke="#c9a06b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M28 28 l4 -4 M28 28 l-2.5 1" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <circle cx="33" cy="23" r="2.2" fill="#5e9a78"/>
+        </svg></div>
+        <h3>Tartar only comes off professionally</h3>
+        <p>Plaque you miss hardens into tartar within days — and once it does, no toothbrush or floss on earth removes it. Only a hygienist's scaler can, and tartar left in place feeds decay and gum disease.</p>
+        <span class="cost">No DIY option exists</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 18 q7 -8 14 0 q7 8 14 0 L32 30 L4 30 z" fill="#f0a18b"/>
+          <path d="M13 18 c0 -3 2 -4.5 5 -4.5 c3 0 5 1.5 5 4.5 c0 5 -1.5 12 -5 12 c-3.5 0 -5 -7 -5 -12 z" fill="#fffdf8" stroke="#dcd3c2" stroke-width="1.4"/>
+          <circle cx="9" cy="22" r="2.4" fill="#d9663f"/>
+          <circle cx="28" cy="24" r="2" fill="#d9663f"/>
+        </svg></div>
+        <h3>Gum disease is silent — until it isn't</h3>
+        <p>Early gum disease (gingivitis) rarely hurts; you might notice a little pink in the sink, or nothing at all. Untreated, it can advance to periodontitis — the leading cause of adult tooth loss. Caught early, it's fully reversible.</p>
+        <span class="cost">Reversible early, not late</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 11 c0 -4 3 -5.5 6.5 -5.5 c3.5 0 6.5 1.5 6.5 5.5 c0 4 -1.3 5.5 -1.8 9.5 c-0.4 3.5 -0.9 8 -2.7 8 c-1.6 0 -1 -5.5 -2 -5.5 c-1 0 -0.4 5.5 -2 5.5 c-1.8 0 -2.3 -4.5 -2.7 -8 c-0.5 -4 -1.8 -5.5 -1.8 -9.5 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1.6"/>
+          <circle cx="14" cy="11.5" r="1.8" fill="#8a6a4f"/>
+          <circle cx="24" cy="20" r="7" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="29" y1="25" x2="33.5" y2="29.5" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Small cavities are cheap — big ones aren't</h3>
+        <p>A cavity caught at a checkup is a quick filling. The same cavity left for two or three years can need a crown, then a root canal. Decay never gets cheaper by waiting — it only climbs the price ladder below.</p>
+        <span class="cost">$200 fix vs. $2,000 fix</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="20" r="11" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="18" y1="20" x2="18" y2="13" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="18" y1="20" x2="23" y2="22" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <rect x="14.5" y="3" width="7" height="4" rx="2" fill="#e0a93d"/>
+          <line x1="18" y1="7" x2="18" y2="9" stroke="#e0a93d" stroke-width="2.4"/>
+        </svg></div>
+        <h3>Oral cancer screening takes 2 minutes</h3>
+        <p>Your dentist checks your tongue, cheeks, throat, and neck at every exam — a quick look that matters, because oral cancers caught early have far better outcomes. It's screening most people never realize they're getting.</p>
+        <span class="cost">2 minutes, every visit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 30 C8 23 4 17 4 12.5 C4 8.5 7 6 10.5 6 C13.5 6 16.5 8 18 11 C19.5 8 22.5 6 25.5 6 C29 6 32 8.5 32 12.5 C32 17 28 23 18 30 z" fill="#e88b74"/>
+          <path d="M7 17 h6 l2.5 -5 l3 9 l2.5 -6 l2 2 h6" stroke="#fffdf8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Your mouth is connected to the rest of you</h3>
+        <p>Gum inflammation is linked with heart disease and makes blood sugar harder to control in diabetes — and dentists routinely spot the first signs of reflux, anemia, and other conditions during a routine exam.</p>
+        <span class="cost">Whole-body payoff</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> go?</h2>
+    <p class="sub">"Every 6 months" is the classic default, but modern guidance is risk-based: healthy mouths can sometimes stretch the interval, while gum disease compresses it. Answer three questions for a personalized recall interval:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="gums">
+        <div class="q-label">1. How are your gums?</div>
+        <div class="pills">
+          <button class="pill" data-v="healthy">Healthy, no bleeding</button>
+          <button class="pill" data-v="bleed">Bleed sometimes when flossing</button>
+          <button class="pill" data-v="perio">Diagnosed gum disease</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="cavities">
+        <div class="q-label">2. What's your cavity track record?</div>
+        <div class="pills">
+          <button class="pill" data-v="rare">Rarely or never get them</button>
+          <button class="pill" data-v="some">A filling every few years</button>
+          <button class="pill" data-v="frequent">Frequent cavities</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="risk">
+        <div class="q-label">3. Any of these apply?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">None of these</button>
+          <button class="pill" data-v="smoker">Smoker or diabetes</button>
+          <button class="pill" data-v="drymouth">Dry mouth / meds that cause it</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST OF SKIPPING ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Dental problems don't stay the same size while you wait — they climb a ladder, and each rung costs roughly 2–10× the one below it. Typical U.S. prices without discounts (each bar is to scale):</p>
+    <div class="card">
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🪥 Cleaning &amp; checkup</span><span>$75–$200 (often $0 with insurance)</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🦷 Filling (small cavity)</span><span>$150–$450</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:7%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>👑 Crown (decay spread)</span><span>$1,000–$2,000</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:32%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Root canal + crown (nerve involved)</span><span>$2,000–$3,500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚨 Extraction + implant (tooth lost)</span><span>$3,500–$6,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="ladder-note"><strong>Each skipped year slides you rightward.</strong> A cavity that's a <strong>$200 filling</strong> today is a candidate for a <strong>$1,500 crown</strong> in a couple of years and a <strong>$3,000 root canal</strong> after that — and most dental insurance covers the cleaning at 100% but only half of the crown. Showing up twice a year is how you stay on the left side of this chart.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>Get the most out of every visit</h2>
+    <p class="sub">You can't DIY this one — but you can make each visit count double. A little preparation turns a passive cleaning into a 45-minute consult with someone who knows your mouth better than you do. Your progress saves automatically.</p>
+
+    <div class="safety good">
+      <h3>⭐ The #1 habit: book the next visit before you leave the office</h3>
+      <ul>
+        <li><strong>Schedule your next appointment at the front desk on your way out.</strong> Six months is too far away to remember on your own — people who book before leaving actually keep the cadence; people who plan to "call later" mostly don't.</li>
+        <li>Tell them about <strong>new medications, pregnancies, or health changes</strong> — many meds cause dry mouth, which quietly raises your cavity risk.</li>
+        <li>Before you leave, ask: <strong>"Is there anything you're watching?"</strong> A spot they're keeping an eye on today is exactly what you want checked first next time.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🪥 What a standard checkup includes</h3>
+    <div class="tools">
+      <span class="tool-chip">Professional cleaning (scaling + polish)</span>
+      <span class="tool-chip">Full exam of every tooth</span>
+      <span class="tool-chip">X-rays as needed (not every visit)</span>
+      <span class="tool-chip">Gum pocket measurement</span>
+      <span class="tool-chip">Oral cancer screening</span>
+      <span class="tool-chip">Bite &amp; old-dental-work check</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three ideas worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the dental cost ladder as rising stairs, from a small cleaning step up to a tall extraction-and-implant step, with an arrow showing that waiting climbs the stairs">
+          <rect x="14" y="156" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <rect x="20" y="138" width="44" height="18" rx="3" fill="#3e7c59"/>
+          <rect x="68" y="122" width="44" height="34" rx="3" fill="#5e9a78"/>
+          <rect x="116" y="92" width="44" height="64" rx="3" fill="#e0a93d"/>
+          <rect x="164" y="62" width="44" height="94" rx="3" fill="#d98e3b"/>
+          <rect x="212" y="30" width="44" height="126" rx="3" fill="#d9663f"/>
+          <text x="42" y="133" font-size="11" fill="#6b7376" text-anchor="middle">$150</text>
+          <text x="90" y="117" font-size="11" fill="#6b7376" text-anchor="middle">$300</text>
+          <text x="138" y="87" font-size="11" fill="#6b7376" text-anchor="middle">$1.5k</text>
+          <text x="186" y="57" font-size="11" fill="#6b7376" text-anchor="middle">$2.8k</text>
+          <text x="234" y="25" font-size="11" fill="#6b7376" text-anchor="middle">$4.5k</text>
+          <path d="M40 118 Q140 30 224 14" stroke="#6b7376" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+          <polygon points="228,9 236,15 226,19" fill="#6b7376"/>
+          <text x="58" y="36" font-size="12" fill="#6b7376">waiting climbs the stairs</text>
+        </svg>
+        <h4>The escalation staircase</h4>
+        <p>Cleaning → filling → crown → root canal → implant. Every dental problem is at its cheapest the day it's found — checkups keep you on the bottom step.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the six-month recall loop: a circular calendar with visits marked in January and July and arrows cycling between them, labeled book before you leave">
+          <circle cx="140" cy="90" r="62" fill="none" stroke="#e3efe8" stroke-width="14"/>
+          <path d="M140 28 A62 62 0 0 1 202 90" stroke="#3e7c59" stroke-width="14" fill="none"/>
+          <path d="M140 152 A62 62 0 0 1 78 90" stroke="#3e7c59" stroke-width="14" fill="none"/>
+          <polygon points="206,82 196,98 212,98" fill="#3e7c59" transform="rotate(28 204 90)"/>
+          <polygon points="74,98 68,82 84,82" fill="#3e7c59" transform="rotate(28 76 90)"/>
+          <circle cx="140" cy="28" r="14" fill="#c96f4a"/>
+          <text x="140" y="32.5" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">JAN</text>
+          <circle cx="140" cy="152" r="14" fill="#c96f4a"/>
+          <text x="140" y="156.5" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">JUL</text>
+          <text x="140" y="84" font-size="13" font-weight="700" fill="#2c5a40" text-anchor="middle">6-month</text>
+          <text x="140" y="100" font-size="13" font-weight="700" fill="#2c5a40" text-anchor="middle">loop</text>
+          <text x="140" y="118" font-size="10.5" fill="#6b7376" text-anchor="middle">book before you leave</text>
+        </svg>
+        <h4>The recall loop</h4>
+        <p>Two anchored visits a year, each one booking the next. The loop only breaks when you leave without an appointment — so don't.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing gum pocket depths: a healthy tooth with a 1 to 3 millimeter pocket beside a warning tooth with a 4 millimeter or deeper pocket and bone loss">
+          <path d="M14 96 q28 -22 56 0 q28 22 56 0 L126 168 L14 168 z" fill="#f0a18b"/>
+          <path d="M154 104 q28 -22 56 0 q28 22 56 0 L266 168 L154 168 z" fill="#e88b74"/>
+          <path d="M52 64 c0 -16 8 -22 18 -22 c10 0 18 6 18 22 c0 22 -5 60 -18 60 c-13 0 -18 -38 -18 -60 z" fill="#fffdf8" stroke="#dcd3c2" stroke-width="2"/>
+          <path d="M192 72 c0 -16 8 -22 18 -22 c10 0 18 6 18 22 c0 22 -5 60 -18 60 c-13 0 -18 -38 -18 -60 z" fill="#fffdf8" stroke="#dcd3c2" stroke-width="2"/>
+          <line x1="64" y1="96" x2="64" y2="106" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <line x1="204" y1="96" x2="204" y2="126" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <g stroke="#6b7376" stroke-width="1.5">
+            <line x1="46" y1="96" x2="46" y2="106"/><line x1="42" y1="96" x2="50" y2="96"/><line x1="42" y1="106" x2="50" y2="106"/>
+            <line x1="186" y1="96" x2="186" y2="126"/><line x1="182" y1="96" x2="190" y2="96"/><line x1="182" y1="126" x2="190" y2="126"/>
+          </g>
+          <text x="70" y="26" font-size="13" font-weight="700" fill="#2c5a40" text-anchor="middle">1–3 mm ✓</text>
+          <text x="210" y="26" font-size="13" font-weight="700" fill="#d9663f" text-anchor="middle">4 mm+ ⚠</text>
+          <text x="70" y="42" font-size="11" fill="#6b7376" text-anchor="middle">healthy pocket</text>
+          <text x="210" y="42" font-size="11" fill="#6b7376" text-anchor="middle">warning zone</text>
+        </svg>
+        <h4>Know your pocket numbers</h4>
+        <p>When the hygienist calls out "3… 2… 3…", those are gum pocket depths in millimeters. 1–3 mm is healthy; 4 mm and up means gum disease is getting a foothold. Ask for your numbers.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Visit progress</span><span id="progText">0 of 10 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done — cleaned, checked, and already booked for next time. That's the whole game.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ GO SOONER ============ -->
+  <section id="sooner">
+    <h2>Go sooner if you notice</h2>
+    <p class="sub">The 6-month cadence is for maintenance. These symptoms mean call now, not at your next scheduled visit:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Gums that bleed regularly</strong> when you brush or floss — the classic early sign of gum disease, and the stage where it's still easy to reverse.</li>
+        <li><strong>Sensitivity to hot or cold that lingers</strong> more than a few seconds after the trigger is gone — often a sign decay has reached deeper layers.</li>
+        <li><strong>Any tooth pain</strong> — toothaches essentially never resolve on their own, and every week of waiting tends to move you up the cost ladder.</li>
+        <li><strong>A chipped, cracked, or knocked-loose tooth</strong> — small fractures let bacteria in; quick repairs are simple ones.</li>
+        <li><strong>Persistent bad breath</strong> that brushing doesn't fix — frequently a gum-disease or decay signal rather than a hygiene one.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Is "every 6 months" actually evidence-based?</summary>
+      <p>It's a sensible default more than a law of nature. Research suggests the ideal interval varies by person, and modern guidance (including the ADA's) is risk-based: low-risk adults may do fine at 12 months, while people with gum disease need visits every 3–4 months. Six months works well as the standard because it matches how fast tartar builds, catches most problems while they're small — and it's what insurance typically covers.</p>
+    </details>
+    <details>
+      <summary>What if I don't have dental insurance?</summary>
+      <p>You still have good options. Dental schools offer cleanings and exams at a steep discount (supervised students, longer visits). Many practices sell in-house membership plans — a flat annual fee, typically $300–$500, that covers cleanings and exams plus a discount on other work. Community health centers often charge on a sliding scale. Paying $100–$200 a year out of pocket for prevention is still dramatically cheaper than the ladder above.</p>
+    </details>
+    <details>
+      <summary>Do I need X-rays at every visit?</summary>
+      <p>No. X-rays are taken based on your risk, not on a fixed schedule. A typical healthy adult gets bitewing X-rays every 1–2 years to check between teeth where the eye can't see; higher-risk patients get them more often, and a full-mouth set every several years. If you're unsure why one is being taken, just ask — it's a fair question and a good dentist will gladly explain.</p>
+    </details>
+    <details>
+      <summary>Can I get whitening done at my cleaning?</summary>
+      <p>Worth asking, and the timing is smart — whitening works best on freshly cleaned teeth, since polish removes the surface film that blocks the gel. Most offices treat it as a separate cosmetic add-on (in-office sessions or custom take-home trays), so it usually means a second visit or an add-on fee rather than part of the covered checkup.</p>
+    </details>
+    <details>
+      <summary>I'm honestly afraid of the dentist. Any advice?</summary>
+      <p>Say so — out loud, when you book and again in the chair. Dental anxiety is extremely common and offices handle it every day: they can explain each step before doing it, agree on a raise-your-hand stop signal, schedule extra time, or discuss sedation options. The hard truth is that avoidance feeds the fear: the longer you wait, the more likely the eventual visit involves real work. A boring, uneventful cleaning is the best treatment for dental anxiety there is.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Six months is a long time to remember.</h2>
+        <p>You just worked out your recall interval — now let something else keep the loop running. Upkeep Ledger logs each dental visit and tells you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=dentist-visit&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=dentist-visit&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This page is general education, not medical or dental advice — your dentist's recommendation for you wins. Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { gums: null, cavities: null, risk: null };
+
+  function computeRecall(s) {
+    var reasons = [];
+    var interval, label;
+
+    if (s.gums === "perio") {
+      interval = "3-4";
+      label = "Every 3–4 months";
+      reasons.push("With diagnosed gum disease, you're likely on “periodontal maintenance” — bacteria recolonize pockets in about 90 days, so 3–4 month cleanings are the standard of care.");
+    } else {
+      // Count risk elevators beyond healthy baseline
+      var elevated = false;
+      if (s.gums === "bleed") {
+        elevated = true;
+        reasons.push("Bleeding when you floss is early gingivitis — very fixable, but it means your gums need a professional eye every 6 months, not 12.");
+      } else {
+        reasons.push("Healthy, non-bleeding gums are the best sign your home care is working.");
+      }
+      if (s.cavities === "frequent") {
+        elevated = true;
+        reasons.push("Frequent cavities mean decay moves fast in your mouth — twice-yearly exams catch new ones while they're still small fillings.");
+      } else if (s.cavities === "some") {
+        elevated = true;
+        reasons.push("An occasional filling puts you squarely in the standard-risk group the 6-month default was built for.");
+      } else {
+        reasons.push("A rare-cavity track record means decay risk isn't what drives your schedule.");
+      }
+      if (s.risk === "smoker") {
+        elevated = true;
+        reasons.push("Smoking and diabetes both raise gum-disease risk substantially (and can mask bleeding) — keep the interval tight and make sure gum measurements happen every visit.");
+      } else if (s.risk === "drymouth") {
+        elevated = true;
+        reasons.push("Dry mouth — often from common medications — removes saliva's natural protection, and cavity risk climbs quickly. Mention every med change to your dentist.");
+      }
+
+      if (elevated) {
+        interval = "6";
+        label = "Every 6 months";
+      } else {
+        interval = "12";
+        label = "Every 12 months may be enough";
+        reasons.push("Low risk across the board: research suggests healthy adults like you may do fine with annual visits — ask your dentist if a 12-month recall makes sense.");
+        reasons.push("That said, most dental insurance covers two cleanings a year at 100% — if it's already paid for, the 6-month visit costs you nothing but an hour.");
+      }
+    }
+
+    if (interval !== "12") {
+      reasons.push("Good news on cost: most dental insurance covers two cleanings a year at 100%, so the standard cadence is often free.");
+    }
+
+    return { interval: interval, label: label, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.gums || !quizState.cavities || !quizState.risk) return;
+    var r = computeRecall(quizState);
+    document.getElementById("resultFreq").textContent = "Your recall interval: " + r.label;
+    var bodyTxt;
+    if (r.interval === "3-4") {
+      bodyTxt = "Book cleanings roughly <strong>every 90–120 days</strong> — your periodontist or dentist will set the exact rhythm. Why this schedule:";
+    } else if (r.interval === "12") {
+      bodyTxt = "You're a candidate for the <strong>stretched, low-risk schedule</strong> — confirm it with your dentist before switching. Why:";
+    } else {
+      bodyTxt = "The classic plan: <strong>two visits a year, six months apart</strong>. Why this schedule:";
+    }
+    document.getElementById("resultBody").innerHTML = bodyTxt;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you book", text: "Find (or confirm) your dentist", note: "No regular dentist? Ask friends locally, check reviews, and verify they're in-network if you're insured. A practice you like is the one you'll actually return to." },
+    { phase: "Before you book", text: "Check what your insurance covers", note: "Most plans cover two cleanings and exams per year at 100%. Know your X-ray coverage and annual maximum too — five minutes on the portal or phone." },
+    { phase: "Before you book", text: "Book the appointment", note: "Call or book online. Popular slots (early morning, Saturday) fill 4–6 weeks out, so don't wait for a free week to appear — it won't." },
+    { phase: "Prep the week before", text: "Jot down questions and sensitive spots", note: "That twinge on the lower left? The grinding your partner mentioned? Write it down — chair-side amnesia is real." },
+    { phase: "Prep the week before", text: "List new meds and health changes", note: "New prescriptions, supplements, pregnancies, diagnoses. Many medications cause dry mouth, which changes your cavity risk." },
+    { phase: "At the visit", text: "Arrive 10 minutes early and hand over your list", note: "Lead with your sensitive spots so the hygienist and dentist check them first, not as you're standing up to leave." },
+    { phase: "At the visit", text: "Ask for your gum pocket numbers", note: "1–3 mm is healthy; 4 mm+ is the warning zone. Knowing your numbers lets you track them visit to visit, like blood pressure." },
+    { phase: "At the visit", text: "Schedule the NEXT visit before you walk out", note: "The single highest-leverage step on this list. Six months from now is on the calendar in 30 seconds — or it never happens." },
+    { phase: "Afterward", text: "Follow up on any watch-items or referrals", note: "A “let's keep an eye on that” or a filling that needs scheduling: book it within the week, while it's still a small problem." },
+    { phase: "Afterward", text: "Log the visit", note: "Note the date, what was done, your pocket numbers, and anything being watched. Future-you walks into the next appointment informed." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:dentist-visit:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

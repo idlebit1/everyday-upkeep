@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bike Tune-Up — Everyday Upkeep</title>
+<meta name="description" content="How often your bike needs a shop tune-up, what it costs, why it matters, and the 5-minute pre-ride M-check you can do yourself.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .booking-tip { margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1.5px solid var(--gold); border-radius: 12px; padding: 10px 14px; }
+  .booking-tip strong { color: #9a7117; }
+
+  /* ---------- cost comparison ---------- */
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .cost-card h3 { margin: 0 0 10px; font-size: 17px; }
+  .cost-card ul { margin: 0; padding-left: 20px; font-size: 15px; color: var(--ink-soft); }
+  .cost-card li { margin-bottom: 6px; }
+  .cost-card li strong { color: var(--ink); }
+  .cost-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .cost-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .mcheck-callout {
+    background: var(--accent-soft); border: 1.5px solid var(--accent); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .mcheck-callout h3 { margin: 0 0 8px; color: var(--accent-deep); font-size: 16px; }
+  .mcheck-callout p { margin: 0; font-size: 15px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Yearly</span>
+      <h1>Bike Tune-Up</h1>
+      <p class="lede">A bike wears out quietly: cables stretch, pads thin, bearings dry. An annual shop tune-up resets all of it — and a 5-minute pre-ride M-check is your job in between. Here's how often, what it costs, and exactly what to look at.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Shop tune <em>1× a year</em> for most riders</span>
+        <span class="chip">💵 <em>$75–150</em> for a basic tune</span>
+        <span class="chip">⏱️ M-check: <em>5 minutes</em>, no tools</span>
+        <span class="chip">💸 Skipping risks <em>$400+</em> drivetrain bills</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a flat-style bicycle clamped in a repair stand with a wrench leaning against the base and sparkle motifs around the freshly tuned bike">
+      <ellipse cx="290" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <circle cx="488" cy="62" r="24" fill="#f2cf7a"/>
+      <ellipse cx="92" cy="70" rx="44" ry="22" fill="#dce8ee"/>
+      <ellipse cx="138" cy="82" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- repair stand -->
+      <rect x="300" y="180" width="14" height="216" rx="6" fill="#8a6a4f"/>
+      <path d="M307 392 L258 408 M307 392 L356 408" stroke="#8a6a4f" stroke-width="12" stroke-linecap="round"/>
+      <rect x="262" y="168" width="74" height="16" rx="8" fill="#b9b1a3"/>
+      <circle cx="270" cy="176" r="10" fill="#c96f4a"/>
+      <!-- rear wheel -->
+      <circle cx="170" cy="262" r="74" fill="none" stroke="#33393b" stroke-width="11"/>
+      <circle cx="170" cy="262" r="58" fill="none" stroke="#b9b1a3" stroke-width="5"/>
+      <g stroke="#b9b1a3" stroke-width="2.5">
+        <line x1="170" y1="206" x2="170" y2="318"/>
+        <line x1="114" y1="262" x2="226" y2="262"/>
+        <line x1="131" y1="223" x2="209" y2="301"/>
+        <line x1="209" y1="223" x2="131" y2="301"/>
+      </g>
+      <circle cx="170" cy="262" r="9" fill="#2c5a40"/>
+      <!-- front wheel -->
+      <circle cx="418" cy="262" r="74" fill="none" stroke="#33393b" stroke-width="11"/>
+      <circle cx="418" cy="262" r="58" fill="none" stroke="#b9b1a3" stroke-width="5"/>
+      <g stroke="#b9b1a3" stroke-width="2.5">
+        <line x1="418" y1="206" x2="418" y2="318"/>
+        <line x1="362" y1="262" x2="474" y2="262"/>
+        <line x1="379" y1="223" x2="457" y2="301"/>
+        <line x1="457" y1="223" x2="379" y2="301"/>
+      </g>
+      <circle cx="418" cy="262" r="9" fill="#2c5a40"/>
+      <!-- frame -->
+      <g stroke="#3e7c59" stroke-width="11" stroke-linecap="round" fill="none">
+        <line x1="170" y1="262" x2="285" y2="262"/>   <!-- chainstay -->
+        <line x1="285" y1="262" x2="262" y2="148"/>   <!-- seat tube -->
+        <line x1="170" y1="262" x2="262" y2="148"/>   <!-- seat stay -->
+        <line x1="285" y1="262" x2="394" y2="150"/>   <!-- down tube -->
+        <line x1="268" y1="156" x2="390" y2="146"/>   <!-- top tube -->
+        <line x1="394" y1="150" x2="418" y2="262"/>   <!-- fork -->
+      </g>
+      <!-- crank + chainring -->
+      <circle cx="285" cy="262" r="17" fill="none" stroke="#5e9a78" stroke-width="6"/>
+      <circle cx="285" cy="262" r="5" fill="#2c5a40"/>
+      <line x1="285" y1="262" x2="305" y2="290" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <rect x="299" y="286" width="22" height="9" rx="4.5" fill="#33393b"/>
+      <path d="M170 270 q58 22 115 9" stroke="#8a6a4f" stroke-width="4" fill="none"/>
+      <!-- seatpost + saddle -->
+      <line x1="262" y1="148" x2="255" y2="118" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M228 116 q26 -12 54 0 q-26 10 -54 0" fill="#c96f4a"/>
+      <!-- stem + handlebars -->
+      <line x1="394" y1="150" x2="390" y2="116" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M368 116 h44 q12 0 12 12" stroke="#33393b" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <circle cx="424" cy="130" r="5" fill="#d9663f"/>
+      <!-- wrench leaning on stand -->
+      <g transform="rotate(-32 480 372)">
+        <rect x="472" y="312" width="14" height="74" rx="6" fill="#7fb3c8"/>
+        <path d="M479 296 a16 16 0 1 0 0.1 0 M471 290 h16 v14 h-16 z" fill="#7fb3c8"/>
+        <circle cx="479" cy="306" r="7" fill="#fffdf8"/>
+        <circle cx="479" cy="392" r="11" fill="#7fb3c8"/>
+        <rect x="473" y="386" width="12" height="12" fill="#fffdf8"/>
+      </g>
+      <!-- oil can -->
+      <rect x="64" y="356" width="34" height="38" rx="6" fill="#e0a93d"/>
+      <path d="M76 356 v-12 h12 v12" fill="none" stroke="#d98e3b" stroke-width="6"/>
+      <path d="M98 366 l24 -14" stroke="#d98e3b" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="128" cy="348" r="3.5" fill="#7fb3c8"/>
+      <!-- sparkles -->
+      <g fill="#e0a93d">
+        <path d="M330 70 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z"/>
+        <path d="M212 118 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"/>
+        <path d="M468 196 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"/>
+      </g>
+      <path d="M58 196 l2.5 7.5 7.5 2.5 -7.5 2.5 -2.5 7.5 -2.5 -7.5 -7.5 -2.5 7.5 -2.5 z" fill="#d98e3b"/>
+      <!-- grass tufts -->
+      <circle cx="510" cy="392" r="14" fill="#5e9a78"/>
+      <circle cx="532" cy="396" r="11" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Bikes don't fail loudly — they drift. Each small bit of neglected wear makes the next part wear faster, and the cheap fix quietly becomes the expensive one. Here's what a yearly tune actually prevents (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 8 q10 0 13 9 q3 9 13 9" stroke="#6b7376" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="5 4"/>
+          <circle cx="5" cy="8" r="3" fill="#3e7c59"/>
+          <circle cx="31" cy="26" r="3" fill="#3e7c59"/>
+          <path d="M22 6 l4 4 -4 4 M26 22 l-4 4 4 4" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Ghost shifting</h3>
+        <p>Cables stretch in their first season and keep creeping after. The result: gears that jump, skip, and hunt mid-climb. A tune re-tensions and re-indexes everything.</p>
+        <span class="cost">$25 – $50 adjust, free in a tune</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="20" r="11" fill="none" stroke="#b9b1a3" stroke-width="3"/>
+          <path d="M8 12 q4 -6 10 -6 q6 0 10 6" fill="none" stroke="#6b7376" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="6" y="10" width="7" height="12" rx="2.5" fill="#d9663f" transform="rotate(28 9.5 16)"/>
+          <rect x="23" y="10" width="7" height="12" rx="2.5" fill="#d9663f" transform="rotate(-28 26.5 16)"/>
+        </svg></div>
+        <h3>Worn brake pads</h3>
+        <p>Pads wear past their grooves, then chew the rim or rotor they're supposed to grab. A $20–40 set of pads beats a $100 wheel — and beats a crash by even more.</p>
+        <span class="cost">$20 – $40 pads vs. crash</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <circle cx="18" cy="18" r="5" fill="#3e7c59"/>
+          <g fill="#7fb3c8">
+            <circle cx="18" cy="9" r="2.6"/>
+            <circle cx="26" cy="13.5" r="2.6"/>
+            <circle cx="26" cy="22.5" r="2.6"/>
+            <circle cx="18" cy="27" r="2.6"/>
+            <circle cx="10" cy="22.5" r="2.6"/>
+            <circle cx="10" cy="13.5" r="2.6"/>
+          </g>
+        </svg></div>
+        <h3>Dry bearings</h3>
+        <p>Hubs, headset, and bottom bracket all spin on grease. Once it washes out, they grind metal on metal until the whole assembly needs replacing.</p>
+        <span class="cost">$100 – $300 replacement</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="18" r="9" fill="none" stroke="#5e9a78" stroke-width="2.5"/>
+          <circle cx="13" cy="18" r="3" fill="#2c5a40"/>
+          <circle cx="28" cy="22" r="5.5" fill="none" stroke="#5e9a78" stroke-width="2.5"/>
+          <path d="M13 9 q9 0 15 7.5" stroke="#8a6a4f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M13 27 q9 0 15 0.5" stroke="#8a6a4f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Drivetrain cascade</h3>
+        <p>A worn, dirty chain files down the cassette and chainrings to match its own stretch. Replace the chain on time and it costs $25; wait, and all three go together.</p>
+        <span class="cost">$150 – $400+ cascade</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 l11 4 v9 c0 8 -5 12 -11 15 c-6 -3 -11 -7 -11 -15 v-9 z" fill="#3e7c59"/>
+          <path d="M12.5 18 l4 4 l7 -8" stroke="#fffdf8" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Safety failures</h3>
+        <p>Brakes and headsets fail quietly — fading lever feel, a faint knock over bumps — until they fail suddenly at speed. A tune catches what your hands have stopped noticing.</p>
+        <span class="cost">Priceless, honestly</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 16 L18 4 h12 v12 L18 28 z" fill="#e0a93d"/>
+          <circle cx="25" cy="9" r="2.8" fill="#fffdf8"/>
+          <path d="M8 28 q5 4 10 2" stroke="#5e9a78" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M18 30 l-3 -3 m3 3 l-3 3" stroke="#5e9a78" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Resale value</h3>
+        <p>A bike with a service history and a clean drivetrain sells fast and high. One that creaks and skips gets lowballed — buyers price in every repair they can hear.</p>
+        <span class="cost">$100s at resale</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often does <em>your</em> bike need a tune?</h2>
+    <p class="sub">"Once a year" fits most riders, but mileage, weather, and how much you do at home all move the number. Answer three questions for a personalized interval:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="volume">
+        <div class="q-label">1. How much do you ride?</div>
+        <div class="pills">
+          <button class="pill" data-v="occasional">Occasional weekends</button>
+          <button class="pill" data-v="regular">A few times a week</button>
+          <button class="pill" data-v="daily">Daily commuter</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="conditions">
+        <div class="q-label">2. What do you ride through?</div>
+        <div class="pills">
+          <button class="pill" data-v="dry">Dry pavement</button>
+          <button class="pill" data-v="wet">All-weather, rain or shine</button>
+          <button class="pill" data-v="gravel">Gravel, mud &amp; trails</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="care">
+        <div class="q-label">3. Do you do your own chain cleaning + basic care?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes, regularly</button>
+          <button class="pill" data-v="some">Some of it</button>
+          <button class="pill" data-v="no">Not really</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="booking-tip">📅 <strong>Book early spring.</strong> Shops back up badly in May when everyone's bike comes out of the garage at once — a March or April appointment means days, not weeks, of waiting, and a tuned bike for the whole season.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A tune-up looks expensive right up until you price the alternative. These are typical U.S. shop rates:</p>
+    <div class="card">
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Basic annual tune</span><span>$75 – $150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:26%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Full overhaul (every few years)</span><span>$200 – $350</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⛓️ Cascading drivetrain replacement</span><span>$150 – $400+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:74%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚑 Crash repairs (and the rest of it)</span><span>$300 – $1,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="grid cols-2" style="margin-top:20px;">
+        <div class="cost-card">
+          <h3>What keeping up looks like</h3>
+          <ul>
+            <li><strong>$75–150 basic tune:</strong> gears indexed, brakes adjusted, drivetrain cleaned, everything torqued and trued.</li>
+            <li><strong>$200–350 overhaul</strong> every 2–4 years: bearings repacked, cables and housing replaced, frame stripped and rebuilt.</li>
+            <li><strong>$25 chain</strong> replaced on schedule, before it wears anything else.</li>
+          </ul>
+        </div>
+        <div class="cost-card">
+          <h3>What skipping looks like</h3>
+          <ul>
+            <li><strong>$150–400+ drivetrain cascade:</strong> stretched chain ruins the cassette, then the chainrings.</li>
+            <li><strong>Seized seatposts and corroded cables:</strong> a $0 prevention (grease, fresh housing) becomes a shop-hours extraction job.</li>
+            <li><strong>Crash repairs:</strong> a brake or headset that fails at speed costs wheels, bars, derailleur hangers — and sometimes skin.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cost-verdict">A decade of annual tunes runs roughly <strong>$1,000–1,800</strong> — about the price of <strong>one mid-range replacement bike</strong>. Skipping doesn't save the money; it just changes what you spend it on.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep it tuned</h2>
+    <p class="sub">This task splits cleanly in two: the shop handles the precision work once a year, and you run a 5-minute M-check between visits. Here's both halves.</p>
+
+    <div class="safety">
+      <h3>⚠️ Brakes and steering are not "ride it and see"</h3>
+      <ul>
+        <li>If a brake lever pulls to the bar, or the bike won't stop confidently, <strong>don't ride it</strong> — fix or shop first.</li>
+        <li>Anything loose at the handlebars, stem, or headset is a steering failure waiting for a pothole.</li>
+        <li>After any crash or hard drop, check the frame and fork before the next ride — especially carbon.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🔧 What the shop does in a tune-up</h3>
+    <div class="tools">
+      <span class="tool-chip">Drivetrain deep-clean &amp; lube</span>
+      <span class="tool-chip">Derailleur indexing</span>
+      <span class="tool-chip">Brake adjust &amp; pad check</span>
+      <span class="tool-chip">Wheel truing</span>
+      <span class="tool-chip">Hub, headset &amp; BB bearing check</span>
+      <span class="tool-chip">Chain wear measurement</span>
+      <span class="tool-chip">Full-frame torque check</span>
+    </div>
+
+    <div class="mcheck-callout">
+      <h3>🅼 Your job: the pre-ride M-check</h3>
+      <p>The M-check traces a letter <strong>M</strong> over the whole bike: <strong>front axle → up to the handlebars → down to the bottom bracket and pedals → up to the saddle → back to the rear axle</strong>. Follow the path and you touch every system that can fail on you — wheels, brakes, steering, drivetrain, seating. Do it before the first ride of any week; it takes five minutes and no tools.</p>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three checks worth knowing by feel</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a bicycle outline with the M-check path drawn over it: front axle up to handlebars, down to the bottom bracket, up to the saddle, down to the rear axle">
+          <circle cx="62" cy="124" r="38" fill="none" stroke="#b9b1a3" stroke-width="6"/>
+          <circle cx="218" cy="124" r="38" fill="none" stroke="#b9b1a3" stroke-width="6"/>
+          <g stroke="#8a9499" stroke-width="5" stroke-linecap="round" fill="none">
+            <line x1="218" y1="124" x2="140" y2="124"/>
+            <line x1="140" y1="124" x2="155" y2="62"/>
+            <line x1="218" y1="124" x2="155" y2="62"/>
+            <line x1="140" y1="124" x2="78" y2="64"/>
+            <line x1="152" y1="66" x2="82" y2="62"/>
+            <line x1="78" y1="64" x2="62" y2="124"/>
+            <line x1="78" y1="64" x2="74" y2="44"/>
+            <line x1="155" y1="62" x2="158" y2="44"/>
+          </g>
+          <path d="M146 44 q12 -6 24 0" stroke="#8a9499" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M62 44 h22" stroke="#8a9499" stroke-width="5" stroke-linecap="round"/>
+          <path d="M62 124 L74 40 L140 124 L158 38 L218 124" stroke="#d9663f" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="9 6"/>
+          <g fill="#d9663f">
+            <circle cx="62" cy="124" r="7"/>
+            <circle cx="74" cy="40" r="7"/>
+            <circle cx="140" cy="124" r="7"/>
+            <circle cx="158" cy="38" r="7"/>
+            <circle cx="218" cy="124" r="7"/>
+          </g>
+          <text x="40" y="158" font-size="11" fill="#6b7376" font-weight="700">1 axle</text>
+          <text x="58" y="26" font-size="11" fill="#6b7376" font-weight="700">2 bars</text>
+          <text x="124" y="148" font-size="11" fill="#6b7376" font-weight="700">3 cranks</text>
+          <text x="146" y="26" font-size="11" fill="#6b7376" font-weight="700">4 saddle</text>
+          <text x="200" y="158" font-size="11" fill="#6b7376" font-weight="700">5 axle</text>
+        </svg>
+        <h4>Trace the M</h4>
+        <p>Front axle → handlebars → bottom bracket → saddle → rear axle. One path, every critical system. Five touch points, five minutes.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing a healthy brake pad with visible wear grooves to a worn pad with grooves nearly gone, marked replace">
+          <rect x="30" y="44" width="92" height="56" rx="8" fill="#3e7c59"/>
+          <g stroke="#fbf8f2" stroke-width="5" stroke-linecap="round">
+            <line x1="48" y1="56" x2="48" y2="88"/>
+            <line x1="68" y1="56" x2="68" y2="88"/>
+            <line x1="88" y1="56" x2="88" y2="88"/>
+            <line x1="108" y1="56" x2="108" y2="88"/>
+          </g>
+          <text x="36" y="124" font-size="12" fill="#2c5a40" font-weight="700">grooves visible = good</text>
+          <rect x="160" y="58" width="92" height="42" rx="8" fill="#d9663f"/>
+          <g stroke="#fbe9e1" stroke-width="4" stroke-linecap="round">
+            <line x1="178" y1="92" x2="178" y2="97"/>
+            <line x1="198" y1="92" x2="198" y2="97"/>
+            <line x1="218" y1="92" x2="218" y2="97"/>
+            <line x1="238" y1="92" x2="238" y2="97"/>
+          </g>
+          <text x="166" y="124" font-size="12" fill="#d9663f" font-weight="700">grooves gone = replace</text>
+          <rect x="30" y="142" width="222" height="10" rx="5" fill="#b9b1a3"/>
+          <text x="100" y="170" font-size="11" fill="#6b7376">rim / rotor surface</text>
+        </svg>
+        <h4>Read the pad grooves</h4>
+        <p>Rim-brake pads have wear grooves molded in. Grooves clearly visible: fine. Grooves nearly flush: replace now, before the metal backing meets your rim.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing a tire cross-section with sidewall cracks to inspect, and a hand squeezing two spokes together to feel for loose ones">
+          <circle cx="76" cy="90" r="52" fill="none" stroke="#33393b" stroke-width="13"/>
+          <circle cx="76" cy="90" r="36" fill="none" stroke="#b9b1a3" stroke-width="4"/>
+          <g stroke="#d9663f" stroke-width="2.5" stroke-linecap="round">
+            <line x1="32" y1="68" x2="40" y2="74"/>
+            <line x1="28" y1="84" x2="37" y2="87"/>
+            <line x1="29" y1="100" x2="38" y2="100"/>
+          </g>
+          <text x="14" y="166" font-size="11" fill="#6b7376" font-weight="700">sidewall cracks = aging tire</text>
+          <g stroke="#b9b1a3" stroke-width="3.5" stroke-linecap="round">
+            <line x1="196" y1="36" x2="216" y2="144"/>
+            <line x1="244" y1="36" x2="224" y2="144"/>
+          </g>
+          <path d="M196 78 q12 12 26 6 M242 80 q-12 14 -22 6" stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="220" cy="86" rx="17" ry="13" fill="none" stroke="#e0a93d" stroke-width="3" stroke-dasharray="5 4"/>
+          <text x="178" y="166" font-size="11" fill="#6b7376" font-weight="700">squeeze pairs of spokes</text>
+        </svg>
+        <h4>Tires &amp; spokes by hand</h4>
+        <p>Scan sidewalls for cracks and threads showing. Then squeeze spoke pairs around each wheel — one that feels much looser than its neighbors needs a shop truing.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>M-check progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 M-check complete — your bike is road-ready. Ride on!</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN IT'S A SHOP JOB ============ -->
+  <section id="pro">
+    <h2>When it's a shop job, not a checklist</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Hydraulic brake bleeds.</strong> Spongy hydraulic levers mean air or old fluid in the line — a fluid-specific, mess-prone job shops do in 20 minutes.</li>
+        <li><strong>Bearing replacement.</strong> Pressed headset, hub, and bottom bracket bearings need dedicated presses and pullers; improvising damages the frame.</li>
+        <li><strong>Wheel building and major truing.</strong> Replacing spokes or fixing a real wobble is a craft. A bad home truing job usually ends with a worse wheel.</li>
+        <li><strong>Suspension service.</strong> Forks and rear shocks need seal kits, suspension fluid, and torque specs on a strict service schedule (typically every 50–100 hours of riding).</li>
+        <li><strong>Carbon inspection after a crash.</strong> Carbon can look perfect and be compromised underneath. After any significant impact, have a shop inspect it before you ride — frames fail without warning.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What does a tune-up actually include?</summary>
+      <p>A basic tune typically covers: drivetrain cleaning and lube, derailleur indexing, brake adjustment and pad inspection, minor wheel truing, a bearing check (hubs, headset, bottom bracket), tire inspection, and a bolt-by-bolt torque check. A full overhaul adds complete disassembly, bearing repacking or replacement, and new cables and housing. Parts are extra in both cases.</p>
+    </details>
+    <details>
+      <summary>How much should a tune-up cost?</summary>
+      <p>Typical U.S. shop rates: <strong>$75–150</strong> for a basic tune and <strong>$200–350</strong> for a full overhaul, plus parts (pads, chains, cables). City shops and high-end bikes trend higher. If a quote includes a written checklist of what's covered, that's a good sign.</p>
+    </details>
+    <details>
+      <summary>Do e-bikes need tune-ups too?</summary>
+      <p>Yes — more, if anything. The motor's extra torque wears chains, cassettes, and brake pads noticeably faster than leg power alone. On top of the standard mechanical tune, ask for a firmware update check and a battery health look. Many shops offer e-bike-specific service tiers; use a shop certified for your motor system.</p>
+    </details>
+    <details>
+      <summary>Can I learn to do all this myself?</summary>
+      <p>Absolutely — bike maintenance is one of the most learnable home skills. Park Tool's free online repair guides and YouTube channel are the de facto textbook, and many local shops and co-ops run hands-on classes. Start with chain care, brake pads, and indexing; leave bearings and hydraulics to the shop until you've got tools and confidence.</p>
+    </details>
+    <details>
+      <summary>When in the year should I book the tune?</summary>
+      <p>Late winter or early spring — February through April. Every shop's repair queue explodes in May, and waits stretch from days to weeks. An off-peak booking gets faster turnaround, sometimes off-season pricing, and a fully sorted bike before the good weather starts. Year-round commuters do well with a fall tune instead, so the bike enters the wet season fresh.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>One tune a year. Easy to plan, easy to forget.</h2>
+        <p>You just worked out your bike's service interval — now let something else remember it. Upkeep Ledger logs each tune-up and M-check and tells you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=bike-tune-up&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=bike-tune-up&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { volume: null, conditions: null, care: null };
+
+  var TIERS = {
+    1: {
+      label: "Annual tune",
+      body: "One shop tune a year keeps you covered — book it in early spring and you're set for the season."
+    },
+    2: {
+      label: "Every 6 months",
+      body: "Your riding wears parts fast enough that one tune a year leaves the second half of the season on stretched cables and tired pads. Split it: a full tune in early spring, a lighter check-up in early fall."
+    },
+    3: {
+      label: "Twice a season",
+      body: "High miles in hard conditions — your bike earns a full tune in early spring plus a mid-season service, with a quick brake-and-shift check between. Get cozy with your shop; they'll start recognizing the bike."
+    }
+  };
+
+  function computeTier(s) {
+    var score = 0;
+    var reasons = [];
+
+    score += { occasional: 0, regular: 1, daily: 2 }[s.volume];
+    score += { dry: 0, wet: 1, gravel: 2 }[s.conditions];
+    score += { yes: -1, some: 0, no: 1 }[s.care];
+
+    if (s.volume === "occasional") reasons.push("Weekend miles add up slowly — wear parts last multiple seasons, so an annual reset catches everything in time.");
+    if (s.volume === "regular") reasons.push("A few rides a week is real mileage: figure a chain and brake pads roughly every season, so check-ins matter.");
+    if (s.volume === "daily") reasons.push("Daily commuting puts thousands of miles a year on the bike — that's pro-cyclist wear on commuter maintenance habits.");
+
+    if (s.conditions === "dry") reasons.push("Dry pavement is the gentlest life a drivetrain can live — lube stays put and grit stays off.");
+    if (s.conditions === "wet") reasons.push("All-weather riding roughly doubles wear: rain washes lube off the chain and grinds road grit into pads, cables, and bearings.");
+    if (s.conditions === "gravel") reasons.push("Mud and gravel are liquid sandpaper for drivetrains and suspension — off-road bikes need the shortest service intervals of all.");
+
+    if (s.care === "yes") reasons.push("Good home chain care is the single biggest interval-stretcher — a clean, lubed, on-time-replaced chain protects the whole drivetrain between shop visits.");
+    if (s.care === "some") reasons.push("Partial home care helps; adding regular chain cleaning and a monthly M-check would let you stretch shop intervals further.");
+    if (s.care === "no") reasons.push("With no home care, the shop visit is the only thing standing between your chain and a full drivetrain cascade — keep the interval short, or start wiping and lubing the chain.");
+
+    var tier = score <= 1 ? 1 : (score <= 3 ? 2 : 3);
+    return { tier: tier, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.volume || !quizState.conditions || !quizState.care) return;
+    var r = computeTier(quizState);
+    var t = TIERS[r.tier];
+    document.getElementById("resultFreq").textContent = "Your interval: " + t.label;
+    document.getElementById("resultBody").innerHTML =
+      t.body + " <strong>Why this interval:</strong>";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (txt) {
+      var li = document.createElement("li");
+      li.textContent = txt;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist (the expanded M-check) ================= */
+  var STEPS = [
+    { phase: "Front axle & wheel (the M starts here)", text: "Check the front quick-release or thru-axle is tight", note: "Lever closed firmly, pointing up or back. A loose front wheel is the worst mechanical there is." },
+    { phase: "Front axle & wheel (the M starts here)", text: "Spin the front wheel — true, no rub, no grinding hub", note: "Watch the gap at the brake: a steady wobble means truing. Grinding or play at the axle means bearings." },
+    { phase: "Front axle & wheel (the M starts here)", text: "Check tire pressure and inspect both tires", note: "Squeeze or use a gauge — pressure range is printed on the sidewall. Look for cracks, cuts, and threads showing." },
+    { phase: "Up to the bars: brakes & steering", text: "Squeeze each brake — it should bite before the lever hits the bar", note: "Roll the bike forward against each brake. Soft, slow, or bottoming out = pads or cables before you ride." },
+    { phase: "Up to the bars: brakes & steering", text: "Inspect brake and shift cables for fraying or rust", note: "Look where cables enter levers and stops. Frayed strands or crunchy housing movement = replacement time." },
+    { phase: "Up to the bars: brakes & steering", text: "Check the headset for knock or roughness", note: "Hold the front brake and rock the bike forward and back — a knock means a loose or worn headset. Bars should also turn smoothly." },
+    { phase: "Down to the cranks: drivetrain", text: "Check the chain: lubed, moving freely, no rust", note: "Dry squeaking or orange links shed money with every pedal stroke. Wipe, lube, wipe again." },
+    { phase: "Down to the cranks: drivetrain", text: "Shift through the full gear range — clean and quiet", note: "Lift the rear wheel and run every gear. Hesitation, skipping, or ghost shifts mean cable tension has drifted." },
+    { phase: "Up to the saddle, back to the rear axle", text: "Check the saddle and seatpost are tight and straight", note: "Grab the saddle nose and try to twist it. Any movement = tighten the clamp before it slips mid-ride." },
+    { phase: "Up to the saddle, back to the rear axle", text: "Check the rear axle, spin the rear wheel, squeeze spokes", note: "Same drill as the front: axle tight, wheel true, no rub. Squeeze spoke pairs — a loose one means a truing visit." },
+    { phase: "Finish & book", text: "Scan the frame for cracks, dents, and new creaks", note: "Sight along the tubes and around welds and the bottom bracket. On carbon, treat any crack or soft spot as do-not-ride." },
+    { phase: "Finish & book", text: "Book the annual shop tune — then log today's check", note: "Early spring beats the May rush. Write down what you found so the shop knows where to look." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:bike-tune-up:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

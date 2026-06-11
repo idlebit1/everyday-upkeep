@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annual Insurance Review — Everyday Upkeep</title>
+<meta name="description" content="Why you should review your home, auto, life, and umbrella insurance once a year, how involved your review should be, and a step-by-step checklist for doing it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .anchor-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .bar-fill.mid { background: var(--gold); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#scope">Your review</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Yearly</span>
+      <h1>Annual Insurance Review</h1>
+      <p class="lede">Your policies were sized for the life you had when you bought them. Houses get renovated, cars get added, kids arrive, premiums quietly creep — and none of it updates itself. Once a year, spend an hour or two making sure your coverage still matches your actual life.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ <em>Once a year</em>, every year</span>
+        <span class="chip">⏱️ <em>1–2 hours</em> for most households</span>
+        <span class="chip">💸 Loyalty tax: <em>$300–900/yr</em> for not shopping</span>
+        <span class="chip">☂️ Covers <em>home · auto · life · umbrella</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a large umbrella sheltering a small house, a car, and a heart from falling rain — a metaphor for insurance coverage protecting home, auto, and life">
+      <ellipse cx="290" cy="398" rx="250" ry="24" fill="#efe7d8"/>
+      <circle cx="70" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="468" cy="60" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="426" cy="72" rx="28" ry="16" fill="#dce8ee"/>
+      <ellipse cx="120" cy="118" rx="36" ry="18" fill="#dce8ee"/>
+      <!-- rain falling outside the umbrella -->
+      <g stroke="#7fb3c8" stroke-width="3.5" stroke-linecap="round">
+        <line x1="56" y1="160" x2="50" y2="182"/>
+        <line x1="86" y1="200" x2="80" y2="222"/>
+        <line x1="62" y1="256" x2="56" y2="278"/>
+        <line x1="92" y1="310" x2="86" y2="332"/>
+        <line x1="486" y1="170" x2="480" y2="192"/>
+        <line x1="512" y1="226" x2="506" y2="248"/>
+        <line x1="482" y1="284" x2="476" y2="306"/>
+        <line x1="510" y1="334" x2="504" y2="356"/>
+      </g>
+      <!-- umbrella canopy -->
+      <path d="M126 196 Q280 56 434 196 Q396 168 357 196 Q318 162 280 196 Q242 162 203 196 Q164 168 126 196 Z" fill="#d9663f"/>
+      <path d="M203 196 Q242 162 280 196 Q318 162 357 196 Q318 178 280 196 Q242 178 203 196 Z" fill="#c96f4a"/>
+      <circle cx="280" cy="86" r="8" fill="#e0a93d"/>
+      <!-- umbrella pole and handle -->
+      <rect x="276" y="196" width="8" height="178" rx="4" fill="#8a6a4f"/>
+      <path d="M284 374 q0 18 -16 18 q-12 0 -12 -12" stroke="#8a6a4f" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <!-- sheltered house -->
+      <rect x="150" y="282" width="92" height="92" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <polygon points="142,284 196,238 250,284" fill="#c96f4a"/>
+      <rect x="183" y="330" width="26" height="44" rx="2" fill="#3e7c59"/>
+      <circle cx="204" cy="352" r="2" fill="#f2cf7a"/>
+      <rect x="162" y="300" width="22" height="20" rx="2" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="214" y="300" width="22" height="20" rx="2" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <!-- sheltered car -->
+      <path d="M312 344 q6 -20 26 -20 h44 q20 0 26 20 z" fill="#5e9a78"/>
+      <rect x="300" y="342" width="120" height="26" rx="12" fill="#3e7c59"/>
+      <rect x="326" y="330" width="26" height="12" rx="3" fill="#cfe3ec"/>
+      <rect x="360" y="330" width="26" height="12" rx="3" fill="#cfe3ec"/>
+      <circle cx="328" cy="370" r="11" fill="#33393b"/>
+      <circle cx="328" cy="370" r="4.5" fill="#b9b1a3"/>
+      <circle cx="394" cy="370" r="11" fill="#33393b"/>
+      <circle cx="394" cy="370" r="4.5" fill="#b9b1a3"/>
+      <!-- sheltered heart -->
+      <path d="M280 268 c10 -14 30 -10 30 4 c0 12 -16 22 -30 30 c-14 -8 -30 -18 -30 -30 c0 -14 20 -18 30 -4" fill="#d9663f"/>
+      <path d="M268 268 q4 -6 10 -6" stroke="#fbe9e1" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- shrubs -->
+      <circle cx="132" cy="384" r="13" fill="#5e9a78"/>
+      <circle cx="448" cy="386" r="14" fill="#5e9a78"/>
+      <circle cx="468" cy="390" r="10" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Insurance fails quietly. Nothing looks wrong until the day you file a claim — and by then the gap is unfixable. An annual review catches the drift while it's still free to correct (figures below are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="18" width="18" height="12" rx="1.5" fill="#b9b1a3"/>
+          <polygon points="4,18 15,9 26,18" fill="#3e7c59"/>
+          <path d="M26 26 v-9 m0 0 l-4 4 m4 -4 l4 4" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Rebuild costs drift up</h3>
+        <p>Construction and material costs rise every year while your coverage limit sits where you set it. The shortfall only shows itself at claim time — when it's too late to add coverage.</p>
+        <span class="cost">Surfaces only at claim time</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 14 l8 -8 h8 v8 l-8 8 z" fill="#e0a93d" transform="rotate(8 14 14)"/>
+          <circle cx="19" cy="9" r="2" fill="#fffdf8"/>
+          <path d="M12 30 q6 -2 10 -6 m0 0 l-5 0 m5 0 l0 5" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The loyalty tax</h3>
+        <p>Renewal premiums tend to creep up year after year for customers who never shop around. Comparison quotes once a year are how you find out what the market actually charges.</p>
+        <span class="cost">$300 – $900/yr overpaid</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="14" r="5" fill="#3e7c59"/>
+          <path d="M5 29 q1 -8 8 -8 q7 0 8 8 z" fill="#5e9a78"/>
+          <circle cx="26" cy="12" r="4" fill="#e0a93d"/>
+          <path d="M21 27 q0.5 -6 5 -6 q4.5 0 5 6 z" fill="#d98e3b"/>
+        </svg></div>
+        <h3>Life changes outdate policies</h3>
+        <p>Marriage, a new baby, a renovation, a teen driver, a home business — each one changes what you need covered, and none of them notifies your insurer for you.</p>
+        <span class="cost">Silent coverage gaps</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="5" width="20" height="26" rx="2.5" fill="#fffdf8" stroke="#6b7376" stroke-width="2"/>
+          <path d="M12 11 h12 M12 16 h12 M12 21 h7" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 25 c2 -3 6 -2 6 1 c0 2.5 -3.5 4.5 -6 6 c-2.5 -1.5 -6 -3.5 -6 -6 c0 -3 4 -4 6 -1" fill="#d9663f"/>
+        </svg></div>
+        <h3>Beneficiaries go stale</h3>
+        <p>Life insurance pays whoever is named on the form — not who you'd pick today. Ex-spouses and deceased relatives stay listed until you change them. Two minutes to check, devastating to get wrong.</p>
+        <span class="cost">Costs $0 to fix today</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 18 Q18 4 31 18 Q27.5 15 24 18 Q21 15 18 18 Q15 15 12 18 Q8.5 15 5 18 Z" fill="#d9663f"/>
+          <line x1="18" y1="18" x2="18" y2="29" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M18 29 q0 3 -3 3" stroke="#8a6a4f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Gaps between policies</h3>
+        <p>Auto and home liability limits each stop somewhere. An umbrella policy is the layer that spans above both — and an annual review is when most people first realize they've grown into needing one.</p>
+        <span class="cost">Liability above your limits</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW INVOLVED / QUIZ ============ -->
+  <section id="scope">
+    <h2>How involved should <em>your</em> review be?</h2>
+    <p class="sub">Some years a quick once-over is plenty; other years deserve a real sit-down. Answer three questions to size this year's review:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="changes">
+        <div class="q-label">1. This year, you…</div>
+        <div class="pills">
+          <button class="pill" data-v="none">Had no big changes</button>
+          <button class="pill" data-v="life">Moved, renovated, married, new kid, or new car</button>
+          <button class="pill" data-v="assets">Started a business or bought big assets</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="shopped">
+        <div class="q-label">2. You last comparison-shopped your rates…</div>
+        <div class="pills">
+          <button class="pill" data-v="recent">Within 2 years</button>
+          <button class="pill" data-v="while">3–5 years ago</button>
+          <button class="pill" data-v="never">Can't remember</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="policies">
+        <div class="q-label">3. Policies you hold:</div>
+        <div class="pills">
+          <button class="pill" data-v="one">Just auto or renters</button>
+          <button class="pill" data-v="two">Auto + home</button>
+          <button class="pill" data-v="three">Auto + home + life</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="anchor-note">📌 <strong>Make it stick:</strong> anchor your review to a date you can't forget — your renewal month, tax season (the paperwork's already out), or your birthday. A yearly task with no anchor is a task that quietly stops happening.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST OF SKIPPING ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The review itself costs you an hour or two and zero dollars. Here's what skipping it tends to cost instead (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🗓️ The annual review itself</span><span>1–2 hours, $0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💸 Loyalty tax from never shopping</span><span>$300–900 every year</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:18%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏚️ Underinsured major claim (rebuild shortfall)</span><span>$10,000–100,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">And the quietest one isn't on the chart: <strong>outdated beneficiaries</strong>. Updating them today costs nothing and takes minutes. Discovered after a death, it's unfixable — the money goes where the old form says, not where you'd want it to. That asymmetry is the whole argument for a yearly look.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to run your review</h2>
+    <p class="sub">Set aside an evening, pull the paperwork, and work through the checklist — your progress saves automatically, so you can spread it over a few days if quotes take time to come back.</p>
+
+    <div class="safety">
+      <h3>⚠️ Two rules before you change anything</h3>
+      <ul>
+        <li><strong>Never cancel a policy until its replacement is ACTIVE</strong> — confirmed in writing, with the effective date in hand. Even a one-day gap in coverage can be expensive and can raise your future rates.</li>
+        <li><strong>Record a quick video walkthrough of your home</strong> while you're at it — narrate as you pan each room, open closets, film serial numbers on big-ticket items. Ten minutes of footage is enormous leverage at claim time, when you'd otherwise be reconstructing your belongings from memory.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🗂️ What to gather first</h3>
+    <div class="tools">
+      <span class="tool-chip">Declarations page for every policy</span>
+      <span class="tool-chip">Mortgage or lease documents</span>
+      <span class="tool-chip">Vehicle info (year, mileage, VIN)</span>
+      <span class="tool-chip">Current beneficiary list</span>
+      <span class="tool-chip">Last year's premium amounts</span>
+      <span class="tool-chip">Notes on this year's changes</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three ideas worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the coverage stack: auto and home liability as two base blocks, with an umbrella policy spanning above both as an extra layer">
+          <rect x="14" y="156" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <rect x="34" y="96" width="98" height="60" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="83" y="122" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">Auto</text>
+          <text x="83" y="140" font-size="11" fill="#6b7376" text-anchor="middle">liability limit</text>
+          <rect x="148" y="96" width="98" height="60" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="197" y="122" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">Home</text>
+          <text x="197" y="140" font-size="11" fill="#6b7376" text-anchor="middle">liability limit</text>
+          <path d="M34 84 Q140 18 246 84 Q219.5 70 193 84 Q166.5 70 140 84 Q113.5 70 87 84 Q60.5 70 34 84 Z" fill="#d9663f"/>
+          <text x="140" y="60" font-size="13" fill="#fffdf8" font-weight="700" text-anchor="middle">Umbrella</text>
+          <line x1="40" y1="88" x2="40" y2="94" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <line x1="240" y1="88" x2="240" y2="94" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <text x="140" y="174" font-size="11" fill="#6b7376" text-anchor="middle">one extra layer spans above both policies</text>
+        </svg>
+        <h4>The coverage stack</h4>
+        <p>Auto and home liability each stop at their limit. An umbrella policy sits above both, adding one shared layer of protection where they run out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a declarations page showing where the coverage limits, deductible, and premium are listed on the document">
+          <rect x="96" y="12" width="116" height="156" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="106" y="22" width="62" height="9" rx="4.5" fill="#3e7c59"/>
+          <rect x="106" y="44" width="96" height="14" rx="4" fill="#e3efe8"/>
+          <rect x="106" y="62" width="96" height="14" rx="4" fill="#e3efe8"/>
+          <rect x="106" y="88" width="96" height="14" rx="4" fill="#faf0da"/>
+          <rect x="106" y="114" width="96" height="14" rx="4" fill="#fbe9e1"/>
+          <rect x="106" y="140" width="58" height="8" rx="4" fill="#e9e2d8"/>
+          <rect x="106" y="153" width="44" height="8" rx="4" fill="#e9e2d8"/>
+          <line x1="92" y1="55" x2="44" y2="55" stroke="#3e7c59" stroke-width="2"/>
+          <text x="10" y="50" font-size="12" fill="#2c5a40" font-weight="700">Limits</text>
+          <text x="10" y="63" font-size="10.5" fill="#6b7376">what's covered</text>
+          <line x1="92" y1="95" x2="44" y2="95" stroke="#e0a93d" stroke-width="2"/>
+          <text x="10" y="91" font-size="12" fill="#9a7117" font-weight="700">Deductible</text>
+          <text x="10" y="104" font-size="10.5" fill="#6b7376">you pay first</text>
+          <line x1="92" y1="121" x2="44" y2="121" stroke="#d9663f" stroke-width="2"/>
+          <text x="10" y="117" font-size="12" fill="#d9663f" font-weight="700">Premium</text>
+          <text x="10" y="130" font-size="10.5" fill="#6b7376">what it costs</text>
+          <text x="222" y="92" font-size="10.5" fill="#6b7376" transform="rotate(90 222 92)" text-anchor="middle">one page per policy</text>
+        </svg>
+        <h4>Declarations-page anatomy</h4>
+        <p>One page summarizes each policy: coverage limits, your deductible, and the premium. It's the only document you need for 90% of the review.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Line chart showing a flat coverage line while the premium line rises year over year — the loyalty-tax drift">
+          <line x1="40" y1="150" x2="256" y2="150" stroke="#d8cfbe" stroke-width="2"/>
+          <line x1="40" y1="150" x2="40" y2="20" stroke="#d8cfbe" stroke-width="2"/>
+          <line x1="40" y1="96" x2="252" y2="96" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <path d="M40 124 L93 116 L146 102 L199 80 L252 52" stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#d9663f">
+            <circle cx="93" cy="116" r="4"/>
+            <circle cx="146" cy="102" r="4"/>
+            <circle cx="199" cy="80" r="4"/>
+            <circle cx="252" cy="52" r="4"/>
+          </g>
+          <path d="M236 78 l10 8 M246 86 l-9 2 M246 86 l1 -9" stroke="#6b7376" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <text x="174" y="36" font-size="12" fill="#d9663f" font-weight="700">premium creeps up</text>
+          <text x="120" y="88" font-size="12" fill="#2c5a40" font-weight="700">coverage stays flat</text>
+          <text x="60" y="166" font-size="11" fill="#6b7376">yr 1</text>
+          <text x="140" y="166" font-size="11" fill="#6b7376">yr 3</text>
+          <text x="232" y="166" font-size="11" fill="#6b7376">yr 5</text>
+        </svg>
+        <h4>The loyalty-tax drift</h4>
+        <p>Stay put without shopping and the lines diverge: you pay more each year for the same flat coverage. One round of quotes resets the gap.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Review progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Review complete! Your coverage matches your life again. Same time next year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO TALK TO A PRO ============ -->
+  <section id="pro">
+    <h2>When to talk to a professional</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>An independent agent can compare across carriers</strong> in one conversation — unlike a captive agent, who represents a single company. For the shopping step, that's a real shortcut.</li>
+        <li><strong>After a major life event:</strong> marriage, divorce, a new child, a death in the family, retirement, or an inheritance. These change both what you need covered and who should benefit.</li>
+        <li><strong>If you run a business or own significant assets.</strong> Home-based businesses, rental properties, and growing net worth all raise questions a standard personal policy wasn't written to answer.</li>
+        <li><strong>If anything in your policy reads like a foreign language.</strong> Exclusions, endorsements, sub-limits — a licensed agent explains them for free. Never skip coverage just because you didn't understand the clause.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What's the difference between actual cash value and replacement cost?</summary>
+      <p>Replacement cost pays what it takes to buy the item new today; actual cash value pays that amount minus depreciation. For a five-year-old couch or roof, the difference can be most of the check. Your declarations page says which one each policy uses — it's one of the most important lines to find during your review.</p>
+    </details>
+    <details>
+      <summary>What exactly is an umbrella policy?</summary>
+      <p>Extra liability coverage that kicks in after your auto or home liability limits are exhausted — one policy spanning above both. It exists for the rare-but-huge events: a serious at-fault accident or an injury lawsuit. Typically sold in $1&nbsp;million increments and generally inexpensive relative to the coverage, because it's rarely triggered.</p>
+    </details>
+    <details>
+      <summary>Will shopping for quotes hurt my credit score?</summary>
+      <p>No. Insurance quotes use a "soft pull" of your credit, which doesn't affect your score no matter how many quotes you collect. This is different from applying for a loan or credit card. Shop as widely as you like.</p>
+    </details>
+    <details>
+      <summary>How much can switching actually save?</summary>
+      <p>It varies a lot, but people who haven't shopped in several years commonly find differences of a few hundred dollars per year on the same coverage — that's the "loyalty tax" in action. Even if you don't switch, a competing quote is useful leverage when you call your current carrier. Just compare like for like: same limits, same deductibles.</p>
+    </details>
+    <details>
+      <summary>Is renters insurance really worth it?</summary>
+      <p>Usually, yes — it's typically among the cheapest policies there is (often $15–30/month, U.S. typical), and it covers two things people forget: your belongings (your landlord's policy covers the building, not your stuff) and personal liability if someone is hurt in your home. Worth a fresh look at your annual review even if you skipped it when you moved in.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The yearly task with no natural reminder — give it one.</h2>
+        <p>Gutters announce themselves by overflowing. Insurance never does — a year slips by and nobody notices. Log this review in Upkeep Ledger and it'll resurface exactly when it's due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=review-insurance&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=review-insurance&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your numbers will vary.</p>
+    <p>General information, not insurance or financial advice — talk to a licensed agent about your situation.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { changes: null, shopped: null, policies: null };
+
+  var SCOPES = {
+    quick: {
+      label: "Quick 30-minute check",
+      body: "A focused once-over is enough this year. Confirm nothing drifted, then get on with your life:"
+    },
+    standard: {
+      label: "Standard 1–2 hour review",
+      body: "Worth a proper sit-down this year — pull every declarations page and work the full checklist below:"
+    },
+    full: {
+      label: "Full review + agent conversation",
+      body: "This is the year to go deep: run the whole checklist below, then book time with a licensed agent (an independent one can compare across carriers):"
+    }
+  };
+
+  function computeScope(s) {
+    var score = 0;
+    var reasons = [];
+
+    if (s.changes === "none") {
+      reasons.push("No big changes means your existing coverage probably still fits — you're mostly confirming, not redesigning.");
+    } else if (s.changes === "life") {
+      score += 2;
+      reasons.push("Moves, renovations, marriages, kids, and new cars all change what needs covering — your policies don't know about any of it yet.");
+    } else if (s.changes === "assets") {
+      score += 3;
+      reasons.push("A business or major assets raise questions personal policies weren't written to answer — that's exactly what an agent conversation is for.");
+    }
+
+    if (s.shopped === "recent") {
+      reasons.push("You've shopped rates recently, so the loyalty tax hasn't had time to build — a quick price sanity-check is plenty.");
+    } else if (s.shopped === "while") {
+      score += 1;
+      reasons.push("After 3–5 years without comparison quotes, premium drift is likely — get fresh quotes on your biggest premium.");
+    } else if (s.shopped === "never") {
+      score += 2;
+      reasons.push("If you can't remember your last comparison shop, assume you're paying the loyalty tax — quoting 2–3 carriers is the highest-value hour of this review.");
+    }
+
+    if (s.policies === "one") {
+      reasons.push("With a single policy there's less paperwork to cross-check, which keeps the review short.");
+    } else if (s.policies === "two") {
+      score += 1;
+      reasons.push("With auto + home, also check the seams: bundling discounts, and whether your liability limits line up.");
+    } else if (s.policies === "three") {
+      score += 2;
+      reasons.push("Auto + home + life means more pages to review, beneficiaries to verify, and a real case for pricing an umbrella layer on top.");
+    }
+
+    var key;
+    if (s.changes === "assets" || score >= 4) key = "full";
+    else if (score >= 2) key = "standard";
+    else key = "quick";
+
+    return { key: key, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.changes || !quizState.shopped || !quizState.policies) return;
+    var r = computeScope(quizState);
+    var scope = SCOPES[r.key];
+    document.getElementById("resultFreq").textContent = "This year: " + scope.label;
+    document.getElementById("resultBody").textContent = scope.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Gather", text: "Pull the declarations page for every policy you hold", note: "Home or renters, auto, life, umbrella. Can't find one? Your carrier's site or app has it under documents." },
+    { phase: "Gather", text: "Note each policy's renewal date and premium", note: "Compare against last year's premium — a quiet jump with no claims is your cue to shop." },
+    { phase: "Check", text: "Check coverage limits against today's rebuild and replacement reality", note: "Renovations, additions, and rising construction costs all push the real number up while the policy stands still." },
+    { phase: "Check", text: "Confirm your deductibles still match your savings", note: "A high deductible only saves money if you could actually pay it tomorrow without flinching." },
+    { phase: "Check", text: "Verify every beneficiary is current", note: "Life insurance pays the name on the form. Check after any marriage, divorce, birth, or death in the family." },
+    { phase: "Check", text: "List new risks since last year", note: "Renovation? Home business? Teen driver? New valuables? Each one is worth a conversation with your carrier." },
+    { phase: "Shop", text: "Get quotes from 2–3 carriers on your biggest premium", note: "Quote identical limits and deductibles so it's apples to apples. Soft credit pulls — your score is safe." },
+    { phase: "Shop", text: "Ask about bundling", note: "Carriers commonly discount when auto + home live together. Ask both your current carrier and the ones quoting you." },
+    { phase: "Shop", text: "Price an umbrella policy if you have assets to protect", note: "The layer that spans above auto and home liability — usually cheap relative to what it covers." },
+    { phase: "Update", text: "Record a video walkthrough of your home", note: "Pan every room, open closets and drawers, narrate, catch serial numbers. Ten minutes now, enormous value at claim time." },
+    { phase: "Update", text: "File the new declarations pages where you can find them", note: "One folder — paper or cloud — plus the walkthrough video. Future-you, mid-claim, says thanks." },
+    { phase: "Update", text: "Set next year's review date", note: "Anchor it to something memorable: renewal month, tax season, your birthday. Calendar it now, not later." },
+    { phase: "Update", text: "Log the review as done", note: "A dated record of what you reviewed and changed makes next year's pass twice as fast." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:review-insurance:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

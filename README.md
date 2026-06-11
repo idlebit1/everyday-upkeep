@@ -8,7 +8,7 @@ The site doubles as a subtle marketing funnel for [Upkeep Ledger](https://upkeep
 
 - `index.html` — home page: searchable, filterable catalog of upkeep tasks grouped by category
 - `gutters.html` — Gutter Upkeep guide (the reference implementation)
-- One completed guide per category: `gutters.html` (home), `sharpen-knives.html` (kitchen), `replace-toothbrush.html` (personal), `oil-change.html` (vehicle), `wash-bedding.html` (wardrobe), `clean-bike-chain.html` (equipment), `sharpen-mower-blade.html` (tools), `clean-grill.html` (yard), `trim-pet-nails.html` (pets), `backup-data.html` (other)
+- Two completed guides per category — home: `gutters.html`, `replace-hvac-filter.html`; kitchen: `sharpen-knives.html`, `clean-dishwasher-filter.html`; personal: `replace-toothbrush.html`, `dentist-visit.html`; vehicle: `oil-change.html`, `check-tire-pressure.html`; wardrobe: `wash-bedding.html`, `replace-running-shoes.html`; equipment: `clean-bike-chain.html`, `bike-tune-up.html`; tools: `sharpen-mower-blade.html`, `service-snow-blower.html`; yard: `clean-grill.html`, `fertilize-lawn.html`; pets: `trim-pet-nails.html`, `flea-tick-treatment.html`; other: `backup-data.html`, `review-insurance.html`
 - `_template.html` — skeleton for new guides, with the shared theme and TODO markers
 - `data/upkeepPresets.ts` — verbatim copy of Upkeep Ledger's preset library (source of truth: `~/code/upkeepledger/backend/src/data/upkeepPresets.ts`)
 

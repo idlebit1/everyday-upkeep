@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Tire Pressure — Everyday Upkeep</title>
+<meta name="description" content="How often to check your tire pressure, why a monthly 5-minute check saves fuel and tires, and a step-by-step guide to doing it right.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Monthly</span>
+      <h1>Check Tire Pressure</h1>
+      <p class="lede">Four palm-sized patches of rubber are all that connect your car to the road, and they work right only at the right pressure. Tires quietly lose air every month whether you drive or not. Here's how often to check, why five minutes matters — and exactly how to do it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Check <em>every month</em></span>
+        <span class="chip">⏱️ <em>5 minutes</em> for all four</span>
+        <span class="chip">🧰 A <em>$10 gauge</em> is all you need</span>
+        <span class="chip">💸 Low tires waste <em>$50–100/yr</em> in fuel</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a car tire with a pressure gauge pressed onto its valve stem, next to a small portable air pump with its hose connected, on a sunny day">
+      <ellipse cx="280" cy="396" rx="248" ry="24" fill="#efe7d8"/>
+      <circle cx="80" cy="68" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="412" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <!-- tire -->
+      <circle cx="330" cy="266" r="124" fill="#3a4144"/>
+      <circle cx="330" cy="266" r="122" fill="none" stroke="#2c3234" stroke-width="6" stroke-dasharray="14 12"/>
+      <circle cx="330" cy="266" r="78" fill="#dce8ee"/>
+      <circle cx="330" cy="266" r="78" fill="none" stroke="#b9b1a3" stroke-width="4"/>
+      <g fill="#b9b1a3">
+        <circle cx="330" cy="220" r="9"/>
+        <circle cx="374" cy="252" r="9"/>
+        <circle cx="357" cy="304" r="9"/>
+        <circle cx="303" cy="304" r="9"/>
+        <circle cx="286" cy="252" r="9"/>
+      </g>
+      <circle cx="330" cy="266" r="20" fill="#7fb3c8"/>
+      <circle cx="330" cy="266" r="8" fill="#fffdf8"/>
+      <!-- valve stem with gauge -->
+      <rect x="200" y="240" width="22" height="10" rx="4" fill="#8a6a4f" transform="rotate(-18 211 245)"/>
+      <rect x="148" y="222" width="56" height="22" rx="8" fill="#c96f4a" transform="rotate(-18 176 233)"/>
+      <circle cx="124" cy="222" r="34" fill="#e0a93d"/>
+      <circle cx="124" cy="222" r="25" fill="#fffdf8"/>
+      <path d="M124 222 L136 206" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="124" cy="222" r="4" fill="#33393b"/>
+      <g stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round">
+        <line x1="124" y1="201" x2="124" y2="206"/>
+        <line x1="143" y1="212" x2="139" y2="215"/>
+        <line x1="105" y1="212" x2="109" y2="215"/>
+      </g>
+      <!-- air pump -->
+      <rect x="48" y="318" width="96" height="60" rx="12" fill="#2c5a40"/>
+      <rect x="60" y="330" width="44" height="22" rx="5" fill="#dce8ee"/>
+      <text x="82" y="346" font-size="13" font-weight="700" fill="#2c5a40" text-anchor="middle">35</text>
+      <circle cx="124" cy="341" r="8" fill="#e0a93d"/>
+      <rect x="62" y="306" width="68" height="12" rx="6" fill="#5e9a78"/>
+      <path d="M144 348 q60 28 116 -28 q24 -24 22 -56" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- escaping-air sparkles -->
+      <g fill="#7fb3c8">
+        <circle cx="216" cy="206" r="3.5"/>
+        <circle cx="228" cy="194" r="3"/>
+        <circle cx="240" cy="206" r="2.5"/>
+      </g>
+      <!-- shrubs -->
+      <circle cx="476" cy="376" r="15" fill="#5e9a78"/>
+      <circle cx="500" cy="382" r="11" fill="#3e7c59"/>
+      <ellipse cx="60" cy="392" rx="6" ry="3.5" fill="#c96f4a" transform="rotate(18 60 392)"/>
+      <ellipse cx="448" cy="398" rx="6" ry="3.5" fill="#d98e3b" transform="rotate(-14 448 398)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Underinflation is invisible — a tire can be 25% low and look perfectly normal. But it's quietly costing you money and grip the whole time (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="19" r="11" fill="#3a4144"/>
+          <circle cx="16" cy="19" r="5.5" fill="#dce8ee"/>
+          <polygon points="27,8 31,12 26,13 30,17 24,16 26,21 21,17 22,12 25,13" fill="#d9663f"/>
+        </svg></div>
+        <h3>Blowouts</h3>
+        <p>Underinflation is the #1 tire-related factor in crashes. A soft tire flexes, overheats, and can fail outright at highway speed — exactly when you least want it to.</p>
+        <span class="cost">Tow + tire: $300 – $800</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 24 q12 -14 24 0" stroke="#3a4144" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M6 24 q3 -4 6 -6 M30 24 q-3 -4 -6 -6" stroke="#d9663f" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <rect x="5" y="28" width="26" height="3" rx="1.5" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>Shoulder wear</h3>
+        <p>A low tire rides on its outer edges instead of its full face, eating the shoulders early. That can cut tire life by 25% or more — replacing a set years ahead of schedule.</p>
+        <span class="cost">$600 – $1,200 per set</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="8" width="15" height="22" rx="2.5" fill="#3e7c59"/>
+          <rect x="11" y="12" width="9" height="6" rx="1.5" fill="#dce8ee"/>
+          <path d="M23 14 h4 a2 2 0 0 1 2 2 v10 a2 2 0 0 0 4 0 v-8 l-3 -3" stroke="#8a6a4f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <rect x="6" y="30" width="19" height="3" rx="1.5" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>Wasted fuel</h3>
+        <p>Soft tires drag. Fuel economy drops about 0.2% for every 1 PSI a tire is low — and most cars run several PSI low on all four. It adds up to 2–3% of every tank.</p>
+        <span class="cost">$50 – $100 / year</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="13" width="20" height="9" rx="4" fill="#7fb3c8"/>
+          <circle cx="9" cy="23" r="3.5" fill="#3a4144"/>
+          <circle cx="19" cy="23" r="3.5" fill="#3a4144"/>
+          <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round">
+            <line x1="27" y1="14" x2="33" y2="14"/>
+            <line x1="28" y1="18" x2="32" y2="18"/>
+            <line x1="29" y1="22" x2="31" y2="22"/>
+          </g>
+        </svg></div>
+        <h3>Longer stops, mushy handling</h3>
+        <p>An underinflated tire squirms instead of gripping — braking distances stretch and steering goes vague, especially in rain. Pressure is the cheapest handling upgrade there is.</p>
+        <span class="cost">Free fix, real margin</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="14" y="5" width="7" height="16" rx="3.5" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <circle cx="17.5" cy="25" r="6.5" fill="#7fb3c8"/>
+          <rect x="15.8" y="12" width="3.4" height="13" fill="#d9663f"/>
+          <path d="M27 10 l3 5 M27 18 l3 5" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Air leaves on its own</h3>
+        <p>Tires naturally seep about 1 PSI per month through the rubber itself — plus another 1 PSI for every 10°F the temperature drops. A tire set in summer is seriously low by November.</p>
+        <span class="cost">~1 PSI lost / month</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check?</h2>
+    <p class="sub">"Once a month" is the rule of thumb — and it's a good one. But your climate, your driving, and what your dashboard has been telling you can shift it. Answer three questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">1. What's your climate like?</div>
+        <div class="pills">
+          <button class="pill" data-v="swings">Big seasonal temperature swings</button>
+          <button class="pill" data-v="mild">Mild year-round</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="driving">
+        <div class="q-label">2. How much do you drive?</div>
+        <div class="pills">
+          <button class="pill" data-v="daily">Daily commuter</button>
+          <button class="pill" data-v="weekly">A few times a week</button>
+          <button class="pill" data-v="occasional">Occasionally + road trips</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="tpms">
+        <div class="q-label">3. How often does your TPMS warning light come on?</div>
+        <div class="pills">
+          <button class="pill" data-v="often">Every cold snap</button>
+          <button class="pill" data-v="rarely">Rarely or never</button>
+          <button class="pill" data-v="what">What's TPMS?</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is about the cheapest insurance in all of car ownership: a one-time $10 gauge, five minutes a month, and air that's free at many stations. Here's what it's up against (typical U.S. figures):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10</div><div class="l">a decent gauge, once</div></div>
+        <div class="calc-stat"><div class="v">5 min</div><div class="l">per month, all four tires + spare glance</div></div>
+        <div class="calc-stat"><div class="v">$0–2</div><div class="l">air — free at many stations, ~$1.50 elsewhere</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 10 years of monthly checks (gauge + occasional paid air)</span><span>~$50</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:5%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⛽ 10 years of driving 2–3% low on fuel</span><span>$500 – $1,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛞 One set of tires replaced early from shoulder wear</span><span>$600 – $1,200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">A highway blowout adds a <strong>$300–800</strong> tow-plus-tire bill on top — and that's the <em>good</em> outcome of a tire failing at 70 mph. Ten years of monthly checks costs about <strong>$50</strong>. It's not close.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check your tire pressure</h2>
+    <p class="sub">Five minutes, no jack, no grease. Work through the checklist — your progress saves automatically, so you can pick it back up if you get interrupted.</p>
+
+    <div class="safety">
+      <h3>🌡️ Three rules that make or break the reading</h3>
+      <ul>
+        <li><strong>Check cold.</strong> Measure before you drive, or after the car has sat 3+ hours. Driving heats the air inside and inflates the reading by several PSI.</li>
+        <li><strong>Use the door-jamb placard number, NOT the sidewall.</strong> The placard on the driver's door jamb is what your car needs. The "MAX PSI" molded into the tire is the tire's ceiling — not a target.</li>
+        <li><strong>Don't forget the spare.</strong> A flat spare is just trunk ballast. Compact spares often need 60 PSI — check it a few times a year.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Tire pressure gauge (digital or pencil, ~$10)</span>
+      <span class="tool-chip">Portable inflator or gas-station air</span>
+      <span class="tool-chip">Tread depth gauge or a penny (optional)</span>
+      <span class="tool-chip">Phone or notebook to log readings</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing the door-jamb placard, marked correct at 35 PSI, with the tire sidewall maximum of 51 PSI, marked wrong as a target">
+          <rect x="18" y="22" width="110" height="120" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <rect x="32" y="38" width="82" height="52" rx="5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="73" y="56" font-size="11" fill="#6b7376" text-anchor="middle">TIRE INFO</text>
+          <text x="73" y="76" font-size="17" font-weight="800" fill="#2c5a40" text-anchor="middle">35 PSI</text>
+          <circle cx="73" cy="112" r="13" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M67 112 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="73" y="160" font-size="12" font-weight="700" fill="#2c5a40" text-anchor="middle">door jamb</text>
+          <path d="M250 142 a72 72 0 0 1 -98 -96" fill="none" stroke="#3a4144" stroke-width="22"/>
+          <text x="206" y="92" font-size="12" font-weight="700" fill="#6b7376" transform="rotate(40 206 92)">MAX 51 PSI</text>
+          <circle cx="178" cy="142" r="13" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <path d="M173 137 l10 10 M183 137 l-10 10" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="212" y="170" font-size="12" font-weight="700" fill="#d9663f" text-anchor="middle">sidewall = ceiling</text>
+        </svg>
+        <h4>Placard, not sidewall</h4>
+        <p>The sticker in the driver's door jamb lists the pressure your car was engineered for — often different front vs. rear. The number on the tire is a maximum, not a goal.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a pressure gauge pressed straight onto the valve stem so it seals, with a tilted gauge crossed out because it leaks air">
+          <path d="M14 150 a150 150 0 0 1 70 -120" fill="none" stroke="#3a4144" stroke-width="20"/>
+          <rect x="84" y="74" width="26" height="12" rx="4" fill="#8a6a4f" transform="rotate(28 97 80)"/>
+          <rect x="103" y="84" width="52" height="20" rx="7" fill="#c96f4a" transform="rotate(28 129 94)"/>
+          <circle cx="172" cy="118" r="26" fill="#e0a93d"/>
+          <circle cx="172" cy="118" r="18" fill="#fffdf8"/>
+          <path d="M172 118 L181 106" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="100" y1="64" x2="150" y2="91" stroke="#3e7c59" stroke-width="3" stroke-dasharray="5 4"/>
+          <polygon points="150,91 138,90 145,80" fill="#3e7c59"/>
+          <text x="108" y="52" font-size="12" font-weight="700" fill="#2c5a40">press straight on</text>
+          <g transform="translate(196 28) rotate(24)">
+            <rect x="0" y="8" width="34" height="13" rx="5" fill="#b9b1a3"/>
+            <circle cx="46" cy="14" r="13" fill="#d8cfbe"/>
+          </g>
+          <g fill="#7fb3c8">
+            <circle cx="196" cy="58" r="3"/>
+            <circle cx="206" cy="50" r="2.5"/>
+            <circle cx="214" cy="60" r="2"/>
+          </g>
+          <circle cx="226" cy="42" r="22" fill="none" stroke="#d9663f" stroke-width="3"/>
+          <line x1="211" y1="58" x2="241" y2="26" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="200" y="86" font-size="11" fill="#d9663f" font-weight="700">tilted = hiss = wrong</text>
+        </svg>
+        <h4>Press straight, seal fast</h4>
+        <p>Push the gauge squarely onto the valve stem in one firm motion until the hiss stops. A brief psst is fine; an ongoing hiss means it's crooked — re-seat and read again.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the penny test: a penny inserted upside down into a tire tread groove, where seeing the top of Lincoln's head means the tread is worn out">
+          <g fill="#3a4144">
+            <rect x="24" y="100" width="34" height="56" rx="6"/>
+            <rect x="68" y="100" width="34" height="56" rx="6"/>
+            <rect x="112" y="100" width="34" height="56" rx="6"/>
+            <rect x="156" y="100" width="34" height="56" rx="6"/>
+            <rect x="200" y="100" width="34" height="56" rx="6"/>
+          </g>
+          <rect x="14" y="152" width="230" height="10" rx="4" fill="#2c3234"/>
+          <circle cx="107" cy="92" r="30" fill="#c9a06b" stroke="#8a6a4f" stroke-width="2.5"/>
+          <ellipse cx="107" cy="96" rx="8" ry="12" fill="#8a6a4f"/>
+          <circle cx="107" cy="82" r="6.5" fill="#8a6a4f"/>
+          <line x1="104" y1="118" x2="110" y2="118" stroke="#8a6a4f" stroke-width="2"/>
+          <line x1="250" y1="100" x2="250" y2="124" stroke="#6b7376" stroke-width="2"/>
+          <line x1="245" y1="100" x2="255" y2="100" stroke="#6b7376" stroke-width="2"/>
+          <line x1="245" y1="124" x2="255" y2="124" stroke="#6b7376" stroke-width="2"/>
+          <text x="248" y="92" font-size="11" fill="#6b7376" font-weight="700" text-anchor="middle">2/32"</text>
+          <text x="107" y="38" font-size="12" font-weight="700" fill="#2c5a40" text-anchor="middle">head down, into the groove</text>
+          <text x="107" y="174" font-size="11" fill="#6b7376" text-anchor="middle">see all of the head? tread's done</text>
+        </svg>
+        <h4>Bonus: the penny test</h4>
+        <p>While you're down there, stick a penny head-down in a tread groove. If you can see all of Lincoln's head, you're at ~2/32" — legally worn out and due for tires.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Check progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All four (five!) tires set. Better grip, better mileage — see you next month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO SEE A SHOP ============ -->
+  <section id="pro">
+    <h2>When to see a tire shop</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>One tire is repeatedly low</strong> while the others hold steady. That's a slow leak — usually a nail or screw in the tread, or a corroded valve stem. Patches typically run <strong>$20–$45</strong>, and many shops fix punctures free on tires they sold.</li>
+        <li><strong>Sidewall damage:</strong> bulges, bubbles, gouges, or cracking. Sidewalls can't be patched — a bulge is a structural failure waiting for a pothole.</li>
+        <li><strong>The TPMS light stays on after filling</strong> (or flashes at startup). A flashing light usually means a dead sensor battery or a system fault — a shop can read which sensor and why.</li>
+        <li><strong>Uneven wear patterns:</strong> one shoulder worn bald, feathering, or cupping. Pressure alone doesn't cause those — you likely need an alignment or rotation (typically <strong>$75–$200</strong>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>The sidewall says 51 PSI but my door jamb says 35. Which is right?</summary>
+      <p>The door jamb, always. The sidewall number is the maximum pressure the tire can safely hold — a ceiling set by the tire maker. The placard is the pressure your specific car was engineered to ride, brake, and wear best at. Filling to the sidewall max gives you a harsh ride, a smaller contact patch, and rapid center wear.</p>
+    </details>
+    <details>
+      <summary>Is nitrogen fill worth paying for?</summary>
+      <p>For everyday driving, mostly no. Nitrogen molecules do seep out slightly more slowly than plain air (which is already 78% nitrogen), but the difference is small — you still need to check monthly either way. If it's free with your tires, enjoy it; don't pay much for it, and never skip a top-up of regular air because you "have nitrogen."</p>
+    </details>
+    <details>
+      <summary>How accurate are gas station gauges?</summary>
+      <p>Treat them as rough. Public air-machine gauges get dropped, frozen, and abused, and they're commonly off by several PSI. Use the station's hose for air but your own $10 gauge for the reading — a decent digital gauge stays within about 1 PSI of true.</p>
+    </details>
+    <details>
+      <summary>Should I run different pressure in winter?</summary>
+      <p>Same placard number — but you'll need to add air to hold it. Pressure drops about 1 PSI per 10°F, so a tire set on a 90°F afternoon can be 5–6 PSI low on a 30°F morning. When the first real cold snap hits, expect all four tires (and the TPMS light) to ask for attention at once. Set them cold to the placard number and recheck after big temperature swings.</p>
+    </details>
+    <details>
+      <summary>Can I drive on a slightly low tire?</summary>
+      <p>A few PSI low to reach an air pump? Fine — drive gently and fill soon. But once the TPMS light is on, you're roughly 25% under, and that's real territory: more heat, less grip, longer stops. Visibly squatting or flat? Don't drive on it at all — even a short roll can destroy the sidewall and turn a $30 patch into a $200 tire.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Five minutes a month — if you remember the month.</h2>
+        <p>Tires lose air on a schedule whether you think about them or not. Upkeep Ledger remembers for you: log this check, and it'll nudge you when the next one comes due — alongside the oil change, the furnace filter, and everything else that runs on a cadence.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=check-tire-pressure&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=check-tire-pressure&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { climate: null, driving: null, tpms: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var freq = "monthly"; // monthly | biweekly | trips
+    var body;
+
+    // Driving pattern sets the baseline.
+    if (s.driving === "occasional") {
+      freq = "trips";
+      reasons.push("A parked car still loses ~1 PSI a month — tires can be meaningfully low by the time you finally need them, so check before every trip rather than trusting the calendar.");
+    } else if (s.driving === "daily") {
+      reasons.push("High mileage multiplies every cost of running low: more gallons burned at 2–3% worse economy, and faster shoulder wear on soft tires.");
+    } else {
+      reasons.push("Moderate mileage still means monthly checks — pressure loss is driven by time and temperature, not just miles.");
+    }
+
+    // Climate and TPMS history can tighten the cadence.
+    if (s.climate === "swings" && (s.tpms === "often" || s.driving === "daily")) {
+      if (freq === "monthly") freq = "biweekly";
+      reasons.push("Big temperature swings move pressure fast — about 1 PSI per 10°F. During spring and fall transitions, every-two-weeks keeps you ahead of the weather.");
+    } else if (s.climate === "swings") {
+      reasons.push("Your climate moves pressure ~1 PSI per 10°F, so the seasonal transitions are when monthly checks earn their keep.");
+    } else {
+      reasons.push("A mild climate means slow, steady seepage (~1 PSI/month) is your main enemy — a monthly rhythm covers it nicely.");
+    }
+
+    if (s.tpms === "often") {
+      reasons.push("A TPMS light every cold snap isn't a glitch — cold snaps drop all four tires at once. Checking before the light comes on means you're never driving 25% low.");
+    } else if (s.tpms === "rarely") {
+      reasons.push("Don't let a quiet TPMS lull you: it only warns at roughly 25% LOW — way past the point where you're wasting fuel and wearing shoulders.");
+    } else {
+      reasons.push("TPMS is the tire-pressure monitoring system — the horseshoe-with-an-exclamation-point dash light. Handy, but it only speaks up at ~25% low, so it's a smoke alarm, not a thermostat.");
+    }
+
+    reasons.push("Either way: when the first real fall cold snap hits, check all four — a 30°F drop costs about 3 PSI across the board.");
+
+    var freqWords = {
+      monthly: "Once a month",
+      biweekly: "Every two weeks",
+      trips: "Before every trip (and monthly at home)"
+    };
+    if (freq === "trips") {
+      body = "Check the morning before you load up, while the tires are <strong>cold</strong> — and give the spare a glance too. Why this schedule:";
+    } else if (freq === "biweekly") {
+      body = "Pick two recurring mornings a month — first and fifteenth works — and check <strong>cold</strong>, before driving. Why this schedule:";
+    } else {
+      body = "Pick a recurring morning — first Saturday of the month is popular — and check <strong>cold</strong>, before driving. Why this schedule:";
+    }
+
+    return { freq: freqWords[freq], body: body, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.climate || !quizState.driving || !quizState.tpms) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.freq;
+    document.getElementById("resultBody").innerHTML = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you start", text: "Make sure the tires are cold", note: "Before the day's first drive, or after 3+ hours parked. A warm tire reads several PSI high." },
+    { phase: "Before you start", text: "Find the placard PSI on the driver's door jamb", note: "Note both numbers — front and rear are often different. Ignore the MAX PSI on the tire sidewall." },
+    { phase: "Measure all four", text: "Unscrew the first valve cap and pocket it", note: "Caps roll. Pockets don't. Start at the same corner every time so you never lose track." },
+    { phase: "Measure all four", text: "Press the gauge straight onto the valve stem", note: "One firm, square push until the hissing stops. An ongoing hiss means it's crooked — re-seat it." },
+    { phase: "Measure all four", text: "Read and note the pressure, then repeat for all four tires", note: "Write the numbers down (or snap a photo) — the pattern over months is what reveals a slow leak." },
+    { phase: "Top up", text: "Inflate any low tire to the placard number", note: "Short bursts with the inflator, re-checking as you go. Cold placard number, not the sidewall max." },
+    { phase: "Top up", text: "Recheck after filling — bleed off any overshoot", note: "Press the pin in the valve stem briefly to release air, then measure again." },
+    { phase: "Top up", text: "Check the spare too", note: "Compact spares often want ~60 PSI — it's printed on the spare's sidewall or the placard. A flat spare helps no one." },
+    { phase: "Finish up", text: "Screw all valve caps back on", note: "They keep grit and water out of the valve core — a missing cap is a future slow leak." },
+    { phase: "Finish up", text: "If the TPMS light was on, give it a few miles to clear", note: "Most reset themselves after a short drive; some cars need a reset button or a menu step — check the manual." },
+    { phase: "Finish up", text: "Log today's readings and the date", note: "One tire dropping faster than its siblings month over month = nail. Catch it at $25, not at $200." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:check-tire-pressure:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

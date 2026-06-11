@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace Running Shoes — Everyday Upkeep</title>
+<meta name="description" content="When to replace your running shoes (every 300–500 miles), why worn midsole foam causes injuries, how to read the wear signs, and how to track it by miles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-long">How long</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Wardrobe · Every 400 miles</span>
+      <h1>Replace Running Shoes</h1>
+      <p class="lede">Running shoes don't wear out when they look worn out — they wear out when the midsole foam stops absorbing shock, usually around 300–500 miles. Here's how to know when your pair is done, how to read the wear signs, and how to track it by miles instead of guesswork.</p>
+      <div class="stat-chips">
+        <span class="chip">📏 Replace every <em>300–500 miles</em></span>
+        <span class="chip">🗓️ ≈ every <em>4–6 months</em> for many runners</span>
+        <span class="chip">👟 Typical pair: <em>$100–160</em></span>
+        <span class="chip">🦵 PT runs <em>$75–150</em> per session</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a flat-style green running shoe speeding along a road with motion lines trailing behind it and a mile counter above reading 400 miles">
+      <ellipse cx="290" cy="400" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="70" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="462" cy="68" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="424" cy="80" rx="28" ry="14" fill="#dce8ee"/>
+      <!-- road -->
+      <rect x="38" y="352" width="486" height="28" rx="14" fill="#b9b1a3"/>
+      <g stroke="#fffdf8" stroke-width="4" stroke-linecap="round">
+        <line x1="72" y1="366" x2="104" y2="366"/>
+        <line x1="140" y1="366" x2="172" y2="366"/>
+        <line x1="208" y1="366" x2="240" y2="366"/>
+        <line x1="276" y1="366" x2="308" y2="366"/>
+        <line x1="344" y1="366" x2="376" y2="366"/>
+        <line x1="412" y1="366" x2="444" y2="366"/>
+        <line x1="480" y1="366" x2="500" y2="366"/>
+      </g>
+      <!-- mile counter (odometer) -->
+      <rect x="318" y="112" width="170" height="58" rx="29" fill="#fffdf8" stroke="#e0a93d" stroke-width="3"/>
+      <rect x="334" y="124" width="28" height="34" rx="6" fill="#2c5a40"/>
+      <rect x="366" y="124" width="28" height="34" rx="6" fill="#2c5a40"/>
+      <rect x="398" y="124" width="28" height="34" rx="6" fill="#2c5a40"/>
+      <text x="348" y="149" font-size="22" font-weight="800" fill="#fffdf8" text-anchor="middle">4</text>
+      <text x="380" y="149" font-size="22" font-weight="800" fill="#fffdf8" text-anchor="middle">0</text>
+      <text x="412" y="149" font-size="22" font-weight="800" fill="#fffdf8" text-anchor="middle">0</text>
+      <text x="456" y="148" font-size="16" font-weight="700" fill="#8a6a4f">mi</text>
+      <line x1="356" y1="174" x2="332" y2="218" stroke="#e0a93d" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+      <!-- motion lines -->
+      <g stroke="#7fb3c8" stroke-width="7" stroke-linecap="round">
+        <line x1="58" y1="244" x2="138" y2="244"/>
+        <line x1="40" y1="276" x2="128" y2="276"/>
+        <line x1="64" y1="308" x2="142" y2="308"/>
+      </g>
+      <!-- shoe -->
+      <g>
+        <!-- upper -->
+        <path d="M162 318 L162 252 Q162 226 186 224 Q214 222 224 244 Q231 258 252 252 Q258 234 276 236 Q310 242 340 262 Q388 290 436 296 Q452 298 452 310 L452 318 Z" fill="#3e7c59"/>
+        <!-- heel collar -->
+        <path d="M162 252 Q162 226 186 224 Q214 222 224 244 L216 252 Q204 236 186 238 Q172 240 172 256 L172 318 L162 318 Z" fill="#2c5a40"/>
+        <!-- side stripe -->
+        <path d="M196 318 Q230 280 296 268 Q280 290 262 318 Z" fill="#5e9a78"/>
+        <!-- lace panel -->
+        <g stroke="#fffdf8" stroke-width="4" stroke-linecap="round">
+          <line x1="262" y1="258" x2="286" y2="270"/>
+          <line x1="282" y1="252" x2="308" y2="266"/>
+          <line x1="304" y1="250" x2="330" y2="266"/>
+        </g>
+        <circle cx="246" cy="256" r="4" fill="#fffdf8"/>
+        <!-- midsole -->
+        <path d="M150 318 Q146 316 148 308 Q156 296 174 298 L444 308 Q456 309 456 318 Z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+        <!-- gold heel wedge accent -->
+        <path d="M156 314 Q160 304 176 304 L214 306 L214 314 Z" fill="#e0a93d"/>
+        <!-- outsole -->
+        <rect x="146" y="318" width="312" height="18" rx="9" fill="#c96f4a"/>
+        <g stroke="#d9663f" stroke-width="3" stroke-linecap="round">
+          <line x1="176" y1="327" x2="184" y2="327"/>
+          <line x1="216" y1="327" x2="224" y2="327"/>
+          <line x1="256" y1="327" x2="264" y2="327"/>
+          <line x1="296" y1="327" x2="304" y2="327"/>
+          <line x1="336" y1="327" x2="344" y2="327"/>
+          <line x1="376" y1="327" x2="384" y2="327"/>
+          <line x1="416" y1="327" x2="424" y2="327"/>
+        </g>
+      </g>
+      <!-- mile marker post -->
+      <rect x="506" y="270" width="8" height="84" rx="4" fill="#8a6a4f"/>
+      <rect x="490" y="246" width="42" height="30" rx="6" fill="#c9a06b"/>
+      <text x="511" y="267" font-size="14" font-weight="800" fill="#fffdf8" text-anchor="middle">400</text>
+      <!-- greenery -->
+      <circle cx="84" cy="390" r="14" fill="#5e9a78"/>
+      <circle cx="106" cy="394" r="11" fill="#3e7c59"/>
+      <circle cx="470" cy="392" r="12" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">The midsole foam compresses and stops absorbing shock long before the shoe <em>looks</em> worn. Every mile past that point, your legs absorb the impact the foam used to take. These are the problems fresh shoes prevent (costs are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 22 Q14 16 22 17 Q30 18 32 22 L32 27 Q32 29 30 29 L6 29 Q4 29 4 27 Z" fill="#e0a93d"/>
+          <path d="M9 22 q2 3 0 6 M15 21 q2 4 0 7 M21 21 q2 4 0 7" stroke="#b07b1a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M18 4 L18 12 M14 9 L18 13 L22 9" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The foam fails first</h3>
+        <p>EVA midsole foam compresses a little with every footstrike. Around 300–500 miles it loses a big share of its shock absorption — while the upper still looks nearly new.</p>
+        <span class="cost">Cushioning down 25–45%</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M16 4 L15 15 Q15 18 17 20 L19 24 L18 32" stroke="#c9a06b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16.5" cy="18" r="3.5" fill="#8a6a4f"/>
+          <path d="M25 10 l3 3 l-3 3 l3 3" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 22 l-3 2 l3 2" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Shin splints &amp; joint stress</h3>
+        <p>Dead foam sends impact straight up the chain: shins first, then knees and hips. Shin splints alone can bench you for weeks of rebuilding.</p>
+        <span class="cost">Weeks of forced rest</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 26 Q7 18 12 12 Q16 7 21 8 Q26 9 26 15 L27 24 Q27 27 24 27 L11 27 Q8 27 8 26" fill="#c9a06b"/>
+          <path d="M11 25 Q15 19 23 19" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <circle cx="12" cy="25" r="2.4" fill="#d9663f"/>
+        </svg></div>
+        <h3>Plantar fasciitis</h3>
+        <p>When the midsole and arch support collapse, the plantar fascia takes up the slack. That stabbing morning heel pain is famously slow to heal once it starts.</p>
+        <span class="cost">Months to fully heal</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="11" cy="13" rx="5" ry="8" fill="#5e9a78" transform="rotate(-14 11 13)"/>
+          <ellipse cx="11" cy="26" rx="2.6" ry="2" fill="#5e9a78"/>
+          <ellipse cx="25" cy="20" rx="5" ry="8" fill="#3e7c59" transform="rotate(16 25 20)"/>
+          <ellipse cx="27" cy="32" rx="2.6" ry="2" fill="#3e7c59"/>
+          <path d="M19 6 q6 0 9 5" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <polygon points="29.5,8 31,13.5 25.8,12" fill="#d9663f"/>
+        </svg></div>
+        <h3>Worn outsoles change your gait</h3>
+        <p>Rubber worn flat on one edge tilts every footstrike. Your stride quietly adapts, and the compensation shows up as new aches in ankles, knees, and hips.</p>
+        <span class="cost">Compensation injuries</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="14" y="6" width="8" height="20" rx="3" fill="#d9663f"/>
+          <rect x="8" y="12" width="20" height="8" rx="3" fill="#d9663f"/>
+          <circle cx="27" cy="27" r="6.5" fill="#e0a93d"/>
+          <text x="27" y="31" font-size="9" font-weight="800" fill="#fffdf8" text-anchor="middle">$</text>
+        </svg></div>
+        <h3>Injuries cost more than shoes</h3>
+        <p>A new pair is $100–160. Physical therapy runs $75–150 per session, and a typical running-injury course is 8–12 sessions — plus the runs you don't get to do.</p>
+        <span class="cost">$500 – $1,500 PT course</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW LONG / QUIZ ============ -->
+  <section id="how-long">
+    <h2>How long do <em>your</em> shoes last?</h2>
+    <p class="sub">"400 miles" is the rule of thumb, but the right number depends on how much you run, where you run, and how hard each footstrike lands. Answer three questions for a personalized window:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="miles">
+        <div class="q-label">1. How many miles do you run in a typical week?</div>
+        <div class="pills">
+          <button class="pill" data-v="low">Under 10</button>
+          <button class="pill" data-v="mid">10–25</button>
+          <button class="pill" data-v="high">25+</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="surface">
+        <div class="q-label">2. Where do most of those miles happen?</div>
+        <div class="pills">
+          <button class="pill" data-v="treadmill">Mostly treadmill</button>
+          <button class="pill" data-v="road">Mostly road</button>
+          <button class="pill" data-v="trail">Trail / mixed</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="build">
+        <div class="q-label">3. Build and stride?</div>
+        <div class="pills">
+          <button class="pill" data-v="light">Lighter runner</button>
+          <button class="pill" data-v="average">About average</button>
+          <button class="pill" data-v="heavy">Heavier runner or heel striker</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Replacing shoes on time feels expensive until you price the alternative. The math is lopsided (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$100–160</div><div class="l">a quality pair, every few months</div></div>
+        <div class="calc-stat"><div class="v">$500–1,500</div><div class="l">one physical-therapy course for a running injury</div></div>
+        <div class="calc-stat"><div class="v">6–12 weeks</div><div class="l">typical layoff for shin splints or plantar fasciitis</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>👟 A year of on-time replacements (2–3 pairs)</span><span>≈ $390</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width: 39%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🩼 One PT course after running on dead foam</span><span>≈ $1,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width: 100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">Even a generous shoe budget costs <strong>less than half</strong> of one typical injury — and no PT course gives you back the months of running you lose while you heal. <strong>Bonus tip:</strong> rotating two pairs lets the foam decompress for ~48 hours between runs, which extends each pair's life and softens every landing in the meantime.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check — and replace — your shoes</h2>
+    <p class="sub">The whole assessment takes ten minutes. Work through the checklist — your progress saves automatically, so you can finish after a trip to the running store.</p>
+
+    <div class="safety">
+      <h3>👟 The honest truth — your shoes will lie to you</h3>
+      <ul>
+        <li><strong>The foam is done before the fabric is.</strong> A shoe can look showroom-clean while the midsole is fully compressed. Judge by feel and miles, not looks.</li>
+        <li><strong>Log your miles.</strong> Memory says "a few months old"; the log says 580 miles. Without a number, every pair gets pushed too far.</li>
+        <li><strong>New aches are data.</strong> If shins, knees, or arches start complaining out of nowhere, check the mileage before you blame your training.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Mileage log or running app</span>
+      <span class="tool-chip">Your thumbs (for the press test)</span>
+      <span class="tool-chip">The old pair, for comparison</span>
+      <span class="tool-chip">A specialty running store (optional but worth it)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three checks worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing a new springy midsole that rebounds under thumb pressure with a worn midsole showing compressed wrinkled foam">
+          <path d="M22 96 Q60 84 92 88 Q122 92 126 102 L126 116 Q126 122 120 122 L28 122 Q22 122 22 116 Z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <path d="M70 62 L70 80 M62 73 L70 81 L78 73" stroke="#2c5a40" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M52 50 q18 -8 36 0 M56 40 q14 -6 28 0" stroke="#5e9a78" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <text x="74" y="142" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">new: springs back</text>
+          <path d="M156 102 Q194 92 226 95 Q256 98 258 106 L258 116 Q258 122 252 122 L162 122 Q156 122 156 116 Z" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.5"/>
+          <g stroke="#c96f4a" stroke-width="2" fill="none" stroke-linecap="round">
+            <path d="M172 104 q3 6 0 14"/>
+            <path d="M188 102 q3 7 0 17"/>
+            <path d="M204 101 q3 7 0 18"/>
+            <path d="M220 100 q3 8 0 19"/>
+            <path d="M236 101 q3 7 0 18"/>
+          </g>
+          <path d="M206 66 L206 88 M198 80 L206 89 L214 80" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="208" y="142" font-size="13" fill="#d9663f" font-weight="700" text-anchor="middle">worn: stays dented</text>
+          <text x="140" y="166" font-size="12" fill="#6b7376" text-anchor="middle">press your thumb into the midsole — firm board = done</text>
+        </svg>
+        <h4>The midsole press test</h4>
+        <p>New foam compresses under your thumb and springs back. Worn foam feels like dense cardboard and shows deep horizontal crease lines along the sidewall.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of three outsole bottoms showing different wear patterns: outer heel wear from heel striking, ball-of-foot wear from forefoot striking, and inner edge wear from overpronation">
+          <path d="M48 24 Q66 24 68 46 Q70 70 64 100 Q60 124 48 130 Q36 124 32 100 Q26 70 28 46 Q30 24 48 24" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <ellipse cx="38" cy="114" rx="9" ry="11" fill="#c96f4a"/>
+          <text x="48" y="152" font-size="12" fill="#6b7376" text-anchor="middle">heel striker:</text>
+          <text x="48" y="166" font-size="12" fill="#6b7376" text-anchor="middle">outer heel</text>
+          <path d="M140 24 Q158 24 160 46 Q162 70 156 100 Q152 124 140 130 Q128 124 124 100 Q118 70 120 46 Q122 24 140 24" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <ellipse cx="140" cy="48" rx="13" ry="12" fill="#c96f4a"/>
+          <text x="140" y="152" font-size="12" fill="#6b7376" text-anchor="middle">forefoot striker:</text>
+          <text x="140" y="166" font-size="12" fill="#6b7376" text-anchor="middle">ball of foot</text>
+          <path d="M232 24 Q250 24 252 46 Q254 70 248 100 Q244 124 232 130 Q220 124 216 100 Q210 70 212 46 Q214 24 232 24" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <path d="M247 40 Q254 70 246 104 Q243 118 236 126 Q244 110 245 92 Q247 64 243 42 Z" fill="#c96f4a"/>
+          <text x="232" y="152" font-size="12" fill="#6b7376" text-anchor="middle">overpronation:</text>
+          <text x="232" y="166" font-size="12" fill="#6b7376" text-anchor="middle">inner edge</text>
+        </svg>
+        <h4>Read the outsole wear map</h4>
+        <p>Where the rubber is smoothest tells you how you land. Smoothed-flat lugs or exposed midsole anywhere means the pair is past done — and the pattern is gold for picking the next pair.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a two-pair rotation cycle: pair A runs Monday while pair B rests, then they swap, with arrows showing the cycle and a 48 hour foam recovery note">
+          <path d="M62 58 Q62 44 78 43 Q90 42 95 52 Q108 50 122 56 Q132 60 132 70 L132 76 L62 76 Z" fill="#3e7c59"/>
+          <rect x="58" y="76" width="78" height="10" rx="5" fill="#c96f4a"/>
+          <text x="97" y="108" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">Pair A</text>
+          <path d="M148 58 Q148 44 164 43 Q176 42 181 52 Q194 50 208 56 Q218 60 218 70 L218 76 L148 76 Z" fill="#5e9a78"/>
+          <rect x="144" y="76" width="78" height="10" rx="5" fill="#e0a93d"/>
+          <text x="183" y="108" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">Pair B</text>
+          <path d="M96 30 Q140 6 184 30" stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="186,22 192,34 178,34" fill="#7fb3c8"/>
+          <path d="M184 124 Q140 148 96 124" stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="94,132 88,120 102,120" fill="#7fb3c8"/>
+          <text x="140" y="26" font-size="12" fill="#6b7376" text-anchor="middle">run today</text>
+          <text x="140" y="143" font-size="12" fill="#6b7376" text-anchor="middle">run tomorrow</text>
+          <text x="140" y="170" font-size="12" fill="#6b7376" font-weight="700" text-anchor="middle">foam gets ~48 h to decompress between runs</text>
+        </svg>
+        <h4>The two-pair rotation</h4>
+        <p>Foam rebounds best with a rest day. Alternating two pairs gives each midsole ~48 hours to recover, extends total mileage, and makes "which pair is at 400?" a question your log can answer.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Replacement progress</span><span id="progText">0 of 10 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fresh foam underfoot and a mileage counter at zero. Your knees thank you — see you in 400 miles.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO SEE A SPECIALIST ============ -->
+  <section id="pro">
+    <h2>When to see a specialist</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Pain that survives a shoe swap.</strong> If shins, knees, or heels keep hurting in a brand-new, properly fitted pair, the shoes aren't the problem — see a sports-medicine doctor or physical therapist before it compounds.</li>
+        <li><strong>Get a gait analysis at a specialty running store.</strong> Most do a treadmill video check for free. Bring your worn pair — the outsole wear map plus the video usually nails the right shoe category in one visit.</li>
+        <li><strong>Custom orthotics questions go to a podiatrist.</strong> Persistent plantar fasciitis, very flat or very high arches, or one-sided wear that no shoe fixes are podiatrist territory, not shoe-wall territory.</li>
+        <li><strong>Numb toes or recurring black toenails</strong> after you've already sized up half a size are worth a professional fit assessment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Do expensive shoes last longer?</summary>
+      <p>Not really. Price mostly buys lighter materials, plates, and bouncier foams — not durability. A $180 racing shoe often wears out <em>faster</em> than a $110 daily trainer. Whatever you paid, the 300–500 mile window still applies; budget and premium midsoles compress on roughly the same schedule.</p>
+    </details>
+    <details>
+      <summary>Can I keep running in worn shoes on easy days?</summary>
+      <p>It's tempting, but dead foam is dead at every pace — easy runs in worn shoes still send the extra impact up your shins. If you want a "second string" pair, make it a newer rotation pair, and retire the worn one to walking, errands, and yard work where impact forces are far lower.</p>
+    </details>
+    <details>
+      <summary>Do walking shoes follow the same rule?</summary>
+      <p>Roughly — figure on about 500 miles, since walking generates lower impact per step. For a daily walker doing 2–3 miles, that works out to around six to nine months. The same press test and outsole check apply.</p>
+    </details>
+    <details>
+      <summary>How do I actually track the miles?</summary>
+      <p>A GPS watch or running app (Strava, Garmin, Nike Run Club) can tag mileage to a specific pair automatically. No app? Write the purchase date on the inside of the tongue and keep a simple weekly tally. Upkeep Ledger handles this as a usage-based task: log your miles and it tells you when the pair crosses your replacement threshold.</p>
+    </details>
+    <details>
+      <summary>Does washing my shoes extend their life?</summary>
+      <p>It keeps the upper fresh and your gym bag livable, but it does nothing for compressed foam — and a washing machine's heat and tumbling can actually degrade midsole glue. Hand-wash with mild soap, pull the insoles, and always air dry away from heat. Clean shoes, same mileage clock.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Track the miles. Forget the math.</h2>
+        <p>Shoes don't wear out on a calendar — they wear out by the mile. Upkeep Ledger tracks usage-based tasks like this one: log your miles as you run, and it tells you the moment your pair crosses 400. No guessing, no dead-foam surprises.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=replace-running-shoes&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=replace-running-shoes&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your local prices may differ.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { miles: null, surface: null, build: null };
+
+  // midpoint weekly mileage per answer, for the miles → months translation
+  var WEEKLY_MID = { low: 8, mid: 17, high: 30 };
+  var WEEKS_PER_MONTH = 4.345;
+
+  function computeWindow(s) {
+    var center = 400;
+    var reasons = [];
+
+    if (s.surface === "treadmill") {
+      center += 40;
+      reasons.push("Treadmill belts are forgiving on outsole rubber, so the foam — not the tread — sets your limit. Judge by the press test, not by how clean the bottoms look.");
+    } else if (s.surface === "trail") {
+      center -= 40;
+      reasons.push("Trail and mixed terrain chews outsole lugs and loads the foam unevenly on rocks and roots — most trail pairs retire toward the early end of the window.");
+    } else {
+      reasons.push("Road miles are the standard wear case: steady pavement impact compresses foam right on the classic schedule.");
+    }
+
+    if (s.build === "light") {
+      center += 40;
+      reasons.push("A lighter build puts less compressive load on the midsole each stride, so the foam holds its bounce longer.");
+    } else if (s.build === "heavy") {
+      center -= 50;
+      reasons.push("More force per footstrike — from body weight or a firm heel strike — compresses foam sooner. Lean toward the early end and trust new aches over the odometer.");
+    } else {
+      reasons.push("Average build and stride means the textbook 400-mile midpoint is a good anchor for you.");
+    }
+
+    if (s.miles === "low") {
+      reasons.push("Under 10 miles a week, time becomes a factor too: midsole foam slowly degrades with age, so don't stretch a pair much past a year of regular running even if the miles say otherwise.");
+    } else if (s.miles === "mid") {
+      reasons.push("At 10–25 miles a week you'll hit the limit in a few months — exactly the cadence that's easy to lose track of without a log.");
+    } else {
+      reasons.push("At 25+ miles a week you burn through pairs fast — calendar reminders fail at this volume; mile counts don't. A two-pair rotation really pays off here.");
+    }
+
+    var lo = Math.max(300, center - 40);
+    var hi = Math.min(500, center + 40);
+    var weekly = WEEKLY_MID[s.miles];
+    var months = center / (weekly * WEEKS_PER_MONTH);
+
+    return { lo: lo, hi: hi, center: center, weekly: weekly, months: months, reasons: reasons };
+  }
+
+  function fmtMonths(m) {
+    if (m > 12) return "about a year";
+    var r = Math.round(m * 2) / 2;
+    if (r < 1) r = 1;
+    return "every " + (r % 1 === 0 ? String(r) : r.toFixed(1)) + " months";
+  }
+
+  function onQuizChange() {
+    if (!quizState.miles || !quizState.surface || !quizState.build) return;
+    var r = computeWindow(quizState);
+
+    document.getElementById("resultFreq").textContent =
+      "Your window: " + r.lo + "–" + r.hi + " miles";
+    document.getElementById("resultBody").innerHTML =
+      "~" + r.center + " miles ≈ <strong>" + fmtMonths(r.months) + "</strong> at your volume (about " +
+      r.weekly + " mi/week). Upkeep Ledger can track this by miles logged, so the reminder fires when the foam is done — not when the calendar guesses. Why this window:";
+
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Check the wear", text: "Pull up your mileage log", note: "Total miles on the current pair is the headline number. 400 is the flag; 300–500 is the window your quiz result narrows." },
+    { phase: "Check the wear", text: "Press-test the midsole", note: "Push a thumb into the foam at the heel and under the ball. Springy = life left. Firm like cardboard = done." },
+    { phase: "Check the wear", text: "Look for crease lines in the foam", note: "Deep horizontal wrinkles along the midsole sidewall mean the foam is permanently compressed." },
+    { phase: "Check the wear", text: "Inspect the outsole pattern", note: "Smoothed-flat lugs or exposed midsole at the heel or ball means past done — and note where the wear is for your next purchase." },
+    { phase: "Buy the replacement", text: "Compare against a new pair in store", note: "Stand in the new pair, then your old one. The difference underfoot is usually all the convincing you need." },
+    { phase: "Buy the replacement", text: "Buy the same model — or its current version", note: "If this pair kept you injury-free, don't reinvent. Model updates change yearly; the store can map old to new." },
+    { phase: "Buy the replacement", text: "Consider a second pair to rotate", note: "Optional but smart: alternating pairs gives foam ~48 hours to decompress and extends both pairs' mileage." },
+    { phase: "Make the switch", text: "Break in the new pair gradually", note: "2–3 short, easy runs before any long or hard effort. New foam and fresh geometry need a little adaptation time." },
+    { phase: "Make the switch", text: "Demote the old pair to errands and yard work", note: "Worn foam is fine for walking-level impact. Retired runners make great mowing shoes." },
+    { phase: "Make the switch", text: "Zero the counter and log it", note: "Start the new pair's mileage count at zero and record the swap — date, miles, model — in your tracker." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:replace-running-shoes:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

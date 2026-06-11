@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flea &amp; Tick Treatment — Everyday Upkeep</title>
+<meta name="description" content="How often to give flea and tick prevention, why one missed month matters, and exactly how to dose dogs and cats safely — topical, oral, or collar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-controls { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 22px; }
+  .calc-controls label.field { display: block; font-weight: 700; font-size: 14px; }
+  .calc-controls .field-row { margin-top: 8px; }
+  .calc-controls input[type="range"] { width: 100%; }
+  input[type="range"] { accent-color: var(--accent); }
+  .range-val { font-weight: 700; color: var(--accent-deep); }
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+  .cost-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#plan">Your plan</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Monthly</span>
+      <h1>Flea &amp; Tick Treatment</h1>
+      <p class="lede">One small dose a month — topical, chew, or collar — keeps fleas and ticks from ever moving in. Miss a month and the math turns against you shockingly fast. Here's the schedule, the why, and exactly how to do it safely for dogs and cats.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ <em>Every month</em>, same date</span>
+        <span class="chip">⏱️ <em>~2 minutes</em> per pet</span>
+        <span class="chip">💊 <em>$15–35/mo</em> per pet (typical)</span>
+        <span class="chip">💸 An infestation costs <em>$500+</em> to clear</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a happy dog and cat sitting side by side in front of a large green protective shield with a gold sparkle, surrounded by small sparkles">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="72" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="472" cy="70" rx="44" ry="22" fill="#dce8ee"/>
+      <ellipse cx="432" cy="82" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- protective shield -->
+      <path d="M285 64 C322 84 360 92 388 92 C388 188 358 258 285 296 C212 258 182 188 182 92 C210 92 248 84 285 64 Z" fill="#5e9a78"/>
+      <path d="M285 84 C316 100 348 107 370 107 C370 184 344 242 285 274 C226 242 200 184 200 107 C222 107 254 100 285 84 Z" fill="#e3efe8"/>
+      <path d="M285 116 l9 22 24 3 -17 17 4 24 -20 -11 -20 11 4 -24 -17 -17 24 -3 z" fill="#e0a93d"/>
+      <!-- floating sparkles -->
+      <g fill="#e0a93d">
+        <path d="M120 130 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+        <path d="M452 160 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 z"/>
+      </g>
+      <g fill="#7fb3c8">
+        <path d="M158 86 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z"/>
+        <path d="M416 240 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z"/>
+        <circle cx="106" cy="226" r="4"/>
+      </g>
+      <circle cx="468" cy="120" r="4" fill="#e0a93d"/>
+      <!-- dog (left) -->
+      <path d="M132 332 q-30 -8 -34 -38" stroke="#8a6a4f" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <ellipse cx="196" cy="332" rx="62" ry="62" fill="#c9a06b"/>
+      <ellipse cx="158" cy="346" rx="30" ry="40" fill="#b98c54"/>
+      <rect x="186" y="320" width="20" height="74" rx="10" fill="#c9a06b"/>
+      <rect x="216" y="320" width="20" height="74" rx="10" fill="#c9a06b"/>
+      <ellipse cx="196" cy="394" rx="14" ry="7" fill="#b98c54"/>
+      <ellipse cx="226" cy="394" rx="14" ry="7" fill="#b98c54"/>
+      <circle cx="214" cy="240" r="46" fill="#c9a06b"/>
+      <ellipse cx="176" cy="232" rx="15" ry="28" fill="#8a6a4f" transform="rotate(18 176 232)"/>
+      <ellipse cx="252" cy="232" rx="15" ry="28" fill="#8a6a4f" transform="rotate(-18 252 232)"/>
+      <ellipse cx="214" cy="262" rx="19" ry="14" fill="#fffdf8"/>
+      <circle cx="214" cy="255" r="6" fill="#33393b"/>
+      <path d="M206 266 q8 7 16 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="198" cy="238" r="4.5" fill="#33393b"/>
+      <circle cx="230" cy="238" r="4.5" fill="#33393b"/>
+      <path d="M178 282 q36 16 72 0" stroke="#3e7c59" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <circle cx="214" cy="294" r="7" fill="#e0a93d"/>
+      <!-- cat (right) -->
+      <path d="M428 386 q34 4 32 -28" stroke="#b9b1a3" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <ellipse cx="376" cy="348" rx="44" ry="50" fill="#b9b1a3"/>
+      <path d="M348 330 q12 6 24 0 M352 352 q12 6 22 0" stroke="#8a8377" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="358" y="350" width="15" height="46" rx="7.5" fill="#b9b1a3"/>
+      <rect x="382" y="350" width="15" height="46" rx="7.5" fill="#b9b1a3"/>
+      <ellipse cx="366" cy="394" rx="11" ry="6" fill="#a39b8d"/>
+      <ellipse cx="390" cy="394" rx="11" ry="6" fill="#a39b8d"/>
+      <circle cx="382" cy="278" r="34" fill="#b9b1a3"/>
+      <polygon points="354,260 360,228 380,252" fill="#b9b1a3"/>
+      <polygon points="410,260 404,228 384,252" fill="#b9b1a3"/>
+      <polygon points="359,254 362,238 372,250" fill="#c96f4a"/>
+      <polygon points="405,254 402,238 392,250" fill="#c96f4a"/>
+      <circle cx="370" cy="274" r="3.8" fill="#33393b"/>
+      <circle cx="394" cy="274" r="3.8" fill="#33393b"/>
+      <polygon points="378,284 386,284 382,289" fill="#c96f4a"/>
+      <path d="M382 289 q-5 6 -10 2 M382 289 q5 6 10 2" stroke="#33393b" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <g stroke="#8a8377" stroke-width="1.8" stroke-linecap="round">
+        <line x1="352" y1="282" x2="334" y2="278"/>
+        <line x1="352" y1="288" x2="335" y2="290"/>
+        <line x1="412" y1="282" x2="430" y2="278"/>
+        <line x1="412" y1="288" x2="429" y2="290"/>
+      </g>
+      <path d="M356 306 q26 12 52 0" stroke="#d9663f" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="382" cy="315" r="6" fill="#e0a93d"/>
+      <!-- foreground greenery -->
+      <circle cx="98" cy="386" r="14" fill="#5e9a78"/>
+      <circle cx="120" cy="392" r="11" fill="#3e7c59"/>
+      <circle cx="478" cy="390" r="12" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Prevention isn't really about the pet — it's about your house. By the time you see a flea, the invisible 95% of the problem is already in your carpet. These are the bills one missed month can invite (typical U.S. costs):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="24" height="22" rx="3" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <rect x="6" y="8" width="24" height="6" fill="#3e7c59"/>
+          <line x1="12" y1="5" x2="12" y2="10" stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="24" y1="5" x2="24" y2="10" stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="13" cy="20" r="2" fill="#d9663f"/>
+          <circle cx="20" cy="24" r="2" fill="#d9663f"/>
+          <circle cx="25" cy="19" r="2" fill="#d9663f"/>
+        </svg></div>
+        <h3>One missed month = infestation</h3>
+        <p>A single female flea lays 40–50 eggs a day. Skip one dose during flea season and a couple of hitchhikers become thousands of eggs in your home before the next dose is due.</p>
+        <span class="cost">Exterminator: $200 – $500+</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="13" width="26" height="12" rx="3" fill="#c9a06b"/>
+          <path d="M9 25 v4 M14 25 v4 M19 25 v4 M24 25 v4" stroke="#a3895f" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="18" r="1.8" fill="#7a5c43"/>
+          <circle cx="19" cy="20" r="1.8" fill="#7a5c43"/>
+          <circle cx="25" cy="17" r="1.8" fill="#7a5c43"/>
+        </svg></div>
+        <h3>95% lives in the carpet</h3>
+        <p>For every adult flea on the pet, the eggs, larvae, and pupae — about 95% of the infestation — live in carpet, bedding, and couch cushions. Treating the pet alone doesn't end it.</p>
+        <span class="cost">Months of vacuuming &amp; washing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="13" width="12" height="17" rx="3" fill="#3e7c59"/>
+          <rect x="13" y="8" width="8" height="6" rx="2" fill="#2c5a40"/>
+          <rect x="20" y="8" width="7" height="4" rx="2" fill="#5e9a78"/>
+          <g fill="#7fb3c8">
+            <circle cx="30" cy="9" r="1.8"/>
+            <circle cx="32" cy="14" r="1.8"/>
+            <circle cx="29" cy="18" r="1.8"/>
+          </g>
+        </svg></div>
+        <h3>The cleanup bill stacks up</h3>
+        <p>Clearing an infestation means a pro treatment or weeks of sprays, treating <em>every</em> pet in the house, hot-washing all fabric, and daily vacuuming until the last pupae hatch out.</p>
+        <span class="cost">$500 – $900 all-in</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 24 q4 -7 9 -2 q5 5 9 -1 q4 -6 7 -2" stroke="#c96f4a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="31" cy="19" r="2.6" fill="#9a4f33"/>
+          <circle cx="8" cy="10" r="3" fill="#8a6a4f"/>
+          <path d="M5 8 l-2 -2 M8 6.5 v-3 M11 8 l2 -2" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Tapeworms ride along</h3>
+        <p>Pets get tapeworms by swallowing infected fleas while grooming — which they do constantly when itchy. Then you're paying for a deworming visit on top of the flea problem.</p>
+        <span class="cost">$100 – $300 vet visit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="20" rx="7" ry="9" fill="#8a6a4f"/>
+          <circle cx="18" cy="10" r="4" fill="#6e5440"/>
+          <g stroke="#6e5440" stroke-width="2" stroke-linecap="round">
+            <line x1="11" y1="15" x2="6" y2="12"/>
+            <line x1="11" y1="21" x2="5" y2="21"/>
+            <line x1="11" y1="27" x2="6" y2="30"/>
+            <line x1="25" y1="15" x2="30" y2="12"/>
+            <line x1="25" y1="21" x2="31" y2="21"/>
+            <line x1="25" y1="27" x2="30" y2="30"/>
+          </g>
+        </svg></div>
+        <h3>Tick-borne disease</h3>
+        <p>One embedded tick can transmit Lyme, ehrlichiosis, or anaplasmosis. Diagnosis and treatment mean blood panels, weeks of antibiotics, and sometimes lasting joint or kidney trouble.</p>
+        <span class="cost">Lyme treatment: $300 – $800+</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="23" rx="8" ry="6.5" fill="#e0a93d"/>
+          <circle cx="9" cy="14" r="3.4" fill="#e0a93d"/>
+          <circle cx="16" cy="11" r="3.4" fill="#e0a93d"/>
+          <circle cx="23" cy="12" r="3.4" fill="#e0a93d"/>
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round">
+            <path d="M28 18 l4 -3"/>
+            <path d="M29 23 l5 -1"/>
+            <path d="M28 28 l4 2"/>
+          </g>
+        </svg></div>
+        <h3>Flea allergy dermatitis</h3>
+        <p>Many pets are allergic to flea saliva — a single bite means weeks of frantic scratching, hair loss, raw hot spots, and skin infections. It's the #1 skin disease vets see.</p>
+        <span class="cost">$150 – $400 per flare-up</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section id="plan">
+    <h2>What's <em>your</em> prevention plan?</h2>
+    <p class="sub">Every plan is "monthly" — the real questions are whether you can ever pause, and what to layer on top. Answer three questions for guidance to bring to your vet:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="pets">
+        <div class="q-label">1. Who's on the payroll?</div>
+        <div class="pills">
+          <button class="pill" data-v="dog">Dog(s)</button>
+          <button class="pill" data-v="cat">Cat(s)</button>
+          <button class="pill" data-v="both">Both</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="life">
+        <div class="q-label">2. What does their week look like?</div>
+        <div class="pills">
+          <button class="pill" data-v="indoor">Indoor-mostly</button>
+          <button class="pill" data-v="yard">Yard time + walks</button>
+          <button class="pill" data-v="woods">Hiking, woods, dog parks</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="winter">
+        <div class="q-label">3. What are winters like where you live?</div>
+        <div class="pills">
+          <button class="pill" data-v="freeze">Hard freezes</button>
+          <button class="pill" data-v="mild">Mild</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Prevention runs $15–35 per pet per month (typical U.S. prices). One missed month that goes wrong costs more than a whole year of doses. Adjust for your household:</p>
+    <div class="card">
+      <div class="calc-controls">
+        <label class="field">Pets in the house: <span class="range-val" id="petsVal">2</span>
+          <div class="field-row">
+            <input type="range" id="costPets" min="1" max="4" step="1" value="2">
+          </div>
+        </label>
+        <label class="field">Prevention cost: $<span class="range-val" id="perVal">25</span> / month per pet
+          <div class="field-row">
+            <input type="range" id="costPer" min="15" max="35" step="1" value="25">
+          </div>
+        </label>
+      </div>
+
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v" id="outMonth">$0</div><div class="l">per month, all pets</div></div>
+        <div class="calc-stat"><div class="v" id="outYear">$0</div><div class="l">per year of full protection</div></div>
+        <div class="calc-stat"><div class="v">$650+</div><div class="l">typical flea-infestation cleanup</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>💊 A full year of prevention</span><span id="barPrevVal"></span></div>
+          <div class="bar-track"><div class="bar-fill good" id="barPrev"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏠 One flea infestation, all-in</span><span>$650+ typical</span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barFlea"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 One tick-borne disease (Lyme)</span><span>$300 – $800+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barTick"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict" id="costVerdict"></div>
+
+      <div class="cost-note">🧾 <strong>What "all-in" means:</strong> exterminator or premise treatment ($200–500), prompt treatment for <em>every</em> pet in the house, hot-washing all bedding and washable fabric, and 4–8 weeks of near-daily vacuuming while the last pupae hatch out. Estimates only — your vet and local quotes are the real numbers.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to treat your pets</h2>
+    <p class="sub">The dose itself takes two minutes. The skill is doing it right — right product, right pet, right spot — and doing it again on the same date next month. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — the species line is a hard line</h3>
+      <ul>
+        <li><strong>NEVER use a dog product on a cat.</strong> Permethrin-based dog treatments are toxic — often fatal — to cats. Check the species on the box every single time, even if the boxes look alike.</li>
+        <li><strong>Dose by current weight,</strong> not last year's weight. Weight bands matter, especially for growing puppies and kittens.</li>
+        <li><strong>Ask your vet which product fits your region's parasites.</strong> Tick species, Lyme risk, and flea resistance vary a lot by area — this page is general education, not veterinary advice.</li>
+        <li><strong>Keep treated pets separated until topicals are fully dry.</strong> Pets groom each other — a cat licking a dog's fresh topical is exactly the emergency above.</li>
+        <li>Wash your hands after applying, and keep kids' hands off the application spot until it's dry.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">The preventive (vet-recommended)</span>
+      <span class="tool-chip">High-value treats</span>
+      <span class="tool-chip">Calendar or reminder app</span>
+      <span class="tool-chip">Flea comb</span>
+      <span class="tool-chip">Tick remover tool (or fine tweezers)</span>
+      <span class="tool-chip">Paper towels (for the flea-dirt test)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a topical dose being applied to bare skin at the base of a dog's skull, with the fur parted down to skin level">
+          <rect x="14" y="166" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <path d="M40 166 q-4 -60 30 -84 q30 -22 70 -16 q66 10 120 22 l0 78 z" fill="#c9a06b"/>
+          <circle cx="84" cy="78" r="36" fill="#c9a06b"/>
+          <ellipse cx="58" cy="58" rx="11" ry="20" fill="#8a6a4f" transform="rotate(24 58 58)"/>
+          <circle cx="72" cy="74" r="3.5" fill="#33393b"/>
+          <ellipse cx="56" cy="92" rx="13" ry="9" fill="#fffdf8"/>
+          <circle cx="50" cy="89" r="3.5" fill="#33393b"/>
+          <polygon points="118,52 134,52 126,68" fill="#f3ddc0"/>
+          <line x1="126" y1="56" x2="126" y2="65" stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="118" y="14" width="16" height="24" rx="4" fill="#7fb3c8"/>
+          <rect x="122" y="36" width="8" height="8" fill="#5f93ad"/>
+          <path d="M126 46 q-2 4 0 6 q2 -2 0 -6" fill="#7fb3c8"/>
+          <line x1="170" y1="40" x2="140" y2="52" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="174" y="38" font-size="12" fill="#6b7376">part fur, apply to skin</text>
+          <line x1="170" y1="92" x2="136" y2="70" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="174" y="96" font-size="12" fill="#6b7376">base of skull —</text>
+          <text x="174" y="111" font-size="12" fill="#6b7376">the tongue can't reach</text>
+        </svg>
+        <h4>Topicals go on skin, not fur</h4>
+        <p>Part the fur down to bare skin at the base of the skull (or between the shoulder blades on bigger dogs) and squeeze the whole tube there — the one spot they can't lick.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Body map of a dog highlighting the tick-check hotspots: ears, armpits, groin, between the toes, and the tail base">
+          <rect x="14" y="160" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="152" cy="102" rx="66" ry="34" fill="#c9a06b"/>
+          <circle cx="74" cy="78" r="24" fill="#c9a06b"/>
+          <ellipse cx="62" cy="60" rx="8" ry="14" fill="#8a6a4f" transform="rotate(22 62 60)"/>
+          <circle cx="68" cy="76" r="2.5" fill="#33393b"/>
+          <rect x="104" y="122" width="12" height="38" rx="5" fill="#c9a06b"/>
+          <rect x="184" y="122" width="12" height="38" rx="5" fill="#c9a06b"/>
+          <path d="M214 88 q24 -14 18 -38" stroke="#8a6a4f" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <g fill="#d9663f" stroke="#fffdf8" stroke-width="2">
+            <circle cx="64" cy="64" r="6"/>
+            <circle cx="112" cy="124" r="6"/>
+            <circle cx="180" cy="126" r="6"/>
+            <circle cx="110" cy="156" r="6"/>
+            <circle cx="212" cy="88" r="6"/>
+          </g>
+          <text x="20" y="36" font-size="11" fill="#6b7376">ears</text>
+          <line x1="34" y1="40" x2="58" y2="58" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="76" y="118" font-size="11" fill="#6b7376" text-anchor="end">armpits</text>
+          <line x1="80" y1="116" x2="105" y2="123" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="206" y="140" font-size="11" fill="#6b7376">groin</text>
+          <line x1="204" y1="135" x2="187" y2="127" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="130" y="174" font-size="11" fill="#6b7376">between the toes</text>
+          <line x1="128" y1="168" x2="115" y2="158" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="232" y="66" font-size="11" fill="#6b7376">tail base</text>
+          <line x1="230" y1="70" x2="218" y2="84" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+        </svg>
+        <h4>The tick-check body map</h4>
+        <p>After grass, woods, or the dog park, run your hands over these warm hiding spots: ears (inside too), armpits, groin, between the toes, and the tail base.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the flea-dirt test: a flea comb above a wet paper towel where black specks have dissolved into rust-red smears">
+          <rect x="64" y="20" width="116" height="11" rx="5.5" fill="#3e7c59"/>
+          <g stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round">
+            <line x1="72" y1="31" x2="72" y2="52"/>
+            <line x1="84" y1="31" x2="84" y2="52"/>
+            <line x1="96" y1="31" x2="96" y2="52"/>
+            <line x1="108" y1="31" x2="108" y2="52"/>
+            <line x1="120" y1="31" x2="120" y2="52"/>
+            <line x1="132" y1="31" x2="132" y2="52"/>
+            <line x1="144" y1="31" x2="144" y2="52"/>
+            <line x1="156" y1="31" x2="156" y2="52"/>
+            <line x1="168" y1="31" x2="168" y2="52"/>
+          </g>
+          <rect x="30" y="72" width="220" height="86" rx="10" fill="#fdfdfb" stroke="#bfdce8" stroke-width="2.5"/>
+          <path d="M44 92 q20 -5 40 0 M150 144 q22 -5 44 0" stroke="#e6eef3" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <ellipse cx="96" cy="112" rx="13" ry="8" fill="#a64b32" opacity="0.55"/>
+          <ellipse cx="156" cy="128" rx="15" ry="9" fill="#a64b32" opacity="0.55"/>
+          <ellipse cx="206" cy="100" rx="11" ry="7" fill="#a64b32" opacity="0.55"/>
+          <g fill="#3b3530">
+            <circle cx="93" cy="110" r="2.4"/>
+            <circle cx="153" cy="126" r="2.4"/>
+            <circle cx="204" cy="98" r="2.4"/>
+            <circle cx="124" cy="142" r="2"/>
+            <circle cx="70" cy="134" r="2"/>
+          </g>
+          <text x="42" y="174" font-size="12" fill="#6b7376">rust-red smear = flea dirt (digested blood)</text>
+        </svg>
+        <h4>The flea-dirt test</h4>
+        <p>Comb the rump and tail base, tap the debris onto a wet paper towel. Plain dirt stays black; flea dirt dissolves into rust-red smears. That's your early-warning system.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Treatment progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Dosed and logged! Same date next month — and your carpet stays just carpet.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ CALL THE VET ============ -->
+  <section id="vet">
+    <h2>Call the vet if…</h2>
+    <p class="sub">Most months, nothing happens — that's the whole point. But these four situations are worth a phone call, and the first one is an emergency:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>You used a dog product on a cat — this is an emergency.</strong> Call your vet or a pet poison hotline immediately, even before symptoms appear. Minutes matter with permethrin toxicity.</li>
+        <li><strong>Lethargy, drooling, tremors, or wobbliness after application.</strong> Mild skin irritation at the spot can be normal; whole-body symptoms are not.</li>
+        <li><strong>You find an embedded tick and aren't sure</strong> — how long it's been attached, whether you got the head out, or if a bullseye rash, fever, or limping shows up in the weeks after.</li>
+        <li><strong>Fleas persist after two consecutive treated months.</strong> That points to a product mismatch, a resistance issue, or an untreated reservoir (another pet, the yard, the carpet) — your vet can switch product classes and make a plan.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Topical, oral, or collar — which is best?</summary>
+      <p>All three work when used correctly. Topicals are widely available and some repel ticks before they bite, but they can rub or wash off and need drying time. Oral chews can't wash off and leave nothing on the fur — handy with kids or pets that swim — but only kill parasites after a bite. Collars last months (some up to 8) but must fit snugly to work. The right pick depends on your pet, your region's parasites, and your budget — ask your vet.</p>
+    </details>
+    <details>
+      <summary>Does my indoor cat really need it?</summary>
+      <p>Yes. Fleas hitchhike in on shoes, pant legs, the dog, visiting pets, and even rodents — and once inside, a heated home is perfect flea habitat year-round. Indoor cats are also the ones most likely to go unprotected, which makes them the household's weak link. (And remember: cat products only, never dog products.)</p>
+    </details>
+    <details>
+      <summary>Can I just use natural remedies instead?</summary>
+      <p>Most popular ones — garlic, brewer's yeast, apple cider vinegar — simply don't work, and some "natural" options are actively dangerous: tea tree, pennyroyal, and citrus essential oils are toxic to pets, especially cats. Garlic itself is toxic to dogs and cats in quantity. Stick with vet-recommended preventives; they're tested for both effectiveness and safety.</p>
+    </details>
+    <details>
+      <summary>What if I miss a month?</summary>
+      <p>Dose as soon as you remember — don't double up to "catch up." Then run the flea-dirt test weekly for the next few weeks, since any eggs laid during the gap will hatch on a delay. If you keep drifting off schedule, anchor the dose to a date you can't miss (the 1st, rent day) and set a recurring reminder.</p>
+    </details>
+    <details>
+      <summary>How do I remove a tick properly?</summary>
+      <p>Use a tick remover tool or fine-tipped tweezers. Grasp the tick as close to the skin as possible and pull straight up with slow, steady pressure — no twisting, no burning, no petroleum jelly (those old tricks make the tick regurgitate into the bite). Clean the spot, wash your hands, and note the date; a photo of the tick helps your vet identify it if symptoms show up later.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Same date, every month. Let something else remember it.</h2>
+        <p>Flea and tick prevention fails exactly one way: somebody forgets month four. Upkeep Ledger logs each dose for every pet and tells you when the next one comes due — alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=flea-tick-treatment&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=flea-tick-treatment&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes. This page is general education, not veterinary advice — your vet knows your pet and your region's parasites.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { pets: null, life: null, winter: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var freq, body;
+
+    if (s.winter === "mild") {
+      freq = "Your plan: Monthly, all 12 months";
+      body = "Mild winters mean flea-and-tick season never really closes where you live. Pick a date, dose every pet, repeat every month. Why:";
+      reasons.push("Without hard freezes, fleas and ticks stay active outdoors year-round — there is no safe \"off season\" to pause.");
+    } else if (s.life === "indoor") {
+      freq = "Your plan: Monthly, year-round recommended";
+      body = "The old-school advice was a seasonal window — first thaw through a month past the first hard freeze. Treat that as the bare minimum; vets increasingly recommend year-round everywhere. Why:";
+      reasons.push("Your heated home is comfortable flea habitat in January — fleas that ride in live indoors all winter, freeze or no freeze.");
+      reasons.push("If you do pause, restart at first thaw and don't stretch the window: the riskiest infestations start in the \"shoulder\" months.");
+    } else {
+      freq = "Your plan: Monthly, year-round";
+      body = "Hard freezes knock parasites back outdoors, but your crew spends real time outside — and ticks wake up on any winter day above about 40°F. Year-round is the safe call. Why:";
+      reasons.push("Ticks quest on warm winter days, and fleas that made it inside before the freeze keep breeding in a heated house.");
+      reasons.push("Vets increasingly recommend year-round prevention everywhere — the cost of one missed shoulder-season month outweighs the doses saved.");
+    }
+
+    if (s.life === "woods") {
+      reasons.push("Hiking, woods, and dog parks are peak tick exposure: do a hands-on tick check (ears, armpits, groin, toes, tail base) after every outing — on top of the preventive, not instead of it.");
+      reasons.push("Ask your vet whether your region calls for beefed-up tick coverage or the Lyme vaccine for dogs.");
+    } else if (s.life === "yard") {
+      reasons.push("Ticks wait in tall grass, leaf litter, and yard edges — keep grass short, and tick-check after long sessions outside.");
+    } else {
+      reasons.push("Indoor-mostly still isn't zero exposure: fleas hitchhike in on shoes, clothing, other pets, and rodents.");
+    }
+
+    if (s.pets === "cat") {
+      reasons.push("Cats: never use a dog product — permethrin-based dog treatments are toxic, often fatal, to cats. Cat-labeled products only.");
+    } else if (s.pets === "both") {
+      reasons.push("Mixed household: buy per-species and per-weight-band, never split or share doses, and keep pets separated until topicals dry — they groom each other.");
+    } else {
+      reasons.push("Dogs: ask your vet about combination products — many monthly chews cover fleas, ticks, and heartworm in one dose.");
+    }
+
+    return { freq: freq, body: body, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.pets || !quizState.life || !quizState.winter) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = r.freq;
+    document.getElementById("resultBody").textContent = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+
+    // sync cost comparison: "both" implies at least two pets
+    if (quizState.pets === "both") {
+      var petsInput = document.getElementById("costPets");
+      if (parseInt(petsInput.value, 10) < 2) petsInput.value = 2;
+    }
+    updateCost();
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Cost comparison ================= */
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  var FLEA_CLEANUP = 650;  // exterminator $200–500 + treating every pet + washing + vacuuming
+  var TICK_DISEASE = 800;  // upper end of typical Lyme diagnosis + treatment
+
+  function updateCost() {
+    var pets = parseInt(document.getElementById("costPets").value, 10);
+    var per = parseInt(document.getElementById("costPer").value, 10);
+
+    document.getElementById("petsVal").textContent = pets;
+    document.getElementById("perVal").textContent = per;
+
+    var month = pets * per;
+    var year = month * 12;
+
+    document.getElementById("outMonth").textContent = money(month);
+    document.getElementById("outYear").textContent = money(year);
+
+    var max = Math.max(year, FLEA_CLEANUP, TICK_DISEASE) * 1.05;
+    document.getElementById("barPrev").style.width = (year / max) * 100 + "%";
+    document.getElementById("barPrevVal").textContent = money(year);
+    document.getElementById("barFlea").style.width = (FLEA_CLEANUP / max) * 100 + "%";
+    document.getElementById("barTick").style.width = (TICK_DISEASE / max) * 100 + "%";
+
+    var verdict = document.getElementById("costVerdict");
+    if (year <= FLEA_CLEANUP) {
+      verdict.innerHTML = "A full year of protecting " + (pets === 1 ? "your pet" : "all " + pets + " pets") +
+        " costs <strong>" + money(year) + "</strong> — less than one typical infestation cleanup. And the cleanup doesn't refund the itching, the tapeworm visit, or the months of vacuuming.";
+    } else {
+      verdict.innerHTML = "With " + pets + " pets, a year of prevention runs <strong>" + money(year) +
+        "</strong> — but one infestation means treating all " + pets + " of them anyway, <em>plus</em> the $650+ cleanup. More pets makes prevention more worth it, not less.";
+    }
+  }
+
+  ["costPets", "costPer"].forEach(function (id) {
+    document.getElementById(id).addEventListener("input", updateCost);
+  });
+  updateCost();
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you dose", text: "Confirm your pet's current weight", note: "Doses come in weight bands — and puppies and kittens outgrow bands fast. Bathroom scale: hold the pet, subtract yourself." },
+    { phase: "Before you dose", text: "Match the product: right species, right weight band", note: "Read the box twice. A dog product on a cat is a poison-control call, not a money-saver." },
+    { phase: "Before you dose", text: "Mark today's date — and set next month's reminder now", note: "Same date every month. The 1st, payday, whatever you'll never miss." },
+    { phase: "Treatment day", text: "Topicals: part the fur and apply to bare skin at the base of the skull", note: "Between the shoulder blades on bigger dogs. Skin, not fur — and a spot the tongue can't reach. Empty the whole tube." },
+    { phase: "Treatment day", text: "Orals: give the chew with food", note: "A meal helps absorption and keeps it down. Watch that they actually swallow it — cheeking and spitting is a classic move." },
+    { phase: "Treatment day", text: "Watch for reactions for the first day", note: "Mild skin irritation at the spot can be normal. Lethargy, drooling, or tremors are a call-the-vet-now situation." },
+    { phase: "Treatment day", text: "Multi-pet house? Keep pets separated until topicals are fully dry", note: "Pets groom each other — that's how a cat ends up licking a dog's dose." },
+    { phase: "Every month after", text: "Repeat on the same date each month", note: "Protection fades at the end of the cycle. \"A few days late\" during flea season is how infestations start." },
+    { phase: "Every month after", text: "Tick-check after every outing in grass, woods, or the dog park", note: "Ears, armpits, groin, between the toes, tail base. Preventives kill ticks — finding them first is still better." },
+    { phase: "Every month after", text: "Seen a flea? Hot-wash bedding and vacuum daily for 2+ weeks", note: "95% of an infestation lives in fabric and carpet. Empty the vacuum outside — pupae hatch in the canister." },
+    { phase: "Every month after", text: "Log the dose", note: "\"Wait — did I already do this month?\" is the question that lets infestations in. Write it down somewhere that nags you." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:flea-tick-treatment:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

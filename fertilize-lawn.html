@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fertilize Your Lawn — Everyday Upkeep</title>
+<meta name="description" content="How often to fertilize your lawn, which months matter most for cool-season and warm-season grass, why it matters, and a step-by-step guide to spreading it right.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calendar ---------- */
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+  .month {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 12px;
+    padding: 12px 10px; text-align: center; transition: all 0.2s ease; min-height: 86px;
+  }
+  .month .m-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .month .m-task { font-size: 12.5px; color: var(--ink-soft); line-height: 1.35; }
+  .month.feed { background: var(--accent-soft); border-color: var(--accent); }
+  .month.feed .m-task { color: var(--accent-deep); font-weight: 600; }
+  .month.check { background: var(--gold-soft); border-color: var(--gold); }
+  .month.check .m-task { color: #9a7117; font-weight: 600; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; color: var(--ink-soft); }
+  .legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 4px; margin-right: 6px; vertical-align: -1px; }
+  .dot.d-feed { background: var(--accent); }
+  .dot.d-check { background: var(--gold); }
+  .cal-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .cost-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .cost-stat .v { font-size: 24px; font-weight: 800; color: var(--accent-deep); }
+  .cost-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; margin-top: 20px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+    .cal-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  .month .m-season { display: block; height: 18px; margin-bottom: 2px; }
+  .month .m-season svg { width: 16px; height: 16px; }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Yard &amp; Garden · Seasonal</span>
+      <h1>Fertilize Your Lawn</h1>
+      <p class="lede">Grass is a crop you happen to walk on, and like any crop it gets hungry. Feed it at the right moments and it crowds out weeds, shrugs off drought, and stays green on its own. Feed it at the wrong ones — or not at all — and you'll pay for it in weeds and reseeding. Here's the schedule, by grass type, month by month.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>2–4 feedings</em> a year</span>
+        <span class="chip">⏱️ <em>30–60 min</em> per feeding</span>
+        <span class="chip">💸 DIY runs <em>$50–100/yr</em></span>
+        <span class="chip">🍂 For northern lawns, <em>fall is the big one</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a lush green lawn with a broadcast spreader scattering fertilizer granules in a fan, under a bright sun, with a wooden fence and shrubs behind">
+      <ellipse cx="290" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="478" cy="64" r="26" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round">
+        <line x1="478" y1="20" x2="478" y2="30"/>
+        <line x1="478" y1="98" x2="478" y2="108"/>
+        <line x1="434" y1="64" x2="444" y2="64"/>
+        <line x1="512" y1="64" x2="522" y2="64"/>
+        <line x1="447" y1="33" x2="454" y2="40"/>
+        <line x1="502" y1="88" x2="509" y2="95"/>
+        <line x1="509" y1="33" x2="502" y2="40"/>
+      </g>
+      <ellipse cx="120" cy="78" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="170" cy="92" rx="30" ry="16" fill="#dce8ee"/>
+      <ellipse cx="330" cy="56" rx="34" ry="17" fill="#dce8ee"/>
+      <!-- fence -->
+      <g fill="#b9b1a3">
+        <rect x="36" y="196" width="14" height="74" rx="4"/>
+        <rect x="76" y="196" width="14" height="74" rx="4"/>
+        <rect x="116" y="196" width="14" height="74" rx="4"/>
+        <rect x="156" y="196" width="14" height="74" rx="4"/>
+        <rect x="196" y="196" width="14" height="74" rx="4"/>
+      </g>
+      <rect x="28" y="208" width="190" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="28" y="240" width="190" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- shrubs -->
+      <circle cx="262" cy="248" r="28" fill="#2c5a40"/>
+      <circle cx="296" cy="258" r="22" fill="#3e7c59"/>
+      <circle cx="510" cy="262" r="26" fill="#5e9a78"/>
+      <circle cx="540" cy="272" r="18" fill="#3e7c59"/>
+      <!-- lawn -->
+      <path d="M10 290 Q280 262 550 290 L550 392 Q280 412 10 392 Z" fill="#3e7c59"/>
+      <path d="M10 322 Q280 298 550 322 L550 392 Q280 412 10 392 Z" fill="#5e9a78" opacity="0.45"/>
+      <!-- grass tufts -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round" fill="none">
+        <path d="M60 340 v-12 M67 340 l4 -10 M53 340 l-4 -10"/>
+        <path d="M150 366 v-12 M157 366 l4 -10 M143 366 l-4 -10"/>
+        <path d="M460 350 v-12 M467 350 l4 -10 M453 350 l-4 -10"/>
+        <path d="M520 376 v-12 M527 376 l4 -10 M513 376 l-4 -10"/>
+        <path d="M90 384 v-11 M97 384 l4 -9 M83 384 l-4 -9"/>
+      </g>
+      <!-- granule fan -->
+      <g fill="#e0a93d">
+        <circle cx="222" cy="330" r="4"/>
+        <circle cx="196" cy="346" r="4"/>
+        <circle cx="236" cy="356" r="4"/>
+        <circle cx="206" cy="372" r="4"/>
+        <circle cx="246" cy="382" r="3.5"/>
+        <circle cx="176" cy="362" r="3.5"/>
+      </g>
+      <g fill="#d98e3b">
+        <circle cx="214" cy="312" r="3.5"/>
+        <circle cx="186" cy="330" r="3.5"/>
+        <circle cx="230" cy="342" r="3"/>
+        <circle cx="166" cy="346" r="3"/>
+        <circle cx="222" cy="368" r="3"/>
+      </g>
+      <!-- broadcast spreader -->
+      <g>
+        <line x1="330" y1="338" x2="408" y2="270" stroke="#8a6a4f" stroke-width="9" stroke-linecap="round"/>
+        <line x1="398" y1="262" x2="422" y2="282" stroke="#8a6a4f" stroke-width="9" stroke-linecap="round"/>
+        <path d="M296 308 L368 308 L350 352 L314 352 Z" fill="#c96f4a"/>
+        <path d="M296 308 L368 308 L362 322 L302 322 Z" fill="#d9663f"/>
+        <rect x="322" y="352" width="20" height="16" fill="#8a6a4f"/>
+        <circle cx="306" cy="378" r="18" fill="#33393b"/>
+        <circle cx="306" cy="378" r="7" fill="#b9b1a3"/>
+        <circle cx="360" cy="378" r="18" fill="#33393b"/>
+        <circle cx="360" cy="378" r="7" fill="#b9b1a3"/>
+        <ellipse cx="332" cy="372" rx="14" ry="5" fill="#7fb3c8"/>
+      </g>
+      <!-- granules in hopper -->
+      <g fill="#e0a93d">
+        <circle cx="316" cy="304" r="3.5"/>
+        <circle cx="332" cy="302" r="3.5"/>
+        <circle cx="348" cy="304" r="3.5"/>
+      </g>
+      <circle cx="120" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="142" cy="396" r="10" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">An underfed lawn doesn't just look tired — it gets thin, and thin turf is how every expensive lawn problem starts. Here's what regular feeding prevents (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 30 h26" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+          <path d="M18 28 v-12" stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="18" cy="11" r="6" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round">
+            <line x1="18" y1="2" x2="18" y2="5"/>
+            <line x1="10" y1="6" x2="12" y2="8"/>
+            <line x1="26" y1="6" x2="24" y2="8"/>
+          </g>
+          <path d="M8 28 l2 -5 M28 28 l-2 -5" stroke="#c96f4a" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Weeds move in</h3>
+        <p>Weed seeds need open ground and light to sprout. Thin, hungry turf hands them both — a dense, fed lawn is the best weed control there is.</p>
+        <span class="cost">$100 – $400/yr weed control</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 30 q-1 -10 2 -16" stroke="#c9a06b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M14 30 q0 -12 1 -18" stroke="#c9a06b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M22 30 q1 -11 -1 -17" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M27 30 q2 -9 0 -15" stroke="#2c5a40" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M5 31 h26" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Pale, washed-out color</h3>
+        <p>That yellow-green look is usually a nitrogen shortage, not a watering problem. No amount of extra sprinkler time fixes an empty tank.</p>
+        <span class="cost">Curb appeal, for free</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="16" width="28" height="16" rx="2" fill="#c9a06b"/>
+          <path d="M10 4 v12 M14 7 v9 M18 4 v12 M22 7 v9 M26 4 v12" stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M14 16 v4 M18 16 v7 M22 16 v4" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="29" cy="8" r="4.5" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Shallow roots, brown summers</h3>
+        <p>Well-fed grass — especially fall-fed northern grass — banks energy in deep roots. Starved lawns root shallow and go brown at the first dry week.</p>
+        <span class="cost">Extra watering all summer</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 28 q14 -8 28 0" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <ellipse cx="15" cy="14" rx="4" ry="6" fill="#b9b1a3" transform="rotate(-12 15 14)"/>
+          <ellipse cx="23" cy="20" rx="4" ry="6" fill="#b9b1a3" transform="rotate(10 23 20)"/>
+          <circle cx="12.5" cy="7" r="1.5" fill="#b9b1a3"/>
+          <circle cx="16" cy="6.4" r="1.5" fill="#b9b1a3"/>
+          <circle cx="25.5" cy="13" r="1.5" fill="#b9b1a3"/>
+          <circle cx="22" cy="12.6" r="1.5" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>Slow recovery from wear</h3>
+        <p>Kids, dogs, the mail path, last weekend's party — a fed lawn regrows over wear in days. A hungry one keeps the bald spots until you reseed.</p>
+        <span class="cost">$50 – $150 per reseeding</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 30 h28" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+          <ellipse cx="13" cy="26" rx="8" ry="4" fill="#c9a06b"/>
+          <circle cx="25" cy="22" r="4" fill="#2c5a40"/>
+          <circle cx="29" cy="25" r="3" fill="#3e7c59"/>
+          <circle cx="22" cy="26" r="3" fill="#5e9a78"/>
+          <path d="M9 25 l2 2 M13 24 l2 2" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Moss &amp; bare patches</h3>
+        <p>Moss isn't an invader that beats healthy grass — it's what grows where grass gave up. Left long enough, the fix is a full renovation, not a bag of fertilizer.</p>
+        <span class="cost">$500 – $2,000 renovation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>What's <em>your</em> feeding schedule?</h2>
+    <p class="sub">"Every 3 months during the growing season" is the rule of thumb, but the right months depend entirely on what kind of grass you have — northern and southern lawns feed on nearly opposite schedules. Three questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="grass">
+        <div class="q-label">1. What kind of grass do you have?</div>
+        <div class="pills">
+          <button class="pill" data-v="cool">Cool-season (fescue, bluegrass, rye)</button>
+          <button class="pill" data-v="warm">Warm-season (bermuda, zoysia, St. Augustine)</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+        <div class="q-hint">Hint: northern U.S. lawns are usually cool-season; southern lawns are usually warm-season. The transition zone in between can be either.</div>
+      </div>
+      <div class="quiz-q" data-q="effort">
+        <div class="q-label">2. How much lawn do you want to be doing?</div>
+        <div class="pills">
+          <button class="pill" data-v="low">Low-key — 2 feedings</button>
+          <button class="pill" data-v="standard">Standard — 3–4 feedings</button>
+          <button class="pill" data-v="showcase">Showcase lawn</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="clippings">
+        <div class="q-label">3. Do you bag or mulch your clippings?</div>
+        <div class="pills">
+          <button class="pill" data-v="mulch">Mulch — they stay on the lawn</button>
+          <button class="pill" data-v="bag">Bag them</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDAR ============ -->
+  <section id="calendar">
+    <h2>Your feeding calendar</h2>
+    <p class="sub" id="calSub">Showing the standard cool-season plan. Take the quiz above and this calendar updates to match your grass and your ambitions.</p>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="legend">
+      <span><span class="dot d-feed"></span>Feeding</span>
+      <span><span class="dot d-check"></span>Quick check (soil test, green-up watch)</span>
+    </div>
+    <div class="cal-note">🌡️ <strong>Timing beats the calendar:</strong> these months assume a typical mid-U.S. climate — shift a few weeks earlier in the South, later in the North. Feed cool-season grass when highs are in the 60s–70s°F, and warm-season grass only once it's fully green and growing. Many states and counties also have fertilizer <strong>blackout dates</strong> (typically winter, or near waterways) — check yours.</div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Fertilizer is the cheap part of lawn care — the expensive part is what fills the vacuum when you stop. All figures are typical U.S. estimates:</p>
+    <div class="card">
+      <div class="grid cols-3" style="margin-bottom:6px;">
+        <div class="cost-stat">
+          <div class="v">$50 – $100/yr</div>
+          <div class="l"><strong>DIY fertilizer</strong> for an average lawn, plus a broadcast spreader at $40–80 once. It lasts decades.</div>
+        </div>
+        <div class="cost-stat">
+          <div class="v">$300 – $600/yr</div>
+          <div class="l"><strong>Lawn service program</strong> — 5–7 visits with fertilizer and weed control included. Zero thinking required.</div>
+        </div>
+        <div class="cost-stat">
+          <div class="v">$500 – $2,000</div>
+          <div class="l"><strong>Renovating a weed-infested lawn</strong> — kill-off, regrade, reseed or sod — plus $100–400/yr of weed control on the way down.</div>
+        </div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧤 5 years of DIY feeding (spreader included)</span><span>≈ $435</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:18%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚚 5 years of a lawn service program</span><span>≈ $2,250</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:90%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌵 5 years of neglect → weed control + renovation</span><span>≈ $2,500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">An hour with a spreader a few times a year costs <strong>about $435 over five years</strong> — roughly <strong>5–6× less</strong> than either paying a service or paying for the renovation that neglect eventually buys. And unlike most upkeep, this one's failure mode is slow: by the time the lawn looks bad, you're two seasons behind.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to fertilize your lawn</h2>
+    <p class="sub">A feeding takes 30–60 minutes on an average lawn, and most of that is walking. Work through the checklist — your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ More is NOT better — this is the one rule</h3>
+      <ul>
+        <li><strong>Over-applying burns the lawn</strong> — too much nitrogen pulls moisture out of the grass and leaves brown streaks that take weeks to recover. When in doubt, apply less.</li>
+        <li>Whatever lands on pavement <strong>washes into storm drains and waterways</strong>, where it feeds algae blooms instead of grass. Sweep granules off driveways and sidewalks back onto the lawn — every time.</li>
+        <li><strong>Water it in</strong> afterward (or time it before a light rain) so granules reach the soil instead of sitting on the blades.</li>
+        <li>Check <strong>local fertilizer ordinances and blackout dates</strong> — several states restrict phosphorus or ban winter application entirely.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Broadcast spreader</span>
+      <span class="tool-chip">Lawn fertilizer (right one for the season)</span>
+      <span class="tool-chip">Gloves</span>
+      <span class="tool-chip">Hose or sprinkler — or a rain forecast</span>
+      <span class="tool-chip">Broom (for the pavement sweep)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a fertilizer bag showing the three N-P-K numbers: nitrogen for blade growth, phosphorus for roots, potassium for stress tolerance">
+          <path d="M34 30 q36 -12 72 0 L106 152 q-36 10 -72 0 Z" fill="#fffdf8" stroke="#d8cfbe" stroke-width="2.5"/>
+          <path d="M34 30 q36 -12 72 0 l0 14 q-36 10 -72 0 Z" fill="#3e7c59"/>
+          <text x="70" y="86" font-size="26" font-weight="800" fill="#2c5a40" text-anchor="middle">24-0-6</text>
+          <path d="M52 112 v14 M58 112 l4 12 M46 112 l-4 12" stroke="#3e7c59" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M76 114 v12 M82 114 l4 10 M70 114 l-4 10" stroke="#5e9a78" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <g stroke="#b9b1a3" stroke-width="1.8">
+            <line x1="58" y1="62" x2="136" y2="40"/>
+            <line x1="70" y1="68" x2="136" y2="86"/>
+            <line x1="84" y1="62" x2="136" y2="132"/>
+          </g>
+          <text x="142" y="38" font-size="14" font-weight="700" fill="#2c5a40">N — nitrogen</text>
+          <text x="142" y="54" font-size="12" fill="#6b7376">blade growth &amp; color ("up")</text>
+          <text x="142" y="86" font-size="14" font-weight="700" fill="#8a6a4f">P — phosphorus</text>
+          <text x="142" y="102" font-size="12" fill="#6b7376">roots ("down")</text>
+          <text x="142" y="134" font-size="14" font-weight="700" fill="#9a7117">K — potassium</text>
+          <text x="142" y="150" font-size="12" fill="#6b7376">stress tolerance ("all around")</text>
+        </svg>
+        <h4>Read the three numbers</h4>
+        <p>N-P-K, by percent weight. A 24-0-6 bag is 24% nitrogen — the number that does most of the visible work. Zero phosphorus is normal (and often required by law) unless a soil test says otherwise.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of a lawn showing a perimeter pass around the edge first, then back-and-forth stripes with slightly overlapping wheel tracks">
+          <rect x="16" y="16" width="248" height="148" rx="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="34" y="34" width="212" height="112" rx="8" fill="none" stroke="#2c5a40" stroke-width="4"/>
+          <polygon points="140,28 152,34 140,40" fill="#2c5a40"/>
+          <g stroke="#5e9a78" stroke-width="3.5" stroke-linecap="round">
+            <line x1="62" y1="56" x2="62" y2="124"/>
+            <line x1="92" y1="56" x2="92" y2="124"/>
+            <line x1="122" y1="56" x2="122" y2="124"/>
+            <line x1="152" y1="56" x2="152" y2="124"/>
+            <line x1="182" y1="56" x2="182" y2="124"/>
+            <line x1="212" y1="56" x2="212" y2="124"/>
+          </g>
+          <polygon points="58,120 62,130 66,120" fill="#5e9a78"/>
+          <polygon points="88,60 92,50 96,60" fill="#5e9a78"/>
+          <polygon points="118,120 122,130 126,120" fill="#5e9a78"/>
+          <polygon points="148,60 152,50 156,60" fill="#5e9a78"/>
+          <rect x="74" y="56" width="6" height="68" fill="#3e7c59" opacity="0.35"/>
+          <rect x="104" y="56" width="6" height="68" fill="#3e7c59" opacity="0.35"/>
+          <text x="24" y="158" font-size="12" fill="#6b7376">perimeter first, then stripes — overlap the wheel tracks</text>
+        </svg>
+        <h4>Perimeter first, then stripes</h4>
+        <p>One pass around the edge outlines the lawn (and lets you shut off near beds and pavement). Then walk steady stripes, overlapping wheel tracks slightly so there are no missed lanes.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-view cross-section showing fertilizer granules being watered off the grass blades and into the top of the soil, with about a quarter inch of water">
+          <rect x="14" y="120" width="252" height="44" fill="#c9a06b"/>
+          <rect x="14" y="150" width="252" height="14" fill="#8a6a4f"/>
+          <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round" fill="none">
+            <path d="M40 120 v-22 M48 120 l5 -18 M32 120 l-5 -18"/>
+            <path d="M110 120 v-22 M118 120 l5 -18 M102 120 l-5 -18"/>
+            <path d="M180 120 v-22 M188 120 l5 -18 M172 120 l-5 -18"/>
+            <path d="M240 120 v-22 M248 120 l5 -18 M232 120 l-5 -18"/>
+          </g>
+          <g fill="#e0a93d">
+            <circle cx="66" cy="124" r="4"/>
+            <circle cx="142" cy="125" r="4"/>
+            <circle cx="210" cy="124" r="4"/>
+          </g>
+          <g fill="#d98e3b">
+            <circle cx="88" cy="131" r="3.5"/>
+            <circle cx="162" cy="132" r="3.5"/>
+            <circle cx="228" cy="130" r="3.5"/>
+          </g>
+          <g fill="#7fb3c8">
+            <path d="M70 40 c4 6 6 9 0 13 c-6 -4 -4 -7 0 -13"/>
+            <path d="M140 28 c4 6 6 9 0 13 c-6 -4 -4 -7 0 -13"/>
+            <path d="M205 44 c4 6 6 9 0 13 c-6 -4 -4 -7 0 -13"/>
+            <path d="M105 58 c3.5 5 5 8 0 11 c-5 -3 -3.5 -6 0 -11"/>
+            <path d="M175 64 c3.5 5 5 8 0 11 c-5 -3 -3.5 -6 0 -11"/>
+          </g>
+          <line x1="66" y1="124" x2="66" y2="140" stroke="#7fb3c8" stroke-width="2" stroke-dasharray="3 3"/>
+          <line x1="142" y1="125" x2="142" y2="141" stroke="#7fb3c8" stroke-width="2" stroke-dasharray="3 3"/>
+          <line x1="210" y1="124" x2="210" y2="140" stroke="#7fb3c8" stroke-width="2" stroke-dasharray="3 3"/>
+          <g stroke="#6b7376" stroke-width="2">
+            <line x1="252" y1="78" x2="252" y2="98"/>
+            <line x1="247" y1="78" x2="257" y2="78"/>
+            <line x1="247" y1="98" x2="257" y2="98"/>
+          </g>
+          <text x="178" y="92" font-size="12" fill="#6b7376" font-weight="700">≈ ¼ in. water</text>
+        </svg>
+        <h4>Water it in — lightly</h4>
+        <p>About a quarter inch of water rinses granules off the blades (where they burn) into the soil (where they work). A light rain in the forecast does the job for free; a downpour washes it all away.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Feeding progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fed, swept, and watered in. Your lawn will say thanks in about a week — see you next feeding.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to bring in a pro instead</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Your soil pH is way off.</strong> If a soil test shows pH below ~5.5 or above ~7.5, fertilizer can't do its job — the lawn needs lime or sulfur applied at calculated rates first, which is worth professional help.</li>
+        <li><strong>Grub damage.</strong> Turf that peels back like carpet, plus skunks or birds tearing it up, means grubs — a diagnosis-and-treatment problem, not a feeding problem.</li>
+        <li><strong>Full renovation.</strong> If more than half the lawn is weeds or bare, kill-off and reseeding/sodding is a project with real equipment and real timing. Pros do it in a week; DIY mistakes cost a season.</li>
+        <li><strong>You just don't want to think about it.</strong> That's a legitimate answer — lawn programs ($300–600/yr typical) exist exactly for this, and a good one includes the soil testing and weed control too.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Organic or synthetic fertilizer?</summary>
+      <p>Both feed the lawn; they just work differently. Synthetics are cheaper, faster, and precise — and easier to burn with. Organics (compost-based, corn gluten, etc.) release slowly, feed soil life, and are nearly impossible to over-apply, but they cost more per pound of nitrogen and the green-up is gradual. A perfectly good middle path: synthetic slow-release for the main feedings, and mulched clippings doing the organic work year-round.</p>
+    </details>
+    <details>
+      <summary>How soon after seeding can I fertilize?</summary>
+      <p>At seeding time, use a starter fertilizer (higher phosphorus, if your state allows it) — it's made for exactly this. After that, wait until the new grass has been mowed three or four times before a regular feeding, and skip weed-and-feed products entirely for the first season — the herbicide that kills weed seedlings doesn't know the difference between them and your grass seedlings.</p>
+    </details>
+    <details>
+      <summary>Should I just use a fertilizer + weed killer combo?</summary>
+      <p>Sparingly. "Weed and feed" puts herbicide on the entire lawn whether weeds are there or not, and the timing that's right for feeding is often wrong for the herbicide. You'll get better results — and use far less chemical — by feeding on schedule and spot-spraying the actual weeds. The exception: a crabgrass pre-emergent combo in early spring can make sense for cool-season lawns with a crabgrass history.</p>
+    </details>
+    <details>
+      <summary>When is it safe for kids and pets to go back on the lawn?</summary>
+      <p>For plain granular fertilizer: water it in, let the grass dry, and you're fine — typically 24 hours, or whatever the label says (the label wins). Combos with herbicide or insecticide need more caution: keep everyone off until it's been watered in and fully dried, usually 24–48 hours. Sweep paws-level surfaces like patios, since stray granules are the real ingestion risk.</p>
+    </details>
+    <details>
+      <summary>Why does everyone say fall is the most important feeding for northern lawns?</summary>
+      <p>Because of what the grass does with it. In September, cool-season grass is past summer stress and growing hard, but day length is dropping — so it sends the nitrogen into roots, energy reserves, and new shoots instead of into blades you have to mow. That stored energy is what powers spring green-up. A heavy spring feeding gives you the opposite: lush tops, lazy roots, and a worse summer. If you only fertilize once a year, make it September.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A schedule that changes with the seasons shouldn't live in your head.</h2>
+        <p>September is the big one, November is the winterizer, May is light — and it's all different if your grass is warm-season. This is exactly the kind of schedule an app should hold. Upkeep Ledger logs each feeding and nudges you when the next window opens, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=fertilize-lawn&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=fertilize-lawn&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz + Calendar ================= */
+  var quizState = { grass: null, effort: null, clippings: null };
+
+  var MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  // months are 0-indexed; "light: true" marks the feeding that mulching can replace
+  var PLANS = {
+    cool: {
+      low: {
+        feed: [
+          { m: 8, label: "Full feeding — the big one" },
+          { m: 10, label: "Winterizer — last feeding" }
+        ],
+        check: [{ m: 2, label: "Soil test (every 2–3 yrs)" }]
+      },
+      standard: {
+        feed: [
+          { m: 4, label: "Light feeding", light: true },
+          { m: 8, label: "Full feeding — the big one" },
+          { m: 10, label: "Winterizer — last feeding" }
+        ],
+        check: [{ m: 2, label: "Soil test (every 2–3 yrs)" }]
+      },
+      showcase: {
+        feed: [
+          { m: 4, label: "Light feeding" },
+          { m: 5, label: "Light slow-release", light: true },
+          { m: 8, label: "Full feeding — the big one" },
+          { m: 10, label: "Winterizer — last feeding" }
+        ],
+        check: [{ m: 2, label: "Soil test (every 2–3 yrs)" }]
+      }
+    },
+    warm: {
+      low: {
+        feed: [
+          { m: 4, label: "First feeding — after full green-up" },
+          { m: 6, label: "Midsummer feeding" }
+        ],
+        check: [{ m: 3, label: "Soil test + watch for green-up" }]
+      },
+      standard: {
+        feed: [
+          { m: 4, label: "First feeding — after full green-up" },
+          { m: 6, label: "Midsummer feeding" },
+          { m: 8, label: "Last feeding (6–8 wks before frost)" }
+        ],
+        check: [{ m: 3, label: "Soil test + watch for green-up" }]
+      },
+      showcase: {
+        feed: [
+          { m: 4, label: "First feeding — after full green-up" },
+          { m: 5, label: "Early-summer feeding", light: true },
+          { m: 6, label: "Midsummer feeding" },
+          { m: 8, label: "Last feeding (6–8 wks before frost)" }
+        ],
+        check: [{ m: 3, label: "Soil test + watch for green-up" }]
+      }
+    }
+  };
+
+  function clonePlan(p) { return JSON.parse(JSON.stringify(p)); }
+
+  function computePlan(s) {
+    var grass = s.grass === "warm" ? "warm" : "cool";
+    var plan = clonePlan(PLANS[grass][s.effort]);
+    var reasons = [];
+
+    if (s.grass === "unsure") {
+      reasons.push("Not sure is fine: northern U.S. lawns are usually cool-season (fescue, bluegrass, rye); southern lawns are usually warm-season (bermuda, zoysia, St. Augustine). We assumed cool-season — re-answer if you're in the South.");
+    }
+    if (grass === "cool") {
+      reasons.push("Cool-season lawns feed hardest in FALL — the September feeding is the single most important of the year, and the November winterizer banks root energy for spring.");
+      reasons.push("Spring stays light on purpose: heavy spring nitrogen forces blade growth at the expense of roots, and you pay for it in July.");
+    } else {
+      reasons.push("Warm-season lawns feed while they're actively growing — late spring through summer. Never feed before full spring green-up or within 6–8 weeks of frost; both invite disease and winterkill.");
+    }
+
+    if (s.effort === "low") {
+      reasons.push("Low-key works: two well-timed feedings capture most of the benefit of a full program.");
+    } else if (s.effort === "standard") {
+      reasons.push("Three to four feedings is the sweet spot — a dense, green lawn without babying it.");
+    } else {
+      reasons.push("A showcase lawn earns the extra feedings — just keep each one modest and slow-release; frequency beats heaviness.");
+    }
+
+    if (s.clippings === "mulch") {
+      var lightIdx = -1;
+      for (var i = 0; i < plan.feed.length; i++) {
+        if (plan.feed[i].light) { lightIdx = i; break; }
+      }
+      if (lightIdx !== -1) {
+        plan.feed.splice(lightIdx, 1);
+        reasons.push("Mulched clippings return roughly 25% of your lawn's nitrogen needs — that covers the lightest feeding, so we dropped it from your plan.");
+      } else {
+        reasons.push("Mulched clippings return roughly 25% of your lawn's nitrogen needs — run each feeding at the low end of the bag rate.");
+      }
+    } else {
+      reasons.push("Bagged clippings carry nitrogen away with them, so stick to the full schedule (or switch to mulching — it's a free feeding).");
+    }
+
+    return { n: plan.feed.length, plan: plan, reasons: reasons };
+  }
+
+  var SEASON_SVG = {
+    winter: '<svg viewBox="0 0 16 16" aria-hidden="true"><g stroke="#7fb3c8" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="3.5" y1="3.5" x2="12.5" y2="12.5"/><line x1="12.5" y1="3.5" x2="3.5" y2="12.5"/></g></svg>',
+    spring: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14 V7" stroke="#3e7c59" stroke-width="1.8" fill="none"/><path d="M8 8 Q4 8 3 4 Q7 4 8 8" fill="#5e9a78"/><path d="M8 8 Q12 8 13 4 Q9 4 8 8" fill="#3e7c59"/></svg>',
+    summer: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#e0a93d"/><g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.4" y2="4.4"/><line x1="11.6" y1="11.6" x2="13" y2="13"/><line x1="13" y1="3" x2="11.6" y2="4.4"/><line x1="3" y1="13" x2="4.4" y2="11.6"/></g></svg>',
+    fall: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 C13.5 3 14.5 9 8 14.5 C1.5 9 2.5 3 8 1.5" fill="#c96f4a"/><line x1="8" y1="5" x2="8" y2="14.5" stroke="#9a4f33" stroke-width="1.2"/></svg>'
+  };
+  function seasonOf(m) {
+    return (m === 11 || m <= 1) ? "winter" : (m <= 4) ? "spring" : (m <= 7) ? "summer" : "fall";
+  }
+
+  function findTask(list, m) {
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].m === m) return list[i];
+    }
+    return null;
+  }
+
+  function renderCalendar(plan, personalized) {
+    var grid = document.getElementById("calGrid");
+    grid.innerHTML = "";
+    for (var m = 0; m < 12; m++) {
+      var cell = document.createElement("div");
+      cell.className = "month";
+      var task = "—";
+      var feed = findTask(plan.feed, m);
+      var check = findTask(plan.check, m);
+      if (feed) {
+        cell.className += " feed";
+        task = feed.label;
+      } else if (check) {
+        cell.className += " check";
+        task = check.label;
+      }
+      cell.innerHTML = '<span class="m-season">' + SEASON_SVG[seasonOf(m)] + '</span>' +
+        '<div class="m-name">' + MONTH_NAMES[m] + '</div><div class="m-task">' + task + "</div>";
+      grid.appendChild(cell);
+    }
+    document.getElementById("calSub").textContent = personalized
+      ? "Personalized from your quiz answers. Green months are feedings; gold months are quick checks."
+      : "Showing the standard cool-season plan. Take the quiz above and this calendar updates to match your grass and your ambitions.";
+  }
+
+  function onQuizChange() {
+    if (!quizState.grass || !quizState.effort || !quizState.clippings) return;
+    var r = computePlan(quizState);
+    var freqWords = { 2: "2 feedings a year", 3: "3 feedings a year", 4: "4 feedings a year" };
+    document.getElementById("resultFreq").textContent = "Your plan: " + (freqWords[r.n] || r.n + " feedings a year");
+    var monthsTxt = r.plan.feed.map(function (f) { return MONTH_NAMES[f.m]; }).join(", ");
+    document.getElementById("resultBody").innerHTML =
+      "Feedings in <strong>" + monthsTxt + "</strong> — see your calendar below. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+    renderCalendar(r.plan, true);
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  renderCalendar(PLANS.cool.standard, false);
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you spread", text: "Do a soil test every 2–3 years", note: "About $15–20 through your county extension office. It tells you pH and what your lawn actually needs — guessing is how lawns get over-fertilized." },
+    { phase: "Before you spread", text: "Know your lawn's square footage", note: "Length × width, minus beds and driveway. Bag rates are per 1,000 sq ft, so this number drives everything. Measure once, write it down forever." },
+    { phase: "Before you spread", text: "Pick the right product for the season", note: "Slow-release nitrogen for main feedings, a \"winterizer\" for the last cool-season one, starter fertilizer only with new seed. Skip weed-and-feed unless you actually have weeds." },
+    { phase: "Before you spread", text: "Check the forecast — and local blackout dates", note: "A light rain coming is perfect; a downpour washes your money into the storm drain. Some states ban application in certain months or near water." },
+    { phase: "Load the spreader", text: "Fill the spreader on pavement or a tarp — never on the lawn", note: "A spill on grass is a guaranteed burn spot. On pavement, you just sweep it up and pour it back." },
+    { phase: "Load the spreader", text: "Set the rate LOW — half the bag's setting", note: "Two perpendicular half-rate passes beat one heavy pass every time: misses and stripes disappear, and you can't accidentally double-dose." },
+    { phase: "Spread", text: "Make a perimeter pass first", note: "Once around the edge outlines the lawn and handles the borders, so on the fill-in passes you can shut the hopper as you approach beds and pavement." },
+    { phase: "Spread", text: "Walk steady stripes, slightly overlapping the wheel tracks", note: "Your walking pace sets the rate — keep it consistent. Then do the second half-rate pass perpendicular to the first." },
+    { phase: "Spread", text: "Sweep granules off driveways and sidewalks back onto the lawn", note: "Anything left on pavement feeds the nearest creek's algae, not your grass. This is the step that keeps fertilizer a good neighbor." },
+    { phase: "Finish up", text: "Water it in (~¼ inch) unless rain is on the way", note: "Rinses granules off the blades and into the soil — this is what prevents burn and actually delivers the feeding." },
+    { phase: "Finish up", text: "Seal the bag and store it somewhere dry", note: "Fertilizer pulls moisture from the air and turns into a brick. A sealed bag in the garage keeps fine until next season." },
+    { phase: "Finish up", text: "Log the date, product, and spreader setting", note: "Future-you needs to know what went down and when — especially the spreader setting that worked." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:fertilize-lawn:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

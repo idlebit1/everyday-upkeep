@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Your Dishwasher Filter — Everyday Upkeep</title>
+<meta name="description" content="How often to clean your dishwasher filter, why it matters, and a five-minute step-by-step guide — the single most skipped task in the kitchen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Monthly</span>
+      <h1>Clean Your Dishwasher Filter</h1>
+      <p class="lede">Hiding under the bottom rack of almost every modern dishwasher is a twist-out filter — and it's been quietly collecting every crumb you didn't scrape off. Five minutes a month keeps your dishes actually clean, your kitchen smelling fine, and your pump alive.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>once a month</em></span>
+        <span class="chip">⏱️ <em>~5 minutes</em>, no tools required</span>
+        <span class="chip">🧼 Just <em>dish soap + a soft brush</em></span>
+        <span class="chip">💸 Skipping it risks <em>$150–$400</em> pump repairs</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of an open dishwasher with the bottom rack pulled out onto the door, revealing the round twist-out filter glowing in the tub floor, with sparkles, a soap bottle, and a brush nearby">
+      <ellipse cx="290" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- window + sun -->
+      <rect x="58" y="44" width="86" height="74" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="101" y1="44" x2="101" y2="118" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="58" y1="81" x2="144" y2="81" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="478" cy="60" r="22" fill="#f2cf7a"/>
+      <!-- counter + cabinet on the left -->
+      <rect x="44" y="166" width="116" height="14" rx="4" fill="#c9a06b"/>
+      <rect x="54" y="180" width="96" height="160" fill="#b9b1a3"/>
+      <rect x="64" y="194" width="76" height="62" rx="4" fill="#8a6a4f"/>
+      <circle cx="102" cy="225" r="4" fill="#e0a93d"/>
+      <rect x="64" y="266" width="76" height="62" rx="4" fill="#8a6a4f"/>
+      <circle cx="102" cy="297" r="4" fill="#e0a93d"/>
+      <!-- dishwasher body -->
+      <rect x="186" y="96" width="248" height="248" rx="10" fill="#b9b1a3"/>
+      <rect x="186" y="96" width="248" height="26" rx="10" fill="#8a6a4f"/>
+      <circle cx="208" cy="109" r="5" fill="#e0a93d"/>
+      <rect x="222" y="105" width="44" height="8" rx="4" fill="#fffdf8"/>
+      <!-- tub interior -->
+      <rect x="200" y="130" width="220" height="200" rx="6" fill="#dce8ee"/>
+      <rect x="200" y="130" width="220" height="200" rx="6" fill="none" stroke="#7fb3c8" stroke-width="2"/>
+      <!-- upper rack with glasses -->
+      <line x1="208" y1="178" x2="412" y2="178" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round"/>
+      <g stroke="#7fb3c8" stroke-width="2.5">
+        <line x1="228" y1="178" x2="228" y2="166"/>
+        <line x1="262" y1="178" x2="262" y2="166"/>
+        <line x1="296" y1="178" x2="296" y2="166"/>
+        <line x1="330" y1="178" x2="330" y2="166"/>
+        <line x1="364" y1="178" x2="364" y2="166"/>
+        <line x1="398" y1="178" x2="398" y2="166"/>
+      </g>
+      <path d="M238 174 v-20 h14 v20" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <path d="M306 174 v-20 h14 v20" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <path d="M372 174 v-20 h14 v20" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <!-- spray arm -->
+      <ellipse cx="310" cy="226" rx="74" ry="11" fill="#5e9a78"/>
+      <circle cx="310" cy="226" r="9" fill="#2c5a40"/>
+      <circle cx="262" cy="226" r="3" fill="#dce8ee"/>
+      <circle cx="286" cy="226" r="3" fill="#dce8ee"/>
+      <circle cx="334" cy="226" r="3" fill="#dce8ee"/>
+      <circle cx="358" cy="226" r="3" fill="#dce8ee"/>
+      <!-- tub floor + highlighted round filter -->
+      <rect x="200" y="288" width="220" height="42" rx="6" fill="#7fb3c8"/>
+      <circle cx="310" cy="306" r="30" fill="#e0a93d"/>
+      <circle cx="310" cy="306" r="22" fill="#fffdf8"/>
+      <g stroke="#8a6a4f" stroke-width="1.6">
+        <line x1="296" y1="298" x2="324" y2="298"/>
+        <line x1="293" y1="306" x2="327" y2="306"/>
+        <line x1="296" y1="314" x2="324" y2="314"/>
+        <line x1="302" y1="291" x2="302" y2="321"/>
+        <line x1="310" y1="289" x2="310" y2="323"/>
+        <line x1="318" y1="291" x2="318" y2="321"/>
+      </g>
+      <!-- sparkles around the filter -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="262" y1="280" x2="262" y2="292"/>
+        <line x1="256" y1="286" x2="268" y2="286"/>
+        <line x1="362" y1="276" x2="362" y2="290"/>
+        <line x1="355" y1="283" x2="369" y2="283"/>
+        <line x1="344" y1="330" x2="344" y2="340"/>
+        <line x1="339" y1="335" x2="349" y2="335"/>
+      </g>
+      <!-- open door folded down in front -->
+      <polygon points="186,344 434,344 480,392 232,392" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <polygon points="186,344 434,344 442,352 194,352" fill="#dce8ee"/>
+      <!-- bottom rack pulled out onto the door -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+        <line x1="252" y1="368" x2="420" y2="368"/>
+        <line x1="262" y1="368" x2="256" y2="352"/>
+        <line x1="294" y1="368" x2="288" y2="352"/>
+        <line x1="326" y1="368" x2="320" y2="352"/>
+        <line x1="358" y1="368" x2="352" y2="352"/>
+        <line x1="390" y1="368" x2="384" y2="352"/>
+        <line x1="414" y1="368" x2="408" y2="352"/>
+      </g>
+      <circle cx="282" cy="346" r="13" fill="#c96f4a"/>
+      <circle cx="306" cy="348" r="13" fill="#d9663f"/>
+      <circle cx="332" cy="346" r="13" fill="#c96f4a"/>
+      <circle cx="368" cy="368" r="5" fill="#5e9a78"/>
+      <circle cx="398" cy="368" r="5" fill="#5e9a78"/>
+      <!-- soap bottle + brush on the floor -->
+      <rect x="496" y="330" width="26" height="54" rx="8" fill="#3e7c59"/>
+      <rect x="503" y="318" width="12" height="14" rx="4" fill="#2c5a40"/>
+      <rect x="500" y="346" width="18" height="20" rx="3" fill="#e3efe8"/>
+      <rect x="120" y="368" width="46" height="10" rx="5" fill="#c9a06b"/>
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="128" y1="368" x2="128" y2="360"/>
+        <line x1="136" y1="368" x2="136" y2="359"/>
+        <line x1="144" y1="368" x2="144" y2="360"/>
+        <line x1="152" y1="368" x2="152" y2="359"/>
+      </g>
+      <!-- drips -->
+      <g fill="#7fb3c8">
+        <circle cx="226" cy="380" r="3"/>
+        <circle cx="452" cy="384" r="3"/>
+        <circle cx="462" cy="376" r="2.5"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Your dishwasher doesn't grind food away — it catches it in a filter and reuses the wash water. When that filter clogs, every problem below starts with the same five minutes you skipped (costs are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#dce8ee"/>
+          <circle cx="18" cy="18" r="7" fill="#fffdf8"/>
+          <circle cx="13" cy="14" r="1.6" fill="#8a6a4f"/>
+          <circle cx="22" cy="12" r="1.4" fill="#8a6a4f"/>
+          <circle cx="24" cy="21" r="1.6" fill="#8a6a4f"/>
+          <circle cx="16" cy="24" r="1.4" fill="#8a6a4f"/>
+          <circle cx="19" cy="17" r="1.3" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Grit on "clean" dishes</h3>
+        <p>A full filter means the machine recirculates dirty water — redepositing fine food particles onto everything in the load. If plates come out with sandy specks, this is why.</p>
+        <span class="cost">Every load, re-washed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 28 h20 l-3 -10 h-14 z" fill="#b9b1a3"/>
+          <ellipse cx="18" cy="18" rx="10" ry="3" fill="#8a6a4f"/>
+          <g stroke="#5e9a78" stroke-width="2.2" fill="none" stroke-linecap="round">
+            <path d="M12 14 q-2 -3 0 -6"/>
+            <path d="M18 13 q-2 -3 0 -6"/>
+            <path d="M24 14 q-2 -3 0 -6"/>
+          </g>
+        </svg></div>
+        <h3>Sour, swampy smells</h3>
+        <p>Trapped food rots in warm, damp darkness between cycles. That "dishwasher smell" that greets you when you open the door is almost always the filter, not the machine.</p>
+        <span class="cost">Free to fix — today</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 16 h24 v10 a4 4 0 0 1 -4 4 h-16 a4 4 0 0 1 -4 -4 z" fill="#b9b1a3"/>
+          <path d="M9 21 q3 -3.5 6 0 q3 3.5 6 0 q3 -3.5 6 0" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="14" cy="11" r="2" fill="#7fb3c8"/>
+          <circle cx="21" cy="8" r="2.4" fill="#7fb3c8"/>
+          <circle cx="26" cy="12" r="1.8" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Standing water &amp; poor draining</h3>
+        <p>The filter sits over the drain. Clog it and you get a puddle in the tub after every cycle — the first step on the road to a "broken dishwasher" service call.</p>
+        <span class="cost">$150 – $250 service call</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="19" r="9" fill="#5e9a78"/>
+          <circle cx="16" cy="19" r="4" fill="#2c5a40"/>
+          <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round">
+            <line x1="16" y1="6.5" x2="16" y2="10"/>
+            <line x1="16" y1="28" x2="16" y2="31.5"/>
+            <line x1="3.5" y1="19" x2="7" y2="19"/>
+            <line x1="7" y1="10" x2="9.5" y2="12.5"/>
+            <line x1="7" y1="28" x2="9.5" y2="25.5"/>
+          </g>
+          <path d="M28 8 l-3.5 8 h4 l-3.5 8" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Pump &amp; spray-arm strain</h3>
+        <p>Debris that escapes a packed filter ends up in the circulation pump and spray-arm jets. Pumps wear out fast pushing chunky water — and they're the priciest part in the machine.</p>
+        <span class="cost">$150 – $400 pump replacement</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M12 6 h12 l-2 14 a4 4 0 0 1 -8 0 z" fill="#dce8ee"/>
+          <path d="M13.5 9 h9" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="24" x2="18" y2="29" stroke="#7fb3c8" stroke-width="2.5"/>
+          <rect x="12" y="29" width="12" height="3" rx="1.5" fill="#7fb3c8"/>
+          <circle cx="15" cy="13" r="1.2" fill="#b9b1a3"/>
+          <circle cx="20" cy="16" r="1.2" fill="#b9b1a3"/>
+          <circle cx="17" cy="11" r="1" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>Cloudy glassware</h3>
+        <p>Recirculated grease and grit film onto glass first. If your glasses look hazier every month, clean the filter before you blame the detergent — or buy new glasses.</p>
+        <span class="cost">$30 – $100 in "fixes"</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">Once a month is the rule of thumb, but the right interval depends on how hard your dishwasher works and what you feed it. Answer three questions for a personalized schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="loads">
+        <div class="q-label">1. How many loads do you run?</div>
+        <div class="pills">
+          <button class="pill" data-v="few">A few per week</button>
+          <button class="pill" data-v="daily">About one a day</button>
+          <button class="pill" data-v="heavy">2+ a day</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="prep">
+        <div class="q-label">2. What happens to plates before they go in?</div>
+        <div class="pills">
+          <button class="pill" data-v="scrape">Scrape only</button>
+          <button class="pill" data-v="rinse">Quick rinse</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">3. Does your machine have a manual filter or a built-in grinder?</div>
+        <div class="pills">
+          <button class="pill" data-v="notsure">Not sure</button>
+          <button class="pill" data-v="manual">Manual filter — most modern machines</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is one of the most lopsided trades in home upkeep: the fix costs nothing, and the failure modes are real appliance-repair money. All figures are typical U.S. estimates:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">Free</div><div class="l">5 minutes + dish soap you already own</div></div>
+        <div class="calc-stat"><div class="v bad">$150 – $250</div><div class="l">service call for "dishwasher won't drain"</div></div>
+        <div class="calc-stat"><div class="v bad">$150 – $400</div><div class="l">circulation or drain pump replacement</div></div>
+        <div class="calc-stat"><div class="v bad">$500 – $1,200</div><div class="l">replacing a "broken" dishwasher that just had a clogged filter</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧼 A year of monthly filter cleanings</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 One pump replacement</span><span>~$275</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:28%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚚 One avoidable dishwasher replacement</span><span>~$850</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">Appliance techs will tell you: a meaningful share of "my dishwasher died" calls end with the tech <strong>twisting out a clogged filter, rinsing it in the customer's own sink, and charging $150</strong>. Five minutes a month means that tech never meets your dishwasher.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your dishwasher filter</h2>
+    <p class="sub">The whole job takes about five minutes at the kitchen sink. Work through the checklist — your progress saves automatically, so you can pick it back up if you get interrupted.</p>
+
+    <div class="safety">
+      <h3>⚠️ Before you start — three things worth knowing</h3>
+      <ul>
+        <li><strong>Find your filter first.</strong> Check your manual (or search your model number + "filter") — on most machines it's a round, twist-out cylinder in the tub floor, usually under the bottom spray arm or tucked in a back corner.</li>
+        <li><strong>Never run the dishwasher without the filter seated.</strong> An unfiltered cycle sends debris straight into the pump — the exact thing the filter exists to prevent.</li>
+        <li><strong>No harsh abrasives.</strong> Steel wool and stiff bristles can tear the fine mesh, and a torn filter is a useless filter. Soft brush, warm water, dish soap — that's the whole kit.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Soft brush or old toothbrush</span>
+      <span class="tool-chip">Dish soap</span>
+      <span class="tool-chip">Towel</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three things worth seeing first</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of the dishwasher tub floor showing the round filter cylinder and an arrow indicating a quarter-turn counterclockwise twist to unlock it">
+          <rect x="22" y="16" width="236" height="148" rx="12" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <ellipse cx="140" cy="56" rx="64" ry="9" fill="#5e9a78"/>
+          <circle cx="140" cy="56" r="7" fill="#2c5a40"/>
+          <circle cx="140" cy="112" r="30" fill="#e0a93d"/>
+          <circle cx="140" cy="112" r="22" fill="#fffdf8"/>
+          <g stroke="#8a6a4f" stroke-width="1.5">
+            <line x1="126" y1="104" x2="154" y2="104"/>
+            <line x1="123" y1="112" x2="157" y2="112"/>
+            <line x1="126" y1="120" x2="154" y2="120"/>
+            <line x1="132" y1="97" x2="132" y2="127"/>
+            <line x1="140" y1="95" x2="140" y2="129"/>
+            <line x1="148" y1="97" x2="148" y2="127"/>
+          </g>
+          <path d="M183 96 A 46 46 0 0 0 161 75" stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="155,82 166,69 170,82" fill="#d9663f"/>
+          <text x="192" y="92" font-size="12" fill="#6b7376">¼ turn</text>
+          <text x="192" y="106" font-size="12" fill="#6b7376">counter-</text>
+          <text x="192" y="120" font-size="12" fill="#6b7376">clockwise</text>
+          <line x1="140" y1="142" x2="140" y2="154" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="106" y="160" font-size="12" fill="#6b7376" transform="translate(0,0)">filter, under the spray arm</text>
+        </svg>
+        <h4>Locate, then twist it out</h4>
+        <p>The filter is a round cylinder in the tub floor. A quarter-turn counterclockwise unlocks it; lift it straight up and out. No tools, no force — if it won't turn, check the arrows printed on it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the two filter parts under a running faucet: the coarse outer cage and the fine mesh cylinder, rinsed separately">
+          <path d="M118 14 h44 v14 h-16 v14 h-12 v-14 h-16 z" fill="#b9b1a3"/>
+          <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+            <line x1="134" y1="46" x2="132" y2="60"/>
+            <line x1="141" y1="46" x2="140" y2="62"/>
+            <line x1="148" y1="46" x2="148" y2="60"/>
+          </g>
+          <rect x="42" y="78" width="74" height="74" rx="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round">
+            <line x1="56" y1="92" x2="102" y2="92"/>
+            <line x1="56" y1="106" x2="102" y2="106"/>
+            <line x1="56" y1="120" x2="102" y2="120"/>
+            <line x1="56" y1="134" x2="102" y2="134"/>
+          </g>
+          <text x="44" y="168" font-size="12" fill="#6b7376">coarse cage: big bits</text>
+          <rect x="164" y="78" width="74" height="74" rx="37" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <g stroke="#d98e3b" stroke-width="1.2">
+            <line x1="178" y1="92" x2="224" y2="92"/>
+            <line x1="174" y1="102" x2="228" y2="102"/>
+            <line x1="172" y1="112" x2="230" y2="112"/>
+            <line x1="174" y1="122" x2="228" y2="122"/>
+            <line x1="178" y1="132" x2="224" y2="132"/>
+            <line x1="186" y1="84" x2="186" y2="146"/>
+            <line x1="200" y1="80" x2="200" y2="150"/>
+            <line x1="214" y1="84" x2="214" y2="146"/>
+          </g>
+          <text x="160" y="168" font-size="12" fill="#6b7376">fine mesh: gentle brush</text>
+        </svg>
+        <h4>Two parts, rinsed separately</h4>
+        <p>Most filters separate into a coarse outer cage (catches big debris — rinse and shake) and a fine mesh cylinder (catches grease and grit — warm water, dish soap, soft brush only).</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a dishwasher spray arm with water jets from clear holes and one blocked hole highlighted for cleaning with a toothpick">
+          <ellipse cx="140" cy="104" rx="104" ry="17" fill="#5e9a78"/>
+          <circle cx="140" cy="104" r="13" fill="#2c5a40"/>
+          <g fill="#dce8ee">
+            <circle cx="72" cy="102" r="4"/>
+            <circle cx="106" cy="101" r="4"/>
+            <circle cx="174" cy="101" r="4"/>
+            <circle cx="208" cy="102" r="4"/>
+          </g>
+          <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+            <line x1="72" y1="94" x2="68" y2="76"/>
+            <line x1="106" y1="92" x2="103" y2="74"/>
+            <line x1="174" y1="92" x2="177" y2="74"/>
+          </g>
+          <circle cx="208" cy="102" r="7" fill="none" stroke="#d9663f" stroke-width="3"/>
+          <line x1="214" y1="96" x2="240" y2="58" stroke="#d9663f" stroke-width="2" stroke-dasharray="4 3"/>
+          <text x="196" y="48" font-size="12" fill="#d9663f" font-weight="700">blocked jet</text>
+          <line x1="232" y1="118" x2="252" y2="140" stroke="#c9a06b" stroke-width="4" stroke-linecap="round"/>
+          <text x="120" y="160" font-size="12" fill="#6b7376">clear stuck seeds with a toothpick</text>
+        </svg>
+        <h4>Check the spray arms too</h4>
+        <p>While the rack is out, spin each spray arm and eyeball the jet holes. Seeds, rice, and label scraps lodge in them — pop blockages out with a toothpick and the wash improves instantly.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Cleaning progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done! Five minutes, zero dollars, and your next load will prove it. See you next month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL FOR SERVICE ============ -->
+  <section id="pro">
+    <h2>When to call for service</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Water still won't drain after a filter clean.</strong> The clog is likely deeper — in the drain hose, the air gap, or a kinked line under the sink. Worth a pro if a basic hose check doesn't find it.</li>
+        <li><strong>Grinding, rattling, or whining noises</strong> during the wash cycle. That's usually something hard (glass shard, fruit pit) in the pump, or a pump bearing on its way out.</li>
+        <li><strong>Error codes that come back</strong> after you've cleaned the filter and power-cycled the machine. Drain-related codes (like LE, OE, or E24 depending on brand) that persist mean a sensor or pump issue.</li>
+        <li><strong>Leaks.</strong> Water on the kitchen floor is never a filter problem — door gaskets, hoses, and valves are pro territory, and fast action saves the cabinetry.</li>
+        <li>Typical diagnostic visits run <strong>$100–$150</strong>, often credited toward the repair. Mention that you've already cleaned the filter — it's the first thing they'd check.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I know if my dishwasher has a manual filter?</summary>
+      <p>Pull out the bottom rack and look at the tub floor. A round plastic cylinder or grid you can grip and twist — usually with little arrows printed on it — is a manual filter, and nearly every machine made after about 2010 has one. If the floor is flat with no removable parts and your machine is older and noticeably loud, it may have a self-cleaning grinder instead. The manual (or your model number plus "filter" in a search) settles it in 30 seconds.</p>
+    </details>
+    <details>
+      <summary>My dishwasher smells even after I cleaned the filter. Now what?</summary>
+      <p>Wipe the sump area where the filter sits, the door gasket (fold it back — gunk hides in the crease), and the bottom inside edge of the door, which the spray never reaches. Then run an empty hot cycle with a bowl of white vinegar on the top rack. If a smell survives all that, check the drain hose for a low sag where water sits.</p>
+    </details>
+    <details>
+      <summary>Does rinse aid have anything to do with the filter?</summary>
+      <p>Indirectly, yes. Rinse aid helps water sheet off dishes so grease and residue head for the drain instead of redepositing — which means a bit less film ending up on the fine mesh. It's no substitute for cleaning the filter, but the two together are why some dishwashers stay fresh for years.</p>
+    </details>
+    <details>
+      <summary>How do I run a vinegar cycle, exactly?</summary>
+      <p>Put one to two cups of white vinegar in a dishwasher-safe bowl, set it upright on the top rack of an otherwise empty machine, and run the hottest normal cycle. The vinegar disperses through the wash water, dissolving grease film and mineral buildup. Once a month after a filter clean is plenty — and skip the urge to mix in bleach, ever.</p>
+    </details>
+    <details>
+      <summary>Why are my glasses cloudy — is that the filter?</summary>
+      <p>Do the vinegar test: soak a cloudy glass in white vinegar for five minutes. If it clears, the haze is hard-water mineral film — a filter clean, a vinegar cycle, and rinse aid will fix it. If it stays cloudy, that's etching: permanent micro-scratching from soft water, too much detergent, or very hot cycles. Etching can't be reversed, but easing up on detergent prevents it on the next set.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Monthly tasks are the easiest to forget.</h2>
+        <p>You now know your filter schedule — the hard part is remembering it twelve times a year. Upkeep Ledger logs each clean and nudges you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=clean-dishwasher-filter&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=clean-dishwasher-filter&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { loads: null, prep: null, type: null };
+
+  function computePlan(s) {
+    // score: more food through the machine = clean more often
+    var score = { few: 0, daily: 1, heavy: 2 }[s.loads] + (s.prep === "scrape" ? 1 : 0);
+    var interval, freqWord;
+    if (score >= 3) { interval = "biweekly"; freqWord = "Every 2 weeks"; }
+    else if (score >= 1) { interval = "monthly"; freqWord = "Once a month"; }
+    else { interval = "sixweeks"; freqWord = "Every 6 weeks"; }
+
+    var reasons = [];
+    if (s.loads === "heavy") reasons.push("Two-plus loads a day is restaurant-adjacent duty — the filter sees a week's worth of food in a few days.");
+    if (s.loads === "daily") reasons.push("A daily load is the classic family pace — the filter fills steadily and a regular rhythm keeps it ahead of the smell.");
+    if (s.loads === "few") reasons.push("A few loads a week means the filter fills slowly — but food still sits and sours between runs, so don't stretch much past six weeks.");
+    if (s.prep === "scrape") reasons.push("Scrape-only is the right way to load a modern dishwasher — but it means every sauce, crumb, and grain of rice ends up in the filter, so it earns more frequent rinses.");
+    if (s.prep === "rinse") reasons.push("Pre-rinsing sends less food to the filter (though scraping alone is genuinely enough for modern machines — you're buying filter time, not cleaner dishes).");
+    if (s.type === "manual") reasons.push("Manual filters NEED this — there is no self-cleaning happening. The quiet wash you paid for came at the price of a monthly twist-and-rinse.");
+    if (s.type === "notsure") reasons.push("Not sure is almost certainly 'manual': nearly every dishwasher made after about 2010 has a twist-out filter. Older models with a built-in grinder self-clean — check the tub floor for a round twist-out cylinder.");
+
+    return { interval: interval, freqWord: freqWord, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.loads || !quizState.prep || !quizState.type) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.freqWord;
+    document.getElementById("resultBody").innerHTML =
+      "Put it on a <strong>" + (r.interval === "biweekly" ? "twice-a-month" : r.interval === "monthly" ? "monthly" : "six-week") +
+      "</strong> rhythm — the five-minute routine below. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Get in there", text: "Slide the bottom rack all the way out", note: "Set it on the open door or the counter — you need a clear view of the tub floor." },
+    { phase: "Get in there", text: "Locate the filter — a round cylinder in the tub floor", note: "Usually under the bottom spray arm or in a back corner. Check the manual if it's hiding." },
+    { phase: "Get in there", text: "Twist it a quarter-turn counterclockwise and lift it out", note: "Follow the arrows printed on the cap. Many filters come out in two parts: coarse cage + fine mesh." },
+    { phase: "Wash it", text: "Rinse both parts under warm running water", note: "Most of the debris lets go immediately. Brace yourself for the smell the first time — it gets better." },
+    { phase: "Wash it", text: "Scrub the fine mesh with dish soap and a soft brush", note: "An old toothbrush is perfect. Greasy film needs soap; never use steel wool or anything abrasive." },
+    { phase: "Wash it", text: "Hold the mesh up to the light to check for tears", note: "Water should show through evenly. A torn mesh means a replacement filter (~$15–$30, typical U.S.)." },
+    { phase: "While you're in there", text: "Wipe the sump area where the filter sits", note: "Use a towel to grab any debris in the recess — don't push it into the drain opening." },
+    { phase: "While you're in there", text: "Spin each spray arm and check the jet holes", note: "Clear stuck seeds or food bits with a toothpick. Blocked jets = weak wash on that level." },
+    { phase: "Finish up", text: "Reseat the filter and twist clockwise until it clicks or locks", note: "It should sit flush with the tub floor. Never run the machine with the filter loose or missing." },
+    { phase: "Finish up", text: "Optional: run an empty hot cycle with a bowl of white vinegar", note: "1–2 cups in a bowl on the top rack. Dissolves grease film and hard-water buildup, kills lingering smells." },
+    { phase: "Finish up", text: "Log it — next clean in about a month", note: "Or whatever interval the quiz gave you. The schedule only works if something remembers it." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:clean-dishwasher-filter:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

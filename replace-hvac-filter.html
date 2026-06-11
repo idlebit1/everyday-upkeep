@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace Your HVAC Filter — Everyday Upkeep</title>
+<meta name="description" content="How often to replace your HVAC filter, why it matters for your blower motor and energy bill, and a step-by-step guide to swapping it in five minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Quarterly</span>
+      <h1>Replace Your HVAC Filter</h1>
+      <p class="lede">Every bit of air your home breathes gets pulled through one cheap rectangle of pleated fiber. When it clogs, your system strains, your bills creep up, and dust goes right back into the rooms you just cleaned. Here's how often to swap it, why — and the five-minute routine.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>~5 minutes</em> per swap</span>
+        <span class="chip">💵 Filters cost <em>$5–$40</em> each</span>
+        <span class="chip">💸 Skipping it risks <em>$1,500+</em> repairs</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a basement furnace with a fresh pleated filter being slid into its slot: dusty air swirls into the return duct on the left, clean air flows out of the supply duct above, and a spent gray filter leans against the wall">
+      <ellipse cx="280" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- supply duct + clean air -->
+      <rect x="338" y="46" width="64" height="116" fill="#b9b1a3"/>
+      <rect x="330" y="118" width="80" height="44" fill="#8a6a4f" opacity="0.25"/>
+      <g stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M352 36 q6 -14 -2 -24"/>
+        <path d="M372 38 q8 -16 -1 -28"/>
+        <path d="M392 36 q6 -14 -2 -24"/>
+      </g>
+      <circle cx="346" cy="6" r="3" fill="#7fb3c8"/>
+      <circle cx="398" cy="8" r="3" fill="#7fb3c8"/>
+      <ellipse cx="476" cy="60" rx="42" ry="20" fill="#dce8ee"/>
+      <ellipse cx="448" cy="74" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- furnace cabinet -->
+      <rect x="318" y="158" width="124" height="226" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <line x1="318" y1="252" x2="442" y2="252" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="338" y="180" width="84" height="46" rx="6" fill="#dce8ee"/>
+      <circle cx="358" cy="203" r="9" fill="#7fb3c8"/>
+      <rect x="376" y="194" width="34" height="7" rx="3.5" fill="#9cc0d4"/>
+      <rect x="376" y="207" width="24" height="6" rx="3" fill="#9cc0d4"/>
+      <circle cx="430" cy="268" r="5" fill="#e0a93d"/>
+      <g stroke="#b9b1a3" stroke-width="4" stroke-linecap="round">
+        <line x1="340" y1="320" x2="420" y2="320"/>
+        <line x1="340" y1="334" x2="420" y2="334"/>
+        <line x1="340" y1="348" x2="420" y2="348"/>
+      </g>
+      <!-- return duct from the left, with dusty air -->
+      <rect x="96" y="236" width="186" height="64" fill="#b9b1a3"/>
+      <rect x="96" y="236" width="186" height="10" fill="#8a6a4f" opacity="0.35"/>
+      <g fill="#8a6a4f" opacity="0.75">
+        <circle cx="120" cy="258" r="3.4"/>
+        <circle cx="142" cy="276" r="2.6"/>
+        <circle cx="160" cy="254" r="3"/>
+        <circle cx="184" cy="282" r="2.6"/>
+        <circle cx="204" cy="262" r="3.4"/>
+        <circle cx="226" cy="278" r="2.4"/>
+      </g>
+      <g stroke="#c9a06b" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8">
+        <path d="M112 270 q12 -8 24 0"/>
+        <path d="M170 268 q12 -8 24 0"/>
+      </g>
+      <!-- filter slot between return and furnace -->
+      <rect x="282" y="222" width="36" height="92" rx="4" fill="#8a6a4f"/>
+      <rect x="290" y="230" width="20" height="76" rx="3" fill="#5a4632"/>
+      <!-- fresh filter sliding in (angled above the slot) -->
+      <g transform="rotate(-24 300 170)">
+        <rect x="272" y="96" width="56" height="148" rx="6" fill="#fffdf8" stroke="#3e7c59" stroke-width="4"/>
+        <path d="M284 108 l32 10 l-32 10 l32 10 l-32 10 l32 10 l-32 10 l32 10 l-32 10 l32 10 l-32 10 l32 10" stroke="#dce8ee" stroke-width="3" fill="none" stroke-linejoin="round"/>
+        <line x1="300" y1="120" x2="300" y2="186" stroke="#d9663f" stroke-width="5" stroke-linecap="round"/>
+        <polygon points="290,186 310,186 300,206" fill="#d9663f"/>
+      </g>
+      <!-- motion lines suggesting the slide -->
+      <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round">
+        <line x1="236" y1="142" x2="252" y2="158"/>
+        <line x1="226" y1="166" x2="240" y2="180"/>
+      </g>
+      <!-- spent dirty filter leaning against the furnace -->
+      <g transform="rotate(10 480 360)">
+        <rect x="456" y="284" width="48" height="118" rx="5" fill="#efe7d8" stroke="#b9b1a3" stroke-width="3.5"/>
+        <path d="M466 296 l28 9 l-28 9 l28 9 l-28 9 l28 9 l-28 9 l28 9 l-28 9 l28 9" stroke="#c9a06b" stroke-width="3" fill="none" stroke-linejoin="round"/>
+        <circle cx="470" cy="318" r="2.6" fill="#8a6a4f"/>
+        <circle cx="488" cy="346" r="2.2" fill="#8a6a4f"/>
+        <circle cx="474" cy="376" r="2.6" fill="#8a6a4f"/>
+      </g>
+      <!-- spare filter box + plant for warmth -->
+      <rect x="120" y="338" width="92" height="54" rx="5" fill="#c9a06b"/>
+      <rect x="120" y="338" width="92" height="14" rx="5" fill="#8a6a4f"/>
+      <rect x="138" y="362" width="56" height="8" rx="4" fill="#fffdf8"/>
+      <circle cx="64" cy="356" r="16" fill="#5e9a78"/>
+      <circle cx="80" cy="346" r="13" fill="#3e7c59"/>
+      <rect x="60" y="368" width="26" height="24" rx="4" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A clogged filter doesn't just sit there — it chokes the airflow your whole system is designed around. These are the problems a $15 filter prevents (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="4.2" fill="#5a544a"/>
+          <path d="M18 13.5 c-1 -5.5 3 -8.5 7.5 -7 c-0.5 4.5 -3.5 7 -7.5 7" fill="#7fb3c8"/>
+          <path d="M22.5 18 c5.5 -1 8.5 3 7 7.5 c-4.5 -0.5 -7 -3.5 -7 -7.5" fill="#7fb3c8"/>
+          <path d="M13.5 18 c-5.5 1 -8.5 -3 -7 -7.5 c4.5 0.5 7 3.5 7 7.5" fill="#9cc0d4"/>
+          <path d="M18 22.5 c1 5.5 -3 8.5 -7.5 7 c0.5 -4.5 3.5 -7 7.5 -7" fill="#9cc0d4"/>
+          <path d="M28 26 l4 4 M32 26 l-4 4" stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Blower motor strain</h3>
+        <p>The blower has to pull air through whatever you put in front of it. A packed filter makes it run hot and hard until the motor burns out early.</p>
+        <span class="cost">$400 – $1,500</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 24 l5 -7 l5 7 l5 -7 l5 7 l4 -5.5" stroke="#7fb3c8" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <g stroke="#9cc0d4" stroke-width="1.8" stroke-linecap="round">
+            <line x1="11" y1="6" x2="11" y2="13"/>
+            <line x1="7.8" y1="7.5" x2="14.2" y2="11.5"/>
+            <line x1="14.2" y1="7.5" x2="7.8" y2="11.5"/>
+          </g>
+          <g stroke="#9cc0d4" stroke-width="1.8" stroke-linecap="round">
+            <line x1="25" y1="8" x2="25" y2="15"/>
+            <line x1="21.8" y1="9.5" x2="28.2" y2="13.5"/>
+            <line x1="28.2" y1="9.5" x2="21.8" y2="13.5"/>
+          </g>
+          <path d="M9 30 h18" stroke="#b9b1a3" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Frozen evaporator coil</h3>
+        <p>In cooling season, weak airflow lets the indoor coil get so cold it ices over — then your AC blows warm air and the repair bill arrives.</p>
+        <span class="cost">$200 – $1,500</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <polygon points="19,4 10,20 16,20 14,32 25,15 18.5,15" fill="#e0a93d"/>
+          <path d="M27 10 v-5 M24.5 7.5 L27 5 l2.5 2.5" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 28 q3 -4 6 0" stroke="#b9b1a3" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Higher energy bills</h3>
+        <p>A dirty filter forces the system to run longer to move the same air. Replacing a clogged filter can cut HVAC energy use by roughly 5–15%.</p>
+        <span class="cost">5 – 15% wasted</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <polygon points="6,17 18,7 30,17" fill="#3e7c59"/>
+          <rect x="9" y="17" width="18" height="12" rx="2" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <g fill="#8a6a4f">
+            <circle cx="14" cy="22" r="1.6"/>
+            <circle cx="19" cy="25" r="1.3"/>
+            <circle cx="22.5" cy="21" r="1.6"/>
+            <circle cx="16.5" cy="27" r="1.1"/>
+          </g>
+          <path d="M28 26 q3 -3 6 0" stroke="#c9a06b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Dust &amp; allergens recirculating</h3>
+        <p>Once the filter is saturated, dust, dander, and pollen blow straight past it — back onto your shelves and into your lungs, every cycle.</p>
+        <span class="cost">Air quality + extra dusting</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="6" width="20" height="24" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <circle cx="18" cy="13" r="3" fill="#7fb3c8"/>
+          <line x1="8" y1="20" x2="28" y2="20" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M12 23 l4 2.5 l4 -1 l4 3" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 24 l0.4 3.6 l-3.4 -1.2" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Shortened system life</h3>
+        <p>Years of running starved for air — and coated in the dust that got through — wears out a furnace and AC well before their time. Full replacement is the bill nobody wants.</p>
+        <span class="cost">$5,000 – $12,000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace it?</h2>
+    <p class="sub">"Every 3 months" is the rule of thumb for standard 1-inch filters, but the right interval depends on who lives in the house and how thick your filter is. Answer three questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="pets">
+        <div class="q-label">1. Any pets in the house?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">No pets</button>
+          <button class="pill" data-v="one">One pet</button>
+          <button class="pill" data-v="multi">Multiple / heavy shedders</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="allergies">
+        <div class="q-label">2. Does anyone have allergies or asthma?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="thickness">
+        <div class="q-label">3. How thick is your filter?</div>
+        <div class="pills">
+          <button class="pill" data-v="thin">1-inch (most common)</button>
+          <button class="pill" data-v="media">4–5-inch media filter</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Filters are the cheapest consumable your house has. Here's the math on staying on schedule versus letting the blower motor eat the difference:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$5 – $40</div><div class="l">per filter (1-inch pleated runs $5–$15; thick media filters $25–$40)</div></div>
+        <div class="calc-stat"><div class="v">$20 – $160</div><div class="l">per year on a quarterly-to-monthly schedule</div></div>
+        <div class="calc-stat"><div class="v bad">$400 – $1,500</div><div class="l">one blower motor replacement — the classic dirty-filter failure</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🌬️ A full year of filters (high end)</span><span>$160</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:11%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚙️ One typical blower motor replacement</span><span>$950</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:63%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧊 Frozen coil repair (worst case)</span><span>$1,500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">A year of filters costs <strong>less than a single service call</strong> — and that's before counting the 5–15% of HVAC energy a clogged filter wastes every month it stays in. On a typical U.S. utility bill, that waste alone can exceed what the filters cost. There is no version of this math where skipping wins.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your HVAC filter</h2>
+    <p class="sub">This is one of the easiest jobs in home maintenance — about five minutes, no tools required. Work through the checklist; your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Four rules before you swap</h3>
+      <ul>
+        <li><strong>Turn the system OFF</strong> at the thermostat before pulling the old filter — otherwise the blower sucks loose dust straight into the ductwork (or runs unfiltered).</li>
+        <li>The <strong>airflow arrow points TOWARD the furnace/blower</strong> — in the direction the air travels, not toward the room.</li>
+        <li><strong>Never run the system without a filter</strong>, even briefly. Dust goes straight onto the blower and coil, which is the expensive way to filter air.</li>
+        <li><strong>Write the date on the filter edge</strong> with a marker. Future-you will never have to guess again.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need (almost nothing)</h3>
+    <div class="tools">
+      <span class="tool-chip">New filter in the right size</span>
+      <span class="tool-chip">Vacuum (for the slot)</span>
+      <span class="tool-chip">Permanent marker</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a filter frame with its airflow arrow pointing toward the furnace blower, in the direction air travels from the return duct">
+          <rect x="14" y="62" width="60" height="56" fill="#dce8ee"/>
+          <text x="44" y="50" font-size="12" fill="#6b7376" text-anchor="middle">return air</text>
+          <g stroke="#9cc0d4" stroke-width="3" stroke-linecap="round">
+            <line x1="24" y1="78" x2="48" y2="78"/>
+            <line x1="24" y1="90" x2="54" y2="90"/>
+            <line x1="24" y1="102" x2="48" y2="102"/>
+          </g>
+          <rect x="108" y="40" width="38" height="100" rx="5" fill="#fffdf8" stroke="#3e7c59" stroke-width="3.5"/>
+          <path d="M116 50 l22 7 l-22 7 l22 7 l-22 7 l22 7 l-22 7 l22 7 l-22 7 l22 7 l-22 7 l22 7" stroke="#dce8ee" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <line x1="158" y1="90" x2="196" y2="90" stroke="#d9663f" stroke-width="6" stroke-linecap="round"/>
+          <polygon points="196,80 214,90 196,100" fill="#d9663f"/>
+          <text x="184" y="72" font-size="12" fill="#d9663f" font-weight="700">AIR FLOW</text>
+          <rect x="222" y="46" width="46" height="88" rx="5" fill="#efe7d8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <circle cx="245" cy="78" r="13" fill="none" stroke="#8a6a4f" stroke-width="2.5"/>
+          <path d="M245 65 v26 M232 78 h26" stroke="#8a6a4f" stroke-width="2.5"/>
+          <text x="245" y="152" font-size="12" fill="#6b7376" text-anchor="middle">blower</text>
+        </svg>
+        <h4>Arrow toward the blower</h4>
+        <p>The arrow printed on the frame shows the direction air moves: from the return duct, through the filter, into the unit. It points at the furnace — always.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a filter edge with the size sixteen by twenty-five by one printed on the cardboard frame, highlighted by a magnifier">
+          <rect x="22" y="64" width="236" height="46" rx="6" fill="#fffdf8" stroke="#c9a06b" stroke-width="3"/>
+          <line x1="22" y1="78" x2="258" y2="78" stroke="#efe7d8" stroke-width="2"/>
+          <text x="78" y="100" font-size="22" font-weight="800" fill="#33393b">16 × 25 × 1</text>
+          <text x="206" y="99" font-size="13" fill="#6b7376">MERV 8</text>
+          <circle cx="106" cy="92" r="34" fill="none" stroke="#3e7c59" stroke-width="4"/>
+          <line x1="130" y1="116" x2="152" y2="138" stroke="#3e7c59" stroke-width="6" stroke-linecap="round"/>
+          <text x="140" y="36" font-size="12" fill="#6b7376" text-anchor="middle">width × height × thickness, printed on the edge</text>
+        </svg>
+        <h4>The size is printed on the edge</h4>
+        <p>Filters are sized like 16×25×1 (width × height × thickness, in inches). Match it exactly — a too-small filter lets dirty air sneak around the sides.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the two common filter locations: a return-air grille on a wall, and a slot in the furnace cabinet next to the blower">
+          <line x1="140" y1="16" x2="140" y2="164" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="5 5"/>
+          <rect x="34" y="44" width="72" height="92" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <g stroke="#b9b1a3" stroke-width="3" stroke-linecap="round">
+            <line x1="44" y1="60" x2="96" y2="60"/>
+            <line x1="44" y1="74" x2="96" y2="74"/>
+            <line x1="44" y1="88" x2="96" y2="88"/>
+            <line x1="44" y1="102" x2="96" y2="102"/>
+            <line x1="44" y1="116" x2="96" y2="116"/>
+          </g>
+          <text x="70" y="158" font-size="12" fill="#6b7376" text-anchor="middle">wall return grille</text>
+          <rect x="172" y="36" width="70" height="100" rx="5" fill="#efe7d8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <circle cx="207" cy="66" r="11" fill="none" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="152" y="98" width="20" height="34" rx="3" fill="#8a6a4f"/>
+          <rect x="155" y="92" width="12" height="44" rx="2" fill="#3e7c59"/>
+          <text x="197" y="158" font-size="12" fill="#6b7376" text-anchor="middle">furnace cabinet slot</text>
+        </svg>
+        <h4>Two places to look</h4>
+        <p>Filters live either behind a hinged return-air grille on a wall or ceiling, or in a thin slot on the furnace/air-handler cabinet where the return duct meets it. Some homes have both — change them all.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Swap progress</span><span id="progText">0 of 10 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done! Your system breathes easy for another stretch. See you next quarter.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to call an HVAC tech</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Airflow is weak even with a fresh filter.</strong> That points to duct problems, a failing blower, or a coil already caked in dust — none of which a filter swap fixes.</li>
+        <li><strong>Ice on the refrigerant lines or indoor coil.</strong> Turn the system off, let it thaw, replace the filter — and if it ices up again, get it looked at before the compressor pays the price.</li>
+        <li><strong>Short cycling</strong> (the system starts and stops every few minutes). Sometimes it's airflow; often it's a deeper control or sizing issue worth diagnosing.</li>
+        <li><strong>Whistling or visible gaps around the filter slot.</strong> Air is bypassing the filter entirely. A tech can add a proper slot cover or gasket — a cheap fix that makes every future filter actually work.</li>
+        <li>While they're there: a basic <strong>tune-up runs $80–$200</strong> (typical U.S.) and usually includes a coil check, which is exactly what years of bad filter habits put at risk.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What MERV rating should I buy?</summary>
+      <p>MERV 8–11 is the sweet spot for most homes: it catches dust, pollen, and pet dander without choking airflow. Higher isn't automatically better — MERV 13+ filters are denser, and on systems not designed for them they restrict airflow enough to cause the exact blower-strain problems you're trying to avoid. If you want high-MERV filtration, the right path is usually a 4–5-inch media cabinet, which has far more surface area.</p>
+    </details>
+    <details>
+      <summary>Are washable/reusable filters a good idea?</summary>
+      <p>They save money on paper, but most washable filters are low-MERV (they catch less), they must be completely dry before reinstalling (damp filters grow mold in the airstream), and in practice they get washed less often than disposables get replaced. For most homes, a quality disposable pleated filter is the better trade.</p>
+    </details>
+    <details>
+      <summary>Which way does the airflow arrow go?</summary>
+      <p>Toward the furnace or air handler — the direction the air is traveling. At a wall return grille, that means the arrow points into the wall, away from the room. At a furnace slot, it points at the unit. If you're ever unsure, remember: air flows from your rooms, through the return, through the filter, into the blower.</p>
+    </details>
+    <details>
+      <summary>Can I run the system without a filter for a day while I buy one?</summary>
+      <p>No — turn the system off until you have the replacement. Even one filterless day coats the blower wheel and evaporator coil with dust, and a dirty coil is a $200–$1,500 professional cleaning or repair. Keeping one spare filter on the shelf makes this question disappear forever.</p>
+    </details>
+    <details>
+      <summary>My filter still looks clean at 3 months — can I stretch it?</summary>
+      <p>Hold it up to a light: if you can't see light through it evenly, it's done regardless of how it looks. Filters load up from the inside, and a light-use season (mild weather, windows open) genuinely does extend life — that's why the schedule is a range. But during heavy heating or cooling months the system runs constantly, so give it a monthly glance either way.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The date on the filter is step one.</h2>
+        <p>You just worked out your interval — now make the next swap automatic. Upkeep Ledger logs today's filter change and nudges you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=replace-hvac-filter&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=replace-hvac-filter&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { pets: null, allergies: null, thickness: null };
+
+  function computeInterval(s) {
+    var reasons = [];
+    var months, min, max;
+
+    if (s.thickness === "thin") {
+      months = 3; min = 1; max = 3;
+      reasons.push("Standard 1-inch filters have limited surface area — every 3 months is the ceiling, not the floor.");
+    } else {
+      months = 12; min = 6; max = 12;
+      reasons.push("4–5-inch media filters hold far more dust, so they go 6–12 months between changes.");
+    }
+
+    if (s.pets === "one") {
+      months -= (s.thickness === "thin") ? 1 : 3;
+      reasons.push("One pet adds a steady load of hair and dander — shave the interval down a notch.");
+    } else if (s.pets === "multi") {
+      months -= (s.thickness === "thin") ? 2 : 6;
+      reasons.push("Multiple or heavy-shedding pets are the fastest way to load a filter — plan on the short end of the range.");
+    } else {
+      reasons.push("No pets means a lighter dust load, so you can run toward the long end of the range.");
+    }
+
+    if (s.allergies === "yes") {
+      months -= (s.thickness === "thin") ? 1 : 2;
+      reasons.push("With allergies or asthma in the house, a fresh filter is cheap symptom control — change it before it saturates, and consider MERV 11.");
+    }
+
+    if (months < min) months = min;
+    if (months > max) months = max;
+
+    return { months: months, reasons: reasons };
+  }
+
+  function intervalLabel(m) {
+    if (m === 1) return "Every month";
+    return "Every " + m + " months";
+  }
+
+  function onQuizChange() {
+    if (!quizState.pets || !quizState.allergies || !quizState.thickness) return;
+    var r = computeInterval(quizState);
+    document.getElementById("resultFreq").textContent = "Your interval: " + intervalLabel(r.months).toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Put <strong>" + intervalLabel(r.months).toLowerCase() + "</strong> on the calendar — and during heavy heating or cooling season, when the system runs nearly nonstop, give the filter a quick monthly look and swap early if it's gray. Why this interval:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you pull anything", text: "Turn the system OFF at the thermostat", note: "Set it to 'off', not just a milder temperature — you don't want the blower kicking on mid-swap." },
+    { phase: "Before you pull anything", text: "Locate the filter", note: "Check the return-air grille on a wall or ceiling, and the slot where the return duct meets the furnace or air handler. Some homes have more than one." },
+    { phase: "Before you pull anything", text: "Slide out the old filter and read the frame", note: "Note the size (e.g. 16×25×1) and which way the airflow arrow pointed. Snap a photo if it helps." },
+    { phase: "The swap", text: "Vacuum the slot or grille area", note: "A quick pass catches the dust that collects around the opening so it doesn't ride in with the new filter." },
+    { phase: "The swap", text: "Check the new filter's size matches exactly", note: "Width × height × thickness, printed on the edge. Close enough isn't close enough — gaps let air bypass the filter." },
+    { phase: "The swap", text: "Insert the new filter, arrow pointing toward the furnace/blower", note: "The arrow follows the air: from the room, through the return, into the unit." },
+    { phase: "The swap", text: "Write today's date on the filter edge", note: "A permanent marker on the cardboard frame ends the 'when did I last change this?' debate forever." },
+    { phase: "Wrap up", text: "Close the grille or slot cover and turn the system back on", note: "Listen for a minute — whistling around the slot means air is sneaking past the filter." },
+    { phase: "Wrap up", text: "Stock a spare filter", note: "One spare on the shelf means you'll never be tempted to run filterless while you 'get to the store'." },
+    { phase: "Wrap up", text: "Log the swap and set your next reminder", note: "Use the interval from the quiz above — and remember the monthly glance during peak season." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:replace-hvac-filter:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
