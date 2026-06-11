@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oil Change — Everyday Upkeep</title>
+<meta name="description" content="How often to change your oil (in miles AND months), why it matters, what skipping it costs, and a step-by-step guide to doing it safely.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calculator ---------- */
+  .calc-controls { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 22px; }
+  .calc-controls label.field { display: block; font-weight: 700; font-size: 14px; }
+  .calc-controls .field-row { margin-top: 8px; }
+  .calc-controls select, .calc-controls input[type="range"] { width: 100%; }
+  .calc-controls select {
+    font-family: inherit; font-size: 15px; padding: 8px 10px; border-radius: 10px;
+    border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
+  }
+  input[type="range"] { accent-color: var(--accent); }
+  .range-val { font-weight: 700; color: var(--accent-deep); }
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every 5,000 miles</span>
+      <h1>Oil Change</h1>
+      <p class="lede">Oil is the only thing keeping your engine's moving metal from grinding itself to dust — and it wears out whether you drive a lot or barely at all. Here's how often to change it (in miles <em>and</em> months), why it matters, and exactly how to do it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>5,000 mi or 6 months</em></span>
+        <span class="chip">⏱️ <em>30–45 min</em> DIY</span>
+        <span class="chip">💵 <em>$35–50</em> in materials</span>
+        <span class="chip">💸 A seized engine runs <em>$4,000–$10,000</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style green car raised slightly at the front, with golden oil pouring from a tipped oil can into a funnel, a drain pan catching dark old oil underneath, and a wrench leaning nearby">
+      <ellipse cx="290" cy="396" rx="248" ry="22" fill="#efe7d8"/>
+      <circle cx="70" cy="68" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="118" cy="128" rx="34" ry="16" fill="#dce8ee"/>
+      <!-- car body -->
+      <path d="M120 318 q0 -52 46 -56 l28 -3 q22 -36 70 -38 l92 0 q48 2 70 38 l36 5 q42 8 42 54 l0 22 q0 12 -12 12 l-360 0 q-12 0 -12 -12 z" fill="#3e7c59"/>
+      <path d="M196 262 q20 -30 64 -32 l88 0 q44 2 64 32 z" fill="#2c5a40"/>
+      <path d="M212 260 q16 -22 50 -24 l38 0 0 24 z" fill="#cfe3ec"/>
+      <path d="M312 236 l36 0 q34 2 50 24 l-86 0 z" fill="#cfe3ec"/>
+      <rect x="120" y="320" width="384" height="14" fill="#2c5a40"/>
+      <circle cx="486" cy="306" r="10" fill="#e0a93d"/>
+      <circle cx="136" cy="306" r="8" fill="#c96f4a"/>
+      <!-- wheels: front raised on a stand -->
+      <circle cx="208" cy="346" r="34" fill="#33393b"/>
+      <circle cx="208" cy="346" r="15" fill="#b9b1a3"/>
+      <circle cx="208" cy="346" r="5" fill="#8a6a4f"/>
+      <circle cx="436" cy="356" r="34" fill="#33393b"/>
+      <circle cx="436" cy="356" r="15" fill="#b9b1a3"/>
+      <circle cx="436" cy="356" r="5" fill="#8a6a4f"/>
+      <!-- jack stand under front -->
+      <path d="M188 340 l40 0 -8 42 -24 0 z" fill="#d9663f"/>
+      <rect x="178" y="382" width="60" height="9" rx="4.5" fill="#c96f4a"/>
+      <!-- wheel chock at rear -->
+      <path d="M468 390 l20 0 0 -16 z" fill="#8a6a4f"/>
+      <!-- drain pan with old oil drips -->
+      <path d="M284 384 l84 0 -8 14 -68 0 z" fill="#b9b1a3"/>
+      <ellipse cx="326" cy="384" rx="42" ry="7" fill="#8a6a4f"/>
+      <g fill="#6e5333">
+        <ellipse cx="326" cy="348" rx="4" ry="6"/>
+        <ellipse cx="322" cy="364" rx="3.5" ry="5"/>
+        <ellipse cx="330" cy="374" rx="3" ry="4.5"/>
+      </g>
+      <!-- oil can pouring into funnel -->
+      <g transform="rotate(-32 88 236)">
+        <rect x="64" y="216" width="48" height="56" rx="8" fill="#e0a93d"/>
+        <rect x="64" y="216" width="48" height="14" rx="7" fill="#d98e3b"/>
+        <rect x="108" y="222" width="26" height="10" rx="5" fill="#d98e3b"/>
+        <ellipse cx="88" cy="248" rx="13" ry="13" fill="#fffdf8"/>
+        <path d="M84 242 c4 4 8 8 8 11 a4 4 0 1 1 -8 0 c0 -3 0 -7 0 -11" fill="#d98e3b"/>
+      </g>
+      <path d="M134 218 q14 16 14 34" stroke="#e0a93d" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <circle cx="150" cy="262" r="4" fill="#e0a93d"/>
+      <circle cx="153" cy="276" r="3.2" fill="#d98e3b"/>
+      <!-- funnel -->
+      <path d="M132 286 l44 0 -16 18 -12 0 z" fill="#7fb3c8"/>
+      <rect x="148" y="304" width="12" height="14" rx="3" fill="#7fb3c8"/>
+      <!-- wrench on the ground -->
+      <g transform="rotate(18 506 384)">
+        <rect x="488" y="380" width="40" height="7" rx="3.5" fill="#8a6a4f"/>
+        <circle cx="486" cy="383" r="8" fill="#b9b1a3"/>
+        <circle cx="486" cy="383" r="3.5" fill="#fffdf8"/>
+      </g>
+      <!-- shrubs -->
+      <circle cx="68" cy="382" r="14" fill="#5e9a78"/>
+      <circle cx="90" cy="388" r="11" fill="#3e7c59"/>
+      <circle cx="536" cy="392" r="10" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Oil doesn't just lubricate — it cools, cleans, and seals. As it ages it turns acidic, fills with combustion gunk, and stops doing all four jobs at once. These are the repairs a $50 oil change prevents (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M11 6 c3 4.5 4.5 6.5 0 9.5 c-4.5 -3 -3 -5 0 -9.5" fill="#e0a93d"/>
+          <rect x="6" y="19" width="24" height="11" rx="3" fill="#b9b1a3"/>
+          <path d="M8 22 q4 -4 7 0 q4 4 7 0 q3 -3 6 0 l0 6 q0 2 -2 2 l-16 0 q-2 0 -2 -2 z" fill="#5a544a"/>
+        </svg></div>
+        <h3>Sludge buildup</h3>
+        <p>Old oil oxidizes into tar-like sludge that blocks the tiny passages oil travels through. Once it forms, flushing it out is a teardown job, not a drain-and-fill.</p>
+        <span class="cost">$600 – $4,000</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="15" cy="18" r="8" fill="none" stroke="#3e7c59" stroke-width="2.5"/>
+          <g stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round">
+            <line x1="15" y1="6" x2="15" y2="9.5"/><line x1="15" y1="26.5" x2="15" y2="30"/>
+            <line x1="3" y1="18" x2="6.5" y2="18"/><line x1="23.5" y1="18" x2="27" y2="18"/>
+            <line x1="6.5" y1="9.5" x2="9" y2="12"/><line x1="21" y1="24" x2="23.5" y2="26.5"/>
+            <line x1="23.5" y1="9.5" x2="21" y2="12"/><line x1="9" y1="24" x2="6.5" y2="26.5"/>
+          </g>
+          <path d="M25 25 l6 6 M28 22 l4 4" stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Engine wear</h3>
+        <p>Worn-out oil is full of abrasive grit and too thin to keep metal apart. Bearings, cam lobes, and cylinder walls wear years ahead of schedule.</p>
+        <span class="cost">$1,500 – $4,500</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="13" y="5" width="6" height="18" rx="3" fill="#dce8ee"/>
+          <rect x="14.5" y="10" width="3" height="13" fill="#d9663f"/>
+          <circle cx="16" cy="26" r="6" fill="#d9663f"/>
+          <g stroke="#c96f4a" stroke-width="2.2" stroke-linecap="round" fill="none">
+            <path d="M26 8 q2 3 0 6"/><path d="M30 6 q3 4.5 0 9"/>
+          </g>
+        </svg></div>
+        <h3>Overheating</h3>
+        <p>Oil carries away a surprising share of engine heat. Degraded or low oil means hot spots, warped heads, and cooked gaskets.</p>
+        <span class="cost">$1,000 – $3,000</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="12" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <path d="M18 18 q1 -8 7 -9 M18 18 q8 1 9 7 M18 18 q-1 8 -7 9 M18 18 q-8 -1 -9 -7" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="18" cy="18" r="3" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Turbo damage</h3>
+        <p>Turbochargers spin up to 200,000 rpm on a thin film of oil. They're the first thing dirty oil kills — and they're not cheap to replace.</p>
+        <span class="cost">$1,500 – $4,000</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="5" width="20" height="26" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M12 11 h12 M12 16 h12 M12 21 h8" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <path d="M10 8 l18 22 M28 8 l-18 22" stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Voided warranty</h3>
+        <p>Skipped or undocumented oil changes are the classic reason engine warranty claims get denied. Keep receipts — or a log with dates and mileage.</p>
+        <span class="cost">Claim denied: $0 covered</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="12" width="22" height="16" rx="3" fill="#8a6a4f"/>
+          <rect x="10" y="7" width="8" height="6" rx="2" fill="#b9b1a3"/>
+          <rect x="28" y="16" width="4" height="7" rx="2" fill="#b9b1a3"/>
+          <path d="M13 14 l4 5 -3 3 4 5" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Worst case: seized engine</h3>
+        <p>Run long enough on dead or no oil and the bearings weld themselves to the crank. At that point you're buying an engine, not a repair.</p>
+        <span class="cost">$4,000 – $10,000+</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> change it?</h2>
+    <p class="sub">"Every 5,000 miles" is the rule of thumb, but the right interval depends on your oil, your driving, and your conditions — and it's always two numbers: miles <strong>or</strong> months, whichever comes first. Answer three questions for your personal schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="oil">
+        <div class="q-label">1. What oil goes in your engine?</div>
+        <div class="pills">
+          <button class="pill" data-v="conventional">Conventional</button>
+          <button class="pill" data-v="blend">Synthetic blend</button>
+          <button class="pill" data-v="synthetic">Full synthetic</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="driving">
+        <div class="q-label">2. What does most of your driving look like?</div>
+        <div class="pills">
+          <button class="pill" data-v="short">Mostly short trips (&lt;20 min)</button>
+          <button class="pill" data-v="mixed">A mix of city &amp; highway</button>
+          <button class="pill" data-v="highway">Mostly highway</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="conditions">
+        <div class="q-label">3. What conditions does the car live in?</div>
+        <div class="pills">
+          <button class="pill" data-v="extreme">Extreme heat, cold, or dusty roads</button>
+          <button class="pill" data-v="moderate">Pretty moderate</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST CALCULATOR ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Oil changes are the cheapest line item in car ownership — and the one with the most expensive failure mode. Adjust the numbers for your situation:</p>
+    <div class="card">
+      <div class="calc-controls">
+        <label class="field">Who changes it?
+          <div class="field-row">
+            <select id="calcWho">
+              <option value="diy">Me (DIY)</option>
+              <option value="quicklube">Quick-lube shop</option>
+              <option value="dealer">Dealer service dept.</option>
+            </select>
+          </div>
+        </label>
+        <label class="field">Oil type
+          <div class="field-row">
+            <select id="calcOil">
+              <option value="conv">Conventional</option>
+              <option value="syn" selected>Full synthetic</option>
+            </select>
+          </div>
+        </label>
+        <label class="field">Changes per year: <span class="range-val" id="freqVal">2</span>
+          <div class="field-row">
+            <input type="range" id="calcFreq" min="1" max="6" step="1" value="2">
+          </div>
+        </label>
+      </div>
+
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v" id="outPerChange">$0</div><div class="l" id="outPerChangeLabel">per change</div></div>
+        <div class="calc-stat"><div class="v" id="outPerYear">$0</div><div class="l">per year</div></div>
+        <div class="calc-stat"><div class="v" id="outTenYear">$0</div><div class="l" id="outTenYearLabel">over 10 years</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 10 years of oil changes</span><span id="barGoodVal"></span></div>
+          <div class="bar-track"><div class="bar-fill good" id="barGood"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💥 One seized or worn-out engine</span><span>$7,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barBad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict" id="calcVerdict"></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to change your oil</h2>
+    <p class="sub">A DIY oil change takes 30–45 minutes once you've done it twice. Work through the checklist — your progress saves automatically, so you can pick it back up if you take a break.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — a jack is for lifting, never for holding</h3>
+      <ul>
+        <li><strong>Never get under a car held only by a jack.</strong> Lift it, then set it on rated jack stands at the factory jack points — and give the car a firm shake before you slide under.</li>
+        <li>Work on <strong>flat, solid ground</strong> (concrete, not gravel or grass), set the parking brake, and chock the wheels staying on the ground.</li>
+        <li><strong>Warm oil drains best; hot oil burns.</strong> A 2–3 minute idle is plenty — if you just drove, let it cool 20–30 minutes first.</li>
+        <li><strong>Torque the drain plug, don't gorilla it.</strong> Most plugs spec around 25–30 ft-lb; over-tightening strips the oil pan, an expensive way to save oil.</li>
+        <li>Keep old oil off your skin and off the ground — gloves on, drips on cardboard, everything into a sealed container for recycling.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Correct oil (check the manual)</span>
+      <span class="tool-chip">New oil filter</span>
+      <span class="tool-chip">New drain-plug washer</span>
+      <span class="tool-chip">Drain pan</span>
+      <span class="tool-chip">Socket or box wrench</span>
+      <span class="tool-chip">Filter wrench</span>
+      <span class="tool-chip">Floor jack + jack stands</span>
+      <span class="tool-chip">Wheel chocks</span>
+      <span class="tool-chip">Funnel</span>
+      <span class="tool-chip">Nitrile gloves &amp; rags</span>
+      <span class="tool-chip">Sealable jug for old oil</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three things worth knowing before you slide under</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-view diagram of a car raised at the front, supported by a jack stand at the pinch-weld jack point, with the floor jack moved aside and a chock behind the rear wheel">
+          <rect x="10" y="150" width="260" height="4" rx="2" fill="#d8cfbe"/>
+          <path d="M40 108 q2 -26 28 -28 l16 -2 q12 -18 38 -19 l52 0 q26 1 38 19 l20 3 q24 4 24 27 l0 10 q0 6 -6 6 l-204 0 q-6 0 -6 -6 z" fill="#3e7c59"/>
+          <circle cx="92" cy="122" r="18" fill="#33393b"/>
+          <circle cx="92" cy="122" r="7" fill="#b9b1a3"/>
+          <circle cx="218" cy="132" r="18" fill="#33393b"/>
+          <circle cx="218" cy="132" r="7" fill="#b9b1a3"/>
+          <path d="M58 124 l28 0 -6 26 -16 0 z" fill="#d9663f"/>
+          <rect x="50" y="150" width="44" height="6" rx="3" fill="#c96f4a"/>
+          <circle cx="72" cy="120" r="3.5" fill="#e0a93d"/>
+          <path d="M236 152 l14 0 0 -12 z" fill="#8a6a4f"/>
+          <rect x="140" y="134" width="44" height="10" rx="5" fill="#b9b1a3"/>
+          <rect x="156" y="124" width="12" height="12" rx="3" fill="#8a6a4f"/>
+          <line x1="72" y1="116" x2="72" y2="56" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="14" y="46" font-size="12" fill="#6b7376">stand at the pinch-weld jack point</text>
+          <text x="132" y="170" font-size="12" fill="#6b7376">jack lifts — the stand holds</text>
+          <text x="226" y="170" font-size="12" fill="#6b7376">chock</text>
+        </svg>
+        <h4>Stands hold, jacks lift</h4>
+        <p>Lift at the factory jack point, set a rated stand under the pinch weld or frame, lower onto it, and shake the car hard before going under. The jack stays as backup only.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Underside diagram of an engine showing the oil pan with its drain plug, the spin-on oil filter beside it, and the drain pan placed slightly offset to catch the arcing oil stream">
+          <rect x="36" y="20" width="208" height="70" rx="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="64" y="36" width="96" height="40" rx="8" fill="#8a6a4f"/>
+          <circle cx="142" cy="68" r="8" fill="#e0a93d" stroke="#5a544a" stroke-width="2"/>
+          <circle cx="196" cy="56" r="16" fill="#dce8ee" stroke="#6b7376" stroke-width="2.5"/>
+          <circle cx="196" cy="56" r="6" fill="#7fb3c8"/>
+          <path d="M142 80 q10 18 22 28" stroke="#d98e3b" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="176" cy="128" rx="46" ry="12" fill="#b9b1a3"/>
+          <ellipse cx="176" cy="124" rx="38" ry="8" fill="#6e5333"/>
+          <line x1="142" y1="76" x2="96" y2="112" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="22" y="126" font-size="12" fill="#6b7376">drain plug</text>
+          <line x1="208" y1="44" x2="234" y2="26" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="206" y="18" font-size="12" fill="#6b7376">oil filter</text>
+          <text x="124" y="158" font-size="12" fill="#6b7376">pan offset — oil arcs at first, then drips straight</text>
+        </svg>
+        <h4>Find the plug and the filter first</h4>
+        <p>The drain plug is the lowest bolt on the oil pan; the filter is a spin-on canister nearby. Place the drain pan offset a few inches — the first gush arcs outward.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of an engine dipstick with MIN and MAX marks near the tip and the oil level shown in the good zone between them">
+          <circle cx="48" cy="38" r="16" fill="none" stroke="#e0a93d" stroke-width="7"/>
+          <line x1="58" y1="50" x2="216" y2="146" stroke="#b9b1a3" stroke-width="9" stroke-linecap="round"/>
+          <line x1="148" y1="105" x2="216" y2="146" stroke="#d98e3b" stroke-width="9" stroke-linecap="round"/>
+          <g stroke="#5a544a" stroke-width="2.5">
+            <line x1="142" y1="93" x2="156" y2="116"/>
+            <line x1="186" y1="120" x2="200" y2="143"/>
+          </g>
+          <text x="118" y="86" font-size="12" fill="#6b7376" font-weight="700">MAX</text>
+          <text x="196" y="166" font-size="12" fill="#6b7376" font-weight="700">MIN</text>
+          <path d="M180 96 q22 -18 48 -14" stroke="#3e7c59" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+          <text x="216" y="76" font-size="12" fill="#2c5a40" font-weight="700">good zone</text>
+          <text x="24" y="170" font-size="12" fill="#6b7376">MIN→MAX ≈ 1 quart: at MIN, add about one</text>
+        </svg>
+        <h4>Read the dipstick right</h4>
+        <p>Check on level ground, engine off a few minutes. Pull, wipe, reinsert fully, pull again. Anywhere between the marks is fine; MIN to MAX is roughly one quart.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Oil change progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fresh oil, happy engine. Log today's date and odometer reading — see you in 5,000 miles (or 6 months, whichever comes first).</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO LET A SHOP DO IT ============ -->
+  <section id="pro">
+    <h2>When to let a shop do it</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>No safe place to work.</strong> Street parking, a sloped driveway, gravel, or grass — if you can't set jack stands on flat concrete, this isn't your job today.</li>
+        <li><strong>Leased car or active warranty.</strong> DIY is allowed, but a shop's stamped invoice is bulletproof paperwork if a warranty claim ever comes up. If you DIY, keep receipts and log every change with date and mileage.</li>
+        <li><strong>Stuck drain plug or stripped threads.</strong> If the plug won't budge or turns without biting, stop — forcing it can crack the pan. A shop can extract it and fit an oversize plug or new pan.</li>
+        <li><strong>A previous shop over-torqued the filter or plug.</strong> Annoyingly common. Don't fight a filter with a screwdriver through it on your back; let a lift and a pro handle it.</li>
+        <li><strong>Big skid plates or zero clearance.</strong> Some cars hide the plug behind a dozen fasteners. If access is the whole job, the shop's lift earns its fee.</li>
+        <li>Typical shop pricing: <strong>quick-lube $50–$90</strong>, <strong>dealer $80–$150</strong> (synthetic at the high end) — most include a basic inspection and top-offs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Is full synthetic actually worth the extra money?</summary>
+      <p>Usually, yes. Synthetic costs $15–30 more per change but resists heat breakdown and cold-start thickening far better, and safely stretches the interval to 7,500–10,000 miles — so the per-mile cost often comes out even or better. For turbocharged engines, extreme climates, or short-trip driving, it's strongly recommended; many newer engines require it outright.</p>
+    </details>
+    <details>
+      <summary>Can I trust my car's oil-life monitor?</summary>
+      <p>Mostly. Modern monitors track real operating data (temperatures, trip lengths, revs) and are reasonably good at the <em>miles</em> side of the question. They're weaker on the <em>months</em> side — a car that barely drives can show "70% oil life" on oil that's been collecting moisture for a year. Use the monitor, but still change at least every 12 months, and check the dipstick monthly regardless.</p>
+    </details>
+    <details>
+      <summary>My oil is low — can I just top it off instead of changing it?</summary>
+      <p>Top off now, but don't confuse the two jobs. Adding oil fixes the <em>level</em>; changing oil fixes the <em>condition</em>. Fresh oil poured into old, acidic, gritty oil dilutes the problem without removing it, and the filter is still full. If you're topping off more than a quart between changes, also get the consumption or leak looked at.</p>
+    </details>
+    <details>
+      <summary>What weight (grade) of oil do I need?</summary>
+      <p>Whatever the owner's manual or the oil filler cap says — commonly something like 0W-20 or 5W-30. The numbers describe viscosity cold (the "W" number) and hot; modern engines are built around a specific grade, and tolerances are tight enough that "close" isn't good enough. Match the grade and the listed specification (API/ILSAC, or the maker's own standard) exactly.</p>
+    </details>
+    <details>
+      <summary>Where do I get rid of the old oil?</summary>
+      <p>Never down a drain or in the trash — one oil change can foul a million gallons of water. Pour it into a sealed jug (the new oil's container works) and take it, plus the old filter, to any auto parts store (AutoZone, O'Reilly, Advance), many quick-lubes, or your municipal hazardous-waste site. Nearly all take it free; it gets re-refined.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Miles or months — let something else count both.</h2>
+        <p>An oil change comes due by odometer <em>or</em> by calendar, whichever comes first — exactly the kind of task that slips. Upkeep Ledger tracks usage-based jobs both ways: log each change with the date and mileage, and it tells you when the next one is due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=oil-change&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=oil-change&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { oil: null, driving: null, conditions: null };
+
+  var BASE = {
+    conventional: { mi: 5000, mo: 6 },
+    blend: { mi: 6000, mo: 6 },
+    synthetic: { mi: 10000, mo: 12 }
+  };
+
+  function computePlan(s) {
+    var mi = BASE[s.oil].mi;
+    var mo = BASE[s.oil].mo;
+    var reasons = [];
+
+    if (s.oil === "conventional") reasons.push("Conventional oil oxidizes and thins the fastest — 5,000 miles is a sensible ceiling, and many manuals still call for 3,000–5,000 under severe service.");
+    if (s.oil === "blend") reasons.push("A synthetic blend buys a bit more breakdown resistance than conventional, so a modest stretch past 5,000 is fair.");
+    if (s.oil === "synthetic") reasons.push("Full synthetic resists heat breakdown far better — modern formulas are rated for 7,500–10,000 miles in normal duty.");
+
+    if (s.driving === "short") {
+      mi = mi * 0.6;
+      mo = Math.min(mo, 6);
+      reasons.push("Mostly short trips means the oil never fully warms up, so moisture and fuel residue never boil off. Owner's manuals call this “severe service” — it earns the short end of every range.");
+      reasons.push("Low-mileage, short-trip cars are exactly where the months half of the rule does the work: oil collects moisture and acids just sitting in an engine that never gets hot.");
+    } else if (s.driving === "highway") {
+      reasons.push("Steady highway miles are the gentlest duty an engine sees — long, fully-warmed runs mean you can confidently use the full interval.");
+    } else {
+      reasons.push("A mix of city and highway is exactly what the standard interval is designed around — no adjustment needed.");
+    }
+
+    if (s.conditions === "extreme") {
+      mi = mi * 0.8;
+      mo = Math.min(mo, 6);
+      reasons.push("Extreme heat thins hot oil, deep cold thickens cold starts, and dust loads the oil with grit — all three push you toward the short end.");
+    } else {
+      reasons.push("Moderate conditions add no penalty — your oil ages at the textbook rate.");
+    }
+
+    mi = Math.max(3000, Math.round(mi / 500) * 500);
+    reasons.push("One thing trumps everything on this page: your owner's manual. If it specifies a different interval or oil standard, the manual wins.");
+
+    return { mi: mi, mo: mo, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.oil || !quizState.driving || !quizState.conditions) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Every " + r.mi.toLocaleString("en-US") + " miles or " + r.mo + " months — whichever comes first";
+    document.getElementById("resultBody").innerHTML =
+      "That pair of numbers <em>is</em> your schedule — no calendar needed. Watch the odometer when you drive a lot, watch the calendar when you don't, and change at whichever limit you hit first. Why this interval:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+
+    // sync calculator: oil type + a rough changes-per-year from a 12k-mile year
+    document.getElementById("calcOil").value = (quizState.oil === "conventional") ? "conv" : "syn";
+    var perYear = Math.max(1, Math.min(6, Math.round(Math.max(12000 / r.mi, 12 / r.mo))));
+    document.getElementById("calcFreq").value = perYear;
+    updateCalc();
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Calculator ================= */
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  // typical U.S. per-change costs
+  var PRICES = {
+    diy:       { conv: 38, syn: 48, label: "per change in materials (typical)" },
+    quicklube: { conv: 55, syn: 85, label: "per quick-lube visit (typical)" },
+    dealer:    { conv: 85, syn: 140, label: "per dealer visit (typical)" }
+  };
+  var DIY_GEAR = 130; // one-time: jack stands, drain pan, wrenches, funnel
+  var REPAIR = 7000;  // midpoint of a typical $4,000–$10,000 engine replacement
+
+  function updateCalc() {
+    var who = document.getElementById("calcWho").value;
+    var oil = document.getElementById("calcOil").value;
+    var freq = parseInt(document.getElementById("calcFreq").value, 10);
+
+    document.getElementById("freqVal").textContent = freq;
+
+    var perChange = PRICES[who][oil];
+    var perYear = perChange * freq;
+    var tenYear = perYear * 10 + (who === "diy" ? DIY_GEAR : 0);
+
+    document.getElementById("outPerChange").textContent = money(perChange);
+    document.getElementById("outPerChangeLabel").textContent = PRICES[who].label;
+    document.getElementById("outPerYear").textContent = money(perYear);
+    document.getElementById("outTenYear").textContent = money(tenYear);
+    document.getElementById("outTenYearLabel").textContent =
+      who === "diy" ? "over 10 years (incl. ~$130 one-time gear)" : "over 10 years";
+
+    var pct = Math.min(100, (tenYear / REPAIR) * 100);
+    document.getElementById("barGood").style.width = pct + "%";
+    document.getElementById("barGoodVal").textContent = money(tenYear);
+
+    var verdict = document.getElementById("calcVerdict");
+    if (tenYear < REPAIR) {
+      var mult = REPAIR / tenYear;
+      verdict.innerHTML = "A decade of oil changes costs <strong>" + money(tenYear) +
+        "</strong> — about <strong>" + mult.toFixed(0) + "× less</strong> than one seized or worn-out engine at the $7,000 midpoint (real bills run <strong>$4,000–$10,000+</strong>). It's the cheapest insurance your car will ever get.";
+    } else {
+      verdict.innerHTML = "Even at this spend, fresh oil pays for itself the first time it prevents a sludged engine, a cooked turbo, or a denied warranty claim — and it protects against all of them at once.";
+    }
+  }
+
+  ["calcWho", "calcOil", "calcFreq"].forEach(function (id) {
+    document.getElementById(id).addEventListener("input", updateCalc);
+  });
+  updateCalc();
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & safety", text: "Gather everything before you start", note: "Right oil grade and quantity (it's in the manual), correct filter, fresh drain-plug washer, pan, wrenches, gloves." },
+    { phase: "Prep & safety", text: "Run the engine 2–3 minutes, then shut it off", note: "Warm oil flows out faster and carries the suspended gunk with it. Warm, not hot — hot oil burns." },
+    { phase: "Prep & safety", text: "Park on flat concrete, set the parking brake, chock the rear wheels", note: "The boring step that makes every other step safe." },
+    { phase: "Prep & safety", text: "Jack up the front and set it on jack stands", note: "Factory jack points only. Shake the car hard before sliding under — never trust the jack alone." },
+    { phase: "Drain the old oil", text: "Open the hood and loosen the oil filler cap", note: "Letting air in the top makes the drain faster and less gluggy." },
+    { phase: "Drain the old oil", text: "Slide the drain pan under the plug, offset a few inches", note: "The first gush arcs outward, then the stream falls straight down as it slows." },
+    { phase: "Drain the old oil", text: "Remove the drain plug and let it drain 5–10 minutes", note: "Counterclockwise. Keep your hand out of the stream — guide the plug away as it comes free." },
+    { phase: "Drain the old oil", text: "Reinstall the plug with a fresh washer; snug, then torque to spec", note: "Typically 25–30 ft-lb. Over-tightening strips the pan threads — the classic DIY mistake." },
+    { phase: "Swap the filter", text: "Unscrew the old filter — expect a small spill", note: "Pan underneath. Check that the old rubber gasket came off with the filter; a doubled gasket blows out and dumps oil." },
+    { phase: "Swap the filter", text: "Smear fresh oil on the new filter's gasket, then spin it on", note: "Hand-tight plus about three-quarters of a turn. No wrench needed going on." },
+    { phase: "Refill, check & log", text: "Lower the car and refill, about half a quart shy of the spec amount", note: "Funnel in the filler neck. Pouring shy leaves room to fine-tune by the dipstick." },
+    { phase: "Refill, check & log", text: "Run the engine 30 seconds, shut off, and check for leaks", note: "Look at the drain plug and around the filter. The oil-pressure light should go out within a couple of seconds." },
+    { phase: "Refill, check & log", text: "Wait a few minutes, then check the dipstick and top off", note: "On level ground: pull, wipe, reinsert fully, read. Anywhere between MIN and MAX is good." },
+    { phase: "Refill, check & log", text: "Log date + odometer, reset the oil-life monitor, recycle the old oil", note: "Old oil and filter go (sealed) to any auto parts store, free. The log is what keeps your warranty — and your schedule — honest." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:oil-change:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Your Grill — Everyday Upkeep</title>
+<meta name="description" content="How often to clean your grill, why grease buildup matters, and a step-by-step routine + deep-clean checklist for gas, charcoal, and pellet grills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .routine-rows { display: grid; gap: 8px; margin-top: 12px; }
+  .routine-row {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 10px 14px; font-size: 15px; display: flex; gap: 10px; align-items: baseline;
+  }
+  .routine-row .r-when { font-weight: 700; color: var(--accent-deep); white-space: nowrap; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad-v { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Yard &amp; Garden · Monthly in season</span>
+      <h1>Clean Your Grill</h1>
+      <p class="lede">Every cookout leaves a little grease and carbon behind, and it all adds up to flare-ups, off flavors, rusted grates — and the occasional grease fire. The fix is a two-minute scrape after each cook, a monthly grate clean, and a proper deep clean once or twice a year. Here's the whole routine.</p>
+      <div class="stat-chips">
+        <span class="chip">🔥 <em>2-min scrape</em> after every cook</span>
+        <span class="chip">🗓️ Grate clean <em>monthly</em> in season</span>
+        <span class="chip">🧽 Deep clean <em>1–2× a year</em></span>
+        <span class="chip">💸 Skipping it risks a <em>$200–800+</em> new grill</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a backyard kettle grill with gentle smoke wisps rising from the lid vent, a spare grate with grill marks leaning beside it, and a caddy of cleaning tools on the patio">
+      <ellipse cx="290" cy="398" rx="240" ry="22" fill="#efe7d8"/>
+      <circle cx="78" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="462" cy="70" rx="44" ry="22" fill="#dce8ee"/>
+      <ellipse cx="424" cy="82" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- fence -->
+      <g fill="#c9a06b">
+        <rect x="376" y="208" width="14" height="96" rx="4"/>
+        <rect x="402" y="208" width="14" height="96" rx="4"/>
+        <rect x="428" y="208" width="14" height="96" rx="4"/>
+        <rect x="454" y="208" width="14" height="96" rx="4"/>
+        <rect x="480" y="208" width="14" height="96" rx="4"/>
+      </g>
+      <rect x="368" y="228" width="134" height="10" rx="5" fill="#b9886a" opacity="0.9"/>
+      <rect x="368" y="272" width="134" height="10" rx="5" fill="#b9886a" opacity="0.9"/>
+      <!-- bush -->
+      <circle cx="510" cy="338" r="26" fill="#5e9a78"/>
+      <circle cx="486" cy="350" r="18" fill="#3e7c59"/>
+      <!-- smoke wisps -->
+      <g stroke="#b9b1a3" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.75">
+        <path d="M236 138 q-10 -18 4 -32 q12 -12 4 -28"/>
+        <path d="M262 124 q-8 -16 6 -28 q12 -12 5 -26"/>
+      </g>
+      <!-- kettle grill -->
+      <path d="M158 192 a92 78 0 0 1 184 0 z" fill="#2c5a40"/>
+      <path d="M158 192 a92 78 0 0 1 184 0" fill="none" stroke="#234a34" stroke-width="3"/>
+      <rect x="236" y="96" width="28" height="10" rx="5" fill="#8a6a4f"/>
+      <ellipse cx="296" cy="150" rx="9" ry="5" fill="#5e9a78" transform="rotate(24 296 150)"/>
+      <rect x="150" y="192" width="200" height="14" rx="7" fill="#3e7c59"/>
+      <path d="M160 206 h180 a90 76 0 0 1 -180 0 z" fill="#3e7c59"/>
+      <path d="M178 252 q72 30 144 0 q-30 36 -72 36 q-42 0 -72 -36 z" fill="#2c5a40" opacity="0.45"/>
+      <circle cx="250" cy="300" r="9" fill="#8a6a4f"/>
+      <line x1="250" y1="306" x2="208" y2="372" stroke="#5a544a" stroke-width="8" stroke-linecap="round"/>
+      <line x1="250" y1="306" x2="292" y2="372" stroke="#5a544a" stroke-width="8" stroke-linecap="round"/>
+      <line x1="250" y1="308" x2="250" y2="376" stroke="#5a544a" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="208" cy="378" r="10" fill="#33393b"/>
+      <circle cx="208" cy="378" r="4" fill="#b9b1a3"/>
+      <circle cx="292" cy="378" r="10" fill="#33393b"/>
+      <circle cx="292" cy="378" r="4" fill="#b9b1a3"/>
+      <circle cx="250" cy="380" r="6" fill="#33393b"/>
+      <!-- spare grate with grill marks, leaning -->
+      <g transform="rotate(-8 92 320)">
+        <circle cx="92" cy="320" r="52" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+        <g stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round">
+          <line x1="56" y1="296" x2="128" y2="296"/>
+          <line x1="46" y1="312" x2="138" y2="312"/>
+          <line x1="46" y1="328" x2="138" y2="328"/>
+          <line x1="56" y1="344" x2="128" y2="344"/>
+        </g>
+        <g stroke="#c9a06b" stroke-width="3" stroke-linecap="round">
+          <line x1="76" y1="276" x2="76" y2="364"/>
+          <line x1="108" y1="276" x2="108" y2="364"/>
+        </g>
+      </g>
+      <!-- tool caddy -->
+      <rect x="368" y="334" width="96" height="48" rx="8" fill="#c96f4a"/>
+      <rect x="380" y="306" width="9" height="34" rx="4" fill="#8a6a4f"/>
+      <rect x="374" y="296" width="21" height="14" rx="4" fill="#e0a93d"/>
+      <line x1="408" y1="300" x2="408" y2="340" stroke="#5a544a" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="408" cy="296" r="6" fill="#7fb3c8"/>
+      <g stroke="#5a544a" stroke-width="4" stroke-linecap="round">
+        <line x1="428" y1="304" x2="424" y2="340"/>
+        <line x1="438" y1="304" x2="442" y2="340"/>
+      </g>
+      <path d="M428 304 q5 -8 10 0" stroke="#5a544a" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- grass tufts -->
+      <path d="M140 392 l3 -9 l3 9 M330 396 l3 -9 l3 9 M470 392 l3 -9 l3 9" stroke="#5e9a78" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Grease and carbon don't just look bad — they're fuel, insulation, and pest bait all at once. Here's what a dirty grill actually costs you (typical U.S. ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 c6 7 9 11 9 17 a9 9 0 0 1 -18 0 c0 -6 3 -10 9 -17" fill="#d9663f"/>
+          <path d="M18 14 c3 4 4.5 6 4.5 9 a4.5 4.5 0 0 1 -9 0 c0 -3 1.5 -5 4.5 -9" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Grease fires — the big one</h3>
+        <p>Drippings collect in the firebox and grease tray until one hot day they ignite. Grill fires send people to the ER and spread to decks and siding every summer — and most start with built-up grease.</p>
+        <span class="cost">The #1 reason to clean</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="26" rx="11" ry="5" fill="#c9a06b"/>
+          <ellipse cx="18" cy="24" rx="8" ry="3.5" fill="#e0a93d"/>
+          <g stroke="#8a8378" stroke-width="2.2" fill="none" stroke-linecap="round">
+            <path d="M12 18 q-2 -4 1 -7"/>
+            <path d="M18 17 q-2 -4 1 -7"/>
+            <path d="M24 18 q-2 -4 1 -7"/>
+          </g>
+        </svg></div>
+        <h3>Off flavors &amp; acrid smoke</h3>
+        <p>Old grease doesn't season your food — it burns and coats it in bitter, sooty smoke. If last month's salmon is haunting today's chicken, the grate is overdue.</p>
+        <span class="cost">Every meal pays</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <g stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round">
+            <line x1="6" y1="26" x2="30" y2="26"/>
+            <line x1="6" y1="31" x2="30" y2="31"/>
+          </g>
+          <path d="M14 24 c2.5 -5 1 -7 4 -11 c3 4 1.5 6 4 11 a4 4 0 0 1 -8 0" fill="#d9663f"/>
+          <path d="M22 24 c1.5 -3 1 -4 2.5 -6 c1.5 2 1 3 2.5 6 a2.5 2.5 0 0 1 -5 0" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Flare-ups</h3>
+        <p>Grease pooled on flavorizer bars and grates ignites the moment fat drips on it — torching dinner on the outside while the inside stays raw, and singeing eyebrows on the way.</p>
+        <span class="cost">Burnt dinners + burns</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <g stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round">
+            <line x1="7" y1="12" x2="29" y2="12"/>
+            <line x1="7" y1="18" x2="29" y2="18"/>
+            <line x1="7" y1="24" x2="29" y2="24"/>
+          </g>
+          <circle cx="13" cy="12" r="3" fill="#c96f4a"/>
+          <circle cx="24" cy="18" r="2.5" fill="#d98e3b"/>
+          <circle cx="16" cy="24" r="2.8" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Rusted grates</h3>
+        <p>Salty marinades, acidic sauces, and trapped moisture eat through grates left dirty — especially over winter. A scrape and a light coat of oil after each cook is all the prevention they need.</p>
+        <span class="cost">$30 – $150 to replace</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="20" cy="22" rx="7" ry="5.5" fill="#5a544a"/>
+          <circle cx="11.5" cy="19" r="3.8" fill="#5a544a"/>
+          <g stroke="#5a544a" stroke-width="1.8" stroke-linecap="round">
+            <line x1="16" y1="26" x2="13" y2="30"/>
+            <line x1="21" y1="27" x2="20" y2="31"/>
+            <line x1="25" y1="25" x2="28" y2="29"/>
+            <path d="M10 16 q-2 -3 -4 -3.5"/>
+          </g>
+          <ellipse cx="27" cy="11" rx="5" ry="3.5" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Pests move in</h3>
+        <p>To a mouse, ant, or raccoon, a greasy grill is a stocked pantry with a roof. Spiders love nesting inside burner tubes, too — and their webs block gas flow.</p>
+        <span class="cost">Nests, droppings, chewed lines</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="15" width="24" height="7" rx="3.5" fill="#b9b1a3"/>
+          <g fill="#d9663f">
+            <circle cx="11" cy="11" r="2"/>
+            <circle cx="17" cy="11" r="2"/>
+          </g>
+          <g fill="#dce8ee">
+            <circle cx="23" cy="11" r="2"/>
+            <circle cx="29" cy="11" r="2"/>
+          </g>
+          <path d="M9 26 q2 4 4 0 M15 26 q2 4 4 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Uneven heat</h3>
+        <p>On gas grills, grease and debris clog the little ports along each burner tube. Result: hot spots, cold zones, and a grill that takes forever to come up to temp.</p>
+        <span class="cost">$40 – $100 per burner set</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">Everyone gets the same skeleton — scrape after every cook, clean the grates monthly in season, deep clean once or twice a year. How hard you lean on each layer depends on three things:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="usage">
+        <div class="q-label">1. How often do you grill in season?</div>
+        <div class="pills">
+          <button class="pill" data-v="rare">A few times a year</button>
+          <button class="pill" data-v="weekly">About weekly</button>
+          <button class="pill" data-v="heavy">Several times a week</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="fuel">
+        <div class="q-label">2. What does it burn?</div>
+        <div class="pills">
+          <button class="pill" data-v="gas">Gas</button>
+          <button class="pill" data-v="charcoal">Charcoal</button>
+          <button class="pill" data-v="pellet">Pellets</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="exposure">
+        <div class="q-label">3. Covered, or exposed to the weather?</div>
+        <div class="pills">
+          <button class="pill" data-v="covered">Covered / under shelter</button>
+          <button class="pill" data-v="exposed">Out in the open</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <div class="routine-rows" id="resultRoutine"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Grill cleaning is one of the cheapest maintenance habits there is. A year of supplies — dish soap, a safe scraper, foil drip liners — runs about <strong>$20</strong>. Here's what neglect buys instead (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$20/yr</div><div class="l">cleaning supplies: soap, scraper, drip-pan liners</div></div>
+        <div class="calc-stat"><div class="v bad-v">$30 – $150</div><div class="l">new cooking grates, rusted out early</div></div>
+        <div class="calc-stat"><div class="v bad-v">$40 – $100</div><div class="l">replacement burners, corroded &amp; clogged</div></div>
+        <div class="calc-stat"><div class="v bad-v">$200 – $800+</div><div class="l">a whole new grill, years ahead of schedule</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧽 A year of cleaning supplies</span><span>~$20</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔩 New grates</span><span>$30 – $150</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:19%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 New burners</span><span>$40 – $100</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛒 A whole new grill</span><span>$200 – $800+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">And that's just the hardware. A grease fire that jumps to a deck rail or siding does damage measured in the <strong>thousands</strong> — insurers handle a wave of grill-fire claims every summer. <strong>$20 a year and a few minutes after each cook</strong> is the entire insurance premium.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your grill</h2>
+    <p class="sub">The routine clean takes 15 minutes; the deep clean is a satisfying hour, once or twice a year. Work through the checklist — your progress saves automatically, so you can pick it back up after the burgers.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — you're mixing grease, gas, and heat</h3>
+      <ul>
+        <li><strong>Gas OFF and the tank valve closed</strong> before any cleaning beyond the warm-grate scrape. Disconnect the tank for a deep clean.</li>
+        <li>The grill should be <strong>fully cool</strong> for everything except the after-cooking grate scrape — that one works best warm.</li>
+        <li><strong>Wire-brush bristles break off</strong>, stick to grates, and end up in food (and occasionally in throats — it's a real ER injury). Inspect a wire brush before every use and toss it at the first loose bristle, or skip the risk entirely with a coil brush, wooden scraper, or balled-up foil held in tongs.</li>
+        <li>After reassembling a gas grill, do a <strong>soapy-water leak test</strong>: paint connections with soapy water, open the tank valve, and watch for growing bubbles. Bubbles = leak = close the valve and re-seat before lighting.</li>
+        <li>Degrease over a tarp or lawn, not the patio — grease stains concrete permanently.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Bristle-free grill brush or coil brush</span>
+      <span class="tool-chip">Wooden scraper (or foil + tongs)</span>
+      <span class="tool-chip">Putty knife</span>
+      <span class="tool-chip">Dish soap + bucket of warm water</span>
+      <span class="tool-chip">Nylon scrub pad</span>
+      <span class="tool-chip">Nitrile gloves</span>
+      <span class="tool-chip">Shop vac (for ash &amp; debris)</span>
+      <span class="tool-chip">Foil drip-pan liners</span>
+      <span class="tool-chip">Spray bottle of soapy water (leak test)</span>
+      <span class="tool-chip">High-heat cooking oil + paper towels</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-view diagram of a brush scraping along warm grill grates right after cooking, with heat rising from below and debris flaking off">
+          <g stroke="#8a6a4f" stroke-width="7" stroke-linecap="round">
+            <line x1="28" y1="118" x2="252" y2="118"/>
+          </g>
+          <g stroke="#8a6a4f" stroke-width="5" stroke-linecap="round">
+            <line x1="44" y1="106" x2="44" y2="130"/>
+            <line x1="86" y1="106" x2="86" y2="130"/>
+            <line x1="128" y1="106" x2="128" y2="130"/>
+            <line x1="170" y1="106" x2="170" y2="130"/>
+            <line x1="212" y1="106" x2="212" y2="130"/>
+          </g>
+          <g stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8">
+            <path d="M70 162 q-6 -10 0 -20"/>
+            <path d="M140 162 q-6 -10 0 -20"/>
+            <path d="M210 162 q-6 -10 0 -20"/>
+          </g>
+          <rect x="92" y="84" width="64" height="16" rx="7" fill="#5a544a"/>
+          <rect x="148" y="62" width="74" height="13" rx="6.5" fill="#c96f4a" transform="rotate(18 148 62)"/>
+          <g stroke="#33393b" stroke-width="2.5" stroke-linecap="round">
+            <line x1="100" y1="100" x2="100" y2="106"/>
+            <line x1="112" y1="100" x2="112" y2="106"/>
+            <line x1="124" y1="100" x2="124" y2="106"/>
+            <line x1="136" y1="100" x2="136" y2="106"/>
+            <line x1="148" y1="100" x2="148" y2="106"/>
+          </g>
+          <line x1="58" y1="48" x2="160" y2="48" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="58,40 42,48 58,56" fill="#3e7c59"/>
+          <text x="66" y="36" font-size="12" fill="#6b7376">scrape while still warm</text>
+          <circle cx="62" cy="98" r="2.5" fill="#8a6a4f"/>
+          <circle cx="72" cy="92" r="2" fill="#8a6a4f"/>
+          <text x="172" y="162" font-size="12" fill="#6b7376">residual heat</text>
+        </svg>
+        <h4>The warm-grate scrape</h4>
+        <p>Right after cooking (or after 10 minutes on high), residue is soft and lifts in one pass. Cold carbon is concrete. Two minutes now beats twenty later.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a gas burner tube with a row of small ports, showing a brush stroked crosswise across the ports rather than along the tube">
+          <rect x="30" y="86" width="220" height="26" rx="13" fill="#b9b1a3"/>
+          <g fill="#5a544a">
+            <circle cx="58" cy="92" r="3"/>
+            <circle cx="86" cy="92" r="3"/>
+            <circle cx="114" cy="92" r="3"/>
+            <circle cx="142" cy="92" r="3"/>
+            <circle cx="170" cy="92" r="3"/>
+            <circle cx="198" cy="92" r="3"/>
+            <circle cx="226" cy="92" r="3"/>
+          </g>
+          <line x1="142" y1="34" x2="142" y2="74" stroke="#5a544a" stroke-width="5" stroke-linecap="round"/>
+          <g stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round">
+            <line x1="132" y1="74" x2="132" y2="86"/>
+            <line x1="142" y1="74" x2="142" y2="88"/>
+            <line x1="152" y1="74" x2="152" y2="86"/>
+          </g>
+          <path d="M104 46 q38 -18 76 0" stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="180,38 196,48 178,54" fill="#d9663f"/>
+          <polygon points="100,54 84,48 102,38" fill="#d9663f"/>
+          <text x="92" y="24" font-size="12" fill="#6b7376">brush across the ports</text>
+          <line x1="48" y1="132" x2="232" y2="132" stroke="#c96f4a" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.7"/>
+          <line x1="206" y1="124" x2="220" y2="140" stroke="#c96f4a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="220" y1="124" x2="206" y2="140" stroke="#c96f4a" stroke-width="3" stroke-linecap="round"/>
+          <text x="48" y="156" font-size="12" fill="#6b7376">not lengthwise — that drags debris into ports</text>
+        </svg>
+        <h4>Brush burner ports crosswise</h4>
+        <p>Stroke across the row of ports, not along the tube. Lengthwise strokes sweep debris from one port into the next; crosswise flicks it out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the underside of a grill showing the grease tray sliding out with a foil liner, with drips falling from the firebox into the tray">
+          <path d="M40 28 h200 l-18 52 h-164 z" fill="#5a544a"/>
+          <g fill="#e0a93d">
+            <circle cx="110" cy="92" r="3"/>
+            <circle cx="142" cy="100" r="3"/>
+            <circle cx="170" cy="90" r="3"/>
+          </g>
+          <rect x="120" y="106" width="60" height="14" rx="3" fill="#8a8378"/>
+          <rect x="78" y="120" width="144" height="20" rx="5" fill="#b9b1a3"/>
+          <rect x="86" y="124" width="128" height="9" rx="3" fill="#dce8ee"/>
+          <ellipse cx="138" cy="128" rx="16" ry="3.5" fill="#e0a93d" opacity="0.85"/>
+          <line x1="226" y1="130" x2="262" y2="130" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="262,122 276,130 262,138" fill="#3e7c59"/>
+          <text x="196" y="160" font-size="12" fill="#6b7376">slides out to empty</text>
+          <text x="36" y="160" font-size="12" fill="#6b7376">foil liner = 10-second swap</text>
+          <text x="56" y="20" font-size="12" fill="#6b7376">firebox funnels grease down</text>
+        </svg>
+        <h4>Know your grease trap</h4>
+        <p>Every drop of fat ends up in the drip tray or cup below the firebox. Line it with foil or a disposable insert, and emptying it becomes a ten-second job instead of a scraping session.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Cleaning progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All clean! Light it up — dinner is going to taste like dinner again.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ REPAIR OR REPLACE ============ -->
+  <section id="pro">
+    <h2>When to repair — or replace</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Rusted-through firebox or lid.</strong> Surface rust scrubs off; holes don't. Once the firebox is perforated, heat control is gone and the structure is failing — that's replacement territory.</li>
+        <li><strong>Corroded or cracked burners.</strong> Ports that stay clogged after cleaning, visible splits, or lopsided yellow flames mean the burner is done. Replacements run <strong>$40–$100</strong> and install in under an hour — well worth it on an otherwise solid grill.</li>
+        <li><strong>Failing regulator.</strong> Weak heat on a full tank, flames that sigh up and down, or a gas smell at the hose are regulator red flags. They're <strong>$20–$40</strong> — replace, never "repair," anything in the gas path, and leak-test after.</li>
+        <li><strong>Flaking porcelain or chrome on grates.</strong> Once the coating chips into food territory, scrubbing can't fix it. New grates are <strong>$30–$150</strong> and instantly upgrade the cooking surface.</li>
+        <li><strong>Rule of thumb:</strong> if repairs top half the price of a comparable new grill, put the money toward the new one — and a cover.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Are wire grill brushes really dangerous?</summary>
+      <p>Dangerous enough that ERs see a steady trickle of swallowed-bristle injuries every grilling season. A loose bristle sticks to the grate, transfers to a burger, and can lodge in the throat or gut. If you use a wire brush, inspect it before every use and replace it yearly. Safer: a coil-style brush, a wooden scraper that molds to your grate, or a ball of foil gripped in tongs — then wipe the grate with an oiled paper towel as a final check.</p>
+    </details>
+    <details>
+      <summary>Do I clean stainless steel and porcelain-coated grates differently?</summary>
+      <p>Yes. Stainless and bare cast iron tolerate firm scraping; porcelain-coated grates need a softer touch — a nylon brush or wooden scraper — because chipped coating exposes the steel underneath to rust and can flake into food. For both, warm soapy water and a nylon pad handle the deep clean; finish cast iron and steel with a light coat of high-heat oil.</p>
+    </details>
+    <details>
+      <summary>Does the onion trick actually work?</summary>
+      <p>Surprisingly well, as a finishing step. Halve an onion, spear it on a fork, and rub the cut face along hot grates: the moisture steams residue loose and the onion adds a faint seasoning. It won't replace a real scrape on a crusty grate, but it's a great bristle-free touch-up right before food goes on.</p>
+    </details>
+    <details>
+      <summary>Can I use oven cleaner on my grill?</summary>
+      <p>Only with care, and only in the right places. Conventional oven cleaners are harsh lye-based formulas — fine on cold cast-iron or steel grates rinsed <em>thoroughly</em> afterward, but they can discolor stainless, strip paint from the lid and firebox exterior, and must never touch burners or gas components. For most grills, hot soapy water plus elbow grease (or a purpose-made grill degreaser) does the job without the risk.</p>
+    </details>
+    <details>
+      <summary>How should I put the grill away for winter?</summary>
+      <p>Give it the full deep clean first — grease left over winter is rust fuel and pest bait. Coat grates and burners lightly with cooking oil, close the tank valve, and leave the propane tank <em>outside</em> (never in a garage or basement), connected or stored upright. Wrap burner openings or the grill in a breathable cover; plastic bags trap condensation. Come spring, do the season-opening check: spider webs out of the burner tubes, fresh leak test, then fire it up.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Scrape, clean, deep clean — remembered for you.</h2>
+        <p>Three cadences are easy to learn and easy to forget by July. Upkeep Ledger logs each grate clean and deep clean, then nudges you when the next one comes due — alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=clean-grill&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=clean-grill&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { usage: null, fuel: null, exposure: null };
+
+  function computeRoutine(s) {
+    var reasons = [];
+
+    // grate-clean cadence
+    var grate;
+    if (s.usage === "heavy") {
+      grate = "Every 2 weeks in season";
+      reasons.push("Several cooks a week builds carbon fast — splitting the monthly grate clean into two lighter ones keeps it a 15-minute job.");
+    } else if (s.usage === "weekly") {
+      grate = "Monthly in season";
+      reasons.push("Weekly grilling is the classic case: the after-cook scrape handles day-to-day, and a monthly soap-and-water grate clean resets the surface.");
+    } else {
+      grate = "Before each grilling stretch";
+      reasons.push("Grilling only occasionally means residue sits for weeks between cooks — give the grates a quick soap-and-water clean before each use instead of on a calendar.");
+    }
+
+    // deep cleans
+    var deep = 1;
+    if (s.usage === "heavy") {
+      deep = 2;
+      reasons.push("Heavy use fills the grease trap and coats the firebox quickly — plan deep cleans at both season open and season close.");
+    }
+    if (s.exposure === "exposed" && deep < 2) {
+      deep = 2;
+      reasons.push("An uncovered grill collects rain, pollen, and rust all year — a second deep clean (and honestly, a $30 cover) pays for itself.");
+    } else if (s.exposure === "exposed") {
+      reasons.push("Being out in the weather accelerates rust — oil the grates after every clean, and consider a cover.");
+    } else {
+      reasons.push("Covered storage slows rust and grime, so one thorough deep clean a year holds the line.");
+    }
+
+    // fuel-specific
+    if (s.fuel === "gas") {
+      reasons.push("Gas grill: make burner-port brushing and the soapy-water leak test part of every deep clean — spiders nesting in burner tubes are a real (and flammable) thing.");
+    } else if (s.fuel === "charcoal") {
+      reasons.push("Charcoal: empty the ash once it's fully cold after every cook. Ash plus humidity forms a corrosive paste that eats kettle bottoms.");
+    } else if (s.fuel === "pellet") {
+      reasons.push("Pellet grill: vacuum the firepot and ash every 2–3 cooks, and degrease the heat baffle and grease chute on schedule — grease-chute buildup is the #1 cause of pellet-grill fires.");
+    }
+
+    return { grate: grate, deep: deep, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.usage || !quizState.fuel || !quizState.exposure) return;
+    var r = computeRoutine(quizState);
+
+    document.getElementById("resultFreq").textContent = "Your routine: 3 layers";
+    document.getElementById("resultBody").innerHTML =
+      "Same skeleton as everyone, tuned to your answers — anchor the deep clean" +
+      (r.deep === 2 ? "s to <strong>season open and season close</strong>." : " to <strong>season open</strong> (or close — pick one and keep it).");
+
+    var rows = [
+      { when: "After every cook", what: "2-minute warm-grate scrape, and empty cold ash if you burn charcoal" },
+      { when: r.grate, what: "Grate clean: soap, water, nylon pad, dry, light coat of oil" },
+      { when: (r.deep === 2 ? "2× a year" : "1× a year"), what: "Full deep clean: grates, burners, firebox, grease trap, exterior" + (quizState.fuel === "gas" ? ", leak test" : "") }
+    ];
+    var routineEl = document.getElementById("resultRoutine");
+    routineEl.innerHTML = "";
+    rows.forEach(function (row) {
+      var div = document.createElement("div");
+      div.className = "routine-row";
+      var when = document.createElement("span");
+      when.className = "r-when";
+      when.textContent = row.when;
+      var what = document.createElement("span");
+      what.textContent = row.what;
+      div.appendChild(when);
+      div.appendChild(what);
+      routineEl.appendChild(div);
+    });
+
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Routine clean — monthly in season", text: "Burn it off: 10 minutes on high, lid closed", note: "Loosens residue so it scrapes off in one pass. (Skip the burn-off on pellet grills — just scrape warm after cooking.)" },
+    { phase: "Routine clean — monthly in season", text: "Scrape the grates while still warm", note: "Coil brush, wooden scraper, or foil in tongs. If you use a wire brush, check it for loose bristles first." },
+    { phase: "Routine clean — monthly in season", text: "Empty the grease trap or drip pan; swap the foil liner", note: "If there's standing grease, you've found tomorrow's flare-up. Cold charcoal ash goes out now too." },
+    { phase: "Routine clean — monthly in season", text: "Wipe the exterior and lid with warm soapy water", note: "Mild dish soap is safe on every finish; harsh cleaners aren't. Buff stainless with the grain." },
+    { phase: "Deep clean — 1–2× a year", text: "Gas OFF, tank valve closed, tank disconnected, grill fully cool", note: "Non-negotiable before you start pulling parts. Pellet grills: unplug too." },
+    { phase: "Deep clean — 1–2× a year", text: "Remove the grates and soak them in warm soapy water", note: "20–30 minutes, then a nylon pad. Gentle on porcelain coatings — chips invite rust." },
+    { phase: "Deep clean — 1–2× a year", text: "Scrub the flavorizer bars or heat deflectors", note: "Putty knife for the crust, soapy water for the film. Replace any that are rusted through." },
+    { phase: "Deep clean — 1–2× a year", text: "Brush each burner tube crosswise; check ports and spider screens", note: "Across the ports, not along them. A bottle brush through the tube clears webs — spiders love it in there." },
+    { phase: "Deep clean — 1–2× a year", text: "Scrape the firebox walls down into the bottom", note: "Putty knife, then push the debris pile out through the bottom opening or shop-vac it." },
+    { phase: "Deep clean — 1–2× a year", text: "Remove and degrease the grease tray and catch cup", note: "Hot soapy water, fresh liner in. This tray is where most grease fires are born." },
+    { phase: "Deep clean — 1–2× a year", text: "Wash the lid interior and exterior", note: "Those black flakes inside the lid are carbonized grease, not peeling paint — scrub them off so they stop landing on food." },
+    { phase: "Deep clean — 1–2× a year", text: "Reassemble, reconnect, and leak-test gas lines with soapy water", note: "Paint every connection, open the valve, watch for growing bubbles. Bubbles = close the valve and re-seat." },
+    { phase: "Deep clean — 1–2× a year", text: "Oil the grates lightly and log the clean", note: "A thin wipe of high-heat oil fights rust. Note the date — your future self will ask 'when did I last deep clean this?'" }
+  ];
+
+  var LS_KEY = "everyday-upkeep:clean-grill:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

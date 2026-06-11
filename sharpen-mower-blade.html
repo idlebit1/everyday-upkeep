@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharpen Your Mower Blade — Everyday Upkeep</title>
+<meta name="description" content="How often to sharpen your lawn mower blade, when to do it, why a dull blade hurts your lawn, and a safe step-by-step guide to sharpening and balancing it yourself.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calendar ---------- */
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+  .month {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 12px;
+    padding: 12px 10px; text-align: center; transition: all 0.2s ease; min-height: 86px;
+  }
+  .month .m-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .month .m-task { font-size: 12.5px; color: var(--ink-soft); line-height: 1.35; }
+  .month.clean { background: var(--accent-soft); border-color: var(--accent); }
+  .month.clean .m-task { color: var(--accent-deep); font-weight: 600; }
+  .month.check { background: var(--gold-soft); border-color: var(--gold); }
+  .month.check .m-task { color: #9a7117; font-weight: 600; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; color: var(--ink-soft); }
+  .legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 4px; margin-right: 6px; vertical-align: -1px; }
+  .dot.d-clean { background: var(--accent); }
+  .dot.d-check { background: var(--gold); }
+  .cal-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+    .cal-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  .month .m-season { display: block; height: 18px; margin-bottom: 2px; }
+  .month .m-season svg { width: 16px; height: 16px; }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Tools · Seasonal</span>
+      <h1>Sharpen Your Mower Blade</h1>
+      <p class="lede">A sharp blade slices grass cleanly; a dull one tears it, leaving ragged tips that brown, sip extra fuel, and invite lawn disease. Once a season is the baseline — heavy use means more often. Here's how to know, when to do it, and exactly how to sharpen safely.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ At least <em>1× a year</em> — every 20–25 mowing hours</span>
+        <span class="chip">⏱️ <em>30–60 minutes</em> start to finish</span>
+        <span class="chip">🧤 <em>DIY-friendly</em> with a $10 file</span>
+        <span class="chip">💸 Dull blades risk <em>$100–$500</em> in lawn repair</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a push mower parked on a green lawn with a sparkle gleaming on its freshly sharpened blade, under a sun and drifting clouds">
+      <ellipse cx="280" cy="398" rx="250" ry="24" fill="#efe7d8"/>
+      <circle cx="76" cy="68" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="170" cy="120" rx="30" ry="14" fill="#dce8ee"/>
+      <path d="M60 386 q110 -26 220 0 q110 26 220 0 l0 14 l-440 0 z" fill="#5e9a78"/>
+      <g stroke="#3e7c59" stroke-width="4" stroke-linecap="round">
+        <path d="M84 384 q-3 -14 -9 -20" fill="none"/>
+        <path d="M96 384 q1 -16 7 -23" fill="none"/>
+        <path d="M448 380 q-3 -14 -9 -20" fill="none"/>
+        <path d="M462 380 q2 -15 8 -22" fill="none"/>
+        <path d="M120 392 q-2 -12 -7 -17" fill="none"/>
+      </g>
+      <g stroke="#2c5a40" stroke-width="4" stroke-linecap="round">
+        <path d="M488 388 q3 -13 9 -18" fill="none"/>
+        <path d="M70 396 q3 -11 8 -15" fill="none"/>
+      </g>
+      <!-- clippings -->
+      <g fill="#5e9a78">
+        <ellipse cx="430" cy="402" rx="7" ry="3" transform="rotate(-16 430 402)"/>
+        <ellipse cx="452" cy="410" rx="6" ry="3" transform="rotate(12 452 410)"/>
+        <ellipse cx="120" cy="408" rx="6" ry="3" transform="rotate(20 120 408)"/>
+      </g>
+      <!-- handle -->
+      <path d="M352 312 L462 196" stroke="#8a6a4f" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M338 312 L448 196" stroke="#8a6a4f" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <rect x="436" y="178" width="42" height="16" rx="8" fill="#2c5a40" transform="rotate(-46 457 186)"/>
+      <!-- deck -->
+      <rect x="176" y="296" width="196" height="52" rx="15" fill="#c96f4a"/>
+      <rect x="176" y="328" width="196" height="12" rx="6" fill="#d9663f"/>
+      <!-- discharge chute -->
+      <rect x="362" y="306" width="30" height="22" rx="7" fill="#d9663f"/>
+      <!-- engine -->
+      <rect x="226" y="244" width="92" height="58" rx="11" fill="#e0a93d"/>
+      <rect x="240" y="232" width="64" height="18" rx="7" fill="#b9b1a3"/>
+      <rect x="296" y="262" width="30" height="22" rx="5" fill="#d98e3b"/>
+      <circle cx="252" cy="270" r="13" fill="#d98e3b"/>
+      <circle cx="252" cy="270" r="5.5" fill="#fffdf8"/>
+      <path d="M318 254 q24 -8 36 6" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="350" y="256" width="14" height="8" rx="3.5" fill="#2c5a40"/>
+      <!-- wheels -->
+      <circle cx="208" cy="354" r="26" fill="#2c5a40"/>
+      <circle cx="208" cy="354" r="9" fill="#b9b1a3"/>
+      <circle cx="342" cy="352" r="30" fill="#2c5a40"/>
+      <circle cx="342" cy="352" r="11" fill="#b9b1a3"/>
+      <!-- blade peeking under the deck, freshly sharpened -->
+      <rect x="240" y="346" width="74" height="9" rx="4.5" fill="#b9b1a3"/>
+      <rect x="240" y="346" width="74" height="3.5" rx="1.75" fill="#dce8ee"/>
+      <!-- gleam / sparkles on the blade -->
+      <g stroke="#fffdf8" stroke-width="3.5" stroke-linecap="round">
+        <line x1="277" y1="328" x2="277" y2="344"/>
+        <line x1="269" y1="336" x2="285" y2="336"/>
+      </g>
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="305" y1="334" x2="305" y2="342"/>
+        <line x1="301" y1="338" x2="309" y2="338"/>
+        <line x1="251" y1="356" x2="251" y2="362"/>
+        <line x1="248" y1="359" x2="254" y2="359"/>
+      </g>
+      <circle cx="290" cy="330" r="2.5" fill="#fffdf8"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A blade only stays sharp for about 20–25 hours of cutting. After that it stops slicing and starts clubbing — and every one of these problems traces back to that ragged tear (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M11 30 V12" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <path d="M11 12 L8 7 M11 12 L14 7" stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M25 30 V13" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+          <path d="M25 13 l-3 -3 m3 3 l-1 -5 m1 5 l3 -4" stroke="#c9a06b" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Torn grass invites disease</h3>
+        <p>A clean cut seals in a day; a ragged tear is an open wound. Fungal diseases like brown patch and dollar spot move in through shredded tips and can take out whole swaths of lawn.</p>
+        <span class="cost">$100 – $500 treatment + reseed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M7 30 q2 -10 1 -16" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M14 30 q1 -12 0 -19" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M21 30 q0 -11 1 -17" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M28 30 q1 -9 0 -15" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="8" cy="12" r="2.6" fill="#c9a06b"/>
+          <circle cx="14" cy="9" r="2.6" fill="#8a6a4f"/>
+          <circle cx="22" cy="11" r="2.6" fill="#c9a06b"/>
+          <circle cx="28" cy="13" r="2.6" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Brown, frayed tips</h3>
+        <p>Two or three days after mowing, torn tips dry out white-then-brown. From the curb the whole lawn looks scorched — even when watering and feeding are perfect.</p>
+        <span class="cost">Whole-lawn browning in days</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="12" width="17" height="17" rx="3" fill="#d9663f"/>
+          <rect x="11" y="8" width="7" height="6" rx="2" fill="#c96f4a"/>
+          <path d="M25 16 h4 v8" stroke="#c96f4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M16.5 16 c2.5 3.5 3.5 5.5 0 8 c-3.5 -2.5 -2.5 -4.5 0 -8" fill="#fffdf8"/>
+        </svg></div>
+        <h3>Higher fuel use</h3>
+        <p>Tearing takes more force than slicing, so the engine bogs and burns noticeably more fuel — and you mow slower, often re-cutting strips the blade pushed over instead of cutting.</p>
+        <span class="cost">Extra fuel + time, every mow</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="11" width="18" height="15" rx="3" fill="#e0a93d"/>
+          <rect x="13" y="7" width="10" height="6" rx="2" fill="#b9b1a3"/>
+          <circle cx="18" cy="18.5" r="4" fill="#fffdf8"/>
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round">
+            <path d="M4 14 q2 2 0 4 q-2 2 0 4" fill="none"/>
+            <path d="M32 14 q-2 2 0 4 q2 2 0 4" fill="none"/>
+          </g>
+          <path d="M14 30 h8" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Engine &amp; bearing strain</h3>
+        <p>A nicked or unevenly worn blade is out of balance. That wobble hammers the crankshaft, spindle, and bearings thousands of times a minute — vibration you can feel in the handle.</p>
+        <span class="cost">$80 – $250 spindle/bearing repair</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 24 q5 -8 10 0 q5 8 9 0 q4 -8 9 0" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M4 30 h28" stroke="#c9a06b" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="14" cy="29" r="2.2" fill="#8a6a4f"/>
+          <circle cx="23" cy="29" r="2.2" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Scalping &amp; uneven cut</h3>
+        <p>A bent or badly worn blade cuts a wavy, stepped surface and scalps high spots down to bare dirt — patches that weeds colonize before grass can recover.</p>
+        <span class="cost">Bare patches to reseed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> sharpen?</h2>
+    <p class="sub">The rule of thumb is every 20–25 hours of mowing. "Once a year" works for a small lawn — but a big yard, a long season, or sandy soil eats edges much faster. Answer three questions for your number:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="size">
+        <div class="q-label">1. How big is the lawn you mow?</div>
+        <div class="pills">
+          <button class="pill" data-v="small">Small (under ¼ acre)</button>
+          <button class="pill" data-v="medium">¼ – ½ acre</button>
+          <button class="pill" data-v="large">½ acre or more</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="season">
+        <div class="q-label">2. How long is your mowing season?</div>
+        <div class="pills">
+          <button class="pill" data-v="short">Short (northern, ~May–Sep)</button>
+          <button class="pill" data-v="long">Long (~Apr–Oct)</button>
+          <button class="pill" data-v="year">Year-round (southern)</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="terrain">
+        <div class="q-label">3. What's the blade actually hitting?</div>
+        <div class="pills">
+          <button class="pill" data-v="clean">Clean, established lawn</button>
+          <button class="pill" data-v="sandy">Sandy soil or frequent sticks &amp; debris</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDAR ============ -->
+  <section id="calendar">
+    <h2>Your seasonal calendar</h2>
+    <p class="sub" id="calSub">Showing the standard once-a-season plan: sharpen in March, before the first mow. Take the quiz above and this calendar updates to match your lawn.</p>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="legend">
+      <span><span class="dot d-clean"></span>Sharpen the blade</span>
+      <span><span class="dot d-check"></span>Mowing season — listen &amp; look for dullness</span>
+    </div>
+    <div class="cal-note">🪨 <strong>Plus:</strong> any time you hit a rock, root, or hidden sprinkler head, stop and inspect the blade right away. One good strike can undo a season of sharpness — or bend the blade, which means replacement, not sharpening.</div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Sharpening is one of the cheapest jobs in all of yard care — a flat file costs about what two coffees do, and it lasts decades. Skipping it is where the real bills start (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0 – $10</div><div class="l">DIY sharpening per season (a file or grinder you already own)</div></div>
+        <div class="calc-stat"><div class="v">$10 – $20</div><div class="l">pro sharpening, per blade, at a mower shop</div></div>
+        <div class="calc-stat"><div class="v bad">$100 – $500</div><div class="l">fungicide treatment + reseeding after a disease outbreak</div></div>
+        <div class="calc-stat"><div class="v bad">$20 – $60</div><div class="l">replacement blade when a worn-out one is past saving</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Ten years of DIY sharpening (one $10 file)</span><span>~$10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🍂 One bout of lawn disease: treatment + reseed</span><span>~$300</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">A mill file costs about <strong>$10 and lasts decades</strong> — and routine sharpening extends a $20–$60 blade's life by <strong>years</strong>, because you remove a hair of metal instead of grinding out deep, neglected damage. Compare that to one fungus outbreak riding in on torn grass: <strong>$100–$500</strong> in treatment and reseeding, plus a summer of looking at brown.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to sharpen your mower blade</h2>
+    <p class="sub">Plan on 30–60 minutes the first time, half that once you've done it. Work through the checklist — your progress saves automatically, so you can pick it back up if you take a break.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — make the blade impossible to spin before you touch it</h3>
+      <ul>
+        <li><strong>Pull the spark plug wire off the plug</strong> and tuck it away — <strong>before anything else</strong>. On a battery mower, remove the battery and the safety key. Turning the blade by hand can fire a gas engine.</li>
+        <li>Wear <strong>cut-resistant gloves and safety glasses</strong>. Even a dull blade has burrs, and filing throws metal grit.</li>
+        <li><strong>Tip the mower carburetor-and-air-filter side up</strong> (gas cap up, ideally with a near-empty tank). Tipped the wrong way, fuel and oil flood the air filter and the mower smokes for weeks.</li>
+        <li>Block the blade with a scrap of wood before loosening the bolt — never hold the blade against the wrench's force with your hand.</li>
+        <li>The blade bolt is torqued tight on purpose: when remounting, <strong>torque it back to spec</strong> (typically 35–50 ft·lb on walk-behinds; check your manual). A loose blade is a thrown blade.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Socket wrench / breaker bar</span>
+      <span class="tool-chip">Cut-resistant gloves</span>
+      <span class="tool-chip">Safety glasses</span>
+      <span class="tool-chip">Mill bastard file (or angle grinder / drill attachment)</span>
+      <span class="tool-chip">Bench vise or clamps</span>
+      <span class="tool-chip">Wood scrap (blade block)</span>
+      <span class="tool-chip">Blade balancer or a nail in the wall</span>
+      <span class="tool-chip">Torque wrench</span>
+      <span class="tool-chip">Penetrating oil</span>
+      <span class="tool-chip">Paint pen / marker</span>
+      <span class="tool-chip">Wire brush or putty knife</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing the spark plug boot being pulled off the engine's spark plug, marked as the always-first step">
+          <rect x="26" y="62" width="112" height="84" rx="12" fill="#e0a93d"/>
+          <rect x="42" y="48" width="58" height="18" rx="6" fill="#b9b1a3"/>
+          <rect x="138" y="92" width="26" height="16" rx="4" fill="#b9b1a3"/>
+          <rect x="164" y="95" width="10" height="10" rx="2" fill="#8a6a4f"/>
+          <rect x="196" y="88" width="26" height="24" rx="8" fill="#2c5a40"/>
+          <path d="M222 100 q26 -4 36 -22" stroke="#2c5a40" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <line x1="180" y1="100" x2="192" y2="100" stroke="#d9663f" stroke-width="3" stroke-dasharray="4 4"/>
+          <line x1="226" y1="68" x2="252" y2="52" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="256,49 240,52 250,62" fill="#d9663f"/>
+          <text x="26" y="32" font-size="13" fill="#6b7376" font-weight="700">1st — always</text>
+          <text x="26" y="168" font-size="12" fill="#6b7376">pull the boot, tuck it away from the plug</text>
+        </svg>
+        <h4>Spark plug wire off — first</h4>
+        <p>Rotating the blade can crank a gas engine enough to fire. Pull the boot (battery mowers: remove battery + key) before your hands go anywhere near the deck.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-view diagram of a file held at the blade's existing 30 to 45 degree bevel angle, following the factory edge">
+          <rect x="30" y="112" width="220" height="18" rx="3" fill="#b9b1a3"/>
+          <polygon points="250,112 250,130 222,130" fill="#dce8ee"/>
+          <line x1="250" y1="130" x2="178" y2="86" stroke="#6b7376" stroke-width="2" stroke-dasharray="4 4"/>
+          <rect x="170" y="58" width="86" height="14" rx="4" fill="#c96f4a" transform="rotate(32 213 65)"/>
+          <rect x="155" y="62" width="18" height="10" rx="4" fill="#8a6a4f" transform="rotate(32 164 67)"/>
+          <path d="M214 124 a30 30 0 0 0 -10 -22" stroke="#d9663f" stroke-width="2.5" fill="none"/>
+          <text x="160" y="142" font-size="13" fill="#d9663f" font-weight="700">30–45°</text>
+          <line x1="196" y1="50" x2="232" y2="72" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="238,76 228,76 234,66" fill="#3e7c59"/>
+          <text x="30" y="34" font-size="13" fill="#6b7376" font-weight="700">file along the existing bevel</text>
+          <text x="30" y="156" font-size="12" fill="#6b7376">blade, edge-on — match the factory angle</text>
+        </svg>
+        <h4>Follow the factory bevel</h4>
+        <p>Don't invent an angle — restore the one that's there (30–45° on nearly all blades). Push the file along the edge in one direction; stop at "butter-knife sharp."</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a blade balanced horizontally on a nail through its center hole, with a dashed tilted outline showing what an unbalanced heavy side looks like">
+          <rect x="26" y="20" width="16" height="140" fill="#efe7d8"/>
+          <line x1="42" y1="88" x2="76" y2="88" stroke="#6b7376" stroke-width="5" stroke-linecap="round"/>
+          <rect x="62" y="80" width="184" height="16" rx="6" fill="#b9b1a3"/>
+          <circle cx="76" cy="88" r="5" fill="#fbf8f2" stroke="#6b7376" stroke-width="2"/>
+          <g transform="rotate(13 76 88)" opacity="0.65">
+            <rect x="62" y="80" width="184" height="16" rx="6" fill="none" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="5 5"/>
+          </g>
+          <text x="120" y="64" font-size="13" fill="#3e7c59" font-weight="700">level = balanced ✓</text>
+          <text x="156" y="148" font-size="13" fill="#d9663f" font-weight="700">dips = heavy side</text>
+          <text x="26" y="174" font-size="12" fill="#6b7376">nail in the wall (or $5 cone balancer)</text>
+        </svg>
+        <h4>Balance check on a nail</h4>
+        <p>Hang the blade by its center hole on a horizontal nail. If one end dips, file a few more strokes off that end's bevel — never the flat — until it sits level.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Sharpening progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done! Butter-knife sharp, balanced, and torqued. Your lawn will show the difference on the very next mow.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO REPLACE ============ -->
+  <section id="pro">
+    <h2>When to replace the blade (or use a shop) instead</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Any crack, anywhere.</strong> Replace immediately — a cracked blade can let go at 200 mph tip speed. No sharpening, no exceptions.</li>
+        <li><strong>A bent blade.</strong> Set it on a flat surface; if it rocks or one tip sits high, replace it. Never hammer a blade straight — bending weakens the steel.</li>
+        <li><strong>Nicks deeper than about ⅛ inch.</strong> Filing them out removes so much metal the blade ends up thin and unbalanced. That's rock damage; buy a new blade ($20–$60).</li>
+        <li><strong>A thin, knife-edged trailing edge.</strong> Sandy soil sandblasts the lift wing (the upturned back edge). When it's worn paper-thin or curled, the blade is structurally done even if the cutting edge looks fine.</li>
+        <li><strong>Lots of metal already gone.</strong> If repeated sharpenings have visibly narrowed the blade, retire it.</li>
+        <li><strong>No grinder, no time?</strong> Mower shops and many hardware stores sharpen and balance for <strong>$10–$20 per blade</strong> — drop it off, run errands, pick it up.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I know my blade is dull without removing it?</summary>
+      <p>Read the grass, not the blade. A day or two after mowing, kneel down and look at the cut tips: cleanly sliced tips look like a paper edge, while a dull blade leaves ragged, stringy tips that turn white, then brown. Other tells: the lawn looks grey-brown right after mowing, the engine bogs in normal grass, or you see uncut blades standing up behind you.</p>
+    </details>
+    <details>
+      <summary>Should I sharpen or just buy a new blade?</summary>
+      <p>Sharpen, almost always — it's 30 minutes and pennies, and a blade can be sharpened many times over several years. Replace instead when there's a crack, a bend, nicks deeper than ⅛ inch, or a worn-thin trailing edge (see the section above). A smart move: keep a second blade ($20–$60) so you can swap in 5 minutes and sharpen the dull one at your leisure.</p>
+    </details>
+    <details>
+      <summary>How sharp is too sharp?</summary>
+      <p>Aim for butter-knife sharp, not razor sharp. A razor edge sounds better but is actually worse: the ultra-thin edge rolls, chips, and dulls within one or two mows, especially the first time it meets a twig. The factory edge is deliberately stout — restore that, and it'll slice grass cleanly for 20+ hours.</p>
+    </details>
+    <details>
+      <summary>Why does balancing matter so much?</summary>
+      <p>The blade spins around 3,000 rpm. A few extra grams on one end becomes a wobble that hammers the engine's crankshaft and bearings thousands of times a minute — you'll feel it as buzzing in the handle, and over a season it can literally shake the mower (and an $80–$250 spindle repair) loose. The nail test takes ten seconds; always do it before remounting.</p>
+    </details>
+    <details>
+      <summary>Can I sharpen the blade without taking it off the mower?</summary>
+      <p>You can, with a drill-powered stone or a file and a lot of patience — but it's a compromise. You can't see the whole edge, you can't get a consistent angle, and most importantly you can't balance the blade afterward. Since removing the bolt is half the work anyway, take it off. (And if you do work under the deck for any reason: spark plug wire off first, every time.)</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Sharp in March. Logged forever.</h2>
+        <p>You just figured out how many sharpenings your season needs — the hard part is remembering which March, and whether you already did it. Upkeep Ledger logs each sharpening and nudges you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=sharpen-mower-blade&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=sharpen-mower-blade&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { size: null, season: null, terrain: null };
+
+  var MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  // months are 0-indexed
+  var SEASONS = {
+    short: { pre: 3, mow: [4, 5, 6, 7, 8] },                       // sharpen Apr, mow May–Sep
+    long:  { pre: 2, mow: [3, 4, 5, 6, 7, 8, 9] },                 // sharpen Mar, mow Apr–Oct
+    year:  { pre: 1, mow: [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] }    // sharpen Feb, mow year-round
+  };
+  var HOURS_PER_MOW = { small: 0.5, medium: 1, large: 1.75 };
+  var WEEKS_PER_SEASON = { short: 21, long: 30, year: 46 };
+
+  function computePlan(s) {
+    var hours = Math.round(WEEKS_PER_SEASON[s.season] * HOURS_PER_MOW[s.size]);
+    var interval = s.terrain === "sandy" ? 15 : 22.5; // sandy soil dulls the edge much faster
+    var n = Math.max(1, Math.min(4, Math.ceil(hours / interval)));
+
+    var reasons = [];
+    var sizeWords = { small: "a small lawn", medium: "a quarter-to-half-acre lawn", large: "a half-acre-plus lawn" };
+    var seasonWords = { short: "a short northern season", long: "a long season", year: "a year-round southern season" };
+    reasons.push("Roughly " + hours + " mowing hours a year: " + sizeWords[s.size] + " across " + seasonWords[s.season] + ".");
+
+    if (s.terrain === "sandy") {
+      reasons.push("Sandy soil (or regular sticks and debris) sandblasts the edge — plan on sharpening every ~15 hours instead of 20–25, and inspect for nicks often.");
+    } else {
+      reasons.push("On a clean, established lawn the edge holds its full 20–25 hours between sharpenings.");
+    }
+
+    if (s.size === "large") reasons.push("Big lawns rack up hours fast — keeping a pre-sharpened spare blade makes mid-season swaps a 5-minute job.");
+    if (s.season === "year") reasons.push("Year-round mowing means there's no true off-season: anchor the 'fresh start' sharpening to late winter, before spring growth takes off.");
+    if (s.season === "short" && n === 1) reasons.push("With a short season, one good pre-season sharpening usually carries you through — just watch the grass tips after July.");
+    if (n >= 3) reasons.push("At this pace, a bench grinder or drill-mounted sharpener pays for itself — or drop blades at a shop ($10–$20) and rotate two of them.");
+
+    var sched = SEASONS[s.season];
+    var sharpen = [sched.pre];
+    var touchUps = n - 1;
+    for (var i = 0; i < touchUps; i++) {
+      var pos = Math.floor((i + 1) * sched.mow.length / (touchUps + 1));
+      var m = sched.mow[Math.min(pos, sched.mow.length - 1)];
+      if (sharpen.indexOf(m) === -1) sharpen.push(m);
+    }
+    return { n: n, hours: hours, sharpen: sharpen, mow: sched.mow, reasons: reasons };
+  }
+
+  var SEASON_SVG = {
+    winter: '<svg viewBox="0 0 16 16" aria-hidden="true"><g stroke="#7fb3c8" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="3.5" y1="3.5" x2="12.5" y2="12.5"/><line x1="12.5" y1="3.5" x2="3.5" y2="12.5"/></g></svg>',
+    spring: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14 V7" stroke="#3e7c59" stroke-width="1.8" fill="none"/><path d="M8 8 Q4 8 3 4 Q7 4 8 8" fill="#5e9a78"/><path d="M8 8 Q12 8 13 4 Q9 4 8 8" fill="#3e7c59"/></svg>',
+    summer: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#e0a93d"/><g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.4" y2="4.4"/><line x1="11.6" y1="11.6" x2="13" y2="13"/><line x1="13" y1="3" x2="11.6" y2="4.4"/><line x1="3" y1="13" x2="4.4" y2="11.6"/></g></svg>',
+    fall: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 C13.5 3 14.5 9 8 14.5 C1.5 9 2.5 3 8 1.5" fill="#c96f4a"/><line x1="8" y1="5" x2="8" y2="14.5" stroke="#9a4f33" stroke-width="1.2"/></svg>'
+  };
+  function seasonOf(m) {
+    return (m === 11 || m <= 1) ? "winter" : (m <= 4) ? "spring" : (m <= 7) ? "summer" : "fall";
+  }
+
+  function renderCalendar(plan, personalized) {
+    var grid = document.getElementById("calGrid");
+    grid.innerHTML = "";
+    var firstSharpen = plan.sharpen[0];
+    for (var m = 0; m < 12; m++) {
+      var cell = document.createElement("div");
+      cell.className = "month";
+      var task = "—";
+      if (plan.sharpen.indexOf(m) !== -1) {
+        cell.className += " clean";
+        task = (m === firstSharpen) ? "Sharpen (pre-season)" : "Touch-up sharpen";
+      } else if (plan.mow.indexOf(m) !== -1) {
+        cell.className += " check";
+        task = "Mow — listen & look";
+      }
+      cell.innerHTML = '<span class="m-season">' + SEASON_SVG[seasonOf(m)] + '</span>' +
+        '<div class="m-name">' + MONTH_NAMES[m] + '</div><div class="m-task">' + task + "</div>";
+      grid.appendChild(cell);
+    }
+    document.getElementById("calSub").textContent = personalized
+      ? "Personalized from your quiz answers. Green months are sharpenings; gold months are mowing season — watch the grass tips and listen for engine bogging."
+      : "Showing the standard once-a-season plan: sharpen in March, before the first mow. Take the quiz above and this calendar updates to match your lawn.";
+  }
+
+  function onQuizChange() {
+    if (!quizState.size || !quizState.season || !quizState.terrain) return;
+    var r = computePlan(quizState);
+    var freqWords = { 1: "Once a season", 2: "Twice a season", 3: "Three times a season", 4: "Four times a season" };
+    document.getElementById("resultFreq").textContent = "Your plan: " + freqWords[r.n];
+    var monthsTxt = r.sharpen.map(function (m) { return MONTH_NAMES[m]; }).join(", ");
+    document.getElementById("resultBody").innerHTML =
+      "Sharpen in <strong>" + monthsTxt + "</strong> — see your calendar below. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+    renderCalendar(r, true);
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  // default: standard long-season plan, one pre-season sharpening in March
+  renderCalendar({ sharpen: [2], mow: SEASONS.long.mow }, false);
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Make it safe", text: "Pull the spark plug wire off the plug and tuck it aside", note: "Battery mower? Remove the battery and safety key. This is the step that makes every other step safe — do it before anything else." },
+    { phase: "Make it safe", text: "Run the tank low, then tip the mower carburetor-and-air-filter side up", note: "Gas cap and air filter pointing up. Tipped the wrong way, fuel floods the filter and the mower smokes for weeks." },
+    { phase: "Make it safe", text: "Put on cut-resistant gloves and safety glasses", note: "Even a dull blade has burred edges, and filing throws metal grit." },
+    { phase: "Remove the blade", text: "Mark the grass-facing side of the blade with a paint pen", note: "Blades mounted upside-down cut terribly. One dot of paint saves the puzzle later." },
+    { phase: "Remove the blade", text: "Wedge a wood scrap between blade and deck so it can't rotate", note: "Never hold the blade by hand against the force of the wrench." },
+    { phase: "Remove the blade", text: "Loosen the blade bolt and remove the blade", note: "Usually counter-clockwise. Stuck? Penetrating oil and a longer breaker bar beat muscle every time." },
+    { phase: "Remove the blade", text: "Scrape and brush both sides clean, then inspect", note: "Caked clippings hide cracks and skew the balance check. Cracked or bent blade? Stop — replace it instead." },
+    { phase: "Sharpen & balance", text: "Clamp the blade firmly in a vise, edge up", note: "A blade that shifts mid-stroke ruins the angle and your knuckles." },
+    { phase: "Sharpen & balance", text: "File along the existing 30–45° bevel, following the factory edge", note: "Push strokes in one direction, along the edge. Stop at butter-knife sharp — about 50 strokes typically does it." },
+    { phase: "Sharpen & balance", text: "Give both cutting edges the same number of strokes", note: "Blades cut at both ends. Taking more metal off one end is how blades go out of balance." },
+    { phase: "Sharpen & balance", text: "Balance the blade on a nail or cone balancer; file the heavy side level", note: "Hang it by the center hole. If one end dips, take a few more strokes off that end's bevel — never the flat." },
+    { phase: "Remount & log", text: "Remount the blade with your paint mark facing the grass (wings toward the deck)", note: "The upturned lift wings point up into the deck — they create the airflow that stands grass up for the cut." },
+    { phase: "Remount & log", text: "Torque the blade bolt to spec", note: "Typically 35–50 ft·lb on walk-behind mowers — check your manual. Snug-by-feel is how blades come loose." },
+    { phase: "Remount & log", text: "Reconnect the spark plug wire (or battery) — then log today's date", note: "Reconnect last, after hands are clear of the deck. A dated note plus rough mowing hours tells you exactly when the next sharpening is due." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:sharpen-mower-blade:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

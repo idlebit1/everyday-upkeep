@@ -236,7 +236,18 @@
   };
 
   /* Pages that exist. Everything else shows "Coming soon". */
-  var GUIDES = { "check-gutters": "gutters.html" };
+  var GUIDES = {
+    "check-gutters": "gutters.html",
+    "sharpen-knives": "sharpen-knives.html",
+    "replace-toothbrush": "replace-toothbrush.html",
+    "oil-change": "oil-change.html",
+    "wash-bedding": "wash-bedding.html",
+    "clean-bike-chain": "clean-bike-chain.html",
+    "sharpen-mower-blade": "sharpen-mower-blade.html",
+    "clean-grill": "clean-grill.html",
+    "trim-pet-nails": "trim-pet-nails.html",
+    "backup-data": "backup-data.html"
+  };
 
   /* Start set: 4 presets per category, copied from Upkeep Ledger
      (data/upkeepPresets.ts — source of truth lives in the app). */
@@ -328,7 +339,7 @@
     }
     catalog.innerHTML = html;
     document.getElementById("resultLine").textContent = shown === PRESETS.length
-      ? PRESETS.length + " tasks across " + CATS.length + " categories — more guides on the way"
+      ? PRESETS.length + " tasks across " + CATS.length + " categories — " + Object.keys(GUIDES).length + " full guides ready, more on the way"
       : shown + " of " + PRESETS.length + " tasks shown";
   }
 

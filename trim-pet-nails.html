@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trim Pet Nails — Everyday Upkeep</title>
+<meta name="description" content="How often to trim your dog's or cat's nails, why overgrown nails hurt more than floors, and a step-by-step, low-stress guide to doing it at home.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Monthly</span>
+      <h1>Trim Pet Nails</h1>
+      <p class="lede">Long nails aren't a cosmetic problem — they change how your dog or cat stands, walks, and ages. The trim itself takes minutes; the trick is doing it calmly, often, and just shy of the quick. Here's how often, why it matters, and exactly how.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 4 weeks</em></span>
+        <span class="chip">⏱️ <em>5–15 minutes</em> per trim</span>
+        <span class="chip">🦴 <em>DIY-friendly</em> with treats &amp; patience</span>
+        <span class="chip">💸 A torn nail can mean a <em>$100–300</em> vet visit</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a relaxed pet paw with one claw being trimmed by green-handled nail clippers, next to a jar of styptic powder, a bone-shaped treat, and a few more treats on a soft blue mat">
+      <ellipse cx="280" cy="398" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="72" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="470" cy="70" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="430" cy="82" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- soft mat -->
+      <ellipse cx="262" cy="330" rx="190" ry="58" fill="#dce8ee"/>
+      <ellipse cx="262" cy="324" rx="170" ry="48" fill="#bfdce8"/>
+      <!-- paw: wrist + main pad -->
+      <path d="M180 360 q-14 -86 82 -88 q96 2 82 88 q-6 28 -82 28 q-76 0 -82 -28" fill="#c9a06b"/>
+      <ellipse cx="262" cy="320" rx="54" ry="38" fill="#8a6a4f"/>
+      <!-- toes -->
+      <g>
+        <ellipse cx="172" cy="238" rx="26" ry="34" fill="#c9a06b" transform="rotate(-22 172 238)"/>
+        <ellipse cx="232" cy="206" rx="26" ry="36" fill="#c9a06b" transform="rotate(-8 232 206)"/>
+        <ellipse cx="296" cy="206" rx="26" ry="36" fill="#c9a06b" transform="rotate(8 296 206)"/>
+        <ellipse cx="354" cy="238" rx="26" ry="34" fill="#c9a06b" transform="rotate(22 354 238)"/>
+      </g>
+      <!-- toe pads -->
+      <ellipse cx="176" cy="246" rx="13" ry="17" fill="#8a6a4f" transform="rotate(-22 176 246)"/>
+      <ellipse cx="234" cy="216" rx="13" ry="18" fill="#8a6a4f" transform="rotate(-8 234 216)"/>
+      <ellipse cx="294" cy="216" rx="13" ry="18" fill="#8a6a4f" transform="rotate(8 294 216)"/>
+      <ellipse cx="350" cy="246" rx="13" ry="17" fill="#8a6a4f" transform="rotate(22 350 246)"/>
+      <!-- claws -->
+      <path d="M156 212 q-12 -22 -4 -36 q14 8 18 30 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <path d="M226 174 q-4 -24 6 -36 q11 11 8 35 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <path d="M292 173 q3 -24 14 -33 q8 13 1 34 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <path d="M352 213 q14 -21 8 -36 q-15 7 -20 29 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- quick hint inside the claw being trimmed -->
+      <path d="M298 172 q3 -14 9 -22 q4 8 1 21 z" fill="#c96f4a" opacity="0.55"/>
+      <!-- dashed cut line on that claw -->
+      <line x1="294" y1="152" x2="320" y2="142" stroke="#2c5a40" stroke-width="3" stroke-dasharray="5 4" stroke-linecap="round"/>
+      <!-- clippers -->
+      <g transform="rotate(-26 366 116)">
+        <rect x="330" y="108" width="46" height="14" rx="7" fill="#7fb3c8"/>
+        <path d="M330 115 q-8 -12 4 -16 l8 8 z" fill="#7fb3c8"/>
+        <rect x="370" y="98" width="74" height="13" rx="6.5" fill="#3e7c59"/>
+        <rect x="370" y="118" width="74" height="13" rx="6.5" fill="#2c5a40"/>
+        <circle cx="372" cy="115" r="7" fill="#e0a93d"/>
+      </g>
+      <!-- sparkle near the cut -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="330" y1="128" x2="338" y2="120"/>
+        <line x1="338" y1="138" x2="348" y2="136"/>
+      </g>
+      <!-- styptic powder jar -->
+      <rect x="64" y="318" width="56" height="62" rx="9" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <rect x="60" y="306" width="64" height="18" rx="7" fill="#d98e3b"/>
+      <rect x="74" y="340" width="36" height="22" rx="4" fill="#fbe9e1"/>
+      <circle cx="92" cy="351" r="6" fill="#c96f4a"/>
+      <!-- bone treat -->
+      <g transform="rotate(-14 462 340)">
+        <rect x="432" y="334" width="60" height="13" rx="6.5" fill="#e0a93d"/>
+        <circle cx="434" cy="334" r="8" fill="#e0a93d"/>
+        <circle cx="434" cy="347" r="8" fill="#e0a93d"/>
+        <circle cx="490" cy="334" r="8" fill="#e0a93d"/>
+        <circle cx="490" cy="347" r="8" fill="#e0a93d"/>
+      </g>
+      <!-- treat crumbs -->
+      <circle cx="430" cy="378" r="5" fill="#d98e3b"/>
+      <circle cx="448" cy="388" r="4" fill="#c96f4a"/>
+      <circle cx="118" cy="396" r="5" fill="#d98e3b"/>
+      <!-- little plants -->
+      <circle cx="508" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="528" cy="396" r="10" fill="#3e7c59"/>
+      <circle cx="44" cy="396" r="11" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Nails that touch the ground push back into the toe with every step. The damage is slow, quiet, and mostly invisible — until it isn't. Here's what regular trims prevent (costs are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 30 q1 -8 6 -12 q5 -4 5 -11" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="19" cy="6" r="3.5" fill="#3e7c59"/>
+          <circle cx="13" cy="19" r="3" fill="#c96f4a"/>
+          <path d="M24 14 q4 1 5 5 M25 21 q3 1 4 4" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Gait changes &amp; joint stress</h3>
+        <p>Long nails force the toes to splay and the paw to rock back, shifting weight onto the wrong joints. Over months that posture strains wrists, elbows, and hips — a real contributor to arthritis.</p>
+        <span class="cost">Joint damage adds up silently</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M11 8 q10 -3 14 6 q3 8 -3 14 l-5 -3 q5 -5 3 -10 q-3 -6 -9 -4 z" fill="#e9e2d8" stroke="#8a6a4f" stroke-width="2"/>
+          <path d="M13 11 q7 -1 9 5 q1 4 -1 7" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M9 22 a9 9 0 0 0 9 8" stroke="#3e7c59" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <polygon points="20,33 14,32 18,27" fill="#3e7c59"/>
+        </svg></div>
+        <h3>The quick keeps growing</h3>
+        <p>Inside every nail is a blood vessel — the quick — that grows out with the nail. Skip trims and the quick gets longer, so even a careful trim draws blood. It's a vicious cycle that only frequent small trims reverse.</p>
+        <span class="cost">Each skipped month = harder trims</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M12 28 q-8 -8 -2 -20 q10 2 12 14 l-4 2 l3 4 l-5 -1 l1 4 z" fill="#e9e2d8" stroke="#8a6a4f" stroke-width="2"/>
+          <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round">
+            <line x1="26" y1="10" x2="30" y2="6"/>
+            <line x1="28" y1="17" x2="33" y2="16"/>
+            <line x1="25" y1="24" x2="29" y2="27"/>
+          </g>
+        </svg></div>
+        <h3>Snagged &amp; torn nails</h3>
+        <p>An overgrown nail catches on carpet, decking, or a fence — and tears. A split nail exposes the quick: it's genuinely painful, bleeds impressively, and often needs sedation to fix.</p>
+        <span class="cost">$100 – $300 vet visit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="8" width="26" height="20" rx="2" fill="#c9a06b"/>
+          <line x1="5" y1="15" x2="31" y2="15" stroke="#8a6a4f" stroke-width="1.6"/>
+          <line x1="5" y1="22" x2="31" y2="22" stroke="#8a6a4f" stroke-width="1.6"/>
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round">
+            <line x1="11" y1="10" x2="18" y2="26"/>
+            <line x1="16" y1="10" x2="23" y2="26"/>
+            <line x1="21" y1="10" x2="28" y2="26"/>
+          </g>
+        </svg></div>
+        <h3>Scratched floors &amp; furniture</h3>
+        <p>Click-click-click across the hardwood is also scratch-scratch-scratch. Long nails gouge wood floors, snag upholstery, and leave marks on doors — damage that's expensive to refinish.</p>
+        <span class="cost">$200 – $1,500 refinishing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="24" rx="11" ry="8" fill="#c9a06b"/>
+          <ellipse cx="18" cy="25" rx="6" ry="4.5" fill="#8a6a4f"/>
+          <path d="M14 8 q9 -4 12 4 q2 7 -5 12" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M21 24 l3 3" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Ingrown nails</h3>
+        <p>Left long enough — especially dewclaws and cat claws, which never touch the ground — nails curl all the way around and pierce the paw pad. It's as painful as it sounds, and usually infected by the time anyone notices.</p>
+        <span class="cost">Painful infection + vet visit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> trim?</h2>
+    <p class="sub">"Once a month" is the rule of thumb, but the right interval depends on your pet, the surfaces they walk on, and how overgrown things are right now. Answer three questions for a personalized schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="pet">
+        <div class="q-label">1. Who are we trimming?</div>
+        <div class="pills">
+          <button class="pill" data-v="dog">Dog</button>
+          <button class="pill" data-v="cat">Cat</button>
+          <button class="pill" data-v="both">Both</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="surface">
+        <div class="q-label">2. What do they mostly walk on?</div>
+        <div class="pills">
+          <button class="pill" data-v="soft">Mostly carpet &amp; grass</button>
+          <button class="pill" data-v="mixed">A mix</button>
+          <button class="pill" data-v="hard">Lots of pavement</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="click">
+        <div class="q-label">3. Do you hear clicking on hard floors?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes, every step</button>
+          <button class="pill" data-v="sometimes">Sometimes</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Nail trims are one of the cheapest pieces of pet upkeep there is — and one of the most expensive to neglect. Typical U.S. estimates:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$18 – $48</div><div class="l">DIY kit, one time — clippers or grinder ($10–40) + styptic powder ($8)</div></div>
+        <div class="calc-stat"><div class="v" id="groomerYear">$216/yr</div><div class="l" id="groomerYearLabel">groomer trims at $10–25 per visit, monthly</div></div>
+        <div class="calc-stat"><div class="v">$100 – $300</div><div class="l">one vet visit for a single torn nail</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>✂️ 5 years of DIY trims (tools, one time)</span><span>≈ $35</span></div>
+          <div class="bar-track"><div class="bar-fill good" id="barDiy" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛁 5 years of groomer trims</span><span id="barGroomerVal">≈ $1,080</span></div>
+          <div class="bar-track"><div class="bar-fill mid" id="barGroomer" style="width:100%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 One torn-nail vet visit</span><span>≈ $200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barVet" style="width:19%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict" id="costVerdict">A <strong>$35 kit</strong> covers years of trims; even the groomer route is cheap insurance. The one number missing from this chart is the big one: <strong>the joint and gait toll of permanently long nails has no price tag</strong> — you pay it in your pet's mobility, not in dollars.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to trim nails (without the drama)</h2>
+    <p class="sub">A calm trim takes 5–15 minutes — and "calm" is the whole game. Work through the checklist; your progress saves automatically, which matters here because spreading a trim over several days is a perfectly good strategy.</p>
+
+    <div class="safety">
+      <h3>⚠️ Comfort first — a panicked pet learns to fear the clippers forever</h3>
+      <ul>
+        <li><strong>Know where the quick is before you cut.</strong> On light nails it's the visible pink core. On dark nails you can't see it — work in thin slices instead (diagram below).</li>
+        <li>Have <strong>styptic powder open and within reach before you start</strong>. If you nick the quick, you want it in two seconds, not after a drawer hunt with a bleeding paw.</li>
+        <li><strong>Never force a panicking animal.</strong> Wrestling guarantees the next trim is worse. One nail a day with a treat after is real progress — that's still a full trim every couple of weeks.</li>
+        <li>Treats throughout, not just at the end. A pet that expects chicken at nail time becomes a pet that offers you the paw.</li>
+        <li>When in doubt, <strong>take less</strong>. You can always trim again in a week; you can't un-cut a quick.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Scissor-style clippers (dogs)</span>
+      <span class="tool-chip">Small clippers or human nail trimmer (cats)</span>
+      <span class="tool-chip">Nail grinder (optional)</span>
+      <span class="tool-chip">Styptic powder — open, in reach</span>
+      <span class="tool-chip">High-value treats (chicken, lickable paste)</span>
+      <span class="tool-chip">Good light or a headlamp</span>
+      <span class="tool-chip">Towel for a gentle cat wrap</span>
+      <span class="tool-chip">A second pair of hands (helpful)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-view diagram of a pet nail showing the quick inside and a dashed 45-degree cut line placed safely beyond the tip of the quick">
+          <ellipse cx="52" cy="86" rx="44" ry="36" fill="#c9a06b"/>
+          <ellipse cx="56" cy="100" rx="22" ry="14" fill="#8a6a4f"/>
+          <path d="M88 64 q72 -6 116 30 q22 18 28 42 l-26 6 q-8 -22 -28 -36 q-38 -28 -90 -22 z" fill="#e9e2d8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <path d="M90 70 q56 -4 92 22 q14 11 20 24 l-14 4 q-7 -14 -20 -23 q-32 -22 -78 -19 z" fill="#c96f4a"/>
+          <line x1="196" y1="96" x2="236" y2="146" stroke="#2c5a40" stroke-width="4" stroke-dasharray="7 5" stroke-linecap="round"/>
+          <text x="96" y="52" font-size="13" fill="#6b7376" font-weight="700">the quick (blood + nerve)</text>
+          <line x1="140" y1="56" x2="148" y2="76" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="186" y="170" font-size="13" fill="#2c5a40" font-weight="700">cut here, 45°</text>
+          <text x="14" y="170" font-size="12" fill="#6b7376">keep 2–3 mm past the quick</text>
+        </svg>
+        <h4>Find the quick, cut below it</h4>
+        <p>On light nails the quick is the pink core. Place the cut 2–3 mm beyond it, blade angled ~45° to match the nail's natural wear.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of trimming a dark nail in thin slices, with three cross-section circles showing the cut surface changing from chalky white to a dark center dot, which is the signal to stop">
+          <path d="M16 60 q70 -10 112 24 q24 20 32 46 l-30 8 q-9 -24 -28 -39 q-36 -28 -86 -23 z" fill="#33393b"/>
+          <g stroke="#7fb3c8" stroke-width="3" stroke-dasharray="5 4" stroke-linecap="round">
+            <line x1="138" y1="98" x2="166" y2="134"/>
+            <line x1="122" y1="106" x2="148" y2="142"/>
+            <line x1="106" y1="114" x2="130" y2="148"/>
+          </g>
+          <circle cx="206" cy="44" r="22" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <circle cx="206" cy="44" r="11" fill="#e9e2d8"/>
+          <circle cx="206" cy="118" r="22" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <circle cx="206" cy="118" r="11" fill="#e9e2d8"/>
+          <circle cx="206" cy="118" r="4" fill="#8a6a4f"/>
+          <text x="234" y="48" font-size="12" fill="#6b7376">chalky = keep going</text>
+          <text x="234" y="116" font-size="12" fill="#d9663f" font-weight="700">dark dot</text>
+          <text x="234" y="130" font-size="12" fill="#d9663f" font-weight="700">= STOP</text>
+          <text x="16" y="170" font-size="12" fill="#6b7376">thin slices, check the cut face after each one</text>
+        </svg>
+        <h4>Dark nails: slice, look, repeat</h4>
+        <p>Shave off paper-thin slices. The cut face starts chalky white; the moment a dark, glossy center dot appears, you're at the pulp just ahead of the quick — stop there.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Comparison diagram of scissor clippers cutting a nail tip from below at an angle versus a nail grinder touching the nail tip with short strokes">
+          <line x1="140" y1="14" x2="140" y2="166" stroke="#e9e2d8" stroke-width="2"/>
+          <path d="M18 56 q40 -6 64 14 q12 10 17 24 l-17 5 q-5 -13 -15 -21 q-20 -16 -49 -13 z" fill="#e9e2d8" stroke="#8a6a4f" stroke-width="2"/>
+          <g transform="rotate(38 92 118)">
+            <rect x="62" y="112" width="52" height="9" rx="4.5" fill="#3e7c59"/>
+            <rect x="62" y="125" width="52" height="9" rx="4.5" fill="#2c5a40"/>
+            <path d="M62 117 q-12 2 -14 9 q2 7 14 9 l6 -9 z" fill="#7fb3c8"/>
+          </g>
+          <text x="18" y="166" font-size="12" fill="#6b7376">clippers: one clean squeeze</text>
+          <path d="M158 56 q40 -6 64 14 q12 10 17 24 l-17 5 q-5 -13 -15 -21 q-20 -16 -49 -13 z" fill="#e9e2d8" stroke="#8a6a4f" stroke-width="2"/>
+          <rect x="218" y="118" width="48" height="16" rx="8" fill="#3e7c59"/>
+          <circle cx="218" cy="126" r="13" fill="#b9b1a3"/>
+          <circle cx="218" cy="126" r="7" fill="#8a6a4f"/>
+          <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+            <path d="M196 102 q6 -6 12 0"/>
+            <path d="M192 92 q9 -9 18 0"/>
+          </g>
+          <text x="156" y="166" font-size="12" fill="#6b7376">grinder: 2–3 second touches</text>
+        </svg>
+        <h4>Clippers vs. grinder</h4>
+        <p>Clippers cut from below in one motion — fast but commits you. A grinder removes nail gradually and leaves smooth edges, at the cost of noise and vibration some pets hate.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Trim progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done! Quiet floors, happy joints, cooperative pet. See you in a few weeks.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to let the groomer or vet do it</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Black nails you genuinely can't read.</strong> If slice-and-check still feels like guessing, a groomer does this fifty times a day — a $10–25 visit beats a bleeding quick and a spooked pet.</li>
+        <li><strong>Aggressive or truly panicking pets.</strong> Growling, snapping, or full-body thrashing isn't a training moment for you to push through. Vets can trim with sedation or a muzzle-trained handler, safely.</li>
+        <li><strong>Ingrown or torn nails.</strong> A nail embedded in the pad or split to the quick is a medical issue — it needs proper cutting back, cleaning, and often antibiotics. Don't DIY it.</li>
+        <li><strong>Severely overgrown quicks.</strong> If nails have gone untrimmed for many months, the quick may run nearly to the tip. A vet can plan a recession schedule — tiny trims every 1–2 weeks — or shorten them under sedation in one go.</li>
+        <li>Many vet clinics and groomers offer <strong>walk-in nail trims for $10–25</strong> — a fine permanent answer if home trims never click for your pet.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What do I do if I hit the quick?</summary>
+      <p>Stay calm — your reaction teaches your pet how scary this was. Press a pinch of styptic powder firmly onto the nail tip for 30 seconds (cornstarch works in a pinch). Bleeding usually stops in a few minutes. Give a treat, end the session on that note, and resume another day. It hurts like a torn fingernail, but it heals quickly and isn't dangerous.</p>
+    </details>
+    <details>
+      <summary>Clippers or grinder — which should I buy?</summary>
+      <p>Clippers are cheap, fast, and silent — best for cooperative pets and thin nails. Grinders give more control (you remove nail a little at a time, so quicking is much harder to do) and leave smooth edges, but the noise and vibration take a desensitizing period. Many people use both: clip the bulk, grind smooth. For cats, small scissor clippers or even a human nail trimmer are usually easiest.</p>
+    </details>
+    <details>
+      <summary>My pet's nails are way overgrown. How do I get the quick to recede?</summary>
+      <p>Frequency, not force. The quick recedes a little after each trim, so take a tiny amount off every 1–2 weeks rather than a lot once a month. Over 2–3 months the quick draws back and you can shorten the nails properly. A grinder shines here because you can sneak right up to the quick safely.</p>
+    </details>
+    <details>
+      <summary>Do cats really need nail trims too?</summary>
+      <p>Yes — especially indoor and older cats. Retractable claws never touch pavement, so nothing wears them down, and senior cats often stop maintaining them; the claws thicken, overgrow, and can curl into the pads. A good scratching post helps cats shed the outer claw sheaths and keeps tips sharper-but-shorter, but it doesn't replace a trim every 2–4 weeks. (Skip the dewclaw-equivalent? Cats' front "thumb" claws overgrow most.)</p>
+    </details>
+    <details>
+      <summary>How young should I start, and what if my pet already hates it?</summary>
+      <p>Start as young as possible — puppies and kittens that have paws handled daily grow into adults that nap through trims. For an adult who already hates it, rewind: days of touching paws with treats, then resting the clippers on a nail without cutting, then one nail a day. Slow is fast here — a few weeks of patience buys you a decade of easy trims.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Small trims, often — if you remember them.</h2>
+        <p>The whole secret to easy nail trims is frequency, and frequency is a memory problem. Upkeep Ledger logs each trim and nudges you when the next one's due — for every pet, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=trim-pet-nails&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=trim-pet-nails&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { pet: null, surface: null, click: null };
+
+  // Base interval in weeks, by surface (dogs self-file on pavement)
+  var SURFACE_BASE = { soft: 3, mixed: 4, hard: 6 };
+  var CAT_BASE = 3; // retractable claws never touch pavement
+
+  function computeInterval(s) {
+    var reasons = [];
+    var weeks;
+
+    if (s.pet === "dog") {
+      weeks = SURFACE_BASE[s.surface];
+    } else if (s.pet === "cat") {
+      weeks = CAT_BASE;
+      reasons.push("Cats' claws retract, so pavement never files them — surfaces don't change a cat's schedule. A good scratching post helps shed claw sheaths, but it doesn't replace trims.");
+    } else {
+      weeks = Math.min(SURFACE_BASE[s.surface], CAT_BASE);
+      reasons.push("With both species, set the reminder to the shorter schedule (the cat's) and do everyone in the same session — claws retract, so the pavement only helps the dog.");
+    }
+
+    if (s.pet !== "cat") {
+      if (s.surface === "hard") {
+        reasons.push("Lots of pavement walking files dog nails naturally — many pavement dogs only need a tidy-up every month or two (dewclaws excepted: nothing files those).");
+      } else if (s.surface === "soft") {
+        reasons.push("Carpet and grass don't wear nails at all, so your trims are doing 100% of the work — they need to come around more often.");
+      } else {
+        reasons.push("A mixed-surface life wears nails a little; a standard monthly-ish trim keeps up with the rest.");
+      }
+    }
+
+    if (s.click === "yes") {
+      weeks = Math.min(weeks, 2);
+      reasons.push("Clicking on every step means the nails already touch the ground — they're overdue. Trim a small amount every 1–2 weeks for now; each trim lets the quick recede so you can eventually relax the schedule.");
+    } else if (s.click === "sometimes") {
+      weeks = Math.max(1, weeks - 1);
+      reasons.push("Occasional clicking means you're right at the edge — tighten the interval by a week until the clicking stops, then hold there.");
+    } else {
+      reasons.push("No clicking is the goal state — nails clear the floor. Your job now is maintenance: small, frequent trims keep the quick short and every future trim easy.");
+    }
+
+    reasons.push("Frequent small trims beat marathon sessions: the quick recedes a little after each one, and your pet learns trims are short and full of treats.");
+
+    weeks = Math.max(1, Math.min(6, weeks));
+    return { weeks: weeks, reasons: reasons };
+  }
+
+  function intervalLabel(w) {
+    return w === 1 ? "Every week" : "Every " + w + " weeks";
+  }
+
+  function onQuizChange() {
+    if (!quizState.pet || !quizState.surface || !quizState.click) return;
+    var r = computeInterval(quizState);
+    var forNow = quizState.click === "yes" ? " (for now)" : "";
+    document.getElementById("resultFreq").textContent = "Your interval: " + intervalLabel(r.weeks).toLowerCase() + forNow;
+    document.getElementById("resultBody").innerHTML =
+      "That's about <strong>" + Math.round(52 / r.weeks) + " trims a year</strong> — each one just a few minutes. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+
+    // sync the groomer-cost figures to this schedule
+    updateCost(Math.round(52 / r.weeks));
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Cost comparison ================= */
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  var GROOMER_VISIT = 18; // midpoint of typical $10–25
+  var DIY_KIT = 35;       // midpoint of clippers/grinder $10–40 + $8 styptic
+
+  function updateCost(visitsPerYear) {
+    var perYear = visitsPerYear * GROOMER_VISIT;
+    var fiveYear = perYear * 5;
+    document.getElementById("groomerYear").textContent = money(perYear) + "/yr";
+    document.getElementById("groomerYearLabel").textContent =
+      "groomer trims at $10–25 per visit, " + visitsPerYear + "× a year";
+    document.getElementById("barGroomerVal").textContent = "≈ " + money(fiveYear);
+    // bars scale against the largest figure (groomer 5-year total)
+    var max = Math.max(fiveYear, 200, DIY_KIT);
+    document.getElementById("barGroomer").style.width = (fiveYear / max) * 100 + "%";
+    document.getElementById("barDiy").style.width = Math.max(2, (DIY_KIT / max) * 100) + "%";
+    document.getElementById("barVet").style.width = (200 / max) * 100 + "%";
+  }
+
+  updateCost(12); // default: monthly
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Set up", text: "Gather everything before the pet arrives", note: "Clippers, open styptic powder, a pile of cut-up treats, good light. Hunting for gear mid-trim is how sessions fall apart." },
+    { phase: "Set up", text: "Pick a calm moment", note: "After a walk or a meal, when they're sleepy. Not when the doorbell just rang." },
+    { phase: "Set up", text: "First sessions: desensitize, don't trim", note: "Handle paws, press gently on toes to extend the nail, touch the clippers to a nail without cutting — treat after each. Skip ahead only when this is boring for them." },
+    { phase: "Trim", text: "Hold the paw gently and isolate one nail", note: "Press the toe pad lightly to extend it (essential for cats — the claw is hidden until you do). Support, don't squeeze." },
+    { phase: "Trim", text: "Find the quick", note: "Light nails: the pink core, visible from the side. Dark nails: you won't see it — plan on thin slices instead." },
+    { phase: "Trim", text: "Cut at 45°, 2–3 mm below the quick", note: "Angle the blade to match the nail's natural wear. When unsure, take less — tips only." },
+    { phase: "Trim", text: "Dark nails: thin slices, check after each", note: "The cut face starts chalky white. A dark, glossy dot in the center means you've reached the pulp — stop there." },
+    { phase: "Trim", text: "Don't forget the dewclaws", note: "The 'thumb' nails partway up the leg never touch the ground, so they're always the most overgrown — and the ones that curl into the skin." },
+    { phase: "Trim", text: "Reward after every single nail", note: "Not at the end — every nail. This is what turns next month's trim into a non-event." },
+    { phase: "Finish", text: "Smooth any rough edges", note: "A few grinder passes or a quick filing stops fresh-cut nails from snagging carpet (and you)." },
+    { phase: "Finish", text: "If you nicked a quick: styptic, pressure, calm", note: "Press powder onto the tip for 30 seconds. Keep your voice cheerful — your reaction is the lesson they remember." },
+    { phase: "Finish", text: "End on a win and log the date", note: "Big final treat, even if you only did three nails. Note the date so the next trim happens on schedule, not when the clicking returns." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:trim-pet-nails:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

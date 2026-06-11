@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharpen Kitchen Knives — Everyday Upkeep</title>
+<meta name="description" content="How often to sharpen your kitchen knives, why dull blades are dangerous and expensive, and a step-by-step whetstone guide from soak to paper test.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calculator ---------- */
+  .calc-controls { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 22px; }
+  .calc-controls label.field { display: block; font-weight: 700; font-size: 14px; }
+  .calc-controls .field-row { margin-top: 8px; }
+  .calc-controls select, .calc-controls input[type="range"] { width: 100%; }
+  .calc-controls select {
+    font-family: inherit; font-size: 15px; padding: 8px 10px; border-radius: 10px;
+    border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
+  }
+  input[type="range"] { accent-color: var(--accent); }
+  .range-val { font-weight: 700; color: var(--accent-deep); }
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+  .cal-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Quarterly</span>
+      <h1>Sharpen Kitchen Knives</h1>
+      <p class="lede">Your knife is the one tool you use at almost every meal, and it gets a little worse every single day you use it. A dull edge slips, crushes, and slows you down — a sharp one makes cooking feel easy again. Here's how often to sharpen, why it's worth it, and exactly how to do it on a whetstone.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>15–30 min</em> for your main knives</span>
+        <span class="chip">🔪 A sharp knife is the <em>safer</em> knife</span>
+        <span class="chip">💸 A <em>$40–80 stone</em> outlives years of pro fees</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a chef's knife being sharpened at an angle on a two-sided whetstone resting on a damp towel, on a kitchen counter beside a cutting board with a ripe tomato and slices, and a honing rod standing in a green utensil crock">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window -->
+      <rect x="64" y="58" width="150" height="116" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="139" y1="58" x2="139" y2="174" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="64" y1="116" x2="214" y2="116" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="104" cy="90" r="14" fill="#f2cf7a"/>
+      <!-- shelf with jars and plant -->
+      <rect x="316" y="98" width="180" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="334" y="60" width="28" height="38" rx="6" fill="#5e9a78"/>
+      <rect x="339" y="54" width="18" height="8" rx="3" fill="#2c5a40"/>
+      <rect x="376" y="68" width="24" height="30" rx="6" fill="#e0a93d"/>
+      <rect x="380" y="62" width="16" height="8" rx="3" fill="#d98e3b"/>
+      <rect x="424" y="80" width="24" height="18" rx="3" fill="#c96f4a"/>
+      <circle cx="430" cy="70" r="8" fill="#3e7c59"/>
+      <circle cx="442" cy="66" r="9" fill="#5e9a78"/>
+      <circle cx="438" cy="76" r="6" fill="#3e7c59"/>
+      <!-- counter -->
+      <rect x="36" y="298" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="56" y="314" width="448" height="74" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="280" y1="314" x2="280" y2="388" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="262" y="344" width="8" height="16" rx="4" fill="#e0a93d"/>
+      <rect x="290" y="344" width="8" height="16" rx="4" fill="#e0a93d"/>
+      <!-- damp towel + two-grit whetstone -->
+      <rect x="84" y="282" width="204" height="16" rx="8" fill="#dce8ee"/>
+      <rect x="110" y="252" width="76" height="30" fill="#7fb3c8"/>
+      <rect x="186" y="252" width="76" height="30" fill="#9cc0d4"/>
+      <rect x="110" y="252" width="152" height="30" rx="3" fill="none" stroke="#5f93ad" stroke-width="2.5"/>
+      <circle cx="148" cy="246" r="3" fill="#7fb3c8"/>
+      <circle cx="166" cy="242" r="2.5" fill="#7fb3c8"/>
+      <!-- knife on the stone -->
+      <polygon points="122,250 252,204 252,228" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="252,204 310,184 316,200 256,220" fill="#8a6a4f"/>
+      <circle cx="274" cy="203" r="2.6" fill="#e0a93d"/>
+      <circle cx="294" cy="196" r="2.6" fill="#e0a93d"/>
+      <g stroke="#f2cf7a" stroke-width="2.5" stroke-linecap="round">
+        <line x1="118" y1="238" x2="112" y2="230"/>
+        <line x1="126" y1="234" x2="124" y2="225"/>
+      </g>
+      <!-- cutting board with tomato -->
+      <rect x="330" y="276" width="160" height="22" rx="9" fill="#c9a06b"/>
+      <circle cx="472" cy="287" r="4" fill="#8a6a4f"/>
+      <circle cx="366" cy="258" r="18" fill="#d9663f"/>
+      <path d="M360 242 q6 -6 12 0 q-6 4 -12 0" fill="#3e7c59"/>
+      <circle cx="408" cy="268" r="11" fill="#d9663f"/>
+      <circle cx="408" cy="268" r="7" fill="#c96f4a"/>
+      <circle cx="405" cy="266" r="1.4" fill="#f2cf7a"/>
+      <circle cx="411" cy="267" r="1.4" fill="#f2cf7a"/>
+      <circle cx="408" cy="271" r="1.4" fill="#f2cf7a"/>
+      <circle cx="432" cy="272" r="8" fill="#d9663f"/>
+      <circle cx="432" cy="272" r="5" fill="#c96f4a"/>
+      <!-- honing rod in crock -->
+      <line x1="496" y1="252" x2="482" y2="166" stroke="#b9b1a3" stroke-width="7" stroke-linecap="round"/>
+      <rect x="468" y="136" width="22" height="30" rx="9" fill="#2c5a40" transform="rotate(-9 479 151)"/>
+      <line x1="478" y1="252" x2="500" y2="186" stroke="#c9a06b" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="502" cy="182" rx="8" ry="11" fill="#c9a06b" transform="rotate(18 502 182)"/>
+      <rect x="464" y="250" width="52" height="48" rx="9" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A dull knife doesn't announce itself — it just makes everything in the kitchen a little slower, sloppier, and more dangerous. Here's what that drifting edge actually costs you (cost figures are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <g transform="rotate(-35 18 18)">
+            <rect x="3" y="13" width="30" height="10" rx="5" fill="#d9663f"/>
+            <rect x="13" y="13" width="10" height="10" fill="#fbe9e1"/>
+            <circle cx="16" cy="16" r="1.1" fill="#d9663f"/><circle cx="20" cy="16" r="1.1" fill="#d9663f"/>
+            <circle cx="16" cy="20" r="1.1" fill="#d9663f"/><circle cx="20" cy="20" r="1.1" fill="#d9663f"/>
+          </g>
+        </svg></div>
+        <h3>More kitchen injuries</h3>
+        <p>A dull edge needs extra force, and extra force is what slips — off the tomato skin, off the onion, into your hand. Sharp knives bite where you point them.</p>
+        <span class="cost">The classic cause of kitchen cuts</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="11" cy="25" rx="8" ry="5" fill="#c96f4a"/>
+          <circle cx="4.5" cy="29" r="1.6" fill="#d9663f"/>
+          <circle cx="18.5" cy="30" r="1.6" fill="#d9663f"/>
+          <circle cx="26" cy="20" r="7.5" fill="#d9663f"/>
+          <circle cx="26" cy="20" r="4.6" fill="#c96f4a"/>
+          <circle cx="24.5" cy="18.5" r="1" fill="#f2cf7a"/>
+          <circle cx="28" cy="19.5" r="1" fill="#f2cf7a"/>
+          <circle cx="26" cy="22.5" r="1" fill="#f2cf7a"/>
+        </svg></div>
+        <h3>Crushed, not cut</h3>
+        <p>Dull blades tear and bruise instead of slicing: mangled tomatoes, bruised basil that browns in minutes, onions that weep everywhere because you ruptured the cells instead of cutting them.</p>
+        <span class="cost">Worse-tasting, worse-looking food</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <path d="M18 10 v8 l6 4" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="18" cy="18" r="1.8" fill="#6b7376"/>
+        </svg></div>
+        <h3>Slower prep, every day</h3>
+        <p>Sawing through a squash with a dull blade takes two or three times as long as one clean push cut. Multiply a few lost minutes by hundreds of meals a year.</p>
+        <span class="cost">Hours lost over a year</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <polygon points="4,21 23,12 23,18 8,24" fill="#b9b1a3"/>
+          <rect x="23" y="10.5" width="9" height="8" rx="2" fill="#8a6a4f"/>
+          <g transform="rotate(14 25 28)">
+            <rect x="17" y="23" width="16" height="10" rx="2" fill="#e0a93d"/>
+            <text x="25" y="31" font-size="9" font-weight="700" fill="#fffdf8" text-anchor="middle">$</text>
+          </g>
+        </svg></div>
+        <h3>Knives replaced early</h3>
+        <p>"This knife is worn out" almost always means "this knife is dull." People toss perfectly good blades — or buy gimmick replacements — when 20 minutes on a stone would resurrect them.</p>
+        <span class="cost">$50 – $200+ per knife</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="24" width="22" height="7" rx="3.5" fill="#8a6a4f"/>
+          <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M13 6 v10 m-3.4 -3.6 l3.4 3.6 l3.4 -3.6"/>
+            <path d="M24 6 v10 m-3.4 -3.6 l3.4 3.6 l3.4 -3.6"/>
+          </g>
+        </svg></div>
+        <h3>Extra force, tired hands</h3>
+        <p>Pressing a dull knife through dense vegetables strains your wrist and knuckles and tires you out. Cooking starts to feel like a chore for reasons you can't quite name.</p>
+        <span class="cost">The hidden reason you order out</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> sharpen?</h2>
+    <p class="sub">"Every three months" is the rule of thumb, but the real answer depends on how much you cook, what you cut on, and whether you hone between sharpenings. Answer three questions for a personalized interval:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="cook">
+        <div class="q-label">1. How often do you cook?</div>
+        <div class="pills">
+          <button class="pill" data-v="rarely">A few times a week or less</button>
+          <button class="pill" data-v="most">Most days</button>
+          <button class="pill" data-v="daily">Daily, serious prep</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="board">
+        <div class="q-label">2. What do you usually cut on?</div>
+        <div class="pills">
+          <button class="pill" data-v="soft">Wood or plastic</button>
+          <button class="pill" data-v="bamboo">Bamboo</button>
+          <button class="pill" data-v="hard">Glass, stone, or ceramic plates</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="hone">
+        <div class="q-label">3. Do you hone between sharpenings?</div>
+        <div class="pills">
+          <button class="pill" data-v="regular">Yes, regularly</button>
+          <button class="pill" data-v="sometimes">Sometimes</button>
+          <button class="pill" data-v="never">Never / what's honing?</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">There are three ways to live with kitchen knives: sharpen them yourself, pay someone to, or quietly replace them when they stop working. Typical U.S. prices: pro sharpening runs <strong>$5–15 per knife</strong>, a good two-sided whetstone is a one-time <strong>$40–80</strong>, and a mid-range chef's knife is <strong>$50–200+</strong>. Adjust for your kitchen:</p>
+    <div class="card">
+      <div class="calc-controls">
+        <label class="field">Knives you actually use: <span class="range-val" id="knivesVal">4</span>
+          <div class="field-row">
+            <input type="range" id="calcKnives" min="2" max="10" step="1" value="4">
+          </div>
+        </label>
+        <label class="field">Pro sharpenings per year: <span class="range-val" id="visitsVal">2</span>
+          <div class="field-row">
+            <input type="range" id="calcVisits" min="1" max="4" step="1" value="2">
+          </div>
+        </label>
+      </div>
+
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v" id="outWhet">$60</div><div class="l">whetstone route — one stone, 10 years</div></div>
+        <div class="calc-stat"><div class="v" id="outPro">$0</div><div class="l">pro route over 10 years</div></div>
+        <div class="calc-stat"><div class="v" id="outReplace">$0</div><div class="l">replace-when-dull over 10 years</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🪨 Whetstone (DIY, one-time)</span><span id="barWhetVal"></span></div>
+          <div class="bar-track"><div class="bar-fill good" id="barWhet"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧑‍🔧 Pro sharpening service</span><span id="barProVal"></span></div>
+          <div class="bar-track"><div class="bar-fill mid" id="barPro"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🗑️ Replacing dull knives</span><span id="barReplaceVal"></span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barReplace"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict" id="calcVerdict"></div>
+    </div>
+    <div class="cal-note">🩹 <strong>The hidden cost:</strong> dull knives are a leading cause of kitchen cuts, because they demand force and then slip without warning. One bad slip can mean stitches and an urgent-care bill that dwarfs a lifetime of sharpening. The cheapest route of all is the sharp one.</div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to sharpen on a whetstone</h2>
+    <p class="sub">Plan on 15–30 minutes the first time, faster once it's routine. Work through the checklist — your progress saves automatically, so you can pick it back up if you take a break.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — respect the edge, especially the new one</h3>
+      <ul>
+        <li><strong>Always stroke and cut away from yourself.</strong> Keep your free hand's fingertips on the flat of the blade, never near the edge.</li>
+        <li><strong>Stabilize the stone on a damp towel</strong> (or a stone holder). A stone that scoots mid-stroke is how accidents happen.</li>
+        <li>Remember why you're here: <strong>a sharp knife is safer than a dull one</strong> — it cuts where you aim with almost no force.</li>
+        <li>Never test sharpness by pressing your thumb along the edge. Slice paper instead.</li>
+        <li>Freshly sharpened knives are sharper than you expect. Wash them blade-away, and never drop them into a sink of soapy water to "soak."</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Two-sided whetstone (~1000 / ~3000–6000 grit)</span>
+      <span class="tool-chip">Damp kitchen towel (non-slip base)</span>
+      <span class="tool-chip">Bowl or tray of water</span>
+      <span class="tool-chip">Honing rod (steel or ceramic)</span>
+      <span class="tool-chip">Marker (the Sharpie angle trick)</span>
+      <span class="tool-chip">Sheet of printer paper (the test)</span>
+      <span class="tool-chip">Dish soap + drying towel</span>
+      <span class="tool-chip">Optional: angle guide clip</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side view of a knife held at a 15 to 20 degree angle against a whetstone resting on a damp towel">
+          <rect x="16" y="150" width="248" height="12" rx="6" fill="#dce8ee"/>
+          <rect x="28" y="118" width="224" height="32" rx="4" fill="#7fb3c8" stroke="#5f93ad" stroke-width="2"/>
+          <line x1="60" y1="118" x2="170" y2="118" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <polygon points="60,118 210,64 215,76 70,121" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" stroke-linejoin="round"/>
+          <polygon points="210,64 248,50 254,64 216,78" fill="#8a6a4f"/>
+          <path d="M108 118 A48 48 0 0 0 105 102" stroke="#d9663f" stroke-width="2.5" fill="none"/>
+          <text x="114" y="108" font-size="13" fill="#6b7376" font-weight="700">15–20°</text>
+          <line x1="196" y1="34" x2="106" y2="34" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="106,26 90,34 106,42" fill="#d9663f"/>
+          <text x="112" y="22" font-size="12" fill="#6b7376">edge leads, heel to tip</text>
+        </svg>
+        <h4>Hold a consistent 15–20°</h4>
+        <p>Tilt the blade until the spine sits about two stacked coins off the stone — roughly 15–20°. Keeping that angle steady matters far more than hitting the exact number.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Magnified cross-section of a knife edge showing a tiny curled burr at the apex, and a fingertip stroking across and off the flat of the blade to feel for it">
+          <circle cx="80" cy="86" r="66" fill="none" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="5 5"/>
+          <polygon points="58,30 102,30 81,128" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M81 128 q7 9 16 4" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <line x1="96" y1="136" x2="112" y2="150" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="116" y="158" font-size="13" fill="#d9663f" font-weight="700">the burr</text>
+          <polygon points="170,52 262,52 262,88 186,88" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" stroke-linejoin="round"/>
+          <ellipse cx="216" cy="46" rx="12" ry="15" fill="#c9a06b"/>
+          <line x1="216" y1="62" x2="216" y2="104" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <polygon points="208,102 216,118 224,102" fill="#d9663f"/>
+          <text x="170" y="138" font-size="12" fill="#6b7376">stroke across &amp; off the edge,</text>
+          <text x="170" y="153" font-size="12" fill="#6b7376">never along it</text>
+        </svg>
+        <h4>Feel for the burr</h4>
+        <p>Grind the coarse side until a tiny curl of metal — the burr — forms along the whole opposite face. That's proof you've reached the apex. Check by stroking a fingertip across and off the edge.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Honing rod held vertically with its tip planted on a cutting board while a knife sweeps down the rod at a constant shallow angle">
+          <rect x="56" y="156" width="168" height="12" rx="6" fill="#c9a06b"/>
+          <line x1="140" y1="156" x2="140" y2="44" stroke="#b9b1a3" stroke-width="8" stroke-linecap="round"/>
+          <rect x="129" y="14" width="22" height="28" rx="9" fill="#2c5a40"/>
+          <polygon points="146,58 234,82 231,94 147,70" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" stroke-linejoin="round"/>
+          <polygon points="234,82 260,89 257,101 231,94" fill="#8a6a4f"/>
+          <polygon points="146,116 222,138 220,148 147,126" fill="#dce8ee" opacity="0.35"/>
+          <path d="M178 84 q14 30 -8 56" stroke="#d9663f" stroke-width="3" fill="none" stroke-dasharray="6 5"/>
+          <polygon points="162,138 168,152 178,142" fill="#d9663f"/>
+          <text x="186" y="46" font-size="13" fill="#6b7376" font-weight="700">≈15°, light pressure</text>
+        </svg>
+        <h4>Hone between sharpenings</h4>
+        <p>Plant the rod's tip on a board and hold it vertical. Sweep the edge down the rod at the same ~15° angle, alternating sides, 3–5 feather-light strokes each. It realigns the edge — no metal removed.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Sharpening progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Scary sharp. Slice something and enjoy — see you in about three months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO USE A PRO ============ -->
+  <section id="pro">
+    <h2>When to use a pro sharpener instead</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Chips, cracks, or a broken tip.</strong> Repairing damage means regrinding the blade profile — a job for powered equipment, not a 1000-grit stone and your patience.</li>
+        <li><strong>Serrated blades.</strong> Each scallop needs to be sharpened individually with a tapered rod or a special jig. Most pros charge a little extra and it's worth every cent.</li>
+        <li><strong>Very hard Japanese steel.</strong> Blades above ~60 HRC take a fantastic edge but are brittle and unforgiving on a stone — if you're not confident, let a specialist handle a $300 gyuto.</li>
+        <li><strong>You just won't do it.</strong> An honest answer is a fine answer. A neglected knife sharpened by a pro twice a year beats a whetstone gathering dust in a drawer.</li>
+        <li>Typical pro sharpening runs <strong>$5–15 per knife</strong> (typical U.S. range) at farmers markets, hardware stores, knife shops, and mail-in services — most return next-day or while you wait.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What's the difference between honing and sharpening?</summary>
+      <p>Sharpening removes metal to create a fresh edge; honing just realigns the edge you already have. In use, the razor-thin apex bends over microscopically — a honing rod stands it back up in 20 seconds. Hone weekly (or before big prep sessions) and you'll only need to actually sharpen every few months.</p>
+    </details>
+    <details>
+      <summary>Are pull-through sharpeners really that bad?</summary>
+      <p>They're better than cooking with a butter knife, but that's the bar. The fixed carbide slots tear away far more metal than a stone, leave a ragged edge that dulls quickly, and can't follow the blade's actual geometry. Fine in an emergency or on a $15 knife; keep them away from anything you care about — especially hard Japanese steel.</p>
+    </details>
+    <details>
+      <summary>What do whetstone grit numbers mean?</summary>
+      <p>Lower = coarser, like sandpaper. Roughly: 220–400 repairs chips and reshapes, 800–1200 is the workhorse range that does the real sharpening, 3000–6000 refines the edge for clean push cuts, and 8000+ is a polish most kitchens never need. A single two-sided 1000/3000 (or 1000/6000) combo stone covers 95% of home cooking.</p>
+    </details>
+    <details>
+      <summary>Does the dishwasher really ruin knives?</summary>
+      <p>Yes, three ways at once: the blade rattles against the rack and other items (chips and rolls the edge), harsh detergent pits and dulls the steel, and the heat cycle wrecks wooden handles and can loosen rivets. Hand-wash, dry immediately, done — it takes 30 seconds and doubles the life of the edge you just made.</p>
+    </details>
+    <details>
+      <summary>How do I know my knife is actually dull?</summary>
+      <p>Three quick tests: a sharp knife bites into a tomato's skin under its own weight (dull ones skate), slices printer paper cleanly from the edge (dull ones snag and tear), and shows no glints when you look straight down at the edge under a light — reflections mean flat, rolled spots.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>You know your interval. Let something else count the weeks.</h2>
+        <p>Whether your quiz said monthly or twice a year, the hard part is remembering in week eleven — when the knife still <em>sort of</em> works. Upkeep Ledger logs each sharpening and nudges you when the edge comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=sharpen-knives&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=sharpen-knives&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; local prices vary.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { cook: null, board: null, hone: null };
+
+  // Frequency levels, most frequent first. Index is clamped into this range.
+  var LEVELS = [
+    "Every month",
+    "Every 2 months",
+    "Every 3 months",
+    "Every 4–5 months",
+    "Every 6 months",
+    "Once or twice a year"
+  ];
+
+  function computePlan(s) {
+    var idx = { rarely: 4, most: 2, daily: 1 }[s.cook];
+    var reasons = [];
+
+    if (s.cook === "rarely") reasons.push("Light use means the edge mostly degrades from storage and the occasional task — you can stretch the interval.");
+    if (s.cook === "most") reasons.push("Cooking most days is the classic home-kitchen workload — quarterly is the standard starting point.");
+    if (s.cook === "daily") reasons.push("Daily serious prep rolls an edge fast. Pros touch up their knives constantly; at this volume you should sharpen every month or two.");
+
+    if (s.board === "soft") {
+      reasons.push("Wood and plastic boards are kind to edges — no penalty there.");
+    } else if (s.board === "bamboo") {
+      idx -= 1;
+      reasons.push("Bamboo is harder than it looks (it's loaded with silica) and dulls edges noticeably faster than wood.");
+    } else if (s.board === "hard") {
+      idx -= 2;
+      reasons.push("Glass, stone, and ceramic murder edges — every cut is steel against something harder than steel. Honestly: swap the board and you could sharpen half as often.");
+    }
+
+    if (s.hone === "regular") {
+      idx += 1;
+      reasons.push("Regular honing realigns the rolled edge before it folds over for good — it's the single best way to stretch the time between sharpenings.");
+    } else if (s.hone === "sometimes") {
+      reasons.push("Some honing helps. Make it a 20-second habit before big prep sessions and your interval stretches further.");
+    } else {
+      idx -= 1;
+      reasons.push("Without honing, the edge rolls and stays rolled — the knife feels dull long before the steel is actually worn. A $20 rod buys you months between sharpenings.");
+    }
+
+    idx = Math.max(0, Math.min(LEVELS.length - 1, idx));
+    return { label: LEVELS[idx], reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.cook || !quizState.board || !quizState.hone) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: sharpen " + r.label.toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Hone weekly either way — it's 20 seconds. When sharpening day comes, the <a href=\"#how-to\">checklist below</a> walks you through it. Why this interval:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Cost comparison ================= */
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  var WHETSTONE = 60;       // midpoint of a typical $40–80 two-sided stone
+  var PRO_PER_KNIFE = 10;   // midpoint of typical $5–15 per knife
+  var KNIFE_PRICE = 90;     // a knife worth keeping sharp
+  var REPLACE_CYCLES_10YR = 3; // dull-abused knives replaced roughly every 3–4 years
+
+  function updateCalc() {
+    var knives = parseInt(document.getElementById("calcKnives").value, 10);
+    var visits = parseInt(document.getElementById("calcVisits").value, 10);
+
+    document.getElementById("knivesVal").textContent = knives;
+    document.getElementById("visitsVal").textContent = visits;
+
+    var pro10 = knives * visits * PRO_PER_KNIFE * 10;
+    var rep10 = knives * KNIFE_PRICE * REPLACE_CYCLES_10YR;
+
+    document.getElementById("outWhet").textContent = money(WHETSTONE);
+    document.getElementById("outPro").textContent = money(pro10);
+    document.getElementById("outReplace").textContent = money(rep10);
+
+    var max = Math.max(WHETSTONE, pro10, rep10);
+    document.getElementById("barWhet").style.width = (WHETSTONE / max) * 100 + "%";
+    document.getElementById("barPro").style.width = (pro10 / max) * 100 + "%";
+    document.getElementById("barReplace").style.width = (rep10 / max) * 100 + "%";
+    document.getElementById("barWhetVal").textContent = money(WHETSTONE);
+    document.getElementById("barProVal").textContent = money(pro10);
+    document.getElementById("barReplaceVal").textContent = money(rep10);
+
+    var verdict = document.getElementById("calcVerdict");
+    if (pro10 <= rep10) {
+      verdict.innerHTML = "One <strong>" + money(WHETSTONE) + "</strong> stone covers all " + knives +
+        " knives for a decade — about <strong>" + Math.round(pro10 / WHETSTONE) + "× less</strong> than the pro route, which itself beats the <strong>" +
+        money(rep10) + "</strong> replace-when-dull treadmill. Every option is cheaper than pretending knives don't dull.";
+    } else {
+      verdict.innerHTML = "At " + visits + " pro visits a year for " + knives + " knives, the service route (<strong>" + money(pro10) +
+        "</strong>) actually costs more than replacing them (<strong>" + money(rep10) +
+        "</strong>) — which is exactly when a one-time <strong>" + money(WHETSTONE) + "</strong> whetstone makes the most sense.";
+    }
+  }
+
+  ["calcKnives", "calcVisits"].forEach(function (id) {
+    document.getElementById(id).addEventListener("input", updateCalc);
+  });
+  updateCalc();
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Set up the stone", text: "Soak the stone in water for 10–15 minutes", note: "Until the bubbles stop. \"Splash-and-go\" stones only need a wet surface — check yours." },
+    { phase: "Set up the stone", text: "Anchor the stone on a damp towel, coarse side up", note: "The stone must not move at all — your angle depends on a steady base." },
+    { phase: "Set up the stone", text: "Find your angle: about 15–20°", note: "Two stacked coins under the spine is close. Or color the bevel with a marker and check where it rubs off." },
+    { phase: "Coarse side — raise a burr", text: "Sweep heel to tip, edge leading, light even pressure", note: "Like you're shaving a thin slice off the stone. Let the grit do the work." },
+    { phase: "Coarse side — raise a burr", text: "Keep the angle constant — this is the whole game", note: "Lock your wrist; move from the shoulders. Slow and steady beats fast and wobbly." },
+    { phase: "Coarse side — raise a burr", text: "Count strokes and keep both sides even", note: "Ten per side is a good rhythm. Splash on more water whenever the surface dries." },
+    { phase: "Coarse side — raise a burr", text: "Feel for the burr along the entire edge", note: "Stroke a fingertip across and off the edge — never along it. A faint catch from heel to tip means you're there." },
+    { phase: "Fine side — refine", text: "Flip to the fine grit and re-wet the surface", note: "Same angle, same motion — you're polishing the scratch pattern now, not reshaping." },
+    { phase: "Fine side — refine", text: "Make lighter passes, alternating sides near the end", note: "Pressure drops to the weight of the blade itself for the final strokes." },
+    { phase: "Fine side — refine", text: "Strip off the burr with feather-light alternating strokes", note: "One side, then the other, three or four times. A leftover burr feels sharp today and dull tomorrow." },
+    { phase: "Hone, test & wrap up", text: "Finish with 3–5 strokes per side on the honing rod", note: "Rod tip planted on a board, same ~15° angle, light pressure." },
+    { phase: "Hone, test & wrap up", text: "Test it: slice printer paper, then a tomato", note: "A clean push cut through paper and a tomato skin that yields without sawing = success." },
+    { phase: "Hone, test & wrap up", text: "Wash and dry the knife and stone", note: "Rinse the gray slurry off the stone and let it air-dry fully before storing." },
+    { phase: "Hone, test & wrap up", text: "Log today's date", note: "Default is every 3 months — or whatever your quiz said. Future-you forgets; calendars don't." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:sharpen-knives:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

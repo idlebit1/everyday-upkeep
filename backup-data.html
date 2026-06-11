@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Back Up Phone &amp; Laptop — Everyday Upkeep</title>
+<meta name="description" content="How to set up automatic backups for your phone and laptop once, then verify them monthly — the 3-2-1 rule, what it costs, and a step-by-step checklist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .rule-score { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .rule-score .rule-pill {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 5px 14px; font-size: 13.5px; font-weight: 700; color: var(--ink-soft);
+  }
+  .rule-score .rule-pill.met { border-color: var(--accent); color: var(--accent-deep); background: #fffdf8; }
+  .rule-score .rule-pill.miss { border-color: var(--warn); color: var(--warn); background: var(--warn-soft); }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Everyday <span>Upkeep</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#gap">Your gap</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Monthly</span>
+      <h1>Back Up Phone &amp; Laptop</h1>
+      <p class="lede">Every photo, document, and message you care about lives on hardware that will eventually fail, get lost, or get locked up. The fix isn't discipline — it's automation. Set up backups once, then spend ten minutes a month verifying they actually work.</p>
+      <div class="stat-chips">
+        <span class="chip">🛠️ Setup: <em>1–2 hours, once</em></span>
+        <span class="chip">🗓️ Then <em>10 min/month</em> to verify</span>
+        <span class="chip">💵 Costs <em>~$70–120/yr</em></span>
+        <span class="chip">💸 Recovery without one: <em>$300–2,000+</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a laptop and a phone syncing up to a cloud, with a second arrow copying the laptop's data down to an external drive on the ground">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="62" cy="62" r="22" fill="#f2cf7a"/>
+      <!-- cloud -->
+      <ellipse cx="300" cy="86" rx="78" ry="36" fill="#dce8ee"/>
+      <ellipse cx="240" cy="98" rx="46" ry="26" fill="#dce8ee"/>
+      <ellipse cx="362" cy="100" rx="44" ry="24" fill="#dce8ee"/>
+      <circle cx="300" cy="88" r="22" fill="#fffdf8"/>
+      <path d="M289 88 l8 8 l15 -16" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- sync arrows: laptop -> cloud -->
+      <path d="M208 230 Q198 168 250 122" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 12"/>
+      <polygon points="244,110 262,114 250,132" fill="#3e7c59"/>
+      <!-- sync arrows: phone -> cloud -->
+      <path d="M438 218 Q450 162 392 124" stroke="#d9663f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 12"/>
+      <polygon points="400,114 382,112 390,133" fill="#d9663f"/>
+      <!-- laptop -->
+      <rect x="110" y="206" width="180" height="118" rx="9" fill="#2c5a40"/>
+      <rect x="121" y="216" width="158" height="98" rx="4" fill="#fffdf8"/>
+      <rect x="132" y="228" width="62" height="42" rx="4" fill="#7fb3c8"/>
+      <circle cx="148" cy="242" r="7" fill="#e0a93d"/>
+      <path d="M132 262 l16 -14 l14 10 l18 -16 l14 12 v16 h-62 z" fill="#5e9a78"/>
+      <rect x="204" y="228" width="64" height="8" rx="4" fill="#d8cfbe"/>
+      <rect x="204" y="242" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="204" y="255" width="56" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="132" y="282" width="136" height="9" rx="4.5" fill="#e3efe8"/>
+      <rect x="132" y="282" width="98" height="9" rx="4.5" fill="#3e7c59"/>
+      <path d="M92 324 h216 l22 26 h-260 z" fill="#b9b1a3"/>
+      <rect x="172" y="332" width="56" height="7" rx="3.5" fill="#8a6a4f"/>
+      <!-- phone -->
+      <rect x="396" y="196" width="78" height="146" rx="14" fill="#2c5a40"/>
+      <rect x="404" y="210" width="62" height="112" rx="6" fill="#fffdf8"/>
+      <rect x="410" y="218" width="23" height="23" rx="3" fill="#e0a93d"/>
+      <rect x="437" y="218" width="23" height="23" rx="3" fill="#c96f4a"/>
+      <rect x="410" y="245" width="23" height="23" rx="3" fill="#5e9a78"/>
+      <rect x="437" y="245" width="23" height="23" rx="3" fill="#7fb3c8"/>
+      <rect x="410" y="276" width="50" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="410" y="289" width="36" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="410" y="304" width="50" height="9" rx="4.5" fill="#e3efe8"/>
+      <rect x="410" y="304" width="34" height="9" rx="4.5" fill="#d98e3b"/>
+      <circle cx="435" cy="332" r="5" fill="#5e9a78"/>
+      <!-- laptop -> external drive arrow -->
+      <path d="M312 300 Q360 332 416 366" stroke="#e0a93d" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 12"/>
+      <polygon points="424,358 432,375 408,374" fill="#e0a93d"/>
+      <!-- external drive -->
+      <rect x="438" y="362" width="92" height="30" rx="8" fill="#8a6a4f"/>
+      <rect x="438" y="362" width="92" height="11" rx="5.5" fill="#c9a06b"/>
+      <circle cx="516" cy="382" r="3.5" fill="#e0a93d"/>
+      <rect x="448" y="378" width="34" height="6" rx="3" fill="#c9a06b"/>
+      <!-- plants -->
+      <circle cx="62" cy="384" r="14" fill="#5e9a78"/>
+      <circle cx="84" cy="390" r="11" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Data loss isn't a freak accident — it's the predictable end state of every device you own. These are the ways it happens, and what getting your files back costs when you have no backup (typical U.S. figures):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="11" width="26" height="14" rx="3" fill="#b9b1a3"/>
+          <circle cx="25" cy="18" r="3" fill="#e0a93d"/>
+          <path d="M9 11 l4 5 l-3 4 l4 5" stroke="#5a544a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <rect x="9" y="28" width="18" height="3" rx="1.5" fill="#d8cfbe"/>
+        </svg></div>
+        <h3>Drive failure</h3>
+        <p>Every drive dies — the only question is when. Spinning hard drives often fail within 3–5 years; SSDs fail too, usually with zero warning and no clicking-noise grace period.</p>
+        <span class="cost">100% of drives, eventually</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="13" y="5" width="15" height="26" rx="3.5" fill="#3e7c59"/>
+          <rect x="16" y="8" width="9" height="18" rx="1.5" fill="#e3efe8"/>
+          <circle cx="20.5" cy="28.5" r="1.4" fill="#e3efe8"/>
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round">
+            <line x1="4" y1="10" x2="9" y2="10"/>
+            <line x1="3" y1="16" x2="9" y2="16"/>
+            <line x1="4" y1="22" x2="9" y2="22"/>
+          </g>
+        </svg></div>
+        <h3>Phone loss &amp; theft</h3>
+        <p>Phones get left in taxis, dropped in lakes, and stolen off café tables. If your photos only exist on the phone, they leave with it.</p>
+        <span class="cost">No backup = gone for good</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="15" width="18" height="14" rx="3" fill="#d9663f"/>
+          <path d="M13 15 v-3.5 a5 5 0 0 1 10 0 V15" stroke="#8a6a4f" stroke-width="2.5" fill="none"/>
+          <circle cx="18" cy="21" r="2.2" fill="#fffdf8"/>
+          <rect x="16.9" y="22" width="2.2" height="4" rx="1.1" fill="#fffdf8"/>
+        </svg></div>
+        <h3>Ransomware</h3>
+        <p>Malware that encrypts everything and demands payment. A backup that's connected to the computer gets encrypted too — which is why one copy stays offline.</p>
+        <span class="cost">Ransoms run $500 – $2,000+</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M10 6 h11 l6 6 v18 h-17 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M21 6 v6 h6" fill="none" stroke="#b9b1a3" stroke-width="2"/>
+          <g stroke="#d9663f" stroke-width="2.6" stroke-linecap="round">
+            <line x1="14" y1="17" x2="22" y2="25"/>
+            <line x1="22" y1="17" x2="14" y2="25"/>
+          </g>
+        </svg></div>
+        <h3>Accidental deletion</h3>
+        <p>The wrong folder emptied, an overzealous "free up space" tap, a sync conflict that picks the wrong version. Human error deletes more files than hardware does.</p>
+        <span class="cost">The #1 cause of data loss</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="7" width="26" height="22" rx="3" fill="#fffdf8" stroke="#c9a06b" stroke-width="2"/>
+          <circle cx="12" cy="14" r="2.5" fill="#e0a93d"/>
+          <path d="M7 25 l7 -7 l5 5 l5 -6 l5 6" stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 9.5 c1.4 -2 4.4 -1 4.4 1.2 c0 1.8 -2.6 3.4 -4.4 4.6 c-1.8 -1.2 -4.4 -2.8 -4.4 -4.6 c0 -2.2 3 -3.2 4.4 -1.2" fill="#c96f4a"/>
+        </svg></div>
+        <h3>The irreplaceables</h3>
+        <p>A crashed laptop is annoying. Losing the only photos of your kids growing up, your wedding, or someone who's gone — that's the loss people never stop regretting.</p>
+        <span class="cost">No price. No do-over.</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="13" width="20" height="12" rx="3" fill="#b9b1a3"/>
+          <circle cx="21" cy="19" r="2.5" fill="#7fb3c8"/>
+          <circle cx="27" cy="13" r="7.5" fill="#e0a93d"/>
+          <text x="27" y="17.2" font-size="11" font-weight="700" fill="#fffdf8" text-anchor="middle">$</text>
+        </svg></div>
+        <h3>Recovery is a gamble</h3>
+        <p>Professional data recovery from a dead drive typically runs $300–$2,000+ — and even then there's no guarantee they'll get anything back. A backup makes the whole industry irrelevant to you.</p>
+        <span class="cost">$300 – $2,000+, no guarantee</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ YOUR GAP / QUIZ ============ -->
+  <section id="gap">
+    <h2>What's <em>your</em> backup gap?</h2>
+    <p class="sub">The gold standard is the <strong>3-2-1 rule</strong>: 3 copies of your data, on 2 different kinds of media, with 1 copy offsite. Answer three questions and we'll show you exactly where you stand — and what to fix first:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="photos">
+        <div class="q-label">1. Do your phone photos sync to the cloud automatically (iCloud Photos, Google Photos)?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes, everything</button>
+          <button class="pill" data-v="partial">Partially / not sure</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="computer">
+        <div class="q-label">2. Does your computer back up automatically (Time Machine, File History, or a cloud backup service)?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes, automatically</button>
+          <button class="pill" data-v="manual">Sometimes, manually</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="offline">
+        <div class="q-label">3. Do you have an offline copy — a drive that stays disconnected from your machine?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <div class="rule-score" id="ruleScore" aria-label="Your 3-2-1 rule scorecard"></div>
+        <ul id="resultSteps"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A real backup habit is one of the cheapest subscriptions in your life — and the only one that ever pays out the full value of what it protects. Typical U.S. figures:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$70–120</div><div class="l">per year for the full setup: cloud storage (~$3–10/mo) plus a $60–100 external drive amortized over a few years</div></div>
+        <div class="calc-stat"><div class="v bad">$300–2,000+</div><div class="l">one professional data-recovery attempt on a dead drive — often unsuccessful, and you pay either way at many shops</div></div>
+        <div class="calc-stat"><div class="v bad">Priceless</div><div class="l">the photos, messages, and documents that no recovery lab can bring back once they're truly gone</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>☁️ One year of backups (storage + drive)</span><span>~$95</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 One data-recovery attempt, mid-range</span><span>$1,200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">A <strong>decade</strong> of doing this right costs roughly <strong>$700–1,200</strong> — about the same as <em>one</em> mid-range recovery attempt that might return nothing. And recovery can't even be attempted on a stolen phone or a ransomed, wiped drive. The math isn't close.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to set it up — once</h2>
+    <p class="sub">This is a "set it up once, verify monthly" task. The setup phase takes an hour or two on a weekend. After that, your recurring job isn't backing up — it's spending ten minutes a month confirming the machines are still doing it for you. Progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ The one rule that matters: backups you have to remember don't happen</h3>
+      <ul>
+        <li><strong>Automate everything.</strong> Any plan that depends on you remembering to plug in a drive "every so often" fails within two months. Humans are the unreliable component — design around us.</li>
+        <li>Once it's automated, your monthly job changes: you're not backing up, you're <strong>verifying</strong>.</li>
+        <li>And verify means <em>restore</em>: a backup you've never restored a file from is a hope, not a backup. Plenty of people discover their backup was silently broken for a year — at the worst possible moment.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 The toolkit (pick one per layer)</h3>
+    <div class="tools">
+      <span class="tool-chip">Time Machine (Mac)</span>
+      <span class="tool-chip">File History / Windows Backup</span>
+      <span class="tool-chip">iCloud Photos / Google Photos</span>
+      <span class="tool-chip">Backblaze-style cloud backup (~$9/mo)</span>
+      <span class="tool-chip">External SSD or hard drive ($60–100)</span>
+      <span class="tool-chip">A drawer to keep the drive in — unplugged</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three ideas worth understanding</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the 3-2-1 backup rule: three copies of your data, on two different kinds of media, with one copy offsite">
+          <text x="20" y="34" font-size="22" font-weight="800" fill="#2c5a40" font-family="Georgia, serif">3</text>
+          <text x="36" y="34" font-size="12" fill="#6b7376">copies</text>
+          <rect x="20" y="44" width="56" height="38" rx="6" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="30" y="52" width="36" height="5" rx="2.5" fill="#5e9a78"/>
+          <rect x="30" y="61" width="26" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="30" y="70" width="32" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="88" y="44" width="56" height="38" rx="6" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="98" y="52" width="36" height="5" rx="2.5" fill="#5e9a78"/>
+          <rect x="98" y="61" width="26" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="98" y="70" width="32" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="156" y="44" width="56" height="38" rx="6" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="166" y="52" width="36" height="5" rx="2.5" fill="#5e9a78"/>
+          <rect x="166" y="61" width="26" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="166" y="70" width="32" height="5" rx="2.5" fill="#d8cfbe"/>
+          <text x="20" y="116" font-size="22" font-weight="800" fill="#d98e3b" font-family="Georgia, serif">2</text>
+          <text x="36" y="116" font-size="12" fill="#6b7376">kinds of media</text>
+          <rect x="20" y="126" width="44" height="20" rx="5" fill="#8a6a4f"/>
+          <circle cx="56" cy="136" r="3" fill="#e0a93d"/>
+          <ellipse cx="100" cy="136" rx="26" ry="13" fill="#7fb3c8"/>
+          <ellipse cx="84" cy="141" rx="15" ry="9" fill="#7fb3c8"/>
+          <text x="158" y="116" font-size="22" font-weight="800" fill="#d9663f" font-family="Georgia, serif">1</text>
+          <text x="174" y="116" font-size="12" fill="#6b7376">offsite</text>
+          <rect x="160" y="132" width="34" height="22" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <polygon points="155,132 177,116 199,132" fill="#c96f4a"/>
+          <path d="M214 128 q18 -4 28 8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+          <ellipse cx="252" cy="148" rx="18" ry="10" fill="#dce8ee"/>
+        </svg>
+        <h4>The 3-2-1 rule</h4>
+        <p>3 copies of anything you care about (the original counts as one), on 2 different kinds of media, with 1 copy somewhere else — so no single disaster can take them all.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the three automated backup layers: your devices sync continuously to the cloud, and a monthly copy goes to an offline drive">
+          <rect x="18" y="64" width="64" height="42" rx="6" fill="#2c5a40"/>
+          <rect x="24" y="70" width="52" height="30" rx="3" fill="#e3efe8"/>
+          <rect x="10" y="106" width="80" height="8" rx="4" fill="#b9b1a3"/>
+          <rect x="54" y="120" width="26" height="44" rx="6" fill="#2c5a40"/>
+          <rect x="58" y="126" width="18" height="30" rx="2" fill="#e3efe8"/>
+          <text x="14" y="52" font-size="12" font-weight="700" fill="#33393b">devices</text>
+          <line x1="96" y1="92" x2="138" y2="92" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="138,84 152,92 138,100" fill="#3e7c59"/>
+          <text x="98" y="80" font-size="11" fill="#6b7376">always on</text>
+          <ellipse cx="190" cy="86" rx="34" ry="18" fill="#dce8ee"/>
+          <ellipse cx="166" cy="94" rx="20" ry="12" fill="#dce8ee"/>
+          <ellipse cx="212" cy="96" rx="18" ry="11" fill="#dce8ee"/>
+          <text x="172" y="52" font-size="12" font-weight="700" fill="#33393b">cloud</text>
+          <path d="M70 164 q70 14 140 -8" stroke="#e0a93d" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="2 9"/>
+          <polygon points="206,148 222,152 210,166" fill="#e0a93d"/>
+          <text x="96" y="148" font-size="11" fill="#6b7376">monthly</text>
+          <rect x="222" y="126" width="48" height="20" rx="6" fill="#8a6a4f"/>
+          <rect x="222" y="126" width="48" height="8" rx="4" fill="#c9a06b"/>
+          <circle cx="262" cy="140" r="2.5" fill="#e0a93d"/>
+          <text x="216" y="164" font-size="11" font-weight="700" fill="#33393b">offline drive</text>
+        </svg>
+        <h4>Automated layers</h4>
+        <p>Layer 1: devices sync to the cloud continuously, on their own. Layer 2: once a month you add a copy to a drive that lives unplugged — your ransomware-proof copy.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the monthly verify loop: check backup status, restore one file as a test, then update and disconnect the offline drive">
+          <path d="M140 36 A56 56 0 0 1 189 119" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="196,108 192,127 178,114" fill="#3e7c59"/>
+          <path d="M178 132 A56 56 0 0 1 92 124" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="103,134 84,131 94,116" fill="#3e7c59"/>
+          <path d="M86 110 A56 56 0 0 1 126 37" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="116,42 135,34 130,52" fill="#3e7c59"/>
+          <circle cx="140" cy="30" r="20" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <path d="M132 30 l6 6 l11 -12" stroke="#2c5a40" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="168" y="22" font-size="11.5" font-weight="700" fill="#33393b">check status</text>
+          <circle cx="196" cy="138" r="20" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <path d="M196 128 v12 m0 0 l-5 -5 m5 5 l5 -5" stroke="#9a7117" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="190" y="143" width="12" height="3.5" rx="1.75" fill="#9a7117"/>
+          <text x="172" y="174" font-size="11.5" font-weight="700" fill="#33393b">restore 1 file</text>
+          <circle cx="84" cy="138" r="20" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.5"/>
+          <rect x="74" y="133" width="20" height="10" rx="3" fill="#8a6a4f"/>
+          <path d="M78 128 l12 0" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="18" y="174" font-size="11.5" font-weight="700" fill="#33393b">unplug drive</text>
+          <text x="140" y="92" font-size="12" fill="#6b7376" text-anchor="middle">10 min,</text>
+          <text x="140" y="107" font-size="12" fill="#6b7376" text-anchor="middle">monthly</text>
+        </svg>
+        <h4>The monthly verify loop</h4>
+        <p>Check that each backup ran recently, restore one random file to prove it works, refresh the offline drive, unplug it. That loop is the whole monthly job.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Backup progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Verified! Your data can survive a dead drive, a lost phone, and a ransomware note. Same time next month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO GET HELP ============ -->
+  <section id="pro">
+    <h2>When to get professional help</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A drive that's clicking, grinding, or not spinning up: stop powering it on.</strong> Every additional power-up can grind the platters and destroy what's left. If the data matters, send it to a data-recovery lab as-is.</li>
+        <li><strong>Data recovery services</strong> (DriveSavers, Ontrack, and local labs) handle dead drives, water damage, and corrupted media. Typical cost: <strong>$300–$2,000+</strong> depending on damage — and success is never guaranteed, so treat it as a last resort, not a plan.</li>
+        <li><strong>A deleted file you need right now:</strong> stop using that drive immediately (new writes overwrite deleted data) and have a tech run recovery software — or restore from your backup, which is the entire point of this page.</li>
+        <li><strong>Business data, or a home NAS/server setup:</strong> worth an IT pro's hour. Multi-drive arrays, versioned offsite replication, and tested restore procedures are a different league from personal backups.</li>
+        <li><strong>Ransomware on a work machine:</strong> disconnect it from the network and call IT or a security professional before touching anything else.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Isn't cloud sync (iCloud, Google Drive, Dropbox) already a backup?</summary>
+      <p>Only partially. Sync's job is to make every device match — so when a file is deleted or corrupted on one device, that change faithfully propagates everywhere, including the cloud. Most services keep deleted files for only 30–60 days. Sync protects you from a lost device; it does not protect you from deletion, ransomware, or your own mistakes. That's what the true backup layers (computer backup + offline drive) are for.</p>
+    </details>
+    <details>
+      <summary>Why does one copy need to be offline?</summary>
+      <p>Ransomware encrypts everything the infected computer can reach — including connected external drives and mounted cloud folders. A drive that lives in a drawer, unplugged, simply isn't reachable. It's the one copy malware can't touch, which is why the monthly routine is "connect, update, disconnect" rather than leaving it plugged in.</p>
+    </details>
+    <details>
+      <summary>How long do hard drives and SSDs actually last?</summary>
+      <p>Spinning hard drives typically last 3–5 years, with failure rates climbing steeply after that; some die in year one. SSDs often last 5–10 years but fail differently — usually all at once, with no warning clicks. Phones and laptops also get lost, dropped, and stolen on their own schedule. Plan as if any single device could be gone tomorrow, because that's the actual deal.</p>
+    </details>
+    <details>
+      <summary>Do I need to back up apps, music, and movies?</summary>
+      <p>No. Anything you can re-download — apps, streaming libraries, purchased media, the operating system — isn't worth backing up. Focus on the irreplaceables: photos and videos you took, documents you wrote, tax and financial records, message history, and anything created rather than purchased. That's usually a much smaller (and cheaper) set than your whole drive.</p>
+    </details>
+    <details>
+      <summary>I pay for iCloud / Google One — am I done?</summary>
+      <p>You're in better shape than most, but you have one company holding your only backup copy. Accounts get locked, hacked, and mistakenly flagged more often than people think. Adding the offline drive — one purchase, ten minutes a month — means no single company, password, or piece of hardware can take everything. That's the whole 3-2-1 idea.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The setup was the easy part. The verifying is the habit.</h2>
+        <p>A monthly ten-minute verify is exactly the kind of recurring task that silently lapses — until the day you need the backup that stopped running in March. Upkeep Ledger logs each verify and nudges you when the next one's due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=backup-data&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=backup-data&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; check current prices for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { photos: null, computer: null, offline: null };
+
+  function computeGap(s) {
+    var points = 0;
+    points += { yes: 2, partial: 1, no: 0 }[s.photos];
+    points += { yes: 2, manual: 1, no: 0 }[s.computer];
+    points += { yes: 2, no: 0 }[s.offline];
+
+    // 3-2-1 scorecard
+    var hasCloud = (s.photos === "yes" || s.computer === "yes");
+    var hasOffline = (s.offline === "yes");
+    var copies = 1 + (hasCloud ? 1 : 0) + (hasOffline ? 1 : 0); // original + cloud + offline drive
+    var media = 1 + (hasOffline ? 1 : 0); // internal storage + a second kind of media
+    var rules = [
+      { label: copies + " of 3 copies", met: copies >= 3 },
+      { label: Math.min(media, 2) + " of 2 media types", met: media >= 2 },
+      { label: (hasCloud ? "1" : "0") + " of 1 offsite", met: hasCloud }
+    ];
+
+    var grade, body;
+    if (points === 6) {
+      grade = "Your gap: none — you've hit 3-2-1";
+      body = "Cloud sync for the phone, automatic computer backup, and an offline copy: that's the full 3-2-1 setup. Your only job now is the <strong>monthly verify loop</strong> below — backups rot silently, and the verify is what catches it.";
+    } else if (points >= 4) {
+      grade = "Your gap: one weak link";
+      body = "You're most of the way to 3-2-1 — one disaster scenario can still reach you. Close the gap below and you're done; from then on it's a ten-minute monthly verify.";
+    } else if (points >= 2) {
+      grade = "Your gap: real exposure";
+      body = "Some of your data has a safety net, but a single bad day — a dead drive, a stolen phone — would still cost you files you can't get back. The good news: every fix below is a one-time setup, not a new chore.";
+    } else {
+      grade = "Your gap: everything, everywhere";
+      body = "Right now you're one spilled coffee, one stolen bag, or one failed drive away from losing it all — and recovery labs charge $300–2,000+ with no guarantee. Start with your phone photos today; it's a five-minute settings change.";
+    }
+
+    var steps = [];
+    if (s.photos === "no") {
+      steps.push("Today: turn on iCloud Photos or Google Photos backup. Phones are lost and broken more than any other device, and photos are the thing people grieve.");
+    } else if (s.photos === "partial") {
+      steps.push("Open your photo app's settings and confirm sync covers everything — all albums, videos, and every device — then spot-check a recent photo on the web version.");
+    }
+    if (s.computer === "no") {
+      steps.push("Turn on automatic computer backup: Time Machine (Mac) or File History (Windows) to a drive, or a Backblaze-style cloud backup service (~$9/mo). One-time setup, runs forever.");
+    } else if (s.computer === "manual") {
+      steps.push("Manual backups stop happening — usually within two months. Switch to an automatic schedule (Time Machine, File History, or cloud backup) so the machine remembers instead of you.");
+    }
+    if (s.offline === "no") {
+      steps.push("Buy a $60–100 external drive, copy your irreplaceables to it, and store it disconnected. That offline copy is the one thing ransomware and account lockouts can't touch.");
+    }
+    if (steps.length === 0) {
+      steps.push("Skip ahead to the “Monthly verify” phase of the checklist below — and actually restore one file. A backup you've never restored from is a hope, not a backup.");
+    } else {
+      steps.push("Then make verification a monthly habit — the full loop is in the checklist below.");
+    }
+
+    return { grade: grade, body: body, rules: rules, steps: steps };
+  }
+
+  function onQuizChange() {
+    if (!quizState.photos || !quizState.computer || !quizState.offline) return;
+    var r = computeGap(quizState);
+
+    document.getElementById("resultFreq").textContent = r.grade;
+    document.getElementById("resultBody").innerHTML = r.body;
+
+    var score = document.getElementById("ruleScore");
+    score.innerHTML = "";
+    r.rules.forEach(function (rule) {
+      var span = document.createElement("span");
+      span.className = "rule-pill " + (rule.met ? "met" : "miss");
+      span.textContent = (rule.met ? "✓ " : "✗ ") + rule.label;
+      score.appendChild(span);
+    });
+
+    var ul = document.getElementById("resultSteps");
+    ul.innerHTML = "";
+    r.steps.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "One-time setup (1–2 hours, once)", text: "List your irreplaceables", note: "Photos/videos you took, documents you wrote, tax and financial records, message exports. Skip anything re-downloadable." },
+    { phase: "One-time setup (1–2 hours, once)", text: "Turn on photo cloud sync on your phone", note: "iCloud Photos or Google Photos, set to back up everything. Buy the storage tier that fits — it's a few dollars a month." },
+    { phase: "One-time setup (1–2 hours, once)", text: "Turn on automatic computer backup", note: "Time Machine (Mac), File History / Windows Backup (PC), or a Backblaze-style cloud service. Automatic or it doesn't count." },
+    { phase: "One-time setup (1–2 hours, once)", text: "Buy an external drive (~2× your data size)", note: "A $60–100 SSD or hard drive. This becomes your offline, ransomware-proof copy." },
+    { phase: "One-time setup (1–2 hours, once)", text: "Connect it and run the first full backup", note: "The first run can take hours — start it before dinner and let it work. Verify it finished without errors." },
+    { phase: "One-time setup (1–2 hours, once)", text: "Eject the drive and store it disconnected", note: "A drawer works; a different room is better; a trusted relative's house or a small safe is best. Unplugged is the whole point." },
+    { phase: "One-time setup (1–2 hours, once)", text: "Do a test restore right now", note: "Pull one file back from each layer (cloud + drive) while everything is fresh. Now you know it works — and how." },
+    { phase: "Monthly verify (10 minutes)", text: "Check your computer's backup status and last-run date", note: "Time Machine / File History / cloud dashboard. “Last backup: today” is what you want. Weeks ago = investigate now." },
+    { phase: "Monthly verify (10 minutes)", text: "Check your phone's backup date and photo sync", note: "Settings → your account → backup. Then open the cloud photo site and confirm this week's photos are there." },
+    { phase: "Monthly verify (10 minutes)", text: "Restore one random file as a test", note: "The step everyone skips and the one that matters most. Pick any file, restore it, open it. Two minutes." },
+    { phase: "Monthly verify (10 minutes)", text: "Connect the offline drive, update it, disconnect it", note: "Let the backup refresh, eject, and put it back in its drawer. It only protects you while it's unplugged." },
+    { phase: "Monthly verify (10 minutes)", text: "Check storage headroom on cloud and drive", note: "Backups fail quietly when storage fills up. Under ~15% free on either? Upgrade the plan or replace the drive." },
+    { phase: "Monthly verify (10 minutes)", text: "Log it — date and any issues", note: "A note in your tracker of choice. If anything looked off, fix it now, not the day a drive dies." }
+  ];
+
+  var LS_KEY = "everyday-upkeep:backup-data:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
