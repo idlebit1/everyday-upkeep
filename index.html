@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Everyday Upkeep — practical home maintenance guides</title>
-<meta name="description" content="Interactive, practical guides to the maintenance your home actually needs: how often, when, why, and how.">
+<title>Everyday Upkeep — practical maintenance guides</title>
+<meta name="description" content="Interactive, practical guides to the upkeep your life actually needs — home, kitchen, vehicle, pets, and you. How often, when, why, and how.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
@@ -17,6 +17,8 @@
     --accent: #3e7c59;
     --accent-soft: #e3efe8;
     --accent-deep: #2c5a40;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
     --line: #e9e2d8;
     --radius: 16px;
     --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
@@ -37,35 +39,72 @@
     font-family: "Fraunces", Georgia, "Times New Roman", serif; }
   .brand span { color: var(--accent); }
 
-  .hero { padding: 56px 0 28px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: center; }
+  .hero { padding: 48px 0 20px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: center; }
   h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.12; margin: 0 0 12px;
     font-family: "Fraunces", Georgia, "Times New Roman", serif; letter-spacing: -0.01em; }
   .hero p { font-size: 19px; color: var(--ink-soft); max-width: 600px; margin: 0; }
   .hero-art { width: 100%; height: auto; display: block; }
   @media (max-width: 720px) {
     .hero { grid-template-columns: 1fr; gap: 16px; }
-    .hero-art { max-width: 320px; margin: 0 auto; }
+    .hero-art { max-width: 300px; margin: 0 auto; }
   }
 
-  .guides { padding: 24px 0 60px; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  /* ---------- search + category nav ---------- */
+  .controls {
+    position: sticky; top: 0; z-index: 40;
+    background: var(--bg); padding: 16px 0 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .search {
+    width: 100%; max-width: 400px; display: block;
+    font-family: inherit; font-size: 15.5px; color: var(--ink);
+    padding: 10px 18px; border-radius: 999px;
+    border: 1.5px solid var(--line); background: var(--card);
+  }
+  .search:focus { outline: none; border-color: var(--accent); }
+  .search::placeholder { color: #a8aeb0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .chip-btn {
+    border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
+    border-radius: 999px; padding: 6px 14px; font-size: 14px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .chip-btn:hover { border-color: var(--accent); }
+  .chip-btn.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .result-line { font-size: 13.5px; color: var(--ink-soft); margin-top: 10px; }
+
+  /* ---------- category sections + cards ---------- */
+  #catalog { padding: 8px 0 40px; }
+  .cat-section { padding-top: 28px; }
+  .cat-head { display: flex; align-items: center; gap: 10px; margin: 0 0 14px;
+    font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 24px; }
+  .cat-head svg { width: 30px; height: 30px; flex-shrink: 0; }
+  .cat-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); }
   .guide {
     background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-    box-shadow: var(--shadow); padding: 22px; text-decoration: none; color: var(--ink);
-    display: block; transition: all 0.15s ease;
+    box-shadow: var(--shadow); padding: 18px; text-decoration: none; color: var(--ink);
+    display: flex; flex-direction: column; transition: all 0.15s ease;
   }
   a.guide:hover { border-color: var(--accent); transform: translateY(-2px); }
   .g-icon {
-    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    width: 46px; height: 46px; border-radius: 14px; background: var(--accent-soft);
     display: flex; align-items: center; justify-content: center;
   }
-  .g-icon svg { width: 34px; height: 34px; display: block; }
-  .guide h2 { font-size: 19px; margin: 12px 0 4px;
+  .g-icon svg { width: 30px; height: 30px; display: block; }
+  .guide h3 { font-size: 16.5px; margin: 11px 0 4px; line-height: 1.3;
     font-family: "Fraunces", Georgia, "Times New Roman", serif; }
-  .guide p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
-  .guide .meta { display: inline-block; margin-top: 12px; font-size: 12.5px; font-weight: 700;
-    background: var(--accent-soft); color: var(--accent-deep); border-radius: 999px; padding: 3px 10px; }
-  .guide.soon { opacity: 0.65; }
-  .guide.soon .meta { background: var(--bg); color: var(--ink-soft); border: 1px dashed var(--line); }
+  .guide p { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 12px; flex-grow: 1; }
+  .card-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .cadence { font-size: 12px; font-weight: 700; background: var(--gold-soft); color: #9a7117;
+    border-radius: 999px; padding: 3px 10px; }
+  .status { font-size: 12px; font-weight: 700; border-radius: 999px; padding: 3px 10px;
+    background: var(--accent-soft); color: var(--accent-deep); }
+  .guide.soon { opacity: 0.7; }
+  .guide.soon .status { background: var(--bg); color: var(--ink-soft); border: 1px dashed var(--line); }
+  .empty-state {
+    text-align: center; color: var(--ink-soft); padding: 56px 20px; font-size: 16px;
+    background: var(--card); border: 1px dashed var(--line); border-radius: var(--radius); margin-top: 28px;
+  }
 
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; font-size: 14px; color: var(--ink-soft); }
   footer a { color: var(--accent-deep); }
@@ -103,8 +142,8 @@
 <div class="wrap">
   <div class="hero">
     <div class="hero-copy">
-      <h1>The maintenance your home actually needs.</h1>
-      <p>Interactive guides for the upkeep tasks everyone knows they should do — with personalized schedules, real cost numbers, and step-by-step checklists.</p>
+      <h1>The maintenance your life actually needs.</h1>
+      <p>Interactive guides to the upkeep everyone means to do — home, kitchen, vehicle, pets, even you. Personalized schedules, real cost numbers, step-by-step checklists.</p>
     </div>
     <svg class="hero-art" viewBox="0 0 440 340" role="img" aria-label="Illustration of a tidy house with a tree, sun, and trimmed shrubs">
       <ellipse cx="220" cy="312" rx="190" ry="20" fill="#efe7d8"/>
@@ -129,70 +168,13 @@
     </svg>
   </div>
 
-  <div class="guides">
-    <a class="guide" href="gutters.html">
-      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
-        <rect x="4" y="18" width="28" height="7" rx="3.5" fill="#2c5a40"/>
-        <ellipse cx="13" cy="15" rx="6" ry="4" fill="#e0a93d" transform="rotate(-15 13 15)"/>
-        <ellipse cx="23" cy="14" rx="5" ry="3.5" fill="#c96f4a" transform="rotate(12 23 14)"/>
-        <circle cx="9" cy="30" r="2.5" fill="#7fb3c8"/>
-      </svg></div>
-      <h2>Gutter Upkeep</h2>
-      <p>How often to clean, when to schedule it, what neglect costs, and a safe step-by-step how-to.</p>
-      <span class="meta">Guide ready</span>
-    </a>
-    <div class="guide soon">
-      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
-        <rect x="10" y="7" width="20" height="22" rx="3" fill="none" stroke="#6b7376" stroke-width="2.5"/>
-        <path d="M14 9 l4 18 M19 9 l4 18 M24 9 l4 18" stroke="#3e7c59" stroke-width="2" fill="none"/>
-        <path d="M3 13 h5 M3 18 h5 M3 23 h5" stroke="#7fb3c8" stroke-width="2" stroke-linecap="round"/>
-      </svg></div>
-      <h2>HVAC Filters</h2>
-      <p>Filter sizes, MERV ratings, and the change schedule that fits your home and allergies.</p>
-      <span class="meta">Coming soon</span>
-    </div>
-    <div class="guide soon">
-      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
-        <rect x="10" y="4" width="16" height="24" rx="7" fill="#dce8ee" stroke="#6b7376" stroke-width="2"/>
-        <path d="M18 22 c2.5 3 4 4.5 0 7 c-4 -2.5 -2.5 -4 0 -7" fill="#d9663f" transform="translate(0,2)"/>
-        <path d="M14 11 h8 M14 15 h8" stroke="#9cb6c4" stroke-width="1.8" stroke-linecap="round"/>
-      </svg></div>
-      <h2>Water Heater Flush</h2>
-      <p>Why sediment kills water heaters and the once-a-year flush that prevents it.</p>
-      <span class="meta">Coming soon</span>
-    </div>
-    <div class="guide soon">
-      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
-        <circle cx="18" cy="14" r="9" fill="#fffdf8" stroke="#6b7376" stroke-width="2.5"/>
-        <circle cx="18" cy="14" r="3" fill="#d9663f"/>
-        <path d="M10 28 q8 6 16 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <path d="M12 32 q6 4 12 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
-      </svg></div>
-      <h2>Smoke &amp; CO Detectors</h2>
-      <p>Test schedules, battery swaps, and when the whole unit needs replacing.</p>
-      <span class="meta">Coming soon</span>
-    </div>
-    <div class="guide soon">
-      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
-        <rect x="6" y="6" width="24" height="24" rx="4" fill="none" stroke="#6b7376" stroke-width="2.5"/>
-        <circle cx="18" cy="18" r="7.5" fill="none" stroke="#5f93ad" stroke-width="2.5"/>
-        <path d="M15 18 q3 -3 6 0" stroke="#5f93ad" stroke-width="2" fill="none" stroke-linecap="round"/>
-      </svg></div>
-      <h2>Dryer Vent Cleaning</h2>
-      <p>The lint you can't see is a fire risk and an energy hog. Annual cleaning, demystified.</p>
-      <span class="meta">Coming soon</span>
-    </div>
-    <div class="guide soon">
-      <div class="g-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
-        <rect x="11" y="13" width="14" height="12" rx="2" fill="#6b7376"/>
-        <rect x="16" y="5" width="4" height="9" fill="#6b7376"/>
-        <path d="M6 29 q3 -4 6 0 q3 4 6 0 q3 -4 6 0 q3 4 6 0" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      </svg></div>
-      <h2>Sump Pump Check</h2>
-      <p>A five-minute test, twice a year, so it actually works the night you need it.</p>
-      <span class="meta">Coming soon</span>
-    </div>
+  <div class="controls">
+    <input class="search" id="search" type="search" placeholder="Search 40 upkeep tasks…" aria-label="Search upkeep tasks">
+    <div class="chips" id="chips" role="tablist" aria-label="Filter by category"></div>
+    <div class="result-line" id="resultLine"></div>
   </div>
+
+  <div id="catalog"></div>
 
   <div class="ledger-cta">
     <div>
@@ -217,10 +199,163 @@
   </div>
 
   <footer>
-    <p><strong>Everyday Upkeep</strong> — practical guides to the maintenance your home actually needs.</p>
+    <p><strong>Everyday Upkeep</strong> — practical guides to the upkeep your life actually needs.</p>
     <p>From the makers of <a href="https://upkeepledger.com/?utm_source=everyday-upkeep&amp;utm_medium=content&amp;utm_campaign=index&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
   </footer>
 </div>
 
+<script>
+(function () {
+  "use strict";
+
+  var CATS = [
+    { id: "home", name: "Home" },
+    { id: "kitchen", name: "Kitchen" },
+    { id: "personal", name: "Personal" },
+    { id: "vehicle", name: "Vehicle" },
+    { id: "wardrobe", name: "Wardrobe" },
+    { id: "equipment", name: "Equipment" },
+    { id: "tools", name: "Tools" },
+    { id: "yard", name: "Yard & Garden" },
+    { id: "pets", name: "Pets" },
+    { id: "other", name: "Other" }
+  ];
+
+  /* Category glyphs — flat style, theme palette */
+  var ICONS = {
+    home: '<svg viewBox="0 0 36 36" aria-hidden="true"><polygon points="5,18 18,7 31,18" fill="#3e7c59"/><rect x="9" y="18" width="18" height="11" rx="1.5" fill="#fffdf8" stroke="#d8cfbe" stroke-width="1.5"/><rect x="15" y="21" width="6" height="8" rx="1" fill="#e0a93d"/></svg>',
+    kitchen: '<svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="15" cy="18" r="10" fill="#6b7376"/><circle cx="15" cy="18" r="7" fill="#f4f6f6"/><circle cx="14" cy="17" r="3" fill="#e0a93d"/><rect x="25" y="16" width="9" height="4" rx="2" fill="#6b7376"/></svg>',
+    personal: '<svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 30 C6 22 6 12 12 9.5 C15.5 8 18 10.5 18 12.5 C18 10.5 20.5 8 24 9.5 C30 12 30 22 18 30" fill="#d9663f"/></svg>',
+    vehicle: '<svg viewBox="0 0 36 36" aria-hidden="true"><path d="M5 21 q0 -3 3 -3 l2.5 -5 q0.8 -1.6 2.6 -1.6 h9.8 q1.8 0 2.6 1.6 l2.5 5 q3 0 3 3 v4 h-26 z" fill="#5f93ad"/><rect x="12" y="14" width="5.5" height="4" rx="1" fill="#dce8ee"/><rect x="19.5" y="14" width="5.5" height="4" rx="1" fill="#dce8ee"/><circle cx="11.5" cy="26" r="3.2" fill="#33393b"/><circle cx="24.5" cy="26" r="3.2" fill="#33393b"/></svg>',
+    wardrobe: '<svg viewBox="0 0 36 36" aria-hidden="true"><path d="M13 7 l-7 5 3 4.5 3 -2 V29 h12 V14.5 l3 2 3 -4.5 -7 -5 a5 4 0 0 1 -10 0" fill="#5e9a78"/></svg>',
+    equipment: '<svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="9.5" cy="23" r="6" fill="none" stroke="#6b7376" stroke-width="2.4"/><circle cx="26.5" cy="23" r="6" fill="none" stroke="#6b7376" stroke-width="2.4"/><path d="M9.5 23 L15 12 h7 M15 12 L21 23 L26.5 23 L22 12 h3" stroke="#c96f4a" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    tools: '<svg viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="7" width="16" height="8" rx="2" fill="#6b7376"/><rect x="15" y="15" width="5" height="14" rx="2" fill="#c9a06b"/></svg>',
+    yard: '<svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 30 V16" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M18 18 Q9 18 7 9 Q16 9 18 18" fill="#5e9a78"/><path d="M18 18 Q27 18 29 9 Q20 9 18 18" fill="#3e7c59"/></svg>',
+    pets: '<svg viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="18" cy="23" rx="7" ry="6" fill="#8a6a4f"/><circle cx="10" cy="15" r="3.2" fill="#8a6a4f"/><circle cx="18" cy="12.5" r="3.2" fill="#8a6a4f"/><circle cx="26" cy="15" r="3.2" fill="#8a6a4f"/></svg>',
+    other: '<svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="9" cy="18" r="3.6" fill="#3e7c59"/><circle cx="18" cy="18" r="3.6" fill="#e0a93d"/><circle cx="27" cy="18" r="3.6" fill="#d9663f"/></svg>'
+  };
+
+  /* Pages that exist. Everything else shows "Coming soon". */
+  var GUIDES = { "check-gutters": "gutters.html" };
+
+  /* Start set: 4 presets per category, copied from Upkeep Ledger
+     (data/upkeepPresets.ts — source of truth lives in the app). */
+  var PRESETS = [
+    {"id":"check-gutters","cat":"home","title":"Check and clean gutters","desc":"Clear leaves and debris to prevent water damage.","cadence":"every 6 months","tags":["exterior","seasonal"]},
+    {"id":"replace-hvac-filter","cat":"home","title":"Replace HVAC filter","desc":"Keep airflow clean and your HVAC system efficient.","cadence":"every 3 months","tags":["air","filter","hvac"]},
+    {"id":"test-smoke-detectors","cat":"home","title":"Test smoke detectors","desc":"Press the test button on every detector.","cadence":"every 6 months","tags":["safety","fire"]},
+    {"id":"flush-water-heater","cat":"home","title":"Flush water heater","desc":"Drain sediment to extend the heater's life.","cadence":"every year","tags":["plumbing","appliance"]},
+    {"id":"sharpen-knives","cat":"kitchen","title":"Sharpen kitchen knives","desc":"Dull knives are dangerous and frustrating.","cadence":"every 3 months","tags":["knives"]},
+    {"id":"clean-dishwasher-filter","cat":"kitchen","title":"Clean dishwasher filter","desc":"Remove food debris from the bottom filter.","cadence":"every month","tags":["appliance"]},
+    {"id":"clean-refrigerator-coils","cat":"kitchen","title":"Clean refrigerator coils","desc":"Dust the coils behind or under your fridge.","cadence":"every 6 months","tags":["appliance"]},
+    {"id":"descale-coffee-maker","cat":"kitchen","title":"Descale coffee maker","desc":"Run a vinegar cycle to clear mineral buildup.","cadence":"every 3 months","tags":["coffee","appliance"]},
+    {"id":"replace-toothbrush","cat":"personal","title":"Replace toothbrush","desc":"Swap your toothbrush or brush head.","cadence":"every 3 months","tags":["dental","hygiene"]},
+    {"id":"dentist-visit","cat":"personal","title":"Dentist visit","desc":"Cleaning and checkup.","cadence":"every 6 months","tags":["dental","health"]},
+    {"id":"physical-exam","cat":"personal","title":"Annual physical exam","desc":"Yearly checkup with your primary care doctor.","cadence":"every year","tags":["health"]},
+    {"id":"replace-sunscreen","cat":"personal","title":"Replace sunscreen","desc":"Sunscreen expires — check and replace.","cadence":"every year","tags":["skin"]},
+    {"id":"oil-change","cat":"vehicle","title":"Oil change","desc":"Keep your engine lubricated and healthy.","cadence":"every 5,000 miles","tags":["engine","fluids"]},
+    {"id":"check-tire-pressure","cat":"vehicle","title":"Check tire pressure","desc":"Low pressure wastes gas and wears tires.","cadence":"every month","tags":["tires","safety"]},
+    {"id":"tire-rotation","cat":"vehicle","title":"Tire rotation","desc":"Even out tread wear across all tires.","cadence":"every 7,500 miles","tags":["tires"]},
+    {"id":"replace-wiper-blades","cat":"vehicle","title":"Replace wiper blades","desc":"Streaky wipers mean it's time.","cadence":"every 6 months","tags":["safety","visibility"]},
+    {"id":"wash-bedding","cat":"wardrobe","title":"Wash bedding","desc":"Sheets, pillowcases, and mattress protector.","cadence":"every week","tags":["bedding"]},
+    {"id":"replace-running-shoes","cat":"wardrobe","title":"Replace running shoes","desc":"Cushioning breaks down over time and miles.","cadence":"every 400 miles","tags":["shoes","fitness"]},
+    {"id":"rotate-mattress","cat":"wardrobe","title":"Rotate mattress","desc":"Flip or rotate to even out wear.","cadence":"every 3 months","tags":["bedding"]},
+    {"id":"replace-pillows","cat":"wardrobe","title":"Replace pillows","desc":"Pillows lose support over time.","cadence":"every 2 years","tags":["bedding"]},
+    {"id":"clean-bike-chain","cat":"equipment","title":"Clean and lube bike chain","desc":"Degrease, clean, and re-lube.","cadence":"every 2 weeks","tags":["bike"]},
+    {"id":"bike-tune-up","cat":"equipment","title":"Bike tune-up","desc":"Annual shop service — gears, brakes, bearings.","cadence":"every year","tags":["bike"]},
+    {"id":"replace-helmet","cat":"equipment","title":"Replace helmet","desc":"Foam degrades over time even without impact.","cadence":"every 5 years","tags":["safety","bike"]},
+    {"id":"battery-health-check-phone","cat":"equipment","title":"Phone battery health check","desc":"Settings → Battery. Plan replacement before 80%.","cadence":"every 6 months","tags":["tech"]},
+    {"id":"sharpen-mower-blade","cat":"tools","title":"Sharpen mower blade","desc":"Dull blades tear grass instead of cutting.","cadence":"every year","tags":["lawn"]},
+    {"id":"service-snow-blower","cat":"tools","title":"Service snow blower","desc":"Oil, spark plug, shear pins — before winter.","cadence":"every year","tags":["seasonal"]},
+    {"id":"sharpen-pruners","cat":"tools","title":"Sharpen pruners and loppers","desc":"Clean sap, file blades, oil pivots.","cadence":"every 6 months","tags":["garden"]},
+    {"id":"replace-cordless-batteries","cat":"tools","title":"Replace cordless tool batteries","desc":"Lithium-ion batteries lose capacity over years.","cadence":"every 4 years","tags":["power-tools"]},
+    {"id":"clean-grill","cat":"yard","title":"Clean grill","desc":"Scrape grates and empty grease trap.","cadence":"every month","tags":["outdoor"]},
+    {"id":"fertilize-lawn","cat":"yard","title":"Fertilize lawn","desc":"Feed your lawn for thicker, greener growth.","cadence":"every 3 months","tags":["lawn"]},
+    {"id":"winterize-sprinklers","cat":"yard","title":"Winterize sprinkler system","desc":"Blow out lines before the first freeze.","cadence":"every year","tags":["seasonal","irrigation"]},
+    {"id":"pressure-wash","cat":"yard","title":"Pressure wash deck or patio","desc":"Remove mold, mildew, and grime.","cadence":"every year","tags":["exterior"]},
+    {"id":"annual-vet-checkup","cat":"pets","title":"Annual vet checkup","desc":"Yearly wellness exam.","cadence":"every year","tags":["health"]},
+    {"id":"flea-tick-treatment","cat":"pets","title":"Flea and tick treatment","desc":"Topical, oral, or collar — keep on schedule.","cadence":"every month","tags":["health"]},
+    {"id":"trim-pet-nails","cat":"pets","title":"Trim pet nails","desc":"Clip or grind — listen for clicking on hard floors.","cadence":"every month","tags":["grooming"]},
+    {"id":"clean-litter-box","cat":"pets","title":"Deep clean litter box","desc":"Empty completely, scrub, and refill.","cadence":"every 2 weeks","tags":["hygiene"]},
+    {"id":"backup-data","cat":"other","title":"Back up phone and laptop","desc":"Cloud sync, Time Machine, or external drive.","cadence":"every month","tags":["tech","safety"]},
+    {"id":"review-insurance","cat":"other","title":"Annual insurance review","desc":"Home, auto, life, umbrella — check coverage and rates.","cadence":"every year","tags":["finance"]},
+    {"id":"update-emergency-kit","cat":"other","title":"Update emergency kit","desc":"Rotate water, batteries, food, first aid.","cadence":"every year","tags":["safety"]},
+    {"id":"weekly-money-review","cat":"other","title":"Weekly money review","desc":"Skim accounts, flag anomalies, plan the week.","cadence":"every week","tags":["finance","routine"]}
+  ];
+
+  var state = { cat: "all", q: "" };
+
+  function catName(id) {
+    for (var i = 0; i < CATS.length; i++) if (CATS[i].id === id) return CATS[i].name;
+    return id;
+  }
+
+  function matches(p) {
+    if (state.cat !== "all" && p.cat !== state.cat) return false;
+    if (!state.q) return true;
+    var hay = (p.title + " " + p.desc + " " + p.cadence + " " + p.tags.join(" ") + " " + catName(p.cat)).toLowerCase();
+    var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+  }
+
+  function cardHTML(p) {
+    var ready = GUIDES.hasOwnProperty(p.id);
+    var status = ready ? '<span class="status">Guide ready</span>' : '<span class="status">Coming soon</span>';
+    var inner =
+      '<div class="g-icon">' + ICONS[p.cat] + "</div>" +
+      "<h3>" + p.title + "</h3>" +
+      "<p>" + p.desc + "</p>" +
+      '<div class="card-meta"><span class="cadence">' + p.cadence + "</span>" + status + "</div>";
+    return ready
+      ? '<a class="guide" href="' + GUIDES[p.id] + '">' + inner + "</a>"
+      : '<div class="guide soon">' + inner + "</div>";
+  }
+
+  function render() {
+    var catalog = document.getElementById("catalog");
+    var html = "";
+    var shown = 0;
+    CATS.forEach(function (c) {
+      var items = PRESETS.filter(function (p) { return p.cat === c.id && matches(p); });
+      if (!items.length) return;
+      shown += items.length;
+      html += '<section class="cat-section" id="cat-' + c.id + '">' +
+        '<h2 class="cat-head">' + ICONS[c.id] + c.name + "</h2>" +
+        '<div class="cat-grid">' + items.map(cardHTML).join("") + "</div></section>";
+    });
+    if (!shown) {
+      html = '<div class="empty-state">No tasks match "' + state.q.replace(/[<>&"]/g, "") + '". Try a different search, or browse a category above.</div>';
+    }
+    catalog.innerHTML = html;
+    document.getElementById("resultLine").textContent = shown === PRESETS.length
+      ? PRESETS.length + " tasks across " + CATS.length + " categories — more guides on the way"
+      : shown + " of " + PRESETS.length + " tasks shown";
+  }
+
+  function renderChips() {
+    var chips = document.getElementById("chips");
+    var all = [{ id: "all", name: "All" }].concat(CATS);
+    chips.innerHTML = all.map(function (c) {
+      return '<button class="chip-btn' + (state.cat === c.id ? " selected" : "") + '" data-cat="' + c.id + '">' + c.name + "</button>";
+    }).join("");
+  }
+
+  document.getElementById("chips").addEventListener("click", function (e) {
+    var btn = e.target.closest(".chip-btn");
+    if (!btn) return;
+    state.cat = btn.getAttribute("data-cat");
+    renderChips();
+    render();
+  });
+
+  document.getElementById("search").addEventListener("input", function (e) {
+    state.q = e.target.value.trim();
+    render();
+  });
+
+  renderChips();
+  render();
+})();
+</script>
 </body>
 </html>

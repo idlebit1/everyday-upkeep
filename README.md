@@ -6,11 +6,18 @@ The site doubles as a subtle marketing funnel for [Upkeep Ledger](https://upkeep
 
 ## Structure
 
-- `index.html` — home page listing all guides (live + coming soon)
+- `index.html` — home page: searchable, filterable catalog of upkeep tasks grouped by category
 - `gutters.html` — Gutter Upkeep guide (the reference implementation)
 - `_template.html` — skeleton for new guides, with the shared theme and TODO markers
+- `data/upkeepPresets.ts` — verbatim copy of Upkeep Ledger's preset library (source of truth: `~/code/upkeepledger/backend/src/data/upkeepPresets.ts`)
 
 No build step, no dependencies. Open any file in a browser.
+
+## Task catalog
+
+The index inlines a curated **start set of 4 presets per category** (40 tasks across the 10 Upkeep Ledger categories: home, kitchen, personal, vehicle, wardrobe, equipment, tools, yard, pets, other), chosen from `data/upkeepPresets.ts`. Each card shows the preset's title, description, and default cadence. Cards are "Coming soon" until a guide page exists — then add the preset id → filename mapping to the `GUIDES` object in `index.html` and the card becomes a link with a "Guide ready" badge.
+
+Search matches title, description, cadence, tags, and category name; category chips filter the view; both combine. To refresh or expand the catalog, re-copy the presets file from the app and update the inlined `PRESETS` array.
 
 ## Adding a new guide
 
