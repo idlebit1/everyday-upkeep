@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly money review — UpkeepGuides.com</title>
+<meta name="description" content="A 15–20 minute weekly money check-in: skim every account, flag charges while they're still fresh and refundable, and plan the week ahead — the smallest habit that catches fraud and subscription creep early.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Weekly money review — UpkeepGuides.com">
+<meta property="og:description" content="A 15–20 minute weekly money check-in: skim every account, flag charges while they're still fresh and refundable, and plan the week ahead — the smallest habit that catches fraud and subscription creep early.">
+<meta property="og:url" content="https://upkeepguides.com/weekly-money-review.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Weekly money review — UpkeepGuides.com">
+<meta name="twitter:description" content="A 15–20 minute weekly money check-in: skim every account, flag charges while they're still fresh and refundable, and plan the week ahead — the smallest habit that catches fraud and subscription creep early.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .bar-fill.mid { background: var(--gold); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Weekly</span>
+      <h1>Weekly Money Review</h1>
+      <p class="lede">Once a week, with coffee in hand, skim every account, flag anything that looks off, and glance at the week ahead. Fifteen minutes — and fraud gets caught in days instead of statements, subscriptions stop quietly multiplying, and the vague money dread gets replaced by actually knowing.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ <em>Every week</em>, same slot</span>
+        <span class="chip">⏱️ <em>~15–20 min</em> for most people</span>
+        <span class="chip">☕ Best <em>with coffee</em></span>
+        <span class="chip">💸 Catches leaks in <em>days, not months</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a cozy desk by a window: an open laptop showing simple green account bars trending up, a steaming coffee mug, an open notebook with a pen, and a potted plant — the weekly money review in progress">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- window with morning sun -->
+      <rect x="396" y="40" width="122" height="138" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="457" y1="43" x2="457" y2="175" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="399" y1="109" x2="515" y2="109" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="486" cy="76" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="486" y1="52" x2="486" y2="58"/>
+        <line x1="508" y1="76" x2="502" y2="76"/>
+        <line x1="501" y1="60" x2="497" y2="64"/>
+      </g>
+      <rect x="384" y="32" width="146" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- desk -->
+      <rect x="56" y="288" width="448" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="80" y="306" width="15" height="84" rx="6" fill="#8a6a4f"/>
+      <rect x="466" y="306" width="15" height="84" rx="6" fill="#8a6a4f"/>
+      <!-- laptop -->
+      <rect x="168" y="128" width="224" height="146" rx="12" fill="#8a6a4f"/>
+      <rect x="180" y="140" width="200" height="122" rx="6" fill="#fffdf8"/>
+      <!-- screen: simple account dashboard -->
+      <rect x="190" y="150" width="74" height="9" rx="4.5" fill="#b9b1a3"/>
+      <circle cx="366" cy="155" r="6" fill="#5e9a78"/>
+      <!-- account bars -->
+      <rect x="192" y="176" width="176" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="192" y="176" width="138" height="14" rx="7" fill="#3e7c59"/>
+      <rect x="192" y="198" width="176" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="192" y="198" width="96" height="14" rx="7" fill="#5e9a78"/>
+      <rect x="192" y="220" width="176" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="192" y="220" width="62" height="14" rx="7" fill="#e0a93d"/>
+      <!-- one flagged row -->
+      <rect x="192" y="242" width="122" height="11" rx="5.5" fill="#fbe9e1"/>
+      <circle cx="326" cy="247" r="7" fill="#d9663f"/>
+      <line x1="326" y1="243.5" x2="326" y2="248" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="326" cy="251" r="1.3" fill="#fffdf8"/>
+      <!-- laptop base -->
+      <rect x="150" y="272" width="260" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="252" y="272" width="56" height="7" rx="3.5" fill="#8a6a4f"/>
+      <!-- coffee mug with steam -->
+      <path d="M96 244 q3 -16 10 -22" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M118 240 q-3 -18 6 -28" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="84" y="248" width="52" height="42" rx="8" fill="#c96f4a"/>
+      <rect x="84" y="248" width="52" height="9" rx="4.5" fill="#d9663f"/>
+      <path d="M136 256 q18 2 18 14 q0 12 -18 12" stroke="#c96f4a" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- notebook + pen -->
+      <rect x="408" y="240" width="106" height="50" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-6 461 265)"/>
+      <line x1="424" y1="252" x2="494" y2="244" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <line x1="426" y1="264" x2="496" y2="256" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <line x1="428" y1="276" x2="474" y2="271" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <rect x="486" y="262" width="44" height="7" rx="3.5" fill="#e0a93d" transform="rotate(24 508 265)"/>
+      <polygon points="528,283 536,289 527,291" fill="#8a6a4f"/>
+      <!-- plant on the left -->
+      <path d="M86 220 q-4 -30 -18 -42" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M86 220 q6 -28 20 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="64" cy="172" rx="10" ry="16" fill="#5e9a78" transform="rotate(-32 64 172)"/>
+      <ellipse cx="110" cy="176" rx="10" ry="16" fill="#3e7c59" transform="rotate(30 110 176)"/>
+      <ellipse cx="86" cy="160" rx="9" ry="15" fill="#5e9a78"/>
+      <path d="M68 220 h38 l-6 36 h-26 z" fill="#c96f4a"/>
+      <rect x="64" y="214" width="46" height="10" rx="5" fill="#d9663f"/>
+      <!-- phone face-down: distractions off -->
+      <rect x="316" y="312" width="64" height="14" rx="7" fill="#33393b" transform="rotate(4 348 319)"/>
+      <rect x="338" y="315" width="20" height="3" rx="1.5" fill="#6b7376" transform="rotate(4 348 319)"/>
+      <!-- rug -->
+      <ellipse cx="280" cy="394" rx="150" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Monthly statements are an autopsy: by the time you read one, the bad charge is four weeks old, the trial converted, and the overdraft already happened. A weekly skim catches the same problems while they're still small, fresh, and reversible (figures below are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="9" width="24" height="17" rx="3" fill="#7fb3c8"/>
+          <rect x="4" y="13" width="24" height="4" fill="#33393b"/>
+          <rect x="8" y="20" width="10" height="3" rx="1.5" fill="#fffdf8"/>
+          <circle cx="28" cy="25" r="7" fill="#d9663f"/>
+          <line x1="28" y1="21.5" x2="28" y2="26" stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="28" cy="29" r="1.4" fill="#fffdf8"/>
+        </svg></div>
+        <h3>Fraud caught in days, not statements</h3>
+        <p>Speed matters legally. Credit-card fraud liability is capped low, but for debit cards, U.S. federal rules tie your maximum loss to how fast you report — report within two business days and it's capped at $50; wait past 60 days after the statement and losses may not be capped at all. A weekly skim means you're always inside the good window.</p>
+        <span class="cost">Liability grows with delay</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 6 h24 l-9 12 v9 l-6 4 v-13 z" fill="#e0a93d"/>
+          <path d="M6 6 h24 l-3 4 h-18 z" fill="#d98e3b"/>
+          <circle cx="18" cy="31" r="2.6" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Subscription creep stays visible</h3>
+        <p>Free trials convert, prices tick up, and forgotten services keep billing — each one small enough to miss on a long statement. Surveys consistently suggest most people underestimate what they spend on subscriptions, often by a wide margin. A weekly pass catches the new charge the first week it appears, while a refund request is still easy.</p>
+        <span class="cost">Often $100+/yr in quiet leaks</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="22" width="28" height="9" rx="4.5" fill="#dce8ee"/>
+          <path d="M4 26 q5 0 8 -3 q4 -4 8 -2 q5 2.5 12 1" stroke="#7fb3c8" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M7 16 l5 -6 l5 4 l6 -8 l6 5" stroke="#d9663f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="29" cy="11" r="2.6" fill="#d9663f"/>
+        </svg></div>
+        <h3>Overdrafts predicted, not suffered</h3>
+        <p>Most overdrafts aren't reckless spending — they're a rent autopay landing two days before payday. Glancing at upcoming bills against your checking balance turns "fee plus awkward call to the bank" into "move $200 over on Thursday."</p>
+        <span class="cost">~$25–35 per overdraft, typical</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#e3efe8"/>
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="18" y1="18" x2="18" y2="10" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="18" y1="18" x2="23" y2="21" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M27 28 l3 3 l6 -7" stroke="#e0a93d" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Dread shrinks to a 15-minute slot</h3>
+        <p>Money anxiety mostly comes from <em>not looking</em> — the balance becomes a monster precisely because it's unobserved. A standing weekly slot replaces vague, always-on dread with one short, contained appointment where you actually know the numbers.</p>
+        <span class="cost">Avoidance compounds too</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>What's <em>your</em> weekly rhythm?</h2>
+    <p class="sub">The cadence is fixed — weekly is the whole point — but the right day, length, and emphasis depend on how your money is set up. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="accounts">
+        <div class="q-label">1. How many accounts and cards do you actively use?</div>
+        <div class="pills">
+          <button class="pill" data-v="few">1–2</button>
+          <button class="pill" data-v="some">3–5</button>
+          <button class="pill" data-v="many">6 or more</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="autopay">
+        <div class="q-label">2. How do your bills get paid?</div>
+        <div class="pills">
+          <button class="pill" data-v="auto">Almost everything is autopay</button>
+          <button class="pill" data-v="mix">A mix</button>
+          <button class="pill" data-v="manual">Mostly manual payments</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="shared">
+        <div class="q-label">3. Do you share finances with a partner?</div>
+        <div class="pills">
+          <button class="pill" data-v="solo">Just me</button>
+          <button class="pill" data-v="partner">Shared with a partner</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="stress">
+        <div class="q-label">4. Honestly — how does checking your balance feel?</div>
+        <div class="pills">
+          <button class="pill" data-v="calm">Fine, just busy</button>
+          <button class="pill" data-v="dread">A little dread</button>
+          <button class="pill" data-v="avoid">I avoid looking</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="ritualNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The review costs fifteen minutes and zero dollars — your banking apps are the only tool you need. Here's what the not-looking tends to cost instead (typical U.S. estimates, hedged on purpose):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">per review — 15–20 minutes and the apps you already have</div></div>
+        <div class="calc-stat"><div class="v bad">$25–35</div><div class="l">typical overdraft fee, each time (some banks have dropped them — many haven't)</div></div>
+        <div class="calc-stat"><div class="v bad">60 days</div><div class="l">the debit-card reporting cliff — past it, fraud losses may not be capped</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>☕ A year of weekly reviews</span><span>~13 hours, $0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏦 A couple of preventable overdrafts</span><span>$50–70</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>📺 Forgotten subscriptions left running a year</span><span>often $100–300</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:34%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💳 Debit fraud noticed months late</span><span>potentially uncapped</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The honest math: most weeks, this review finds <strong>nothing</strong> — and that's the product. You bought certainty for fifteen minutes. The weeks it does find something, it finds it while a duplicate charge is still disputable, a trial conversion is still refundable, and a fraud report still lands <strong>inside the window where federal rules cap your losses</strong>. Studies of subscription spending consistently suggest people underestimate it — the weekly skim is how you become the exception.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to run your weekly review</h2>
+    <p class="sub">Four moves: skim, flag, plan, close. The diagrams show the shape of it; the checklist below walks one full review, and your progress saves automatically so you can reuse it every week (hit reset and go again).</p>
+
+    <div class="safety">
+      <h3>📏 Ground rules — read these before your first review</h3>
+      <ul>
+        <li><strong>It's a skim, not an audit.</strong> Timebox it to 20 minutes, hard stop. Reconciling every receipt is a different (optional) hobby.</li>
+        <li><strong>No shame spiral.</strong> The point is information, not judgment. You're a scout reporting terrain, not a defendant. Whatever the takeout total is, knowing it beats not knowing it.</li>
+        <li><strong>Don't make decisions mid-review.</strong> See something to cancel, dispute, or rethink? Jot it on the list and keep skimming. Acting in the moment is how 15 minutes becomes 90.</li>
+        <li><strong>Shared finances? Same page, same time.</strong> Do it together or trade weeks — the failure mode is each of you assuming the other one is watching.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Banking + card app logins that work</span>
+      <span class="tool-chip">15 quiet minutes</span>
+      <span class="tool-chip">Notebook or notes app</span>
+      <span class="tool-chip">A recurring calendar slot</span>
+      <span class="tool-chip">Budgeting/aggregator app (optional)</span>
+      <span class="tool-chip">Coffee (strongly advised)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four ideas worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the four-pane skim: a two-by-two grid labeled balances, transactions, upcoming, and goals — the four things to glance at each week">
+          <rect x="24" y="16" width="110" height="68" rx="8" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="79" y="44" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">Balances</text>
+          <text x="79" y="62" font-size="10.5" fill="#6b7376" text-anchor="middle">checking + savings</text>
+          <rect x="146" y="16" width="110" height="68" rx="8" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="201" y="44" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">Transactions</text>
+          <text x="201" y="62" font-size="10.5" fill="#6b7376" text-anchor="middle">every card, past week</text>
+          <rect x="24" y="96" width="110" height="68" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="79" y="124" font-size="13" fill="#9a7117" font-weight="700" text-anchor="middle">Upcoming</text>
+          <text x="79" y="142" font-size="10.5" fill="#6b7376" text-anchor="middle">bills, next 7–10 days</text>
+          <rect x="146" y="96" width="110" height="68" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="201" y="124" font-size="13" fill="#9a7117" font-weight="700" text-anchor="middle">Goals</text>
+          <text x="201" y="142" font-size="10.5" fill="#6b7376" text-anchor="middle">saving for the thing</text>
+          <text x="140" y="176" font-size="11" fill="#6b7376" text-anchor="middle">four glances — green panes look back, gold panes look forward</text>
+        </svg>
+        <h4>The four-pane skim</h4>
+        <p>Everything you check fits in four panes: where balances stand, what actually got charged, what's about to hit, and how the goal is coming. Two look back, two look forward.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a transaction list with a magnifying glass over one suspicious terracotta-highlighted row among normal rows — the anomaly flag">
+          <rect x="36" y="14" width="208" height="152" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="48" y="28" width="120" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="206" y="28" width="26" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="48" y="50" width="96" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="200" y="50" width="32" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="44" y="70" width="192" height="22" rx="6" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <rect x="52" y="77" width="86" height="8" rx="4" fill="#d9663f"/>
+          <rect x="198" y="77" width="30" height="8" rx="4" fill="#d9663f"/>
+          <rect x="48" y="104" width="110" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="202" y="104" width="30" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="48" y="126" width="88" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="196" y="126" width="36" height="9" rx="4.5" fill="#e9e2d8"/>
+          <circle cx="196" cy="80" r="26" fill="none" stroke="#3e7c59" stroke-width="5"/>
+          <line x1="215" y1="99" x2="236" y2="120" stroke="#3e7c59" stroke-width="7" stroke-linecap="round"/>
+          <text x="58" y="158" font-size="11" fill="#6b7376">don't recognize it? flag it — don't chase it yet</text>
+        </svg>
+        <h4>Flag, don't chase</h4>
+        <p>Unrecognized charge, duplicate, trial conversion, price hike — mark it on your list and move on. Investigating happens after the skim, with the full 7 days before next week's review to resolve it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a weekly calendar strip from Monday to Sunday with the Friday slot highlighted in gold and marked with a coffee cup — the standing ritual slot">
+          <rect x="20" y="46" width="240" height="78" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="54" y1="46" x2="54" y2="124" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="88" y1="46" x2="88" y2="124" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="122" y1="46" x2="122" y2="124" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="156" y1="46" x2="156" y2="124" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="190" y1="46" x2="190" y2="124" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="224" y1="46" x2="224" y2="124" stroke="#e9e2d8" stroke-width="2"/>
+          <text x="37" y="38" font-size="11" fill="#6b7376" text-anchor="middle">M</text>
+          <text x="71" y="38" font-size="11" fill="#6b7376" text-anchor="middle">T</text>
+          <text x="105" y="38" font-size="11" fill="#6b7376" text-anchor="middle">W</text>
+          <text x="139" y="38" font-size="11" fill="#6b7376" text-anchor="middle">T</text>
+          <text x="173" y="38" font-size="11" fill="#6b7376" text-anchor="middle">F</text>
+          <text x="207" y="38" font-size="11" fill="#6b7376" text-anchor="middle">S</text>
+          <text x="241" y="38" font-size="11" fill="#6b7376" text-anchor="middle">S</text>
+          <rect x="160" y="50" width="26" height="70" rx="6" fill="#e0a93d"/>
+          <rect x="166" y="84" width="14" height="13" rx="3" fill="#fffdf8"/>
+          <path d="M180 87 q6 1 6 5 q0 4 -6 4" stroke="#fffdf8" stroke-width="2.5" fill="none"/>
+          <path d="M170 80 q1 -4 -1 -6 M176 80 q1 -4 -1 -6" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <text x="140" y="148" font-size="11" fill="#6b7376" text-anchor="middle">same day, same time, paired with something pleasant</text>
+          <text x="140" y="166" font-size="11" fill="#6b7376" text-anchor="middle">Friday wraps the week · Sunday preps the next one</text>
+        </svg>
+        <h4>The standing slot</h4>
+        <p>Rituals survive; intentions don't. Put a recurring 20-minute block on the calendar and chain it to something you already enjoy — Friday-morning coffee and Sunday evening are the two most popular homes for it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a funnel labeled with subscriptions pouring in at the top and small drips leaking from the spout, with one drip being caught — plugging subscription leaks">
+          <path d="M52 22 h176 l-58 70 v40 l-60 22 v-62 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <text x="140" y="46" font-size="12" fill="#33393b" font-weight="700" text-anchor="middle">every recurring charge</text>
+          <text x="140" y="64" font-size="10.5" fill="#6b7376" text-anchor="middle">streaming · apps · trials · memberships</text>
+          <g fill="#7fb3c8">
+            <ellipse cx="146" cy="162" rx="4" ry="6"/>
+            <ellipse cx="158" cy="148" rx="3.5" ry="5"/>
+          </g>
+          <ellipse cx="172" cy="164" rx="4" ry="6" fill="#d9663f"/>
+          <path d="M190 150 a14 14 0 1 1 -2 16" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M196 158 l5 5 l9 -10" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="216" y="142" font-size="11" fill="#2c5a40" font-weight="700">caught</text>
+          <text x="62" y="170" font-size="11" fill="#6b7376">one questioned per week</text>
+        </svg>
+        <h4>One leak per week</h4>
+        <p>Don't audit every subscription every week — just ask one question per review: "what's the most questionable recurring charge I saw?" Cancel or keep it consciously. Fifty-two tiny decisions a year beats one giant purge you never get around to.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Review progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Reviewed — you know exactly where your money stands this week. Reset the list and see you in seven days.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ THE REVIEW LADDER ============ -->
+  <section id="ladder">
+    <h2>The review ladder</h2>
+    <p class="sub">The weekly skim is deliberately the smallest rung — it works <em>because</em> it's small. Bigger money questions get their own, rarer slots, and the weekly habit is what feeds them good information:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Weekly — the skim (this page).</strong> 15–20 minutes: balances, transactions, upcoming bills, goal glance. Catches fraud, leaks, and overdrafts while they're cheap. No decisions, just eyes-on.</li>
+        <li><strong>Monthly — the budget look.</strong> 30–60 minutes: where did the month actually go versus the plan? Adjust category targets, act on the cancel-list your weekly reviews built, check progress on debt paydown or savings rate.</li>
+        <li><strong>Quarterly — the subscription and rate sweep.</strong> Audit every recurring charge in one sitting, check whether your savings account rate is still competitive, and review any credit-card annual fees coming due.</li>
+        <li><strong>Yearly — the deep reviews.</strong> <a href="review-insurance.html">Insurance</a>, tax withholding, investment allocation and rebalancing, beneficiaries, estate basics. Big, slow-moving questions that genuinely don't need weekly attention.</li>
+        <li><strong>The connection:</strong> each rung makes the next one easier. A weekly skimmer walks into the monthly review already knowing the story — no archaeology required. Skip the small rung and every bigger one starts with "wait, what's this charge from March?"</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Isn't this what budgeting apps do automatically?</summary>
+      <p>Apps aggregate and categorize — genuinely useful — but they don't <em>notice</em> things for you. An unrecognized charge sits in the feed whether or not you look, and alert fatigue means most notifications get swiped away. The app shortens the review (one screen instead of four logins); it doesn't replace the fifteen minutes of human attention. If you have an aggregator, great: do the same skim, faster. If you don't, your banks' own apps are completely sufficient.</p>
+    </details>
+    <details>
+      <summary>What if checking my balance stresses me out?</summary>
+      <p>That's the strongest argument for doing it weekly. Avoidance feels protective, but it converts money into a permanent background hum of dread — and the imagined number is usually worse than the real one. Start tiny: balances only, five minutes, paired with something genuinely pleasant, no judgment allowed. Most people find the anxiety drops sharply within a month, because dread thrives on vagueness and dies on contact with specifics. If money stress feels bigger than a habit can address, that's a real thing too — nonprofit credit counselors and therapists both deal with it daily.</p>
+    </details>
+    <details>
+      <summary>Weekly feels like a lot — is biweekly OK?</summary>
+      <p>Biweekly beats monthly, and monthly beats never — do the rhythm you'll actually keep. But weekly has two quiet advantages: the transaction list is short enough to actually read (a week is ~20–40 lines for most people; a month is a wall), and you stay safely inside the fast-reporting windows that matter for debit-card fraud. If weekly slips, try shrinking the review before stretching the interval — a five-minute weekly skim beats a thorough biweekly one you dread.</p>
+    </details>
+    <details>
+      <summary>What do I do when I find a charge I don't recognize?</summary>
+      <p>First, don't panic — most "mystery" charges are real purchases under a weird merchant name (search the exact name; it's often a parent company or payment processor). Check with anyone who shares the card. If it's still unrecognized: for a credit card, dispute it in the app and ask for a replacement card if it looks like fraud. For a debit card, report it to the bank <em>immediately</em> — under U.S. federal rules your liability is lowest when you report fast, and the clock matters. Either way, jot it during the skim and handle it after; that's the flag-don't-chase rule.</p>
+    </details>
+    <details>
+      <summary>Should couples do this together?</summary>
+      <p>If finances are shared, yes — at least most weeks. The classic failure is diffusion of responsibility: each partner assumes the other is watching, so nobody is. Together-mode also surfaces the "oh, I signed us up for that" conversations while they're small and friendly instead of large and loaded. Keep it to the ground rules — it's a skim, not a hearing. Many couples do a 15-minute Sunday review together and keep individual spending money out of scope entirely, which keeps the ritual light.</p>
+    </details>
+    <details>
+      <summary>Do I need to categorize every transaction?</summary>
+      <p>No — that's budgeting, and it belongs (if you want it at all) in the monthly rung of the ladder. The weekly skim asks just one question per transaction: "do I recognize this, and is the amount right?" Recognize-and-move-on takes a second or two per line. The moment you start re-filing "coffee" versus "dining out," you've left the skim and the timebox is in danger.</p>
+    </details>
+    <details>
+      <summary>What actually counts as an anomaly?</summary>
+      <p>Four things, in rough order of frequency: charges you don't recognize (often legit under odd merchant names, sometimes not), duplicates (the same merchant, same amount, hours apart — common with flaky card readers), free trials that quietly converted to paid, and price hikes on subscriptions you do want (the $9.99 that's now $12.99). The first two can be money back this week; the last two are the cancel-or-keep-consciously list.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A weekly ritual lives or dies by the reminder.</h2>
+        <p>This is the most reminder-shaped task on this whole site: same slot, every week, forever. Log it in Upkeep Ledger and it resurfaces every seven days alongside the rest of your recurring life — and the streak of checked-off weeks becomes its own reason to keep going.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=weekly-money-review&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=weekly-money-review&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your fees, banks, and numbers will vary.</p>
+    <p>General habits guidance, not financial advice — for debt, investments, or anything beyond a weekly skim, talk to a qualified professional.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { accounts: null, autopay: null, shared: null, stress: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var lo = 15, hi = 20;
+
+    if (s.accounts === "few") {
+      lo = 10; hi = 15;
+      reasons.push("With one or two accounts, the whole skim is a couple of logins — ten minutes is realistic, fifteen is generous.");
+    } else if (s.accounts === "some") {
+      reasons.push("Three to five accounts is the standard case: 15–20 minutes covers every login with time to actually read the transactions.");
+    } else {
+      lo = 20; hi = 25;
+      reasons.push("Six or more accounts means logins are the bottleneck — budget extra time, lean on an aggregator app if you have one, and consider whether any of those accounts has earned retirement.");
+    }
+
+    if (s.autopay === "auto") {
+      reasons.push("Heavy autopay means money moves without your fingerprints every week — your skim should lean hardest on the transaction list and recurring charges, because that's where drift hides.");
+    } else if (s.autopay === "manual") {
+      hi += 5;
+      reasons.push("Paying bills manually means your review doubles as bill-paying time — add a few minutes and treat the 'upcoming' pane as the main event so nothing lands late.");
+    } else {
+      reasons.push("A mix of autopay and manual means both edges matter: scan what auto-charged, then confirm what you still need to pay by hand this week.");
+    }
+
+    var day;
+    if (s.shared === "partner") {
+      day = "Sunday evening, together";
+      reasons.push("Shared finances work best with a shared review — Sunday evening is popular because it doubles as planning the week you're both about to spend.");
+    } else {
+      day = "Friday morning, with coffee";
+      reasons.push("Solo finances give you free choice of slot — Friday morning closes the week while it's fresh, and pairing it with coffee makes it a ritual instead of a chore.");
+    }
+
+    var note;
+    if (s.stress === "avoid") {
+      day = "any fixed slot — gentleness first";
+      reasons.push("If you avoid looking, the win condition for the first month is just showing up: balances and transactions only, five minutes, zero judgment. Add the planning panes once looking feels boring instead of scary.");
+      note = "<strong>Make it kind:</strong> pair the review with something genuinely pleasant — good coffee, a favorite chair, music. Vague dread is the enemy, and it loses to specifics. The numbers are almost never as bad as the not-knowing.";
+    } else if (s.stress === "dread") {
+      reasons.push("A little dread is normal and shrinks fast — most people find the anxiety fades within a few weeks once the unknown becomes a known 15-minute appointment.");
+      note = "<strong>Make it stick:</strong> put a recurring block on your calendar right now — same day, same time — and chain it to a habit you already have. A weekly task without an anchor quietly stops happening by week four.";
+    } else {
+      reasons.push("Since the numbers don't rattle you, your only enemy is the calendar — protect the slot like a meeting and the habit runs itself.");
+      note = "<strong>Make it stick:</strong> put a recurring block on your calendar right now — same day, same time — and chain it to a habit you already have. A weekly task without an anchor quietly stops happening by week four.";
+    }
+
+    return { day: day, lo: lo, hi: hi, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.accounts || !quizState.autopay || !quizState.shared || !quizState.stress) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your ritual: ~" + r.lo + "–" + r.hi + " min, " + r.day;
+    document.getElementById("resultBody").innerHTML =
+      "Same four moves every week — <strong>skim, flag, plan, close</strong>. Why this shape fits you:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("ritualNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Skim", text: "Open every account — checking, savings, and each card", note: "All of them, even the quiet ones. Fraud loves the card you never look at. An aggregator app collapses this to one screen if you have one." },
+    { phase: "Skim", text: "Check checking and savings balances against your gut number", note: "You're calibrating: is the real number near what you assumed? A big surprise in either direction is worth a note." },
+    { phase: "Skim", text: "Read every transaction since last week's review", note: "One question per line: do I recognize this, and is the amount right? A week's worth is short — this is why weekly beats monthly." },
+    { phase: "Skim", text: "Glance at progress on whatever you're saving toward", note: "Vacation, emergency fund, down payment — thirty seconds of 'is the line moving?' keeps the goal real between deposits." },
+    { phase: "Flag", text: "Mark anything you don't recognize", note: "Write down merchant, date, amount. Most turn out to be real purchases under weird processor names — but you find out after the skim, not during." },
+    { phase: "Flag", text: "Scan for duplicates and double-charges", note: "Same merchant, same amount, close together. Card readers and checkout glitches cause these more than you'd think, and they refund easily when caught fresh." },
+    { phase: "Flag", text: "Spot trial conversions and subscription price hikes", note: "A new recurring charge, or an old one that grew — both are easiest to reverse in the first week. Add them to the question list." },
+    { phase: "Flag", text: "Pick one recurring charge to cancel or consciously keep", note: "Just one per week. 'Keep' is a fine answer — the point is that it's a decision, not a default." },
+    { phase: "Plan", text: "List bills and autopays landing in the next 7–10 days", note: "Then check the total against your checking balance. This single step is the overdraft vaccine." },
+    { phase: "Plan", text: "Note this week's big expenses and any transfers needed", note: "Birthday gift? Car registration? Move money now while you're looking — and grab cash if the week needs it. Future-you executes; present-you just writes the list." },
+    { phase: "Close", text: "Jot follow-ups — don't act on them now", note: "Disputes to file, things to cancel, questions for your partner or bank. The list is the output; acting mid-review is how the timebox dies." },
+    { phase: "Close", text: "Log the review as done and close the tabs", note: "Mark it in your tracker or calendar. The streak is the habit's heartbeat — and next week's review starts from a known-good state." }
+  ];
+
+  var LS_KEY = "upkeepguides:weekly-money-review:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace sunscreen — UpkeepGuides.com</title>
+<meta name="description" content="Sunscreen expires — how to find the date, what heat in a car or beach bag does to it, the texture signs it's gone off, and why most bottles should be replaced (or used up) every year.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace sunscreen — UpkeepGuides.com">
+<meta property="og:description" content="Sunscreen expires — how to find the date, what heat in a car or beach bag does to it, the texture signs it's gone off, and why most bottles should be replaced (or used up) every year.">
+<meta property="og:url" content="https://upkeepguides.com/replace-sunscreen.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace sunscreen — UpkeepGuides.com">
+<meta name="twitter:description" content="Sunscreen expires — how to find the date, what heat in a car or beach bag does to it, the texture signs it's gone off, and why most bottles should be replaced (or used up) every year.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Yearly</span>
+      <h1>Replace Your Sunscreen</h1>
+      <p class="lede">Sunscreen is a drug with a shelf life, not a lotion that lasts forever. The FDA requires it to stay at full strength for three years — but a summer in a hot car or beach bag can use that stability up much faster, and the bottle won't tell you. Once a year, check every tube in the house, toss what's gone off, and restock.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Check &amp; replace <em>every year</em></span>
+        <span class="chip">⏳ FDA shelf life: <em>3 years</em> (stored cool)</span>
+        <span class="chip">🥃 Full-body dose: <em>~1 oz</em> — a shot glass</span>
+        <span class="chip">💸 New bottle: <em>$10–$20</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a sunny bathroom shelf with sunscreen bottles being checked: a fresh green bottle and a tube on the shelf, a hand-marked bottle by an open beach bag with a towel, and an old separated bottle dripping into a wastebasket, with sun streaming through a window">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with big sun -->
+      <rect x="60" y="44" width="128" height="136" rx="10" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="124" y1="47" x2="124" y2="177" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="63" y1="112" x2="185" y2="112" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="96" cy="82" r="19" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round">
+        <line x1="96" y1="52" x2="96" y2="59"/>
+        <line x1="126" y1="82" x2="119" y2="82"/>
+        <line x1="117" y1="61" x2="112" y2="66"/>
+        <line x1="117" y1="103" x2="112" y2="98"/>
+      </g>
+      <rect x="48" y="36" width="152" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- shelf -->
+      <rect x="236" y="196" width="280" height="13" rx="6" fill="#c9a06b"/>
+      <rect x="252" y="209" width="11" height="20" rx="4" fill="#8a6a4f"/>
+      <rect x="488" y="209" width="11" height="20" rx="4" fill="#8a6a4f"/>
+      <!-- fresh pump bottle on shelf -->
+      <rect x="262" y="118" width="42" height="78" rx="9" fill="#5e9a78"/>
+      <rect x="262" y="150" width="42" height="26" fill="#fffdf8"/>
+      <circle cx="283" cy="163" r="8" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+        <line x1="283" y1="151" x2="283" y2="154"/>
+        <line x1="283" y1="172" x2="283" y2="175"/>
+        <line x1="271" y1="163" x2="274" y2="163"/>
+        <line x1="292" y1="163" x2="295" y2="163"/>
+      </g>
+      <rect x="276" y="104" width="14" height="16" rx="3" fill="#2c5a40"/>
+      <rect x="283" y="96" width="16" height="8" rx="4" fill="#2c5a40"/>
+      <!-- squeeze tube standing on cap -->
+      <rect x="322" y="132" width="34" height="52" rx="8" fill="#7fb3c8"/>
+      <path d="M324 136 q15 -8 30 0 l-2 -10 q-13 -6 -26 0 z" fill="#dce8ee"/>
+      <rect x="330" y="184" width="18" height="12" rx="4" fill="#dce8ee"/>
+      <path d="M328 156 q5 -5 11 0 q5 5 11 0" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- small face stick -->
+      <rect x="372" y="148" width="20" height="48" rx="7" fill="#c96f4a"/>
+      <rect x="375" y="140" width="14" height="10" rx="4" fill="#d9663f"/>
+      <!-- marked bottle with handwritten month -->
+      <rect x="416" y="126" width="42" height="70" rx="9" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="429" y="112" width="16" height="16" rx="4" fill="#e0a93d"/>
+      <rect x="424" y="146" width="26" height="18" rx="4" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+      <path d="M428 155 h6 M437 151 v8 M441 151 l5 8 M446 151 l-5 8" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+      <!-- marker resting on shelf -->
+      <rect x="468" y="186" width="40" height="9" rx="4.5" fill="#33393b"/>
+      <rect x="462" y="186" width="10" height="9" rx="4" fill="#8a6a4f"/>
+      <!-- beach bag on floor -->
+      <path d="M250 308 q4 -16 18 -16 h78 q14 0 18 16 l8 70 q1 12 -11 12 h-108 q-12 0 -11 -12 z" fill="#c96f4a"/>
+      <path d="M250 308 q4 -16 18 -16 h78 q14 0 18 16 z" fill="#d9663f"/>
+      <path d="M278 296 q0 -26 29 -26 q29 0 29 26" stroke="#8a6a4f" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <!-- rolled towel peeking from bag -->
+      <rect x="268" y="270" width="22" height="34" rx="10" fill="#dce8ee"/>
+      <path d="M271 280 h16 M271 290 h16" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round"/>
+      <!-- bottle peeking from bag -->
+      <rect x="318" y="268" width="20" height="34" rx="6" fill="#5e9a78"/>
+      <rect x="323" y="260" width="10" height="10" rx="3" fill="#2c5a40"/>
+      <!-- wastebasket with the bad bottle -->
+      <path d="M448 318 h76 l-9 70 q-1 8 -9 8 h-40 q-8 0 -9 -8 z" fill="#b9b1a3"/>
+      <path d="M448 318 h76 l-2 14 h-72 z" fill="#8a6a4f"/>
+      <!-- old bottle tipped into basket -->
+      <g transform="rotate(32 488 300)">
+        <rect x="468" y="268" width="36" height="60" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <rect x="478" y="256" width="16" height="14" rx="4" fill="#b9b1a3"/>
+        <!-- separated contents showing through label window -->
+        <rect x="474" y="286" width="24" height="32" rx="4" fill="#faf0da"/>
+        <path d="M474 298 q6 4 12 0 q6 -4 12 0 v16 q0 4 -4 4 h-16 q-4 0 -4 -4 z" fill="#e0a93d" opacity="0.6"/>
+      </g>
+      <!-- drips -->
+      <path d="M462 348 q-2 6 2 8 q4 -2 2 -8 l-2 -5 z" fill="#e0a93d" opacity="0.7"/>
+      <path d="M476 360 q-2 5 1.5 7 q3.5 -2 1.5 -7 l-1.5 -4 z" fill="#e0a93d" opacity="0.7"/>
+      <!-- plant -->
+      <path d="M212 388 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M212 388 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="196" cy="352" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 196 352)"/>
+      <ellipse cx="230" cy="356" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 230 356)"/>
+      <path d="M198 388 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+      <!-- floor mat -->
+      <ellipse cx="310" cy="392" rx="110" ry="10" fill="#b9b1a3" opacity="0.5"/>
+      <!-- sparkles near fresh bottle -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="244" y1="138" x2="244" y2="150"/>
+        <line x1="238" y1="144" x2="250" y2="144"/>
+        <line x1="316" y1="102" x2="316" y2="112"/>
+        <line x1="311" y1="107" x2="321" y2="107"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Expired sunscreen doesn't look dangerous — it looks like sunscreen. That's the problem. The active filters and the emulsion holding them break down quietly, so you apply something that feels protective and isn't. Here's what's actually at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 l11 5 v8 c0 7 -5 12 -11 15 c-6 -3 -11 -8 -11 -15 v-8 z" fill="#5e9a78"/>
+          <path d="M18 4 l11 5 v8 c0 7 -5 12 -11 15 z" fill="#3e7c59"/>
+          <path d="M13 14 l5 6 l-4 2 l5 8" stroke="#e0a93d" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>SPF fades silently</h3>
+        <p>The number on the label is only guaranteed while the formula is intact. As filters degrade, an SPF 50 can quietly deliver far less — and there's no color change or warning at the moment it stops being enough.</p>
+        <span class="cost">Label says 50, bottle delivers less</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="8" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <line x1="18" y1="5" x2="18" y2="2"/>
+            <line x1="18" y1="31" x2="18" y2="34"/>
+            <line x1="5" y1="18" x2="2" y2="18"/>
+            <line x1="31" y1="18" x2="34" y2="18"/>
+            <line x1="9" y1="9" x2="7" y2="7"/>
+            <line x1="27" y1="27" x2="29" y2="29"/>
+            <line x1="27" y1="9" x2="29" y2="7"/>
+            <line x1="9" y1="27" x2="7" y2="29"/>
+          </g>
+          <path d="M14 18 q4 -5 8 0" stroke="#9a7117" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Skin-cancer risk compounds</h3>
+        <p>UV exposure is the major preventable driver of skin cancer, and roughly one in five Americans develops it in their lifetime. Sunscreen only counters that if the bottle still works — every "protected" burn is exposure you didn't mean to take.</p>
+        <span class="cost">~1 in 5 develop skin cancer</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 6 h20 v3 c0 5 -4 7 -10 9 c-6 -2 -10 -4 -10 -9 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <path d="M8 30 h20 v-3 c0 -5 -4 -7 -10 -9 c-6 2 -10 4 -10 -9" fill="none"/>
+          <path d="M8 30 h20 v-3 c0 -5 -4 -7 -10 -9 c-6 2 -10 4 -10 9 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M14 26 q4 -4 8 0" stroke="#d98e3b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <line x1="6" y1="6" x2="30" y2="6" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="6" y1="30" x2="30" y2="30" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Photoaging never takes a day off</h3>
+        <p>UVA rays drive most visible aging — wrinkles, sun spots, lost elasticity — and they're strong even on cloudy days. A degraded broad-spectrum formula often loses its UVA protection first, so the damage runs ahead of any burn.</p>
+        <span class="cost">UVA damage is cumulative</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <line x1="18" y1="8" x2="18" y2="32" stroke="#8a6a4f" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M18 8 q-12 1 -14 11 q7 -5 14 -4 z" fill="#c96f4a"/>
+          <path d="M18 8 q12 1 14 11 q-7 -5 -14 -4" fill="#d9663f"/>
+          <path d="M18 8 q-12 1 -14 11 q7 -5 14 -4 q7 -1 14 4 q-2 -10 -14 -11" fill="none"/>
+          <path d="M5 32 q4 -4 8 0 q4 4 8 0 q4 -4 8 0" stroke="#7fb3c8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>False confidence on the big days</h3>
+        <p>The expired bottle does its worst work on a beach day: you applied something, so you stay out for hours. The worst burns most people remember happened while they believed they were covered.</p>
+        <span class="cost">A burn that ruins the vacation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace it?</h2>
+    <p class="sub">The FDA requires sunscreen to stay at full strength for at least three years — stored cool. Real life stores it in cars, beach bags, and bathroom windowsills, and rarely remembers when it was bought. Answer four questions for your actual schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="storage">
+        <div class="q-label">1. Where does your main bottle live?</div>
+        <div class="pills">
+          <button class="pill" data-v="cabinet">Cool cabinet or drawer</button>
+          <button class="pill" data-v="bathroom">Bathroom shelf / windowsill</button>
+          <button class="pill" data-v="bag">Beach or pool bag</button>
+          <button class="pill" data-v="car">Car or glovebox</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="dated">
+        <div class="q-label">2. Does it have a printed expiration date?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes, I found one</button>
+          <button class="pill" data-v="no">No date anywhere</button>
+          <button class="pill" data-v="unknown">Haven't looked</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="usage">
+        <div class="q-label">3. How often do you actually use it?</div>
+        <div class="pills">
+          <button class="pill" data-v="daily">Daily (face, year-round)</button>
+          <button class="pill" data-v="summer">Summer weekends</button>
+          <button class="pill" data-v="rare">A few times a year</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="filter">
+        <div class="q-label">4. Mineral or chemical formula?</div>
+        <div class="pills">
+          <button class="pill" data-v="mineral">Mineral (zinc / titanium)</button>
+          <button class="pill" data-v="chemical">Chemical (avobenzone etc.)</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="bottleNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A bottle of sunscreen is one of the cheapest pieces of medical equipment you own. What it protects against gets expensive fast. (Typical U.S. figures for planning purposes — your prices, insurance, and skin will vary.)</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–$20</div><div class="l">a fresh bottle of broad-spectrum SPF 30+</div></div>
+        <div class="calc-stat"><div class="v bad">$150–$350</div><div class="l">a dermatologist visit plus a biopsy of one suspicious spot (estimate)</div></div>
+        <div class="calc-stat"><div class="v bad">~1 in 5</div><div class="l">Americans who develop skin cancer in their lifetime (AAD estimate)</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 Replacing every bottle in the house, yearly</span><span>$20–$50</span></div>
+          <div class="bar-track"><div class="bar-fill good" data-cost="35"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 Burn care + the vacation days a bad burn writes off</span><span>$30–$100+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" data-cost="80"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 Dermatology visit, biopsy, and a precancerous-spot treatment</span><span>$300–$1,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" data-cost="650"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚕️ Skin-cancer removal (even a routine one)</span><span>$1,000–$5,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" data-cost="2500"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">Here's the math that reframes the whole task: a proper full-body application is <strong>about one ounce — a full shot glass</strong> — reapplied every two hours outside. A standard 6–8 oz bottle holds <strong>six to eight applications</strong>; one family beach day can drain a quarter of it. If you're using sunscreen the way the label intends, a bottle should be <strong>empty long before it expires</strong>. A bottle that's lasted more than a season isn't a bargain — it's evidence you're under-applying, which silently cuts the real SPF you're getting. Replace yearly, and treat "this bottle is still full" as the finding, not the win.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to do the yearly sunscreen audit</h2>
+    <p class="sub">This is a 20-minute roundup, not a chore: gather every bottle, judge each one, toss the losers, restock smart, and label the new ones so next year's audit takes five minutes. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Worth knowing before you start</h3>
+      <ul>
+        <li><strong>Don't rely on smell alone.</strong> Sunscreen can lose effectiveness without smelling off — a normal scent doesn't prove it's still working. Date and storage history outrank your nose.</li>
+        <li><strong>Past the date (or three years), it's done — no exceptions for "looks fine."</strong> The failure you care about is invisible.</li>
+        <li><strong>Dispose of the contents, not just the bottle.</strong> Squeeze leftovers into the trash, then recycle the empty if your program takes it. Don't wash large amounts down the drain.</li>
+        <li><strong>Never decant sunscreen into unlabeled bottles.</strong> You lose the SPF, the expiry, and the ingredients — and an unmarked white lotion is a guessing game nobody wins.</li>
+        <li>Anything that spent a summer in a <strong>car, glovebox, or hot garage</strong> should be replaced regardless of its printed date — interiors can pass 130°F, far beyond what the formula was tested for.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Every sunscreen in the house</span>
+      <span class="tool-chip">A permanent marker</span>
+      <span class="tool-chip">Trash bag</span>
+      <span class="tool-chip">20 minutes</span>
+      <span class="tool-chip">Shopping list (face + body + travel)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a sunscreen tube and bottle with arrows pointing to the three places expiration codes hide: the crimped seam of a tube, the shoulder near the cap, and the bottom of a bottle">
+          <rect x="52" y="44" width="44" height="88" rx="10" fill="#7fb3c8"/>
+          <path d="M54 128 h40 l-3 14 q-1 6 -7 6 h-20 q-6 0 -7 -6 z" fill="#dce8ee"/>
+          <rect x="62" y="30" width="24" height="16" rx="5" fill="#dce8ee"/>
+          <line x1="56" y1="142" x2="92" y2="142" stroke="#33393b" stroke-width="2.5"/>
+          <path d="M104 150 q22 6 38 0" stroke="#d98e3b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <polygon points="102,144 96,152 108,154" fill="#d98e3b"/>
+          <text x="146" y="156" font-size="12" fill="#6b7376" font-weight="700">crimp seam</text>
+          <rect x="186" y="56" width="48" height="92" rx="10" fill="#5e9a78"/>
+          <rect x="186" y="84" width="48" height="28" fill="#fffdf8"/>
+          <rect x="198" y="40" width="24" height="18" rx="5" fill="#2c5a40"/>
+          <path d="M236 64 q14 -10 12 -26" stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <polygon points="240,68 232,60 246,56" fill="#e0a93d"/>
+          <text x="226" y="28" font-size="12" fill="#6b7376" font-weight="700">shoulder</text>
+          <ellipse cx="210" cy="152" rx="26" ry="7" fill="#3e7c59"/>
+          <path d="M210 164 q-30 8 -56 2" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <polygon points="206,168 214,160 200,158" fill="#c96f4a" transform="rotate(180 207 163)"/>
+          <text x="96" y="174" font-size="12" fill="#6b7376" font-weight="700">bottom stamp</text>
+          <text x="40" y="20" font-size="12" fill="#6b7376">EXP codes hide in 3 places — check all of them</text>
+        </svg>
+        <h4>Where the expiry code hides</h4>
+        <p>Look at the crimped seam of tubes, the shoulder near the cap, and the stamped bottom of bottles. Many brands print it only on the outer box — the one you threw away at the store door.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the shot-glass dosing rule: a one-ounce shot glass of sunscreen next to a person figure, with two fingers of sunscreen marked for the face">
+          <path d="M52 70 l10 64 q1 6 8 6 h20 q7 0 8 -6 l10 -64 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <path d="M58 80 l7 50 q1 5 6 5 h18 q5 0 6 -5 l7 -50 z" fill="#faf0da"/>
+          <text x="50" y="160" font-size="13" fill="#6b7376" font-weight="700">1 oz per body</text>
+          <circle cx="186" cy="40" r="13" fill="#c9a06b"/>
+          <rect x="176" y="56" width="20" height="44" rx="9" fill="#3e7c59"/>
+          <rect x="168" y="58" width="8" height="34" rx="4" fill="#5e9a78" transform="rotate(12 172 75)"/>
+          <rect x="196" y="58" width="8" height="34" rx="4" fill="#5e9a78" transform="rotate(-12 200 75)"/>
+          <rect x="177" y="100" width="8" height="36" rx="4" fill="#2c5a40"/>
+          <rect x="188" y="100" width="8" height="36" rx="4" fill="#2c5a40"/>
+          <path d="M218 36 q14 0 20 10" stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="232" y="50" width="9" height="30" rx="4.5" fill="#e0a93d"/>
+          <rect x="244" y="50" width="9" height="30" rx="4.5" fill="#e0a93d"/>
+          <text x="216" y="98" font-size="12" fill="#6b7376" font-weight="700">2 fingers</text>
+          <text x="218" y="112" font-size="12" fill="#6b7376">for the face</text>
+          <text x="150" y="166" font-size="12" fill="#6b7376">reapply every ~2 hours outside</text>
+        </svg>
+        <h4>The shot-glass rule</h4>
+        <p>A full-body application is about one ounce — a shot glass — and the face alone takes two finger-lengths. At that honest dose, a bottle lasts weeks of real use, not years.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing storage heat zones: a car in the sun with a high thermometer marked with an X, versus a cool indoor cabinet with a low thermometer and a check mark">
+          <circle cx="36" cy="28" r="12" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+            <line x1="36" y1="9" x2="36" y2="13"/>
+            <line x1="55" y1="28" x2="51" y2="28"/>
+            <line x1="49" y1="15" x2="46" y2="18"/>
+          </g>
+          <path d="M22 96 q6 -22 26 -22 h28 q20 0 26 22 z" fill="#7fb3c8"/>
+          <rect x="14" y="94" width="96" height="26" rx="12" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <circle cx="36" cy="122" r="10" fill="#33393b"/>
+          <circle cx="90" cy="122" r="10" fill="#33393b"/>
+          <rect x="118" y="44" width="10" height="58" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="123" cy="108" r="9" fill="#d9663f"/>
+          <rect x="120" y="52" width="6" height="52" rx="3" fill="#d9663f"/>
+          <g stroke="#d9663f" stroke-width="4.5" stroke-linecap="round">
+            <line x1="42" y1="146" x2="68" y2="168"/>
+            <line x1="68" y1="146" x2="42" y2="168"/>
+          </g>
+          <text x="78" y="164" font-size="12" fill="#d9663f" font-weight="700">130°F+</text>
+          <line x1="150" y1="16" x2="150" y2="166" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="5 6"/>
+          <rect x="170" y="40" width="86" height="80" rx="8" fill="#c9a06b"/>
+          <rect x="176" y="46" width="36" height="68" rx="4" fill="#8a6a4f"/>
+          <rect x="216" y="46" width="34" height="68" rx="4" fill="#8a6a4f"/>
+          <circle cx="208" cy="80" r="3" fill="#e0a93d"/>
+          <circle cx="222" cy="80" r="3" fill="#e0a93d"/>
+          <rect x="226" y="56" width="14" height="24" rx="4" fill="#5e9a78"/>
+          <rect x="258" y="58" width="9" height="44" rx="4.5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="262.5" cy="108" r="8" fill="#3e7c59"/>
+          <rect x="260" y="84" width="5" height="22" rx="2.5" fill="#3e7c59"/>
+          <path d="M188 146 l9 9 l17 -17" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="222" y="160" font-size="12" fill="#2c5a40" font-weight="700">cool &amp; dark</text>
+        </svg>
+        <h4>Heat is the real expiration clock</h4>
+        <p>The three-year shelf life assumes cool, dark storage. A parked car can pass 130°F inside; a beach bag bakes for hours. Heat-soaked bottles can degrade in a single season — replace them on a season clock, not a year clock.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the back-of-hand texture test: a smooth even dollop of sunscreen marked good, versus a separated dollop with watery rings and grainy clumps marked replace">
+          <ellipse cx="70" cy="80" rx="42" ry="26" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+          <ellipse cx="70" cy="78" rx="24" ry="13" fill="#faf0da"/>
+          <path d="M54 78 q8 -8 32 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <path d="M44 132 l9 9 l17 -17" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="78" y="146" font-size="13" fill="#2c5a40" font-weight="700">smooth &amp; even</text>
+          <line x1="140" y1="16" x2="140" y2="166" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="5 6"/>
+          <ellipse cx="210" cy="80" rx="42" ry="26" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+          <ellipse cx="202" cy="78" rx="16" ry="9" fill="#e0a93d" opacity="0.55"/>
+          <ellipse cx="226" cy="84" rx="14" ry="8" fill="#dce8ee"/>
+          <circle cx="196" cy="88" r="2.5" fill="#d98e3b"/>
+          <circle cx="216" cy="72" r="2.5" fill="#d98e3b"/>
+          <circle cx="228" cy="92" r="2" fill="#d98e3b"/>
+          <circle cx="206" cy="68" r="2" fill="#d98e3b"/>
+          <g stroke="#d9663f" stroke-width="5" stroke-linecap="round">
+            <line x1="186" y1="124" x2="212" y2="148"/>
+            <line x1="212" y1="124" x2="186" y2="148"/>
+          </g>
+          <text x="220" y="142" font-size="13" fill="#d9663f" font-weight="700">separated,</text>
+          <text x="220" y="156" font-size="13" fill="#d9663f" font-weight="700">watery, grainy</text>
+        </svg>
+        <h4>The back-of-hand test</h4>
+        <p>Squeeze a dab onto your hand. Watery liquid running ahead of the cream, grainy or sandy clumps, yellowing, or a changed smell all mean the emulsion has broken — toss it. (A clean look doesn't prove it's good; this test only catches the obvious failures.)</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Audit progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Audit done — every bottle in the house is dated, working, and where it should be. Same roundup next spring.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ BUYING THE REPLACEMENT ============ -->
+  <section id="buying">
+    <h2>Buying the replacement: what actually matters</h2>
+    <p class="sub">Sunscreen marketing is loud; the things that matter fit on one hand. When you restock, check for these and ignore most of the rest:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>"Broad spectrum" on the label.</strong> That's the regulated term meaning it covers UVA (aging, cancer risk) as well as UVB (burning). SPF alone only describes UVB.</li>
+        <li><strong>SPF 30 or higher.</strong> Dermatology groups generally recommend 30+ for real-world use — it allows for the fact that almost everyone under-applies. Past ~50 the gains get thin; consistency matters more than the number.</li>
+        <li><strong>Water resistance — 40 or 80 minutes</strong> — if you'll swim or sweat. No sunscreen is waterproof; those two numbers are the only claims allowed, and both still mean reapply after toweling off.</li>
+        <li><strong>A formula you'll actually wear.</strong> The best sunscreen is the one that goes on every day — a light face formula you like beats a heavy "perfect" one that stays in the drawer.</li>
+        <li><strong>Enough quantity.</strong> Buy a real body bottle plus a face tube plus a travel size. One sad 3 oz tube "for the family" guarantees under-application by July.</li>
+        <li><strong>Check the date at the store.</strong> Clearance bins and end-of-summer sales move old stock — a discounted bottle that expires by next June is no bargain.</li>
+        <li><strong>Mineral vs chemical is preference, not correctness.</strong> Zinc/titanium formulas are more heat-stable and gentler for sensitive skin; modern chemical formulas feel lighter and vanish on darker skin tones. Both work when fresh and applied generously.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>My bottle has no expiration date — how long is it good?</summary>
+      <p>U.S. rules require sunscreen to stay at full strength for at least three years; brands that skip the printed date are relying on that default. So an undated bottle is presumed good for about three years <em>from purchase</em> — which is the catch, because almost nobody remembers when they bought it. That's why the practical move is to write the purchase month on every new bottle with a marker, and treat any undated bottle of unknown age as expired.</p>
+    </details>
+    <details>
+      <summary>Does mineral sunscreen last longer than chemical?</summary>
+      <p>Somewhat, on the filter side. Zinc oxide and titanium dioxide are stable minerals that don't break down the way some chemical filters do — avobenzone, the main UVA filter in many chemical formulas, is known to degrade with heat and light unless stabilized. But the lotion itself is an emulsion of water, oils, and the filters, and that emulsion breaks down in any formula: separation, graininess, and uneven filter distribution mean unreliable coverage even if the zinc is technically fine. Same dates, same yearly audit, either way.</p>
+    </details>
+    <details>
+      <summary>Is sunscreen from last summer fine?</summary>
+      <p>Usually yes — if it's within its date and spent the year somewhere cool and dark, not in a car or beach bag. Check the date, do the back-of-hand texture test, and use it with confidence. The honest follow-up question: if a bottle survived a whole summer, were you applying enough? At a shot glass per full-body coat, most households should be finishing bottles, not storing them.</p>
+    </details>
+    <details>
+      <summary>What does heat actually do to sunscreen?</summary>
+      <p>Two things. First, heat accelerates the chemical breakdown of some UV filters, so the real SPF drifts below the label. Second — and often sooner — it destabilizes the emulsion: the water and oil phases separate, the texture turns watery or grainy, and the filters stop being evenly distributed, so even a "still potent" formula goes on patchy. The three-year shelf life was established under reasonable storage conditions; a 130°F glovebox is not one of them. Treat any heat-soaked bottle as a one-season item.</p>
+    </details>
+    <details>
+      <summary>Can I use expired sunscreen in a pinch?</summary>
+      <p>If the choice is recently-expired sunscreen or nothing at all on an unavoidable sun day, most experts would say apply it — partial protection beats none. But don't let it change your behavior: assume it's underperforming, reapply often, and lean on shade, a hat, and clothing as the real protection. Then replace the bottle the same day. What you shouldn't do is plan around expired sunscreen, because you can't know how much protection is left.</p>
+    </details>
+    <details>
+      <summary>Does SPF moisturizer or makeup expire too?</summary>
+      <p>Yes — same rules. In the U.S., anything making an SPF claim is regulated as an over-the-counter drug, so it carries the same stability requirements and the same three-year presumption when undated. SPF moisturizers and tinted products often sit on shelves longer than beach sunscreen because the daily dab makes them last; check them in the same yearly audit, and remember that the thin layer most people apply delivers only a fraction of the labeled SPF anyway.</p>
+    </details>
+    <details>
+      <summary>Sprays, sticks, lotions — does the format change the shelf life?</summary>
+      <p>The dates work the same, but the failure modes differ. Lotions show separation clearly, which makes them easiest to judge. Sticks are mostly waxes — heat melts and re-hardens them, which can leave the filters unevenly distributed even though they look normal. Sprays hide their contents entirely, so the printed date and storage history are all you have — and a clogged or sputtering nozzle is a practical reason to replace one regardless. Whatever the format, the marker-on-the-bottle habit is your best evidence next year.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A year is a long time to remember one bottle.</h2>
+        <p>Sunscreen fails silently — no smell, no leak, no warning, just less protection on the day you need it most. Upkeep Ledger remembers for you: log this year's audit and it resurfaces next spring, before beach season, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-sunscreen&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-sunscreen&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. estimates for planning purposes. This page is general guidance, not medical advice — for skin concerns, suspicious spots, or sun-sensitivity questions, talk to a dermatologist or your doctor.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { storage: null, dated: null, usage: null, filter: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months; // replacement / hard-check interval
+    var label;
+
+    // Storage sets the baseline clock
+    if (s.storage === "car") {
+      months = 4;
+      reasons.push("A car or glovebox is the harshest place a sunscreen can live — interiors can pass 130°F, and heat breaks down both the UV filters and the emulsion far faster than the 3-year shelf life assumes. Replace that bottle every season, and consider moving it to a bag you carry instead.");
+    } else if (s.storage === "bag") {
+      months = 6;
+      reasons.push("A beach or pool bag bakes in direct sun for hours at a time. Bottles that summer in a bag should be replaced at the end of each season rather than trusted into next year.");
+    } else if (s.storage === "bathroom") {
+      months = 12;
+      reasons.push("A bathroom shelf is decent storage, but humidity and a sunny windowsill add up. A yearly check-and-replace keeps you comfortably inside the formula's real-world stability.");
+    } else {
+      months = 12;
+      reasons.push("A cool cabinet or drawer is exactly the storage the 3-year shelf life was tested under — your bottles age as slowly as sunscreen can. A yearly audit is still worth it, mostly to confirm dates and restock.");
+    }
+
+    // Printed date
+    if (s.dated === "yes") {
+      reasons.push("You have a printed expiration date — that's your hard stop. The yearly audit just confirms you're inside it and that storage hasn't shortened the real clock.");
+    } else if (s.dated === "no") {
+      reasons.push("No printed date means the FDA's 3-years-from-purchase presumption applies — and since few people remember the purchase, an undated bottle of unknown age should be treated as expired. Mark the month on every new bottle so this never happens again.");
+    } else {
+      reasons.push("Go look — the date hides on the tube's crimp seam, the bottle's shoulder, or the stamped bottom. If there isn't one anywhere, treat any bottle of unknown age as expired and date the replacements yourself.");
+    }
+
+    // Usage
+    if (s.usage === "daily") {
+      reasons.push("Daily use means you should be emptying bottles long before any expiry — a face tube at the proper two-finger dose lasts weeks, not years. For you, 'replace' mostly means 'restock,' which is the healthiest version of this task.");
+    } else if (s.usage === "summer") {
+      reasons.push("Summer-weekend use is the classic trap: the bottle survives the season, hibernates somewhere warm, and gets trusted again next June. A yearly spring check is built for exactly this pattern.");
+      if (months > 12) months = 12;
+    } else {
+      reasons.push("A few uses a year means your bottles will always outlive your memory of buying them. Your yearly audit leans on the marker date and the 3-year hard stop more than anyone's — and consider smaller bottles so less goes to waste.");
+    }
+
+    // Filter type
+    if (s.filter === "mineral") {
+      reasons.push("Zinc and titanium filters are heat-stable minerals, which buys you some margin — but the lotion around them still separates and goes grainy, and a broken emulsion means patchy, unreliable coverage. The texture test matters most for you.");
+    } else if (s.filter === "chemical") {
+      reasons.push("Chemical filters — especially avobenzone, the main UVA filter — are the most heat- and light-sensitive part of the formula. Respect the printed date strictly, and be quickest to toss anything that's been hot.");
+    } else {
+      reasons.push("Check the active-ingredients box: zinc oxide / titanium dioxide means mineral (more heat-stable); avobenzone, octocrylene, and friends mean chemical (stricter about heat and dates). Either way, the schedule above holds.");
+    }
+
+    if (months <= 4) label = "Replace every season";
+    else if (months <= 6) label = "Replace twice a year";
+    else label = "Check & replace every year";
+
+    var note;
+    if (s.storage === "car" || s.storage === "bag") {
+      note = "<strong>Marker habit:</strong> when you buy the replacement, write the month and year on the bottle in permanent marker — and give the hot-storage bottle a different home if you can. A small bottle you carry beats a big one that cooks.";
+    } else {
+      note = "<strong>Marker habit:</strong> write the month and year on every new bottle in permanent marker the day you buy it. Next year's audit becomes a five-minute glance instead of a guessing game.";
+    }
+
+    return { label: label, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.storage || !quizState.dated || !quizState.usage || !quizState.filter) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.label.toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Hard stop either way: the <strong>printed expiration date</strong>, or <strong>3 years from purchase</strong> if there isn't one. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("bottleNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Cost bars ================= */
+  var MAX_COST = 2500;
+  document.querySelectorAll(".bar-fill[data-cost]").forEach(function (bar) {
+    var cost = parseInt(bar.getAttribute("data-cost"), 10);
+    bar.style.width = Math.min(100, (cost / MAX_COST) * 100) + "%";
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Round them up", text: "Gather every sunscreen in the house into one spot", note: "Bathroom shelf, shower caddy, medicine cabinet, beach bag, golf bag, backpacks, the stroller pocket, your desk drawer — all of it." },
+    { phase: "Round them up", text: "Don't forget the car", note: "Glovebox, door pockets, trunk bin. Anything that lived there through a summer goes straight to the toss pile, date or no date." },
+    { phase: "Inspect each bottle", text: "Hunt for the printed expiration date", note: "Check the crimp seam of tubes, the shoulder near the cap, and the stamped bottom. Past the date — or no date and you can't place the purchase within 3 years — it's done." },
+    { phase: "Inspect each bottle", text: "Do the back-of-hand texture test", note: "Squeeze a dab: watery liquid running ahead of the cream, grainy clumps, yellowing, or a changed smell means the emulsion broke. Toss it." },
+    { phase: "Inspect each bottle", text: "Judge the storage history, not just the bottle", note: "A pristine-looking bottle that spent July in a hot bag is still suspect. When the history is bad and the bottle is cheap, the tie goes to the trash." },
+    { phase: "Toss & restock", text: "Dispose of the expired ones properly", note: "Squeeze contents into the trash, then recycle the empty bottle if your program accepts it. Don't pour bulk sunscreen down the drain." },
+    { phase: "Toss & restock", text: "Restock: body bottle + face formula + travel size", note: "Broad spectrum, SPF 30+, water resistant if you swim — and a face formula you'll actually wear daily. Check dates at the store before you pay." },
+    { phase: "Toss & restock", text: "Buy enough for honest application", note: "A shot glass (1 oz) per full-body coat, reapplied every 2 hours — a family beach day can use a quarter bottle. One tube won't cover a household's summer." },
+    { phase: "Set up next year", text: "Write the purchase month on every new bottle", note: "Permanent marker on the cap or base: '6/2026'. This single habit is what makes every future audit trivial." },
+    { phase: "Set up next year", text: "Give each bottle a cool, dark home", note: "Cabinet or drawer beats sunny windowsill. The carry-bottle goes in a bag you bring inside, not a car that bakes." },
+    { phase: "Set up next year", text: "Rehome the 'car bottle' habit", note: "If you want sun protection in the car, keep a small tube you replace each season — or a hat and sleeves, which never expire." },
+    { phase: "Set up next year", text: "Log the audit and set next year's reminder", note: "Early spring is the natural slot — you'll restock right before the season instead of discovering dead bottles at the beach." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-sunscreen:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

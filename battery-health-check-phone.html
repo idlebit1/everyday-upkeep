@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone battery health check — UpkeepGuides.com</title>
+<meta name="description" content="How to check your phone's battery health in two minutes, what the percentage actually means, why 80% is the replacement line, and how a ~$69–119 battery beats a panic phone upgrade.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Phone battery health check — UpkeepGuides.com">
+<meta property="og:description" content="How to check your phone's battery health in two minutes, what the percentage actually means, why 80% is the replacement line, and how a ~$69–119 battery beats a panic phone upgrade.">
+<meta property="og:url" content="https://upkeepguides.com/battery-health-check-phone.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phone battery health check — UpkeepGuides.com">
+<meta name="twitter:description" content="How to check your phone's battery health in two minutes, what the percentage actually means, why 80% is the replacement line, and how a ~$69–119 battery beats a panic phone upgrade.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Twice a year</span>
+      <h1>Phone Battery Health Check</h1>
+      <p class="lede">Your phone's battery is a wear item with a gauge built right into Settings — and almost nobody looks at it until the phone starts dying at 2pm. Check the number twice a year and you get to plan a cheap battery swap on your schedule, instead of panic-buying a new phone on the battery's.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Check <em>every 6 months</em></span>
+        <span class="chip">⏱️ Takes <em>~2 minutes</em></span>
+        <span class="chip">🔋 Plan replacement near <em>80%</em></span>
+        <span class="chip">💸 Battery <em>~$69–119</em> vs new phone <em>$800+</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a large phone on a desk displaying a battery health screen with a gauge arc reading 87 percent maximum capacity, next to a charging cable, a coffee mug, a notebook for logging the number, and a plant by a sunny window">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="406" y="44" width="110" height="124" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="461" y1="47" x2="461" y2="165" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="409" y1="106" x2="513" y2="106" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="486" cy="78" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="486" y1="54" x2="486" y2="60"/>
+        <line x1="508" y1="78" x2="502" y2="78"/>
+        <line x1="502" y1="62" x2="498" y2="66"/>
+      </g>
+      <rect x="394" y="36" width="134" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- desk -->
+      <rect x="36" y="336" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="60" y="352" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <rect x="486" y="352" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <!-- big phone with battery health screen -->
+      <rect x="170" y="58" width="180" height="290" rx="26" fill="#2c5a40"/>
+      <rect x="182" y="74" width="156" height="258" rx="14" fill="#fffdf8"/>
+      <rect x="232" y="64" width="56" height="8" rx="4" fill="#2c5a40"/>
+      <!-- status bar -->
+      <rect x="194" y="86" width="34" height="6" rx="3" fill="#b9b1a3"/>
+      <rect x="298" y="86" width="30" height="9" rx="3" fill="#e3efe8" stroke="#b9b1a3" stroke-width="1.5"/>
+      <rect x="300" y="88" width="20" height="5" rx="2" fill="#3e7c59"/>
+      <!-- screen title -->
+      <rect x="206" y="106" width="108" height="9" rx="4.5" fill="#b9b1a3"/>
+      <!-- gauge: background arc + filled arc + needle -->
+      <path d="M204 226 A56 56 0 0 1 316 226" stroke="#dce8ee" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <path d="M204 226 A56 56 0 0 1 296 182" stroke="#3e7c59" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <circle cx="260" cy="226" r="8" fill="#2c5a40"/>
+      <line x1="260" y1="226" x2="294" y2="186" stroke="#2c5a40" stroke-width="5" stroke-linecap="round"/>
+      <text x="260" y="254" font-size="30" font-weight="800" fill="#2c5a40" text-anchor="middle" font-family="Georgia, serif">87%</text>
+      <text x="260" y="272" font-size="11" fill="#6b7376" text-anchor="middle">maximum capacity</text>
+      <!-- screen rows -->
+      <rect x="198" y="286" width="124" height="14" rx="7" fill="#e3efe8"/>
+      <circle cx="208" cy="293" r="4" fill="#3e7c59"/>
+      <rect x="218" y="290" width="64" height="6" rx="3" fill="#5e9a78"/>
+      <rect x="198" y="308" width="124" height="14" rx="7" fill="#faf0da"/>
+      <circle cx="208" cy="315" r="4" fill="#e0a93d"/>
+      <rect x="218" y="312" width="52" height="6" rx="3" fill="#d98e3b"/>
+      <!-- charging cable curling off the desk -->
+      <path d="M350 318 q44 -8 58 18 q10 20 -16 24" stroke="#b9b1a3" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <rect x="344" y="310" width="18" height="12" rx="4" fill="#8a6a4f"/>
+      <!-- notebook with pencil: where the number gets logged -->
+      <rect x="70" y="296" width="84" height="44" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-4 112 318)"/>
+      <line x1="84" y1="308" x2="138" y2="304" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <line x1="85" y1="320" x2="128" y2="317" stroke="#dce8ee" stroke-width="3" stroke-linecap="round"/>
+      <rect x="118" y="324" width="44" height="6" rx="3" fill="#e0a93d" transform="rotate(-18 140 327)"/>
+      <polygon points="160,313 170,309 165,319" fill="#8a6a4f"/>
+      <!-- mug -->
+      <rect x="396" y="296" width="40" height="42" rx="7" fill="#c96f4a"/>
+      <path d="M436 306 q16 4 0 22" stroke="#c96f4a" stroke-width="7" fill="none"/>
+      <path d="M408 284 q3 -8 0 -14 M422 284 q3 -8 0 -14" stroke="#b9b1a3" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- plant -->
+      <path d="M514 388 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M514 388 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="498" cy="352" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 498 352)"/>
+      <ellipse cx="532" cy="356" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 532 356)"/>
+      <path d="M500 388 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+      <!-- floor shadow -->
+      <ellipse cx="280" cy="392" rx="120" ry="10" fill="#b9b1a3" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Lithium-ion batteries age chemically from the day they're made — every charge cycle, every hot afternoon, and plain calendar time all chip away at how much charge they can hold. The phone hides it well until it suddenly can't. Here's what a two-minute check protects you from:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="5" width="14" height="26" rx="3.5" fill="#3e7c59"/>
+          <rect x="14" y="8" width="8" height="18" rx="1.5" fill="#e3efe8"/>
+          <path d="M19.5 11 l-3.5 6 h3 l-2.5 6 l6 -7.5 h-3.5 z" fill="#d9663f"/>
+          <circle cx="18" cy="28.5" r="1.4" fill="#e3efe8"/>
+          <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round">
+            <line x1="5" y1="10" x2="8" y2="12"/>
+            <line x1="4" y1="17" x2="8" y2="17"/>
+            <line x1="5" y1="24" x2="8" y2="22"/>
+          </g>
+        </svg></div>
+        <h3>Surprise shutdowns</h3>
+        <p>An aged battery can't deliver peak power on demand — so the phone dies at 30%, or the moment you open the camera in the cold. It always happens away from a charger; that's when you're using it.</p>
+        <span class="cost">Dead phone, worst moment</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="19" r="12" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <line x1="18" y1="19" x2="18" y2="11" stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="18" y1="19" x2="24" y2="22" stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="18" cy="19" r="2" fill="#2c5a40"/>
+          <path d="M27 6 q5 1 4 6" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <polygon points="29,13 34,12 31,8" fill="#d9663f"/>
+        </svg></div>
+        <h3>Throttled performance</h3>
+        <p>iPhones that have shut down unexpectedly can enable performance management — quietly slowing the processor to keep the phone alive. The "this phone got slow" feeling is often a tired battery, not a tired phone.</p>
+        <span class="cost">Slow phone = battery, often</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="13" width="20" height="12" rx="3" fill="#5e9a78"/>
+          <rect x="26" y="16.5" width="3.5" height="5" rx="1.5" fill="#5e9a78"/>
+          <rect x="9" y="16" width="9" height="6" rx="2" fill="#e3efe8"/>
+          <circle cx="27" cy="11" r="8" fill="#e0a93d"/>
+          <text x="27" y="15" font-size="11" font-weight="700" fill="#fffdf8" text-anchor="middle">$</text>
+        </svg></div>
+        <h3>The panic upgrade</h3>
+        <p>"The battery's dying" is the #1 reason a working phone gets replaced. A battery service typically runs ~$69–119 at Apple (often less at independent shops); a new phone runs $800+. Same fix, ten times the price.</p>
+        <span class="cost">$69–119 vs $800+ phone</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="12" width="20" height="14" rx="5" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.2"/>
+          <path d="M10 19 q8 -7 16 0" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M18 4 v4 M14.5 6 l3.5 -3 l3.5 3" stroke="#c96f4a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="13" y1="30" x2="23" y2="30" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Swollen batteries</h3>
+        <p>A failing cell can build up gas and bulge — pushing the screen or back panel away from the frame. A swollen battery is a fire hazard: stop charging it and get it to a repair shop. The health check is when most people catch it early.</p>
+        <span class="cost">Fire risk — act immediately</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check it?</h2>
+    <p class="sub">Twice a year is the right default — batteries age slowly enough that six months between readings shows you a real trend. But an older phone, hard charging habits, or early symptoms shorten the interval. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">1. How old is the phone?</div>
+        <div class="pills">
+          <button class="pill" data-v="new">Under 1 year</button>
+          <button class="pill" data-v="mid">1–2 years</button>
+          <button class="pill" data-v="mature">2–4 years</button>
+          <button class="pill" data-v="old">4+ years</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="charging">
+        <div class="q-label">2. How does it usually charge?</div>
+        <div class="pills">
+          <button class="pill" data-v="limit">Optimized / ~80% charge limit on</button>
+          <button class="pill" data-v="overnight">Overnight to 100%, every night</button>
+          <button class="pill" data-v="topoff">Constant top-offs, always on a charger</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="heat">
+        <div class="q-label">3. How much heat does it see?</div>
+        <div class="pills">
+          <button class="pill" data-v="cool">Rarely warm</button>
+          <button class="pill" data-v="some">Sometimes — car mounts, sunny pockets</button>
+          <button class="pill" data-v="hot">Often hot — dashboard, outdoor work, gaming while charging</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="symptoms">
+        <div class="q-label">4. Any symptoms right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">None — battery feels fine</button>
+          <button class="pill" data-v="drain">Dies noticeably faster than it used to</button>
+          <button class="pill" data-v="shutdown">Shuts down early, or % jumps around</button>
+          <button class="pill" data-v="swollen">Screen or back is bulging</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="verdictNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The check itself is free and takes two minutes. What it prevents is the most expensive possible response to a $69 problem: replacing the whole phone because nobody told you the battery was a part (typical U.S. prices, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">per check — two minutes in Settings, twice a year</div></div>
+        <div class="calc-stat"><div class="v">~$69–119</div><div class="l">Apple out-of-warranty battery service, depending on model; independent shops often charge less</div></div>
+        <div class="calc-stat"><div class="v bad">$800–1,200</div><div class="l">new phone bought a year or two early because "the battery's dying"</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔍 A decade of twice-a-year checks</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 One battery service, planned on your schedule</span><span>$69–119</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>📱 New phone bought a year early in a panic</span><span>$800–1,200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">A fresh battery typically makes a 3-year-old phone feel close to new — full-speed performance, all-day charge — for roughly <strong>a tenth the cost of replacing the phone</strong>. And if your phone is still under warranty or AppleCare+-style coverage, a battery below <strong>80%</strong> is usually replaced <strong>free</strong>. The only way to catch that window is to look at the number — which is the whole job, twice a year.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check your battery health</h2>
+    <p class="sub">The reading takes two minutes; the rest of the routine — logging it, comparing to last time, and tuning your charging settings — takes ten. Learn the four ideas below, then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — two rules that aren't optional</h3>
+      <ul>
+        <li><strong>A swollen battery is a stop-everything problem.</strong> If the screen is lifting, the back is bulging, or the phone rocks on a flat table: stop charging it, don't press on it, and never puncture it. Take it to a repair shop or proper e-waste/battery recycling — not the household trash.</li>
+        <li><strong>Back up before any battery service.</strong> Repairs almost never wipe data, but "almost never" isn't a backup. Cloud sync on and verified before the phone leaves your hands.</li>
+        <li>Don't open the phone yourself unless you genuinely know what you're doing — prying near a lithium pouch with a metal tool is how repair-bench fires start.</li>
+        <li>If the phone is hot to the touch while charging, take the case off and move it off soft surfaces (beds, couches) — heat is the thing that ages the battery fastest.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your phone</span>
+      <span class="tool-chip">2 minutes (10 with the tune-up)</span>
+      <span class="tool-chip">Somewhere to log the number</span>
+      <span class="tool-chip">Android only: AccuBattery or maker's diagnostics app</span>
+      <span class="tool-chip">Your last reading, if you have one</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four ideas worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the iPhone settings path: Settings, then Battery, then Battery Health and Charging, ending at a Maximum Capacity reading of 87 percent">
+          <rect x="14" y="22" width="76" height="34" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="30" cy="39" r="8" fill="#b9b1a3"/>
+          <rect x="44" y="34" width="36" height="9" rx="4.5" fill="#d8cfbe"/>
+          <text x="18" y="74" font-size="12" font-weight="700" fill="#33393b">Settings</text>
+          <path d="M96 39 h26" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="122,32 134,39 122,46" fill="#3e7c59"/>
+          <rect x="142" y="22" width="76" height="34" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="154" y="32" width="26" height="14" rx="4" fill="#5e9a78"/>
+          <rect x="180" y="36" width="4" height="6" rx="2" fill="#5e9a78"/>
+          <rect x="190" y="34" width="20" height="9" rx="4.5" fill="#d8cfbe"/>
+          <text x="146" y="74" font-size="12" font-weight="700" fill="#33393b">Battery</text>
+          <path d="M180 62 q-60 28 -120 38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="1 9"/>
+          <polygon points="68,94 52,102 62,110" fill="#3e7c59"/>
+          <rect x="14" y="112" width="156" height="44" rx="8" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="24" y="130" font-size="11.5" font-weight="700" fill="#2c5a40">Battery Health &amp; Charging</text>
+          <text x="24" y="147" font-size="11" fill="#6b7376">Maximum Capacity</text>
+          <rect x="186" y="116" width="78" height="36" rx="10" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="225" y="141" font-size="20" font-weight="800" fill="#2c5a40" text-anchor="middle" font-family="Georgia, serif">87%</text>
+        </svg>
+        <h4>iPhone: Settings → Battery</h4>
+        <p>Settings → Battery → Battery Health &amp; Charging. "Maximum Capacity" is the number you're after; the same screen also says whether performance management is active.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of three Android options side by side: Samsung Device care diagnostics, Pixel battery information, and the AccuBattery app, each shown as a small phone with a battery readout">
+          <rect x="22" y="26" width="62" height="104" rx="10" fill="#2c5a40"/>
+          <rect x="28" y="34" width="50" height="88" rx="5" fill="#fffdf8"/>
+          <circle cx="53" cy="58" r="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <path d="M47 58 l4.5 4.5 l8 -9" stroke="#2c5a40" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="36" y="82" width="34" height="6" rx="3" fill="#d8cfbe"/>
+          <rect x="36" y="94" width="26" height="6" rx="3" fill="#e9e2d8"/>
+          <text x="16" y="152" font-size="11" font-weight="700" fill="#33393b">Samsung:</text>
+          <text x="16" y="166" font-size="10.5" fill="#6b7376">Device care / Members</text>
+          <rect x="110" y="26" width="62" height="104" rx="10" fill="#2c5a40"/>
+          <rect x="116" y="34" width="50" height="88" rx="5" fill="#fffdf8"/>
+          <rect x="124" y="46" width="26" height="13" rx="4" fill="#5e9a78"/>
+          <rect x="150" y="49" width="4" height="7" rx="2" fill="#5e9a78"/>
+          <rect x="124" y="68" width="34" height="6" rx="3" fill="#d8cfbe"/>
+          <rect x="124" y="80" width="26" height="6" rx="3" fill="#e9e2d8"/>
+          <rect x="124" y="98" width="34" height="9" rx="4.5" fill="#e3efe8"/>
+          <rect x="124" y="98" width="24" height="9" rx="4.5" fill="#7fb3c8"/>
+          <text x="106" y="152" font-size="11" font-weight="700" fill="#33393b">Pixel:</text>
+          <text x="106" y="166" font-size="10.5" fill="#6b7376">Battery info in Settings</text>
+          <rect x="198" y="26" width="62" height="104" rx="10" fill="#2c5a40"/>
+          <rect x="204" y="34" width="50" height="88" rx="5" fill="#fffdf8"/>
+          <path d="M212 104 q6 -18 12 -10 q7 9 12 -26 q5 -30 12 -14" stroke="#d98e3b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="212" y="44" width="34" height="6" rx="3" fill="#d8cfbe"/>
+          <text x="194" y="152" font-size="11" font-weight="700" fill="#33393b">Any Android:</text>
+          <text x="194" y="166" font-size="10.5" fill="#6b7376">AccuBattery estimates it</text>
+        </svg>
+        <h4>Android: three routes to the number</h4>
+        <p>It varies by maker. Many Samsung phones show battery status under Device care diagnostics or the Samsung Members app; Pixels expose battery info in Settings; on anything else, AccuBattery estimates capacity after a few charge sessions.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a gauge arc divided into three zones: 100 to 90 percent green and healthy, 90 to 80 percent gold meaning plan ahead, below 80 percent terracotta meaning replace, with the needle near the 80 percent line">
+          <path d="M50 140 A90 90 0 0 1 113 64" stroke="#d9663f" stroke-width="18" fill="none" stroke-linecap="round"/>
+          <path d="M122 60 A90 90 0 0 1 187 66" stroke="#e0a93d" stroke-width="18" fill="none"/>
+          <path d="M195 71 A90 90 0 0 1 230 140" stroke="#3e7c59" stroke-width="18" fill="none" stroke-linecap="round"/>
+          <line x1="140" y1="140" x2="78" y2="84" stroke="#33393b" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="140" cy="140" r="9" fill="#33393b"/>
+          <text x="234" y="160" font-size="11" fill="#6b7376">100%</text>
+          <text x="190" y="46" font-size="11" fill="#6b7376">90%</text>
+          <text x="100" y="44" font-size="11" font-weight="700" fill="#d9663f">80%</text>
+          <text x="30" y="160" font-size="11" fill="#6b7376">70%</text>
+          <text x="218" y="116" font-size="10.5" font-weight="700" fill="#2c5a40">healthy</text>
+          <text x="142" y="34" font-size="10.5" font-weight="700" fill="#9a7117">plan ahead</text>
+          <text x="34" y="116" font-size="10.5" font-weight="700" fill="#d9663f">replace</text>
+        </svg>
+        <h4>Why 80% is the line</h4>
+        <p>Manufacturers rate batteries to that mark — Apple designs for 80% capacity at 500 full cycles on older iPhones, 1,000 on iPhone 15 and later. Below it, runtime drops fast and degraded iPhones may throttle. 90–80% is your planning window.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Line chart of battery capacity versus charge cycles: a curve declining gently from 100 percent, crossing a dashed 80 percent line around the rated cycle count, with a hotter steeper curve shown for phones kept hot and at full charge">
+          <line x1="36" y1="20" x2="36" y2="148" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="36" y1="148" x2="260" y2="148" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="36" y1="76" x2="260" y2="76" stroke="#d9663f" stroke-width="2" stroke-dasharray="5 5"/>
+          <text x="40" y="70" font-size="10.5" font-weight="700" fill="#d9663f">80% — plan the swap</text>
+          <path d="M36 30 q90 6 140 24 q50 18 80 38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M36 30 q60 14 92 46 q34 36 56 64" stroke="#d98e3b" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="7 6"/>
+          <text x="196" y="106" font-size="10.5" font-weight="700" fill="#2c5a40">cool + charge limits</text>
+          <text x="118" y="134" font-size="10.5" font-weight="700" fill="#d98e3b">hot + pegged at 100%</text>
+          <text x="14" y="32" font-size="10" fill="#6b7376">100</text>
+          <text x="20" y="80" font-size="10" fill="#6b7376">80</text>
+          <text x="100" y="164" font-size="10.5" fill="#6b7376">charge cycles →</text>
+        </svg>
+        <h4>How batteries actually age</h4>
+        <p>Three things drain capacity: charge cycles, heat, and plain time. You can't stop cycles, but cool temperatures and not parking at 100% visibly flatten the curve — the same phone can land at 80% a year or two later.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Check-up progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done — you know your number and your plan. Same two-minute check in six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ HABITS ============ -->
+  <section id="habits">
+    <h2>Habits that slow battery aging</h2>
+    <p class="sub">You can't make a lithium-ion battery younger, but you can change how fast it gets old. None of these require babysitting the phone — they're settings and small habits:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Heat is the enemy — more than charging, more than cycles.</strong> A dashboard in the sun, a windowsill, a pocket on a hike, gaming while plugged in: sustained heat permanently costs capacity. Keep the phone out of the sun and off radiators, full stop.</li>
+        <li><strong>Turn on optimized charging.</strong> iPhones and most modern Androids can learn your schedule and hold the battery at ~80% overnight, finishing the charge just before you wake. It's free capacity preservation — make sure it's actually enabled.</li>
+        <li><strong>Use a charge limit if your phone offers one.</strong> Many recent phones (iPhone 15 and later, recent Samsungs and Pixels) can cap charging around 80%. Sitting at 100% for hours is one of the main stressors; a cap removes it on every charge.</li>
+        <li><strong>Don't sweat partial charges.</strong> Lithium-ion has no memory effect — topping up from 40% to 70% is gentler than full 0-to-100 cycles, not worse. Charge whenever it's convenient.</li>
+        <li><strong>Case off when it runs hot.</strong> Fast charging or wireless charging in a thick case on a hot day traps heat against the battery. If the phone feels hot while charging, pop the case off or slow the charge.</li>
+        <li><strong>Storing a phone for months?</strong> Leave it around 50% charged, powered off, somewhere cool — not full, not empty. Batteries stored at 100% or allowed to drain to zero age the fastest on the shelf.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>My battery health says 85% — is that bad?</summary>
+      <p>No — it's normal aging, and the phone will still feel fine to most people. What 85% tells you is where you are on the curve: you're in the planning window, not the emergency. Note the number, recheck in six months, and start thinking about whether you'll do a battery service when it approaches 80% — especially if you have warranty or AppleCare+-style coverage that would make it free below that line.</p>
+    </details>
+    <details>
+      <summary>My Android doesn't show a percentage anywhere — now what?</summary>
+      <p>Annoyingly common — Android makers expose battery health inconsistently. Try three routes: your maker's care app (Samsung Members or Device care diagnostics on Samsung; many brands have an equivalent), Settings → About phone or Battery (Pixels and some others show battery info there), and failing those, install AccuBattery. It estimates capacity by measuring charge sessions, so give it a week or two of normal charging before trusting the number. An estimate trended over time is plenty good enough for this job.</p>
+    </details>
+    <details>
+      <summary>Does fast charging hurt the battery?</summary>
+      <p>Less than people fear. Phones manage fast charging carefully — they take most of the speed in the low and middle of the charge and slow way down near full. The real risk is the heat that can come with it: fast charging in a hot car or under a pillow is hard on the cell. Practical rule: fast charge freely, but keep the phone cool while you do, and don't combine fast charging with direct sun or heavy gaming.</p>
+    </details>
+    <details>
+      <summary>Should I drain it to 0% sometimes to "recalibrate"?</summary>
+      <p>No — that's leftover advice from old nickel-cadmium batteries, which genuinely had a memory effect. Lithium-ion is the opposite: deep discharges to zero are among the more stressful things you can do to it. Shallow, partial charges are the gentle pattern. The only loose modern cousin of "recalibration" is that a rare full 100-to-low cycle can help the phone's fuel gauge report more accurately — but it doesn't help the battery itself, so don't make a habit of it.</p>
+    </details>
+    <details>
+      <summary>Is it worth replacing the battery on a 4-year-old phone?</summary>
+      <p>Usually yes, if the phone still gets software updates and does everything you need. A ~$69–119 battery typically restores all-day runtime and removes any battery-related throttling, buying one to two more comfortable years for a tenth the price of a replacement phone. The math flips when the phone has stopped getting security updates, has other failing parts, or the battery service quote approaches the phone's resale value — then put the money toward the next phone instead.</p>
+    </details>
+    <details>
+      <summary>What exactly is a "charge cycle"?</summary>
+      <p>One cycle = using 100% of the battery's capacity, in total — not one plug-in. Drain 50% today and 50% tomorrow, and that's one cycle across two days. Most people accumulate roughly 300–500 cycles per year of typical use, which is why Apple's ratings (80% capacity at 500 cycles on older models, 1,000 cycles on iPhone 15 and later) translate to "expect the planning window somewhere in years two through four." Recent iPhones show your cycle count right in the Battery Health screen.</p>
+    </details>
+    <details>
+      <summary>Will a battery replacement wipe my phone or break water resistance?</summary>
+      <p>It shouldn't wipe anything — the battery doesn't store your data — but back up first anyway; any repair carries a small risk something else goes wrong. Water resistance is the honest caveat: opening a phone disturbs the factory adhesive seals. Reputable shops (and manufacturer service) re-seal with new gaskets and adhesive, but treat a repaired phone as somewhat less water-resistant than factory-fresh. That's a fair trade for two more years of life.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The check takes two minutes. Remembering it in six months is the hard part.</h2>
+        <p>This whole task is "look at one number twice a year and compare it to last time" — which only works if you actually have a last time. Upkeep Ledger logs each check with the date, reminds you when the next one's due, and keeps the trend in one place alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=battery-health-check-phone&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=battery-health-check-phone&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Prices are typical U.S. figures at the time of writing and vary by model, shop, and region; settings menus differ by phone maker and software version — your phone's own service pages outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { age: null, charging: null, heat: null, symptoms: null };
+
+  function freqLabel(months) {
+    if (months <= 3) return "Check every 3 months";
+    if (months <= 4) return "Check every 3–4 months";
+    if (months <= 6) return "Check every 6 months";
+    if (months <= 9) return "Check every 6–9 months";
+    return "Check once a year";
+  }
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+
+    if (s.age === "new") {
+      months = 12;
+      reasons.push("Under a year old, the battery has typically used a small fraction of its rated cycles — one check a year is enough to establish your baseline.");
+    } else if (s.age === "mid") {
+      months = 6;
+      reasons.push("At 1–2 years you're accumulating cycles at full speed — twice a year is the right rhythm to see the trend before it surprises you.");
+    } else if (s.age === "mature") {
+      months = 6;
+      reasons.push("At 2–4 years, most phones are entering the 90–80% planning window. This is exactly when the six-month check starts earning its keep.");
+    } else {
+      months = 4;
+      reasons.push("Past four years, the battery has likely spent most of its rated cycles — check more often and treat any reading near 80% as your cue to act.");
+    }
+
+    if (s.charging === "limit") {
+      months += 2;
+      reasons.push("Optimized charging or an ~80% limit is the single best aging habit — your battery avoids the hours-at-full-charge stress that wears most batteries down.");
+    } else if (s.charging === "overnight") {
+      reasons.push("Nightly charges to 100% are normal use, but the hours parked at full are a known stressor — turn on optimized charging (most phones have it) and you can relax the schedule.");
+    } else {
+      months -= 1;
+      reasons.push("Living on a charger keeps the battery warm and near full much of the day — both age it faster, so tighten the check interval and look at the charge-limit setting.");
+    }
+
+    if (s.heat === "hot") {
+      months -= 2;
+      reasons.push("Regular heat — dashboards, direct sun, gaming while plugged in — is the fastest battery killer there is. Expect a steeper curve and check accordingly.");
+    } else if (s.heat === "some") {
+      months -= 1;
+      reasons.push("Occasional heat (car mounts, sunny pockets) adds up over a year — worth a slightly shorter interval and a habit audit.");
+    } else {
+      reasons.push("A phone that stays cool ages on the gentlest curve — calendar time and cycles only, no heat penalty.");
+    }
+
+    if (s.symptoms === "drain") {
+      months = Math.min(months, 3);
+      reasons.push("Noticeably faster drain is usually the first symptom of real capacity loss — check the number now, and recheck quarterly to watch the trend.");
+    } else if (s.symptoms === "shutdown" || s.symptoms === "swollen") {
+      months = Math.min(months, 3);
+      reasons.push("Early shutdowns and jumpy percentages mean the battery can no longer deliver what the phone asks for — the number will likely confirm it's replacement time.");
+    } else {
+      reasons.push("No symptoms is great — but capacity loss runs ahead of symptoms, which is why the calendar check matters even when the phone feels fine.");
+    }
+
+    if (months < 3) months = 3;
+    if (months > 12) months = 12;
+
+    var verdict;
+    if (s.symptoms === "swollen") {
+      verdict = "<strong>Stop — this isn't a scheduling question.</strong> A bulging screen or back panel means a swollen battery, which is a fire hazard. Stop charging the phone, don't press on or puncture it, and take it to a repair shop or battery recycling point now. Back up over Wi-Fi first if the phone still works.";
+    } else if (s.symptoms === "shutdown") {
+      verdict = "<strong>Replacement verdict: plan the swap now.</strong> Early shutdowns and erratic percentages are classic end-stage battery behavior regardless of what the health screen says. Back up, get a quote (typically ~$69–119 at Apple, often less at independent shops), and book it — the phone will likely feel new afterward.";
+    } else if (s.symptoms === "drain" || s.age === "old") {
+      verdict = "<strong>Replacement verdict: start pricing it.</strong> Between the phone's age and how the battery behaves, you're probably near or in the 90–80% window. If the check reads at or below ~85%, get a battery quote now so the swap happens on your schedule — and check whether warranty coverage would make a sub-80% battery free.";
+    } else {
+      verdict = "<strong>Replacement verdict: not yet.</strong> Log today's reading where you'll find it, and let the trend decide: above ~85%, just recheck on schedule; 80–85%, start planning the ~$69–119 battery service; at or below 80%, book it — that's the line where runtime and performance drop off.";
+    }
+
+    return { months: months, reasons: reasons, verdict: verdict };
+  }
+
+  function onQuizChange() {
+    if (!quizState.age || !quizState.charging || !quizState.heat || !quizState.symptoms) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + freqLabel(r.months).toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Two minutes in Settings, logged somewhere you'll find it next time. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("verdictNote").innerHTML = r.verdict;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Read the number (2 minutes)", text: "iPhone: open Settings → Battery → Battery Health & Charging", note: "“Maximum Capacity” is the number — the percentage of original design capacity the battery still holds. On recent iPhones the same screen shows the cycle count." },
+    { phase: "Read the number (2 minutes)", text: "Android: find your maker's battery report", note: "Samsung: Device care diagnostics or the Samsung Members app. Pixel: battery info in Settings. Anything else: AccuBattery estimates capacity after a week or so of normal charging." },
+    { phase: "Read the number (2 minutes)", text: "Log the number and today's date where future-you will look", note: "Notes app, tracker, a sticky in a drawer — anywhere findable in six months. A single reading is trivia; two readings are a trend." },
+    { phase: "Read the number (2 minutes)", text: "Compare against your last check", note: "Typical loss is a few percentage points per year. A sudden multi-point drop since last time means heat exposure, heavy cycling, or a cell going bad — shorten your interval." },
+    { phase: "Assess (3 minutes)", text: "Note any symptoms the number doesn't show", note: "Dies in the cold, big percentage jumps, shuts down before 0%, sluggish under load. Symptoms at a “fine” reading still count — behavior outranks the gauge." },
+    { phase: "Assess (3 minutes)", text: "Eyeball the body for swelling", note: "Screen lifting at a corner, back panel bulging, phone rocking on a flat table. Any of these: stop charging it and get it to a repair shop — this outranks everything else on this list." },
+    { phase: "Assess (3 minutes)", text: "Place your reading on the line", note: "Above ~85%: relax, recheck in 6 months. 80–85%: start planning the swap. At or below ~80%: book it — and check warranty/AppleCare-style coverage first, which often makes a sub-80% battery free." },
+    { phase: "Tune-up (3 minutes)", text: "Confirm optimized charging is on", note: "iPhone: the Battery Health & Charging screen. Android: usually under Battery settings (“Adaptive” or “Protect battery”). It holds overnight charges at ~80% until shortly before you wake." },
+    { phase: "Tune-up (3 minutes)", text: "Consider an ~80% charge limit if your phone offers one", note: "iPhone 15 and later, and many recent Samsungs and Pixels, can cap charging around 80%. Biggest single lever for slowing aging if you can live with the shorter runtime." },
+    { phase: "Tune-up (3 minutes)", text: "Audit your heat habits", note: "Dashboard mounts in the sun, charging under pillows, thick case during fast charging, phone left in a parked car. Heat costs more capacity than charging habits do — fix the worst offender." },
+    { phase: "If it's swap time", text: "Back up the phone before any service", note: "Verify the cloud backup actually completed (or make a local one). Battery service rarely touches data, but “rarely” isn't a backup." },
+    { phase: "If it's swap time", text: "Get a quote and book it — or set the 6-month recheck", note: "Apple out-of-warranty battery service typically runs ~$69–119 by model; manufacturer service for other brands is comparable and independent shops are often less. Not swap time? Set the reminder and you're done." }
+  ];
+
+  var LS_KEY = "upkeepguides:battery-health-check-phone:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

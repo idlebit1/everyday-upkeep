@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep clean litter box — UpkeepGuides.com</title>
+<meta name="description" content="How often to fully empty, scrub, and refill the litter box (even if you scoop daily), why a dirty box is the #1 trigger for accidents around the house, and a safe step-by-step deep-clean routine.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Deep clean litter box — UpkeepGuides.com">
+<meta property="og:description" content="How often to fully empty, scrub, and refill the litter box (even if you scoop daily), why a dirty box is the #1 trigger for accidents around the house, and a safe step-by-step deep-clean routine.">
+<meta property="og:url" content="https://upkeepguides.com/clean-litter-box.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deep clean litter box — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to fully empty, scrub, and refill the litter box (even if you scoop daily), why a dirty box is the #1 trigger for accidents around the house, and a safe step-by-step deep-clean routine.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Every 2 weeks</span>
+      <h1>Deep Clean the Litter Box</h1>
+      <p class="lede">Daily scooping handles the obvious stuff — but litter slowly saturates, clumping residue glues itself to the base, and a film of bacteria builds on the plastic that your cat can smell long before you can. The fix is the full reset: empty completely, scrub with mild soap, dry, and refill. Twenty minutes, every couple of weeks.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 2 weeks</em></span>
+        <span class="chip">⏱️ <em>~20 min</em> start to finish</span>
+        <span class="chip">🧼 <em>Mild soap only</em> — no ammonia, no strong scents</span>
+        <span class="chip">🐈 Box avoidance is the <em>#1</em> behavioral complaint</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a laundry-room corner where a litter box is being scrubbed with a brush in a utility sink full of suds, while a curious cat watches from the floor next to a bag of fresh litter, a scoop, and a clean litter mat">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window -->
+      <rect x="56" y="40" width="104" height="118" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="108" y1="43" x2="108" y2="155" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="59" y1="99" x2="157" y2="99" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="86" cy="72" r="14" fill="#e0a93d"/>
+      <!-- shelf with supplies -->
+      <rect x="384" y="58" width="148" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="396" y="22" width="34" height="36" rx="6" fill="#7fb3c8"/>
+      <rect x="402" y="14" width="22" height="10" rx="4" fill="#5e9a78"/>
+      <rect x="442" y="28" width="30" height="30" rx="6" fill="#c96f4a"/>
+      <rect x="482" y="20" width="36" height="38" rx="6" fill="#e0a93d"/>
+      <rect x="488" y="30" width="24" height="16" rx="3" fill="#fffdf8"/>
+      <!-- utility sink -->
+      <rect x="196" y="206" width="216" height="118" rx="14" fill="#b9b1a3"/>
+      <rect x="208" y="218" width="192" height="80" rx="10" fill="#dce8ee"/>
+      <rect x="220" y="324" width="14" height="56" rx="6" fill="#8a6a4f"/>
+      <rect x="374" y="324" width="14" height="56" rx="6" fill="#8a6a4f"/>
+      <!-- faucet -->
+      <path d="M388 206 v-44 q0 -16 -18 -16 h-26" stroke="#8a6a4f" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <rect x="338" y="140" width="12" height="18" rx="5" fill="#8a6a4f"/>
+      <!-- water stream -->
+      <line x1="346" y1="158" x2="346" y2="216" stroke="#7fb3c8" stroke-width="7" stroke-linecap="round"/>
+      <!-- litter box tilted in sink, being scrubbed -->
+      <g transform="rotate(-10 296 252)">
+        <path d="M226 232 l12 52 q2 10 12 10 h92 q10 0 12 -10 l12 -52 z" fill="#7fb3c8"/>
+        <rect x="220" y="222" width="152" height="16" rx="8" fill="#5e9a78"/>
+      </g>
+      <!-- suds in sink -->
+      <g fill="#fffdf8">
+        <circle cx="238" cy="290" r="12"/>
+        <circle cx="258" cy="296" r="9"/>
+        <circle cx="350" cy="292" r="11"/>
+        <circle cx="370" cy="286" r="8"/>
+        <circle cx="300" cy="300" r="9"/>
+      </g>
+      <!-- floating bubbles -->
+      <g fill="none" stroke="#7fb3c8" stroke-width="2.5">
+        <circle cx="206" cy="178" r="7"/>
+        <circle cx="226" cy="156" r="5"/>
+        <circle cx="416" cy="186" r="6"/>
+      </g>
+      <!-- scrub brush over the box -->
+      <g transform="rotate(24 282 196)">
+        <rect x="246" y="188" width="68" height="15" rx="7" fill="#c96f4a"/>
+        <rect x="306" y="184" width="44" height="23" rx="8" fill="#d98e3b"/>
+        <g stroke="#e9e2d8" stroke-width="4" stroke-linecap="round">
+          <line x1="314" y1="207" x2="314" y2="218"/>
+          <line x1="326" y1="207" x2="326" y2="218"/>
+          <line x1="338" y1="207" x2="338" y2="218"/>
+        </g>
+      </g>
+      <!-- bag of fresh litter -->
+      <path d="M58 268 h84 q8 0 8 9 v94 q0 9 -8 9 h-84 q-8 0 -8 -9 v-94 q0 -9 8 -9" fill="#c9a06b"/>
+      <rect x="50" y="256" width="100" height="20" rx="8" fill="#8a6a4f"/>
+      <rect x="64" y="294" width="72" height="44" rx="8" fill="#fffdf8"/>
+      <circle cx="100" cy="316" r="14" fill="#e0a93d"/>
+      <path d="M94 316 l4.5 4.5 l8 -9" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- scoop leaning on bag -->
+      <g transform="rotate(18 162 330)">
+        <rect x="154" y="290" width="11" height="58" rx="5" fill="#5e9a78"/>
+        <path d="M142 348 h35 l-4 26 h-27 z" fill="#3e7c59"/>
+        <g stroke="#e3efe8" stroke-width="2.5" stroke-linecap="round">
+          <line x1="150" y1="354" x2="149" y2="368"/>
+          <line x1="159" y1="354" x2="159" y2="368"/>
+          <line x1="168" y1="354" x2="169" y2="368"/>
+        </g>
+      </g>
+      <!-- curious cat watching -->
+      <g>
+        <ellipse cx="476" cy="352" rx="46" ry="34" fill="#8a6a4f"/>
+        <circle cx="448" cy="306" r="26" fill="#8a6a4f"/>
+        <polygon points="430,292 426,266 448,282" fill="#8a6a4f"/>
+        <polygon points="466,292 472,266 450,282" fill="#8a6a4f"/>
+        <polygon points="432,288 430,274 442,282" fill="#c96f4a"/>
+        <polygon points="464,288 468,274 456,282" fill="#c96f4a"/>
+        <circle cx="440" cy="304" r="3.5" fill="#33393b"/>
+        <circle cx="456" cy="304" r="3.5" fill="#33393b"/>
+        <path d="M444 314 q4 4 8 0" stroke="#33393b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <g stroke="#b9b1a3" stroke-width="1.8" stroke-linecap="round">
+          <line x1="430" y1="312" x2="414" y2="310"/>
+          <line x1="430" y1="316" x2="415" y2="318"/>
+          <line x1="466" y1="312" x2="482" y2="310"/>
+        </g>
+        <path d="M518 348 q22 -8 16 -32" stroke="#8a6a4f" stroke-width="11" fill="none" stroke-linecap="round"/>
+        <ellipse cx="452" cy="382" rx="12" ry="6" fill="#6e543e"/>
+        <ellipse cx="494" cy="382" rx="12" ry="6" fill="#6e543e"/>
+      </g>
+      <!-- litter mat waiting -->
+      <ellipse cx="300" cy="392" rx="86" ry="10" fill="#5e9a78" opacity="0.6"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A cat's nose is far more sensitive than yours — by the time a box smells "fine, mostly" to you, it can be genuinely repellent to the animal that has to stand in it. Scooping removes the clumps; only a full empty-and-scrub removes what's left behind. Here's what's at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 24 l9 -8 q4 -3 8 0 l9 8 v6 q0 2 -2 2 h-22 q-2 0 -2 -2 z" fill="#c9a06b"/>
+          <ellipse cx="13" cy="27" rx="3.5" ry="2.5" fill="#8a6a4f"/>
+          <ellipse cx="22" cy="27" rx="3.5" ry="2.5" fill="#8a6a4f"/>
+          <path d="M24 6 l7 7 M31 6 l-7 7" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+          <rect x="5" y="9" width="13" height="7" rx="3.5" fill="#dce8ee"/>
+        </svg></div>
+        <h3>Box avoidance &amp; accidents</h3>
+        <p>House soiling is the most common behavioral complaint cat owners bring to vets, and a box the cat judges dirty is a leading trigger. Once a cat picks the rug instead, the habit can stick long after the box is spotless.</p>
+        <span class="cost">Soiled rugs, sofas &amp; subfloors</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="15" cy="15" r="9" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <line x1="22" y1="22" x2="30" y2="30" stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M15 10.5 q-3.5 0 -3.5 3 q0 2.5 3.5 5.5 q3.5 -3 3.5 -5.5 q0 -3 -3.5 0 z" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Masked health signals</h3>
+        <p>The box is your daily health report: urine clump size, frequency, straining, blood. When it's overdue for a change, those signals disappear into the mess — and urinary problems that are cheap to catch early get caught late.</p>
+        <span class="cost">A missed UTI = a bigger vet bill</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 30 v-10 q0 -10 10 -10 q10 0 10 10 v10" fill="#b9b1a3"/>
+          <g stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round">
+            <path d="M12 14 q2 -4 0 -8"/>
+            <path d="M18 12 q2 -4 0 -8"/>
+            <path d="M24 14 q2 -4 0 -8"/>
+          </g>
+          <rect x="6" y="29" width="24" height="3.5" rx="1.75" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Ammonia in your air</h3>
+        <p>Urine breaks down into ammonia, and it builds fastest in the saturated base layer scooping never reaches. That's the smell that greets guests at the door — and an irritant for everyone breathing it, your cat closest of all.</p>
+        <span class="cost">The whole-house litter smell</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 12 l4 18 q0.5 2.5 3 2.5 h14 q2.5 0 3 -2.5 l4 -18 z" fill="#7fb3c8"/>
+          <g stroke="#dce8ee" stroke-width="2" stroke-linecap="round">
+            <line x1="11" y1="17" x2="17" y2="23"/>
+            <line x1="17" y1="16" x2="24" y2="24"/>
+          </g>
+          <circle cx="27" cy="9" r="4.5" fill="#d9663f"/>
+          <circle cx="20" cy="6" r="3" fill="#c96f4a"/>
+          <circle cx="31" cy="16" r="2.5" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Bacteria on scratched plastic</h3>
+        <p>Every burying session scores the plastic, and those grooves hold bacteria and odor that soap can't fully reach. That's why a well-used box eventually smells even when it's clean — and why most boxes earn replacement after a year or so.</p>
+        <span class="cost">A $15–40 box, roughly yearly</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> do a full change?</h2>
+    <p class="sub">"Every 2 weeks" is a solid default for one cat on clumping litter with daily scooping — but litter type, headcount, and box style move that number a lot. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="cats">
+        <div class="q-label">1. How many cats share this box?</div>
+        <div class="pills">
+          <button class="pill" data-v="one">One</button>
+          <button class="pill" data-v="two">Two</button>
+          <button class="pill" data-v="three">Three or more</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="litter">
+        <div class="q-label">2. What litter is in it?</div>
+        <div class="pills">
+          <button class="pill" data-v="clumping">Clumping clay</button>
+          <button class="pill" data-v="nonclumping">Non-clumping (clay, pine, paper)</button>
+          <button class="pill" data-v="crystal">Silica crystals</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="box">
+        <div class="q-label">3. What kind of box?</div>
+        <div class="pills">
+          <button class="pill" data-v="open">Open pan</button>
+          <button class="pill" data-v="covered">Covered / hooded</button>
+          <button class="pill" data-v="auto">Automatic / self-cleaning</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="scoop">
+        <div class="q-label">4. How often does it get scooped?</div>
+        <div class="pills">
+          <button class="pill" data-v="daily">Daily (or twice daily)</button>
+          <button class="pill" data-v="fewdays">Every 2–3 days</button>
+          <button class="pill" data-v="rarely">Less often, honestly</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="boxNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A deep clean costs a squirt of dish soap and one batch of litter. What it protects is your floors, your air, and your early-warning system on your cat's health (typical U.S. figures, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–$20</div><div class="l">per month — litter plus a drop of dish soap, full changes included</div></div>
+        <div class="calc-stat"><div class="v bad">$200–$600+</div><div class="l">professional carpet cleaning and urine-odor remediation for one room (estimate)</div></div>
+        <div class="calc-stat"><div class="v bad">$300–$600+</div><div class="l">a vet visit for a urinary problem caught late — exams, urinalysis, meds (estimate)</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧼 A year of litter, soap &amp; full changes</span><span>≈ $120–$240</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:28%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 Pro urine remediation for one carpeted room</span><span>$200–$600+</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛋️ Replacing a soiled rug, sofa cushion, or mattress</span><span>$100–$1,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The litter you're already buying <strong>is</strong> the cost of doing this right — full changes just spend it on schedule instead of stretching it stale. What skipping risks isn't a litter bill: it's <strong>cat urine in soft furnishings</strong>, which is famously hard to remediate (the smell invites repeat visits to the same spot), and <strong>a missed urinary red flag</strong> — straining, blood, tiny frequent clumps — that's far cheaper to treat the week it starts than the month after. Hedge accordingly: figures vary, but the cheap side of this ledger is always the clean box.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to deep clean the litter box</h2>
+    <p class="sub">About twenty minutes, ideally near a utility sink, laundry tub, or outdoor hose — not the kitchen sink. Read the safety notes, check the diagrams, then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — this is a five-minute read that matters</h3>
+      <ul>
+        <li><strong>Never mix bleach with urine residue or ammonia-based cleaners.</strong> Bleach plus ammonia (which is exactly what stale cat urine releases) produces chloramine gas — genuinely hazardous fumes. If you want to disinfect with diluted bleach, fully wash and rinse the box with soap and water <em>first</em>, apply the bleach solution separately, then rinse thoroughly again.</li>
+        <li><strong>Pregnant? Delegate this job.</strong> Cat feces can carry the parasite that causes toxoplasmosis, which is dangerous during pregnancy. Health authorities advise pregnant people to avoid litter duty entirely if possible — or wear disposable gloves, wash hands thoroughly after, and have the box scooped daily (the parasite typically needs 1+ days in feces to become infectious).</li>
+        <li><strong>Gloves and ventilation for everyone.</strong> Rubber gloves on, window open or fan running. Dumping a saturated box releases a concentrated ammonia hit you don't want to stand over.</li>
+        <li><strong>Mind the dust.</strong> Clay and silica litters can throw fine dust when poured or dumped. Pour low and slow; wear a dust mask if you're sensitive or doing several boxes.</li>
+        <li><strong>Skip ammonia and strong-smelling cleaners entirely.</strong> Ammonia smells like urine to a cat (inviting remarking), and harsh scents like pine or citrus cleaners can drive cats away from a perfectly clean box. Mild dish soap and hot water is the whole recipe.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Rubber gloves</span>
+      <span class="tool-chip">Heavy trash bags</span>
+      <span class="tool-chip">Mild dish soap</span>
+      <span class="tool-chip">Dedicated scrub brush (litter box only)</span>
+      <span class="tool-chip">Old towel or sunny spot for drying</span>
+      <span class="tool-chip">Fresh litter</span>
+      <span class="tool-chip">Baking soda (optional, thin layer)</span>
+      <span class="tool-chip">Dust mask (if sensitive)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Circular diagram of the four-stage deep clean cycle: empty the box into a bag, scrub with suds, dry completely, then refill with fresh litter, connected by arrows">
+          <path d="M140 30 a62 62 0 0 1 62 60" stroke="#e0a93d" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <polygon points="206,82 196,98 212,100" fill="#e0a93d"/>
+          <path d="M198 134 a62 62 0 0 1 -58 18" stroke="#d98e3b" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <polygon points="146,158 130,150 134,166" fill="#d98e3b"/>
+          <path d="M100 148 a62 62 0 0 1 -22 -56" stroke="#5e9a78" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <polygon points="74,98 78,114 88,100" fill="#5e9a78"/>
+          <path d="M92 56 a62 62 0 0 1 30 -24" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <polygon points="126,28 110,30 118,42" fill="#3e7c59"/>
+          <path d="M122 12 l6 16 q1 4 5 4 h14 q4 0 5 -4 l6 -16 z" fill="#7fb3c8"/>
+          <text x="116" y="48" font-size="11" fill="#6b7376" font-weight="700">1 empty</text>
+          <circle cx="222" cy="112" r="9" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2.5"/>
+          <circle cx="236" cy="100" r="6" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2.5"/>
+          <text x="208" y="138" font-size="11" fill="#6b7376" font-weight="700">2 scrub</text>
+          <circle cx="112" cy="160" r="10" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+            <line x1="112" y1="144" x2="112" y2="148"/>
+            <line x1="126" y1="160" x2="130" y2="160"/>
+            <line x1="122" y1="150" x2="125" y2="147"/>
+          </g>
+          <text x="84" y="142" font-size="11" fill="#6b7376" font-weight="700">3 dry</text>
+          <g fill="#c9a06b">
+            <circle cx="52" cy="58" r="4"/>
+            <circle cx="62" cy="50" r="4"/>
+            <circle cx="58" cy="66" r="4"/>
+            <circle cx="68" cy="62" r="4"/>
+          </g>
+          <text x="44" y="86" font-size="11" fill="#6b7376" font-weight="700">4 refill</text>
+        </svg>
+        <h4>The full reset, in order</h4>
+        <p>Empty everything, scrub with mild soap and hot water, rinse and dry completely (damp plastic clumps fresh litter instantly), then refill. Skipping the dry step is the most common mistake.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Cross-section diagram of a litter box showing the fresh litter filled to a level between two and three inches deep, marked with a depth gauge, with too-shallow and too-deep zones labeled">
+          <path d="M40 50 l14 92 q2 10 12 10 h148 q10 0 12 -10 l14 -92" stroke="#7fb3c8" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M58 110 h164 l6 32 q-2 8 -10 8 h-156 q-8 0 -10 -8 z" fill="#c9a06b"/>
+          <g fill="#b08a55">
+            <circle cx="86" cy="124" r="3"/>
+            <circle cx="126" cy="132" r="3"/>
+            <circle cx="170" cy="122" r="3"/>
+            <circle cx="206" cy="134" r="3"/>
+          </g>
+          <line x1="244" y1="110" x2="244" y2="150" stroke="#2c5a40" stroke-width="3" stroke-linecap="round"/>
+          <line x1="238" y1="110" x2="250" y2="110" stroke="#2c5a40" stroke-width="3" stroke-linecap="round"/>
+          <line x1="238" y1="150" x2="250" y2="150" stroke="#2c5a40" stroke-width="3" stroke-linecap="round"/>
+          <text x="216" y="100" font-size="13" fill="#2c5a40" font-weight="700">2–3 in</text>
+          <line x1="58" y1="78" x2="222" y2="78" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="6 5"/>
+          <text x="62" y="70" font-size="11" fill="#d9663f">much deeper: most cats dislike sinking in</text>
+          <text x="62" y="168" font-size="11" fill="#6b7376">too shallow: urine hits plastic and sticks</text>
+        </svg>
+        <h4>Refill to 2–3 inches</h4>
+        <p>Deep enough to bury and protect the base from urine, shallow enough that paws don't sink. Most cats prefer this band — and it makes clumps lift clean instead of welding to the bottom.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Floor-plan diagram showing two cats and three litter boxes spread across different quiet locations in a home, illustrating the one box per cat plus one rule">
+          <rect x="16" y="16" width="248" height="148" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <line x1="140" y1="16" x2="140" y2="96" stroke="#b9b1a3" stroke-width="2.5"/>
+          <line x1="16" y1="96" x2="200" y2="96" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="34" y="36" width="40" height="22" rx="5" fill="#7fb3c8"/>
+          <rect x="38" y="32" width="32" height="8" rx="4" fill="#5e9a78"/>
+          <rect x="206" y="36" width="40" height="22" rx="5" fill="#7fb3c8"/>
+          <rect x="210" y="32" width="32" height="8" rx="4" fill="#5e9a78"/>
+          <rect x="34" y="126" width="40" height="22" rx="5" fill="#7fb3c8"/>
+          <rect x="38" y="122" width="32" height="8" rx="4" fill="#5e9a78"/>
+          <circle cx="176" cy="130" r="11" fill="#8a6a4f"/>
+          <polygon points="168,124 166,112 176,119" fill="#8a6a4f"/>
+          <polygon points="184,124 186,112 176,119" fill="#8a6a4f"/>
+          <circle cx="226" cy="118" r="11" fill="#c9a06b"/>
+          <polygon points="218,112 216,100 226,107" fill="#c9a06b"/>
+          <polygon points="234,112 236,100 226,107" fill="#c9a06b"/>
+          <text x="92" y="50" font-size="12" fill="#6b7376">quiet, separate spots</text>
+          <text x="92" y="146" font-size="13" fill="#2c5a40" font-weight="700">2 cats → 3 boxes</text>
+        </svg>
+        <h4>One box per cat, plus one</h4>
+        <p>The standard behaviorist rule. Spread them across quiet, low-traffic spots — not side by side (cats count that as one box), and not next to a roaring washer or the food bowls.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Close-up comparison of two litter box floors: a smooth new plastic surface with a check mark, and a deeply scratched surface harboring odor and bacteria in the grooves, marked with an X and the advice to replace yearly">
+          <line x1="140" y1="14" x2="140" y2="166" stroke="#e9e2d8" stroke-width="2"/>
+          <rect x="20" y="40" width="100" height="76" rx="8" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <line x1="32" y1="98" x2="108" y2="98" stroke="#fffdf8" stroke-width="3" stroke-linecap="round"/>
+          <path d="M56 134 l8 8 l16 -18" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="30" y="166" font-size="12" fill="#6b7376">smooth: scrubs clean</text>
+          <rect x="160" y="40" width="100" height="76" rx="8" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+            <line x1="172" y1="56" x2="216" y2="88"/>
+            <line x1="186" y1="50" x2="240" y2="78"/>
+            <line x1="170" y1="84" x2="226" y2="104"/>
+            <line x1="200" y1="56" x2="248" y2="96"/>
+          </g>
+          <g fill="#d9663f">
+            <circle cx="206" cy="74" r="3"/>
+            <circle cx="224" cy="92" r="3"/>
+            <circle cx="190" cy="66" r="3"/>
+          </g>
+          <path d="M196 128 l18 16 M214 128 l-18 16" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="164" y="166" font-size="12" fill="#6b7376">grooved: replace the box</text>
+        </svg>
+        <h4>Scratched plastic doesn't come clean</h4>
+        <p>Years of digging carve grooves that trap bacteria and odor no scrubbing reaches. When the floor of the box feels rough or smells clean-but-not-quite, replace it — roughly yearly for most well-used boxes.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Deep-clean progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done — fresh box, happy nose (theirs and yours). Same reset in about two weeks.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS TO WATCH ============ -->
+  <section id="signs">
+    <h2>Signs the box — or the cat — needs attention</h2>
+    <p class="sub">Some problems look like a dirty-box complaint but are actually a health flag. Cats hide illness well; the litter box is often where it shows first. Call the vet rather than reaching for the scrub brush when you see:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Going outside the box when the box is genuinely clean.</strong> Rule out the easy stuff first (new litter brand, moved box, new pet, covered box added) — but persistent avoidance with no obvious trigger deserves a vet check, because pain and urinary disease are common hidden causes.</li>
+        <li><strong>Straining, crying in the box, or many trips with little to show.</strong> In male cats especially, straining with little or no urine can mean a urinary blockage — that's an emergency, not a wait-and-see.</li>
+        <li><strong>Blood in the urine or pink-tinged clumps.</strong> Easy to spot on crystal litter and fresh clumping litter — one more reason a clean box is your early-warning system.</li>
+        <li><strong>Urine clumps suddenly bigger or far more frequent.</strong> Increased volume can flag diabetes or kidney issues; it's a cheap thing to mention at the vet and an expensive thing to ignore.</li>
+        <li><strong>A sharp change in smell despite your normal routine.</strong> Strong, unusual odor that a fresh change doesn't fix can be a sign of infection.</li>
+        <li><strong>Perching on the edge or standing to avoid touching the litter.</strong> Sometimes a litter-texture complaint, sometimes sore paws or joints — senior cats often need a lower-sided box rather than a lecture.</li>
+        <li><strong>Diarrhea or stool changes lasting more than a day or two.</strong> The box tells you before anything else does. Note it, and bring dates to the vet — this is exactly the kind of thing a log makes useful.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>I scoop every day — do I really need full changes too?</summary>
+      <p>Yes. Scooping removes clumps and solids, but a thin film of urine-soaked residue stays on the base and the surrounding litter slowly absorbs moisture and odor the whole time. Clumps also leave crumbs that break off and stay behind. Daily scooping is what stretches the interval to two or three weeks instead of days — it doesn't replace the reset, it just earns you a longer one.</p>
+    </details>
+    <details>
+      <summary>Can I use bleach to disinfect the box?</summary>
+      <p>Carefully, and never as step one. Bleach reacts with ammonia — which stale cat urine releases — to form chloramine gas, which is genuinely harmful to breathe. If you want to disinfect: wash the box thoroughly with dish soap and water, rinse well, <em>then</em> apply a diluted bleach solution (a common ratio is around 1 part bleach to 30+ parts water), let it sit briefly, and rinse very thoroughly so no smell remains. For routine cleans, soap and hot water is enough — and skip ammonia-based and strongly scented cleaners entirely.</p>
+    </details>
+    <details>
+      <summary>Why does my cat still avoid the box when it's clean?</summary>
+      <p>Work down the list: location (too busy, too far, near a scary appliance, next to food), the box itself (covered boxes trap odor at cat height; high sides defeat seniors), the litter (a sudden brand or scent change is a classic trigger — most cats prefer unscented, fine-grain), count (one per cat plus one, in separate spots), and lingering odor in the spot they've been using instead (clean it with an enzymatic cleaner or the smell will keep inviting them back). If all of that checks out, see the vet — avoidance is frequently pain or urinary disease talking.</p>
+    </details>
+    <details>
+      <summary>How often should I replace the box itself?</summary>
+      <p>Roughly once a year for a typical plastic box, sooner if the floor is visibly scratched up or it smells faintly of urine even after a good scrub. Claws score the plastic, and those grooves hold bacteria and odor that no amount of cleaning fully clears. A basic pan costs $15–40 — cheap compared to a cat who's decided the box is unacceptable.</p>
+    </details>
+    <details>
+      <summary>Is litter dust dangerous?</summary>
+      <p>Mostly it's an irritant rather than a danger: clay litters throw fine silicate dust when poured, dumped, or dug in, which can bother people and cats with asthma or sensitive airways. Pour low and slow, choose a low-dust or dust-free litter if anyone in the house (feline included) wheezes, ventilate during full changes, and wear a basic dust mask if you're doing several boxes or you're sensitive. Pregnant people have a separate, bigger reason to skip litter duty — toxoplasmosis — so gloves at minimum, delegation ideally.</p>
+    </details>
+    <details>
+      <summary>What about automatic / self-cleaning boxes?</summary>
+      <p>They automate scooping, not deep cleaning. The rake or drum, waste drawer, and basin still collect residue, and most manufacturers specify their own schedule — typically emptying the waste drawer every few days to weekly, a full litter replacement every 2–4 weeks, and a periodic wash-down of the washable parts. Follow your model's manual (some parts can't be submerged), and keep an eye on the same health signals; automatic boxes make it easier to miss changes in your cat's output, which is their one real downside.</p>
+    </details>
+    <details>
+      <summary>Does a litter liner or baking soda actually help?</summary>
+      <p>Baking soda: a thin layer under the fresh litter is a safe, scent-free odor buffer most cats tolerate fine — useful, not magical. Liners: they make dumping non-clumping litter easier, but many cats puncture them while digging, and urine pooling under a torn liner defeats the purpose. Try one if dumping is your least favorite step; abandon it without guilt if your cat shreds it. Avoid scented litters and deodorizing sprays as odor fixes — they mask smell for you and amplify it for the cat.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The box never looks due — until it's overdue.</h2>
+        <p>Daily scooping hides the calendar: every day the box looks "fine," right up until the smell says otherwise. Upkeep Ledger remembers the interval you just worked out — log each full change and it tells you when the next one lands, alongside vet visits, flea meds, and every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-litter-box&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-litter-box&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes. This is general guidance, not veterinary advice — for health concerns, straining, blood, or sudden behavior changes, talk to your vet.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { cats: null, litter: null, box: null, scoop: null };
+
+  function freqLabel(w) {
+    if (w <= 1) return "Every week";
+    if (w === 4) return "Every 4 weeks (monthly)";
+    return "Every " + w + " weeks";
+  }
+
+  function computePlan(s) {
+    var reasons = [];
+    var weeks = { clumping: 3, nonclumping: 1, crystal: 4 }[s.litter];
+
+    if (s.litter === "clumping") {
+      reasons.push("Clumping clay locks urine into scoopable clumps, so the surrounding litter stays usable longest — full changes every 2–3 weeks is the typical band with good scooping.");
+    } else if (s.litter === "nonclumping") {
+      reasons.push("Non-clumping litter absorbs urine into the whole bed — there's nothing to scoop out, so it saturates fast. Most non-clumping litters need a complete change every week or so, sometimes twice a week with heavy use.");
+    } else {
+      reasons.push("Silica crystals absorb and dehydrate waste, so a batch typically lasts longer — around a month for one cat — but stir it daily and change it the moment it stops absorbing.");
+    }
+
+    if (s.cats === "two") {
+      weeks -= 1;
+      reasons.push("Two cats fill a box twice as fast — tighten the interval, and make sure they have three boxes between them (one per cat, plus one).");
+    } else if (s.cats === "three") {
+      weeks -= 2;
+      reasons.push("Three or more cats on one box is past what any litter handles gracefully — shorten the interval now, and seriously consider adding boxes; crowding is itself a top trigger for avoidance.");
+    } else {
+      reasons.push("One cat is the schedule all the standard guidance assumes — your litter's typical interval holds.");
+    }
+
+    if (s.box === "covered") {
+      weeks -= 1;
+      reasons.push("A hood traps moisture and concentrates odor at cat height — covered boxes smell worse to the cat well before they smell at all to you, so run a tighter change schedule and wash the lid too.");
+    } else if (s.box === "open") {
+      reasons.push("Open pans vent moisture and let you see the state of the litter at a glance — the standard interval works.");
+    } else {
+      reasons.push("Self-cleaning boxes automate the scooping, not the reset — your manufacturer's schedule for litter replacement and basin washing overrides the generic numbers here.");
+    }
+
+    if (s.scoop === "daily") {
+      reasons.push("Daily scooping is what earns the long interval — it removes waste before it breaks down and keeps the rest of the litter fresh.");
+    } else if (s.scoop === "fewdays") {
+      weeks -= 1;
+      reasons.push("Scooping every few days lets clumps sit and shed odor into the whole bed, so the litter ages faster — either scoop daily or change more often.");
+    } else {
+      weeks = Math.min(weeks, 1);
+      reasons.push("Without regular scooping, the whole box is the waste pile — weekly full changes are the honest schedule until daily scooping becomes a habit (it's a 60-second job that buys you weeks).");
+    }
+
+    if (weeks < 1) weeks = 1;
+    if (weeks > 4) weeks = 4;
+
+    var note;
+    if (s.box === "auto") {
+      note = "<strong>Automatic-box note:</strong> treat the result above as a sanity check, not a schedule. Follow your model's manual — typically the waste drawer every few days, full litter replacement every 2–4 weeks, and a wash of the washable parts on a regular cycle (some components must never be submerged). And whatever the robot handles, the scratched-plastic rule and the health-signal watching are still your job.";
+    } else {
+      note = "<strong>Box-replacement note:</strong> a full change can't fix scratched plastic. If the floor of the box feels rough under your glove or smells faintly of urine after a proper scrub, the grooves are holding what soap can't reach — replace the box itself (roughly yearly for most well-used boxes, $15–40).";
+    }
+
+    return { weeks: weeks, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.cats || !quizState.litter || !quizState.box || !quizState.scoop) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: full change " + freqLabel(r.weeks).toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Empty completely, scrub with <strong>mild soap and hot water</strong>, dry, refill to <strong>2–3 inches</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("boxNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Empty", text: "Glove up, ventilate, and bag all the old litter", note: "Window open or fan on. Tip the box into a heavy trash bag — pour low and slow to keep the dust down — and get the bag out of the house, not into the kitchen bin." },
+    { phase: "Empty", text: "Scrape off anything stuck to the base", note: "Use the scoop or an old plastic scraper. Stuck patches are exactly the saturated residue scooping never touched — this is why you're here." },
+    { phase: "Scrub", text: "Wash with mild dish soap and hot water", note: "Utility sink, laundry tub, bathtub you'll clean after, or outside with a hose — not the kitchen sink. No ammonia, no scented cleaners; they repel cats or invite remarking." },
+    { phase: "Scrub", text: "Scrub the corners, grooves, and the rim", note: "A dedicated brush that only ever touches the litter box. Corners and the floor's scratch lines are where odor lives." },
+    { phase: "Scrub", text: "Optional: disinfect — but only after washing", note: "If you use diluted bleach, the box must already be washed and rinsed (bleach + urine residue = chloramine fumes). Apply, wait a few minutes, then rinse very thoroughly. Most cleans don't need this step." },
+    { phase: "Scrub", text: "Rinse until there's zero soap smell", note: "Cats notice scent residue you don't. Rinse longer than feels necessary." },
+    { phase: "Dry & inspect", text: "Dry the box completely", note: "Towel it, then let it air-dry fully — sun is great. Fresh litter poured into a damp box clumps to the floor on day one." },
+    { phase: "Dry & inspect", text: "Inspect the floor for deep scratches", note: "Run a gloved hand across it. Rough, grooved plastic holds bacteria and odor permanently — if it's heavily scored or still smells after the scrub, replace the box (roughly yearly is normal)." },
+    { phase: "Dry & inspect", text: "Wash the scoop and shake out the mat", note: "The scoop touches everything; give it the same soap-and-rinse. Litter mats trap crumbs and dust — shake outside, wash if it smells." },
+    { phase: "Refill", text: "Optional: thin layer of baking soda on the base", note: "A light dusting buffers odor without perfume. Skip scented additives — they're for human noses and most cats dislike them." },
+    { phase: "Refill", text: "Refill with 2–3 inches of fresh litter", note: "Enough to bury and protect the base, not so deep that paws sink. Same brand and texture as before — surprise litter changes are a classic avoidance trigger." },
+    { phase: "Refill", text: "Return the box to its usual spot", note: "Same quiet, low-traffic location. Moving the box on cleaning day confuses cats; if you must relocate it, do it gradually, a few feet at a time." },
+    { phase: "Refill", text: "Wash your hands well and log the date", note: "Soap and water even though you wore gloves. Note the date — the next full change is due in about two weeks, and nothing about a scooped box will remind you." }
+  ];
+
+  var LS_KEY = "upkeepguides:clean-litter-box:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

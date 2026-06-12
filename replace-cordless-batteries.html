@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace cordless tool batteries — UpkeepGuides.com</title>
+<meta name="description" content="Lithium-ion tool batteries age by the calendar, not just by use. How to audit every pack, spot the ones that are done, store the keepers at ~50%, recycle dead packs for free, and buy replacements that match your platform.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace cordless tool batteries — UpkeepGuides.com">
+<meta property="og:description" content="Lithium-ion tool batteries age by the calendar, not just by use. How to audit every pack, spot the ones that are done, store the keepers at ~50%, recycle dead packs for free, and buy replacements that match your platform.">
+<meta property="og:url" content="https://upkeepguides.com/replace-cordless-batteries.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace cordless tool batteries — UpkeepGuides.com">
+<meta name="twitter:description" content="Lithium-ion tool batteries age by the calendar, not just by use. How to audit every pack, spot the ones that are done, store the keepers at ~50%, recycle dead packs for free, and buy replacements that match your platform.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Tools · Every 4 years</span>
+      <h1>Replace Cordless Tool Batteries</h1>
+      <p class="lede">Lithium-ion packs don't just wear out — they age out, losing capacity by the calendar even when the tool barely leaves the shelf. Most packs give a useful 3–6 years, and how you store them matters as much as how you use them. An hour-long audit tells you which packs are done, which are fine, and which "broken" tools just need fresh power.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Audit packs <em>every 4 years</em> (typical)</span>
+        <span class="chip">⏱️ <em>~1 hour</em> to test the whole fleet</span>
+        <span class="chip">🔋 <em>$50–150</em> per genuine pack</span>
+        <span class="chip">♻️ Recycling is <em>free</em> — never the trash</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a garage workbench with a cordless drill, a battery pack charging on a charger with a green light, a spare battery labeled with the year 2022, a pegboard with tools, and a recycling box for dead packs under the bench">
+      <ellipse cx="282" cy="402" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- pegboard -->
+      <rect x="60" y="40" width="252" height="170" rx="10" fill="#c9a06b"/>
+      <rect x="72" y="52" width="228" height="146" rx="6" fill="#fffdf8" opacity="0.25"/>
+      <g fill="#8a6a4f">
+        <circle cx="96" cy="72" r="3.5"/><circle cx="136" cy="72" r="3.5"/><circle cx="176" cy="72" r="3.5"/><circle cx="216" cy="72" r="3.5"/><circle cx="256" cy="72" r="3.5"/>
+        <circle cx="96" cy="178" r="3.5"/><circle cx="256" cy="178" r="3.5"/><circle cx="216" cy="178" r="3.5"/>
+      </g>
+      <!-- hanging wrench -->
+      <g transform="translate(110 92)">
+        <rect x="-5" y="6" width="10" height="58" rx="5" fill="#b9b1a3"/>
+        <circle cx="0" cy="6" r="11" fill="none" stroke="#b9b1a3" stroke-width="7"/>
+      </g>
+      <!-- hanging screwdriver -->
+      <g transform="translate(168 92)">
+        <rect x="-7" y="0" width="14" height="34" rx="6" fill="#c96f4a"/>
+        <rect x="-2.5" y="34" width="5" height="40" rx="2.5" fill="#b9b1a3"/>
+      </g>
+      <!-- hanging saw blade -->
+      <circle cx="236" cy="124" r="30" fill="#b9b1a3"/>
+      <circle cx="236" cy="124" r="9" fill="#fffdf8"/>
+      <g fill="#8a6a4f">
+        <polygon points="236,90 242,98 230,98"/>
+        <polygon points="236,158 230,150 242,150"/>
+        <polygon points="202,124 210,118 210,130"/>
+        <polygon points="270,124 262,130 262,118"/>
+      </g>
+      <!-- window -->
+      <rect x="386" y="46" width="120" height="104" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="446" y1="49" x2="446" y2="147" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="389" y1="98" x2="503" y2="98" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="420" cy="76" r="13" fill="#e0a93d"/>
+      <!-- workbench -->
+      <rect x="40" y="262" width="480" height="22" rx="8" fill="#c9a06b"/>
+      <rect x="46" y="284" width="468" height="9" rx="4" fill="#8a6a4f"/>
+      <rect x="64" y="293" width="16" height="100" rx="6" fill="#8a6a4f"/>
+      <rect x="480" y="293" width="16" height="100" rx="6" fill="#8a6a4f"/>
+      <!-- drill on bench -->
+      <g transform="translate(96 196)">
+        <rect x="22" y="14" width="74" height="34" rx="12" fill="#3e7c59"/>
+        <rect x="0" y="20" width="26" height="20" rx="7" fill="#b9b1a3"/>
+        <rect x="-8" y="25" width="12" height="10" rx="4" fill="#8a6a4f"/>
+        <rect x="62" y="44" width="24" height="32" rx="7" fill="#2c5a40"/>
+        <rect x="56" y="72" width="38" height="16" rx="5" fill="#e0a93d"/>
+        <circle cx="86" cy="28" r="6" fill="#5e9a78"/>
+        <rect x="58" y="46" width="8" height="10" rx="3" fill="#c96f4a"/>
+      </g>
+      <!-- charger with pack and green light -->
+      <g transform="translate(256 214)">
+        <rect x="0" y="32" width="104" height="20" rx="8" fill="#b9b1a3"/>
+        <rect x="14" y="0" width="50" height="36" rx="8" fill="#2c5a40"/>
+        <rect x="20" y="8" width="38" height="9" rx="4" fill="#5e9a78"/>
+        <circle cx="86" cy="42" r="5" fill="#3e7c59"/>
+        <path d="M104 42 q26 0 26 22" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- spare pack labeled with year -->
+      <g transform="translate(398 218)">
+        <rect x="0" y="10" width="62" height="36" rx="8" fill="#2c5a40"/>
+        <rect x="10" y="0" width="42" height="14" rx="5" fill="#3e7c59"/>
+        <rect x="8" y="20" width="46" height="16" rx="4" fill="#fffdf8"/>
+        <text x="31" y="32.5" font-size="11.5" font-weight="700" fill="#33393b" text-anchor="middle">2022</text>
+      </g>
+      <!-- recycle box under bench -->
+      <g transform="translate(330 318)">
+        <path d="M0 0 h118 l-9 64 h-100 z" fill="#c96f4a"/>
+        <rect x="-6" y="-8" width="130" height="14" rx="6" fill="#d9663f"/>
+        <g stroke="#fffdf8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M48 24 l10 -14 l10 14"/>
+          <path d="M70 34 l16 4 l-8 14"/>
+          <path d="M48 44 l-10 12 l16 4"/>
+        </g>
+        <!-- dead packs peeking out -->
+        <rect x="14" y="-22" width="34" height="18" rx="5" fill="#8a6a4f" transform="rotate(-8 31 -13)"/>
+        <rect x="76" y="-20" width="32" height="16" rx="5" fill="#b9b1a3" transform="rotate(6 92 -12)"/>
+      </g>
+      <!-- stool -->
+      <rect x="120" y="330" width="64" height="11" rx="5" fill="#8a6a4f"/>
+      <rect x="128" y="341" width="9" height="52" rx="4" fill="#8a6a4f"/>
+      <rect x="167" y="341" width="9" height="52" rx="4" fill="#8a6a4f"/>
+      <!-- plant -->
+      <ellipse cx="520" cy="232" rx="8" ry="14" fill="#5e9a78" transform="rotate(-24 520 232)"/>
+      <ellipse cx="538" cy="234" rx="8" ry="14" fill="#3e7c59" transform="rotate(22 538 234)"/>
+      <path d="M522 262 h28 l-5 -22 h-18 z" fill="#c96f4a" transform="translate(0 -14)"/>
+      <!-- floor mat -->
+      <ellipse cx="282" cy="396" rx="140" ry="10" fill="#b9b1a3" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A cordless tool is only as good as the pack hanging off the bottom of it. Li-ion cells fade gradually — by charge cycles and by plain calendar age — so the failure sneaks up on you. Here's what an aging fleet of packs actually costs:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="20" height="13" rx="5" fill="#3e7c59"/>
+          <rect x="2" y="11" width="6" height="7" rx="2.5" fill="#b9b1a3"/>
+          <rect x="14" y="20" width="9" height="9" rx="3" fill="#2c5a40"/>
+          <rect x="11" y="27" width="15" height="6" rx="2.5" fill="#b9b1a3"/>
+          <path d="M30 6 l-4 7 h4 l-5 8 l1.5 -6 h-3.5 z" fill="#d9663f"/>
+        </svg></div>
+        <h3>Dead tool, mid-project</h3>
+        <p>An old pack reads "charged" on the gauge, then quits ten screws into the job — or won't take a charge at all the morning you need it. Battery failure always announces itself at the worst possible moment.</p>
+        <span class="cost">Stalled project + store run</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="14" width="18" height="12" rx="4" fill="#b9b1a3"/>
+          <rect x="8" y="9" width="8" height="7" rx="3" fill="#8a6a4f"/>
+          <path d="M22 8 h8 l3 5 l-7 9 l-7 -5 z" fill="#e0a93d"/>
+          <circle cx="29" cy="11.5" r="1.8" fill="#fffdf8"/>
+          <text x="22" y="33" font-size="11" font-weight="700" fill="#d9663f">$$$</text>
+        </svg></div>
+        <h3>"Broken" tools that aren't</h3>
+        <p>A weak pack makes a perfectly good drill bog down and stall, so the whole kit gets replaced. The motor was fine — the $80 battery died and took a $300 purchase decision down with it.</p>
+        <span class="cost">$200–500 kit for a $50–150 fix</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="16" width="17" height="13" rx="4" fill="#8a6a4f"/>
+          <rect x="9" y="12" width="9" height="6" rx="2.5" fill="#b9b1a3"/>
+          <path d="M28 8 c3.5 5 5 7.6 5 10.5 a5 5 0 0 1 -10 0 c0 -2.9 1.5 -5.5 5 -10.5" fill="#d9663f"/>
+          <path d="M28 14 c1.7 2.4 2.4 3.7 2.4 5.1 a2.4 2.4 0 0 1 -4.8 0 c0 -1.4 0.7 -2.7 2.4 -5.1" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Fire risk from bad packs</h3>
+        <p>Damaged, swollen, or cheap knockoff packs are the real fire hazard in a Li-ion garage — knockoffs often skimp on the protection circuits that keep cells from overcharging and overheating.</p>
+        <span class="cost">Garage fire is not a hypothetical</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="14" y="4" width="8" height="20" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="18" cy="27" r="6" fill="#d9663f"/>
+          <rect x="16" y="10" width="4" height="16" rx="2" fill="#d9663f"/>
+          <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+            <line x1="28" y1="8" x2="32" y2="6"/>
+            <line x1="28" y1="14" x2="33" y2="14"/>
+            <line x1="28" y1="20" x2="32" y2="22"/>
+          </g>
+          <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round">
+            <line x1="8" y1="8" x2="4" y2="6"/>
+            <line x1="8" y1="14" x2="3" y2="14"/>
+          </g>
+        </svg></div>
+        <h3>Storage abuse halves lifespan</h3>
+        <p>A pack baking in a hot shed all summer or sitting at full charge on the charger for months ages far faster than one stored half-charged in the house. Same purchase date, half the life.</p>
+        <span class="cost">3 years of life from a 6-year pack</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace them?</h2>
+    <p class="sub">"Every 4 years" is a sensible planning default, but real pack life runs anywhere from 2 to 6+ years depending on how hard the packs work, where they live, and how old they already are. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">1. How hard do your cordless tools work?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Most weeks — big projects, mower/trimmer</button>
+          <button class="pill" data-v="moderate">Regular weekend jobs</button>
+          <button class="pill" data-v="light">Occasional — a few times a year</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="storage">
+        <div class="q-label">2. Where do the packs live between jobs?</div>
+        <div class="pills">
+          <button class="pill" data-v="extremes">Garage, shed, or truck (hot/freezing)</button>
+          <button class="pill" data-v="indoors">Indoors — basement, closet, mudroom</button>
+          <button class="pill" data-v="charger">Parked on the charger 24/7</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">3. How old are most of your packs?</div>
+        <div class="pills">
+          <button class="pill" data-v="new">Under 2 years</button>
+          <button class="pill" data-v="mid">2–4 years</button>
+          <button class="pill" data-v="old">5+ years</button>
+          <button class="pill" data-v="unknown">Honestly, no idea</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="symptoms">
+        <div class="q-label">4. Any of these symptoms yet? (Shorter runtime, won't hold a charge overnight, charger error lights, pack gets hot, tool bogs under loads it used to handle)</div>
+        <div class="pills">
+          <button class="pill" data-v="none">No, all packs feel strong</button>
+          <button class="pill" data-v="fading">Some packs noticeably weaker</button>
+          <button class="pill" data-v="failing">Yes — won't charge / errors / runs hot</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="recycleNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The trap isn't the battery price — it's misdiagnosing a tired pack as a dead tool, or "saving money" on a knockoff that dies in a year. Typical U.S. prices, for planning purposes:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$50–150</div><div class="l">genuine or reputable replacement pack, matched to your platform</div></div>
+        <div class="calc-stat"><div class="v bad">$200–500</div><div class="l">replacing a whole kit because "the drill died" (it didn't — the pack did)</div></div>
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to recycle dead packs at a Call2Recycle drop-off — most big-box hardware stores have a bin</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 One genuine pack, planned and on sale</span><span>$50–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:24%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚠️ Knockoff pack bought twice (dies young, then buy real)</span><span>$130–210</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:36%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛒 New drill/driver kit because the old one "wore out"</span><span>$200–500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">A weak battery perfectly imitates a worn-out tool — it bogs, stalls, and quits early. Before any tool gets replaced, <strong>test it on a known-good pack</strong>; most of the time the motor is fine. And resist the $25 no-name pack: knockoffs routinely overstate their Ah rating, die in a year, and skimp on the protection circuitry that prevents overheating — the classic <strong>buy-cheap-buy-twice</strong> trap, with a fire risk thrown in. A genuine pack on a holiday combo deal is the actual bargain.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to audit and replace your packs</h2>
+    <p class="sub">Set aside about an hour (plus charging time the night before). Skim the techniques, then work the checklist — your progress saves automatically, so you can spread the audit over a weekend.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — lithium-ion deserves respect</h3>
+      <ul>
+        <li><strong>Never put a Li-ion pack in the trash or curbside recycling.</strong> Crushed packs start fires in garbage trucks and transfer stations — it's a real and growing problem, and in many places tossing them is illegal. Drop-off recycling is free.</li>
+        <li><strong>Stop using any pack that's swollen, cracked, leaking, or gets hot</strong> at rest or on the charger. Don't recharge it — set it somewhere non-flammable (a concrete floor, away from the house) until you can recycle it.</li>
+        <li><strong>Tape over the terminals of every retired pack</strong> with electrical or packing tape before it goes in a bag or box. Loose packs shorting against each other (or keys, or steel wool) is how transport fires start.</li>
+        <li><strong>Skip the knockoffs.</strong> Cheap no-name packs often lack proper battery-management circuits — the electronics that prevent overcharge and overheating. The savings aren't worth what they protect against.</li>
+        <li>Charge packs on a hard, non-flammable surface, not on a pile of rags or sawdust — and don't charge a frozen pack; let it come up to room temperature first.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Every pack &amp; charger you own</span>
+      <span class="tool-chip">Permanent marker or label tape</span>
+      <span class="tool-chip">Electrical tape (for retired terminals)</span>
+      <span class="tool-chip">A phone timer</span>
+      <span class="tool-chip">One known-good or new pack (for comparison)</span>
+      <span class="tool-chip">Notepad or notes app</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a runtime test: a fully charged battery pack runs a work light or tool under steady load while a timer counts, compared against a known-good pack's time">
+          <rect x="24" y="64" width="56" height="34" rx="8" fill="#2c5a40"/>
+          <rect x="34" y="54" width="36" height="14" rx="5" fill="#3e7c59"/>
+          <text x="52" y="86" font-size="11" font-weight="700" fill="#fffdf8" text-anchor="middle">FULL</text>
+          <line x1="86" y1="81" x2="112" y2="81" stroke="#6b7376" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="112,74 126,81 112,88" fill="#6b7376"/>
+          <!-- work light running -->
+          <rect x="134" y="62" width="44" height="40" rx="8" fill="#b9b1a3"/>
+          <circle cx="156" cy="82" r="13" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+            <line x1="156" y1="56" x2="156" y2="48"/>
+            <line x1="178" y1="68" x2="186" y2="62"/>
+            <line x1="178" y1="96" x2="186" y2="102"/>
+          </g>
+          <!-- timer -->
+          <circle cx="226" cy="82" r="30" fill="#fffdf8" stroke="#6b7376" stroke-width="2.5"/>
+          <path d="M226 82 L226 58 A24 24 0 0 1 244 70 Z" fill="#3e7c59"/>
+          <line x1="226" y1="82" x2="226" y2="60" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+          <line x1="226" y1="82" x2="240" y2="74" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+          <rect x="220" y="46" width="12" height="7" rx="3" fill="#6b7376"/>
+          <text x="24" y="34" font-size="12" fill="#6b7376">charge full → steady load → time it</text>
+          <text x="24" y="156" font-size="12" fill="#6b7376">under ~60% of a healthy pack's time = retire it</text>
+        </svg>
+        <h4>The runtime test</h4>
+        <p>Charge each pack full, run the same steady load (a work light or fan is perfect), and time it. Compare against your newest pack. A pack delivering well under about 60% of healthy runtime has done its service.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a battery gauge showing the ideal long-term storage charge zone between 40 and 60 percent, indoors and cool, with full charge and empty both marked as bad for storage">
+          <rect x="40" y="56" width="200" height="46" rx="12" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="244" y="68" width="10" height="22" rx="4" fill="#b9b1a3"/>
+          <rect x="46" y="62" width="78" height="34" rx="8" fill="#5e9a78" opacity="0.45"/>
+          <rect x="118" y="62" width="46" height="34" rx="8" fill="#3e7c59"/>
+          <text x="141" y="84" font-size="12" font-weight="700" fill="#fffdf8" text-anchor="middle">40–60%</text>
+          <path d="M141 38 l0 14 M135 46 l6 8 l6 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="100" y="30" font-size="12" fill="#6b7376">store here</text>
+          <path d="M52 122 l12 12 M64 122 l-12 12" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <text x="74" y="133" font-size="12" fill="#6b7376">0% for months kills cells</text>
+          <path d="M196 122 l12 12 M208 122 l-12 12" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <text x="40" y="160" font-size="12" fill="#6b7376">100% on the charger all winter ages packs fast</text>
+        </svg>
+        <h4>Store at ~half charge, indoors</h4>
+        <p>For packs sitting more than a month, aim for roughly 40–60% charge in a cool, dry spot indoors. Full-and-hot is the fastest way to age Li-ion; stone dead for months can kill it entirely.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a battery pack being labeled with its purchase year using a marker on tape, next to a second pack already labeled 2022">
+          <g transform="translate(38 56)">
+            <rect x="0" y="12" width="84" height="48" rx="10" fill="#2c5a40"/>
+            <rect x="14" y="0" width="56" height="18" rx="6" fill="#3e7c59"/>
+            <rect x="10" y="26" width="64" height="22" rx="5" fill="#fffdf8"/>
+            <text x="42" y="42" font-size="14" font-weight="700" fill="#33393b" text-anchor="middle">2026</text>
+          </g>
+          <!-- marker -->
+          <g transform="rotate(-38 178 56)">
+            <rect x="164" y="44" width="56" height="16" rx="7" fill="#33393b"/>
+            <polygon points="164,46 150,52 164,58" fill="#8a6a4f"/>
+            <rect x="216" y="46" width="12" height="12" rx="4" fill="#6b7376"/>
+          </g>
+          <g transform="translate(178 96)">
+            <rect x="0" y="10" width="68" height="40" rx="9" fill="#3e7c59"/>
+            <rect x="12" y="0" width="44" height="15" rx="5" fill="#5e9a78"/>
+            <rect x="9" y="21" width="50" height="19" rx="4" fill="#fffdf8"/>
+            <text x="34" y="35" font-size="12.5" font-weight="700" fill="#33393b" text-anchor="middle">2022</text>
+          </g>
+          <text x="30" y="34" font-size="12" fill="#6b7376">year purchased, where you can read it</text>
+          <text x="30" y="160" font-size="12" fill="#6b7376">age is invisible — the label makes it obvious</text>
+        </svg>
+        <h4>Label every pack with its year</h4>
+        <p>Packs age by calendar, but nothing on the outside shows it. A marker-on-tape purchase year turns "which one is the old one?" into a two-second glance — and makes the next audit trivial.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of matching a replacement battery to the tool platform: the voltage on the pack must equal the voltage on the tool, while amp-hours can vary and only changes runtime">
+          <rect x="28" y="46" width="92" height="44" rx="9" fill="#2c5a40"/>
+          <rect x="42" y="36" width="64" height="14" rx="5" fill="#3e7c59"/>
+          <text x="74" y="73" font-size="13" font-weight="700" fill="#fffdf8" text-anchor="middle">18V · 2Ah</text>
+          <rect x="160" y="46" width="92" height="44" rx="9" fill="#2c5a40"/>
+          <rect x="174" y="36" width="64" height="14" rx="5" fill="#3e7c59"/>
+          <text x="206" y="73" font-size="13" font-weight="700" fill="#fffdf8" text-anchor="middle">18V · 5Ah</text>
+          <path d="M126 68 h28" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="140" cy="68" r="13" fill="#e3efe8"/>
+          <path d="M134 68 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="34" y="118" font-size="12" fill="#6b7376">same brand + same volts = it fits</text>
+          <text x="34" y="136" font-size="12" fill="#6b7376">higher Ah = longer runtime (and more weight)</text>
+          <text x="34" y="162" font-size="12" fill="#d9663f">different brand or volts = doesn't fit, don't force it</text>
+        </svg>
+        <h4>Match volts; pick Ah for runtime</h4>
+        <p>A replacement must match your tool's brand/platform and voltage (e.g. 18V or 20V Max — same cells, different label math). Amp-hours are just the gas tank: 2Ah is light, 5Ah runs longer. Mowers and outdoor tools usually want the big packs.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Battery audit progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fleet audited — every pack labeled, the keepers stored right, the dead ones recycled. Same check-in in a few years.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ MAKE THEM LAST ============ -->
+  <section id="last-longer">
+    <h2>Make the next packs last</h2>
+    <p class="sub">Replacement is inevitable; early replacement isn't. The same pack can give three years or six depending on how it's treated — and none of this takes effort once it's habit:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Keep packs out of temperature extremes.</strong> Heat is the #1 ager — a hot truck bed, a shed in July, a sunny windowsill. Store packs indoors where you'd be comfortable; use them in the cold if you must, but let them warm up before charging.</li>
+        <li><strong>Take packs off the charger once they're full.</strong> Most modern chargers stop on their own, but months parked at 100% still ages the cells. Charge, then shelve.</li>
+        <li><strong>Going on the shelf for a month or more? Leave it around half charge.</strong> Roughly 40–60% is the low-stress zone for Li-ion. Top it off the day you need it.</li>
+        <li><strong>Avoid running packs flat as a habit.</strong> Swap to a fresh pack when the tool starts to fade instead of grinding to zero — shallow cycles are gentler than full-depth discharges.</li>
+        <li><strong>Consolidate onto one battery platform.</strong> Every pack works in every tool, dead packs matter less, and you buy fewer of them. Pick the brand whose batteries you already own the most of.</li>
+        <li><strong>Buy packs during holiday combo deals.</strong> Black Friday and Father's Day routinely bundle a free tool or second pack with a battery purchase — the genuine pack at its real price.</li>
+        <li><strong>Label the year on day one.</strong> Future-you will know exactly which packs are due for the side-eye.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>OEM packs or third-party — which should I buy?</summary>
+      <p>Genuine (OEM) packs are the safe default: correct protection circuitry, honest capacity ratings, and no warranty arguments. There are also a few reputable third-party brands with real reviews and honest specs that cost meaningfully less. What to avoid is the $20–30 no-name marketplace pack with a suspiciously huge Ah number — those routinely test at a fraction of their claimed capacity, die young, and often lack proper battery-management electronics, which is a fire risk on your charger. If a price looks too good for the chemistry inside, it is.</p>
+    </details>
+    <details>
+      <summary>Can a dead pack be revived?</summary>
+      <p>Sometimes a pack that's merely over-discharged can be coaxed back — some chargers refuse a deeply drained pack, and a slow "boost" from a compatible charger occasionally wakes it. But a pack that won't hold charge, trips the charger's error light repeatedly, or has a dead cell group is done; the internet tricks (jump-starting from another battery, freezer myths) range from useless to genuinely dangerous. Re-celling — having the cells replaced inside the housing — exists, but for common platforms a new pack is usually cheaper and safer.</p>
+    </details>
+    <details>
+      <summary>Why does my battery die so fast in winter?</summary>
+      <p>Cold slows the chemistry. Below freezing, a healthy pack can temporarily deliver dramatically less runtime and may feel weak under load — that's physics, not failure, and capacity comes back as it warms. Two rules: store packs indoors so they start the job warm, and never charge a pack that's below freezing — charging frozen Li-ion can permanently damage the cells (many smart chargers will simply refuse until it warms up).</p>
+    </details>
+    <details>
+      <summary>How do I actually recycle old packs?</summary>
+      <p>Tape the terminals, then drop them in a Call2Recycle bin — free, and most big-box hardware and home-improvement stores in the U.S. and Canada have one near the entrance or service desk (call2recycle.org lists locations). Many municipal household-hazardous-waste sites take them too. What you must not do is trash them: crushed lithium packs ignite in garbage trucks and sorting facilities, and many states and localities ban them from landfills outright.</p>
+    </details>
+    <details>
+      <summary>Should I leave batteries on the charger all the time?</summary>
+      <p>No. Modern chargers won't dangerously overcharge a pack, but living at 100% charge — especially in a warm garage — is one of the faster ways to age Li-ion cells. Charge it, pull it, shelve it. The exception: if your platform has a charger with a documented "storage" or maintenance mode, follow the manual. For everything else, the shelf beats the charger.</p>
+    </details>
+    <details>
+      <summary>My old NiCad tools still run — worth re-celling the packs?</summary>
+      <p>Usually not. NiCad packs can be rebuilt (and tolerate it better than Li-ion), but rebuild costs often approach the price of a modern Li-ion kit that's lighter, stronger, and self-discharges far less. If the tool is something special — a beloved old driver or a niche tool with no modern equivalent — re-celling by a reputable battery shop is legitimate. Otherwise, recycle the packs (NiCad contains cadmium and absolutely must not be trashed) and let the tool retire with dignity.</p>
+    </details>
+    <details>
+      <summary>What do the symptoms actually mean — which packs are truly done?</summary>
+      <p>Noticeably shorter runtime is normal aging; replace when it's bad enough to annoy you. A pack that's charged at bedtime and weak by morning has high self-discharge — usually a failing cell group, so plan its replacement. Repeated charger error lights mean the charger is rejecting a cell problem; trust it. A pack that gets hot at rest or on the charger, or is swollen or cracked, is past "done" — stop using it immediately and recycle it. And a tool that bogs on one pack but runs strong on another just told you everything you need to know.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Nobody remembers what year they bought a battery.</h2>
+        <p>That's the whole problem — packs age silently for years, then quit on a Saturday. Upkeep Ledger keeps the purchase years and your audit schedule in one place, and nudges you when the fleet is due for its next runtime test — alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-cordless-batteries&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-cordless-batteries&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; pack prices, lifespans, and recycling rules vary — your tool's manual and local regulations outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { use: null, storage: null, age: null, symptoms: null };
+
+  var FREQ_LABEL = {
+    2: "every 2–3 years",
+    3: "every 3 years",
+    4: "every 4 years",
+    5: "every 4–5 years",
+    6: "every 5–6 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var years = { heavy: 3, moderate: 4, light: 5 }[s.use];
+    var auditNow = false;
+    var headline;
+
+    if (s.use === "heavy") {
+      reasons.push("Heavy, frequent use racks up charge cycles fast — a hard-working pack can run through several hundred cycles in a few years, which is most of what Li-ion has to give.");
+    } else if (s.use === "moderate") {
+      reasons.push("Weekend-project duty is the middle of the road: cycles add up steadily, so calendar age and usage hit their limits at about the same time.");
+    } else {
+      reasons.push("Light use means cycles aren't your enemy — calendar aging is. Even a barely-used pack loses capacity sitting on a shelf, just more slowly when it's stored well.");
+    }
+
+    if (s.storage === "extremes") {
+      years -= 1;
+      reasons.push("Garage, shed, and truck storage is the silent killer: summer heat ages Li-ion cells dramatically faster, and charging packs that are below freezing damages them. Moving storage indoors is the single biggest life-extender available to you.");
+    } else if (s.storage === "charger") {
+      years -= 1;
+      reasons.push("Living on the charger keeps packs pinned at 100% charge, which stresses the cells year-round. Charge, then shelve — packs sitting long-term do best at roughly 40–60%.");
+    } else {
+      reasons.push("Indoor, room-temperature storage is exactly right — your packs are aging about as slowly as Li-ion can. Keep long-stored packs near half charge and you're doing everything that matters.");
+    }
+
+    if (s.symptoms === "failing") {
+      auditNow = true;
+      reasons.push("Won't-charge packs, charger error lights, and packs that run hot aren't early warnings — they're the end of the line. Retire those packs now; a hot or swollen pack shouldn't be used or recharged at all.");
+    } else if (s.symptoms === "fading") {
+      reasons.push("Noticeably weaker packs are mid-fade: still usable for light jobs, but plan their replacement on your terms (a holiday combo deal) instead of mid-project.");
+      years -= 1;
+    } else {
+      reasons.push("No symptoms yet — good. The runtime test below gives you a baseline now, so the next audit can spot fading before you feel it on the job.");
+    }
+
+    if (s.age === "old") {
+      auditNow = true;
+      reasons.push("At 5+ years, your packs are at or past the typical 3–6 year useful life. Some may still test fine — storage matters enormously — but every one of them has earned a runtime test this month.");
+    } else if (s.age === "new") {
+      reasons.push("Under 2 years old, packs should be near full strength — if one is already weak, it's likely a defect (check the warranty) or a knockoff doing knockoff things.");
+    } else if (s.age === "mid") {
+      reasons.push("At 2–4 years, you're in the heart of the useful-life window — a quick audit now sets the baseline, and your real replacement wave is coming in the next year or three.");
+    } else {
+      auditNow = true;
+      reasons.push("Not knowing the ages is itself the finding — run the audit, label every pack with its best-guess year, and from here on the question has a two-second answer.");
+    }
+
+    if (years < 2) years = 2;
+    if (years > 6) years = 6;
+
+    if (auditNow) {
+      headline = "audit every pack this month, then plan on new packs " + FREQ_LABEL[years];
+    } else {
+      headline = "plan on new packs " + FREQ_LABEL[years];
+    }
+
+    var note = "<strong>Recycling note:</strong> whatever the audit retires, tape the terminals and drop the packs in a Call2Recycle bin — free, and most big-box hardware stores have one by the entrance. Li-ion never goes in the trash: crushed packs start garbage-truck fires, and many places ban them from landfills outright.";
+
+    return { headline: headline, reasons: reasons, note: note, auditNow: auditNow };
+  }
+
+  function onQuizChange() {
+    if (!quizState.use || !quizState.storage || !quizState.age || !quizState.symptoms) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.headline;
+    document.getElementById("resultBody").innerHTML = r.auditNow
+      ? "Start with the <strong>runtime test</strong> in the how-to below — it sorts keepers from goners in an afternoon. Why this plan:"
+      : "Label every pack with its purchase year now, and the schedule runs itself. Why this plan:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("recycleNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Round up", text: "Gather every pack in the house", note: "Tool bags, junk drawers, the mower, the one still clicked into the trimmer in the shed. The audit only works if the whole fleet shows up." },
+    { phase: "Round up", text: "Inspect each pack before charging", note: "Swollen, cracked, leaking, corroded terminals, or warm at rest = set it aside on concrete, away from anything flammable. Do not recharge it — it goes straight to the retire pile." },
+    { phase: "Round up", text: "Charge every healthy pack to full", note: "Do this the night before. Note any pack the charger rejects or flags with an error light — that's a result, not a glitch." },
+    { phase: "Test & sort", text: "Runtime-test each pack under the same steady load", note: "A work light or fan is ideal — consistent draw, easy to time. Start the timer, walk away, note when it quits." },
+    { phase: "Test & sort", text: "Compare times against your newest pack", note: "Same Ah rating compared to same Ah rating. A pack well under ~60% of healthy runtime, or one that self-drains overnight, has done its service." },
+    { phase: "Test & sort", text: "Cross-check any 'dying' tool on a known-good pack", note: "If the tool runs strong on a fresh pack, the tool was never the problem — you just saved a $200–500 kit purchase." },
+    { phase: "Test & sort", text: "Sort packs into keep / watch / retire", note: "Keep: near-full runtime. Watch: fading but fine for light duty. Retire: weak, won't hold charge, charger errors, or any physical damage." },
+    { phase: "Label & store", text: "Label every keeper with its purchase year", note: "Marker on tape, somewhere readable. Add this year's test result if you're feeling thorough — future audits become a glance." },
+    { phase: "Label & store", text: "Set long-storage packs to ~40–60% charge", note: "Run full packs down partway, or charge low ones briefly. Anything you won't touch for a month-plus is happiest near half." },
+    { phase: "Label & store", text: "Move pack storage indoors, off the charger", note: "Cool, dry, room temperature — not the shed, not a hot truck, not parked at 100% on the charger all season." },
+    { phase: "Retire & replace", text: "Tape the terminals of every retired pack", note: "Electrical or packing tape over the contacts. Loose packs shorting in a box or bag is how transport fires start." },
+    { phase: "Retire & replace", text: "Drop retired packs at a recycling bin", note: "Call2Recycle bins live at most big-box hardware stores — free, near the entrance or service desk. Never the trash: it's a fire risk in the truck and illegal in many places." },
+    { phase: "Retire & replace", text: "Order replacements matched to your platform", note: "Same brand, same voltage; pick Ah for the job (small for drivers, big for mowers and saws). Genuine or reputable brands only — and log the purchase year on day one." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-cordless-batteries:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

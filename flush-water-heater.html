@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flush water heater — UpkeepGuides.com</title>
+<meta name="description" content="How to flush your water heater: safely drain sediment from a gas or electric tank, why hard-water scale shortens an 8–12 year tank's life, and a step-by-step checklist with a personalized schedule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Flush water heater — UpkeepGuides.com">
+<meta property="og:description" content="How to flush your water heater: safely drain sediment from a gas or electric tank, why hard-water scale shortens an 8–12 year tank's life, and a step-by-step checklist with a personalized schedule.">
+<meta property="og:url" content="https://upkeepguides.com/flush-water-heater.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flush water heater — UpkeepGuides.com">
+<meta name="twitter:description" content="How to flush your water heater: safely drain sediment from a gas or electric tank, why hard-water scale shortens an 8–12 year tank's life, and a step-by-step checklist with a personalized schedule.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Yearly</span>
+      <h1>Flush Your Water Heater</h1>
+      <p class="lede">Every gallon your water heater warms leaves a little mineral grit behind, and it all settles into a layer of sediment on the bottom of the tank — right on top of the burner or around the lower element. Once a year, you hook up a garden hose, drain that grit out, and buy the tank years of extra life. It's free, it takes about an hour (mostly waiting), and it's the single best thing you can do for a $1,200+ appliance.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>once a year</em></span>
+        <span class="chip">⏱️ <em>~60–90 min</em>, mostly waiting</span>
+        <span class="chip">🛁 Tanks last <em>8–12 years</em> — flushing protects that</span>
+        <span class="chip">💸 Replacement runs <em>$1,200–$3,000+</em> installed</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a utility room where a tall water heater tank is being flushed: a garden hose runs from the drain valve at the bottom of the tank across the floor to a floor drain, carrying flecks of sediment, with the gas dial set to pilot, a bucket and wrench nearby, and shelves on the wall">
+      <ellipse cx="285" cy="400" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- wall shelf with supplies -->
+      <rect x="36" y="76" width="150" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="50" y="44" width="26" height="32" rx="4" fill="#c96f4a"/>
+      <rect x="86" y="50" width="34" height="26" rx="4" fill="#7fb3c8"/>
+      <rect x="130" y="40" width="20" height="36" rx="4" fill="#e0a93d"/>
+      <rect x="36" y="156" width="150" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="54" y="124" width="40" height="32" rx="4" fill="#dce8ee"/>
+      <rect x="106" y="118" width="28" height="38" rx="4" fill="#5e9a78"/>
+      <!-- flue pipe -->
+      <rect x="318" y="22" width="26" height="64" rx="6" fill="#b9b1a3"/>
+      <rect x="308" y="14" width="46" height="12" rx="6" fill="#8a6a4f"/>
+      <!-- cold inlet pipe with shutoff -->
+      <rect x="394" y="58" width="12" height="60" rx="5" fill="#b9b1a3"/>
+      <rect x="380" y="74" width="40" height="10" rx="5" fill="#d9663f"/>
+      <!-- water heater tank -->
+      <rect x="252" y="86" width="158" height="244" rx="34" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <rect x="252" y="120" width="158" height="14" rx="7" fill="#dce8ee"/>
+      <rect x="252" y="282" width="158" height="14" rx="7" fill="#dce8ee"/>
+      <!-- rating label -->
+      <rect x="294" y="160" width="74" height="92" rx="8" fill="#dce8ee"/>
+      <rect x="302" y="172" width="58" height="7" rx="3.5" fill="#fffdf8"/>
+      <rect x="302" y="186" width="44" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="302" y="198" width="50" height="6" rx="3" fill="#fffdf8"/>
+      <circle cx="312" cy="228" r="9" fill="#7fb3c8"/>
+      <rect x="328" y="222" width="30" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="328" y="234" width="22" height="6" rx="3" fill="#fffdf8"/>
+      <!-- T&P valve on the side -->
+      <rect x="404" y="148" width="26" height="12" rx="5" fill="#e0a93d"/>
+      <rect x="424" y="156" width="9" height="44" rx="4" fill="#b9b1a3"/>
+      <!-- gas control box with dial on PILOT -->
+      <rect x="282" y="296" width="56" height="34" rx="7" fill="#d98e3b"/>
+      <circle cx="300" cy="313" r="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+      <line x1="300" y1="313" x2="293" y2="306" stroke="#33393b" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="316" y="306" width="16" height="6" rx="3" fill="#faf0da"/>
+      <!-- gas supply line -->
+      <path d="M282 318 Q236 322 232 354" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- legs / base -->
+      <rect x="268" y="330" width="14" height="38" rx="5" fill="#b9b1a3"/>
+      <rect x="382" y="330" width="14" height="38" rx="5" fill="#b9b1a3"/>
+      <!-- drain valve + spigot -->
+      <rect x="396" y="306" width="26" height="14" rx="5" fill="#d9663f"/>
+      <circle cx="422" cy="313" r="8" fill="#e0a93d"/>
+      <!-- garden hose from drain valve to floor drain -->
+      <path d="M426 318 Q470 336 466 366 Q462 392 414 392 L160 392" stroke="#5e9a78" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <!-- sediment-flecked water at the hose mouth -->
+      <path d="M160 392 Q140 392 128 384" stroke="#7fb3c8" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <g fill="#8a6a4f">
+        <circle cx="142" cy="386" r="2.5"/>
+        <circle cx="126" cy="378" r="2.5"/>
+        <circle cx="112" cy="382" r="2"/>
+      </g>
+      <g fill="#7fb3c8">
+        <circle cx="118" cy="372" r="2.5"/>
+        <circle cx="104" cy="378" r="2.5"/>
+      </g>
+      <!-- floor drain -->
+      <ellipse cx="96" cy="390" rx="26" ry="9" fill="#b9b1a3"/>
+      <ellipse cx="96" cy="390" rx="16" ry="5" fill="#33393b" opacity="0.45"/>
+      <!-- bucket for the first sediment check -->
+      <path d="M192 332 h44 l-6 40 h-32 z" fill="#7fb3c8"/>
+      <path d="M192 332 h44 l-2 12 h-40 z" fill="#dce8ee"/>
+      <path d="M196 330 q18 -16 36 0" stroke="#8a6a4f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <!-- wrench on the floor -->
+      <g transform="rotate(-18 488 380)">
+        <rect x="474" y="376" width="34" height="7" rx="3.5" fill="#8a6a4f"/>
+        <circle cx="472" cy="379" r="7" fill="#8a6a4f"/>
+        <circle cx="472" cy="379" r="3" fill="#efe7d8"/>
+      </g>
+      <!-- small plant for warmth -->
+      <path d="M210 268 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M210 268 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="197" cy="238" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 197 238)"/>
+      <ellipse cx="225" cy="242" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 225 242)"/>
+      <path d="M198 268 h26 l-4 24 h-18 z" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Hard-water minerals — mostly calcium and magnesium — come out of solution when water is heated, and they settle exactly where the heat is. The sediment layer grows quietly, year after year, and everything it causes costs more than the hose-and-hour it takes to prevent:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="6" width="26" height="22" rx="5" fill="none" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="7" y="18" width="22" height="8" rx="3" fill="#b9b1a3"/>
+          <path d="M18 33 c2 -2.6 3 -4 3 -5.6 a3 3 0 0 0 -6 0 c0 1.6 1 3 3 5.6" fill="#d9663f" transform="rotate(180 18 30.2)"/>
+          <path d="M13 14 q2 -4 5 -4 q3 0 5 4" stroke="#e0a93d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Sediment is an insulator</h3>
+        <p>The mineral layer sits between the flame (or lower element) and the water, so the heater burns longer to do the same job. Gas tanks lose efficiency as the layer thickens; you pay the difference every month.</p>
+        <span class="cost">Higher gas/electric bills</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="4" width="18" height="27" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <path d="M11 24 q3.5 -3 7 0 q3.5 3 7 0" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M15 9 l3 4 l-2.5 3 l3 4" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="11" r="2" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Overheated steel fails early</h3>
+        <p>A gas burner under a sediment blanket overheats the tank bottom; the steel and its glass lining fatigue, and that's how an 8–12 year tank becomes a 6-year tank. Tanks don't get repaired — they get replaced.</p>
+        <span class="cost">$1,200–$3,000+ installed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M7 8 q5 -3 11 -3 q6 0 11 3" stroke="#b9b1a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <rect x="14" y="8" width="8" height="14" rx="3" fill="#b9b1a3"/>
+          <path d="M18 24 c2 2.6 3 4 3 5.6 a3 3 0 0 1 -6 0 c0 -1.6 1 -3 3 -5.6" fill="#7fb3c8"/>
+          <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+            <line x1="9" y1="16" x2="12" y2="13"/>
+            <line x1="27" y1="16" x2="24" y2="13"/>
+          </g>
+        </svg></div>
+        <h3>Rumbling, popping, banging</h3>
+        <p>That kettle-drum noise is water flashing to steam underneath the sediment layer and slamming through it. It's the classic "flush me" signal — and each pop stresses the tank lining a little more.</p>
+        <span class="cost">The tank telling you it's wearing out</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 30 v-18 q0 -6 7 -6 h8" stroke="#b9b1a3" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="22" y="3.5" width="7" height="5" rx="2.5" fill="#8a6a4f"/>
+          <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round">
+            <line x1="23" y1="12" x2="21" y2="17"/>
+            <line x1="27" y1="12" x2="26" y2="17"/>
+          </g>
+          <path d="M31 14 l-2 5" stroke="#dce8ee" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M14 24 q2 -3 5 -3" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-dasharray="3 3"/>
+        </svg></div>
+        <h3>Less hot water, clogged parts</h3>
+        <p>Sediment takes up gallons of tank space and gets stirred into the plumbing — clogging the drain valve, aerators, and on electric units burying the lower element until it scorches and dies.</p>
+        <span class="cost">$200–$350 element service call</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> flush it?</h2>
+    <p class="sub">"Once a year" is the standard advice and a good default — but hard water can double the pace of sediment, heavy household use stirs up more minerals, and tankless units play by different rules entirely. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What kind of water heater is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="gas">Gas tank</button>
+          <button class="pill" data-v="electric">Electric tank</button>
+          <button class="pill" data-v="tankless">Tankless / on-demand</button>
+        </div>
+        <div class="q-hint">Gas tanks have a flue up the middle and a burner dial near the floor; electric tanks have one or two element access panels on the side and no flue. Tankless units are wall-hung boxes.</div>
+      </div>
+      <div class="quiz-q" data-q="hardness">
+        <div class="q-label">2. How hard is your water?</div>
+        <div class="pills">
+          <button class="pill" data-v="soft">Soft, or we have a softener</button>
+          <button class="pill" data-v="moderate">Moderate</button>
+          <button class="pill" data-v="hard">Hard / very hard</button>
+          <button class="pill" data-v="unknown">No idea</button>
+        </div>
+        <div class="q-hint">White crust on faucets and shower glass is the tell. Your water utility's annual report lists hardness, and cheap test strips settle it in seconds.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">3. How old is the heater?</div>
+        <div class="pills">
+          <button class="pill" data-v="new">Under 6 years</button>
+          <button class="pill" data-v="mid">6–12 years</button>
+          <button class="pill" data-v="old">Over 12 years</button>
+        </div>
+        <div class="q-hint">The serial number on the rating label encodes the manufacture date — most brands put the year in the first few characters.</div>
+      </div>
+      <div class="quiz-q" data-q="household">
+        <div class="q-label">4. How many people use the hot water?</div>
+        <div class="pills">
+          <button class="pill" data-v="small">1–2</button>
+          <button class="pill" data-v="medium">3–4</button>
+          <button class="pill" data-v="large">5+</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A DIY flush costs nothing but an hour and a garden hose. What it protects is one of the most expensive appliances in the house — and one of the few that fails by flooding the room it lives in (typical U.S. figures, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">per DIY flush — a garden hose and about an hour, mostly waiting</div></div>
+        <div class="calc-stat"><div class="v">8–12 yrs</div><div class="l">typical tank lifespan — flushing and a healthy anode rod are what get you to the high end</div></div>
+        <div class="calc-stat"><div class="v bad">$1,200–$3,000+</div><div class="l">typical replacement, installed — more for power-vent, hybrid, or code upgrades</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🚿 A decade of annual DIY flushes</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Plumber does the flush instead</span><span>$100–$200/visit</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:9%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚡ Burned-out electric element, replaced</span><span>$200–$350</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:15%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛁 Tank replaced 3–4 years early</span><span>$1,200–$3,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💥 Tank fails by leaking — replacement + water damage</span><span>$2,000–$5,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is lopsided: <strong>a free hour a year</strong> defending a <strong>$1,200–$3,000+ appliance</strong>. And unlike most appliances, a tank doesn't fail politely — when the bottom finally rusts through, it leaks 40–50 gallons (plus everything the supply line keeps feeding it) onto the floor. There's a quiet bonus, too: sediment buildup is steady extra load on your gas or electric bill the whole time it sits there. Flush annually, glance at the anode rod every few years, and the tank earns its full 8–12.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to flush your water heater</h2>
+    <p class="sub">The active work is maybe 20 minutes; the rest is the tank draining. Read the techniques first — especially which way you shut off the heat for gas vs. electric — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — this tank holds 40+ gallons of scalding water</h3>
+      <ul>
+        <li><strong>The water inside is 120–140°F</strong> — hot enough to scald in seconds at the top of that range. Either let the tank cool for a few hours after shutting off the heat, or handle the hose like it's carrying hot coffee, because it is.</li>
+        <li><strong>Electric heaters: kill the power at the breaker before draining — no exceptions.</strong> The heating elements are only safe submerged; if they switch on in an empty tank they burn out in moments. This is the most common way a DIY flush turns into a service call.</li>
+        <li><strong>Gas heaters: turn the control dial to PILOT (or "vacation")</strong> so the burner can't fire on an empty tank. Don't blow out the pilot, and never smell gas and keep working — leave and call the utility.</li>
+        <li><strong>Always drain through a hose</strong> routed downhill to a floor drain, sump, or outside — never an open valve onto the floor. Keep kids and pets away from the hose outlet.</li>
+        <li><strong>Be gentle with old plastic drain valves.</strong> On a tank that's never been flushed, a brittle valve may not reseal when you close it. Have a hose cap (or a replacement valve plan) on hand before you open it.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Garden hose (and a downhill path for it)</span>
+      <span class="tool-chip">Flathead screwdriver (some drain valves)</span>
+      <span class="tool-chip">Bucket for the sediment check</span>
+      <span class="tool-chip">Work gloves</span>
+      <span class="tool-chip">Brass hose cap (drain-valve insurance)</span>
+      <span class="tool-chip">Old towel</span>
+      <span class="tool-chip">~60–90 minutes, mostly waiting</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Labeled diagram of a tank water heater showing the cold inlet shutoff valve on top, the temperature and pressure relief valve on the side, and the drain valve near the floor">
+          <rect x="108" y="28" width="76" height="128" rx="20" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="108" y="44" width="76" height="9" rx="4.5" fill="#dce8ee"/>
+          <rect x="108" y="128" width="76" height="9" rx="4.5" fill="#dce8ee"/>
+          <!-- cold inlet + shutoff -->
+          <rect x="126" y="8" width="7" height="20" rx="3" fill="#b9b1a3"/>
+          <rect x="116" y="12" width="27" height="6" rx="3" fill="#d9663f"/>
+          <!-- hot out -->
+          <rect x="158" y="8" width="7" height="20" rx="3" fill="#b9b1a3"/>
+          <!-- T&P valve -->
+          <rect x="184" y="62" width="18" height="9" rx="4" fill="#e0a93d"/>
+          <rect x="196" y="68" width="6" height="28" rx="3" fill="#b9b1a3"/>
+          <!-- drain valve -->
+          <rect x="178" y="138" width="20" height="10" rx="4" fill="#d9663f"/>
+          <circle cx="200" cy="143" r="6" fill="#e0a93d"/>
+          <rect x="36" y="158" width="210" height="6" rx="3" fill="#d8cfbe"/>
+          <text x="14" y="16" font-size="11" fill="#6b7376">cold inlet shutoff</text>
+          <line x1="78" y1="14" x2="112" y2="14" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="214" y="62" font-size="11" fill="#6b7376">T&amp;P valve</text>
+          <text x="214" y="75" font-size="11" fill="#6b7376">(leave it alone)</text>
+          <text x="14" y="146" font-size="11" fill="#6b7376">drain valve</text>
+          <line x1="72" y1="142" x2="174" y2="142" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+        </svg>
+        <h4>Know your three valves</h4>
+        <p>Cold inlet shutoff on top (often a red handle), the T&amp;P relief valve on the side or top — which you don't touch during a flush — and the drain valve near the floor. The whole job happens at the top and bottom ones.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a garden hose running from the water heater drain valve downhill across the floor to a floor drain, with a no symbol over an uphill route">
+          <rect x="22" y="34" width="52" height="104" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="66" y="122" width="16" height="9" rx="4" fill="#d9663f"/>
+          <!-- good hose: downhill -->
+          <path d="M82 127 Q150 138 214 150" stroke="#5e9a78" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <ellipse cx="234" cy="154" rx="20" ry="7" fill="#b9b1a3"/>
+          <ellipse cx="234" cy="154" rx="11" ry="4" fill="#33393b" opacity="0.45"/>
+          <path d="M214 150 l8 2" stroke="#7fb3c8" stroke-width="5" stroke-linecap="round"/>
+          <!-- bad hose: uphill, crossed out -->
+          <path d="M82 122 Q160 96 220 64" stroke="#b9b1a3" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="7 6"/>
+          <circle cx="196" cy="78" r="17" fill="none" stroke="#d9663f" stroke-width="3.5"/>
+          <line x1="184" y1="90" x2="208" y2="66" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <rect x="12" y="160" width="256" height="6" rx="3" fill="#d8cfbe"/>
+          <text x="120" y="174" font-size="11" fill="#6b7376">downhill the whole way — gravity does the work</text>
+          <text x="96" y="46" font-size="11" fill="#6b7376">uphill = a tank that never empties</text>
+        </svg>
+        <h4>Route the hose downhill</h4>
+        <p>The tank drains by gravity (plus house pressure during the flush), so the hose must run downhill its entire length — to a floor drain, sump pit, driveway, or a spot outside that can take hot, mineral-loaded water.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Cross-section diagram of a tank water heater showing a layer of sediment on the bottom of the tank above the gas burner, with steam bubbles popping through the layer">
+          <path d="M84 24 h112 a18 18 0 0 1 18 18 v92 a18 18 0 0 1 -18 18 h-112 a18 18 0 0 1 -18 -18 v-92 a18 18 0 0 1 18 -18" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5"/>
+          <!-- sediment layer -->
+          <path d="M66 122 q24 -12 48 -4 q30 10 52 0 q26 -10 48 4 v12 a18 18 0 0 1 -18 18 h-112 a18 18 0 0 1 -18 -18 z" fill="#c9a06b"/>
+          <g fill="#8a6a4f">
+            <circle cx="96" cy="134" r="3"/>
+            <circle cx="138" cy="140" r="3"/>
+            <circle cx="178" cy="132" r="3"/>
+          </g>
+          <!-- steam bubbles punching through -->
+          <g fill="#fffdf8">
+            <circle cx="120" cy="112" r="4"/>
+            <circle cx="126" cy="98" r="3"/>
+            <circle cx="160" cy="108" r="4"/>
+            <circle cx="166" cy="92" r="3"/>
+          </g>
+          <!-- burner flame below the tank -->
+          <path d="M140 172 c4 -5 6 -8 6 -11.5 a6 6 0 0 0 -12 0 c0 3.5 2 6.5 6 11.5" fill="#d9663f" transform="rotate(180 140 166)"/>
+          <path d="M122 170 h36" stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round"/>
+          <text x="14" y="120" font-size="11" fill="#6b7376">sediment</text>
+          <text x="14" y="133" font-size="11" fill="#6b7376">blanket</text>
+          <text x="206" y="170" font-size="11" fill="#6b7376">burner</text>
+        </svg>
+        <h4>What the rumbling actually is</h4>
+        <p>Water trapped under the sediment blanket superheats, flashes to steam, and pops through the layer — that's the rumble. The flush exists to remove this blanket before it cooks the tank bottom.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-by-side diagram: on the left a gas water heater control dial turned to the pilot setting, on the right an electrical panel with the water heater breaker switched off">
+          <!-- gas dial -->
+          <rect x="26" y="38" width="96" height="76" rx="10" fill="#d98e3b"/>
+          <circle cx="62" cy="76" r="22" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <line x1="62" y1="76" x2="48" y2="62" stroke="#33393b" stroke-width="4" stroke-linecap="round"/>
+          <text x="92" y="64" font-size="11" fill="#fffdf8" font-weight="700">PILOT</text>
+          <text x="92" y="92" font-size="10" fill="#faf0da">not OFF</text>
+          <text x="34" y="136" font-size="12" fill="#6b7376" font-weight="700">gas: dial to pilot</text>
+          <!-- breaker panel -->
+          <rect x="166" y="30" width="88" height="96" rx="8" fill="#fffdf8" stroke="#6b7376" stroke-width="2.5"/>
+          <line x1="166" y1="48" x2="254" y2="48" stroke="#6b7376" stroke-width="2.5"/>
+          <rect x="178" y="58" width="28" height="13" rx="3" fill="#b9b1a3"/>
+          <rect x="214" y="58" width="28" height="13" rx="3" fill="#b9b1a3"/>
+          <rect x="178" y="80" width="28" height="13" rx="3" fill="#d9663f"/>
+          <text x="216" y="91" font-size="10" fill="#6b7376">OFF ←</text>
+          <rect x="178" y="102" width="28" height="13" rx="3" fill="#b9b1a3"/>
+          <text x="172" y="146" font-size="12" fill="#6b7376" font-weight="700">electric: breaker off</text>
+        </svg>
+        <h4>Gas goes to pilot, electric goes dark</h4>
+        <p>Gas: turn the control dial to PILOT so the burner can't fire while the tank is empty (you keep the pilot lit). Electric: flip the heater's breaker fully off — elements that energize in air are dead in moments.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Flush progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Flushed, refilled, and reheating — the burner is warming water again, not rock. Same job in a year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ FAILING SIGNS ============ -->
+  <section id="failing">
+    <h2>Signs your water heater is failing</h2>
+    <p class="sub">Flushing extends a healthy tank's life — it can't save one that's already on the way out. These are the signals to start budgeting for a replacement instead of scheduling another flush:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Rust-colored hot water (but clear cold water).</strong> If only the hot side runs brown, the tank interior or anode rod is corroding. Check the anode first — a $30–$60 rod can sometimes buy more years — but rusty water from an old tank usually means the steel itself is going.</li>
+        <li><strong>Moisture, drips, or rust streaks at the base of the tank.</strong> A weeping tank body (not a loose fitting or a sweating pipe) means the inner tank has been breached. There's no repair for that — replace it before it fails all at once.</li>
+        <li><strong>Rumbling that a flush doesn't fix.</strong> If the kettle-drum noise survives a thorough flush, the sediment has likely hardened into scale the drain valve can't pass — and the damage it causes is already underway.</li>
+        <li><strong>It's past 10–12 years old.</strong> Check the serial number for the manufacture date. A tank in its second decade owes you nothing; replacing it on your schedule beats replacing it on the tank's.</li>
+        <li><strong>The T&amp;P relief valve keeps dripping</strong> after being tested or replaced — a sign of pressure or temperature problems worth a plumber's eyes either way.</li>
+        <li><strong>Hot water runs out noticeably faster than it used to</strong>, even after a flush — lost capacity that doesn't come back usually means heavy internal scale or a failing dip tube.</li>
+        <li><strong>Pro tip:</strong> if your tank sits above finished living space, put a leak-alarm puck ($10–$20) in the drain pan. The cheapest flood insurance there is.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What if my drain valve won't close or keeps dripping afterward?</summary>
+      <p>Common, especially on tanks with plastic drain valves that have never been opened — sediment grit lodges in the seat, or the brittle plastic just won't seal again. First try opening and closing the valve a couple of times to flush the grit out of the seat. If it still weeps, thread a brass garden-hose cap (a couple of dollars at any hardware store) onto the outlet as a stopgap — that's why it's on the tool list. The proper fix is replacing the valve with a brass quarter-turn model, which a plumber can do quickly or a confident DIYer can do with the tank drained.</p>
+    </details>
+    <details>
+      <summary>My tank is 10 years old and has never been flushed. Is it too late?</summary>
+      <p>Be careful here — this is the one case where flushing carries real risk. A decade of sediment can be partly cemented in place, and in some tanks it's actually plugging pinhole corrosion spots; a vigorous flush can dislodge it and reveal leaks, or clog the drain valve open. Many plumbers advise leaving a very old, never-flushed tank alone and putting the effort into a replacement plan instead. If you do try it: drain gently, skip the aggressive stir-up bursts, have a hose cap ready, and accept that any leak the flush "causes" was already coming. If the tank is more like 4–6 years behind, a gentle flush is usually fine and worth doing.</p>
+    </details>
+    <details>
+      <summary>Do tankless water heaters need this?</summary>
+      <p>Not a flush, but yes to the same idea: tankless units scale up inside their heat exchanger and need <em>descaling</em> — circulating a descaling solution (commonly food-grade white vinegar) through the unit with a small pump kit for 45–60 minutes. Most manufacturers recommend it annually, and more often with hard water; many models flash a maintenance code when they're overdue. Skipping it costs efficiency and can eventually trip error codes or damage the exchanger — and some warranties expect the maintenance to have been done.</p>
+    </details>
+    <details>
+      <summary>How long does the whole job take?</summary>
+      <p>Plan on 60–90 minutes, of which maybe 20 is hands-on. The breakdown: a few minutes to shut things off and connect the hose, 20–40 minutes for a 40–50 gallon tank to drain (longer if the valve clogs with sediment), 10–15 minutes of flush bursts until the water runs clear, and 15–20 minutes to refill and get the air out. If you let the tank cool first for total scald safety, add a few hours of waiting you don't have to supervise. Recovery to fully hot water after relighting is typically 30–60 minutes for gas, longer for electric.</p>
+    </details>
+    <details>
+      <summary>What does the anode rod have to do with this?</summary>
+      <p>It's the other half of tank longevity. The anode is a sacrificial magnesium or aluminum rod hanging inside the tank that corrodes <em>instead of</em> the tank's steel — flushing handles the sediment, the anode handles the rust. Rods typically last roughly 3–5 years and cost $30–$60; once one is fully consumed, the tank itself starts corroding. A flush day is a natural time to check it (it unscrews from the top, though often very tightly — an impact wrench or a plumber helps). A tank that gets both flushes and fresh anodes is the one that reaches year 12.</p>
+    </details>
+    <details>
+      <summary>How do I know sediment is actually my problem?</summary>
+      <p>The classic signs: rumbling, popping, or banging while the burner runs (gas), a sizzling or kettle noise (electric), hot water that runs out faster than it used to, longer recovery times, or grit and cloudy white flecks coming from hot taps. The first bucketful you drain settles the question — clear water means you're flushing early (good), while sand, flakes, or milky water means the tank was overdue. Hard-water areas can build a noticeable layer in a single year.</p>
+    </details>
+    <details>
+      <summary>Can I do a quicker mini-flush instead of a full drain?</summary>
+      <p>Yes, and it's a respectable strategy. With the heat off (gas to pilot, electric breaker off) and a hose attached, you can drain just 3–4 gallons from the valve with the cold supply still on — the inflow stirs the bottom and carries loose sediment out without emptying the tank. It removes less than a full flush, but done a couple of times a year it keeps the layer from establishing. A full flush is still the better annual reset, especially in hard-water areas.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The tank won't remind you. The rumble will — too late.</h2>
+        <p>A water heater asks for attention exactly once a year, in a corner of the house you never look at. Upkeep Ledger logs this flush and resurfaces it next year — alongside the anode check, the furnace filter, and every other recurring task that keeps the expensive stuff alive.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=flush-water-heater&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=flush-water-heater&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your prices, water, and heater may vary — the manufacturer's manual outranks this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, hardness: null, age: null, household: null };
+
+  var FREQ_LABEL = {
+    6: "Every 6 months",
+    9: "Every 6–12 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+
+    if (s.type === "tankless") {
+      if (s.hardness === "hard") {
+        months = 9;
+        reasons.push("Hard water scales a tankless heat exchanger quickly — most makers say descale at least annually, and hard-water households should run closer to every 6–9 months.");
+      } else {
+        months = 12;
+        reasons.push("Annual descaling is the standard manufacturer recommendation for tankless units — it protects the heat exchanger and keeps efficiency (and the warranty conversation) intact.");
+      }
+      if (s.hardness === "soft") {
+        reasons.push("Soft or softened water slows scaling a lot, but the annual service is still cheap insurance — many units will flash a maintenance reminder code regardless.");
+      }
+      if (s.household === "large") {
+        reasons.push("A big household runs more water through the exchanger, so scale accumulates faster — don't stretch the interval.");
+      }
+      if (s.age === "old") {
+        reasons.push("An older tankless unit that's missed descalings may take a longer vinegar circulation (or two) to come clean — be patient the first time.");
+      }
+      return {
+        months: months,
+        tankless: true,
+        reasons: reasons,
+        note: "<strong>Different job, same idea:</strong> tankless units aren't drained like tanks — they're <em>descaled</em> by circulating a solution (commonly food-grade white vinegar) through the unit with a small pump kit for 45–60 minutes, using the isolation/service valves. The tank checklist below doesn't apply; follow your unit's manual."
+      };
+    }
+
+    if (s.hardness === "hard") {
+      months = 6;
+      reasons.push("Hard water is the single biggest factor — mineral-heavy water can lay down a real sediment layer in months, so twice a year keeps it from ever establishing.");
+    } else if (s.hardness === "soft") {
+      reasons.push("Soft or softened water sheds far less mineral, so the standard annual flush is plenty — and some years you'll drain a bucket of nearly clear water. That's success, not wasted effort.");
+    } else if (s.hardness === "moderate") {
+      reasons.push("Moderate hardness builds sediment at the steady, ordinary pace the annual rule was written for.");
+    } else {
+      reasons.push("Until you know your hardness, treat the first flush as the test: a bucketful of sand or flakes means tighten the schedule, clear water means annual is fine. Your water utility's report lists the actual number.");
+    }
+
+    if (s.household === "large" && s.hardness !== "soft") {
+      if (months > 6) months = 6;
+      reasons.push("Five or more people means the tank cycles many times a day — more water heated, more minerals dropped. Heavy-use households do well on a six-month rhythm.");
+    } else if (s.household === "large") {
+      reasons.push("Heavy use normally tightens the schedule, but softened water offsets it — stay annual and watch what the first bucket looks like.");
+    } else if (s.household === "small") {
+      reasons.push("A small household heats less water, so sediment accumulates slowly — the annual flush stays comfortably ahead of it.");
+    } else {
+      reasons.push("A 3–4 person household is the standard case the once-a-year rule is built around.");
+    }
+
+    if (s.age === "new") {
+      reasons.push("Starting the habit while the tank is young is the whole game — a tank that's flushed from year one is the one that reaches year 10–12.");
+    } else if (s.age === "mid") {
+      reasons.push("At 6–12 years the tank is in the back half of its typical life — regular flushing (and an anode check) is what stretches the remaining years.");
+    } else {
+      reasons.push("Past 12 years, flush gently if at all — see the caution note below. The realistic plan at this age is budgeting for replacement on your schedule instead of the tank's.");
+    }
+
+    var note;
+    if (s.age === "old") {
+      note = "<strong>Caution for an older tank:</strong> if it's never (or rarely) been flushed, years of sediment may be cemented in place — and sometimes it's plugging corrosion pinholes. A vigorous flush can dislodge it, clog the drain valve open, or reveal leaks that were already coming. Drain gently, skip the stir-up bursts, keep a hose cap handy, and read the FAQ below before you open anything.";
+    } else if (s.type === "electric") {
+      note = "<strong>Electric tank rule #1:</strong> flip the heater's breaker OFF before any water leaves the tank, and don't restore power until the tank is completely full again (a hot tap running full and steady, no sputtering). Elements that energize in air burn out in moments — it's the most common DIY-flush casualty.";
+    } else {
+      note = "<strong>Gas tank rule #1:</strong> turn the control dial to PILOT (or \"vacation\") before draining so the burner can't fire on an empty tank, and note your thermostat setting first so you can put it back. The pilot stays lit the whole time on most units — no relighting needed.";
+    }
+
+    return { months: months, tankless: false, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.hardness || !quizState.age || !quizState.household) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: " + (r.tankless ? "descale " : "flush ") + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML = r.tankless
+      ? "Run a <strong>descaling kit</strong> through the unit's service valves — not the tank procedure below. Why this schedule:"
+      : "Heat off first, hose on, <strong>drain — flush — refill — then restore heat</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Kill the heat: gas dial to PILOT, or electric breaker OFF", note: "Gas: turn the control dial to PILOT/vacation (note your temperature setting first). Electric: flip the heater's breaker fully off — elements that fire in an empty tank burn out in moments." },
+    { phase: "Prep", text: "Optional but safest: let the tank cool a few hours", note: "Tank water runs 120–140°F — scalding range. Cooling overnight (or running a long hot shower first) makes everything that follows lower-stakes." },
+    { phase: "Prep", text: "Shut off the cold water supply to the tank", note: "The valve on the cold inlet line at the top of the heater — often a red handle or a quarter-turn lever. The hot side needs no valve; closing the cold stops all inflow." },
+    { phase: "Prep", text: "Attach the garden hose to the drain valve, hand-tight", note: "The spigot near the floor. Route the hose downhill its entire length to a floor drain, sump, or outside. An old towel under the connection catches the inevitable dribble." },
+    { phase: "Drain", text: "Open a hot tap somewhere in the house", note: "A nearby hot faucet, opened and left running dry — it lets air into the lines so the tank can actually drain instead of glugging against a vacuum." },
+    { phase: "Drain", text: "Open the drain valve and start the flow", note: "Some valves have a handle, some take a flathead screwdriver. Open it gently — old plastic valves are brittle. Expect 20–40 minutes for a 40–50 gallon tank." },
+    { phase: "Drain", text: "Catch the first run in a bucket and read it", note: "This is your sediment report card: clear water means you're ahead of schedule; sand, flakes, or milky water means the tank was overdue and your quiz interval above is right." },
+    { phase: "Drain", text: "If flow slows to a trickle, clear the valve", note: "Sediment clogs the drain valve itself. Close it, pull the hose for a second to check, or briefly open the cold supply to push water backward through the clog. Patience beats force here." },
+    { phase: "Flush", text: "With the tank empty, open the cold supply in short bursts", note: "10–15 seconds on, then off. The incoming water stirs the bottom of the tank and carries loosened sediment out through the hose. (Skip the bursts on a very old, never-flushed tank — drain gently and move on.)" },
+    { phase: "Flush", text: "Repeat bursts until the hose runs clear", note: "Usually 3–6 rounds. Check by letting the outflow run into the bucket — when it's clear with no grit settling, the flush is done." },
+    { phase: "Refill", text: "Close the drain valve and remove the hose", note: "Snug it closed — gently. If it weeps afterward, open and close it once to flush grit from the seat; if it still drips, thread on the brass hose cap and plan a valve replacement." },
+    { phase: "Refill", text: "Open the cold supply and fill the tank completely", note: "Leave that hot tap from earlier running. It will sputter and spit air, then settle into a full, steady stream — that's your proof the tank is full. Then close the tap." },
+    { phase: "Refill", text: "Tank full? Now restore the heat — not before", note: "Gas: dial back from PILOT to your previous temperature setting. Electric: breaker back on, only now that the elements are submerged. Hot water returns in roughly 30–60 minutes." },
+    { phase: "Refill", text: "Check for drips and log the flush", note: "Look over the drain valve and hose threads once everything is pressurized and again the next day. Then note the date — the next flush is due in 6–12 months, and nothing about the tank will remind you." }
+  ];
+
+  var LS_KEY = "upkeepguides:flush-water-heater:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

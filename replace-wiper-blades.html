@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace wiper blades — UpkeepGuides.com</title>
+<meta name="description" content="How often to replace your wiper blades, why the rubber dies whether you use them or not, and a ten-minute swap — with the cardboard trick that protects your windshield.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace wiper blades — UpkeepGuides.com">
+<meta property="og:description" content="How often to replace your wiper blades, why the rubber dies whether you use them or not, and a ten-minute swap — with the cardboard trick that protects your windshield.">
+<meta property="og:url" content="https://upkeepguides.com/replace-wiper-blades.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace wiper blades — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to replace your wiper blades, why the rubber dies whether you use them or not, and a ten-minute swap — with the cardboard trick that protects your windshield.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every 6 months</span>
+      <h1>Replace Your Wiper Blades</h1>
+      <p class="lede">Wiper rubber doesn't wear out from wiping — it dies of old age. Sun, ozone, heat, and ice harden and crack the edge whether you used the wipers or not, and you find out in the first downpour. Streaky wipers mean it's time: ten minutes, no tools, and the rain disappears again.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 6–12 months</em></span>
+        <span class="chip">⏱️ <em>~10 min</em>, no tools</span>
+        <span class="chip">💵 <em>$20–60</em> a pair, DIY</span>
+        <span class="chip">🛡️ Protects a <em>$300–1,500</em> windshield</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of the front of a car in the rain, where a fresh wiper blade has just swept a clean fan-shaped arc across an otherwise droplet-covered windshield, under two rain clouds">
+      <ellipse cx="280" cy="400" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- rain clouds -->
+      <ellipse cx="118" cy="54" rx="58" ry="24" fill="#b9b1a3"/>
+      <ellipse cx="170" cy="66" rx="40" ry="18" fill="#dce8ee"/>
+      <ellipse cx="442" cy="48" rx="62" ry="26" fill="#b9b1a3"/>
+      <ellipse cx="386" cy="62" rx="38" ry="17" fill="#dce8ee"/>
+      <!-- rain -->
+      <g stroke="#7fb3c8" stroke-width="3.5" stroke-linecap="round">
+        <line x1="90" y1="92" x2="82" y2="114"/>
+        <line x1="128" y1="100" x2="120" y2="122"/>
+        <line x1="168" y1="94" x2="160" y2="116"/>
+        <line x1="396" y1="92" x2="388" y2="114"/>
+        <line x1="436" y1="100" x2="428" y2="122"/>
+        <line x1="476" y1="90" x2="468" y2="112"/>
+        <line x1="62" y1="142" x2="54" y2="164"/>
+        <line x1="500" y1="140" x2="492" y2="162"/>
+        <line x1="36" y1="220" x2="28" y2="242"/>
+        <line x1="524" y1="216" x2="516" y2="238"/>
+      </g>
+      <!-- side mirrors -->
+      <rect x="106" y="198" width="36" height="20" rx="8" fill="#c96f4a"/>
+      <rect x="418" y="198" width="36" height="20" rx="8" fill="#c96f4a"/>
+      <!-- wheels -->
+      <circle cx="188" cy="358" r="22" fill="#33393b"/>
+      <circle cx="372" cy="358" r="22" fill="#33393b"/>
+      <!-- roof -->
+      <rect x="158" y="90" width="244" height="30" rx="14" fill="#c96f4a"/>
+      <!-- windshield frame + glass -->
+      <rect x="148" y="114" width="264" height="144" rx="16" fill="#33393b"/>
+      <rect x="157" y="123" width="246" height="126" rx="12" fill="#dce8ee"/>
+      <!-- clean swept arc -->
+      <path d="M296 246 L188 197 A 119 119 0 0 1 404 197 Z" fill="#fffdf8"/>
+      <!-- droplets on the un-swept glass -->
+      <g fill="#7fb3c8">
+        <circle cx="172" cy="138" r="4"/>
+        <circle cx="190" cy="160" r="3.5"/>
+        <circle cx="168" cy="184" r="3"/>
+        <circle cx="206" cy="138" r="3"/>
+        <circle cx="386" cy="140" r="4"/>
+        <circle cx="368" cy="162" r="3.5"/>
+        <circle cx="392" cy="186" r="3"/>
+        <circle cx="350" cy="140" r="3"/>
+        <circle cx="172" cy="232" r="3.5"/>
+        <circle cx="390" cy="234" r="3.5"/>
+      </g>
+      <!-- fresh wiper mid-sweep -->
+      <line x1="296" y1="246" x2="206" y2="176" stroke="#33393b" stroke-width="8" stroke-linecap="round"/>
+      <rect x="166" y="171" width="78" height="10" rx="5" fill="#2c5a40" transform="rotate(-52 205 176)"/>
+      <!-- parked passenger wiper -->
+      <rect x="304" y="238" width="92" height="8" rx="4" fill="#33393b" transform="rotate(-10 350 242)"/>
+      <!-- sweep sparkle -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="252" y1="152" x2="258" y2="144"/>
+        <line x1="282" y1="142" x2="282" y2="132"/>
+        <line x1="312" y1="150" x2="306" y2="142"/>
+      </g>
+      <!-- hood -->
+      <rect x="140" y="254" width="280" height="36" rx="12" fill="#d9663f"/>
+      <!-- bumper / grille / lights -->
+      <rect x="126" y="286" width="308" height="62" rx="18" fill="#c96f4a"/>
+      <rect x="232" y="304" width="96" height="16" rx="8" fill="#8a6a4f"/>
+      <circle cx="176" cy="312" r="16" fill="#e0a93d"/>
+      <circle cx="176" cy="312" r="8" fill="#faf0da"/>
+      <circle cx="384" cy="312" r="16" fill="#e0a93d"/>
+      <circle cx="384" cy="312" r="8" fill="#faf0da"/>
+      <rect x="150" y="336" width="260" height="9" rx="4.5" fill="#8a6a4f"/>
+      <!-- puddles -->
+      <ellipse cx="100" cy="392" rx="42" ry="7" fill="#7fb3c8" opacity="0.45"/>
+      <ellipse cx="462" cy="394" rx="36" ry="6" fill="#7fb3c8" opacity="0.45"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Wipers are the one wear item that fails exactly when you need it most — the rubber degrades quietly in dry weather, then the first storm reveals it. Here's what a $25 blade is actually protecting:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <g stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round">
+            <line x1="9" y1="4" x2="7" y2="9"/>
+            <line x1="18" y1="3" x2="16" y2="8"/>
+            <line x1="27" y1="4" x2="25" y2="9"/>
+          </g>
+          <path d="M4 20 q14 -13 28 0 q-14 13 -28 0" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <circle cx="18" cy="20" r="5" fill="#2c5a40"/>
+          <circle cx="20" cy="18" r="1.6" fill="#fffdf8"/>
+        </svg></div>
+        <h3>You drive by sight</h3>
+        <p>Most of the information you use to drive comes in through the windshield. Worn blades smear instead of clearing, and at night every smear scatters oncoming headlights into glare — right when seeing the lane line matters most.</p>
+        <span class="cost">Worst exactly when it rains</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="9" width="28" height="20" rx="6" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M10 26 a15 15 0 0 1 9 -14" stroke="#d9663f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-dasharray="4 3"/>
+          <path d="M23 12 l3 4 l-2 2 l3 4" stroke="#c96f4a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Torn rubber scratches glass</h3>
+        <p>When the rubber splits or pulls loose, the blade's bare metal or hard plastic frame rides directly on the glass. A few sweeps can grind a permanent arc-shaped scratch that no polish removes — and that's a new windshield, plus camera recalibration on many newer cars.</p>
+        <span class="cost">$300–$1,500 windshield</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="5" width="22" height="27" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="13" y="2" width="10" height="6" rx="2" fill="#b9b1a3"/>
+          <line x1="12" y1="13" x2="24" y2="13" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="18" x2="24" y2="18" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="22" cy="26" r="6" fill="#d9663f"/>
+          <path d="M19.5 23.5 l5 5 M24.5 23.5 l-5 5" stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It can fail inspection</h3>
+        <p>In states with safety inspections, torn or non-functioning wipers are a standard check item — a $25 part can mean a failed sticker, a re-test fee, and another trip to the station. Inspectors look for exactly the cracking you've been ignoring.</p>
+        <span class="cost">Failed sticker + re-test trip</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="11" cy="10" r="6" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+            <line x1="11" y1="1" x2="11" y2="3.5"/>
+            <line x1="20" y1="10" x2="22.5" y2="10"/>
+            <line x1="17" y1="4" x2="18.8" y2="2.2"/>
+          </g>
+          <path d="M24 6 l4 5 h-3 l4 5" stroke="#7fb3c8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="5" y="25" width="26" height="6" rx="3" fill="#33393b"/>
+          <g stroke="#d9663f" stroke-width="1.8" stroke-linecap="round">
+            <line x1="12" y1="25" x2="12" y2="31"/>
+            <line x1="19" y1="25" x2="19" y2="31"/>
+            <line x1="26" y1="25" x2="26" y2="31"/>
+          </g>
+        </svg></div>
+        <h3>They age even parked</h3>
+        <p>UV light, ozone, and heat harden the rubber; winter adds ice scraping and freeze-thaw cracking. A car that sat all summer can have blades that crumble at the first autumn storm — sudden failure, in the dark, on the highway.</p>
+        <span class="cost">Sudden failure mid-storm</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace them?</h2>
+    <p class="sub">"Every 6 to 12 months" is the typical range — hot-sun and harsh-winter climates live at the short end, mild garage-kept cars at the long end. And symptoms outrank any calendar. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">1. What does your weather do to rubber?</div>
+        <div class="pills">
+          <button class="pill" data-v="hot">Hot, intense sun</button>
+          <button class="pill" data-v="cold">Freezing winters, ice scraping</button>
+          <button class="pill" data-v="mild">Mild most of the year</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="parking">
+        <div class="q-label">2. Where does the car spend its days?</div>
+        <div class="pills">
+          <button class="pill" data-v="outside">Parked outside</button>
+          <button class="pill" data-v="garage">Garage or carport</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="symptoms">
+        <div class="q-label">3. How do the current blades behave in rain?</div>
+        <div class="pills">
+          <button class="pill" data-v="now">Streaking, chattering, or squealing</button>
+          <button class="pill" data-v="meh">Mostly fine, but they're getting old</button>
+          <button class="pill" data-v="good">Wiping clean and quiet</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">4. How much wiping do they actually do?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Rainy region or daily highway miles</button>
+          <button class="pill" data-v="average">Average mix</button>
+          <button class="pill" data-v="light">Rarely drive in rain</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="sizeNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Blades are one of the cheapest wear items on the car, and the swap takes ten minutes in the parking lot of the store that sold them. What they protect is the glass — and your view of the road (typical U.S. figures, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–60</div><div class="l">a pair of quality blades, fitted yourself</div></div>
+        <div class="calc-stat"><div class="v">10 min</div><div class="l">both fronts plus the rear, no tools</div></div>
+        <div class="calc-stat"><div class="v bad">$300–$1,500</div><div class="l">windshield replacement after a frame scratch — more with camera recalibration</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 A year of fresh blades (two pairs, DIY)</span><span>$40–$120</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:9%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🪟 Glass polishing attempt on wiper scratches (often can't fix them)</span><span>$100–$300</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:22%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚗 Windshield replaced + ADAS camera recalibrated</span><span>$300–$1,500+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">And the money is the small part. A blade that fails in a storm takes your forward vision with it at highway speed — visibility you can't buy back at any price in that moment. <strong>$40 a year</strong> for rubber that's always ready against a <strong>$1,000-class repair</strong> and a genuinely dangerous five minutes: replace them when they streak, not when they shred.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your wiper blades</h2>
+    <p class="sub">No tools, no jack, no grease — the whole job is two clicks per blade. Read the techniques first (the cardboard trick alone is worth the visit), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ One real hazard: the arm is a loaded spring</h3>
+      <ul>
+        <li><strong>A raised wiper arm is spring-loaded against the glass.</strong> If a bare metal arm snaps back with no blade on it, it can chip or crack the windshield. Keep a hand on it, always.</li>
+        <li><strong>Lay folded cardboard or a towel on the glass</strong> under the arm the whole time it's up. If your grip slips, the pad takes the hit instead of the glass.</li>
+        <li><strong>Never walk away from a raised, bladeless arm</strong> — not even for the ten seconds it takes to unwrap the new blade. Unwrap first.</li>
+        <li><strong>Park with the key off</strong> so a bumped wiper stalk can't sweep a bare arm across the windshield mid-swap.</li>
+        <li>If the release tab won't give, <strong>stop and check the instructions</strong> — forcing it bends the arm, and a bent arm means streaks no new blade can fix.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">New blades — sized per side (driver ≠ passenger)</span>
+      <span class="tool-chip">The old blades or a parts-store size lookup</span>
+      <span class="tool-chip">Folded cardboard or a towel</span>
+      <span class="tool-chip">Glass cleaner + microfiber cloth</span>
+      <span class="tool-chip">Jug of washer fluid</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a J-hook wiper arm hooked over the blade's center connector, with an arrow pressing the small release tab and a second arrow sliding the blade out of the hook">
+          <rect x="26" y="106" width="216" height="14" rx="7" fill="#33393b"/>
+          <rect x="110" y="94" width="50" height="22" rx="6" fill="#8a6a4f"/>
+          <path d="M232 26 q-58 16 -90 60" stroke="#33393b" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <path d="M142 86 q-16 0 -16 14 q0 13 16 13" stroke="#33393b" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <rect x="146" y="98" width="13" height="11" rx="3" fill="#e0a93d"/>
+          <line x1="176" y1="74" x2="160" y2="94" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round"/>
+          <polygon points="160,94 162,82 172,90" fill="#3e7c59"/>
+          <text x="180" y="70" font-size="12" font-weight="700" fill="#2c5a40">1. press the tab</text>
+          <path d="M98 132 h-50" stroke="#c96f4a" stroke-width="5" stroke-linecap="round"/>
+          <polygon points="48,132 62,124 62,140" fill="#c96f4a"/>
+          <text x="44" y="156" font-size="12" font-weight="700" fill="#c96f4a">2. slide the blade out</text>
+          <text x="196" y="160" font-size="12" fill="#6b7376">J-hook arm</text>
+        </svg>
+        <h4>The J-hook release</h4>
+        <p>Most cars use a J-hook: the arm's curled end hooks over the blade's center connector. Press or lift the small tab, then slide the blade toward the arm's base and out of the hook. Pin and bayonet arms exist too — aftermarket blades ship with adapters for all three.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Side-view diagram of a raised wiper arm over a slanted windshield, with folded cardboard lying on the glass beneath it and a terracotta arrow showing the direction the spring would snap the arm down">
+          <polygon points="34,148 186,40 252,40 100,148" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <rect x="10" y="148" width="248" height="16" rx="7" fill="#c96f4a"/>
+          <rect x="118" y="100" width="58" height="36" rx="5" fill="#c9a06b" transform="rotate(-35 147 118)"/>
+          <line x1="116" y1="142" x2="216" y2="74" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+          <rect x="196" y="62" width="42" height="9" rx="4.5" fill="#2c5a40" transform="rotate(-35 217 66)"/>
+          <path d="M214 86 q14 18 2 34" stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="214,124 208,110 222,112" fill="#d9663f"/>
+          <text x="16" y="30" font-size="12" font-weight="700" fill="#2c5a40">pad the landing zone</text>
+          <text x="150" y="158" font-size="11" fill="#fffdf8">hood</text>
+          <text x="118" y="84" font-size="11" fill="#8a6a4f" transform="rotate(-35 118 84)">cardboard</text>
+        </svg>
+        <h4>The cardboard trick</h4>
+        <p>The arm spring is strong enough that a bare arm snapping back can crack the glass. Fold cardboard (or a towel) onto the windshield under the raised arm before you touch the release — now a slip costs nothing.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of three wiper blades of different lengths from the same car: a long driver-side blade, a shorter passenger-side blade, and a small rear blade, each labeled with an example size">
+          <rect x="28" y="36" width="186" height="13" rx="6.5" fill="#33393b"/>
+          <text x="224" y="48" font-size="12" font-weight="700" fill="#2c5a40">driver 26"</text>
+          <rect x="28" y="80" width="136" height="13" rx="6.5" fill="#33393b"/>
+          <text x="174" y="92" font-size="12" font-weight="700" fill="#2c5a40">pass. 19"</text>
+          <rect x="28" y="124" width="84" height="13" rx="6.5" fill="#33393b"/>
+          <text x="122" y="136" font-size="12" font-weight="700" fill="#c96f4a">rear 12"</text>
+          <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+            <line x1="28" y1="60" x2="28" y2="68"/>
+            <line x1="214" y1="60" x2="214" y2="68"/>
+            <line x1="28" y1="64" x2="214" y2="64"/>
+          </g>
+          <text x="36" y="164" font-size="12" fill="#6b7376">one car, three sizes (example) — look up each one</text>
+        </svg>
+        <h4>Sizes differ per side</h4>
+        <p>Driver and passenger blades are often several inches apart, and the rear hatch blade — the one everyone forgets — is usually smaller still and sometimes a special fitting. Use the lookup book or app at the parts store, or measure each old blade.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a spray bottle and cloth cleaning a windshield pane next to a jug of washer fluid being topped up, showing the finishing steps of the job">
+          <rect x="96" y="26" width="118" height="104" rx="10" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5"/>
+          <path d="M118 116 q24 -64 76 -78" stroke="#fffdf8" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <rect x="34" y="74" width="32" height="54" rx="8" fill="#7fb3c8"/>
+          <rect x="42" y="58" width="16" height="18" rx="4" fill="#2c5a40"/>
+          <path d="M58 62 h12" stroke="#2c5a40" stroke-width="5" stroke-linecap="round"/>
+          <g fill="#7fb3c8">
+            <circle cx="80" cy="58" r="3"/>
+            <circle cx="90" cy="50" r="2.5"/>
+            <circle cx="88" cy="64" r="2"/>
+          </g>
+          <rect x="226" y="76" width="40" height="56" rx="8" fill="#7fb3c8"/>
+          <rect x="236" y="64" width="14" height="14" rx="4" fill="#2c5a40"/>
+          <rect x="232" y="92" width="28" height="22" rx="4" fill="#fffdf8"/>
+          <text x="246" y="107" font-size="10" font-weight="700" fill="#2c5a40" text-anchor="middle">fluid</text>
+          <ellipse cx="150" cy="160" rx="110" ry="8" fill="#efe7d8"/>
+          <text x="104" y="152" font-size="12" fill="#6b7376">clean glass + full reservoir</text>
+        </svg>
+        <h4>Finish the job: glass and fluid</h4>
+        <p>New rubber on dirty glass streaks on day one — road film and wax are half of all "bad wiper" complaints. Clean the windshield while you're there, and top the washer fluid so the new blades never have to wipe dry.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Swap progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fresh rubber all around — enjoy the next downpour. Same swap in about six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ MAKE THEM LAST ============ -->
+  <section id="last-longer">
+    <h2>Make your blades last longer</h2>
+    <p class="sub">You can't stop rubber from aging, but you can stop helping it along. A little care stretches a 6-month blade toward the 12-month end of the range:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Never run the wipers on dry glass.</strong> Dry wiping grinds dust across the edge like sandpaper. One squirt of washer fluid first — it's there to lubricate the wipe, not just rinse bugs.</li>
+        <li><strong>Don't use the wipers as an ice scraper.</strong> Dragging blades across frozen glass tears chunks out of the edge. Scrape and defrost first; the wipers handle the meltwater.</li>
+        <li><strong>Free frozen blades gently before driving.</strong> If the rubber is frozen to the glass, peeling the arm up rips the edge. Run the defroster until they release on their own.</li>
+        <li><strong>Before snow, lift the arms or use the service position.</strong> Blades that aren't frozen to the glass survive the storm — and you can scrape the windshield without working around them. (Some manuals advise against leaving arms up for long periods in wind; a windshield cover works too.)</li>
+        <li><strong>Wipe the rubber edge monthly</strong> with a damp cloth or a bit of washer fluid on a paper towel. The black grime that comes off is what's been streaking — this alone often buys a quiet month or two.</li>
+        <li><strong>Keep the washer reservoir topped.</strong> An empty tank tempts you into dry wipes, and in winter, fluid rated for freezing temperatures keeps the whole system working when you need it most.</li>
+        <li><strong>Park in shade or a garage when you can.</strong> UV and heat are the biggest rubber-killers — the same parking habit that protects your paint protects the blades.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Can I just replace the rubber refill instead of the whole blade?</summary>
+      <p>Sometimes. Refills (just the rubber insert) cost a few dollars and work fine if the frame is straight, the hinges still articulate, and the maker actually sells refills for your blade — common for conventional frames, rare for beam blades. The trade-off is fiddliness: sliding a new insert into the little claws without kinking it takes patience. Whole blades cost more but are two clicks and foolproof. If the frame is bent or the blade chatters even with good rubber, replace the whole thing.</p>
+    </details>
+    <details>
+      <summary>Why do my brand-new blades still streak?</summary>
+      <p>Usually it's the glass, not the blade. Road film, exhaust residue, and old wax build an invisible layer that fresh rubber skips over. Clean the windshield thoroughly with glass cleaner (or a little rubbing alcohol on a cloth) and the streaks typically vanish. Two other suspects: a protective plastic sleeve some new blades ship with — check that it's been peeled off the rubber — and a bent wiper arm that no blade can compensate for.</p>
+    </details>
+    <details>
+      <summary>What do the symptoms mean — streaking vs. chattering vs. squealing?</summary>
+      <p>Streaking (lines of water left behind) means the edge is worn, torn, or dirty. Chattering or skipping (the blade judders across in hops) usually means the rubber has hardened and taken a curved "set," or the arm is slightly twisted. Squealing often means dry glass or hardened rubber. Bands of missed water mean the frame is bent or a hinge is seized. A visibly split or torn edge means stop using that wiper — the frame can touch glass.</p>
+    </details>
+    <details>
+      <summary>Beam vs. conventional vs. hybrid — which should I buy?</summary>
+      <p>Conventional (frame-style) blades are cheapest and work fine in mild climates, but the exposed frame packs with snow and ice. Beam blades are a single curved spring strip — even pressure on curved glass, nothing for ice to clog, usually a few dollars more, and they're what most new cars ship with. Hybrids put an aero shell over a frame and sit in between. In a hard-winter climate, beam (or a rubber-booted winter blade) is the easy call; elsewhere, buy the best rubber you can rather than the fanciest style.</p>
+    </details>
+    <details>
+      <summary>Do I need dedicated winter blades?</summary>
+      <p>If your winters bring real snow and ice, they help: winter blades wrap the frame in a rubber boot (or use a beam design) so slush can't pack the hinges and lift the edge off the glass. Many people in snow states run winter blades from the first freeze to spring, then switch back — which conveniently lands on the same twice-a-year rhythm as replacement. In mild climates, a good beam blade year-round covers you.</p>
+    </details>
+    <details>
+      <summary>What size do I buy — and does close-enough count?</summary>
+      <p>Look it up per side: the lookup book or kiosk at any parts store, the store's website, or your owner's manual lists exact lengths for driver, passenger, and rear. Sides often differ by several inches, and an oversized blade can hit the trim or the other wiper mid-sweep, while an undersized one leaves a band of windshield unwiped. Stick to the listed size; if you must substitute, never go longer.</p>
+    </details>
+    <details>
+      <summary>What about the rear wiper?</summary>
+      <p>Same rubber, same sun, same aging — it just gets forgotten because you rarely look through it. Rear blades are usually shorter and often use a different attachment (some pull straight off a pivot, some use small plastic adapters), so check the fitting before you buy. Replace it on the same schedule as the fronts, or at minimum once a year — a hatchback's rear window in winter road spray earns its keep.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Blades fail on a schedule — just not one you can see.</h2>
+        <p>Nothing about a wiper warns you it's dying until the storm you needed it for. Upkeep Ledger turns the interval you just worked out into a reminder: log today's swap and it tells you when the rubber's time is up again — alongside the tire checks, the filters, and everything else that quietly comes due.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-wiper-blades&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-wiper-blades&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your prices, sizes, and fittings vary by vehicle — the owner's manual and the blade's instructions outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { climate: null, parking: null, symptoms: null, use: null };
+
+  function freqLabel(m) {
+    if (m <= 3) return "every 3–4 months";
+    if (m <= 5) return "every 4–6 months";
+    if (m <= 7) return "every 6 months";
+    if (m <= 9) return "every 6–9 months";
+    return "every 9–12 months";
+  }
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 7;
+
+    if (s.climate === "hot") {
+      months -= 2;
+      reasons.push("Intense sun is the fastest rubber-killer there is — UV and heat harden the wiping edge whether the blades ever move or not. Hot-sun climates live at the short end of the 6–12 month range.");
+    } else if (s.climate === "cold") {
+      months -= 2;
+      reasons.push("Hard winters attack from the other direction: ice scraping tears the edge, freeze-thaw cycles crack hardened rubber, and slush packs conventional frames. Plan on fresh blades going into each winter.");
+    } else {
+      months += 2;
+      reasons.push("A mild climate is the kindest to rubber — without extreme UV or ice, quality blades routinely reach the 12-month end of the typical range.");
+    }
+
+    if (s.parking === "outside") {
+      months -= 1;
+      reasons.push("Parked outside, the blades take full sun and frost every single day — outdoor parking reliably shortens blade life versus a covered car.");
+    } else {
+      months += 1;
+      reasons.push("Garage or carport parking shields the rubber from most UV and frost, which stretches the interval noticeably.");
+    }
+
+    if (s.use === "heavy") {
+      months -= 1;
+      reasons.push("Lots of actual wiping miles wear the edge mechanically on top of the aging — heavy-rain and daily-highway cars should run at the tighter end of their range.");
+    } else if (s.use === "light") {
+      months += 1;
+      reasons.push("Light use barely wears the edge — but remember the calendar still applies, because rubber ages parked. Test the blades with the washer spray now and then so a surprise storm isn't the first test.");
+    } else {
+      reasons.push("Average wiper use means aging, not wear, sets your schedule — the climate and parking answers above are doing most of the work.");
+    }
+
+    if (months < 3) months = 3;
+    if (months > 12) months = 12;
+
+    var headline, body;
+    if (s.symptoms === "now") {
+      headline = "Replace them now — then " + freqLabel(months);
+      body = "Streaking, chattering, or squealing means the rubber is already past done — no cleaning trick brings back a worn edge. Swap both fronts (and check the rear) this week, then put the interval below on the calendar:";
+      reasons.unshift("Symptoms outrank any schedule: a blade that streaks or chatters today will be worse in the next storm, and a torn edge can let the frame touch the glass.");
+    } else if (s.symptoms === "meh") {
+      headline = "Your plan: replace " + freqLabel(months);
+      body = "“Mostly fine but aging” is exactly when to buy the next set — before the failure, not after. Keep them until the first streak or chatter, then swap same-week. Why this schedule:";
+    } else {
+      headline = "Your plan: replace " + freqLabel(months);
+      body = "Clean and quiet today — so your job is the calendar, plus a quick monthly glance at the rubber for splits and stiffness. Why this schedule:";
+    }
+
+    var sizeNote = "<strong>Before you buy:</strong> look up all three sizes — driver and passenger blades often differ by several inches, and the rear blade (the forgotten one) is usually smaller with its own fitting. The parts-store lookup book, their website, or your owner's manual has the exact lengths.";
+
+    return { headline: headline, body: body, reasons: reasons, sizeNote: sizeNote };
+  }
+
+  function onQuizChange() {
+    if (!quizState.climate || !quizState.parking || !quizState.symptoms || !quizState.use) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = r.headline;
+    document.getElementById("resultBody").innerHTML = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("sizeNote").innerHTML = r.sizeNote;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Size it up", text: "Read the old blades: what failed?", note: "Torn or split rubber, a bent frame, seized hinges, hardened edge — knowing what died tells you whether to buy sturdier (beam or winter blades) this time." },
+    { phase: "Size it up", text: "Look up all three sizes — driver, passenger, rear", note: "Parts-store lookup book or website, or measure each old blade. Driver and passenger often differ by inches; the rear is usually smaller with its own fitting." },
+    { phase: "Size it up", text: "Note your attachment type", note: "Look where blade meets arm: a curled hook through the connector is a J-hook (most common); a small side pin or a slide-in bayonet are the other two. Aftermarket blades include adapters for all three." },
+    { phase: "Swap the fronts", text: "Park, key off, and unwrap the first new blade", note: "Key off so a bumped stalk can't sweep a bare arm. Unwrap before you raise anything — never leave a raised arm waiting. Some cars hide the arms under the hood lip; check the manual for the wiper 'service position.'" },
+    { phase: "Swap the fronts", text: "Raise the driver's arm and pad the glass beneath it", note: "Folded cardboard or a towel on the windshield under the arm. The spring is strong enough to crack glass if a bare arm snaps back." },
+    { phase: "Swap the fronts", text: "Release the old blade — press the tab, slide it out", note: "On a J-hook: press or lift the small tab on the connector, then slide the blade toward the arm's base and out of the hook. If it fights you, check the diagram on the new blade's box instead of forcing it." },
+    { phase: "Swap the fronts", text: "Keep a hand on the bare arm the whole time", note: "This is the moment the cardboard is guarding against. Don't let go; don't walk away." },
+    { phase: "Swap the fronts", text: "Click the new blade on, then tug to confirm", note: "Slide the connector into the hook until it clicks, fit the adapter first if the instructions call for one, and give it a gentle tug — a half-latched blade departs at highway speed." },
+    { phase: "Swap the fronts", text: "Lower the arm gently and repeat on the passenger side", note: "Set it down onto the glass — never let it snap. Then same routine, other side: pad, press, slide, click, tug." },
+    { phase: "Don't forget the rear", text: "Swap the rear blade", note: "Often a different, smaller fitting — some pull straight off a pivot, some use a tiny adapter. Same cardboard caution if the rear arm is spring-loaded." },
+    { phase: "While you're there", text: "Clean the windshield, outside and in", note: "Glass cleaner and a microfiber cloth. Road film and wax residue are why even new blades streak — and the inside haze is half of nighttime glare." },
+    { phase: "While you're there", text: "Wipe the new rubber once with a damp cloth", note: "Removes any factory residue or stray protective film so the first sweep is a clean one." },
+    { phase: "While you're there", text: "Top up the washer fluid", note: "Fluid lubricates every wipe. In winter, use a mix rated below your coldest nights so the spray (and the reservoir) doesn't freeze." },
+    { phase: "Finish", text: "Test the wipers on wet glass, then log the date", note: "Spray and run a few sweeps — clean, quiet, full contact, no missed bands. Note today's date: the next swap is due in about 6 months, and nothing about the rubber will remind you." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-wiper-blades:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

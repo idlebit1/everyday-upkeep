@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descale coffee maker — UpkeepGuides.com</title>
+<meta name="description" content="How often to descale your coffee maker, why limescale slows brews and kills heating elements, and a mostly-hands-off vinegar routine for drip and pod machines.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Descale coffee maker — UpkeepGuides.com">
+<meta property="og:description" content="How often to descale your coffee maker, why limescale slows brews and kills heating elements, and a mostly-hands-off vinegar routine for drip and pod machines.">
+<meta property="og:url" content="https://upkeepguides.com/descale-coffee-maker.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Descale coffee maker — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to descale your coffee maker, why limescale slows brews and kills heating elements, and a mostly-hands-off vinegar routine for drip and pod machines.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Quarterly</span>
+      <h1>Descale Your Coffee Maker</h1>
+      <p class="lede">Every pot you brew leaves a whisper of dissolved minerals behind — and they harden into limescale exactly where it hurts: on the heating element and inside the narrow water lines. A vinegar cycle every few months dissolves the buildup, so the machine brews hot, fast, and clean instead of slowly choking on its own water.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>~1 hour</em>, mostly hands-off</span>
+        <span class="chip">🧴 About <em>$1–$3</em> of white vinegar</span>
+        <span class="chip">💸 Skipping it risks <em>$80–$200</em> machine replacement</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a kitchen counter with a drip coffee maker running a descaling cycle: pale vinegar solution dripping into the glass carafe with steam rising, a jug of white vinegar and a measuring cup beside the machine, a window with sun, and a small plant at the end of the counter">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="48" y="46" width="112" height="118" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="104" y1="49" x2="104" y2="161" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="51" y1="105" x2="157" y2="105" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="82" cy="80" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="82" y1="56" x2="82" y2="61"/>
+        <line x1="106" y1="80" x2="101" y2="80"/>
+        <line x1="99" y1="63" x2="95" y2="67"/>
+      </g>
+      <rect x="36" y="38" width="136" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- counter + cabinets -->
+      <rect x="56" y="316" width="448" height="16" rx="6" fill="#c9a06b"/>
+      <rect x="76" y="332" width="408" height="62" fill="#b9b1a3"/>
+      <rect x="92" y="344" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <rect x="288" y="344" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <circle cx="182" cy="363" r="4" fill="#e0a93d"/>
+      <circle cx="378" cy="363" r="4" fill="#e0a93d"/>
+      <!-- coffee maker: reservoir tower at back right -->
+      <rect x="392" y="158" width="42" height="158" rx="10" fill="#8a6a4f"/>
+      <rect x="399" y="182" width="28" height="126" rx="8" fill="#dce8ee"/>
+      <!-- 1:1 solution level in the reservoir -->
+      <rect x="399" y="238" width="28" height="70" rx="8" fill="#7fb3c8"/>
+      <g stroke="#fffdf8" stroke-width="2" stroke-linecap="round">
+        <line x1="404" y1="256" x2="422" y2="256"/>
+        <line x1="404" y1="278" x2="422" y2="278"/>
+      </g>
+      <rect x="386" y="148" width="54" height="14" rx="7" fill="#5a4634"/>
+      <!-- brew head overhanging the carafe -->
+      <rect x="282" y="158" width="124" height="34" rx="10" fill="#8a6a4f"/>
+      <rect x="296" y="166" width="62" height="8" rx="4" fill="#c9a06b"/>
+      <circle cx="386" cy="175" r="6" fill="#e0a93d"/>
+      <!-- machine spine + warmer base -->
+      <rect x="376" y="192" width="30" height="100" rx="6" fill="#8a6a4f"/>
+      <rect x="276" y="292" width="158" height="24" rx="8" fill="#8a6a4f"/>
+      <ellipse cx="328" cy="296" rx="40" ry="5" fill="#5a4634"/>
+      <!-- descale drips from the brew head -->
+      <g fill="#7fb3c8">
+        <circle cx="324" cy="206" r="3.5"/>
+        <circle cx="330" cy="222" r="3"/>
+        <circle cx="325" cy="238" r="3.5"/>
+      </g>
+      <!-- carafe with pale descaling solution -->
+      <path d="M296 252 l-8 40 h82 l-8 -40 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <path d="M293 268 l-4 24 h80 l-4 -24 z" fill="#7fb3c8"/>
+      <rect x="296" y="244" width="66" height="10" rx="5" fill="#8a6a4f"/>
+      <path d="M372 256 q18 8 6 28" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- steam curling off the carafe -->
+      <g stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M306 232 q-7 -12 0 -24 q7 -12 0 -22"/>
+        <path d="M348 230 q7 -12 0 -24 q-7 -12 0 -22"/>
+      </g>
+      <!-- vinegar jug on the counter, left of the machine -->
+      <rect x="196" y="226" width="52" height="90" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="210" y="206" width="24" height="24" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="206" y="198" width="32" height="12" rx="5" fill="#2c5a40"/>
+      <rect x="204" y="248" width="36" height="44" rx="6" fill="#3e7c59"/>
+      <g stroke="#e3efe8" stroke-width="3" stroke-linecap="round">
+        <line x1="212" y1="262" x2="232" y2="262"/>
+        <line x1="212" y1="272" x2="226" y2="272"/>
+      </g>
+      <!-- measuring cup of vinegar -->
+      <path d="M140 286 l6 30 h34 l6 -30 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <path d="M144 296 l3 20 h32 l3 -20 z" fill="#faf0da"/>
+      <path d="M186 290 q14 4 4 18" stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- mug waiting at the far left -->
+      <rect x="92" y="288" width="34" height="28" rx="6" fill="#c96f4a"/>
+      <path d="M126 294 q12 4 0 16" stroke="#c96f4a" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- plant at right end of the counter -->
+      <path d="M474 296 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M474 296 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="461" cy="266" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 461 266)"/>
+      <ellipse cx="489" cy="270" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 489 270)"/>
+      <path d="M462 296 h24 l-4 22 h-16 z" fill="#c96f4a"/>
+      <!-- scale flecks rinsing away near the drain-side -->
+      <g fill="#b9b1a3">
+        <circle cx="262" cy="306" r="2.5"/>
+        <circle cx="270" cy="298" r="2"/>
+        <circle cx="255" cy="296" r="2"/>
+      </g>
+      <!-- rug -->
+      <ellipse cx="300" cy="404" rx="130" ry="10" fill="#b9b1a3" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Tap water carries dissolved calcium and magnesium. Heat the water and those minerals fall out of solution as limescale — a chalky crust that coats the heating element and narrows the machine's skinny internal tubes a little more with every brew. Here's what that costs you (typical U.S. figures):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 24 q3 -6 6 0 q3 6 6 0 q3 -6 6 0 q3 6 6 0" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M6 24 q3 -6 6 0 q3 6 6 0 q3 -6 6 0 q3 6 6 0" stroke="#b9b1a3" stroke-width="3" fill="none" stroke-linecap="round" transform="translate(0,5)" opacity="0.8"/>
+          <g fill="#dce8ee">
+            <circle cx="11" cy="14" r="2.2"/>
+            <circle cx="18" cy="11" r="2.6"/>
+            <circle cx="25" cy="14" r="2.2"/>
+          </g>
+          <path d="M18 4 v4" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A crusted heating element</h3>
+        <p>Scale is an insulator. A coated element has to run longer and hotter to hit brewing temperature, which stresses it every single morning until — in the worst case — it burns out or the thermal cutoff trips for good.</p>
+        <span class="cost">The #1 small-appliance killer</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="15" cy="18" r="11" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <line x1="15" y1="18" x2="15" y2="10.5" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="15" y1="18" x2="21" y2="21" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <g fill="#7fb3c8">
+            <circle cx="30" cy="10" r="2.2"/>
+            <circle cx="31" cy="18" r="1.8"/>
+            <circle cx="30" cy="26" r="2.2"/>
+          </g>
+        </svg></div>
+        <h3>Slow brews &amp; half-full pots</h3>
+        <p>Scale narrows the water lines, so the same pot takes longer to brew — and a badly clogged machine sputters, gurgles loudly, or quits mid-brew with the reservoir still half full. That's the classic "it just stopped working" story.</p>
+        <span class="cost">Minutes lost every morning</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="12" width="18" height="16" rx="4" fill="#c96f4a"/>
+          <path d="M25 15 q7 2 0 10" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M11 17 q3 3 5 0 q3 -3 5 0" stroke="#fbe9e1" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <g stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round" fill="none">
+            <path d="M12 8 q-2 -2.5 0 -5"/>
+            <path d="M19 8 q-2 -2.5 0 -5"/>
+          </g>
+        </svg></div>
+        <h3>Coffee that tastes off</h3>
+        <p>Brewing through scale means cooler water and mineral flavors in the cup — flat, bitter, or oddly chalky coffee from the same beans you've always used. If your coffee got worse and nothing else changed, the machine is the suspect.</p>
+        <span class="cost">Every cup, a little worse</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 14 l9 -9 h13 a3 3 0 0 1 3 3 v13 l-9 9 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="25" cy="11" r="2.5" fill="#e0a93d"/>
+          <path d="M11 22 l8 8" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M19 22 l-8 8" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Replacing a machine that wasn't broken</h3>
+        <p>Most "dead" drip and pod machines aren't dead — they're scaled shut. A decent drip machine runs $80–$200, and a pod brewer about the same. Descaling is the $2 errand that keeps that purchase out of your cart.</p>
+        <span class="cost">$80 – $200 replaced early</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> descale it?</h2>
+    <p class="sub">"Every 3 months" is the standard advice — and most manufacturer guidance lands between 1 and 6 months depending on water hardness and how hard the machine works. Answer four questions for your interval:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="hardness">
+        <div class="q-label">1. How hard is your tap water?</div>
+        <div class="pills">
+          <button class="pill" data-v="hard">Hard — white crust on faucets &amp; kettles</button>
+          <button class="pill" data-v="moderate">Moderate / not sure</button>
+          <button class="pill" data-v="soft">Soft, or we have a water softener</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="filter">
+        <div class="q-label">2. Do you brew with filtered or bottled water?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes — pitcher, fridge, or machine filter</button>
+          <button class="pill" data-v="sometimes">Sometimes</button>
+          <button class="pill" data-v="no">No — straight from the tap</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="brews">
+        <div class="q-label">3. How much does the machine work?</div>
+        <div class="pills">
+          <button class="pill" data-v="light">A few brews a week</button>
+          <button class="pill" data-v="daily">1–2 brews a day</button>
+          <button class="pill" data-v="heavy">Heavy — multiple pots or back-to-back cups</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="machine">
+        <div class="q-label">4. What kind of machine is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="drip">Drip coffee maker</button>
+          <button class="pill" data-v="pod">Single-serve pod (Keurig, Nespresso…)</button>
+          <button class="pill" data-v="espresso">Espresso machine</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="solutionNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Descaling is one of the cheapest fixes in the kitchen — a jug of white vinegar covers years of cycles. What it protects is the appliance you use more than any other (typical U.S. figures, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$1 – $3</div><div class="l">of white vinegar per descale — about an hour, mostly hands-off</div></div>
+        <div class="calc-stat"><div class="v">$5 – $15</div><div class="l">per dose of commercial descaler, if your manual insists on it</div></div>
+        <div class="calc-stat"><div class="v bad">$80 – $200</div><div class="l">replacing a drip or pod machine that scaled shut (estimate)</div></div>
+        <div class="calc-stat"><div class="v bad">2× a year+</div><div class="l">how often heavy-use, hard-water homes burn through neglected machines</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 A year of quarterly vinegar descales</span><span>~$8</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧪 A year of brand-name descaler doses</span><span>~$25–$50</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:26%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>☕ One "dead" machine replaced ahead of schedule</span><span>~$80–$200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is lopsided on purpose: <strong>a few dollars of vinegar a year</strong> against a <strong>$80–$200 machine</strong> — and that's before you count the slow drip of worse-tasting coffee and longer brew times along the way. A great many machines tossed as "broken" would have come back to life with <strong>one descaling cycle</strong>. Run the cycle before you shop for a replacement; you'll often save the purchase entirely.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to descale your coffee maker</h2>
+    <p class="sub">Budget about an hour, most of it waiting. Check the techniques below — especially the 1:1 mix and the mid-cycle soak — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Before you start — hot water, sharp fumes, live electricity</h3>
+      <ul>
+        <li><strong>Check your manual first.</strong> Most drip machines are fine with vinegar, but some manufacturers (notably some Keurig and Nespresso guidance) steer you to their own descaling solution — and a few say vinegar use can affect warranty coverage. The manual outranks this guide.</li>
+        <li><strong>Hot vinegar steam is pungent.</strong> Crack a window or run the vent fan — the smell is strong while the cycle runs, though it rinses away completely.</li>
+        <li><strong>Everything coming out of the machine is near-boiling.</strong> Treat the carafe, the drip tray, and the brew head like a kettle mid-boil.</li>
+        <li><strong>Never submerge the base.</strong> The reservoir lifts out on many machines; the body with the element and electronics never goes in the sink.</li>
+        <li><strong>Unplug before wiping</strong> the warming plate or exterior, and let everything cool first.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">White vinegar (or your machine's descaler)</span>
+      <span class="tool-chip">Fresh water for rinse cycles</span>
+      <span class="tool-chip">~1 hour, mostly hands-off</span>
+      <span class="tool-chip">Dish soap + soft cloth</span>
+      <span class="tool-chip">A sink nearby</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth seeing first</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a coffee maker reservoir filled half with white vinegar and half with water, marked one-to-one, with a fill line at the top">
+          <rect x="92" y="20" width="96" height="140" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="98" y="92" width="84" height="62" rx="9" fill="#7fb3c8"/>
+          <rect x="98" y="36" width="84" height="56" rx="9" fill="#faf0da"/>
+          <line x1="98" y1="92" x2="182" y2="92" stroke="#fffdf8" stroke-width="3"/>
+          <line x1="92" y1="34" x2="188" y2="34" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="5 4"/>
+          <text x="196" y="38" font-size="12" fill="#d9663f" font-weight="700">max fill</text>
+          <text x="18" y="66" font-size="12" fill="#6b7376">½ white</text>
+          <text x="18" y="80" font-size="12" fill="#6b7376">vinegar</text>
+          <text x="20" y="120" font-size="12" fill="#6b7376">½ water</text>
+          <text x="196" y="96" font-size="13" fill="#6b7376" font-weight="700">1 : 1</text>
+          <line x1="64" y1="64" x2="92" y2="64" stroke="#e0a93d" stroke-width="3" stroke-linecap="round"/>
+          <line x1="64" y1="118" x2="92" y2="118" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <h4>Mix it 1:1 — vinegar and water</h4>
+        <p>Equal parts white vinegar and water, up to the max-fill line. Strong enough to dissolve scale, gentle enough for the seals. Using a commercial or citric-acid descaler instead? Follow its package ratio.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a brew cycle paused halfway: a progress bar half filled, a pause symbol, and a clock showing a thirty to sixty minute soak">
+          <rect x="36" y="48" width="208" height="24" rx="12" fill="#fbf8f2" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="40" y="52" width="100" height="16" rx="8" fill="#5e9a78"/>
+          <rect x="124" y="34" width="9" height="52" rx="4" fill="#d9663f"/>
+          <rect x="141" y="34" width="9" height="52" rx="4" fill="#d9663f"/>
+          <circle cx="140" cy="128" r="28" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <line x1="140" y1="128" x2="140" y2="110" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="140" y1="128" x2="154" y2="136" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <text x="184" y="124" font-size="13" fill="#6b7376" font-weight="700">30–60 min</text>
+          <text x="184" y="140" font-size="12" fill="#6b7376">soak</text>
+          <text x="44" y="30" font-size="12" fill="#6b7376">run the cycle halfway, then stop</text>
+        </svg>
+        <h4>Pause mid-cycle and let it soak</h4>
+        <p>Hot vinegar sitting still does more work than vinegar rushing through. Switch the machine off about halfway through the brew, wait 30–60 minutes, then turn it back on to finish.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of rinse cycles: a carafe of plain water with circular arrows and the label times two to three, ending in a green check">
+          <path d="M58 56 l-10 64 h68 l-10 -64 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <path d="M54 84 l-4 36 h64 l-4 -36 z" fill="#7fb3c8"/>
+          <rect x="60" y="46" width="44" height="10" rx="5" fill="#8a6a4f"/>
+          <path d="M176 60 a34 34 0 1 1 -24 58" stroke="#3e7c59" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <polygon points="142,124 156,134 158,112" fill="#3e7c59"/>
+          <text x="166" y="94" font-size="16" fill="#2c5a40" font-weight="700">×2–3</text>
+          <circle cx="244" cy="136" r="17" fill="#e3efe8"/>
+          <path d="M236 136 l5.5 5.5 l10 -11" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="44" y="146" font-size="12" fill="#6b7376">plain water only</text>
+        </svg>
+        <h4>Rinse with 2–3 full water cycles</h4>
+        <p>After the vinegar cycle, run the machine on plain fresh water until the steam smells like nothing. Two cycles is the floor; three if any sourness lingers. Skipping this is how you get vinegar coffee.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a single-serve pod machine running a descale: solution in the reservoir, no pod in the holder shown by a crossed-out pod, and a mug filling cup by cup">
+          <rect x="96" y="28" width="100" height="96" rx="14" fill="#8a6a4f"/>
+          <rect x="196" y="40" width="26" height="84" rx="8" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="196" y="76" width="26" height="48" rx="8" fill="#7fb3c8"/>
+          <rect x="118" y="44" width="56" height="22" rx="8" fill="#b9b1a3"/>
+          <circle cx="146" cy="55" r="8" fill="#fbf8f2"/>
+          <line x1="139" y1="48" x2="153" y2="62" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="112" y="84" font-size="11" fill="#fffdf8">no pod inside</text>
+          <rect x="88" y="124" width="116" height="12" rx="5" fill="#5a4634" fill-opacity="0"/>
+          <rect x="96" y="124" width="100" height="12" rx="5" fill="#b9b1a3"/>
+          <rect x="128" y="96" width="6" height="22" rx="3" fill="#7fb3c8"/>
+          <rect x="116" y="118" width="34" height="30" rx="6" fill="#c96f4a"/>
+          <path d="M150 124 q11 4 0 16" stroke="#c96f4a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <text x="36" y="166" font-size="12" fill="#6b7376">pod machines: brew cup after cup, no pod, largest size</text>
+        </svg>
+        <h4>Pod machines: same idea, cup by cup</h4>
+        <p>Fill the reservoir with solution, leave the pod holder empty, and run the largest cup size into a mug over and over until the tank is empty. Soak, then repeat the whole routine with plain water to rinse.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Descaling progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done — tomorrow's first pot will brew faster, hotter, and cleaner. Same routine in about three months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ BEYOND DESCALING ============ -->
+  <section id="weekly">
+    <h2>Beyond descaling: the weekly clean</h2>
+    <p class="sub">Descaling fights minerals; cleaning fights coffee oil and mildew. They're different jobs on different clocks — the quarterly vinegar cycle doesn't excuse the parts that need soap every week:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Carafe — daily-ish.</strong> Coffee oils go rancid and build a brown film that makes every pot taste stale. Hot water and dish soap after use; a baking-soda scrub when the film wins.</li>
+        <li><strong>Brew basket and pod holder — weekly.</strong> Grounds and oils collect in the basket and around a pod machine's needle area. Most baskets are top-rack dishwasher safe; check yours.</li>
+        <li><strong>Reservoir — weekly rinse, weekly dry.</strong> A tank of room-temperature water that never fully empties is a happy place for biofilm. Rinse it, and leave the lid open to dry between brews.</li>
+        <li><strong>The mold-prone hideouts — monthly.</strong> The underside of the reservoir lid, the water-spout area above the basket, rubber gaskets, and a pod machine's drip tray. These are the spots a damp cloth almost never visits — and where the funk actually lives.</li>
+        <li><strong>The exterior and warming plate — as needed.</strong> Unplugged and cool, with a damp cloth. Burnt drips on the warming plate smoke and smell on the next brew.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>White vinegar or a commercial descaler — which should I use?</summary>
+      <p>Chemically they do the same job: a mild acid dissolves the alkaline mineral scale. White vinegar (1:1 with water) is the cheap, effective default for most drip machines. Commercial descalers — usually citric, sulfamic, or lactic acid — cost more but rinse with less odor, and some manufacturers specify them: certain Keurig and Nespresso guidance points to their own solution, and a few brands say vinegar use can affect warranty coverage. The honest answer: while the machine is under warranty, use what the manual says; after that, vinegar is fine for the vast majority of machines. Citric acid powder (about a tablespoon per quart of water) is a good low-odor middle ground.</p>
+    </details>
+    <details>
+      <summary>Will my coffee taste like vinegar afterward?</summary>
+      <p>Not if you rinse properly — that's what the 2–3 plain-water cycles are for. Vinegar is volatile and water-soluble, so it flushes out completely; run rinse cycles until the steam coming off the carafe smells like nothing. If the first pot after descaling still has an edge, run one more water cycle. A lingering taste almost always means the rinse got shortchanged, not that vinegar "soaked in."</p>
+    </details>
+    <details>
+      <summary>Does a Keurig or other pod machine really need this too?</summary>
+      <p>Yes — arguably more. Pod machines push water through an even narrower path (a needle, in Keurig's case), so scale shows up as short cups, sputtering, and the dreaded half-filled mug sooner than it would in a drip machine. Keurig itself recommends descaling roughly every 3 months, and some models have a descale indicator light. The procedure is the cup-by-cup version in the techniques above; just note that some pod-machine makers prefer their own descaling solution over vinegar.</p>
+    </details>
+    <details>
+      <summary>What about espresso machines?</summary>
+      <p>Espresso machines scale for the same reason but are a different job — boilers, group heads, and gaskets that some manufacturers explicitly say should never see vinegar. Many require a specific descaler, and some (especially ones with brass boilers or attached water softeners) shouldn't be descaled at home at all. Follow your machine's manual; this guide's checklist is written for drip and pod machines.</p>
+    </details>
+    <details>
+      <summary>I have soft water — do I still need to descale?</summary>
+      <p>On a relaxed schedule, yes. Softened or naturally soft water deposits scale far more slowly, but "slowly" isn't "never" — and bottled spring water still carries minerals (only distilled water is truly scale-free, and some manufacturers advise against brewing with it because their sensors need some mineral content). Every 4–6 months is plenty for most soft-water homes; treat slow brewing or gurgling as your cue to do it sooner.</p>
+    </details>
+    <details>
+      <summary>How do I know the descaling actually worked?</summary>
+      <p>Three signs: the brew runs noticeably faster (time a full pot before and after if you're curious), the machine is quieter — less gurgling and sputtering — and you may see white or tan flakes in the dumped vinegar solution, which is dissolved scale leaving the building. Taste usually improves within a pot or two. If a machine still brews slowly after two back-to-back vinegar cycles, the blockage may be beyond what descaling can reach.</p>
+    </details>
+    <details>
+      <summary>Isn't running a vinegar pot the same as cleaning the machine?</summary>
+      <p>No — this trips up a lot of people. Descaling dissolves mineral buildup in the hot-water path; cleaning removes coffee oils, grounds, and mildew from the carafe, basket, reservoir, and lid. The vinegar cycle barely touches those parts, and dish soap does nothing for scale. You need both, on their own schedules: soap weekly, acid quarterly.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Scale builds in silence. Your reminder shouldn't.</h2>
+        <p>No light comes on at the three-month mark — the machine just brews a little slower until one day it doesn't. Upkeep Ledger turns the interval you just worked out into an actual nudge: log each descale and it tells you when the next one is due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=descale-coffee-maker&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=descale-coffee-maker&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your prices, water, and warranty terms may vary — your machine's manual outranks this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { hardness: null, filter: null, brews: null, machine: null };
+
+  var FREQ_LABEL = {
+    1: "Monthly",
+    2: "Every 2 months",
+    3: "Every 3 months",
+    4: "Every 3–4 months",
+    5: "Every 4–6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = { hard: 2, moderate: 3, soft: 5 }[s.hardness];
+
+    if (s.hardness === "hard") {
+      reasons.push("Hard water is the whole ballgame — if your faucets and kettle grow white crust, your coffee maker's heating element is growing it faster. You're on the short end of every manufacturer's range.");
+    } else if (s.hardness === "moderate") {
+      reasons.push("Moderate (or unknown) hardness means the standard quarterly rhythm — and if you've never checked, your water utility's annual quality report lists hardness for free.");
+    } else {
+      reasons.push("Soft or softened water deposits scale far more slowly, so you can safely run the long end of the range — slowly isn't never, though.");
+    }
+
+    if (s.filter === "yes") {
+      months += 1;
+      reasons.push("Brewing with filtered water cuts the mineral load before it reaches the machine, which genuinely stretches the interval — it's the single best way to slow scale between descales.");
+    } else if (s.filter === "sometimes") {
+      reasons.push("Occasional filtered water helps a little, but the schedule has to assume the tap-water brews — scale only needs the unfiltered days.");
+    } else {
+      reasons.push("Straight tap water means the machine sees your water's full mineral load every brew — the descaling schedule is doing all the protective work.");
+    }
+
+    if (s.brews === "heavy") {
+      months -= 1;
+      reasons.push("Multiple pots or back-to-back cups a day means more water through the element — scale tracks gallons brewed, not weeks on the calendar, so tighten the interval.");
+    } else if (s.brews === "light") {
+      months += 1;
+      reasons.push("A few brews a week puts less water through the machine, so you can relax the interval — just don't let standing reservoir water sit for weeks between uses.");
+    } else {
+      reasons.push("A daily brew or two is the classic pace the standard intervals are written for.");
+    }
+
+    if (s.machine === "pod") {
+      reasons.push("Pod machines force water through an even narrower path, so scale shows up as short cups and sputtering sooner — Keurig's own guidance is roughly every 3 months, and some models have a descale light that's worth obeying.");
+    } else if (s.machine === "drip") {
+      reasons.push("Drip machines are the most forgiving design, but the hot plate-and-tube layout is exactly where scale settles — the vinegar cycle below is written for you.");
+    } else {
+      reasons.push("Espresso machines scale too, but they're a different procedure with different rules — see the solution note below before doing anything.");
+    }
+
+    if (months < 1) months = 1;
+    if (months > 5) months = 5;
+
+    var note;
+    if (s.machine === "drip") {
+      note = "<strong>Solution check:</strong> for most drip machines, 1:1 white vinegar and water is safe, cheap, and effective. A few brands recommend their own descaler — skim the manual once, especially while the machine is under warranty.";
+    } else if (s.machine === "pod") {
+      note = "<strong>Solution check:</strong> Keurig and Nespresso both sell (and in places recommend) their own descaling solutions, and some guidance suggests vinegar could affect warranty coverage. Vinegar generally works, but while you're under warranty, the manufacturer's solution — or a citric-acid descaler — is the safer call.";
+    } else {
+      note = "<strong>Solution check:</strong> espresso machines are their own world — boilers, group heads, and gaskets that some manufacturers say should never see vinegar, and a few that shouldn't be descaled at home at all. Follow your machine's manual and its specified descaler; the checklist on this page is for drip and pod machines.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.hardness || !quizState.filter || !quizState.brews || !quizState.machine) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: descale " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Run the <strong>vinegar cycle + rinse routine</strong> below on that rhythm. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("solutionNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Skim the manual's descaling section", note: "Confirm vinegar is allowed (most drip machines: yes), find the max-fill line, and note any built-in descale mode — some machines have a button that runs the whole cycle for you." },
+    { phase: "Prep", text: "Dump old coffee and wash the carafe and brew basket", note: "Hot water and dish soap. Descaling fights minerals, not coffee oil — this is the cleaning half of the job." },
+    { phase: "Prep", text: "Remove the water filter, if your machine has one", note: "Charcoal cartridges in the reservoir (common on Cuisinart, Keurig, and others) shouldn't soak in descaling solution. Set it aside." },
+    { phase: "Prep", text: "Mix the solution: equal parts white vinegar and water", note: "Fill to the max line — a 12-cup machine takes roughly 4–6 cups of each. Using a commercial or citric-acid descaler instead? Follow its package directions." },
+    { phase: "Descale", text: "Pour the solution into the reservoir and start a brew", note: "Empty basket, no coffee. A paper filter in the basket is optional but handy — it catches any scale flakes the cycle knocks loose." },
+    { phase: "Descale", text: "Stop the machine about halfway through the cycle", note: "Switch it off when the carafe is roughly half full. Hot solution is now sitting on the element and in the lines — right where the scale is." },
+    { phase: "Descale", text: "Let it soak for 30–60 minutes", note: "This is the hands-off stretch — the soak does more dissolving than the flow. Set a timer; go live your life." },
+    { phase: "Descale", text: "Turn it back on and finish the cycle, then dump the carafe", note: "Pour the spent solution down the drain. White or tan flakes in it are dissolved scale — that's the job working." },
+    { phase: "Descale", text: "Heavy scale? Repeat with fresh solution", note: "If it's been a year-plus, the water is visibly cloudy with flakes, or brewing was very slow, run a second vinegar cycle before rinsing. Otherwise skip ahead." },
+    { phase: "Rinse", text: "Rinse the reservoir and carafe with clean water", note: "Swish and dump a couple of times — you want no vinegar pooled anywhere before the rinse brews start." },
+    { phase: "Rinse", text: "Run 2–3 full cycles of plain fresh water", note: "Fresh fill each time, empty basket. Sniff the steam between cycles — you're done when it smells like nothing at all." },
+    { phase: "Finish", text: "Reinstall the water filter and wash up", note: "Filter back in (replace it if it's past its 2-month-ish life — fresh filters slow the next round of scale), basket and carafe washed and racked." },
+    { phase: "Finish", text: "Unplug, cool, wipe down — then log it", note: "Damp cloth on the warming plate and exterior once everything is cool. Note the date: the next descale is due in about 3 months, and no light will remind you." }
+  ];
+
+  var LS_KEY = "upkeepguides:descale-coffee-maker:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
