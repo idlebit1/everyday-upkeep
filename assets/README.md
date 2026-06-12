@@ -10,6 +10,7 @@ The mark: a deep-green rounded tile (#2c5a40), cream house silhouette (#fffdf8),
 | `mark-light.svg` | Light-tile variant for dark UIs |
 | `src/og-image.html` | OG/share card master (render at 1200×630) |
 | `src/banner-x.html` | X/Twitter header master (render at 1500×500) |
+| `src/banner-youtube.html` | YouTube channel art master (render at 2560×1440; all essential branding inside the centered 1546×423 safe zone) |
 | `src/splash.html` | Wide splash master (render at 1920×1080) |
 | `src/render-mark.html` | Harness for rasterizing the mark at any size |
 
@@ -36,5 +37,6 @@ Every page's `<head>` carries the favicon links, theme-color (#2c5a40), and OG/T
 | `avatar-400.png` | 400² | platforms that want small uploads |
 | `avatar-light-1024.png` | 1024² | avatar on dark UIs |
 | `banner-x-1500x500.png` | 1500×500 | X/Twitter profile header |
-| `splash-1920x1080.png` | 1920×1080 | YouTube/LinkedIn/anywhere wide; presentation covers |
+| `banner-youtube-2560x1440.png` | 2560×1440 | YouTube channel art. TVs render the whole canvas, desktop a ~2560×423 center strip, phones only the center 1546×423 — so logo/wordmark/tagline live in that safe zone and everything outside is decoration |
+| `splash-1920x1080.png` | 1920×1080 | LinkedIn/anywhere wide; presentation covers |
 | `../og-image.png` | 1200×630 | link-share card (also fine for Facebook/LinkedIn posts) |

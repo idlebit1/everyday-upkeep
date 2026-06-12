@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&display=block" rel="stylesheet">
+<style>
+  /* YouTube channel art: 2560x1440 canvas.
+     TV shows all of it; desktop shows the center 2560x423 strip;
+     phones (and the only universally safe zone) get the center 1546x423.
+     All essential branding must sit inside .safe; everything else is decoration. */
+  html,body{margin:0;padding:0}
+  body{width:2560px;height:1440px;background:#faf6f0;font-family:"Fraunces",Georgia,serif;
+    overflow:hidden;position:relative}
+
+  /* desktop strip: full width, 423 tall, vertically centered */
+  .strip{position:absolute;left:0;top:508px;width:2560px;height:423px}
+
+  /* universal safe zone: 1546x423 dead center */
+  .safe{position:absolute;left:507px;top:508px;width:1546px;height:423px;
+    display:flex;align-items:center;justify-content:center;gap:48px}
+  .mark{width:170px;height:170px}
+  h1{font-size:104px;margin:0 0 12px;color:#33393b;letter-spacing:-0.01em;font-weight:800;line-height:1}
+  h1 span{color:#3e7c59}
+  h1 .tld{color:#a8aeb0;font-weight:700;letter-spacing:0.02em;font-size:42px}
+  p{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:32px;color:#6b7376;margin:0;max-width:760px}
+
+  /* desktop-only flanks: inside the strip, outside the safe zone */
+  .flank{position:absolute;top:508px;height:423px;display:flex;align-items:center}
+  .flank.left{left:0;width:507px;justify-content:center}
+  .flank.right{right:0;width:507px;justify-content:center}
+  .flank svg{width:330px}
+
+  /* TV-only zones: above and below the strip */
+  .tv{position:absolute;left:0;width:2560px}
+</style></head><body>
+
+  <!-- TV-only: sky band above the strip -->
+  <div class="tv" style="top:0;height:508px">
+    <svg width="2560" height="508" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="360" cy="190" r="86" fill="#f2cf7a"/>
+      <circle cx="2160" cy="140" r="10" fill="#e6dccb"/>
+      <circle cx="1300" cy="90" r="8" fill="#e6dccb"/>
+      <circle cx="760" cy="70" r="7" fill="#e6dccb"/>
+      <ellipse cx="1750" cy="210" rx="150" ry="38" fill="#f3ede2"/>
+      <ellipse cx="1640" cy="232" rx="120" ry="34" fill="#f3ede2"/>
+      <ellipse cx="650" cy="330" rx="170" ry="40" fill="#f3ede2"/>
+      <ellipse cx="2300" cy="350" rx="140" ry="34" fill="#f3ede2"/>
+    </svg>
+  </div>
+
+  <!-- TV-only: ground band below the strip -->
+  <div class="tv" style="bottom:0;height:509px">
+    <svg width="2560" height="509" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="1280" cy="509" rx="1500" ry="240" fill="#efe7d8"/>
+      <circle cx="420" cy="330" r="30" fill="#5e9a78"/>
+      <circle cx="470" cy="344" r="22" fill="#3e7c59"/>
+      <circle cx="1180" cy="372" r="26" fill="#5e9a78"/>
+      <circle cx="1230" cy="384" r="18" fill="#3e7c59"/>
+      <circle cx="2080" cy="340" r="28" fill="#5e9a78"/>
+      <circle cx="2132" cy="356" r="20" fill="#6fae8a"/>
+      <rect x="1660" y="300" width="16" height="120" rx="7" fill="#8a6a4f"/>
+      <circle cx="1668" cy="254" r="52" fill="#5e9a78"/>
+      <circle cx="1630" cy="284" r="32" fill="#3e7c59"/>
+      <circle cx="1708" cy="286" r="30" fill="#6fae8a"/>
+    </svg>
+  </div>
+
+  <!-- desktop+TV: house art in the right flank of the strip -->
+  <div class="flank right"><svg viewBox="0 0 440 340" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="220" cy="312" rx="190" ry="20" fill="#efe7d8"/>
+    <rect x="168" y="160" width="180" height="148" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+    <rect x="240" y="244" width="40" height="64" rx="3" fill="#3e7c59"/>
+    <circle cx="272" cy="278" r="2.5" fill="#f2cf7a"/>
+    <rect x="190" y="194" width="34" height="36" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+    <line x1="207" y1="194" x2="207" y2="230" stroke="#fffdf8" stroke-width="2"/>
+    <rect x="294" y="194" width="34" height="36" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+    <line x1="311" y1="194" x2="311" y2="230" stroke="#fffdf8" stroke-width="2"/>
+    <rect x="292" y="92" width="20" height="42" fill="#b9b1a3"/>
+    <polygon points="152,162 258,74 364,162" fill="#c96f4a"/>
+    <rect x="146" y="156" width="224" height="12" rx="6" fill="#2c5a40"/>
+    <circle cx="196" cy="306" r="13" fill="#5e9a78"/>
+    <circle cx="380" cy="304" r="12" fill="#3e7c59"/>
+  </svg></div>
+
+  <!-- desktop+TV: tree in the left flank of the strip -->
+  <div class="flank left"><svg viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="110" cy="282" rx="100" ry="14" fill="#efe7d8"/>
+    <rect x="100" y="170" width="16" height="110" rx="7" fill="#8a6a4f"/>
+    <circle cx="108" cy="118" r="58" fill="#5e9a78"/>
+    <circle cx="66" cy="150" r="36" fill="#3e7c59"/>
+    <circle cx="152" cy="152" r="34" fill="#6fae8a"/>
+    <circle cx="44" cy="270" r="12" fill="#5e9a78"/>
+    <circle cx="178" cy="272" r="10" fill="#3e7c59"/>
+  </svg></div>
+
+  <!-- safe zone: the only part guaranteed visible everywhere -->
+  <div class="safe">
+    <img class="mark" src="../../favicon.svg">
+    <div>
+      <h1>Upkeep <span>Guides</span><span class="tld">.com</span></h1>
+      <p>How often, when, and why — for the upkeep your life actually needs.</p>
+    </div>
+  </div>
+
+</body></html>
