@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotate mattress — UpkeepGuides.com</title>
+<meta name="description" content="How often to rotate your mattress (and whether to flip it), why it prevents body impressions and protects the warranty, and a two-person technique that takes ten minutes.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Rotate mattress — UpkeepGuides.com">
+<meta property="og:description" content="How often to rotate your mattress (and whether to flip it), why it prevents body impressions and protects the warranty, and a two-person technique that takes ten minutes.">
+<meta property="og:url" content="https://upkeepguides.com/rotate-mattress.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rotate mattress — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to rotate your mattress (and whether to flip it), why it prevents body impressions and protects the warranty, and a two-person technique that takes ten minutes.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Wardrobe · Quarterly</span>
+      <h1>Rotate Your Mattress</h1>
+      <p class="lede">Every night, your body compresses the exact same few square feet of foam and coils. Rotating the mattress head-to-foot spreads that load around, so it wears evenly instead of denting where you sleep. Ten minutes, four times a year — and it's the difference between a mattress that lasts a decade and one that sags by year four.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>~10 min</em> with a partner</span>
+        <span class="chip">🔄 Flip <em>only if double-sided</em></span>
+        <span class="chip">💸 Skipping it risks <em>$1,000+</em> early replacement</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bedroom where a mattress is being rotated head-to-foot on its frame, shown by two large curved gold arrows circling above it, with pillows set aside on a bench, a cleared nightstand, and a plant by the window">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="44" y="48" width="110" height="128" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="99" y1="51" x2="99" y2="173" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="47" y1="112" x2="151" y2="112" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="78" cy="84" r="16" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="78" y1="58" x2="78" y2="64"/>
+        <line x1="104" y1="84" x2="98" y2="84"/>
+        <line x1="96" y1="66" x2="92" y2="70"/>
+      </g>
+      <rect x="32" y="40" width="134" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- bed frame -->
+      <rect x="186" y="128" width="20" height="208" rx="9" fill="#8a6a4f"/>
+      <rect x="196" y="146" width="14" height="130" rx="7" fill="#c9a06b"/>
+      <rect x="206" y="290" width="304" height="26" rx="8" fill="#c9a06b"/>
+      <rect x="220" y="316" width="13" height="52" rx="5" fill="#8a6a4f"/>
+      <rect x="488" y="316" width="13" height="52" rx="5" fill="#8a6a4f"/>
+      <!-- slats peeking out under the mattress -->
+      <g fill="#8a6a4f">
+        <rect x="238" y="296" width="9" height="14" rx="3"/>
+        <rect x="294" y="296" width="9" height="14" rx="3"/>
+        <rect x="350" y="296" width="9" height="14" rx="3"/>
+        <rect x="406" y="296" width="9" height="14" rx="3"/>
+        <rect x="462" y="296" width="9" height="14" rx="3"/>
+      </g>
+      <!-- mattress, mid-rotation: slightly tilted -->
+      <g transform="rotate(-5 360 254)">
+        <rect x="216" y="226" width="288" height="58" rx="14" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <rect x="216" y="226" width="288" height="18" rx="9" fill="#dce8ee"/>
+        <g stroke="#e6dccb" stroke-width="2" stroke-linecap="round">
+          <line x1="262" y1="252" x2="262" y2="276"/>
+          <line x1="318" y1="252" x2="318" y2="276"/>
+          <line x1="374" y1="252" x2="374" y2="276"/>
+          <line x1="430" y1="252" x2="430" y2="276"/>
+        </g>
+        <!-- side handle -->
+        <rect x="332" y="258" width="56" height="9" rx="4.5" fill="#b9b1a3"/>
+      </g>
+      <!-- rotation arrows -->
+      <path d="M268 176 q92 -58 184 0" stroke="#e0a93d" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <polygon points="452,158 478,184 442,190" fill="#e0a93d"/>
+      <path d="M452 218 q-92 50 -184 0" stroke="#d98e3b" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <polygon points="278,236 244,216 282,204" fill="#d98e3b"/>
+      <!-- bench with pillows set aside -->
+      <rect x="48" y="328" width="112" height="13" rx="6" fill="#8a6a4f"/>
+      <rect x="58" y="341" width="10" height="36" rx="4" fill="#8a6a4f"/>
+      <rect x="138" y="341" width="10" height="36" rx="4" fill="#8a6a4f"/>
+      <rect x="56" y="306" width="78" height="26" rx="13" fill="#fffdf8" stroke="#e6dccb" stroke-width="2" transform="rotate(-5 95 319)"/>
+      <rect x="72" y="288" width="72" height="24" rx="12" fill="#dce8ee" transform="rotate(4 108 300)"/>
+      <!-- cleared nightstand -->
+      <rect x="516" y="318" width="36" height="50" rx="5" fill="#c9a06b"/>
+      <rect x="510" y="310" width="48" height="10" rx="5" fill="#8a6a4f"/>
+      <circle cx="534" cy="340" r="4" fill="#8a6a4f"/>
+      <!-- plant -->
+      <path d="M196 388 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M196 388 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="180" cy="352" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 180 352)"/>
+      <ellipse cx="214" cy="356" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 214 356)"/>
+      <path d="M182 388 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="360" cy="386" rx="125" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A mattress doesn't wear out evenly — it wears out exactly where you sleep, in the hip-and-shoulder zone that carries most of your weight every night. Rotation is the only free tool you have against that, and here's what it's protecting you from:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="14" width="28" height="13" rx="5" fill="#dce8ee"/>
+          <path d="M4 19 q5 0 7 3.5 q3 4.5 7 4.5 q4 0 7 -4.5 q2 -3.5 7 -3.5" fill="none" stroke="#7fb3c8" stroke-width="2"/>
+          <path d="M9 17 q4.5 6 9 6 q4.5 0 9 -6" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-dasharray="3 3"/>
+          <circle cx="18" cy="8.5" r="3.2" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Body impressions</h3>
+        <p>Foam and fiber comfort layers compress under your sleep spot and slowly stop springing back. Rotating moves your weight to the fresh end before the dent becomes permanent.</p>
+        <span class="cost">Permanent dents by year 3–4</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 14 h26 q2 0 2 2.5 q-1 5 -2 6.5 q-3 -4 -13 -4 q-10 0 -13 4 q-1 -1.5 -2 -6.5 q0 -2.5 2 -2.5" fill="#b9b1a3"/>
+          <path d="M18 5 v8 M14.5 9.5 l3.5 4 l3.5 -4" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="7" y="26" width="6" height="6" rx="2" fill="#8a6a4f"/>
+          <rect x="23" y="26" width="6" height="6" rx="2" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Sagging &amp; broken-down edges</h3>
+        <p>Once one zone collapses, you roll toward the dip all night and the coils or foam around it break down even faster. Sagging accelerates — rotation slows the whole cascade.</p>
+        <span class="cost">Mattress dies years early</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="4" width="22" height="28" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="12" y1="11" x2="24" y2="11" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="16" x2="24" y2="16" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="23" cy="25" r="6.5" fill="#e0a93d"/>
+          <path d="M20 25 l2.2 2.2 l4 -4.6" stroke="#fffdf8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Warranty requirements</h3>
+        <p>Most warranties only cover impressions deeper than 1–1.5 inches, and several brands require proof of proper care and support. Claims get denied over stains, bad foundations, and neglect — rotation is part of the care many manuals spell out.</p>
+        <span class="cost">Denied claim = full price</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M24 5 a10 10 0 1 0 7 17 a8.5 8.5 0 0 1 -7 -17" fill="#e0a93d"/>
+          <path d="M5 26 q4 -5 8 0 q4 5 8 0" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M5 31 q4 -5 8 0 q4 5 8 0" stroke="#c96f4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Sleep quality &amp; sore mornings</h3>
+        <p>A dented mattress stops supporting your spine in line — that's the stiff lower back that fades an hour after waking. The dip grows so gradually you adapt to it instead of noticing it.</p>
+        <span class="cost">Years of slightly worse sleep</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> rotate it?</h2>
+    <p class="sub">"Every 3 months" is the classic rule, and manufacturer guidance mostly lands between 3 and 6 months — but the right interval depends on what your mattress is made of, who sleeps on it, and how old it is. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What kind of mattress is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="memory">Memory foam</button>
+          <button class="pill" data-v="innerspring">Innerspring</button>
+          <button class="pill" data-v="hybrid">Hybrid (coils + foam)</button>
+          <button class="pill" data-v="latex">Latex</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="sleepers">
+        <div class="q-label">2. Who sleeps on it?</div>
+        <div class="pills">
+          <button class="pill" data-v="one">One person</button>
+          <button class="pill" data-v="two">Two people</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="weight">
+        <div class="q-label">3. Sleeper weight (heaviest regular sleeper)?</div>
+        <div class="pills">
+          <button class="pill" data-v="light">Under 130 lb</button>
+          <button class="pill" data-v="average">130–230 lb</button>
+          <button class="pill" data-v="heavy">Over 230 lb</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">4. How old is the mattress?</div>
+        <div class="pills">
+          <button class="pill" data-v="new">Under 1 year</button>
+          <button class="pill" data-v="mid">1–7 years</button>
+          <button class="pill" data-v="old">8+ years</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Rotating a mattress is genuinely free — no tools, no products, no pro. What it protects is one of the most expensive soft goods in your house (typical U.S. prices, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">per rotation — about 10 minutes and a helper</div></div>
+        <div class="calc-stat"><div class="v bad">$1,000–$2,500</div><div class="l">quality queen or king replaced years early (estimate)</div></div>
+        <div class="calc-stat"><div class="v bad">1–1.5 in</div><div class="l">impression depth most warranties require before they pay out</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔄 A decade of quarterly rotations</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ New slats or foundation after a sag claim is denied</span><span>$150–$400</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛏️ Mattress replaced 3–4 years ahead of schedule</span><span>$1,000–$2,500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">This is the rare upkeep task with a <strong>literal $0 price tag</strong> protecting a <strong>$1,000+ purchase</strong>. The fine print matters too: most mattress warranties only cover body impressions past a <strong>1–1.5 inch</strong> threshold, and they routinely deny claims when the mattress is stained, sitting on a bad foundation, or hasn't been cared for per the manual. A dent that grew for years because the mattress never moved is exactly the kind of "normal wear" claim that gets refused — so rotate, keep a protector on it, and check the slats while you're at it.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to rotate your mattress</h2>
+    <p class="sub">The whole job takes about ten minutes with two people. Check the techniques below first — especially whether yours is allowed to flip — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — mattresses are heavier and floppier than they look</h3>
+      <ul>
+        <li><strong>Lift with a partner.</strong> A queen runs roughly 70–120 lb, a king 90–160 lb, and the weight shifts as it bends. One person at each end, always.</li>
+        <li><strong>Clear the nightstands first</strong> — lamps, glasses, phones, charging cables. A swinging mattress corner clears a nightstand in one pass.</li>
+        <li>Lift with your legs, not your back, and grip the <strong>corners</strong> of the mattress, not the cover fabric.</li>
+        <li><strong>Side handles are for positioning, not carrying.</strong> On most mattresses they're sewn to the cover only and will tear loose under full weight.</li>
+        <li>Mind the ceiling fan and light fixtures when you stand the mattress up — and don't fold memory foam sharply; it can crack the core.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A second pair of hands</span>
+      <span class="tool-chip">10 minutes</span>
+      <span class="tool-chip">Vacuum w/ upholstery attachment (optional)</span>
+      <span class="tool-chip">Flashlight (for the slat check)</span>
+      <span class="tool-chip">Fresh sheets to remake the bed</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of a mattress with two curved arrows showing a 180-degree head-to-foot rotation, so the head end becomes the foot end">
+          <rect x="86" y="22" width="108" height="136" rx="12" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <rect x="98" y="32" width="84" height="24" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="98" y1="108" x2="182" y2="108" stroke="#7fb3c8" stroke-width="2" stroke-dasharray="4 4"/>
+          <path d="M196 50 q44 40 0 80" stroke="#e0a93d" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <polygon points="188,124 206,134 206,112" fill="#e0a93d"/>
+          <path d="M84 130 q-44 -40 0 -80" stroke="#d98e3b" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <polygon points="92,56 74,46 74,68" fill="#d98e3b"/>
+          <text x="116" y="50" font-size="12" fill="#6b7376">head</text>
+          <text x="120" y="146" font-size="12" fill="#6b7376">foot</text>
+          <text x="222" y="94" font-size="13" fill="#6b7376" font-weight="700">180°</text>
+        </svg>
+        <h4>Rotate 180° — head becomes foot</h4>
+        <p>This is the move for every mattress that allows it. Your hip-and-shoulder zone trades places with the lightly-used foot end, and the same side stays facing up.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing two mattress cross-sections: a symmetric double-sided mattress marked safe to flip with a check, and a one-sided mattress with a pillow-top and stacked foam layers marked never flip with an X">
+          <rect x="18" y="38" width="110" height="44" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <path d="M24 48 q8 -5 16 0 q8 5 16 0 q8 -5 16 0 q8 5 16 0 q8 -5 16 0" stroke="#dce8ee" stroke-width="2.5" fill="none"/>
+          <path d="M24 72 q8 5 16 0 q8 -5 16 0 q8 5 16 0 q8 -5 16 0 q8 5 16 0" stroke="#dce8ee" stroke-width="2.5" fill="none"/>
+          <path d="M48 20 q26 -14 52 0" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="100,24 112,18 98,10" fill="#3e7c59"/>
+          <path d="M58 102 l8 8 l14 -16" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="22" y="136" font-size="12" fill="#6b7376">double-sided: flip OK</text>
+          <rect x="152" y="50" width="110" height="32" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <path d="M158 38 q12 -10 24 -4 q12 6 24 -2 q12 -8 24 -2 q12 6 22 0 l8 6 q0 8 -8 8 h-94 q-8 0 -8 -8 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <line x1="156" y1="62" x2="258" y2="62" stroke="#e0a93d" stroke-width="3"/>
+          <line x1="156" y1="71" x2="258" y2="71" stroke="#c9a06b" stroke-width="3"/>
+          <path d="M196 102 l22 18 M218 102 l-22 18" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="158" y="136" font-size="12" fill="#6b7376">pillow-top: never flip</text>
+          <text x="184" y="32" font-size="11" fill="#6b7376">soft side up only</text>
+        </svg>
+        <h4>Flip only if it's double-sided</h4>
+        <p>Most mattresses made since the mid-2000s are one-sided: comfort layers up top, support core below. Flip one and you're sleeping on the base. Only flip if both faces are identical sleep surfaces — check the label.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of the two-person rotation: helpers at diagonal corners of the mattress walking it around in quarter turns, with a rest position halfway">
+          <rect x="92" y="30" width="96" height="120" rx="11" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5" transform="rotate(20 140 90)"/>
+          <circle cx="92" cy="42" r="13" fill="#3e7c59"/>
+          <circle cx="92" cy="38" r="5" fill="#e3efe8"/>
+          <circle cx="190" cy="140" r="13" fill="#c96f4a"/>
+          <circle cx="190" cy="136" r="5" fill="#fbe9e1"/>
+          <path d="M120 22 q56 -10 96 30" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-dasharray="6 5"/>
+          <polygon points="212,46 222,58 204,60" fill="#3e7c59"/>
+          <path d="M162 160 q-58 10 -98 -30" stroke="#c96f4a" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-dasharray="6 5"/>
+          <polygon points="70,134 58,122 78,120" fill="#c96f4a"/>
+          <text x="16" y="20" font-size="12" fill="#6b7376">opposite corners,</text>
+          <text x="16" y="34" font-size="12" fill="#6b7376">walk it in quarter turns</text>
+        </svg>
+        <h4>The two-person walk-around</h4>
+        <p>Stand at diagonal corners, lift slightly, and walk the mattress through a quarter turn. Rest it on the frame, regrip, and finish the second quarter. Never wrestle the full 180° in one heave.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of a bed foundation with evenly spaced slats getting a check mark, except one cracked sagging slat highlighted in terracotta">
+          <rect x="40" y="24" width="200" height="132" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <g fill="#c9a06b">
+            <rect x="52" y="36" width="176" height="13" rx="5"/>
+            <rect x="52" y="60" width="176" height="13" rx="5"/>
+            <rect x="52" y="108" width="176" height="13" rx="5"/>
+            <rect x="52" y="132" width="176" height="13" rx="5"/>
+          </g>
+          <path d="M52 86 h70 l8 8 l8 -10 h90 v13 h-90 l-8 10 l-8 -8 h-70 z" fill="#c96f4a"/>
+          <line x1="136" y1="80" x2="144" y2="102" stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="226" cy="146" r="17" fill="#e3efe8"/>
+          <path d="M218 146 l5.5 5.5 l10 -11" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="56" y="172" font-size="12" fill="#6b7376">cracked or bowed slat = fix before the dent forms</text>
+        </svg>
+        <h4>Check the foundation while it's up</h4>
+        <p>With the mattress off, you can finally see the slats or box spring. A cracked, bowed, or shifted slat creates the exact sag a warranty will blame on you — and it's a $10 board to fix.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Rotation progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done — your mattress is wearing on a fresh zone tonight. Same move in about three months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO REPLACE ============ -->
+  <section id="replace">
+    <h2>When to replace instead of rotate</h2>
+    <p class="sub">Rotation evens out future wear — it can't resurrect a mattress that's already broken down. These are the signs the next move is a new mattress, not another spin:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A sag or impression you can see from across the room.</strong> If the dip is visible with sheets off — or measures an inch or more under a straightedge — the support layers are done. Rotation just moves the crater.</li>
+        <li><strong>You sleep better anywhere else.</strong> Hotel beds, the guest room, the sofa. If "away" beats "home" consistently, your mattress is the variable.</li>
+        <li><strong>Morning aches that fade within an hour.</strong> Stiffness that disappears after you've been up a while points at the bed, not your back.</li>
+        <li><strong>It's 7–10 years old.</strong> That's the realistic lifespan for most foam and innerspring mattresses (quality latex can go longer). Past that point, rotation has little left to save.</li>
+        <li><strong>Rolling toward the middle, or feeling coils/lumps.</strong> Structural failure — no surface trick fixes it.</li>
+        <li><strong>Allergies that flare in bed despite clean bedding.</strong> A decade-old mattress carries a serious allergen load that washing the sheets can't touch.</li>
+        <li><strong>Before you buy:</strong> if the dip exceeds your warranty's threshold (usually 1–1.5 inches) and the mattress is stain-free on a proper foundation, file the claim first — that's exactly what the warranty is for.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Should I flip my mattress or just rotate it?</summary>
+      <p>For most people: rotate only. Nearly every mattress made since the mid-2000s — memory foam, hybrid, pillow-top, and most modern innersprings — is one-sided, with comfort layers stacked on top of a support core. Flip one and you're sleeping on the firm base while your weight crushes the comfort layers from the wrong side. Flip only if the manufacturer explicitly says the mattress is double-sided (two identical sleep surfaces).</p>
+    </details>
+    <details>
+      <summary>How do I tell if my mattress is double-sided?</summary>
+      <p>Look at both faces: a true two-sided mattress has the same quilted sleeping surface top and bottom, with no pillow-top bump on one side. The law tag or the manufacturer's site will say "two-sided," "dual-sided," or "flippable." A one-sided mattress usually has a plain, flat, non-quilted underside — sometimes with a non-slip fabric. When in doubt, don't flip.</p>
+    </details>
+    <details>
+      <summary>My mattress says it doesn't need rotating — or shouldn't be. Is that real?</summary>
+      <p>Yes. Some mattresses have zoned support — firmer foam or coils under the hips, softer under the shoulders — and rotating one puts the firm zone under your head. Others (some latex and high-end foam designs) are marketed as no-rotation-needed. The label and care manual outrank any general rule, including this page. If yours is zoned, skip rotation and put the effort into the foundation check instead.</p>
+    </details>
+    <details>
+      <summary>Will rotating fix the sag that's already there?</summary>
+      <p>No — compressed foam doesn't bounce back, and rotation can't undo it. What rotating does is move your body onto the less-worn end so the existing impression stops deepening and the rest of the surface catches up evenly. If the dip already measures an inch or more, you're in warranty-claim or replacement territory.</p>
+    </details>
+    <details>
+      <summary>Do I still rotate if I have an adjustable base or a platform bed?</summary>
+      <p>Yes — rotation is about the mattress, not what's under it. On an adjustable base, return it to flat first, and expect the mattress to grip the base fabric (that's by design — walk it in quarter turns rather than sliding). One real exception: a few adjustable-friendly mattresses with head/foot-specific zones say not to rotate. Again, the label wins.</p>
+    </details>
+    <details>
+      <summary>Can one person rotate a queen or king alone?</summary>
+      <p>It's possible but not recommended — a king can weigh 90–160 lb, the weight shifts as the mattress flexes, and solo wrestling is how lamps break and backs tweak. If you must: strip the bed, rotate in small pivots using the corners (never the side handles, which aren't rated for full weight), and rest the mattress on the frame between moves. Better plan: trade ten minutes of help with whoever's around.</p>
+    </details>
+    <details>
+      <summary>Does a mattress topper change the schedule?</summary>
+      <p>Slightly. A good topper takes the surface wear, but your weight still compresses the mattress layers beneath it — so keep rotating the mattress on schedule, and rotate the topper too (it dents even faster than the mattress). Treat the topper as a wear item: a few years of nightly use and it's done, at a fraction of mattress cost.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>"Every 3 months" is easy to know — and easier to forget.</h2>
+        <p>Nothing about a mattress reminds you it's due; the dent just quietly deepens. Upkeep Ledger turns the schedule you just worked out into a reminder — log each rotation and it tells you when the next one lands, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=rotate-mattress&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=rotate-mattress&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your prices and warranty terms may vary — the care label and manual outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, sleepers: null, weight: null, age: null };
+
+  var FREQ_LABEL = {
+    2: "Every 2 months",
+    3: "Every 3 months",
+    4: "Every 3–4 months",
+    5: "Every 4–6 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = { innerspring: 3, hybrid: 4, memory: 5, latex: 6 }[s.type];
+
+    if (s.type === "innerspring") {
+      reasons.push("Innerspring comfort layers (fiber and light foam over the coils) settle the fastest of any construction — quarterly rotation is the long-standing rule for a reason.");
+    } else if (s.type === "hybrid") {
+      reasons.push("Hybrids put foam comfort layers over a coil core — the foam up top is what takes the body impressions, so they sit in the middle of the 3–6 month range.");
+    } else if (s.type === "memory") {
+      reasons.push("Memory foam contours by design and recovers slowly; most makers suggest every 3–6 months, and twice a year is the floor even for dense, high-quality foam.");
+    } else {
+      reasons.push("Latex is the most resilient mattress material, so rotation is the least urgent — but it still evens out wear on the cover and comfort layer.");
+    }
+
+    if (s.sleepers === "one") {
+      months -= 1;
+      reasons.push("One sleeper means one dented side and one untouched side — rotation pays off more for you than for anyone, so tighten the interval.");
+    } else {
+      reasons.push("Two sleepers spread wear across the surface, though a weight difference between you still dents one side faster — rotation keeps it balanced.");
+    }
+
+    if (s.weight === "heavy") {
+      months -= 1;
+      reasons.push("More weight compresses foam and coils faster — heavier sleepers should run at the short end of any manufacturer's range.");
+    } else if (s.weight === "light") {
+      months += 1;
+      reasons.push("Lighter sleepers compress the comfort layers less, so you can safely run toward the relaxed end of the range.");
+    } else {
+      reasons.push("Average sleeper weight means the standard interval for your mattress type holds.");
+    }
+
+    if (s.age === "new") {
+      if (months > 3) months = 3;
+      reasons.push("New mattresses settle fastest in the first year while the comfort layers break in — several brands recommend more frequent rotation early on, then relaxing the schedule.");
+    } else if (s.age === "old") {
+      reasons.push("Past year 8, rotation buys less — the materials have taken their set. Keep doing it, but watch the replacement signs further down this page.");
+    } else {
+      reasons.push("In the 1–7 year prime of its life, steady rotation is exactly what stretches a mattress to year ten.");
+    }
+
+    if (months < 2) months = 2;
+    if (months > 6) months = 6;
+
+    var flip;
+    if (s.type === "innerspring") {
+      flip = "<strong>Flip check:</strong> if your innerspring is a true double-sided model (identical quilted surface top and bottom, no pillow-top), flip it at every other rotation so both faces share the work. Most made since the mid-2000s are one-sided — when in doubt, check the label and rotate only.";
+    } else if (s.type === "hybrid") {
+      flip = "<strong>Flip check:</strong> never flip a hybrid — the foam comfort layers are stacked on top of the coil core, one way up. Rotate only.";
+    } else if (s.type === "memory") {
+      flip = "<strong>Flip check:</strong> never flip memory foam — the contouring layers sit on a firm support base, and flipping puts you on the wrong side of the stack. Rotate only.";
+    } else {
+      flip = "<strong>Flip check:</strong> most latex mattresses are layered one way up — rotate only, unless the maker explicitly sells yours as a two-sided design.";
+    }
+
+    return { months: months, reasons: reasons, flip: flip };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.sleepers || !quizState.weight || !quizState.age) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: rotate " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Rotate <strong>180° head-to-foot</strong> — same side stays up. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.flip;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Check the label for rotate / flip / zoned guidance", note: "The law tag or care manual says whether yours is one-sided (rotate only), double-sided (flippable), or zoned (don't rotate). It outranks this guide." },
+    { phase: "Prep", text: "Strip the bed completely", note: "Sheets, protector, topper — everything off. Wash day pairs perfectly with rotation day." },
+    { phase: "Prep", text: "Clear the landing zone", note: "Nightstands, lamps, water glasses, phone cables, anything on the floor within a mattress-length of the bed." },
+    { phase: "Prep", text: "Recruit your partner and pick corners", note: "One person per end, diagonal corners. A queen runs 70–120 lb and the weight lurches as it bends." },
+    { phase: "Rotate", text: "Lift from the corners — not the handles, not the cover", note: "Side handles on most mattresses are sewn to the cover only; they're for nudging it into position, not carrying weight." },
+    { phase: "Rotate", text: "Walk it through the first quarter turn, then rest", note: "Pivot 90° and set it down across the frame. Regrip, breathe, check nothing's caught." },
+    { phase: "Rotate", text: "Finish the second quarter turn — head is now foot", note: "Same surface stays facing up. Square it on the frame so the edges line up all around." },
+    { phase: "Rotate", text: "Double-sided only: flip it while it's in motion", note: "If (and only if) both faces are identical sleep surfaces, alternate: rotate this time, flip-and-rotate next time. One-sided mattresses skip this forever." },
+    { phase: "While it's up", text: "Vacuum the mattress surface", note: "Upholstery attachment, slow passes, both ends and the sides. This is most of what 'cleaning a mattress' means." },
+    { phase: "While it's up", text: "Inspect the slats or foundation", note: "Look for cracked, bowed, or shifted slats and a sagging box spring — a failed slat creates the exact dip warranties blame on you." },
+    { phase: "While it's up", text: "Tighten the frame bolts and center support", note: "Frames loosen with months of nightly load. Snug every bolt and make sure center legs actually touch the floor." },
+    { phase: "Finish", text: "Check for stains and measure any impressions", note: "Stains void most warranties (use a protector); an impression deeper than 1–1.5 inches may already qualify for a claim." },
+    { phase: "Finish", text: "Remake the bed and log the rotation", note: "Note the date — the next one is due in about 3 months, and nothing about the mattress will remind you." }
+  ];
+
+  var LS_KEY = "upkeepguides:rotate-mattress:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

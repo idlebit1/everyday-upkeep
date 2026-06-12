@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tire rotation — UpkeepGuides.com</title>
+<meta name="description" content="How often to rotate your tires, which rotation pattern fits your drivetrain, what it costs (often nothing), and a step-by-step guide to doing it safely.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Tire rotation — UpkeepGuides.com">
+<meta property="og:description" content="How often to rotate your tires, which rotation pattern fits your drivetrain, what it costs (often nothing), and a step-by-step guide to doing it safely.">
+<meta property="og:url" content="https://upkeepguides.com/tire-rotation.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tire rotation — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to rotate your tires, which rotation pattern fits your drivetrain, what it costs (often nothing), and a step-by-step guide to doing it safely.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every 7,500 miles</span>
+      <h1>Tire rotation</h1>
+      <p class="lede">No tire on your car does the same job as the others — so no tire wears like the others. Rotating them swaps positions on a schedule, spreading the wear so all four last their full life. Here's how often, which pattern your car needs, and exactly how to do it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 7,500 miles</em></span>
+        <span class="chip">⏱️ <em>30–45 min</em> DIY, 15 at a shop</span>
+        <span class="chip">💵 <em>$0–$50</em> — often free</span>
+        <span class="chip">💸 Uneven wear costs a set <em>$600–$1,200</em> early</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style green car raised on jack stands with one wheel removed, leaning against the car beside a torque wrench, while two terracotta arrows arc between the front and rear wheel positions to show them trading places">
+      <ellipse cx="285" cy="398" rx="248" ry="22" fill="#efe7d8"/>
+      <circle cx="72" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="68" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="410" cy="80" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="120" cy="120" rx="32" ry="15" fill="#dce8ee"/>
+      <!-- swap arrows above the car -->
+      <path d="M196 156 q90 -64 188 -2" stroke="#d9663f" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <polygon points="384,140 402,158 376,164" fill="#d9663f"/>
+      <path d="M396 188 q-94 60 -190 4" stroke="#d98e3b" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <polygon points="214,202 192,190 218,178" fill="#d98e3b"/>
+      <!-- car body, raised -->
+      <path d="M118 308 q0 -52 46 -56 l28 -3 q22 -36 70 -38 l92 0 q48 2 70 38 l36 5 q42 8 42 54 l0 22 q0 12 -12 12 l-360 0 q-12 0 -12 -12 z" fill="#3e7c59"/>
+      <path d="M194 252 q20 -30 64 -32 l88 0 q44 2 64 32 z" fill="#2c5a40"/>
+      <path d="M210 250 q16 -22 50 -24 l38 0 0 24 z" fill="#cfe3ec"/>
+      <path d="M310 226 l36 0 q34 2 50 24 l-86 0 z" fill="#cfe3ec"/>
+      <rect x="118" y="310" width="384" height="14" fill="#2c5a40"/>
+      <circle cx="484" cy="296" r="10" fill="#e0a93d"/>
+      <circle cx="134" cy="296" r="8" fill="#c96f4a"/>
+      <!-- front hub exposed: wheel removed -->
+      <circle cx="206" cy="338" r="20" fill="#b9b1a3"/>
+      <circle cx="206" cy="338" r="11" fill="#8a6a4f"/>
+      <g fill="#fffdf8">
+        <circle cx="206" cy="328" r="2.6"/>
+        <circle cx="215" cy="335" r="2.6"/>
+        <circle cx="212" cy="346" r="2.6"/>
+        <circle cx="200" cy="346" r="2.6"/>
+        <circle cx="197" cy="335" r="2.6"/>
+      </g>
+      <!-- rear wheel still on -->
+      <circle cx="434" cy="346" r="36" fill="#33393b"/>
+      <circle cx="434" cy="346" r="35" fill="none" stroke="#2c3234" stroke-width="4" stroke-dasharray="9 8"/>
+      <circle cx="434" cy="346" r="16" fill="#b9b1a3"/>
+      <circle cx="434" cy="346" r="5" fill="#8a6a4f"/>
+      <!-- jack stands front and rear -->
+      <path d="M170 332 l40 0 -8 50 -24 0 z" fill="#d9663f"/>
+      <rect x="160" y="382" width="60" height="9" rx="4.5" fill="#c96f4a"/>
+      <path d="M360 350 l36 0 -7 32 -22 0 z" fill="#d9663f"/>
+      <rect x="352" y="382" width="52" height="9" rx="4.5" fill="#c96f4a"/>
+      <!-- removed wheel leaning by the car -->
+      <circle cx="86" cy="350" r="40" fill="#33393b"/>
+      <circle cx="86" cy="350" r="39" fill="none" stroke="#2c3234" stroke-width="4" stroke-dasharray="10 8"/>
+      <circle cx="86" cy="350" r="18" fill="#dce8ee"/>
+      <circle cx="86" cy="350" r="6" fill="#7fb3c8"/>
+      <!-- chalk mark on the loose wheel -->
+      <path d="M70 336 l8 8 M78 336 l-8 8" stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- torque wrench on the ground -->
+      <g transform="rotate(12 502 388)">
+        <rect x="466" y="384" width="56" height="8" rx="4" fill="#8a6a4f"/>
+        <rect x="506" y="382" width="18" height="12" rx="4" fill="#e0a93d"/>
+        <circle cx="462" cy="388" r="9" fill="#b9b1a3"/>
+        <circle cx="462" cy="388" r="4" fill="#fffdf8"/>
+      </g>
+      <!-- wheel chock -->
+      <path d="M474 392 l20 0 0 -16 z" fill="#8a6a4f"/>
+      <!-- shrubs -->
+      <circle cx="540" cy="380" r="13" fill="#5e9a78"/>
+      <circle cx="520" cy="388" r="10" fill="#3e7c59"/>
+      <ellipse cx="146" cy="396" rx="6" ry="3.5" fill="#c96f4a" transform="rotate(16 146 396)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Front tires steer, brake, and (on most cars) drive — so they can wear nearly twice as fast as the rears. Left unrotated, you replace tires in worn-out pairs instead of one long-lived set. Here's what a free-to-$50 rotation protects (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M7 25 a12 12 0 0 1 9 -11" stroke="#d9663f" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M18 13.5 a12 12 0 0 1 11 11.5" stroke="#3a4144" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <rect x="5" y="28" width="26" height="3" rx="1.5" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>Tires die in pairs</h3>
+        <p>Unrotated, the hard-working axle wears out thousands of miles before the other. You end up buying two tires now, two later — mismatched in age, grip, and tread.</p>
+        <span class="cost">$300 – $600 per early pair</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="5" width="20" height="26" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M12 11 h12 M12 16 h12 M12 21 h7" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="25" r="6" fill="#e0a93d"/>
+          <path d="M21.5 25 l2 2 l3.5 -4" stroke="#fffdf8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Mileage warranty on the line</h3>
+        <p>Most tire mileage warranties require <em>documented</em> rotations on schedule. Skip them — or lose the receipts — and the prorated credit on a tire that wore out early gets denied.</p>
+        <span class="cost">Lost credit: $100 – $400</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="6" height="9" rx="3" fill="#3a4144"/>
+          <rect x="24" y="8" width="6" height="9" rx="3" fill="#3a4144"/>
+          <rect x="6" y="20" width="6" height="9" rx="3" fill="#3a4144"/>
+          <rect x="24" y="20" width="6" height="9" rx="3" fill="#3a4144"/>
+          <path d="M12 12.5 h12 M12 24.5 h12 M18 12.5 v12" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M14 16 l4 3 -3 2 4 3" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>AWD drivetrain strain</h3>
+        <p>All-wheel-drive systems hate mismatched tread: deeper tires roll slower than worn ones, so the center differential or clutch packs work constantly to make up the difference — and overheat.</p>
+        <span class="cost">$1,500 – $4,000 repair</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="19" r="9" fill="#3a4144"/>
+          <circle cx="13" cy="19" r="4" fill="#dce8ee"/>
+          <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round" fill="none">
+            <path d="M26 13 q3 6 0 12"/>
+            <path d="M30 10 q4.5 9 0 18"/>
+          </g>
+        </svg></div>
+        <h3>Cupping, droning, vibration</h3>
+        <p>Tires left in one spot develop irregular patterns — cupped rears, feathered fronts — that hum and buzz at highway speed. Once the pattern sets in, rotation can't fully erase it.</p>
+        <span class="cost">Noise you can't un-buy</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 c3.5 5 5 7.5 0 11 c-5 -3.5 -3.5 -6 0 -11" fill="#7fb3c8"/>
+          <path d="M6 24 q12 -12 24 0" stroke="#3a4144" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M5 29 q4 -3 8 0 q4 3 8 0 q4 -3 8 0" stroke="#7fb3c8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Wet grip where you need it</h3>
+        <p>Braking and steering lean hardest on the front tires. Rotation keeps tread depth balanced at all four corners, so no axle quietly becomes the bald one in the rain.</p>
+        <span class="cost">Free margin, every stop</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="14" r="8" fill="#3a4144"/>
+          <circle cx="13" cy="14" r="3.5" fill="#dce8ee"/>
+          <circle cx="23" cy="22" r="8" fill="#3a4144"/>
+          <circle cx="23" cy="22" r="3.5" fill="#dce8ee"/>
+          <path d="M30 7 v6 M27 10 h6" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Buy four, not two-plus-two</h3>
+        <p>Even wear means all four tires reach replacement together — so you can shop one full set, catch volume deals, and keep grip identical at every corner instead of staggering purchases.</p>
+        <span class="cost">Set deals save $50 – $150</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> rotate?</h2>
+    <p class="sub">"Every 7,500 miles" is the rule of thumb, and "with every other oil change" is how most people actually remember it — typical recommendations run 5,000–8,000 miles. Your drivetrain, your tires, and your driving move the number. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="drive">
+        <div class="q-label">1. Which wheels drive the car?</div>
+        <div class="pills">
+          <button class="pill" data-v="fwd">Front-wheel drive</button>
+          <button class="pill" data-v="rwd">Rear-wheel drive</button>
+          <button class="pill" data-v="awd">AWD / 4WD</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="directional">
+        <div class="q-label">2. Are your tires directional? (Look for an arrow or "ROTATION" on the sidewall.)</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes — there's an arrow</button>
+          <button class="pill" data-v="no">No arrow</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="duty">
+        <div class="q-label">3. How hard do the tires work?</div>
+        <div class="pills">
+          <button class="pill" data-v="tow">Towing / heavy loads</button>
+          <button class="pill" data-v="spirited">Spirited driving, lots of cornering</button>
+          <button class="pill" data-v="normal">Just normal driving</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="miles">
+        <div class="q-label">4. Roughly how many miles a year?</div>
+        <div class="pills">
+          <button class="pill" data-v="low">Under 8,000</button>
+          <button class="pill" data-v="mid">8,000 – 15,000</button>
+          <button class="pill" data-v="high">Over 15,000</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs (often: nothing)</h2>
+    <p class="sub">Rotation is unusual among car maintenance — there's a very good chance you can get it done free, forever. Here's the menu (typical U.S. figures):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$25–$50</div><div class="l">a paid shop rotation; some bundle it free with an oil change</div></div>
+        <div class="calc-stat"><div class="v">$0</div><div class="l">for the life of the tires at many retailers where you bought them</div></div>
+        <div class="calc-stat"><div class="v">$0 / time</div><div class="l">DIY — if you own a jack, stands, and a torque wrench (~$150–$250 once, shared with oil changes)</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔄 A decade of rotations (free-with-purchase or DIY)</span><span>$0 – $250</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔄 A decade of paid shop rotations (~16 visits)</span><span>$400 – $800</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:48%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛞 One set of tires worn out early + lost warranty credit</span><span>$700 – $1,600</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">Many tire retailers (and most tire-shop chains) include <strong>free lifetime rotations</strong> with a set of tires — they want you in the door, and rotation takes them 15 minutes. If you bought your tires anywhere with that policy, skipping rotations means paying <strong>$700–$1,600</strong> in early wear to avoid a <strong>free</strong> service. For AWD, add the drivetrain-repair risk on top.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to rotate your tires</h2>
+    <p class="sub">A DIY rotation takes 30–45 minutes with a floor jack and two stands. Pick your pattern below, then work through the checklist — your progress saves automatically, so you can pick it back up if you take a break.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — a jack lifts, only stands hold</h3>
+      <ul>
+        <li><strong>Never work on a car held only by a jack.</strong> Lift it, set it on rated jack stands at the factory jack points, lower onto the stands, and give the car a hard shake before reaching under a wheel arch.</li>
+        <li>Work on <strong>flat, solid concrete</strong> — not gravel, grass, or a slope. Set the parking brake and chock the wheels that stay on the ground.</li>
+        <li><strong>Crack the lug nuts a quarter turn while the tire is still on the ground.</strong> Wrestling a breaker bar against a wheel that's in the air is how cars get knocked off stands.</li>
+        <li><strong>Torque to spec, in a star pattern — never guess.</strong> Most cars spec 80–100 lb-ft (it's in the owner's manual). Under-torqued wheels work loose; an impact gun run wild warps brake rotors and strips studs.</li>
+        <li>Re-check the torque after the first 50–100 miles. Two minutes, cheap insurance.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Floor jack</span>
+      <span class="tool-chip">2+ rated jack stands</span>
+      <span class="tool-chip">Wheel chocks</span>
+      <span class="tool-chip">Torque wrench</span>
+      <span class="tool-chip">Lug wrench or breaker bar + socket</span>
+      <span class="tool-chip">Chalk or masking tape (to mark positions)</span>
+      <span class="tool-chip">Tire pressure gauge</span>
+      <span class="tool-chip">Tread depth gauge (or a penny)</span>
+      <span class="tool-chip">Gloves</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Pick your pattern — this is the whole trick</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of the forward cross rotation pattern for front-wheel drive: both front tires move straight back to the rear, while each rear tire crosses diagonally to the opposite front corner">
+          <text x="14" y="22" font-size="12" font-weight="700" fill="#6b7376">FRONT ▲</text>
+          <rect x="106" y="22" width="68" height="140" rx="22" fill="#dce8ee"/>
+          <rect x="116" y="48" width="48" height="16" rx="6" fill="#7fb3c8"/>
+          <rect x="116" y="122" width="48" height="14" rx="6" fill="#7fb3c8"/>
+          <rect x="66" y="30" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="190" y="30" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="66" y="112" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="190" y="112" width="24" height="42" rx="8" fill="#33393b"/>
+          <line x1="56" y1="56" x2="56" y2="118" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="56,130 49,116 63,116" fill="#3e7c59"/>
+          <line x1="224" y1="56" x2="224" y2="118" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="224,130 217,116 231,116" fill="#3e7c59"/>
+          <line x1="94" y1="120" x2="180" y2="66" stroke="#d9663f" stroke-width="4"/>
+          <polygon points="190,60 178,60 184,72" fill="#d9663f"/>
+          <line x1="186" y1="120" x2="100" y2="66" stroke="#d9663f" stroke-width="4"/>
+          <polygon points="90,60 102,60 96,72" fill="#d9663f"/>
+          <text x="14" y="172" font-size="11" fill="#6b7376">fronts straight back · rears cross forward</text>
+        </svg>
+        <h4>Forward cross — FWD</h4>
+        <p>The fronts do the most work, so they retire straight to the rear; the rears cross diagonally up to the front. The standard pattern for front-wheel drive with non-directional tires.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of the rearward cross rotation pattern for rear-wheel drive and all-wheel drive: both rear tires move straight forward, while each front tire crosses diagonally to the opposite rear corner">
+          <text x="14" y="22" font-size="12" font-weight="700" fill="#6b7376">FRONT ▲</text>
+          <rect x="106" y="22" width="68" height="140" rx="22" fill="#dce8ee"/>
+          <rect x="116" y="48" width="48" height="16" rx="6" fill="#7fb3c8"/>
+          <rect x="116" y="122" width="48" height="14" rx="6" fill="#7fb3c8"/>
+          <rect x="66" y="30" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="190" y="30" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="66" y="112" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="190" y="112" width="24" height="42" rx="8" fill="#33393b"/>
+          <line x1="56" y1="128" x2="56" y2="66" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="56,54 49,68 63,68" fill="#3e7c59"/>
+          <line x1="224" y1="128" x2="224" y2="66" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="224,54 217,68 231,68" fill="#3e7c59"/>
+          <line x1="94" y1="64" x2="180" y2="118" stroke="#d9663f" stroke-width="4"/>
+          <polygon points="190,124 178,124 184,112" fill="#d9663f"/>
+          <line x1="186" y1="64" x2="100" y2="118" stroke="#d9663f" stroke-width="4"/>
+          <polygon points="90,124 102,124 96,112" fill="#d9663f"/>
+          <text x="14" y="172" font-size="11" fill="#6b7376">rears straight forward · fronts cross back</text>
+        </svg>
+        <h4>Rearward cross — RWD &amp; AWD</h4>
+        <p>The driven rears move straight up to the front; the fronts cross diagonally back. Use it for rear-wheel drive, AWD, and 4WD with non-directional tires.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of the same-side front-to-back rotation pattern for directional tires: each front tire swaps with the rear tire on the same side, never crossing to the other side of the car">
+          <text x="14" y="22" font-size="12" font-weight="700" fill="#6b7376">FRONT ▲</text>
+          <rect x="106" y="22" width="68" height="140" rx="22" fill="#dce8ee"/>
+          <rect x="116" y="48" width="48" height="16" rx="6" fill="#7fb3c8"/>
+          <rect x="116" y="122" width="48" height="14" rx="6" fill="#7fb3c8"/>
+          <rect x="66" y="30" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="190" y="30" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="66" y="112" width="24" height="42" rx="8" fill="#33393b"/>
+          <rect x="190" y="112" width="24" height="42" rx="8" fill="#33393b"/>
+          <polygon points="78,26 71,38 85,38" fill="#e0a93d"/>
+          <polygon points="202,26 195,38 209,38" fill="#e0a93d"/>
+          <polygon points="78,108 71,120 85,120" fill="#e0a93d"/>
+          <polygon points="202,108 195,120 209,120" fill="#e0a93d"/>
+          <line x1="52" y1="68" x2="52" y2="116" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="52,128 45,114 59,114" fill="#3e7c59"/>
+          <polygon points="52,56 45,70 59,70" fill="#3e7c59"/>
+          <line x1="228" y1="68" x2="228" y2="116" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="228,128 221,114 235,114" fill="#3e7c59"/>
+          <polygon points="228,56 221,70 235,70" fill="#3e7c59"/>
+          <text x="14" y="172" font-size="11" fill="#6b7376">gold arrows = tread direction · swap front↔rear, same side</text>
+        </svg>
+        <h4>Front-to-back — directional tires</h4>
+        <p>The sidewall arrow must always point forward, so directional tires never switch sides: front and rear simply swap on the same side of the car. (Non-directional tires on a staggered setup do the opposite — side-to-side only.)</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of a five-tire rotation including a full-size spare: rear tires cross forward, the left front moves to the left rear, the right front becomes the new spare, and the spare enters at the right rear">
+          <text x="14" y="22" font-size="12" font-weight="700" fill="#6b7376">FRONT ▲</text>
+          <rect x="92" y="22" width="64" height="140" rx="20" fill="#dce8ee"/>
+          <rect x="101" y="48" width="46" height="15" rx="6" fill="#7fb3c8"/>
+          <rect x="101" y="122" width="46" height="13" rx="6" fill="#7fb3c8"/>
+          <rect x="54" y="30" width="22" height="40" rx="8" fill="#33393b"/>
+          <rect x="172" y="30" width="22" height="40" rx="8" fill="#33393b"/>
+          <rect x="54" y="114" width="22" height="40" rx="8" fill="#33393b"/>
+          <rect x="172" y="114" width="22" height="40" rx="8" fill="#33393b"/>
+          <rect x="234" y="72" width="22" height="40" rx="8" fill="#8a6a4f"/>
+          <text x="245" y="66" font-size="10.5" font-weight="700" fill="#8a6a4f" text-anchor="middle">SPARE</text>
+          <line x1="46" y1="56" x2="46" y2="120" stroke="#3e7c59" stroke-width="4"/>
+          <polygon points="46,132 39,118 53,118" fill="#3e7c59"/>
+          <line x1="82" y1="120" x2="164" y2="66" stroke="#d9663f" stroke-width="4"/>
+          <polygon points="174,60 162,60 168,72" fill="#d9663f"/>
+          <line x1="164" y1="118" x2="86" y2="64" stroke="#d9663f" stroke-width="4"/>
+          <polygon points="76,58 88,58 82,70" fill="#d9663f"/>
+          <path d="M196 44 q44 6 46 28" stroke="#e0a93d" stroke-width="4" fill="none"/>
+          <polygon points="244,80 235,70 249,68" fill="#e0a93d"/>
+          <path d="M238 116 q-6 24 -32 26" stroke="#e0a93d" stroke-width="4" fill="none"/>
+          <polygon points="196,144 208,136 210,150" fill="#e0a93d"/>
+          <text x="14" y="172" font-size="11" fill="#6b7376">full-size matching spare joins the cycle (FWD version shown)</text>
+        </svg>
+        <h4>Five-tire rotation</h4>
+        <p>Got a full-size matching spare? Put it in the cycle: spare to right rear, right front to spare (FWD shown; RWD/AWD runs the mirror image). Five tires sharing the wear last ~20% longer — and your spare never ages out unused. Never do this with a compact donut.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Rotation progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Four corners swapped, torqued, and aired up. Log today's date and odometer reading — see you in 5,000–7,500 miles.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO LET A SHOP DO IT ============ -->
+  <section id="pro">
+    <h2>When to let a shop do it</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Your tires came with free rotations.</strong> Many tire retailers and warehouse clubs include lifetime rotation (and often balancing) with a set. If that's you, DIY saves nothing — book the free 15-minute visit.</li>
+        <li><strong>No torque wrench, jack, or stands.</strong> Wheel torque is not a guess-and-hope job — under-torqued wheels loosen, over-torqued studs stretch and rotors warp. If you'd be improvising the equipment, pay the $25–$50.</li>
+        <li><strong>Staggered fitment</strong> (wider wheels on one axle — common on sporty RWD cars). Front-to-rear rotation is off the table; a shop can tell you whether a side-to-side swap or a dismount-and-remount is even worthwhile for your setup.</li>
+        <li><strong>Your car's TPMS tracks wheel position</strong> and shows per-corner pressures. Some systems relearn on their own after a drive; others need a relearn tool the shop already owns.</li>
+        <li><strong>You spotted trouble while checking:</strong> one shoulder bald, sawtooth feathering, cupping, or a tire wearing in the center. Rotation hides the symptom — alignment, balance, or worn suspension is the disease, and a shop can measure it.</li>
+        <li><strong>It's oil-change time anyway.</strong> The car's already on the lift; many shops add a rotation for $10–$20 or throw it in free. "Every other oil change" exists because of exactly this.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>My tires are wearing evenly — do I really still need to rotate?</summary>
+      <p>Yes — even wear isn't a sign you can stop; it's the rotation working. Each position wears tires differently (FWD fronts can wear close to twice as fast as rears), so a set that's even today drifts apart the moment it stops moving. There's also paperwork: most mileage warranties require rotations on schedule, with records, to stay valid — even on a car that happens to wear gently.</p>
+    </details>
+    <details>
+      <summary>I have staggered wheels — wider tires on the back. Can I rotate at all?</summary>
+      <p>Not front-to-rear: the tires physically don't fit the other axle. If your staggered tires are <em>non-directional</em>, you can swap side-to-side on the same axle, which evens out crown wear and cornering wear. If they're staggered <em>and</em> directional, no on-the-wheel rotation works — the only option is having the tires dismounted and remounted on the opposite wheels, which usually isn't worth the cost. Budget for rears wearing faster and replace in axle pairs.</p>
+    </details>
+    <details>
+      <summary>Why are AWD cars so picky about matching tires?</summary>
+      <p>Tread depth sets rolling diameter: a worn tire is slightly smaller and spins faster than a new one at the same road speed. An AWD system reads that constant speed difference as wheelspin and makes its center differential or clutch packs work full-time to compensate — which cooks them. That's why many AWD manufacturers specify all four tires stay within a tight tread-depth window (commonly around 2/32"–4/32", check your manual) and why a single ruined tire on AWD often means buying four. Faithful rotation is what keeps you out of that trap.</p>
+    </details>
+    <details>
+      <summary>Do I need to rebalance the tires when I rotate?</summary>
+      <p>Not automatically — moving a balanced wheel to another corner doesn't unbalance it. Rebalance when there's a symptom: steering-wheel shimmy around 60–75 mph (front imbalance) or a seat/floor buzz (rear). Some shops bundle a balance with rotation for a small fee, and if a wheel's lost a weight or thrown one, that's the moment you find out.</p>
+    </details>
+    <details>
+      <summary>Can rotating fix the uneven wear my tires already have?</summary>
+      <p>Only partly. Rotation stops the pattern from getting deeper and lets the worn spots catch up a little, but established cupping or feathering usually keeps making noise until those tires age out. More importantly, irregular wear is a message: feathering points to alignment, cupping to shocks or balance, edge wear to underinflation. Rotate — then fix what caused it.</p>
+    </details>
+    <details>
+      <summary>Should my spare be part of the rotation?</summary>
+      <p>Only if it's a full-size spare matching the other four in size and model — then a five-tire rotation spreads wear across five tires instead of four and keeps the spare's rubber from aging into uselessness in the trunk. Compact "donut" spares never join the rotation; they're a different size, speed-limited, and meant only to limp you to a shop. Either way, check the spare's pressure a few times a year.</p>
+    </details>
+    <details>
+      <summary>Does my TPMS need anything after a rotation?</summary>
+      <p>Usually nothing. Most systems only warn about low pressure and don't care which corner a sensor lives at. But if your dash shows a pressure reading <em>per wheel</em>, the positions will be wrong after rotating — some cars relearn automatically within a few miles, others need a relearn procedure (in the manual) or a shop's TPMS tool. And remember front and rear placard pressures can differ, so reset pressures by position after every rotation.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The pattern is easy. The remembering isn't.</h2>
+        <p>You now know your interval and your rotation pattern — the hard part is noticing when the odometer rolls past 7,500 miles again. Upkeep Ledger tracks mileage-based jobs like this one: log each rotation with the date and odometer, and it tells you when the next is due, alongside the oil change, tire-pressure checks, and everything else on a cadence.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=tire-rotation&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=tire-rotation&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { drive: null, directional: null, duty: null, miles: null };
+
+  var ANNUAL = { low: 6000, mid: 11500, high: 18000 };
+
+  function computePlan(s) {
+    var reasons = [];
+    var mi = (s.drive === "awd") ? 6000 : 7500;
+
+    if (s.drive === "fwd") {
+      reasons.push("Front-wheel drive routes steering, most of the braking, AND all the power through the front pair — they can wear nearly twice as fast as the rears, which is exactly what rotation evens out.");
+    } else if (s.drive === "rwd") {
+      reasons.push("Rear-wheel drive splits the abuse: power wears the rears while steering and braking wear the fronts — two different wear patterns that swapping ends keeps shallow.");
+    } else {
+      reasons.push("AWD systems are sensitive to mismatched tread depth — tires at different depths roll at different speeds, forcing the center differential or clutch packs to compensate full-time. A tighter interval keeps all four matched.");
+    }
+
+    if (s.duty === "tow") {
+      mi = mi * 0.7;
+      reasons.push("Towing and heavy loads add heat and squirm, accelerating wear on whichever axle carries the weight — that earns the short end of the 5,000–8,000 range.");
+    } else if (s.duty === "spirited") {
+      mi = mi * 0.7;
+      reasons.push("Enthusiastic cornering chews the outside shoulders of the front tires far faster than highway cruising — rotate early to spread that appetite across the set.");
+    } else {
+      reasons.push("Normal driving means the standard interval holds — no adjustment needed.");
+    }
+
+    mi = Math.max(4000, Math.round(mi / 500) * 500);
+
+    // Pattern from directional answer + drivetrain.
+    var pattern;
+    if (s.directional === "yes") {
+      pattern = "front-to-back, same side";
+      reasons.push("Directional tires have a tread arrow that must always point forward, so each tire stays on its side of the car: front and rear simply swap on the same side.");
+    } else if (s.directional === "no") {
+      pattern = (s.drive === "fwd") ? "forward cross" : "rearward cross";
+      reasons.push((s.drive === "fwd")
+        ? "Non-directional tires on FWD use the forward cross: fronts straight back, rears cross to the front (diagram below)."
+        : "Non-directional tires on RWD/AWD use the rearward cross: rears straight forward, fronts cross to the back (diagram below).");
+    } else {
+      pattern = (s.drive === "fwd") ? "forward cross (if non-directional)" : "rearward cross (if non-directional)";
+      reasons.push("Check the sidewall before you start: an arrow or the word “ROTATION” means directional tires, which must stay on their side of the car (front-to-back swap only). No arrow means you can use the cross pattern in the diagrams below.");
+    }
+
+    // Convert to months from annual mileage.
+    var annual = ANNUAL[s.miles];
+    var mo = Math.round(mi / (annual / 12));
+    if (mo >= 12) {
+      mo = 12;
+      reasons.push("At your mileage the calendar matters more than the odometer — make it at least once a year so the tires (and the warranty paperwork) never sit longer than that.");
+    } else if (s.miles === "high") {
+      reasons.push("At your mileage you'll hit the interval every few months — pinning it to every other oil change is the easiest way to make it automatic.");
+    } else {
+      reasons.push("“Every other oil change” is a fine memory hook if your oil interval is around half your rotation interval — just check that the math works for your schedule.");
+    }
+
+    reasons.push("As always, the owner's manual outranks this page — if it specifies a different interval or pattern, the manual wins.");
+
+    return { mi: mi, mo: mo, pattern: pattern, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.drive || !quizState.directional || !quizState.duty || !quizState.miles) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Every " + r.mi.toLocaleString("en-US") + " miles — about every " + (r.mo === 12 ? "12 months, minimum" : r.mo + " months for you");
+    document.getElementById("resultBody").innerHTML =
+      "Your pattern: <strong>the " + r.pattern + "</strong> — it's drawn in the diagrams below. Watch the odometer, and rotate at whichever comes first: the miles or the months. Why this plan:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & pattern", text: "Pick your pattern and look up two numbers", note: "Pattern from the diagrams above (drivetrain + directional or not). Numbers from the manual: wheel torque spec (usually 80–100 lb-ft) and the placard pressures — front and rear often differ." },
+    { phase: "Prep & pattern", text: "Chalk-mark each tire with its current position", note: "FL, FR, RL, RR on the sidewall in chalk or tape. Sounds fussy; saves you mid-job when four identical black circles are leaning against the garage wall." },
+    { phase: "Prep & pattern", text: "Park on flat concrete, parking brake on, chock the wheels", note: "Chock the end of the car staying on the ground. Gravel, grass, and slopes are automatic no-gos for jack stands." },
+    { phase: "Prep & pattern", text: "Crack each lug nut a quarter turn — while the tires are on the ground", note: "Counterclockwise, just enough to break them free. The ground holds the wheel still now; nothing holds it still in the air." },
+    { phase: "Lift & swap", text: "Jack up one end at the factory lift points and set it on jack stands", note: "Lift, place stands under the pinch weld or frame, lower onto the stands. Then shake the car hard — if it moves, fix the stands before anything else." },
+    { phase: "Lift & swap", text: "Repeat for the other end (or work two corners at a time)", note: "Four stands lets you do the whole car at once. With two stands, do one end, swap what you can, and shuffle — the chalk marks keep it straight." },
+    { phase: "Lift & swap", text: "Remove the wheels and move each to its new corner", note: "Follow your pattern exactly — cross or same-side, per the diagrams. Lay wheels flat, not leaning where a bump topples them onto you." },
+    { phase: "Lift & swap", text: "Inspect each tire while it's off — this is the bonus exam", note: "Tread depth in 2–3 grooves (replace at 4/32\" for wet, 2/32\" is legally bald), nails and screws, sidewall bulges or cracks, uneven wear. Glance at the brake pads while you're in there." },
+    { phase: "Lift & swap", text: "Mount each wheel and snug the lugs by hand in a star pattern", note: "Thread every nut by hand first to avoid cross-threading, then snug with the wrench — star pattern (skip-around), not circle, so the wheel seats flat." },
+    { phase: "Torque, set & log", text: "Lower the car fully, jack and stands away", note: "Wheels need ground contact for final torque — they'd just spin in the air." },
+    { phase: "Torque, set & log", text: "Torque every lug to spec in a star pattern", note: "Set the torque wrench to the manual's number (typically 80–100 lb-ft) and go around each wheel in the star sequence until every nut clicks. Never finish with an impact gun." },
+    { phase: "Torque, set & log", text: "Set tire pressures by position", note: "Front and rear placard pressures often differ, and your tires just changed axles. Check the spare while the gauge is out." },
+    { phase: "Torque, set & log", text: "Relearn TPMS if your car shows per-corner pressures", note: "Many cars sort themselves out after a few miles of driving; others have a relearn procedure in the manual. If it only warns on low pressure, there's nothing to do." },
+    { phase: "Torque, set & log", text: "Log date + odometer, then re-torque after 50–100 miles", note: "The log is what keeps your mileage warranty honest — and your schedule. The re-check takes two minutes and catches the rare nut that settled." }
+  ];
+
+  var LS_KEY = "upkeepguides:tire-rotation:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

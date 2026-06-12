@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace helmet — UpkeepGuides.com</title>
+<meta name="description" content="Helmet foam degrades even without a crash — when to replace your helmet (every 3–5 years, immediately after any impact), how to inspect the shell, straps, and fit, and what a new one costs.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace helmet — UpkeepGuides.com">
+<meta property="og:description" content="Helmet foam degrades even without a crash — when to replace your helmet (every 3–5 years, immediately after any impact), how to inspect the shell, straps, and fit, and what a new one costs.">
+<meta property="og:url" content="https://upkeepguides.com/replace-helmet.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace helmet — UpkeepGuides.com">
+<meta name="twitter:description" content="Helmet foam degrades even without a crash — when to replace your helmet (every 3–5 years, immediately after any impact), how to inspect the shell, straps, and fit, and what a new one costs.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result.urgent { background: var(--warn-soft); border-color: var(--warn); }
+  .quiz-result.urgent .freq { color: var(--warn); }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .retire-note { margin: 0 0 26px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every 5 years</span>
+      <h1>Replace Helmet</h1>
+      <p class="lede">A helmet is single-use safety gear on a slow clock. The foam inside is designed to crush exactly once — and even if you never crash, sun, sweat, and heat quietly take it apart. Here's when to replace yours, how to inspect it in five minutes, and what a new one costs.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Replace every <em>3–5 years</em></span>
+        <span class="chip">💥 After any crash: <em>immediately</em></span>
+        <span class="chip">💵 Solid replacement: <em>$50–150</em></span>
+        <span class="chip">⏱️ Inspection: <em>5 minutes</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a flat-style green bike helmet resting on a wooden bench with its straps hanging over the edge, a bright sun shining rays onto it, and a calendar beside it reading five years">
+      <ellipse cx="290" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- sun + UV rays -->
+      <circle cx="76" cy="68" r="26" fill="#f2cf7a"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round">
+        <line x1="104" y1="86" x2="126" y2="102"/>
+        <line x1="112" y1="64" x2="138" y2="70"/>
+        <line x1="96" y1="104" x2="110" y2="126"/>
+        <line x1="76" y1="106" x2="76" y2="128"/>
+      </g>
+      <!-- clouds -->
+      <ellipse cx="452" cy="66" rx="46" ry="20" fill="#dce8ee"/>
+      <ellipse cx="414" cy="80" rx="28" ry="14" fill="#dce8ee"/>
+      <!-- wooden bench -->
+      <rect x="128" y="330" width="288" height="16" rx="8" fill="#8a6a4f"/>
+      <rect x="152" y="346" width="14" height="50" rx="6" fill="#8a6a4f"/>
+      <rect x="378" y="346" width="14" height="50" rx="6" fill="#8a6a4f"/>
+      <!-- helmet shell -->
+      <path d="M158 326 Q150 224 254 190 Q352 160 404 232 Q426 262 420 302 Q418 326 396 326 Z" fill="#3e7c59"/>
+      <!-- top highlight -->
+      <path d="M196 232 Q236 192 300 186 Q272 182 240 196 Q206 210 196 232" fill="#5e9a78"/>
+      <!-- vents -->
+      <g fill="#2c5a40">
+        <ellipse cx="234" cy="244" rx="10" ry="30" transform="rotate(24 234 244)"/>
+        <ellipse cx="288" cy="226" rx="10" ry="32" transform="rotate(8 288 226)"/>
+        <ellipse cx="342" cy="234" rx="10" ry="28" transform="rotate(-12 342 234)"/>
+      </g>
+      <!-- foam liner edge -->
+      <rect x="166" y="308" width="244" height="12" rx="6" fill="#e0a93d"/>
+      <!-- pads peeking out -->
+      <rect x="190" y="318" width="36" height="8" rx="4" fill="#fffdf8"/>
+      <rect x="312" y="318" width="36" height="8" rx="4" fill="#fffdf8"/>
+      <!-- visor -->
+      <path d="M404 232 Q436 248 428 274 Q420 254 396 246 Z" fill="#2c5a40"/>
+      <!-- straps hanging over bench edge -->
+      <path d="M226 330 q-8 26 -2 52" stroke="#8a6a4f" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M348 330 q10 24 4 50" stroke="#8a6a4f" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <rect x="214" y="378" width="20" height="16" rx="4" fill="#33393b"/>
+      <rect x="219" y="382" width="10" height="8" rx="2" fill="#fffdf8"/>
+      <!-- calendar card -->
+      <rect x="448" y="252" width="84" height="80" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="448" y="252" width="84" height="22" rx="10" fill="#c96f4a"/>
+      <rect x="448" y="264" width="84" height="10" fill="#c96f4a"/>
+      <circle cx="468" cy="263" r="3.5" fill="#fffdf8"/>
+      <circle cx="512" cy="263" r="3.5" fill="#fffdf8"/>
+      <text x="490" y="308" font-size="26" font-weight="800" fill="#2c5a40" text-anchor="middle">5</text>
+      <text x="490" y="324" font-size="11" font-weight="700" fill="#8a6a4f" text-anchor="middle">YEARS</text>
+      <!-- sparkle -->
+      <path d="M150 150 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#e0a93d"/>
+      <path d="M438 178 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z" fill="#d98e3b"/>
+      <!-- greenery -->
+      <circle cx="92" cy="390" r="14" fill="#5e9a78"/>
+      <circle cx="114" cy="394" r="11" fill="#3e7c59"/>
+      <circle cx="476" cy="392" r="12" fill="#5e9a78"/>
+      <circle cx="496" cy="396" r="9" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A helmet works by sacrificing itself: the EPS foam liner crushes to absorb the energy that would otherwise reach your skull. That design has a catch — the foam only gets one good crush, and everything around it ages whether you ride or not:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 3 L18 10 M14 7 L18 11 L22 7" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="5" y="14" width="26" height="15" rx="4" fill="#e0a93d"/>
+          <path d="M12 14 l2.5 5 -3 4.5 M24 14 l-2.5 5 3 4.5" stroke="#b07b1a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 14 l-1 5 2 5" stroke="#b07b1a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>EPS foam crushes once</h3>
+        <p>Expanded polystyrene absorbs impact by permanently collapsing its air cells — it doesn't bounce back like a sponge. Wherever it has crushed, that spot offers almost no protection on the next hit.</p>
+        <span class="cost">Single-use by design</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="12" cy="12" r="6" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <line x1="12" y1="2.5" x2="12" y2="5"/>
+            <line x1="12" y1="19" x2="12" y2="21.5"/>
+            <line x1="2.5" y1="12" x2="5" y2="12"/>
+            <line x1="19" y1="12" x2="21.5" y2="12"/>
+            <line x1="5" y1="5" x2="6.8" y2="6.8"/>
+            <line x1="17.2" y1="6.8" x2="19" y2="5"/>
+          </g>
+          <path d="M26 18 c3.5 5 5 7.5 0 11 c-5 -3.5 -3.5 -6 0 -11" fill="#7fb3c8"/>
+          <path d="M8 27 q4 4 9 3" stroke="#c96f4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>UV, sweat &amp; heat degrade it</h3>
+        <p>Sunlight chalks and embrittles the shell, sweat salts work into pads and webbing, and hot-car or garage heat ages adhesives and foam. None of it shows from the outside — it just accumulates.</p>
+        <span class="cost">Decays even unused</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 4 q5 14 0 28" stroke="#8a6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <g stroke="#c96f4a" stroke-width="1.8" stroke-linecap="round">
+            <line x1="11" y1="8" x2="15" y2="6"/>
+            <line x1="11.5" y1="12" x2="15.5" y2="11"/>
+          </g>
+          <rect x="19" y="13" width="13" height="11" rx="3" fill="#6b7376"/>
+          <rect x="22.5" y="16" width="6" height="5" rx="1.5" fill="#fffdf8"/>
+        </svg></div>
+        <h3>Fit &amp; retention systems wear</h3>
+        <p>Straps stretch and fray, buckles crack, the dial-fit cradle loosens, and comfort pads compress flat. A helmet that shifts in a crash protects the wrong part of your head — or comes off entirely.</p>
+        <span class="cost">Loose helmet ≈ no helmet</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 22 l5 -4 3 5 4 -8 3 4" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="14" r="9" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <line x1="26.5" y1="20.5" x2="32" y2="26" stroke="#6b7376" stroke-width="3.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>The damage is invisible</h3>
+        <p>Crushed foam hides under the shell; hairline cracks hide under stickers and paint. After an impact, a helmet can look factory-fresh and still be spent. That's why the rule is date- and event-based, not looks-based.</p>
+        <span class="cost">No visible warning</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 24 Q6 10 18 8 Q30 10 30 24 L30 26 Q30 28 28 28 L8 28 Q6 28 6 26 Z" fill="#3e7c59"/>
+          <path d="M9 24 Q10 14 18 12" stroke="#e0a93d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M24 4 l2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Protection tech moves on</h3>
+        <p>A five-year-old helmet predates a lot: rotational-impact liners like MIPS are now standard at mid-range prices, coverage has extended, and independent impact ratings make good picks easy. Replacing is an upgrade, not just a reset.</p>
+        <span class="cost">Better safety, same price</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace it?</h2>
+    <p class="sub">Manufacturers say every 3–5 years from first use — and <strong>any crash means immediately</strong>, no matter the age. Where you fall in that window depends on how the helmet has lived. Answer five questions for your number:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="crash">
+        <div class="q-label">1. Has it ever been in a crash — or taken a real hit?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes — it's hit pavement with my head in it</button>
+          <button class="pill" data-v="drop">It's had a hard drop onto concrete</button>
+          <button class="pill" data-v="no">No impacts, ever</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="years">
+        <div class="q-label">2. How long have you owned it?</div>
+        <div class="pills">
+          <button class="pill" data-v="new">Under 3 years</button>
+          <button class="pill" data-v="mid">3–5 years</button>
+          <button class="pill" data-v="old">Over 5 years (or can't remember)</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="storage">
+        <div class="q-label">3. Where does it live between rides?</div>
+        <div class="pills">
+          <button class="pill" data-v="indoors">Indoors — closet or hallway</button>
+          <button class="pill" data-v="garage">Garage or shed</button>
+          <button class="pill" data-v="car">Car trunk, or outside</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="usage">
+        <div class="q-label">4. How often do you wear it?</div>
+        <div class="pills">
+          <button class="pill" data-v="occasional">A few times a month</button>
+          <button class="pill" data-v="weekly">Most weeks</button>
+          <button class="pill" data-v="daily">Daily — commuting or training</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="damage">
+        <div class="q-label">5. Any visible damage?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">Looks fine</button>
+          <button class="pill" data-v="scuffs">Cosmetic scuffs only</button>
+          <button class="pill" data-v="damage">Cracks, dents, or frayed straps</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What a replacement costs</h2>
+    <p class="sub">Helmets are unusual safety gear: in the U.S., every bike helmet sold must pass the same CPSC impact standard, so the $30 one and the $300 one clear the same bar. Price buys weight, venting, comfort, and aero — not a pass on the 5-year clock (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$25–60</div><div class="l">basic recreational helmet — CPSC-certified, fully protective</div></div>
+        <div class="calc-stat"><div class="v">$60–150</div><div class="l">quality road, commuter, or MTB lid — MIPS is common at this tier (it adds roughly $20)</div></div>
+        <div class="calc-stat"><div class="v">$150–300+</div><div class="l">premium: lighter, cooler, more aero — same certification floor</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🪖 A decade of on-schedule helmets (2 × $100)</span><span>≈ $200</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width: 8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 One ER visit for a head injury (exam + CT scan)</span><span>≈ $1,500–3,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width: 100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">Spread over five years, a good helmet costs about <strong>$1.50 a month</strong> — and study after study finds helmets cut the risk of serious head injury by <strong>roughly half or more</strong>. There is no cheaper insurance anywhere in your gear bag. <strong>Bonus:</strong> many brands (Giro, Bell, Specialized, POC, and others) run crash-replacement programs with a meaningful discount — register the new one when you buy it.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to inspect — and replace — your helmet</h2>
+    <p class="sub">The inspection takes five minutes in good light. Work through the checklist — your progress saves automatically, so you can finish after a trip to the bike shop.</p>
+
+    <div class="safety">
+      <h3>⚠️ After any crash, replace it — the damage can be invisible</h3>
+      <ul>
+        <li><strong>EPS foam crushes at the microscopic level first.</strong> A helmet that took a hit can look perfect while the liner under the shell is already collapsed where it matters.</li>
+        <li><strong>One impact spends the protection.</strong> Wherever the foam compressed, the next hit lands on a layer that's already done its job. No inspection can certify a crashed helmet as safe.</li>
+        <li><strong>This includes hits without your head in it</strong> — a hard bounce off a car roof onto the road deserves the same suspicion as a low-speed spill.</li>
+        <li><strong>When in doubt, it's a $60 decision</strong> protecting the only head you get. Doubt should always lose.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Bright light or a flashlight</span>
+      <span class="tool-chip">Your eyes and thumbs</span>
+      <span class="tool-chip">A mirror (for the fit check)</span>
+      <span class="tool-chip">Scissors (to retire the old one)</span>
+      <span class="tool-chip">Somewhere to log the purchase date</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four checks worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Cross-section diagram of a helmet showing the outer shell with hairline spider cracks on one side and a dented, compressed region of the foam liner on the other">
+          <path d="M42 132 Q42 38 140 34 Q238 38 238 132" stroke="#3e7c59" stroke-width="11" fill="none" stroke-linecap="round"/>
+          <path d="M58 132 Q58 52 140 48 Q222 52 222 132" stroke="#e0a93d" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path d="M196 56 l8 11 -10 7 8 12" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="206" y1="44" x2="216" y2="30" stroke="#6b7376" stroke-width="1.5"/>
+          <text x="218" y="26" font-size="12" fill="#6b7376" text-anchor="middle">spider cracks</text>
+          <path d="M62 100 q10 -8 20 0 q-10 6 -20 0" fill="#c96f4a"/>
+          <line x1="64" y1="92" x2="48" y2="74" stroke="#6b7376" stroke-width="1.5"/>
+          <text x="52" y="66" font-size="12" fill="#6b7376" text-anchor="middle">crushed foam</text>
+          <text x="140" y="158" font-size="12" fill="#6b7376" text-anchor="middle">shell (green) + EPS liner (gold) — check both, inside and out</text>
+        </svg>
+        <h4>Shell &amp; foam check</h4>
+        <p>In bright light, look over the shell for spider cracks and the foam for dents, gouges, or crumbling — pull the comfort pads to see the liner. Any separation where shell meets foam also fails it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a helmet strap and side-release buckle, with callouts pointing to frayed webbing at the strap edge and cracked teeth on the buckle">
+          <path d="M36 30 Q84 58 120 96 Q150 128 162 150" stroke="#8a6a4f" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path d="M44 26 q8 8 14 10 M58 36 q8 8 14 10" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <g stroke="#c96f4a" stroke-width="2.5" stroke-linecap="round">
+            <line x1="34" y1="22" x2="26" y2="12"/>
+            <line x1="42" y1="20" x2="38" y2="8"/>
+            <line x1="27" y1="30" x2="16" y2="24"/>
+          </g>
+          <line x1="44" y1="40" x2="62" y2="58" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="92" y="52" font-size="12" fill="#6b7376" text-anchor="middle">fraying at the ends</text>
+          <rect x="168" y="142" width="56" height="30" rx="7" fill="#6b7376"/>
+          <path d="M178 150 h12 v14 h-12 z" fill="#fffdf8"/>
+          <path d="M204 150 l10 7 -10 7 z" fill="#fffdf8"/>
+          <path d="M232 138 l10 -10" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="216" y="120" font-size="12" fill="#6b7376" text-anchor="middle">cracked teeth</text>
+          <text x="140" y="32" font-size="12" fill="#6b7376" text-anchor="middle">tug hard — clicked buckles must hold</text>
+        </svg>
+        <h4>Strap &amp; buckle wear</h4>
+        <p>Run the webbing through your fingers: fraying, stiffness, or sun-bleached fading means it's aged. Click the buckle and yank — it should never pop open. Check the dial-fit cradle still holds tension.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a head in profile wearing a helmet correctly, with two fingers fitting between the eyebrow and the helmet rim and the straps forming a V under the ear">
+          <circle cx="118" cy="104" r="46" fill="#c9a06b"/>
+          <path d="M64 96 Q64 40 120 38 Q176 40 174 92 Q174 100 166 100 L72 100 Q64 100 64 96" fill="#3e7c59"/>
+          <path d="M80 56 Q96 42 120 42" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <circle cx="152" cy="112" r="4" fill="#33393b"/>
+          <path d="M158 130 q6 4 12 3" stroke="#8a6a4f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <rect x="132" y="104" width="26" height="9" rx="4.5" fill="#e0a93d"/>
+          <rect x="132" y="115" width="26" height="9" rx="4.5" fill="#e0a93d"/>
+          <line x1="160" y1="109" x2="206" y2="84" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="226" y="74" font-size="12" fill="#6b7376" text-anchor="middle">two fingers:</text>
+          <text x="226" y="88" font-size="12" fill="#6b7376" text-anchor="middle">brow → rim</text>
+          <path d="M96 100 L112 134 M126 142 L112 134 L110 152" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="110" y1="140" x2="76" y2="152" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="52" y="160" font-size="12" fill="#6b7376" text-anchor="middle">V meets just</text>
+          <text x="52" y="174" font-size="12" fill="#6b7376" text-anchor="middle">below the ear</text>
+          <text x="172" y="168" font-size="12" fill="#6b7376" text-anchor="middle">level on the head, snug enough that skin moves with it</text>
+        </svg>
+        <h4>The two-finger fit check</h4>
+        <p>Worn level, the rim should sit about two finger-widths above your eyebrows. Straps form a V just under each ear, with room for only one finger between strap and chin. Shake your head — the helmet moves your scalp, not itself.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of an upside-down helmet with a manufacture-date sticker visible inside the foam, reading manufactured June 2021">
+          <path d="M52 64 Q52 132 140 138 Q228 132 228 64 L212 64 Q212 118 140 122 Q68 118 68 64 Z" fill="#3e7c59"/>
+          <path d="M68 64 Q68 118 140 122 Q212 118 212 64 Q186 80 140 82 Q94 80 68 64" fill="#e0a93d"/>
+          <rect x="104" y="84" width="72" height="28" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1.5" transform="rotate(-4 140 98)"/>
+          <text x="140" y="96" font-size="10" font-weight="700" fill="#33393b" text-anchor="middle" transform="rotate(-4 140 98)">MFD: 06 / 2021</text>
+          <text x="140" y="107" font-size="8.5" fill="#6b7376" text-anchor="middle" transform="rotate(-4 140 98)">CPSC 16 CFR 1203</text>
+          <line x1="140" y1="118" x2="140" y2="142" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <text x="140" y="158" font-size="12" fill="#6b7376" text-anchor="middle">white sticker on the foam, often hiding under a comfort pad</text>
+          <text x="140" y="30" font-size="12" fill="#6b7376" text-anchor="middle">flip it over — the clock starts at this date</text>
+        </svg>
+        <h4>Find the date stamp</h4>
+        <p>Every certified helmet carries a sticker inside with the month and year of manufacture, usually under the pads. That date plus 5 years is your hard ceiling; first-use date plus 3–5 is the working window.</p>
+      </div>
+    </div>
+
+    <div class="retire-note">♻️ <strong>What to do with the old one:</strong> most curbside recycling can't take helmets — the EPS foam is fused to the plastic shell and straps. Before it goes in the trash, <strong>cut the straps off</strong> (and ideally crack the shell) so nobody pulls a spent helmet out and rides in it. Never donate or hand down a retired helmet; a few manufacturers and specialty EPS programs do accept them, so it's worth a quick check.</div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Inspection progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fresh foam over your head and a date in the log. See you in five years — sooner if pavement gets involved.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN IN DOUBT ============ -->
+  <section id="pro">
+    <h2>When in doubt, replace</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Any crash or real impact</strong> — with your head in it or a hard bounce without. There is no inspection that clears a crashed helmet; this one isn't a judgment call.</li>
+        <li><strong>You can't find the date sticker and can't remember buying it.</strong> A helmet of unknown age is past its window by definition.</li>
+        <li><strong>It came to you secondhand.</strong> You can't verify its crash history, and crash damage is invisible — buy new, even on a budget.</li>
+        <li><strong>The fit has gone loose</strong> and new pads or the dial can't make it snug again. Compressed padding and stretched webbing don't recover.</li>
+        <li><strong>It lives in a hot car or hangs in the sun.</strong> Chalky, faded shell color is UV damage you can see; assume more you can't.</li>
+        <li><strong>Anything is cracked, frayed, crumbling, or the buckle pops under a hard tug.</strong> One failed component fails the whole system.</li>
+        <li>A fully certified replacement starts around <strong>$25–40</strong>. Measured against what it protects, this is the cheapest "when in doubt" rule you'll ever follow.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Does an unused helmet expire — even sitting in a closet?</summary>
+      <p>Slowly, yes. Here's the honest picture: lab studies on used helmets (including a large one by MEA Forensic) found that EPS foam itself holds its impact performance remarkably well for many years. But the helmet isn't just foam — glues, straps, pads, and the shell age regardless of use, and faster with heat and sunlight. Manufacturers' 3–5 year guidance is conservative, partly for liability — but since the failure modes are invisible and a replacement is cheap, it's the smart default. A boxed helmet stored cool and dark has more grace; one that's a decade past its manufacture date should simply be replaced.</p>
+    </details>
+    <details>
+      <summary>I dropped it off a shelf — is it ruined?</summary>
+      <p>Usually not. A short fall without your head inside carries far less energy than a crash — your head is what gives the impact its mass. Give it the full shell-and-foam inspection anyway. A harder case — bouncing off a car roof onto the road at speed, or a drop from height onto concrete — deserves real suspicion: inspect closely, and if you see any mark, dent, or crack, retire it. Manufacturers are intentionally cautious here, and following them costs little.</p>
+    </details>
+    <details>
+      <summary>Is a secondhand or hand-me-down helmet ever okay?</summary>
+      <p>No. Crash damage is invisible from the outside, so you can't verify a used helmet's history — and you often can't verify its age either. This is the one piece of cycling gear where buying used genuinely defeats the purpose. If budget is the issue, a new $30 CPSC-certified helmet protects better than any used $200 one with an unknown past.</p>
+    </details>
+    <details>
+      <summary>Is MIPS worth the extra money?</summary>
+      <p>Generally yes. MIPS (Multi-directional Impact Protection System) is a low-friction inner liner that lets the helmet rotate slightly around your head during an angled impact, reducing the rotational forces linked to concussion. It typically adds about $20 at mid-range prices, and helmets with MIPS or similar systems (SPIN, WaveCel) dominate the top of Virginia Tech's independent helmet ratings. Since you're replacing anyway, it's one of the cheapest meaningful safety upgrades available.</p>
+    </details>
+    <details>
+      <summary>Where exactly is the date stamp?</summary>
+      <p>Look inside the helmet for a white or silver sticker printed on the EPS foam — it's often hidden under a comfort pad, which peels back on hook-and-loop. It lists the month and year of manufacture, plus the certification (in the U.S., CPSC 16 CFR 1203 is mandatory for bike helmets; Snell and ASTM marks appear on some sport-specific models). If the sticker has worn off and you have no purchase record, treat the helmet as expired.</p>
+    </details>
+    <details>
+      <summary>Do expensive helmets protect better?</summary>
+      <p>Not in the certification sense — every bike helmet legally sold in the U.S. passes the same CPSC impact test, whether it costs $30 or $300. Extra money buys lower weight, better ventilation, aero shaping, nicer fit systems, and often MIPS. Interestingly, Virginia Tech's independent impact ratings regularly place mid-priced helmets at the very top. Buy for fit first: the safest helmet is the one positioned correctly on your head every single ride.</p>
+    </details>
+    <details>
+      <summary>Does the 5-year rule apply to ski, climbing, and motorcycle helmets too?</summary>
+      <p>The same logic applies, with the same caveat: one real impact ends any EPS-based helmet, and most makers recommend replacement at 3–5 years of use (climbing-helmet and motorcycle-helmet guidance commonly says about 5 years, or per the manufacturer). Multi-impact foams like EPP (in some skate-style helmets) tolerate minor knocks better but still age. Whatever the sport: check the date sticker, follow the maker's number, and let any crash overrule the calendar.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Five years is exactly the date you'll forget.</h2>
+        <p>Nobody remembers a "replace in 2031" task — that's the whole problem with helmets. Log the day the new one goes on in Upkeep Ledger and it pings you when the clock runs out, right alongside every other slow-burn task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-helmet&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-helmet&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your local prices may differ.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { crash: null, years: null, storage: null, usage: null, damage: null };
+
+  var OWNED_YEARS = { new: 2, mid: 4, old: 6 };
+
+  function computeVerdict(s) {
+    var reasons = [];
+
+    // Hard overrides: a crash or visible structural damage ends the discussion.
+    if (s.crash === "yes") {
+      return {
+        urgent: true,
+        headline: "Replace it now.",
+        body: "A helmet that has taken a crash with your head in it is <strong>spent</strong> — the EPS foam crushed to protect you, and it only does that once. Age, storage, and looks don't matter anymore.",
+        reasons: [
+          "Crushed foam doesn't rebound; wherever it compressed, there's almost nothing left to absorb the next impact.",
+          "The damage is usually invisible under the shell — no inspection can clear a crashed helmet.",
+          "Check whether your brand has a crash-replacement program; many offer a solid discount on the new one."
+        ]
+      };
+    }
+    if (s.damage === "damage") {
+      return {
+        urgent: true,
+        headline: "Replace it now.",
+        body: "Cracks, dents, or frayed straps are a <strong>failed inspection</strong> — visible damage means the structure or retention system is already compromised, whatever the calendar says.",
+        reasons: [
+          "A cracked shell or dented foam can't manage impact energy the way an intact one does.",
+          "Frayed webbing and tired buckles are how helmets come off mid-crash — one failed component fails the system.",
+          "If the visible damage surprised you, assume there's invisible damage to match."
+        ]
+      };
+    }
+
+    var lifespan = 5;
+
+    if (s.crash === "drop") {
+      lifespan -= 1;
+      reasons.push("A hard drop onto concrete can crack foam invisibly — lean toward the early end of the window, and weigh the shell-and-foam check below heavily. Any mark you find should retire it.");
+    } else {
+      reasons.push("No impacts means the foam should still have its full crush left — your clock is pure age and wear.");
+    }
+
+    if (s.storage === "car") {
+      lifespan -= 1;
+      reasons.push("Trunk heat and outdoor sun are the fastest agers a helmet faces — UV chalks the shell while heat works on foam and adhesives. Moving it indoors buys your next one extra life.");
+    } else if (s.storage === "garage") {
+      reasons.push("A garage or shed means real temperature swings and some UV — fine, but it nudges you toward the earlier side and makes the annual inspection matter more.");
+    } else {
+      reasons.push("Indoor, dark, room-temperature storage is the best-case scenario — it's what lets a helmet reach the full five years.");
+    }
+
+    if (s.usage === "daily") {
+      lifespan -= 1;
+      reasons.push("Daily wear means daily sweat, sun, and handling — commuter and training helmets earn the 3-year end of the manufacturer range.");
+    } else if (s.usage === "weekly") {
+      reasons.push("Weekly use is the textbook case the 5-year guidance was written for — steady wear, steady aging.");
+    } else {
+      reasons.push("Light use stretches the wear side, but not the clock — foam, pads, and straps age in the closet too, so the date still rules.");
+    }
+
+    if (s.damage === "scuffs") {
+      reasons.push("Cosmetic scuffs on the shell are normal and fine — what matters is cracks, dents, and what the foam underneath looks like.");
+    } else {
+      reasons.push("Looking fine is good news but weak evidence — helmets hide their injuries, which is why the schedule is date-based, not looks-based.");
+    }
+
+    if (lifespan < 3) lifespan = 3;
+
+    var owned = OWNED_YEARS[s.years];
+    if (s.years === "old") {
+      reasons.push("Past five years you're outside every manufacturer's window — even a pristine-looking helmet has straps, pads, glue, and foam all aging together.");
+    }
+
+    if (owned >= lifespan) {
+      return {
+        urgent: false,
+        headline: "You're due — replace it this season.",
+        body: "Manufacturers say 3–5 years; your answers put this helmet's working life at about <strong>" + lifespan + " years</strong>, and you're at or past it. Do the inspection below for confirmation, then enjoy the upgrade — helmets have gotten lighter, cooler, and safer since you last shopped.",
+        reasons: reasons
+      };
+    }
+
+    var remaining = lifespan - owned;
+    return {
+      urgent: false,
+      headline: "Good for now — replace at the " + lifespan + "-year mark.",
+      body: "Your answers put this helmet's working life at about <strong>" + lifespan + " years</strong>, which leaves you roughly <strong>" + remaining + " more year" + (remaining === 1 ? "" : "s") + "</strong>. Until then: an annual five-minute inspection (below), and any crash resets the answer to “now.” Why this number:",
+      reasons: reasons
+    };
+  }
+
+  function onQuizChange() {
+    if (!quizState.crash || !quizState.years || !quizState.storage || !quizState.usage || !quizState.damage) return;
+    var r = computeVerdict(quizState);
+
+    document.getElementById("resultFreq").textContent = r.headline;
+    document.getElementById("resultBody").innerHTML = r.body;
+
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+
+    var box = document.getElementById("quizResult");
+    box.classList.toggle("urgent", r.urgent);
+    box.classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Inspect the shell & foam", text: "Take it into bright light and pull the comfort pads", note: "Most pads peel off hook-and-loop dots. You're inspecting the foam itself, not the fabric over it." },
+    { phase: "Inspect the shell & foam", text: "Scan the shell for spider cracks and gouges", note: "Rotate it slowly under the light — hairline cracks love to hide along vents, edges, and under stickers." },
+    { phase: "Inspect the shell & foam", text: "Check the foam for dents, compressed spots, or crumbling", note: "EPS should look uniform. Any flattened or chalky patch means it has already absorbed an impact — or just given up." },
+    { phase: "Inspect the shell & foam", text: "Look where the shell meets the foam", note: "Separation or lifting at the edge (delamination) fails the helmet even if both layers look fine on their own." },
+    { phase: "Check straps, buckle & fit", text: "Run the straps through your fingers end to end", note: "Fraying, stiffness, or sun-bleached fading means the webbing is aged. It should feel supple, not crispy." },
+    { phase: "Check straps, buckle & fit", text: "Click the buckle and yank hard", note: "It must not pop open. Inspect the teeth for cracks, and check the dial-fit cradle still holds tension." },
+    { phase: "Check straps, buckle & fit", text: "Do the two-finger fit check in a mirror", note: "Level on the head, rim two fingers above the eyebrows, straps in a V under each ear, one finger max under the chin strap." },
+    { phase: "Check straps, buckle & fit", text: "Find the date sticker and do the math", note: "Inside, on the foam, often under a pad. Manufacture date + 5 years is the ceiling; first use + 3–5 is the window." },
+    { phase: "Replace & retire", text: "Buy a CPSC-certified replacement — consider MIPS", note: "Every certified helmet passes the same impact test; MIPS adds ~$20 of rotational protection. Check Virginia Tech's free ratings before you buy." },
+    { phase: "Replace & retire", text: "Fit the new one in person if you can", note: "Head shapes vary by brand. The right helmet sits level and snug before you even touch the straps." },
+    { phase: "Replace & retire", text: "Cut the straps off the old helmet before binning it", note: "A spent helmet that looks fine is a trap for the next person. Strapless and cracked, it can't be rescued and reused." },
+    { phase: "Replace & retire", text: "Write down the date — and register the helmet", note: "Log the purchase date where you'll see it in five years, and register with the brand for crash-replacement discounts." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-helmet:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

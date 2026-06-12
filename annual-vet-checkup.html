@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annual vet checkup — UpkeepGuides.com</title>
+<meta name="description" content="Why every dog and cat needs a yearly wellness exam, how the schedule changes for puppies, kittens, and seniors, what it costs, and exactly how to prepare.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Annual vet checkup — UpkeepGuides.com">
+<meta property="og:description" content="Why every dog and cat needs a yearly wellness exam, how the schedule changes for puppies, kittens, and seniors, what it costs, and exactly how to prepare.">
+<meta property="og:url" content="https://upkeepguides.com/annual-vet-checkup.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Annual vet checkup — UpkeepGuides.com">
+<meta name="twitter:description" content="Why every dog and cat needs a yearly wellness exam, how the schedule changes for puppies, kittens, and seniors, what it costs, and exactly how to prepare.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+  .cost-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#prepare">Prepare</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Yearly</span>
+      <h1>Annual Vet Checkup</h1>
+      <p class="lede">Your pet ages five to seven years for every one of yours — and is hard-wired to act fine right up until they can't. One wellness exam a year (two for seniors) is how problems get caught while they're still small, cheap, and fixable.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>once a year</em></span>
+        <span class="chip">🐾 Seniors: <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>30–60 minutes</em> per visit</span>
+        <span class="chip">💸 Catching it late costs <em>$1,500+</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a veterinarian in green scrubs listening to a happy dog's heart with a stethoscope on an exam table, while a cat watches from a carrier on the floor">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="66" cy="62" r="24" fill="#f2cf7a"/>
+      <ellipse cx="468" cy="60" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="428" cy="72" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- exam table -->
+      <rect x="142" y="272" width="270" height="18" rx="9" fill="#7fb3c8"/>
+      <rect x="150" y="290" width="254" height="8" rx="4" fill="#b9b1a3"/>
+      <rect x="168" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="372" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="168" y="344" width="218" height="9" rx="4.5" fill="#b9b1a3"/>
+      <!-- dog sitting on the table -->
+      <ellipse cx="248" cy="226" rx="48" ry="50" fill="#c9a06b"/>
+      <ellipse cx="218" cy="240" rx="24" ry="34" fill="#b98c54"/>
+      <rect x="240" y="216" width="17" height="60" rx="8.5" fill="#c9a06b"/>
+      <rect x="266" y="216" width="17" height="60" rx="8.5" fill="#c9a06b"/>
+      <ellipse cx="248" cy="274" rx="12" ry="6" fill="#b98c54"/>
+      <ellipse cx="274" cy="274" rx="12" ry="6" fill="#b98c54"/>
+      <path d="M204 200 q-26 -4 -28 -28" stroke="#8a6a4f" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <circle cx="262" cy="148" r="38" fill="#c9a06b"/>
+      <ellipse cx="230" cy="140" rx="13" ry="24" fill="#8a6a4f" transform="rotate(20 230 140)"/>
+      <ellipse cx="294" cy="140" rx="13" ry="24" fill="#8a6a4f" transform="rotate(-20 294 140)"/>
+      <ellipse cx="262" cy="166" rx="16" ry="12" fill="#fffdf8"/>
+      <circle cx="262" cy="160" r="5" fill="#33393b"/>
+      <path d="M255 170 q7 6 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="248" cy="146" r="4" fill="#33393b"/>
+      <circle cx="276" cy="146" r="4" fill="#33393b"/>
+      <path d="M232 184 q30 13 60 0" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="262" cy="194" r="6" fill="#e0a93d"/>
+      <!-- little heart over the dog -->
+      <path d="M318 96 c5 -9 17 -6 17 3 c0 8 -10 14 -17 19 c-7 -5 -17 -11 -17 -19 c0 -9 12 -12 17 -3 z" fill="#c96f4a"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="344" y1="86" x2="352" y2="78"/>
+        <line x1="350" y1="104" x2="360" y2="102"/>
+      </g>
+      <!-- veterinarian -->
+      <circle cx="452" cy="118" r="30" fill="#f3ddc0"/>
+      <path d="M422 110 a30 30 0 0 1 60 0 l-8 0 q-10 -16 -22 -16 q-12 0 -22 16 z" fill="#8a6a4f"/>
+      <circle cx="443" cy="118" r="3.5" fill="#33393b"/>
+      <circle cx="461" cy="118" r="3.5" fill="#33393b"/>
+      <path d="M445 131 q7 5 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <rect x="410" y="150" width="84" height="128" rx="20" fill="#3e7c59"/>
+      <rect x="436" y="150" width="32" height="16" rx="6" fill="#2c5a40"/>
+      <rect x="466" y="186" width="20" height="13" rx="4" fill="#e0a93d"/>
+      <!-- vet's arm reaching to the dog with stethoscope -->
+      <path d="M414 176 q-44 16 -88 38" stroke="#3e7c59" stroke-width="20" fill="none" stroke-linecap="round"/>
+      <circle cx="322" cy="216" r="11" fill="#f3ddc0"/>
+      <path d="M444 150 q-2 -12 8 -14 M460 150 q2 -12 -8 -14" stroke="#2c5a40" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M452 138 q4 36 -34 50 q-58 22 -114 36" stroke="#2c5a40" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="304" cy="224" r="10" fill="#e0a93d"/>
+      <circle cx="304" cy="224" r="5" fill="#d98e3b"/>
+      <!-- vet's legs -->
+      <rect x="424" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <rect x="458" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <ellipse cx="433" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+      <ellipse cx="471" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+      <!-- cat carrier on the floor -->
+      <rect x="48" y="316" width="116" height="76" rx="14" fill="#c96f4a"/>
+      <path d="M82 316 q24 -18 48 0" stroke="#9a4f33" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <rect x="66" y="332" width="58" height="48" rx="8" fill="#fbe9e1"/>
+      <g stroke="#c96f4a" stroke-width="4" stroke-linecap="round">
+        <line x1="80" y1="332" x2="80" y2="380"/>
+        <line x1="95" y1="332" x2="95" y2="380"/>
+        <line x1="110" y1="332" x2="110" y2="380"/>
+      </g>
+      <circle cx="96" cy="356" r="17" fill="#b9b1a3"/>
+      <polygon points="82,346 85,330 96,342" fill="#b9b1a3"/>
+      <polygon points="110,346 107,330 96,342" fill="#b9b1a3"/>
+      <circle cx="90" cy="354" r="2.6" fill="#33393b"/>
+      <circle cx="102" cy="354" r="2.6" fill="#33393b"/>
+      <polygon points="93,360 99,360 96,364" fill="#c96f4a"/>
+      <circle cx="140" cy="370" r="9" fill="#fbe9e1"/>
+      <!-- foreground greenery -->
+      <circle cx="516" cy="390" r="14" fill="#5e9a78"/>
+      <circle cx="536" cy="394" r="10" fill="#3e7c59"/>
+      <circle cx="30" cy="396" r="11" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A pet that "seems fine" is not the same as a pet that is fine. The annual exam exists because animals are built to hide weakness — and because almost everything a vet can find early is cheaper and kinder to treat early. Costs below are typical U.S. estimates:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="19" width="26" height="11" rx="2" fill="#c9a06b"/>
+          <line x1="5" y1="23" x2="31" y2="23" stroke="#a3895f" stroke-width="1.6"/>
+          <circle cx="18" cy="14" r="7" fill="#b9b1a3"/>
+          <polygon points="12,9 13,3 18,8" fill="#b9b1a3"/>
+          <polygon points="24,9 23,3 18,8" fill="#b9b1a3"/>
+          <circle cx="15.5" cy="13" r="1.6" fill="#33393b"/>
+          <circle cx="20.5" cy="13" r="1.6" fill="#33393b"/>
+        </svg></div>
+        <h3>Pets hide illness</h3>
+        <p>Dogs and cats are wired to mask pain and weakness — by the time a cat skips meals or a dog stops jumping on the couch, a problem has usually been brewing for months. The exam is how you see behind the act.</p>
+        <span class="cost">"Seems fine" ≠ fine</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M14 12 c3 -5 10 -3.5 10 2 c0 5 -6 8.5 -10 11.5 c-4 -3 -10 -6.5 -10 -11.5 c0 -5.5 7 -7 10 -2 z" fill="#c96f4a"/>
+          <circle cx="22" cy="18" r="9" fill="none" stroke="#3e7c59" stroke-width="2.8"/>
+          <line x1="28.5" y1="24.5" x2="33" y2="29" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Early detection is cheap detection</h3>
+        <p>Kidney disease, heart murmurs, thyroid trouble, diabetes, lumps that matter — all of them are dramatically easier to manage when found at a wellness visit instead of in an emergency room at 2 a.m.</p>
+        <span class="cost">ER visit: $1,500 – $5,000+</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <g transform="rotate(-38 18 18)">
+            <rect x="8" y="14" width="16" height="8" rx="2" fill="#7fb3c8"/>
+            <rect x="4" y="15.5" width="5" height="5" rx="1.5" fill="#3e7c59"/>
+            <line x1="24" y1="18" x2="31" y2="18" stroke="#6b7376" stroke-width="2.4" stroke-linecap="round"/>
+            <line x1="12" y1="14" x2="12" y2="22" stroke="#fffdf8" stroke-width="1.6"/>
+            <line x1="16" y1="14" x2="16" y2="22" stroke="#fffdf8" stroke-width="1.6"/>
+          </g>
+          <circle cx="30" cy="8" r="2.4" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Boosters that can't lapse</h3>
+        <p>Core vaccines — rabies for everyone, distemper-parvo for dogs, FVRCP for cats — run on 1- or 3-year cycles, and rabies is required by law. The annual visit is what keeps the schedule from quietly expiring.</p>
+        <span class="cost">Lapsed rabies = restart + fines</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M11 6 q7 -4 14 0 q5 3 3 10 q-1.5 5 -3.5 12 q-1 3.5 -3 3.5 q-2 0 -2.5 -3.5 q-0.5 -4 -1 -4 q-0.5 0 -1 4 q-0.5 3.5 -2.5 3.5 q-2 0 -3 -3.5 q-2 -7 -3.5 -12 q-2 -7 3 -10 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="22" cy="13" r="2.6" fill="#d9663f"/>
+        </svg></div>
+        <h3>Dental disease is the default</h3>
+        <p>Most dogs and cats have some periodontal disease by age three. It's painful, it seeds bacteria toward the heart and kidneys — and the annual exam is usually the only time anyone looks under the lip.</p>
+        <span class="cost">Extractions: $1,000 – $3,000</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="27" width="22" height="4" rx="2" fill="#2c5a40"/>
+          <rect x="13" y="22" width="12" height="4" rx="1.5" fill="#7fb3c8"/>
+          <rect x="16" y="6" width="6" height="13" rx="3" fill="#3e7c59" transform="rotate(18 19 12)"/>
+          <path d="M22 19 q7 2 7 8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="13" cy="24" r="1.6" fill="#d9663f"/>
+        </svg></div>
+        <h3>Parasite screening</h3>
+        <p>The yearly fecal test and (for dogs) heartworm test catch the parasites you can't see — worms that also spread to people, and heartworm, which is far cheaper to prevent than to treat.</p>
+        <span class="cost">Heartworm treatment: $1,000 – $3,000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> go?</h2>
+    <p class="sub">"Once a year" is the floor for healthy adults — but puppies, kittens, and seniors run on different clocks, and lifestyle changes what the visit should cover. Answer four questions for a schedule to bring to your vet:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="species">
+        <div class="q-label">1. Who's due for a checkup?</div>
+        <div class="pills">
+          <button class="pill" data-v="dog">Dog</button>
+          <button class="pill" data-v="cat">Cat</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="stage">
+        <div class="q-label">2. What life stage?</div>
+        <div class="pills">
+          <button class="pill" data-v="young">Puppy / kitten (under 1 yr)</button>
+          <button class="pill" data-v="adult">Adult</button>
+          <button class="pill" data-v="senior">Senior (dogs ~7+, cats ~10+)</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="lifestyle">
+        <div class="q-label">3. What's their world like?</div>
+        <div class="pills">
+          <button class="pill" data-v="indoor">Mostly indoors</button>
+          <button class="pill" data-v="outdoor">Outdoors, boarding, parks &amp; other animals</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="health">
+        <div class="q-label">4. Any known conditions?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">Healthy, no daily meds</button>
+          <button class="pill" data-v="chronic">A chronic condition or daily meds</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What a checkup costs</h2>
+    <p class="sub">The exam fee is the small part — the visit total depends on which vaccines are due and what screening makes sense this year. All figures are typical U.S. estimates; city clinics run higher:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$50 – $100</div><div class="l">wellness exam fee (the nose-to-tail physical itself)</div></div>
+        <div class="calc-stat"><div class="v">$20 – $50</div><div class="l">per vaccine booster — rabies, DHPP / FVRCP, plus lifestyle vaccines</div></div>
+        <div class="calc-stat"><div class="v">$25 – $75</div><div class="l">fecal parasite test; heartworm test for dogs runs $35 – $75</div></div>
+        <div class="calc-stat"><div class="v">$100 – $300</div><div class="l">bloodwork &amp; urinalysis — standard for seniors, a smart baseline for adults</div></div>
+        <div class="calc-stat"><div class="v">$300 – $800</div><div class="l">dental cleaning under anesthesia, if the exam finds it's due</div></div>
+        <div class="calc-stat"><div class="v">$150 – $350</div><div class="l">typical all-in annual visit (exam + due vaccines + screening)</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 Typical annual wellness visit</span><span>≈ $250</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🦷 Dental disease treated late (extractions)</span><span>$1,000 – $3,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:48%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚨 Emergency visit for an illness caught late</span><span>$1,500 – $5,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">A decade of annual checkups costs roughly <strong>$2,000 – $3,500</strong> — about the same as <strong>one</strong> advanced dental surgery or a single bad emergency. And the checkup money buys something the emergency can't: years of problems that never got big.</div>
+
+      <div class="cost-note">🧾 <strong>Insurance vs. wellness plans:</strong> they're different products. Pet <em>insurance</em> covers the unexpected (accidents, illness) and usually <em>excludes</em> routine checkups. <em>Wellness plans</em> — sold by many clinics — bundle exams, vaccines, and screening into a monthly fee. Either can make sense; just don't assume your insurance pays for this visit. Estimates only — your clinic's price sheet is the real number.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO PREPARE ============ -->
+  <section id="prepare">
+    <h2>How to prepare (and what to expect)</h2>
+    <p class="sub">A vet can examine an unprepared pet — but a prepared owner is what turns a 30-minute appointment into a genuinely useful one. Work through the checklist below; your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ The day-of details people get wrong</h3>
+      <ul>
+        <li><strong>Ask about fasting when you book.</strong> If bloodwork is planned, many vets want 8–12 hours without food (water is always fine). Never fast a puppy, kitten, or diabetic pet unless the clinic explicitly says so.</li>
+        <li><strong>Ask before skipping morning meds.</strong> Some should be given as usual, some held until after the blood draw — the clinic will tell you which.</li>
+        <li><strong>Cats: shut the cat in the night before.</strong> Cats have a sixth sense for vet day; an outdoor cat who vanishes at 7 a.m. costs you the appointment.</li>
+        <li><strong>Lobby rules:</strong> dogs on a fixed (not retractable) leash, cats in a closed carrier — for everyone's safety, including the nervous animals around you.</li>
+        <li><strong>Fearful or reactive pet? Say so when booking.</strong> Clinics can schedule quiet slots, room you immediately, or prescribe a pre-visit calming med (common and effective for cats).</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What to bring</h3>
+    <div class="tools">
+      <span class="tool-chip">Fresh stool sample (bagged &amp; labeled)</span>
+      <span class="tool-chip">List of changes: appetite, water, behavior</span>
+      <span class="tool-chip">Every med &amp; supplement, with doses</span>
+      <span class="tool-chip">Previous records (if it's a new clinic)</span>
+      <span class="tool-chip">Your questions, written down</span>
+      <span class="tool-chip">High-value treats</span>
+      <span class="tool-chip">Secure carrier + towel (cats)</span>
+      <span class="tool-chip">Fixed leash or harness (dogs)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 What the visit actually covers</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Body map of a dog showing the nose-to-tail exam points: teeth and gums, eyes and ears, heart and lungs, belly, skin and coat, and joints">
+          <rect x="14" y="160" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="152" cy="102" rx="66" ry="34" fill="#c9a06b"/>
+          <circle cx="74" cy="78" r="24" fill="#c9a06b"/>
+          <ellipse cx="62" cy="60" rx="8" ry="14" fill="#8a6a4f" transform="rotate(22 62 60)"/>
+          <circle cx="68" cy="76" r="2.5" fill="#33393b"/>
+          <rect x="104" y="122" width="12" height="38" rx="5" fill="#c9a06b"/>
+          <rect x="184" y="122" width="12" height="38" rx="5" fill="#c9a06b"/>
+          <path d="M214 88 q24 -14 18 -38" stroke="#8a6a4f" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <g fill="#e0a93d" stroke="#fffdf8" stroke-width="2">
+            <circle cx="60" cy="88" r="6"/>
+            <circle cx="80" cy="62" r="6"/>
+            <circle cx="118" cy="96" r="6"/>
+            <circle cx="160" cy="108" r="6"/>
+            <circle cx="186" cy="86" r="6"/>
+            <circle cx="190" cy="142" r="6"/>
+          </g>
+          <text x="14" y="124" font-size="11" fill="#6b7376">teeth &amp; gums</text>
+          <line x1="44" y1="114" x2="56" y2="92" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="16" y="32" font-size="11" fill="#6b7376">eyes &amp; ears</text>
+          <line x1="48" y1="38" x2="76" y2="58" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="96" y="42" font-size="11" fill="#6b7376">heart &amp; lungs</text>
+          <line x1="118" y1="48" x2="118" y2="90" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="142" y="146" font-size="11" fill="#6b7376" text-anchor="end">belly (organs)</text>
+          <line x1="146" y1="136" x2="158" y2="114" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="216" y="50" font-size="11" fill="#6b7376">skin &amp; coat</text>
+          <line x1="214" y1="56" x2="190" y2="80" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="208" y="160" font-size="11" fill="#6b7376">joints &amp; gait</text>
+          <line x1="206" y1="152" x2="196" y2="144" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+        </svg>
+        <h4>The nose-to-tail exam</h4>
+        <p>Eyes, ears, and teeth; heart and lungs with the stethoscope; hands-on belly check of the organs; skin, coat, and lumps; joints and gait; weight against last year's number. Five minutes that screen a dozen diseases.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Timeline showing vet visit frequency by life stage: every three to four weeks as a puppy or kitten, yearly as an adult, then every six months as a senior">
+          <line x1="20" y1="104" x2="248" y2="104" stroke="#b9b1a3" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="248,96 264,104 248,112" fill="#b9b1a3"/>
+          <g fill="#3e7c59">
+            <circle cx="30" cy="104" r="6"/>
+            <circle cx="44" cy="104" r="6"/>
+            <circle cx="58" cy="104" r="6"/>
+            <circle cx="72" cy="104" r="6"/>
+          </g>
+          <circle cx="130" cy="104" r="7" fill="#e0a93d"/>
+          <g fill="#c96f4a">
+            <circle cx="196" cy="104" r="6"/>
+            <circle cx="218" cy="104" r="6"/>
+            <circle cx="240" cy="104" r="6"/>
+          </g>
+          <line x1="92" y1="88" x2="92" y2="120" stroke="#d8cfbe" stroke-width="2"/>
+          <line x1="172" y1="88" x2="172" y2="120" stroke="#d8cfbe" stroke-width="2"/>
+          <text x="22" y="58" font-size="12" fill="#2c5a40" font-weight="700">puppy / kitten</text>
+          <text x="22" y="74" font-size="11" fill="#6b7376">every 3–4 weeks</text>
+          <text x="102" y="58" font-size="12" fill="#9a7117" font-weight="700">adult</text>
+          <text x="102" y="74" font-size="11" fill="#6b7376">once a year</text>
+          <text x="184" y="58" font-size="12" fill="#d9663f" font-weight="700">senior</text>
+          <text x="184" y="74" font-size="11" fill="#6b7376">every 6 months</text>
+          <text x="20" y="146" font-size="11" fill="#6b7376">birth → 16 wks</text>
+          <text x="104" y="146" font-size="11" fill="#6b7376">1 – 7 yrs (dogs) / 1 – 10 (cats)</text>
+          <text x="236" y="146" font-size="11" fill="#6b7376" text-anchor="end">senior yrs</text>
+        </svg>
+        <h4>The life-stage clock</h4>
+        <p>Puppies and kittens visit every 3–4 weeks for the vaccine series until ~16 weeks. Adults settle into yearly. Seniors go semiannual — at their pace of aging, six months is years of human time.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a cat carrier left out with the door open and a trail of treats leading inside, with a cat calmly approaching">
+          <rect x="14" y="160" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <rect x="132" y="74" width="116" height="84" rx="14" fill="#c96f4a"/>
+          <path d="M166 74 q24 -18 48 0" stroke="#9a4f33" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <rect x="144" y="90" width="58" height="58" rx="8" fill="#fbe9e1"/>
+          <ellipse cx="216" cy="138" rx="22" ry="11" fill="#7fb3c8"/>
+          <g transform="rotate(-58 128 132)">
+            <rect x="100" y="126" width="56" height="42" rx="6" fill="#e9b88a" opacity="0.45" stroke="#c96f4a" stroke-width="2"/>
+          </g>
+          <g fill="#d98e3b">
+            <circle cx="36" cy="150" r="4"/>
+            <circle cx="70" cy="146" r="4"/>
+            <circle cx="104" cy="142" r="4"/>
+            <circle cx="138" cy="134" r="4"/>
+            <circle cx="168" cy="124" r="4"/>
+          </g>
+          <circle cx="44" cy="106" r="17" fill="#b9b1a3"/>
+          <polygon points="31,96 34,81 44,92" fill="#b9b1a3"/>
+          <polygon points="57,96 54,81 44,92" fill="#b9b1a3"/>
+          <circle cx="38" cy="104" r="2.4" fill="#33393b"/>
+          <circle cx="50" cy="104" r="2.4" fill="#33393b"/>
+          <polygon points="41,110 47,110 44,114" fill="#c96f4a"/>
+          <ellipse cx="44" cy="136" rx="16" ry="14" fill="#b9b1a3"/>
+          <path d="M60 142 q14 4 14 -10" stroke="#b9b1a3" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <text x="140" y="36" font-size="12" fill="#6b7376">door open, blanket + treats inside,</text>
+          <text x="140" y="52" font-size="12" fill="#6b7376">out for a week before the visit</text>
+          <line x1="196" y1="58" x2="190" y2="72" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+        </svg>
+        <h4>The carrier head start</h4>
+        <p>Most "my cat hates the vet" is really "my cat hates the carrier ambush." Leave it out for a week with a soft blanket and daily treats inside, and vet day starts calm instead of feral.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Visit prep progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Visit done and logged! Nose-to-tail peace of mind — see you in a year (or six months for the seniors).</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO GO SOONER ============ -->
+  <section id="sooner">
+    <h2>When not to wait for the annual</h2>
+    <p class="sub">The yearly exam is for the problems you can't see. These are the ones you can — and none of them should sit on the calendar until next spring:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Not eating for more than a day</strong> — and for cats this is urgent: as little as 2–3 days without food can trigger life-threatening liver trouble (hepatic lipidosis).</li>
+        <li><strong>A male cat straining in the litter box with little or no urine — this is an emergency.</strong> A urinary blockage is fatal within days; go now, not tomorrow.</li>
+        <li><strong>Drinking or urinating much more than usual.</strong> The classic early flag for diabetes, kidney disease, and thyroid trouble — easy to dismiss, very worth a visit.</li>
+        <li><strong>Unexplained weight loss</strong>, even with a normal appetite. In cats especially, "getting slim in old age" is usually a disease, not aging.</li>
+        <li><strong>Labored or noisy breathing, or open-mouth breathing in a cat</strong> — same-day vet, every time.</li>
+        <li><strong>Vomiting or diarrhea that lasts more than a day or two</strong>, contains blood, or comes with lethargy.</li>
+        <li><strong>A new lump that's growing</strong>, bleeding, or bothers the pet. Most lumps are benign — but "most" is a finding, not a guess.</li>
+        <li><strong>Limping, stiffness, or reluctance to jump that doesn't resolve in a couple of days</strong> — pain that finally shows is pain that's been there a while.</li>
+        <li><strong>Sudden behavior change:</strong> hiding, irritability, confusion, or house-soiling in a previously tidy pet. Behavior is often the only symptom an animal will show you.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>My indoor cat never goes outside. Does she really need a yearly exam?</summary>
+      <p>Yes — arguably more than anyone, because indoor cats are the most under-vetted pets in the country and the best in the world at hiding illness. Indoor life doesn't prevent dental disease, obesity, kidney disease, hyperthyroidism, or diabetes, and the exam's weight-and-teeth trend line is how those get caught early. Rabies vaccination is also legally required in most places regardless of lifestyle — bats and escapes happen.</p>
+    </details>
+    <details>
+      <summary>Can I do titer tests instead of re-vaccinating?</summary>
+      <p>Sometimes. Titers measure existing antibodies, and many vets accept strong titers in place of boosters for core vaccines like canine distemper and parvovirus. Two caveats: a titer often costs as much as or more than the vaccine, and <strong>rabies is the exception</strong> — the law in most jurisdictions requires the vaccine on schedule, titer or not. If you want to minimize injections, ask your vet about titers and about 3-year vaccine formulations.</p>
+    </details>
+    <details>
+      <summary>Is senior bloodwork really worth it if my pet seems healthy?</summary>
+      <p>This is where lab work earns its keep. Kidney values, for example, often don't move until a large share of function is already gone — but trends across yearly panels flag the slide much earlier, and early diet changes meaningfully extend good years. Same story for thyroid disease in older cats and liver values in dogs. Even a normal panel is valuable: it's the baseline that makes next year's numbers mean something.</p>
+    </details>
+    <details>
+      <summary>Will the vet check the microchip?</summary>
+      <p>Usually only if you ask — so ask. The scan takes ten seconds and confirms the chip hasn't failed or migrated. While you're at it, log into the chip registry and check that your phone number and address are current; an out-of-date registration is the most common reason chipped pets don't make it home.</p>
+    </details>
+    <details>
+      <summary>My pet is terrified of the vet. Any way to make this easier?</summary>
+      <p>Lots. Tell the clinic when you book — many will room you straight away or schedule a quiet slot. Ask about pre-visit calming medication (very common for cats, and it works). Do "happy visits": drop in occasionally just for treats and a hello, no exam. For cats, the carrier acclimation in the diagram above does most of the heavy lifting. Some areas also have Fear Free–certified practices and house-call vets who do the whole exam on your sofa.</p>
+    </details>
+    <details>
+      <summary>What's the difference between pet insurance and a wellness plan — do I need either?</summary>
+      <p>Insurance covers the surprises (a broken leg, a sudden illness) and typically does <em>not</em> cover this checkup. Wellness plans are basically a subscription for routine care — exams, vaccines, fecal tests — spread into monthly payments. Neither is mandatory: a healthy adult pet's routine care is affordable out of pocket, while insurance is mostly about protecting yourself from the $4,000 emergency. Run the math for your pet's age and breed, and read what's excluded.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A whole year is a long time to remember one date.</h2>
+        <p>You now know exactly when your pet's next wellness exam is due — the annual that quietly slides to eighteen months is how small problems get big. Upkeep Ledger logs each visit and nudges you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=annual-vet-checkup&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=annual-vet-checkup&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes. This page is general education, not veterinary advice — your vet knows your pet, your region, and the right schedule for both.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { species: null, stage: null, lifestyle: null, health: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var freq, body;
+
+    if (s.stage === "young") {
+      freq = "Your plan: every 3–4 weeks (for now)";
+      body = (s.species === "dog" ? "Puppies" : "Kittens") +
+        " visit on the vaccine-series clock — roughly every 3–4 weeks from 6–8 weeks old until about 16 weeks — then settle into yearly exams. Why:";
+      reasons.push("Maternal antibodies fade on an unpredictable schedule between 6 and 16 weeks, so core vaccines are given as a series — skipping a round leaves a gap in protection.");
+      reasons.push("These visits also cover deworming, growth and weight checks, and the spay/neuter conversation — bring every question you have; that's what they're for.");
+      reasons.push(s.species === "dog"
+        ? "Dogs' core vaccines: rabies plus distemper-adenovirus-parvo (DHPP). Ask whether your area and lifestyle call for leptospirosis, bordetella, or Lyme on top."
+        : "Cats' core vaccines: rabies plus FVRCP. Feline leukemia (FeLV) vaccination is recommended for all kittens — ask your vet about boosters after the first year.");
+    } else if (s.stage === "senior") {
+      freq = "Your plan: every 6 months";
+      body = "Veterinary guidelines (AAHA, AVMA) recommend semiannual wellness exams for seniors — at a senior pet's rate of aging, a year between checkups is like a human skipping the doctor for half a decade. Why:";
+      reasons.push("The big senior diseases — kidney disease, " + (s.species === "cat" ? "hyperthyroidism, " : "") + "heart disease, arthritis, dental disease — develop fast and treat best early.");
+      reasons.push("Senior visits typically add bloodwork and urinalysis. The trend across panels matters more than any single result — that's how a slide gets caught while it's still gentle.");
+      reasons.push("Weight is the cheapest lab test there is: steady loss in a senior " + (s.species === "cat" ? "cat" : "dog") + " is a finding, not 'just getting old.'");
+    } else if (s.health === "chronic") {
+      freq = "Your plan: every 6 months, typically";
+      body = "Healthy adults go yearly — but a chronic condition or daily medication usually means semiannual rechecks, on whatever rhythm your vet sets. Why:";
+      reasons.push("Medication doses drift as weight and organ function change; periodic exams and lab work keep the dose matched to the animal actually taking it.");
+      reasons.push("Your vet may want more or less than six months depending on the condition — their schedule wins over this page's.");
+    } else {
+      freq = "Your plan: once a year";
+      body = "A healthy adult " + (s.species === "dog" ? "dog" : "cat") + " needs one full wellness exam every 12 months — the AAHA/AVMA baseline. Why:";
+      reasons.push("The annual visit is mostly about trends: weight, teeth, heart sounds, and lumps compared against last year. Trends only exist if the visits happen.");
+      reasons.push("Core vaccine boosters run on 1- and 3-year cycles, and the yearly exam is what keeps them from quietly lapsing.");
+    }
+
+    if (s.species === "dog" && s.stage !== "young") {
+      reasons.push("Dogs: an annual heartworm test is standard (American Heartworm Society guidance) — even for dogs on year-round prevention, since a missed dose can hide an infection.");
+    }
+    if (s.species === "cat" && s.stage !== "young") {
+      reasons.push("Cats statistically see the vet about half as often as dogs — mostly because of the carrier battle. The carrier head start in the prep section fixes most of that.");
+    }
+
+    if (s.lifestyle === "outdoor") {
+      reasons.push("Boarding, parks, and outdoor time mean more exposure: ask about lifestyle vaccines (" + (s.species === "dog" ? "bordetella, leptospirosis, Lyme or canine influenza by region" : "feline leukemia for cats who go outside") + ") and keep parasite screening yearly without fail.");
+    } else if (s.stage !== "young") {
+      reasons.push("Indoor-mostly doesn't mean exam-optional: dental disease, weight creep, and organ changes happen entirely indoors — and rabies vaccination is required by law in most places regardless.");
+    }
+
+    return { freq: freq, body: body, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.species || !quizState.stage || !quizState.lifestyle || !quizState.health) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = r.freq;
+    document.getElementById("resultBody").textContent = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "The week before", text: "Book a quiet time slot — and mention a fearful pet when you do", note: "First appointment of the morning or right after lunch means an empty lobby. Flag anxiety now so the clinic can plan for it." },
+    { phase: "The week before", text: "Start a \"changes\" list on your phone", note: "Appetite, water intake, energy, bathroom habits, new lumps, stiffness, odd behavior. Small notes all week beat your memory in the exam room." },
+    { phase: "The week before", text: "Gather records and write a meds list", note: "Previous records if this is a new clinic; every medication, supplement, and flea/heartworm preventive with doses — including the ones that seem trivial." },
+    { phase: "The week before", text: "Cats: put the carrier out now", note: "Door open, soft blanket inside, a treat tossed in daily. A week of this turns the carrier from a trap into furniture." },
+    { phase: "The night before", text: "Confirm whether to fast (and what to do about morning meds)", note: "Bloodwork often reads cleaner after 8–12 hours without food; water is always fine. Never fast puppies, kittens, or diabetic pets unless explicitly told to." },
+    { phase: "The night before", text: "Pack the visit bag", note: "Records, meds list, your written questions, high-value treats, a towel, poop bags. Future-you in the waiting room says thanks." },
+    { phase: "The night before", text: "Keep the patient in", note: "Shut cats inside and know where they're sleeping. The annual disappearing act on vet morning is a genre of its own." },
+    { phase: "Morning of", text: "Collect a fresh stool sample", note: "A grape-sized piece in a clean sealed bag or the clinic's kit, ideally from the last 12 hours. It's how worms get found without symptoms." },
+    { phase: "Morning of", text: "Feed (or don't) per the clinic's instructions", note: "If no fasting was ordered, a light breakfast is fine — and a slightly hungry pet works harder for the exam-room treats." },
+    { phase: "Morning of", text: "Load up safely", note: "Dogs on a fixed leash or harness; cats in a secured carrier with a towel draped over it — darkness is calming. Carrier belted or on the floor, not loose on a seat." },
+    { phase: "At the clinic", text: "Hand over your changes list first", note: "It steers the whole exam. \"Drinking more water since March\" is worth more to your vet than ten minutes of poking." },
+    { phase: "At the clinic", text: "Ask for the freebies: microchip scan, weight trend, nail check", note: "Each takes seconds. Confirm the chip reads and your registry contact info is current." },
+    { phase: "At the clinic", text: "Ask: \"What's due next, and when?\"", note: "Which vaccines are on 1-year vs 3-year cycles, whether a dental cleaning is on the horizon, and when bloodwork should start or repeat." },
+    { phase: "At the clinic", text: "Book the next visit before you leave — and log this one", note: "A year is exactly long enough to forget. Put the next due date somewhere that will nag you." }
+  ];
+
+  var LS_KEY = "upkeepguides:annual-vet-checkup:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

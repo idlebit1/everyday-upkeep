@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test smoke detectors — UpkeepGuides.com</title>
+<meta name="description" content="How often to test your smoke detectors, when to replace batteries and the alarms themselves, and a fifteen-minute whole-house routine tied to the clock changes.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Test smoke detectors — UpkeepGuides.com">
+<meta property="og:description" content="How often to test your smoke detectors, when to replace batteries and the alarms themselves, and a fifteen-minute whole-house routine tied to the clock changes.">
+<meta property="og:url" content="https://upkeepguides.com/test-smoke-detectors.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Test smoke detectors — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to test your smoke detectors, when to replace batteries and the alarms themselves, and a fifteen-minute whole-house routine tied to the clock changes.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calendar ---------- */
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+  .month {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 12px;
+    padding: 12px 10px; text-align: center; transition: all 0.2s ease; min-height: 86px;
+  }
+  .month .m-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .month .m-task { font-size: 12.5px; color: var(--ink-soft); line-height: 1.35; }
+  .month.clean { background: var(--accent-soft); border-color: var(--accent); }
+  .month.clean .m-task { color: var(--accent-deep); font-weight: 600; }
+  .month.check { background: var(--gold-soft); border-color: var(--gold); }
+  .month.check .m-task { color: #9a7117; font-weight: 600; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; color: var(--ink-soft); }
+  .legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 4px; margin-right: 6px; vertical-align: -1px; }
+  .dot.d-clean { background: var(--accent); }
+  .dot.d-check { background: var(--gold); }
+  .cal-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+    .cal-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  .month .m-season { display: block; height: 18px; margin-bottom: 2px; }
+  .month .m-season svg { width: 16px; height: 16px; }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 6 months</span>
+      <h1>Test smoke detectors</h1>
+      <p class="lede">A smoke alarm has exactly one job: wake you up while there's still time to get out. The test button is the only way to know it can still do that — and pressing it on every detector takes about fifteen minutes, twice a year. Here's the schedule, the battery rules, and the routine.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Test <em>every 6 months</em> (monthly is ideal)</span>
+        <span class="chip">⏱️ <em>~15 minutes</em> whole house</span>
+        <span class="chip">🔋 Batteries <em>yearly</em> · units <em>every 10 years</em></span>
+        <span class="chip">🚨 Working alarms <em>cut fire-death risk in half</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person on a step stool reaching up to press the test button on a ceiling smoke detector, with sound arcs ringing out, a wall clock, a window, and a pack of fresh batteries waiting on a side table">
+      <ellipse cx="280" cy="402" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- ceiling -->
+      <rect x="36" y="14" width="488" height="16" rx="4" fill="#efe7d8"/>
+      <line x1="36" y1="30" x2="524" y2="30" stroke="#d8cfbe" stroke-width="3"/>
+      <!-- smoke detector on ceiling -->
+      <rect x="288" y="30" width="24" height="8" fill="#b9b1a3"/>
+      <circle cx="300" cy="72" r="36" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+      <circle cx="300" cy="72" r="22" fill="#dce8ee"/>
+      <g stroke="#9cc0d4" stroke-width="2.5" stroke-linecap="round">
+        <line x1="288" y1="64" x2="312" y2="64"/>
+        <line x1="286" y1="72" x2="314" y2="72"/>
+        <line x1="288" y1="80" x2="312" y2="80"/>
+      </g>
+      <circle cx="300" cy="72" r="8" fill="#e0a93d"/>
+      <circle cx="322" cy="88" r="3.5" fill="#d9663f"/>
+      <!-- sound arcs -->
+      <g stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M244 50 q-12 22 0 44"/>
+        <path d="M356 50 q12 22 0 44"/>
+      </g>
+      <g stroke="#e0a93d" stroke-width="3.5" fill="none" stroke-linecap="round">
+        <path d="M222 42 q-18 30 0 60"/>
+        <path d="M378 42 q18 30 0 60"/>
+      </g>
+      <!-- window, left -->
+      <rect x="64" y="96" width="96" height="116" rx="4" fill="#cfe3ec" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="112" y1="96" x2="112" y2="212" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="64" y1="154" x2="160" y2="154" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="88" cy="120" r="12" fill="#f2cf7a"/>
+      <!-- side table with battery pack -->
+      <rect x="70" y="320" width="104" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="82" y="330" width="10" height="62" fill="#8a6a4f"/>
+      <rect x="152" y="330" width="10" height="62" fill="#8a6a4f"/>
+      <rect x="92" y="290" width="40" height="30" rx="4" fill="#e0a93d"/>
+      <rect x="92" y="290" width="40" height="9" rx="4" fill="#d98e3b"/>
+      <text x="112" y="313" font-size="13" font-weight="800" fill="#fffdf8" text-anchor="middle">9V</text>
+      <rect x="140" y="300" width="14" height="20" rx="3" fill="#c96f4a"/>
+      <rect x="144" y="296" width="6" height="4" fill="#8a6a4f"/>
+      <!-- wall clock, right (clock-change cue) -->
+      <circle cx="468" cy="140" r="34" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+      <line x1="468" y1="140" x2="468" y2="118" stroke="#2c5a40" stroke-width="4" stroke-linecap="round"/>
+      <line x1="468" y1="140" x2="484" y2="148" stroke="#2c5a40" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="468" cy="140" r="4" fill="#d9663f"/>
+      <path d="M508 116 q10 -8 6 -20" stroke="#e0a93d" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <polygon points="510,92 520,100 506,104" fill="#e0a93d"/>
+      <!-- person on step stool, reaching up -->
+      <rect x="246" y="358" width="84" height="12" rx="5" fill="#c96f4a"/>
+      <rect x="252" y="370" width="9" height="28" fill="#9a4f33"/>
+      <rect x="315" y="370" width="9" height="28" fill="#9a4f33"/>
+      <rect x="262" y="380" width="52" height="9" rx="4" fill="#c96f4a"/>
+      <!-- legs -->
+      <rect x="272" y="294" width="14" height="66" rx="6" fill="#2c5a40"/>
+      <rect x="292" y="294" width="14" height="66" rx="6" fill="#2c5a40"/>
+      <!-- torso -->
+      <rect x="264" y="216" width="50" height="86" rx="18" fill="#3e7c59"/>
+      <!-- reaching arm -->
+      <path d="M298 232 Q292 170 288 122" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="288" cy="114" r="7" fill="#c9a06b"/>
+      <!-- other arm -->
+      <path d="M268 240 Q252 262 258 284" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <circle cx="259" cy="290" r="6.5" fill="#c9a06b"/>
+      <!-- head -->
+      <circle cx="284" cy="192" r="18" fill="#c9a06b"/>
+      <path d="M266 188 q4 -16 20 -16 q12 0 16 10 q-10 -4 -18 -2 q-12 2 -18 8" fill="#8a6a4f"/>
+      <!-- plant, right -->
+      <circle cx="430" cy="346" r="17" fill="#5e9a78"/>
+      <circle cx="448" cy="334" r="14" fill="#3e7c59"/>
+      <circle cx="452" cy="354" r="11" fill="#5e9a78"/>
+      <rect x="426" y="362" width="30" height="28" rx="4" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Roughly three out of five home-fire deaths in the U.S. happen in homes with no smoke alarms or alarms that didn't work — and "didn't work" usually means a dead, missing, or disconnected battery. The test button exists because all of this is preventable:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="20" width="28" height="8" rx="3" fill="#8a6a4f"/>
+          <rect x="4" y="12" width="5" height="12" rx="2" fill="#8a6a4f"/>
+          <circle cx="13" cy="17" r="4" fill="#c9a06b"/>
+          <rect x="16" y="15" width="15" height="6" rx="3" fill="#7fb3c8"/>
+          <text x="27" y="11" font-size="9" font-weight="800" fill="#9cc0d4">z</text>
+          <text x="31" y="6" font-size="7" font-weight="800" fill="#9cc0d4">z</text>
+        </svg></div>
+        <h3>Smoke won't wake you</h3>
+        <p>Smell doesn't work while you sleep, and smoke itself dulls you further. Most fatal home fires happen at night — the alarm's horn is what wakes you, or nothing does.</p>
+        <span class="cost">The stakes are lives, not dollars</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="12" width="24" height="13" rx="3" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <rect x="29" y="16" width="3.5" height="5" rx="1.5" fill="#6b7376"/>
+          <rect x="8" y="15" width="5" height="7" rx="1.5" fill="#d9663f"/>
+          <path d="M22 8 l-4 7 h5 l-4 7" stroke="#e0a93d" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Batteries die quietly</h3>
+        <p>A 9V battery fades over a year — and the low-battery chirp often gets answered by pulling the battery "for now." A dead or missing battery turns the alarm into ceiling decoration.</p>
+        <span class="cost">#1 cause of alarm failure</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="18" r="11" fill="none" stroke="#3e7c59" stroke-width="2.5"/>
+          <line x1="16" y1="18" x2="16" y2="11" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="16" y1="18" x2="21" y2="21" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <rect x="22" y="22" width="12" height="9" rx="4.5" fill="#e0a93d"/>
+          <text x="28" y="29" font-size="7" font-weight="800" fill="#fffdf8" text-anchor="middle">10y</text>
+        </svg></div>
+        <h3>Sensors age out</h3>
+        <p>The sensing chamber drifts and gums up with dust over time. After about 10 years an alarm can fail without ever chirping — which is why every alarm carries a replace-by date.</p>
+        <span class="cost">$20 – $50 per replacement unit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M17 4 c6 6 9 11 9 17 a9 9 0 0 1 -18 0 c0 -6 3 -8 5 -10 c-0.5 3 0.5 5 2 6 c-0.5 -5 0.5 -9 2 -13" fill="#d9663f"/>
+          <path d="M17 17 c3 3 4.5 5 4.5 8 a4.5 4.5 0 0 1 -9 0 c0 -3 1.5 -5 4.5 -8" fill="#e0a93d"/>
+          <circle cx="29" cy="9" r="5.5" fill="none" stroke="#6b7376" stroke-width="2"/>
+          <line x1="29" y1="9" x2="29" y2="5.5" stroke="#6b7376" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="29" y1="9" x2="31.5" y2="10.5" stroke="#6b7376" stroke-width="1.8" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Modern fires move fast</h3>
+        <p>Synthetic furniture burns hotter and faster than the furnishings of decades past. You may have as little as <strong>2–3 minutes</strong> to get out after the alarm sounds — early warning is everything.</p>
+        <span class="cost">2–3 min to escape, not 17</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <polygon points="5,17 18,7 31,17" fill="#3e7c59"/>
+          <rect x="8" y="17" width="20" height="13" rx="2" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="13" cy="22" r="2.4" fill="#3e7c59"/>
+          <circle cx="23" cy="22" r="2.4" fill="#3e7c59"/>
+          <path d="M14 27 q4 -3 8 0" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>One alarm isn't coverage</h3>
+        <p>Code calls for an alarm in every bedroom, outside each sleeping area, and on every level including the basement. A closed door can keep a hallway alarm from waking the person behind it.</p>
+        <span class="cost">$10 – $30 per missing alarm</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="14" r="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.4"/>
+          <circle cx="13" cy="14" r="2.6" fill="#e0a93d"/>
+          <circle cx="26" cy="24" r="6.5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.2"/>
+          <circle cx="26" cy="24" r="2" fill="#e0a93d"/>
+          <path d="M19 17 q3 2 4 4" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-dasharray="2.5 3"/>
+        </svg></div>
+        <h3>Interconnection saves minutes</h3>
+        <p>When alarms are interconnected — wired or wireless — a basement fire sounds the alarm in your bedroom too. Testing is how you confirm they still all talk to each other.</p>
+        <span class="cost">Minutes of extra warning</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> test them?</h2>
+    <p class="sub">NFPA's gold standard is a button test every month; every 6 months — pegged to the daylight-saving clock changes — is the practical floor most households actually keep. Batteries and the alarms themselves run on their own clocks. Answer three questions for your plan:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="power">
+        <div class="q-label">1. What powers your alarms?</div>
+        <div class="pills">
+          <button class="pill" data-v="replaceable">9V / AA batteries</button>
+          <button class="pill" data-v="sealed">Sealed 10-year battery</button>
+          <button class="pill" data-v="hardwired">Hardwired + battery backup</button>
+          <button class="pill" data-v="unknown">Not sure</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">2. How old are your alarms?</div>
+        <div class="pills">
+          <button class="pill" data-v="under5">Under 5 years</button>
+          <button class="pill" data-v="five10">5–10 years</button>
+          <button class="pill" data-v="over10">10+ years / no idea</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="sleepers">
+        <div class="q-label">3. Kids, older adults, or deep sleepers in the house?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes</button>
+          <button class="pill" data-v="no">No</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDAR ============ -->
+  <section id="calendar">
+    <h2>Your seasonal calendar</h2>
+    <p class="sub" id="calSub">Showing the standard twice-a-year plan, anchored to the daylight-saving clock changes. Take the quiz above and this calendar updates to match your alarms.</p>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="legend">
+      <span><span class="dot d-clean"></span>Full test session (~15 min, whole house)</span>
+      <span><span class="dot d-check"></span>Button test (30 sec per alarm)</span>
+    </div>
+    <div class="cal-note">🕐 <strong>The clock-change trick:</strong> daylight saving time starts in March and ends in November — the same weekends you're already touching every clock in the house. Piggyback the smoke-alarm session on those two weekends and the schedule remembers itself. And any time an alarm chirps, deal with it <em>that day</em>: a chirp means low battery or end of life, never "later."</div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Smoke alarms are the cheapest life-safety equipment you will ever own. Here's the math for a typical five-alarm home (U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10 – $30</div><div class="l">per basic alarm ($20–$50 for sealed 10-year units; $35–$70 for combo smoke/CO)</div></div>
+        <div class="calc-stat"><div class="v">$15 – $50</div><div class="l">per year for a whole house — fresh batteries plus the units amortized over their 10-year life</div></div>
+        <div class="calc-stat"><div class="v bad">~$84,000</div><div class="l">average insured home-fire claim (U.S. estimate) — and insurance can't reimburse the real risk</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 A decade of alarms + batteries (5-alarm home)</span><span>~$300</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 One average insured home-fire claim</span><span>~$84,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">Ten years of full coverage costs about <strong>what one dinner out costs per year</strong> — and working smoke alarms roughly <strong>cut the risk of dying in a home fire in half</strong>. No other line item in home upkeep buys that much for that little. The only catch: they have to actually work, which is what the test button is for.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to test every detector</h2>
+    <p class="sub">A full session — locate, test, swap batteries, vacuum, note dates — takes about 15 minutes in a typical home. Work through the checklist; your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Five rules before you press anything</h3>
+      <ul>
+        <li><strong>The button is the test.</strong> Never test an alarm with a match, lighter, or real smoke — you'd be putting an open flame next to your ceiling.</li>
+        <li><strong>It's loud — about 85 dB.</strong> Warn the household, hold the alarm at arm's length, and put pets in another room first.</li>
+        <li>Use a <strong>stable step stool</strong>, not a chair or the stair rail. Or stay on the floor entirely and press the button with the end of a broom handle.</li>
+        <li><strong>Never pull a battery to silence a nuisance alarm</strong> "just for now." Use the hush button, fan the air clear, or relocate the alarm — a disconnected alarm is no alarm.</li>
+        <li>If an alarm <strong>fails the test even with a fresh battery, replace it today</strong> — not at the next session.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Step stool (or broom handle)</span>
+      <span class="tool-chip">Fresh 9V / AA batteries</span>
+      <span class="tool-chip">Vacuum with brush attachment</span>
+      <span class="tool-chip">Permanent marker</span>
+      <span class="tool-chip">Replacement alarms (if any are 10+ years)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a finger pressing and holding a smoke detector's test button for three to five seconds until the horn sounds">
+          <rect x="20" y="14" width="240" height="10" rx="3" fill="#efe7d8"/>
+          <rect x="128" y="24" width="24" height="6" fill="#b9b1a3"/>
+          <circle cx="140" cy="62" r="32" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <circle cx="140" cy="62" r="19" fill="#dce8ee"/>
+          <g stroke="#9cc0d4" stroke-width="2" stroke-linecap="round">
+            <line x1="130" y1="55" x2="150" y2="55"/>
+            <line x1="128" y1="62" x2="152" y2="62"/>
+            <line x1="130" y1="69" x2="150" y2="69"/>
+          </g>
+          <circle cx="140" cy="62" r="7" fill="#e0a93d"/>
+          <g stroke="#d9663f" stroke-width="3.5" fill="none" stroke-linecap="round">
+            <path d="M92 44 q-10 18 0 36"/>
+            <path d="M188 44 q10 18 0 36"/>
+          </g>
+          <g stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round">
+            <path d="M76 36 q-15 26 0 52"/>
+            <path d="M204 36 q15 26 0 52"/>
+          </g>
+          <path d="M196 168 Q168 130 148 78" stroke="#c9a06b" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <circle cx="146" cy="73" r="6" fill="#c9a06b"/>
+          <text x="140" y="130" font-size="14" font-weight="700" fill="#6b7376" text-anchor="middle">hold 3–5 seconds</text>
+          <text x="140" y="148" font-size="12" fill="#6b7376" text-anchor="middle">a loud, steady horn = pass</text>
+        </svg>
+        <h4>Press and hold — don't tap</h4>
+        <p>Hold the test button for 3–5 seconds until the horn blasts. A weak, warbling, or absent sound is a fail: new battery first, then re-test, then replace the unit.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="House cross-section showing where smoke alarms belong: inside every bedroom, in the hallway outside sleeping areas, on the main level, and in the basement near the stairs">
+          <polygon points="42,52 140,14 238,52" fill="#c96f4a"/>
+          <rect x="54" y="52" width="172" height="64" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <rect x="54" y="116" width="172" height="34" fill="#efe7d8" stroke="#e6dccb" stroke-width="2"/>
+          <line x1="118" y1="52" x2="118" y2="116" stroke="#e6dccb" stroke-width="2"/>
+          <line x1="176" y1="52" x2="176" y2="116" stroke="#e6dccb" stroke-width="2"/>
+          <g>
+            <circle cx="86" cy="60" r="6" fill="#3e7c59"/><circle cx="86" cy="60" r="2.2" fill="#fffdf8"/>
+            <circle cx="147" cy="60" r="6" fill="#3e7c59"/><circle cx="147" cy="60" r="2.2" fill="#fffdf8"/>
+            <circle cx="206" cy="60" r="6" fill="#3e7c59"/><circle cx="206" cy="60" r="2.2" fill="#fffdf8"/>
+            <circle cx="140" cy="92" r="6" fill="#3e7c59"/><circle cx="140" cy="92" r="2.2" fill="#fffdf8"/>
+            <circle cx="100" cy="124" r="6" fill="#3e7c59"/><circle cx="100" cy="124" r="2.2" fill="#fffdf8"/>
+          </g>
+          <text x="86" y="80" font-size="9.5" fill="#6b7376" text-anchor="middle">bedroom</text>
+          <text x="147" y="80" font-size="9.5" fill="#6b7376" text-anchor="middle">hall</text>
+          <text x="206" y="80" font-size="9.5" fill="#6b7376" text-anchor="middle">bedroom</text>
+          <text x="140" y="110" font-size="9.5" fill="#6b7376" text-anchor="middle">main level</text>
+          <text x="140" y="142" font-size="9.5" fill="#6b7376" text-anchor="middle">basement (near the stairs)</text>
+          <text x="140" y="168" font-size="12" font-weight="700" fill="#6b7376" text-anchor="middle">every bedroom · outside sleeping areas · every level</text>
+        </svg>
+        <h4>Count alarms while you test</h4>
+        <p>The placement rule: inside every bedroom, outside each sleeping area, and on every level including the basement. If your walk-through comes up short, that's a $15 fix.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of mounting rules: ceiling alarms at least four inches from the wall, wall-mounted alarms within four to twelve inches of the ceiling, and all alarms at least ten feet from the stove">
+          <line x1="50" y1="30" x2="262" y2="30" stroke="#b9b1a3" stroke-width="4"/>
+          <line x1="50" y1="30" x2="50" y2="150" stroke="#b9b1a3" stroke-width="4"/>
+          <rect x="116" y="32" width="34" height="10" rx="4" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <circle cx="133" cy="37" r="2.5" fill="#e0a93d"/>
+          <g stroke="#6b7376" stroke-width="1.8">
+            <line x1="54" y1="48" x2="112" y2="48"/>
+            <line x1="54" y1="43" x2="54" y2="53"/>
+            <line x1="112" y1="43" x2="112" y2="53"/>
+          </g>
+          <text x="83" y="64" font-size="11" font-weight="700" fill="#6b7376" text-anchor="middle">≥ 4 in</text>
+          <rect x="52" y="74" width="10" height="30" rx="4" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <g stroke="#6b7376" stroke-width="1.8">
+            <line x1="74" y1="34" x2="74" y2="72"/>
+            <line x1="69" y1="34" x2="79" y2="34"/>
+            <line x1="69" y1="72" x2="79" y2="72"/>
+          </g>
+          <text x="106" y="86" font-size="11" font-weight="700" fill="#6b7376">4–12 in if wall-mounted</text>
+          <rect x="206" y="118" width="48" height="32" rx="4" fill="#b9b1a3"/>
+          <circle cx="220" cy="126" r="5" fill="#8a6a4f"/>
+          <circle cx="240" cy="126" r="5" fill="#8a6a4f"/>
+          <path d="M222 112 q3 -7 -1 -12 M238 112 q3 -7 -1 -12" stroke="#c9a06b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <line x1="140" y1="44" x2="208" y2="116" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="5 5"/>
+          <text x="186" y="80" font-size="11" font-weight="700" fill="#d9663f">≥ 10 ft</text>
+          <text x="230" y="166" font-size="10" fill="#6b7376" text-anchor="middle">stove</text>
+        </svg>
+        <h4>Where alarms belong (and don't)</h4>
+        <p>On the ceiling, at least 4 inches from any wall; wall mounts go 4–12 inches below the ceiling. Keep alarms 10+ feet from the stove to cut false alarms — and out of bathrooms, where steam triggers them.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the back of a smoke detector showing the manufacture date label, with a reminder to replace the unit ten years after that date">
+          <circle cx="108" cy="90" r="58" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+          <path d="M66 66 a52 52 0 0 1 24 -22" stroke="#dce8ee" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M150 114 a52 52 0 0 1 -24 22" stroke="#dce8ee" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <rect x="74" y="70" width="68" height="40" rx="5" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="108" y="86" font-size="10.5" font-weight="700" fill="#6b7376" text-anchor="middle">MFG DATE</text>
+          <text x="108" y="102" font-size="13" font-weight="800" fill="#33393b" text-anchor="middle">2019-04</text>
+          <line x1="172" y1="90" x2="216" y2="90" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="216,82 232,90 216,98" fill="#3e7c59"/>
+          <text x="200" y="74" font-size="12" font-weight="700" fill="#3e7c59">+ 10 yrs</text>
+          <rect x="190" y="104" width="76" height="26" rx="8" fill="#d9663f"/>
+          <text x="228" y="121" font-size="12" font-weight="800" fill="#fffdf8" text-anchor="middle">replace 2029</text>
+          <text x="140" y="166" font-size="12" fill="#6b7376" text-anchor="middle">twist the alarm off its bracket — the date is on the back</text>
+        </svg>
+        <h4>The date on the back decides</h4>
+        <p>Every alarm has a manufacture date on the back. Ten years after that date — not the install date — the whole unit gets replaced, sealed battery or not. No date visible? It's old enough. Replace it.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Test-session progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Every alarm tested and powered. Sleep well — that's the whole point. See you at the next clock change.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to call a pro (or the fire department)</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Hardwired alarms that won't stop chirping or false-alarming</strong> after a fresh backup battery and a good vacuuming — that can be a wiring or interconnect fault for an electrician.</li>
+        <li><strong>Replacing or adding hardwired units.</strong> Swapping a same-brand hardwired alarm is often plug-and-play, but new circuits or interconnect wiring is electrician work — typically <strong>$50–$120 per alarm</strong> installed (estimate).</li>
+        <li><strong>Household members who are deaf or hard of hearing.</strong> Strobe lights and bed-shaker accessories exist and work; a fire-safety equipment supplier or your fire department can point you to the right gear.</li>
+        <li><strong>You rent.</strong> In most jurisdictions the landlord must provide working smoke alarms — report dead or missing ones in writing, and never remove or disable one yourself.</li>
+        <li><strong>Cost is the obstacle.</strong> Many U.S. fire departments and Red Cross programs install smoke alarms <strong>free</strong> — call your local station's non-emergency line and ask.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Why does the alarm always chirp at 3 a.m.?</summary>
+      <p>Not bad luck — physics. Battery output drops slightly as temperature falls, and your house is coldest in the small hours, so a battery that's borderline by day dips below the chirp threshold at night. The fix is the same either way: replace the battery (or the whole unit, if it's at end of life) the same day you hear the first chirp.</p>
+    </details>
+    <details>
+      <summary>Is pressing the test button a "real" test?</summary>
+      <p>It tests the battery, the electronics, and the horn — which covers the most common failure modes. It does not test the smoke sensor itself. If you want to verify the sensor, use a can of UL-listed smoke-detector test aerosol (about $10–$15); never use a match, candle, or real smoke. The sensor question is also why the 10-year replacement rule exists: past that age, a passing button test no longer guarantees the chamber still detects smoke reliably.</p>
+    </details>
+    <details>
+      <summary>Ionization vs. photoelectric — which type should I have?</summary>
+      <p>Ionization alarms respond faster to fast, flaming fires; photoelectric alarms respond faster to slow, smoldering fires (the couch-cushion-and-cigarette kind that kills people in their sleep). NFPA recommends having both technologies in the home — either a mix of units or dual-sensor alarms. Near the kitchen, prefer photoelectric: it's far less prone to false alarms from cooking.</p>
+    </details>
+    <details>
+      <summary>Are sealed 10-year alarms worth the extra cost?</summary>
+      <p>For most homes, yes. They cost roughly twice as much up front ($20–$50 vs. $10–$30) but eliminate ten years of battery purchases, battery swaps, and — most importantly — the temptation to leave a chirping alarm empty. Several U.S. states now require them for battery-only installations. The trade-off: when the battery dies or the unit hits end of life, you replace the whole alarm, which you'd do at 10 years anyway.</p>
+    </details>
+    <details>
+      <summary>My alarm goes off every time I cook. Can I just take the battery out while I fry?</summary>
+      <p>No — that's exactly how alarms end up disconnected at the moment they're needed. Better fixes: use the hush button (it silences the alarm for several minutes while staying armed), run the vent hood, or relocate the alarm so it's at least 10 feet from the stove. If it's an ionization unit near the kitchen, swapping it for a photoelectric model usually ends the problem entirely.</p>
+    </details>
+    <details>
+      <summary>Do hardwired alarms still need testing and replacement?</summary>
+      <p>Yes to both. Hardwired alarms run on house power but rely on a backup battery during outages — which is precisely when candle-and-generator fire risk goes up — so the battery needs a yearly swap (unless it's a sealed 10-year backup) and the unit needs the same button tests. The 10-year replacement rule applies too: the sensor ages the same regardless of the power source.</p>
+    </details>
+    <details>
+      <summary>What about carbon monoxide detectors?</summary>
+      <p>Same testing habit, different schedule. CO detectors belong on every level and outside sleeping areas; test them with their button at the same time you test smoke alarms. Their sensors wear out faster — most CO units need full replacement every 5–10 years, and the replace-by date is printed on the unit. Combination smoke/CO alarms are a clean way to cover both with one ceiling puck; just replace the combo unit on the earlier of its two clocks.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>You'll forget November. The app won't.</h2>
+        <p>You just tested every alarm — now make the next session automatic. Upkeep Ledger logs today's test and nudges you at the next clock change, and it can carry the yearly battery swap and each alarm's 10-year replace-by date too.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-smoke-detectors&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-smoke-detectors&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers. Safety guidance follows NFPA recommendations — your local fire code may require more.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { power: null, age: null, sleepers: null };
+
+  var MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  function computePlan(s) {
+    var reasons = [];
+    var monthly = s.sleepers === "yes";
+
+    if (monthly) {
+      reasons.push("Kids, older adults, and deep sleepers can sleep through a distant or weakened horn — monthly 30-second button tests are cheap reassurance that every alarm still blasts at full volume. That's NFPA's recommended cadence anyway.");
+    } else {
+      reasons.push("Twice a year, pegged to the clock changes, is the practical floor — NFPA's ideal is a quick button test every month, and it only takes 30 seconds per alarm if you want the gold standard.");
+    }
+
+    if (s.power === "replaceable") {
+      reasons.push("Replaceable batteries fade quietly over a year. Swap them every year — the clocks-fall-back weekend in November is the classic cue — and never leave an alarm sitting empty.");
+    } else if (s.power === "sealed") {
+      reasons.push("Sealed 10-year alarms never need battery swaps. When one chirps end-of-life or hits its replace-by date, the whole unit gets replaced — there's nothing to open.");
+    } else if (s.power === "hardwired") {
+      reasons.push("Hardwired alarms still need their backup batteries replaced yearly (unless they use sealed 10-year backups). That backup is what protects you during a power outage — exactly when fire risk from candles and generators goes up.");
+    } else {
+      reasons.push("Twist one alarm off its bracket and look: a 9V or AA compartment means yearly battery swaps; 'sealed' or '10-year' printed on the unit means no swaps at all. Wires into the ceiling mean hardwired — the backup battery still needs a yearly change.");
+    }
+
+    if (s.age === "over10") {
+      reasons.push("Alarms over 10 years old — or with no readable date — are past their service life. The sensor can fail without ever chirping. Replace them this week, not at the next session.");
+    } else if (s.age === "five10") {
+      reasons.push("Your alarms are in the back half of their 10-year life. Check the manufacture date on the back of each one during this session and pencil in the replacement years now.");
+    } else {
+      reasons.push("Newer alarms just need testing and power — note each unit's manufacture date during this session so the 10-year replacement can't sneak up on you.");
+    }
+
+    var freqLabel = monthly ? "test monthly" : "test every 6 months";
+    var battLabel;
+    if (s.power === "sealed") battLabel = "no battery swaps";
+    else if (s.power === "unknown") battLabel = "check your battery type";
+    else battLabel = "batteries yearly";
+    var replaceLabel = (s.age === "over10") ? "new alarms now" : "new alarms at 10 years";
+
+    return {
+      monthly: monthly,
+      sealed: s.power === "sealed",
+      freqLabel: freqLabel,
+      battLabel: battLabel,
+      replaceLabel: replaceLabel,
+      reasons: reasons
+    };
+  }
+
+  var SEASON_SVG = {
+    winter: '<svg viewBox="0 0 16 16" aria-hidden="true"><g stroke="#7fb3c8" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="3.5" y1="3.5" x2="12.5" y2="12.5"/><line x1="12.5" y1="3.5" x2="3.5" y2="12.5"/></g></svg>',
+    spring: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14 V7" stroke="#3e7c59" stroke-width="1.8" fill="none"/><path d="M8 8 Q4 8 3 4 Q7 4 8 8" fill="#5e9a78"/><path d="M8 8 Q12 8 13 4 Q9 4 8 8" fill="#3e7c59"/></svg>',
+    summer: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#e0a93d"/><g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.4" y2="4.4"/><line x1="11.6" y1="11.6" x2="13" y2="13"/><line x1="13" y1="3" x2="11.6" y2="4.4"/><line x1="3" y1="13" x2="4.4" y2="11.6"/></g></svg>',
+    fall: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 C13.5 3 14.5 9 8 14.5 C1.5 9 2.5 3 8 1.5" fill="#c96f4a"/><line x1="8" y1="5" x2="8" y2="14.5" stroke="#9a4f33" stroke-width="1.2"/></svg>'
+  };
+  function seasonOf(m) {
+    return (m === 11 || m <= 1) ? "winter" : (m <= 4) ? "spring" : (m <= 7) ? "summer" : "fall";
+  }
+
+  function renderCalendar(opts, personalized) {
+    var grid = document.getElementById("calGrid");
+    grid.innerHTML = "";
+    for (var m = 0; m < 12; m++) {
+      var cell = document.createElement("div");
+      cell.className = "month";
+      var task = "—";
+      if (m === 2) {
+        cell.className += " clean";
+        task = "Full test + vacuum dust (clocks spring forward)";
+      } else if (m === 10) {
+        cell.className += " clean";
+        task = opts.sealed
+          ? "Full test + check replace-by dates (clocks fall back)"
+          : "Full test + fresh batteries (clocks fall back)";
+      } else if (opts.monthly) {
+        cell.className += " check";
+        task = "30-sec button test";
+      } else if (m === 5 || m === 8) {
+        cell.className += " check";
+        task = "Quick button test";
+      }
+      cell.innerHTML = '<span class="m-season">' + SEASON_SVG[seasonOf(m)] + '</span>' +
+        '<div class="m-name">' + MONTH_NAMES[m] + '</div><div class="m-task">' + task + "</div>";
+      grid.appendChild(cell);
+    }
+    document.getElementById("calSub").textContent = personalized
+      ? "Personalized from your quiz answers. Green months are full whole-house sessions; gold months are quick button tests."
+      : "Showing the standard twice-a-year plan, anchored to the daylight-saving clock changes. Take the quiz above and this calendar updates to match your alarms.";
+  }
+
+  function onQuizChange() {
+    if (!quizState.power || !quizState.age || !quizState.sleepers) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: " + r.freqLabel + " · " + r.battLabel + " · " + r.replaceLabel;
+    document.getElementById("resultBody").innerHTML =
+      "Full sessions in <strong>March and November</strong> — the clock-change weekends — with the rest of the year " +
+      (r.monthly ? "covered by quick monthly button tests" : "needing only quick checks") +
+      ". Your calendar below is updated. Why this plan:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+    renderCalendar(r, true);
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  renderCalendar({ monthly: false, sealed: false }, false);
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Walk the house", text: "Count your alarms against the placement rules", note: "One inside every bedroom, one outside each sleeping area, one on every level including the basement. Short anywhere? Add it to the shopping list." },
+    { phase: "Walk the house", text: "Twist each alarm off its bracket and read the manufacture date", note: "It's on the back. Ten years past that date — or no date at all — means the unit gets replaced, sealed battery or not." },
+    { phase: "Walk the house", text: "Look for paint, heavy dust, or disconnected units", note: "A painted-over or dangling alarm isn't protecting anyone. Note anything hanging by its wires or missing its battery." },
+    { phase: "Test every alarm", text: "Warn the household and move pets to another room", note: "The horn runs about 85 dB — startling on a ladder and miserable for dog ears." },
+    { phase: "Test every alarm", text: "Press and hold each test button for 3–5 seconds", note: "A loud, steady horn is a pass. Weak, warbling, or silent is a fail — fresh battery first, then re-test, then replace the unit." },
+    { phase: "Test every alarm", text: "Listen from the far end of the house — with bedroom doors closed", note: "If alarms are interconnected, one button should sound them all. Either way, confirm the horn is clearly audible in every bedroom." },
+    { phase: "Test every alarm", text: "Try the hush button on one alarm", note: "Knowing which button silences a cooking false alarm is what keeps batteries from getting pulled in a frustrated moment." },
+    { phase: "Batteries & cleaning", text: "Replace batteries if it's the yearly swap (or any alarm chirped)", note: "Fresh batteries only — never half-used ones from the remote. Skip this step for sealed 10-year units; they have no compartment." },
+    { phase: "Batteries & cleaning", text: "Vacuum each alarm's vents with the brush attachment", note: "Dust and cobwebs in the chamber cause both false alarms and missed ones. A 10-second pass per unit, twice a year, keeps the sensor honest." },
+    { phase: "Batteries & cleaning", text: "Re-test every alarm you opened or re-powered", note: "The test that counts is the one after everything is snapped back on its bracket." },
+    { phase: "Wrap up", text: "Replace any alarm that's 10+ years old or failed with a fresh battery", note: "Today, not next season — $20–$50 per unit. Consider photoelectric or dual-sensor models, and sealed 10-year batteries." },
+    { phase: "Wrap up", text: "Write the date on new batteries and new units with a marker", note: "Battery edge and alarm rim. Future-you never has to guess what happened when." },
+    { phase: "Wrap up", text: "Run the 2-minute escape-plan check", note: "Two ways out of every bedroom, an agreed meeting spot outside, and everyone knows the alarm sound. The alarm only buys time — the plan spends it well." },
+    { phase: "Wrap up", text: "Log the session and set the next reminder", note: "Next full session is the next clock change; batteries get swapped yearly; each alarm retires at 10 years from its manufacture date." }
+  ];
+
+  var LS_KEY = "upkeepguides:test-smoke-detectors:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

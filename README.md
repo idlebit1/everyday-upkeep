@@ -8,7 +8,7 @@ The site doubles as a subtle marketing funnel for [Upkeep Ledger](https://upkeep
 
 - `index.html` — home page: searchable, filterable catalog of upkeep tasks grouped by category
 - `gutters.html` — Gutter Upkeep guide (the reference implementation)
-- Two completed guides per category — home: `gutters.html`, `replace-hvac-filter.html`; kitchen: `sharpen-knives.html`, `clean-dishwasher-filter.html`; personal: `replace-toothbrush.html`, `dentist-visit.html`; vehicle: `oil-change.html`, `check-tire-pressure.html`; wardrobe: `wash-bedding.html`, `replace-running-shoes.html`; equipment: `clean-bike-chain.html`, `bike-tune-up.html`; tools: `sharpen-mower-blade.html`, `service-snow-blower.html`; yard: `clean-grill.html`, `fertilize-lawn.html`; pets: `trim-pet-nails.html`, `flea-tick-treatment.html`; other: `backup-data.html`, `review-insurance.html`
+- Three completed guides per category — home: `gutters.html`, `replace-hvac-filter.html`, `test-smoke-detectors.html`; kitchen: `sharpen-knives.html`, `clean-dishwasher-filter.html`, `clean-refrigerator-coils.html`; personal: `replace-toothbrush.html`, `dentist-visit.html`, `physical-exam.html`; vehicle: `oil-change.html`, `check-tire-pressure.html`, `tire-rotation.html`; wardrobe: `wash-bedding.html`, `replace-running-shoes.html`, `rotate-mattress.html`; equipment: `clean-bike-chain.html`, `bike-tune-up.html`, `replace-helmet.html`; tools: `sharpen-mower-blade.html`, `service-snow-blower.html`, `sharpen-pruners.html`; yard: `clean-grill.html`, `fertilize-lawn.html`, `winterize-sprinklers.html`; pets: `trim-pet-nails.html`, `flea-tick-treatment.html`, `annual-vet-checkup.html`; other: `backup-data.html`, `review-insurance.html`, `update-emergency-kit.html`
 - `_template.html` — skeleton for new guides, with the shared theme and TODO markers
 - `data/upkeepPresets.ts` — verbatim copy of Upkeep Ledger's preset library (source of truth: `~/code/upkeepledger/backend/src/data/upkeepPresets.ts`)
 - `assets/` — brand kit: mark SVGs, OG image, social banners/avatars (see `assets/README.md`); favicons + `site.webmanifest` live at the root
@@ -25,7 +25,7 @@ Search matches title, description, cadence, tags, and category name; category ch
 
 1. Copy `_template.html` to `<slug>.html` and fill in the TODOs.
 2. For interactive pieces (quiz, calendar, calculator, checklist), copy the relevant CSS/JS blocks from `gutters.html` and adapt the content/logic.
-3. Use a unique localStorage key per page: `everyday-upkeep:<slug>:checklist`.
+3. Use a unique localStorage key per page: `upkeepguides:<slug>:checklist`.
 4. On `index.html`, change the task's card from `<div class="guide soon">` to `<a class="guide" href="<slug>.html">` and swap the "Coming soon" badge for "Guide ready".
 
 ## Conventions

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annual physical exam — UpkeepGuides.com</title>
+<meta name="description" content="How often to get a physical exam, what the visit covers at every age, what it costs with and without insurance, and how to prepare so the hour actually pays off.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Annual physical exam — UpkeepGuides.com">
+<meta property="og:description" content="How often to get a physical exam, what the visit covers at every age, what it costs with and without insurance, and how to prepare so the hour actually pays off.">
+<meta property="og:url" content="https://upkeepguides.com/physical-exam.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Annual physical exam — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to get a physical exam, what the visit covers at every age, what it costs with and without insurance, and how to prepare so the hour actually pays off.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost bars ---------- */
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .ladder-note { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .ladder-note strong { color: var(--accent-deep); }
+  .cost-card h3 { margin: 0 0 8px; font-size: 17px; }
+  .cost-card p { margin: 0 0 8px; font-size: 15px; color: var(--ink-soft); }
+  .cost-card .price { font-size: 26px; font-weight: 800; color: var(--accent-deep);
+    font-family: "Fraunces", Georgia, "Times New Roman", serif; margin: 0 0 6px; }
+  .cost-card ul { margin: 8px 0 0; padding-left: 20px; font-size: 14.5px; color: var(--ink-soft); }
+  .cost-card ul li { margin-bottom: 4px; }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .safety.good { background: var(--accent-soft); border-color: var(--accent); }
+  .safety.good h3 { color: var(--accent-deep); }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">Prepare</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Every year</span>
+      <h1>Annual physical exam</h1>
+      <p class="lede">The yearly checkup with your primary care doctor is maintenance for the one machine you can't replace. The conditions that do the most damage — high blood pressure, high cholesterol, early diabetes — are silent for years, and this is the visit built to catch them. Here's how often to go, what it costs, and how to make the hour count.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every year</em></span>
+        <span class="chip">⏱️ <em>30–60 minutes</em> per visit</span>
+        <span class="chip">💸 Often <em>$0 with insurance</em></span>
+        <span class="chip">🩺 Catches problems <em>while they're cheap</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly smiling heart with a heartbeat line across it, beside a stethoscope and a calendar marked with a yearly checkup reminder, in a warm sunlit scene">
+      <ellipse cx="290" cy="398" rx="245" ry="24" fill="#efe7d8"/>
+      <circle cx="76" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="462" cy="68" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="416" cy="80" rx="28" ry="15" fill="#dce8ee"/>
+      <!-- big friendly heart -->
+      <path d="M290 268 C 222 222 196 184 196 146 C196 112 220 90 250 90 C268 90 283 102 290 120 C297 102 312 90 330 90 C360 90 384 112 384 146 C384 184 358 222 290 268 z" fill="#d9663f" stroke="#c14f2c" stroke-width="3"/>
+      <path d="M222 128 q6 -22 28 -28" stroke="#e88b74" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <!-- heartbeat line -->
+      <path d="M212 172 h32 l10 -20 l14 38 l12 -26 l8 8 h44" stroke="#fffdf8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- face -->
+      <circle cx="264" cy="138" r="5" fill="#33393b"/>
+      <circle cx="316" cy="138" r="5" fill="#33393b"/>
+      <path d="M272 200 q18 14 36 0" stroke="#33393b" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- sparkles -->
+      <g fill="#e0a93d">
+        <path d="M188 70 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z"/>
+        <path d="M392 56 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+        <path d="M404 210 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+      </g>
+      <!-- stethoscope at left -->
+      <g>
+        <path d="M84 226 q-2 76 36 104 q30 22 56 4" stroke="#2c5a40" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M128 222 q10 64 -8 108" stroke="#2c5a40" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <rect x="76" y="208" width="16" height="24" rx="8" fill="#3e7c59"/>
+        <rect x="120" y="204" width="16" height="24" rx="8" fill="#3e7c59"/>
+        <circle cx="184" cy="338" r="22" fill="#e0a93d"/>
+        <circle cx="184" cy="338" r="13" fill="#fffdf8"/>
+        <circle cx="184" cy="338" r="6" fill="#dce8ee"/>
+      </g>
+      <!-- calendar card at right -->
+      <g>
+        <rect x="396" y="226" width="128" height="138" rx="12" fill="#fffdf8" stroke="#dcd3c2" stroke-width="3"/>
+        <rect x="396" y="226" width="128" height="34" rx="12" fill="#c96f4a"/>
+        <rect x="396" y="248" width="128" height="12" fill="#c96f4a"/>
+        <rect x="418" y="214" width="9" height="22" rx="4.5" fill="#8a6a4f"/>
+        <rect x="492" y="214" width="9" height="22" rx="4.5" fill="#8a6a4f"/>
+        <g fill="#e9e2d8">
+          <rect x="412" y="274" width="20" height="16" rx="4"/>
+          <rect x="440" y="274" width="20" height="16" rx="4"/>
+          <rect x="468" y="274" width="20" height="16" rx="4"/>
+          <rect x="412" y="298" width="20" height="16" rx="4"/>
+          <rect x="468" y="298" width="20" height="16" rx="4"/>
+          <rect x="412" y="322" width="20" height="16" rx="4"/>
+          <rect x="440" y="322" width="20" height="16" rx="4"/>
+        </g>
+        <rect x="440" y="298" width="20" height="16" rx="4" fill="#3e7c59"/>
+        <path d="M444 306 l4 4 l8 -8" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="468" cy="330" r="13" fill="#e0a93d"/>
+        <text x="468" y="335" font-size="11" font-weight="700" fill="#fffdf8" text-anchor="middle">1yr</text>
+      </g>
+      <!-- ground greenery -->
+      <circle cx="266" cy="386" r="13" fill="#5e9a78"/>
+      <circle cx="288" cy="390" r="10" fill="#3e7c59"/>
+      <circle cx="546" cy="384" r="10" fill="#5e9a78"/>
+      <path d="M52 388 q4 -18 0 -30 M52 388 q-8 -12 -18 -16 M52 388 q10 -10 20 -12" stroke="#5e9a78" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Nothing about an annual physical feels urgent — and that's exactly the point. It's the visit that finds the problems that don't announce themselves. Here's what one hour a year actually buys you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 24 a12 12 0 0 1 24 0" fill="none" stroke="#b9b1a3" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M6 24 a12 12 0 0 1 7 -10.9" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="18" y1="24" x2="26" y2="14" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="18" cy="24" r="2.8" fill="#33393b"/>
+          <line x1="8" y1="30" x2="28" y2="30" stroke="#b9b1a3" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Silent conditions get caught</h3>
+        <p>High blood pressure, high cholesterol, and prediabetes typically cause no symptoms at all — for years. Nearly half of U.S. adults have high blood pressure, and a large share don't know it. A cuff and a blood draw is how you find out before your arteries do.</p>
+        <span class="cost">Symptom-free until late</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="7" width="26" height="24" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="5" y="7" width="26" height="8" rx="4" fill="#c96f4a"/>
+          <rect x="10" y="4" width="3.5" height="6" rx="1.75" fill="#8a6a4f"/>
+          <rect x="22.5" y="4" width="3.5" height="6" rx="1.75" fill="#8a6a4f"/>
+          <path d="M12 23 l4 4 l8 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Screenings start on time</h3>
+        <p>Colon cancer screening at 45, mammograms at 40, diabetes screening at 35 if you're overweight — the start dates keep moving, and your doctor is the one tracking them. Cancers caught by on-schedule screening are dramatically more survivable and cheaper to treat.</p>
+        <span class="cost">Early stage vs. late stage</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <line x1="6" y1="6" x2="6" y2="30" stroke="#b9b1a3" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="6" y1="30" x2="32" y2="30" stroke="#b9b1a3" stroke-width="2.5" stroke-linecap="round"/>
+          <polyline points="9,24 15,20 21,22 29,11" fill="none" stroke="#3e7c59" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="15" cy="20" r="2.4" fill="#e0a93d"/>
+          <circle cx="21" cy="22" r="2.4" fill="#e0a93d"/>
+          <circle cx="29" cy="11" r="2.4" fill="#d9663f"/>
+        </svg></div>
+        <h3>Your baseline gets written down</h3>
+        <p>A single blood pressure or cholesterol reading means little; the trend across five years means everything. Yearly visits build the data series that lets your doctor say "this is new for you" — the most valuable sentence in medicine.</p>
+        <span class="cost">Trends beat snapshots</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="13" width="16" height="9" rx="2.5" fill="#7fb3c8" transform="rotate(-35 16 17.5)"/>
+          <rect x="17" y="9.5" width="5" height="13" rx="2" fill="#dce8ee" transform="rotate(-35 19.5 16)"/>
+          <line x1="6" y1="26" x2="11" y2="21" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <line x1="24" y1="10" x2="29" y2="5" stroke="#8a6a4f" stroke-width="2.6" stroke-linecap="round"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <line x1="28" y1="22" x2="28" y2="26"/>
+            <line x1="26" y1="24" x2="30" y2="24"/>
+            <line x1="32" y1="28" x2="32" y2="31"/>
+          </g>
+        </svg></div>
+        <h3>Vaccines stay current</h3>
+        <p>Flu every year, tetanus every 10 years, shingles at 50, pneumococcal at 50 — adult vaccines are easy to lose track of because nobody sends you to the school nurse anymore. The annual visit is where the gaps get spotted and filled.</p>
+        <span class="cost">10-year gaps happen</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="11" r="6" fill="#c9a06b"/>
+          <path d="M7 31 c0 -8 5 -12 11 -12 c6 0 11 4 11 12 z" fill="#3e7c59"/>
+          <path d="M13 22 q-3 5 1 8" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="15.5" cy="31" r="2.6" fill="#e0a93d"/>
+        </svg></div>
+        <h3>A doctor who knows you</h3>
+        <p>Being an established patient is its own insurance policy: when something does go wrong, you get a same-week appointment with someone who has your history — instead of an urgent care or ER visit with a stranger starting from zero.</p>
+        <span class="cost">$150 visit vs. $2,000 ER</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 7 h26 a3 3 0 0 1 3 3 v13 a3 3 0 0 1 -3 3 h-15 l-7 6 v-6 h-4 a3 3 0 0 1 -3 -3 v-13 a3 3 0 0 1 3 -3 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="1.8"/>
+          <path d="M11 17 h4 l2 -4 l3 8 l2.5 -5 l1.5 1 h3" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The conversation catches what tests miss</h3>
+        <p>Sleep, mood, weight changes, alcohol, stress — most visits now include a brief depression screen, and the "anything else bothering you?" question surfaces problems no lab panel can. It only works if you show up and answer honestly.</p>
+        <span class="cost">No lab test for this</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> go?</h2>
+    <p class="sub">"Once a year" is the classic default, and after 50 it's the clear answer. Before that, guidance is risk-based: a healthy 28-year-old can sometimes stretch the interval, while chronic conditions compress it. Answer four questions for a personalized schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">1. How old are you?</div>
+        <div class="pills">
+          <button class="pill" data-v="young">18–39</button>
+          <button class="pill" data-v="forties">40–49</button>
+          <button class="pill" data-v="fifties">50–64</button>
+          <button class="pill" data-v="senior">65+</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="conditions">
+        <div class="q-label">2. Any chronic conditions? (blood pressure, diabetes, thyroid, asthma…)</div>
+        <div class="pills">
+          <button class="pill" data-v="none">None</button>
+          <button class="pill" data-v="one">One, well managed</button>
+          <button class="pill" data-v="multi">Two or more</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="family">
+        <div class="q-label">3. Close family history of heart disease, diabetes, or cancer?</div>
+        <div class="pills">
+          <button class="pill" data-v="no">Nothing notable</button>
+          <button class="pill" data-v="yes">Yes, in a parent or sibling</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="last">
+        <div class="q-label">4. When was your last checkup?</div>
+        <div class="pills">
+          <button class="pill" data-v="recent">Within the last year</button>
+          <button class="pill" data-v="while">1–3 years ago</button>
+          <button class="pill" data-v="long">3+ years (or never)</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs</h2>
+    <p class="sub">For most insured Americans this is the rare medical visit that genuinely costs nothing. Without insurance, it's still one of the cheapest items on the healthcare menu — especially compared with what skipping it invites. Typical U.S. figures (estimates; prices vary widely by region and clinic):</p>
+
+    <div class="grid cols-3" style="margin-bottom:14px;">
+      <div class="card cost-card">
+        <h3>🛡️ With insurance</h3>
+        <p class="price">Usually $0</p>
+        <p>The Affordable Care Act requires ACA-compliant plans to cover in-network preventive care — including the annual wellness visit and recommended screenings — at <strong>no copay and no deductible</strong>.</p>
+        <ul>
+          <li>Covered: the preventive visit, blood pressure check, recommended screenings and labs, routine vaccines</li>
+          <li>Watch for: if you also discuss a <em>new problem</em> at the same visit, that part can be billed as a regular office visit</li>
+          <li>Exceptions: grandfathered and short-term plans don't have to follow these rules</li>
+        </ul>
+      </div>
+      <div class="card cost-card">
+        <h3>💵 Without insurance</h3>
+        <p class="price">$100 – $300</p>
+        <p>A self-pay physical at a typical primary care office, before labs. Many practices post cash prices — ask up front.</p>
+        <ul>
+          <li>Basic labs (blood count, metabolic panel, cholesterol): <strong>$50–$300</strong>; direct-to-consumer labs often charge less</li>
+          <li>Community health centers charge on a sliding scale based on income</li>
+          <li>Direct primary care memberships run roughly <strong>$50–$100/month</strong> and include visits</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 Annual physical, ACA-compliant plan</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 Annual physical + labs, self-pay</span><span>$150–$600</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:5%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 Urgent care visit (something brewing)</span><span>$150–$350</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚑 Emergency room visit</span><span>$1,500–$3,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:28%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🫀 Hospital stay for a preventable crisis</span><span>$10,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="ladder-note"><strong>Prevention is the cheap end of every chart in medicine.</strong> Untreated high blood pressure quietly works toward a stroke or heart attack; unnoticed prediabetes works toward the real thing. A <strong>$0–$300 yearly visit</strong> is how those stories get interrupted at the inexpensive chapter — and if you're insured, you've almost certainly already paid for it in premiums.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to prepare — and what to expect</h2>
+    <p class="sub">You can't DIY this one, but preparation is the difference between a rushed once-over and a genuinely useful hour with someone paid to think about your health. Work through the checklist — your progress saves automatically.</p>
+
+    <div class="safety good">
+      <h3>⭐ The #1 habit: book next year's visit before you leave this one</h3>
+      <ul>
+        <li><strong>Schedule the next physical at the front desk on your way out.</strong> Twelve months is far too long to remember on your own — people who book before leaving keep the cadence; people who plan to "call in the spring" mostly don't.</li>
+        <li>Bring a <strong>written list</strong>: your questions, your medications, and anything new since last year. Chair-side amnesia is real.</li>
+        <li>Before you leave, ask: <strong>"What screenings or vaccines am I due for, and is there anything you're watching?"</strong> That one question is most of the visit's value.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🩺 What a standard physical includes</h3>
+    <div class="tools">
+      <span class="tool-chip">Vitals: blood pressure, pulse, weight</span>
+      <span class="tool-chip">History &amp; medication review</span>
+      <span class="tool-chip">Head-to-toe physical exam</span>
+      <span class="tool-chip">Age-based screenings ordered</span>
+      <span class="tool-chip">Vaccine catch-up</span>
+      <span class="tool-chip">Labs if due (often fasting)</span>
+      <span class="tool-chip">Mood &amp; lifestyle check-in</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four things worth knowing before you go</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a person with callout lines marking what the exam checks: eyes, ears and skin at the head, heart and lungs at the chest, blood pressure at the arm, and abdomen at the belly">
+          <circle cx="112" cy="46" r="22" fill="#c9a06b"/>
+          <path d="M76 168 c0 -52 14 -76 36 -76 c22 0 36 24 36 76 z" fill="#3e7c59"/>
+          <rect x="64" y="100" width="14" height="44" rx="7" fill="#c9a06b" transform="rotate(18 71 122)"/>
+          <rect x="146" y="100" width="14" height="44" rx="7" fill="#c9a06b" transform="rotate(-18 153 122)"/>
+          <rect x="56" y="116" width="22" height="13" rx="5" fill="#7fb3c8" transform="rotate(18 67 122)"/>
+          <g stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3">
+            <line x1="134" y1="42" x2="190" y2="32"/>
+            <line x1="142" y1="112" x2="190" y2="76"/>
+            <line x1="74" y1="124" x2="46" y2="152"/>
+            <line x1="118" y1="146" x2="190" y2="124"/>
+          </g>
+          <circle cx="134" cy="42" r="4" fill="#e0a93d"/>
+          <circle cx="142" cy="112" r="4" fill="#d9663f"/>
+          <circle cx="74" cy="124" r="4" fill="#7fb3c8"/>
+          <circle cx="118" cy="146" r="4" fill="#5e9a78"/>
+          <text x="194" y="35" font-size="11" fill="#6b7376">eyes, ears, skin, throat</text>
+          <text x="194" y="79" font-size="11" fill="#6b7376">heart &amp; lungs</text>
+          <text x="6" y="166" font-size="11" fill="#6b7376">blood pressure</text>
+          <text x="194" y="127" font-size="11" fill="#6b7376">abdomen</text>
+        </svg>
+        <h4>What actually gets checked</h4>
+        <p>Vitals first, then a head-to-toe pass: eyes, ears, throat, lymph nodes, heart and lung sounds, abdomen, skin, reflexes. None of it hurts, and most of it takes seconds each.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Timeline diagram of when screenings start by age: blood pressure and cholesterol in your twenties, diabetes screening at 35, mammograms at 40, colon cancer screening at 45, shingles vaccine at 50, and bone density at 65">
+          <line x1="20" y1="160" x2="264" y2="160" stroke="#b9b1a3" stroke-width="2.5"/>
+          <g fill="#6b7376" font-size="10" text-anchor="middle">
+            <text x="32" y="174">20</text>
+            <text x="80" y="174">35</text>
+            <text x="118" y="174">40</text>
+            <text x="146" y="174">45</text>
+            <text x="178" y="174">50</text>
+            <text x="244" y="174">65</text>
+          </g>
+          <g stroke="#d8cfbe" stroke-width="1.5">
+            <line x1="32" y1="156" x2="32" y2="164"/>
+            <line x1="80" y1="156" x2="80" y2="164"/>
+            <line x1="118" y1="156" x2="118" y2="164"/>
+            <line x1="146" y1="156" x2="146" y2="164"/>
+            <line x1="178" y1="156" x2="178" y2="164"/>
+            <line x1="244" y1="156" x2="244" y2="164"/>
+          </g>
+          <rect x="32" y="18" width="228" height="11" rx="5.5" fill="#3e7c59"/>
+          <text x="36" y="14" font-size="10" fill="#2c5a40">blood pressure + cholesterol — 20s on</text>
+          <rect x="80" y="42" width="180" height="11" rx="5.5" fill="#5e9a78"/>
+          <text x="84" y="38" font-size="10" fill="#2c5a40">diabetes screen at 35 (if overweight)</text>
+          <rect x="118" y="66" width="142" height="11" rx="5.5" fill="#c96f4a"/>
+          <text x="122" y="62" font-size="10" fill="#8a4730">mammograms at 40 (every 2 yrs)</text>
+          <rect x="146" y="90" width="114" height="11" rx="5.5" fill="#d98e3b"/>
+          <text x="150" y="86" font-size="10" fill="#8a5a1d">colon cancer screening at 45</text>
+          <rect x="178" y="114" width="82" height="11" rx="5.5" fill="#e0a93d"/>
+          <text x="182" y="110" font-size="10" fill="#8a6a1d">shingles vaccine at 50</text>
+          <rect x="244" y="138" width="16" height="11" rx="5.5" fill="#7fb3c8"/>
+          <text x="160" y="134" font-size="10" fill="#4a7c94">bone density at 65 (women)</text>
+        </svg>
+        <h4>Screenings stack up by decade</h4>
+        <p>Each decade adds a layer: cholesterol checks in your 20s, diabetes screening at 35, mammograms at 40, colonoscopy or stool tests at 45, shingles vaccine at 50, bone density at 65. Your doctor tracks the start dates so you don't have to.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the three prep steps the night before fasting labs: a clock showing eight to twelve hours of fasting, a water glass marked okay, and a coffee cup and plate marked not okay">
+          <circle cx="62" cy="76" r="44" fill="#fffdf8" stroke="#3e7c59" stroke-width="4"/>
+          <line x1="62" y1="76" x2="62" y2="48" stroke="#2c5a40" stroke-width="4" stroke-linecap="round"/>
+          <line x1="62" y1="76" x2="82" y2="86" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="62" cy="76" r="4" fill="#2c5a40"/>
+          <text x="62" y="146" font-size="13" font-weight="700" fill="#2c5a40" text-anchor="middle">8–12 hrs</text>
+          <text x="62" y="162" font-size="11" fill="#6b7376" text-anchor="middle">no food before labs</text>
+          <path d="M152 50 l8 60 q1 8 9 8 h6 q8 0 9 -8 l8 -60 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <path d="M156 76 l4 34 q1 6 7 6 h10 q6 0 7 -6 l4 -34 z" fill="#7fb3c8"/>
+          <path d="M158 134 l7 7 l13 -13" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="172" y="162" font-size="11" fill="#6b7376" text-anchor="middle">water is fine</text>
+          <path d="M218 70 h40 v30 q0 14 -20 14 q-20 0 -20 -14 z" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <path d="M258 76 q14 2 12 12 q-2 9 -13 7" fill="none" stroke="#8a6a4f" stroke-width="2.5"/>
+          <path d="M228 60 q3 -6 0 -10 M240 60 q3 -6 0 -10" stroke="#b9b1a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <line x1="216" y1="124" x2="262" y2="62" stroke="#d9663f" stroke-width="5" stroke-linecap="round"/>
+          <text x="240" y="162" font-size="11" fill="#6b7376" text-anchor="middle">skip the coffee</text>
+        </svg>
+        <h4>Fasting, decoded</h4>
+        <p>If fasting labs are ordered: nothing but water for 8–12 hours beforehand — black coffee counts as breaking it for some tests, so skip it. Book a morning slot and eat right after the draw. Most regular medications are still taken; confirm with the office.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of blood pressure zones as three colored bands: under 120 over 80 normal in green, 120 to 129 elevated in gold, and 130 and over or 80 and over high in terracotta, with an arrow asking to know your number">
+          <rect x="24" y="34" width="232" height="26" rx="13" fill="#3e7c59"/>
+          <rect x="24" y="74" width="232" height="26" rx="13" fill="#e0a93d"/>
+          <rect x="24" y="114" width="232" height="26" rx="13" fill="#d9663f"/>
+          <text x="36" y="52" font-size="13" font-weight="700" fill="#fffdf8">&lt;120 / 80</text>
+          <text x="244" y="52" font-size="12" fill="#fffdf8" text-anchor="end">normal</text>
+          <text x="36" y="92" font-size="13" font-weight="700" fill="#fffdf8">120–129 / &lt;80</text>
+          <text x="244" y="92" font-size="12" fill="#fffdf8" text-anchor="end">elevated</text>
+          <text x="36" y="132" font-size="13" font-weight="700" fill="#fffdf8">130+ / 80+</text>
+          <text x="244" y="132" font-size="12" fill="#fffdf8" text-anchor="end">high</text>
+          <text x="140" y="20" font-size="12" font-weight="700" fill="#6b7376" text-anchor="middle">blood pressure (mm Hg)</text>
+          <text x="140" y="166" font-size="11" fill="#6b7376" text-anchor="middle">ask for your number — then track it year over year</text>
+        </svg>
+        <h4>Know your numbers</h4>
+        <p>When the cuff comes off, ask what it read. Under 120/80 is normal; 130/80 and up is high (per current U.S. guidelines). Same for cholesterol and blood sugar — numbers you know are numbers you can watch.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Visit progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done — checked, screened, and already booked for next year. That's the whole game.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ GO SOONER ============ -->
+  <section id="sooner">
+    <h2>See a doctor sooner if you notice</h2>
+    <p class="sub">The annual cadence is for maintenance, not for symptoms. Don't sit on any of these until your next scheduled visit:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Chest pain, trouble breathing, sudden weakness or numbness, face drooping, or slurred speech — call 911.</strong> These are emergencies, not appointments.</li>
+        <li><strong>Unexplained weight loss</strong> — losing weight without trying is one of the most consistently meaningful symptoms in medicine.</li>
+        <li><strong>A new lump, a changing mole, or a sore that won't heal</strong> — almost always benign, but exactly the things worth a prompt look.</li>
+        <li><strong>Blood where it shouldn't be</strong> — in stool, urine, or a cough — or a clear change in bowel habits lasting more than a couple of weeks.</li>
+        <li><strong>Fatigue, fever, or pain that persists</strong> beyond a couple of weeks without an obvious cause.</li>
+        <li><strong>Mood changes that interfere with life</strong> — persistent low mood, anxiety, or sleep problems are medical issues your primary care doctor treats every day, and the visit can happen this week, not next year.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Is the annual physical actually evidence-based?</summary>
+      <p>For healthy young adults, the rigid "full exam every 365 days" has weaker evidence than you'd guess — some studies show little benefit from the ritual exam itself. What clearly does pay off: blood pressure and cholesterol checks on schedule, cancer screenings starting on time, vaccines staying current, and having an established doctor. The yearly visit is simply the easiest container for all of that, which is why most primary care doctors still recommend it — and why guidance gets firmly annual from 50 on.</p>
+    </details>
+    <details>
+      <summary>Do I need to fast before the visit?</summary>
+      <p>Only if fasting labs are ordered — and increasingly they aren't, since modern guidelines accept non-fasting cholesterol panels for most people. Ask when you book: if fasting is needed, it's typically 8–12 hours with water (and usually your regular medications) allowed. Easiest move: book a morning slot and bring a snack for after the blood draw.</p>
+    </details>
+    <details>
+      <summary>Will the visit really be free with insurance?</summary>
+      <p>The preventive visit itself — at an in-network provider on an ACA-compliant plan — must be covered with no copay or deductible, along with recommended screenings and vaccines. The famous gotcha: if you also bring up a new or existing problem ("while I'm here, my knee…"), the doctor can bill that discussion as a separate office visit, which is when surprise charges appear. It's fine to discuss problems — just know it may convert part of the visit, or ask the office how they handle billing.</p>
+    </details>
+    <details>
+      <summary>What if I don't have insurance?</summary>
+      <p>You still have solid options. Federally funded community health centers charge on a sliding scale based on income and exist in nearly every county. Many practices post cash prices around $100–$300 for a physical. Direct primary care memberships (roughly $50–$100/month) include visits and cheap labs. And direct-to-consumer lab services sell basic panels for far less than hospital lab pricing. Prevention is the part of healthcare where paying out of pocket is genuinely feasible.</p>
+    </details>
+    <details>
+      <summary>Which vaccines might come up at the visit?</summary>
+      <p>The usual adult lineup: a flu shot every year, a tetanus booster (Td or Tdap) every 10 years, the shingles vaccine starting at 50, pneumococcal vaccination starting at 50, updated COVID-19 vaccines per current guidance, and RSV vaccination for older adults. Your doctor checks your record against the current schedule — one of the highest-value two-minute conversations in the whole visit.</p>
+    </details>
+    <details>
+      <summary>I'm on Medicare — is this the same as the "Annual Wellness Visit"?</summary>
+      <p>Not quite, and the difference matters for billing. Medicare fully covers an Annual Wellness Visit every 12 months — a prevention-focused review of your history, risks, medications, and a personalized screening plan — but it's not a full hands-on physical, and a traditional head-to-toe physical isn't a covered Medicare benefit by itself. Many practices combine the two; ask how yours bills it so nothing surprises you.</p>
+    </details>
+    <details>
+      <summary>Do I need blood work every single year?</summary>
+      <p>Not necessarily. For a healthy adult with normal past results, cholesterol every 4–6 years is the standard guideline, and diabetes screening (ages 35–70 if overweight) repeats about every 3 years when normal. Doctors often order panels more frequently because trends are useful and the marginal cost is low — but "no labs this year" can be a perfectly good plan. What should happen every visit is the blood pressure cuff.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A year is a long time to remember.</h2>
+        <p>You just worked out your checkup schedule — now let something else keep it. Upkeep Ledger logs each physical and tells you when the next one comes due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=physical-exam&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=physical-exam&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This page is general education, not medical advice — your doctor's recommendation for you wins. Cost figures are typical U.S. ranges for planning purposes; ask your insurer and local clinics for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { age: null, conditions: null, family: null, last: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var label, body;
+
+    if (s.conditions === "multi") {
+      label = "Every 3–6 months, plus a yearly comprehensive";
+      body = "With multiple conditions in play, your doctor sets a tighter follow-up rhythm — the “annual physical” becomes the once-a-year wide-angle review inside it. Why this schedule:";
+      reasons.push("Two or more chronic conditions usually mean their own monitoring visits every 3–6 months — medication checks, labs, and dose adjustments can't wait a year.");
+      reasons.push("Keep one visit a year as the comprehensive review: full medication list, screening catch-up, vaccines, and the big-picture conversation.");
+    } else if (s.conditions === "one") {
+      label = "Every year — with 6-month follow-ups likely";
+      body = "The annual physical anchors your year, and your condition probably gets its own check-ins between. Why this schedule:";
+      reasons.push("A managed condition (blood pressure, thyroid, asthma, and the like) typically wants a follow-up every 3–6 months to confirm the treatment is still working — your doctor will set the exact interval.");
+    } else if (s.age === "young") {
+      if (s.family === "yes") {
+        label = "Every year";
+        body = "Healthy and under 40, but family history moves you out of the stretch-it group. Why annual makes sense for you:";
+      } else {
+        label = "Every 1–3 years (yearly is the easy default)";
+        body = "Healthy, under 40, nothing notable in the family — you're the group that can stretch the interval. Why:";
+        reasons.push("Major guidance for low-risk adults under 40 supports a checkup every 1–3 years: blood pressure at least every 3–5 years, cholesterol every 4–6.");
+        reasons.push("That said, if your plan covers the visit at $0, an annual rhythm is far easier to keep than a “every 30 months” one — and it keeps your baseline fresh.");
+      }
+    } else if (s.age === "forties") {
+      label = "Every year";
+      body = "Your 40s are when the screening calendar fills up. Why annual earns its keep now:";
+      reasons.push("Mammograms start at 40 (every 2 years per USPSTF), colon cancer screening at 45, and diabetes screening runs 35–70 if you're overweight — the yearly visit is where each gets ordered on time.");
+    } else if (s.age === "fifties") {
+      label = "Every year";
+      body = "From 50 on, the annual visit does real work every single time. Why:";
+      reasons.push("Colon cancer screening should be underway, the shingles and pneumococcal vaccines start at 50, and lung cancer screening enters the picture for longtime smokers — a yearly visit keeps all of it on schedule.");
+    } else {
+      label = "Every year";
+      body = "At 65+, yearly is the standard — and it's built into Medicare. Why:";
+      reasons.push("Medicare covers an Annual Wellness Visit every 12 months at no cost: a prevention-focused review plus a personalized screening plan.");
+      reasons.push("New items appear at this age too — bone density scans for women at 65, fall-risk and memory check-ins, and a hard look at the full medication list.");
+    }
+
+    if (s.family === "yes") {
+      reasons.push("A parent or sibling with heart disease, diabetes, or cancer can move your screening start dates earlier than the standard ages — exactly the conversation to have at your next visit.");
+    } else if (s.conditions === "none") {
+      reasons.push("No notable family history keeps you on the standard screening start ages.");
+    }
+
+    if (s.last === "recent") {
+      reasons.push("You're on rhythm — the only job left is booking the next one before you leave it.");
+    } else if (s.last === "while") {
+      reasons.push("You're a bit overdue. Book in the next month or two and you're back on track — no penalty for the gap, but baselines age.");
+    } else {
+      reasons.push("Whatever your ideal interval, the right time for the next visit is now: after 3+ years your baselines are stale, and screening windows may have opened since you last went.");
+    }
+
+    return { label: label, body: body, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.age || !quizState.conditions || !quizState.family || !quizState.last) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your schedule: " + r.label;
+    document.getElementById("resultBody").innerHTML = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you book", text: "Find (or confirm) your primary care doctor", note: "No regular doctor? Check your insurer's in-network directory, ask friends locally, and pick someone taking new patients. A doctor you like is the one you'll actually return to." },
+    { phase: "Before you book", text: "Book it as a preventive visit", note: "Use the words “annual physical” or “preventive visit” when scheduling — that's what triggers the $0 ACA coverage. Grab a morning slot in case labs mean fasting." },
+    { phase: "Before you book", text: "Ask whether labs happen before or at the visit", note: "Some offices send you for blood work a week early so the doctor can discuss real results with you instead of mailing them later. Worth asking — it doubles the visit's value." },
+    { phase: "The week before", text: "Write down your questions and any symptoms", note: "The knee that clicks, the sleep that's gotten worse, the mole you're unsure about. On paper. Exam-room amnesia erases everything you meant to ask." },
+    { phase: "The week before", text: "Update your medication list — including supplements", note: "Every prescription, over-the-counter med, vitamin, and supplement, with doses. Interactions hide in the stuff people forget to mention." },
+    { phase: "The week before", text: "Refresh your family history", note: "New diagnoses in parents or siblings since last year? Heart disease, diabetes, and cancers in close relatives can change when your screenings start." },
+    { phase: "Day of the visit", text: "Fast if instructed — water is fine", note: "8–12 hours without food if fasting labs are ordered; most regular meds are still taken (confirm with the office). Bring a snack for right after the draw." },
+    { phase: "Day of the visit", text: "Bring your insurance card, med list, and questions", note: "Arrive 10 minutes early for paperwork. Hand over the list at the start so your concerns get checked first, not as you're standing up to leave." },
+    { phase: "At the visit", text: "Ask for your numbers — and what they mean", note: "Blood pressure, weight trend, cholesterol when drawn. Under 120/80 is normal BP; 130/80+ is high. Numbers you know are numbers you can track." },
+    { phase: "At the visit", text: "Ask which screenings and vaccines you're due for", note: "Colon screening at 45, mammograms at 40, shingles vaccine at 50, tetanus every 10 years… this one question is most of the visit's preventive value." },
+    { phase: "At the visit", text: "Book next year's physical before you walk out", note: "The single highest-leverage step on this list. Twelve months from now goes on the calendar in 30 seconds — or it quietly never happens." },
+    { phase: "Afterward", text: "Check your results and log the visit", note: "Read the lab results in the portal and ask about anything flagged. Note the date, your numbers, and anything being watched — then schedule any referrals within the week." }
+  ];
+
+  var LS_KEY = "upkeepguides:physical-exam:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

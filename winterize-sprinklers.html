@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winterize sprinkler system — UpkeepGuides.com</title>
+<meta name="description" content="How to winterize your sprinkler system before the first hard freeze: blow-out vs drain methods, safe air pressure, zone-by-zone steps, and a personalized timing plan.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Winterize sprinkler system — UpkeepGuides.com">
+<meta property="og:description" content="How to winterize your sprinkler system before the first hard freeze: blow-out vs drain methods, safe air pressure, zone-by-zone steps, and a personalized timing plan.">
+<meta property="og:url" content="https://upkeepguides.com/winterize-sprinklers.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Winterize sprinkler system — UpkeepGuides.com">
+<meta name="twitter:description" content="How to winterize your sprinkler system before the first hard freeze: blow-out vs drain methods, safe air pressure, zone-by-zone steps, and a personalized timing plan.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- calendar ---------- */
+  .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
+  .month {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 12px;
+    padding: 12px 10px; text-align: center; transition: all 0.2s ease; min-height: 86px;
+  }
+  .month .m-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .month .m-task { font-size: 12.5px; color: var(--ink-soft); line-height: 1.35; }
+  .month.clean { background: var(--accent-soft); border-color: var(--accent); }
+  .month.clean .m-task { color: var(--accent-deep); font-weight: 600; }
+  .month.check { background: var(--gold-soft); border-color: var(--gold); }
+  .month.check .m-task { color: #9a7117; font-weight: 600; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; font-size: 14px; color: var(--ink-soft); }
+  .legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 4px; margin-right: 6px; vertical-align: -1px; }
+  .dot.d-clean { background: var(--accent); }
+  .dot.d-check { background: var(--gold); }
+  .cal-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .cost-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .cost-stat .v { font-size: 24px; font-weight: 800; color: var(--accent-deep); }
+  .cost-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+    .cal-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  .month .m-season { display: block; height: 18px; margin-bottom: 2px; }
+  .month .m-season svg { width: 16px; height: 16px; }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#your-plan">Your plan</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Yard &amp; Garden · Yearly, before first freeze</span>
+      <h1>Winterize Your Sprinkler System</h1>
+      <p class="lede">Every fall, the water sitting in your irrigation lines gets one freeze away from becoming a crowbar. Blow out the lines before the first hard freeze and the system shrugs off winter; skip it and you find the cracks in April — under pressure, under the lawn. Here's when, how, and exactly what to do.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ <em>Once a year</em>, before the first hard freeze</span>
+        <span class="chip">⏱️ <em>30–60 min</em> DIY · ~20 min for a pro</span>
+        <span class="chip">💸 Pro blow-out <em>$75–150</em></span>
+        <span class="chip">💥 Skipping it risks <em>$500+</em> repairs</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a lawn in late fall with pop-up sprinkler heads blowing out fine mist, an air compressor connected near the house's backflow preventer, frost on the grass edges, and snowflakes starting to fall">
+      <ellipse cx="285" cy="400" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- pale low autumn sun -->
+      <circle cx="488" cy="62" r="24" fill="#f2cf7a"/>
+      <!-- frosty clouds -->
+      <ellipse cx="120" cy="64" rx="46" ry="20" fill="#dce8ee"/>
+      <ellipse cx="168" cy="76" rx="28" ry="14" fill="#dce8ee"/>
+      <ellipse cx="356" cy="52" rx="36" ry="16" fill="#dce8ee"/>
+      <!-- first snowflakes -->
+      <g stroke="#7fb3c8" stroke-width="2" stroke-linecap="round">
+        <g transform="translate(252 92)"><line x1="-6" y1="0" x2="6" y2="0"/><line x1="0" y1="-6" x2="0" y2="6"/><line x1="-4" y1="-4" x2="4" y2="4"/><line x1="4" y1="-4" x2="-4" y2="4"/></g>
+        <g transform="translate(430 118)"><line x1="-5" y1="0" x2="5" y2="0"/><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="3.5" y1="-3.5" x2="-3.5" y2="3.5"/></g>
+        <g transform="translate(64 142)"><line x1="-5" y1="0" x2="5" y2="0"/><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="3.5" y1="-3.5" x2="-3.5" y2="3.5"/></g>
+      </g>
+      <!-- house corner -->
+      <rect x="20" y="150" width="118" height="160" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <polygon points="10,152 79,98 148,152" fill="#c96f4a"/>
+      <rect x="44" y="184" width="34" height="36" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="61" y1="184" x2="61" y2="220" stroke="#fffdf8" stroke-width="2"/>
+      <!-- backflow preventer riser beside house -->
+      <rect x="148" y="252" width="9" height="58" rx="3" fill="#b9b1a3"/>
+      <rect x="170" y="252" width="9" height="58" rx="3" fill="#b9b1a3"/>
+      <rect x="140" y="236" width="47" height="20" rx="6" fill="#d98e3b"/>
+      <circle cx="152" cy="232" r="6" fill="#e0a93d"/>
+      <circle cx="175" cy="232" r="6" fill="#e0a93d"/>
+      <!-- drips from open test cocks -->
+      <g fill="#7fb3c8">
+        <circle cx="152" cy="268" r="2.5"/>
+        <circle cx="176" cy="278" r="2.5"/>
+      </g>
+      <!-- lawn -->
+      <path d="M12 310 Q280 286 548 310 L548 392 Q280 412 12 392 Z" fill="#3e7c59"/>
+      <path d="M12 344 Q280 322 548 344 L548 392 Q280 412 12 392 Z" fill="#5e9a78" opacity="0.4"/>
+      <!-- frost hints on the grass -->
+      <g stroke="#dce8ee" stroke-width="3" stroke-linecap="round" opacity="0.85">
+        <path d="M40 330 h22 M88 352 h16 M460 334 h20 M504 358 h16 M250 386 h18"/>
+      </g>
+      <!-- compressor on the lawn -->
+      <g>
+        <rect x="206" y="296" width="74" height="44" rx="10" fill="#c96f4a"/>
+        <rect x="216" y="282" width="34" height="18" rx="6" fill="#d9663f"/>
+        <circle cx="262" cy="292" r="9" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+        <line x1="262" y1="292" x2="267" y2="286" stroke="#33393b" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="220" cy="346" r="9" fill="#33393b"/>
+        <circle cx="266" cy="346" r="9" fill="#33393b"/>
+        <!-- air hose to the backflow connection -->
+        <path d="M206 318 Q176 322 172 296" stroke="#8a6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- sprinkler heads blowing mist -->
+      <g>
+        <rect x="338" y="338" width="10" height="22" rx="3" fill="#2c5a40"/>
+        <path d="M343 334 Q325 314 312 308 M343 334 Q343 308 343 300 M343 334 Q361 314 374 308" stroke="#dce8ee" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="308" cy="304" r="3" fill="#dce8ee"/>
+        <circle cx="343" cy="294" r="3" fill="#dce8ee"/>
+        <circle cx="378" cy="304" r="3" fill="#dce8ee"/>
+      </g>
+      <g>
+        <rect x="452" y="350" width="10" height="20" rx="3" fill="#2c5a40"/>
+        <path d="M457 346 Q441 328 430 322 M457 346 Q457 322 457 314 M457 346 Q473 328 484 322" stroke="#dce8ee" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="426" cy="318" r="3" fill="#dce8ee"/>
+        <circle cx="457" cy="308" r="3" fill="#dce8ee"/>
+        <circle cx="488" cy="318" r="3" fill="#dce8ee"/>
+      </g>
+      <!-- shrub + fallen leaves -->
+      <circle cx="528" cy="296" r="22" fill="#2c5a40"/>
+      <circle cx="548" cy="306" r="15" fill="#3e7c59"/>
+      <ellipse cx="320" cy="384" rx="7" ry="4" fill="#d98e3b" transform="rotate(-18 320 384)"/>
+      <ellipse cx="404" cy="376" rx="7" ry="4" fill="#c96f4a" transform="rotate(22 404 376)"/>
+      <ellipse cx="120" cy="380" rx="7" ry="4" fill="#e0a93d" transform="rotate(-30 120 380)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Water expands about 9% when it freezes, and it doesn't negotiate with PVC, poly pipe, or brass. Anything left full — lines, valves, the backflow preventer — splits quietly over winter, then announces itself the first time you pressurize in spring. Here's what one skipped blow-out can cost (typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="10" y="6" width="5" height="24" rx="2" fill="#b9b1a3"/>
+          <rect x="21" y="6" width="5" height="24" rx="2" fill="#b9b1a3"/>
+          <rect x="7" y="9" width="22" height="9" rx="3" fill="#d98e3b"/>
+          <circle cx="12" cy="7" r="3" fill="#e0a93d"/>
+          <circle cx="24" cy="7" r="3" fill="#e0a93d"/>
+          <path d="M16 18 l2 3 l-2 2.5 l2.5 3.5" stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Cracked backflow preventer</h3>
+        <p>It sits above ground, holds water on both sides, and freezes first. Brass bodies and plastic bonnets split alike — the single most common (and most expensive) casualty of a missed winterization.</p>
+        <span class="cost">$300 – $600 replaced</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="20" width="28" height="7" rx="3.5" fill="#8a6a4f"/>
+          <rect x="9" y="9" width="6" height="13" rx="2.5" fill="#b9b1a3"/>
+          <rect x="21" y="9" width="6" height="13" rx="2.5" fill="#b9b1a3"/>
+          <circle cx="12" cy="8" r="3.5" fill="#3e7c59"/>
+          <circle cx="24" cy="8" r="3.5" fill="#3e7c59"/>
+          <path d="M17 22 l1.5 2.5 l-1.5 2" stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Burst valve manifold</h3>
+        <p>The cluster of zone valves in the ground box traps water in every chamber. Frozen manifolds crack at the fittings — and one cracked valve usually means rebuilding the whole assembly.</p>
+        <span class="cost">$150 – $400</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 13 q14 -5 28 0" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="5" y="20" width="26" height="7" rx="3.5" fill="#b9b1a3"/>
+          <path d="M15 20 l2 3.5 l-1.5 3.5" stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M18 11 c2 2.8 3 4.2 3 6 a3 3 0 0 1 -6 0 c0 -1.8 1 -3.2 3 -6" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Split underground lines</h3>
+        <p>Lateral lines at low spots hold water even after a "drain." A split pipe hides until spring, then soaks one patch of lawn — each leak is a locate-dig-splice repair.</p>
+        <span class="cost">$150 – $350 per dig</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 29 h26" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+          <rect x="15" y="17" width="6" height="12" rx="2" fill="#2c5a40"/>
+          <rect x="16" y="11" width="4" height="7" rx="1.5" fill="#3e7c59"/>
+          <path d="M17 11 l1.5 2.5 l-1 2" stroke="#d9663f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <g fill="#7fb3c8">
+            <circle cx="11" cy="9" r="2"/>
+            <circle cx="18" cy="5" r="2"/>
+            <circle cx="25" cy="9" r="2"/>
+          </g>
+        </svg></div>
+        <h3>Cracked heads &amp; risers</h3>
+        <p>Pop-up bodies and the fittings under them hold a cup of water apiece. They're cheap individually — but freezes don't crack just one, and finding them all takes a full walk-through.</p>
+        <span class="cost">$20 – $75 per head, fixed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 30 q12 -6 24 0" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M18 28 Q14 18 18 8 Q22 18 18 28" fill="#7fb3c8"/>
+          <circle cx="13" cy="12" r="2.5" fill="#7fb3c8"/>
+          <circle cx="23" cy="10" r="2.5" fill="#7fb3c8"/>
+          <circle cx="18" cy="5" r="2.5" fill="#dce8ee"/>
+        </svg></div>
+        <h3>The spring geyser</h3>
+        <p>Cracks stay invisible until you re-pressurize. The classic spring surprise: turn the main on fast, and a split fitting becomes a geyser — or worse, a silent leak that runs for weeks.</p>
+        <span class="cost">Wasted water + a flooded bed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="24" height="22" rx="3" fill="none" stroke="#6b7376" stroke-width="2.5"/>
+          <line x1="6" y1="14" x2="30" y2="14" stroke="#6b7376" stroke-width="2.5"/>
+          <circle cx="13" cy="21" r="2" fill="#c96f4a"/>
+          <circle cx="20" cy="21" r="2" fill="#c96f4a"/>
+          <circle cx="27" cy="21" r="2" fill="#e0a93d"/>
+          <circle cx="13" cy="26.5" r="2" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Spring repair backlog</h3>
+        <p>Every irrigation company spends April fixing the systems that froze in November. Damage found at start-up means weeks of waiting — with the lawn drying out in the meantime.</p>
+        <span class="cost">2 – 4 week waits, peak rates</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ YOUR PLAN / QUIZ ============ -->
+  <section id="your-plan">
+    <h2>When — and how — should <em>you</em> winterize?</h2>
+    <p class="sub">The job is yearly everywhere it freezes, but the right month and the right method depend on your climate, how your system drains, and what kind of air you can put on it. Three questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="freeze">
+        <div class="q-label">1. When does your first hard freeze usually arrive?</div>
+        <div class="pills">
+          <button class="pill" data-v="early">Early fall (by early Oct)</button>
+          <button class="pill" data-v="mid">Mid-fall (mid-Oct – Nov)</button>
+          <button class="pill" data-v="late">Late fall (late Nov – Dec)</button>
+          <button class="pill" data-v="rare">Rarely freezes hard</button>
+        </div>
+        <div class="q-hint">A hard freeze is roughly 28°F or below for a few hours — cold enough to freeze water in pipes, not just frost on the windshield. Your local extension office publishes average first-freeze dates.</div>
+      </div>
+      <div class="quiz-q" data-q="drains">
+        <div class="q-label">2. How does your system drain?</div>
+        <div class="pills">
+          <button class="pill" data-v="auto">Auto-drain valves</button>
+          <button class="pill" data-v="manual">Manual drain valves</button>
+          <button class="pill" data-v="none">No drains — blow-out only</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+        <div class="q-hint">Most systems installed since the 1990s have no drain valves and are designed to be blown out. Auto-drains open on their own when pressure drops; manual drains are small valves at the low points.</div>
+      </div>
+      <div class="quiz-q" data-q="air">
+        <div class="q-label">3. If you blow it out yourself, what air can you bring?</div>
+        <div class="pills">
+          <button class="pill" data-v="pro">I'd hire it out</button>
+          <button class="pill" data-v="big">Tow-behind / rental (10+ CFM)</button>
+          <button class="pill" data-v="mid">Mid-size shop compressor (4–6 CFM)</button>
+          <button class="pill" data-v="pancake">Pancake / small portable</button>
+        </div>
+        <div class="q-hint">For blow-outs, the number that matters is CFM (air volume), not PSI. Check the "CFM @ 90 PSI" rating on the compressor's plate.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDAR ============ -->
+  <section id="calendar">
+    <h2>Your seasonal calendar</h2>
+    <p class="sub" id="calSub">Showing the standard mid-fall-freeze plan. Take the quiz above and this calendar updates to match your climate.</p>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="legend">
+      <span><span class="dot d-clean"></span>The big tasks: fall winterization &amp; spring start-up</span>
+      <span><span class="dot d-check"></span>Quick check (10 min)</span>
+    </div>
+    <div class="cal-note">🌡️ <strong>The forecast outranks the calendar:</strong> these months are typical, but the real deadline is your first hard freeze. Buried lines can ride out a light overnight frost — the above-ground backflow preventer can't. If a surprise early freeze is coming and you're not winterized, at minimum shut off the supply and drain the backflow that evening.</div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Winterizing is one of the cheapest line items in yard care — the repairs it prevents are not. All figures are typical U.S. estimates:</p>
+    <div class="card">
+      <div class="grid cols-3" style="margin-bottom:18px;">
+        <div class="cost-stat">
+          <div class="v">$75 – $150</div>
+          <div class="l"><strong>Pro blow-out</strong> for a typical residential system — about 20 minutes, often cheaper on neighborhood group days.</div>
+        </div>
+        <div class="cost-stat">
+          <div class="v">$40 – $100/day</div>
+          <div class="l"><strong>DIY compressor rental</strong> — a tow-behind or large wheeled unit with the CFM to actually clear the zones.</div>
+        </div>
+        <div class="cost-stat">
+          <div class="v">$300 – $600</div>
+          <div class="l"><strong>One cracked backflow preventer</strong>, parts and labor — the most common single repair after a missed winter.</div>
+        </div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🍂 Pro blow-out, once a year</span><span>$75–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:12%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 DIY with a rented high-CFM compressor</span><span>$40–100</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Manifold rebuild after a freeze</span><span>$150–400</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:32%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🥶 Backflow preventer replacement</span><span>$300–600</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:50%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💥 Bad spring: backflow + lines + heads</span><span>$700–1,200+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">A decade of pro blow-outs runs roughly <strong>$750–1,500</strong> — about what <strong>one bad freeze</strong> can charge in a single spring. And the DIY math is even friendlier <em>if</em> you have real air: the rental costs less than the pro, and the buried caveat is that the $120 pancake compressor in your garage almost never moves enough air to do the job (see "When to call a pro").</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to blow out your sprinklers</h2>
+    <p class="sub">With the right compressor, the whole job is 30–60 minutes. Work through the checklist — your progress saves automatically, so you can pick it back up if you take a break.</p>
+
+    <div class="safety">
+      <h3>⚠️ Safety first — compressed air doesn't compress its temper</h3>
+      <ul>
+        <li><strong>Regulate the pressure down:</strong> stay under <strong>~50 PSI for poly pipe</strong> (most cold-climate systems) and <strong>under 80 PSI for rigid PVC</strong>. A tow-behind compressor can put out far more — set the regulator <em>before</em> you connect.</li>
+        <li><strong>Never run the compressor into a closed system.</strong> Always have at least one zone valve open before air flows — dead-heading builds pressure until something bursts.</li>
+        <li><strong>Never stand over heads, the backflow, or open fittings</strong> while air is on. Caps, internals, and grit launch with real force. Wear safety glasses.</li>
+        <li><strong>Don't blow air through the backflow preventer.</strong> Connect downstream of it and drain the device itself — air pressure and heat damage its seals and check valves.</li>
+        <li><strong>Limit air time per zone to about 2 minutes.</strong> Once water stops, compressed air runs hot and can melt poly pipe and head seals. Mist turning to fine fog means stop.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Compressor with real CFM (rented or tow-behind)</span>
+      <span class="tool-chip">Pressure regulator + gauge</span>
+      <span class="tool-chip">Quick-connect / blow-out adapter</span>
+      <span class="tool-chip">Air hose</span>
+      <span class="tool-chip">Safety glasses</span>
+      <span class="tool-chip">Channel-lock pliers</span>
+      <span class="tool-chip">Flat screwdriver (test cocks)</span>
+      <span class="tool-chip">Insulated backflow cover or wrap</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four techniques worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a backflow preventer with both ball valve handles set to 45 degrees and the small test cocks opened so trapped water drips out">
+          <rect x="106" y="58" width="14" height="100" rx="5" fill="#b9b1a3"/>
+          <rect x="160" y="58" width="14" height="100" rx="5" fill="#b9b1a3"/>
+          <rect x="94" y="40" width="92" height="26" rx="8" fill="#d98e3b"/>
+          <!-- ball valve handles at 45° -->
+          <line x1="113" y1="92" x2="129" y2="76" stroke="#d9663f" stroke-width="6" stroke-linecap="round"/>
+          <line x1="167" y1="92" x2="183" y2="76" stroke="#d9663f" stroke-width="6" stroke-linecap="round"/>
+          <!-- test cocks -->
+          <circle cx="104" cy="36" r="6" fill="#e0a93d"/>
+          <circle cx="176" cy="36" r="6" fill="#e0a93d"/>
+          <!-- drips -->
+          <g fill="#7fb3c8">
+            <circle cx="113" cy="120" r="3"/>
+            <circle cx="113" cy="136" r="3"/>
+            <circle cx="167" cy="128" r="3"/>
+          </g>
+          <rect x="20" y="158" width="240" height="6" rx="3" fill="#d8cfbe"/>
+          <text x="200" y="84" font-size="12" fill="#6b7376">handles at 45°</text>
+          <text x="20" y="26" font-size="12" fill="#6b7376">test cocks open a half turn</text>
+          <line x1="98" y1="30" x2="86" y2="24" stroke="#6b7376" stroke-width="1.5" stroke-dasharray="3 3"/>
+        </svg>
+        <h4>Shut off, then drain the backflow</h4>
+        <p>Close the irrigation supply, then set the backflow's ball valves to 45° and crack the test cocks half a turn. Part-open positions can't trap a sealed slug of water that would split the valve body.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a pressure regulator gauge marked with a safe green zone up to 50 PSI for poly pipe and a limit line at 80 PSI for PVC">
+          <circle cx="120" cy="92" r="58" fill="#fffdf8" stroke="#6b7376" stroke-width="3"/>
+          <path d="M120 92 L78 132 A58 58 0 0 1 120 34 Z" fill="#e3efe8"/>
+          <path d="M120 92 L120 34 A58 58 0 0 1 168 60 Z" fill="#faf0da"/>
+          <line x1="120" y1="92" x2="92" y2="48" stroke="#33393b" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="120" cy="92" r="7" fill="#33393b"/>
+          <line x1="166" y1="58" x2="178" y2="48" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <rect x="100" y="148" width="40" height="16" rx="4" fill="#b9b1a3"/>
+          <text x="196" y="92" font-size="13" fill="#6b7376" font-weight="700">≤50 poly</text>
+          <text x="196" y="110" font-size="13" fill="#6b7376" font-weight="700">≤80 PVC</text>
+          <text x="32" y="30" font-size="12" fill="#6b7376">set it before you connect</text>
+        </svg>
+        <h4>Regulate down, always</h4>
+        <p>Blow-outs clear lines with volume (CFM), not pressure. Dial the regulator to ~50 PSI for poly pipe, 80 PSI absolute max for rigid PVC — more pressure doesn't dry pipes faster, it breaks fittings.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Top-view diagram of a sprinkler system with air entering at the connection point and one zone valve open at a time, starting with the zone farthest from the compressor">
+          <rect x="24" y="80" width="232" height="12" rx="6" fill="#b9b1a3"/>
+          <rect x="24" y="64" width="34" height="40" rx="8" fill="#c96f4a"/>
+          <line x1="70" y1="50" x2="150" y2="50" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="150,42 166,50 150,58" fill="#d9663f"/>
+          <text x="70" y="36" font-size="12" fill="#6b7376">air in — one zone open</text>
+          <!-- zone valves -->
+          <g>
+            <rect x="104" y="96" width="16" height="22" rx="4" fill="#8a8077"/>
+            <rect x="160" y="96" width="16" height="22" rx="4" fill="#8a8077"/>
+            <rect x="216" y="96" width="16" height="22" rx="4" fill="#3e7c59"/>
+          </g>
+          <text x="96" y="136" font-size="11" fill="#6b7376">closed</text>
+          <text x="152" y="136" font-size="11" fill="#6b7376">closed</text>
+          <text x="206" y="136" font-size="11" fill="#2c5a40" font-weight="700">open — farthest first</text>
+          <path d="M224 96 Q216 74 208 68 M224 96 Q224 70 224 62 M224 96 Q232 74 240 68" stroke="#dce8ee" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <circle cx="206" cy="62" r="2.5" fill="#7fb3c8"/>
+          <circle cx="224" cy="56" r="2.5" fill="#7fb3c8"/>
+          <circle cx="242" cy="62" r="2.5" fill="#7fb3c8"/>
+        </svg>
+        <h4>One zone at a time, farthest first</h4>
+        <p>Open the farthest (or highest) zone, blow until the heads run mist, close it as you open the next. One zone is always open while air flows — that's the rule that keeps fittings intact.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of an irrigation controller switched from run to rain mode for the winter, with a snowflake indicating the off season">
+          <rect x="62" y="34" width="156" height="112" rx="12" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="78" y="50" width="124" height="30" rx="6" fill="#e3efe8"/>
+          <text x="140" y="70" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">RAIN MODE</text>
+          <circle cx="108" cy="112" r="16" fill="#efe7d8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <line x1="108" y1="112" x2="118" y2="100" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+          <text x="138" y="104" font-size="11" fill="#6b7376">run</text>
+          <text x="138" y="124" font-size="11" fill="#2c5a40" font-weight="700">off / rain</text>
+          <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round">
+            <g transform="translate(240 60)"><line x1="-7" y1="0" x2="7" y2="0"/><line x1="0" y1="-7" x2="0" y2="7"/><line x1="-5" y1="-5" x2="5" y2="5"/><line x1="5" y1="-5" x2="-5" y2="5"/></g>
+          </g>
+          <text x="68" y="170" font-size="12" fill="#6b7376">programs sleep, settings survive</text>
+        </svg>
+        <h4>Put the controller to bed</h4>
+        <p>Switch it to "rain mode" (or off) so it can't fire valves dry all winter. Rain mode keeps your zone programs in memory; if you cut power entirely, expect to reprogram in spring.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Winterization progress</span><span id="progText">0 of 15 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Lines empty, valves cracked, controller asleep. Let it freeze.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to call a pro instead</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Your compressor can't move enough air — and most can't.</strong> A blow-out needs <strong>volume (CFM), not pressure (PSI)</strong>: a typical residential zone wants 10–25 CFM sustained, while a pancake compressor delivers 2–3 CFM no matter what its 150 PSI badge says. It will spit, stall, and leave water in the low spots. Pros tow 85+ CFM machines that clear a zone in a minute.</li>
+        <li><strong>You can't find a blow-out port.</strong> If there's no quick-connect or threaded fitting downstream of the backflow, a pro (or an hour of plumbing) needs to add one before anyone can blow the system out properly.</li>
+        <li><strong>Backflow preventer rules.</strong> Many municipalities require an annual <strong>certified backflow test</strong>, and certified testers are usually the same companies doing fall blow-outs — bundling the two visits is the cheap way to stay legal.</li>
+        <li><strong>Well or pump-fed systems, lake draws, or drip-heavy yards.</strong> Pump housings, filters, and drip emitters have their own winterizing quirks (and drip lines want much gentler air) — worth a pro the first year, then DIY from their playbook.</li>
+        <li>Typical pro blow-out runs <strong>$75–$150</strong>; book in September. Watch for neighborhood "blow-out day" pricing — when the truck is already on your street, everyone pays less.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Can I skip the blow-out if my system has drain valves?</summary>
+      <p>Auto- and manual-drain systems were designed to empty themselves, and in mild climates that's often enough. But drains only empty what flows downhill to them — water still pools in flat runs, low heads, and valve bodies. That's why the blow-out is the most reliable method everywhere, and the standard recommendation anywhere winters get serious. If you rely on drains, at least open the manual ones, run the auto-drain cycle, and drain the backflow by hand.</p>
+    </details>
+    <details>
+      <summary>My pancake compressor says 150 PSI. Why isn't that enough?</summary>
+      <p>Because the blow-out runs on volume, not pressure. Clearing a zone means pushing a steady river of air through hundreds of feet of pipe — that's CFM (cubic feet per minute). A pancake unit stores a small tank at high pressure, dumps it in seconds, then takes minutes to recover, while the water just settles back into the low spots. You need roughly 10+ CFM sustained; rent it or hire it.</p>
+    </details>
+    <details>
+      <summary>When exactly should I winterize? I don't want to cut the watering season short.</summary>
+      <p>Aim for the window after your lawn stops needing water but before your average first hard freeze (about 28°F for several hours). Buried lines survive a light overnight frost fine, so don't panic over the first 31°F night — but the above-ground backflow preventer is exposed and freezes first. If an early hard freeze sneaks up before your blow-out, shut off the supply and drain the backflow that evening; the buried pipe can wait a few more days.</p>
+    </details>
+    <details>
+      <summary>What do I do with the backflow preventer over winter?</summary>
+      <p>Leave it drained and "cracked open": ball valves at 45°, test cocks open a half turn, so no chamber can trap a sealed slug of water. Then insulate it with a backflow cover or wrap (skip sealing the drain ports). In brutal climates, some owners unscrew the device and store it indoors — fine too, just bag the open pipe ends.</p>
+    </details>
+    <details>
+      <summary>How do I start the system back up in spring?</summary>
+      <p>Slowly — this is where winter damage shows itself. Close the test cocks, return the backflow valves to fully open, then open the main shut-off a quarter turn at a time so the lines fill gently (a fast fill causes water hammer that can pop fittings that survived the winter). Once pressurized, run each zone and walk it: look for heads that don't pop, gurgling, soggy spots, or a spinning water meter with all zones off.</p>
+    </details>
+    <details>
+      <summary>I forgot, and we've already had a hard freeze. Is it too late?</summary>
+      <p>Winterize anyway, today — one freeze doesn't guarantee damage, but every additional freeze-thaw cycle raises the odds, and the water is still in the lines. Whatever cracked has already cracked; blowing the system out now protects everything that survived. Then plan a careful, slow spring start-up and budget time to find any casualties.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>One freeze date. One job. Don't lose the race.</h2>
+        <p>Sprinkler winterization is a once-a-year task with a deadline set by the weather, not the calendar. Upkeep Ledger logs this year's blow-out and nudges you next September — before the first hard freeze, not after — alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=winterize-sprinklers&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=winterize-sprinklers&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { freeze: null, drains: null, air: null };
+
+  var MONTH_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+  // months are 0-indexed; plans: { monthIndex: { cls: "clean"|"check", label } }
+  function freezePlan(freeze) {
+    if (freeze === "early") {
+      return {
+        7:  { cls: "check", label: "Book the blow-out; line up air" },
+        8:  { cls: "clean", label: "Winterize — done before the early-Oct freeze" },
+        9:  { cls: "check", label: "Verify: controller off, backflow drained & wrapped" },
+        4:  { cls: "clean", label: "Spring start-up — open the main slowly" },
+        5:  { cls: "check", label: "Walk every zone under pressure" }
+      };
+    }
+    if (freeze === "late") {
+      return {
+        9:  { cls: "check", label: "Book the blow-out; line up air" },
+        10: { cls: "clean", label: "Winterize — done before the first hard freeze" },
+        11: { cls: "check", label: "Verify: controller off, backflow drained & wrapped" },
+        2:  { cls: "clean", label: "Spring start-up — open the main slowly" },
+        3:  { cls: "check", label: "Walk every zone under pressure" }
+      };
+    }
+    if (freeze === "rare") {
+      return {
+        10: { cls: "clean", label: "Light winterizing: drain & wrap above-ground parts" },
+        11: { cls: "check", label: "Freeze warning? Shut off & drain the backflow" },
+        0:  { cls: "check", label: "Freeze warning? Shut off & drain the backflow" },
+        1:  { cls: "check", label: "Freeze warning? Shut off & drain the backflow" },
+        2:  { cls: "check", label: "Restore service; walk every zone" }
+      };
+    }
+    // default: mid-fall freeze
+    return {
+      8:  { cls: "check", label: "Book the blow-out; line up air" },
+      9:  { cls: "clean", label: "Winterize — done before the first hard freeze" },
+      10: { cls: "check", label: "Verify: controller off, backflow drained & wrapped" },
+      3:  { cls: "clean", label: "Spring start-up — open the main slowly" },
+      4:  { cls: "check", label: "Walk every zone under pressure" }
+    };
+  }
+
+  function computePlan(s) {
+    var reasons = [];
+    var headline, body;
+    var plan = freezePlan(s.freeze);
+
+    if (s.freeze === "rare") {
+      headline = "Forecast-watch winterizing, every year";
+      body = "No annual blow-out needed where hard freezes are rare — your job is a <strong>November drain-and-wrap</strong> plus a freeze-warning drill. Why this plan:";
+      reasons.push("Your buried lines are unlikely to freeze, but the above-ground backflow preventer can crack in a single cold snap — drain it and insulate it each fall.");
+      reasons.push("The freeze-warning drill: irrigation supply off, backflow ball valves to 45°, test cocks cracked. Five minutes the evening before a freeze covers the vulnerable parts.");
+      reasons.push("If a once-a-decade arctic blast is forecast, treat it like the North does: get a real blow-out before it lands.");
+    } else {
+      var when = { early: "late September", mid: "October", late: "November" }[s.freeze];
+      headline = "Blow it out every fall — by " + when;
+      body = "One winterization per year, finished <strong>before your first hard freeze</strong> — see your calendar below. Why this plan:";
+
+      if (s.freeze === "early") {
+        reasons.push("Early-freeze climate: hard freezes by early October mean September is your working month — and your spring start-up waits until May, after the late frosts.");
+      } else if (s.freeze === "late") {
+        reasons.push("Late-freeze climate: you have until November, but book early anyway — irrigation crews fill their calendars weeks ahead of the freeze date.");
+      } else {
+        reasons.push("Mid-fall freeze: October is the classic blow-out month — after the lawn stops drinking, before the hard freeze lands.");
+      }
+
+      if (s.drains === "auto") {
+        reasons.push("Auto-drain valves empty the laterals when pressure drops, but they can't reach flat runs, valve bodies, or the backflow — a blow-out (or at least a careful manual drain of those parts) is still the reliable finish.");
+      } else if (s.drains === "manual") {
+        reasons.push("Manual drains help: open every low-point valve after the blow-out (or instead of one, in milder climates) and leave them open all winter.");
+      } else if (s.drains === "none") {
+        reasons.push("No drain valves means your system was designed for the blow-out method — there's no fallback, so get air on it every fall without exception.");
+      } else {
+        reasons.push("Not sure how it drains? Assume blow-out-only — most systems installed since the 1990s are — and look for small low-point valves while you work; you'll know your system by spring.");
+      }
+    }
+
+    if (s.air === "pro") {
+      reasons.push("Hiring it out: $75–150 for about 20 minutes of truck time, and the pro's compressor clears zones a pancake unit never could. Book in September; ask about neighborhood group pricing.");
+    } else if (s.air === "big") {
+      reasons.push("Tow-behind or 10+ CFM rental: the right tool. Set the regulator to ~50 PSI (poly) or max 80 PSI (PVC) before connecting, and keep one zone open whenever air is flowing.");
+    } else if (s.air === "mid") {
+      reasons.push("A 4–6 CFM shop compressor is marginal: it can clear small zones one at a time with recovery pauses and second passes, but on large zones it leaves water in the low spots. Honest answer: rent bigger air or hire out the first pass.");
+    } else if (s.air === "pancake") {
+      reasons.push("A pancake compressor can't do this job — 2–3 CFM just stirs the water. Its 150 PSI rating is the wrong number; blow-outs run on CFM. Rent a high-CFM unit ($40–100/day) or hire a pro.");
+    }
+
+    return { plan: plan, headline: headline, body: body, reasons: reasons };
+  }
+
+  var SEASON_SVG = {
+    winter: '<svg viewBox="0 0 16 16" aria-hidden="true"><g stroke="#7fb3c8" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="3.5" y1="3.5" x2="12.5" y2="12.5"/><line x1="12.5" y1="3.5" x2="3.5" y2="12.5"/></g></svg>',
+    spring: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14 V7" stroke="#3e7c59" stroke-width="1.8" fill="none"/><path d="M8 8 Q4 8 3 4 Q7 4 8 8" fill="#5e9a78"/><path d="M8 8 Q12 8 13 4 Q9 4 8 8" fill="#3e7c59"/></svg>',
+    summer: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#e0a93d"/><g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round"><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.4" y2="4.4"/><line x1="11.6" y1="11.6" x2="13" y2="13"/><line x1="13" y1="3" x2="11.6" y2="4.4"/><line x1="3" y1="13" x2="4.4" y2="11.6"/></g></svg>',
+    fall: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 C13.5 3 14.5 9 8 14.5 C1.5 9 2.5 3 8 1.5" fill="#c96f4a"/><line x1="8" y1="5" x2="8" y2="14.5" stroke="#9a4f33" stroke-width="1.2"/></svg>'
+  };
+  function seasonOf(m) {
+    return (m === 11 || m <= 1) ? "winter" : (m <= 4) ? "spring" : (m <= 7) ? "summer" : "fall";
+  }
+
+  function renderCalendar(plan, personalized) {
+    var grid = document.getElementById("calGrid");
+    grid.innerHTML = "";
+    for (var m = 0; m < 12; m++) {
+      var cell = document.createElement("div");
+      cell.className = "month";
+      var task = "—";
+      if (plan[m]) {
+        cell.className += " " + plan[m].cls;
+        task = plan[m].label;
+      }
+      cell.innerHTML = '<span class="m-season">' + SEASON_SVG[seasonOf(m)] + '</span>' +
+        '<div class="m-name">' + MONTH_NAMES[m] + '</div><div class="m-task">' + task + "</div>";
+      grid.appendChild(cell);
+    }
+    document.getElementById("calSub").textContent = personalized
+      ? "Personalized from your quiz answers. Green months are the big tasks — fall winterization and spring start-up; gold months are quick checks."
+      : "Showing the standard mid-fall-freeze plan. Take the quiz above and this calendar updates to match your climate.";
+  }
+
+  function onQuizChange() {
+    if (!quizState.freeze || !quizState.drains || !quizState.air) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.headline;
+    document.getElementById("resultBody").innerHTML = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+    renderCalendar(r.plan, true);
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  renderCalendar(freezePlan("mid"), false);
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Before you start", text: "Find your blow-out port and count your zones", note: "Look for a quick-connect or threaded fitting downstream of the backflow preventer; count zones at the controller. No port? That's a pro (or plumbing) errand first." },
+    { phase: "Before you start", text: "Line up real air: 10+ CFM rented, or a pro booked", note: "CFM is the number that matters, not PSI. A pancake compressor will not do this job — see \"When to call a pro.\"" },
+    { phase: "Before you start", text: "Shut off the irrigation water supply", note: "It's a dedicated valve — in the basement, crawl space, or a ground box near the meter. Your house water stays on; only the sprinkler branch goes off." },
+    { phase: "Shut down & drain", text: "Drain the backflow preventer: ball valves to 45°, test cocks open a half turn", note: "Part-open positions can't trap a sealed slug of water in the valve body — that trapped slug is what splits backflows." },
+    { phase: "Shut down & drain", text: "Open any manual drain valves at the low points", note: "If your system has them, leave them open all winter. Auto-drains will do their part once line pressure drops." },
+    { phase: "Shut down & drain", text: "Connect the compressor downstream of the backflow", note: "Never push air through the backflow device itself — heat and pressure wreck its check valves and seals." },
+    { phase: "Blow out, zone by zone", text: "Set the regulator before air flows: ~50 PSI poly, 80 PSI max for PVC", note: "Most cold-climate systems are poly. More pressure doesn't dry pipes faster — it bursts fittings. Eye protection on." },
+    { phase: "Blow out, zone by zone", text: "Open the farthest (or highest) zone from the controller's manual mode", note: "One zone must be open before the compressor ever runs — air into a closed system is how things explode." },
+    { phase: "Blow out, zone by zone", text: "Blow until the heads run a fine mist — then stop, max ~2 minutes", note: "Water, then heavy mist, then fog: stop at fog. Dry air runs hot and melts poly pipe and head seals. Don't stand over the heads." },
+    { phase: "Blow out, zone by zone", text: "Walk every zone in order — open the next before closing the last", note: "Keeps the system from ever dead-heading. Drip zones get gentler air and shorter time, if you blow them at all." },
+    { phase: "Blow out, zone by zone", text: "Give each zone a short second pass", note: "Water seeps back to the low spots while you do the other zones. Round two after the tank recovers is what actually empties the lines." },
+    { phase: "Button up", text: "Disconnect the air; leave the backflow at 45° with test cocks cracked", note: "It stays in this drained, part-open state until spring." },
+    { phase: "Button up", text: "Shut down the controller — \"rain mode\" or off", note: "Rain mode keeps your programs in memory; full power-off may mean reprogramming in April. Either way it can't fire valves dry all winter." },
+    { phase: "Button up", text: "Insulate everything above ground", note: "A backflow cover or insulating wrap on the device and any exposed pipe. Don't seal the drain ports shut." },
+    { phase: "Button up", text: "Log the date — and pencil in spring start-up", note: "Next year's blow-out has a deadline only the forecast knows. Spring's slow refill deserves a reminder too." }
+  ];
+
+  var LS_KEY = "upkeepguides:winterize-sprinklers:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
