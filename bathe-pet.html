@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bathe pet — UpkeepGuides.com</title>
+<meta name="description" content="How often to bathe your dog or cat, why over-bathing harms the skin barrier as much as under-bathing, and a calm, step-by-step guide to a clean coat and healthy skin at home.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Bathe pet — UpkeepGuides.com">
+<meta property="og:description" content="How often to bathe your dog or cat, why over-bathing harms the skin barrier as much as under-bathing, and a calm, step-by-step guide to a clean coat and healthy skin at home.">
+<meta property="og:url" content="https://upkeepguides.com/bathe-pet.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bathe pet — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to bathe your dog or cat, why over-bathing harms the skin barrier as much as under-bathing, and a calm, step-by-step guide to a clean coat and healthy skin at home.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Every month</span>
+      <h1>Bathe Your Pet</h1>
+      <p class="lede">There's a sweet spot. A bath clears out dirt, dander, and odor, keeps skin and coat healthy, and hands you a few quiet minutes to feel for lumps, fleas, and hot spots. But more isn't better — over-bathing strips the natural oils that protect the skin, leaving it dry, flaky, and itchy. The right frequency depends on coat and lifestyle. Here's how to find yours, and how to do it calmly.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 4 weeks</em></span>
+        <span class="chip">⏱️ <em>15–30 minutes</em> start to dry</span>
+        <span class="chip">🧴 <em>Pet shampoo only</em> — never human soap</span>
+        <span class="chip">🚿 More is <em>not</em> better — oils protect the skin</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm dog standing in a tub of sudsy lukewarm water being lathered with pet shampoo from a green bottle, with a sprayer cup, fluffy towels, a brush, and a bone-shaped treat waiting nearby">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="74" cy="60" r="22" fill="#f2cf7a"/>
+      <ellipse cx="468" cy="66" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="428" cy="80" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- floating bubbles -->
+      <g fill="none" stroke="#7fb3c8" stroke-width="2.5">
+        <circle cx="150" cy="96" r="8"/>
+        <circle cx="176" cy="74" r="5"/>
+        <circle cx="400" cy="120" r="7"/>
+        <circle cx="376" cy="100" r="5"/>
+      </g>
+      <!-- tub -->
+      <path d="M120 250 q-8 0 -8 12 l16 96 q3 18 22 18 h220 q19 0 22 -18 l16 -96 q0 -12 -8 -12 z" fill="#dce8ee"/>
+      <rect x="108" y="238" width="344" height="20" rx="10" fill="#bfdce8"/>
+      <!-- water + suds line in tub -->
+      <path d="M132 296 q120 -18 296 0 l-8 46 q-2 14 -16 14 h-248 q-14 0 -16 -14 z" fill="#bfdce8"/>
+      <g fill="#fffdf8">
+        <circle cx="160" cy="296" r="13"/>
+        <circle cx="186" cy="302" r="9"/>
+        <circle cx="392" cy="298" r="12"/>
+        <circle cx="416" cy="292" r="8"/>
+        <circle cx="232" cy="306" r="9"/>
+      </g>
+      <!-- dog standing in the tub, lathered -->
+      <g>
+        <!-- body -->
+        <ellipse cx="278" cy="246" rx="92" ry="58" fill="#c9a06b"/>
+        <!-- suds patches on back -->
+        <g fill="#fffdf8">
+          <circle cx="244" cy="208" r="14"/>
+          <circle cx="270" cy="198" r="12"/>
+          <circle cx="298" cy="202" r="13"/>
+          <circle cx="324" cy="214" r="11"/>
+        </g>
+        <!-- head -->
+        <circle cx="208" cy="214" r="40" fill="#c9a06b"/>
+        <!-- ears -->
+        <path d="M180 184 q-18 -6 -22 18 q-2 18 14 24 z" fill="#8a6a4f"/>
+        <path d="M236 184 q18 -6 22 18 q2 18 -14 24 z" fill="#8a6a4f"/>
+        <!-- snout -->
+        <ellipse cx="178" cy="228" rx="22" ry="16" fill="#d9b885"/>
+        <circle cx="162" cy="226" r="6" fill="#33393b"/>
+        <!-- eyes -->
+        <circle cx="200" cy="206" r="4" fill="#33393b"/>
+        <circle cx="222" cy="206" r="4" fill="#33393b"/>
+        <path d="M198 226 q6 5 12 0" stroke="#33393b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- legs into the water -->
+        <rect x="236" y="290" width="16" height="26" rx="8" fill="#c9a06b"/>
+        <rect x="306" y="290" width="16" height="26" rx="8" fill="#c9a06b"/>
+        <!-- dripping -->
+        <g stroke="#7fb3c8" stroke-width="3" stroke-linecap="round">
+          <line x1="360" y1="276" x2="360" y2="288"/>
+          <line x1="346" y1="284" x2="346" y2="294"/>
+        </g>
+      </g>
+      <!-- pet shampoo bottle -->
+      <g>
+        <rect x="430" y="316" width="44" height="62" rx="9" fill="#3e7c59"/>
+        <rect x="440" y="300" width="24" height="18" rx="5" fill="#2c5a40"/>
+        <rect x="436" y="334" width="32" height="26" rx="4" fill="#fffdf8"/>
+        <circle cx="452" cy="347" r="6" fill="#5e9a78"/>
+      </g>
+      <!-- rinse cup -->
+      <g transform="rotate(-16 96 320)">
+        <path d="M72 300 h48 l-6 44 q-1 6 -8 6 h-20 q-7 0 -8 -6 z" fill="#7fb3c8"/>
+        <rect x="70" y="294" width="52" height="10" rx="5" fill="#5f93ad"/>
+        <line x1="96" y1="280" x2="96" y2="296" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <!-- stacked towels -->
+      <g>
+        <rect x="40" y="346" width="76" height="16" rx="6" fill="#d9663f"/>
+        <rect x="46" y="362" width="76" height="16" rx="6" fill="#e0a93d"/>
+        <rect x="40" y="378" width="76" height="14" rx="6" fill="#c96f4a"/>
+      </g>
+      <!-- brush -->
+      <g transform="rotate(12 176 372)">
+        <rect x="146" y="364" width="56" height="14" rx="7" fill="#8a6a4f"/>
+        <g stroke="#b9b1a3" stroke-width="3" stroke-linecap="round">
+          <line x1="154" y1="378" x2="154" y2="388"/>
+          <line x1="166" y1="378" x2="166" y2="388"/>
+          <line x1="178" y1="378" x2="178" y2="388"/>
+          <line x1="190" y1="378" x2="190" y2="388"/>
+        </g>
+      </g>
+      <!-- bone treat -->
+      <g transform="rotate(-12 384 384)">
+        <rect x="358" y="378" width="52" height="12" rx="6" fill="#e0a93d"/>
+        <circle cx="360" cy="378" r="7" fill="#e0a93d"/>
+        <circle cx="360" cy="390" r="7" fill="#e0a93d"/>
+        <circle cx="410" cy="378" r="7" fill="#e0a93d"/>
+        <circle cx="410" cy="390" r="7" fill="#e0a93d"/>
+      </g>
+      <!-- little plants -->
+      <circle cx="510" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="530" cy="396" r="10" fill="#3e7c59"/>
+      <circle cx="30" cy="398" r="11" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A good bath does more than make your pet smell nice — but the goal is balance, not frequency. Done on the right schedule it keeps skin and coat healthy; done too often it backfires. Here's what a well-timed bath actually buys you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 28 q-2 -10 8 -14 q10 -4 8 -14" stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="11" cy="13" r="3" fill="#b9b1a3"/>
+          <circle cx="18" cy="22" r="2.5" fill="#8a6a4f"/>
+          <circle cx="25" cy="27" r="3" fill="#c96f4a"/>
+          <path d="M27 8 q4 0 4 4 q0 3 -4 6 q-4 -3 -4 -6 q0 -4 4 0 z" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Clears dirt, dander &amp; odor</h3>
+        <p>A bath lifts away the ground-in dirt, dried saliva, pollen, and dead-skin dander that brushing alone can't reach — and with them goes most of "dog smell." A clean coat simply stays cleaner against your furniture and your bed.</p>
+        <span class="cost">Cleaner home, fresher pet</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 31 q-12 -8 -12 -18 q0 -7 6 -7 q4 0 6 4 q2 -4 6 -4 q6 0 6 7 q0 10 -12 18 z" fill="#fbe9e1" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M12 16 q4 0 4 -4 M24 16 q-4 0 -4 -4" stroke="#5e9a78" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M11 20 l4 3 l6 -7" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Healthy skin &amp; a clean coat</h3>
+        <p>The right shampoo on the right schedule keeps the skin barrier balanced and the coat soft and free of matting. The key word is <em>right</em>: over-bathing strips the natural oils and dries the skin, so more baths make the very problem they're meant to fix.</p>
+        <span class="cost">Balance beats frequency</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#dce8ee"/>
+          <path d="M18 8 q-6 4 -6 11 a6 6 0 0 0 12 0 q0 -7 -6 -11 z" fill="#7fb3c8"/>
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round">
+            <line x1="6" y1="6" x2="30" y2="30"/>
+          </g>
+          <circle cx="26" cy="9" r="2.5" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Less dander for your allergies</h3>
+        <p>Pet allergens ride on dander and dried saliva that collect in the coat. Regular bathing measurably knocks down how much of that floats around your home — a real help for people in the house who sneeze, wheeze, or itch around pets.</p>
+        <span class="cost">Easier breathing for sensitive people</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="15" cy="15" r="9" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <line x1="22" y1="22" x2="30" y2="30" stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="13" cy="13" r="3" fill="#c96f4a"/>
+          <path d="M17 17 q3 1 3 4" stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A hands-on health check</h3>
+        <p>Wet fur lies flat, so a bath is the one time the whole body is easy to read. Your hands find new lumps, scabs, fleas, ticks, ear gunk, and hot spots while they're small and cheap to deal with — long before they'd show through a dry coat.</p>
+        <span class="cost">Catch problems early, not at the vet</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> bathe?</h2>
+    <p class="sub">"Once a month" is the rough default for a typical dog, but the honest answer is <em>it depends on coat and lifestyle</em> — and the difference between breeds is huge. Answer four questions for a tailored range. Whatever it lands on, the real rule is always "and as needed when they're actually dirty."</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="coat">
+        <div class="q-label">1. What kind of pet &amp; coat?</div>
+        <div class="pills">
+          <button class="pill" data-v="short">Short-coat dog</button>
+          <button class="pill" data-v="double">Double-coated dog</button>
+          <button class="pill" data-v="long">Long / curly coat</button>
+          <button class="pill" data-v="hairless">Hairless breed</button>
+          <button class="pill" data-v="cat">Cat</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="life">
+        <div class="q-label">2. What's their lifestyle?</div>
+        <div class="pills">
+          <button class="pill" data-v="couch">Indoor &amp; clean</button>
+          <button class="pill" data-v="active">Yard time &amp; walks</button>
+          <button class="pill" data-v="messy">Outdoorsy / rolls in things</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="skin">
+        <div class="q-label">3. Any skin issues or allergies (theirs or yours)?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">None that I know of</button>
+          <button class="pill" data-v="petskin">Pet has dry / itchy skin</button>
+          <button class="pill" data-v="human">Someone here is allergic</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="dirt">
+        <div class="q-label">4. Noticeable odor or visible dirt right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="fresh">Smells &amp; looks fine</button>
+          <button class="pill" data-v="some">A little</button>
+          <button class="pill" data-v="lots">Definitely needs it</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs</h2>
+    <p class="sub">Bathing at home is one of the cheapest pieces of pet care there is. The groomer is a fair splurge for tricky coats and dogs who turn the tub into a wrestling match — but the math favors a towel and a bottle of pet shampoo (typical U.S. figures):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$5 – $20</div><div class="l">DIY — a bottle of pet shampoo plus a couple of dedicated towels</div></div>
+        <div class="calc-stat"><div class="v" id="groomerYear">$360/yr</div><div class="l" id="groomerYearLabel">groomer baths at $30–90+ per visit, monthly</div></div>
+        <div class="calc-stat"><div class="v">$0</div><div class="l">a healthy cat's bath bill — they groom themselves</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 A year of DIY baths (shampoo + towels)</span><span>≈ $25</span></div>
+          <div class="bar-track"><div class="bar-fill good" id="barDiy" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛁 A year of groomer baths</span><span id="barGroomerVal">≈ $720</span></div>
+          <div class="bar-track"><div class="bar-fill mid" id="barGroomer" style="width:100%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 One vet visit for a skin infection</span><span>≈ $150 – $400</span></div>
+          <div class="bar-track"><div class="bar-fill bad" id="barVet" style="width:38%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict" id="costVerdict">A <strong>$10 bottle of pet shampoo</strong> lasts most owners the better part of a year. The groomer is worth it for matted, double, or curly coats and for pets who genuinely can't be bathed at home — but for an easygoing short-coat dog, home bathing is nearly free. The expensive line on this chart is the one home bathing helps you <strong>avoid</strong>: a skin infection or untreated hot spot you'd have felt with your hands in the tub.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to bathe your pet (calmly)</h2>
+    <p class="sub">A bath runs 15–30 minutes including drying, and "calm" is most of the job — a pet that doesn't dread the tub is a pet you'll actually keep clean. Read the care notes, check the diagrams, then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Care first — the wrong soap or water does more harm than a skipped bath</h3>
+      <ul>
+        <li><strong>Use pet shampoo, never human shampoo or dish soap as a routine.</strong> Human and dish products are the wrong pH for pet skin and strip its protective oils, causing the dryness and itch you're trying to prevent. (A one-off dab of dish soap to cut grease or oil in an emergency is fine — just not your everyday wash.)</li>
+        <li><strong>Lukewarm water only.</strong> Test it on your wrist like a baby's bottle. Hot water that feels merely "warm" to you can scald a pet and dries the skin; cold water makes the whole thing miserable.</li>
+        <li><strong>Keep water and soap out of the eyes and ears.</strong> Wash the head last with a damp cloth, not by pouring. A cotton ball tucked in each ear keeps water out — water trapped in the ear canal is a classic cause of infections.</li>
+        <li><strong>Brush out mats <em>before</em> the bath, never after.</strong> Water shrinks and tightens mats into solid knots that then have to be shaved off. Detangle on a dry coat first.</li>
+        <li><strong>Never leave a pet unattended in water,</strong> and keep a non-slip mat underfoot — panic usually starts with slipping.</li>
+        <li><strong>On flea/tick or skin medication?</strong> Bathing can wash off topicals or interfere with medicated routines — check the timing with your vet before you suds up.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Pet shampoo (vet-recommended for sensitive skin)</span>
+      <span class="tool-chip">Conditioner (long / curly coats)</span>
+      <span class="tool-chip">Non-slip mat</span>
+      <span class="tool-chip">Cup or handheld sprayer</span>
+      <span class="tool-chip">Two or three towels</span>
+      <span class="tool-chip">Brush &amp; comb</span>
+      <span class="tool-chip">Cotton balls for ears</span>
+      <span class="tool-chip">High-value treats</span>
+      <span class="tool-chip">Blow dryer on cool / low (if tolerated)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five steps worth getting right</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of brushing a dry coat before the bath, with a brush pulling loose hair and a tangle being combed out, and a note that water tightens mats">
+          <rect x="14" y="150" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="118" cy="112" rx="84" ry="38" fill="#c9a06b"/>
+          <circle cx="56" cy="98" r="30" fill="#c9a06b"/>
+          <ellipse cx="40" cy="84" rx="8" ry="14" fill="#8a6a4f" transform="rotate(22 40 84)"/>
+          <circle cx="48" cy="98" r="3" fill="#33393b"/>
+          <!-- mat tangle -->
+          <circle cx="150" cy="100" r="12" fill="#8a6a4f"/>
+          <path d="M140 96 q10 8 20 0 M142 104 q8 -6 18 0" stroke="#6e543e" stroke-width="2" fill="none"/>
+          <!-- brush pulling loose hair -->
+          <g transform="rotate(28 188 86)">
+            <rect x="160" y="78" width="56" height="14" rx="7" fill="#3e7c59"/>
+            <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+              <line x1="168" y1="92" x2="168" y2="104"/>
+              <line x1="180" y1="92" x2="180" y2="104"/>
+              <line x1="192" y1="92" x2="192" y2="104"/>
+              <line x1="204" y1="92" x2="204" y2="104"/>
+            </g>
+          </g>
+          <g stroke="#d8cfbe" stroke-width="2" stroke-linecap="round">
+            <line x1="214" y1="118" x2="226" y2="126"/>
+            <line x1="220" y1="110" x2="234" y2="114"/>
+          </g>
+          <text x="14" y="172" font-size="12" fill="#d9663f" font-weight="700">water tightens mats — detangle dry, first</text>
+        </svg>
+        <h4>1. Brush first, on a dry coat</h4>
+        <p>Comb out loose hair and any mats before a drop of water touches them. Wet knots only cinch tighter, and a pre-brush means less hair clogging the drain.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of wetting a pet thoroughly with lukewarm water from a cup, soaking down to the skin while keeping the face dry">
+          <rect x="14" y="150" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="150" cy="116" rx="84" ry="36" fill="#c9a06b"/>
+          <circle cx="86" cy="104" r="28" fill="#c9a06b"/>
+          <circle cx="76" cy="102" r="3" fill="#33393b"/>
+          <!-- dry face shield -->
+          <path d="M58 86 q-16 -2 -16 18" stroke="#3e7c59" stroke-width="2.5" stroke-dasharray="4 4" fill="none"/>
+          <text x="14" y="78" font-size="11" fill="#3e7c59" font-weight="700">keep face dry</text>
+          <!-- cup pouring -->
+          <g transform="rotate(34 196 60)">
+            <path d="M180 44 h36 l-5 30 q-1 5 -7 5 h-12 q-6 0 -7 -5 z" fill="#7fb3c8"/>
+            <rect x="178" y="38" width="40" height="9" rx="4.5" fill="#5f93ad"/>
+          </g>
+          <!-- water stream -->
+          <g stroke="#7fb3c8" stroke-width="4" stroke-linecap="round">
+            <line x1="176" y1="78" x2="168" y2="98"/>
+            <line x1="186" y1="82" x2="180" y2="100"/>
+            <line x1="196" y1="84" x2="192" y2="100"/>
+          </g>
+          <text x="14" y="172" font-size="12" fill="#6b7376">lukewarm — test on your wrist — soak to the skin</text>
+        </svg>
+        <h4>2. Wet thoroughly, avoid the face</h4>
+        <p>Soak the coat all the way to the skin with lukewarm water, from the neck back. Keep it off the face for now — you'll do the head last, by hand.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of lathering pet shampoo from neck to tail with massaging hands, while the head is wiped separately with a damp cloth">
+          <rect x="14" y="150" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="156" cy="116" rx="86" ry="36" fill="#c9a06b"/>
+          <circle cx="90" cy="104" r="28" fill="#c9a06b"/>
+          <circle cx="80" cy="102" r="3" fill="#33393b"/>
+          <!-- lather on back -->
+          <g fill="#fffdf8">
+            <circle cx="140" cy="92" r="13"/>
+            <circle cx="166" cy="86" r="11"/>
+            <circle cx="192" cy="92" r="12"/>
+            <circle cx="216" cy="100" r="10"/>
+          </g>
+          <!-- hands massaging -->
+          <ellipse cx="150" cy="80" rx="12" ry="8" fill="#f3ddc0" transform="rotate(-20 150 80)"/>
+          <ellipse cx="196" cy="82" rx="12" ry="8" fill="#f3ddc0" transform="rotate(18 196 82)"/>
+          <!-- damp cloth on head -->
+          <path d="M70 84 q14 -8 26 -2 l-4 12 q-12 4 -22 -2 z" fill="#dce8ee"/>
+          <text x="48" y="64" font-size="11" fill="#6b7376">head: damp cloth</text>
+          <line x1="64" y1="68" x2="84" y2="82" stroke="#6b7376" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <text x="14" y="172" font-size="12" fill="#6b7376">lather neck → tail, massage to the skin</text>
+        </svg>
+        <h4>3. Lather neck to tail</h4>
+        <p>Work pet shampoo down to the skin from the neck back — belly, legs, under the tail. Clean the head and face last with a damp cloth so soap never runs into eyes or ears.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram emphasizing the rinse step, with clean water sheeting off a coat until it runs clear, labeled as the number one cause of post-bath itching if skipped">
+          <rect x="14" y="150" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="150" cy="118" rx="86" ry="34" fill="#c9a06b"/>
+          <circle cx="84" cy="106" r="26" fill="#c9a06b"/>
+          <circle cx="74" cy="104" r="3" fill="#33393b"/>
+          <!-- sprayer -->
+          <g transform="rotate(28 206 56)">
+            <rect x="188" y="46" width="40" height="16" rx="8" fill="#5e9a78"/>
+            <rect x="222" y="50" width="18" height="8" rx="4" fill="#3e7c59"/>
+          </g>
+          <!-- water sheeting off, clear -->
+          <g stroke="#7fb3c8" stroke-width="3" stroke-linecap="round">
+            <line x1="180" y1="74" x2="170" y2="96"/>
+            <line x1="190" y1="78" x2="182" y2="100"/>
+            <line x1="200" y1="80" x2="194" y2="100"/>
+            <line x1="120" y1="138" x2="116" y2="150"/>
+            <line x1="150" y1="140" x2="148" y2="151"/>
+            <line x1="180" y1="138" x2="178" y2="150"/>
+          </g>
+          <text x="14" y="74" font-size="11" fill="#3e7c59" font-weight="700">rinse until water runs clear</text>
+          <text x="14" y="172" font-size="12" fill="#d9663f" font-weight="700">leftover shampoo = the #1 cause of post-bath itch</text>
+        </svg>
+        <h4>4. Rinse completely</h4>
+        <p>Then rinse some more. Shampoo residue trapped in the coat is the single biggest cause of itching after a bath — keep going until the water sheeting off runs perfectly clear, paying attention to the belly, armpits, and folds.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of towel-drying a pet and finishing with a cool low blow dryer, then giving a treat reward">
+          <rect x="14" y="150" width="252" height="4" rx="2" fill="#d8cfbe"/>
+          <ellipse cx="120" cy="116" rx="78" ry="34" fill="#c9a06b"/>
+          <circle cx="62" cy="104" r="26" fill="#c9a06b"/>
+          <circle cx="52" cy="102" r="3" fill="#33393b"/>
+          <!-- towel draped over -->
+          <path d="M70 86 q60 -16 116 4 l-6 22 q-56 -16 -106 0 z" fill="#d9663f"/>
+          <path d="M70 86 q60 -16 116 4" stroke="#c0512f" stroke-width="2" fill="none"/>
+          <!-- dryer -->
+          <g transform="rotate(-18 232 70)">
+            <rect x="214" y="62" width="40" height="18" rx="9" fill="#7fb3c8"/>
+            <rect x="206" y="64" width="12" height="14" rx="4" fill="#5f93ad"/>
+            <rect x="230" y="80" width="10" height="16" rx="4" fill="#5f93ad"/>
+          </g>
+          <!-- cool air -->
+          <g stroke="#bfdce8" stroke-width="3" stroke-linecap="round">
+            <line x1="196" y1="74" x2="184" y2="80"/>
+            <line x1="198" y1="84" x2="186" y2="90"/>
+          </g>
+          <!-- treat -->
+          <g transform="rotate(-10 40 138)">
+            <rect x="24" y="134" width="32" height="9" rx="4.5" fill="#e0a93d"/>
+            <circle cx="26" cy="134" r="5" fill="#e0a93d"/>
+            <circle cx="26" cy="143" r="5" fill="#e0a93d"/>
+            <circle cx="56" cy="134" r="5" fill="#e0a93d"/>
+            <circle cx="56" cy="143" r="5" fill="#e0a93d"/>
+          </g>
+          <text x="14" y="172" font-size="12" fill="#6b7376">towel, then cool / low dryer — dry to the skin</text>
+        </svg>
+        <h4>5. Dry fully, then reward</h4>
+        <p>Towel hard, then finish with a dryer on cool / low if your pet tolerates it — especially double coats and skin folds, where damp fur breeds hot spots. End on a treat so the next bath is easier.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Bath progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done — clean coat, healthy skin, happy pet. See you at the next bath.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / WHEN TO CALL A PRO ============ -->
+  <section id="signs">
+    <h2>When to call a vet or groomer</h2>
+    <p class="sub">A bath is upkeep, not treatment. Some things a clean coat reveals are skin or health problems that more bathing won't fix — and some pets and coats are genuinely a job for a professional. Reach out when you see:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A strong odor that comes right back after a proper bath.</strong> Persistent smell — yeasty, musty, or "off" — often points to a skin or ear infection rather than dirt. That's a <a href="trim-pet-nails.html">vet checkup</a> conversation, not a second wash.</li>
+        <li><strong>A greasy, flaky, or thinning coat.</strong> Seborrhea, allergies, and hormonal issues all show up as greasy or scaly skin and hair loss. Bathing manages symptoms at best; the underlying cause needs a diagnosis.</li>
+        <li><strong>Red, itchy skin, scabs, or hot spots.</strong> Raw, weepy patches and relentless scratching are inflamed skin, not grime — they can worsen fast and often need medicated shampoo or meds from a vet.</li>
+        <li><strong>Fleas or "flea dirt" in the coat.</strong> A bath washes a few out but is not a treatment. Pair it with a real <a href="flea-tick-treatment.html">flea &amp; tick preventive</a> — bathing alone won't break the cycle.</li>
+        <li><strong>Heavy matting.</strong> Tight, widespread mats are painful to work out and trap moisture and infection against the skin. A groomer can shave them safely; pulling at them at home hurts and can tear skin.</li>
+        <li><strong>An anxious or aggressive bather.</strong> If bath time means thrashing, snapping, or genuine panic, a professional groomer with the right restraint and handling is safer for everyone — and kinder than forcing it.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Can I just use my own shampoo on my dog?</summary>
+      <p>No — not as a routine. Human shampoo (and dish soap) is formulated for human skin, which is more acidic than a dog's or cat's. Used regularly it strips the protective oils and disrupts the skin barrier, leaving the skin dry, flaky, and itchy — exactly what you were trying to avoid. Buy a pet shampoo; for sensitive or itchy skin, ask your vet for a gentle or medicated one. (A single emergency dab of dish soap to cut grease, oil, or skunk is fine — just don't make it your everyday wash.)</p>
+    </details>
+    <details>
+      <summary>How often do cats need baths?</summary>
+      <p>Rarely. Healthy cats are meticulous self-groomers and a bath is stressful for most of them, so the default is "leave it to them." Spot-clean a dirty patch with a damp cloth and reach for a full bath only when there's a real reason: they've gotten into something toxic or sticky, they're too old, arthritic, or overweight to groom their back end, a medical/medicated-shampoo need, or a hairless breed (see below). When you do bathe a cat, the same rules apply — cat-safe shampoo, lukewarm water, and a very calm, quick session.</p>
+    </details>
+    <details>
+      <summary>Does bathing get rid of fleas?</summary>
+      <p>It helps a little but it is not a treatment. A sudsy bath drowns and washes out some adult fleas, and that can feel like progress — but the eggs, larvae, and pupae in your pet's environment are untouched, and new fleas hop right back on. To actually break the cycle you need a real flea product (a vet-recommended monthly preventive) plus treating the home. Use the bath as a comfort measure and a chance to flea-comb, then handle the infestation properly. See our <a href="flea-tick-treatment.html">flea &amp; tick guide</a>.</p>
+    </details>
+    <details>
+      <summary>How do I bathe a dog that hates water?</summary>
+      <p>Go slow and make it pay. Start with the tub empty and dry — let them stand in it for treats over a few days so it stops being scary. Then add a non-slip mat, lukewarm (never cold) water poured gently from a cup rather than a loud sprayer, and a steady stream of high-value treats throughout, not just at the end. Keep early baths short, stay calm (your stress travels right down the leash), and end on a win even if you didn't finish. A lick mat smeared with peanut butter on the wall is a small miracle here. If it's still a battle, a groomer is a perfectly good answer.</p>
+    </details>
+    <details>
+      <summary>Do I really need to dry them all the way?</summary>
+      <p>Yes — especially double coats, long coats, and any skin folds. Damp fur held against the skin is warm and dark, which is exactly where hot spots, yeast, and bacterial infections start. Towel hard first, then finish with a dryer on a cool or low setting if your pet tolerates it, working down to the skin rather than just fluffing the surface. Pay special attention to the armpits, groin, the base of the ears, and the wrinkles on flat-faced and folded breeds.</p>
+    </details>
+    <details>
+      <summary>Won't bathing too often dry out their skin?</summary>
+      <p>It can — that's the whole reason frequency matters. Each wash removes some of the natural oils that waterproof and protect the skin; bathe faster than those oils replenish and you get the dry, itchy, flaky skin that tempts people to bathe <em>even more</em>. That's the trap. For most pets the sweet spot is brushing often and bathing on the schedule the quiz above suggests — not whenever they look slightly less than pristine. If your pet is prone to dry skin, stretch the interval and use a moisturizing or vet-recommended shampoo.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The right interval only works if you remember it.</h2>
+        <p>Bathing is a balancing act — too seldom and the coat suffers, too often and the skin does. The fix is a steady rhythm, and a rhythm is a memory problem. Upkeep Ledger logs each bath and nudges you when the next one's due, for every pet, alongside grooming, flea meds, vet visits, and every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=bathe-pet&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=bathe-pet&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes. This is general guidance, not veterinary advice — for persistent odor, itching, hair loss, hot spots, or any skin concern, talk to your vet.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { coat: null, life: null, skin: null, dirt: null };
+
+  // Base interval in weeks, by pet & coat type. Default ~ every 4 weeks (typical dog).
+  var COAT_BASE = {
+    short: 7,      // short-coat dog: every 6–8 weeks, or as needed
+    double: 10,    // double-coated: bathe seldom, brush more
+    long: 4,       // long / curly: ~ monthly to stay mat-free
+    hairless: 1,   // hairless breeds: weekly wipe / bath
+    cat: 26        // cats rarely need baths — self-groom
+  };
+
+  function freqLabel(w) {
+    if (w <= 1) return "About every week";
+    if (w >= 20) return "Rarely — only as needed";
+    if (w === 4) return "About every 4 weeks";
+    if (w >= 6 && w <= 8) return "Every 6–8 weeks";
+    return "About every " + w + " weeks";
+  }
+
+  function computePlan(s) {
+    var reasons = [];
+    var weeks = COAT_BASE[s.coat];
+
+    // --- coat baseline reasoning ---
+    if (s.coat === "short") {
+      reasons.push("A short-coat dog's natural oils do a lot of the work — every 6–8 weeks (or simply as needed) keeps the skin barrier intact. Washing more often than that tends to dry the skin, not clean it better.");
+    } else if (s.coat === "double") {
+      reasons.push("Double-coated breeds are the classic \"bathe seldom, brush often\" case: that dense undercoat is self-cleaning and slow to dry, and over-bathing strips the oils that insulate it. Frequent brushing — not frequent baths — is what keeps the coat healthy.");
+    } else if (s.coat === "long") {
+      reasons.push("Long and curly coats mat easily and hold dirt, so a roughly monthly bath (always preceded by a thorough brush-out) keeps things manageable — pair it with conditioner to help combing.");
+    } else if (s.coat === "hairless") {
+      reasons.push("Hairless breeds have no coat to absorb skin oils, so oil and grime build up directly on the skin — most need a gentle wipe-down or bath about weekly to prevent clogged pores and blackheads.");
+    } else if (s.coat === "cat") {
+      reasons.push("Cats are expert self-groomers, so the honest default is \"almost never.\" Spot-clean a dirty patch with a damp cloth, and reserve a full bath for when they're genuinely dirty, got into something, can't groom themselves (senior, arthritic, overweight), or a vet advises it.");
+    }
+
+    // --- lifestyle ---
+    if (s.coat !== "cat") {
+      if (s.life === "couch") {
+        reasons.push("An indoor, mostly-clean life means there's little to wash off — let the coat and a good brush do the maintenance, and lean toward the longer end of the range.");
+      } else if (s.life === "active") {
+        reasons.push("Yard time and daily walks bring in pollen, dust, and the occasional mud — a moderate, steady schedule keeps that from building up.");
+        if (s.coat !== "double" && s.coat !== "hairless") weeks -= 1;
+      } else if (s.life === "messy") {
+        reasons.push("An outdoorsy pet that swims, hikes, or rolls in things will earn extra baths — expect to wash on the shorter end and \"as needed\" on top of it. For active or smelly dogs that often means every 2–4 weeks.");
+        if (s.coat !== "double" && s.coat !== "hairless") weeks -= 2;
+        else if (s.coat === "double") weeks -= 2; // even double coats get washed after a real mess
+      }
+    } else if (s.life === "messy") {
+      reasons.push("A cat that actually goes outside and gets into things is the exception that may need the occasional real bath — but spot-clean first and keep full baths rare and calm.");
+    }
+
+    // --- skin / allergies ---
+    if (s.skin === "petskin") {
+      reasons.push("Because your pet already has dry or itchy skin, err toward fewer baths with a gentle or vet-recommended moisturizing shampoo — over-bathing is a leading cause of the very dryness you're managing. Ask your vet what fits.");
+      if (s.coat !== "hairless") weeks += 2;
+    } else if (s.skin === "human") {
+      reasons.push("Since someone in the home is allergic to pets, a more regular bath measurably lowers the dander and saliva allergens in the coat — bathe a touch more often, but stop short of drying out the skin, and pair it with frequent brushing and wiping between baths.");
+      if (s.coat !== "double" && s.coat !== "hairless" && s.coat !== "cat") weeks -= 1;
+    } else {
+      reasons.push("No known skin issues, so coat and lifestyle drive the schedule — keep an eye out, and dial back if you ever see flaking or itching after baths.");
+    }
+
+    // --- current dirt / odor ---
+    if (s.dirt === "lots") {
+      reasons.push("Right now they clearly need one — give them a bath today regardless of the calendar. The interval above is for going forward.");
+    } else if (s.dirt === "some") {
+      reasons.push("A little odor or dirt is a reasonable nudge — a bath soon is fine, then settle into the schedule above.");
+    } else {
+      reasons.push("They're fresh at the moment, so there's no rush — bathe on the schedule above, or simply when they next actually need it.");
+    }
+
+    reasons.push("Whatever the number, the real rule is \"and as needed when they're dirty\" — and brushing between baths does most of the day-to-day coat care.");
+
+    // clamp to a sensible band, but let cats stay rare
+    if (s.coat === "cat") {
+      weeks = Math.max(8, weeks);
+    } else {
+      weeks = Math.max(1, Math.min(12, weeks));
+    }
+
+    return { weeks: weeks, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.coat || !quizState.life || !quizState.skin || !quizState.dirt) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your routine: " + freqLabel(r.weeks).toLowerCase();
+
+    var bodyHtml;
+    if (quizState.coat === "cat") {
+      bodyHtml = "Translation: <strong>don't bathe on a calendar at all</strong> — spot-clean and bathe only when there's a real reason. Why this fits:";
+    } else if (r.weeks >= 9) {
+      bodyHtml = "That's the <strong>bathe-seldom, brush-often</strong> end of the range — protect the coat and skin, and let brushing carry the routine. Why:";
+    } else {
+      bodyHtml = "That's about <strong>" + Math.round(52 / r.weeks) + " baths a year</strong> — always with a brush-out first and a full rinse and dry. Why this schedule:";
+    }
+    document.getElementById("resultBody").innerHTML = bodyHtml;
+
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+
+    // sync the groomer-cost figures to this schedule (cap at monthly for the estimate)
+    var baths = Math.max(1, Math.round(52 / r.weeks));
+    updateCost(Math.min(12, baths));
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Cost comparison ================= */
+  function money(n) { return "$" + Math.round(n).toLocaleString("en-US"); }
+
+  var GROOMER_VISIT = 30; // low end of typical $30–90+ groomer bath
+  var DIY_YEAR = 25;      // a year of pet shampoo + a couple of towels
+
+  function updateCost(visitsPerYear) {
+    var groomerYear = visitsPerYear * GROOMER_VISIT;
+    document.getElementById("groomerYear").textContent = money(groomerYear) + "/yr";
+    document.getElementById("groomerYearLabel").textContent =
+      "groomer baths at $30–90+ per visit, " + visitsPerYear + "× a year";
+    document.getElementById("barGroomerVal").textContent = "≈ " + money(groomerYear);
+    // bars scale against the largest figure on the chart
+    var max = Math.max(groomerYear, 400, DIY_YEAR);
+    document.getElementById("barGroomer").style.width = (groomerYear / max) * 100 + "%";
+    document.getElementById("barDiy").style.width = Math.max(2, (DIY_YEAR / max) * 100) + "%";
+    document.getElementById("barVet").style.width = (400 / max) * 100 + "%";
+  }
+
+  updateCost(12); // default: monthly, typical dog
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Brush out the dry coat completely", note: "Comb out loose hair and any mats now — water shrinks knots into solid lumps that have to be shaved off. A pre-brush also saves your drain." },
+    { phase: "Prep", text: "Gather everything within arm's reach", note: "Pet shampoo (and conditioner for long coats), non-slip mat, cup or sprayer, two or three towels, cotton balls, treats. Don't go hunting mid-bath with a wet animal." },
+    { phase: "Prep", text: "Tuck a cotton ball in each ear", note: "It keeps water out of the ear canal — trapped water is a classic cause of ear infections. Remove them after." },
+    { phase: "Prep", text: "Run lukewarm water and test it on your wrist", note: "Baby-bottle warm. Water that feels only \"warm\" to you can scald a pet and dries the skin; cold water makes the whole thing a fight." },
+    { phase: "Bathe", text: "Wet thoroughly, from the neck back", note: "Soak the coat all the way to the skin, keeping water off the face for now. A handheld sprayer or a cup both work — pour gently for nervous pets." },
+    { phase: "Bathe", text: "Lather pet shampoo neck to tail", note: "Massage it down to the skin — belly, legs, under the tail. Pet shampoo only, never human shampoo or dish soap as a routine (wrong pH, dries the skin)." },
+    { phase: "Bathe", text: "Clean the head gently, by hand", note: "Wash the face and head last with a damp cloth, not by pouring. Keep soap and water out of the eyes and ears." },
+    { phase: "Bathe", text: "Rinse completely — then rinse more", note: "Leftover shampoo is the #1 cause of post-bath itching. Rinse until the water runs perfectly clear, especially the belly, armpits, and any folds." },
+    { phase: "Dry & reward", text: "Towel dry hard", note: "Press and blot rather than rough-rubbing long coats (that creates tangles). Most of the water should come out on the towel." },
+    { phase: "Dry & reward", text: "Finish drying — cooler dryer if tolerated", note: "Dry down to the skin, especially double coats and skin folds — damp fur breeds hot spots. Use a dryer on cool / low, or air-dry somewhere warm and draft-free." },
+    { phase: "Dry & reward", text: "Brush out the dry coat again", note: "A final brush-through prevents tangles from setting as the coat dries, and lets you do one last feel for lumps, scabs, or parasites." },
+    { phase: "Dry & reward", text: "Big treat — and note the date", note: "End on a clear win so the next bath is easier. Log the date so you bathe on schedule instead of guessing." }
+  ];
+
+  var LS_KEY = "upkeepguides:bathe-pet:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annual digital cleanup — UpkeepGuides.com</title>
+<meta name="description" content="A once-a-year digital cleanup: find and cancel forgotten subscriptions, close old accounts, shore up your passwords and 2FA, and clear out storage — what it saves and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Annual digital cleanup — UpkeepGuides.com">
+<meta property="og:description" content="A once-a-year digital cleanup: find and cancel forgotten subscriptions, close old accounts, shore up your passwords and 2FA, and clear out storage — what it saves and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/digital-cleanup.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Annual digital cleanup — UpkeepGuides.com">
+<meta name="twitter:description" content="A once-a-year digital cleanup: find and cancel forgotten subscriptions, close old accounts, shore up your passwords and 2FA, and clear out storage — what it saves and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .rule-score { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .rule-score .rule-pill {
+    background: var(--card); border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 5px 14px; font-size: 13.5px; font-weight: 700; color: var(--ink-soft);
+  }
+  .rule-score .rule-pill.met { border-color: var(--accent); color: var(--accent-deep); background: #fffdf8; }
+  .rule-score .rule-pill.miss { border-color: var(--warn); color: var(--warn); background: var(--warn-soft); }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .bar-fill.mid { background: var(--gold); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Savings</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Once a year</span>
+      <h1>Do Your Annual Digital Cleanup</h1>
+      <p class="lede">Somewhere in your statements is a subscription you forgot you had — maybe three. Once a year, sweep through them, cancel what you don't use, then tidy the rest of your digital life: close dead accounts, fix weak passwords, and clear out the storage that's quietly costing you. It's the rare chore that pays you back.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ <em>Once a year</em>, ~2–3 hours</span>
+        <span class="chip">💸 Often finds <em>$10–50+/mo</em> to cancel</span>
+        <span class="chip">🔒 Closes <em>old breach risks</em></span>
+        <span class="chip">🧹 Frees up <em>storage you pay for</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tidy desk: a laptop showing a list of subscriptions with several being cancelled and money flowing back to a wallet, beside a phone with a shield and lock for security, and a cleared-out storage bar — the annual digital cleanup in progress">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="64" cy="60" r="20" fill="#f2cf7a"/>
+      <!-- coins floating back / savings -->
+      <circle cx="96" cy="120" r="16" fill="#e0a93d"/>
+      <text x="96" y="126" font-size="16" font-weight="800" fill="#fffdf8" text-anchor="middle">$</text>
+      <circle cx="128" cy="92" r="11" fill="#d98e3b"/>
+      <text x="128" y="97" font-size="11" font-weight="800" fill="#fffdf8" text-anchor="middle">$</text>
+      <!-- laptop: subscription list -->
+      <rect x="98" y="158" width="246" height="150" rx="12" fill="#8a6a4f"/>
+      <rect x="110" y="170" width="222" height="126" rx="6" fill="#fffdf8"/>
+      <rect x="122" y="182" width="92" height="10" rx="5" fill="#b9b1a3"/>
+      <circle cx="320" cy="187" r="6" fill="#5e9a78"/>
+      <!-- subscription rows: two cancelled (terracotta strike), two kept (green) -->
+      <rect x="122" y="204" width="198" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="122" y="204" width="120" height="14" rx="7" fill="#3e7c59"/>
+      <rect x="122" y="226" width="198" height="14" rx="7" fill="#fbe9e1"/>
+      <rect x="122" y="226" width="92" height="14" rx="7" fill="#d9663f"/>
+      <line x1="126" y1="233" x2="316" y2="233" stroke="#c96f4a" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="122" y="248" width="198" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="122" y="248" width="74" height="14" rx="7" fill="#5e9a78"/>
+      <rect x="122" y="270" width="198" height="14" rx="7" fill="#fbe9e1"/>
+      <rect x="122" y="270" width="138" height="14" rx="7" fill="#d9663f"/>
+      <line x1="126" y1="277" x2="316" y2="277" stroke="#c96f4a" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- laptop base -->
+      <rect x="80" y="306" width="282" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="196" y="306" width="50" height="7" rx="3.5" fill="#8a6a4f"/>
+      <!-- arrow: cancellations -> wallet (money back) -->
+      <path d="M150 330 Q120 360 92 372" stroke="#e0a93d" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 11"/>
+      <polygon points="100,362 88,378 84,360" fill="#e0a93d"/>
+      <!-- wallet -->
+      <rect x="40" y="372" width="74" height="44" rx="9" fill="#8a6a4f"/>
+      <rect x="40" y="372" width="74" height="13" rx="6.5" fill="#c9a06b"/>
+      <rect x="84" y="388" width="26" height="16" rx="6" fill="#5e9a78"/>
+      <circle cx="97" cy="396" r="4" fill="#e0a93d"/>
+      <!-- phone: security shield -->
+      <rect x="404" y="180" width="84" height="156" rx="15" fill="#2c5a40"/>
+      <rect x="412" y="196" width="68" height="116" rx="7" fill="#fffdf8"/>
+      <!-- shield with lock -->
+      <path d="M446 210 l26 9 v22 c0 20 -14 30 -26 36 c-12 -6 -26 -16 -26 -36 v-22 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+      <rect x="438" y="247" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <path d="M441 247 v-4 a5 5 0 0 1 10 0 v4" stroke="#3e7c59" stroke-width="2.5" fill="none"/>
+      <circle cx="446" cy="253" r="2.2" fill="#fffdf8"/>
+      <!-- 2FA check below -->
+      <circle cx="446" cy="294" r="11" fill="#e0a93d"/>
+      <path d="M441 294 l3.5 3.5 l6 -7" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="446" cy="326" r="4" fill="#5e9a78"/>
+      <!-- storage bar: freed up -->
+      <rect x="372" y="356" width="150" height="20" rx="10" fill="#dce8ee"/>
+      <rect x="372" y="356" width="54" height="20" rx="10" fill="#7fb3c8"/>
+      <text x="448" y="392" font-size="12" fill="#6b7376" text-anchor="middle">storage freed</text>
+      <!-- broom / sweep motif -->
+      <rect x="338" y="362" width="6" height="40" rx="3" fill="#8a6a4f" transform="rotate(28 341 382)"/>
+      <path d="M352 392 l20 10 l-6 14 l-22 -10 z" fill="#e0a93d" transform="rotate(28 360 404)"/>
+      <!-- plant -->
+      <path d="M520 360 q4 -26 -8 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M520 360 q-4 -24 -16 -32" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="508" cy="320" rx="9" ry="14" fill="#5e9a78" transform="rotate(-26 508 320)"/>
+      <ellipse cx="524" cy="324" rx="9" ry="14" fill="#3e7c59" transform="rotate(26 524 324)"/>
+      <path d="M504 360 h32 l-5 30 h-22 z" fill="#c96f4a"/>
+      <rect x="500" y="354" width="40" height="10" rx="5" fill="#d9663f"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A year of digital drift is invisible until you go looking: charges you forgot to cancel, logins scattered across sites that got breached, storage creeping toward full. One annual sweep undoes all of it at once (figures below are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="9" width="26" height="18" rx="3" fill="#7fb3c8"/>
+          <rect x="5" y="13" width="26" height="4" fill="#33393b"/>
+          <rect x="9" y="21" width="11" height="3" rx="1.5" fill="#fffdf8"/>
+          <circle cx="28" cy="26" r="7" fill="#d9663f"/>
+          <path d="M25 26 h6 M28 23 v6" stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Forgotten subscriptions drain you</h3>
+        <p>Free trials convert to paid, prices tick up, and "I'll cancel later" never comes. Surveys consistently find people underestimate their subscription spend by a wide margin — money leaving every month for things you stopped using.</p>
+        <span class="cost">Often $10–50+/mo unnoticed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 l13 5 v9 c0 9 -7 14 -13 18 c-6 -4 -13 -9 -13 -18 V9 z" fill="#d9663f"/>
+          <path d="M18 4 l13 5 v9 c0 9 -7 14 -13 18 z" fill="#c96f4a"/>
+          <path d="M12 18 l4 4 l9 -10" stroke="#fffdf8" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
+          <line x1="11" y1="13" x2="25" y2="25" stroke="#fffdf8" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="25" y1="13" x2="11" y2="25" stroke="#fffdf8" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Old accounts are a breach risk</h3>
+        <p>Every dormant account is a copy of your data sitting on a server you've stopped watching — and a reused password there can unlock the accounts you do care about. Closing the ones you no longer use shrinks your exposure.</p>
+        <span class="cost">A reused password = a domino</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="24" height="6" rx="3" fill="#b9b1a3"/>
+          <rect x="6" y="16" width="24" height="6" rx="3" fill="#b9b1a3"/>
+          <rect x="6" y="24" width="24" height="6" rx="3" fill="#d9663f"/>
+          <circle cx="11" cy="11" r="1.6" fill="#5e9a78"/>
+          <circle cx="11" cy="19" r="1.6" fill="#5e9a78"/>
+          <circle cx="11" cy="27" r="1.6" fill="#fffdf8"/>
+        </svg></div>
+        <h3>Full storage costs money</h3>
+        <p>When iCloud, Google, or your phone fills up, the prompt is always "upgrade your plan." Years of duplicate photos, old downloads, and giant attachments quietly push you onto a paid tier — and bury the files you actually need.</p>
+        <span class="cost">Paid-storage upgrades add up</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="14" width="24" height="16" rx="3" fill="#3e7c59"/>
+          <path d="M11 14 v-3.5 a7 7 0 0 1 14 0 V14" stroke="#8a6a4f" stroke-width="2.5" fill="none"/>
+          <circle cx="18" cy="21" r="2.6" fill="#fffdf8"/>
+          <rect x="16.8" y="22" width="2.4" height="5" rx="1.2" fill="#fffdf8"/>
+        </svg></div>
+        <h3>Weak, reused passwords pile up</h3>
+        <p>The password you set in 2019 and reused everywhere is the single biggest hole in most people's security. One annual pass — fix the reused ones, switch on two-factor — closes the door that most breaches walk through.</p>
+        <span class="cost">Reuse turns one leak into many</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="6" width="24" height="24" rx="4" fill="#7fb3c8"/>
+          <rect x="9" y="9" width="18" height="3" rx="1.5" fill="#fffdf8"/>
+          <rect x="9" y="15" width="18" height="3" rx="1.5" fill="#dce8ee"/>
+          <rect x="9" y="21" width="12" height="3" rx="1.5" fill="#dce8ee"/>
+          <circle cx="27" cy="27" r="7" fill="#d9663f"/>
+          <line x1="24.5" y1="24.5" x2="29.5" y2="29.5" stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="29.5" y1="24.5" x2="24.5" y2="29.5" stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Inbox clutter buries what matters</h3>
+        <p>An inbox with tens of thousands of unread promos isn't just ugly — it's where the one important email (a fraud alert, a renewal notice) gets lost. A yearly unsubscribe-and-filter pass makes email usable again.</p>
+        <span class="cost">The real bill hides in the noise</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#e3efe8"/>
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="18" y1="18" x2="18" y2="10" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="18" y1="18" x2="23" y2="21" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M27 28 l3 3 l6 -7" stroke="#e0a93d" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>A yearly reset keeps it from snowballing</h3>
+        <p>Digital mess compounds: more accounts, more charges, more files, more risk every month you don't look. A single recurring appointment keeps your digital life organized, secure, and cheaper — instead of a someday-emergency.</p>
+        <span class="cost">Drift compounds quietly</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> sweep?</h2>
+    <p class="sub">Once a year is the right default for most people — but if you sign up for a lot of services or haven't touched your security in years, the subscription piece especially earns a more frequent check-in. Answer four questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="subs">
+        <div class="q-label">1. Roughly how many paid subscriptions and services do you have?</div>
+        <div class="pills">
+          <button class="pill" data-v="few">A handful (1–4)</button>
+          <button class="pill" data-v="some">Several (5–10)</button>
+          <button class="pill" data-v="many">Lots, or honestly no idea</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="track">
+        <div class="q-label">2. Do you actually track what you're subscribed to?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes, I have a list</button>
+          <button class="pill" data-v="no">Not really</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="security">
+        <div class="q-label">3. When did you last update passwords and turn on two-factor (2FA)?</div>
+        <div class="pills">
+          <button class="pill" data-v="recent">Within the last year</button>
+          <button class="pill" data-v="old">A few years ago</button>
+          <button class="pill" data-v="never">Never / not sure</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="storage">
+        <div class="q-label">4. Is your cloud or phone storage near full?</div>
+        <div class="pills">
+          <button class="pill" data-v="fine">Plenty of room</button>
+          <button class="pill" data-v="closeish">Getting there</button>
+          <button class="pill" data-v="full">Always full / paying for more</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <div class="rule-score" id="ruleScore" aria-label="Your digital cleanup scorecard"></div>
+        <ul id="resultSteps"></ul>
+        <div class="flip-note" id="cadenceNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST / SAVINGS ============ -->
+  <section id="cost">
+    <h2>What it saves you</h2>
+    <p class="sub">This is the rare upkeep task with a positive price tag — it usually <em>finds</em> money rather than costing it. The only real inputs are a couple of hours and a password manager that's free or a few dollars a month (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to run the sweep — your statements, app stores, and accounts are all you strictly need</div></div>
+        <div class="calc-stat"><div class="v">$120–600+</div><div class="l">a year, the kind of savings a single round of canceling unused subscriptions can add up to</div></div>
+        <div class="calc-stat"><div class="v bad">$0–10/mo</div><div class="l">a paid-storage tier you can often drop entirely once you clear out old files and duplicates</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧹 The cleanup itself</span><span>~2–3 hours, $0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔑 A password manager (yearly)</span><span>$0–40</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💸 A few forgotten subscriptions left running a year</span><span>often $120–600+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">The math runs the other way from most chores: a couple of canceled subscriptions usually <strong>pays for the password manager many times over</strong> and still leaves money in your pocket — before you count the storage upgrade you can drop and the breach you may have just avoided. The hard part isn't cost, it's <strong>remembering to do it once a year</strong>.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to run your annual cleanup</h2>
+    <p class="sub">Five passes, in this order: chase down the money first (it's the payoff), then security, then storage and inbox. The diagrams show the shape of each pass; the checklist below walks the whole thing, and your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Do this safely — a few rules before you start</h3>
+      <ul>
+        <li><strong>Only change passwords and settings in the official app or site itself</strong> — type the address yourself or use a saved bookmark. Never follow a link from an email or text asking you to "verify" or "update" your account; that's how phishing works.</li>
+        <li><strong>Use a reputable password manager, not your memory.</strong> Reusing one password everywhere is the core problem; a manager generates and stores a unique one per site so you never have to.</li>
+        <li><strong>Before you delete files, make sure they're backed up.</strong> If you don't have a backup routine yet, set one up first — see our <a href="backup-data.html">backup guide</a> — then delete with confidence.</li>
+        <li><strong>Closing some accounts is permanent</strong> and may erase order history, photos, or purchases. Read what "delete" actually removes, and export anything you might want first.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Recent bank + credit-card statements</span>
+      <span class="tool-chip">Your app-store subscription list (Apple / Google)</span>
+      <span class="tool-chip">Email "promotions"/receipts to scan for renewals</span>
+      <span class="tool-chip">A password manager (free or low-cost)</span>
+      <span class="tool-chip">A backup destination (drive or cloud)</span>
+      <span class="tool-chip">A couple of quiet hours</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five passes worth understanding</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of hunting recurring charges: three sources — bank statements, the app store, and account settings — all feeding into one master list, with unused items marked for cancellation">
+          <rect x="14" y="20" width="74" height="30" rx="6" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2.5"/>
+          <text x="51" y="39" font-size="10.5" fill="#33393b" font-weight="700" text-anchor="middle">statements</text>
+          <rect x="14" y="74" width="74" height="30" rx="6" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2.5"/>
+          <text x="51" y="93" font-size="10.5" fill="#33393b" font-weight="700" text-anchor="middle">app store</text>
+          <rect x="14" y="128" width="74" height="30" rx="6" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2.5"/>
+          <text x="51" y="147" font-size="10.5" fill="#33393b" font-weight="700" text-anchor="middle">accounts</text>
+          <path d="M90 35 q24 0 30 38" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+          <path d="M90 89 h28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+          <path d="M90 143 q24 0 30 -38" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+          <rect x="126" y="44" width="138" height="92" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="136" y="54" width="80" height="9" rx="4.5" fill="#3e7c59"/>
+          <rect x="136" y="70" width="118" height="9" rx="4.5" fill="#e3efe8"/>
+          <rect x="136" y="86" width="118" height="9" rx="4.5" fill="#fbe9e1"/>
+          <line x1="138" y1="90.5" x2="252" y2="90.5" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+          <rect x="136" y="102" width="118" height="9" rx="4.5" fill="#e3efe8"/>
+          <rect x="136" y="118" width="118" height="9" rx="4.5" fill="#fbe9e1"/>
+          <line x1="138" y1="122.5" x2="252" y2="122.5" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+          <text x="195" y="63" font-size="9.5" fill="#fffdf8" font-weight="700" text-anchor="middle">one master list</text>
+        </svg>
+        <h4>1 · Hunt the recurring charges</h4>
+        <p>Pull every recurring charge from three places — statements, app-store subscriptions, and each account's "manage subscription" page — into one list. Then cancel everything you don't actually use.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of closing old accounts: a row of account cards, with the dormant ones being dropped into a trash bin while the active ones stay">
+          <rect x="22" y="36" width="48" height="60" rx="7" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <circle cx="46" cy="56" r="9" fill="#e3efe8"/>
+          <rect x="30" y="72" width="32" height="6" rx="3" fill="#5e9a78"/>
+          <rect x="30" y="83" width="22" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="84" y="36" width="48" height="60" rx="7" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <circle cx="108" cy="56" r="9" fill="#e3efe8"/>
+          <rect x="92" y="72" width="32" height="6" rx="3" fill="#5e9a78"/>
+          <rect x="92" y="83" width="22" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="150" y="32" width="48" height="60" rx="7" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.5" transform="rotate(-9 174 62)"/>
+          <circle cx="172" cy="52" r="9" fill="#f4cdbd" transform="rotate(-9 172 52)"/>
+          <path d="M120 120 q40 26 80 6" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 8"/>
+          <polygon points="206,118 214,134 196,132" fill="#d9663f"/>
+          <rect x="216" y="118" width="44" height="40" rx="5" fill="#8a6a4f"/>
+          <rect x="210" y="110" width="56" height="9" rx="4.5" fill="#c9a06b"/>
+          <rect x="232" y="106" width="12" height="6" rx="3" fill="#c9a06b"/>
+          <line x1="226" y1="126" x2="230" y2="150" stroke="#fffdf8" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="238" y1="126" x2="238" y2="150" stroke="#fffdf8" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="250" y1="126" x2="246" y2="150" stroke="#fffdf8" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="100" y="166" font-size="11" fill="#6b7376">keep what's active · close the dead ones</text>
+        </svg>
+        <h4>2 · Close old accounts &amp; apps</h4>
+        <p>Every account you abandoned still holds your data — and often a reused password. Delete the ones you no longer use, and uninstall apps you haven't opened in a year.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of shoring up security: a weak reused password being replaced by a strong unique one in a password manager, plus a phone showing a two-factor approval">
+          <rect x="20" y="30" width="120" height="26" rx="6" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <text x="32" y="47" font-size="12" fill="#d9663f" font-weight="700" font-family="monospace">123456 ✕3</text>
+          <path d="M80 60 v18" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="74,74 80,86 86,74" fill="#3e7c59"/>
+          <rect x="20" y="90" width="120" height="26" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="32" y="107" font-size="12" fill="#2c5a40" font-weight="700" font-family="monospace">●●●●●●●●●●</text>
+          <rect x="18" y="124" width="124" height="22" rx="6" fill="#3e7c59"/>
+          <rect x="26" y="131" width="14" height="8" rx="2" fill="#fffdf8"/>
+          <path d="M28 131 v-2 a3 3 0 0 1 10 0 v2" stroke="#fffdf8" stroke-width="1.5" fill="none"/>
+          <text x="52" y="139" font-size="10" fill="#fffdf8" font-weight="700">password manager</text>
+          <rect x="190" y="34" width="60" height="108" rx="11" fill="#2c5a40"/>
+          <rect x="197" y="46" width="46" height="84" rx="5" fill="#fffdf8"/>
+          <circle cx="220" cy="80" r="16" fill="#e3efe8"/>
+          <path d="M213 80 l5 5 l9 -11" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="205" y="104" width="30" height="7" rx="3.5" fill="#d8cfbe"/>
+          <text x="220" y="126" font-size="9" fill="#6b7376" text-anchor="middle">2FA: approve</text>
+          <path d="M150 90 h28" stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 6"/>
+          <polygon points="176,84 188,90 176,96" fill="#e0a93d"/>
+        </svg>
+        <h4>3 · Shore up security</h4>
+        <p>Replace weak and reused passwords with unique ones in a password manager, switch on two-factor authentication everywhere it's offered, and skim each account's privacy settings.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of decluttering storage: a nearly full storage bar with duplicate photos and a downloads folder being cleared, dropping the bar to mostly empty with a backup copy saved to a drive">
+          <text x="20" y="30" font-size="11" fill="#6b7376">before</text>
+          <rect x="20" y="38" width="150" height="18" rx="9" fill="#dce8ee"/>
+          <rect x="20" y="38" width="134" height="18" rx="9" fill="#d9663f"/>
+          <text x="20" y="86" font-size="11" fill="#6b7376">after</text>
+          <rect x="20" y="94" width="150" height="18" rx="9" fill="#dce8ee"/>
+          <rect x="20" y="94" width="46" height="18" rx="9" fill="#5e9a78"/>
+          <path d="M178 47 h28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <polygon points="204,41 216,47 204,53" fill="#3e7c59"/>
+          <!-- duplicate photos cleared -->
+          <rect x="190" y="64" width="34" height="28" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="198" y="58" width="34" height="28" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="208" cy="70" r="3.5" fill="#e0a93d"/>
+          <path d="M202 80 l5 -5 l4 4 l5 -6 l5 6" stroke="#5e9a78" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="230" y1="56" x2="244" y2="70" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="244" y1="56" x2="230" y2="70" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <!-- downloads folder emptied -->
+          <path d="M30 128 h22 l4 5 h40 v34 h-66 z" fill="#e0a93d"/>
+          <path d="M30 133 h66 v29 h-66 z" fill="#f0c878"/>
+          <text x="63" y="152" font-size="10" fill="#8a6a4f" font-weight="700" text-anchor="middle">Downloads</text>
+          <!-- backup drive -->
+          <path d="M118 150 q40 14 78 -2" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+          <polygon points="192,140 204,148 190,154" fill="#3e7c59"/>
+          <rect x="206" y="138" width="56" height="22" rx="6" fill="#8a6a4f"/>
+          <rect x="206" y="138" width="56" height="8" rx="4" fill="#c9a06b"/>
+          <circle cx="252" cy="154" r="2.5" fill="#e0a93d"/>
+          <text x="234" y="174" font-size="10" fill="#6b7376" text-anchor="middle">backup first</text>
+        </svg>
+        <h4>4 · Declutter storage</h4>
+        <p>Back up first, then archive or delete old files and duplicate photos, empty your Downloads folder, and clear giant attachments — often enough to drop off a paid storage tier entirely.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of taming the inbox: a flood of promotional emails passing through an unsubscribe filter, leaving a clean inbox with messages sorted into folders">
+          <g fill="#fbe9e1" stroke="#d9663f" stroke-width="1.5">
+            <rect x="16" y="26" width="30" height="20" rx="3"/>
+            <rect x="16" y="52" width="30" height="20" rx="3"/>
+            <rect x="16" y="78" width="30" height="20" rx="3"/>
+            <rect x="16" y="104" width="30" height="20" rx="3"/>
+            <rect x="16" y="130" width="30" height="20" rx="3"/>
+          </g>
+          <g stroke="#d9663f" stroke-width="1.5" fill="none">
+            <path d="M18 30 l13 8 l13 -8"/>
+            <path d="M18 56 l13 8 l13 -8"/>
+            <path d="M18 82 l13 8 l13 -8"/>
+            <path d="M18 108 l13 8 l13 -8"/>
+            <path d="M18 134 l13 8 l13 -8"/>
+          </g>
+          <rect x="118" y="20" width="20" height="140" rx="10" fill="#3e7c59"/>
+          <text x="128" y="95" font-size="10" fill="#fffdf8" font-weight="700" text-anchor="middle" transform="rotate(90 128 92)">unsubscribe + filter</text>
+          <path d="M50 88 h60" stroke="#b9b1a3" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="3 6"/>
+          <polygon points="108,82 120,88 108,94" fill="#b9b1a3"/>
+          <!-- clean sorted inbox -->
+          <rect x="150" y="40" width="110" height="30" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="205" y="59" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">📥 Inbox</text>
+          <rect x="150" y="78" width="52" height="34" rx="6" fill="#fffdf8" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M158 92 h12 l3 4 h16 v12 h-31 z" fill="#e0a93d"/>
+          <rect x="208" y="78" width="52" height="34" rx="6" fill="#fffdf8" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M216 92 h12 l3 4 h16 v12 h-31 z" fill="#e0a93d"/>
+          <rect x="150" y="120" width="110" height="30" rx="6" fill="#dce8ee"/>
+          <path d="M160 135 l5 5 l9 -10" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="200" y="139" font-size="10.5" fill="#33393b" text-anchor="middle">filtered &amp; calm</text>
+        </svg>
+        <h4>5 · Tame the inbox</h4>
+        <p>Unsubscribe from the senders you ignore (use the real "unsubscribe" link, never a "remove me" reply to spam), then set a couple of basic filters so the important mail rises to the top.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Cleanup progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done! Subscriptions trimmed, security tightened, storage and inbox cleared. Set a reminder and do it again next year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN IT'S WORTH EXTRA HELP ============ -->
+  <section id="pro">
+    <h2>When it's worth extra help</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>You spot a charge you don't recognize.</strong> Don't chase it through a link in an email — contact your bank or the merchant directly using the number on your card or their official site. Most "mystery" charges are real purchases under an odd merchant name, but if it's fraud, reporting fast is what limits your liability.</li>
+        <li><strong>You suspect an account was breached</strong> (a "new sign-in" alert you didn't make, a password that suddenly doesn't work). Change that password immediately from the official site, turn on 2FA, and check whether the same password is reused anywhere else — those are next.</li>
+        <li><strong>Possible identity theft or a string of unfamiliar charges:</strong> contact your bank, and consider placing a <strong>credit freeze</strong> with the major credit bureaus (it's free in the U.S.) so no one can open new accounts in your name while you sort it out.</li>
+        <li><strong>The yearly sweep feels overwhelming:</strong> a good <strong>password manager</strong> does most of the security heavy lifting, and a <strong>subscription-tracking app</strong> (or a simple recurring tracker) surfaces charges automatically — both turn next year's cleanup from an archaeology dig into a quick review.</li>
+        <li><strong>Work accounts or a business:</strong> follow your employer's IT policies, and loop in IT for anything touching company data, shared logins, or a suspected compromise.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I find <em>all</em> my subscriptions?</summary>
+      <p>No single place lists them, so check three: (1) your bank and credit-card statements — search for the same merchant charging the same amount each month; (2) your app store's subscriptions page — on iPhone it's under your name in Settings, on Android it's in the Play Store menu; and (3) each big account's own "manage subscription" or billing page. Email is a fourth source: search your inbox for words like "receipt," "renewal," and "your subscription." Jot everything onto one list as you go.</p>
+    </details>
+    <details>
+      <summary>Is it safe to delete old accounts?</summary>
+      <p>Usually yes, and it shrinks your risk — but two cautions. First, <strong>some deletions are permanent</strong> and take order history, photos, reviews, or purchases with them, so export anything you might want first. Second, <strong>back up before you delete files</strong> tied to that account. When in doubt, deactivating or just removing your saved payment method and personal details is a gentler middle step than full deletion.</p>
+    </details>
+    <details>
+      <summary>How often do I really need to do this?</summary>
+      <p>Once a year covers most people well — it's frequent enough to catch a forgotten subscription before it costs you much, and rare enough to actually keep up with. Two exceptions earn more frequent attention: if you sign up for lots of trials and services, a quick 15-minute subscription check every quarter pays for itself; and if your security hasn't been touched in years, do the passwords-and-2FA pass now rather than waiting for the annual slot.</p>
+    </details>
+    <details>
+      <summary>Do I really need a password manager?</summary>
+      <p>Strongly recommended — it's the single biggest security upgrade most people can make. Reusing one password means a breach at any one site hands attackers the keys to all the others; a manager generates and stores a unique, strong password per site so you only have to remember one. Reputable options are free or a few dollars a month. Set each new password yourself directly in the manager and the official site — never type it into a link someone sent you.</p>
+    </details>
+    <details>
+      <summary>What do I do if I find a charge I don't recognize?</summary>
+      <p>First, search the exact merchant name — most are legitimate purchases under a parent company or payment processor, and check with anyone who shares the card. If it's still unfamiliar, <strong>contact your bank or the company directly</strong> using the number on your card or their official website (not a link from an email or text). For a credit card, dispute it in the app and request a replacement if it looks like fraud; for a debit card, report it immediately, since reporting fast is what keeps your liability low.</p>
+    </details>
+    <details>
+      <summary>Won't canceling subscriptions lose my data or history?</summary>
+      <p>Sometimes. Many services keep your account and data when you cancel a paid plan — you just drop to free or lose premium features. But some downgrade or delete content (extra cloud storage, premium-only files). Before canceling, check what you lose and export anything important. And cancel at the source — in the app store or the account's own billing page — rather than through a third-party "cancel for you" link you're not sure about.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The cleanup pays off. Remembering to repeat it is the hard part.</h2>
+        <p>A once-a-year task is the easiest of all to forget — and a year of drift is exactly how the forgotten subscriptions and stale passwords pile back up. Upkeep Ledger logs this year's cleanup and resurfaces it next year, right alongside every other recurring task in your life. Set it once; let the reminder do the remembering.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=digital-cleanup&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=digital-cleanup&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your services, prices, and numbers will vary.</p>
+    <p>General digital-housekeeping guidance, not financial or investment advice — never enter passwords or financial details through links you didn't initiate, and do each step yourself in your own accounts.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { subs: null, track: null, security: null, storage: null };
+
+  function computePlan(s) {
+    // base cadence in months; default = once a year (12)
+    var months = 12;
+    var steps = [];
+    var subCheck = false;
+
+    // Subscriptions volume + whether tracked
+    if (s.subs === "many") {
+      subCheck = true;
+      steps.push("With lots of services, add a quick 15-minute subscription check every few months — that's where the silent money leaks live, and it's the easiest piece to do more often.");
+    } else if (s.subs === "some") {
+      if (s.track === "no") subCheck = true;
+      steps.push("A handful of services is manageable once a year — start the sweep by pulling every recurring charge into one list so nothing hides.");
+    } else {
+      steps.push("With only a few subscriptions, the money pass is quick — still pull statements and your app-store list to be sure none slipped past you.");
+    }
+    if (s.track === "no" && !subCheck && s.subs !== "few") {
+      subCheck = true;
+    }
+    if (s.track === "no") {
+      steps.push("You're not tracking subscriptions yet — this year's win is building that one master list (and a tracker to keep it), so next year is a review instead of a hunt.");
+    }
+
+    // Security recency
+    var secLabel;
+    if (s.security === "never") {
+      months = 6;
+      secLabel = "Security: overdue";
+      steps.push("Passwords and 2FA haven't been set up — don't wait for the annual slot. Do the security pass now: a password manager, unique passwords on your important accounts, and 2FA everywhere it's offered.");
+    } else if (s.security === "old") {
+      if (months > 6) months = 6;
+      secLabel = "Security: stale";
+      steps.push("A few years is long enough that some of those passwords have likely appeared in a breach. Prioritize replacing reused ones and turning on 2FA this round.");
+    } else {
+      secLabel = "Security: recent";
+      steps.push("Your security is recent — a light pass is enough: confirm 2FA is on for email and banking, and skim for any password the manager flags as weak or reused.");
+    }
+
+    // Storage pressure
+    var storeLabel;
+    if (s.storage === "full") {
+      storeLabel = "Storage: full";
+      steps.push("Your storage is maxed out and possibly costing you — back up first, then clear duplicates, old downloads, and giant attachments; you may be able to drop off the paid tier.");
+    } else if (s.storage === "closeish") {
+      storeLabel = "Storage: filling";
+      steps.push("Storage is creeping up — a declutter now keeps you off the next paid tier. Back up, then archive or delete what you no longer need.");
+    } else {
+      storeLabel = "Storage: fine";
+      steps.push("Storage has room to spare — a quick tidy of Downloads and obvious duplicates keeps it that way without much effort.");
+    }
+
+    // Resolve cadence label, bounded between every 6 and 12 months
+    if (months < 6) months = 6;
+    if (months > 12) months = 12;
+
+    var freq, note;
+    if (months <= 6) {
+      freq = "Your cadence: twice a year";
+      note = "<strong>Why twice:</strong> your answers point to security or subscriptions that have drifted. A full sweep every six months closes the gap faster — then, once you're caught up, you can settle into the once-a-year rhythm.";
+    } else if (subCheck) {
+      freq = "Your cadence: once a year + a quarterly subscription check";
+      note = "<strong>Why the extra check:</strong> the subscription audit is the piece that benefits most from frequent attention. A 15-minute quarterly scan of recurring charges catches new trials before they cost you much, while the full cleanup stays annual.";
+    } else {
+      freq = "Your cadence: once a year";
+      note = "<strong>Why yearly works for you:</strong> nothing in your answers is drifting fast. One thorough sweep a year — set as a recurring reminder — keeps subscriptions, security, and storage in check without becoming a chore.";
+    }
+
+    var rules = [
+      { label: secLabel, met: s.security === "recent" },
+      { label: storeLabel, met: s.storage === "fine" },
+      { label: (s.track === "yes" ? "Subscriptions: tracked" : "Subscriptions: untracked"), met: s.track === "yes" }
+    ];
+
+    return { freq: freq, rules: rules, steps: steps, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.subs || !quizState.track || !quizState.security || !quizState.storage) return;
+    var r = computePlan(quizState);
+
+    document.getElementById("resultFreq").textContent = r.freq;
+    document.getElementById("resultBody").innerHTML =
+      "Same five passes either way — <strong>money, security, storage, inbox</strong>. Here's where to put your attention:";
+
+    var score = document.getElementById("ruleScore");
+    score.innerHTML = "";
+    r.rules.forEach(function (rule) {
+      var span = document.createElement("span");
+      span.className = "rule-pill " + (rule.met ? "met" : "miss");
+      span.textContent = (rule.met ? "✓ " : "✗ ") + rule.label;
+      score.appendChild(span);
+    });
+
+    var ul = document.getElementById("resultSteps");
+    ul.innerHTML = "";
+    r.steps.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+
+    document.getElementById("cadenceNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Money", text: "Scan recent bank and credit-card statements for recurring charges", note: "Look for the same merchant and amount month after month. Highlight anything you don't remember signing up for." },
+    { phase: "Money", text: "Pull your app-store subscriptions and account billing pages into one list", note: "Apple: Settings → your name → Subscriptions. Google: Play Store → Subscriptions. Add each service's own 'manage subscription' page." },
+    { phase: "Money", text: "Cancel everything you don't actually use", note: "Cancel at the source — the app store or the account's billing page. Check what you lose first, and export anything important." },
+    { phase: "Security", text: "Set up (or open) a reputable password manager", note: "It generates and stores a unique password per site so you never reuse one. Free or a few dollars a month — the best security upgrade you can make." },
+    { phase: "Security", text: "Replace weak and reused passwords on your important accounts", note: "Email and banking first — they're the master keys. Do it yourself, directly in each official app or site, never via an emailed link." },
+    { phase: "Security", text: "Turn on two-factor authentication (2FA) everywhere it's offered", note: "An app-based code or passkey beats SMS where available. This alone blocks most account takeovers, even if a password leaks." },
+    { phase: "Security", text: "Close or delete accounts and apps you no longer use", note: "Each dormant account is data sitting on a server you've stopped watching. Export anything you want first — some deletions are permanent." },
+    { phase: "Security", text: "Skim each big account's privacy and connected-apps settings", note: "Revoke old 'sign in with' connections and third-party app access you don't recognize, and tighten what's shared publicly." },
+    { phase: "Storage & inbox", text: "Confirm your backup is running before you delete anything", note: "Never delete files you haven't backed up. No routine yet? Set one up first — see the backup guide — then clear with confidence." },
+    { phase: "Storage & inbox", text: "Archive or delete old files and duplicate photos", note: "Years of duplicates, screenshots, and finished projects are usually the bulk of a full drive. Clearing them can drop you off a paid tier." },
+    { phase: "Storage & inbox", text: "Empty your Downloads folder and trash", note: "The junk drawer of every device. Move keepers where they belong, delete the rest, then empty the trash to actually reclaim the space." },
+    { phase: "Storage & inbox", text: "Unsubscribe from senders you ignore", note: "Use the real 'unsubscribe' link at the bottom of legit emails. Never reply 'remove me' to outright spam — it just confirms your address is live." },
+    { phase: "Storage & inbox", text: "Set a couple of basic inbox filters", note: "Auto-file receipts, newsletters, and notifications so the important mail rises to the top. Then log it and set next year's reminder." }
+  ];
+
+  var LS_KEY = "upkeepguides:digital-cleanup:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
