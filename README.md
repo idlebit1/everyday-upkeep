@@ -45,4 +45,4 @@ Deliberately restrained — exactly two touches per page, no banners or popups:
 1. **One closing card** (`.ledger-cta`, dark green) before the footer, with copy tied to what the page just taught ("you now know the schedule — let the app remember it") and a "Try Upkeep Ledger →" button.
 2. **One footer line**: "From the makers of Upkeep Ledger — one place to track every recurring task."
 
-All links use UTM params: `utm_source=everyday-upkeep`, `utm_medium=content`, `utm_campaign=<page-slug>` (e.g. `gutters`, `index`), `utm_content=<placement>` (`closing-card` or `footer`) — so per-guide and per-placement conversion is visible in analytics.
+All links use UTM params: `utm_source=upkeepguides`, `utm_medium=content`, `utm_campaign=<page-slug>` (e.g. `gutters`, `index`), `utm_content=<placement>` (`closing-card` or `footer`) — so per-guide and per-placement conversion is visible in analytics.
