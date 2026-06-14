@@ -186,7 +186,7 @@
   </div>
 
   <div class="controls">
-    <input class="search" id="search" type="search" placeholder="Search 40 upkeep tasks…" aria-label="Search upkeep tasks">
+    <input class="search" id="search" type="search" placeholder="Search upkeep tasks…" aria-label="Search upkeep tasks">
     <div class="chips" id="chips" role="tablist" aria-label="Filter by category"></div>
     <div class="result-line" id="resultLine"></div>
   </div>
@@ -431,6 +431,7 @@
     render();
   });
 
+  document.getElementById("search").placeholder = "Search " + PRESETS.length + " upkeep tasks…";
   renderChips();
   render();
 })();
