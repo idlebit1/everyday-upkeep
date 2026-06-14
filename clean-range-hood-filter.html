@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean range hood filter — UpkeepGuides.com</title>
+<meta name="description" content="How often to degrease the metal mesh filter over your stove, why a clogged filter is a fire hazard, and a step-by-step soak-and-scrub guide — plus when a charcoal filter needs replacing instead.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Clean range hood filter — UpkeepGuides.com">
+<meta property="og:description" content="How often to degrease the metal mesh filter over your stove, why a clogged filter is a fire hazard, and a step-by-step soak-and-scrub guide — plus when a charcoal filter needs replacing instead.">
+<meta property="og:url" content="https://upkeepguides.com/clean-range-hood-filter.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clean range hood filter — UpkeepGuides.com">
+<meta name="twitter:description" content="How often to degrease the metal mesh filter over your stove, why a clogged filter is a fire hazard, and a step-by-step soak-and-scrub guide — plus when a charcoal filter needs replacing instead.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Every month</span>
+      <h1>Clean Your Range Hood Filter</h1>
+      <p class="lede">That metal mesh panel under your range hood is quietly soaking up the airborne grease from every sear, fry, and simmer. Once a month, pop it out and let it soak — a clean filter pulls smoke and steam away, keeps the fan working, and keeps a layer of flammable grease from building up right over the burners.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>once a month</em></span>
+        <span class="chip">⏱️ <em>~15 minutes</em>, mostly hands-off soaking</span>
+        <span class="chip">🧼 Just <em>dish soap + baking soda</em></span>
+        <span class="chip">🔥 Caked grease over a burner is a <em>fire hazard</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a kitchen range hood above a stovetop with a pot steaming, the metal mesh grease filter glowing as it slides out of the hood, with sparkles, a soaking tub of soapy water, and a scrub brush nearby">
+      <ellipse cx="290" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- window + sun -->
+      <rect x="58" y="40" width="86" height="74" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="101" y1="40" x2="101" y2="114" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="58" y1="77" x2="144" y2="77" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="478" cy="56" r="22" fill="#f2cf7a"/>
+      <!-- range hood canopy -->
+      <polygon points="196,96 424,96 404,150 216,150" fill="#b9b1a3"/>
+      <rect x="216" y="150" width="188" height="20" rx="4" fill="#8a6a4f"/>
+      <!-- hood chimney up to ceiling -->
+      <rect x="284" y="50" width="52" height="48" fill="#b9b1a3"/>
+      <rect x="284" y="50" width="52" height="48" fill="none" stroke="#8a6a4f" stroke-width="2"/>
+      <!-- hood underside light -->
+      <circle cx="252" cy="160" r="5" fill="#e0a93d"/>
+      <circle cx="368" cy="160" r="5" fill="#e0a93d"/>
+      <!-- mesh filter sliding out of the hood underside, highlighted -->
+      <g transform="translate(266,150) rotate(-12)">
+        <rect x="0" y="0" width="120" height="56" rx="8" fill="#e0a93d"/>
+        <rect x="7" y="7" width="106" height="42" rx="5" fill="#fffdf8"/>
+        <g stroke="#8a6a4f" stroke-width="1.4">
+          <line x1="16" y1="7" x2="16" y2="49"/>
+          <line x1="32" y1="7" x2="32" y2="49"/>
+          <line x1="48" y1="7" x2="48" y2="49"/>
+          <line x1="64" y1="7" x2="64" y2="49"/>
+          <line x1="80" y1="7" x2="80" y2="49"/>
+          <line x1="96" y1="7" x2="96" y2="49"/>
+          <line x1="7" y1="18" x2="113" y2="18"/>
+          <line x1="7" y1="28" x2="113" y2="28"/>
+          <line x1="7" y1="38" x2="113" y2="38"/>
+        </g>
+        <!-- pull handle -->
+        <rect x="48" y="48" width="24" height="9" rx="4.5" fill="#8a6a4f"/>
+      </g>
+      <!-- sparkles around the filter -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="244" y1="118" x2="244" y2="130"/>
+        <line x1="238" y1="124" x2="250" y2="124"/>
+        <line x1="406" y1="120" x2="406" y2="134"/>
+        <line x1="399" y1="127" x2="413" y2="127"/>
+        <line x1="412" y1="176" x2="412" y2="186"/>
+        <line x1="407" y1="181" x2="417" y2="181"/>
+      </g>
+      <!-- stovetop -->
+      <rect x="206" y="296" width="208" height="60" rx="8" fill="#8a6a4f"/>
+      <rect x="206" y="296" width="208" height="60" rx="8" fill="none" stroke="#6b5640" stroke-width="2"/>
+      <circle cx="258" cy="326" r="22" fill="#b9b1a3"/>
+      <circle cx="258" cy="326" r="13" fill="#6b5640"/>
+      <circle cx="362" cy="326" r="22" fill="#b9b1a3"/>
+      <circle cx="362" cy="326" r="13" fill="#6b5640"/>
+      <!-- pot on the burner with steam -->
+      <rect x="300" y="248" width="76" height="44" rx="6" fill="#5e9a78"/>
+      <rect x="294" y="244" width="88" height="10" rx="5" fill="#2c5a40"/>
+      <rect x="332" y="234" width="12" height="12" rx="3" fill="#2c5a40"/>
+      <g stroke="#dce8ee" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9">
+        <path d="M318 232 q-6 -12 2 -22 q6 -8 0 -18"/>
+        <path d="M340 230 q6 -12 -2 -22 q-6 -8 0 -18"/>
+        <path d="M358 232 q-6 -12 2 -22 q6 -8 0 -18"/>
+      </g>
+      <!-- soaking tub with soapy water + filter corner + brush -->
+      <rect x="56" y="318" width="118" height="56" rx="10" fill="#7fb3c8"/>
+      <rect x="56" y="318" width="118" height="14" rx="7" fill="#dce8ee"/>
+      <g fill="#fffdf8">
+        <circle cx="78" cy="320" r="7"/>
+        <circle cx="98" cy="316" r="9"/>
+        <circle cx="120" cy="319" r="6"/>
+        <circle cx="140" cy="316" r="8"/>
+      </g>
+      <!-- a soaking filter peeking in the tub -->
+      <rect x="86" y="332" width="58" height="30" rx="4" fill="#e0a93d"/>
+      <g stroke="#8a6a4f" stroke-width="1.2">
+        <line x1="98" y1="332" x2="98" y2="362"/>
+        <line x1="112" y1="332" x2="112" y2="362"/>
+        <line x1="126" y1="332" x2="126" y2="362"/>
+        <line x1="86" y1="344" x2="144" y2="344"/>
+        <line x1="86" y1="354" x2="144" y2="354"/>
+      </g>
+      <!-- scrub brush leaning on the tub -->
+      <rect x="160" y="300" width="40" height="11" rx="5" fill="#c9a06b" transform="rotate(34 180 305)"/>
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round" transform="rotate(34 180 305)">
+        <line x1="166" y1="311" x2="166" y2="320"/>
+        <line x1="174" y1="311" x2="174" y2="321"/>
+        <line x1="182" y1="311" x2="182" y2="320"/>
+        <line x1="190" y1="311" x2="190" y2="321"/>
+      </g>
+      <!-- soap bottle on the floor -->
+      <rect x="496" y="320" width="26" height="54" rx="8" fill="#3e7c59"/>
+      <rect x="503" y="308" width="12" height="14" rx="4" fill="#2c5a40"/>
+      <rect x="500" y="336" width="18" height="20" rx="3" fill="#e3efe8"/>
+      <!-- drips -->
+      <g fill="#7fb3c8">
+        <circle cx="232" cy="380" r="3"/>
+        <circle cx="452" cy="384" r="3"/>
+        <circle cx="462" cy="376" r="2.5"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A range hood doesn't make grease disappear — it pulls greasy air through a metal mesh that traps the droplets before the fan moves the air on. When that mesh clogs, every problem below follows (costs are typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="9" width="22" height="11" rx="3" fill="#dce8ee"/>
+          <g stroke="#8a6a4f" stroke-width="1.4">
+            <line x1="12" y1="9" x2="12" y2="20"/>
+            <line x1="18" y1="9" x2="18" y2="20"/>
+            <line x1="24" y1="9" x2="24" y2="20"/>
+            <line x1="7" y1="13" x2="29" y2="13"/>
+            <line x1="7" y1="16.5" x2="29" y2="16.5"/>
+          </g>
+          <circle cx="13" cy="14" r="1.5" fill="#c96f4a"/>
+          <circle cx="21" cy="12" r="1.7" fill="#d9663f"/>
+          <circle cx="25" cy="17" r="1.4" fill="#c96f4a"/>
+          <circle cx="16" cy="17" r="1.3" fill="#d9663f"/>
+        </svg></div>
+        <h3>Grease soaks the mesh shut</h3>
+        <p>The mesh is the whole point — it catches airborne grease so the fan doesn't. Skip cleaning and those tiny holes pack with sticky, hardening grease until almost no air can pass.</p>
+        <span class="cost">Free to fix — today</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <polygon points="6,10 24,10 22,17 8,17" fill="#b9b1a3"/>
+          <rect x="8" y="17" width="14" height="3" fill="#8a6a4f"/>
+          <g stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round">
+            <path d="M12 8 q-3 -4 0 -7"/>
+            <path d="M16 7 q-3 -4 0 -7"/>
+          </g>
+          <path d="M27 26 q4 -3 7 0" stroke="#b9b1a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M25 30 q5 -3.5 9 0" stroke="#b9b1a3" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Smoke &amp; steam stay in the room</h3>
+        <p>A clogged filter chokes the airflow, so the hood can't pull smoke, steam, and cooking odors out. They drift back into the kitchen — and into the rest of the house.</p>
+        <span class="cost">Every meal you cook</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 c4 5 7 8 7 13 a7 7 0 0 1 -14 0 c0 -4 3 -7 7 -13 z" fill="#d9663f"/>
+          <path d="M18 13 c2 2.5 3.5 4.5 3.5 7 a3.5 3.5 0 0 1 -7 0 c0 -2 1.5 -4 3.5 -7 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>A fire hazard over the burners</h3>
+        <p>Caked-on grease sits directly above an open flame. A grease fire on the stove can reach up and ignite a saturated filter — keeping it clean removes the fuel that turns a flare-up into a real fire.</p>
+        <span class="cost">Insurance-claim territory</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="9" fill="#5e9a78"/>
+          <circle cx="18" cy="18" r="3.5" fill="#2c5a40"/>
+          <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round">
+            <line x1="18" y1="5" x2="18" y2="9"/>
+            <line x1="18" y1="27" x2="18" y2="31"/>
+            <line x1="5" y1="18" x2="9" y2="18"/>
+            <line x1="27" y1="18" x2="31" y2="18"/>
+            <line x1="9" y1="9" x2="11.5" y2="11.5"/>
+            <line x1="27" y1="9" x2="24.5" y2="11.5"/>
+            <line x1="9" y1="27" x2="11.5" y2="24.5"/>
+            <line x1="27" y1="27" x2="24.5" y2="24.5"/>
+          </g>
+        </svg></div>
+        <h3>The fan strains and weakens</h3>
+        <p>The motor fights to pull air through a blocked filter, so it works harder and moves less. A clean filter is what lets a fan you already own actually do its job.</p>
+        <span class="cost">$120 – $300 motor</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="8" width="9" height="20" rx="2" fill="#8a6a4f"/>
+          <rect x="20" y="8" width="9" height="20" rx="2" fill="#8a6a4f"/>
+          <circle cx="11.5" cy="13" r="2" fill="#e0a93d"/>
+          <circle cx="24.5" cy="13" r="2" fill="#e0a93d"/>
+          <g fill="#c96f4a" opacity="0.85">
+            <circle cx="13" cy="20" r="1.6"/>
+            <circle cx="23" cy="22" r="1.6"/>
+            <circle cx="18" cy="31" r="1.5"/>
+          </g>
+        </svg></div>
+        <h3>Greasy film on everything</h3>
+        <p>Grease the hood can't capture settles as a thin, sticky film on cabinets, walls, and countertops near the stove. It attracts dust and is miserable to scrub off once it sets.</p>
+        <span class="cost">Hours of degreasing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">Once a month is the rule of thumb for a washable metal mesh filter, but the right interval depends on how — and how much — you cook. Answer three questions for a personalized schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="freq">
+        <div class="q-label">1. How much do you cook on the stovetop?</div>
+        <div class="pills">
+          <button class="pill" data-v="light">Light — a few times a week</button>
+          <button class="pill" data-v="regular">Most days</button>
+          <button class="pill" data-v="heavy">Daily, lots of frying</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">2. What kind of hood do you have?</div>
+        <div class="pills">
+          <button class="pill" data-v="mesh">Vented — metal mesh filter</button>
+          <button class="pill" data-v="charcoal">Recirculating — charcoal filter</button>
+          <button class="pill" data-v="notsure">Not sure</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. How's the filter right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="clean">Clean, good suction</button>
+          <button class="pill" data-v="greasy">Greasy or sticky to the touch</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">For a metal mesh filter this is nearly free — you already own the soap. The expensive outcomes are a strained fan motor and the deep-cleaning bill when grease coats the whole kitchen. All figures are typical U.S. estimates:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$0</div><div class="l">mesh filter: dish soap + baking soda you already own</div></div>
+        <div class="calc-stat"><div class="v">$10 – $25</div><div class="l">charcoal filter replacement (recirculating hoods, every 3–6 months)</div></div>
+        <div class="calc-stat"><div class="v bad">$120 – $300</div><div class="l">replacing a hood fan motor burned out by years of strain</div></div>
+        <div class="calc-stat"><div class="v bad">$200 – $500+</div><div class="l">professional degreasing of grease-filmed cabinets, walls, and ductwork</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧼 A year of monthly mesh-filter cleanings</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 One replacement fan motor</span><span>~$210</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:42%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 One whole-kitchen grease degreasing</span><span>~$350</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The trade is lopsided: <strong>fifteen mostly-hands-off minutes a month, with soap you already have</strong>, against a worn-out fan motor and a greasy film that creeps across every surface near the stove. The mesh filter is one of the few upkeep tasks that genuinely costs nothing but the time to soak it.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your range hood filter</h2>
+    <p class="sub">Most of the job is hands-off soaking. Work through the checklist — your progress saves automatically, so you can start the soak, walk away, and pick it back up when the timer goes.</p>
+
+    <div class="safety">
+      <h3>⚠️ Before you start — grease is flammable, so be careful</h3>
+      <ul>
+        <li><strong>Turn the hood off and let everything cool.</strong> Don't clean over a hot burner or a lit flame — grease and hot fat ignite easily, and you'll be reaching right over the cooktop.</li>
+        <li><strong>Use hot water and a grease-cutting dish soap.</strong> Heat plus a degreasing soap is what actually breaks grease down; cold water just smears it around.</li>
+        <li><strong>Go easy on aluminum filters in the dishwasher.</strong> Harsh dishwasher detergent can oxidize and darken aluminum mesh. Hand-washing is safest; if you do use the dishwasher, choose a gentle cycle and an aluminum-safe detergent.</li>
+        <li><strong>Charcoal filters are different.</strong> If your hood recirculates air back into the room, it has a carbon/charcoal filter that <em>cannot be washed</em> — it gets replaced, not cleaned. More on telling them apart below.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Grease-cutting dish soap</span>
+      <span class="tool-chip">Baking soda</span>
+      <span class="tool-chip">Hot water</span>
+      <span class="tool-chip">Soft brush or old toothbrush</span>
+      <span class="tool-chip">Sink, tub, or large basin</span>
+      <span class="tool-chip">Gloves</span>
+      <span class="tool-chip">Optional: white vinegar / degreaser</span>
+      <span class="tool-chip">Recirculating hood? A replacement charcoal filter</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three things worth seeing first</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a range hood underside with a metal mesh filter being slid or unclipped out by its pull-tab handle">
+          <rect x="22" y="14" width="236" height="34" rx="6" fill="#b9b1a3"/>
+          <rect x="22" y="48" width="236" height="10" fill="#8a6a4f"/>
+          <g transform="translate(70,60) rotate(-8)">
+            <rect x="0" y="0" width="150" height="58" rx="8" fill="#e0a93d"/>
+            <rect x="8" y="8" width="134" height="42" rx="5" fill="#fffdf8"/>
+            <g stroke="#8a6a4f" stroke-width="1.4">
+              <line x1="28" y1="8" x2="28" y2="50"/>
+              <line x1="50" y1="8" x2="50" y2="50"/>
+              <line x1="72" y1="8" x2="72" y2="50"/>
+              <line x1="94" y1="8" x2="94" y2="50"/>
+              <line x1="116" y1="8" x2="116" y2="50"/>
+              <line x1="8" y1="22" x2="142" y2="22"/>
+              <line x1="8" y1="34" x2="142" y2="34"/>
+            </g>
+            <rect x="62" y="50" width="26" height="10" rx="5" fill="#8a6a4f"/>
+          </g>
+          <path d="M150 150 q40 6 70 -8" stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <polygon points="216,128 230,138 214,148" fill="#d9663f"/>
+          <text x="60" y="170" font-size="12" fill="#6b7376">grab the tab, pull it free</text>
+        </svg>
+        <h4>Slide or unclip it out</h4>
+        <p>Reach under the hood, find the spring tab or finger pull on each metal mesh filter, push and tilt it down, and lift it out. Most hoods have one or two; no tools needed.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the metal mesh filter soaking in a basin of hot water with dish soap and a scoop of baking soda, with rising bubbles">
+          <path d="M40 56 h200 l-16 104 a10 10 0 0 1 -10 9 h-148 a10 10 0 0 1 -10 -9 z" fill="#7fb3c8"/>
+          <ellipse cx="140" cy="56" rx="100" ry="13" fill="#dce8ee"/>
+          <rect x="92" y="64" width="96" height="70" rx="6" fill="#e0a93d"/>
+          <g stroke="#8a6a4f" stroke-width="1.3">
+            <line x1="112" y1="64" x2="112" y2="134"/>
+            <line x1="132" y1="64" x2="132" y2="134"/>
+            <line x1="152" y1="64" x2="152" y2="134"/>
+            <line x1="172" y1="64" x2="172" y2="134"/>
+            <line x1="92" y1="84" x2="188" y2="84"/>
+            <line x1="92" y1="104" x2="188" y2="104"/>
+            <line x1="92" y1="124" x2="188" y2="124"/>
+          </g>
+          <g fill="#fffdf8">
+            <circle cx="74" cy="50" r="7"/>
+            <circle cx="206" cy="48" r="9"/>
+            <circle cx="120" cy="44" r="6"/>
+            <circle cx="170" cy="42" r="5"/>
+          </g>
+          <!-- baking soda scoop dropping in -->
+          <path d="M214 18 l16 0 l-3 14 l-10 0 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="1.5"/>
+          <g fill="#fffdf8"><circle cx="218" cy="36" r="1.6"/><circle cx="223" cy="40" r="1.4"/><circle cx="227" cy="36" r="1.6"/></g>
+          <text x="44" y="168" font-size="12" fill="#6b7376">hot water + soap + baking soda · 10–20 min</text>
+        </svg>
+        <h4>Soak it in hot, soapy water</h4>
+        <p>Fill a sink or tub with hot water, a good squeeze of grease-cutting dish soap, and a scoop of baking soda. Submerge the filter and let it soak 10–20 minutes — the soak does most of the work.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a soft brush scrubbing loosened grease off the metal mesh filter, then rinsing it clean under running water">
+          <rect x="28" y="46" width="120" height="90" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <g stroke="#d98e3b" stroke-width="1.4">
+            <line x1="48" y1="46" x2="48" y2="136"/>
+            <line x1="68" y1="46" x2="68" y2="136"/>
+            <line x1="88" y1="46" x2="88" y2="136"/>
+            <line x1="108" y1="46" x2="108" y2="136"/>
+            <line x1="128" y1="46" x2="128" y2="136"/>
+            <line x1="28" y1="66" x2="148" y2="66"/>
+            <line x1="28" y1="86" x2="148" y2="86"/>
+            <line x1="28" y1="106" x2="148" y2="106"/>
+          </g>
+          <!-- brush scrubbing -->
+          <rect x="150" y="40" width="58" height="14" rx="7" fill="#c9a06b" transform="rotate(28 179 47)"/>
+          <g stroke="#8a6a4f" stroke-width="2.2" stroke-linecap="round" transform="rotate(28 179 47)">
+            <line x1="156" y1="54" x2="156" y2="66"/>
+            <line x1="166" y1="54" x2="166" y2="67"/>
+            <line x1="176" y1="54" x2="176" y2="66"/>
+            <line x1="186" y1="54" x2="186" y2="67"/>
+            <line x1="196" y1="54" x2="196" y2="66"/>
+          </g>
+          <!-- faucet rinse -->
+          <path d="M224 18 h30 v12 h-12 v10 h-8 v-10 h-10 z" fill="#b9b1a3"/>
+          <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+            <line x1="232" y1="44" x2="230" y2="62"/>
+            <line x1="238" y1="44" x2="237" y2="64"/>
+            <line x1="244" y1="44" x2="244" y2="62"/>
+          </g>
+          <text x="36" y="160" font-size="12" fill="#6b7376">brush off the loosened grease, then rinse</text>
+        </svg>
+        <h4>Scrub, rinse, and dry fully</h4>
+        <p>Work a soft brush over the loosened grease, paying attention to the corners. Rinse under hot running water until it stops feeling slick, then let it dry completely before it goes back.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Cleaning progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 All done! Filter degreased and reseated — the fan can breathe again. See you in about a month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL FOR SERVICE ============ -->
+  <section id="pro">
+    <h2>Signs &amp; when to call for service</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A lingering grease smell or weak suction even after a clean filter.</strong> If air still isn't moving, the problem may be the ductwork (greased-up or blocked) or the fan motor itself — worth a service look.</li>
+        <li><strong>The fan won't run, or runs but moves almost no air.</strong> A motor that hums, trips, or stays silent usually needs a technician; that's not a filter fix.</li>
+        <li><strong>A charcoal filter that's badly overdue.</strong> On recirculating hoods the carbon filter can't be washed — if odors have returned and it's been more than 3–6 months, replace it. If a fresh one doesn't help, have the unit checked.</li>
+        <li><strong>Grease has reached the ductwork.</strong> For ducted hoods, grease buildup inside the duct run is both an airflow and a fire concern; professional duct cleaning is the right call for long-neglected systems.</li>
+        <li>Typical appliance diagnostic visits run <strong>$100–$150</strong>, often credited toward the repair. Mention you've already cleaned (or replaced) the filter — it's the first thing they'd check.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I clean the range hood filter?</summary>
+      <p>For a washable metal mesh (baffle) filter, once a month is the standard for an average kitchen. If you fry often or cook at high heat daily, every two weeks keeps it from gumming up; light cooks can stretch toward every six weeks. A charcoal filter is a different story — it isn't cleaned at all, it's replaced, typically every three to six months.</p>
+    </details>
+    <details>
+      <summary>Can I just put the filter in the dishwasher?</summary>
+      <p>Often yes, but with a caveat. Stainless steel mesh handles the dishwasher fine. Aluminum mesh can oxidize and turn dull, dark, or chalky from harsh dishwasher detergent and hot drying. If yours is aluminum (a lot are), hand-washing in hot soapy water is the safe bet; if you do use the dishwasher, run a gentle cycle with an aluminum-safe detergent and place the filter so water reaches both sides.</p>
+    </details>
+    <details>
+      <summary>What's the boiling-water and baking-soda method?</summary>
+      <p>It's the heavy-duty version of the soak. Bring a large pot of water to a boil, stir in a few tablespoons of baking soda a little at a time (it foams), and lower the filter in for a few minutes — or pour the boiling soda-water over the filter in a heatproof basin. The combination of heat and the mild alkalinity of baking soda lifts hardened grease that a lukewarm soak leaves behind. Use tongs and gloves, keep it away from the burner once the filter's in, and rinse well afterward.</p>
+    </details>
+    <details>
+      <summary>How do I know if I have a mesh filter or a charcoal filter?</summary>
+      <p>Look at where your hood sends the air. A <em>ducted/vented</em> hood pushes air outside and uses a metal mesh (or baffle) grease filter — that's the washable one you clean monthly. A <em>recirculating/ductless</em> hood filters the air and blows it back into the kitchen; behind the mesh it has a charcoal/carbon filter to trap odors. That carbon filter is a sealed, granular pad — it can't be washed and must be replaced on a schedule. Many recirculating hoods have both: wash the mesh, replace the charcoal.</p>
+    </details>
+    <details>
+      <summary>How do I clean the greasy hood itself?</summary>
+      <p>While the filter soaks, wipe down the hood's underside, the visible surfaces, and the area around the filter slots with hot soapy water or a kitchen degreaser. A microfiber cloth and a little dish soap handle most of it; baking soda paste helps on stubborn baked-on spots. On stainless steel, finish by wiping in the direction of the grain so it doesn't streak. Don't forget the light cover and the controls, which collect a surprising amount of film.</p>
+    </details>
+    <details>
+      <summary>My suction is still weak after cleaning the filter. What now?</summary>
+      <p>First confirm the filter is fully dry and reseated correctly and that the fan is on its higher setting. If it's still weak, the likely culprits are a greased-up or partially blocked duct, a worn fan motor, or — on a recirculating hood — a spent charcoal filter that needs replacing. If a fresh charcoal filter and a clean mesh don't restore airflow, it's time for a service visit to check the motor and ductwork.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Monthly degreasing only works if you remember it.</h2>
+        <p>You now know your filter schedule — monthly for the mesh, every few months to swap a charcoal one. The hard part is remembering it all year. Upkeep Ledger logs each clean, counts down to the next one, and reminds you when a charcoal filter is due to be replaced — alongside every other recurring task in your home.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-range-hood-filter&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-range-hood-filter&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; get local quotes for real numbers.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { freq: null, type: null, state: null };
+
+  function computePlan(s) {
+    // Charcoal filters are replaced, not washed — handle as a special case.
+    if (s.type === "charcoal") {
+      var creasons = [];
+      creasons.push("Recirculating hoods vent filtered air back into the room, so behind the mesh sits a charcoal/carbon filter that traps odors.");
+      creasons.push("Charcoal filters can't be washed — soaking them ruins them. They get replaced, typically every 3–6 months (sooner if you cook heavily).");
+      if (s.freq === "heavy") creasons.push("Daily frying saturates carbon fast — lean toward the every-3-months end and keep a spare on hand.");
+      if (s.state === "greasy") creasons.push("If it's already greasy and odors have returned, it's past due — replace it now.");
+      creasons.push("If your hood also has a metal mesh pre-filter, wash that monthly while you're in there.");
+      return { interval: "charcoal", freqWord: "Replace every 3–6 months", reasons: creasons };
+    }
+
+    // Mesh (or not-sure, treated as mesh): default monthly, adjust within bounds.
+    var score = { light: -1, regular: 0, heavy: 1 }[s.freq];
+    if (s.state === "greasy") score += 1;
+
+    var interval, freqWord;
+    if (score >= 2) { interval = "biweekly"; freqWord = "Every 2 weeks"; }
+    else if (score <= -1) { interval = "sixweeks"; freqWord = "Every 6 weeks"; }
+    else { interval = "monthly"; freqWord = "Once a month"; }
+
+    var reasons = [];
+    if (s.freq === "heavy") reasons.push("Daily, frying-heavy cooking throws off the most airborne grease — the mesh fills fast, so clean it on the short end of the range.");
+    if (s.freq === "regular") reasons.push("Cooking most days is the classic monthly pace — a steady once-a-month soak keeps the mesh ahead of the grease.");
+    if (s.freq === "light") reasons.push("Light stovetop cooking means the mesh fills slowly — you can stretch toward six weeks, but don't skip it entirely; grease still hardens over time.");
+    if (s.state === "greasy") reasons.push("A filter that already feels greasy or sticky is overdue — clean it today, then start the clock on your regular schedule.");
+    if (s.state === "clean") reasons.push("Good suction and a clean feel means you're on top of it — keep the rhythm so it never gets to the gummed-up stage.");
+    if (s.type === "mesh") reasons.push("A vented hood's metal mesh is washable — hot soapy water and a soak is all it needs, no replacement parts.");
+    if (s.type === "notsure") reasons.push("Not sure? If your hood vents outside (a duct), it has a washable metal mesh — clean it on this schedule. If it blows air back into the room, it also has a charcoal filter to replace every 3–6 months.");
+
+    return { interval: interval, freqWord: freqWord, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.freq || !quizState.type || !quizState.state) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.freqWord;
+    var body;
+    if (r.interval === "charcoal") {
+      body = "Your charcoal filter is a <strong>replace-on-schedule</strong> part, not a wash-it one. If there's also a metal mesh pre-filter, run the routine below on that. Why this plan:";
+    } else {
+      var word = r.interval === "biweekly" ? "twice-a-month" : r.interval === "monthly" ? "monthly" : "six-week";
+      body = "Put the mesh on a <strong>" + word + "</strong> rhythm — the soak-and-scrub routine below. Why this schedule:";
+    }
+    document.getElementById("resultBody").innerHTML = body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Remove", text: "Turn the hood off and let everything cool down", note: "Don't clean over a hot or lit burner — you'll be reaching across the cooktop, and grease is flammable." },
+    { phase: "Remove", text: "Find the spring tab or finger pull on each mesh filter", note: "Most hoods have one or two metal mesh panels on the underside. Check your manual if the catch isn't obvious." },
+    { phase: "Remove", text: "Push the tab, tilt the filter down, and lift it out", note: "It should release by hand — no tools, no force. Note which way it came out so it goes back the same way." },
+    { phase: "Degrease", text: "Fill a sink or tub with hot water, grease-cutting dish soap, and a scoop of baking soda", note: "Hot is key — heat plus a degreasing soap is what actually breaks grease down." },
+    { phase: "Degrease", text: "Submerge the filter and let it soak 10–20 minutes", note: "This does most of the work. For a badly caked filter, use the boiling-water + baking-soda method (see FAQ)." },
+    { phase: "Degrease", text: "Scrub the loosened grease with a soft brush", note: "An old toothbrush is great for the corners and edges. Avoid steel wool or stiff wire on aluminum mesh." },
+    { phase: "Degrease", text: "Rinse thoroughly under hot running water", note: "Rinse until it stops feeling slick on both sides. Hold it to the light — the holes should look open, not filmed over." },
+    { phase: "Reinstall", text: "Let the filter dry completely before it goes back", note: "Shake it out and air-dry, or pat with a towel. A wet filter dripping over the burners is what you're trying to avoid." },
+    { phase: "Reinstall", text: "Wipe down the hood's underside, surfaces, and filter slots", note: "Hot soapy water or a degreaser; on stainless, wipe with the grain. Don't forget the light cover and controls." },
+    { phase: "Reinstall", text: "Recirculating hood? Swap in a fresh charcoal filter if it's due", note: "Carbon filters can't be washed — replace every 3–6 months. Skip this step if your hood vents outside." },
+    { phase: "Reinstall", text: "Slide the mesh filter back in until the tab clicks, and log it", note: "Make sure it seats flush. Note the date so the next clean lands about a month out (or your quiz interval)." }
+  ];
+
+  var LS_KEY = "upkeepguides:clean-range-hood-filter:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

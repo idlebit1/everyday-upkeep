@@ -313,7 +313,17 @@
     "replace-mattress": "replace-mattress.html",
     "clean-shower-head": "clean-shower-head.html",
     "brush-pet-teeth": "brush-pet-teeth.html",
-    "replace-water-filter": "replace-water-filter.html"
+    "replace-water-filter": "replace-water-filter.html",
+    "replace-car-battery": "replace-car-battery.html",
+    "replace-spark-plugs": "replace-spark-plugs.html",
+    "overseed-lawn": "overseed-lawn.html",
+    "reseal-deck": "reseal-deck.html",
+    "deep-clean-bathroom": "deep-clean-bathroom.html",
+    "replace-toilet-flapper": "replace-toilet-flapper.html",
+    "clean-range-hood-filter": "clean-range-hood-filter.html",
+    "wash-duvet": "wash-duvet.html",
+    "clean-laptop-fans": "clean-laptop-fans.html",
+    "replace-passport": "replace-passport.html"
   };
 
   /* Start set: 4 presets per category, copied from Upkeep Ledger
@@ -326,6 +336,8 @@
     {"id":"flush-water-heater","cat":"home","title":"Flush water heater","desc":"Drain sediment to extend the heater's life.","cadence":"every year","tags":["plumbing","appliance"]},
     {"id":"clean-washing-machine","cat":"home","title":"Clean washing machine","desc":"Run a cleaning cycle to prevent mold and odor.","cadence":"every month","tags":["laundry","appliance"]},
     {"id":"clean-shower-head","cat":"home","title":"Descale shower head","desc":"Soak in vinegar to restore water flow.","cadence":"every 6 months","tags":["plumbing","bathroom"]},
+    {"id":"deep-clean-bathroom","cat":"home","title":"Deep clean bathroom","desc":"Grout, shower head, behind toilet, exhaust fan.","cadence":"every 2 weeks","tags":["bathroom","cleaning"]},
+    {"id":"replace-toilet-flapper","cat":"home","title":"Replace toilet flapper","desc":"Stops the slow-leak running noise and saves water.","cadence":"every 3 years","tags":["plumbing","bathroom"]},
     {"id":"sharpen-knives","cat":"kitchen","title":"Sharpen kitchen knives","desc":"Dull knives are dangerous and frustrating.","cadence":"every 3 months","tags":["knives"]},
     {"id":"clean-dishwasher-filter","cat":"kitchen","title":"Clean dishwasher filter","desc":"Remove food debris from the bottom filter.","cadence":"every month","tags":["appliance"]},
     {"id":"clean-refrigerator-coils","cat":"kitchen","title":"Clean refrigerator coils","desc":"Dust the coils behind or under your fridge.","cadence":"every 6 months","tags":["appliance"]},
@@ -334,6 +346,7 @@
     {"id":"deep-clean-oven","cat":"kitchen","title":"Deep clean oven","desc":"Run the self-clean cycle or scrub with baking soda.","cadence":"every 3 months","tags":["appliance","cleaning"]},
     {"id":"season-cast-iron","cat":"kitchen","title":"Season cast iron pan","desc":"Wipe with oil and bake to restore the patina.","cadence":"every month","tags":["cookware"]},
     {"id":"replace-water-filter","cat":"kitchen","title":"Replace refrigerator water filter","desc":"Swap the in-fridge or in-line filter.","cadence":"every 6 months","tags":["filter","appliance"]},
+    {"id":"clean-range-hood-filter","cat":"kitchen","title":"Clean range hood filter","desc":"Degrease the metal mesh filter.","cadence":"every month","tags":["filter"]},
     {"id":"replace-toothbrush","cat":"personal","title":"Replace toothbrush","desc":"Swap your toothbrush or brush head.","cadence":"every 3 months","tags":["dental","hygiene"]},
     {"id":"dentist-visit","cat":"personal","title":"Dentist visit","desc":"Cleaning and checkup.","cadence":"every 6 months","tags":["dental","health"]},
     {"id":"physical-exam","cat":"personal","title":"Annual physical exam","desc":"Yearly checkup with your primary care doctor.","cadence":"every year","tags":["health"]},
@@ -346,17 +359,21 @@
     {"id":"replace-wiper-blades","cat":"vehicle","title":"Replace wiper blades","desc":"Streaky wipers mean it's time.","cadence":"every 6 months","tags":["safety","visibility"]},
     {"id":"replace-cabin-air-filter","cat":"vehicle","title":"Replace cabin air filter","desc":"Keeps interior air clean.","cadence":"every year","tags":["air","filter"]},
     {"id":"replace-engine-air-filter","cat":"vehicle","title":"Replace engine air filter","desc":"Improves fuel efficiency and engine performance.","cadence":"every 15,000 miles","tags":["engine","filter"]},
+    {"id":"replace-car-battery","cat":"vehicle","title":"Replace car battery","desc":"Typical life is 4-6 years.","cadence":"every 5 years","tags":["electrical"]},
+    {"id":"replace-spark-plugs","cat":"vehicle","title":"Replace spark plugs","desc":"Restores smooth start and fuel economy.","cadence":"every 60,000 miles","tags":["engine"]},
     {"id":"wash-bedding","cat":"wardrobe","title":"Wash bedding","desc":"Sheets, pillowcases, and mattress protector.","cadence":"every week","tags":["bedding"]},
     {"id":"replace-running-shoes","cat":"wardrobe","title":"Replace running shoes","desc":"Cushioning breaks down over time and miles.","cadence":"every 400 miles","tags":["shoes","fitness"]},
     {"id":"rotate-mattress","cat":"wardrobe","title":"Rotate mattress","desc":"Flip or rotate to even out wear.","cadence":"every 3 months","tags":["bedding"]},
     {"id":"replace-pillows","cat":"wardrobe","title":"Replace pillows","desc":"Pillows lose support over time.","cadence":"every 2 years","tags":["bedding"]},
     {"id":"wash-pillows","cat":"wardrobe","title":"Wash pillows","desc":"Most can be machine washed — check the tag.","cadence":"every 3 months","tags":["bedding"]},
     {"id":"replace-mattress","cat":"wardrobe","title":"Replace mattress","desc":"Mattresses last 8-10 years before they sag.","cadence":"every 7–10 years","tags":["bedding"]},
+    {"id":"wash-duvet","cat":"wardrobe","title":"Wash duvet or comforter","desc":"Big-bin laundromat or oversize home wash.","cadence":"every 6 months","tags":["bedding"]},
     {"id":"clean-bike-chain","cat":"equipment","title":"Clean and lube bike chain","desc":"Degrease, clean, and re-lube.","cadence":"every 2 weeks","tags":["bike"]},
     {"id":"bike-tune-up","cat":"equipment","title":"Bike tune-up","desc":"Annual shop service — gears, brakes, bearings.","cadence":"every year","tags":["bike"]},
     {"id":"replace-helmet","cat":"equipment","title":"Replace helmet","desc":"Foam degrades over time even without impact.","cadence":"every 5 years","tags":["safety","bike"]},
     {"id":"battery-health-check-phone","cat":"equipment","title":"Phone battery health check","desc":"Settings → Battery. Plan replacement before 80%.","cadence":"every 6 months","tags":["tech"]},
     {"id":"wash-yoga-mat","cat":"equipment","title":"Wash yoga mat","desc":"Soap and water; air dry.","cadence":"every week","tags":["fitness","hygiene"]},
+    {"id":"clean-laptop-fans","cat":"equipment","title":"Clean laptop fans","desc":"Blast dust out of vents and fans.","cadence":"every year","tags":["tech"]},
     {"id":"sharpen-mower-blade","cat":"tools","title":"Sharpen mower blade","desc":"Dull blades tear grass instead of cutting.","cadence":"every year","tags":["lawn"]},
     {"id":"service-snow-blower","cat":"tools","title":"Service snow blower","desc":"Oil, spark plug, shear pins — before winter.","cadence":"every year","tags":["seasonal"]},
     {"id":"sharpen-pruners","cat":"tools","title":"Sharpen pruners and loppers","desc":"Clean sap, file blades, oil pivots.","cadence":"every 6 months","tags":["garden"]},
@@ -368,6 +385,8 @@
     {"id":"pressure-wash","cat":"yard","title":"Pressure wash deck or patio","desc":"Remove mold, mildew, and grime.","cadence":"every year","tags":["exterior"]},
     {"id":"aerate-lawn","cat":"yard","title":"Aerate lawn","desc":"Pull plugs to relieve compaction.","cadence":"every year","tags":["lawn"]},
     {"id":"mow-lawn","cat":"yard","title":"Mow lawn","desc":"Keep grass at a healthy height.","cadence":"every week","tags":["lawn","seasonal"]},
+    {"id":"overseed-lawn","cat":"yard","title":"Overseed lawn","desc":"Fall is best — fill in thin patches.","cadence":"every year","tags":["lawn","seasonal"]},
+    {"id":"reseal-deck","cat":"yard","title":"Reseal deck or fence","desc":"Protect wood from moisture and UV damage.","cadence":"every 2 years","tags":["exterior"]},
     {"id":"annual-vet-checkup","cat":"pets","title":"Annual vet checkup","desc":"Yearly wellness exam.","cadence":"every year","tags":["health"]},
     {"id":"flea-tick-treatment","cat":"pets","title":"Flea and tick treatment","desc":"Topical, oral, or collar — keep on schedule.","cadence":"every month","tags":["health"]},
     {"id":"trim-pet-nails","cat":"pets","title":"Trim pet nails","desc":"Clip or grind — listen for clicking on hard floors.","cadence":"every month","tags":["grooming"]},
@@ -378,7 +397,8 @@
     {"id":"review-insurance","cat":"other","title":"Annual insurance review","desc":"Home, auto, life, umbrella — check coverage and rates.","cadence":"every year","tags":["finance"]},
     {"id":"update-emergency-kit","cat":"other","title":"Update emergency kit","desc":"Rotate water, batteries, food, first aid.","cadence":"every year","tags":["safety"]},
     {"id":"weekly-money-review","cat":"other","title":"Weekly money review","desc":"Skim accounts, flag anomalies, plan the week.","cadence":"every week","tags":["finance","routine"]},
-    {"id":"digital-cleanup","cat":"other","title":"Annual digital cleanup","desc":"Cancel unused subscriptions, archive old files.","cadence":"every year","tags":["finance","tech"]}
+    {"id":"digital-cleanup","cat":"other","title":"Annual digital cleanup","desc":"Cancel unused subscriptions, archive old files.","cadence":"every year","tags":["finance","tech"]},
+    {"id":"replace-passport","cat":"other","title":"Renew passport","desc":"Plan ahead — processing takes weeks.","cadence":"every 10 years","tags":["legal","travel"]}
   ];
 
   var state = { cat: "all", q: "" };

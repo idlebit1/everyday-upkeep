@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renew passport — UpkeepGuides.com</title>
+<meta name="description" content="How to plan a passport renewal: the six-month-validity rule, how early to start, what a compliant photo needs, renewing by mail vs. in person, U.S. fee and timeline estimates, and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Renew passport — UpkeepGuides.com">
+<meta property="og:description" content="How to plan a passport renewal: the six-month-validity rule, how early to start, what a compliant photo needs, renewing by mail vs. in person, U.S. fee and timeline estimates, and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/replace-passport.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Renew passport — UpkeepGuides.com">
+<meta name="twitter:description" content="How to plan a passport renewal: the six-month-validity rule, how early to start, what a compliant photo needs, renewing by mail vs. in person, U.S. fee and timeline estimates, and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .kit-stats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .kit-stats .kit-pill {
+    background: #fffdf8; border: 1.5px solid var(--accent); border-radius: 999px;
+    padding: 5px 14px; font-size: 13.5px; font-weight: 700; color: var(--accent-deep);
+  }
+  .anchor-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.mid { background: var(--gold); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+  .technique .cadence { display: inline-block; margin-top: 10px; background: var(--gold-soft); color: #9a7117;
+    font-weight: 700; font-size: 12.5px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#when">When to renew</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Every 10 years</span>
+      <h1>Renew Your Passport</h1>
+      <p class="lede">A passport is good for ten years (five for kids) — but "still valid" and "good enough to travel on" are two different things. Many countries turn you away unless your passport is valid at least six months past your trip, and processing takes weeks. The fix is simple: renew early, before a deadline is anywhere in sight.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Valid <em>10 years</em> (5 for children)</span>
+        <span class="chip">⏱️ Routine processing: <em>weeks</em>, not days</span>
+        <span class="chip">🛂 The <em>six-month rule</em> bites early</span>
+        <span class="chip">💸 Last-minute = <em>expedite fees</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of an open passport book on a table beside a stamp, an airplane, and a calendar with a circled renewal date — a metaphor for planning a passport renewal ahead of travel">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="66" cy="62" r="23" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="64" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="76" rx="28" ry="16" fill="#dce8ee"/>
+      <ellipse cx="130" cy="112" rx="34" ry="16" fill="#dce8ee"/>
+      <!-- airplane crossing the sky -->
+      <path d="M392 120 l44 -16 q10 -4 14 4 l-30 30 l28 4 l10 -10 l10 4 l-14 22 l-26 -2 l-22 18 l-8 -4 l8 -24 z" fill="#7fb3c8"/>
+      <path d="M404 118 l28 -10 l-14 20 z" fill="#5f93ad"/>
+      <g stroke="#dce8ee" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 10">
+        <path d="M300 150 q40 -28 86 -38" fill="none"/>
+      </g>
+      <!-- open passport book -->
+      <path d="M150 262 l130 -22 v150 l-130 18 z" fill="#2c5a40"/>
+      <path d="M410 262 l-130 -22 v150 l130 18 z" fill="#35684c"/>
+      <path d="M158 268 l122 -20 v138 l-122 16 z" fill="#fffdf8"/>
+      <path d="M402 268 l-122 -20 v138 l122 16 z" fill="#f4efe4"/>
+      <rect x="276" y="244" width="8" height="158" rx="2" fill="#244a34"/>
+      <!-- left page: photo + lines -->
+      <rect x="174" y="286" width="40" height="50" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" transform="rotate(-4 194 311)"/>
+      <circle cx="194" cy="304" r="9" fill="#9cc8ad" transform="rotate(-4 194 311)"/>
+      <path d="M183 328 q11 -12 22 0 z" fill="#9cc8ad" transform="rotate(-4 194 311)"/>
+      <g stroke="#d8cfbe" stroke-width="4" stroke-linecap="round">
+        <line x1="226" y1="292" x2="266" y2="286"/>
+        <line x1="226" y1="306" x2="266" y2="300"/>
+        <line x1="226" y1="320" x2="258" y2="315"/>
+      </g>
+      <!-- gold emblem on left page -->
+      <circle cx="196" cy="354" r="9" fill="#e0a93d"/>
+      <circle cx="196" cy="354" r="4" fill="#faf0da"/>
+      <!-- right page: stamps -->
+      <rect x="298" y="288" width="42" height="34" rx="3" fill="#fbe9e1" transform="rotate(-8 319 305)"/>
+      <path d="M308 305 a11 11 0 1 1 22 0 a11 11 0 1 1 -22 0" fill="none" stroke="#d9663f" stroke-width="2.5" transform="rotate(-8 319 305)"/>
+      <rect x="346" y="316" width="42" height="30" rx="3" fill="#e3efe8" transform="rotate(6 367 331)"/>
+      <path d="M356 331 h22 M367 322 v18" stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round" transform="rotate(6 367 331)"/>
+      <g stroke="#d8cfbe" stroke-width="3.5" stroke-linecap="round">
+        <line x1="300" y1="356" x2="386" y2="368"/>
+        <line x1="300" y1="368" x2="372" y2="378"/>
+      </g>
+      <!-- ink stamp -->
+      <rect x="426" y="316" width="52" height="22" rx="6" fill="#8a6a4f"/>
+      <rect x="442" y="306" width="20" height="14" rx="4" fill="#c9a06b"/>
+      <circle cx="452" cy="296" r="14" fill="#d9663f"/>
+      <circle cx="452" cy="296" r="8" fill="none" stroke="#fbe9e1" stroke-width="2.5"/>
+      <path d="M452 290 v12 M446 296 h12" stroke="#fbe9e1" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- calendar with circled date -->
+      <rect x="64" y="252" width="92" height="96" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="64" y="252" width="92" height="24" rx="10" fill="#c96f4a"/>
+      <rect x="64" y="266" width="92" height="10" fill="#c96f4a"/>
+      <rect x="78" y="244" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <rect x="134" y="244" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <g fill="#d8cfbe">
+        <rect x="74" y="288" width="12" height="9" rx="2"/>
+        <rect x="92" y="288" width="12" height="9" rx="2"/>
+        <rect x="110" y="288" width="12" height="9" rx="2"/>
+        <rect x="74" y="304" width="12" height="9" rx="2"/>
+        <rect x="110" y="304" width="12" height="9" rx="2"/>
+        <rect x="74" y="320" width="12" height="9" rx="2"/>
+        <rect x="92" y="320" width="12" height="9" rx="2"/>
+      </g>
+      <circle cx="134" cy="309" r="13" fill="none" stroke="#3e7c59" stroke-width="3.5"/>
+      <rect x="128" y="304" width="12" height="9" rx="2" fill="#3e7c59"/>
+      <!-- shrubs -->
+      <circle cx="38" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="520" cy="388" r="14" fill="#5e9a78"/>
+      <circle cx="538" cy="394" r="10" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A passport doesn't fail on its printed expiration date — it fails earlier, quietly, in ways that only surface at the airport check-in desk or a border. Renewing early is how you sidestep every one of these:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="6" width="18" height="24" rx="2.5" fill="#3e7c59"/>
+          <rect x="12" y="9" width="12" height="18" rx="1.5" fill="#fffdf8"/>
+          <circle cx="18" cy="15" r="3.5" fill="#9cc8ad"/>
+          <path d="M13 24 q5 -6 10 0 z" fill="#9cc8ad"/>
+          <path d="M24 24 l8 8 m0 -8 l-8 8" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>The six-month rule</h3>
+        <p>Many countries require your passport to stay valid for at least six months <em>beyond</em> your travel dates. A passport that's "still valid" can still get you denied boarding or turned around at entry.</p>
+        <span class="cost">Denied at the border</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#6b7376" stroke-width="2.4"/>
+          <path d="M18 10 v8 l6 4" stroke="#d9663f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M27 6 l3 3 M9 6 l-3 3" stroke="#b9b1a3" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Processing takes weeks</h3>
+        <p>Routine renewals are measured in weeks, not days — and stretch out further in peak spring and summer season. Start late and your only options are expensive expediting or a canceled trip.</p>
+        <span class="cost">Weeks, longer in season</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="7" width="20" height="24" rx="2.5" fill="#35684c"/>
+          <path d="M8 19 l10 -3 l10 4" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M14 11 l3 5 l-4 1 z" fill="#fbe9e1"/>
+          <path d="M22 12 l-2 6 l4 -1 z" fill="#fbe9e1"/>
+          <path d="M18 24 l-2 4 l4 0 z" fill="#fbe9e1"/>
+        </svg></div>
+        <h3>Damage &amp; full pages</h3>
+        <p>A passport that's water-damaged, torn, or out of blank visa pages may be refused even before it expires. Either one is its own reason to replace the book, on its own timeline.</p>
+        <span class="cost">Refused before expiry</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 6 c8 4 11 4 11 4 s2 16 -11 20 c-13 -4 -11 -20 -11 -20 s3 0 11 -4" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M13 18 l4 4 l7 -8" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Early kills the rush</h3>
+        <p>Renew with a year of validity to spare and the whole thing is a calm, by-mail errand. Wait until a trip is booked and it becomes a stressful, pricier scramble against the clock.</p>
+        <span class="cost">$0 stress vs. rush fees</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="14" height="18" rx="2" fill="#7fb3c8"/>
+          <rect x="9" y="12" width="8" height="12" rx="1" fill="#dce8ee"/>
+          <circle cx="13" cy="16" r="2.2" fill="#5f93ad"/>
+          <rect x="18" y="13" width="13" height="16" rx="2" fill="#3e7c59"/>
+          <rect x="21" y="16" width="7" height="10" rx="1" fill="#9cc8ad"/>
+          <path d="M16 7 l2 4 l-4 0 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Kids' passports are different</h3>
+        <p>Children's passports are valid only five years and generally can't be renewed by mail — they mean an in-person visit, usually with both parents. That's slower, so plan further ahead.</p>
+        <span class="cost">5 years · in person</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHEN TO RENEW / QUIZ ============ -->
+  <section id="when">
+    <h2>When should <em>you</em> renew?</h2>
+    <p class="sub">The default is straightforward — renew about a year before it expires — but your expiration date, any upcoming travel, the book's condition, and whether it's a child's passport all shift the answer. Answer four questions for a personalized verdict:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="expiry">
+        <div class="q-label">1. When does the passport expire?</div>
+        <div class="pills">
+          <button class="pill" data-v="expired">Already expired</button>
+          <button class="pill" data-v="under6">Within 6 months</button>
+          <button class="pill" data-v="6to12">6–12 months out</button>
+          <button class="pill" data-v="over1">More than a year out</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="travel">
+        <div class="q-label">2. Any international travel coming up?</div>
+        <div class="pills">
+          <button class="pill" data-v="soon">Yes — within a few months</button>
+          <button class="pill" data-v="later">Yes — later this year or next</button>
+          <button class="pill" data-v="none">Nothing booked</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="condition">
+        <div class="q-label">3. Condition of the book?</div>
+        <div class="pills">
+          <button class="pill" data-v="fine">Fine</button>
+          <button class="pill" data-v="damaged">Damaged</button>
+          <button class="pill" data-v="full">Out of blank pages</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="holder">
+        <div class="q-label">4. Whose passport is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="adult">An adult's</button>
+          <button class="pill" data-v="child">A child's (under 16)</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <div class="kit-stats" id="kitStats" aria-label="Your renewal plan at a glance"></div>
+        <ul id="resultReasons"></ul>
+        <div class="anchor-note">📌 <strong>Make it stick:</strong> the cadence is roughly every 10 years (5 for kids) — far too long to remember on your own. Set a reminder for about a year <em>before</em> the expiration date printed in the book, so the six-month rule never catches you out.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs</h2>
+    <p class="sub">Renewing on a calm timeline is the cheapest version of this errand. The fees below are <strong>typical U.S. estimates that change</strong> — always confirm the current numbers on the official government passport site before you start:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$130</div><div class="l">renewal fee for an adult passport book (U.S. estimate — verify the current amount on the official site)</div></div>
+        <div class="calc-stat"><div class="v">~$10–15</div><div class="l">a compliant passport photo from a pharmacy, shipping store, or done correctly at home</div></div>
+        <div class="calc-stat"><div class="v bad">+~$60 &amp; up</div><div class="l">optional expedite fee, plus faster shipping — the avoidable surcharge for starting late</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🗓️ Renew early, by mail, routine service</span><span>~$130 + photo</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:32%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚡ Add expedite + faster shipping</span><span>~$130 + ~$60 + shipping</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>✈️ Missed the window — rebook or cancel a trip</span><span>hundreds to thousands</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">The base fee is the same whether you renew today or the week before a trip. The difference is everything <strong>around</strong> it: expedite charges, overnight shipping, and — the big one — the cost of a flight or trip you can't take because the book didn't arrive in time. Renewing early doesn't make the passport cheaper; it makes the <strong>expensive parts optional</strong>. Fees and timelines change, so confirm them on the official site every time.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to renew, step by step</h2>
+    <p class="sub">Work through the checklist below at your own pace — your progress saves automatically, so you can gather your photo one evening and submit the next. The whole flow is just five moves once you know the order.</p>
+
+    <div class="safety">
+      <h3>⚠️ Protect yourself: use only the official site</h3>
+      <ul>
+        <li><strong>Apply only through your country's OFFICIAL government passport site or agency.</strong> Search engines surface look-alike "expediter" and third-party sites that add fees, slow you down, or phish for your data. In the U.S. the official source is the State Department's travel.state.gov — start there, not from an ad.</li>
+        <li><strong>Never email photos or scans of your passport or IDs to unofficial addresses.</strong> Legitimate renewals don't ask you to message your documents to a random inbox. If a "service" does, that's your signal to stop.</li>
+        <li><strong>Always verify the current fees and processing times on the official site before you start.</strong> These change with season and policy — the number you remember from last time may be wrong.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧾 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your current / most recent passport</span>
+      <span class="tool-chip">A compliant passport photo</span>
+      <span class="tool-chip">The correct official renewal form</span>
+      <span class="tool-chip">The fee (check the current amount)</span>
+      <span class="tool-chip">To know: renew by mail or in person?</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Three things worth knowing first</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the six-month rule: a timeline showing the passport expiration date, a six-month buffer marked off before it, and a trip that must end inside that buffer">
+          <line x1="24" y1="96" x2="256" y2="96" stroke="#d8cfbe" stroke-width="3"/>
+          <line x1="210" y1="60" x2="210" y2="132" stroke="#d9663f" stroke-width="3"/>
+          <text x="210" y="50" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">expires</text>
+          <line x1="150" y1="68" x2="150" y2="124" stroke="#3e7c59" stroke-width="3" stroke-dasharray="3 4"/>
+          <rect x="150" y="86" width="60" height="20" rx="4" fill="#fbe9e1"/>
+          <text x="180" y="100" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">6-mo buffer</text>
+          <rect x="60" y="86" width="74" height="20" rx="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="97" y="100" font-size="10.5" fill="#2c5a40" font-weight="700" text-anchor="middle">your trip</text>
+          <path d="M30 96 l6 -4 v8 z" fill="#d8cfbe"/>
+          <text x="140" y="150" font-size="11" fill="#6b7376" text-anchor="middle">your trip must end before the buffer begins</text>
+          <text x="140" y="166" font-size="10" fill="#6b7376" text-anchor="middle">so renew well before the date in the book</text>
+        </svg>
+        <h4>The six-month rule</h4>
+        <p>Lots of destinations need six months of validity left when you travel — so the deadline that matters is six months <em>before</em> the printed expiry, not the date itself.</p>
+        <span class="cadence">Renew ~9–12 months early</span>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of mail versus in-person eligibility: a mailbox path for routine adult renewals, and an agency-counter path for first-time, child, or lost or damaged passports">
+          <path d="M44 70 q0 -14 14 -14 h36 q14 0 14 14 v44 h-64 z" fill="#3e7c59"/>
+          <rect x="44" y="78" width="64" height="10" fill="#2c5a40"/>
+          <rect x="70" y="64" width="14" height="3" rx="1.5" fill="#fffdf8"/>
+          <rect x="86" y="40" width="6" height="22" rx="3" fill="#8a6a4f"/>
+          <rect x="50" y="118" width="52" height="8" rx="4" fill="#8a6a4f"/>
+          <text x="76" y="146" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">By mail</text>
+          <text x="76" y="160" font-size="9.5" fill="#6b7376" text-anchor="middle">routine adult renewal</text>
+          <line x1="140" y1="40" x2="140" y2="150" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="3 5"/>
+          <rect x="176" y="56" width="80" height="60" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="176" y="56" width="80" height="16" rx="6" fill="#c96f4a"/>
+          <rect x="190" y="84" width="24" height="32" rx="2" fill="#e3efe8"/>
+          <circle cx="234" cy="98" r="7" fill="#5e9a78"/>
+          <path d="M227 116 q7 -9 14 0 z" fill="#5e9a78"/>
+          <text x="216" y="146" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">In person</text>
+          <text x="216" y="160" font-size="9.5" fill="#6b7376" text-anchor="middle">first-time · child · lost/damaged</text>
+        </svg>
+        <h4>Mail vs. in person</h4>
+        <p>Most adults renewing an undamaged, recent passport can do it by mail. First-timers, children, and anyone whose passport was lost, stolen, or damaged must apply in person.</p>
+        <span class="cadence">Check eligibility first</span>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a compliant passport photo: a head-and-shoulders portrait centered on a plain background with no glasses, beside a list of rules and a rejected example with a crossed-out tilted photo">
+          <rect x="34" y="40" width="78" height="96" rx="4" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="40" y="46" width="66" height="84" fill="#dce8ee"/>
+          <circle cx="73" cy="84" r="20" fill="#9cc8ad"/>
+          <path d="M48 130 q25 -30 50 0 z" fill="#9cc8ad"/>
+          <path d="M118 56 l4 4 l8 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#6b7376" font-size="10.5">
+            <text x="140" y="62">plain background</text>
+            <text x="140" y="82">face centered</text>
+            <text x="140" y="102">no glasses</text>
+            <text x="140" y="122">neutral expression</text>
+          </g>
+          <g stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M128 58 l3 3 l5 -5"/>
+            <path d="M128 78 l3 3 l5 -5"/>
+            <path d="M128 98 l3 3 l5 -5"/>
+            <path d="M128 118 l3 3 l5 -5"/>
+          </g>
+          <text x="140" y="158" font-size="10" fill="#6b7376">strict sizing — let a pro or an official tool do it</text>
+        </svg>
+        <h4>The photo has rules</h4>
+        <p>Exact size, a plain light background, full face, neutral expression, no glasses, recent. It's the most common reason an application gets bounced — worth getting right the first time.</p>
+        <span class="cadence">Use an official photo tool / pro</span>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Renewal progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Submitted! Track the status online, and set a reminder ~9 years out so the next renewal is just as calm.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO PLAN EXTRA TIME / GET HELP ============ -->
+  <section id="pro">
+    <h2>When to plan extra time — or get help</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>You're traveling within a few weeks.</strong> Routine processing won't make it. Look into the official expedited service or an in-person appointment at a passport agency — book through the official site only, and check the current expedite timelines and fees there first.</li>
+        <li><strong>Your name changed</strong> (marriage, divorce, court order). You'll usually need to submit documentation of the change, and the right form depends on how recently your current passport was issued — the official site spells out which path applies.</li>
+        <li><strong>It was lost or stolen.</strong> This isn't a renewal — it's a replacement, done in person, and you'll typically need to report the old one lost or stolen first so it can't be misused.</li>
+        <li><strong>It's damaged.</strong> Water damage, tears, or significant wear mean applying in person rather than by mail. Don't assume a worn book will still be accepted abroad.</li>
+        <li><strong>It's a child's passport.</strong> Children's passports generally require an in-person visit, both parents or guardians present (or documented consent), and proof of the child's citizenship and relationship. Plan well ahead — these can't be rushed by mail.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How early should I renew?</summary>
+      <p>A good rule of thumb is roughly 9–12 months before the printed expiration date. That sounds like a lot, but the six-month-validity rule effectively shortens a passport's useful life — many countries won't admit you in the final six months — and routine processing eats several more weeks. Renewing with a year to spare keeps you out of both traps and off the expedite track.</p>
+    </details>
+    <details>
+      <summary>Can I renew by mail, or do I have to go in person?</summary>
+      <p>It depends on your situation. Many adults can renew by mail if their most recent passport is undamaged, was issued when they were an adult, and isn't too old — the official site lists the exact eligibility rules. You generally must apply <em>in person</em> if it's a first passport, a child's passport, or if the current one was lost, stolen, or damaged. Check which path applies before you start so you don't gather the wrong form.</p>
+    </details>
+    <details>
+      <summary>How long does it take?</summary>
+      <p>Routine processing is typically measured in several weeks and runs longer during the busy spring and summer travel season; expedited service is faster for an extra fee, and a passport agency appointment can be faster still for urgent, soon travel. Exact times change constantly, so treat any number you remember as out of date and confirm the current estimate on the official government site.</p>
+    </details>
+    <details>
+      <summary>What is the six-month-validity rule?</summary>
+      <p>Many destinations require your passport to be valid for at least six months beyond your planned travel dates (some use three months, some none — it varies by country). Practically, it means a passport in its final six months may not be usable for international travel even though it hasn't technically expired. When in doubt, check the entry requirements for your specific destination — and just renew early so it never becomes a question.</p>
+    </details>
+    <details>
+      <summary>Do passport photos really have strict rules?</summary>
+      <p>Yes — and a bad photo is one of the most common reasons applications get rejected and delayed. Requirements typically cover exact dimensions, a plain light-colored background, your full face with a neutral expression, no glasses, recent date, and no filters or heavy editing. A pharmacy or shipping store will take a compliant one cheaply, or you can use the official photo tool; don't freehand a selfie and hope.</p>
+    </details>
+    <details>
+      <summary>Where do I actually apply?</summary>
+      <p>Only through your country's official government passport site or agency — for the U.S., that's the State Department at travel.state.gov. Avoid third-party "expediter" and look-alike sites that add fees or harvest your information, and never email scans of your passport or IDs to an address you didn't verify as official. Start from the government site directly rather than a search ad, and confirm the current fees and timelines there before you begin.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A ten-year deadline is impossible to remember. Give it a reminder.</h2>
+        <p>The whole trick to a stress-free passport renewal is starting early — but a date a decade out is exactly the kind of thing that ambushes you the week before a trip. Log the expiration in Upkeep Ledger and it'll resurface about a year ahead, with time to spare for the six-month rule, right alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-passport&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-passport&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Fees and processing times are typical U.S. estimates for planning only and change often — always verify the current numbers on the official government passport site.</p>
+    <p>General process information, not legal advice. Apply only through your country's official government passport agency, and follow its current instructions for your situation.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { expiry: null, travel: null, condition: null, holder: null };
+
+  var VERDICTS = {
+    now: {
+      label: "Renew now",
+      body: "Don't wait on this one — start the application as soon as you can, and read the expedite note below if a trip is close."
+    },
+    soon: {
+      label: "Renew soon",
+      body: "You're not in a crisis, but you're inside the window where the six-month rule and multi-week processing start to matter. Get it moving in the next few weeks."
+    },
+    set: {
+      label: "You're set — set a reminder",
+      body: "Nothing's urgent. The only real risk is forgetting, so put a reminder on the calendar for about a year before it expires and get on with your life."
+    }
+  };
+
+  function computePlan(s) {
+    var score = 0;            // higher = more urgent
+    var reasons = [];
+    var expedite = false;
+    var inPerson = false;
+
+    // Expiration date
+    if (s.expiry === "expired") {
+      score += 4;
+      reasons.push("It's already expired, so it can't be used for international travel at all — renewing is the only way to get a working passport back.");
+    } else if (s.expiry === "under6") {
+      score += 3;
+      reasons.push("With under six months of validity left, the six-month rule means many countries already won't accept it — treat it as effectively expired for travel.");
+    } else if (s.expiry === "6to12") {
+      score += 1;
+      reasons.push("At 6–12 months out, you're entering the renew-early window: renewing now keeps you clear of the six-month rule on any trip you book this year.");
+    } else {
+      reasons.push("More than a year of validity means you have comfortable runway — the main job is making sure you don't forget before the window closes.");
+    }
+
+    // Upcoming travel
+    if (s.travel === "soon") {
+      score += 2;
+      reasons.push("With travel within a few months, time is the constraint — routine processing runs weeks, so factor in expedited service if the date is tight.");
+    } else if (s.travel === "later") {
+      score += 1;
+      reasons.push("You have a trip later on, which is the perfect prompt to renew now while there's no time pressure and no expedite fee.");
+    } else {
+      reasons.push("Nothing's booked, so you can renew on a relaxed, routine timeline and skip every rush surcharge.");
+    }
+
+    // Condition
+    if (s.condition === "damaged") {
+      score += 2;
+      inPerson = true;
+      reasons.push("A damaged passport may be refused abroad and generally can't be renewed by mail — plan to replace it in person, which takes a bit longer to arrange.");
+    } else if (s.condition === "full") {
+      score += 1;
+      reasons.push("Running out of blank visa pages is its own reason to replace the book — a full passport can stop you at a border even before it expires.");
+    }
+
+    // Holder type — children's passports
+    if (s.holder === "child") {
+      score += 1;
+      inPerson = true;
+      reasons.push("Children's passports are valid only five years and generally can't be renewed by mail — they require an in-person visit (usually with both parents), so build in extra lead time.");
+    }
+
+    // Expedite flag: close travel combined with little or no validity
+    if (s.travel === "soon" && (s.expiry === "expired" || s.expiry === "under6" || s.condition === "damaged")) {
+      expedite = true;
+    }
+
+    var key;
+    if (score >= 4) key = "now";
+    else if (score >= 2) key = "soon";
+    else key = "set";
+
+    return { key: key, reasons: reasons, expedite: expedite, inPerson: inPerson };
+  }
+
+  function onQuizChange() {
+    if (!quizState.expiry || !quizState.travel || !quizState.condition || !quizState.holder) return;
+    var r = computePlan(quizState);
+    var v = VERDICTS[r.key];
+
+    document.getElementById("resultFreq").textContent = "Verdict: " + v.label;
+    document.getElementById("resultBody").textContent = v.body;
+
+    var stats = document.getElementById("kitStats");
+    stats.innerHTML = "";
+    var chips = [];
+    chips.push(quizState.holder === "child" ? "🧒 Valid 5 years (children)" : "🪪 Valid 10 years (adults)");
+    chips.push(r.inPerson ? "🏛️ Apply in person" : "📮 Likely eligible by mail");
+    if (r.expedite) chips.push("⚡ Consider expedited service");
+    chips.forEach(function (t) {
+      var span = document.createElement("span");
+      span.className = "kit-pill";
+      span.textContent = t;
+      stats.appendChild(span);
+    });
+
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    if (r.inPerson) {
+      var li2 = document.createElement("li");
+      li2.textContent = "Because this case applies in person, confirm what to bring and whether you need an appointment on the official site before you go.";
+      ul.appendChild(li2);
+    }
+
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Check", text: "Find the expiration date printed in your passport", note: "It's on the photo page. Write it down — this is the date everything else counts back from." },
+    { phase: "Check", text: "Apply the six-month rule to any planned trips", note: "Many countries need 6+ months of validity left when you travel. If a trip lands inside that buffer, treat the passport as already due for renewal." },
+    { phase: "Check", text: "Confirm whether you can renew by mail or must apply in person", note: "Most adults with a recent, undamaged passport can mail it in. First-timers, children, and lost/stolen/damaged passports apply in person — check the rules on the official site." },
+    { phase: "Check", text: "Note the current fees and processing times from the official site", note: "These change with season and policy. Get the real numbers from your government's official passport site (in the U.S., travel.state.gov), not from memory or an ad." },
+    { phase: "Prepare", text: "Get a compliant passport photo", note: "Correct size, plain light background, full face, neutral expression, no glasses, recent. A pharmacy or shipping store does this cheaply, or use the official photo tool." },
+    { phase: "Prepare", text: "Download the correct official renewal form", note: "The right form depends on your situation (routine renewal vs. name change vs. in-person). Get it from the official site so you're not filling out a look-alike." },
+    { phase: "Prepare", text: "Complete the form carefully and gather your current passport", note: "Match the name and details exactly. Your most recent passport is usually submitted with the application — the official instructions say exactly what to include." },
+    { phase: "Prepare", text: "Set aside the fee in the accepted payment form", note: "Confirm the current amount and how it's paid (some methods differ for mail vs. in person). Budget separately for any expedite or faster-shipping options." },
+    { phase: "Prepare", text: "Make a copy of your passport and documents for your own records", note: "Keep copies somewhere private and secure for yourself — never email scans of your passport or IDs to unofficial addresses." },
+    { phase: "Submit", text: "Decide routine vs. expedited based on your travel date", note: "No trip soon? Routine is cheapest. Traveling within a few weeks? Look into official expedited service or a passport-agency appointment — booked only through the official site." },
+    { phase: "Submit", text: "Submit by mail or in person, following the official instructions", note: "Mail to the official address with the right packaging, or attend your in-person appointment with everything on the checklist. Double-check you've enclosed the photo, form, fee, and old passport." },
+    { phase: "Submit", text: "Save your tracking or application number", note: "You'll need it to check status. Note where you can track it on the official site." },
+    { phase: "Submit", text: "Track the status until the new passport arrives", note: "Check periodically on the official site. If a trip is approaching and it's slow, that's when to weigh expedited options." },
+    { phase: "Submit", text: "When it arrives, store it safely and set the next reminder", note: "Sign it if required, keep it somewhere safe, and set a reminder ~9 years out (sooner for kids) so the next renewal is early and stress-free." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-passport:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
