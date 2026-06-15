@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean phone case — UpkeepGuides.com</title>
+<meta name="description" content="Your phone and case carry more bacteria than a toilet seat. How to take the case off and scrub it the right way by material, wipe the phone safely with 70% isopropyl, and keep it hygienic with a quick weekly clean.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Clean phone case — UpkeepGuides.com">
+<meta property="og:description" content="Your phone and case carry more bacteria than a toilet seat. How to take the case off and scrub it the right way by material, wipe the phone safely with 70% isopropyl, and keep it hygienic with a quick weekly clean.">
+<meta property="og:url" content="https://upkeepguides.com/clean-phone-case.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clean phone case — UpkeepGuides.com">
+<meta name="twitter:description" content="Your phone and case carry more bacteria than a toilet seat. How to take the case off and scrub it the right way by material, wipe the phone safely with 70% isopropyl, and keep it hygienic with a quick weekly clean.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every week</span>
+      <h1>Clean Your Phone Case</h1>
+      <p class="lede">Your phone goes everywhere with you — the gym, the kitchen counter, the bathroom — and the case is a warm crevice that collects every bit of it. Studies routinely find more bacteria on a phone than on a toilet seat, plus grime, makeup, and pocket lint packed around the buttons and ports. The fix is genuinely two minutes: take the case off and scrub it once a week.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Clean <em>every week</em></span>
+        <span class="chip">🦠 Dirtier than <em>a toilet seat</em></span>
+        <span class="chip">⏱️ <em>~5 minutes</em> hands-on</span>
+        <span class="chip">💸 Costs <em>~$0</em> — soap &amp; alcohol</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bathroom counter scene for cleaning a phone case: a clear phone case popped off the phone and lying in a bowl of warm soapy water with a toothbrush scrubbing its button cutouts, the bare phone beside it being wiped with a microfiber cloth and a 70 percent isopropyl alcohol wipe, cotton swabs for the ports, and a plant by a sunny window">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="406" y="44" width="110" height="124" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="461" y1="47" x2="461" y2="165" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="409" y1="106" x2="513" y2="106" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="486" cy="78" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="486" y1="54" x2="486" y2="60"/>
+        <line x1="508" y1="78" x2="502" y2="78"/>
+        <line x1="502" y1="62" x2="498" y2="66"/>
+      </g>
+      <rect x="394" y="36" width="134" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- counter -->
+      <rect x="36" y="336" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="60" y="352" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <rect x="486" y="352" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <!-- bowl of warm soapy water with the case -->
+      <path d="M70 264 h180 l-16 58 q-2 10 -14 10 h-120 q-12 0 -14 -10 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <ellipse cx="160" cy="266" rx="90" ry="12" fill="#7fb3c8" opacity="0.4"/>
+      <!-- clear case in the bowl -->
+      <rect x="118" y="240" width="76" height="86" rx="16" fill="#7fb3c8" opacity="0.5" stroke="#7fb3c8" stroke-width="2.5"/>
+      <rect x="130" y="252" width="52" height="64" rx="10" fill="#dce8ee" opacity="0.5"/>
+      <!-- camera cutout on the case -->
+      <rect x="134" y="248" width="22" height="16" rx="5" fill="#5e9a78" opacity="0.7"/>
+      <!-- button cutouts on the case edge -->
+      <rect x="114" y="262" width="6" height="16" rx="3" fill="#5e9a78"/>
+      <rect x="114" y="284" width="6" height="10" rx="3" fill="#5e9a78"/>
+      <!-- toothbrush scrubbing the case -->
+      <rect x="196" y="216" width="9" height="56" rx="4.5" fill="#c96f4a" transform="rotate(20 200 244)"/>
+      <g stroke="#fffdf8" stroke-width="2" stroke-linecap="round">
+        <line x1="176" y1="270" x2="170" y2="278"/>
+        <line x1="182" y1="274" x2="177" y2="283"/>
+        <line x1="188" y1="278" x2="184" y2="287"/>
+      </g>
+      <!-- bubbles -->
+      <g fill="#fffdf8" opacity="0.85">
+        <circle cx="100" cy="280" r="5"/>
+        <circle cx="112" cy="272" r="3.5"/>
+        <circle cx="206" cy="284" r="4.5"/>
+        <circle cx="150" cy="290" r="3"/>
+      </g>
+      <!-- bare phone being wiped -->
+      <rect x="296" y="206" width="104" height="124" rx="18" fill="#2c5a40"/>
+      <rect x="306" y="218" width="84" height="100" rx="10" fill="#33393b"/>
+      <!-- camera bump -->
+      <rect x="312" y="224" width="28" height="20" rx="6" fill="#3e7c59"/>
+      <circle cx="320" cy="231" r="4" fill="#dce8ee"/>
+      <circle cx="332" cy="237" r="4" fill="#dce8ee"/>
+      <!-- microfiber cloth wiping the phone -->
+      <rect x="324" y="252" width="56" height="44" rx="10" fill="#7fb3c8" transform="rotate(-8 352 274)"/>
+      <path d="M334 268 q10 -4 20 0 q10 4 20 0" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round" transform="rotate(-8 352 274)"/>
+      <!-- alcohol wipe packet leaning on the counter -->
+      <rect x="408" y="294" width="44" height="40" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="408" y="294" width="44" height="13" rx="6" fill="#5e9a78"/>
+      <text x="430" y="324" font-size="13" font-weight="800" fill="#2c5a40" text-anchor="middle" font-family="Georgia, serif">70%</text>
+      <!-- cotton swabs for the ports -->
+      <line x1="250" y1="334" x2="288" y2="320" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="250" cy="334" r="6" fill="#fffdf8"/>
+      <circle cx="288" cy="320" r="6" fill="#fffdf8"/>
+      <!-- sparkles -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="232" y1="216" x2="232" y2="228"/>
+        <line x1="226" y1="222" x2="238" y2="222"/>
+        <line x1="402" y1="196" x2="402" y2="206"/>
+        <line x1="397" y1="201" x2="407" y2="201"/>
+      </g>
+      <!-- plant -->
+      <path d="M514 388 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M514 388 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="498" cy="352" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 498 352)"/>
+      <ellipse cx="532" cy="356" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 532 356)"/>
+      <path d="M500 388 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+      <!-- floor shadow -->
+      <ellipse cx="280" cy="392" rx="130" ry="10" fill="#b9b1a3" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A phone case is the one accessory you touch more than your own face, carry into every room, and almost never wash. It's a warm, sheltered surface that collects whatever your hands and pockets carry — and the gap between the case and the phone is a sealed little terrarium. Here's what builds up while you're not looking:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M12 30 q-5 0 -5 -6 q0 -5 5 -6 q-1 -6 6 -6 q7 0 6 6 q5 1 5 6 q0 6 -5 6 z" fill="#5e9a78"/>
+          <circle cx="14" cy="22" r="2.4" fill="#2c5a40"/>
+          <circle cx="22" cy="20" r="2" fill="#2c5a40"/>
+          <circle cx="19" cy="26" r="1.8" fill="#2c5a40"/>
+          <circle cx="25" cy="26" r="1.5" fill="#2c5a40"/>
+          <path d="M10 12 q4 -4 8 0 q4 4 8 0" stroke="#7fb3c8" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Germier than a toilet seat</h3>
+        <p>Swab studies routinely find phones carrying several times more bacteria than a toilet seat — because the toilet gets cleaned and your phone never does. Everything your hands touch ends up on the screen and case, then back on your face all day.</p>
+        <span class="cost">More bacteria than the bathroom</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="4" width="14" height="28" rx="4" fill="#c96f4a"/>
+          <rect x="14" y="8" width="8" height="20" rx="2" fill="#fbe9e1"/>
+          <rect x="9" y="11" width="3" height="6" rx="1.5" fill="#c96f4a"/>
+          <rect x="9" y="20" width="3" height="4" rx="1.5" fill="#c96f4a"/>
+          <g fill="#8a6a4f">
+            <circle cx="16" cy="14" r="1.4"/>
+            <circle cx="20" cy="18" r="1.6"/>
+            <circle cx="17" cy="22" r="1.2"/>
+            <circle cx="21" cy="24" r="1"/>
+          </g>
+        </svg></div>
+        <h3>Grime hides in the case</h3>
+        <p>Pocket lint, makeup, hand cream, food crumbs, and sweat pack into the seams, the button cutouts, and the inside of the case where it hugs the phone. It's the dirt you can't see until you finally pop the case off — and then it's grim.</p>
+        <span class="cost">Lint, makeup &amp; oils packed in</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="4" width="18" height="28" rx="4" fill="#2c5a40"/>
+          <rect x="12" y="8" width="12" height="20" rx="2" fill="#dce8ee"/>
+          <path d="M14 14 l8 8 M22 14 l-8 8" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <g fill="#b9b1a3">
+            <circle cx="16" cy="11" r="1.4"/>
+            <circle cx="20" cy="25" r="1.2"/>
+          </g>
+        </svg></div>
+        <h3>Trapped grit scratches the phone</h3>
+        <p>Sand, dust, and hard crumbs that work in behind the case don't sit still — every time you set the phone down they grind against the back glass and camera lens. A case meant to protect the phone slowly sandpapers it instead.</p>
+        <span class="cost">Hairline scratches on the glass</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 q-9 9 -9 17 a9 9 0 0 0 18 0 q0 -8 -9 -17 z" fill="#7fb3c8"/>
+          <path d="M18 4 q-9 9 -9 17 a9 9 0 0 0 9 9 z" fill="#dce8ee"/>
+          <path d="M22 13 q4 4 0 9" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M13 9 l3 3 l5 -6" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 14)"/>
+        </svg></div>
+        <h3>A weekly clean fixes all of it</h3>
+        <p>None of this needs deep effort — a quick weekly clean keeps the case hygienic, clears the grit before it scratches, and stops grime from ever building into something gross. Five minutes a week is the whole defense.</p>
+        <span class="cost">Five minutes beats the buildup</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">Once a week is the right default — often enough to stop grime and bacteria from settling in, light enough that it never feels like a chore. But what your case is made of, where it goes, and how it looks right now can pull that interval in. Answer three questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="material">
+        <div class="q-label">1. What's the case made of?</div>
+        <div class="pills">
+          <button class="pill" data-v="clear">Clear silicone / TPU</button>
+          <button class="pill" data-v="hard">Hard plastic or metal</button>
+          <button class="pill" data-v="leather">Leather</button>
+          <button class="pill" data-v="folio">Wallet / folio</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">2. Where does the phone usually go?</div>
+        <div class="pills">
+          <button class="pill" data-v="gentle">Gentle daily carry — desk &amp; home</button>
+          <button class="pill" data-v="active">Gym, kitchen, or outdoors a lot</button>
+          <button class="pill" data-v="shared">Handed around / shared often</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. How does it look right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="clean">Clean &amp; fresh</button>
+          <button class="pill" data-v="grimy">A bit grimy or dull</button>
+          <button class="pill" data-v="yellow">Visibly yellowed or stained</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="caseNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs (basically nothing)</h2>
+    <p class="sub">This is about as cheap as upkeep gets — the supplies are things most homes already have, and a bottle of isopropyl lasts for years of weekly wipes. The only real expense is replacing a case you let grime ruin, or a phone whose lens got scratched by trapped grit (typical U.S. figures for planning):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$0</div><div class="l">dish soap and water — already at every sink</div></div>
+        <div class="calc-stat"><div class="v">~$5–8</div><div class="l">a bottle of 70% isopropyl alcohol or a box of alcohol wipes, good for years</div></div>
+        <div class="calc-stat"><div class="v bad">$15–60</div><div class="l">a replacement case once it's permanently yellowed, stretched, or smells</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧼 A year of weekly cleans (soap, water, a swab)</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 Isopropyl + a microfiber cloth, one-time</span><span>~$5–10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:12%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>📱 A case replaced early — or a scratched camera lens</span><span>$15–60+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The honest math: a squirt of dish soap and a splash of alcohol cost <strong>pennies a week</strong>, and they keep both the case and the phone they protect in good shape. The expensive outcome is letting grit sandpaper the back glass, or letting a clear case yellow past saving — then buying a <strong>$15–60 replacement</strong> you could have simply kept clean. A weekly wipe isn't fussiness; it's what makes a case last.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your phone case (and the phone)</h2>
+    <p class="sub">The whole trick is separating the two: take the case off and you can scrub it properly with water without ever putting your phone near the sink. Learn the five ideas below, then work the checklist — your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Care first — keep liquid away from the phone</h3>
+      <ul>
+        <li><strong>Take the case OFF the phone before you clean it.</strong> The case can be washed in water; the phone can't. Separating them is the one rule that protects the phone from moisture getting into the charging port and speakers.</li>
+        <li><strong>Never submerge or splash the phone itself.</strong> Wipe it with a <em>barely-damp</em> cloth or a ~70% isopropyl alcohol wipe — wrung-out, not dripping — and keep all liquid away from the ports. Don't spray anything directly onto the phone.</li>
+        <li><strong>Skip bleach, abrasives, and harsh cleaners on the phone.</strong> They strip the oil-resistant (oleophobic) coating on the screen. 70% isopropyl is the strong limit; check your phone maker's own cleaning guidance.</li>
+        <li><strong>Leather is the exception: don't soak it.</strong> A leather or leather-wrapped case should never go in water — wipe it with a slightly damp cloth or a proper leather cleaner, and condition it occasionally so it doesn't dry and crack.</li>
+        <li><strong>Let everything dry completely before reassembling.</strong> Sealing a damp case back onto the phone traps moisture against it — exactly what you were trying to avoid. Bone-dry, then re-case.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Mild dish soap + warm water</span>
+      <span class="tool-chip">Soft brush or old toothbrush</span>
+      <span class="tool-chip">Microfiber cloth</span>
+      <span class="tool-chip">~70% isopropyl alcohol or alcohol wipes</span>
+      <span class="tool-chip">Cotton swabs</span>
+      <span class="tool-chip">Leather: a leather cleaner / conditioner</span>
+      <span class="tool-chip">Yellowed clear case: baking soda or white vinegar</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a phone case being peeled off a phone, separating the two so the case can be washed away from the phone">
+          <rect x="60" y="34" width="74" height="118" rx="18" fill="#2c5a40"/>
+          <rect x="70" y="46" width="54" height="94" rx="9" fill="#33393b"/>
+          <rect x="78" y="52" width="22" height="15" rx="5" fill="#3e7c59"/>
+          <!-- case peeling off to the right -->
+          <path d="M150 40 q40 -6 56 14 q12 24 -2 96 q-32 14 -50 -2 z" fill="#7fb3c8" opacity="0.6" stroke="#7fb3c8" stroke-width="2.5"/>
+          <rect x="170" y="54" width="22" height="16" rx="5" fill="#5e9a78" opacity="0.7"/>
+          <!-- motion arrow -->
+          <path d="M138 92 h22" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="160,84 174,92 160,100" fill="#3e7c59"/>
+          <text x="40" y="170" font-size="11" fill="#6b7376" font-weight="700">pop the case off first</text>
+        </svg>
+        <h4>Separate the case from the phone</h4>
+        <p>Peel the case off, starting at a corner and working around the edges. Now the case can meet water freely, and the phone gets its own gentle treatment — never the two together.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a silicone or plastic case being scrubbed in warm soapy water with a toothbrush working the seams and button cutouts, with bubbles">
+          <path d="M40 70 h200 l-16 78 q-2 10 -14 10 h-140 q-12 0 -14 -10 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <ellipse cx="140" cy="74" rx="100" ry="12" fill="#7fb3c8" opacity="0.4"/>
+          <!-- case in the water -->
+          <rect x="96" y="50" width="64" height="92" rx="16" fill="#7fb3c8" opacity="0.55" stroke="#7fb3c8" stroke-width="2.5"/>
+          <rect x="106" y="58" width="22" height="16" rx="5" fill="#5e9a78" opacity="0.7"/>
+          <rect x="92" y="70" width="6" height="16" rx="3" fill="#5e9a78"/>
+          <rect x="92" y="92" width="6" height="10" rx="3" fill="#5e9a78"/>
+          <!-- toothbrush -->
+          <rect x="168" y="32" width="8" height="50" rx="4" fill="#c96f4a" transform="rotate(22 172 57)"/>
+          <g stroke="#fffdf8" stroke-width="2" stroke-linecap="round">
+            <line x1="150" y1="82" x2="144" y2="90"/><line x1="156" y1="86" x2="151" y2="95"/>
+          </g>
+          <g fill="#fffdf8" opacity="0.85">
+            <circle cx="70" cy="88" r="5"/><circle cx="82" cy="80" r="3.5"/><circle cx="206" cy="92" r="4.5"/>
+          </g>
+          <text x="44" y="176" font-size="11" fill="#6b7376" font-weight="700">scrub the seams &amp; cutouts</text>
+        </svg>
+        <h4>Wash a silicone or plastic case</h4>
+        <p>Drop a TPU, silicone, or hard-plastic case into warm soapy water and scrub the seams and button cutouts with a soft brush — those creases hold the most grime. Rinse and dry it fully.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram contrasting two clear-case treatments: a baking-soda paste scrubbed on with a brush, and a short white-vinegar soak in a bowl, both to remove yellowing">
+          <!-- left: baking soda paste -->
+          <rect x="34" y="48" width="58" height="92" rx="16" fill="#dce8ee" opacity="0.6" stroke="#7fb3c8" stroke-width="2.5"/>
+          <circle cx="63" cy="92" r="14" fill="#faf0da"/>
+          <circle cx="57" cy="88" r="3" fill="#e0a93d"/><circle cx="69" cy="96" r="2.5" fill="#e0a93d"/><circle cx="65" cy="84" r="2" fill="#e0a93d"/>
+          <rect x="92" y="64" width="6" height="40" rx="3" fill="#c96f4a" transform="rotate(28 95 84)"/>
+          <text x="30" y="162" font-size="11" fill="#6b7376" font-weight="700">baking-soda paste</text>
+          <line x1="140" y1="22" x2="140" y2="158" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="5 6"/>
+          <!-- right: vinegar soak -->
+          <path d="M168 78 h90 l-9 62 q-1 8 -9 8 h-54 q-8 0 -9 -8 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <path d="M178 92 h70 l-7 46 q-1 5 -6 5 h-44 q-5 0 -6 -5 z" fill="#e0a93d" opacity="0.35"/>
+          <rect x="196" y="64" width="40" height="68" rx="12" fill="#dce8ee" opacity="0.7" stroke="#7fb3c8" stroke-width="2"/>
+          <ellipse cx="213" cy="80" rx="46" ry="8" fill="#e0a93d" opacity="0.3"/>
+          <text x="176" y="162" font-size="11" fill="#6b7376" font-weight="700">short vinegar soak</text>
+        </svg>
+        <h4>Rescue a yellowed clear case</h4>
+        <p>Clear cases yellow as the plastic reacts to UV and heat. To fight it, scrub a baking-soda paste into the case, or give it a short soak in a half-and-half white-vinegar solution, then rinse well.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a leather case being wiped with a damp cloth and conditioned, with a clear no-water symbol indicating it must not be soaked">
+          <rect x="50" y="36" width="74" height="114" rx="14" fill="#8a6a4f"/>
+          <rect x="58" y="44" width="58" height="98" rx="9" fill="#a07a52"/>
+          <path d="M58 70 h58 M58 96 h58 M58 122 h58" stroke="#8a6a4f" stroke-width="1.5" opacity="0.6"/>
+          <!-- damp cloth -->
+          <rect x="92" y="70" width="44" height="34" rx="9" fill="#7fb3c8" transform="rotate(-10 114 87)"/>
+          <!-- no-water symbol -->
+          <circle cx="206" cy="74" r="30" fill="#fbe9e1" stroke="#d9663f" stroke-width="3"/>
+          <path d="M206 56 q-10 12 -10 20 a10 10 0 0 0 20 0 q0 -8 -10 -20 z" fill="#7fb3c8"/>
+          <line x1="184" y1="52" x2="228" y2="96" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="160" y="138" font-size="11" fill="#6b7376" font-weight="700">don't soak leather</text>
+        </svg>
+        <h4>Leather: wipe, never soak</h4>
+        <p>Leather can't take a bath. Wipe a leather case with a slightly damp cloth or a dedicated leather cleaner, then condition it now and then so it stays supple instead of drying out and cracking.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the bare phone being wiped with a 70 percent isopropyl wipe while a dry cotton swab cleans the charging port and speaker grilles">
+          <rect x="44" y="28" width="94" height="124" rx="18" fill="#2c5a40"/>
+          <rect x="54" y="40" width="74" height="92" rx="9" fill="#33393b"/>
+          <rect x="62" y="46" width="22" height="15" rx="5" fill="#3e7c59"/>
+          <!-- isopropyl wipe -->
+          <rect x="78" y="72" width="52" height="40" rx="10" fill="#7fb3c8" transform="rotate(-8 104 92)"/>
+          <text x="104" y="98" font-size="12" font-weight="800" fill="#2c5a40" text-anchor="middle" font-family="Georgia, serif" transform="rotate(-8 104 92)">70%</text>
+          <!-- port and speaker grilles at the bottom edge -->
+          <g fill="#b9b1a3">
+            <circle cx="74" cy="140" r="2.2"/><circle cx="82" cy="140" r="2.2"/><circle cx="90" cy="140" r="2.2"/>
+            <circle cx="100" cy="140" r="2.2"/><circle cx="108" cy="140" r="2.2"/>
+          </g>
+          <!-- cotton swab to the port -->
+          <line x1="160" y1="160" x2="120" y2="144" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="162" cy="161" r="6" fill="#fffdf8"/>
+          <circle cx="118" cy="143" r="5" fill="#fffdf8"/>
+          <text x="148" y="56" font-size="11" fill="#6b7376" font-weight="700">dry swab</text>
+          <text x="148" y="70" font-size="11" fill="#6b7376">for the ports</text>
+          <text x="40" y="174" font-size="11" fill="#6b7376" font-weight="700">barely-damp wipe, dry swab</text>
+        </svg>
+        <h4>Wipe the phone, swab the ports</h4>
+        <p>With the case off, wipe the phone with a barely-damp microfiber or a 70% isopropyl wipe. Clean the charging port and speaker grilles gently with a <em>dry</em> cotton swab — never poke anything wet inside.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Clean progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Case scrubbed, phone wiped, everything dry and back together. Hygienic again — same quick clean next week.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / WHEN TO REPLACE ============ -->
+  <section id="pro">
+    <h2>When to replace the case</h2>
+    <p class="sub">A weekly clean keeps a good case going for a long time, but a case is a wear item — at some point it's protecting the phone less than it's hiding damage. Replace it when cleaning can't bring it back:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Cracks or splits in the shell.</strong> A cracked case has lost its job — it no longer absorbs a drop, and the crack is a sharp edge that can scratch the phone. Cracked corners especially mean it's done.</li>
+        <li><strong>Permanent yellowing or staining</strong> that survives a baking-soda scrub and a vinegar soak. Once a clear case has chemically yellowed all the way through, no cleaning brings the clarity back — it's cosmetic, but it's permanent.</li>
+        <li><strong>Stretched out and loose.</strong> Silicone and TPU relax over time; a case that no longer snaps tight slips off, lets grit in constantly, and stops gripping the phone. A loose case is a phone waiting to be dropped.</li>
+        <li><strong>The corners no longer protect.</strong> Thinned, worn, or flattened corners are the whole point of a case gone — that's where impact lands. If the bumpers are mashed flat, the case is decoration, not protection.</li>
+        <li><strong>A smell that won't leave.</strong> A leather or fabric case that's held onto sweat and odor through repeated cleaning has residue locked into the material. When it can't be freshened, retire it.</li>
+        <li>And the easy win: <strong>a fresh case is cheap.</strong> A $15–25 replacement that actually grips and protects beats babying a phone in a case you've quietly stopped trusting.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I really clean my phone case?</summary>
+      <p>Once a week is the sweet spot for most people — frequent enough that grime and bacteria never get a chance to build up, light enough that it stays a five-minute habit. Tighten to a few times a week if the phone goes to the gym, lives on the kitchen counter, or gets handled by lots of people, all of which load it up faster. And clean it on the spot any time it's visibly grimy or you've been sick. A clear case that yellows is the one exception that benefits from cleaning even more often.</p>
+    </details>
+    <details>
+      <summary>How do I clean a yellowed clear or silicone case?</summary>
+      <p>Yellowing happens as the plastic reacts to UV light, heat, and skin oils over time — it's a chemical change, not just surface dirt. To fight it: scrub a paste of baking soda and a little water into the case with a soft brush, or give it a short soak (15–30 minutes) in a half-and-half mix of white vinegar and water, then rinse and dry. Some people add a little hydrogen peroxide and sunlight. These help with mild yellowing, but once a case has yellowed deeply and uniformly, the change is permanent and it's time for a new one — clear cases are essentially consumable.</p>
+    </details>
+    <details>
+      <summary>Can I use alcohol on my phone?</summary>
+      <p>Yes, carefully — a wipe with around 70% isopropyl alcohol is the commonly recommended way to disinfect a phone, and most manufacturers now allow it (Apple, for example, okays a 70% isopropyl wipe). Use it lightly: a wrung-out wipe or a cloth dampened with alcohol, never a soaking one, and keep it away from the ports. Don't use stronger concentrations, bleach, or abrasive cleaners, which can wear down the screen's oil-resistant coating. As always, check your own phone maker's cleaning page, since guidance varies a little by model.</p>
+    </details>
+    <details>
+      <summary>How do I clean a leather case?</summary>
+      <p>Gently, and dry. Leather should never be soaked or scrubbed with soap and water — wipe it with a barely-damp cloth to lift surface dirt, and for anything more use a cleaner made for leather. Work it in lightly, wipe it off, and let it air-dry away from direct heat. Every so often, treat it with a leather conditioner so it stays supple instead of drying out and cracking. Skip alcohol, baking soda, and vinegar on leather — they'll dry it and strip the finish.</p>
+    </details>
+    <details>
+      <summary>How do I clean the charging port and speakers?</summary>
+      <p>Dry tools only. The charging port and speaker grilles collect lint and pocket fuzz that can muffle sound and block charging. Clean them with a <em>dry</em> cotton swab, a soft dry brush, or a wooden toothpick used very gently — and a short puff of air can help dislodge lint. Never put liquid, metal, or anything sharp into a port. If charging has gotten flaky, a packed lint plug in the port is one of the most common (and easily fixed) culprits.</p>
+    </details>
+    <details>
+      <summary>Is my phone really that dirty?</summary>
+      <p>Yes — and the studies are consistent about it. Researchers swabbing phones routinely find them carrying many times more bacteria than a typical toilet seat, because phones go everywhere (including the bathroom), get touched constantly, and almost never get cleaned. The case makes it worse by adding warm crevices where bacteria, oils, and food residue collect. None of it is cause for panic, but it's a good argument for the weekly wipe: you hold this thing to your face all day, so it's worth keeping it clean.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>"Every week" is easy to mean, easy to skip.</h2>
+        <p>You now know the routine — case off, scrub by material, wipe the phone with isopropyl, dry everything, re-case — and that it belongs on a weekly clock. The only failure mode left is forgetting until the case is visibly grim. Upkeep Ledger logs each clean and nudges you when the next one's due, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-phone-case&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-phone-case&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cleaning methods and cost figures are general guidance for planning; cleaner compatibility varies by case material and phone model — your phone and case makers' own care instructions outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { material: null, use: null, state: null };
+
+  function computePlan(s) {
+    var reasons = [];
+
+    // Base: clean weekly (in days between cleans).
+    var days = 7;
+    reasons.push("The baseline for a phone case is a weekly clean — often enough to stop grime and bacteria from settling in, light enough to stay a quick habit.");
+
+    if (s.material === "clear") {
+      days = Math.min(days, 5);
+      reasons.push("Clear silicone and TPU show every speck of grime and yellow over time — cleaning a little more often keeps them looking fresh and fights the yellowing longer.");
+    } else if (s.material === "hard") {
+      reasons.push("Hard plastic and metal hide grime better and take soap and water easily, so the standard weekly wash is plenty.");
+    } else if (s.material === "leather") {
+      reasons.push("Leather can't be soaked, so it gets a gentler, less-frequent wipe-down with a damp cloth or leather cleaner — and an occasional conditioning rather than a scrub.");
+    } else {
+      reasons.push("Wallet and folio cases trap cards, cash, and lint in their pockets — empty and wipe them out on the weekly clean, and watch the fold for grime.");
+    }
+
+    if (s.use === "active") {
+      days = Math.min(days, 3);
+      reasons.push("Gym, kitchen, and outdoor use means sweat, food, and grit constantly — a few times a week beats letting it build up between fills.");
+    } else if (s.use === "shared") {
+      days = Math.min(days, 4);
+      reasons.push("A phone handed around picks up everyone's germs — clean it more often, and disinfect with a 70% isopropyl wipe when someone's been sick.");
+    } else {
+      reasons.push("Gentle desk-and-home carry is the easiest life a case can have, so the weekly rhythm has plenty of margin.");
+    }
+
+    if (s.state === "yellow") {
+      days = Math.min(days, 2);
+      reasons.push("Visible yellowing or staining means it's overdue — treat it now (baking-soda paste or a vinegar soak for a clear case), then keep it on a tighter cycle.");
+    } else if (s.state === "grimy") {
+      days = Math.min(days, 4);
+      reasons.push("If it already looks grimy or dull, your current interval is a bit too long — clean it now and shorten the gap.");
+    } else {
+      reasons.push("Looking clean and fresh is a good sign your interval is working — keep it up.");
+    }
+
+    // Leather should stay gentler and never tighter than every few days.
+    if (s.material === "leather") days = Math.max(days, 4);
+
+    // Never relax below weekly; never go below same-day.
+    days = Math.max(1, Math.min(7, days));
+
+    var label, note;
+    if (days >= 7) {
+      label = "Clean every week";
+      note = "Pop the case off and give it a real clean once a week, and wipe the phone down at the same time.";
+    } else if (days >= 4) {
+      label = "Clean about twice a week";
+      note = "Do a full case-off clean every 3–4 days, with a quick isopropyl wipe of the phone in between.";
+    } else if (days >= 2) {
+      label = "Clean every couple of days";
+      note = "Clean the case and wipe the phone every 2–3 days while the grime load is high.";
+    } else {
+      label = "Clean it today, then stay on top of it";
+      note = "It's overdue — clean the case and phone today, then keep it on a tight cycle until it stays fresh.";
+    }
+
+    return { days: days, label: label, note: note, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.material || !quizState.use || !quizState.state) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your routine: " + r.label;
+    document.getElementById("resultBody").innerHTML =
+      "Take the case off, clean it by its material, wipe the phone with isopropyl, and dry everything before reassembling — on this cycle. Why:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("caseNote").innerHTML =
+      "<strong>Rule of thumb:</strong> " + r.note + " Whatever the case, default to a weekly clean and tighten from there.";
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Separate", text: "Take the case off the phone", note: "Peel it off starting at a corner. This is the whole safety move — the case can meet water, the phone can't, so they get cleaned apart." },
+    { phase: "Separate", text: "Shake out lint and set the phone aside", note: "Tip out pocket fuzz and crumbs from inside the case, and put the phone somewhere dry and away from the sink while you wash the case." },
+    { phase: "Clean the case", text: "Silicone / plastic: wash in warm soapy water", note: "Use a little mild dish soap and warm water. For a wallet or folio, empty the pockets and wipe them out; for leather, skip the water — see the next step." },
+    { phase: "Clean the case", text: "Leather: wipe with a damp cloth or leather cleaner", note: "Never soak leather. Wipe it with a barely-damp cloth or a proper leather cleaner, and condition it occasionally so it doesn't dry and crack." },
+    { phase: "Clean the case", text: "Scrub the seams and button cutouts with a soft brush", note: "An old toothbrush gets into the creases, the button cutouts, and the camera ring where grime packs in and a wipe can't reach." },
+    { phase: "Clean the case", text: "Yellowed clear case? Treat it stronger", note: "Scrub a baking-soda paste into it, or give it a short soak in a 1:1 white-vinegar solution, then rinse well. Deep, even yellowing may be permanent." },
+    { phase: "Clean the case", text: "Rinse the case and stand it up to dry", note: "Rinse soap or vinegar off completely and let the case air-dry fully — water hiding in a seam will get trapped against the phone later." },
+    { phase: "Phone & reassemble", text: "Wipe the phone with isopropyl or a barely-damp cloth", note: "A wrung-out 70% isopropyl wipe or a barely-damp microfiber. Never spray or submerge; keep all liquid away from the ports. No bleach or abrasives." },
+    { phase: "Phone & reassemble", text: "Clean the ports and speakers with a dry cotton swab", note: "A dry swab, a soft dry brush, or a short puff of air clears lint from the charging port and speaker grilles. Nothing wet, metal, or sharp inside." },
+    { phase: "Phone & reassemble", text: "Confirm the case and phone are completely dry", note: "Bone-dry before they go back together — sealing a damp case onto the phone traps the moisture you were trying to keep out." },
+    { phase: "Phone & reassemble", text: "Re-case the phone and set next week's reminder", note: "Snap the case back on, check the buttons line up, and put the next weekly clean on your calendar or upkeep app." }
+  ];
+
+  var LS_KEY = "upkeepguides:clean-phone-case:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
