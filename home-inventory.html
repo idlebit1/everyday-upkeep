@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annual home inventory — UpkeepGuides.com</title>
+<meta name="description" content="How to make and update a home inventory once a year — room-by-room photos and video, serial numbers and receipts, and an off-site backup — so an insurance claim after a fire, theft, flood, or storm goes faster and more completely.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Annual home inventory — UpkeepGuides.com">
+<meta property="og:description" content="How to make and update a home inventory once a year — room-by-room photos and video, serial numbers and receipts, and an off-site backup — so an insurance claim after a fire, theft, flood, or storm goes faster and more completely.">
+<meta property="og:url" content="https://upkeepguides.com/home-inventory.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Annual home inventory — UpkeepGuides.com">
+<meta name="twitter:description" content="How to make and update a home inventory once a year — room-by-room photos and video, serial numbers and receipts, and an off-site backup — so an insurance claim after a fire, theft, flood, or storm goes faster and more completely.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .anchor-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- cost comparison ---------- */
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .bar-fill.mid { background: var(--gold); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#scope">Your inventory</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Once a year</span>
+      <h1>Do Your Annual Home Inventory</h1>
+      <p class="lede">After a fire, theft, flood, or storm, your insurer asks one deceptively hard question: what did you own? Under stress, most people can only list a fraction of it from memory. An hour with your phone camera, once a year, builds the photos-and-list record that turns a slow, partial claim into a fast, complete one.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Refresh <em>once a year</em></span>
+        <span class="chip">⏱️ <em>1–2 hours</em> the first time, less after</span>
+        <span class="chip">📷 Your phone + a <em>free app</em></span>
+        <span class="chip">💸 Costs <em>about $0</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person holding up a phone to photograph the contents of a living room — a sofa, a television, a lamp, and shelves — while a labeled list and a cloud-backup icon float beside it, representing a home inventory">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="70" cy="60" r="23" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="58" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="70" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- room: floor + back wall -->
+      <rect x="64" y="120" width="312" height="232" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="64" y="300" width="312" height="52" rx="8" fill="#f3ece0"/>
+      <!-- window on the wall -->
+      <rect x="92" y="148" width="74" height="60" rx="4" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="129" y1="148" x2="129" y2="208" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="92" y1="178" x2="166" y2="178" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- shelves with items -->
+      <rect x="296" y="150" width="64" height="10" rx="2" fill="#8a6a4f"/>
+      <rect x="296" y="196" width="64" height="10" rx="2" fill="#8a6a4f"/>
+      <rect x="302" y="124" width="12" height="26" rx="2" fill="#5e9a78"/>
+      <rect x="318" y="130" width="12" height="20" rx="2" fill="#c96f4a"/>
+      <rect x="334" y="126" width="12" height="24" rx="2" fill="#e0a93d"/>
+      <rect x="306" y="172" width="14" height="24" rx="2" fill="#7fb3c8"/>
+      <rect x="326" y="178" width="12" height="18" rx="2" fill="#d98e3b"/>
+      <!-- television -->
+      <rect x="196" y="156" width="78" height="48" rx="4" fill="#33393b"/>
+      <rect x="202" y="162" width="66" height="36" rx="2" fill="#5f93ad"/>
+      <rect x="228" y="204" width="14" height="10" fill="#8a6a4f"/>
+      <rect x="212" y="214" width="46" height="5" rx="2.5" fill="#8a6a4f"/>
+      <!-- sofa -->
+      <rect x="96" y="262" width="150" height="40" rx="10" fill="#c96f4a"/>
+      <rect x="92" y="234" width="26" height="68" rx="10" fill="#d9663f"/>
+      <rect x="224" y="234" width="26" height="68" rx="10" fill="#d9663f"/>
+      <rect x="118" y="248" width="52" height="26" rx="6" fill="#d9663f"/>
+      <rect x="172" y="248" width="52" height="26" rx="6" fill="#d9663f"/>
+      <!-- floor lamp -->
+      <line x1="338" y1="302" x2="338" y2="232" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M322 232 h32 l-8 -22 h-16 z" fill="#e0a93d"/>
+      <rect x="324" y="300" width="28" height="6" rx="3" fill="#8a6a4f"/>
+      <!-- person photographing -->
+      <circle cx="446" cy="232" r="22" fill="#d9a36b"/>
+      <path d="M446 254 q-34 0 -38 56 h76 q-4 -56 -38 -56 z" fill="#5e9a78"/>
+      <path d="M410 286 q-8 -30 26 -34" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <!-- phone held up, capturing the room -->
+      <rect x="402" y="238" width="36" height="56" rx="7" fill="#2c5a40" transform="rotate(-18 420 266)"/>
+      <rect x="408" y="246" width="24" height="40" rx="3" fill="#cfe3ec" transform="rotate(-18 420 266)"/>
+      <circle cx="416" cy="252" r="4" fill="#33393b" transform="rotate(-18 420 266)"/>
+      <!-- capture rays -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.85">
+        <line x1="384" y1="232" x2="364" y2="222"/>
+        <line x1="382" y1="252" x2="360" y2="252"/>
+        <line x1="386" y1="272" x2="366" y2="282"/>
+      </g>
+      <!-- floating inventory list card -->
+      <rect x="22" y="250" width="92" height="92" rx="9" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <rect x="34" y="262" width="44" height="8" rx="4" fill="#3e7c59"/>
+      <g stroke="#d8cfbe" stroke-width="5" stroke-linecap="round">
+        <line x1="46" y1="284" x2="100" y2="284"/>
+        <line x1="46" y1="300" x2="100" y2="300"/>
+        <line x1="46" y1="316" x2="86" y2="316"/>
+      </g>
+      <circle cx="36" cy="284" r="4" fill="#5e9a78"/>
+      <circle cx="36" cy="300" r="4" fill="#5e9a78"/>
+      <circle cx="36" cy="316" r="4" fill="#5e9a78"/>
+      <!-- cloud backup badge -->
+      <path d="M150 92 Q150 70 174 70 Q182 52 204 58 Q226 54 228 76 Q248 78 246 98 Q244 112 226 112 H166 Q150 110 150 92 Z" fill="#7fb3c8"/>
+      <path d="M198 80 v22 m0 0 l-8 -8 m8 8 l8 -8" stroke="#fffdf8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- shrubs -->
+      <circle cx="40" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="522" cy="388" r="14" fill="#5e9a78"/>
+      <circle cx="540" cy="394" r="10" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A home inventory is one of those tasks that does nothing for you right up until the one day it does everything. Here's what an up-to-date list earns you when a loss actually happens:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="17" width="17" height="13" rx="1.5" fill="#b9b1a3"/>
+          <polygon points="5,17 15.5,8 26,17" fill="#3e7c59"/>
+          <path d="M27 7 c2 3 3 4.5 0 7 c-3 -2.5 -2 -4 0 -7" fill="#d9663f"/>
+          <path d="M30 12 c1.5 2 2 3 0 4.5 c-2 -1.5 -1.5 -2.5 0 -4.5" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Memory fails under stress</h3>
+        <p>Stand in a burned or burgled room and try to list everything you owned — most people recall only a fraction, and the forgotten items are the ones you never get reimbursed for. A list made calmly, in advance, remembers for you.</p>
+        <span class="cost">You forget what you can't claim</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="18" height="22" rx="2.5" fill="#fffdf8" stroke="#6b7376" stroke-width="2"/>
+          <path d="M10 15 h10 M10 20 h10 M10 25 h6" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="25" cy="24" r="8" fill="#3e7c59"/>
+          <path d="M21.5 24 l2.5 2.5 l4.5 -5" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Proof speeds the payout</h3>
+        <p>Insurers reimburse faster when you can show what you owned and what it was worth. Photos, receipts, model numbers, and rough values turn a back-and-forth negotiation into a documented claim — and documented claims close sooner.</p>
+        <span class="cost">Faster, fuller reimbursement</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 5 L29 9 v8 c0 8 -6 13 -11 15 c-5 -2 -11 -7 -11 -15 V9 z" fill="#5e9a78"/>
+          <path d="M13 18 l3.5 3.5 l7 -8" stroke="#fffdf8" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It tests your coverage</h3>
+        <p>Adding it all up is how most people discover they're under- or over-insured. If the total dwarfs your contents limit, that's a coverage gap worth catching now — pair this with your <a href="review-insurance.html">annual insurance review</a>.</p>
+        <span class="cost">Find gaps before a loss</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 19 A9 9 0 1 1 11 25" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <polygon points="6,15 13,15 9.5,22" fill="#3e7c59"/>
+          <circle cx="18" cy="19" r="4.5" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Belongings keep changing</h3>
+        <p>A new TV, a replaced laptop, a sold couch, a year of small purchases — your stuff drifts constantly while a one-time inventory quietly goes stale. A yearly pass keeps the record matching the rooms.</p>
+        <span class="cost">Stale by next year</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 24 Q9 12 19 12 Q22 5 29 8 Q33 14 29 19 Q33 21 31 26 H14 Q9 25 9 24 Z" fill="#7fb3c8"/>
+          <path d="M20 17 v9 m0 0 l-4 -4 m4 4 l4 -4" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Off-site copies survive the loss</h3>
+        <p>An inventory only on the laptop that burned or was stolen is no inventory at all. A copy in the cloud or somewhere off-site is the version that's still there when you need it — see our <a href="backup-data.html">backup guide</a>.</p>
+        <span class="cost">A copy that outlives the house</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW INVOLVED / QUIZ ============ -->
+  <section id="scope">
+    <h2>How often should <em>you</em> update it?</h2>
+    <p class="sub">Once a year is the baseline for almost everyone — but where you're starting from and what you own can nudge that. Answer three questions to size your plan:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="have">
+        <div class="q-label">1. Right now, your home inventory is…</div>
+        <div class="pills">
+          <button class="pill" data-v="none">Nonexistent</button>
+          <button class="pill" data-v="photos">Just some scattered photos</button>
+          <button class="pill" data-v="outdated">A real list, but a few years old</button>
+          <button class="pill" data-v="current">Current — done within the last year</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="contents">
+        <div class="q-label">2. How much is in your home?</div>
+        <div class="pills">
+          <button class="pill" data-v="small">A studio or one-bedroom</button>
+          <button class="pill" data-v="medium">A typical house or apartment</button>
+          <button class="pill" data-v="large">A large or full house, garage, storage</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="highvalue">
+        <div class="q-label">3. Do you own high-value items? (jewelry, art, collectibles, pricey electronics)</div>
+        <div class="pills">
+          <button class="pill" data-v="none">Not really</button>
+          <button class="pill" data-v="some">A few</button>
+          <button class="pill" data-v="many">Several, or a real collection</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="anchor-note">📌 <strong>Make it stick:</strong> anchor the yearly refresh to a date you won't forget — your insurance renewal month, tax season (the paperwork's already out), or a New Year's weekend. And update sooner any time you make a big purchase or finish a renovation, instead of waiting for the annual slot.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs</h2>
+    <p class="sub">This is one of the cheapest pieces of upkeep there is — the tools are almost certainly already in your pocket. The only real cost is the hour or two of attention. Typical U.S. estimates:</p>
+    <div class="card">
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>📷 Phone camera + a free app or spreadsheet</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>☁️ Cloud storage for the backup (often already paid)</span><span>$0–3/mo</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:12%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💎 Appraisal for a high-value item (only if you have one)</span><span>$50–150 each</span></div>
+          <div class="bar-track"><div class="bar-fill mid" style="width:30%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏚️ A partial, slow claim because nothing was documented</span><span>Thousands unclaimed</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">Almost the entire cost is time, not money. A free home-inventory app or a plain spreadsheet plus your phone covers the whole job; cloud storage for the backup is usually free at the sizes this needs. The expensive line is the last one — and it's the one this hour of work is designed to delete. <strong>This is general guidance, not financial or insurance advice — confirm what your policy covers with your own insurer.</strong></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to build your inventory</h2>
+    <p class="sub">Go room by room with your phone, capture first and organize later, and work through the checklist — your progress saves automatically, so you can do the whole house in one evening or one room at a time.</p>
+
+    <div class="safety">
+      <h3>⚠️ A few things to get right before you start</h3>
+      <ul>
+        <li><strong>Store a copy off-site or in the cloud</strong> — the inventory has to survive the same fire, flood, or theft your belongings might not. A file that lives only on a laptop in the house is no protection. (See the <a href="backup-data.html">backup guide</a> for an easy routine.)</li>
+        <li><strong>Keep receipts, serial numbers, and appraisals with it.</strong> Proof of ownership and value is what speeds a claim — store it alongside the photos, not in a separate drawer you'll never find again.</li>
+        <li><strong>Don't publicly post your inventory or show off your valuables.</strong> It's a map of what's worth stealing and where it lives. Keep it private; share it only with your insurer or adjuster when there's an actual claim.</li>
+        <li><strong>For high-value items, ask your insurer about "scheduled" coverage and appraisals.</strong> Standard policies often cap categories like jewelry — scheduling them and keeping appraisals on file is how they're fully covered. This is general guidance; confirm the details with your own insurer.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your phone (photos + video)</span>
+      <span class="tool-chip">A free home-inventory app or a spreadsheet/template</span>
+      <span class="tool-chip">Cloud or off-site backup</span>
+      <span class="tool-chip">Receipts you've kept</span>
+      <span class="tool-chip">Serial &amp; model numbers</span>
+      <span class="tool-chip">Any appraisals</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 The five moves, in order</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of going room by room with a phone: a small floor plan of rooms with a camera moving through them, capturing closets, drawers, and the garage">
+          <rect x="20" y="28" width="150" height="124" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="95" y1="28" x2="95" y2="152" stroke="#e6dccb" stroke-width="2"/>
+          <line x1="20" y1="92" x2="170" y2="92" stroke="#e6dccb" stroke-width="2"/>
+          <rect x="32" y="40" width="20" height="14" rx="2" fill="#7fb3c8"/>
+          <rect x="56" y="40" width="14" height="14" rx="2" fill="#5e9a78"/>
+          <rect x="108" y="40" width="48" height="20" rx="3" fill="#c96f4a"/>
+          <rect x="32" y="104" width="48" height="22" rx="3" fill="#d9663f"/>
+          <rect x="112" y="104" width="22" height="34" rx="2" fill="#e0a93d"/>
+          <text x="95" y="170" font-size="11" fill="#6b7376" text-anchor="middle">every room, closet, drawer, garage</text>
+          <circle cx="226" cy="74" r="26" fill="#2c5a40"/>
+          <circle cx="226" cy="74" r="14" fill="#5f93ad"/>
+          <circle cx="226" cy="74" r="6" fill="#cfe3ec"/>
+          <rect x="216" y="44" width="20" height="8" rx="3" fill="#33393b"/>
+          <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+            <line x1="196" y1="60" x2="184" y2="54"/>
+            <line x1="194" y1="74" x2="180" y2="74"/>
+            <line x1="196" y1="88" x2="184" y2="94"/>
+          </g>
+        </svg>
+        <h4>1 · Capture every room</h4>
+        <p>Photograph or video each room, then open the closets, drawers, cabinets, and the garage and capture those too. The stuff that's out of sight is exactly the stuff you'll forget.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of documenting big-ticket items: a phone photographing a serial-number label on the back of an appliance, with a receipt and a brand tag beside it">
+          <rect x="24" y="40" width="92" height="86" rx="8" fill="#b9b1a3"/>
+          <rect x="24" y="40" width="92" height="20" rx="8" fill="#8a6a4f"/>
+          <rect x="36" y="74" width="68" height="22" rx="3" fill="#fffdf8"/>
+          <text x="70" y="83" font-size="9" fill="#33393b" text-anchor="middle" font-family="monospace">SN: 4F9-2207</text>
+          <g stroke="#33393b" stroke-width="1.5">
+            <line x1="44" y1="88" x2="44" y2="92"/>
+            <line x1="49" y1="88" x2="49" y2="92"/>
+            <line x1="56" y1="88" x2="56" y2="92"/>
+            <line x1="63" y1="88" x2="63" y2="92"/>
+            <line x1="72" y1="88" x2="72" y2="92"/>
+            <line x1="80" y1="88" x2="80" y2="92"/>
+            <line x1="90" y1="88" x2="90" y2="92"/>
+          </g>
+          <rect x="158" y="30" width="34" height="56" rx="6" fill="#2c5a40" transform="rotate(12 175 58)"/>
+          <rect x="163" y="37" width="24" height="38" rx="2" fill="#cfe3ec" transform="rotate(12 175 58)"/>
+          <rect x="190" y="98" width="60" height="56" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2" transform="rotate(-6 220 126)"/>
+          <g stroke="#d8cfbe" stroke-width="4" stroke-linecap="round" transform="rotate(-6 220 126)">
+            <line x1="200" y1="112" x2="240" y2="112"/>
+            <line x1="200" y1="124" x2="240" y2="124"/>
+            <line x1="200" y1="136" x2="226" y2="136"/>
+          </g>
+          <rect x="198" y="103" width="22" height="7" rx="3.5" fill="#e0a93d" transform="rotate(-6 220 126)"/>
+          <text x="140" y="172" font-size="11" fill="#6b7376" text-anchor="middle">serial numbers · brands · receipts</text>
+        </svg>
+        <h4>2 · Detail big-ticket items</h4>
+        <p>For electronics, appliances, and anything pricey, capture the brand, model, and serial number (usually on a label on the back or base) and snap or scan the receipt while you're there.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of listing items in an app or spreadsheet: a table with columns for item name, purchase date, and value, with rows being filled in">
+          <rect x="30" y="30" width="220" height="120" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="30" y="30" width="220" height="24" rx="8" fill="#3e7c59"/>
+          <text x="64" y="46" font-size="10.5" fill="#fffdf8" font-weight="700" text-anchor="middle">Item</text>
+          <text x="150" y="46" font-size="10.5" fill="#fffdf8" font-weight="700" text-anchor="middle">Bought</text>
+          <text x="220" y="46" font-size="10.5" fill="#fffdf8" font-weight="700" text-anchor="middle">Value</text>
+          <line x1="108" y1="54" x2="108" y2="150" stroke="#e6dccb" stroke-width="1.5"/>
+          <line x1="190" y1="54" x2="190" y2="150" stroke="#e6dccb" stroke-width="1.5"/>
+          <g font-size="10.5" fill="#33393b">
+            <text x="40" y="74">Sofa</text>
+            <text x="124" y="74" fill="#6b7376">2022</text>
+            <text x="200" y="74" fill="#2c5a40" font-weight="700">$900</text>
+          </g>
+          <line x1="30" y1="84" x2="250" y2="84" stroke="#f0e8da" stroke-width="1.5"/>
+          <g font-size="10.5" fill="#33393b">
+            <text x="40" y="104">TV</text>
+            <text x="124" y="104" fill="#6b7376">2023</text>
+            <text x="200" y="104" fill="#2c5a40" font-weight="700">$650</text>
+          </g>
+          <line x1="30" y1="114" x2="250" y2="114" stroke="#f0e8da" stroke-width="1.5"/>
+          <g font-size="10.5" fill="#33393b">
+            <text x="40" y="134">Laptop</text>
+            <text x="124" y="134" fill="#6b7376">2024</text>
+            <text x="200" y="134" fill="#2c5a40" font-weight="700">$1,200</text>
+          </g>
+          <rect x="36" y="138" width="64" height="8" rx="4" fill="#e3efe8"/>
+          <text x="140" y="170" font-size="11" fill="#6b7376" text-anchor="middle">name · rough purchase date · value</text>
+        </svg>
+        <h4>3 · List it out</h4>
+        <p>In an app or spreadsheet, jot each item with a rough purchase date and value. Don't agonize over precision — a quick estimate on everything beats a perfect figure on three things and nothing on the rest.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of flagging high-value items: a ring, a watch, and a painting marked with a star, with an arrow toward a shield labeled scheduled coverage">
+          <rect x="24" y="44" width="44" height="40" rx="5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <circle cx="46" cy="64" r="9" fill="none" stroke="#e0a93d" stroke-width="3"/>
+          <circle cx="46" cy="55" r="3" fill="#7fb3c8"/>
+          <rect x="24" y="94" width="44" height="40" rx="5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <circle cx="46" cy="114" r="11" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+          <line x1="46" y1="114" x2="46" y2="108" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="46" y1="114" x2="51" y2="116" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="82" y="64" width="44" height="44" rx="5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <rect x="90" y="72" width="28" height="28" rx="2" fill="#5e9a78"/>
+          <path d="M90 92 l8 -10 l6 6 l5 -7 l9 11 z" fill="#3e7c59"/>
+          <circle cx="98" cy="80" r="3" fill="#e0a93d"/>
+          <g fill="#d9663f">
+            <polygon points="60,40 63,47 70,47 64,52 66,59 60,55 54,59 56,52 50,47 57,47"/>
+          </g>
+          <path d="M138 86 h26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 6"/>
+          <polygon points="162,80 174,86 162,92" fill="#3e7c59"/>
+          <path d="M222 50 L250 58 v20 c0 22 -16 32 -28 38 c-12 -6 -28 -16 -28 -38 V58 z" fill="#5e9a78"/>
+          <path d="M210 80 l6 6 l12 -14" stroke="#fffdf8" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="222" y="138" font-size="10.5" fill="#6b7376" text-anchor="middle">ask about scheduled coverage</text>
+        </svg>
+        <h4>4 · Flag the high-value items</h4>
+        <p>Mark jewelry, art, collectibles, and pricey electronics. Standard policies often cap these categories — raise them with your insurer about <a href="review-insurance.html">scheduled coverage</a> and keep any appraisals on file.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of backing up and scheduling: files flowing from a phone up to a cloud and across to an off-site drive, with a calendar marked for a yearly reminder">
+          <rect x="28" y="62" width="40" height="64" rx="7" fill="#2c5a40"/>
+          <rect x="33" y="70" width="30" height="44" rx="2" fill="#cfe3ec"/>
+          <path d="M70 60 q40 -34 78 0 Q142 38 124 40 Q120 24 100 30 Q80 24 78 44 Q62 46 70 60 Z" fill="#7fb3c8" transform="translate(0 -2)"/>
+          <path d="M108 44 v18 m0 0 l-6 -6 m6 6 l6 -6" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M72 96 q40 14 78 -2" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 7"/>
+          <polygon points="146,84 158,92 144,98" fill="#3e7c59"/>
+          <rect x="160" y="80" width="56" height="24" rx="6" fill="#8a6a4f"/>
+          <rect x="160" y="80" width="56" height="9" rx="4" fill="#c9a06b"/>
+          <circle cx="206" cy="98" r="2.5" fill="#e0a93d"/>
+          <text x="188" y="120" font-size="9.5" fill="#6b7376" text-anchor="middle">off-site copy</text>
+          <rect x="226" y="42" width="44" height="42" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="226" y="42" width="44" height="12" rx="5" fill="#d9663f"/>
+          <line x1="237" y1="38" x2="237" y2="48" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="259" y1="38" x2="259" y2="48" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="248" cy="68" r="9" fill="#e3efe8"/>
+          <path d="M243 68 l3.5 3.5 l6 -7" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="248" y="100" font-size="9.5" fill="#6b7376" text-anchor="middle">yearly reminder</text>
+        </svg>
+        <h4>5 · Back it up &amp; set a reminder</h4>
+        <p>Save copies to the cloud and/or somewhere off-site so they outlive a loss (the <a href="backup-data.html">backup guide</a> has an easy routine), then set a yearly reminder to refresh the whole thing.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Inventory progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Inventory done! Photos captured, items logged, a copy safely off-site. Same time next year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO GET HELP ============ -->
+  <section id="pro">
+    <h2>When to get help</h2>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>High-value collections, jewelry, or art.</strong> Get a professional appraisal and talk to your insurer about scheduling these items — standard contents limits and category caps often fall well short of what they're actually worth.</li>
+        <li><strong>After a renovation or a major purchase.</strong> Don't wait for the annual slot — a finished basement, a new kitchen, or a big electronics buy changes both your inventory and possibly the coverage you need. Update right away, and revisit your <a href="review-insurance.html">insurance review</a>.</li>
+        <li><strong>In an actual total-loss claim.</strong> Your inventory is the starting document, and your insurer or adjuster will guide you through their process from there — having the photos and list ready is what makes that conversation fast instead of agonizing.</li>
+        <li><strong>If something reads like a foreign language.</strong> "Scheduled personal property," "actual cash value," sub-limits — a licensed agent will explain how your contents coverage actually works. This page is general guidance, not insurance advice; confirm specifics with your own insurer.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What's the easiest way to actually make a home inventory?</summary>
+      <p>Walk through with your phone and capture first, organize later. Open every door — closets, cabinets, drawers, the garage — and photograph or film what's inside. Then sit down once and turn the photos into a simple list with a rough value beside each item. A free home-inventory app or a basic spreadsheet works fine; the tool matters far less than just getting it done and backed up.</p>
+    </details>
+    <details>
+      <summary>Photos, video, or an app — which is best?</summary>
+      <p>Each has a job. A <strong>video walkthrough</strong> is the fastest capture: pan slowly, narrate ("47-inch TV, bought 2023"), and open doors as you go. <strong>Photos</strong> are better for specifics — serial-number labels, receipts, the details of a valuable piece. An <strong>app or spreadsheet</strong> is where it becomes a usable list with dates and values. The strongest inventory uses all three: a video for coverage, photos for proof, and a list for the claim itself.</p>
+    </details>
+    <details>
+      <summary>What should I include?</summary>
+      <p>More than you'd think. The obvious big items — furniture, electronics, appliances — plus the easily forgotten ones that add up fast: clothing, kitchenware, tools, sporting and hobby gear, linens, and what's in the garage and storage. For big-ticket items, capture the brand, model, and serial number and keep the receipt. You don't need every fork; you do need a fair record of each category and every item worth real money.</p>
+    </details>
+    <details>
+      <summary>Where should I store it?</summary>
+      <p>Somewhere that survives the loss. A copy that lives only on a laptop or a drawer in the house can burn, flood, or be stolen along with everything else. Save it to the cloud, or keep a copy off-site — with a relative, in a safe-deposit box, on a drive you store elsewhere. Cloud storage is the simplest: it's automatically off-site and reachable from anywhere, even a hotel after an evacuation. Our <a href="backup-data.html">backup guide</a> walks through a routine that keeps it current.</p>
+    </details>
+    <details>
+      <summary>How often should I update it?</summary>
+      <p>Once a year is the right rhythm for most people — frequent enough to stay accurate, rare enough to keep up with. Anchor it to a date you'll remember, like your insurance renewal or tax season. Beyond the annual pass, update sooner after anything big: a major purchase, a renovation, an inherited item, or a move. If you don't have an inventory at all yet, the best update schedule is "start now."</p>
+    </details>
+    <details>
+      <summary>Does a home inventory actually help with an insurance claim?</summary>
+      <p>Yes — a lot. After a major loss, the burden of proving what you owned and what it was worth largely falls on you, and memory under stress is unreliable. A documented inventory with photos, model numbers, and values lets your insurer process the claim faster and more completely, and it's the difference between getting reimbursed for what you actually had versus only what you could remember in the moment. It also pairs naturally with your <a href="review-insurance.html">annual insurance review</a>, since it shows whether your contents coverage is enough. That said, this is general guidance — your policy's terms, limits, and claim process are set by your own insurer, so confirm the details with them.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A once-a-year task with no natural reminder — give it one.</h2>
+        <p>Your belongings change all year, but nothing pings you to re-photograph them — until a claim, when it's too late. Log your home inventory in Upkeep Ledger and it resurfaces right on schedule, alongside your insurance review, your backups, and every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=home-inventory&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=home-inventory&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your numbers will vary.</p>
+    <p>General information, not financial or insurance advice — confirm what your policy covers, and how it handles high-value and scheduled items, with your own insurer.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { have: null, contents: null, highvalue: null };
+
+  function computePlan(s) {
+    var reasons = [];
+
+    // Starting point — do they have an inventory now?
+    var startNow = false;
+    if (s.have === "none") {
+      startNow = true;
+      reasons.push("You don't have an inventory yet, so the schedule that matters is “start now.” Block out an hour or two this week for the first full pass; after that it becomes a quick yearly refresh.");
+    } else if (s.have === "photos") {
+      reasons.push("Scattered photos are a head start, not an inventory. This year's job is to fill the gaps room by room and turn the pictures into an actual list with values — then it's yearly upkeep from here.");
+    } else if (s.have === "outdated") {
+      reasons.push("You have a real list but it's gone stale — a few years of new purchases, replacements, and discards aren't reflected. A full refresh now resets it, then a yearly pass keeps it from drifting again.");
+    } else {
+      reasons.push("Your inventory is current, so you're in maintenance mode: a yearly refresh to capture what changed is all you need. Update sooner only after a big purchase or a renovation.");
+    }
+
+    // Contents / home size — affects effort, not really cadence
+    if (s.contents === "small") {
+      reasons.push("A small home keeps the first pass short — likely under an hour. Don't skip the closets and any storage unit, though; that's where forgotten items hide.");
+    } else if (s.contents === "medium") {
+      reasons.push("For a typical home, plan on an hour or two the first time. Working one room per sitting is a fine way to spread it out without losing momentum.");
+    } else {
+      reasons.push("A large home with a garage and storage is more to capture — consider doing it a room or a zone at a time across a week, and lean on a quick video walkthrough to move faster.");
+    }
+
+    // High-value items — the real driver of extra attention
+    var scheduleNote = false;
+    if (s.highvalue === "none") {
+      reasons.push("With no standout valuables, a straightforward photos-and-list inventory covers you well — no appraisals needed.");
+    } else if (s.highvalue === "some") {
+      scheduleNote = true;
+      reasons.push("A few high-value items are worth flagging separately: photograph them in detail, keep any receipts or appraisals, and ask your insurer whether they need to be “scheduled” beyond your standard contents limit.");
+    } else {
+      scheduleNote = true;
+      reasons.push("With several valuables or a real collection, treat that as its own track: get appraisals, document each piece carefully, and talk to your insurer about scheduled coverage — standard category caps almost certainly fall short.");
+    }
+
+    // Resolve the headline cadence — default is once a year.
+    var freq, body;
+    if (startNow) {
+      freq = "Your plan: start now, then once a year";
+      body = "You don't have one yet, so the first build is the priority — then it drops to a quick <strong>yearly</strong> refresh. Always update sooner after a big purchase or a renovation.";
+    } else if (s.have === "outdated") {
+      freq = "Your plan: refresh now, then once a year";
+      body = "Your list has drifted, so do a full catch-up now to reset it — after that, <strong>once a year</strong> keeps it accurate. Update sooner whenever something major changes.";
+    } else {
+      freq = "Your plan: once a year";
+      body = "<strong>Once a year</strong> is your rhythm — enough to keep the record matching your rooms without it becoming a chore. The only reason to go sooner is a major purchase or a renovation.";
+    }
+
+    if (scheduleNote) {
+      body += " And handle your high-value items as a separate step: appraisals on file, and a conversation with your insurer about scheduling them.";
+    }
+
+    return { freq: freq, body: body, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.have || !quizState.contents || !quizState.highvalue) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = r.freq;
+    document.getElementById("resultBody").innerHTML = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Capture", text: "Go room by room with your phone — photo or video every space", note: "Pan slowly and narrate as you go. A video walkthrough is the fastest way to get broad coverage of everything you own." },
+    { phase: "Capture", text: "Open every closet, drawer, and cabinet and capture inside", note: "Out-of-sight is out-of-mind at claim time. The forgotten items live behind doors — film them now." },
+    { phase: "Capture", text: "Don't skip the garage, basement, attic, and any storage unit", note: "Tools, sporting gear, seasonal items, and bins add up to real money and are the easiest places to overlook." },
+    { phase: "Capture", text: "Take detail shots of anything valuable", note: "Close-ups of jewelry, art, electronics, and collectibles. Specifics now save arguments later." },
+    { phase: "Document", text: "Record brand, model, and serial numbers on big-ticket items", note: "Usually on a label on the back or base. Electronics, appliances, power tools — photograph the label so you don't have to transcribe it." },
+    { phase: "Document", text: "Gather receipts, and snap or scan the ones you have", note: "Proof of purchase and value speeds reimbursement. Store the photos with the inventory, not in a separate drawer." },
+    { phase: "Document", text: "List items with a rough purchase date and value", note: "In a free home-inventory app or a simple spreadsheet. A quick estimate on everything beats a perfect figure on a few things." },
+    { phase: "Document", text: "Flag high-value items that may need scheduled coverage", note: "Jewelry, art, collectibles, pricey electronics. Standard policies often cap these — mark them for an insurer conversation." },
+    { phase: "Protect", text: "Save copies to the cloud and/or somewhere off-site", note: "The inventory must survive the same fire, flood, or theft. Cloud is automatically off-site; a relative's house or a safe-deposit box works too." },
+    { phase: "Protect", text: "Note any coverage gaps you spotted while adding it all up", note: "If the total dwarfs your contents limit, that's a gap. Carry it into your annual insurance review." },
+    { phase: "Protect", text: "Raise high-value items with your insurer", note: "Ask about scheduled coverage and whether appraisals are needed. This is general guidance — confirm the specifics with your own insurer." },
+    { phase: "Protect", text: "Confirm appraisals are on file for valuables that need them", note: "For collections, fine jewelry, and art, a current appraisal stored with the inventory is what backs up the value at claim time." },
+    { phase: "Protect", text: "Set a yearly reminder and log it as done", note: "Anchor it to renewal month, tax season, or New Year's. A dated record makes next year's refresh quick — and update sooner after any big change." }
+  ];
+
+  var LS_KEY = "upkeepguides:home-inventory:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

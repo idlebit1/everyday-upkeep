@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wax car — UpkeepGuides.com</title>
+<meta name="description" content="Wax is a sacrificial layer that shields your paint from UV, oxidation, bird droppings, and road grime — and makes the next wash easier. The water-bead test that tells you when to re-wax, what it costs, and a step-by-step way to wash, apply a thin coat in the shade, and buff to a gloss.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Wax car — UpkeepGuides.com">
+<meta property="og:description" content="Wax is a sacrificial layer that shields your paint from UV, oxidation, bird droppings, and road grime — and makes the next wash easier. The water-bead test that tells you when to re-wax, what it costs, and a step-by-step way to wash, apply a thin coat in the shade, and buff to a gloss.">
+<meta property="og:url" content="https://upkeepguides.com/wax-car.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wax car — UpkeepGuides.com">
+<meta name="twitter:description" content="Wax is a sacrificial layer that shields your paint from UV, oxidation, bird droppings, and road grime — and makes the next wash easier. The water-bead test that tells you when to re-wax, what it costs, and a step-by-step way to wash, apply a thin coat in the shade, and buff to a gloss.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every 6 months</span>
+      <h1>Wax Your Car</h1>
+      <p class="lede">Your paint's clear coat is the only thing standing between a glossy finish and a sun-baked, oxidized one — and on its own, it slowly loses that fight to UV, bird droppings, sap, and road grime. Wax is the sacrificial layer on top: it takes the abuse instead of the paint, makes water bead and dirt let go, and leaves a deep shine. Twice a year — a good rhythm is spring and fall — wash the car, work a thin coat of wax over cool paint in the shade, and buff it to a gloss. The next wash gets easier, and the paint stays worth real money.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Re-wax <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~1–3 hours</em> by hand</span>
+        <span class="chip">💵 <em>$10–30</em> in supplies</span>
+        <span class="chip">💧 Test it: <em>does water still bead?</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style green car parked in the shade of a tree, with a foam applicator laying a thin coat of wax on the door, water beading up into tight droplets on the glossy hood, and a microfiber cloth and tin of wax resting nearby">
+      <ellipse cx="280" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- shade tree -->
+      <rect x="74" y="120" width="16" height="120" rx="6" fill="#8a6a4f"/>
+      <circle cx="82" cy="96" r="48" fill="#5e9a78"/>
+      <circle cx="44" cy="120" r="34" fill="#3e7c59"/>
+      <circle cx="120" cy="118" r="34" fill="#3e7c59"/>
+      <circle cx="82" cy="138" r="30" fill="#5e9a78"/>
+      <!-- car body -->
+      <path d="M150 318 q0 -50 44 -54 l26 -3 q22 -36 70 -38 l92 0 q48 2 70 38 l34 5 q40 8 40 52 l0 22 q0 12 -12 12 l-352 0 q-12 0 -12 -12 z" fill="#3e7c59"/>
+      <!-- glossy hood with sheen -->
+      <path d="M150 320 q0 -50 44 -54 l26 -3 q10 -16 28 -26 q-44 12 -64 40 l-20 2 q-40 8 -40 52 z" fill="#5e9a78" opacity="0.6"/>
+      <path d="M222 262 q20 -30 64 -32 l88 0 q44 2 64 32 z" fill="#2c5a40"/>
+      <path d="M238 260 q16 -22 50 -24 l38 0 0 24 z" fill="#cfe3ec"/>
+      <path d="M338 236 l36 0 q34 2 50 24 l-86 0 z" fill="#cfe3ec"/>
+      <rect x="150" y="320" width="368" height="14" fill="#2c5a40"/>
+      <circle cx="500" cy="306" r="9" fill="#e0a93d"/>
+      <!-- wheels -->
+      <circle cx="234" cy="346" r="32" fill="#33393b"/>
+      <circle cx="234" cy="346" r="14" fill="#b9b1a3"/>
+      <circle cx="234" cy="346" r="5" fill="#8a6a4f"/>
+      <circle cx="452" cy="346" r="32" fill="#33393b"/>
+      <circle cx="452" cy="346" r="14" fill="#b9b1a3"/>
+      <circle cx="452" cy="346" r="5" fill="#8a6a4f"/>
+      <!-- water beading tight on the glossy hood -->
+      <g fill="#7fb3c8">
+        <ellipse cx="300" cy="296" rx="7" ry="6"/>
+        <ellipse cx="324" cy="288" rx="5" ry="4.5"/>
+        <ellipse cx="346" cy="298" rx="6" ry="5.5"/>
+        <ellipse cx="312" cy="306" rx="4.5" ry="4"/>
+        <ellipse cx="368" cy="290" rx="5" ry="4.5"/>
+        <ellipse cx="288" cy="284" rx="4" ry="3.5"/>
+      </g>
+      <g fill="#dce8ee" opacity="0.85">
+        <ellipse cx="298" cy="294" rx="2.6" ry="2.2"/>
+        <ellipse cx="344" cy="296" rx="2.2" ry="1.8"/>
+        <ellipse cx="366" cy="288" rx="2" ry="1.6"/>
+      </g>
+      <!-- sheen sparkle on the clean paint -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="408" y1="288" x2="408" y2="298"/>
+        <line x1="403" y1="293" x2="413" y2="293"/>
+        <line x1="262" y1="280" x2="262" y2="288"/>
+        <line x1="258" y1="284" x2="266" y2="284"/>
+      </g>
+      <!-- foam applicator laying wax on the door -->
+      <g transform="rotate(16 384 318)">
+        <ellipse cx="384" cy="320" rx="26" ry="15" fill="#dce8ee"/>
+        <ellipse cx="384" cy="320" rx="26" ry="15" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+        <rect x="372" y="300" width="24" height="12" rx="5" fill="#b9b1a3"/>
+      </g>
+      <!-- haze swath the applicator leaves behind -->
+      <path d="M408 326 q24 -4 48 2" stroke="#cfe3ec" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <!-- tin of wax on the ground -->
+      <g>
+        <ellipse cx="118" cy="384" rx="34" ry="11" fill="#c96f4a"/>
+        <rect x="84" y="366" width="68" height="18" fill="#c96f4a"/>
+        <ellipse cx="118" cy="366" rx="34" ry="11" fill="#d9663f"/>
+        <ellipse cx="118" cy="366" rx="22" ry="7" fill="#e0a93d"/>
+        <text x="118" y="370" font-size="10" font-weight="800" fill="#fffdf8" text-anchor="middle">WAX</text>
+      </g>
+      <!-- folded microfiber cloth on the ground -->
+      <g transform="rotate(-6 196 392)">
+        <rect x="160" y="378" width="72" height="26" rx="6" fill="#dce8ee"/>
+        <rect x="160" y="378" width="72" height="26" rx="6" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+        <g stroke="#7fb3c8" stroke-width="2.5"><line x1="178" y1="380" x2="178" y2="402"/><line x1="196" y1="380" x2="196" y2="402"/><line x1="214" y1="380" x2="214" y2="402"/></g>
+      </g>
+      <text x="196" y="372" font-size="13" font-weight="700" fill="#8a6a4f" text-anchor="middle" transform="rotate(-6 196 372)">buff with this</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Paint looks tough, but the clear coat that gives it gloss is thin and slowly degrades in the open air. Wax is cheap, sacrificial armor that takes the hits the paint otherwise would. Here's what a thin coat twice a year is actually buying you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="12" r="7" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+            <line x1="13" y1="1" x2="13" y2="4"/><line x1="13" y1="20" x2="13" y2="23"/>
+            <line x1="2" y1="12" x2="5" y2="12"/><line x1="21" y1="12" x2="24" y2="12"/>
+            <line x1="5" y1="4" x2="7" y2="6"/><line x1="19" y1="4" x2="17" y2="6"/>
+          </g>
+          <rect x="6" y="24" width="26" height="8" rx="3" fill="#3e7c59"/>
+          <rect x="6" y="24" width="26" height="4" rx="2" fill="#dce8ee" opacity="0.8"/>
+          <path d="M26 14 q4 4 0 8" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It blocks the sun before it fades</h3>
+        <p>UV light is what dulls, chalks, and oxidizes paint over the years — fading a deep color to a flat, washed-out version of itself. Wax is a sacrificial layer over the clear coat that absorbs that UV and the daily grime, so the sun ages the wax instead of the paint underneath.</p>
+        <span class="cost">UV fade · oxidation</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 26 q12 -4 24 0" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <ellipse cx="13" cy="18" rx="5" ry="6" fill="#7fb3c8"/>
+          <ellipse cx="22" cy="20" rx="4" ry="5" fill="#7fb3c8"/>
+          <ellipse cx="11.5" cy="16" rx="1.6" ry="1.3" fill="#dce8ee"/>
+          <ellipse cx="20.8" cy="18.5" rx="1.3" ry="1" fill="#dce8ee"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <line x1="29" y1="9" x2="29" y2="13"/><line x1="27" y1="11" x2="31" y2="11"/>
+          </g>
+        </svg></div>
+        <h3>Water beads, dirt lets go</h3>
+        <p>A waxed surface is slick and hydrophobic — rain and hose water pull into tight beads and roll off, taking dust and grit with them instead of drying into spots. The next wash takes half the effort because nothing has a chance to bond hard to the paint.</p>
+        <span class="cost">Easier washes · fewer spots</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="13" cy="9" rx="5" ry="4" fill="#b9b1a3"/>
+          <path d="M11 12 q2 8 0 16 q-3 2 -4 -1 q1 -8 4 -15" fill="#8a6a4f"/>
+          <ellipse cx="12" cy="27" rx="6" ry="3" fill="#6e5333"/>
+          <path d="M24 6 q3 5 0 9 q-2 -2 0 -9" fill="#5e9a78"/>
+          <circle cx="28" cy="20" r="3" fill="#c96f4a"/>
+          <circle cx="31" cy="26" r="2.2" fill="#d9663f"/>
+        </svg></div>
+        <h3>Bird droppings and sap can't bite</h3>
+        <p>Bird droppings are acidic and tree sap is sticky — left on bare paint in the sun, both etch permanent marks into the clear coat within hours. A wax layer gives you a buffer: the mess sits on the wax, wipes off cleanly, and the paint stays unmarked.</p>
+        <span class="cost">Acid etching · sap stains</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="24" height="18" rx="3" fill="#3e7c59"/>
+          <rect x="6" y="9" width="24" height="6" rx="3" fill="#2c5a40"/>
+          <circle cx="12" cy="20" r="3.5" fill="#e0a93d"/>
+          <text x="22" y="23" font-size="9" font-weight="800" fill="#fffdf8" text-anchor="middle">$$</text>
+          <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+            <line x1="30" y1="6" x2="30" y2="3"/><line x1="33" y1="9" x2="35" y2="9"/>
+          </g>
+        </svg></div>
+        <h3>Glossy paint holds its value</h3>
+        <p>A deep, wet-looking shine is the first thing anyone notices — and the first thing a buyer judges. Regular waxing keeps the finish glossy and the clear coat intact; bare, neglected paint goes dull and chalky, and that faded look quietly knocks real dollars off the resale price.</p>
+        <span class="cost">Resale · lasting gloss</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> wax it?</h2>
+    <p class="sub">Twice a year — spring and fall — is the sensible baseline for most cars, and wax typically lasts about three to six months between coats. What changes the number is where the car lives, your climate, and what product you use. But the real answer is on the paint itself: <strong>do the water test.</strong> Answer four questions for your own rhythm:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="parked">
+        <div class="q-label">1. Where does it spend most of its time?</div>
+        <div class="pills">
+          <button class="pill" data-v="outside">Outside, in full sun</button>
+          <button class="pill" data-v="covered">Outside, but shaded or covered</button>
+          <button class="pill" data-v="garage">In a garage</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">2. What's the climate like where you drive?</div>
+        <div class="pills">
+          <button class="pill" data-v="harsh">Harsh — intense sun, or road salt &amp; snow</button>
+          <button class="pill" data-v="mild">Pretty mild and temperate</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="product">
+        <div class="q-label">3. What kind of wax do you use?</div>
+        <div class="pills">
+          <button class="pill" data-v="spray">Spray wax (quick &amp; easy)</button>
+          <button class="pill" data-v="paste">Liquid or paste wax</button>
+          <button class="pill" data-v="sealant">A sealant or ceramic coating</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="bead">
+        <div class="q-label">4. Does water still bead on the paint?</div>
+        <div class="pills">
+          <button class="pill" data-v="beads">Yes — it pulls into tight droplets</button>
+          <button class="pill" data-v="sheets">No — it sheets out flat</button>
+          <button class="pill" data-v="unsure">Haven't checked</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — DIY vs. a detailer</h2>
+    <p class="sub">Waxing by hand is one of the cheapest things you can do for a car, and the supplies last for many coats. The only real cost is an afternoon. A pro detail or a ceramic coating buys you time and a longer-lasting finish — sometimes worth it, overkill for a twice-a-year wax (typical U.S. figures, for planning purposes):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–30</div><div class="l">a DIY kit — a tub or bottle of wax, foam applicators, and a stack of microfiber towels, good for many waxes</div></div>
+        <div class="calc-stat"><div class="v">~1–3 hrs</div><div class="l">a hand wax — wash, dry, apply, and buff, less once you've got a routine and the right products</div></div>
+        <div class="calc-stat"><div class="v bad">$500–1,500+</div><div class="l">a professional ceramic coating — far longer protection, but a multi-step job priced accordingly</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 DIY wax kit (one kit, many coats)</span><span>$10–30</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚗 A pro hand wax / spray-wax detail</span><span>$50–150</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:32%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>✨ Professional ceramic coating</span><span>$500–1,500+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">For routine protection the math is lopsided: <strong>a $10–30 kit handles many waxes</strong>, so the per-coat cost is pocket change — and it's far cheaper than fixing the damage bare paint invites. <strong>Oxidized, faded paint needs machine polishing or even a respray</strong> to bring back, which runs into the hundreds or thousands. Wax twice a year yourself and the clear coat never gets bad enough to need that.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to wax your car</h2>
+    <p class="sub">Waxing isn't hard, but the prep and the conditions make or break it: a clean, cool car in the shade, thin coats, and one panel at a time. Read the care notes first — especially washing before you wax and staying out of the sun — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Wash first, stay in the shade, go thin</h3>
+      <ul>
+        <li><strong>Always wash and dry the car before you wax.</strong> Waxing over dust and grit drags those particles across the clear coat and grinds fine scratches and swirls into the paint — the opposite of what you're trying to do. Start with a clean, dry surface, every time.</li>
+        <li><strong>Work in the shade, on cool paint.</strong> Wax applied in direct sun or on a hot panel flashes off, hazes hard, and becomes very difficult to buff. Move the car into shade and let the panels cool to the touch first.</li>
+        <li><strong>Apply thin, even coats — more is not better.</strong> A thick layer doesn't protect more; it just wastes product and turns into a chalky, streaky mess that fights you on buff-off. A light, even film is all the paint can hold.</li>
+        <li><strong>Keep wax off textured plastic and rubber trim.</strong> Most waxes dry to a stubborn white residue in the grain of matte black trim, door seals, and unpainted bumpers. Tape off or work carefully around them, unless the product is specifically labeled trim-safe.</li>
+        <li><strong>Do one panel at a time.</strong> Apply, let it haze, then buff that panel before moving on. Wax left too long all over the car sets up rock-hard and is miserable to remove — work in sections so nothing over-cures.</li>
+        <li><strong>Wax protects, it doesn't correct.</strong> It hides nothing — swirls, scratches, and oxidation show right through. If the paint is already dull or scratched, that's a polishing job <em>before</em> the wax, not something wax fixes.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Car wax — paste, liquid, or spray</span>
+      <span class="tool-chip">Foam applicator pads</span>
+      <span class="tool-chip">Several clean microfiber towels</span>
+      <span class="tool-chip">Car-wash soap (wash first)</span>
+      <span class="tool-chip">Two buckets &amp; a wash mitt</span>
+      <span class="tool-chip">A clay bar — for bonded grime (optional)</span>
+      <span class="tool-chip">Painter's tape — to protect trim (optional)</span>
+      <span class="tool-chip">A shaded spot &amp; cool panels</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a car being washed with a soapy mitt and rinsed, then a clay bar gliding over the paint to pull off bonded contaminants, leaving the surface smooth">
+          <path d="M30 120 q0 -34 30 -36 l18 -2 q14 -22 44 -24 l58 0 q30 2 44 24 l22 3 q28 5 28 35 l0 12 q0 7 -7 7 l-230 0 q-7 0 -7 -7 z" fill="#3e7c59"/>
+          <path d="M118 70 q12 -18 40 -20 l54 0 q28 2 40 20 z" fill="#2c5a40"/>
+          <g fill="#dce8ee">
+            <circle cx="78" cy="60" r="9"/><circle cx="92" cy="52" r="7"/><circle cx="66" cy="54" r="6"/>
+            <circle cx="84" cy="66" r="5"/>
+          </g>
+          <rect x="64" y="60" width="28" height="16" rx="6" fill="#7fb3c8"/>
+          <g stroke="#7fb3c8" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.85">
+            <path d="M214 56 q6 8 0 16"/><path d="M226 50 q9 12 0 24"/>
+          </g>
+          <rect x="190" y="96" width="34" height="14" rx="5" fill="#e0a93d"/>
+          <path d="M196 110 q12 -3 22 0" stroke="#fffdf8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <text x="186" y="92" font-size="11" font-weight="700" fill="#8a6a4f">clay bar</text>
+          <text x="24" y="160" font-size="12" fill="#6b7376">wash &amp; rinse — then clay if it still feels rough</text>
+        </svg>
+        <h4>Wash, dry, and clay if needed</h4>
+        <p>Wash the whole car and dry it fully — wax traps anything left on the surface. Then run your fingertips over the paint: if it still feels gritty or rough, glide a clay bar over it with lubricant to pull off bonded contaminants so the wax goes onto truly clean paint.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a car parked in the shade of a tree, out of the sun, with a thermometer reading cool and the sun off to the side blocked by foliage">
+          <rect x="36" y="36" width="12" height="80" rx="5" fill="#8a6a4f"/>
+          <circle cx="42" cy="30" r="26" fill="#5e9a78"/>
+          <circle cx="20" cy="44" r="18" fill="#3e7c59"/>
+          <circle cx="64" cy="44" r="18" fill="#3e7c59"/>
+          <circle cx="234" cy="34" r="16" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.6" stroke-linecap="round">
+            <line x1="234" y1="8" x2="234" y2="13"/><line x1="258" y1="34" x2="263" y2="34"/>
+            <line x1="252" y1="16" x2="256" y2="12"/>
+          </g>
+          <path d="M70 132 q0 -28 26 -30 l16 -2 q12 -18 36 -20 l48 0 q26 2 36 20 l18 3 q24 4 24 30 l0 8 q0 6 -6 6 l-192 0 q-6 0 -6 -6 z" fill="#3e7c59"/>
+          <path d="M132 92 q10 -15 34 -17 l44 0 q24 2 34 17 z" fill="#2c5a40"/>
+          <circle cx="118" cy="150" r="16" fill="#33393b"/><circle cx="118" cy="150" r="6" fill="#b9b1a3"/>
+          <circle cx="240" cy="150" r="16" fill="#33393b"/><circle cx="240" cy="150" r="6" fill="#b9b1a3"/>
+          <text x="80" y="170" font-size="12" fill="#6b7376">in the shade · panels cool to the touch</text>
+        </svg>
+        <h4>Move it into the shade</h4>
+        <p>Get the car out of direct sun and let the panels cool down — warm paint flashes the wax off before you can spread it, leaving a stubborn haze. A shaded driveway, a garage, or a cloudy cool morning is ideal. Touch a panel: if it's warm, wait.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a foam applicator pad spreading a thin, even coat of wax across one car panel in overlapping circular passes">
+          <rect x="24" y="40" width="232" height="84" rx="14" fill="#3e7c59"/>
+          <rect x="24" y="40" width="232" height="30" rx="14" fill="#5e9a78" opacity="0.5"/>
+          <g stroke="#dce8ee" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.7">
+            <path d="M48 96 q18 -14 36 0 q18 14 36 0"/>
+            <path d="M120 96 q18 -14 36 0 q18 14 36 0"/>
+          </g>
+          <g transform="rotate(12 196 78)">
+            <ellipse cx="196" cy="80" rx="30" ry="17" fill="#dce8ee"/>
+            <ellipse cx="196" cy="80" rx="30" ry="17" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+            <rect x="182" y="58" width="28" height="13" rx="5" fill="#b9b1a3"/>
+          </g>
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"><line x1="60" y1="56" x2="60" y2="64"/><line x1="56" y1="60" x2="64" y2="60"/></g>
+          <text x="24" y="156" font-size="12" fill="#6b7376">thin, even, overlapping passes — one panel</text>
+        </svg>
+        <h4>Apply a thin coat, one panel</h4>
+        <p>Put a small amount of wax on a foam applicator and spread it in thin, overlapping passes across a single panel — a door, half the hood, a fender. You want a light, even film, not a thick smear. A little wax covers more than you'd expect.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a hazed wax coat on a panel being buffed off with a clean microfiber towel, with the side showing a dull haze and the buffed side showing a bright gloss and sparkle">
+          <rect x="20" y="44" width="240" height="80" rx="14" fill="#3e7c59"/>
+          <rect x="20" y="44" width="118" height="80" rx="14" fill="#b9b1a3" opacity="0.55"/>
+          <text x="40" y="138" font-size="11" font-weight="700" fill="#8a6a4f">hazed</text>
+          <g stroke="#e0a93d" stroke-width="2.8" stroke-linecap="round">
+            <line x1="206" y1="62" x2="206" y2="72"/><line x1="201" y1="67" x2="211" y2="67"/>
+            <line x1="232" y1="92" x2="232" y2="100"/><line x1="228" y1="96" x2="236" y2="96"/>
+          </g>
+          <text x="190" y="138" font-size="11" font-weight="700" fill="#2c5a40">glossy</text>
+          <g transform="rotate(-10 150 80)">
+            <rect x="118" y="58" width="58" height="40" rx="9" fill="#dce8ee"/>
+            <rect x="118" y="58" width="58" height="40" rx="9" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+            <g stroke="#7fb3c8" stroke-width="2.5"><line x1="134" y1="60" x2="134" y2="96"/><line x1="150" y1="60" x2="150" y2="96"/><line x1="166" y1="60" x2="166" y2="96"/></g>
+          </g>
+          <text x="22" y="170" font-size="12" fill="#6b7376">let it haze, then buff — flip to a fresh side often</text>
+        </svg>
+        <h4>Let it haze, then buff it off</h4>
+        <p>Give the wax a few minutes to dry to a light haze — follow the product's directions. Then buff it off with a clean, dry microfiber towel in straight passes, flipping to a fresh side often. A dragging, smeary cloth means you're either too early or the cloth is loaded.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a whole car divided into panels with checkmarks, showing waxing worked around the car panel by panel, finishing with a final gloss buff">
+          <path d="M40 122 q0 -32 30 -34 l18 -2 q14 -22 44 -24 l56 0 q30 2 44 24 l20 3 q28 5 28 33 l0 12 q0 7 -7 7 l-228 0 q-7 0 -7 -7 z" fill="#3e7c59"/>
+          <path d="M124 70 q12 -18 40 -20 l52 0 q28 2 40 20 z" fill="#2c5a40"/>
+          <line x1="160" y1="50" x2="160" y2="124" stroke="#2c5a40" stroke-width="3" opacity="0.5"/>
+          <line x1="92" y1="92" x2="92" y2="124" stroke="#2c5a40" stroke-width="3" opacity="0.5"/>
+          <line x1="228" y1="92" x2="228" y2="124" stroke="#2c5a40" stroke-width="3" opacity="0.5"/>
+          <g stroke="#e0a93d" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M60 104 l5 5 l9 -11"/>
+            <path d="M118 100 l5 5 l9 -11"/>
+            <path d="M186 100 l5 5 l9 -11"/>
+            <path d="M250 104 l5 5 l9 -11"/>
+          </g>
+          <circle cx="100" cy="150" r="16" fill="#33393b"/><circle cx="100" cy="150" r="6" fill="#b9b1a3"/>
+          <circle cx="220" cy="150" r="16" fill="#33393b"/><circle cx="220" cy="150" r="6" fill="#b9b1a3"/>
+          <text x="44" y="172" font-size="12" fill="#6b7376">panel by panel · then one final gloss buff</text>
+        </svg>
+        <h4>Work around, then final-buff</h4>
+        <p>Repeat apply-haze-buff panel by panel until you've worked all the way around the car, keeping wax off the trim and glass. When the whole car is done, go over it once more with a fresh microfiber to chase any leftover residue and bring up a deep, even gloss.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Wax progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Protected, glossy paint. Log today's date — the next wax is about six months out, or whenever water stops beading.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / WHEN TO CALL A PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time — and when to call a detailer</h2>
+    <p class="sub">Waxing is squarely a DIY job, and the paint will tell you when it's due. These are the tells, plus the handful of paint problems where a professional's tools (or a longer-lasting coating) are worth paying for:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Water stops beading and sheets out flat.</strong> The clearest sign of all: when a rinse runs off in flat sheets instead of pulling into tight droplets, the wax has worn through and it's time to re-coat.</li>
+        <li><strong>The finish looks flat instead of wet.</strong> Wax gives paint a deep, reflective glow; when the shine goes dull and lifeless even after a wash, the protective layer is gone.</li>
+        <li><strong>It's been about six months — or a hard season just ended.</strong> A summer of UV or a winter of road salt eats through wax. Spring and fall are natural re-wax points even if you haven't run the water test.</li>
+        <li><strong>Heavy swirl marks or scratches in the clear coat.</strong> Wax sits on top and hides nothing — those need machine polishing (paint correction) to remove <em>before</em> you wax. A detailer with a polisher and the right pads is the safe call here.</li>
+        <li><strong>Chalky, faded, oxidized paint.</strong> If the surface is dull and leaves residue on a cloth, oxidation has set in. It needs a cutting compound or polish to bring back gloss first; waxing over it just seals in the dull look.</li>
+        <li><strong>You want protection that lasts years, not months.</strong> If re-waxing twice a year isn't for you, a professionally applied ceramic coating bonds to the clear coat and protects far longer — pricey, but a different category of durability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I wax my car?</summary>
+      <p>About every six months is the practical baseline for most cars — a good rhythm is once in spring and once in fall, before and after the harshest season. Most paste and liquid waxes last roughly three to six months; spray waxes are quicker but wear off faster, often in a month or two. The real test isn't the calendar, though — it's the water-bead test (next question). Wax more often if the car lives outside in harsh sun or sees road salt; you can stretch it if it's garaged or protected by a sealant.</p>
+    </details>
+    <details>
+      <summary>What's the water-bead test?</summary>
+      <p>It's the simplest way to know if your wax is still working. Spray or splash water on a clean panel and watch what it does: if it pulls into tight, rounded beads that roll off, the wax is intact and doing its job. If the water spreads out and sheets across the paint in a flat film, the protective layer has worn off and it's time to re-wax. Check a couple of spots — horizontal panels like the hood and roof lose their wax first because they take the most sun and weather.</p>
+    </details>
+    <details>
+      <summary>Paste, liquid, or spray wax — what's the difference?</summary>
+      <p><strong>Paste wax</strong> is the traditional choice — it tends to last longest and gives a deep shine, but takes the most effort to apply and buff. <strong>Liquid wax</strong> is easier to spread and a good middle ground on durability and shine. <strong>Spray wax</strong> is the fastest — spray on, wipe off, often even on a damp car after washing — but it's the thinnest protection and wears off soonest, so it's best as a quick top-up between full waxes. <strong>Sealants and ceramic coatings</strong> are a step up in longevity (see below).</p>
+    </details>
+    <details>
+      <summary>Do I wax before or after washing?</summary>
+      <p>Always wash first, then wax. Waxing over a dirty car traps dust and grit against the paint and drags it around as you apply, grinding fine scratches and swirls into the clear coat. Wash the car, dry it completely, and — if the paint still feels rough after washing — clay-bar it to pull off bonded contaminants. Only then do you have the clean, smooth surface that wax is meant to go on.</p>
+    </details>
+    <details>
+      <summary>Can I wax in the sun?</summary>
+      <p>No — work in the shade on cool paint. In direct sun, the panels get hot and the wax flashes off and bakes into a hard, cloudy haze before you can spread it evenly or buff it back off. You end up fighting streaks and stubborn residue. Move the car into a garage or shaded spot, let the panels cool to the touch, and work one section at a time. An overcast, cool day is perfect.</p>
+    </details>
+    <details>
+      <summary>Wax vs. sealant vs. ceramic coating — which should I use?</summary>
+      <p>They're a ladder of durability and effort. <strong>Wax</strong> (natural carnauba or synthetic) is the easiest and cheapest, gives a warm shine, and lasts a few months. <strong>Paint sealants</strong> are synthetic and bond a bit better, typically lasting six months or more. <strong>Ceramic coatings</strong> chemically bond to the clear coat and last years, with strong protection and water-beading — but they need careful prep and are usually professionally applied (and priced accordingly). For most people, regular wax is plenty; step up only if you want longer protection and less frequent reapplication.</p>
+    </details>
+    <details>
+      <summary>Does a brand-new car need waxing?</summary>
+      <p>Yes. A new car's clear coat is bare and just as exposed to UV, oxidation, and contaminants as any older paint — dealers rarely apply lasting protection, and that "showroom shine" is just clean paint, not wax. Give a new car its first coat once any factory transit film is off and the paint has had a chance to cure (usually fine within a few weeks; check if it's a fresh respray), then keep to the regular schedule. Protecting the finish from day one is how it stays glossy for years.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Wax wears off quietly — nothing tells you but the paint.</h2>
+        <p>There's no light, no buzzer — just a finish that slowly stops beading water until one day it looks flat and the sun has already been working on it. Upkeep Ledger turns the cadence you just worked out into a reminder: log today's wax and it resurfaces the next one on schedule — spring and fall — right alongside the oil, the interior detail, and every other quiet thing your car and home need.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=wax-car&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Waxed</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=wax-car&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; test any product on a hidden spot and follow your vehicle and product instructions — they outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { parked: null, climate: null, product: null, bead: null };
+
+  var FREQ_LABEL = {
+    2: "every 2 months",
+    3: "every 3 months",
+    4: "every 4 months",
+    6: "every 6 months",
+    9: "every 9 months"
+  };
+
+  function freqLabel(m) {
+    if (m <= 2) return FREQ_LABEL[2];
+    if (m <= 3) return FREQ_LABEL[3];
+    if (m <= 4) return FREQ_LABEL[4];
+    if (m <= 6) return FREQ_LABEL[6];
+    return FREQ_LABEL[9];
+  }
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6; // default: re-wax about every 6 months — spring and fall
+
+    /* Where it's parked */
+    if (s.parked === "outside") {
+      months -= 2;
+      reasons.push("Parked outside in full sun, the paint takes a constant beating from UV — and that's exactly what wears wax down fastest. Re-coat on the short end and check the beading often through the summer.");
+    } else if (s.parked === "covered") {
+      months -= 1;
+      reasons.push("Outside but shaded or under a cover is a real help — the wax lasts longer than on a car baking in the open, but it's still exposed to the elements, so don't stretch it too far.");
+    } else {
+      reasons.push("A garaged car is the easy case: out of the sun and weather, the wax lasts noticeably longer, so the six-month baseline is comfortable.");
+    }
+
+    /* Climate */
+    if (s.climate === "harsh") {
+      months -= 1;
+      reasons.push("A harsh climate — intense sun, or winters of road salt and snow — is rough on a protective layer. Salt especially is corrosive, so keep the car waxed through the cold months and re-coat a bit more often.");
+    } else {
+      reasons.push("A mild, temperate climate is gentle on wax — no salt and no punishing sun means your coat ages at the easy, textbook rate.");
+    }
+
+    /* Product type */
+    if (s.product === "spray") {
+      months -= 2;
+      reasons.push("Spray wax is quick and easy but the thinnest protection — it typically lasts only a month or two. Plan to top it up often, or step up to a liquid or paste wax for longer-lasting coverage.");
+    } else if (s.product === "sealant") {
+      months += 2;
+      reasons.push("A sealant or ceramic coating bonds better and lasts longer than traditional wax — you can comfortably stretch the interval and lean on the water test to tell you when it's finally fading.");
+    } else {
+      reasons.push("Liquid or paste wax is the dependable middle ground, generally good for three to six months — right where the twice-a-year rhythm lands.");
+    }
+
+    /* sensible bounds: every 2 months to every 9 months */
+    if (months < 2) months = 2;
+    if (months > 9) months = 9;
+
+    var headline, body;
+    if (s.bead === "sheets") {
+      headline = "Re-wax now — then " + freqLabel(months);
+      body = "Your answer to the water test settles it: if water sheets out flat instead of beading, the wax is already gone, so give it a fresh coat this week — then put the interval below on your reminder list:";
+      reasons.unshift("Water is sheeting out flat rather than beading — that's the definitive sign the wax has worn off. Don't wait on the calendar; the paint is unprotected right now.");
+    } else if (s.bead === "beads") {
+      headline = "You're protected — re-wax " + freqLabel(months);
+      body = "Water is still beading, so your current coat is doing its job. Keep an eye on the beading and plan the next coat around this interval:";
+      reasons.push("Water is still pulling into tight beads, so the wax on there now is intact — no rush. Re-run the test every wash and re-coat when the beading goes flat.");
+    } else {
+      headline = "Your plan: re-wax " + freqLabel(months);
+      body = "Wash the car, work a thin coat of wax over cool paint in the shade, and buff it to a gloss. Why this schedule:";
+      reasons.push("Not sure where your wax stands? Run the water test: splash a clean panel and watch — tight beads mean the wax is fine; a flat sheet means it's time to re-coat.");
+    }
+
+    var note;
+    if (s.bead === "unsure") {
+      note = "<strong>The water test:</strong> the calendar is a guide, but the paint is the truth. After any wash, splash water on the hood and roof (they wear first) — if it beads into tight droplets, you're protected; if it spreads into a flat sheet, re-wax. Make it a habit and you'll never over- or under-wax.";
+    } else {
+      note = "<strong>The water test:</strong> whatever the calendar says, let the paint have the final word — splash a clean panel and watch the water. Tight beads mean the wax is still working; a flat sheet means it's worn off. The hood and roof lose their wax first, so test there.";
+    }
+
+    return { headline: headline, body: body, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.parked || !quizState.climate || !quizState.product || !quizState.bead) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = r.headline;
+    document.getElementById("resultBody").innerHTML = r.body;
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Wash the whole car and dry it completely", note: "Waxing over dust and grit grinds fine scratches into the clear coat. Use a car-wash soap, rinse well, and dry fully — wax only ever goes on clean, dry paint." },
+    { phase: "Prep", text: "Feel the paint — clay-bar it if it's still rough", note: "Run your fingertips over a washed panel. If it feels gritty or bumpy, glide a clay bar over it with lubricant to pull off bonded contaminants the wash left behind, then it'll feel glass-smooth." },
+    { phase: "Prep", text: "Move it into the shade and let the panels cool", note: "Out of direct sun, on cool paint. Wax applied to a hot panel hazes hard and is miserable to buff off. Touch a panel first — if it's warm, give it time." },
+    { phase: "Prep", text: "Tape off or note the trim to avoid", note: "Most waxes leave a stubborn white residue in textured plastic, rubber seals, and unpainted trim. Tape them off or just plan to work carefully around them, unless your product is labeled trim-safe." },
+    { phase: "Apply", text: "Load a foam applicator with a small amount of wax", note: "A little goes a long way — a thin film is all the paint can hold. Too much just wastes product and turns into a chalky mess on buff-off." },
+    { phase: "Apply", text: "Spread a thin, even coat on one panel", note: "Work in overlapping passes across a single panel — a door, a fender, half the hood. Keep it light and even; don't try to do the whole car at once." },
+    { phase: "Apply", text: "Let that panel haze per the product directions", note: "Most waxes need a few minutes to dry to a light haze before you buff. Follow the label — some wipe off almost immediately, others want to cure a bit." },
+    { phase: "Buff", text: "Buff the panel off with a clean microfiber towel", note: "Use straight, light passes and flip to a fresh, dry side of the cloth often. A dragging, smeary towel means it's either too soon or the cloth is loaded with wax." },
+    { phase: "Buff", text: "Work around the car, panel by panel", note: "Repeat apply-haze-buff on each section until you've gone all the way around. Working in panels keeps any one area from over-curing into hard, hard-to-remove wax." },
+    { phase: "Buff", text: "Do a final gloss buff over the whole car", note: "Go over everything once more with a fresh microfiber to chase any leftover residue and bring up a deep, even shine — and check the glass and trim for stray wax." },
+    { phase: "Buff", text: "Log the date — and run the water test next wash", note: "Note today's date; the next wax is about six months out. After your next wash, splash a panel: tight beads mean you're still protected, a flat sheet means it's time again." }
+  ];
+
+  var LS_KEY = "upkeepguides:wax-car:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace watch battery — UpkeepGuides.com</title>
+<meta name="description" content="A quartz watch battery typically lasts 2–3 years before the watch stops or runs slow. How to spot a dying battery, swap it yourself, match the right battery code, and when to use a jeweler so a water-resistant watch stays sealed.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace watch battery — UpkeepGuides.com">
+<meta property="og:description" content="A quartz watch battery typically lasts 2–3 years before the watch stops or runs slow. How to spot a dying battery, swap it yourself, match the right battery code, and when to use a jeweler so a water-resistant watch stays sealed.">
+<meta property="og:url" content="https://upkeepguides.com/watch-battery.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace watch battery — UpkeepGuides.com">
+<meta name="twitter:description" content="A quartz watch battery typically lasts 2–3 years before the watch stops or runs slow. How to spot a dying battery, swap it yourself, match the right battery code, and when to use a jeweler so a water-resistant watch stays sealed.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every 2–3 years</span>
+      <h1>Replace Your Watch Battery</h1>
+      <p class="lede">A quartz watch keeps perfect time until the day a tiny coin cell runs out — usually every 2–3 years — and then it just stops, or starts losing minutes. The swap is a quick, cheap job: a $2–10 battery and a few minutes. The only real catch is keeping a water-resistant watch sealed, which is when a jeweler earns the extra few dollars.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Battery lasts <em>2–3 years</em></span>
+        <span class="chip">🔋 The cell itself <em>~$2–10</em></span>
+        <span class="chip">🛠️ At a shop <em>~$10–20</em></span>
+        <span class="chip">💧 Water-resistant? <em>Use a jeweler</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a wristwatch opened face-down on a soft cloth at a workbench, its case back removed to reveal the movement and a round silver battery, with a small case-back tool, plastic tweezers holding a fresh battery, a loupe, and a window with sunlight nearby">
+      <ellipse cx="282" cy="402" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="402" y="42" width="114" height="118" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="459" y1="45" x2="459" y2="157" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="405" y1="101" x2="513" y2="101" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="484" cy="74" r="14" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="484" y1="51" x2="484" y2="57"/>
+        <line x1="506" y1="74" x2="500" y2="74"/>
+        <line x1="500" y1="58" x2="496" y2="62"/>
+      </g>
+      <rect x="390" y="34" width="138" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- desk -->
+      <rect x="36" y="338" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="60" y="354" width="14" height="42" rx="6" fill="#8a6a4f"/>
+      <rect x="486" y="354" width="14" height="42" rx="6" fill="#8a6a4f"/>
+      <!-- soft cloth under the watch -->
+      <path d="M120 312 q-8 -54 60 -60 q120 -10 188 4 q40 6 36 56 q-2 22 -40 24 q-130 8 -204 0 q-38 -4 -40 -24 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <!-- opened watch, face-down, case back off -->
+      <!-- case body -->
+      <circle cx="222" cy="232" r="78" fill="#b9b1a3"/>
+      <circle cx="222" cy="232" r="78" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- inner movement plate -->
+      <circle cx="222" cy="232" r="60" fill="#e3efe8"/>
+      <circle cx="222" cy="232" r="60" fill="none" stroke="#5e9a78" stroke-width="2.5"/>
+      <!-- gear hints -->
+      <circle cx="200" cy="214" r="13" fill="none" stroke="#5e9a78" stroke-width="3" stroke-dasharray="3 4"/>
+      <circle cx="244" cy="250" r="10" fill="none" stroke="#5e9a78" stroke-width="3" stroke-dasharray="3 4"/>
+      <circle cx="248" cy="210" r="7" fill="none" stroke="#5e9a78" stroke-width="2.5" stroke-dasharray="2 3"/>
+      <!-- the silver battery seated in the movement -->
+      <circle cx="222" cy="246" r="22" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <circle cx="222" cy="246" r="13" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <text x="222" y="250" font-size="11" font-weight="700" fill="#6b7376" text-anchor="middle" font-family="Georgia, serif">+</text>
+      <!-- retaining clip arm -->
+      <path d="M222 224 q26 -2 30 18" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- crown + stem on the side -->
+      <rect x="296" y="226" width="16" height="12" rx="3" fill="#8a6a4f"/>
+      <!-- the removed case back, leaning -->
+      <g transform="rotate(-16 330 286)">
+        <circle cx="330" cy="286" r="46" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+        <circle cx="330" cy="286" r="34" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-dasharray="2 5"/>
+        <text x="330" y="290" font-size="9.5" fill="#6b7376" text-anchor="middle">SR626SW</text>
+      </g>
+      <!-- case-back pry tool -->
+      <g transform="rotate(40 96 150)">
+        <rect x="78" y="146" width="74" height="12" rx="6" fill="#c96f4a"/>
+        <polygon points="152,148 168,152 152,156" fill="#b9b1a3"/>
+      </g>
+      <!-- plastic tweezers holding a fresh battery -->
+      <g transform="translate(360 150) rotate(28)">
+        <path d="M0 0 q40 14 78 6" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M0 14 q40 4 78 -2" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <circle cx="92" cy="6" r="13" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+        <circle cx="92" cy="6" r="6" fill="#fffdf8"/>
+      </g>
+      <!-- loupe / magnifier -->
+      <g transform="translate(404 268)">
+        <circle cx="22" cy="22" r="22" fill="#dce8ee" opacity="0.6" stroke="#8a6a4f" stroke-width="4"/>
+        <line x1="38" y1="38" x2="62" y2="62" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <!-- plant -->
+      <ellipse cx="40" cy="318" rx="8" ry="13" fill="#5e9a78" transform="rotate(-26 40 318)"/>
+      <ellipse cx="58" cy="320" rx="8" ry="13" fill="#3e7c59" transform="rotate(22 58 320)"/>
+      <path d="M42 338 h22 l-4 -22 h-14 z" fill="#c96f4a" transform="translate(0 -2)"/>
+      <!-- floor shadow -->
+      <ellipse cx="282" cy="396" rx="150" ry="10" fill="#b9b1a3" opacity="0.45"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A quartz (battery-powered) watch is the most common kind on a wrist, and it has exactly one wear part: a small coin cell that quietly runs out every couple of years. The swap is trivial — but the dead battery left inside is not. Here's what a timely change protects you from:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="19" r="13" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="18" y1="19" x2="18" y2="11" stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="18" y1="19" x2="23" y2="22" stroke="#2c5a40" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="18" cy="19" r="2" fill="#2c5a40"/>
+          <rect x="16.5" y="3" width="3" height="4" rx="1" fill="#8a6a4f"/>
+          <path d="M28 27 l5 5 M33 27 l-5 5" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It just stops</h3>
+        <p>When the cell dies, a quartz watch simply quits — or starts running slow and losing minutes a day. Usually every 2–3 years (sometimes longer). It tends to happen the morning you actually need to be on time.</p>
+        <span class="cost">Late because of a $3 part</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="20" r="11" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.2"/>
+          <circle cx="18" cy="20" r="5" fill="#fffdf8" stroke="#7fb3c8" stroke-width="1.8"/>
+          <path d="M9 13 q-4 -2 -6 1 M27 13 q4 -2 6 1 M11 30 q-3 3 -1 5" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <circle cx="6" cy="11" r="1.8" fill="#d9663f"/>
+          <circle cx="31" cy="12" r="1.8" fill="#c96f4a"/>
+          <circle cx="9" cy="32" r="1.6" fill="#d9663f"/>
+        </svg></div>
+        <h3>A dead battery can leak</h3>
+        <p>Left dead inside for months, a battery can leak and corrode the delicate movement — turning a $5 fix into a repair, or a write-off. Swapping it promptly is the cheap insurance.</p>
+        <span class="cost">Corrosion can total a movement</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="18" y1="18" x2="18" y2="9" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="18" y1="18" x2="25" y2="18" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18" cy="18" r="1.8" fill="#2c5a40"/>
+          <path d="M27 7 l3 -4 l3 4 M30 3 v8" stroke="#e0a93d" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M30 28 l4.5 2 l-1.5 -4.5" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Accurate time, kept</h3>
+        <p>A fresh cell keeps a good quartz watch within seconds a month — the whole point of owning one. A weak battery is the usual reason a "broken" watch is really just hungry.</p>
+        <span class="cost">"Broken" is often just dead</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="12" cy="18" r="9" fill="#5e9a78" stroke="#2c5a40" stroke-width="2"/>
+          <path d="M9 18 l2.5 2.5 l4.5 -5" stroke="#fffdf8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="26" cy="18" r="9" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <path d="M22.5 14.5 l7 7 M29.5 14.5 l-7 7" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Battery vs. not-a-battery</h3>
+        <p>This guide is for quartz (battery) watches. Automatic and mechanical watches have no battery — they're wound by motion or by hand and get serviced instead. Smartwatches simply recharge. Know which you own first.</p>
+        <span class="cost">Automatics aren't on this clock</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace it?</h2>
+    <p class="sub">For a quartz watch, every 2–3 years is the honest default — but it depends on what kind of watch you actually own, what it's doing right now, and whether it's sealed against water. Answer four questions and we'll point you at the right move:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What kind of watch is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="quartz">Quartz — runs on a battery, ticks once a second</button>
+          <button class="pill" data-v="auto">Automatic / mechanical — no battery, you wind it or it self-winds</button>
+          <button class="pill" data-v="smart">Smartwatch — I recharge it</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="symptom">
+        <div class="q-label">2. What's it doing right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="fine">Keeping good time</button>
+          <button class="pill" data-v="slow">Running slow / losing minutes</button>
+          <button class="pill" data-v="jump">Second hand jumps in 4-second hops</button>
+          <button class="pill" data-v="stopped">Stopped completely</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="since">
+        <div class="q-label">3. How long since the last battery change?</div>
+        <div class="pills">
+          <button class="pill" data-v="recent">Under a year</button>
+          <button class="pill" data-v="mid">1–2 years</button>
+          <button class="pill" data-v="due">2–3 years</button>
+          <button class="pill" data-v="unknown">No idea / never</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="water">
+        <div class="q-label">4. Is it water-resistant or a diver?</div>
+        <div class="pills">
+          <button class="pill" data-v="no">No — a dress or everyday watch</button>
+          <button class="pill" data-v="splash">Splash-resistant, nothing serious</button>
+          <button class="pill" data-v="yes">Yes — a diver, or rated for swimming</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="verdictNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs</h2>
+    <p class="sub">This is one of the cheapest bits of upkeep you'll ever do — the trap isn't the price, it's leaving a dead battery to leak, or cracking open a water-resistant watch and losing its seal. Typical U.S. prices, for planning purposes:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$2–10</div><div class="l">the battery itself — a silver-oxide coin cell, often cheaper in a multipack</div></div>
+        <div class="calc-stat"><div class="v">~$10–20</div><div class="l">a watch shop or jeweler doing it for you (more for water-resistant)</div></div>
+        <div class="calc-stat"><div class="v bad">$50–200+</div><div class="l">repairing a movement that corroded under a battery left dead too long</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 DIY swap on a non-sealed watch</span><span>$2–10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Shop swap, or jeweler with reseal + pressure test</span><span>$10–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:20%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚠️ Movement repair after a leak you let sit</span><span>$50–200+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The battery is almost free; what costs money is neglect. A dead cell left inside for months can <strong>leak and corrode</strong> the movement, and that's where the real repair bills live. For a plain watch, the DIY swap is genuinely a few dollars and a few minutes. For a <strong>water-resistant or diver</strong>, let a jeweler do it — the small premium buys a new gasket and a pressure test, which is what keeps the watch sealed afterward.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace a watch battery</h2>
+    <p class="sub">For a basic, non-sealed watch this is a ten-minute job. Read the four ideas below first — especially the one about water resistance — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Care first — read before you pry</h3>
+      <ul>
+        <li><strong>Don't leave a dead battery inside.</strong> A flat cell can leak and corrode the movement over months. If a watch has stopped, swap the battery promptly or pull it out until you can.</li>
+        <li><strong>Water-resistant, diver, luxury, or in-warranty? Take it to a jeweler.</strong> Opening the case breaks the water seal; pros replace the gasket and pressure-test it afterward. A DIY swap on a sealed watch quietly ends its water resistance.</li>
+        <li>Work over a clean, soft cloth in a dust-free spot — case backs ping off and tiny parts roll. The cloth also protects the case from scratches.</li>
+        <li><strong>Don't touch the movement with bare fingers.</strong> Skin oils and grit foul the works. Use plastic tweezers (metal can short the new battery) and handle the cell by its edge.</li>
+        <li><strong>Match the battery exactly</strong> — the code is usually printed inside the case or on the old cell (e.g. a silver-oxide <em>SR626SW</em>). The wrong size or chemistry won't fit right or won't last.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">The matching replacement battery (the code's inside the case)</span>
+      <span class="tool-chip">Case-back tool — pry knife (snap-off) or wrench (screw-down)</span>
+      <span class="tool-chip">Plastic tweezers</span>
+      <span class="tool-chip">A soft, clean cloth</span>
+      <span class="tool-chip">Optional: finger cots or gloves, a loupe</span>
+      <span class="tool-chip">Water-resistant watch? Skip the kit — use a jeweler</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Four ideas worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing three watch types: a quartz watch that takes a battery and is the subject of this guide, an automatic with a winding rotor and no battery, and a smartwatch that recharges">
+          <!-- quartz -->
+          <circle cx="58" cy="64" r="30" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.6"/>
+          <line x1="58" y1="64" x2="58" y2="46" stroke="#2c5a40" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="58" y1="64" x2="70" y2="70" stroke="#2c5a40" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="58" cy="64" r="2" fill="#2c5a40"/>
+          <circle cx="58" cy="106" r="9" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.4"/>
+          <text x="58" y="150" font-size="11" font-weight="700" fill="#2c5a40" text-anchor="middle">Quartz</text>
+          <text x="58" y="166" font-size="9.5" fill="#6b7376" text-anchor="middle">battery — this guide</text>
+          <!-- automatic -->
+          <circle cx="140" cy="64" r="30" fill="#fbf3e3" stroke="#e0a93d" stroke-width="2.6"/>
+          <path d="M140 64 a18 18 0 0 1 16 -10" fill="none" stroke="#d98e3b" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="140" cy="64" r="6" fill="#e0a93d"/>
+          <line x1="140" y1="64" x2="140" y2="50" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="140" y1="64" x2="151" y2="71" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="140" y="150" font-size="11" font-weight="700" fill="#9a7117" text-anchor="middle">Automatic</text>
+          <text x="140" y="166" font-size="9.5" fill="#6b7376" text-anchor="middle">no battery — service</text>
+          <!-- smartwatch -->
+          <rect x="200" y="36" width="56" height="56" rx="14" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.6"/>
+          <rect x="210" y="46" width="36" height="36" rx="8" fill="#fffdf8"/>
+          <path d="M226 56 v8 h6" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M236 100 l4 6 l-8 0 z" fill="#7fb3c8"/>
+          <path d="M222 108 q6 -4 14 0" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="228" y="150" font-size="11" font-weight="700" fill="#2c5a40" text-anchor="middle">Smartwatch</text>
+          <text x="228" y="166" font-size="9.5" fill="#6b7376" text-anchor="middle">recharge it</text>
+        </svg>
+        <h4>First, know what you own</h4>
+        <p>Quartz watches take a battery (this guide). Automatics have a winding rotor and no battery — they're serviced, not swapped. Smartwatches just recharge. And check whether it's water-resistant: if so, lean toward a jeweler.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of two case-back styles: a snap-off back that pops open with a pry knife at a notch, and a screw-down back with notches that turns counter-clockwise with a wrench tool">
+          <!-- snap-off -->
+          <circle cx="80" cy="74" r="44" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2.6"/>
+          <circle cx="80" cy="74" r="32" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-dasharray="2 4"/>
+          <path d="M44 56 q-4 -3 0 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <g transform="rotate(-30 50 54)">
+            <rect x="14" y="48" width="40" height="9" rx="4.5" fill="#c96f4a"/>
+            <polygon points="54,49 66,52.5 54,56" fill="#6b7376"/>
+          </g>
+          <text x="80" y="138" font-size="11" font-weight="700" fill="#2c5a40" text-anchor="middle">Snap-off</text>
+          <text x="80" y="153" font-size="9.5" fill="#6b7376" text-anchor="middle">pry at the notch</text>
+          <!-- screw-down -->
+          <circle cx="200" cy="74" r="44" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2.6"/>
+          <g fill="#8a6a4f">
+            <rect x="196" y="30" width="8" height="10" rx="2"/>
+            <rect x="196" y="108" width="8" height="10" rx="2"/>
+            <rect x="156" y="70" width="10" height="8" rx="2"/>
+            <rect x="234" y="70" width="10" height="8" rx="2"/>
+          </g>
+          <circle cx="200" cy="74" r="24" fill="none" stroke="#8a6a4f" stroke-width="2"/>
+          <path d="M222 56 a24 24 0 0 0 -10 -10" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="220,44 226,52 214,52" fill="#3e7c59"/>
+          <text x="200" y="138" font-size="11" font-weight="700" fill="#2c5a40" text-anchor="middle">Screw-down</text>
+          <text x="200" y="153" font-size="9.5" fill="#6b7376" text-anchor="middle">unscrew with a wrench</text>
+        </svg>
+        <h4>Open the right way for the back</h4>
+        <p>A snap-off back pops open with a thin pry knife slipped into the small notch on the rim. A screw-down back has flats or notches and unscrews (counter-clockwise) with a case wrench. Don't force the wrong tool.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of removing the old battery: a retaining clip is gently swung aside, and plastic tweezers lift the round silver cell out of the movement, with the battery code noted">
+          <circle cx="120" cy="86" r="56" fill="#e3efe8" stroke="#5e9a78" stroke-width="2.6"/>
+          <circle cx="120" cy="86" r="56" fill="none"/>
+          <circle cx="120" cy="92" r="24" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <circle cx="120" cy="92" r="13" fill="#fffdf8" stroke="#7fb3c8" stroke-width="1.8"/>
+          <text x="120" y="96" font-size="11" font-weight="700" fill="#6b7376" text-anchor="middle">+</text>
+          <!-- retaining clip swung aside -->
+          <path d="M120 68 q30 -4 34 22" stroke="#8a6a4f" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+          <path d="M154 90 q4 -8 12 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <polygon points="166,78 174,84 166,90" fill="#3e7c59"/>
+          <!-- plastic tweezers -->
+          <g transform="translate(150 116) rotate(-22)">
+            <path d="M0 0 q40 14 78 6" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M0 14 q40 4 78 -2" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </g>
+          <text x="24" y="156" font-size="11" fill="#6b7376">note the code → swing the clip → lift with plastic</text>
+        </svg>
+        <h4>Note the code, then lift it out</h4>
+        <p>Read and jot the battery code (it's on the old cell or stamped in the case), gently swing or unclip the retaining tab, and lift the old battery out with plastic tweezers. Don't pry against the gears.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of fitting the new battery: the fresh cell goes in with the plus side up matching the marking, the retaining clip is reseated, the case back is closed, and a water-resistant watch is pressure-tested">
+          <circle cx="78" cy="74" r="40" fill="#e3efe8" stroke="#5e9a78" stroke-width="2.4"/>
+          <circle cx="78" cy="80" r="20" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <text x="78" y="85" font-size="14" font-weight="700" fill="#3e7c59" text-anchor="middle" font-family="Georgia, serif">+</text>
+          <path d="M78 58 q22 -2 26 16" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <text x="78" y="132" font-size="10" font-weight="700" fill="#2c5a40" text-anchor="middle">+ side up, reseat clip</text>
+          <!-- arrow to closed case -->
+          <path d="M124 74 h24" stroke="#6b7376" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="148,67 162,74 148,81" fill="#6b7376"/>
+          <!-- closed case back + gasket + gauge -->
+          <circle cx="206" cy="74" r="40" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2.6"/>
+          <circle cx="206" cy="74" r="30" fill="none" stroke="#c96f4a" stroke-width="3.5"/>
+          <text x="206" y="78" font-size="9.5" fill="#fffdf8" text-anchor="middle">seal</text>
+          <!-- pressure gauge -->
+          <circle cx="206" cy="132" r="15" fill="#fffdf8" stroke="#6b7376" stroke-width="2"/>
+          <line x1="206" y1="132" x2="206" y2="122" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="206" y1="132" x2="214" y2="128" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="206" y="166" font-size="9.5" fill="#6b7376" text-anchor="middle">pressure-test if sealed</text>
+        </svg>
+        <h4>Fit it, close up, reset the time</h4>
+        <p>Drop the matching cell in the correct side up (usually + facing you), reseat the clip, and snap or screw the back shut firmly. If water resistance matters, replace the gasket and have it pressure-tested. Then set the time.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Battery-swap progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Done — fresh battery, case closed, time set. Note the date and you'll know exactly when the next one's due.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ WHEN TO CALL A PRO ============ -->
+  <section id="pro">
+    <h2>When to use a jeweler instead</h2>
+    <p class="sub">A plain watch is a fine DIY job. But a few situations are worth the few extra dollars at a watch shop or jeweler — mostly to protect a seal, a warranty, or a watch worth real money:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Water-resistant, diver, or swim-rated watches.</strong> Opening the case breaks the seal. A jeweler replaces the gasket and runs a pressure (water-resistance) test afterward, so it stays sealed — a DIY swap quietly does not.</li>
+        <li><strong>Luxury or in-warranty watches.</strong> A clumsy pry can scratch the case or void the warranty. Let an authorized service handle anything valuable or still covered.</li>
+        <li><strong>It still won't run on a fresh battery.</strong> If a new, correct cell doesn't bring it back to life, the problem is the movement — not the battery — and that's a repair, not a swap.</li>
+        <li><strong>A screw-down or stuck case back you can't open safely.</strong> If the back won't budge without forcing it (and risking a slip into the movement or your hand), hand it to someone with the right tools.</li>
+        <li><strong>Tiny, fiddly, or skeleton movements.</strong> Some watches pack the battery under clips and bridges that are easy to damage. If it looks intimidating, it probably is — let a pro do it.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How long does a watch battery actually last?</summary>
+      <p>Typically 2–3 years for a standard quartz watch, though it varies a lot. A simple time-only watch sips power and can run longer — sometimes 4–5 years on a fresh silver-oxide cell — while a watch with extra functions (backlight, alarm, chronograph) draws more and runs the battery down faster. The honest plan is to expect 2–3 years and treat anything beyond that as a bonus.</p>
+    </details>
+    <details>
+      <summary>How do I tell the battery is dying before it stops?</summary>
+      <p>Two tells. First, it starts running slow — losing minutes over a day or two. Second, the classic trick: on many quartz watches with a sweeping seconds hand, a dying battery makes the second hand <strong>jump in 4-second hops</strong> instead of ticking every second. That "end-of-life indicator" is the watch telling you the cell is nearly flat — change it soon, before it stops and the dead battery sits inside.</p>
+    </details>
+    <details>
+      <summary>Can I replace a watch battery myself?</summary>
+      <p>For an ordinary, non-sealed watch — yes, easily. You need the right battery, a case-back tool (a pry knife for a snap-off back, a wrench for a screw-down one), and plastic tweezers, working over a clean cloth. The two things to respect: don't touch the movement with bare fingers, and match the battery code exactly. The big exception is water resistance — see below.</p>
+    </details>
+    <details>
+      <summary>Will my watch still be water-resistant after a DIY swap?</summary>
+      <p>No — not reliably. Water resistance depends on intact gaskets and a properly sealed case, and opening the back disturbs that. To keep a watch sealed you need a fresh gasket and a pressure (water-resistance) test, which is exactly what a jeweler provides. If your watch is a diver, swim-rated, or you ever get it wet, have the battery done professionally so the seal survives.</p>
+    </details>
+    <details>
+      <summary>What battery do I need?</summary>
+      <p>The exact code, which is usually printed inside the case back or stamped on the old cell — something like a silver-oxide <strong>SR626SW</strong>. Match it precisely: the number encodes the size and chemistry. If you can't read it, a watch counter can identify it from the old battery, or measure the cell. Avoid guessing or "close enough" sizes — the wrong cell won't seat correctly or won't last.</p>
+    </details>
+    <details>
+      <summary>What's the difference between a quartz and an automatic watch?</summary>
+      <p>A quartz watch runs on a battery that drives a quartz crystal — it ticks once a second and needs a new cell every 2–3 years (this guide). An automatic (or mechanical) watch has no battery at all: it's powered by a wound mainspring, either by hand or by a rotor that winds as your wrist moves, and its seconds hand sweeps smoothly. Automatics don't take batteries — they get a full service (cleaning and re-oiling) roughly every 5 years instead.</p>
+    </details>
+    <details>
+      <summary>My watch stopped — does that always mean the battery?</summary>
+      <p>For a quartz watch, a dead battery is by far the most likely cause, so that's the first and cheapest thing to rule out. Swap in a fresh, correctly-coded cell. If it springs back to life, you're done. If it still won't run, the issue is in the movement — and that's a repair for a watchmaker, not another battery.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The swap takes minutes. Remembering when it's due is the part that slips.</h2>
+        <p>A quartz battery lasts 2–3 years, which is exactly long enough to forget when you last changed it — until the watch stops on a busy morning. Log the swap date in Upkeep Ledger and it'll remind you before the next one runs out, alongside every other recurring task in your life.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=watch-battery&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=watch-battery&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; battery life, codes, and case styles vary by watch — your watch's manual and a reputable jeweler outrank this guide, especially for water-resistant pieces.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, symptom: null, since: null, water: null };
+
+  function computePlan(s) {
+    var reasons = [];
+    var headline;
+    var verdict;
+
+    /* Non-quartz watches route away from the battery cadence entirely. */
+    if (s.type === "auto") {
+      headline = "no battery — service roughly every 5 years";
+      reasons.push("An automatic or mechanical watch has no battery at all — it's driven by a wound mainspring. There's nothing here to swap.");
+      reasons.push("If it's running slow or stopping, it usually wants winding, wearing (for a self-winder), or a full service — cleaning and re-oiling the movement, typically about every 5 years.");
+      reasons.push("Take a misbehaving automatic to a watchmaker rather than hunting for a battery that isn't there.");
+      verdict = "<strong>This guide is for battery watches.</strong> Yours runs on a mainspring, so there's no cell to change — book a service with a watchmaker every ~5 years (or when it won't hold its rate) instead.";
+      return { headline: headline, reasons: reasons, verdict: verdict };
+    }
+    if (s.type === "smart") {
+      headline = "no coin-cell swap — just recharge it";
+      reasons.push("A smartwatch has a rechargeable battery, not a replaceable coin cell — you charge it, you don't swap it.");
+      reasons.push("Its built-in battery does wear out eventually (often a few years), but that's a service replacement done by the maker, not a DIY coin-cell change.");
+      reasons.push("If it stops holding a charge, look at the manufacturer's battery-service options rather than this guide.");
+      verdict = "<strong>This guide is for quartz (coin-cell) watches.</strong> A smartwatch just recharges — and when its built-in battery finally wears out, that's a job for the maker's service, not a tweezers-and-tool swap.";
+      return { headline: headline, reasons: reasons, verdict: verdict };
+    }
+
+    /* Quartz path: default every 2–3 years, adjusted by symptom and time since. */
+    var replaceNow = false;
+
+    if (s.symptom === "stopped") {
+      replaceNow = true;
+      reasons.push("A stopped quartz watch almost always means a flat battery — and a dead cell shouldn't sit inside, where it can leak. Swap it now.");
+    } else if (s.symptom === "jump") {
+      replaceNow = true;
+      reasons.push("A seconds hand jumping in 4-second hops is the classic end-of-life indicator — the watch is telling you the battery is nearly flat. Change it before it stops.");
+    } else if (s.symptom === "slow") {
+      replaceNow = true;
+      reasons.push("Running slow and losing minutes is a fading battery's first symptom — replace it soon rather than waiting for it to quit.");
+    } else {
+      reasons.push("It's keeping good time, so there's no rush — a quartz cell typically lasts 2–3 years, and you're simply planning the next swap.");
+    }
+
+    if (s.since === "due" || s.since === "unknown") {
+      reasons.push("At 2–3 years (or an unknown age), you're right at the typical end of a quartz battery's life — a swap now keeps you ahead of a surprise stop and a dead cell left to leak.");
+      if (!replaceNow && s.since === "due") replaceNow = true;
+    } else if (s.since === "mid") {
+      reasons.push("At 1–2 years you're mid-life — keep an eye out for slowing or the 4-second jump, and plan to change it around the 2–3 year mark.");
+    } else if (s.since === "recent") {
+      reasons.push("Changed under a year ago, the cell should be fine — if it's already acting up, suspect the wrong battery code, a poor seat, or a movement issue rather than a worn-out cell.");
+    }
+
+    if (s.water === "yes") {
+      reasons.push("It's water-resistant or a diver — opening the case breaks the seal, so this is a job for a jeweler who'll fit a new gasket and pressure-test it afterward.");
+      verdict = "<strong>Use a jeweler so it stays sealed.</strong> " + (replaceNow ? "The battery is due, but " : "") + "on a water-resistant or diver watch, a DIY swap quietly ends its water resistance. A jeweler replaces the gasket and runs a pressure test — that's what keeps it watertight. Default cadence is still every 2–3 years.";
+    } else if (s.water === "splash") {
+      reasons.push("Splash resistance relies on a gasket too — a careful DIY swap is reasonable, but you won't be able to verify the seal, so don't trust it underwater afterward.");
+      verdict = replaceNow
+        ? "<strong>Replace now — carefully.</strong> The battery's due or failing. A DIY swap is fine for splash resistance, but you can't confirm the seal afterward, so keep it away from real submersion until it's been pressure-tested. Otherwise, plan on every 2–3 years."
+        : "<strong>You're on schedule — every 2–3 years.</strong> When the time comes, a DIY swap is reasonable for a splash-resistant watch, but you won't be able to verify the seal, so treat it as less water-resistant afterward.";
+    } else {
+      verdict = replaceNow
+        ? "<strong>Replace now.</strong> Whether it's stopped, slowing, or simply due, swap in a fresh, correctly-coded cell — a plain watch is a quick DIY job over a clean cloth. Note the date, and you're set for another 2–3 years."
+        : "<strong>You're on schedule — every 2–3 years.</strong> Nothing to do today beyond noting your last swap date. A non-sealed watch is an easy DIY change when the time comes.";
+    }
+
+    headline = replaceNow ? "replace it now — then every 2–3 years" : "every 2–3 years";
+    return { headline: headline, reasons: reasons, verdict: verdict };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.symptom || !quizState.since || !quizState.water) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent = "Your plan: " + r.headline;
+    document.getElementById("resultBody").innerHTML =
+      "Here's how we read your watch — why this plan:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("verdictNote").innerHTML = r.verdict;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Identify", text: "Confirm it's a quartz (battery) watch", note: "Ticks once a second and runs on a battery = quartz, this guide. A smooth sweeping seconds hand with no battery = automatic (service it, don't swap). A smartwatch just recharges." },
+    { phase: "Identify", text: "Check whether it's water-resistant or a diver", note: "Look on the dial or case back for a water-resistance rating. If it's rated for swimming/diving, stop here and take it to a jeweler — opening it breaks the seal." },
+    { phase: "Identify", text: "Find and note the battery code", note: "Usually stamped inside the case back or printed on the old cell — e.g. a silver-oxide SR626SW. Match it exactly when you buy the replacement; chemistry and size both matter." },
+    { phase: "Swap", text: "Set up over a clean, soft cloth", note: "A dust-free spot protects the case from scratches and stops tiny parts from rolling away. Have your plastic tweezers and the new battery ready." },
+    { phase: "Swap", text: "Open the case back", note: "Snap-off back: slip a thin pry knife into the notch on the rim and pop it. Screw-down back: turn it counter-clockwise with a case wrench. Don't force the wrong tool." },
+    { phase: "Swap", text: "Release the clip and lift out the old battery", note: "Gently swing or unclip the retaining tab, then lift the cell out with plastic tweezers (metal can short it). Don't touch the movement with bare fingers." },
+    { phase: "Swap", text: "Drop in the matching new battery, correct side up", note: "Usually the + side faces up, matching the marking in the holder. Handle the new cell by its edge, seat it flat, and reseat the retaining clip." },
+    { phase: "Close", text: "Close the case back firmly", note: "Snap-off: press the back down evenly until it clicks all the way around. Screw-down: thread it on straight and snug it with the wrench. Mind the gasket — don't pinch it." },
+    { phase: "Close", text: "Reseal and pressure-test if water resistance matters", note: "Any watch you'll get wet needs a fresh gasket and a professional pressure (water-resistance) test. If you did a DIY swap on a sealed watch, treat it as no longer waterproof until tested." },
+    { phase: "Close", text: "Set the time (and date) and confirm it's running", note: "Pull the crown, set the time, push it back in. Watch the seconds hand tick steadily for a minute — if it doesn't run on a fresh, correct cell, the movement needs a watchmaker." },
+    { phase: "Close", text: "Note the date you changed it", note: "A quartz cell lasts 2–3 years — logging today's date is the only way future-you knows when the next swap is due (and avoids a dead battery left to leak)." }
+  ];
+
+  var LS_KEY = "upkeepguides:watch-battery:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
