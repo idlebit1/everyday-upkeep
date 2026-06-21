@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep pet vaccinations current — UpkeepGuides.com</title>
+<meta name="description" content="A plain-language guide to keeping your dog or cat's vaccines up to date: core vs lifestyle shots, the puppy and kitten series, 1- vs 3-year boosters, titer testing, costs, and how to keep records — always defer to your vet.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Keep pet vaccinations current — UpkeepGuides.com">
+<meta property="og:description" content="A plain-language guide to keeping your dog or cat's vaccines up to date: core vs lifestyle shots, the puppy and kitten series, 1- vs 3-year boosters, titer testing, costs, and how to keep records — always defer to your vet.">
+<meta property="og:url" content="https://upkeepguides.com/pet-vaccinations.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keep pet vaccinations current — UpkeepGuides.com">
+<meta name="twitter:description" content="A plain-language guide to keeping your dog or cat's vaccines up to date: core vs lifestyle shots, the puppy and kitten series, 1- vs 3-year boosters, titer testing, costs, and how to keep records — always defer to your vet.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+  .cost-note { margin-top: 14px; font-size: 14px; color: var(--ink-soft); background: var(--bg);
+    border: 1px dashed var(--line); border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Review yearly</span>
+      <h1>Keep Your Pet's Vaccinations Current</h1>
+      <p class="lede">Vaccines are the quiet backbone of pet health: a handful of shots that stand between your dog or cat and diseases that are often fatal, frequently contagious, and far cheaper to prevent than to treat. The trouble is the schedule — a puppy or kitten series, then boosters on a one- or three-year clock, plus lifestyle shots that come and go with how your pet lives. This guide explains how it all fits together so you can walk into the vet knowing the right questions. The exact protocol, though, is always your veterinarian's call — this is the map, not the prescription.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Review <em>at least yearly</em></span>
+        <span class="chip">💉 Boosters on a <em>1- or 3-yr cycle</em></span>
+        <span class="chip">⚖️ Rabies is <em>legally required</em></span>
+        <span class="chip">💸 Prevention beats <em>$1,000+ treatment</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Reassuring illustration of a friendly dog sitting on an exam table at the vet while a calm veterinarian in green scrubs holds a clipboard and a vaccination record card, a wall calendar hangs behind them, and a relaxed cat watches nearby">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall calendar behind -->
+      <rect x="40" y="40" width="96" height="92" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="40" y="40" width="96" height="22" rx="8" fill="#3e7c59"/>
+      <rect x="40" y="56" width="96" height="6" fill="#2c5a40"/>
+      <rect x="58" y="32" width="6" height="16" rx="3" fill="#8a6a4f"/>
+      <rect x="112" y="32" width="6" height="16" rx="3" fill="#8a6a4f"/>
+      <g fill="#dce8ee">
+        <rect x="50" y="72" width="14" height="11" rx="2"/>
+        <rect x="68" y="72" width="14" height="11" rx="2"/>
+        <rect x="86" y="72" width="14" height="11" rx="2"/>
+        <rect x="104" y="72" width="14" height="11" rx="2"/>
+        <rect x="50" y="88" width="14" height="11" rx="2"/>
+        <rect x="68" y="88" width="14" height="11" rx="2"/>
+        <rect x="86" y="88" width="14" height="11" rx="2"/>
+        <rect x="104" y="88" width="14" height="11" rx="2"/>
+        <rect x="50" y="104" width="14" height="11" rx="2"/>
+        <rect x="68" y="104" width="14" height="11" rx="2"/>
+      </g>
+      <!-- circled "due" day -->
+      <circle cx="93" cy="93.5" r="9" fill="none" stroke="#d9663f" stroke-width="3"/>
+
+      <!-- exam table -->
+      <rect x="150" y="272" width="262" height="18" rx="9" fill="#7fb3c8"/>
+      <rect x="158" y="290" width="246" height="8" rx="4" fill="#b9b1a3"/>
+      <rect x="176" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="372" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="176" y="344" width="210" height="9" rx="4.5" fill="#b9b1a3"/>
+
+      <!-- friendly dog sitting on the table -->
+      <ellipse cx="252" cy="228" rx="46" ry="48" fill="#c9a06b"/>
+      <ellipse cx="224" cy="242" rx="22" ry="32" fill="#b98c54"/>
+      <rect x="244" y="220" width="16" height="56" rx="8" fill="#c9a06b"/>
+      <rect x="268" y="220" width="16" height="56" rx="8" fill="#c9a06b"/>
+      <ellipse cx="252" cy="274" rx="11" ry="6" fill="#b98c54"/>
+      <ellipse cx="276" cy="274" rx="11" ry="6" fill="#b98c54"/>
+      <path d="M210 204 q-24 -4 -26 -26" stroke="#8a6a4f" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <circle cx="264" cy="152" r="36" fill="#c9a06b"/>
+      <ellipse cx="234" cy="144" rx="12" ry="22" fill="#8a6a4f" transform="rotate(20 234 144)"/>
+      <ellipse cx="294" cy="144" rx="12" ry="22" fill="#8a6a4f" transform="rotate(-20 294 144)"/>
+      <ellipse cx="264" cy="168" rx="15" ry="11" fill="#fffdf8"/>
+      <circle cx="264" cy="162" r="5" fill="#33393b"/>
+      <path d="M257 172 q7 6 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="251" cy="150" r="4" fill="#33393b"/>
+      <circle cx="278" cy="150" r="4" fill="#33393b"/>
+      <path d="M236 186 q28 12 56 0" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="264" cy="196" r="6" fill="#e0a93d"/>
+      <!-- little reassuring heart over the dog -->
+      <path d="M318 96 c5 -9 17 -6 17 3 c0 8 -10 14 -17 19 c-7 -5 -17 -11 -17 -19 c0 -9 12 -12 17 -3 z" fill="#c96f4a"/>
+
+      <!-- veterinarian with clipboard / record card -->
+      <circle cx="452" cy="118" r="30" fill="#f3ddc0"/>
+      <path d="M422 110 a30 30 0 0 1 60 0 l-8 0 q-10 -16 -22 -16 q-12 0 -22 16 z" fill="#8a6a4f"/>
+      <circle cx="443" cy="118" r="3.5" fill="#33393b"/>
+      <circle cx="461" cy="118" r="3.5" fill="#33393b"/>
+      <path d="M445 131 q7 5 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <rect x="410" y="150" width="84" height="128" rx="20" fill="#3e7c59"/>
+      <rect x="436" y="150" width="32" height="16" rx="6" fill="#2c5a40"/>
+      <!-- vaccination record card / clipboard in vet's hands -->
+      <g transform="rotate(-8 392 226)">
+        <rect x="356" y="196" width="72" height="92" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+        <rect x="378" y="190" width="28" height="10" rx="3" fill="#c96f4a"/>
+        <rect x="366" y="212" width="52" height="6" rx="3" fill="#dce8ee"/>
+        <rect x="366" y="226" width="52" height="6" rx="3" fill="#dce8ee"/>
+        <rect x="366" y="240" width="40" height="6" rx="3" fill="#e9e2d8"/>
+        <!-- green check = up to date -->
+        <circle cx="384" cy="266" r="11" fill="#e3efe8"/>
+        <path d="M379 266 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- vet's arm steadying the clipboard -->
+      <path d="M414 178 q-18 22 -28 36" stroke="#3e7c59" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <circle cx="386" cy="214" r="10" fill="#f3ddc0"/>
+      <!-- vet's legs -->
+      <rect x="424" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <rect x="458" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <ellipse cx="433" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+      <ellipse cx="471" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+
+      <!-- relaxed cat nearby on the floor, watching -->
+      <ellipse cx="96" cy="372" rx="34" ry="22" fill="#b9b1a3"/>
+      <circle cx="64" cy="356" r="19" fill="#b9b1a3"/>
+      <polygon points="50,346 53,330 64,342" fill="#b9b1a3"/>
+      <polygon points="78,346 75,330 64,342" fill="#b9b1a3"/>
+      <polygon points="52,344 54,334 62,342" fill="#fbe9e1"/>
+      <polygon points="76,344 74,334 66,342" fill="#fbe9e1"/>
+      <circle cx="58" cy="356" r="2.6" fill="#33393b"/>
+      <circle cx="70" cy="356" r="2.6" fill="#33393b"/>
+      <polygon points="61,361 67,361 64,365" fill="#c96f4a"/>
+      <path d="M128 380 q18 2 16 -16" stroke="#b9b1a3" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- foreground greenery -->
+      <circle cx="520" cy="392" r="14" fill="#5e9a78"/>
+      <circle cx="540" cy="396" r="10" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Vaccines feel optional right up until they aren't — until a kennel turns your dog away at drop-off, or an unvaccinated puppy comes down with parvo, or a bat gets into the house. The whole point is to never reach those moments. Here's what keeping them current actually buys you (and your vet sets the exact protocol for your pet):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 l13 5 v8 c0 8 -6 13 -13 16 c-7 -3 -13 -8 -13 -16 v-8 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M12 18 l4 4 l8 -9" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Core vaccines stop fatal diseases</h3>
+        <p>Rabies, parvovirus, and distemper are highly contagious and often deadly — and some, like rabies, have no treatment at all once symptoms start. The core shots are dramatically cheaper than the illness, and for a few diseases they're the only thing that stands between exposure and a heartbreaking outcome.</p>
+        <span class="cost">Parvo, distemper &amp; rabies</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="5" width="22" height="26" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="13" y="3" width="10" height="6" rx="2" fill="#c9a06b"/>
+          <line x1="11" y1="14" x2="25" y2="14" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <line x1="11" y1="19" x2="25" y2="19" stroke="#d8cfbe" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 25 l3 3 l6 -7" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Rabies is the law (and the price of entry)</h3>
+        <p>Rabies vaccination is legally required for dogs and cats in most U.S. states and counties — and it's what unlocks the rest of pet life: boarding kennels, groomers, doggy daycare, dog parks, travel, and licensing all ask for proof. A lapsed certificate can mean a cancelled trip or a turned-away pet.</p>
+        <span class="cost">Required for boarding &amp; travel</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <path d="M18 18 l0 -8 M18 18 l6 4" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M30 11 l1 5 l-5 -1" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Immunity fades — boosters keep it up</h3>
+        <p>Protection from any vaccine wanes over time. Boosters on a one- or three-year cycle top it back up, which is why "my dog had his shots" as a puppy isn't the same as protected today. An at-least-yearly review is how the schedule stays intact instead of quietly expiring.</p>
+        <span class="cost">Lapsed = a gap in protection</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="13" cy="11" r="7" fill="#5e9a78"/>
+          <circle cx="25" cy="14" r="5.5" fill="#3e7c59"/>
+          <circle cx="17" cy="24" r="6" fill="#7fb3c8"/>
+          <path d="M13 11 l12 3 M13 11 l4 13 M25 14 l-8 10" stroke="#8a6a4f" stroke-width="1.6"/>
+        </svg></div>
+        <h3>Lifestyle shots match the real risk</h3>
+        <p>Beyond the core, the right vaccines depend on how your pet actually lives. Boarding and daycare call for bordetella (kennel cough); tick country adds Lyme; ponds, wildlife, and outdoor cats add leptospirosis and feline leukemia. Matched to exposure, your pet is covered for the life it really leads.</p>
+        <span class="cost">Kennels, ticks, ponds &amp; the outdoors</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often does <em>your</em> pet need shots?</h2>
+    <p class="sub">There's no single answer — it depends on age, lifestyle, where you live, and what records you already have. Puppies and kittens run on a fast series; adults settle into an annual review with core boosters on a 1- or 3-year cycle. Answer four quick questions for a review cadence to bring to your vet — who sets the exact schedule:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="stage">
+        <div class="q-label">1. Who needs vaccines — and how old?</div>
+        <div class="pills">
+          <button class="pill" data-v="young">Puppy or kitten (under ~16 weeks)</button>
+          <button class="pill" data-v="dog">Adult dog</button>
+          <button class="pill" data-v="cat">Adult cat</button>
+        </div>
+        <div class="q-hint">Puppies and kittens are still building immunity and need a series of shots a few weeks apart; adults are on a maintenance schedule of annual reviews and periodic boosters.</div>
+      </div>
+      <div class="quiz-q" data-q="lifestyle">
+        <div class="q-label">2. What's their world like?</div>
+        <div class="pills">
+          <button class="pill" data-v="indoor">Indoor-only cat, rarely leaves home</button>
+          <button class="pill" data-v="social">Boarding, grooming, daycare, dog parks</button>
+          <button class="pill" data-v="outdoor">Hiking, hunting, or roams outdoors</button>
+        </div>
+        <div class="q-hint">Exposure is everything for lifestyle vaccines: a kennel, a dog park, or time in the woods or near water all change which non-core shots make sense.</div>
+      </div>
+      <div class="quiz-q" data-q="region">
+        <div class="q-label">3. What's your region like for ticks &amp; disease?</div>
+        <div class="pills">
+          <button class="pill" data-v="high">High tick / Lyme / lepto area</button>
+          <button class="pill" data-v="low">Low-risk area, or I'm not sure</button>
+        </div>
+        <div class="q-hint">Lyme disease and leptospirosis are very regional. Your vet knows the local picture — tick density, wildlife, and what they're seeing in the clinic — better than any map.</div>
+      </div>
+      <div class="quiz-q" data-q="records">
+        <div class="q-label">4. How are their vaccine records?</div>
+        <div class="pills">
+          <button class="pill" data-v="current">Fully up to date, I have the records</button>
+          <button class="pill" data-v="unknown">Unknown, lapsed, or newly adopted</button>
+        </div>
+        <div class="q-hint">A rescue or newly adopted pet with no paperwork is often treated as unvaccinated — your vet may restart the core series or run a titer to check what's already there.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What vaccines cost — and what skipping them risks</h2>
+    <p class="sub">Vaccines are one of the best-value things you'll ever spend on a pet: individual shots are modest, usually bundled into a wellness visit, and they're set against treatment bills that can run into the thousands. All figures are typical U.S. estimates; city clinics run higher, and low-cost options exist:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20 – $50</div><div class="l">per core vaccine — DHPP for dogs, FVRCP for cats — and similar for most lifestyle shots</div></div>
+        <div class="calc-stat"><div class="v">$15 – $30</div><div class="l">rabies vaccine, often the cheapest of all and frequently the legally required one</div></div>
+        <div class="calc-stat"><div class="v">$75 – $250</div><div class="l">a full puppy or kitten series, spread across a few visits over their first months</div></div>
+        <div class="calc-stat"><div class="v bad">$1,000 – $5,000</div><div class="l">treating parvovirus — hospitalization, IV fluids, round-the-clock care, no guarantee</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>💉 Rabies booster</span><span>$15 – $30</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🐾 A core booster at the wellness visit</span><span>$20 – $50</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>📋 A full puppy / kitten series</span><span>$75 – $250</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🦠 Treating parvo in an unvaccinated dog</span><span>$1,000 – $5,000</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:80%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚠️ A rabies exposure with a lapsed certificate</span><span>Quarantine, fines &amp; worse</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">The math isn't close: <strong>a few modest shots a year</strong> against a parvo bill that can hit $5,000, or the legal and medical nightmare of a rabies exposure when the vaccine has lapsed. Keeping vaccines current is one of the cheapest forms of insurance you can buy for a pet — and the protection it buys can't be purchased after the fact.</div>
+
+      <div class="cost-note">🧾 <strong>On a budget?</strong> Low-cost vaccine clinics, many shelters and humane societies, and mobile vaccine events offer core vaccines and rabies at a fraction of full-clinic prices — and bundling shots into a routine wellness visit usually beats paying for separate appointments. Estimates only; your clinic's price sheet and your vet's recommendations are the real numbers.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep your pet's vaccinations current</h2>
+    <p class="sub">The work is mostly organizing and asking the right questions — your vet does the medical part. Gather what records you have, talk through your pet's life and risks with the vet, get the due shots at the visit, and write down what's next. Read the techniques first (especially how core and lifestyle vaccines differ), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Talk to your vet — this is general info, not veterinary advice</h3>
+      <ul>
+        <li><strong>Your veterinarian sets the exact protocol.</strong> Everything here is general education. Which vaccines, at what ages, and on what cycle depends on your pet, your region, and current guidelines — that's a conversation with your vet, not a decision to make from a web page.</li>
+        <li><strong>Watch for reactions after a visit.</strong> Mild lethargy, a little soreness at the injection site, or a low fever for a day are common and usually nothing to worry about. But facial swelling, hives, persistent vomiting, or trouble breathing are rare emergencies — <strong>call your vet or an emergency clinic immediately.</strong></li>
+        <li><strong>Don't double-up or skip on your own.</strong> Giving an extra dose, stacking many vaccines at once, or quietly skipping a booster all carry real risks. Any change to the plan should go through your vet.</li>
+        <li><strong>Small, senior, or reaction-prone pets need a tailored plan.</strong> If your pet is tiny, older, or has reacted before, ask your vet about spacing vaccines across visits, pre-medicating, or using a titer test to check immunity instead of automatically re-vaccinating.</li>
+        <li><strong>Keep rabies certificates and records safe.</strong> You'll need proof of rabies (and often other vaccines) for boarding, grooming, travel, and licensing. Store the originals somewhere you can find them and keep a photo or digital copy on your phone.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What to gather</h3>
+    <div class="tools">
+      <span class="tool-chip">Any existing vaccine records or certificates</span>
+      <span class="tool-chip">The rabies certificate (and tag number)</span>
+      <span class="tool-chip">Adoption / shelter paperwork</span>
+      <span class="tool-chip">A list of your pet's lifestyle &amp; travel</span>
+      <span class="tool-chip">Upcoming boarding / grooming dates</span>
+      <span class="tool-chip">Your questions, written down</span>
+      <span class="tool-chip">A pet-records app or a simple folder</span>
+      <span class="tool-chip">Your phone, to photograph the records</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth understanding before the visit</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Two-column diagram of core vaccines: for dogs, rabies plus DHPP; for cats, rabies plus FVRCP; with lifestyle add-on vaccines listed below as optional, matched to risk">
+          <!-- dog column -->
+          <rect x="14" y="14" width="118" height="96" rx="8" fill="#fffdf8" stroke="#3e7c59" stroke-width="3"/>
+          <circle cx="40" cy="36" r="11" fill="#c9a06b"/>
+          <ellipse cx="33" cy="30" rx="4" ry="7" fill="#8a6a4f" transform="rotate(20 33 30)"/>
+          <ellipse cx="47" cy="30" rx="4" ry="7" fill="#8a6a4f" transform="rotate(-20 47 30)"/>
+          <text x="56" y="40" font-size="13" fill="#2c5a40" font-weight="700">Dog core</text>
+          <text x="26" y="68" font-size="12" fill="#33393b">• Rabies</text>
+          <text x="26" y="88" font-size="12" fill="#33393b">• DHPP</text>
+          <text x="40" y="103" font-size="9.5" fill="#6b7376">(distemper-parvo)</text>
+          <!-- cat column -->
+          <rect x="148" y="14" width="118" height="96" rx="8" fill="#fffdf8" stroke="#3e7c59" stroke-width="3"/>
+          <circle cx="174" cy="36" r="11" fill="#b9b1a3"/>
+          <polygon points="166,30 168,21 174,28" fill="#b9b1a3"/>
+          <polygon points="182,30 180,21 174,28" fill="#b9b1a3"/>
+          <text x="190" y="40" font-size="13" fill="#2c5a40" font-weight="700">Cat core</text>
+          <text x="160" y="68" font-size="12" fill="#33393b">• Rabies</text>
+          <text x="160" y="88" font-size="12" fill="#33393b">• FVRCP</text>
+          <text x="174" y="103" font-size="9.5" fill="#6b7376">(the cat combo)</text>
+          <!-- lifestyle add-ons -->
+          <rect x="14" y="122" width="252" height="44" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="24" y="138" font-size="11" fill="#9a7117" font-weight="700">Lifestyle add-ons (by risk):</text>
+          <text x="24" y="156" font-size="10.5" fill="#6b7376">bordetella · Lyme · lepto · canine flu · FeLV</text>
+        </svg>
+        <h4>Core vs lifestyle vaccines</h4>
+        <p>Every dog needs rabies and DHPP; every cat needs rabies and FVRCP — those are the core. Everything else (bordetella, Lyme, lepto, canine flu, feline leukemia) is a lifestyle vaccine your vet recommends based on your pet's actual exposure.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Timeline of the puppy and kitten vaccine series: shots roughly every three to four weeks starting around six to eight weeks of age, continuing until at least sixteen weeks, then a first booster about a year later">
+          <line x1="20" y1="92" x2="248" y2="92" stroke="#b9b1a3" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="248,84 264,92 248,100" fill="#b9b1a3"/>
+          <g fill="#3e7c59">
+            <circle cx="34" cy="92" r="7"/>
+            <circle cx="74" cy="92" r="7"/>
+            <circle cx="114" cy="92" r="7"/>
+            <circle cx="154" cy="92" r="7"/>
+          </g>
+          <circle cx="222" cy="92" r="8" fill="#e0a93d"/>
+          <text x="22" y="58" font-size="11" fill="#2c5a40" font-weight="700">the series</text>
+          <text x="22" y="74" font-size="10.5" fill="#6b7376">every 3–4 weeks</text>
+          <text x="20" y="120" font-size="10" fill="#6b7376">~6–8 wk</text>
+          <text x="98" y="120" font-size="10" fill="#6b7376">~16+ wk</text>
+          <text x="200" y="120" font-size="10" fill="#9a7117" font-weight="700">~1 yr</text>
+          <text x="196" y="136" font-size="10" fill="#6b7376">first booster</text>
+          <line x1="190" y1="78" x2="190" y2="106" stroke="#d8cfbe" stroke-width="2"/>
+          <text x="20" y="154" font-size="10.5" fill="#6b7376">maternal antibodies fade — so it's a series,</text>
+          <text x="20" y="168" font-size="10.5" fill="#6b7376">not one shot</text>
+        </svg>
+        <h4>The puppy / kitten series</h4>
+        <p>Babies get a series — usually a shot every 3–4 weeks from about 6–8 weeks old until at least 16 weeks — because the antibodies from mom fade unpredictably. A first booster follows around a year old. Skipping a round leaves a gap.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the adult vaccine schedule: an annual wellness review, with core boosters given on either a one-year or three-year cycle, and a titer test shown as an option to check immunity instead of automatically re-vaccinating">
+          <!-- yearly review marker -->
+          <circle cx="48" cy="60" r="22" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+          <path d="M40 60 l6 6 l11 -13" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="80" y="56" font-size="12" fill="#2c5a40" font-weight="700">Annual review</text>
+          <text x="80" y="72" font-size="10.5" fill="#6b7376">vet checks what's due</text>
+          <!-- two cycle paths -->
+          <rect x="22" y="100" width="110" height="30" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <text x="77" y="119" font-size="11" fill="#33393b" text-anchor="middle" font-weight="700">1-year cycle</text>
+          <rect x="148" y="100" width="110" height="30" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <text x="203" y="119" font-size="11" fill="#33393b" text-anchor="middle" font-weight="700">3-year cycle</text>
+          <!-- titer option -->
+          <rect x="22" y="140" width="236" height="28" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="140" y="158" font-size="10.5" fill="#9a7117" text-anchor="middle" font-weight="700">or a titer test: check immunity first</text>
+        </svg>
+        <h4>The adult schedule</h4>
+        <p>Adults get an annual wellness review where the vet decides what's actually due — core boosters land on a 1-year or 3-year cycle depending on the vaccine. A titer test can sometimes check existing immunity instead of automatically re-vaccinating; ask your vet.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram matching lifestyle vaccines to risk: boarding maps to bordetella, ticks map to Lyme, ponds and wildlife map to leptospirosis, and an outdoor cat maps to feline leukemia">
+          <g font-size="11" fill="#33393b">
+            <!-- row 1: boarding -> bordetella -->
+            <rect x="14" y="16" width="100" height="26" rx="6" fill="#dce8ee"/>
+            <text x="64" y="33" text-anchor="middle">🏠 Boarding</text>
+            <path d="M118 29 l28 0 m-7 -4 l7 4 l-7 4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="150" y="16" width="116" height="26" rx="6" fill="#e3efe8"/>
+            <text x="208" y="33" text-anchor="middle" fill="#2c5a40" font-weight="700">Bordetella</text>
+            <!-- row 2: ticks -> Lyme -->
+            <rect x="14" y="50" width="100" height="26" rx="6" fill="#dce8ee"/>
+            <text x="64" y="67" text-anchor="middle">🌲 Ticks</text>
+            <path d="M118 63 l28 0 m-7 -4 l7 4 l-7 4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="150" y="50" width="116" height="26" rx="6" fill="#e3efe8"/>
+            <text x="208" y="67" text-anchor="middle" fill="#2c5a40" font-weight="700">Lyme</text>
+            <!-- row 3: ponds/wildlife -> lepto -->
+            <rect x="14" y="84" width="100" height="26" rx="6" fill="#dce8ee"/>
+            <text x="64" y="101" text-anchor="middle">💧 Ponds</text>
+            <path d="M118 97 l28 0 m-7 -4 l7 4 l-7 4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="150" y="84" width="116" height="26" rx="6" fill="#e3efe8"/>
+            <text x="208" y="101" text-anchor="middle" fill="#2c5a40" font-weight="700">Leptospirosis</text>
+            <!-- row 4: outdoor cat -> FeLV -->
+            <rect x="14" y="118" width="100" height="26" rx="6" fill="#dce8ee"/>
+            <text x="64" y="135" text-anchor="middle">🐈 Outdoor cat</text>
+            <path d="M118 131 l28 0 m-7 -4 l7 4 l-7 4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="150" y="118" width="116" height="26" rx="6" fill="#e3efe8"/>
+            <text x="208" y="135" text-anchor="middle" fill="#2c5a40" font-weight="700">FeLV</text>
+          </g>
+          <text x="140" y="162" font-size="10.5" fill="#6b7376" text-anchor="middle">your vet matches the shot to the real exposure</text>
+        </svg>
+        <h4>Match lifestyle shots to risk</h4>
+        <p>Lifestyle vaccines follow the life: boarding and daycare → bordetella; tick country → Lyme; ponds, puddles, and wildlife → leptospirosis; a cat that goes outside → feline leukemia. Tell your vet how your pet really lives, and they'll match the shots to it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of keeping and using vaccine records: a vaccine record booklet and a phone app side by side, with a rabies certificate marked as needed for boarding, travel, grooming, and licensing">
+          <!-- record booklet -->
+          <rect x="26" y="32" width="78" height="100" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="44" y="26" width="30" height="10" rx="3" fill="#c96f4a"/>
+          <line x1="38" y1="52" x2="92" y2="52" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <line x1="38" y1="66" x2="92" y2="66" stroke="#d8cfbe" stroke-width="2" stroke-linecap="round"/>
+          <line x1="38" y1="80" x2="92" y2="80" stroke="#d8cfbe" stroke-width="2" stroke-linecap="round"/>
+          <path d="M40 100 l5 5 l9 -11" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="40" y="124" font-size="10" fill="#6b7376">booklet</text>
+          <!-- phone app -->
+          <rect x="120" y="30" width="56" height="104" rx="10" fill="#3e7c59"/>
+          <rect x="127" y="42" width="42" height="74" rx="4" fill="#fffdf8"/>
+          <rect x="134" y="50" width="28" height="6" rx="3" fill="#dce8ee"/>
+          <rect x="134" y="62" width="28" height="6" rx="3" fill="#dce8ee"/>
+          <circle cx="148" cy="92" r="13" fill="#e3efe8"/>
+          <path d="M142 92 l4 4 l8 -9" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="148" y="128" font-size="9" fill="#fffdf8" text-anchor="middle">app</text>
+          <!-- rabies certificate -->
+          <rect x="190" y="36" width="76" height="56" rx="6" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="228" y="56" font-size="10" fill="#9a7117" text-anchor="middle" font-weight="700">RABIES</text>
+          <text x="228" y="70" font-size="9" fill="#6b7376" text-anchor="middle">certificate</text>
+          <path d="M210 80 l5 5 l9 -10" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="228" y="112" font-size="9.5" fill="#6b7376" text-anchor="middle">needed for boarding,</text>
+          <text x="228" y="126" font-size="9.5" fill="#6b7376" text-anchor="middle">travel &amp; licensing</text>
+        </svg>
+        <h4>Keep &amp; use the records</h4>
+        <p>Whether it's a paper booklet, a folder, or a pet-health app, keep every vaccine date in one place — and keep the rabies certificate especially handy, since boarding kennels, groomers, travel, and licensing all ask for proof. A photo on your phone saves the day more than once.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Vaccination upkeep progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Records gathered, the plan set with your vet, the due shots done, and the next dates logged — your pet is covered and you're ready when the kennel asks for proof. Review again at the next wellness visit.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS ============ -->
+  <section id="signs">
+    <h2>When to check in with your vet</h2>
+    <p class="sub">Vaccination isn't a once-and-done task — certain moments are worth a call to confirm your pet is current and covered. In every one of these, your vet is the decision-maker; this list is just what tends to trigger that conversation:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Lapsed or unknown vaccine status.</strong> A newly adopted pet or rescue with no paperwork is often treated as unvaccinated. Your vet will decide whether to restart the core series, give a single booster, or run a titer to see what immunity is already there.</li>
+        <li><strong>An upcoming boarding, grooming, daycare, or travel booking.</strong> These almost always have vaccine requirements — and deadlines, since some shots (like bordetella) need to be given days to weeks ahead. Check the facility's rules early, then call your vet so nothing is rushed at the last minute.</li>
+        <li><strong>A lifestyle change.</strong> Starting puppy socialization classes, moving to tick country, taking up hikes, getting a new outdoor cat, or adding a second pet all shift the risk picture — and may add lifestyle vaccines your vet hadn't recommended before.</li>
+        <li><strong>Any reaction after a vaccine.</strong> Report mild effects so they're on the record, and treat facial swelling, hives, repeated vomiting, or breathing trouble as an emergency. Knowing about a past reaction lets your vet pre-medicate or space out future shots.</li>
+        <li><strong>A senior or chronically ill pet.</strong> Older animals and pets with ongoing health conditions may need a tailored schedule — fewer vaccines, spaced differently, or titer-tested. This is a discussion to have with the vet who knows the whole picture.</li>
+        <li><strong>You've simply lost track.</strong> If you can't remember when the last rabies shot was or where the certificate is, that alone is reason to check in. Your clinic has the records on file and can tell you exactly what's due.</li>
+        <li><strong>Pro tip:</strong> vaccines are almost always given at the routine wellness visit, so the easiest way to stay current is to bundle this with the <a href="annual-vet-checkup.html">annual vet checkup</a> — the vet reviews the whole schedule while your pet is already there — alongside the other recurring pet-health tasks like <a href="flea-tick-treatment.html">flea &amp; tick treatment</a> and <a href="trim-pet-nails.html">nail trims</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Which vaccines does my dog or cat actually need?</summary>
+      <p>Vaccines split into two groups. <strong>Core vaccines</strong> are recommended for essentially every pet because the diseases are severe and widespread: for dogs that's rabies plus DHPP (distemper, adenovirus/hepatitis, parainfluenza, and parvovirus); for cats it's rabies plus FVRCP (feline viral rhinotracheitis, calicivirus, and panleukopenia). <strong>Non-core, or lifestyle, vaccines</strong> are added based on your pet's exposure — bordetella (kennel cough) for boarding and daycare, Lyme for tick country, leptospirosis for pets around water and wildlife, canine influenza for social dogs, and feline leukemia (FeLV) for cats who go outside. Which non-core shots make sense is a judgment call your vet makes based on where you live and how your pet lives — this guide can't make it for you.</p>
+    </details>
+    <details>
+      <summary>How often — is it every year or every three years?</summary>
+      <p>It depends on the specific vaccine and your local laws, which is exactly why "keep them current" means an at-least-yearly review rather than a fixed interval. Some core vaccines are labeled for a three-year cycle once the initial series and first booster are complete; others, and many lifestyle vaccines, are given annually. Rabies is often a one-year shot the first time and a three-year shot after that — but the legal requirement varies by state and county. The practical answer: see your vet for a wellness review at least once a year, and let them tell you which shots are actually due that visit. They're tracking the cycles so you don't have to guess.</p>
+    </details>
+    <details>
+      <summary>Does my indoor-only cat need vaccines?</summary>
+      <p>Yes — and this is one of the most common misconceptions. Even a cat that never sets paw outside should be kept current on the core vaccines. Rabies is the big one: it's legally required in most places regardless of lifestyle, because indoor cats still escape, and bats (a major rabies carrier) get into houses. FVRCP matters too, since those viruses can travel in on your clothes and shoes or surface if the cat is ever boarded, hospitalized, or adopted into a multi-cat home. What an indoor cat usually <em>doesn't</em> need is feline leukemia after kittenhood, since that's spread by contact with other cats. As always, your vet sets the specific plan for your cat.</p>
+    </details>
+    <details>
+      <summary>What's the puppy or kitten vaccine schedule?</summary>
+      <p>Puppies and kittens get a <em>series</em> rather than a single shot, because the protective antibodies they absorb from their mother fade on an unpredictable timeline somewhere between about 6 and 16 weeks of age. To make sure protection takes hold without a gap, vets give core vaccines roughly every 3–4 weeks starting around 6–8 weeks old and continuing until at least 16 weeks. A first booster typically follows about a year later. These early visits also cover deworming, the rabies vaccine (usually around 12–16 weeks, per local law), and lifestyle vaccines if your pet's situation calls for them. Skipping or stretching out a round can leave a window where your pet isn't fully protected — so follow the schedule your vet lays out closely.</p>
+    </details>
+    <details>
+      <summary>Are pet vaccines safe, and what reactions should I watch for?</summary>
+      <p>Vaccines are very safe and the benefits hugely outweigh the small risks — but no medical procedure is risk-free, so it's worth knowing what's normal and what isn't. <strong>Common and harmless:</strong> mild lethargy, a little soreness or a small lump at the injection site, a reduced appetite, or a low-grade fever for a day or so. <strong>Rare emergencies that need a vet immediately:</strong> swelling of the face or muzzle, hives, persistent vomiting or diarrhea, collapse, or any difficulty breathing — these usually appear within minutes to hours. If your pet has reacted before, is very small, or is reaction-prone, tell your vet so they can pre-medicate, space the vaccines across separate visits, or consider titer testing. Never manage a suspected reaction on your own; call the clinic.</p>
+    </details>
+    <details>
+      <summary>What is titer testing, and what do vaccines cost (any low-cost options)?</summary>
+      <p>A <strong>titer test</strong> is a blood test that measures the antibodies your pet already has against a disease. For some core vaccines — canine distemper and parvovirus, for example — a strong titer can show that immunity is still robust, and many vets will accept that in place of an automatic booster. Two caveats: a titer often costs as much as or more than the vaccine itself, and <strong>rabies is the exception</strong> — the law in most places requires the vaccine on schedule regardless of titer. On <strong>cost</strong>, individual vaccines typically run about $20–$50 each, with rabies often $15–$30, usually bundled into a wellness visit; a full puppy or kitten series spread across a few visits commonly lands around $75–$250. If money is tight, low-cost vaccine clinics, shelters and humane societies, and mobile vaccine events provide core vaccines and rabies at a fraction of full-clinic prices. Ask your vet what fits your pet and your budget.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The shot's not hard. Remembering the next due date is.</h2>
+        <p>Vaccine due dates are easy to lose track of — until a boarding kennel asks for proof and you're scrambling for a certificate you can't find. Let Upkeep Ledger hold the renewal dates alongside the vet checkup, the flea-and-tick treatment, the nail trims, and the rest of your pet's care, and nudge you before each one comes due.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=pet-vaccinations&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=pet-vaccinations&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This page is general information, not veterinary advice — vaccine choices, schedules, and intervals depend on your pet, your region, and current guidelines, so your veterinarian sets the exact protocol; cost figures are typical U.S. ranges for planning only.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { stage: null, lifestyle: null, region: null, records: null };
+
+  var FREQ_LABEL = {
+    1.5: "Every few weeks (puppy/kitten series)",
+    12: "Once a year",
+    36: "Every 3 years (per your vet)"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var note;
+
+    /* Puppies and kittens are the dominant case — a series */
+    if (s.stage === "young") {
+      months = 1.5;
+      reasons.push("Puppies and kittens need a vaccine series — typically a shot every 3–4 weeks from about 6–8 weeks old until at least 16 weeks — because the antibodies from their mother fade on an unpredictable timeline. Missing a round can leave a gap in protection.");
+      reasons.push("These visits also fold in deworming, growth checks, the rabies vaccine (usually around 12–16 weeks, per local law), and any lifestyle vaccines your vet recommends — bring every question you have.");
+      if (s.records === "unknown") {
+        reasons.push("With unclear or missing records, your vet will simply start the appropriate series — that's the safe default for a young pet whose history isn't documented.");
+      }
+      note = "<strong>Once the series and the ~1-year booster are done</strong>, your pet shifts to the adult rhythm: an annual wellness review with core boosters on a 1- or 3-year cycle. Your vet maps the exact dates.";
+      return { months: months, reasons: reasons, note: note };
+    }
+
+    /* Adults: default to a yearly review, with core possibly on a 3-year cycle */
+    var species = (s.stage === "cat") ? "cat" : "dog";
+    var highExposure = (s.lifestyle === "social" || s.lifestyle === "outdoor" || s.region === "high");
+
+    if (s.records === "unknown") {
+      reasons.push("With lapsed, unknown, or newly adopted records, an adult pet is often treated as unvaccinated — your vet may restart the core series or run a titer to check what immunity is already there. Start with a visit to sort out the baseline.");
+    }
+
+    if (highExposure) {
+      reasons.push("Boarding, daycare, dog parks, hiking, hunting, an outdoor cat, or living in a high-tick region all raise exposure — so an annual review matters, and your vet will likely add lifestyle vaccines (" + (species === "cat" ? "feline leukemia for cats who go outside" : "bordetella, leptospirosis, Lyme, or canine influenza by lifestyle and region") + ") on top of the core.");
+      if (s.region === "high") {
+        reasons.push("In a high tick / Lyme / lepto area, your vet weighs local disease pressure heavily — these vaccines are very regional, and they know what's actually circulating near you.");
+      }
+      reasons.push("Even with more lifestyle shots in the mix, the core boosters themselves still run on their own 1- or 3-year cycle — the annual review is when the vet sorts out which are due.");
+    } else {
+      months = 36;
+      reasons.push("An up-to-date, indoor-leaning adult " + species + " still needs an annual wellness review, but the core vaccines themselves often fall on a 3-year cycle once the initial series and first booster are complete — your vet confirms which apply.");
+      reasons.push("Indoor-mostly doesn't mean vaccine-optional: rabies is legally required in most places regardless of lifestyle, and core protection (like FVRCP for cats or DHPP for dogs) still matters even for a homebody.");
+    }
+
+    if (species === "cat") {
+      reasons.push("For cats, keep the rabies and FVRCP core current; feline leukemia (FeLV) is generally added only for cats who spend time outdoors or around other cats.");
+    } else {
+      reasons.push("For dogs, keep rabies and DHPP current as the core; ask your vet which lifestyle vaccines your dog's routine calls for.");
+    }
+
+    note = "<strong>Whatever the cycle, see your vet for a wellness review at least once a year</strong> and let them tell you which shots are actually due — and keep the rabies certificate handy, since boarding, grooming, travel, and licensing all ask for proof.";
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.stage || !quizState.lifestyle || !quizState.region || !quizState.records) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your cadence: " + FREQ_LABEL[r.months];
+    document.getElementById("resultBody").innerHTML =
+      "Schedules vary by vaccine and by law, so think of this as a <strong>review cadence to bring to your vet — who sets the exact protocol</strong>. Here's the reasoning behind it:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Gather records", text: "Round up every vaccine record you have", note: "Old certificates, the booklet from the breeder or shelter, printouts from a previous clinic, adoption paperwork — anything that shows what your pet has had and when." },
+    { phase: "Gather records", text: "Find the rabies certificate and note the tag number", note: "Rabies proof is the one boarding kennels, groomers, travel, and licensing ask for most. Keep the original safe and snap a photo on your phone as a backup." },
+    { phase: "Gather records", text: "Note any past vaccine reactions", note: "Even mild ones — lethargy, a lump, swelling. Write down what happened and when, so your vet can decide whether to pre-medicate or space out future shots." },
+    { phase: "Talk to your vet", text: "Describe how your pet really lives", note: "Boarding, daycare, dog parks, hiking, hunting, outdoor time, ponds and wildlife, tick country, other pets at home. This is what tells your vet which lifestyle vaccines fit." },
+    { phase: "Talk to your vet", text: "Ask what's core, what's lifestyle, and what's due now", note: "Let your vet sort core (rabies + DHPP for dogs, rabies + FVRCP for cats) from the lifestyle add-ons, and tell you which are actually due this visit." },
+    { phase: "Talk to your vet", text: "Ask about the cycle — 1-year vs 3-year — and titers", note: "Find out which boosters are annual and which run on a 3-year cycle, and whether a titer test makes sense to check immunity instead of automatically re-vaccinating." },
+    { phase: "Talk to your vet", text: "Flag a small, senior, or reaction-prone pet", note: "Ask about spacing vaccines across visits, pre-medicating, or tailoring the schedule. Your vet decides — this is exactly the conversation to have up front." },
+    { phase: "At the visit", text: "Confirm any pre-visit timing for boarding deadlines", note: "Some shots, like bordetella, need to be given days to weeks before boarding or daycare to count. If you have a booking, check its deadline and time the visit accordingly." },
+    { phase: "At the visit", text: "Get the due vaccines and watch for reactions", note: "Mild soreness or lethargy for a day is normal. Facial swelling, hives, vomiting, or trouble breathing are emergencies — call your vet or an emergency clinic immediately." },
+    { phase: "At the visit", text: "Collect the updated records before you leave", note: "Get the new certificate or an updated record sheet in hand, and confirm the rabies expiration date and tag number are written down correctly." },
+    { phase: "Track what's next", text: "Save the records where you'll actually find them", note: "A folder, a pet-health app, or a photo album on your phone — somewhere a kennel-deadline scramble won't happen. Keep the rabies certificate especially handy." },
+    { phase: "Track what's next", text: "Log the next due dates and the annual review", note: "Note when each booster comes due and put the next wellness visit on the calendar — vaccines are almost always given there. A reminder beats relying on memory a year out." }
+  ];
+
+  var LS_KEY = "upkeepguides:pet-vaccinations:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

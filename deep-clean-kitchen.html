@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep clean your kitchen — UpkeepGuides.com</title>
+<meta name="description" content="How to deep clean your kitchen monthly: degrease the hood and backsplash, clean appliances inside and out, pull out the stove and fridge, hit the germ hotspots, and finish with floors — in a fixed top-to-bottom order.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Deep clean your kitchen — UpkeepGuides.com">
+<meta property="og:description" content="How to deep clean your kitchen monthly: degrease the hood and backsplash, clean appliances inside and out, pull out the stove and fridge, hit the germ hotspots, and finish with floors — in a fixed top-to-bottom order.">
+<meta property="og:url" content="https://upkeepguides.com/deep-clean-kitchen.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deep clean your kitchen — UpkeepGuides.com">
+<meta name="twitter:description" content="How to deep clean your kitchen monthly: degrease the hood and backsplash, clean appliances inside and out, pull out the stove and fridge, hit the germ hotspots, and finish with floors — in a fixed top-to-bottom order.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Every month</span>
+      <h1>Deep Clean Your Kitchen</h1>
+      <p class="lede">The daily wipe-down keeps the kitchen functional, but a film is quietly accumulating where you never look: a sticky grease haze on the hood and the cabinet faces above the stove, crumbs and grime packed behind the fridge, a disposal that's started to smell, dusty coils making the fridge work harder. A monthly deep clean is the reset that catches all of it — degrease the hood and backsplash, clean the appliances inside and out, pull out the stove and fridge to get the zone everyone skips, disinfect the germ hotspots, and finish with the floors and edges. The trick is a fixed order — top to bottom, back to front — so you never re-dirty what you just cleaned. Do it monthly and the kitchen stays genuinely pleasant to cook in instead of slowly turning grimy on you.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every month</em></span>
+        <span class="chip">⏱️ <em>~1–2 hours</em> top to bottom</span>
+        <span class="chip">🍳 A kitchen that's <em>nicer to cook in</em></span>
+        <span class="chip">💸 Supplies <em>~$15–25</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bright kitchen mid-deep-clean: a stove and range with a vent hood and upper cabinets above it, one stretch of counter sparkling clean while a greasy spot on the backsplash is being wiped with a cloth, a spray bottle and folded microfiber cloths on the counter, a bucket of soapy water on the floor, and the edge of a refrigerator at the side">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- back wall / backsplash band -->
+      <rect x="40" y="150" width="420" height="110" fill="#dce8ee"/>
+      <!-- tile grout lines on backsplash -->
+      <g stroke="#c7d6dd" stroke-width="2">
+        <line x1="40" y1="186" x2="460" y2="186"/>
+        <line x1="40" y1="222" x2="460" y2="222"/>
+        <line x1="92" y1="150" x2="92" y2="260"/>
+        <line x1="172" y1="150" x2="172" y2="260"/>
+        <line x1="252" y1="150" x2="252" y2="260"/>
+        <line x1="332" y1="150" x2="332" y2="260"/>
+        <line x1="412" y1="150" x2="412" y2="260"/>
+      </g>
+
+      <!-- upper cabinets -->
+      <rect x="44" y="44" width="170" height="96" rx="6" fill="#c9a06b" stroke="#8a6a4f" stroke-width="4"/>
+      <rect x="54" y="54" width="72" height="76" rx="4" fill="#b9844f"/>
+      <rect x="132" y="54" width="72" height="76" rx="4" fill="#b9844f"/>
+      <circle cx="120" cy="92" r="3.5" fill="#8a6a4f"/>
+      <circle cx="138" cy="92" r="3.5" fill="#8a6a4f"/>
+      <!-- greasy film on the cabinet faces above the stove -->
+      <rect x="132" y="54" width="72" height="76" rx="4" fill="#c9a06b" opacity="0.4"/>
+      <g fill="#b9b1a3" opacity="0.4">
+        <circle cx="150" cy="74" r="3"/>
+        <circle cx="178" cy="88" r="2.4"/>
+        <circle cx="164" cy="108" r="2.6"/>
+      </g>
+
+      <!-- range hood above the stove -->
+      <path d="M232 80 h120 l-16 34 h-88 z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="248" y="114" width="88" height="10" rx="3" fill="#8a6a4f"/>
+      <!-- hood filter slats -->
+      <g stroke="#6b7376" stroke-width="2">
+        <line x1="262" y1="98" x2="322" y2="98"/>
+        <line x1="266" y1="106" x2="318" y2="106"/>
+      </g>
+      <!-- grease film on the hood -->
+      <path d="M250 92 q40 -8 84 0" fill="none" stroke="#c9a06b" stroke-width="4" opacity="0.5" stroke-linecap="round"/>
+
+      <!-- counter slab spanning the scene -->
+      <rect x="36" y="260" width="430" height="20" rx="4" fill="#b9b1a3"/>
+      <rect x="36" y="278" width="430" height="60" fill="#c9a06b"/>
+      <!-- lower cabinet doors -->
+      <g stroke="#8a6a4f" stroke-width="3">
+        <line x1="120" y1="280" x2="120" y2="338"/>
+        <line x1="210" y1="280" x2="210" y2="338"/>
+      </g>
+
+      <!-- LEFT counter: sparkling clean -->
+      <g stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity="0.85">
+        <line x1="58" y1="272" x2="96" y2="266"/>
+        <line x1="70" y1="276" x2="100" y2="272"/>
+      </g>
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M84 250 l0 9 M79.5 254.5 l9 0"/>
+      </g>
+      <text x="48" y="244" font-size="11" fill="#3e7c59" font-weight="700">clean</text>
+
+      <!-- stove / range under the hood -->
+      <rect x="238" y="262" width="108" height="78" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <!-- cooktop burners -->
+      <circle cx="266" cy="276" r="9" fill="#8a6a4f"/>
+      <circle cx="318" cy="276" r="9" fill="#8a6a4f"/>
+      <circle cx="266" cy="276" r="4" fill="#c96f4a"/>
+      <circle cx="318" cy="276" r="4" fill="#c96f4a"/>
+      <!-- oven door + handle -->
+      <rect x="248" y="292" width="88" height="40" rx="5" fill="#dce8ee"/>
+      <rect x="256" y="296" width="72" height="6" rx="3" fill="#8a6a4f"/>
+      <rect x="284" y="284" width="22" height="5" rx="2.5" fill="#6b7376"/>
+
+      <!-- RIGHT backsplash: greasy spot being wiped -->
+      <rect x="356" y="158" width="80" height="60" rx="3" fill="#c9a06b" opacity="0.5"/>
+      <g fill="#b9b1a3" opacity="0.55">
+        <circle cx="372" cy="178" r="4"/>
+        <circle cx="396" cy="170" r="3.4"/>
+        <circle cx="410" cy="192" r="3.8"/>
+        <circle cx="384" cy="198" r="3"/>
+      </g>
+      <!-- microfiber cloth wiping the greasy spot -->
+      <rect x="386" y="182" width="40" height="28" rx="6" fill="#7fb3c8" transform="rotate(-8 406 196)"/>
+      <rect x="386" y="182" width="40" height="9" rx="4" fill="#9cc3d4" transform="rotate(-8 406 196)"/>
+      <!-- wiped clean streak -->
+      <path d="M392 200 q24 -10 40 -4" fill="none" stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+      <!-- arm reaching to wipe -->
+      <path d="M408 210 q26 30 52 36" stroke="#c96f4a" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- spray bottle on the counter -->
+      <rect x="150" y="294" width="30" height="44" rx="6" fill="#5e9a78"/>
+      <rect x="156" y="282" width="18" height="14" rx="3" fill="#3e7c59"/>
+      <path d="M174 284 l16 -6 l0 6 l-16 4 z" fill="#2c5a40"/>
+      <rect x="154" y="310" width="22" height="16" rx="3" fill="#dce8ee" opacity="0.8"/>
+
+      <!-- folded microfiber cloths on the counter, left -->
+      <path d="M64 312 h62 l-6 22 h-50 z" fill="#7fb3c8"/>
+      <path d="M64 312 h62 l-4 8 h-54 z" fill="#9cc3d4"/>
+      <g stroke="#cdd9de" stroke-width="1.6">
+        <line x1="78" y1="324" x2="112" y2="324"/>
+        <line x1="76" y1="330" x2="110" y2="330"/>
+      </g>
+
+      <!-- bucket of soapy water on the floor -->
+      <path d="M170 350 h64 l-8 48 h-48 z" fill="#7fb3c8"/>
+      <path d="M166 348 h72 l-3 10 h-66 z" fill="#9cc3d4"/>
+      <path d="M172 344 q30 -16 58 0" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="186" cy="352" r="6" fill="#eef4f7"/>
+      <circle cx="200" cy="348" r="7" fill="#fffdf8"/>
+      <circle cx="214" cy="353" r="5" fill="#eef4f7"/>
+
+      <!-- refrigerator edge at far right -->
+      <rect x="468" y="120" width="60" height="270" rx="8" fill="#dce8ee" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="476" y="200" width="6" height="44" rx="3" fill="#8a6a4f"/>
+      <line x1="468" y1="252" x2="528" y2="252" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="476" y="262" width="6" height="36" rx="3" fill="#8a6a4f"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A kitchen looks clean long after it has quietly stopped being clean. The daily wipe handles the counters and the visible mess, but grease creeps onto surfaces you never touch, food residue gathers in the spots you can't see, and the appliances slowly clog and strain. Here's what a monthly reset actually heads off:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M11 6 h14 l-2 6 h-10 z" fill="#b9b1a3"/>
+          <rect x="14" y="12" width="8" height="4" rx="1" fill="#8a6a4f"/>
+          <g fill="#e0a93d" opacity="0.7">
+            <circle cx="13" cy="22" r="2.4"/>
+            <circle cx="20" cy="26" r="2.8"/>
+            <circle cx="26" cy="21" r="2.2"/>
+            <circle cx="17" cy="30" r="2"/>
+          </g>
+          <path d="M10 18 q8 -4 16 0" fill="none" stroke="#c96f4a" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Grease migrates everywhere</h3>
+        <p>Every time you cook, a fine mist of oil rises and settles — onto the hood, the backsplash, and especially the cabinet faces above the stove, where it cures into a sticky brown film. Left alone it gets harder to remove each month, and a grease-caked hood filter is a genuine fire hazard.</p>
+        <span class="cost">A sticky film &amp; grease-fire risk</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="10" width="20" height="20" rx="2" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="14" cy="18" r="2" fill="#5e9a78"/>
+          <circle cx="22" cy="22" r="2.4" fill="#3e7c59"/>
+          <circle cx="20" cy="15" r="1.6" fill="#8a6a4f"/>
+          <path d="M12 26 q3 -3 6 0 q3 -3 6 0" fill="none" stroke="#8a6a4f" stroke-width="1.6"/>
+          <g stroke="#c96f4a" stroke-width="1.6" stroke-linecap="round">
+            <path d="M16 6 q2 -3 4 0 M22 5 q1.5 -2.5 3 0"/>
+          </g>
+        </svg></div>
+        <h3>Residue breeds odors &amp; pests</h3>
+        <p>Crumbs and spills behind the appliances, and food gunk down in the disposal, are a buffet for bacteria, smells, and pantry pests. The crud you can't see is exactly what starts to stink and what draws ants, roaches, and pantry moths into the kitchen.</p>
+        <span class="cost">Bacteria, odors &amp; pests</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="9" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+          <g stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round">
+            <line x1="18" y1="6" x2="18" y2="9.5"/>
+            <line x1="18" y1="26.5" x2="18" y2="30"/>
+            <line x1="6" y1="18" x2="9.5" y2="18"/>
+            <line x1="26.5" y1="18" x2="30" y2="18"/>
+          </g>
+          <circle cx="18" cy="18" r="3" fill="#c96f4a"/>
+          <path d="M18 18 l5 -3" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Neglected appliances fail sooner</h3>
+        <p>A clogged hood filter can't pull smoke, dusty refrigerator coils make the fridge run hot and overwork the compressor, and a grimy oven smokes and bakes unevenly. Skip the cleaning and you trade a few minutes now for higher energy bills and earlier repairs.</p>
+        <span class="cost">Higher bills &amp; early repairs</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 16 l10 -8 l10 8 v12 a1 1 0 0 1 -1 1 h-18 a1 1 0 0 1 -1 -1 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M13 22 l3 3 l6 -7" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 4 q2 2 0 4 M21 4 q2 2 0 4" stroke="#e0a93d" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A reset kitchen is nicer to use</h3>
+        <p>Beyond the hygiene, a freshly reset kitchen is simply faster and more pleasant to cook in — clear counters, a sink that drains clean, no sticky cabinet pulls, no lingering smell. It's the difference between a room you tolerate and one you actually enjoy working in.</p>
+        <span class="cost">A kitchen you dread cooking in</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> deep clean?</h2>
+    <p class="sub">A top-to-bottom deep clean once a month is the sensible default, sitting on top of the daily wipe and the weekly upkeep of the high-touch zones. But a household that cooks from scratch every night, fries a lot, runs busy, or has pets pushes toward every two to three weeks — while a light-cooking home of one or two can stretch to every two or three months. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="cook">
+        <div class="q-label">1. How much do you actually cook?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Daily, from scratch</button>
+          <button class="pill" data-v="normal">A few real meals a week</button>
+          <button class="pill" data-v="light">Rarely — mostly reheating</button>
+        </div>
+        <div class="q-hint">Cooking is what dirties a kitchen. The more meals you make on the stove, the faster grease, splatter, and crumbs build up on every surface.</div>
+      </div>
+      <div class="quiz-q" data-q="fry">
+        <div class="q-label">2. How greasy is the cooking?</div>
+        <div class="pills">
+          <button class="pill" data-v="lots">Lots of frying &amp; high-heat oil</button>
+          <button class="pill" data-v="some">A bit of sautéing and oil</button>
+          <button class="pill" data-v="little">Mostly light or microwave</button>
+        </div>
+        <div class="q-hint">High-heat frying throws the most airborne grease — it's what coats the hood, the backsplash, and the cabinets above the stove fastest and hardest.</div>
+      </div>
+      <div class="quiz-q" data-q="house">
+        <div class="q-label">3. How big and busy is the household?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">A big, busy household</button>
+          <button class="pill" data-v="mid">A typical family</button>
+          <button class="pill" data-v="solo">Just one or two of us</button>
+        </div>
+        <div class="q-hint">More people means more meals, more dishes, more hands on the handles and pulls — the whole kitchen cycles through dirty faster.</div>
+      </div>
+      <div class="quiz-q" data-q="pests">
+        <div class="q-label">4. Pets, or any pest worries?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Pets, or we've seen pests</button>
+          <button class="pill" data-v="watch">Not yet, but it's a concern</button>
+          <button class="pill" data-v="none">No pets, no pest issues</button>
+        </div>
+        <div class="q-hint">Pets add hair, food bits, and bowls to clean around; any history of ants, roaches, or pantry moths means staying ahead of the crumbs they feed on really pays off.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The supplies for a deep clean are about as cheap as it gets — a degreaser, a box of baking soda, white vinegar, dish soap, and a few microfiber cloths, most of it reusable for $15–25. What skipping it costs is far steeper: pest control visits, appliance repairs and shortened lifespans from neglect, and the very real grease-fire risk of a caked hood filter. The biggest real cost of doing it is just an hour or two of your time:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$15–25</div><div class="l">the supply kit — degreaser, baking soda, white vinegar, dish soap, and microfiber cloths, mostly reusable</div></div>
+        <div class="calc-stat"><div class="v">~1–2 hrs</div><div class="l">a full top-to-bottom reset once you know the order — less if you keep up with the focused sub-tasks</div></div>
+        <div class="calc-stat"><div class="v bad">~$0</div><div class="l">baking soda + vinegar + dish soap handle most kitchen grease and grime for pennies</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 Baking soda, vinegar &amp; dish soap on hand</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Degreaser + microfiber cloths supply kit</span><span>$15–25</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🐜 A pest-control visit for ants or roaches</span><span>$100–300</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:45%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧊 A fridge repair or early replacement from grimy coils</span><span>$200–1,500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:72%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 A grease fire from a caked hood filter</span><span>Catastrophic</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $20 kit and an hour or two a month</strong> against pest visits, appliance repairs from neglect, and — at the far end — a grease fire that starts in a filter nobody ever cleaned. Run the deep clean on a schedule and the grime never gets the chance to become any of those bills.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to deep clean your kitchen</h2>
+    <p class="sub">The order is the whole secret: work <em>top to bottom and back to front</em> so debris always falls onto a surface you haven't cleaned yet. This page is the hub — for the big sub-tasks, lean on the focused guides: <a href="clean-range-hood-filter.html">clean the range hood filter</a>, <a href="deep-clean-oven.html">deep clean the oven</a>, <a href="clean-garbage-disposal.html">clean the garbage disposal</a>, <a href="clean-refrigerator-coils.html">clean the refrigerator coils</a>, <a href="clean-dishwasher-filter.html">clean the dishwasher filter</a>, and <a href="descale-coffee-maker.html">descale the coffee maker</a>. Read the techniques first, then work through the checklist — your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Work safe — fumes, water, heat, and heavy appliances</h3>
+      <ul>
+        <li><strong>Ventilate when using degreasers or oven cleaner.</strong> Open a window and run the hood fan. These chemicals give off strong fumes in a closed kitchen; fresh air keeps the room from turning into a gas chamber while you scrub.</li>
+        <li><strong>NEVER mix bleach with ammonia or vinegar.</strong> The combination creates toxic gases that can seriously hurt you. Use one cleaner at a time, rinse surfaces between products, and read the labels before you reach for a second bottle.</li>
+        <li><strong>Unplug small appliances before cleaning them.</strong> Toaster, kettle, coffee maker, microwave — pull the plug first, and keep water away from outlets, controls, and heating elements. Wipe electrical parts with a barely damp cloth, never a soaking one.</li>
+        <li><strong>Watch for slippery wet floors.</strong> Soapy water and degreaser make tile and vinyl treacherous. Wipe up drips as you go, do the floor last, and keep a dry towel nearby so a quick mop doesn't become a fall.</li>
+        <li><strong>Wear gloves with harsh degreasers and oven cleaner.</strong> These products are rough on skin and can cause burns or irritation with prolonged contact. Rubber gloves also give you a better grip on greasy parts.</li>
+        <li><strong>Let the stove and oven cool fully before cleaning.</strong> Cleaning a hot cooktop or oven risks burns and lets cleaner flash off uselessly. Cook your last meal, then come back to a cold appliance.</li>
+        <li><strong>Be careful pulling out heavy appliances.</strong> The stove and fridge are heavy and tethered — a gas range has a flexible gas line and a fridge often has a water line. Rock them out slowly and straight, don't yank, and have a hand to help if you can.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A degreaser (or dish soap + hot water)</span>
+      <span class="tool-chip">Baking soda</span>
+      <span class="tool-chip">White vinegar</span>
+      <span class="tool-chip">Dish soap</span>
+      <span class="tool-chip">A stack of microfiber cloths</span>
+      <span class="tool-chip">A non-scratch sponge or scrubber</span>
+      <span class="tool-chip">An old toothbrush</span>
+      <span class="tool-chip">Rubber gloves</span>
+      <span class="tool-chip">A bucket of hot soapy water</span>
+      <span class="tool-chip">A vacuum &amp; a mop</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of cleaning a kitchen top to bottom and back to front: arrows flow from the upper cabinets and hood down through the counters and backsplash, then the appliances, then the sink, and finally the floor, so debris always falls onto a surface not yet cleaned">
+          <!-- upper cabinet -->
+          <rect x="40" y="20" width="60" height="34" rx="4" fill="#c9a06b" stroke="#8a6a4f" stroke-width="3"/>
+          <text x="46" y="42" font-size="9.5" fill="#fffdf8">cabinets</text>
+          <!-- counter band -->
+          <rect x="40" y="70" width="200" height="14" rx="3" fill="#b9b1a3"/>
+          <text x="46" y="81" font-size="9.5" fill="#33393b">counters</text>
+          <!-- appliance box -->
+          <rect x="120" y="96" width="50" height="34" rx="4" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+          <text x="124" y="116" font-size="9" fill="#33393b">appliances</text>
+          <!-- sink -->
+          <path d="M188 96 h44 v22 a6 6 0 0 1 -6 6 h-32 a6 6 0 0 1 -6 -6 z" fill="#9cc3d4"/>
+          <text x="196" y="113" font-size="9.5" fill="#33393b">sink</text>
+          <!-- floor -->
+          <rect x="40" y="150" width="200" height="14" rx="3" fill="#efe7d8" stroke="#b9b1a3" stroke-width="2"/>
+          <text x="46" y="161" font-size="9.5" fill="#6b7376">floor last</text>
+          <!-- big downward flow arrow -->
+          <path d="M250 30 l0 116 m-7 -12 l7 12 l7 -12" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h4>Work top-to-bottom, back-to-front</h4>
+        <p>Start high — upper cabinets and the hood — then counters and backsplash, then appliances, then the sink, and the floor dead last. Debris always falls onto a surface you haven't cleaned yet, so you never re-dirty finished work.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of degreasing a range hood filter by soaking it in a sink of hot soapy water with baking soda, the grease lifting off the metal mesh">
+          <!-- sink basin -->
+          <path d="M44 60 h192 v70 a10 10 0 0 1 -10 10 h-172 a10 10 0 0 1 -10 -10 z" fill="#9cc3d4" stroke="#7fb3c8" stroke-width="3"/>
+          <!-- water line -->
+          <path d="M44 86 h192" stroke="#dce8ee" stroke-width="3" opacity="0.8"/>
+          <!-- filter submerged -->
+          <rect x="92" y="78" width="96" height="44" rx="4" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+          <g stroke="#6b7376" stroke-width="2">
+            <line x1="100" y1="86" x2="180" y2="86"/>
+            <line x1="100" y1="96" x2="180" y2="96"/>
+            <line x1="100" y1="106" x2="180" y2="106"/>
+            <line x1="100" y1="116" x2="180" y2="116"/>
+          </g>
+          <!-- grease lifting / bubbles -->
+          <g fill="#e0a93d" opacity="0.7">
+            <circle cx="110" cy="70" r="3"/>
+            <circle cx="140" cy="66" r="4"/>
+            <circle cx="168" cy="72" r="3"/>
+          </g>
+          <circle cx="124" cy="74" r="3" fill="#fffdf8"/>
+          <circle cx="156" cy="73" r="2.4" fill="#fffdf8"/>
+          <text x="58" y="40" font-size="11" fill="#3e7c59" font-weight="700">hot water + baking soda soak</text>
+        </svg>
+        <h4>Degrease the hood filter by soaking</h4>
+        <p>Pop the metal filter out and soak it in hot, soapy water with a scoop of baking soda — the grease lifts off the mesh with almost no scrubbing. Full walkthrough in <a href="clean-range-hood-filter.html">clean the range hood filter</a>.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pulling the stove and refrigerator out from the wall to clean the crumb-and-grease zone behind and under them, including the dusty refrigerator coils at the back">
+          <!-- wall -->
+          <rect x="36" y="20" width="14" height="130" fill="#dce8ee"/>
+          <!-- appliance pulled out -->
+          <rect x="120" y="40" width="80" height="110" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <!-- coils on the back of the appliance -->
+          <g stroke="#8a6a4f" stroke-width="2.4">
+            <path d="M70 56 q20 0 20 12 q0 12 -20 12 q-20 0 -20 12 q0 12 20 12"/>
+          </g>
+          <!-- dust in the gap behind -->
+          <g fill="#b9b1a3" opacity="0.7">
+            <circle cx="64" cy="120" r="3"/>
+            <circle cx="82" cy="128" r="2.4"/>
+            <circle cx="98" cy="122" r="2.8"/>
+            <circle cx="74" cy="134" r="2.2"/>
+          </g>
+          <!-- pull-out arrow -->
+          <path d="M118 95 l-26 0 m10 -7 l-10 7 l10 7" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="56" y="160" font-size="11" fill="#d9663f" font-weight="700">the zone everyone skips</text>
+        </svg>
+        <h4>Pull out the stove &amp; fridge</h4>
+        <p>Rock the stove and fridge out — carefully, minding the gas or water line — and clean the crumb-and-grease zone behind and under them, plus the dusty fridge coils. See <a href="clean-refrigerator-coils.html">clean the refrigerator coils</a>.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of disinfecting the kitchen germ hotspots: faucet handles, the refrigerator and oven handles, cabinet pulls, and the light switch, each marked and being wiped">
+          <!-- faucet handle -->
+          <path d="M52 60 q12 -20 28 0" fill="none" stroke="#7fb3c8" stroke-width="5" stroke-linecap="round"/>
+          <rect x="62" y="56" width="8" height="14" rx="3" fill="#5e9a78"/>
+          <text x="40" y="86" font-size="9" fill="#6b7376">faucet</text>
+          <!-- fridge / oven handle -->
+          <rect x="118" y="40" width="10" height="40" rx="5" fill="#8a6a4f"/>
+          <text x="106" y="96" font-size="9" fill="#6b7376">handles</text>
+          <!-- cabinet pull -->
+          <rect x="178" y="50" width="34" height="8" rx="4" fill="#8a6a4f"/>
+          <circle cx="178" cy="54" r="3" fill="#8a6a4f"/>
+          <circle cx="212" cy="54" r="3" fill="#8a6a4f"/>
+          <text x="168" y="74" font-size="9" fill="#6b7376">pulls</text>
+          <!-- light switch -->
+          <rect x="92" y="110" width="26" height="40" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="100" y="120" width="10" height="20" rx="2" fill="#e0a93d"/>
+          <text x="78" y="166" font-size="9" fill="#6b7376">switches</text>
+          <!-- wipe cloth + sparkle -->
+          <rect x="170" y="110" width="40" height="26" rx="6" fill="#7fb3c8"/>
+          <rect x="170" y="110" width="40" height="8" rx="4" fill="#9cc3d4"/>
+          <g stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round">
+            <path d="M226 96 l0 9 M221.5 100.5 l9 0"/>
+          </g>
+        </svg>
+        <h4>Disinfect the germ hotspots</h4>
+        <p>The dirtiest spots aren't the visible ones — they're the touch points: faucet handles, fridge and oven handles, cabinet pulls, and light switches. Wipe each one with a disinfecting cloth so the germs don't ride your hands around the kitchen.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of refreshing the sink, drain, and garbage disposal with baking soda and vinegar, then mopping the floor and wiping the edges last">
+          <!-- sink with drain -->
+          <path d="M44 30 h120 v44 a10 10 0 0 1 -10 10 h-100 a10 10 0 0 1 -10 -10 z" fill="#9cc3d4" stroke="#7fb3c8" stroke-width="3"/>
+          <circle cx="104" cy="58" r="9" fill="#6b7376"/>
+          <circle cx="104" cy="58" r="4" fill="#33393b"/>
+          <!-- fizz from baking soda + vinegar -->
+          <g fill="#fffdf8" opacity="0.9">
+            <circle cx="96" cy="42" r="3"/>
+            <circle cx="108" cy="38" r="4"/>
+            <circle cx="116" cy="46" r="2.6"/>
+          </g>
+          <text x="48" y="22" font-size="10" fill="#3e7c59" font-weight="700">soda + vinegar fizz</text>
+          <!-- floor + mop, done last -->
+          <rect x="40" y="118" width="200" height="16" rx="3" fill="#efe7d8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="196" y="60" width="8" height="56" rx="4" fill="#8a6a4f"/>
+          <path d="M186 116 h28 l-5 12 h-18 z" fill="#7fb3c8"/>
+          <text x="56" y="156" font-size="11" fill="#3e7c59" font-weight="700">floor &amp; edges last</text>
+        </svg>
+        <h4>Refresh the sink, then the floor</h4>
+        <p>Scour the sink and deodorize the drain and disposal with baking soda and vinegar — details in <a href="clean-garbage-disposal.html">clean the garbage disposal</a> — then mop the floor and wipe the edges and baseboards last, once everything above has dropped its crumbs.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Deep-clean progress</span><span id="progText">0 of 14 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Hood degreased, appliances cleaned inside and out, the behind-the-stove zone cleared, hotspots disinfected, sink refreshed, floors done — a fully reset kitchen. Same satisfying job again in about a month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your kitchen is overdue — and when to hand off a sub-task</h2>
+    <p class="sub">A reset kitchen barely registers: clear counters, a clean smell, appliances that just work. These are the signals it's overdue for a deep clean — and the cues that one specific sub-task (or a pro) needs attention more than the whole room does:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A sticky film on the cabinets near the stove.</strong> Run a finger across the cabinet faces above the cooktop — if it drags through a tacky brown layer, grease has been building for a while and the whole upper zone is due for a degrease.</li>
+        <li><strong>Lingering odors you can't place.</strong> A kitchen that smells faintly off even after the dishes are done usually has food residue working away somewhere you can't see — the disposal, behind an appliance, or a forgotten spill under the fridge. Time to <a href="clean-garbage-disposal.html">clean the garbage disposal</a> and pull things out.</li>
+        <li><strong>Pantry moths or other pests.</strong> Little moths flitting out of the cupboard, or ants and roaches turning up, mean there are crumbs feeding them. Deep clean, clear the hidden food sources, and seal what's left — and call pest control if they've established.</li>
+        <li><strong>A hood that doesn't pull smoke anymore.</strong> If steam and smoke now linger over the cooktop instead of getting whisked away, the filter is grease-clogged and the fan is straining. Go straight to <a href="clean-range-hood-filter.html">clean the range hood filter</a>.</li>
+        <li><strong>An oven that smokes when you preheat.</strong> Smoke or a burning smell on preheat means baked-on spills are carbonizing on the oven floor. That's your cue to <a href="deep-clean-oven.html">deep clean the oven</a> before it gets worse.</li>
+        <li><strong>A fridge that runs hot or constantly.</strong> If the fridge feels warm at the back, hums nonstop, or the food isn't as cold as it should be, dusty coils are likely choking it. Tackle <a href="clean-refrigerator-coils.html">clean the refrigerator coils</a> first.</li>
+        <li><strong>Call a pro for what cleaning can't fix:</strong> a hood fan motor that's failing, a gas-range issue, a fridge that won't hold temperature after the coils are clean, or a pest infestation that keeps coming back. Cleaning prevents most problems — but a dead compressor or a real infestation is a specialist's job, not a sponge's.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I deep clean versus just tidy daily?</summary>
+      <p>Think of it as three layers. Daily, you wipe the counters and cooktop, do the dishes, and sweep up obvious crumbs — that's the upkeep that keeps the kitchen usable. Weekly, you hit the high-touch and high-mess zones: scrub the sink, wipe the appliance fronts and handles, and clean the microwave. Then about once a month comes the full deep clean in this guide — degreasing the hood and backsplash, cleaning appliances inside and out, pulling out the stove and fridge, disinfecting the hotspots, and doing the floors and edges. Heavy cooks, big households, and homes with pets or pest worries should tighten the deep clean toward every two to three weeks; a light-cooking home of one or two can stretch it to every two or three months. The daily and weekly habits don't replace the monthly reset — they make it quick, because nothing's had a chance to cake on.</p>
+    </details>
+    <details>
+      <summary>What's the best degreaser for kitchen grease?</summary>
+      <p>For everyday kitchen grease, a commercial degreaser spray makes the work faster — spray it on, let it dwell a few minutes so it can break down the oil, then wipe. But you don't need to buy anything special: a squirt of dish soap in hot water cuts grease beautifully (it's literally engineered to), and a paste of baking soda and a little water works wonders on the stubborn, baked-on stuff like the hood filter and cabinet tops — let it sit, then scrub gently. For sticky residue, a 50/50 vinegar-and-water spray helps cut it and leaves no film. The real trick with any degreaser is dwell time: give it a few minutes to do the chemistry instead of scrubbing immediately. Wear gloves with the harsh commercial stuff, ventilate the room, and never mix products.</p>
+    </details>
+    <details>
+      <summary>What order should I clean the kitchen in?</summary>
+      <p>Top to bottom and back to front — that single rule saves you from re-cleaning. Start high with the upper cabinet faces, the hood, and the top of the fridge, where grease and dust settle. Move down to the counters and backsplash. Then do the appliances, inside and out, and pull out the stove and fridge to get behind and underneath. Refresh the sink, drain, and disposal next. Finally, do the floor and the edges — baseboards and the kick plates under the cabinets — dead last. The logic is simple: every surface drops crumbs, dust, and drips as you clean it, and gravity carries all of that downward. If you mop first and degrease the hood after, you'll just be mopping again. Work with gravity, not against it, and you only clean each surface once.</p>
+    </details>
+    <details>
+      <summary>How do I clean behind and under the stove and fridge?</summary>
+      <p>This is the crumb-and-grease zone everyone skips, and it's often the source of mystery smells and pests. Start by easing the appliance straight out from the wall — slowly, because a gas range has a flexible gas line and the fridge usually has a water line you must not yank or kink. With it out, vacuum up the crumbs and dust bunnies, then wipe the floor and the sides of the cabinets with a degreasing solution; greasy dust back there can be surprisingly thick. While the fridge is out, take a few minutes to vacuum or brush the coils on the back or beneath it — see <a href="clean-refrigerator-coils.html">clean the refrigerator coils</a> for that — since dusty coils make the fridge work much harder. Clean the back of the appliance itself too, then ease it back into place, again watching the lines. If it's too heavy to move safely alone, get a second pair of hands.</p>
+    </details>
+    <details>
+      <summary>Do natural cleaners like baking soda and vinegar actually work?</summary>
+      <p>Yes, for a lot of kitchen jobs — they're cheap, non-toxic, and genuinely effective. Baking soda is a mild abrasive and deodorizer: a paste of it lifts baked-on grease and scours sinks and stovetops without scratching. White vinegar is an acid that dissolves mineral scale, cuts grease, and deodorizes — great for descaling the kettle or <a href="descale-coffee-maker.html">the coffee maker</a>, freshening the drain, and wiping down surfaces. They're not a cure-all, though: vinegar shouldn't go on natural stone like marble or granite (the acid can etch it), and neither is a registered disinfectant, so for true sanitizing of cutting boards or after raw meat you still want soap and hot water or a proper disinfectant. And the famous baking-soda-and-vinegar fizz is mostly for show once they neutralize each other — use them in sequence for the cleaning power, not mixed in a bottle.</p>
+    </details>
+    <details>
+      <summary>How do I keep the kitchen clean longer between deep cleans?</summary>
+      <p>Small habits do most of the work. Run the hood fan every time you cook — especially when frying — so airborne grease goes up the vent instead of onto your cabinets. Wipe spills on the cooktop and counters while they're fresh, before they bake or cure into something you have to scrub. Do the dishes daily and run the disposal with cold water and a little dish soap so food doesn't sit and stink. Keep dry goods in sealed containers to starve any pantry pests, and take the trash out before it gets ripe. Once a week, give the sink a quick scour and wipe the handles and high-touch spots. None of this is the full deep clean — but it keeps the grease, crumbs, and grime from ever building up, so when the monthly reset comes around it's a quick job instead of an excavation.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A kitchen deep clean is really a stack of small jobs on different clocks.</h2>
+        <p>The monthly reset, the hood filter, the oven, the disposal, the fridge coils, the dishwasher filter, the coffee maker — each runs on its own schedule, and any one of them is easy to forget until it's a smell, a clog, or a repair. Upkeep Ledger schedules the monthly deep clean and every per-appliance task so nothing silently builds up — right alongside the gutters, the HVAC filter, and every other quiet task that keeps a home running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=deep-clean-kitchen&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=deep-clean-kitchen&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your appliances, cleaners, and any manufacturer care instructions outrank this guide — and never mix cleaning chemicals.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { cook: null, fry: null, house: null, pests: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    2: "Every 2 months",
+    3: "Every 3 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;
+    var tighten = false;
+
+    /* Cook — how much you cook */
+    if (s.cook === "heavy") {
+      tighten = true;
+      reasons.push("Cooking from scratch every day loads the kitchen with grease, splatter, and crumbs fast — a monthly reset (or even every few weeks) is what keeps it from snowballing.");
+    } else if (s.cook === "light") {
+      if (months < 2) months = 2;
+      reasons.push("If you mostly reheat rather than cook, very little grease and mess builds up, so a deep clean every couple of months is plenty.");
+    } else {
+      reasons.push("A few real meals a week is the ordinary case the once-a-month default is written for.");
+    }
+
+    /* Fry — greasy cooking */
+    if (s.fry === "lots") {
+      tighten = true;
+      reasons.push("Frequent frying and high-heat oil throw the most airborne grease, coating the hood, backsplash, and cabinets above the stove quickly — that's the surface that most rewards a tighter schedule.");
+    } else if (s.fry === "little") {
+      if (!tighten && months < 2) months = 2;
+      reasons.push("Mostly light or microwave cooking means hardly any grease in the air, so the sticky-film zone barely builds up between cleans.");
+    } else {
+      reasons.push("A bit of sautéing and oil is normal grease load — handled comfortably by the monthly degrease.");
+    }
+
+    /* House — household size */
+    if (s.house === "big") {
+      tighten = true;
+      reasons.push("A big, busy household cycles the whole kitchen through dirty faster — more meals, more dishes, more hands on every handle and pull.");
+    } else if (s.house === "solo") {
+      if (!tighten && months < 2) months = 2;
+      reasons.push("With just one or two of you, the kitchen simply doesn't get used hard enough to need cleaning as often.");
+    } else {
+      reasons.push("A typical family keeps the kitchen at an ordinary pace — the standard monthly rhythm fits well.");
+    }
+
+    /* Pests — pets or pest worries */
+    if (s.pests === "yes") {
+      tighten = true;
+      reasons.push("Pets add hair and food bits, and any history of ants, roaches, or pantry moths means staying ahead of the crumbs they feed on really matters — keep the deep clean frequent.");
+    } else if (s.pests === "watch") {
+      reasons.push("With pests on your radar but not established, regular deep cleaning is exactly the prevention that keeps it that way.");
+    } else {
+      reasons.push("No pets and no pest issues means one fewer reason to rush the next deep clean.");
+    }
+
+    /* Heavy cooks and frying/big/pets pull below a month toward every 2-3 weeks */
+    if (tighten) months = 1;
+
+    /* Best-case relaxation: light cooking, light grease, small household, no pests */
+    if (s.cook === "light" && s.fry === "little" && s.house === "solo" && s.pests === "none") {
+      months = 3;
+      reasons.push("Light cooking, almost no grease, a small household, and no pest worries is the one case where every three months is genuinely enough — a quick weekly wipe of the touch points covers the gap.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.fry === "lots" || s.cook === "heavy") {
+      note = "<strong>For heavy or greasy cooking, tighten to every 2–3 weeks</strong> and run the hood fan every time you cook. The grease you send up the vent is grease you don't have to scrape off the cabinets later — and the <a href=\"clean-range-hood-filter.html\">hood filter</a> may need a soak more often, too.";
+    } else if (s.pests === "yes" || s.pests === "watch") {
+      note = "<strong>To stay ahead of pests, focus on hidden food:</strong> pull out the stove and fridge for the crumb zone, keep dry goods sealed, and clean the <a href=\"clean-garbage-disposal.html\">disposal</a>. Crumbs you can't see are exactly what feeds ants and pantry moths.";
+    } else if (months >= 2) {
+      note = "<strong>Stretching the interval works when daily upkeep holds:</strong> wipe spills fresh, do the dishes, and run the hood fan, and the monthly-or-longer deep clean stays a quick reset rather than an excavation.";
+    } else {
+      note = "<strong>Remember the order:</strong> top to bottom, back to front — cabinets and hood, then counters, then appliances, then sink, then floor last. And lean on the focused guides for the <a href=\"deep-clean-oven.html\">oven</a>, <a href=\"clean-refrigerator-coils.html\">fridge coils</a>, and <a href=\"clean-dishwasher-filter.html\">dishwasher filter</a>.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.cook || !quizState.fry || !quizState.house || !quizState.pests) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: a full deep clean " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Work <strong>top to bottom and back to front</strong> — cabinets and hood, then counters and backsplash, then appliances, then sink, then floor last — on top of your daily wipe and weekly upkeep of the high-touch zones. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & declutter", text: "Clear the counters and put loose items away", note: "Take everything off the counters and stovetop so you have clean, open surfaces to work on. This alone makes the kitchen feel half-done — and lets you reach the corners and backsplash you usually clean around." },
+    { phase: "Prep & declutter", text: "Open a window, run the hood fan, and gather supplies", note: "Ventilate before you reach for any degreaser or oven cleaner. Set out your degreaser, baking soda, vinegar, dish soap, microfiber cloths, gloves, and a bucket of hot soapy water so you're not hunting mid-job." },
+    { phase: "Prep & declutter", text: "Toss expired food and wipe the trash & recycling bins", note: "Clear out the fridge and pantry of anything past its date — this kills hidden odors and starves pests — then wipe down the bins themselves, lids and all, since they're a quiet source of smell." },
+    { phase: "Top & surfaces", text: "Wipe the upper cabinet faces, especially above the stove", note: "Start high. The cabinet fronts above the cooktop collect a sticky grease film — hit them with a degreaser or baking-soda paste, let it dwell, then wipe. Don't forget the top of the fridge and any high shelves." },
+    { phase: "Top & surfaces", text: "Degrease the range hood and its filter", note: "Wipe down the hood exterior, then pop out the metal filter and soak it in hot soapy water with baking soda while you work. Full walkthrough: clean the range hood filter." },
+    { phase: "Top & surfaces", text: "Degrease the backsplash and wipe down all counters", note: "Spray the backsplash and counters, give grease a minute to break down, then wipe — working from the back wall forward so crumbs fall toward you, not onto a finished spot." },
+    { phase: "Appliances", text: "Clean the stovetop and deep clean the oven", note: "Scrub the cooled cooktop, burners, and grates, then tackle the oven interior — see deep clean the oven for the baked-on stuff. Let any oven cleaner dwell while you move on, with the window still open." },
+    { phase: "Appliances", text: "Clean the microwave, toaster, and other small appliances", note: "Unplug small appliances first. Steam-soften the microwave interior and wipe it out; empty the toaster crumb tray; wipe every appliance front and the coffee maker — descale the coffee maker if it's due." },
+    { phase: "Appliances", text: "Clean the fridge inside and out, and the dishwasher", note: "Wipe down the fridge shelves, drawers, and door seals, and the exterior and handle. Clear and rinse the dishwasher filter too — see clean the dishwasher filter — and freshen the disposal: clean the garbage disposal." },
+    { phase: "Appliances", text: "Pull out the stove & fridge; clean behind, under & the coils", note: "Ease each appliance straight out — mind the gas and water lines, don't yank — then vacuum and degrease the crumb-and-grease zone behind and under them. While the fridge is out, do the coils: clean the refrigerator coils." },
+    { phase: "Appliances", text: "Disinfect the germ hotspots", note: "Wipe the touch points that hands hit all day: faucet handles, fridge and oven handles, cabinet pulls, and the light switches. These are the dirtiest spots in the kitchen and the easiest to miss." },
+    { phase: "Sink & floors", text: "Scour the sink and refresh the drain & disposal", note: "Scrub the basin and faucet, then deodorize the drain and disposal with baking soda followed by vinegar (in sequence, never mixed with bleach). Run cold water and the disposal to flush it clean." },
+    { phase: "Sink & floors", text: "Sweep or vacuum, then mop the floor and wipe the edges", note: "Now that everything above has dropped its debris, do the floor: sweep or vacuum first, then mop, and wipe the baseboards and the kick plates under the cabinets. Watch for slippery wet patches." },
+    { phase: "Sink & floors", text: "Log the date", note: "A clean kitchen doesn't remind you it's slowly filming over again. Note the date so the next deep clean lands in about a month (or your quiz interval) — and so the per-appliance tasks stay on their own clocks." }
+  ];
+
+  var LS_KEY = "upkeepguides:deep-clean-kitchen:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

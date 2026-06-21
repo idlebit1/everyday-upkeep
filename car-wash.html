@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wash your car — UpkeepGuides.com</title>
+<meta name="description" content="How to wash your car without swirl marks: why bird droppings, sap, and road salt etch paint, why dish soap and automatic brushes do damage, and the two-bucket method, right order, and checklist for a clean, scratch-free finish.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Wash your car — UpkeepGuides.com">
+<meta property="og:description" content="How to wash your car without swirl marks: why bird droppings, sap, and road salt etch paint, why dish soap and automatic brushes do damage, and the two-bucket method, right order, and checklist for a clean, scratch-free finish.">
+<meta property="og:url" content="https://upkeepguides.com/car-wash.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wash your car — UpkeepGuides.com">
+<meta name="twitter:description" content="How to wash your car without swirl marks: why bird droppings, sap, and road salt etch paint, why dish soap and automatic brushes do damage, and the two-bucket method, right order, and checklist for a clean, scratch-free finish.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every 2 months</span>
+      <h1>Wash Your Car</h1>
+      <p class="lede">Washing the car isn't vanity — it's paint protection. Bird droppings, bug splatter, tree sap, pollen, and brake dust are mildly acidic, and left to bake in the sun they etch right into the clearcoat within days. Winter road salt is worse: it eats at the underbody, brake lines, and the bottoms of panels every mile you drive on a treated road. And the way most people wash actively scratches the finish — dish soap strips the wax, a single dirty sponge or a stiff automatic brush grinds grit across the paint as the fine cobweb of swirl marks you see under streetlights. Do it right — two buckets, the correct order, the correct soap — and you get a genuinely clean car without trading the shine for scratches.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 2 months</em></span>
+        <span class="chip">⏱️ <em>~45–60 min</em> by hand</span>
+        <span class="chip">🛡️ Protects the <em>paint &amp; underbody</em></span>
+        <span class="chip">💸 Starter kit <em>~$30–60</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a car being hand-washed in a driveway: a sudsy car with foam across the hood and roof, a person mid-wash holding a wash mitt against the door, two buckets on the ground — one full of sudsy wash water and one of clear rinse water — a garden hose snaking across the driveway, and a close-up of a clean wheel">
+      <ellipse cx="285" cy="402" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- driveway band -->
+      <rect x="34" y="356" width="500" height="46" rx="8" fill="#dce8ee" opacity="0.55"/>
+
+      <!-- ===== the car body ===== -->
+      <!-- lower body -->
+      <path d="M120 300 q4 -56 70 -64 l60 -34 q14 -8 30 -8 h70 q20 0 36 16 l40 38 q40 6 44 52 l0 22 q0 8 -8 8 h-374 q-8 0 -8 -8 z" fill="#c96f4a"/>
+      <!-- roof / greenhouse -->
+      <path d="M196 240 l54 -30 q12 -6 26 -6 h62 q16 0 30 14 l30 30 z" fill="#d9663f"/>
+      <!-- windows -->
+      <path d="M214 238 l40 -22 q8 -4 18 -4 h24 l0 26 z" fill="#7fb3c8"/>
+      <path d="M312 212 h28 q12 0 22 10 l18 16 h-68 z" fill="#7fb3c8"/>
+      <!-- window shine -->
+      <g stroke="#dce8ee" stroke-width="4" stroke-linecap="round" opacity="0.9">
+        <line x1="228" y1="232" x2="252" y2="220"/>
+        <line x1="326" y1="232" x2="350" y2="222"/>
+      </g>
+      <!-- body shine line -->
+      <path d="M150 296 q180 -22 350 4" fill="none" stroke="#e8a07e" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+      <!-- door seam + handle -->
+      <line x1="300" y1="252" x2="300" y2="300" stroke="#a85535" stroke-width="3"/>
+      <rect x="262" y="266" width="24" height="7" rx="3.5" fill="#a85535"/>
+
+      <!-- wheels -->
+      <circle cx="196" cy="312" r="34" fill="#33393b"/>
+      <circle cx="196" cy="312" r="18" fill="#b9b1a3"/>
+      <circle cx="196" cy="312" r="7" fill="#8a6a4f"/>
+      <g stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M196 297 l0 9 M196 318 l0 9 M181 312 l9 0 M202 312 l9 0"/>
+      </g>
+      <circle cx="408" cy="312" r="34" fill="#33393b"/>
+      <circle cx="408" cy="312" r="18" fill="#b9b1a3"/>
+      <circle cx="408" cy="312" r="7" fill="#8a6a4f"/>
+      <g stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M408 297 l0 9 M408 318 l0 9 M393 312 l9 0 M414 312 l9 0"/>
+      </g>
+
+      <!-- foam suds across hood & roof -->
+      <g fill="#fffdf8">
+        <circle cx="244" cy="236" r="9"/>
+        <circle cx="262" cy="230" r="11"/>
+        <circle cx="282" cy="236" r="8"/>
+        <circle cx="300" cy="230" r="10"/>
+        <circle cx="430" cy="278" r="9"/>
+        <circle cx="448" cy="272" r="10"/>
+        <circle cx="466" cy="280" r="8"/>
+      </g>
+      <g fill="#eef4f7">
+        <circle cx="252" cy="244" r="6"/>
+        <circle cx="292" cy="244" r="6"/>
+        <circle cx="440" cy="286" r="6"/>
+        <circle cx="458" cy="284" r="5"/>
+      </g>
+      <!-- a sudsy streak running down the door -->
+      <g fill="#eef4f7" opacity="0.85">
+        <circle cx="334" cy="270" r="7"/>
+        <circle cx="338" cy="282" r="5"/>
+        <circle cx="335" cy="292" r="4"/>
+      </g>
+
+      <!-- ===== person mid-wash, washing the door ===== -->
+      <!-- legs -->
+      <rect x="92" y="320" width="13" height="56" rx="5" fill="#2c5a40"/>
+      <rect x="110" y="320" width="13" height="56" rx="5" fill="#2c5a40"/>
+      <ellipse cx="98" cy="380" rx="13" ry="6" fill="#33393b"/>
+      <ellipse cx="118" cy="380" rx="13" ry="6" fill="#33393b"/>
+      <!-- torso -->
+      <path d="M86 254 q22 -12 44 0 l-4 70 h-36 z" fill="#3e7c59"/>
+      <!-- head -->
+      <circle cx="108" cy="236" r="19" fill="#c9a06b"/>
+      <path d="M90 232 q18 -22 36 0 q0 -18 -18 -18 q-18 0 -18 18 z" fill="#8a6a4f"/>
+      <!-- arm reaching to the door with the wash mitt -->
+      <path d="M126 274 q56 -4 96 6" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- wash mitt on the paint -->
+      <rect x="220" y="268" width="34" height="26" rx="9" fill="#5e9a78"/>
+      <rect x="220" y="268" width="34" height="9" rx="6" fill="#3e7c59"/>
+      <!-- foam coming off the mitt -->
+      <g fill="#fffdf8">
+        <circle cx="226" cy="266" r="4"/>
+        <circle cx="238" cy="262" r="5"/>
+        <circle cx="248" cy="266" r="4"/>
+      </g>
+
+      <!-- ===== two buckets on the ground ===== -->
+      <!-- WASH bucket (sudsy) -->
+      <path d="M40 318 h54 l-7 56 h-40 z" fill="#5e9a78"/>
+      <path d="M37 314 h60 l-3 10 h-54 z" fill="#3e7c59"/>
+      <path d="M44 312 q23 -16 46 0" fill="none" stroke="#2c5a40" stroke-width="3" stroke-linecap="round"/>
+      <!-- suds on top of wash water -->
+      <circle cx="52" cy="320" r="6" fill="#fffdf8"/>
+      <circle cx="66" cy="316" r="7" fill="#eef4f7"/>
+      <circle cx="80" cy="321" r="5" fill="#fffdf8"/>
+      <text x="46" y="350" font-size="10" fill="#fffdf8" font-weight="700">WASH</text>
+
+      <!-- RINSE bucket (clear water) -->
+      <path d="M462 322 h54 l-7 54 h-40 z" fill="#7fb3c8"/>
+      <path d="M459 318 h60 l-3 10 h-54 z" fill="#9cc3d4"/>
+      <path d="M466 316 q23 -16 46 0" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <rect x="470" y="330" width="38" height="14" rx="3" fill="#dce8ee" opacity="0.85"/>
+      <text x="466" y="356" font-size="10" fill="#2c5a40" font-weight="700">RINSE</text>
+
+      <!-- ===== garden hose snaking across the driveway ===== -->
+      <path d="M524 372 q-60 18 -160 6 q-90 -10 -190 12 q-60 12 -110 0" fill="none" stroke="#3e7c59" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+      <!-- hose nozzle near the person -->
+      <rect x="58" y="384" width="22" height="9" rx="4" fill="#5e9a78"/>
+      <rect x="76" y="382" width="10" height="13" rx="3" fill="#2c5a40"/>
+      <!-- a couple of water drips from the nozzle -->
+      <path d="M86 388 q4 6 0 11" stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- sun cue, gentle -->
+      <circle cx="498" cy="56" r="20" fill="#faf0da"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="498" y1="22" x2="498" y2="30"/>
+        <line x1="528" y1="56" x2="520" y2="56"/>
+        <line x1="476" y1="34" x2="481" y2="39"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A wash is the cheapest paint protection there is — and skipping it (or doing it badly) is how a finish goes from glossy to hazy and swirled. The dirt on a car isn't just ugly; a lot of it is chemically attacking the clearcoat or quietly corroding the metal underneath. Here's what the buildup does:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- bird dropping etching paint -->
+          <rect x="6" y="22" width="24" height="9" rx="2" fill="#c96f4a"/>
+          <ellipse cx="18" cy="20" rx="6" ry="4.5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1.4"/>
+          <path d="M14 24 q4 5 8 0" fill="none" stroke="#d9663f" stroke-width="1.6" stroke-linecap="round"/>
+          <g stroke="#e0a93d" stroke-width="1.8" stroke-linecap="round">
+            <line x1="18" y1="6" x2="18" y2="11"/>
+            <line x1="11" y1="9" x2="13" y2="13"/>
+            <line x1="25" y1="9" x2="23" y2="13"/>
+          </g>
+        </svg></div>
+        <h3>Contaminants etch the paint</h3>
+        <p>Bird droppings, bug guts, tree sap, pollen, and industrial fallout are acidic, and in the sun they eat into the clearcoat within days — leaving dull, sunken marks that washing later won't remove. The faster they come off, the less they bite.</p>
+        <span class="cost">Permanent etch marks in the clearcoat</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- swirl marks on a panel -->
+          <rect x="6" y="6" width="24" height="24" rx="4" fill="#c96f4a"/>
+          <g stroke="#fffdf8" stroke-width="1.4" fill="none" opacity="0.85" stroke-linecap="round">
+            <path d="M12 14 q3 -3 6 0 q3 3 0 6"/>
+            <path d="M20 12 q3 -3 6 0 q3 3 0 6"/>
+            <path d="M13 22 q3 -3 6 0"/>
+            <path d="M21 24 q3 -3 6 0"/>
+          </g>
+        </svg></div>
+        <h3>Bad technique scratches the finish</h3>
+        <p>Dish soap strips the wax that protects your paint, and a single dirty sponge — or a stiff automatic-wash brush — drags trapped grit across the surface, carving the fine cobweb of swirl marks you see catching the light. Most paint damage is from washing, not driving.</p>
+        <span class="cost">Swirl marks &amp; clearcoat scratches</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- salt corroding underbody -->
+          <path d="M5 12 h26 l-3 8 h-20 z" fill="#b9b1a3"/>
+          <rect x="9" y="20" width="18" height="5" rx="2" fill="#8a6a4f"/>
+          <!-- rust eating up from below -->
+          <path d="M11 25 q2 5 4 0 M17 25 q2 6 4 0 M23 25 q2 4 3 0" fill="none" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+          <!-- salt crystals -->
+          <g fill="#dce8ee">
+            <rect x="8" y="28" width="3" height="3" rx="0.6"/>
+            <rect x="16" y="29" width="3" height="3" rx="0.6"/>
+            <rect x="24" y="28" width="3" height="3" rx="0.6"/>
+          </g>
+        </svg></div>
+        <h3>Road salt corrodes the underbody</h3>
+        <p>Winter road salt (and coastal sea air) clings to the underbody, brake lines, and the bottoms of the panels, and it keeps corroding metal long after you've parked. Rinsing it off through salt season is the difference between a clean frame and creeping rust.</p>
+        <span class="cost">Rusted brake lines, panels &amp; frame</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- shiny car + value tag -->
+          <path d="M7 22 q1 -7 9 -8 l4 -4 h8 l4 5 q4 1 5 7 h-30 z" fill="#3e7c59"/>
+          <circle cx="14" cy="23" r="3.5" fill="#33393b"/>
+          <circle cx="26" cy="23" r="3.5" fill="#33393b"/>
+          <g stroke="#fffdf8" stroke-width="1.6" stroke-linecap="round">
+            <path d="M12 13 l2 2 M20 11 l1.5 2.5"/>
+          </g>
+        </svg></div>
+        <h3>Washing protects resale &amp; wax</h3>
+        <p>A car washed on a schedule holds its paint, its shine, and its resale value — and a clean surface is the only thing a coat of wax or sealant will actually bond to and last on. Wash, then protect, and the whole finish stays years younger.</p>
+        <span class="cost">A faded finish &amp; a lower trade-in</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> wash it?</h2>
+    <p class="sub">Every two months is the sensible default for most cars in most climates. But winter road salt or parking under sap-and-bird-heavy trees can push that to every week or two, while a garaged, lightly-driven, waxed car can comfortably stretch to quarterly. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">1. What's the climate and road situation?</div>
+        <div class="pills">
+          <button class="pill" data-v="salt">Snowy, salted roads or coastal salt air</button>
+          <button class="pill" data-v="dusty">Dusty, pollen-heavy, or lots of bugs</button>
+          <button class="pill" data-v="mild">Mild and clean most of the year</button>
+        </div>
+        <div class="q-hint">Road salt and sea air are the big accelerants — they corrode metal continuously, so cars that see them need rinsing far more often, especially through winter.</div>
+      </div>
+      <div class="quiz-q" data-q="parking">
+        <div class="q-label">2. Where does it park most of the time?</div>
+        <div class="pills">
+          <button class="pill" data-v="trees">Outside under trees or where birds gather</button>
+          <button class="pill" data-v="street">Out in the open — street or driveway</button>
+          <button class="pill" data-v="garage">In a garage or covered most of the time</button>
+        </div>
+        <div class="q-hint">Parking under trees rains down sap, pollen, and bird droppings — all acidic and all quick to etch in the sun. A garage shields the paint from nearly all of it.</div>
+      </div>
+      <div class="quiz-q" data-q="driving">
+        <div class="q-label">3. How much, and where, do you drive?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Daily highway miles or dirt/gravel roads</button>
+          <button class="pill" data-v="normal">A normal mix of commuting and errands</button>
+          <button class="pill" data-v="light">Light use — short, occasional trips</button>
+        </div>
+        <div class="q-hint">Highway miles fling up bug splatter and brake dust, and gravel or dirt roads coat the car in grime fast. A car that mostly sits stays cleaner far longer.</div>
+      </div>
+      <div class="quiz-q" data-q="finish">
+        <div class="q-label">4. Do you wax or seal the paint?</div>
+        <div class="pills">
+          <button class="pill" data-v="waxed">Yes — I keep it waxed or sealed</button>
+          <button class="pill" data-v="some">Once in a while, not on a schedule</button>
+          <button class="pill" data-v="none">No — bare paint, no protection</button>
+        </div>
+        <div class="q-hint">A coat of wax or sealant makes dirt and contaminants sit on top instead of bonding to the paint, so a protected car stays cleaner longer and rinses off more easily.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A proper hand-wash kit is a one-time outlay of about thirty to sixty dollars, plus a couple of dollars of soap per wash. What skipping it — or washing badly — costs is paint correction to grind out swirl marks, rust repair from neglected salt, and a real hit at trade-in time. Over a few years, washing at home also undercuts paying $15–40 a visit at the automatic wash:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$30–60</div><div class="l">one-time starter kit — two buckets with grit guards, a quality wash mitt, pH-neutral car soap, and drying towels</div></div>
+        <div class="calc-stat"><div class="v">~$2–4</div><div class="l">per wash thereafter — just the soap, water, and your own time in the driveway</div></div>
+        <div class="calc-stat"><div class="v bad">$15–40</div><div class="l">every visit to an automatic wash — and the stiff-brush kind is what swirls your paint in the first place</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🪣 Soap per home wash (after the kit)</span><span>~$2–4</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 One-time two-bucket starter kit</span><span>$30–60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌀 A year of automatic washes</span><span>$200–500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:32%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>✨ Paint correction to cut out swirl marks</span><span>$300–1,500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Rust repair from neglected road salt</span><span>$1,000s + resale hit</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a sub-$60 kit and a couple of dollars of soap per wash</strong> against paint correction that runs into four figures, rust repair from salt you could have rinsed off, and a lower trade-in on a dull, swirled finish. Wash it yourself, the right way, on a schedule — your paint lasts, your money stays in your pocket, and you skip the very brushes that cause the damage.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to wash your car without swirls</h2>
+    <p class="sub">The order is the whole secret: get the car out of the sun, pre-rinse top to bottom to flush loose grit, do the wheels first with their own gear, then wash the body one panel at a time top-down — rinsing the mitt between panels — and dry it immediately. Read the techniques first (especially "never on hot paint or in the sun" and "rinse before you touch it"), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Work smart — sun, soap, grit, and footing</h3>
+      <ul>
+        <li><strong>Never wash on hot paint or in direct sun.</strong> Soap and water flash-dry into spots and streaks before you can rinse them off, and minerals bake on. Wash in the shade, in a garage, or early morning / late evening when the body is cool.</li>
+        <li><strong>Never use dish soap or household detergent.</strong> Dish soap is made to strip oils — it strips your wax and sealant too, and dries out rubber trim and seals over time. Use a dedicated pH-neutral car soap, which lifts dirt without stripping protection.</li>
+        <li><strong>Rinse the whole car first.</strong> If you put a mitt on a dry, gritty car, you grind that grit across the paint as swirl marks. A thorough pre-rinse top to bottom floats off the loose dirt before anything touches the finish.</li>
+        <li><strong>Use separate mitts and buckets for wheels and paint.</strong> Brake dust and wheel grime are abrasive metal grit — one wheel mitt on your paint will scratch it. Keep wheel gear completely separate, and do the wheels before the body.</li>
+        <li><strong>Mind your footing on a wet driveway.</strong> Soap and water make smooth concrete slick. Move deliberately, keep the hose out of your path, and watch your step around the buckets.</li>
+        <li><strong>Skip stiff automatic brush "tunnel" washes.</strong> The spinning-brush kind drags the grit from every car before you across your clearcoat — the leading cause of swirl marks. Choose a touchless wash or hand-wash to protect the finish.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Two buckets with grit guards</span>
+      <span class="tool-chip">A quality wash mitt (microfiber or wool)</span>
+      <span class="tool-chip">A separate mitt/brush for wheels</span>
+      <span class="tool-chip">pH-neutral car soap</span>
+      <span class="tool-chip">A hose, ideally with a spray nozzle</span>
+      <span class="tool-chip">A wheel cleaner (optional)</span>
+      <span class="tool-chip">Microfiber drying towels (or a blower)</span>
+      <span class="tool-chip">Shade or a cool time of day</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the two-bucket method: a wash bucket of soapy water and a separate rinse bucket of clear water, each with a grit guard in the bottom, so dirt rinses off the mitt and drops to the bottom instead of going back onto the car">
+          <!-- wash bucket -->
+          <path d="M40 60 h66 l-9 78 h-48 z" fill="#5e9a78"/>
+          <path d="M36 56 h74 l-3 10 h-68 z" fill="#3e7c59"/>
+          <circle cx="56" cy="64" r="6" fill="#fffdf8"/>
+          <circle cx="72" cy="60" r="7" fill="#eef4f7"/>
+          <circle cx="88" cy="64" r="5" fill="#fffdf8"/>
+          <!-- grit guard -->
+          <line x1="48" y1="126" x2="94" y2="126" stroke="#2c5a40" stroke-width="3" stroke-dasharray="4 4"/>
+          <g fill="#8a6a4f"><circle cx="58" cy="132" r="2"/><circle cx="72" cy="133" r="2"/><circle cx="86" cy="132" r="2"/></g>
+          <text x="48" y="152" font-size="10" fill="#3e7c59" font-weight="700">WASH</text>
+          <!-- rinse bucket -->
+          <path d="M174 64 h66 l-9 74 h-48 z" fill="#7fb3c8"/>
+          <path d="M170 60 h74 l-3 10 h-68 z" fill="#9cc3d4"/>
+          <rect x="182" y="74" width="46" height="14" rx="3" fill="#dce8ee" opacity="0.85"/>
+          <line x1="182" y1="126" x2="228" y2="126" stroke="#5e9a78" stroke-width="3" stroke-dasharray="4 4"/>
+          <g fill="#8a6a4f"><circle cx="192" cy="132" r="2"/><circle cx="206" cy="133" r="2"/><circle cx="220" cy="132" r="2"/></g>
+          <text x="180" y="152" font-size="10" fill="#2c5a40" font-weight="700">RINSE</text>
+          <!-- arrow between -->
+          <path d="M116 96 l48 0 m-9 -6 l9 6 l-9 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h4>The two-bucket method</h4>
+        <p>One bucket holds your soapy wash water, the other clean rinse water — both with a grit guard in the bottom. After each panel you rinse the mitt in the rinse bucket so the grit drops to the bottom, then re-load with soap. The dirt never rides back onto the paint.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pre-rinsing the whole car from the top down with a hose to flush off loose grit before the wash mitt touches the paint">
+          <!-- car -->
+          <path d="M64 118 q3 -28 38 -32 l28 -18 h44 q14 0 24 12 l18 22 q24 4 26 30 l0 8 h-198 z" fill="#c96f4a"/>
+          <path d="M104 86 l24 -14 h36 q10 0 18 10 l10 12 z" fill="#7fb3c8"/>
+          <circle cx="106" cy="124" r="16" fill="#33393b"/><circle cx="106" cy="124" r="8" fill="#b9b1a3"/>
+          <circle cx="204" cy="124" r="16" fill="#33393b"/><circle cx="204" cy="124" r="8" fill="#b9b1a3"/>
+          <!-- hose + spray from top -->
+          <rect x="40" y="32" width="22" height="9" rx="4" fill="#5e9a78"/>
+          <rect x="58" y="30" width="10" height="13" rx="3" fill="#2c5a40"/>
+          <g stroke="#7fb3c8" stroke-width="3" stroke-linecap="round" opacity="0.85">
+            <line x1="72" y1="44" x2="110" y2="74"/>
+            <line x1="78" y1="40" x2="124" y2="66"/>
+            <line x1="84" y1="38" x2="140" y2="62"/>
+          </g>
+          <!-- runoff with grit falling off bottom -->
+          <g fill="#8a6a4f" opacity="0.7"><circle cx="120" cy="148" r="2"/><circle cx="150" cy="150" r="2.2"/><circle cx="178" cy="148" r="1.8"/></g>
+          <text x="74" y="170" font-size="11" fill="#3e7c59" font-weight="700">top to bottom — flush the grit</text>
+        </svg>
+        <h4>Pre-rinse top to bottom</h4>
+        <p>Before the mitt ever touches paint, hose the whole car down from the roof on down. The water floats loose dust, sand, and grit off the surface so you're not about to drag it across the clearcoat. Skip this step and you sandpaper your own paint.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing the wheels and tires washed first, with their own dedicated mitt or brush, because they are the dirtiest and grittiest part of the car, then the body washed afterward">
+          <!-- wheel close-up -->
+          <circle cx="92" cy="92" r="52" fill="#33393b"/>
+          <circle cx="92" cy="92" r="30" fill="#b9b1a3"/>
+          <circle cx="92" cy="92" r="11" fill="#8a6a4f"/>
+          <g stroke="#8a6a4f" stroke-width="3" stroke-linecap="round">
+            <path d="M92 66 l0 14 M92 104 l0 14 M66 92 l14 0 M104 92 l14 0"/>
+          </g>
+          <!-- brake dust grit on the wheel -->
+          <g fill="#5a4636" opacity="0.7"><circle cx="74" cy="74" r="3"/><circle cx="112" cy="80" r="2.6"/><circle cx="84" cy="116" r="2.8"/></g>
+          <!-- dedicated wheel brush -->
+          <rect x="150" y="48" width="56" height="10" rx="4" fill="#c96f4a" transform="rotate(28 178 53)"/>
+          <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+            <line x1="138" y1="78" x2="132" y2="86"/>
+            <line x1="146" y1="84" x2="140" y2="92"/>
+            <line x1="154" y1="90" x2="148" y2="98"/>
+          </g>
+          <text x="150" y="120" font-size="11" fill="#d9663f" font-weight="700">wheels FIRST</text>
+          <text x="150" y="138" font-size="10" fill="#6b7376">own mitt — never on paint</text>
+        </svg>
+        <h4>Wash the wheels first</h4>
+        <p>Wheels and tires are the dirtiest, grittiest part of the car, caked in abrasive brake dust. Do them first, with their own dedicated mitt or brush and their own bucket — never the gear you'll use on paint — so that metal grit never finds its way onto the finish.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of washing one panel at a time from the top down, rinsing the wash mitt in the rinse bucket between each panel">
+          <!-- panel -->
+          <rect x="38" y="34" width="120" height="112" rx="8" fill="#c96f4a"/>
+          <line x1="98" y1="34" x2="98" y2="146" stroke="#a85535" stroke-width="3"/>
+          <!-- mitt washing top panel -->
+          <rect x="56" y="48" width="40" height="28" rx="9" fill="#5e9a78"/>
+          <rect x="56" y="48" width="40" height="9" rx="6" fill="#3e7c59"/>
+          <g fill="#fffdf8"><circle cx="62" cy="46" r="4"/><circle cx="76" cy="42" r="5"/><circle cx="90" cy="46" r="4"/></g>
+          <!-- downward arrow -->
+          <path d="M76 84 l0 50 m-6 -9 l6 9 l6 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- rinse bucket on the right -->
+          <path d="M196 78 h54 l-7 60 h-40 z" fill="#7fb3c8"/>
+          <path d="M192 74 h62 l-3 10 h-56 z" fill="#9cc3d4"/>
+          <rect x="202" y="88" width="38" height="12" rx="3" fill="#dce8ee" opacity="0.85"/>
+          <!-- arrow mitt-to-bucket -->
+          <path d="M160 92 q24 -10 40 -6 m-6 -5 l8 6 l-9 4" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="186" y="156" font-size="10" fill="#2c5a40" font-weight="700">rinse mitt between panels</text>
+        </svg>
+        <h4>One panel at a time, top-down</h4>
+        <p>Work the body in sections from the roof down, where the dirt is heaviest. After each panel, rinse the mitt in the rinse bucket to drop its grit, re-load with soap, and move on. Lower panels are filthiest, so they come last — never bring that grit back up top.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of drying the car immediately after rinsing with a clean microfiber drying towel or a blower, to avoid hard-water spots, rather than letting it air-dry">
+          <!-- car body fragment -->
+          <path d="M30 110 q3 -22 32 -26 l24 -14 h40 q12 0 20 10 l14 18 q22 4 24 26 l0 6 h-178 z" fill="#c96f4a"/>
+          <!-- shine on dried area -->
+          <g stroke="#e8a07e" stroke-width="4" stroke-linecap="round" opacity="0.8">
+            <line x1="58" y1="96" x2="92" y2="74"/>
+            <line x1="74" y1="100" x2="100" y2="82"/>
+          </g>
+          <!-- drying towel -->
+          <rect x="120" y="64" width="48" height="30" rx="7" fill="#7fb3c8"/>
+          <rect x="120" y="64" width="48" height="9" rx="5" fill="#9cc3d4"/>
+          <g stroke="#cdd9de" stroke-width="1.6"><line x1="128" y1="82" x2="160" y2="82"/><line x1="128" y1="88" x2="160" y2="88"/></g>
+          <!-- crossed-out water spots -->
+          <g><circle cx="200" cy="92" r="6" fill="#dce8ee"/><circle cx="216" cy="100" r="5" fill="#dce8ee"/>
+            <path d="M190 82 l34 28 M224 82 l-34 28" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/></g>
+          <text x="60" y="168" font-size="11" fill="#3e7c59" font-weight="700">dry now — never air-dry</text>
+        </svg>
+        <h4>Dry immediately, never air-dry</h4>
+        <p>Air-drying leaves hard-water spots — dissolved minerals that dry on the paint and, over time, etch in. As soon as you finish rinsing, dry the car with a clean, plush microfiber drying towel or a dedicated blower, while it's still in the shade.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Car-wash progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Pre-rinsed, wheels done, body washed panel by panel, rinsed and dried spot-free — a clean car with the shine intact and not a new swirl mark in sight. Now's the moment to lock it in with a coat of wax.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your car is overdue — and when to call a pro</h2>
+    <p class="sub">A well-kept car is glossy and smooth: clean paint, bright trim, glass you see clearly through. These are the signals it's overdue for a wash — and the handful of problems that aren't a wash at all and are worth a detailer or body shop:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>You can feel grit or roughness on "clean" paint.</strong> Run a hand over a washed panel — if it feels gritty or bumpy instead of glass-smooth, bonded contaminants are sitting on the clearcoat. That's a clay-bar job, the step a good detail includes before waxing.</li>
+        <li><strong>Swirl marks and a cobweb haze in the sun.</strong> Fine circular scratches catching streetlights or sunlight mean past bad washing has marred the clearcoat. Switching to the two-bucket method stops new ones; existing swirls need machine polishing to remove.</li>
+        <li><strong>Water spots that won't wash off.</strong> Cloudy rings left by hard water drying on the paint will, if ignored, etch in. Catch them early by drying right after rinsing; baked-on spots may need a dedicated remover or light polishing.</li>
+        <li><strong>Bird-dropping etch marks.</strong> Dull, sunken outlines where a dropping or bug sat in the sun mean it's already eaten into the clearcoat. Light etching can polish out; deep marks are a paint-correction job for a pro.</li>
+        <li><strong>Heavy road salt, oxidation, or a chalky finish.</strong> A winter's worth of crusted salt, or paint that's gone dull and chalky from oxidation, is past what a normal wash fixes. A professional detail — wash, decontaminate, correct, and seal — brings it back.</li>
+        <li><strong>Rust starting on the underbody or panels.</strong> Bubbling paint or visible rust from neglected salt isn't a cleaning problem — it's a body-shop repair, and the sooner it's caught the cheaper it stays.</li>
+        <li><strong>Pro tip:</strong> wash, then protect. The moment to wax or seal is right after a clean wash and dry, while the paint is bare and smooth — that's when a coat actually bonds and lasts. See the next step for pairing it up.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What is the two-bucket method, and why does it matter?</summary>
+      <p>It's the single biggest upgrade you can make to how you wash. You use two buckets — one with your soapy wash water, one with clean rinse water — and ideally a grit guard (a perforated insert) in the bottom of each. You load the mitt with suds from the wash bucket, wash a panel, then rinse the mitt in the <em>rinse</em> bucket before re-loading it with soap. The grit guard lets the dirt sink and trap at the bottom so it doesn't swirl back up onto your mitt. The whole point is to keep dirt off the mitt and out of the soapy water, so you're never dragging the grit you just lifted off one panel across the next one. That dragged grit is exactly what carves the fine swirl marks most cars have. One bucket, by contrast, turns into gritty mud you keep re-applying — sandpaper for your paint.</p>
+    </details>
+    <details>
+      <summary>Can I use dish soap to wash my car?</summary>
+      <p>No — and it's a common, costly mistake. Dish soap is engineered to strip oils and grease, which is great on a frying pan but terrible on a car: it strips away the wax or sealant protecting your paint, and used regularly it dries out the rubber trim, weatherstripping, and seals, leaving them cracked and faded. After a dish-soap wash your paint is left bare and unprotected, so contaminants bond more easily and the finish dulls faster. Use a dedicated pH-neutral car soap instead. It's formulated to lift dirt and provide good lubrication so the mitt glides without scratching, all while leaving your wax intact. A bottle is cheap and lasts a long time — there's no reason to reach for the dish soap.</p>
+    </details>
+    <details>
+      <summary>Are automatic car washes bad for my paint?</summary>
+      <p>It depends entirely on the type. The old-style "tunnel" washes with big spinning brushes or cloth strips are the worst thing you can do to your finish — those brushes drag the abrasive grit from every car ahead of you across your clearcoat, which is the leading cause of swirl marks and micro-scratches. <em>Touchless</em> automatic washes, which clean with high-pressure water and detergents and never physically touch the paint, are far safer and a reasonable option when you can't hand-wash — though they're less thorough and the harsh chemicals can strip wax over time. The gentlest option is a proper hand-wash with the two-bucket method. If you do use an automatic wash, choose touchless and avoid anything with brushes.</p>
+    </details>
+    <details>
+      <summary>How often should I wash, especially in winter or salt country?</summary>
+      <p>Every two months is a fine default for a typical car in a mild climate. Two things change that math dramatically. First, <strong>road salt:</strong> if you drive on salted winter roads (or live near the coast), wash every week or two through the season — and specifically rinse the underbody, wheel wells, and the bottoms of the panels, because salt keeps corroding metal long after it's dry, attacking brake lines and frame. Second, <strong>trees and birds:</strong> if you park under sap-dropping trees or where birds roost, you'll want to wash (or at least spot-clean) frequently, since sap and droppings are acidic and etch in within days in the sun. On the other side, a garaged, lightly-driven, waxed car in a clean climate can comfortably stretch to about every three months.</p>
+    </details>
+    <details>
+      <summary>Do waterless or rinseless washes actually work?</summary>
+      <p>Yes, within limits, and they're genuinely useful for the right situations. A <em>waterless</em> wash is a spray-on product with lubricating polymers: you mist it onto a lightly dusty panel and wipe it off with a clean microfiber, where the polymers encapsulate the dirt so it lifts instead of scratching. A <em>rinseless</em> wash is added to a bucket of water and used with the same gentle technique, no hose needed. Both shine when the car is only lightly soiled — maintenance between proper washes, or apartment dwellers without hose access. They are <em>not</em> for a genuinely dirty car: if there's caked mud, heavy grit, or salt crust, wiping it with a towel risks grinding it into the paint, and you should pre-rinse and do a real wash. Use fresh, clean towels and plenty of product, and turn to a clean side often.</p>
+    </details>
+    <details>
+      <summary>How do I dry without water spots — and should I wax after?</summary>
+      <p>Never let the car air-dry: the water evaporates and leaves behind dissolved minerals as hard-water spots, which over time etch into the clearcoat. As soon as you finish the final rinse — while the car's still in the shade and cool — dry it with a large, plush microfiber drying towel (gently blot and drag, don't scrub) or, even better, blow the water off with a dedicated car blower or leaf blower, which never touches the paint at all. A quick mist of a drying aid or quick-detailer adds lubrication so the towel glides. And yes — right after a clean wash and dry is the ideal moment to <a href="wax-car.html">wax the car</a>: the paint is bare, smooth, and ready, so a fresh coat bonds and lasts far longer than waxing over a dirty surface. (Washing preps the paint; wax makes the result last.) If you're giving the car a full once-over, it's also the natural time to pair it with a <a href="detail-car-interior.html">car interior detail</a>.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A clean car is mostly about rhythm.</h2>
+        <p>Washing isn't really a one-time job — it's a cadence that should tighten in salt season and ease off when the car's tucked in a garage. Let Upkeep Ledger hold that rhythm for you: it logs each wash, ramps the reminder up through winter and back down in summer, and keeps it right alongside the oil change, the tire rotation, and the next coat of wax — so the whole car stays cared-for without you keeping the calendar in your head.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=car-wash&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=car-wash&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your vehicle, paint, climate, and the products you use will vary — your owner's manual and product instructions outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { climate: null, parking: null, driving: null, finish: null };
+
+  var FREQ_LABEL = {
+    0.5: "Every 2 weeks",
+    1: "Every month",
+    2: "Every 2 months",
+    3: "Every 3 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 2;
+    var tighten = false;
+
+    /* Climate / roads */
+    if (s.climate === "salt") {
+      if (months > 0.5) months = 0.5;
+      tighten = true;
+      reasons.push("Salted winter roads or coastal salt air keep corroding metal long after they dry, so a car that sees them needs rinsing every week or two — underbody and wheel wells included — to stay ahead of rust.");
+    } else if (s.climate === "dusty") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("Heavy dust, pollen, and bug splatter coat the paint quickly and the acidic bits etch in the sun, so a dusty, buggy environment rewards washing about monthly.");
+    } else {
+      reasons.push("A mild, clean climate is exactly the case the every-two-months default is written for — nothing's aggressively attacking the paint.");
+    }
+
+    /* Parking */
+    if (s.parking === "trees") {
+      if (months > 0.5) months = 0.5;
+      tighten = true;
+      reasons.push("Parking under trees or where birds gather rains down sap, pollen, and droppings — all acidic and all quick to etch in the sun — so frequent washing (or at least spot-cleaning) keeps them from biting in.");
+    } else if (s.parking === "garage") {
+      reasons.push("A garage shields the paint from sun, sap, droppings, and most fallout, so a garaged car stays clean far longer and can lean toward the longer end of the range.");
+    } else {
+      reasons.push("Parking out in the open exposes the car to ordinary fallout but nothing extreme, which keeps it in the normal middle of the range.");
+    }
+
+    /* Driving */
+    if (s.driving === "heavy") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("Daily highway miles fling up bug splatter and brake dust, and dirt or gravel roads coat the car fast, so heavy driving loads the paint quickly and pulls the schedule tighter.");
+    } else if (s.driving === "light") {
+      reasons.push("A car that mostly sits and makes only short, occasional trips stays clean far longer, so light use lets you stretch the interval.");
+    } else {
+      reasons.push("A normal mix of commuting and errands is the ordinary middle case — steady grime, but nothing that forces a tighter schedule on its own.");
+    }
+
+    /* Finish care */
+    if (s.finish === "none") {
+      reasons.push("Bare, unprotected paint lets dirt and contaminants bond directly to the clearcoat, so they're harder to rinse off and quicker to dull the finish — one more reason not to stretch the interval.");
+    } else if (s.finish === "waxed") {
+      reasons.push("A waxed or sealed finish makes dirt sit on top instead of bonding, so the car stays cleaner longer and rinses more easily — which is what lets a sheltered, lightly-used car comfortably stretch toward quarterly.");
+    } else {
+      reasons.push("Waxing now and then gives partial protection, but without a regular coat the paint spends stretches bare, so keep an eye on the finish between washes.");
+    }
+
+    /* Best-case relaxation: mild, garaged, light use, waxed */
+    if (!tighten && s.climate === "mild" && s.parking === "garage" && s.driving === "light" && s.finish === "waxed") {
+      months = 3;
+      reasons.push("A garaged, lightly-driven, waxed car in a clean climate is the one case where every three months is genuinely plenty — a quick rinse of any fallout in between is all it'll ask for.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.climate === "salt") {
+      note = "<strong>In salt season, rinse the underbody:</strong> the salt that does the real damage clings under the car, in the wheel wells, and on the bottoms of the panels. A quick underbody rinse every week or two through winter is the single best anti-rust habit there is.";
+    } else if (s.parking === "trees") {
+      note = "<strong>Don't wait for wash day on sap and droppings:</strong> a bird dropping or blob of sap left in the sun can etch the clearcoat within days. Keep a spray detailer and a microfiber in the car and lift them off as soon as you spot them.";
+    } else if (s.finish === "waxed") {
+      note = "<strong>Wash, then protect — in that order:</strong> the best moment to top up your wax or sealant is right after a clean wash and dry, while the paint is bare and smooth. A fresh coat keeps the next dozen washes easier and the shine deeper.";
+    } else {
+      note = "<strong>Remember the order:</strong> get it out of the sun, pre-rinse top to bottom, wheels first with their own gear, then the body one panel at a time top-down, and dry it right away. And don't forget to wax afterward to make it all last.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.climate || !quizState.parking || !quizState.driving || !quizState.finish) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: wash the car " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Get it out of the sun, then <strong>pre-rinse top to bottom, wash the wheels first, wash the body one panel at a time top-down, and dry it immediately</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & rinse", text: "Move the car into shade and let it cool", note: "Never wash on hot paint or in direct sun — soap and water flash-dry into spots and streaks before you can rinse them off. Work in the shade, in a garage, or early morning / late evening." },
+    { phase: "Prep & rinse", text: "Set up two buckets — wash and rinse", note: "Fill one bucket with pH-neutral car soap and water, the other with clean rinse water, and drop a grit guard in each if you have them. Never use dish soap — it strips your wax and dries out trim and seals." },
+    { phase: "Prep & rinse", text: "Pre-rinse the whole car, top to bottom", note: "Hose the car down from the roof on down to float off loose dust, sand, and grit before any mitt touches the paint. Putting a mitt on a dry, gritty car is how you grind in swirl marks." },
+    { phase: "Wheels first", text: "Wash the wheels and tires with their own gear", note: "Wheels are the dirtiest, grittiest part of the car, caked in abrasive brake dust. Do them first with a dedicated wheel mitt or brush and their own bucket — never the gear you'll use on paint." },
+    { phase: "Wheels first", text: "Rinse the wheels and wheel wells clean", note: "Flush all the loosened brake dust and grime out of the wheels and wells so nothing splashes back up later. In salt season, give the underbody and wells a thorough rinse too." },
+    { phase: "Wash the body", text: "Load the mitt and wash the roof and upper panels", note: "Start at the top where the dirt is lightest, washing one panel at a time with plenty of soapy lubrication so the mitt glides instead of dragging." },
+    { phase: "Wash the body", text: "Rinse the mitt between every panel", note: "After each panel, rinse the mitt in the rinse bucket to drop its grit, then re-load with soap from the wash bucket. This is what keeps grit off the mitt and swirls off the paint." },
+    { phase: "Wash the body", text: "Work down to the lower, dirtiest panels last", note: "The rocker panels, lower doors, and bumpers hold the most grit and grime, so save them for last — never bring that dirt back up to a panel you've already cleaned." },
+    { phase: "Rinse & dry", text: "Give the whole car a final rinse, top to bottom", note: "Rinse off all the suds completely, sheeting the water down and off the car so you're not leaving soap to dry into streaks." },
+    { phase: "Rinse & dry", text: "Dry immediately with microfiber or a blower", note: "Never air-dry — evaporating water leaves hard-water spots that can etch in. Blot and drag a plush microfiber drying towel, or blow the water off, while the car's still cool and in the shade." },
+    { phase: "Rinse & dry", text: "Check the paint and wax or seal if it's due", note: "Feel for any leftover grit, then — while the paint's bare, smooth, and clean — this is the ideal moment to lay down a coat of wax or sealant so the shine and protection last." },
+    { phase: "Rinse & dry", text: "Log the date", note: "Nothing about a clean car reminds you it's slowly getting grimy again. Note the date so the next wash lands on your quiz interval — and tighten it up through salt season, ease it off when it's garaged." }
+  ];
+
+  var LS_KEY = "upkeepguides:car-wash:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

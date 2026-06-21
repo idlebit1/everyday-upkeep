@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspect your roof — UpkeepGuides.com</title>
+<meta name="description" content="How to inspect your roof safely once a year and after every major storm — spot missing or curling shingles, granule loss, and bad flashing from the ground, a ladder, and the attic before a small leak becomes a five-figure repair.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Inspect your roof — UpkeepGuides.com">
+<meta property="og:description" content="How to inspect your roof safely once a year and after every major storm — spot missing or curling shingles, granule loss, and bad flashing from the ground, a ladder, and the attic before a small leak becomes a five-figure repair.">
+<meta property="og:url" content="https://upkeepguides.com/inspect-roof.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Inspect your roof — UpkeepGuides.com">
+<meta name="twitter:description" content="How to inspect your roof safely once a year and after every major storm — spot missing or curling shingles, granule loss, and bad flashing from the ground, a ladder, and the attic before a small leak becomes a five-figure repair.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every year</span>
+      <h1>Inspect Your Roof</h1>
+      <p class="lede">Your roof is the single most expensive thing standing between you and the weather, and it fails the way most expensive things do — quietly, from a problem you could have seen a year earlier. A lifted shingle here, a cracked bead of flashing sealant there, a patch where the granules have worn off and the shingle's gone bald. Left alone, that pinhole becomes a drip, the drip rots the decking, and one rainy season later you're looking at soaked insulation, a stained ceiling, mold in the framing, and a five-figure repair. Once a year — and after every major storm — you walk the yard with a pair of binoculars, glass each roof plane, peek in the attic, and catch the small things while they're still small. You never have to set foot on the roof to do it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>once a year</em></span>
+        <span class="chip">🌩️ Plus <em>after every major storm</em></span>
+        <span class="chip">🔭 Costs <em>~$0</em> from the ground</span>
+        <span class="chip">💸 Catches <em>$300 vs $15,000</em> problems</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a homeowner inspecting a roof safely from the ground: a person stands in the yard looking up through binoculars at a house roofline, where a couple of shingles are missing or curling and the chimney flashing is visibly damaged, while an extension ladder is leaned safely against the eave — the person is on the ground, not climbing onto the roof">
+      <ellipse cx="285" cy="406" rx="255" ry="20" fill="#efe7d8"/>
+
+      <!-- ===== the house ===== -->
+      <!-- house body -->
+      <rect x="150" y="208" width="300" height="170" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <!-- roof plane (asphalt) -->
+      <path d="M132 210 L300 96 L468 210 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="5" stroke-linejoin="round"/>
+      <!-- shingle courses on the roof -->
+      <g stroke="#8a6a4f" stroke-width="2" opacity="0.55">
+        <path d="M168 184 L300 94 L432 184" fill="none"/>
+        <path d="M150 196 L300 96 L450 196" fill="none"/>
+        <path d="M186 172 L300 92 L414 172" fill="none"/>
+      </g>
+      <g fill="#a59c8d" opacity="0.7">
+        <rect x="206" y="158" width="18" height="9" rx="1"/>
+        <rect x="244" y="172" width="18" height="9" rx="1"/>
+        <rect x="338" y="172" width="18" height="9" rx="1"/>
+        <rect x="376" y="158" width="18" height="9" rx="1"/>
+      </g>
+      <!-- ridge line -->
+      <path d="M132 210 L300 96 L468 210" fill="none" stroke="#8a6a4f" stroke-width="3" opacity="0.6"/>
+
+      <!-- MISSING shingle (dark gap) -->
+      <rect x="262" y="150" width="26" height="16" rx="2" fill="#8a6a4f"/>
+      <circle cx="275" cy="138" r="11" fill="none" stroke="#d9663f" stroke-width="3"/>
+      <line x1="283" y1="146" x2="294" y2="158" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- CURLING shingles -->
+      <path d="M320 168 q10 -10 22 -4 q-4 8 -12 8 q-2 4 -10 -4 z" fill="#8a6a4f"/>
+      <path d="M340 158 q9 -9 20 -3" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="344" cy="160" r="11" fill="none" stroke="#d9663f" stroke-width="3"/>
+      <line x1="352" y1="168" x2="363" y2="180" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- chimney with damaged flashing -->
+      <rect x="372" y="118" width="34" height="58" fill="#c96f4a"/>
+      <rect x="368" y="114" width="42" height="10" rx="2" fill="#b35a3a"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" opacity="0.6">
+        <line x1="372" y1="132" x2="406" y2="132"/>
+        <line x1="372" y1="146" x2="406" y2="146"/>
+        <line x1="372" y1="160" x2="406" y2="160"/>
+        <line x1="383" y1="124" x2="383" y2="176"/>
+        <line x1="395" y1="124" x2="395" y2="176"/>
+      </g>
+      <!-- flashing at the chimney base, cracked -->
+      <path d="M366 176 l44 0 l8 8 l-60 0 z" fill="#7fb3c8"/>
+      <path d="M384 178 l2 8" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="372" cy="184" r="10" fill="none" stroke="#d9663f" stroke-width="3"/>
+
+      <!-- door & windows -->
+      <rect x="220" y="296" width="50" height="82" rx="2" fill="#5e9a78"/>
+      <circle cx="260" cy="338" r="3" fill="#e0a93d"/>
+      <rect x="328" y="244" width="56" height="48" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="4"/>
+      <line x1="356" y1="244" x2="356" y2="292" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="328" y1="268" x2="384" y2="268" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- gutter along the eave -->
+      <rect x="148" y="206" width="304" height="9" rx="3" fill="#8a6a4f" opacity="0.8"/>
+
+      <!-- ===== ladder leaned safely at the eave (no one on it) ===== -->
+      <g stroke="#c9a06b" stroke-width="6" stroke-linecap="round">
+        <line x1="92" y1="380" x2="150" y2="206"/>
+        <line x1="112" y1="380" x2="170" y2="206"/>
+      </g>
+      <g stroke="#c9a06b" stroke-width="4" stroke-linecap="round">
+        <line x1="106" y1="356" x2="160" y2="356"/>
+        <line x1="111" y1="332" x2="163" y2="332"/>
+        <line x1="116" y1="308" x2="166" y2="308"/>
+        <line x1="121" y1="284" x2="167" y2="284"/>
+        <line x1="126" y1="260" x2="168" y2="260"/>
+        <line x1="131" y1="236" x2="166" y2="236"/>
+      </g>
+      <!-- ladder feet on firm ground -->
+      <rect x="88" y="378" width="14" height="6" rx="2" fill="#8a6a4f"/>
+      <rect x="108" y="378" width="14" height="6" rx="2" fill="#8a6a4f"/>
+
+      <!-- ===== person on the GROUND with binoculars looking up ===== -->
+      <!-- legs -->
+      <path d="M486 380 l-6 -44" stroke="#8a6a4f" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <path d="M500 380 l4 -44" stroke="#8a6a4f" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <!-- shoes -->
+      <path d="M476 380 l16 0" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M500 380 l16 0" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <!-- torso, leaning back to look up -->
+      <path d="M492 338 q-6 -34 6 -54" stroke="#3e7c59" stroke-width="20" fill="none" stroke-linecap="round"/>
+      <!-- head tilted up -->
+      <circle cx="504" cy="276" r="15" fill="#e8b48f"/>
+      <path d="M491 270 q13 -12 26 -2" fill="none" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <!-- arms up holding binoculars -->
+      <path d="M494 296 q-12 -14 -8 -28" stroke="#3e7c59" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M504 294 q6 -16 -2 -30" stroke="#3e7c59" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <!-- binoculars at the eyes -->
+      <rect x="478" y="258" width="14" height="13" rx="3" fill="#2c5a40"/>
+      <rect x="494" y="258" width="14" height="13" rx="3" fill="#2c5a40"/>
+      <rect x="490" y="261" width="6" height="6" fill="#35684c"/>
+      <circle cx="485" cy="271" r="3" fill="#7fb3c8"/>
+      <circle cx="501" cy="271" r="3" fill="#7fb3c8"/>
+      <!-- sight-lines from binoculars up to the roof problems -->
+      <g stroke="#e0a93d" stroke-width="2" stroke-dasharray="5 6" opacity="0.8">
+        <line x1="486" y1="266" x2="290" y2="146"/>
+        <line x1="486" y1="266" x2="382" y2="180"/>
+      </g>
+
+      <!-- a little bush for warmth -->
+      <ellipse cx="132" cy="376" rx="22" ry="14" fill="#5e9a78"/>
+      <ellipse cx="120" cy="370" rx="14" ry="11" fill="#3e7c59"/>
+
+      <!-- sun -->
+      <circle cx="70" cy="62" r="20" fill="#faf0da" stroke="#e0a93d" stroke-width="3"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="70" y1="28" x2="70" y2="36"/>
+        <line x1="70" y1="88" x2="70" y2="96"/>
+        <line x1="36" y1="62" x2="44" y2="62"/>
+        <line x1="96" y1="62" x2="104" y2="62"/>
+        <line x1="46" y1="38" x2="51" y2="43"/>
+        <line x1="89" y1="81" x2="94" y2="86"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Roofs are out of sight, so they're out of mind — right up until water is dripping into a bedroom. But almost every catastrophic, budget-wrecking roof failure starts as something small and visible that sat unnoticed for a season or two. A yearly look (and a fast one after big storms) is the cheapest insurance you'll ever buy on the most expensive surface of your house. Here's what's at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 17 L18 7 L30 17 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="1.6" stroke-linejoin="round"/>
+          <rect x="9" y="17" width="18" height="13" fill="#fffdf8" stroke="#8a6a4f" stroke-width="1.6"/>
+          <path d="M18 13 q-2 4 0 7 q2 -3 0 -7 z" fill="#7fb3c8"/>
+          <path d="M16 24 q-2 4 0 7 q2 -3 0 -7 z" fill="#7fb3c8"/>
+          <path d="M22 26 q-1.5 3 0 5.5 q1.5 -2.5 0 -5.5 z" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>A small leak turns catastrophic</h3>
+        <p>Water that gets past the roof doesn't stop — it rots the wood decking and framing, ruins ceilings and insulation, and grows mold in the dark. Catching it early is the difference between a quick patch and tearing out a corner of your house.</p>
+        <span class="cost">A $300 fix vs a $15,000 one</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="12" width="24" height="6" fill="#b9b1a3"/>
+          <rect x="6" y="19" width="24" height="6" fill="#a59c8d"/>
+          <!-- a curling shingle -->
+          <path d="M22 12 q5 -5 8 -1 l0 1 q-4 -2 -8 4 z" fill="#8a6a4f"/>
+          <!-- bald / granule-loss patch -->
+          <rect x="10" y="19.5" width="6" height="5" fill="#c9a06b"/>
+          <!-- falling granules -->
+          <g fill="#c9a06b">
+            <circle cx="12" cy="29" r="1.1"/>
+            <circle cx="16" cy="31" r="1"/>
+            <circle cx="20" cy="29" r="1.1"/>
+          </g>
+        </svg></div>
+        <h3>Shingles age out</h3>
+        <p>Granule loss, curling, cracking, and bald spots are how an asphalt roof tells you it's near the end of its life. Spot the wear before a windy night turns a tired shingle into an open hole — and time a planned replacement instead of an emergency one.</p>
+        <span class="cost">A roof that fails on its own schedule</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M5 22 L18 12 L31 22 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="1.4" stroke-linejoin="round"/>
+          <!-- chimney -->
+          <rect x="20" y="9" width="8" height="11" fill="#c96f4a"/>
+          <rect x="19" y="8" width="10" height="3" fill="#b35a3a"/>
+          <!-- flashing -->
+          <path d="M16 20 l12 0 l2 2 l-16 0 z" fill="#7fb3c8"/>
+          <!-- crack / leak point -->
+          <path d="M22 21 l1 4" stroke="#d9663f" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="22" cy="28" r="1.3" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Flashing leaks first</h3>
+        <p>The field of shingles usually outlasts the metal and sealant around chimneys, vents, skylights, and valleys. Those penetrations are where water sneaks in long before a shingle fails — so they're the first place a good inspection looks.</p>
+        <span class="cost">Leaks where you'd never think to look</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="6" width="22" height="26" rx="2" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="11" y1="12" x2="25" y2="12" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="11" y1="17" x2="25" y2="17" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="11" y1="22" x2="20" y2="22" stroke="#e9e2d8" stroke-width="2"/>
+          <!-- clock / deadline -->
+          <circle cx="25" cy="25" r="6.5" fill="#faf0da" stroke="#e0a93d" stroke-width="1.8"/>
+          <path d="M25 21.5 L25 25 L27.5 26.5" stroke="#d98e3b" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Insurance has a clock</h3>
+        <p>An annual and post-storm look documents wind and hail damage while you can still file a claim — those windows are often surprisingly short. Photos with dates turn "the roof just got old" into a covered storm loss.</p>
+        <span class="cost">A missed claim window costs thousands</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> inspect?</h2>
+    <p class="sub">Once a year is the baseline for any roof — plus a quick look after every major storm, always. But an aging asphalt roof, a punishing climate, heavy tree cover, or a recent hail or wind event all push you toward twice a year and an immediate post-storm check. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">1. How old is your roof — and what is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Asphalt, 15+ years old</button>
+          <button class="pill" data-v="mid">Asphalt, somewhere in the middle</button>
+          <button class="pill" data-v="new">New asphalt, metal, or tile</button>
+        </div>
+        <div class="q-hint">Asphalt shingles last roughly 20–25 years, so a roof past 15 is in the zone where small problems start cascading. Metal and tile last far longer and fail more slowly — but they still need eyes on the flashing and fasteners.</div>
+      </div>
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">2. What's the weather like where you live?</div>
+        <div class="pills">
+          <button class="pill" data-v="harsh">Hail, high wind, heavy snow, or intense sun</button>
+          <button class="pill" data-v="mixed">A real winter, but nothing extreme</button>
+          <button class="pill" data-v="mild">Mild and fairly gentle year-round</button>
+        </div>
+        <div class="q-hint">Hail bruises shingles, wind lifts and tears them, ice dams force water backward under them, and relentless UV bakes them brittle. The harsher your climate, the more often it's worth a look.</div>
+      </div>
+      <div class="quiz-q" data-q="trees">
+        <div class="q-label">3. How much tree cover is over the roof?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Big limbs right over the roof</button>
+          <button class="pill" data-v="some">A few nearby trees</button>
+          <button class="pill" data-v="open">Open sky, no overhang</button>
+        </div>
+        <div class="q-hint">Overhanging limbs drop leaves and debris that clog valleys and gutters, scrape shingles in the wind, and shade the roof so moss and algae take hold and lift the shingle edges.</div>
+      </div>
+      <div class="quiz-q" data-q="storm">
+        <div class="q-label">4. Any major storms since your last look?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes — hail or high wind recently</button>
+          <button class="pill" data-v="maybe">Maybe — a rough stretch of weather</button>
+          <button class="pill" data-v="no">No, it's been calm</button>
+        </div>
+        <div class="q-hint">A major storm is its own trigger, regardless of the calendar. The point of a post-storm check is to catch (and photograph) fresh wind or hail damage while it's still within the insurance filing window.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A ground-level look costs you nothing but twenty minutes and a pair of binoculars you may already own. A professional inspection runs a little more — and is often free when it comes bundled with a repair quote. Set either of those against what an unnoticed leak actually costs, and the math stops being close:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">a ground-and-attic check with binoculars you own (a decent pair runs about $30 if you don't)</div></div>
+        <div class="calc-stat"><div class="v">~20 min</div><div class="l">to walk the perimeter, glass every roof plane, and put your head in the attic</div></div>
+        <div class="calc-stat"><div class="v bad">$150–400</div><div class="l">a professional roof inspection — and frequently waived if you're getting a repair quote</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔭 DIY ground &amp; attic inspection</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>👷 Professional roof inspection</span><span>$150–400</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 A small repair caught early</span><span>$400–1,800</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:24%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏚️ Full roof replacement</span><span>$8,000–25,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:72%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💧 Interior water, rot &amp; mold remediation</span><span>Five figures, plus your stuff</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free yearly look (and one after every big storm)</strong> against soaked decking, ruined ceilings, mold in the framing, and a replacement that can clear $25,000. The single most expensive repair a house can hand you is also the one most reliably prevented by twenty minutes and a pair of binoculars. Catch the lifted shingle and the cracked flashing now, and the water never gets its foot in the door.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to inspect your roof — safely</h2>
+    <p class="sub">The whole method is built around one rule: <strong>do not walk on the roof.</strong> You can spot the overwhelming majority of problems from the ground with binoculars, from a ladder at the very edge, and from inside the attic — without ever stepping onto the surface. Read the safety box first (it's the most important part of this guide), then the techniques, then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ The one rule: stay off the roof</h3>
+      <ul>
+        <li><strong>Do not walk on the roof — falls are the real danger here, not the leak.</strong> A wet, steep, mossy, brittle, or sun-baked roof is genuinely deadly, and a fall from roof height is life-changing or fatal. Nothing you'd find up there is worth it. Inspect from the ground, the eave, and the attic instead.</li>
+        <li><strong>Glass it from the ground first.</strong> A pair of binoculars from the yard shows you missing, curling, and dark patches across every roof plane — most inspections are done before you ever touch a ladder.</li>
+        <li><strong>From a ladder, look ALONG the surface — never step onto it.</strong> A stable ladder at the eave lets you see the first courses, the drip edge, and the gutters up close. Stay on the ladder; do not climb off onto the roof.</li>
+        <li><strong>For a steep or tall roof, use a drone or hire a pro.</strong> If you can't see the field of the roof from the ground or the eave, that's exactly what a drone or a licensed roofer is for. Don't improvise your way onto a high, steep surface.</li>
+        <li><strong>Follow ladder safety to the letter.</strong> Firm, level ground; the correct 4-to-1 angle; three points of contact at all times; and a spotter to foot the ladder and steady it. Never lean or overreach — move the ladder instead.</li>
+        <li><strong>Watch for power lines at the service entrance, and never inspect during or right after a storm.</strong> Keep yourself and the ladder well clear of the lines where power enters the house, and wait until surfaces are fully dry — a wet roof and a wet ladder are how a routine check goes wrong.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Binoculars</span>
+      <span class="tool-chip">A phone or camera (for dated photos)</span>
+      <span class="tool-chip">A stable extension or step ladder</span>
+      <span class="tool-chip">A spotter to foot the ladder</span>
+      <span class="tool-chip">A flashlight for the attic</span>
+      <span class="tool-chip">Work gloves</span>
+      <span class="tool-chip">A notepad or notes app</span>
+      <span class="tool-chip">A drone (optional, for steep roofs)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the ground scan: a person stands in the yard with binoculars, mentally dividing a roof plane into quadrants and glassing each one in turn for missing, curling, or dark patches">
+          <!-- house -->
+          <rect x="120" y="78" width="120" height="70" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <path d="M110 80 L180 36 L250 80 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3" stroke-linejoin="round"/>
+          <!-- quadrant divisions on roof -->
+          <g stroke="#8a6a4f" stroke-width="1.4" stroke-dasharray="3 3" opacity="0.7">
+            <line x1="145" y1="58" x2="155" y2="80"/>
+            <line x1="215" y1="58" x2="205" y2="80"/>
+            <line x1="125" y1="72" x2="235" y2="72"/>
+          </g>
+          <!-- a dark missing patch -->
+          <rect x="170" y="60" width="14" height="9" rx="1" fill="#8a6a4f"/>
+          <!-- person with binoculars -->
+          <circle cx="44" cy="96" r="9" fill="#e8b48f"/>
+          <path d="M44 105 l0 30" stroke="#3e7c59" stroke-width="9" stroke-linecap="round"/>
+          <path d="M44 135 l-7 18 M44 135 l7 18" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+          <rect x="36" y="90" width="8" height="8" rx="2" fill="#2c5a40"/>
+          <rect x="46" y="90" width="8" height="8" rx="2" fill="#2c5a40"/>
+          <!-- sight lines -->
+          <g stroke="#e0a93d" stroke-width="1.6" stroke-dasharray="4 4" opacity="0.85">
+            <line x1="44" y1="93" x2="177" y2="64"/>
+          </g>
+          <text x="64" y="166" font-size="11" fill="#3e7c59" font-weight="700">glass each quadrant from the yard</text>
+        </svg>
+        <h4>1. The ground scan</h4>
+        <p>Walk the whole perimeter and glass each roof plane with binoculars, quadrant by quadrant. You're hunting for missing shingles, curling or cupped edges, and dark or patchy areas. This catches most of what's wrong — and you do it with both feet on the grass.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the eave close-up: a ladder leaned at the edge of a roof, checking the first courses of shingles and the drip edge, with asphalt granules visibly collecting in the gutter below">
+          <!-- eave / roof edge -->
+          <path d="M40 60 L240 40 L240 60 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="40" y="60" width="200" height="10" fill="#a59c8d"/>
+          <!-- gutter with granules -->
+          <rect x="40" y="72" width="200" height="14" rx="3" fill="#8a6a4f"/>
+          <g fill="#c9a06b">
+            <circle cx="70" cy="80" r="2"/>
+            <circle cx="90" cy="81" r="1.8"/>
+            <circle cx="110" cy="79" r="2.2"/>
+            <circle cx="132" cy="81" r="1.8"/>
+            <circle cx="158" cy="80" r="2"/>
+            <circle cx="184" cy="81" r="1.8"/>
+          </g>
+          <!-- ladder at the eave -->
+          <g stroke="#c9a06b" stroke-width="4" stroke-linecap="round">
+            <line x1="206" y1="158" x2="224" y2="62"/>
+            <line x1="222" y1="158" x2="240" y2="62"/>
+            <line x1="210" y1="138" x2="228" y2="138"/>
+            <line x1="214" y1="116" x2="232" y2="116"/>
+            <line x1="217" y1="94" x2="235" y2="94"/>
+          </g>
+          <text x="48" y="108" font-size="11" fill="#d9663f" font-weight="700">granules in the gutter</text>
+          <text x="48" y="124" font-size="10" fill="#6b7376">= shingles wearing out</text>
+        </svg>
+        <h4>2. The eave &amp; gutter close-up</h4>
+        <p>From a stable ladder at the edge — looking along the surface, never climbing on — check the first courses and the drip edge. Then look in the gutters: a buildup of sand-like shingle granules is a clear sign the shingles are wearing out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of flashing, valleys and penetrations: a chimney, a vent boot, and a skylight on a roof with metal step flashing and sealant around each, the spots where water sneaks in first">
+          <path d="M30 150 L140 50 L250 150 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3" stroke-linejoin="round"/>
+          <!-- valley line -->
+          <path d="M140 50 L140 150" stroke="#7fb3c8" stroke-width="4" opacity="0.7"/>
+          <!-- chimney with step flashing -->
+          <rect x="78" y="86" width="26" height="34" fill="#c96f4a"/>
+          <rect x="74" y="82" width="34" height="8" fill="#b35a3a"/>
+          <path d="M72 120 l36 0 l6 8 l-48 0 z" fill="#7fb3c8"/>
+          <path d="M78 118 l4 -6 l4 6 l4 -6 l4 6" fill="none" stroke="#5e9a78" stroke-width="1.6"/>
+          <!-- vent boot -->
+          <ellipse cx="180" cy="118" rx="10" ry="6" fill="#7fb3c8"/>
+          <rect x="174" y="100" width="12" height="20" rx="4" fill="#8a6a4f"/>
+          <!-- skylight -->
+          <rect x="196" y="118" width="28" height="20" rx="2" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <text x="48" y="170" font-size="11" fill="#3e7c59" font-weight="700">chimney · vents · skylights · valleys</text>
+        </svg>
+        <h4>3. Flashing, valleys &amp; penetrations</h4>
+        <p>Zero in on every spot where something pokes through the roof — chimneys, vent boots, skylights — plus the valleys where two planes meet. Look for lifted, rusted, or bent metal flashing and cracked, missing sealant. This is where leaks almost always begin.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the attic inspection from inside: looking up at the underside of the roof deck with a flashlight, finding a water stain, a pinpoint of daylight through the deck, and damp matted insulation below">
+          <!-- attic roofline (underside) -->
+          <path d="M30 130 L140 30 L250 130" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+          <path d="M40 124 L140 34 L240 124 Z" fill="#efe7d8" opacity="0.5"/>
+          <!-- rafters -->
+          <g stroke="#c9a06b" stroke-width="3" opacity="0.8">
+            <line x1="80" y1="94" x2="92" y2="124"/>
+            <line x1="120" y1="58" x2="132" y2="124"/>
+            <line x1="160" y1="58" x2="148" y2="124"/>
+            <line x1="200" y1="94" x2="188" y2="124"/>
+          </g>
+          <!-- water stain -->
+          <ellipse cx="110" cy="78" rx="12" ry="8" fill="#8a6a4f" opacity="0.55"/>
+          <ellipse cx="110" cy="78" rx="7" ry="4.5" fill="#7fb3c8" opacity="0.6"/>
+          <!-- pinpoint of daylight -->
+          <circle cx="168" cy="74" r="3.5" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="1.4" stroke-linecap="round">
+            <line x1="168" y1="66" x2="168" y2="62"/>
+            <line x1="174" y1="72" x2="178" y2="70"/>
+          </g>
+          <!-- damp insulation along the floor -->
+          <rect x="40" y="130" width="200" height="14" fill="#c9a06b" opacity="0.7"/>
+          <ellipse cx="120" cy="137" rx="22" ry="6" fill="#8a6a4f" opacity="0.5"/>
+          <!-- flashlight beam -->
+          <path d="M236 158 L150 96 L162 110 Z" fill="#faf0da" opacity="0.6"/>
+          <text x="40" y="168" font-size="11" fill="#d9663f" font-weight="700">stains · daylight · damp · soft deck</text>
+        </svg>
+        <h4>4. The attic, from inside</h4>
+        <p>The safest view of your roof is from underneath it. With a flashlight, check the deck for water stains, pinpoints of daylight, damp or matted insulation, sagging or soft spots, and the musty smell of mold. Problems show here long before the ceiling does.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the post-storm check: a phone photographing storm damage on a roof, with the photo framed on screen and a date stamp, ready to document a hail or wind insurance claim">
+          <!-- roof with hail dings -->
+          <path d="M30 120 L140 50 L250 120 Z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3" stroke-linejoin="round"/>
+          <g fill="#8a6a4f" opacity="0.6">
+            <circle cx="100" cy="88" r="3"/>
+            <circle cx="130" cy="78" r="3.5"/>
+            <circle cx="160" cy="92" r="3"/>
+            <circle cx="180" cy="80" r="2.6"/>
+          </g>
+          <!-- lifted shingle from wind -->
+          <path d="M115 100 q8 -7 16 -2 l0 2 q-7 -3 -16 4 z" fill="#8a6a4f"/>
+          <!-- phone photographing -->
+          <rect x="40" y="120" width="40" height="60" rx="6" fill="#2c5a40"/>
+          <rect x="45" y="126" width="30" height="40" rx="2" fill="#dce8ee"/>
+          <!-- mini roof on screen -->
+          <path d="M48 152 L60 138 L72 152 Z" fill="#b9b1a3"/>
+          <circle cx="60" cy="146" r="2" fill="#d9663f"/>
+          <!-- date stamp -->
+          <rect x="46" y="158" width="28" height="6" rx="2" fill="#e0a93d"/>
+          <text x="92" y="150" font-size="11" fill="#3e7c59" font-weight="700">photograph it,</text>
+          <text x="92" y="166" font-size="11" fill="#3e7c59" font-weight="700">date it, file in time</text>
+        </svg>
+        <h4>5. The post-storm check</h4>
+        <p>After any major hail or wind event, do a fresh ground-and-attic pass and photograph anything that looks new — with the date. Insurance claim windows are often short, and dated photos are what turn storm damage into a covered claim instead of an argument.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Roof-inspection progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Roof glassed from the ground, eaves and gutters checked, attic inspected, and everything logged — the small problems caught while they're still small and cheap. Same look again next year, and right after the next big storm.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your roof needs attention — and when to call a pro</h2>
+    <p class="sub">A healthy roof is one you never think about: shingles flat and intact, flashing tight, attic dry. These are the signals that something's wrong — and the line where the job stops being a look and becomes a roofer's call. The rule throughout: if seeing or fixing it means getting onto the roof, that's a pro's job, not yours.</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Granules in the gutters and bald shingle spots.</strong> A buildup of sand-like granules in the gutters, and patches where the shingle's underlying mat is showing through, both mean the shingles are wearing out. Do it the same day you're <a href="gutters.html">cleaning the gutters</a> — clogged gutters and granule loss go hand in hand.</li>
+        <li><strong>Curling, cupping, cracked, or missing shingles.</strong> Edges lifting up, centers domed, cracks, or outright gaps all mean the field is failing and water has a way in. A few missing shingles may be a repair; widespread curling usually means the roof is near end of life.</li>
+        <li><strong>Daylight or stains in the attic.</strong> Any pinpoint of light through the deck, any water stain on the underside, damp or matted insulation, or a musty smell means water is already getting in. Don't wait for the ceiling to confirm it.</li>
+        <li><strong>A sagging or dipping roofline.</strong> A roof plane or ridge that's no longer straight can mean rotted decking or a structural problem underneath. That's never a DIY fix — call a roofer promptly.</li>
+        <li><strong>Any active leak, stain, or drip indoors.</strong> A spreading ceiling stain or an actual drip means the water has already arrived. Get it diagnosed before the next rain makes it worse.</li>
+        <li><strong>Anything that requires getting onto the roof.</strong> If you can't assess or address it from the ground, the eave, or the attic, stop. A licensed, insured roofer has the harnesses, training, and ladders to do safely what you shouldn't.</li>
+        <li><strong>Pro tip:</strong> tie this to the seasons. Pair the yearly inspection with <a href="fall-leaf-cleanup.html">fall leaf cleanup</a> and gutter cleaning, and make sure you're <a href="review-insurance.html">reviewing your insurance</a> so you know your roof and storm coverage <em>before</em> you need to file a claim.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Can I inspect my own roof — and should I walk on it?</summary>
+      <p>You can absolutely do a thorough inspection yourself, and no, you should not walk on the roof to do it. The overwhelming majority of problems — missing, curling, and cracked shingles, granule loss, damaged flashing, sagging, blocked valleys — are visible from the ground with a pair of binoculars, from a stable ladder at the eave looking along the surface, and from inside the attic. Walking the roof is where the real danger is: a wet, steep, mossy, brittle, or sun-baked surface is genuinely deadly, and a fall from that height is life-altering. Nothing you'd see up close is worth that risk. If you truly can't see the field of a steep or tall roof from the ground or the eave, that's exactly what a drone or a licensed roofer is for. Glass it from the yard, check the eaves from a properly footed ladder, and inspect from underneath in the attic — and stay off the surface.</p>
+    </details>
+    <details>
+      <summary>What are the signs I need a new roof?</summary>
+      <p>A few things, especially in combination, signal a roof that's near or at the end of its life rather than one needing a spot repair. Widespread granule loss — bare patches and granules piling up in the gutters — means the shingles have lost the protective layer that shields them from UV. Curling, cupping, and cracking across many shingles (not just one or two) is age, not damage. Multiple leaks or recurring leaks in different spots suggest the whole system is failing, not one weak point. A sagging roofline can mean rotted decking underneath. And age itself matters: most asphalt roofs last about 20–25 years, so if yours is in that range and showing these signs, it's time to budget for replacement. The best move is a professional inspection — a roofer can tell you honestly whether you're looking at a $600 repair or a planned replacement, and timing a replacement beats waiting for an emergency one.</p>
+    </details>
+    <details>
+      <summary>What does it mean if I find granules in my gutters?</summary>
+      <p>Asphalt shingles are coated with a layer of small mineral granules — the gritty, sand-like surface — that protect the asphalt underneath from the sun's UV and add fire resistance and color. As shingles age, those granules loosen and wash down into the gutters. A little granule loss is normal, especially on a brand-new roof shedding loose grit. But a steady accumulation of granules — enough that the bottom of the gutter looks like coarse sand — means the shingles are genuinely wearing out and approaching the end of their service life. Pair that with bald patches you can see from the ground and curling edges, and it's a clear signal to start planning. It's also a great reason to check the gutters and the roof on the same day: you're already up there with the ladder, and clogged gutters and granule loss are linked.</p>
+    </details>
+    <details>
+      <summary>How often should I inspect — and what about after storms?</summary>
+      <p>Once a year is the baseline for any roof — a relaxed, twenty-minute look from the ground, the eave, and the attic. Step up to twice a year if your roof is older asphalt (past 15 years), if you're in a harsh climate with hail, high wind, heavy snow and ice dams, or intense sun, or if heavy tree cover is dropping debris and shading the roof. On top of the calendar, always do a check after every major storm — hail, damaging wind, or a heavy ice event. Storm damage doesn't wait for your annual review, and the whole point of a post-storm look is to catch and document fresh damage while you can still file an insurance claim. Wait until everything is fully dry before you inspect, never during or right after the storm while surfaces are slick.</p>
+    </details>
+    <details>
+      <summary>Are drone roof inspections worth it?</summary>
+      <p>For a steep, tall, or complex roof, yes — a drone is often the safest and clearest way to see the field of the roof without anyone getting near it. A camera drone can fly close over the surface and capture high-resolution images and video of every plane, the ridge, the valleys, and the flashing, giving you a detailed look you'd otherwise risk a climb to get. Many homeowners with a capable drone do their own aerial scan from the ground; many roofing companies now offer drone inspections as a standard service. The trade-off is that a drone shows you the surface but can't feel for soft spots, lift a shingle to check what's underneath, or test how brittle things have gotten — so it complements a hands-on professional inspection rather than fully replacing one. As a way to inspect safely without walking the roof, though, it's an excellent tool, particularly for roofs that are dangerous to access.</p>
+    </details>
+    <details>
+      <summary>How does storm and hail damage work with insurance?</summary>
+      <p>Most homeowner's policies cover sudden, accidental roof damage from events like wind and hail, but not the gradual wear of an aging roof — which is exactly why timing and documentation matter. After a major storm, do your inspection promptly and photograph everything that looks new, with the date captured. Insurance claim filing windows are often surprisingly short — sometimes a year or even less from the date of the event, depending on your policy and state — so a leisurely "I'll deal with it eventually" can quietly cost you the whole claim. Dated photos taken right after the storm are what distinguish a covered storm loss from "the roof just got old." Review your policy so you know your deductible, your coverage type (replacement cost versus actual cash value can mean thousands of dollars of difference), and the filing window <em>before</em> you need it — it's worth <a href="review-insurance.html">reviewing your insurance</a> while the sun's out, not in the middle of a leak. For anything beyond a quick documentation pass, a licensed roofer can assess storm damage and many will help with the claim.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The most expensive home repair there is — and the easiest to prevent.</h2>
+        <p>A once-a-year look from the ground, plus a quick pass after every big storm, is what quietly keeps a $300 problem from becoming a $15,000 one. The catch is remembering to do it at all, year after year. Upkeep Ledger keeps this inspection on the calendar — right alongside cleaning the gutters and the rest of your seasonal exterior tasks — so the roof never gets to fail unnoticed.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=inspect-roof&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=inspect-roof&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Inspect from the ground, a ladder, or the attic — never by walking the roof; cost figures are typical U.S. ranges for planning, and any sign of structural damage or active leaks calls for a licensed, insured roofer.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { age: null, climate: null, trees: null, storm: null };
+
+  var FREQ_LABEL = {
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var tighten = false;
+
+    /* Age & material */
+    if (s.age === "old") {
+      months = 6;
+      tighten = true;
+      reasons.push("An asphalt roof past 15 years is in the zone where small problems start cascading fast — twice-a-year eyes on it catch the failures before they open up.");
+    } else if (s.age === "mid") {
+      reasons.push("A mid-life asphalt roof is doing fine, but it's worth a careful yearly look as the shingles start their slow decline.");
+    } else {
+      reasons.push("A new asphalt, metal, or tile roof has years of margin — once a year is plenty, though you'll still want eyes on the flashing and fasteners.");
+    }
+
+    /* Climate */
+    if (s.climate === "harsh") {
+      months = 6;
+      tighten = true;
+      reasons.push("Hail, high wind, heavy snow and ice dams, or relentless UV all age and damage a roof faster, so a harsh climate earns a second look each year.");
+    } else if (s.climate === "mixed") {
+      reasons.push("A real winter without extremes is the ordinary case — a solid annual inspection keeps ahead of it.");
+    } else {
+      reasons.push("A mild, gentle climate is easy on a roof, so weather isn't pushing your schedule.");
+    }
+
+    /* Tree cover */
+    if (s.trees === "heavy") {
+      months = 6;
+      tighten = true;
+      reasons.push("Big limbs over the roof drop debris that clogs valleys, scrape shingles in the wind, and shade the roof so moss and algae take hold — all worth checking twice a year.");
+    } else if (s.trees === "some") {
+      reasons.push("A few nearby trees mean some debris in the gutters and valleys, but nothing that drives the schedule on its own.");
+    } else {
+      reasons.push("Open sky over the roof means no overhanging limbs dropping debris or shading moss into life — one less thing pushing the interval.");
+    }
+
+    /* Recent storm */
+    if (s.storm === "yes") {
+      months = 6;
+      tighten = true;
+      reasons.push("A recent hail or high-wind event is its own trigger — do a post-storm check now and photograph any fresh damage while the insurance filing window is open.");
+    } else if (s.storm === "maybe") {
+      reasons.push("A rough stretch of weather is worth a precautionary look, even if no single storm stood out — fresh damage is easiest to catch early.");
+    } else {
+      reasons.push("A calm spell since your last inspection means nothing new to chase down right now.");
+    }
+
+    /* Best-case relaxation: new roof, mild climate, open, calm */
+    if (!tighten && s.age === "new" && s.climate === "mild" && s.trees === "open" && s.storm === "no") {
+      months = 12;
+      reasons.push("A newer roof in a gentle climate with open sky and no recent storms is the clearest case for the once-a-year baseline — just never skip a check after a big storm.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.storm === "yes") {
+      note = "<strong>Do a post-storm check now — and after every major storm, always.</strong> Glass the roof from the ground, look in the attic, and photograph anything new with the date. Storm damage doesn't wait for the calendar, and insurance filing windows are often short.";
+    } else if (s.age === "old") {
+      note = "<strong>Twice a year for an aging roof — plus after every major storm.</strong> An older asphalt roof can fail between scheduled looks, so add an immediate check after any hail or high-wind event, regardless of when you last inspected.";
+    } else if (months === 6) {
+      note = "<strong>Twice a year — plus after every major storm.</strong> Whatever your interval, a hail or high-wind event always earns its own look as soon as everything's dry, so you catch and document fresh damage in time to file a claim.";
+    } else {
+      note = "<strong>Once a year — plus after every major storm.</strong> The annual look is your baseline, but a major hail or wind event is always its own trigger: check and photograph the roof as soon as surfaces are fully dry.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.age || !quizState.climate || !quizState.trees || !quizState.storm) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: inspect the roof " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Glass every roof plane from the ground, then <strong>check the eaves and gutters from a ladder, inspect the deck from inside the attic, and document anything you find</strong> — never by walking the roof. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "From the ground", text: "Walk the full perimeter of the house", note: "Both feet on the grass. Circle the whole house so you can see every roof plane from below — you'll spot most problems before you ever touch a ladder." },
+    { phase: "From the ground", text: "Glass each roof plane with binoculars, quadrant by quadrant", note: "Divide each plane into quadrants in your head and study each one. Look for missing shingles, curling or cupped edges, and dark or patchy areas where granules have worn away." },
+    { phase: "From the ground", text: "Check the flashing, valleys, and penetrations", note: "Zero in on the chimney, vent boots, skylights, and the valleys where planes meet — look for lifted, rusted, or bent metal and cracked or missing sealant. This is where leaks start." },
+    { phase: "A closer look (eave & gutters)", text: "Set up the ladder safely with a spotter", note: "Firm, level ground; the correct 4-to-1 angle; three points of contact; a spotter to foot it. Keep well clear of power lines at the service entrance. Never inspect on wet surfaces." },
+    { phase: "A closer look (eave & gutters)", text: "Check the first courses and drip edge from the eave", note: "From the ladder, look ALONG the surface — never step onto the roof. Inspect the lowest shingle courses and the drip edge up close for lifting, cracking, or damage." },
+    { phase: "A closer look (eave & gutters)", text: "Look for shingle granules collecting in the gutters", note: "A buildup of sand-like granules in the gutter means the shingles are wearing out. Do this the same day you clean the gutters — clogged gutters and granule loss are linked." },
+    { phase: "From inside (attic)", text: "Scan the underside of the deck for stains and daylight", note: "With a flashlight, look across the roof deck for water stains and any pinpoints of daylight coming through. Both mean water is already finding a way in." },
+    { phase: "From inside (attic)", text: "Feel for damp or matted insulation and sagging or soft decking", note: "Check the insulation for dampness or matting, press gently on the decking for soft spots, and look for any sag in the rafters or sheathing — all signs of moisture or rot." },
+    { phase: "From inside (attic)", text: "Sniff for the musty smell of mold", note: "Trust your nose. A damp, musty, earthy smell in the attic often means moisture and mold are present even before you can see a stain." },
+    { phase: "After storms & log", text: "After any major storm, do a fresh ground-and-attic pass", note: "Hail, high wind, and heavy ice events all earn their own check, regardless of the calendar — once everything is fully dry. Don't inspect during or right after the storm on wet surfaces." },
+    { phase: "After storms & log", text: "Photograph anything new — with the date", note: "Capture dated photos of any fresh damage. Insurance claim windows are often short, and dated photos are what turn storm damage into a covered claim instead of an argument." },
+    { phase: "After storms & log", text: "Log the date and call a pro for anything off the ground", note: "Note the inspection date so the next one lands in about a year (or your quiz interval). For anything that needs you on the roof, a sagging line, or an active leak, call a licensed, insured roofer." }
+  ];
+
+  var LS_KEY = "upkeepguides:inspect-roof:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

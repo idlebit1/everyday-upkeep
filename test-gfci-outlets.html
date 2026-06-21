@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test GFCI outlets — UpkeepGuides.com</title>
+<meta name="description" content="How to test GFCI outlets the safe way: why these life-saving outlets fail silently, the press-TEST-then-RESET routine, finding every outlet they protect, and a step-by-step checklist with a personalized schedule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Test GFCI outlets — UpkeepGuides.com">
+<meta property="og:description" content="How to test GFCI outlets the safe way: why these life-saving outlets fail silently, the press-TEST-then-RESET routine, finding every outlet they protect, and a step-by-step checklist with a personalized schedule.">
+<meta property="og:url" content="https://upkeepguides.com/test-gfci-outlets.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Test GFCI outlets — UpkeepGuides.com">
+<meta name="twitter:description" content="How to test GFCI outlets the safe way: why these life-saving outlets fail silently, the press-TEST-then-RESET routine, finding every outlet they protect, and a step-by-step checklist with a personalized schedule.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 6 months</span>
+      <h1>Test Your GFCI Outlets</h1>
+      <p class="lede">It's the unremarkable outlet by the bathroom sink with two little buttons marked TEST and RESET — and it is quietly standing between your family and a fatal shock. A GFCI senses the instant electricity starts leaking through a wet hand or a dropped hairdryer and cuts the power in about 1/40th of a second, faster than your heart can register it. The catch is the cruel part: a GFCI wears out and dies <em>silently</em>. A dead one still powers the outlet, so nothing looks wrong — right up until the day you need the protection and it isn't there. The only way to know it still works is to press TEST and RESET on a schedule. It takes thirty seconds an outlet, and it is the cheapest life insurance in the house.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Test <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~30 sec</em> per outlet</span>
+        <span class="chip">⚡ Cuts power in <em>~1/40th sec</em></span>
+        <span class="chip">💸 Costs <em>$0</em> to test</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person testing a GFCI outlet on a bathroom wall: a white wall receptacle shows two slotted plugs and two clearly labeled buttons marked TEST and RESET, a finger presses the TEST button with a small click-pop mark beside it, and a sink with a faucet and water droplets sits nearby to show this is a wet area">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall -->
+      <rect x="40" y="30" width="480" height="350" rx="8" fill="#fffdf8"/>
+      <rect x="40" y="30" width="480" height="350" rx="8" fill="none" stroke="#e9e2d8" stroke-width="3"/>
+      <!-- subtle wall tile lines -->
+      <g stroke="#efe7d8" stroke-width="2">
+        <line x1="40" y1="120" x2="280" y2="120"/>
+        <line x1="40" y1="210" x2="280" y2="210"/>
+      </g>
+
+      <!-- ===== sink / vanity at right, the wet area ===== -->
+      <!-- counter -->
+      <rect x="356" y="246" width="180" height="20" rx="5" fill="#b9b1a3"/>
+      <rect x="372" y="266" width="148" height="70" rx="6" fill="#c9a06b"/>
+      <!-- basin -->
+      <ellipse cx="446" cy="252" rx="62" ry="16" fill="#dce8ee"/>
+      <ellipse cx="446" cy="250" rx="50" ry="11" fill="#fffdf8"/>
+      <!-- faucet -->
+      <path d="M446 196 v22 q0 14 -22 14" fill="none" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+      <rect x="438" y="190" width="16" height="10" rx="3" fill="#8a6a4f"/>
+      <!-- running water -->
+      <path d="M424 234 q-2 12 0 22" stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <!-- water droplets near outlet to flag wet area -->
+      <g fill="#7fb3c8" opacity="0.8">
+        <path d="M330 150 q-5 8 0 12 q5 -4 0 -12 z"/>
+        <path d="M352 178 q-4 6 0 9 q4 -3 0 -9 z"/>
+        <path d="M312 196 q-4 6 0 9 q4 -3 0 -9 z"/>
+      </g>
+
+      <!-- ===== the GFCI outlet, the star, clearly drawn ===== -->
+      <!-- shadow -->
+      <rect x="120" y="124" width="138" height="206" rx="14" fill="#efe7d8" opacity="0.6"/>
+      <!-- cover plate -->
+      <rect x="112" y="116" width="138" height="206" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <!-- mounting screws -->
+      <circle cx="181" cy="130" r="4" fill="#b9b1a3"/>
+      <line x1="178" y1="130" x2="184" y2="130" stroke="#8a6a4f" stroke-width="1.4"/>
+      <circle cx="181" cy="308" r="4" fill="#b9b1a3"/>
+      <line x1="178" y1="308" x2="184" y2="308" stroke="#8a6a4f" stroke-width="1.4"/>
+
+      <!-- ==== RESET button (top), red ==== -->
+      <rect x="156" y="146" width="50" height="26" rx="5" fill="#fbe9e1" stroke="#c96f4a" stroke-width="2.5"/>
+      <text x="181" y="164" font-size="12.5" fill="#c96f4a" font-weight="800" text-anchor="middle">RESET</text>
+
+      <!-- ==== TEST button (below reset), being pressed ==== -->
+      <rect x="156" y="180" width="50" height="26" rx="5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+      <text x="181" y="198" font-size="13" fill="#2c5a40" font-weight="800" text-anchor="middle">TEST</text>
+
+      <!-- ==== the two receptacle faces (slots) ==== -->
+      <!-- upper face -->
+      <rect x="150" y="220" width="62" height="42" rx="8" fill="#fbf8f2" stroke="#d8cfbe" stroke-width="2"/>
+      <rect x="166" y="228" width="6" height="16" rx="2" fill="#8a6a4f"/>
+      <rect x="190" y="228" width="6" height="16" rx="2" fill="#8a6a4f"/>
+      <path d="M181 250 l-5 9 h10 z" fill="#8a6a4f"/>
+      <!-- lower face -->
+      <rect x="150" y="270" width="62" height="42" rx="8" fill="#fbf8f2" stroke="#d8cfbe" stroke-width="2"/>
+      <rect x="166" y="278" width="6" height="16" rx="2" fill="#8a6a4f"/>
+      <rect x="190" y="278" width="6" height="16" rx="2" fill="#8a6a4f"/>
+      <path d="M181 300 l-5 9 h10 z" fill="#8a6a4f"/>
+
+      <!-- ==== finger pressing TEST ==== -->
+      <!-- arm -->
+      <path d="M120 360 q60 -40 96 -148" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- hand -->
+      <ellipse cx="224" cy="204" rx="22" ry="16" fill="#e8b48f" transform="rotate(-28 224 204)"/>
+      <!-- pointing fingertip onto TEST -->
+      <path d="M210 196 q-8 -2 -12 -3" stroke="#e8b48f" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <ellipse cx="200" cy="193" rx="6" ry="5" fill="#d99c73"/>
+
+      <!-- ==== click / pop mark ==== -->
+      <g stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round">
+        <line x1="226" y1="172" x2="238" y2="160"/>
+        <line x1="234" y1="182" x2="250" y2="178"/>
+        <line x1="222" y1="188" x2="232" y2="196"/>
+      </g>
+      <text x="256" y="166" font-size="13" fill="#e0a93d" font-weight="800">click!</text>
+      <!-- tiny lightning, the protection -->
+      <path d="M286 90 l-10 22 h9 l-8 20 22 -28 h-10 z" fill="#e0a93d"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A GFCI is one of the few pieces of upkeep where the whole point is invisible. You never see it working, and — terrifyingly — you can't tell when it has stopped working either. That's exactly why a thirty-second test on a schedule earns its place. Here's what these outlets actually do, and why a dead one is so dangerous:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M20 4 l-11 18 h8 l-3 14 13 -20 h-8 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+        </svg></div>
+        <h3>It can stop a fatal shock</h3>
+        <p>A GFCI constantly compares the current flowing out against the current coming back. The moment even a few milliamps start leaking somewhere they shouldn't — through a wet hand, a dropped hairdryer, a frayed cord — it cuts the power in about one-fortieth of a second, before the current can stop your heart.</p>
+        <span class="cost">Electrocution risk</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="4" width="18" height="28" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="14" y="9" width="8" height="4" rx="1.5" fill="#c96f4a"/>
+          <rect x="14" y="15" width="8" height="4" rx="1.5" fill="#5e9a78"/>
+          <rect x="14.5" y="22" width="3" height="6" rx="1" fill="#8a6a4f"/>
+          <rect x="18.5" y="22" width="3" height="6" rx="1" fill="#8a6a4f"/>
+          <path d="M28 8 l5 6 m0 -6 l-5 6" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It fails silently</h3>
+        <p>The electronics inside a GFCI wear out — from heat, surges, age, and corrosion — and when they do, most simply stop protecting while still passing power straight through. Your hairdryer turns on, the lamp lights up, everything looks normal. Nothing tells you the safety net is gone. The only way to know is to test it.</p>
+        <span class="cost">No warning when it dies</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="9" height="9" rx="1.5" fill="#e3efe8" stroke="#3e7c59" stroke-width="1.8"/>
+          <rect x="6" y="20" width="9" height="9" rx="1.5" fill="#faf0da" stroke="#e0a93d" stroke-width="1.8"/>
+          <rect x="21" y="20" width="9" height="9" rx="1.5" fill="#faf0da" stroke="#e0a93d" stroke-width="1.8"/>
+          <path d="M10.5 17 L10.5 24.5 L21 24.5" fill="none" stroke="#5e9a78" stroke-width="1.8"/>
+          <circle cx="10.5" cy="12.5" r="1.6" fill="#3e7c59"/>
+        </svg></div>
+        <h3>It's code-required — and shared</h3>
+        <p>Code calls for GFCI protection in kitchens, bathrooms, garages, basements, laundry rooms, and outdoors — anywhere water and electricity meet. And one GFCI outlet often protects several ordinary outlets wired downstream of it, so a single dead GFCI can quietly strip protection from a whole string of receptacles.</p>
+        <span class="cost">Protects a whole circuit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="16" r="11" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="24" y1="24" x2="31" y2="31" stroke="#3e7c59" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M11 16 l3.5 3.5 l6.5 -7" fill="none" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It catches hidden faults</h3>
+        <p>Testing does more than confirm the GFCI trips. It flags outlets that are already tripped (and you never noticed), miswired ones — the classic "reverse line-load" where the protection silently doesn't reach the receptacle — and plain outlets downstream that have lost their protection. These are problems you'd never spot any other way.</p>
+        <span class="cost">Silent miswiring</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> test them?</h2>
+    <p class="sub">Manufacturers technically recommend testing every GFCI once a month. In practice, most households do fine on a twice-a-year rhythm — but if your outlets live outdoors, your home is older, or you're near the coast, monthly really is the right call. Answer four quick questions and we'll set your interval:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">1. How old is the home — and does it have GFCIs?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older home, few or no GFCIs / two-prong outlets</button>
+          <button class="pill" data-v="mixed">A mix — some GFCIs, some older outlets</button>
+          <button class="pill" data-v="modern">Modern, GFCIs in all the wet areas</button>
+        </div>
+        <div class="q-hint">Older homes often lack GFCI protection in places code now requires it, and any GFCIs that were added are themselves older and closer to wearing out — both reasons to look more closely and more often.</div>
+      </div>
+      <div class="quiz-q" data-q="count">
+        <div class="q-label">2. How many wet or outdoor outlets do you have?</div>
+        <div class="pills">
+          <button class="pill" data-v="many">Lots — bath, kitchen, garage, and outside</button>
+          <button class="pill" data-v="some">A handful in the usual spots</button>
+          <button class="pill" data-v="few">Just one or two</button>
+        </div>
+        <div class="q-hint">Every wet-area and outdoor outlet is a place a GFCI is doing real work. The more of them you rely on, the more it matters that each one is verified — and the more likely at least one has quietly failed.</div>
+      </div>
+      <div class="quiz-q" data-q="env">
+        <div class="q-label">3. What's the environment like?</div>
+        <div class="pills">
+          <button class="pill" data-v="coastal">Humid, coastal, or salt air</button>
+          <button class="pill" data-v="average">Average — some humidity</button>
+          <button class="pill" data-v="dry">Dry, mostly indoor outlets</button>
+        </div>
+        <div class="q-hint">Moisture and salt air corrode the contacts and electronics inside a GFCI, so coastal and humid homes see them degrade and fail noticeably faster than dry, indoor ones.</div>
+      </div>
+      <div class="quiz-q" data-q="history">
+        <div class="q-label">4. Any history of trouble?</div>
+        <div class="pills">
+          <button class="pill" data-v="trouble">Nuisance trips, or unsure which outlets are protected</button>
+          <button class="pill" data-v="minor">An odd trip now and then</button>
+          <button class="pill" data-v="solid">No — everything's been solid</button>
+        </div>
+        <div class="q-hint">Frequent trips can signal a worn GFCI or a real fault, and not knowing which outlets a GFCI protects means you can't be sure your wet areas are covered — both worth testing more often until it's sorted.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Testing is one of the rare maintenance tasks that costs literally nothing — you press two buttons. Even replacing a worn-out GFCI is cheap. Set that against what the device is there to prevent — a fatal shock or an electrical fire — and the math isn't a math problem at all:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to test — press TEST, then RESET, no tools or parts needed at all</div></div>
+        <div class="calc-stat"><div class="v">~$10</div><div class="l">a plug-in receptacle tester, optional, to also catch miswiring on protected outlets</div></div>
+        <div class="calc-stat"><div class="v bad">$15–250</div><div class="l">to replace a worn GFCI — about $15–30 DIY, or $120–250 with a licensed electrician</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🟢 Testing on a schedule</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔌 Plug-in receptacle tester</span><span>~$10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ DIY GFCI replacement</span><span>$15–30</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>👷 Electrician replaces a GFCI</span><span>$120–250</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:42%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚡ A shock or an electrical fire it would have stopped</span><span>A life, or the whole house</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:98%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">There's nothing to weigh here: <strong>thirty seconds and zero dollars twice a year</strong> against the one thing a GFCI exists to prevent. Even a worst-case replacement at a couple hundred dollars is trivial next to a fatal shock in a wet bathroom or a fire from a fault that should have tripped. Test them, and if one fails the test, fix it — that's the entire job.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to test your GFCI outlets</h2>
+    <p class="sub">The test itself is two button-presses, but doing it <em>right</em> means finding every GFCI first (including the ordinary outlets they protect downstream), testing each one, and knowing exactly what to do when one fails. Read the safety box and the techniques first — this is a real electrical-safety task — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ This is a safety task — work carefully</h3>
+      <ul>
+        <li><strong>If TEST does nothing — the outlet stays powered — STOP using it and call a licensed electrician.</strong> A GFCI that won't trip is no longer protecting you. Don't keep plugging things into it; its job is gone and it needs replacing.</li>
+        <li><strong>If RESET won't latch or power won't come back, treat the outlet as out of service.</strong> Either the GFCI is bad, there's a real ground fault on the circuit, or it's miswired. Don't force it — get an electrician to find out why.</li>
+        <li><strong>Keep your hands dry and never test in or near standing water.</strong> Don't test with wet hands or while standing on a wet floor. Dry off first; the whole point of this device is that water and electricity are dangerous together.</li>
+        <li><strong>Never poke metal — a screwdriver, key, or wire — into an outlet to "test" it.</strong> Use the buttons, a plug-in lamp, or a proper plug-in receptacle tester. Nothing metal should ever go into the slots.</li>
+        <li><strong>Unplug sensitive electronics before testing.</strong> The outlet briefly cuts power when it trips, which can disrupt or corrupt computers, routers, and fridges. Unplug or move them to another circuit first.</li>
+        <li><strong>If you smell burning, see scorch marks, or feel a warm or buzzing outlet — stop.</strong> Don't test it. Switch off the breaker for that circuit and call a licensed electrician; that's a fire risk, not a routine test.</li>
+        <li><strong>An older home with no GFCI protection in its wet areas should be upgraded by an electrician.</strong> You can't test protection that was never installed. If your kitchen, bath, or outdoor outlets have no TEST/RESET buttons and aren't protected at the panel, get them brought up to code.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A small lamp or phone charger to plug in</span>
+      <span class="tool-chip">A plug-in receptacle tester (~$10, optional)</span>
+      <span class="tool-chip">A flashlight for dark corners</span>
+      <span class="tool-chip">Dry hands &amp; dry shoes</span>
+      <span class="tool-chip">A notepad or your phone to log results</span>
+      <span class="tool-chip">A label or sticker for each GFCI's coverage</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of locating every GFCI in a home: an outlet with TEST and RESET buttons, with arrows pointing to several plain outlets it protects downstream, plus a breaker panel that may hold GFCI breakers">
+          <!-- the GFCI -->
+          <rect x="24" y="44" width="46" height="78" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="33" y="52" width="28" height="11" rx="3" fill="#fbe9e1" stroke="#c96f4a" stroke-width="1.6"/>
+          <rect x="33" y="66" width="28" height="11" rx="3" fill="#e3efe8" stroke="#3e7c59" stroke-width="1.6"/>
+          <rect x="31" y="82" width="32" height="32" rx="5" fill="#fbf8f2" stroke="#d8cfbe" stroke-width="1.6"/>
+          <text x="47" y="38" font-size="10" fill="#2c5a40" font-weight="700" text-anchor="middle">GFCI</text>
+          <!-- protected plain outlets -->
+          <g>
+            <rect x="120" y="36" width="30" height="22" rx="4" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+            <rect x="120" y="80" width="30" height="22" rx="4" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+            <rect x="120" y="124" width="30" height="22" rx="4" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          </g>
+          <g stroke="#5e9a78" stroke-width="2.2" fill="none" stroke-linecap="round">
+            <path d="M72 70 q24 -22 46 -22 m-6 -3 l8 3 -5 7"/>
+            <path d="M72 86 q24 5 46 5 m-6 -4 l8 4 -7 5"/>
+            <path d="M72 100 q24 28 46 34 m-7 -7 l9 6 -8 6"/>
+          </g>
+          <!-- panel -->
+          <rect x="198" y="44" width="58" height="86" rx="6" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2.5"/>
+          <g fill="#fffdf8"><rect x="206" y="54" width="18" height="8" rx="2"/><rect x="230" y="54" width="18" height="8" rx="2"/><rect x="206" y="68" width="18" height="8" rx="2"/><rect x="230" y="68" width="18" height="8" rx="2"/></g>
+          <rect x="230" y="82" width="18" height="8" rx="2" fill="#e0a93d"/>
+          <text x="227" y="146" font-size="9" fill="#6b7376" text-anchor="middle">panel: GFCI/AFCI breakers</text>
+        </svg>
+        <h4>Find every GFCI first</h4>
+        <p>Walk the house for outlets with TEST and RESET buttons — kitchen, baths, garage, basement, laundry, outdoors. Remember one GFCI often protects several plain outlets downstream, and some protection lives on GFCI breakers in the panel instead.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the GFCI test itself: plug a lamp in, press TEST so the power cuts and the lamp goes off and the button pops out, then press RESET so power returns and the lamp lights again">
+          <!-- outlet -->
+          <rect x="30" y="40" width="58" height="100" rx="9" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="41" y="50" width="36" height="13" rx="3" fill="#fbe9e1" stroke="#c96f4a" stroke-width="1.8"/>
+          <text x="59" y="60" font-size="8" fill="#c96f4a" font-weight="800" text-anchor="middle">RESET</text>
+          <rect x="41" y="68" width="36" height="13" rx="3" fill="#e3efe8" stroke="#3e7c59" stroke-width="1.8"/>
+          <text x="59" y="78" font-size="8" fill="#2c5a40" font-weight="800" text-anchor="middle">TEST</text>
+          <rect x="44" y="90" width="30" height="40" rx="5" fill="#fbf8f2" stroke="#d8cfbe" stroke-width="1.8"/>
+          <!-- lamp -->
+          <rect x="168" y="118" width="40" height="10" rx="3" fill="#8a6a4f"/>
+          <rect x="183" y="78" width="10" height="42" fill="#b9b1a3"/>
+          <path d="M168 78 h40 l-10 -26 h-20 z" fill="#e0a93d"/>
+          <!-- light off then on -->
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <line x1="188" y1="34" x2="188" y2="44"/>
+            <line x1="172" y1="40" x2="178" y2="46"/>
+            <line x1="204" y1="40" x2="198" y2="46"/>
+          </g>
+          <!-- press + cycle arrows -->
+          <path d="M96 74 h60 m-8 -5 l8 5 -8 5" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="118" y="64" font-size="9" fill="#d9663f" font-weight="700">TEST → off</text>
+          <path d="M156 96 h-60 m8 -5 l-8 5 8 5" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="124" y="112" font-size="9" fill="#3e7c59" font-weight="700">RESET → on</text>
+        </svg>
+        <h4>Press TEST, then RESET</h4>
+        <p>Plug a lamp into the GFCI. Press TEST: the power should cut, the lamp should go dark, and the RESET button should pop out with a click. Press RESET back in: power returns and the lamp lights. If either step fails, the outlet needs attention.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of using a plug-in receptacle tester in a protected outlet to read its indicator lights and confirm correct wiring, then pressing the tester's GFCI test button">
+          <!-- outlet -->
+          <rect x="40" y="44" width="48" height="92" rx="8" fill="#dce8ee" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="50" y="58" width="28" height="30" rx="5" fill="#fbf8f2" stroke="#d8cfbe" stroke-width="1.6"/>
+          <rect x="50" y="96" width="28" height="30" rx="5" fill="#fbf8f2" stroke="#d8cfbe" stroke-width="1.6"/>
+          <!-- plug-in tester -->
+          <rect x="120" y="52" width="78" height="76" rx="10" fill="#e0a93d" stroke="#d98e3b" stroke-width="3"/>
+          <!-- prongs into outlet -->
+          <line x1="112" y1="74" x2="120" y2="74" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <line x1="112" y1="92" x2="120" y2="92" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <!-- indicator lights -->
+          <circle cx="142" cy="84" r="8" fill="#5e9a78"/>
+          <circle cx="166" cy="84" r="8" fill="#5e9a78"/>
+          <circle cx="190" cy="84" r="8" fill="#fbe9e1" stroke="#c96f4a" stroke-width="1.6"/>
+          <!-- test button on tester -->
+          <rect x="148" y="104" width="44" height="14" rx="4" fill="#fffdf8" stroke="#3e7c59" stroke-width="1.8"/>
+          <text x="170" y="114" font-size="8.5" fill="#2c5a40" font-weight="800" text-anchor="middle">TEST</text>
+          <text x="160" y="44" font-size="9.5" fill="#6b7376" text-anchor="middle">reads the wiring</text>
+        </svg>
+        <h4>Use a plug-in tester too</h4>
+        <p>A $10 receptacle tester reads an outlet's wiring from its indicator lights — catching reversed or open wiring on the ordinary outlets a GFCI protects. Many have their own button that trips the GFCI, letting you confirm protection right at a downstream receptacle.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of testing a GFCI or AFCI breaker at the electrical panel by pressing its built-in TEST button, then switching the breaker fully off and back on to reset it">
+          <!-- panel -->
+          <rect x="84" y="20" width="112" height="146" rx="8" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+          <rect x="94" y="30" width="92" height="126" rx="4" fill="#efe7d8"/>
+          <!-- breaker rows -->
+          <g>
+            <rect x="100" y="40" width="36" height="14" rx="3" fill="#fffdf8" stroke="#d8cfbe" stroke-width="1.4"/>
+            <rect x="144" y="40" width="36" height="14" rx="3" fill="#fffdf8" stroke="#d8cfbe" stroke-width="1.4"/>
+            <rect x="100" y="60" width="36" height="14" rx="3" fill="#fffdf8" stroke="#d8cfbe" stroke-width="1.4"/>
+          </g>
+          <!-- the GFCI breaker, highlighted, with its little TEST button -->
+          <rect x="144" y="60" width="36" height="26" rx="3" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <rect x="148" y="64" width="14" height="8" rx="2" fill="#fffdf8" stroke="#d9663f" stroke-width="1.4"/>
+          <circle cx="172" cy="73" r="4.5" fill="#e0a93d"/>
+          <text x="162" y="100" font-size="8.5" fill="#2c5a40" font-weight="700" text-anchor="middle">GFCI/AFCI breaker</text>
+          <!-- press arrow -->
+          <path d="M214 73 h-26 m8 -5 l-8 5 8 5" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="228" y="76" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">TEST</text>
+          <!-- off then on cycle -->
+          <path d="M120 122 q14 12 28 0" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <text x="134" y="148" font-size="9" fill="#3e7c59" font-weight="700" text-anchor="middle">off → on to reset</text>
+        </svg>
+        <h4>Test GFCI/AFCI breakers too</h4>
+        <p>Some protection lives in the panel, not the wall. A GFCI or AFCI breaker has its own TEST button — press it and the breaker should trip to the middle position. To reset, flip it fully OFF and then back ON; just nudging it on won't re-arm it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="A simple decision tree for a failed GFCI test: if pressing TEST does not trip the outlet or RESET will not hold, replace the GFCI or call a licensed electrician">
+          <!-- start node -->
+          <rect x="92" y="14" width="96" height="26" rx="13" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="140" y="31" font-size="10" fill="#2c5a40" font-weight="700" text-anchor="middle">Press TEST</text>
+          <!-- branch down -->
+          <line x1="140" y1="40" x2="140" y2="58" stroke="#b9b1a3" stroke-width="2"/>
+          <!-- did it trip? -->
+          <path d="M140 58 l40 22 l-40 22 l-40 -22 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="140" y="84" font-size="9.5" fill="#8a6a4f" font-weight="700" text-anchor="middle">Tripped?</text>
+          <!-- yes path -->
+          <line x1="100" y1="80" x2="56" y2="80" stroke="#5e9a78" stroke-width="2"/>
+          <text x="86" y="74" font-size="8.5" fill="#3e7c59" font-weight="700">YES</text>
+          <rect x="14" y="68" width="44" height="24" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="1.8"/>
+          <text x="36" y="84" font-size="8.5" fill="#2c5a40" font-weight="700" text-anchor="middle">RESET it</text>
+          <!-- no path -->
+          <line x1="180" y1="80" x2="222" y2="80" stroke="#c96f4a" stroke-width="2"/>
+          <text x="190" y="74" font-size="8.5" fill="#d9663f" font-weight="700">NO</text>
+          <rect x="222" y="62" width="52" height="36" rx="6" fill="#fbe9e1" stroke="#c96f4a" stroke-width="1.8"/>
+          <text x="248" y="78" font-size="8" fill="#c96f4a" font-weight="800" text-anchor="middle">Replace</text>
+          <text x="248" y="89" font-size="8" fill="#c96f4a" font-weight="800" text-anchor="middle">/ pro</text>
+          <!-- reset won't hold -->
+          <line x1="36" y1="92" x2="36" y2="120" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="6" y="120" width="118" height="40" rx="8" fill="#fbe9e1" stroke="#c96f4a" stroke-width="1.8"/>
+          <text x="65" y="136" font-size="9" fill="#c96f4a" font-weight="700" text-anchor="middle">Won't stay reset?</text>
+          <text x="65" y="150" font-size="9" fill="#c96f4a" font-weight="700" text-anchor="middle">Call an electrician</text>
+        </svg>
+        <h4>Know what a failure means</h4>
+        <p>If TEST won't trip the outlet, or RESET won't hold and restore power, the protection is gone. That GFCI needs replacing — a confident DIYer with the power off can swap it, but if you're unsure, or it keeps failing, call a licensed electrician.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>GFCI-testing progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Every GFCI found, tested, and confirmed — protection verified across all your wet and outdoor outlets, and the date logged. The safety net is real again. Same quick round in about six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs something's wrong — and when to call a pro</h2>
+    <p class="sub">A healthy GFCI is silent and forgettable: it trips on TEST, resets cleanly, and holds power. These are the signals that something is wrong — and the cases that aren't a DIY job at all and belong to a licensed electrician:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>An outlet that won't reset, or trips constantly.</strong> If RESET won't hold or the GFCI trips again as soon as you plug something in, there's either a real ground fault on the circuit or a failing device — not something to keep fighting. Get it diagnosed.</li>
+        <li><strong>TEST does nothing.</strong> If pressing TEST leaves the power on, the protection is gone even though the outlet still works. Replace the GFCI; if you're not comfortable doing it safely with the power off, that's an electrician's job.</li>
+        <li><strong>No GFCI protection at all in your wet areas.</strong> Kitchen, bath, garage, basement, laundry, and outdoor outlets with no TEST/RESET buttons and no protection at the panel need to be brought up to code by an electrician — you can't test what was never installed.</li>
+        <li><strong>Scorch marks, a warm or buzzing outlet, or a burning smell.</strong> Stop using it, switch off the breaker for that circuit, and call an electrician right away. That's a fire risk, not a maintenance item — never a "test it and see."</li>
+        <li><strong>Aluminum wiring or an old panel.</strong> Homes with aluminum branch wiring or an outdated or recalled panel have failure modes a simple outlet swap won't fix. Have an electrician evaluate the whole system before relying on any single outlet.</li>
+        <li><strong>You're not sure which outlets a GFCI protects.</strong> If you can't trace what's downstream of a GFCI, you can't be sure your wet areas are covered. A plug-in tester helps, but an electrician can map and label the circuit properly.</li>
+        <li><strong>Pro tip:</strong> when an electrician replaces or maps a GFCI, ask them to label each one with the outlets it protects. A two-minute label turns every future test from a scavenger hunt into a thirty-second check.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I really test — monthly or every six months?</summary>
+      <p>Manufacturers and many safety bodies technically recommend testing every GFCI once a month, and there's nothing wrong with that — it takes seconds. In practice, most households keep up better with a twice-a-year rhythm (a great pairing with your spring and fall smoke- and CO-detector tests), and that's a sensible default for a modern home with reliable outlets in average conditions. Tighten toward monthly if any of three things is true: the outlets are outdoors or in damp spots, your home is older with aging GFCIs, or you live somewhere humid or coastal where salt air corrodes the contacts faster. The honest answer is that any regular schedule you'll actually follow beats a strict one you abandon — so pick the interval the quiz above gives you and put it on a calendar.</p>
+    </details>
+    <details>
+      <summary>What if pressing TEST does nothing?</summary>
+      <p>If you press TEST and the power stays on — the lamp keeps glowing, RESET doesn't pop out — the GFCI has failed and is no longer protecting you, even though the outlet still works. This is exactly the silent failure that makes testing worth doing. Stop using that outlet for anything in a wet area and replace the GFCI. A confident DIYer can swap a GFCI receptacle for about $15–30, but only with the circuit's breaker switched fully off and verified dead first, and with the wires landed on the correct LINE and LOAD terminals — getting that backward defeats the protection. If you're not completely sure of any of that, or it's a breaker rather than a receptacle, call a licensed electrician. A failed GFCI is cheap to fix and dangerous to ignore.</p>
+    </details>
+    <details>
+      <summary>What if RESET won't stay in, or power won't come back?</summary>
+      <p>First, make sure you're pressing RESET firmly until it clicks and stays in — a light tap often won't latch. If it still won't hold, or power doesn't return, don't force it: the GFCI is doing its job by refusing to restore power to a circuit it thinks is faulted. The cause could be a genuine ground fault somewhere downstream (a damaged cord, a wet appliance, moisture in an outdoor box), a worn-out GFCI, or a wiring problem. Unplug everything on the circuit and try resetting once with nothing connected; if it holds, plug things back in one at a time to find the culprit. If it won't reset even with nothing plugged in, or it keeps tripping, that's electrician territory — there may be a real fault you don't want to override.</p>
+    </details>
+    <details>
+      <summary>GFCI vs. AFCI — what's the difference?</summary>
+      <p>They protect against two different dangers. A GFCI (ground-fault circuit interrupter) watches for current leaking to ground — the situation that electrocutes a person, like a hairdryer hitting bathwater — and cuts power in a fraction of a second. An AFCI (arc-fault circuit interrupter) watches for the dangerous electrical arcing that starts fires — a frayed wire in a wall, a loose connection sparking behind an outlet — and shuts off before it can ignite. GFCIs are required in wet areas; AFCIs are required in living spaces like bedrooms and living rooms. Many modern outlets and breakers are now dual-function (DF), doing both jobs at once. Both types usually have a TEST button and should be tested on the same schedule — and the same rule applies: if it won't trip on TEST, it's not protecting you.</p>
+    </details>
+    <details>
+      <summary>My outlet works fine — do I still need to test it?</summary>
+      <p>Yes — and this is the single most important thing to understand about a GFCI. "Works fine" only tells you it's delivering power; it tells you nothing about whether it's still protecting you. The protective electronics can fail completely while the outlet keeps passing current straight through, so a dead GFCI looks and behaves exactly like a healthy one until the instant you need it to save your life. There is no warning light, no buzz, no symptom. Pressing TEST is the only way to confirm the safety function is intact. An outlet that powers your devices but won't trip on TEST is the most dangerous kind, because it lulls you into trusting protection that isn't there.</p>
+    </details>
+    <details>
+      <summary>An outlet suddenly has no power — what do I check first?</summary>
+      <p>Before you assume the outlet is broken or call anyone, check for a tripped GFCI. Because one GFCI commonly protects several ordinary outlets downstream, a GFCI that tripped somewhere else — often in a bathroom, garage, or outside — can kill power to a plain outlet in another room entirely, and people chase the wrong outlet for ages. Look around the house (and outdoors) for any GFCI whose RESET button has popped out, and press it back in. That frequently restores the dead outlet instantly. If you can't find a tripped GFCI, check your breaker panel for a tripped breaker and reset it fully off-then-on. If both look fine and the outlet's still dead — or a GFCI trips again the moment you reset it — there's a fault worth an electrician's look.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A thirty-second test that's invisible — until the day it saves a life.</h2>
+        <p>A GFCI does its most important work in a fraction of a second you'll hopefully never experience — and it fails silently, so nothing reminds you to check it. Upkeep Ledger logs this test and resurfaces it on schedule, right alongside your <a href="test-smoke-detectors.html">smoke-detector</a> and <a href="test-co-detectors.html">CO-detector</a> tests, so the whole home-safety round lands on one calendar and nothing quietly goes dead.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-gfci-outlets&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-gfci-outlets&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task. Bundle this into one home-safety afternoon with the siblings: <a href="test-smoke-detectors.html">test smoke detectors</a>, <a href="test-co-detectors.html">test CO detectors</a>, <a href="replace-smoke-detector-batteries.html">replace smoke-detector batteries</a>, and <a href="update-emergency-kit.html">update the emergency kit</a>.</p>
+    <p>This guide is general information, not electrical advice; testing is safe, but any miswiring, replacement, or fault is work for a licensed electrician — when in doubt, stop and call one.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { age: null, count: null, env: null, history: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Age — home age / GFCI presence */
+    if (s.age === "old") {
+      months = 1;
+      tighten = true;
+      reasons.push("In an older home, any GFCIs that exist are themselves aging and closer to wearing out — and there may be wet areas with no protection at all — so test what you have monthly and get the gaps brought up to code.");
+    } else if (s.age === "mixed") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("A mix of newer GFCIs and older outlets means some of your protection is aging while some wet areas may not be covered — worth checking more often than a fully modern home.");
+    } else {
+      reasons.push("A modern home with GFCIs in all the wet areas is exactly the case the twice-a-year default is written for.");
+    }
+
+    /* Count — number of wet/outdoor outlets */
+    if (s.count === "many") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("With lots of wet and outdoor outlets, you're relying on many GFCIs at once — the more there are, the higher the odds at least one has quietly failed, so check them more frequently.");
+    } else if (s.count === "few") {
+      reasons.push("With only one or two GFCIs, there's less to fail and the round is quick either way — no reason to push the interval shorter on count alone.");
+    } else {
+      reasons.push("A handful of GFCIs in the usual spots is an ordinary load that the standard schedule covers comfortably.");
+    }
+
+    /* Env — humidity / coastal */
+    if (s.env === "coastal") {
+      months = 1;
+      tighten = true;
+      reasons.push("Humid, coastal, and salt-air conditions corrode the contacts and electronics inside a GFCI, making them degrade and fail noticeably faster — monthly testing is genuinely warranted here.");
+    } else if (s.env === "dry") {
+      reasons.push("Dry, mostly-indoor conditions are easy on GFCIs, so corrosion isn't accelerating their wear — one less reason to test more often.");
+    } else {
+      reasons.push("Average humidity is the ordinary middle case and doesn't push the schedule on its own.");
+    }
+
+    /* History — trouble / unknowns */
+    if (s.history === "trouble") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Nuisance trips can mean a worn GFCI or a real fault, and not knowing which outlets are protected means you can't be sure your wet areas are covered — test more often until an electrician sorts it.");
+    } else if (s.history === "minor") {
+      reasons.push("An occasional odd trip is worth keeping an eye on but won't drive the schedule by itself.");
+    } else {
+      reasons.push("A clean history with everything solid means nothing in your past is pushing the interval shorter.");
+    }
+
+    /* Best-case stays at the relaxed default */
+    if (!tighten && s.age === "modern" && s.count === "few" && s.env === "dry" && s.history === "solid") {
+      reasons.push("A modern, dry home with just a couple of solid GFCIs is the easy case — every six months alongside your smoke and CO tests is genuinely plenty.");
+    }
+
+    /* Closing note */
+    var note;
+    if (months === 1) {
+      note = "<strong>Monthly is the manufacturer's actual recommendation</strong> — and for outdoor, older, or coastal outlets it's the right call. Stack it onto something you already do monthly so it never gets skipped; the test itself takes seconds.";
+    } else if (s.history === "trouble") {
+      note = "<strong>Map your GFCIs first:</strong> trip each one and walk the house to see which outlets lose power, then label each GFCI with what it protects. Once you know the coverage, every future test is a thirty-second check.";
+    } else {
+      note = "<strong>Pin it to your safety round:</strong> test GFCIs the same day you test smoke and CO detectors. One twice-a-year home-safety afternoon covers the three quiet systems most likely to fail silently.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.age || !quizState.count || !quizState.env || !quizState.history) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: test the GFCI outlets " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Find every GFCI, then <strong>press TEST (power cuts), press RESET (power returns), confirm each one, and fix any that fail</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Find them", text: "Walk the house for outlets with TEST/RESET buttons", note: "Check kitchen, bathrooms, garage, basement, laundry, and every outdoor outlet. Bring a flashlight for dark corners and behind furniture — GFCIs hide in odd spots." },
+    { phase: "Find them", text: "Remember one GFCI can protect plain outlets downstream", note: "An ordinary outlet near a wet area may be protected by a GFCI elsewhere. Tripping a GFCI and seeing which outlets go dead tells you what it actually covers." },
+    { phase: "Find them", text: "Check the panel for GFCI/AFCI breakers", note: "Some protection lives at the breaker, not the wall — look for breakers with their own little TEST button. These get tested too." },
+    { phase: "Test each one", text: "Unplug sensitive electronics on the circuit first", note: "Computers, routers, and fridges don't like a sudden power cut. Unplug or move them before you trip anything, and make sure your hands and the floor are dry." },
+    { phase: "Test each one", text: "Plug in a lamp and press TEST", note: "The power should cut, the lamp should go dark, and the RESET button should pop out with a click. If nothing happens, that GFCI has failed — note it for the fix list." },
+    { phase: "Test each one", text: "Press RESET and confirm power returns", note: "Push RESET firmly until it clicks and stays in; the lamp should light again. If it won't latch or power won't come back, treat the outlet as out of service." },
+    { phase: "Test each one", text: "Test GFCI/AFCI breakers at the panel", note: "Press the breaker's TEST button — it should trip to the middle. Reset it by flipping fully OFF then back ON; just nudging it on won't re-arm it." },
+    { phase: "Verify & fix", text: "Optional: check protected outlets with a plug-in tester", note: "A $10 receptacle tester reads the wiring on the ordinary outlets a GFCI protects, catching reversed or open wiring and confirming protection reaches downstream." },
+    { phase: "Verify & fix", text: "Flag any that won't trip or won't reset", note: "A GFCI that won't trip on TEST, or won't hold RESET, is not protecting you. Stop using it for wet areas — it needs replacing or an electrician's look." },
+    { phase: "Verify & fix", text: "Replace or call a pro for any failures", note: "A confident DIYer can swap a GFCI for $15–30 with the breaker fully off and verified dead, wiring LINE and LOAD correctly. Unsure? That's electrician territory ($120–250)." },
+    { phase: "Log the date", text: "Log the date and label each GFCI's coverage", note: "Nothing reminds you a GFCI has gone dead. Note the date so the next test lands on schedule (your quiz interval), and label each GFCI with the outlets it protects to make next time a thirty-second check." }
+  ];
+
+  var LS_KEY = "upkeepguides:test-gfci-outlets:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
