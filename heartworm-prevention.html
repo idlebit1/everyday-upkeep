@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet heartworm prevention — UpkeepGuides.com</title>
+<meta name="description" content="A plain-language guide to monthly, year-round heartworm prevention for dogs and cats: why one mosquito bite is the whole risk, why an annual test is required, costs, and what to do if you miss a dose — defer to your vet.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Pet heartworm prevention — UpkeepGuides.com">
+<meta property="og:description" content="A plain-language guide to monthly, year-round heartworm prevention for dogs and cats: why one mosquito bite is the whole risk, why an annual test is required, costs, and what to do if you miss a dose — defer to your vet.">
+<meta property="og:url" content="https://upkeepguides.com/heartworm-prevention.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pet heartworm prevention — UpkeepGuides.com">
+<meta name="twitter:description" content="A plain-language guide to monthly, year-round heartworm prevention for dogs and cats: why one mosquito bite is the whole risk, why an annual test is required, costs, and what to do if you miss a dose — defer to your vet.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Every month</span>
+      <h1>Keep Your Pet on Heartworm Prevention</h1>
+      <p class="lede">Heartworm is the rare pet disease where the prevention is almost trivial and the disease is a nightmare: a single mosquito bite can plant a parasite that grows into foot-long worms living in your dog's heart and lungs, and treating it is grueling, costly, and dangerous — while for cats there's no approved treatment at all. The good news is that a tiny monthly dose, given year-round, stops it cold. The whole game is consistency: the same day, every month, without a gap. This guide explains how that works and why an annual test goes with it — the product and the schedule, though, are your veterinarian's call, since these are prescription medications.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Dose <em>every month, year-round</em></span>
+        <span class="chip">🩺 Plus an <em>annual heartworm test</em></span>
+        <span class="chip">💊 Prescription — <em>your vet chooses</em></span>
+        <span class="chip">💸 ~$5–20/mo beats <em>$1,000–4,000 treatment</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Reassuring illustration of a happy dog gently taking a heart-shaped chewable tablet from its owner's hand, a wall calendar behind them with one day each month circled for the monthly dose, a framed vet record with a green check on the wall, and a small mosquito drawn faintly in the corner">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall calendar behind, monthly dose marked -->
+      <rect x="36" y="38" width="104" height="96" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="36" y="38" width="104" height="22" rx="8" fill="#3e7c59"/>
+      <rect x="36" y="54" width="104" height="6" fill="#2c5a40"/>
+      <rect x="56" y="30" width="6" height="16" rx="3" fill="#8a6a4f"/>
+      <rect x="114" y="30" width="6" height="16" rx="3" fill="#8a6a4f"/>
+      <g fill="#dce8ee">
+        <rect x="46" y="70" width="14" height="11" rx="2"/>
+        <rect x="64" y="70" width="14" height="11" rx="2"/>
+        <rect x="82" y="70" width="14" height="11" rx="2"/>
+        <rect x="100" y="70" width="14" height="11" rx="2"/>
+        <rect x="118" y="70" width="14" height="11" rx="2"/>
+        <rect x="46" y="86" width="14" height="11" rx="2"/>
+        <rect x="64" y="86" width="14" height="11" rx="2"/>
+        <rect x="82" y="86" width="14" height="11" rx="2"/>
+        <rect x="100" y="86" width="14" height="11" rx="2"/>
+        <rect x="118" y="86" width="14" height="11" rx="2"/>
+        <rect x="46" y="102" width="14" height="11" rx="2"/>
+        <rect x="64" y="102" width="14" height="11" rx="2"/>
+      </g>
+      <!-- the circled monthly dose day, with a tiny heart inside -->
+      <circle cx="71" cy="91.5" r="9" fill="none" stroke="#d9663f" stroke-width="3"/>
+      <path d="M71 88 c1.5 -2.6 5 -1.8 5 0.8 c0 2.4 -3 4.2 -5 5.7 c-2 -1.5 -5 -3.3 -5 -5.7 c0 -2.6 3.5 -3.4 5 -0.8 z" fill="#c96f4a"/>
+      <text x="40" y="128" font-size="10.5" fill="#6b7376">monthly</text>
+
+      <!-- faint mosquito motif, top right corner -->
+      <g opacity="0.5" stroke="#8a6a4f" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <ellipse cx="500" cy="64" rx="9" ry="3.5" fill="#b9b1a3" stroke="none"/>
+        <circle cx="490" cy="62" r="3" fill="#b9b1a3" stroke="none"/>
+        <path d="M509 64 l10 4"/>
+        <path d="M506 60 q12 -10 22 -4"/>
+        <path d="M506 68 q12 10 22 4"/>
+        <path d="M494 66 l-4 8 M498 66 l-2 9 M502 66 l0 9"/>
+      </g>
+
+      <!-- framed vet record on the wall, with green check = up to date -->
+      <g transform="rotate(4 470 150)">
+        <rect x="436" y="110" width="74" height="86" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+        <rect x="458" y="104" width="30" height="10" rx="3" fill="#c96f4a"/>
+        <rect x="448" y="128" width="50" height="6" rx="3" fill="#dce8ee"/>
+        <rect x="448" y="142" width="50" height="6" rx="3" fill="#dce8ee"/>
+        <rect x="448" y="156" width="36" height="6" rx="3" fill="#e9e2d8"/>
+        <circle cx="473" cy="178" r="11" fill="#e3efe8"/>
+        <path d="M468 178 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text x="442" y="210" font-size="10" fill="#6b7376">tested · negative</text>
+
+      <!-- the owner, kneeling, offering the chewable -->
+      <circle cx="392" cy="150" r="28" fill="#f3ddc0"/>
+      <path d="M364 144 a28 28 0 0 1 56 0 l-7 0 q-9 -15 -21 -15 q-12 0 -21 15 z" fill="#c96f4a"/>
+      <circle cx="384" cy="150" r="3.4" fill="#33393b"/>
+      <circle cx="400" cy="150" r="3.4" fill="#33393b"/>
+      <path d="M385 162 q7 5 14 0" stroke="#33393b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <rect x="356" y="180" width="72" height="118" rx="20" fill="#5e9a78"/>
+      <rect x="378" y="180" width="28" height="14" rx="6" fill="#3e7c59"/>
+      <!-- owner's legs kneeling -->
+      <rect x="368" y="296" width="22" height="74" rx="10" fill="#2c5a40"/>
+      <path d="M392 300 q34 6 64 2" stroke="#2c5a40" stroke-width="22" fill="none" stroke-linecap="round"/>
+      <ellipse cx="372" cy="374" rx="17" ry="8" fill="#8a6a4f"/>
+      <ellipse cx="452" cy="312" rx="16" ry="8" fill="#8a6a4f"/>
+      <!-- owner's arm extending the treat down to the dog -->
+      <path d="M360 216 q-30 28 -50 50" stroke="#5e9a78" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <circle cx="308" cy="270" r="11" fill="#f3ddc0"/>
+      <!-- heart-shaped chewable in the owner's fingertips -->
+      <path d="M300 268 c2 -4 7.5 -2.8 7.5 1.2 c0 3.6 -4.5 6.4 -7.5 8.6 c-3 -2.2 -7.5 -5 -7.5 -8.6 c0 -4 5.5 -5.2 7.5 -1.2 z" fill="#d98e3b"/>
+
+      <!-- the happy dog, reaching up for the chewable -->
+      <ellipse cx="190" cy="320" rx="64" ry="46" fill="#c9a06b"/>
+      <ellipse cx="148" cy="332" rx="26" ry="34" fill="#b98c54"/>
+      <!-- front legs -->
+      <rect x="170" y="320" width="18" height="62" rx="9" fill="#c9a06b"/>
+      <rect x="200" y="320" width="18" height="62" rx="9" fill="#c9a06b"/>
+      <ellipse cx="179" cy="382" rx="12" ry="7" fill="#b98c54"/>
+      <ellipse cx="209" cy="382" rx="12" ry="7" fill="#b98c54"/>
+      <!-- happy wagging tail -->
+      <path d="M250 300 q34 -8 40 -34" stroke="#c9a06b" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- head, tilted up eagerly toward the treat -->
+      <circle cx="222" cy="248" r="42" fill="#c9a06b"/>
+      <ellipse cx="188" cy="234" rx="14" ry="26" fill="#8a6a4f" transform="rotate(24 188 234)"/>
+      <ellipse cx="256" cy="234" rx="14" ry="26" fill="#8a6a4f" transform="rotate(-24 256 234)"/>
+      <!-- muzzle pointed up -->
+      <ellipse cx="232" cy="268" rx="18" ry="13" fill="#fffdf8"/>
+      <circle cx="240" cy="262" r="6" fill="#33393b"/>
+      <path d="M226 246 q4 -3 9 0" stroke="#33393b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M250 246 q4 -3 9 0" stroke="#33393b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="232" cy="248" r="4" fill="#33393b"/>
+      <circle cx="256" cy="248" r="4" fill="#33393b"/>
+      <!-- happy open-mouth smile -->
+      <path d="M226 272 q10 9 22 2" stroke="#33393b" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M232 276 q6 5 12 1" fill="#c96f4a"/>
+      <!-- collar with a heart tag -->
+      <path d="M194 282 q28 14 56 0" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M222 290 c1.6 -2.8 5.5 -2 5.5 0.9 c0 2.6 -3.3 4.6 -5.5 6.2 c-2.2 -1.6 -5.5 -3.6 -5.5 -6.2 c0 -2.9 3.9 -3.7 5.5 -0.9 z" fill="#e0a93d"/>
+
+      <!-- small reassuring greenery in the foreground -->
+      <circle cx="510" cy="392" r="14" fill="#5e9a78"/>
+      <circle cx="530" cy="396" r="10" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Heartworm is one of those risks that feels abstract until it isn't — a quiet mosquito-borne parasite that gives no warning until the worms are already established in the heart and lungs. The reason vets are so insistent about prevention is that, on this one disease, the gap between "easy to prevent" and "agonizing to treat" is enormous. Here's what keeping your pet on prevention actually buys you (and your vet sets the exact product and schedule):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- mosquito over a heart -->
+          <path d="M18 30 c-7 -5 -13 -10 -13 -17 c0 -4.5 3.5 -7 6.5 -7 c2.6 0 4.6 1.6 6.5 4 c1.9 -2.4 3.9 -4 6.5 -4 c3 0 6.5 2.5 6.5 7 c0 7 -6 12 -13 17 z" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <ellipse cx="18" cy="16" rx="4" ry="1.8" fill="#8a6a4f"/>
+          <circle cx="14" cy="15" r="1.6" fill="#8a6a4f"/>
+          <path d="M22 16 l5 2 M21 13 q5 -4 9 -1 M21 19 q5 4 9 1" stroke="#8a6a4f" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>One mosquito bite is all it takes</h3>
+        <p>Heartworm spreads when a single infected mosquito bites your pet, depositing larvae that migrate to the heart and lungs and grow into worms up to a foot long. It's deadly, brutal to treat, and gives no early warning — which is why prevention isn't an add-on. With heartworm, prevention is the whole game.</p>
+        <span class="cost">A deadly, mosquito-borne parasite</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <path d="M18 18 l0 -8" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <!-- backward arrow to suggest "looking back" -->
+          <path d="M18 18 l-6 4" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M6 21 l1 -5 l5 1" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It works monthly — and backward</h3>
+        <p>A preventive isn't a forcefield; it works by clearing out the larvae your pet picked up over the previous month. That "looking backward" design is why the calendar matters so much: each dose only covers the weeks behind it, so the same day every month — with no skipped or late doses — is exactly what keeps the chain unbroken.</p>
+        <span class="cost">A gap leaves larvae to mature</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="9" fill="none" stroke="#7fb3c8" stroke-width="2.2"/>
+          <circle cx="18" cy="18" r="3" fill="#7fb3c8"/>
+          <path d="M24.5 24.5 l6 6" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M14 18 l3 3 l5 -6" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>An annual test is required</h3>
+        <p>Vets won't refill prevention without a yearly heartworm test, and it's not bureaucracy. The test confirms your pet is negative before dosing — because giving preventives to an already-infected dog can be dangerous — and it catches any silent infection from a missed or late dose early, while it's still far easier to treat.</p>
+        <span class="cost">Confirms negative · catches gaps</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 22 q3 -10 12 -10 q9 0 12 10" fill="none" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <rect x="7" y="22" width="22" height="8" rx="2" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <line x1="18" y1="9" x2="18" y2="12" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 26 l8 0 M18 24.5 l0 3" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Treatment is grueling and costly</h3>
+        <p>If prevention lapses and a dog tests positive, treatment often runs $1,000–$4,000 and means months of painful injections and strict crate rest, with real risk to the animal. For cats it's worse: there is no approved heartworm treatment at all — only prevention. The cheap monthly dose is the only sure way out.</p>
+        <span class="cost">$1,000–$4,000 · no cat cure</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often does <em>your</em> pet need it?</h2>
+    <p class="sub">The honest answer is the same for nearly everyone: monthly, and — under modern guidance — year-round, even where winters are cold. Heartworm preventives are prescription, so your vet picks the product and confirms the testing; this quiz just builds the case for the cadence to bring to that conversation. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="species">
+        <div class="q-label">1. Dog or cat?</div>
+        <div class="pills">
+          <button class="pill" data-v="dog">Dog</button>
+          <button class="pill" data-v="cat">Cat</button>
+        </div>
+        <div class="q-hint">Both dogs and cats need prevention, but the products differ and a dog's product can be dangerous for a cat — and remember there's no treatment for cats, so for them prevention is the only protection there is.</div>
+      </div>
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">2. What are your winters like?</div>
+        <div class="pills">
+          <button class="pill" data-v="warm">Warm year-round, lots of mosquitoes</button>
+          <button class="pill" data-v="seasonal">Hot summers, mild winters</button>
+          <button class="pill" data-v="cold">Real cold-winter freeze</button>
+        </div>
+        <div class="q-hint">It's tempting to stop dosing once it frosts, but mosquitoes survive indoors and in warm spells, winters are unpredictable, and a year-round habit is far easier to keep than a seasonal one — which is why vets now recommend it everywhere.</div>
+      </div>
+      <div class="quiz-q" data-q="status">
+        <div class="q-label">3. Where do they stand right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="current">On prevention, tested recently</button>
+          <button class="pill" data-v="lapsed">Lapsed, new, or unknown history</button>
+        </div>
+        <div class="q-hint">A pet that's been steadily dosed and recently tested can simply continue, but a lapsed, newly adopted, or unknown-history pet needs a vet heartworm test before (re)starting — restarting blind can be unsafe.</div>
+      </div>
+      <div class="quiz-q" data-q="lifestyle">
+        <div class="q-label">4. What's their exposure like?</div>
+        <div class="pills">
+          <button class="pill" data-v="high">Outdoors a lot, travels, mosquito-heavy area</button>
+          <button class="pill" data-v="low">Mostly indoors, low-mosquito area</button>
+        </div>
+        <div class="q-hint">More time outside, travel to warmer regions, and a mosquito-heavy neighborhood all raise the odds of a bite — but even mostly-indoor pets get bitten, so the recommendation doesn't actually change: still monthly, still year-round.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — and what skipping it risks</h2>
+    <p class="sub">Heartworm prevention is one of the highest-leverage few dollars you'll spend on a pet. The monthly dose and the annual test together cost a fraction of what treatment runs — and for cats, no amount of money buys a cure once they're infected. All figures are typical U.S. estimates; your clinic's price sheet and your vet's recommendation are the real numbers:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$5 – $20</div><div class="l">per month for the preventive, depending on your pet's weight and the product — cheaper bought as a 6- or 12-month pack</div></div>
+        <div class="calc-stat"><div class="v">$35 – $60</div><div class="l">the annual heartworm test — a quick in-clinic blood test, usually folded into the wellness visit</div></div>
+        <div class="calc-stat"><div class="v">~$60 – $240</div><div class="l">a whole year of prevention for most pets — roughly the price of one evening out, spread across twelve months</div></div>
+        <div class="calc-stat"><div class="v bad">$1,000 – $4,000+</div><div class="l">treating a heartworm-positive dog — months of injections, strict crate rest, and real risk; cats have no approved cure at all</div></div>
+      </div>
+
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 The annual heartworm test</span><span>$35 – $60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💊 A month of prevention</span><span>$5 – $20</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>📦 A full year of prevention + the test</span><span>~$95 – $300</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:9%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🦠 Treating a heartworm-positive dog</span><span>$1,000 – $4,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:85%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🐈 A cat that becomes infected</span><span>No approved treatment</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="calc-verdict">The math isn't close: <strong>a few dollars a month and one quick test a year</strong> against a treatment bill that can hit four figures, months of crate rest, real danger to the animal — and, for a cat, no cure at any price. Heartworm prevention is about the cheapest insurance you can buy for a pet, and the only kind that has to be in place <em>before</em> the bite, not after.</div>
+
+      <div class="cost-note" style="margin-top:14px; font-size:14px; color:var(--ink-soft); background:var(--bg); border:1px dashed var(--line); border-radius:12px; padding:10px 14px;">🧾 <strong>Want to save?</strong> Buying a 6- or 12-month pack usually beats month-by-month, and many products bundle in flea, tick, and intestinal-worm coverage so you're not paying separately. Prices are estimates only — these are prescription medications, so your vet's choice and your clinic's pricing are what actually apply.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep your pet on heartworm prevention</h2>
+    <p class="sub">The hard part isn't the dose — it's never missing it. The routine is simple: test first, choose the right product with your vet, give it on a set day every month (ideally year-round), and keep a record so the annual test and the next dose never slip. Read the safety notes and techniques first, then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Your vet decides — this is general info, not veterinary advice</h3>
+      <ul>
+        <li><strong>Heartworm preventives are prescription.</strong> Your veterinarian picks the right product and dose by species and weight — and what's safe for a dog can harm a cat (and vice versa). Never give one pet's product to another, and never guess at the dose for a growing puppy or a pet that's changed weight.</li>
+        <li><strong>A negative heartworm test is required before starting or restarting.</strong> Giving preventives to a dog that's already infected can trigger a dangerous reaction. That's why your vet tests first — and tests again if there's ever been a lapse — before putting your pet (back) on prevention.</li>
+        <li><strong>If you miss a dose, don't panic — but do call.</strong> Give the missed dose as soon as you remember, then call your vet about the catch-up and a follow-up heartworm test (often about six months out, since that's the protection gap a late dose can open).</li>
+        <li><strong>Many products cover more than heartworm.</strong> Plenty of preventives also handle fleas, ticks, or intestinal worms. Coordinate with your <a href="flea-tick-treatment.html">flea &amp; tick treatment</a> so you don't accidentally double up on the same active ingredient — let your vet sort out the combination.</li>
+        <li><strong>Confirm it actually went down.</strong> A spat-out chewable is a missed dose. Watch your pet swallow it, give it with food per the label, and if they vomit shortly after, ask your vet whether to re-dose.</li>
+        <li><strong>This page is general information, not veterinary advice.</strong> Product choice, dosing, and testing all depend on your individual pet — your veterinarian sets the plan.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll want on hand</h3>
+    <div class="tools">
+      <span class="tool-chip">Your vet's heartworm-test result</span>
+      <span class="tool-chip">The prescribed preventive (right species &amp; weight)</span>
+      <span class="tool-chip">A monthly phone or calendar reminder</span>
+      <span class="tool-chip">A treat or a little food to give it with</span>
+      <span class="tool-chip">Your pet's current weight</span>
+      <span class="tool-chip">A dosing log or pet-health app</span>
+      <span class="tool-chip">The flea/tick &amp; deworming schedule</span>
+      <span class="tool-chip">The next annual-test date</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth understanding</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing the annual heartworm test done first: a blood-test vial with a green check labeled negative, with a note that a test is also required before starting or restarting after any lapse">
+          <!-- blood vial -->
+          <rect x="60" y="30" width="34" height="92" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="56" y="24" width="42" height="12" rx="4" fill="#8a6a4f"/>
+          <rect x="64" y="78" width="26" height="40" rx="4" fill="#d9663f" opacity="0.55"/>
+          <text x="50" y="138" font-size="10.5" fill="#6b7376">blood test</text>
+          <!-- green check / negative result -->
+          <circle cx="180" cy="62" r="26" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+          <path d="M170 62 l7 7 l13 -16" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="180" y="106" font-size="11" fill="#2c5a40" text-anchor="middle" font-weight="700">negative</text>
+          <!-- before-restart note -->
+          <rect x="118" y="128" width="148" height="40" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="192" y="145" font-size="10" fill="#9a7117" text-anchor="middle" font-weight="700">test again before</text>
+          <text x="192" y="159" font-size="10" fill="#9a7117" text-anchor="middle" font-weight="700">restarting after any gap</text>
+        </svg>
+        <h4>Test first, every year</h4>
+        <p>Prevention starts with a heartworm test — annually, and again before you start or restart after any lapse. It confirms your pet is negative (dosing an infected dog can be dangerous) and catches a silent infection early, while it's far easier to treat.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of three heartworm preventive forms chosen with the vet: a monthly chewable tablet, a topical applicator squeezed onto the skin, and a vet-administered injectable syringe, all sized to species and weight">
+          <!-- chewable -->
+          <rect x="18" y="34" width="74" height="78" rx="10" fill="#fffdf8" stroke="#3e7c59" stroke-width="3"/>
+          <path d="M55 56 c3 -5 10 -3.5 10 1.5 c0 4.6 -6 8 -10 11 c-4 -3 -10 -6.4 -10 -11 c0 -5 7 -6.5 10 -1.5 z" fill="#c9a06b"/>
+          <text x="55" y="100" font-size="10" fill="#2c5a40" text-anchor="middle" font-weight="700">chewable</text>
+          <!-- topical -->
+          <rect x="104" y="34" width="74" height="78" rx="10" fill="#fffdf8" stroke="#3e7c59" stroke-width="3"/>
+          <path d="M141 50 l-9 18 q9 8 18 0 z" fill="#7fb3c8"/>
+          <rect x="137" y="44" width="8" height="10" rx="2" fill="#5e9a78"/>
+          <path d="M141 74 q-2 6 0 10" stroke="#7fb3c8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <text x="141" y="100" font-size="10" fill="#2c5a40" text-anchor="middle" font-weight="700">topical</text>
+          <!-- injectable -->
+          <rect x="190" y="34" width="74" height="78" rx="10" fill="#fffdf8" stroke="#3e7c59" stroke-width="3"/>
+          <rect x="206" y="64" width="34" height="11" rx="3" fill="#dce8ee" stroke="#8a6a4f" stroke-width="1.5" transform="rotate(-18 223 69)"/>
+          <path d="M239 60 l12 -4" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M205 76 l-7 2" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="227" y="100" font-size="10" fill="#2c5a40" text-anchor="middle" font-weight="700">injectable</text>
+          <text x="140" y="134" font-size="11" fill="#6b7376" text-anchor="middle">sized to species &amp; weight</text>
+          <text x="140" y="152" font-size="10.5" fill="#9a7117" text-anchor="middle" font-weight="700">your vet picks the form &amp; dose</text>
+        </svg>
+        <h4>Choose the product with your vet</h4>
+        <p>Preventives come as a monthly chewable, a monthly topical, or a vet-given injectable that lasts 6 or 12 months. All are prescription and sized to species and weight — your vet picks the form that fits your pet and your routine.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of giving the dose on a set day every month: a calendar with the same day each month circled, a phone showing a recurring reminder, and a pet being watched to confirm it swallowed the chewable">
+          <!-- calendar with a recurring marked day -->
+          <rect x="20" y="28" width="120" height="104" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="20" y="28" width="120" height="20" rx="8" fill="#3e7c59"/>
+          <g fill="#dce8ee">
+            <rect x="30" y="56" width="16" height="13" rx="2"/>
+            <rect x="52" y="56" width="16" height="13" rx="2"/>
+            <rect x="74" y="56" width="16" height="13" rx="2"/>
+            <rect x="96" y="56" width="16" height="13" rx="2"/>
+            <rect x="118" y="56" width="14" height="13" rx="2"/>
+            <rect x="30" y="74" width="16" height="13" rx="2"/>
+            <rect x="52" y="74" width="16" height="13" rx="2"/>
+            <rect x="74" y="74" width="16" height="13" rx="2"/>
+            <rect x="96" y="74" width="16" height="13" rx="2"/>
+            <rect x="118" y="74" width="14" height="13" rx="2"/>
+            <rect x="30" y="92" width="16" height="13" rx="2"/>
+            <rect x="52" y="92" width="16" height="13" rx="2"/>
+          </g>
+          <circle cx="82" cy="80.5" r="11" fill="none" stroke="#d9663f" stroke-width="3"/>
+          <text x="30" y="124" font-size="10" fill="#6b7376">same day, monthly</text>
+          <!-- phone reminder -->
+          <rect x="156" y="34" width="52" height="98" rx="10" fill="#3e7c59"/>
+          <rect x="162" y="46" width="40" height="74" rx="4" fill="#fffdf8"/>
+          <circle cx="182" cy="70" r="11" fill="#faf0da"/>
+          <path d="M182 64 l0 7 l5 3" stroke="#e0a93d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <rect x="170" y="90" width="24" height="5" rx="2.5" fill="#dce8ee"/>
+          <rect x="170" y="100" width="24" height="5" rx="2.5" fill="#dce8ee"/>
+          <text x="182" y="128" font-size="8.5" fill="#fffdf8" text-anchor="middle">reminder</text>
+          <!-- confirm-swallowed check -->
+          <circle cx="244" cy="74" r="20" fill="#e3efe8"/>
+          <path d="M236 74 l5 5 l10 -12" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="244" y="108" font-size="9.5" fill="#2c5a40" text-anchor="middle" font-weight="700">it swallowed</text>
+        </svg>
+        <h4>Give it on a set day, monthly</h4>
+        <p>Pick one day a month and protect it with a recurring reminder. Give the dose with food per the label, and actually watch your pet swallow it — a chewable spat out behind the couch is a missed month, and on this drug the calendar is everything.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of what to do if a dose is missed: give the dose right away, then arrange a follow-up heartworm test about six months later to cover the protection gap a late dose can open">
+          <!-- missed day on a strip -->
+          <rect x="22" y="40" width="40" height="40" rx="6" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.5"/>
+          <path d="M32 50 l20 20 M52 50 l-20 20" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="42" y="96" font-size="10" fill="#d9663f" text-anchor="middle" font-weight="700">missed</text>
+          <!-- arrow: give it now -->
+          <path d="M70 60 l34 0 m-9 -6 l9 6 l-9 6" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="112" y="40" width="44" height="40" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <path d="M124 60 l6 6 l12 -14" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="134" y="96" font-size="10" fill="#2c5a40" text-anchor="middle" font-weight="700">dose now</text>
+          <!-- arrow to follow-up test -->
+          <path d="M164 60 l30 0 m-9 -6 l9 6 l-9 6" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="228" cy="60" r="24" fill="#faf0da" stroke="#e0a93d" stroke-width="3"/>
+          <path d="M228 48 l0 12 l8 5" stroke="#9a7117" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="228" y="98" font-size="10" fill="#9a7117" text-anchor="middle" font-weight="700">retest ~6 mo</text>
+          <text x="140" y="130" font-size="10.5" fill="#6b7376" text-anchor="middle">give it as soon as you remember,</text>
+          <text x="140" y="148" font-size="10.5" fill="#6b7376" text-anchor="middle">then call your vet about a follow-up test</text>
+        </svg>
+        <h4>If you miss a dose</h4>
+        <p>Give the missed dose the moment you realize, then call your vet — a late dose can open a protection gap, so they'll often want a follow-up heartworm test in about six months to be sure nothing slipped through. Don't just skip ahead and hope.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of coordinating heartworm prevention with flea, tick, and deworming coverage since many combo products cover several parasites, and keeping a written dosing record">
+          <!-- combo product covering several parasites -->
+          <rect x="24" y="30" width="96" height="76" rx="10" fill="#fffdf8" stroke="#3e7c59" stroke-width="3"/>
+          <text x="72" y="50" font-size="10.5" fill="#2c5a40" text-anchor="middle" font-weight="700">combo dose</text>
+          <g font-size="13" text-anchor="middle">
+            <text x="44" y="74">❤️</text>
+            <text x="72" y="74">🪰</text>
+            <text x="100" y="74">🕷️</text>
+            <text x="72" y="96">🪱</text>
+          </g>
+          <text x="72" y="120" font-size="9.5" fill="#6b7376" text-anchor="middle">one chew, several parasites</text>
+          <!-- record / log -->
+          <rect x="150" y="30" width="106" height="92" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="203" y="50" font-size="10.5" fill="#9a7117" text-anchor="middle" font-weight="700">dosing log</text>
+          <g stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M162 66 l4 4 l7 -8"/>
+            <path d="M162 84 l4 4 l7 -8"/>
+            <path d="M162 102 l4 4 l7 -8"/>
+          </g>
+          <g fill="#b9b1a3">
+            <rect x="180" y="64" width="64" height="5" rx="2.5"/>
+            <rect x="180" y="82" width="64" height="5" rx="2.5"/>
+            <rect x="180" y="100" width="50" height="5" rx="2.5"/>
+          </g>
+          <text x="140" y="146" font-size="10.5" fill="#6b7376" text-anchor="middle">coordinate so you don't double up — and keep the record</text>
+        </svg>
+        <h4>Coordinate &amp; keep the record</h4>
+        <p>Many preventives also cover fleas, ticks, or intestinal worms, so check what your product includes and coordinate with the rest of your pet's parasite plan to avoid doubling up. Then log each dose and the annual test, so a missed month can't hide.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Heartworm-prevention progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Tested negative, the right product chosen with your vet, the monthly dose set on a reminder, and the next test date logged — your pet is covered, every month, with no gaps. Keep the reminder running and retest each year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS ============ -->
+  <section id="signs">
+    <h2>When to check in with your vet</h2>
+    <p class="sub">Heartworm prevention runs in the background — until one of these moments makes it worth a call. In every case, your veterinarian is the decision-maker; this list is just what tends to trigger that conversation, since the product and the schedule are always theirs to set:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A missed dose or any lapse in coverage.</strong> One late or skipped month can open a window for larvae to mature. Give the dose, then call your vet — they'll usually want a catch-up plan and a follow-up heartworm test about six months out.</li>
+        <li><strong>No recent heartworm test.</strong> If it's been more than a year, or you can't remember the last one, it's time. Vets won't refill prevention without it, and the test is what catches a silent infection before it becomes a crisis.</li>
+        <li><strong>A newly adopted or unknown-history pet.</strong> A rescue, a stray, or any pet whose past dosing you can't confirm should be treated as untested. Your vet will test before starting prevention, because dosing an already-infected dog can be dangerous.</li>
+        <li><strong>Signs of possible infection.</strong> A persistent cough, unusual lethargy, exercise intolerance, or weight loss in a dog warrant a vet visit — these can be late signs of heartworm. Cats may show coughing or asthma-like signs; for them, with no treatment available, early detection matters even more.</li>
+        <li><strong>A move or a long trip to a warmer region.</strong> Relocating to or traveling through a high-mosquito, high-heartworm area changes the risk picture. Tell your vet so the prevention and testing plan keeps up with where your pet actually is.</li>
+        <li><strong>A growing puppy or a weight change.</strong> Dosing is by weight, so a puppy outgrowing its bracket — or any pet that gains or loses significantly — may need a different size. Don't re-size on your own; let your vet confirm.</li>
+        <li><strong>Pro tip:</strong> the annual heartworm test happens at the <a href="annual-vet-checkup.html">annual vet checkup</a>, so the easiest way to never let prevention lapse is to bundle it with that visit — alongside the other recurring pet-health tasks like <a href="flea-tick-treatment.html">flea &amp; tick treatment</a> (often the very same combo product) and <a href="pet-vaccinations.html">keeping vaccinations current</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What is heartworm, and how do pets get it?</summary>
+      <p>Heartworm disease is caused by a parasitic worm (<em>Dirofilaria immitis</em>) spread by mosquitoes. When an infected mosquito bites your pet, it deposits microscopic larvae that migrate through the body over several months and mature into worms that can reach a foot in length, living in the heart, lungs, and associated blood vessels. There they damage the vessels and strain the heart, eventually causing coughing, fatigue, and — untreated — heart failure and death. Critically, your pet doesn't catch it from other animals; it always comes through a mosquito bite, which is why even a mostly-indoor pet is at some risk and why prevention, not avoidance, is the answer. The disease is found across nearly all of the U.S., and a single bite is all it takes, so vets treat year-round monthly prevention as the standard of care.</p>
+    </details>
+    <details>
+      <summary>Do indoor cats really need heartworm prevention?</summary>
+      <p>Many vets recommend it, yes. Mosquitoes get indoors, and studies have found that a meaningful share of cats diagnosed with heartworm were reportedly indoor-only. The stakes are also higher for cats for one stark reason: <strong>there is no approved treatment for heartworm in cats.</strong> In dogs, an infection can at least be treated (grueling and expensive as that is); in cats, the options are largely supportive care and hoping the worms don't cause a fatal reaction. Because prevention is the only real protection a cat has, and because the products are safe and inexpensive, the math leans heavily toward keeping even indoor cats on a monthly preventive. As always, your veterinarian makes the call for your specific cat — but "indoor" isn't the free pass it's often assumed to be.</p>
+    </details>
+    <details>
+      <summary>Do I really need it year-round, or just in mosquito season?</summary>
+      <p>The modern recommendation is year-round, everywhere — including cold-winter climates — and there are good reasons. Mosquitoes survive indoors and during warm spells, winters are increasingly unpredictable, and the parasite's timeline doesn't line up neatly with the calendar, so a "safe" off-season is hard to pin down. Just as important, year-round dosing is far easier to keep as a habit than stopping and restarting each year, which is exactly when doses get forgotten. Many year-round products also cover intestinal worms (and sometimes fleas), so there's a benefit even in months without mosquitoes. If you live somewhere with truly hard winters and want to discuss a seasonal approach, that's a conversation for your vet — but the default they'll almost always recommend is twelve doses a year, every year.</p>
+    </details>
+    <details>
+      <summary>Why do I need an annual test if I never miss a dose?</summary>
+      <p>It feels redundant, but there are real reasons, and most vets require it before refilling prevention. First, no preventive is 100% — a dose can be spat out, vomited up, or given a little late without you noticing, any of which can leave a gap. Second, heartworm preventives only kill the early larval stages; if an infection somehow established itself, continuing to dose an infected dog can be dangerous, so the test confirms you're on safe ground. Third, the test catches an infection early, while treatment is far more straightforward and less costly than it is once the disease has advanced. Think of the annual test as the safety check that makes the whole prevention strategy trustworthy — it's cheap, quick, and usually folded into the regular wellness visit.</p>
+    </details>
+    <details>
+      <summary>What happens if I miss a dose?</summary>
+      <p>Don't panic, but don't ignore it either. Give the missed dose as soon as you remember, and then call your veterinarian. Because preventives work "backward" — clearing out the larvae from the previous month — a late or skipped dose can let some larvae move past the stage the medication can catch, which is the gap that matters. Your vet will typically advise resuming the monthly schedule and scheduling a follow-up heartworm test about six months later, since it takes time for an infection to become detectable. A single late dose is usually fine when handled promptly; the danger is in repeated gaps or in quietly skipping ahead and assuming all is well. This is exactly the situation a monthly reminder is meant to prevent — and why so many people lean on an app to hold the date.</p>
+    </details>
+    <details>
+      <summary>Is there a treatment for cats — and does prevention cover other parasites?</summary>
+      <p>For cats, the hard truth first: <strong>there is no approved drug to kill heartworms in cats.</strong> The treatment used in dogs is unsafe for cats, so feline care is limited to managing symptoms and supportive care while hoping the infection resolves without a fatal complication. That's precisely why prevention is so heavily emphasized for cats — it's the only protection they have. For dogs, treatment exists but is grueling: a series of injections, strict crate rest for months, and a bill that often runs $1,000–$4,000, with real risk along the way. On the brighter side, many heartworm preventives are <strong>combination products</strong> that also cover intestinal worms (roundworms, hookworms) and sometimes fleas or ticks, so one monthly dose can handle several parasites at once. Just coordinate with your <a href="flea-tick-treatment.html">flea &amp; tick treatment</a> so you don't double up — and let your vet choose the product, since these are prescription medications.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The dose takes ten seconds. Remembering it twelve times a year is the hard part.</h2>
+        <p>Heartworm prevention only works if it's truly <em>every</em> month — and it's one of the easiest doses in all of pet care to forget, especially in the off-season. Let Upkeep Ledger hold the monthly reminder and the annual test date right alongside the vaccinations, the flea-and-tick treatment, and the rest of your pet's care, and nudge you before each one comes due.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=heartworm-prevention&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=heartworm-prevention&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This page is general information, not veterinary advice — heartworm preventives are prescription medications, and product choice, dosing, and testing depend on your individual pet, so your veterinarian sets the plan; cost figures are typical U.S. ranges for planning only.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { species: null, climate: null, status: null, lifestyle: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    12: "Annual vet test"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;
+    var note;
+    var species = (s.species === "cat") ? "cat" : "dog";
+
+    /* Species framing */
+    if (species === "cat") {
+      reasons.push("For cats, prevention is the whole story: there is no approved treatment for feline heartworm, so a monthly preventive — sized for cats, never a dog's product — is the only protection your cat has. Mosquitoes get indoors, so even an indoor cat is a candidate.");
+    } else {
+      reasons.push("For dogs, a monthly preventive clears out the larvae from the previous month, so dosing on a set day with no gaps is what keeps the chain unbroken. Your vet sizes the product to your dog's weight.");
+    }
+
+    /* Climate / season — the answer is year-round either way */
+    if (s.climate === "warm") {
+      reasons.push("In a warm, mosquito-heavy climate the risk barely lets up, so year-round monthly dosing isn't even a close call — there's no off-season to skip.");
+    } else if (s.climate === "seasonal") {
+      reasons.push("Hot summers with mild winters still leave plenty of mosquito activity, and warm spells blur the edges of the season — the modern recommendation here is year-round, not just summer.");
+    } else {
+      reasons.push("Even with a real winter freeze, vets now recommend year-round dosing: mosquitoes survive indoors and in warm snaps, winters are unpredictable, and a continuous habit is far easier to keep than stopping and restarting each year.");
+    }
+
+    /* Current status — current vs lapsed/unknown */
+    if (s.status === "lapsed") {
+      reasons.push("Because the history is lapsed, new, or unknown, your pet needs a heartworm test before (re)starting prevention — dosing a pet that's already infected can be unsafe, so the vet confirms a negative first, then puts them on the monthly schedule.");
+    } else {
+      reasons.push("Steadily dosed and recently tested, your pet can simply continue the monthly schedule — just keep the annual test on the calendar so the streak stays verified.");
+    }
+
+    /* Lifestyle — exposure doesn't change the monthly answer */
+    if (s.lifestyle === "high") {
+      reasons.push("Lots of outdoor time, travel, or a mosquito-heavy area all raise the odds of a bite — so monthly, year-round prevention matters even more, and tell your vet if you're traveling to a warmer region.");
+    } else {
+      reasons.push("Even a mostly-indoor pet in a low-mosquito area still gets bitten — mosquitoes come inside — so the recommendation doesn't change: still monthly, still year-round.");
+    }
+
+    /* Closing note — always defer to the vet, always pair with the annual test */
+    if (s.status === "lapsed") {
+      note = "<strong>Start with a vet visit and a heartworm test.</strong> Once your pet is confirmed negative, your vet chooses the product and dose, and you settle into monthly dosing on a set day — plus an annual test every year after.";
+    } else if (species === "cat") {
+      note = "<strong>Pair the monthly dose with an annual vet check.</strong> Prevention is a cat's only defense against heartworm, so keep the dose on a reminder and let your vet confirm the testing and product — these are prescription medications.";
+    } else {
+      note = "<strong>Monthly dose + annual test, and your vet picks the product.</strong> Set a reminder for the same day each month, keep the yearly heartworm test on the calendar, and let your vet choose and size the prescription preventive.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.species || !quizState.climate || !quizState.status || !quizState.lifestyle) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: " + FREQ_LABEL[1].toLowerCase() + ", year-round — plus an " + FREQ_LABEL[12].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Heartworm preventives are prescription, so think of this as the <strong>cadence to confirm with your vet — who chooses the product and confirms the testing</strong>. Here's the reasoning:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Test first", text: "Get (or confirm) a recent heartworm test", note: "Prevention starts with a negative test — your vet runs a quick in-clinic blood test, annually and again before starting or restarting after any lapse. It confirms your pet is safe to dose and catches a silent infection early." },
+    { phase: "Test first", text: "Treat a lapsed, new, or unknown-history pet as untested", note: "A rescue, a stray, or any pet whose past dosing you can't confirm should be tested before restarting — dosing an already-infected dog can be dangerous, so let the vet establish a clean baseline first." },
+    { phase: "Test first", text: "Note your pet's current weight", note: "Dosing is by weight and species, so have an accurate, current number ready — especially for a growing puppy or a pet whose weight has changed since the last prescription." },
+    { phase: "Choose with your vet", text: "Let your vet pick the product and form", note: "Chewable, topical, or a vet-given injectable — all are prescription. Your vet chooses the form that fits your pet and your routine, sized to species and weight. Never give a dog's product to a cat or vice versa." },
+    { phase: "Choose with your vet", text: "Ask what else the product covers", note: "Many preventives also handle fleas, ticks, or intestinal worms. Find out what yours includes so you can coordinate the rest of the parasite plan and avoid doubling up on the same active ingredient." },
+    { phase: "Choose with your vet", text: "Decide on year-round dosing and buy a pack", note: "The modern recommendation is twelve months a year, even in cold climates. A 6- or 12-month pack is usually cheaper than month-by-month and means you always have the next dose on hand." },
+    { phase: "Give it monthly", text: "Pick one set day each month for the dose", note: "Consistency is everything with a drug that works 'backward' over the previous month. Choose a memorable day — say, the 1st — and keep it the same every month, year-round." },
+    { phase: "Give it monthly", text: "Set a recurring monthly reminder", note: "A phone alarm, a calendar repeat, or a pet-health app — anything that won't rely on memory. This single habit is what keeps the whole strategy intact." },
+    { phase: "Give it monthly", text: "Give it with food and watch it go down", note: "Give the dose per the label, usually with a little food, and actually watch your pet swallow a chewable — a spat-out or vomited dose is a missed month. If they vomit soon after, ask your vet about re-dosing." },
+    { phase: "Track & retest", text: "Log every dose as you give it", note: "A quick check-off — in an app, a calendar, or a notebook — so a missed month can't hide. If you ever do miss one, give it right away and call your vet about a follow-up test." },
+    { phase: "Track & retest", text: "Put the next annual heartworm test on the calendar", note: "Prevention and testing go together. Schedule the yearly test — ideally bundled with the annual wellness visit — so refills never lapse and any gap gets caught early." },
+    { phase: "Track & retest", text: "Coordinate with the rest of your pet's care", note: "Line the heartworm reminder up with flea & tick treatment, deworming, vaccinations, and the vet checkup, so the whole parasite-and-wellness routine moves together instead of slipping one task at a time." }
+  ];
+
+  var LS_KEY = "upkeepguides:heartworm-prevention:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

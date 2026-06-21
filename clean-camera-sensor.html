@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean your camera sensor — UpkeepGuides.com</title>
+<meta name="description" content="How to safely clean a mirrorless or DSLR sensor: confirm it's sensor dust (not lens), the gentle escalation from in-camera shake to a rocket blower to a single-pass wet swab, what never to do, and when to send it to a shop.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Clean your camera sensor — UpkeepGuides.com">
+<meta property="og:description" content="How to safely clean a mirrorless or DSLR sensor: confirm it's sensor dust (not lens), the gentle escalation from in-camera shake to a rocket blower to a single-pass wet swab, what never to do, and when to send it to a shop.">
+<meta property="og:url" content="https://upkeepguides.com/clean-camera-sensor.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clean your camera sensor — UpkeepGuides.com">
+<meta name="twitter:description" content="How to safely clean a mirrorless or DSLR sensor: confirm it's sensor dust (not lens), the gentle escalation from in-camera shake to a rocket blower to a single-pass wet swab, what never to do, and when to send it to a shop.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · As needed / yearly</span>
+      <h1>Clean Your Camera Sensor</h1>
+      <p class="lede">You notice it on a blue-sky shot first: the same little dark blobs, frame after frame, in exactly the same spots. That's dust on your sensor — and once you've seen it, you can't unsee it in every photo you take. The good news is that most of it lifts off in minutes with the right gentle method: confirm it's the sensor and not the lens, run the in-camera shake, then a few puffs from a rocket blower with nothing ever touching the glass, and — only if a spot is truly stuck — a single, careful pass with a sensor swab. The bad news is that the <em>wrong</em> method (canned air, a fingertip, a dry rub) can scratch a part that costs more to replace than your camera body is worth. So this guide is about doing the safe thing, in the safe order, and knowing the one moment to stop and hand it to a shop.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Check <em>about yearly</em></span>
+        <span class="chip">⏱️ <em>~10–20 min</em> when spots appear</span>
+        <span class="chip">🌤️ Worst on <em>blue skies &amp; f/16+</em></span>
+        <span class="chip">💸 Kit <em>~$30–50</em> vs. shop each time</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a camera sensor: a mirrorless camera body sits on a clean desk with its lens removed and set aside, exposing the square sensor inside the lens mount, a red rocket air blower is aimed at the open sensor, sensor swabs and a small bottle of cleaning fluid lie nearby, and a small inset compares a blue-sky photo speckled with dark dust spots against a clean version">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- camera body -->
+      <rect x="118" y="150" width="240" height="150" rx="16" fill="#8a6a4f"/>
+      <rect x="118" y="150" width="240" height="40" rx="16" fill="#b9b1a3"/>
+      <!-- top plate details: mode dial + shutter button -->
+      <circle cx="318" cy="168" r="16" fill="#5e9a78"/>
+      <circle cx="318" cy="168" r="7" fill="#3e7c59"/>
+      <rect x="150" y="158" width="40" height="14" rx="5" fill="#efe7d8"/>
+      <circle cx="206" cy="165" r="7" fill="#d9663f"/>
+      <!-- viewfinder hump -->
+      <rect x="210" y="128" width="56" height="26" rx="6" fill="#b9b1a3"/>
+      <!-- grip -->
+      <rect x="118" y="190" width="40" height="110" rx="14" fill="#6b5440"/>
+
+      <!-- lens mount with exposed sensor -->
+      <circle cx="262" cy="232" r="62" fill="#efe7d8"/>
+      <circle cx="262" cy="232" r="62" fill="none" stroke="#6b5440" stroke-width="6"/>
+      <!-- mount index dots / contacts -->
+      <g fill="#c9a06b">
+        <circle cx="262" cy="178" r="3.5"/>
+        <circle cx="216" cy="232" r="3"/>
+        <circle cx="308" cy="232" r="3"/>
+      </g>
+      <!-- the sensor itself, a slightly reflective rectangle -->
+      <rect x="230" y="206" width="64" height="48" rx="4" fill="#3e7c59"/>
+      <rect x="230" y="206" width="64" height="48" rx="4" fill="#2c5a40" opacity="0.4"/>
+      <!-- bluish sensor sheen -->
+      <path d="M236 250 l40 -40" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+      <path d="M250 250 l30 -30" stroke="#dce8ee" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+      <!-- a couple of dust specks on the sensor -->
+      <circle cx="252" cy="224" r="2.4" fill="#33393b"/>
+      <circle cx="276" cy="240" r="2" fill="#33393b"/>
+
+      <!-- the removed lens set aside, rear cap off -->
+      <g transform="translate(372 250)">
+        <rect x="0" y="0" width="86" height="58" rx="12" fill="#6b5440"/>
+        <rect x="0" y="0" width="86" height="22" rx="12" fill="#8a6a4f"/>
+        <ellipse cx="43" cy="34" rx="26" ry="18" fill="#b9b1a3"/>
+        <ellipse cx="43" cy="34" rx="17" ry="12" fill="#7fb3c8" opacity="0.8"/>
+        <ellipse cx="38" cy="29" rx="5" ry="3.5" fill="#dce8ee"/>
+      </g>
+      <text x="378" y="326" font-size="11" fill="#6b7376">lens off</text>
+
+      <!-- rocket blower aimed at the sensor -->
+      <g transform="rotate(-18 120 360)">
+        <ellipse cx="92" cy="362" rx="40" ry="32" fill="#c96f4a"/>
+        <ellipse cx="78" cy="352" rx="14" ry="10" fill="#d9663f" opacity="0.7"/>
+        <!-- one-way intake valve nub at the tail -->
+        <circle cx="56" cy="378" r="6" fill="#6b5440"/>
+        <!-- nozzle pointing toward the mount -->
+        <path d="M128 350 l54 -16 l0 16 l-54 14 z" fill="#a8542f"/>
+        <rect x="178" y="332" width="16" height="22" rx="4" fill="#6b5440"/>
+      </g>
+      <!-- puff of air toward the sensor -->
+      <g stroke="#7fb3c8" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.7">
+        <path d="M214 296 q14 -6 26 -2"/>
+        <path d="M218 308 q16 -4 28 2"/>
+      </g>
+      <text x="96" y="408" font-size="11" fill="#c96f4a" font-weight="700">no contact — just air</text>
+
+      <!-- sensor swabs lying nearby -->
+      <g transform="rotate(8 60 196)">
+        <rect x="36" y="190" width="78" height="10" rx="3" fill="#dce8ee"/>
+        <rect x="36" y="190" width="20" height="10" rx="3" fill="#fffdf8"/>
+        <rect x="110" y="188" width="10" height="14" rx="3" fill="#5e9a78"/>
+      </g>
+      <g transform="rotate(-4 60 214)">
+        <rect x="40" y="210" width="78" height="10" rx="3" fill="#cdd9de"/>
+        <rect x="40" y="210" width="20" height="10" rx="3" fill="#fffdf8"/>
+        <rect x="114" y="208" width="10" height="14" rx="3" fill="#3e7c59"/>
+      </g>
+      <text x="40" y="240" font-size="11" fill="#6b7376">sensor swabs</text>
+
+      <!-- small bottle of sensor fluid -->
+      <rect x="438" y="150" width="34" height="58" rx="6" fill="#dce8ee"/>
+      <rect x="438" y="150" width="34" height="20" rx="6" fill="#9cc3d4"/>
+      <rect x="446" y="138" width="18" height="16" rx="3" fill="#5e9a78"/>
+      <rect x="444" y="176" width="22" height="22" rx="3" fill="#fffdf8" opacity="0.85"/>
+      <path d="M449 182 l12 0 M449 188 l8 0" stroke="#7fb3c8" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- inset: dusty sky vs clean sky comparison, top right -->
+      <g transform="translate(404 18)">
+        <rect x="0" y="0" width="142" height="74" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+        <!-- left half: dusty sky -->
+        <rect x="8" y="8" width="60" height="58" rx="4" fill="#7fb3c8"/>
+        <g fill="#33393b" opacity="0.75">
+          <circle cx="22" cy="22" r="3.2"/>
+          <circle cx="44" cy="18" r="2.6"/>
+          <circle cx="32" cy="40" r="3"/>
+          <circle cx="54" cy="48" r="2.4"/>
+          <circle cx="20" cy="54" r="2.2"/>
+        </g>
+        <text x="10" y="62" font-size="8.5" fill="#fffdf8" font-weight="700">dusty</text>
+        <!-- right half: clean sky -->
+        <rect x="74" y="8" width="60" height="58" rx="4" fill="#7fb3c8"/>
+        <text x="78" y="62" font-size="8.5" fill="#fffdf8" font-weight="700">clean</text>
+        <g stroke="#2c5a40" stroke-width="2.2" stroke-linecap="round">
+          <path d="M118 24 l0 8 M114 28 l8 0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A clean sensor is invisible — you never think about it. A dirty one quietly taxes every single frame you shoot, and the longer you ignore it the more photos it ruins. But it's also a part you can damage badly if you go in heavy-handed, which is exactly why the gentle, in-order approach below matters so much. Here's what's at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="24" height="20" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <circle cx="13" cy="15" r="2.4" fill="#33393b"/>
+          <circle cx="22" cy="13" r="2" fill="#33393b"/>
+          <circle cx="18" cy="21" r="2.2" fill="#33393b"/>
+          <circle cx="26" cy="22" r="1.8" fill="#33393b"/>
+        </svg></div>
+        <h3>Dark spots on every shot</h3>
+        <p>Sensor dust prints the same dark blobs in the same place on every frame — most visible on blue skies and at small apertures like f/16 and up, where the specks come into sharp focus. Then you're cloning them out one by one in editing, photo after photo.</p>
+        <span class="cost">Hours of spot-removal in editing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="11" fill="#efe7d8" stroke="#6b5440" stroke-width="2"/>
+          <rect x="12" y="12" width="12" height="12" rx="2" fill="#3e7c59"/>
+          <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round" fill="none">
+            <path d="M18 4 a14 14 0 0 1 12 7"/>
+            <path d="M26 8 l4 -1 l-1 4"/>
+          </g>
+          <circle cx="9" cy="14" r="1.4" fill="#8a6a4f"/>
+          <circle cx="27" cy="24" r="1.2" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>It's basically unavoidable</h3>
+        <p>Every time you change a lens, you open the camera and invite dust onto the sensor — and mirrorless bodies, with the sensor sitting right behind the mount, catch it especially fast. There's no preventing it entirely; the only question is how cleanly you deal with it.</p>
+        <span class="cost">New dust with every lens swap</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="6" width="18" height="24" rx="3" fill="#dce8ee" stroke="#c96f4a" stroke-width="2"/>
+          <path d="M12 14 l12 10 M24 14 l-12 10" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M18 3 l2.4 4.6 l-4.8 0 z" fill="#d9663f"/>
+          <rect x="16.5" y="9" width="3" height="6" rx="1.5" fill="#d9663f"/>
+        </svg></div>
+        <h3>The wrong fix is expensive</h3>
+        <p>Canned air can blast propellant and freeze-spray liquid onto the sensor; a fingertip leaves oils that bond to the coating; a dry rub drags grit across the surface and scratches it. Any of those can mean a repair that costs more than the body is worth.</p>
+        <span class="cost">A scratch can total the body</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="18" rx="13" ry="9" fill="#c96f4a"/>
+          <ellipse cx="11" cy="15" rx="5" ry="3.5" fill="#d9663f" opacity="0.7"/>
+          <circle cx="6" cy="20" r="2.2" fill="#6b5440"/>
+          <path d="M30 17 l6 -2 l0 5 l-6 2 z" fill="#a8542f"/>
+          <g stroke="#7fb3c8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8">
+            <path d="M30 13 q4 -2 7 -1"/>
+          </g>
+        </svg></div>
+        <h3>The right way takes minutes</h3>
+        <p>Done gently — shake, then a few puffs of a rocket blower, and a single swab only if needed — most dust is gone in well under twenty minutes, with no contact for the easy cases. You rarely need a shop, and you save yourself the spot-removal grind.</p>
+        <span class="cost">Otherwise: a shop visit each time</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">Honest answer: a sensor is cleaned <em>as needed</em> — whenever you actually see spots — not on a rigid calendar. A periodic check, though, keeps dust from sneaking up on you before a big shoot. About once a year is plenty for careful shooters; swap lenses constantly or work in dust and wind and you'll want to look far more often. Answer four quick questions for a check interval that fits how you shoot:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="swaps">
+        <div class="q-label">1. How often do you change lenses or shoot in dust and wind?</div>
+        <div class="pills">
+          <button class="pill" data-v="lots">Constantly — lots of swaps, often outdoors</button>
+          <button class="pill" data-v="some">Now and then, ordinary conditions</button>
+          <button class="pill" data-v="rare">Rarely — one lens, clean indoor shooting</button>
+        </div>
+        <div class="q-hint">Every lens change is an open door for dust, and dusty or windy locations load the sensor far faster. The more you expose the mount, the more often it's worth a look.</div>
+      </div>
+      <div class="quiz-q" data-q="spots">
+        <div class="q-label">2. Do you see dark spots in your photos right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="lots">Yes — lots of obvious spots</button>
+          <button class="pill" data-v="few">A few, in blue-sky shots</button>
+          <button class="pill" data-v="none">No — my frames look clean</button>
+        </div>
+        <div class="q-hint">Visible spots mean it's already time to clean, not just to check. Test on a blank sky at a small aperture if you're not sure — that's where dust shows itself.</div>
+      </div>
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">3. Mirrorless or DSLR?</div>
+        <div class="pills">
+          <button class="pill" data-v="mirrorless">Mirrorless — sensor's right there</button>
+          <button class="pill" data-v="dslr">DSLR — there's a mirror in front</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+        <div class="q-hint">On mirrorless bodies the sensor is exposed at every lens change, so it tends to collect dust faster. A DSLR's mirror gives a little shelter — but its sensor still gathers dust over time.</div>
+      </div>
+      <div class="quiz-q" data-q="comfort">
+        <div class="q-label">4. How do you feel about cleaning it yourself?</div>
+        <div class="pills">
+          <button class="pill" data-v="diy">Happy to blow and swab carefully</button>
+          <button class="pill" data-v="blower">Blower only — swabbing makes me nervous</button>
+          <button class="pill" data-v="shop">I'd rather a shop handle it</button>
+        </div>
+        <div class="q-hint">There's no shame in any answer. A rocket blower is risk-free and worth owning whatever you decide; wet-swabbing is safe done right but unforgiving done wrong — and a shop is cheap insurance for an expensive part.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The tools are cheap and they last for years. A rocket blower runs about ten dollars and never wears out; a sensor-swab-and-fluid kit is roughly twenty to forty dollars and handles many cleanings. Set that against paying a shop every single time — or, at the far end, a scratched sensor, a repair that can cost more than the body is worth:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$10</div><div class="l">a rocket blower — handles most dust with no contact, and lasts essentially forever</div></div>
+        <div class="calc-stat"><div class="v">~$20–40</div><div class="l">a sensor-swab-and-fluid kit for the stuck spots — reusable across many cleanings</div></div>
+        <div class="calc-stat"><div class="v bad">$50–80</div><div class="l">every time you hand it to a shop instead — it adds up fast for frequent shooters</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🎈 Rocket blower (one-time, lasts for years)</span><span>~$10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Blower + swab-and-fluid kit (reusable)</span><span>~$30–50</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏪 Shop cleaning, every time spots return</span><span>$50–80 each visit</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:42%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🖱️ Cloning out spots in editing, shot after shot</span><span>Hours, on every shoot</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💔 A scratched sensor from the wrong method</span><span>More than the body's worth</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is lopsided: <strong>a thirty-to-fifty-dollar kit you buy once</strong> against shop fees that repeat forever, hours of cloning spots out of every blue-sky frame, and — if you ever reach for canned air or a fingertip — a scratched sensor that can total the camera. Own a blower, learn the gentle method, and check the sensor on a loose schedule, and you sidestep all of it.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your camera sensor</h2>
+    <p class="sub">This is an expensive, delicate part, so the whole method is built around escalating gently and stopping early. Confirm it's actually the sensor, try the no-contact fixes first (in-camera shake, then a rocket blower), and only reach for a wet swab if a spot is genuinely stuck — one careful pass, then re-test. Read the safety box and all five techniques <em>before</em> you open the camera, then work the checklist. Progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — a sensor is fragile and pricey</h3>
+      <ul>
+        <li><strong>Fully charge the battery before you open up.</strong> If the camera powers down mid-clean, it can drop the shutter or mirror onto your blower or swab and cause real damage. A full battery (or AC adapter) keeps the sensor-clean mode held safely open.</li>
+        <li><strong>Use the camera's sensor-clean / mirror-lock-up mode — never hold a DSLR mirror up by hand.</strong> Dig into the menu for "sensor cleaning," "manual cleaning," or "mirror lock up for cleaning." It locks everything safely out of the way; forcing the mirror with a finger can bend or break it.</li>
+        <li><strong>NEVER use canned or compressed air.</strong> The propellant can spray liquid onto the sensor, and the sheer force (and freezing) can damage the surface or the delicate AA filter over it. Use only a hand-squeezed rocket blower — your lungs and aerosols are both off-limits.</li>
+        <li><strong>Never touch the sensor with a finger, and never dry-rub it.</strong> Skin oils bond to the coating, and dragging anything dry across the surface grinds grit into it and leaves scratches. The sensor surface gets touched only by a fresh, fluid-dampened sensor swab — nothing else.</li>
+        <li><strong>Use only sensor-rated swabs and fluid, one pass per swab.</strong> Buy the correct swab width for your sensor size, use just a drop or two of sensor fluid, make one light pass across and back, and switch to a fresh swab (or fresh side) every time. Never reuse a dirty swab.</li>
+        <li><strong>Work clean, draft-free, and face-down.</strong> Pick a clean, low-dust room with no fan or breeze, and hold the camera with the mount facing the floor so loosened dust falls out instead of resettling. Have everything laid out before you open the body.</li>
+        <li><strong>If you're unsure at any point, stop and send it to a pro.</strong> There is no shame in it, and a shop cleaning is cheap next to a damaged sensor. Repeated swabbing that isn't working, oily smears, or any worry about a scratch all mean: close the camera and let a professional finish.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A rocket-style hand air blower</span>
+      <span class="tool-chip">Sensor swabs (the right width for your sensor)</span>
+      <span class="tool-chip">Sensor cleaning fluid</span>
+      <span class="tool-chip">A fully charged battery</span>
+      <span class="tool-chip">A clean, draft-free room</span>
+      <span class="tool-chip">Good light or a small flashlight / loupe</span>
+      <span class="tool-chip">Your lens's rear cap &amp; body cap</span>
+      <span class="tool-chip">Patience — and a willingness to stop</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of confirming sensor dust: shoot a blank white wall or sky at f/16 to f/22, then look for the same dark spots in the same place across several frames, which means the dust is on the sensor rather than the lens">
+          <!-- two photo frames showing identical spots -->
+          <rect x="22" y="30" width="100" height="76" rx="6" fill="#7fb3c8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="158" y="30" width="100" height="76" rx="6" fill="#7fb3c8" stroke="#b9b1a3" stroke-width="3"/>
+          <!-- same spots, same place, both frames -->
+          <g fill="#33393b" opacity="0.8">
+            <circle cx="48" cy="54" r="3"/>
+            <circle cx="86" cy="48" r="2.4"/>
+            <circle cx="66" cy="84" r="2.8"/>
+            <circle cx="184" cy="54" r="3"/>
+            <circle cx="222" cy="48" r="2.4"/>
+            <circle cx="202" cy="84" r="2.8"/>
+          </g>
+          <!-- aperture marker -->
+          <text x="22" y="124" font-size="11" fill="#3e7c59" font-weight="700">f/16–f/22, blank wall</text>
+          <text x="20" y="142" font-size="10" fill="#6b7376">same spots, same place = sensor</text>
+          <text x="158" y="160" font-size="10" fill="#6b7376">(lens dust moves or won't show)</text>
+        </svg>
+        <h4>First, confirm it's the sensor</h4>
+        <p>Shoot a plain white wall or even sky at f/16–f/22 and look across several frames. Dust that sits in the exact same spot every time is on the sensor; specks that move, change, or don't appear are on the lens or elsewhere — clean those differently.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the easy first fix: run the camera's in-camera ultrasonic sensor-cleaning shake function a few times from the menu before doing anything by hand">
+          <rect x="86" y="36" width="108" height="80" rx="10" fill="#8a6a4f"/>
+          <rect x="86" y="36" width="108" height="22" rx="10" fill="#b9b1a3"/>
+          <rect x="98" y="64" width="84" height="44" rx="5" fill="#dce8ee"/>
+          <text x="140" y="84" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">SENSOR</text>
+          <text x="140" y="98" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">CLEAN</text>
+          <!-- vibration lines suggesting the ultrasonic shake -->
+          <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round" opacity="0.8">
+            <path d="M70 60 q-6 6 0 12"/>
+            <path d="M62 54 q-10 12 0 24"/>
+            <path d="M210 60 q6 6 0 12"/>
+            <path d="M218 54 q10 12 0 24"/>
+          </g>
+          <text x="86" y="138" font-size="11" fill="#6b7376">menu → run it a few times</text>
+        </svg>
+        <h4>Try the in-camera shake first</h4>
+        <p>Most cameras have an ultrasonic sensor-cleaning function that vibrates dust loose. Run it from the menu a few times — it's completely safe, needs no tools, and clears a surprising amount of light dust before you ever open the body.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of blowing dust off the sensor: enter sensor-clean mode, hold the camera with the lens mount pointing straight down, and puff a rocket blower toward the sensor without ever touching it so dust falls out">
+          <!-- camera body facing DOWN -->
+          <rect x="150" y="30" width="96" height="46" rx="8" fill="#8a6a4f"/>
+          <rect x="150" y="30" width="96" height="14" rx="8" fill="#b9b1a3"/>
+          <!-- mount opening on the bottom, facing down -->
+          <rect x="172" y="72" width="52" height="12" rx="3" fill="#6b5440"/>
+          <rect x="182" y="76" width="32" height="6" rx="2" fill="#3e7c59"/>
+          <!-- dust falling out, downward -->
+          <g fill="#8a6a4f" opacity="0.7">
+            <circle cx="190" cy="104" r="2"/>
+            <circle cx="208" cy="118" r="1.6"/>
+            <circle cx="198" cy="134" r="2.2"/>
+          </g>
+          <path d="M200 92 l0 40 m-5 -8 l5 8 l5 -8" stroke="#b9b1a3" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- rocket blower puffing up toward the mount, no contact -->
+          <g transform="translate(40 96)">
+            <ellipse cx="30" cy="22" rx="28" ry="20" fill="#c96f4a"/>
+            <ellipse cx="20" cy="15" rx="9" ry="6" fill="#d9663f" opacity="0.7"/>
+            <path d="M56 14 l30 -10 l0 12 l-30 8 z" fill="#a8542f"/>
+            <rect x="84" y="2" width="10" height="14" rx="3" fill="#6b5440"/>
+          </g>
+          <g stroke="#7fb3c8" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.75">
+            <path d="M138 94 q12 -8 24 -8"/>
+            <path d="M140 104 q14 -6 26 -4"/>
+          </g>
+          <text x="64" y="166" font-size="11" fill="#c96f4a" font-weight="700">face DOWN · no contact</text>
+        </svg>
+        <h4>Blower next — face down, no contact</h4>
+        <p>Lock the mirror up or enter sensor-clean mode, then hold the camera with the mount pointing straight down and puff the rocket blower toward the sensor. Never let the nozzle touch the glass; gravity carries the loosened dust out the bottom.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a single-pass wet swab: use a sensor swab of the correct width with a drop or two of sensor fluid, drag it across the sensor with light even pressure once and back, using a fresh side each pass">
+          <!-- the sensor rectangle -->
+          <rect x="58" y="48" width="120" height="84" rx="6" fill="#3e7c59"/>
+          <rect x="58" y="48" width="120" height="84" rx="6" fill="#2c5a40" opacity="0.35"/>
+          <!-- swab tip dragging across -->
+          <rect x="60" y="80" width="116" height="18" rx="4" fill="#dce8ee" opacity="0.9"/>
+          <rect x="170" y="62" width="14" height="56" rx="4" fill="#fffdf8"/>
+          <rect x="184" y="76" width="40" height="12" rx="4" fill="#5e9a78"/>
+          <!-- one-pass arrow across and back -->
+          <path d="M70 112 l96 0 m-12 -6 l12 6 l-12 6" stroke="#e0a93d" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- a drop of fluid -->
+          <path d="M200 56 q3 5 0 9 a4 4 0 1 1 0 -9 z" fill="#7fb3c8"/>
+          <text x="58" y="158" font-size="11" fill="#d9663f" font-weight="700">one light pass · fresh side</text>
+        </svg>
+        <h4>Wet swab only if it's stuck</h4>
+        <p>For a spot that won't blow off, use a correct-width sensor swab with a drop or two of fluid. Drag it across the sensor with light, even pressure — one pass over and back — then stop. Use a fresh swab or fresh side every time; never go over the same swab twice.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of re-testing and knowing when to stop: take another f/22 sky shot to check the result, and if repeated swabbing makes no progress, stop and take the camera to a shop">
+          <!-- clean re-test frame with check -->
+          <rect x="28" y="34" width="92" height="70" rx="6" fill="#7fb3c8" stroke="#b9b1a3" stroke-width="3"/>
+          <g stroke="#2c5a40" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M52 70 l12 12 l24 -28"/>
+          </g>
+          <text x="28" y="122" font-size="11" fill="#3e7c59" font-weight="700">re-test at f/22</text>
+          <!-- stop sign / shop hand-off side -->
+          <g transform="translate(176 36)">
+            <path d="M22 0 h26 l18 18 v26 l-18 18 h-26 l-18 -18 v-26 z" fill="#d9663f"/>
+            <text x="35" y="44" font-size="13" fill="#fffdf8" font-weight="700" text-anchor="middle">STOP</text>
+          </g>
+          <text x="156" y="122" font-size="10.5" fill="#6b7376">no progress? → the shop</text>
+        </svg>
+        <h4>Re-test, and know when to stop</h4>
+        <p>Take another f/22 sky shot and check your work. If a couple of careful swabs aren't shifting a spot — or you see oily smears or worry about a scratch — that's your signal to stop. Repeated swabbing only risks damage; let a shop finish the job.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Sensor-cleaning progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Dust confirmed, blown off, and any stubborn spots swabbed clean — re-tested on a blue sky and spotless. Log the date and check again in about a year, or sooner if you've been swapping lenses a lot.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time — and when to call a pro</h2>
+    <p class="sub">A clean sensor announces itself only by its absence: clear blue skies, no repeating blobs, nothing to clone out. These are the signals it needs attention — and the handful that mean you should close the camera and let a professional handle it rather than risk an expensive body:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The same dark spots, frame after frame.</strong> If a blank-sky test at f/16–f/22 shows fixed blobs in the same spots across shots, that's sensor dust — start with the shake and blower. This is also worth a quick check before any important shoot.</li>
+        <li><strong>Spots that won't blow or swab off.</strong> Dust that survives the in-camera shake, several puffs of the blower, and a careful swab or two is telling you it's stuck or it isn't simple dust. Stop swabbing and let a pro take over — more passes just add scratch risk.</li>
+        <li><strong>Oily streaks or smears, not dry specks.</strong> Greasy marks often come from the shutter mechanism or lubricant migration, not stray dust. That's a service issue, not a cleaning job — a shop can diagnose and clean it properly.</li>
+        <li><strong>Any worry that you've scratched it — or might.</strong> If you see a mark that looks like a scratch, or you simply feel out of your depth with the swab, stop. A scratched low-pass filter or sensor coating is a costly repair, and pushing on rarely helps.</li>
+        <li><strong>You'd rather not risk an expensive body at all.</strong> There's nothing wrong with this. A camera shop's sensor cleaning is typically $50–80 and is cheap insurance against a four-figure mistake — especially for a pro body or a brand-new camera.</li>
+        <li><strong>A weather-sealed or unfamiliar body you're not sure how to open safely.</strong> If you can't find the sensor-clean / mirror-lock-up mode, or you're unsure how your particular model exposes the sensor, don't improvise — check the manual or hand it to a shop.</li>
+        <li><strong>Pro tip:</strong> sensor cleaning is close cousin to the other careful electronics jobs — see our guide to <a href="clean-laptop-fans.html">cleaning laptop fans</a> for the same gentle, no-canned-air, know-when-to-stop approach to delicate gear.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I tell sensor dust from lens dust?</summary>
+      <p>Shoot a test: point the camera at a plain white wall or an even patch of sky, set a small aperture like f/16 to f/22, and take several frames — slightly defocus so only the dust shows. Then look at the images side by side. Dust on the <em>sensor</em> appears as the same dark spots in exactly the same place in every frame, regardless of what you point the camera at; it's most visible at small apertures and on bright, even backgrounds. Dust or smudges on the <em>lens</em> usually don't show in the image at all (the front element is far from the focal plane), and any marks that move, change between frames, or vanish when you swap lenses are not on the sensor. If the spots stay put across frames and lenses, it's the sensor — and this guide is for you. If they move or disappear with a different lens, clean the lens instead, which is a separate, gentler job.</p>
+    </details>
+    <details>
+      <summary>Can I use canned or compressed air?</summary>
+      <p>No — never. This is the single most common way people damage a sensor. Canned air is under high pressure and often sprays liquid propellant along with the air; that propellant can leave a residue or freeze-spray right onto the sensor's surface, which is far harder to remove than the dust you started with. The force itself can also drive grit into the surface or stress the delicate low-pass filter sitting over the sensor, and a stray blast can bend the shutter blades. The same goes for blowing with your mouth (you'll spray saliva) and for any air compressor. The <em>only</em> safe air is a hand-squeezed rocket-style blower, held close but never touching, with the camera facing down. If a rocket blower and a careful swab don't do it, that's a sign for a shop — not a stronger air source.</p>
+    </details>
+    <details>
+      <summary>Blower or wet swab — which do I try first?</summary>
+      <p>Always escalate gently, least-invasive first. Step one is the camera's built-in ultrasonic sensor-cleaning (the "shake"), which is completely safe and clears a lot of light dust on its own. Step two is the rocket blower: enter sensor-clean or mirror-lock-up mode, hold the body with the mount facing straight down, and puff air toward the sensor without touching it, letting gravity carry the dust out. Most dust is gone by this point with zero contact, which is exactly why you do it first. Only if a specific spot survives the shake and several rounds of blowing do you move to a wet swab — and even then it's a single, light pass per swab, fresh side each time. The wet swab is the one method that actually contacts the sensor, so it's the last resort, not the opener.</p>
+    </details>
+    <details>
+      <summary>Is there a safe DIY method, and will I wreck my sensor?</summary>
+      <p>Yes, there's a safe DIY method, and no, you won't wreck it <em>if</em> you stay within the gentle steps. The genuinely risk-free parts — the in-camera shake and the rocket blower — handle the majority of dust and involve no contact at all, so anyone can and should do those. Wet-swabbing is also safe when you use a sensor-rated swab of the correct width, a drop or two of real sensor fluid, light even pressure, one pass, and a fresh swab every time. Where people get into trouble is by improvising: canned air, a cotton swab or tissue, a fingertip, dry rubbing, reusing a dirty swab, or scrubbing the same stuck spot over and over. Charge the battery fully so the camera can't power down mid-clean, work in a clean draft-free room, and — most important — be willing to stop. If you're nervous about the swab, do the no-contact steps and leave the rest to a shop. That's not failure; that's good judgment with an expensive part.</p>
+    </details>
+    <details>
+      <summary>How often should I clean the sensor?</summary>
+      <p>Treat it as <em>as needed</em> rather than a fixed schedule: the real trigger is seeing dark spots in your shots, especially on blue skies and at small apertures. That said, a periodic check keeps dust from ambushing you before a big shoot. For careful shooters who don't change lenses much and work in clean conditions, checking about once a year is plenty. If you swap lenses constantly, shoot outdoors in dust or wind, or use a mirrorless body where the sensor is exposed at every change, look far more often — every month or two, and definitely before any shoot that matters. A good habit is a quick blank-sky test whenever you suspect something or before an important job; clean only when the test actually shows spots. The blower-first approach means most "cleanings" are a thirty-second, no-contact affair anyway.</p>
+    </details>
+    <details>
+      <summary>Mirrorless vs. DSLR — and should I just pay a shop?</summary>
+      <p>The method is the same, but the details differ. On a <em>mirrorless</em> camera the sensor sits right behind the lens mount, so it's exposed every time you change a lens — that means it collects dust faster, but it's also easy to see and reach for cleaning. On a <em>DSLR</em> there's a mirror (and shutter) in front of the sensor, which offers a little shelter from dust but means you must use the camera's mirror-lock-up or sensor-clean mode to get access — never force the mirror up by hand, as you can bend or break it, and never let the camera power down with the mirror up. Either way, charge the battery, work face-down in a clean room, and escalate gently. As for paying a shop: if you'd rather not risk an expensive body, if a spot won't budge after a couple of careful swabs, if you see oily smears, or if you're simply unsure — yes, hand it over. A professional cleaning is typically $50–80, which is trivial next to repairing or replacing a sensor. Many people happily do the blower step themselves and leave wet-swabbing to a pro.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Sensor dust creeps in one lens change at a time.</h2>
+        <p>You don't notice until a blue-sky shot comes back covered in spots — usually the day it matters most. Upkeep Ledger logs this cleaning and prompts a periodic check on a schedule that fits how you shoot, so dust never ruins a shoot — right alongside the lens kit, the camera battery rotation, and every other quiet bit of gear upkeep.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-camera-sensor&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-camera-sensor&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cleaning a camera sensor risks an expensive, delicate part; this guide is general planning advice — follow your camera's manual, and when in doubt, use a professional service.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { swaps: null, spots: null, type: null, comfort: null };
+
+  var FREQ_LABEL = {
+    3: "Every 3 months",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var tighten = false;
+
+    /* Swaps / shooting conditions */
+    if (s.swaps === "lots") {
+      months = 3;
+      tighten = true;
+      reasons.push("Frequent lens changes and dusty or windy shooting load the sensor fast — every swap is an open door for dust — so a check every few months keeps spots from piling up unseen.");
+    } else if (s.swaps === "rare") {
+      reasons.push("One lens left on in clean, indoor conditions means very little dust ever reaches the sensor, so you can comfortably stretch to the long end.");
+    } else {
+      if (months > 6) months = 6;
+      reasons.push("Occasional lens changes in ordinary conditions put a moderate amount of dust on the sensor — a periodic look a couple of times a year is sensible.");
+    }
+
+    /* Spots right now */
+    if (s.spots === "lots") {
+      months = 3;
+      tighten = true;
+      reasons.push("You can already see lots of spots, so this isn't really about scheduling — clean it now, and then check often until your shots come back clean.");
+    } else if (s.spots === "few") {
+      if (months > 6) months = 6;
+      reasons.push("A few spots showing up in blue-sky shots means dust is accumulating — clean it soon and check more frequently for a while.");
+    } else {
+      reasons.push("Clean-looking frames are a good sign — there's no spot to chase right now, so a periodic check is all you need.");
+    }
+
+    /* Camera type */
+    if (s.type === "mirrorless") {
+      if (months > 6) months = 6;
+      reasons.push("On a mirrorless body the sensor is exposed at every lens change, so it tends to catch dust faster — worth checking a bit more often than a DSLR.");
+    } else if (s.type === "dslr") {
+      reasons.push("A DSLR's mirror gives the sensor a little shelter from dust between changes, so it generally needs looking at less often — though it still collects dust over time.");
+    } else {
+      reasons.push("Whatever the body, the safe routine is the same: confirm the spots, run the shake, blow, and only swab if needed — and check on a loose schedule.");
+    }
+
+    /* Comfort level */
+    if (s.comfort === "shop") {
+      reasons.push("Since you'd rather a shop handle it, treat your check interval as 'when to book a cleaning' — and still own a rocket blower for the easy, no-contact dust between visits.");
+    } else if (s.comfort === "blower") {
+      reasons.push("Blower-only is a perfectly good plan — it's risk-free and clears most dust; just plan to send the camera in for the rare stuck spot rather than forcing a swab.");
+    } else {
+      reasons.push("Comfortable with a careful swab, you can handle nearly everything yourself — one light pass, fresh side each time, and stop the moment it stops improving.");
+    }
+
+    /* Best-case relaxation: rare swaps, no spots, careful shooting */
+    if (!tighten && s.swaps === "rare" && s.spots === "none" && s.type === "dslr") {
+      months = 12;
+      reasons.push("A sheltered DSLR sensor, one lens, no spots, and clean conditions is the one case where a once-a-year glance is genuinely plenty — just test before any big shoot.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.spots === "lots") {
+      note = "<strong>You're past 'when to check' — it's time to clean.</strong> Confirm with a blank-sky test, run the in-camera shake, then the rocket blower face-down. Only reach for a wet swab if a spot truly won't blow off, and stop if it isn't improving.";
+    } else if (s.comfort === "shop") {
+      note = "<strong>Cheap insurance:</strong> a shop cleaning is typically $50–80, trivial next to a damaged sensor. Keep a rocket blower at home for quick no-contact dust, and book a pro for anything stuck.";
+    } else if (s.swaps === "lots") {
+      note = "<strong>Before every shoot that matters,</strong> fire off a quick blank-sky frame at f/16+ to catch new dust early. With this much lens-swapping, a thirty-second blower session will be most of your 'cleanings.'";
+    } else {
+      note = "<strong>Remember it's really 'as needed':</strong> the schedule is just a reminder to look. Clean only when a test actually shows spots — and always blow before you ever swab.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.swaps || !quizState.spots || !quizState.type || !quizState.comfort) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: check the sensor " + FREQ_LABEL[r.months].toLowerCase() + " (and clean when you see spots)";
+    document.getElementById("resultBody").innerHTML =
+      "It's really <strong>as needed — clean whenever you see spots</strong> — but a check on this interval keeps dust from sneaking up before a shoot. When you do clean: <strong>confirm it's the sensor, run the shake, blow face-down, and swab only if a spot is stuck</strong>. Why this interval:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Confirm the dust", text: "Shoot a blank-sky / white-wall test at f/16–f/22", note: "Point at an even sky or plain wall, set a small aperture, and take several frames (slightly defocused). Dust shows up as dark spots most clearly here." },
+    { phase: "Confirm the dust", text: "Check it's the sensor, not the lens", note: "Look across the frames: spots in the same place every time = sensor dust. Specks that move, change, or vanish with another lens are not on the sensor — clean the lens instead." },
+    { phase: "Confirm the dust", text: "Run the in-camera sensor shake a few times, then re-test", note: "Use the camera's ultrasonic sensor-cleaning function from the menu — it's completely safe and clears a lot of light dust. Re-shoot the test; you may be done already." },
+    { phase: "Prep & blower", text: "Fully charge the battery and set up a clean, draft-free spot", note: "A full battery (or AC adapter) keeps the camera from powering down mid-clean, which could drop the shutter or mirror. Work somewhere low-dust with no fan or breeze." },
+    { phase: "Prep & blower", text: "Enter sensor-clean / mirror-lock-up mode", note: "Find it in the menu (\"sensor cleaning,\" \"manual cleaning,\" or \"mirror lock up for cleaning\"). Never hold a DSLR mirror up by hand — let the mode lock everything safely out of the way." },
+    { phase: "Prep & blower", text: "Remove the lens, hold the camera FACE DOWN, and blow — no contact", note: "Cap the lens, point the mount straight at the floor, and puff a rocket blower toward the sensor without ever touching it. Gravity carries the loosened dust out the bottom. Never use canned air." },
+    { phase: "Prep & blower", text: "Re-test on a blank sky to see if the blower did it", note: "Reattach a lens, shoot another f/16–f/22 frame, and check. Most dust is gone by now with zero contact — if your frames are clean, stop here." },
+    { phase: "Wet swab (if needed)", text: "Pick the correct swab width and add a drop or two of fluid", note: "Use only a sensor-rated swab sized for your sensor and real sensor cleaning fluid — a drop or two, not soaked. Never a cotton swab, tissue, or finger." },
+    { phase: "Wet swab (if needed)", text: "Make ONE light pass across and back, fresh side each time", note: "With light, even pressure, drag the swab over the sensor once and back, then stop. Use a fresh swab or fresh side for any additional pass — never reuse a dirty swab or scrub a spot repeatedly." },
+    { phase: "Re-test & decide", text: "Re-test at f/22; reassemble and confirm it's clean", note: "Shoot another blank-sky frame at a small aperture. If it's clean, cap up and you're done. If oily smears appear or a spot won't shift, stop swabbing." },
+    { phase: "Re-test & decide", text: "Log the date — and know when to hand it to a shop", note: "Note the date so your next check lands on schedule (or sooner with heavy lens-swapping). If a couple of careful swabs make no progress, you see smears, or you're worried about a scratch, take it to a pro — a $50–80 cleaning is cheap insurance." }
+  ];
+
+  var LS_KEY = "upkeepguides:clean-camera-sensor:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

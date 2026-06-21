@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean bathroom exhaust fans — UpkeepGuides.com</title>
+<meta name="description" content="How to clean a bathroom exhaust fan: why a dust-clogged vent breeds mold and fire risk, how to cut power at the breaker, pop the cover, vacuum the blades, clear the duct, and run the tissue test.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Clean bathroom exhaust fans — UpkeepGuides.com">
+<meta property="og:description" content="How to clean a bathroom exhaust fan: why a dust-clogged vent breeds mold and fire risk, how to cut power at the breaker, pop the cover, vacuum the blades, clear the duct, and run the tissue test.">
+<meta property="og:url" content="https://upkeepguides.com/clean-exhaust-fans.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clean bathroom exhaust fans — UpkeepGuides.com">
+<meta name="twitter:description" content="How to clean a bathroom exhaust fan: why a dust-clogged vent breeds mold and fire risk, how to cut power at the breaker, pop the cover, vacuum the blades, clear the duct, and run the tissue test.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 6 months</span>
+      <h1>Clean Your Bathroom Exhaust Fan</h1>
+      <p class="lede">It's the one fixture in the house that does its whole job out of sight — and quietly stops doing it. Over a year or two, the little ceiling fan that's supposed to pull steam out of the bathroom chokes on a felted gray mat of dust, until it's barely moving air at all. The mirror stays fogged, the paint starts peeling, a musty smell settles in, and that lint packed on a warm motor becomes a genuine fire risk. The fix takes five minutes and costs nothing: cut the power, pop the cover, vacuum the blades and housing, check the duct and the vent flap outside, then test the pull with a square of tissue. Almost nobody does it — which is exactly why it's worth putting on the calendar.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~5–15 min</em> a fan</span>
+        <span class="chip">🍃 Pulls <em>moisture out fast</em></span>
+        <span class="chip">💸 Costs <em>~$0</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a ceiling bathroom exhaust fan: the white grille cover has been popped off and hangs by its spring clips, dust coats the fan blades inside the housing, a hand reaching up from a step stool brushes and vacuums the dust away, and steam rises from a shower running in the background">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- ceiling band across the top -->
+      <rect x="40" y="34" width="480" height="60" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="40" y="90" width="480" height="6" fill="#b9b1a3"/>
+
+      <!-- exhaust fan housing recessed in the ceiling -->
+      <rect x="196" y="44" width="150" height="58" rx="6" fill="#dce8ee" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="206" y="52" width="130" height="42" rx="4" fill="#cdd9de"/>
+      <!-- the motor unit inside -->
+      <circle cx="271" cy="73" r="15" fill="#b9b1a3"/>
+      <circle cx="271" cy="73" r="6" fill="#8a6a4f"/>
+
+      <!-- dusty fan blades inside the housing -->
+      <g fill="#b9b1a3" opacity="0.9">
+        <path d="M271 73 l16 -7 q4 7 -2 12 z"/>
+        <path d="M271 73 l-16 7 q-4 -7 2 -12 z"/>
+        <path d="M271 73 l7 16 q-7 4 -12 -2 z"/>
+        <path d="M271 73 l-7 -16 q7 -4 12 2 z"/>
+      </g>
+      <!-- felted dust mat over the blades -->
+      <g fill="#8a6a4f" opacity="0.55">
+        <circle cx="252" cy="64" r="3"/>
+        <circle cx="292" cy="66" r="2.6"/>
+        <circle cx="258" cy="86" r="2.8"/>
+        <circle cx="290" cy="84" r="2.4"/>
+        <circle cx="271" cy="60" r="2.2"/>
+      </g>
+
+      <!-- the grille cover popped off, hanging by its spring clips -->
+      <!-- spring clip wires from housing down to the cover -->
+      <path d="M214 100 q-6 24 -2 50" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M330 100 q6 24 2 50" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- the cover, tilted as it dangles -->
+      <g transform="rotate(8 273 168)">
+        <rect x="206" y="146" width="134" height="46" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+        <!-- vent louvers on the cover -->
+        <g stroke="#cdd9de" stroke-width="3" stroke-linecap="round">
+          <line x1="220" y1="156" x2="326" y2="156"/>
+          <line x1="220" y1="166" x2="326" y2="166"/>
+          <line x1="220" y1="176" x2="326" y2="176"/>
+          <line x1="220" y1="184" x2="326" y2="184"/>
+        </g>
+      </g>
+      <!-- a couple of dust tufts drifting off the cover -->
+      <g fill="#b9b1a3" opacity="0.6">
+        <circle cx="208" cy="206" r="3"/>
+        <circle cx="232" cy="214" r="2.2"/>
+      </g>
+
+      <!-- step stool -->
+      <g>
+        <rect x="60" y="320" width="118" height="14" rx="4" fill="#c96f4a"/>
+        <rect x="74" y="334" width="12" height="64" rx="3" fill="#8a6a4f"/>
+        <rect x="152" y="334" width="12" height="64" rx="3" fill="#8a6a4f"/>
+        <rect x="70" y="362" width="98" height="11" rx="3" fill="#d9663f"/>
+      </g>
+
+      <!-- a hand reaching up with a brush / vacuum nozzle to the fan -->
+      <!-- arm rising from the stool -->
+      <path d="M118 318 q40 -90 120 -154" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <!-- hand -->
+      <ellipse cx="232" cy="170" rx="15" ry="12" fill="#e8b48f" transform="rotate(-34 232 170)"/>
+      <path d="M224 162 q-5 5 -2 12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- a soft brush in the hand reaching into the housing -->
+      <rect x="236" y="116" width="12" height="48" rx="4" fill="#5e9a78" transform="rotate(-26 242 140)"/>
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <line x1="252" y1="112" x2="262" y2="104"/>
+        <line x1="248" y1="118" x2="259" y2="111"/>
+        <line x1="245" y1="124" x2="256" y2="118"/>
+      </g>
+
+      <!-- shower in the background, right, with rising steam -->
+      <!-- shower head -->
+      <rect x="468" y="118" width="12" height="26" rx="3" fill="#b9b1a3"/>
+      <path d="M456 144 h36 l-6 12 h-24 z" fill="#7fb3c8"/>
+      <!-- water spray -->
+      <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round" opacity="0.7">
+        <line x1="464" y1="160" x2="461" y2="186"/>
+        <line x1="474" y1="160" x2="474" y2="190"/>
+        <line x1="484" y1="160" x2="487" y2="186"/>
+      </g>
+      <!-- glass / wall edge -->
+      <rect x="448" y="200" width="64" height="172" rx="6" fill="#dce8ee" opacity="0.6"/>
+      <!-- rising steam curls -->
+      <g fill="none" stroke="#dce8ee" stroke-width="6" stroke-linecap="round" opacity="0.85">
+        <path d="M430 250 q14 -20 0 -40 q-14 -20 0 -40"/>
+        <path d="M408 270 q12 -18 0 -36 q-12 -18 0 -36"/>
+        <path d="M452 240 q12 -18 0 -36 q-12 -18 0 -36"/>
+      </g>
+
+      <!-- soapy bucket / cleaning the cover front-left -->
+      <path d="M196 350 h54 l-7 44 h-40 z" fill="#7fb3c8"/>
+      <path d="M192 348 h62 l-3 8 h-56 z" fill="#9cc3d4"/>
+      <path d="M198 344 q27 -14 50 0" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="210" cy="352" r="5" fill="#eef4f7"/>
+      <circle cx="224" cy="349" r="6" fill="#fffdf8"/>
+      <circle cx="237" cy="353" r="4.5" fill="#eef4f7"/>
+
+      <!-- small plant for warmth, far right floor -->
+      <path d="M512 372 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <ellipse cx="512" cy="342" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 512 342)"/>
+      <ellipse cx="538" cy="346" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 538 346)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A bathroom fan is the most-ignored fixture in the house precisely because it works out of sight, in the ceiling, doing a job you only notice when it stops. And it does stop — slowly, as dust felts over the blades and chokes the airflow. Here's what a clogged, struggling fan actually costs you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="6" width="24" height="24" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <g stroke="#cdd9de" stroke-width="2" stroke-linecap="round">
+            <line x1="10" y1="11" x2="26" y2="11"/>
+            <line x1="10" y1="16" x2="26" y2="16"/>
+            <line x1="10" y1="21" x2="26" y2="21"/>
+          </g>
+          <ellipse cx="14" cy="24" rx="3.5" ry="2.6" fill="#5e9a78" opacity="0.6"/>
+          <ellipse cx="22" cy="26" rx="3" ry="2.2" fill="#3e7c59" opacity="0.55"/>
+          <circle cx="11" cy="9" r="1.5" fill="#b9b1a3"/>
+          <circle cx="25" cy="13" r="1.3" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>It can't pull the humidity out</h3>
+        <p>Dust packs into the blades and grille until the fan moves almost no air, so the steam from every shower just lingers. That trapped moisture is what grows mold and mildew in the corners, peels the paint off the ceiling, and leaves the whole room smelling musty.</p>
+        <span class="cost">Mold, peeling paint &amp; a musty smell</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="5" width="18" height="22" rx="2" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="12" y="8" width="12" height="16" rx="1.5" fill="#cdd9de"/>
+          <path d="M13 14 q5 4 0 8" fill="none" stroke="#7fb3c8" stroke-width="2" stroke-linecap="round"/>
+          <g fill="#7fb3c8" opacity="0.7">
+            <circle cx="16" cy="30" r="1.6"/>
+            <circle cx="20" cy="32" r="1.4"/>
+            <circle cx="13" cy="32" r="1.2"/>
+          </g>
+        </svg></div>
+        <h3>Lingering moisture wrecks the room</h3>
+        <p>A weak fan leaves the air damp long after the water's off. That moisture warps trim and the vanity, rusts hinges and towel bars, swells the door, and keeps the mirror fogged for ages — slow water damage that quietly racks up real repair bills.</p>
+        <span class="cost">Warped trim, rust &amp; a foggy mirror</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 q5 8 5 14 a5 5 0 1 1 -10 0 q0 -6 5 -14 z" fill="#d9663f"/>
+          <path d="M18 14 q2.5 4 2.5 7 a2.5 2.5 0 1 1 -5 0 q0 -3 2.5 -7 z" fill="#e0a93d"/>
+          <g fill="#b9b1a3" opacity="0.8">
+            <circle cx="9" cy="9" r="1.6"/>
+            <circle cx="27" cy="11" r="1.4"/>
+            <circle cx="11" cy="20" r="1.3"/>
+          </g>
+        </svg></div>
+        <h3>Dust on a warm motor is a fire hazard</h3>
+        <p>Years of lint and dust packed against a running, warm motor is genuinely dangerous — bathroom exhaust fans are a documented cause of house fires. A choked fan also makes the motor work harder and run hotter, which only stacks the odds against you.</p>
+        <span class="cost">A real, documented fire risk</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <g fill="#3e7c59">
+            <path d="M18 18 l9 -3 q2 4 -1 7 z"/>
+            <path d="M18 18 l-9 3 q-2 -4 1 -7 z"/>
+            <path d="M18 18 l3 9 q-4 2 -7 -1 z"/>
+            <path d="M18 18 l-3 -9 q4 -2 7 1 z"/>
+          </g>
+          <circle cx="18" cy="18" r="3" fill="#2c5a40"/>
+        </svg></div>
+        <h3>A clean fan is quiet — and works</h3>
+        <p>Clear the dust and the fan spins freely again: it clears steam and odors fast, quiets down from that labored rattle to a soft hum, and actually earns its keep. The difference between a clogged fan and a clean one is the difference between background noise and real ventilation.</p>
+        <span class="cost">Noisy, rattling &amp; barely working</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">Every six months is the sensible default for a bathroom fan — a quick vacuum each spring and fall. But a busy, humid, windowless bathroom that runs the fan hard pushes toward quarterly, while a barely-used guest bath can stretch to once a year. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="traffic">
+        <div class="q-label">1. How heavily is this bathroom used?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Multiple showers a day, big household</button>
+          <button class="pill" data-v="normal">A typical daily-use bathroom</button>
+          <button class="pill" data-v="light">Occasional / guest bath, rarely used</button>
+        </div>
+        <div class="q-hint">More showers mean more steam through the fan and more airborne dust settling on the blades — a busy family bath loads its fan far faster than a guest bath nobody touches.</div>
+      </div>
+      <div class="quiz-q" data-q="vent">
+        <div class="q-label">2. What's the ventilation and climate like?</div>
+        <div class="pills">
+          <button class="pill" data-v="trapped">No window, humid climate</button>
+          <button class="pill" data-v="mixed">A window, or moderate climate</button>
+          <button class="pill" data-v="airy">Good window, dry climate</button>
+        </div>
+        <div class="q-hint">A windowless bathroom in a humid place leans entirely on the fan to clear moisture, so a clogged one does real damage fast — a window and dry air give you more slack.</div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. How is the fan behaving right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="bad">Dusty, noisy, or slow to clear the mirror</button>
+          <button class="pill" data-v="okay">A little dusty but seems okay</button>
+          <button class="pill" data-v="good">Looks clean, clears steam fine</button>
+        </div>
+        <div class="q-hint">Visible dust, a new rattle, or a mirror that won't de-fog are the fan telling you it's overdue — those are signs to clean it now and then keep a shorter interval.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">4. How old is the fan, and how hard does it run?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older fan, runs constantly</button>
+          <button class="pill" data-v="mid">Average age and run-time</button>
+          <button class="pill" data-v="new">Newer fan, light use</button>
+        </div>
+        <div class="q-hint">An older motor running for hours a day pulls a lot of dusty air through itself, so it both clogs faster and is more worth keeping clean to protect the aging motor.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is about the cheapest piece of home upkeep there is — the supplies are a vacuum, a brush, and a squirt of dish soap, all of which you already own. What skipping it costs, on the other hand, runs from a coat of paint to a replacement motor to, at the far end, a fire. Here's the lopsided math:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">the whole job — a vacuum, a soft brush, dish soap, and warm water you already have on hand</div></div>
+        <div class="calc-stat"><div class="v">~5–15 min</div><div class="l">to cut the power, pop the cover, vacuum the blades and housing, check the duct, and test it</div></div>
+        <div class="calc-stat"><div class="v bad">$100–300</div><div class="l">to replace a fan motor or whole unit that burned out from running clogged and overheated</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧹 Vacuum, brush &amp; dish soap you already own</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🪛 New fan cover or upgraded quiet fan, DIY</span><span>$20–80</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🎨 Repainting a peeling, mildew-stained ceiling</span><span>$150–400</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:40%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Replacing a burned-out fan motor or unit</span><span>$100–300+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 Mold remediation — or a fire from a dust-packed motor</span><span>$1,000s, or far worse</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:95%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a five-minute vacuum that costs nothing</strong> against repainting a peeling ceiling, a replacement motor, mold remediation, or — at the extreme — a fire that started in a forgotten fixture full of lint. Pop the cover twice a year, vacuum the dust out, and the fan keeps doing its quiet, essential job for years.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean a bathroom exhaust fan</h2>
+    <p class="sub">The job is genuinely quick once you know it: cut the power at the breaker, squeeze the clips to pop the cover off, vacuum and brush the dust off the blades and housing, check the duct and the vent flap outside, then restore power and test the pull. Read the techniques first — especially the safety box about killing the power — then work the checklist. Your progress saves automatically. Hit this during a <a href="deep-clean-bathroom.html">bathroom deep clean</a> and you'll knock it out without a separate trip.</p>
+
+    <div class="safety">
+      <h3>⚠️ Cut the power first — this one's electrical</h3>
+      <ul>
+        <li><strong>Turn the power off at the breaker, not just the wall switch.</strong> A bathroom fan can be wired so that flipping the switch off still leaves the unit live. Go to the panel, switch off the breaker for that bathroom, and confirm the fan is dead before you touch it — the switch alone is not enough.</li>
+        <li><strong>Stand on a stable step stool — never the tub edge or a chair.</strong> You're reaching overhead on a hard, sometimes wet bathroom floor. Use a proper step stool or short ladder on a level surface and keep your weight centered; the tub rim and a wobbly chair are how this turns into a fall.</li>
+        <li><strong>Let the motor cool and confirm it's off before reaching in.</strong> If the fan was just running it may be warm. Make sure it's switched off at the breaker, let it cool, and verify it won't spin before you put a hand or a brush into the housing.</li>
+        <li><strong>Wear a dust mask.</strong> What's coming out is years of accumulated dust, and you'll be dislodging it right above your face. A simple dust mask keeps you from breathing a faceful of it.</li>
+        <li><strong>Don't bend the blades.</strong> The fan blades are light plastic or thin metal. Brush and vacuum gently — bending or warping them throws the fan off balance and makes it noisy or worse.</li>
+        <li><strong>Keep the housing dry — bathrooms are on GFCI circuits.</strong> Wash the <em>cover</em> in soapy water, but never spray or wet the motor and wiring inside the housing. Let the cover dry fully before it goes back, and keep water away from anything electrical.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A stable step stool or short ladder</span>
+      <span class="tool-chip">A vacuum with a brush / crevice tool</span>
+      <span class="tool-chip">A soft brush or old paintbrush</span>
+      <span class="tool-chip">A dust mask</span>
+      <span class="tool-chip">Dish soap &amp; warm water (for the cover)</span>
+      <span class="tool-chip">A microfiber cloth or two</span>
+      <span class="tool-chip">A square of toilet paper / tissue (the test)</span>
+      <span class="tool-chip">A screwdriver (some covers are screwed on)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of switching off the breaker for the bathroom at the electrical panel and confirming the fan will not spin, not just flipping the wall switch">
+          <!-- breaker panel -->
+          <rect x="40" y="28" width="92" height="124" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <!-- breaker switches -->
+          <g>
+            <rect x="54" y="44" width="28" height="14" rx="3" fill="#b9b1a3"/>
+            <rect x="90" y="44" width="28" height="14" rx="3" fill="#b9b1a3"/>
+            <rect x="54" y="64" width="28" height="14" rx="3" fill="#b9b1a3"/>
+            <!-- the OFF breaker, highlighted -->
+            <rect x="90" y="64" width="28" height="14" rx="3" fill="#d9663f"/>
+            <rect x="54" y="84" width="28" height="14" rx="3" fill="#b9b1a3"/>
+            <rect x="90" y="84" width="28" height="14" rx="3" fill="#b9b1a3"/>
+            <rect x="54" y="104" width="28" height="14" rx="3" fill="#b9b1a3"/>
+            <rect x="90" y="104" width="28" height="14" rx="3" fill="#b9b1a3"/>
+          </g>
+          <text x="86" y="74" font-size="8" fill="#fffdf8" font-weight="700" text-anchor="middle">OFF</text>
+          <!-- fan symbol to the right, dead/no spin -->
+          <circle cx="206" cy="84" r="30" fill="#dce8ee" stroke="#b9b1a3" stroke-width="4"/>
+          <g fill="#cdd9de">
+            <path d="M206 84 l18 -6 q3 7 -3 12 z"/>
+            <path d="M206 84 l-18 6 q-3 -7 3 -12 z"/>
+            <path d="M206 84 l6 18 q-7 3 -12 -3 z"/>
+            <path d="M206 84 l-6 -18 q7 -3 12 3 z"/>
+          </g>
+          <circle cx="206" cy="84" r="6" fill="#8a6a4f"/>
+          <path d="M188 60 l36 48" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="150" y="168" font-size="11" fill="#d9663f" font-weight="700">breaker OFF — not just the switch</text>
+        </svg>
+        <h4>Kill the power at the breaker</h4>
+        <p>The fan can stay live with the wall switch off, so go to the panel and switch off the bathroom's breaker. Then confirm the fan is truly dead before you touch it — flip the switch and make sure nothing spins.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of popping the fan cover off by squeezing the two spring or wire clips inward to release it, then washing the cover in soapy water">
+          <!-- ceiling with housing -->
+          <rect x="70" y="20" width="140" height="40" rx="5" fill="#dce8ee" stroke="#8a6a4f" stroke-width="4"/>
+          <!-- the cover coming down -->
+          <rect x="84" y="76" width="112" height="34" rx="7" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+          <g stroke="#cdd9de" stroke-width="2.6" stroke-linecap="round">
+            <line x1="96" y1="86" x2="184" y2="86"/>
+            <line x1="96" y1="94" x2="184" y2="94"/>
+            <line x1="96" y1="102" x2="184" y2="102"/>
+          </g>
+          <!-- spring clips being squeezed -->
+          <path d="M100 60 q-8 8 -2 16" fill="none" stroke="#5e9a78" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M180 60 q8 8 2 16" fill="none" stroke="#5e9a78" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- squeeze arrows -->
+          <path d="M118 70 l-10 0 m4 -4 l-4 4 l4 4" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M162 70 l10 0 m-4 -4 l4 4 l-4 4" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- soap suds on the cover -->
+          <g fill="#eef4f7">
+            <circle cx="116" cy="130" r="6"/>
+            <circle cx="134" cy="126" r="7"/>
+            <circle cx="152" cy="130" r="5"/>
+          </g>
+          <text x="76" y="160" font-size="11" fill="#3e7c59" font-weight="700">squeeze clips, wash the cover</text>
+        </svg>
+        <h4>Pop the cover &amp; wash it</h4>
+        <p>Pull the cover down gently and you'll see two spring or wire clips holding it in the housing — squeeze them inward to release. Wash the cover in warm, soapy water, rinse, and set it aside to dry fully while you do the rest.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of vacuuming and brushing the dust off the fan blades, the housing, and the motor inside the ceiling unit">
+          <!-- housing -->
+          <rect x="58" y="24" width="128" height="64" rx="6" fill="#dce8ee" stroke="#8a6a4f" stroke-width="5"/>
+          <rect x="68" y="32" width="108" height="48" rx="4" fill="#cdd9de"/>
+          <!-- dusty blades -->
+          <circle cx="122" cy="56" r="16" fill="#b9b1a3"/>
+          <g fill="#8a6a4f" opacity="0.9">
+            <path d="M122 56 l14 -5 q3 6 -2 10 z"/>
+            <path d="M122 56 l-14 5 q-3 -6 2 -10 z"/>
+            <path d="M122 56 l5 14 q-6 3 -10 -2 z"/>
+            <path d="M122 56 l-5 -14 q6 -3 10 2 z"/>
+          </g>
+          <circle cx="122" cy="56" r="5" fill="#8a6a4f"/>
+          <!-- vacuum nozzle reaching in -->
+          <rect x="196" y="96" width="14" height="40" rx="4" fill="#5e9a78" transform="rotate(34 203 116)"/>
+          <path d="M188 92 l-12 -12" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <!-- dust being pulled away -->
+          <g fill="#b9b1a3" opacity="0.7">
+            <circle cx="162" cy="78" r="2.6"/>
+            <circle cx="176" cy="88" r="2.2"/>
+            <circle cx="150" cy="86" r="2"/>
+          </g>
+          <text x="64" y="168" font-size="11" fill="#3e7c59" font-weight="700">vacuum &amp; brush — don't bend blades</text>
+        </svg>
+        <h4>Vacuum the blades &amp; housing</h4>
+        <p>With the cover off, vacuum the felted dust off the fan blades, the housing walls, and the motor, using a soft brush to loosen what's stuck. Be gentle — don't bend the blades — and never wet the motor or wiring inside.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking the exhaust duct and the exterior vent flap on the outside wall or roof, making sure the flap opens freely and is not painted or stuck shut">
+          <!-- exterior wall -->
+          <rect x="40" y="20" width="60" height="140" fill="#c9a06b"/>
+          <g stroke="#b9b1a3" stroke-width="1.5">
+            <line x1="40" y1="50" x2="100" y2="50"/>
+            <line x1="40" y1="80" x2="100" y2="80"/>
+            <line x1="40" y1="110" x2="100" y2="110"/>
+          </g>
+          <!-- vent hood on the wall -->
+          <rect x="100" y="70" width="34" height="44" rx="4" fill="#b9b1a3"/>
+          <!-- the flap, open -->
+          <path d="M134 72 l30 -14 l0 8 l-30 14 z" fill="#8a6a4f"/>
+          <!-- duct running back into the house -->
+          <path d="M134 92 q60 0 100 0" fill="none" stroke="#7fb3c8" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+          <!-- airflow arrows out -->
+          <path d="M150 100 l24 8 m-6 -8 l6 8 l-9 1" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M150 84 l24 -8 m-6 8 l6 -8 l-9 -1" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="60" y="174" font-size="11" fill="#3e7c59" font-weight="700">flap must open freely</text>
+        </svg>
+        <h4>Check the duct &amp; outside flap</h4>
+        <p>Trace where the fan vents and check the exterior flap — the little hood on the wall or roof. A flap stuck shut, painted over, or clogged with lint kills airflow no matter how clean the fan is. Clear it so it swings open freely.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the tissue test: restoring power, running the fan, and holding a square of toilet paper to the grille, which should be sucked up and held against it if the fan is pulling properly">
+          <!-- ceiling fan cover, back on -->
+          <rect x="84" y="20" width="112" height="34" rx="7" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+          <g stroke="#cdd9de" stroke-width="2.6" stroke-linecap="round">
+            <line x1="96" y1="30" x2="184" y2="30"/>
+            <line x1="96" y1="38" x2="184" y2="38"/>
+            <line x1="96" y1="46" x2="184" y2="46"/>
+          </g>
+          <!-- tissue held to the grille, sucked flat -->
+          <path d="M112 56 q28 -8 56 0 l-4 30 q-24 -6 -48 0 z" fill="#dce8ee" stroke="#9cc3d4" stroke-width="2"/>
+          <!-- suction arrows up toward the fan -->
+          <g stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M128 86 l0 -22 m-4 6 l4 -6 l4 6"/>
+            <path d="M152 86 l0 -22 m-4 6 l4 -6 l4 6"/>
+          </g>
+          <!-- a hand letting go below -->
+          <ellipse cx="140" cy="112" rx="16" ry="11" fill="#e8b48f"/>
+          <path d="M132 108 q-4 5 -1 11" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <text x="74" y="152" font-size="11" fill="#3e7c59" font-weight="700">it should hold against the grille</text>
+        </svg>
+        <h4>Restore power &amp; run the tissue test</h4>
+        <p>Put the dry cover back, flip the breaker on, and run the fan. Hold a single square of toilet paper or tissue up to the grille — a healthy fan sucks it flat and holds it there. If it falls, the fan, duct, or flap still needs attention.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Fan-cleaning progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Power cut, cover washed, blades and housing vacuumed, duct and vent flap checked, airflow tested — your fan is pulling moisture out like it should. Same quick job again in about six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your fan is overdue — and when to call a pro</h2>
+    <p class="sub">A healthy bathroom fan is invisible: the mirror clears in a minute, the room dries out, and you forget the fan exists. These are the signals it's overdue for a cleaning — and the handful of problems that aren't a cleaning job at all and are worth a pro or an upgrade:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The mirror stays fogged and the room stays steamy.</strong> If the fan can't clear the mirror or pull the humidity out within a few minutes of a shower, it's clogged, underpowered, or venting nowhere — start with a cleaning and the tissue test.</li>
+        <li><strong>A new rattle, hum, or grinding from the fan.</strong> A clean fan runs as a soft hum. A rattle often means dust imbalance or a loose cover; a grinding or screeching noise usually means worn motor bearings — clean it first, and if the grinding stays, the motor is failing and the unit needs replacing.</li>
+        <li><strong>No airflow at the outside vent.</strong> Go outside with the fan running and feel for air at the exterior hood. If nothing's coming out, the duct is disconnected, crushed, or packed with lint, or the flap is stuck shut — a duct fix worth making so the fan actually exhausts.</li>
+        <li><strong>The fan vents into the attic, not outside.</strong> Some fans dump moist air straight into the attic, where it rots framing and grows mold. If you find a loose duct just lying in the attic, that's a real problem — have it properly ducted to the outside. That's a worthwhile fix, often a job for a handyman or HVAC pro.</li>
+        <li><strong>It's just too small for the bathroom.</strong> An underpowered fan never keeps up no matter how clean it is. Fans are rated in CFM (airflow) and sones (noise); if yours is undersized or ancient and loud, upgrading to a quiet, properly-sized unit is a cheap, high-impact swap.</li>
+        <li><strong>Persistent mold despite a working fan.</strong> If you've cleaned the fan, confirmed it exhausts outside, and still fight mold, you may have a humidity or insulation problem beyond ventilation — worth a closer look, and sometimes a pro's assessment.</li>
+        <li><strong>Pro tip:</strong> the kitchen range hood is a separate job with its own greasy filter — don't lump them together. And while you're thinking about dust and lint that builds up where you can't see it, the other big one is the <a href="clean-dryer-vent.html">dryer vent</a>, the most common cause of laundry-room fires.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I clean the exhaust fan?</summary>
+      <p>About every six months is the sensible default for most bathrooms — a quick vacuum each spring and fall keeps the dust from ever felting up. Tighten to quarterly if the bathroom gets heavy use, sits in a humid climate with no window, or runs the fan for hours a day; a barely-used guest bath can stretch to once a year. The honest answer is that almost any cleaning beats the none that most fans get — they run for years untouched until they're choked solid. If you're cleaning the rest of the room anyway, fold it into your <a href="deep-clean-bathroom.html">bathroom deep clean</a> so it never gets forgotten, and pair it with <a href="clean-ceiling-fans.html">cleaning the ceiling fans</a> on the same dust-the-overhead-stuff pass.</p>
+    </details>
+    <details>
+      <summary>Do I really have to turn off the power?</summary>
+      <p>Yes — and at the breaker, not just the wall switch. The reason is that a bathroom fan can be wired so the unit stays live even with the switch off, and you'll be putting your hand and a metal vacuum nozzle right up into a housing full of wiring. Go to your electrical panel, switch off the breaker that controls the bathroom, and then confirm the fan is dead by flipping the wall switch and making sure nothing spins. Bathrooms are on GFCI circuits, which adds protection but is not a substitute for cutting the power. It takes thirty seconds and removes any chance of a shock — never skip it.</p>
+    </details>
+    <details>
+      <summary>How do I get the cover off?</summary>
+      <p>Most bathroom fan covers — the flat white plastic grille — are held in by two spring clips or wire clips, not screws. Pull the cover straight down an inch or two and you'll see the clips tucked into slots on either side of the housing; pinch or squeeze each one inward and the cover comes free. Some covers are a snug push-fit and just pull straight down; a few older units are held by a couple of screws you'll need to back out. If it resists, look before you yank — peek up around the edge so you can see how it's attached rather than cracking the plastic. Once it's off, wash it in warm soapy water, rinse, and let it dry completely before it goes back.</p>
+    </details>
+    <details>
+      <summary>The fan still seems weak after cleaning — now what?</summary>
+      <p>Work outward from the fan. First, go outside (or up to the roof) and find the exterior vent hood with the fan running — feel for airflow. If there's little or none, the problem is past the fan: the duct may be crushed, disconnected, or packed with lint, or the flap may be stuck or painted shut. Clear the flap so it swings open freely and check that the duct run is intact and connected all the way to the outside. A surprisingly common discovery is a fan that vents into the attic instead of outdoors — fix that, because it rots framing and grows mold. If the duct and flap are clear, the air's still weak, and the motor sounds labored, the fan itself may be undersized or worn out and worth upgrading to a quiet, properly-rated unit.</p>
+    </details>
+    <details>
+      <summary>Does my fan vent outside or into the attic — and why does it matter?</summary>
+      <p>It matters a lot. A bathroom fan's whole purpose is to move humid air <em>out of the house</em>. Some are ducted properly to an exterior wall or roof vent; others — usually from sloppy installs — just dump steam straight into the attic or the space above the ceiling. Venting into the attic is genuinely damaging: the moisture condenses on cold framing and roof sheathing, rotting wood and growing mold where you'll never see it until it's a big repair. To check, follow the duct from the fan housing into the attic if you can access it, and make sure it connects to a vent that exits the building. If you find a loose duct just lying in the attic, have it properly routed to the outside — a worthwhile fix and usually a quick job for a handyman.</p>
+    </details>
+    <details>
+      <summary>How do I know the fan is actually working?</summary>
+      <p>Run the tissue test. With the cover back on and the power restored, turn the fan on and hold a single square of toilet paper or a tissue flat against the grille. A fan that's pulling properly will suck the square up and hold it there with no hands; if it flutters and falls, the fan isn't moving much air. The second check is to go outside while it runs and feel for a steady stream of air at the exterior vent hood — that confirms it's actually exhausting outdoors and not just stirring the air or dumping it into the attic. Do both, and you'll know whether the cleaning fixed it or whether the duct, flap, or motor needs a closer look. While you've got the overhead fixtures on your mind, it's a natural moment to <a href="recaulk-shower.html">re-caulk the shower</a> if that bead is looking tired.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A five-minute job, on a fan you never think about.</h2>
+        <p>Cleaning the bathroom exhaust fan protects the whole room from moisture damage and quietly cuts a real fire risk — but it's the definition of out of sight, out of mind, so almost nobody does it. Upkeep Ledger logs this clean and resurfaces it twice a year, right alongside the gutters, the HVAC filter, the dryer vent, and every other quiet task that keeps the house safe and cared-for.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-exhaust-fans&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-exhaust-fans&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning; always cut power at the breaker before servicing a fan, and if any wiring looks damaged or you're unsure, stop and call a licensed electrician.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { traffic: null, vent: null, state: null, age: null };
+
+  var FREQ_LABEL = {
+    3: "Every 3 months",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Traffic — how heavily used */
+    if (s.traffic === "heavy") {
+      months = 3;
+      tighten = true;
+      reasons.push("Multiple showers a day in a busy household push a lot of steam and airborne dust through the fan, so it clogs faster — clean it about every three months to stay ahead of it.");
+    } else if (s.traffic === "light") {
+      reasons.push("An occasional or guest bathroom barely loads its fan, so it can comfortably go toward the longer end of the range.");
+    } else {
+      reasons.push("A typical daily-use bathroom is exactly the case the twice-a-year default is written for.");
+    }
+
+    /* Ventilation & climate */
+    if (s.vent === "trapped") {
+      months = 3;
+      tighten = true;
+      reasons.push("With no window in a humid climate, the fan is the only thing clearing moisture — a clogged one does damage fast, so keep it cleaned and pulling hard on a tighter schedule.");
+    } else if (s.vent === "airy") {
+      reasons.push("A good window and dry air give you backup ventilation, so a brief dip in the fan's performance is far more forgiving.");
+    } else {
+      reasons.push("A window or a moderate climate gives the fan some help, which keeps you comfortably in the standard interval.");
+    }
+
+    /* Current state */
+    if (s.state === "bad") {
+      months = 3;
+      tighten = true;
+      reasons.push("A fan that's visibly dusty, newly noisy, or slow to clear the mirror is overdue right now — clean it today, then keep a shorter interval until it's reliably quiet and quick.");
+    } else if (s.state === "good") {
+      reasons.push("A fan that looks clean and clears steam fine isn't sending any distress signals, so you've got some slack before the next cleaning.");
+    } else {
+      reasons.push("A little dust that hasn't yet hurt performance is the ordinary middle case — a routine clean keeps it from building into a problem.");
+    }
+
+    /* Age & run-time */
+    if (s.age === "old") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("An older fan running for hours a day pulls a great deal of dusty air through an aging motor, so keeping it clean both prevents clogs and protects the motor from overheating.");
+    } else if (s.age === "new") {
+      reasons.push("A newer fan with light use both clogs slowly and has a healthy motor, so it's the least demanding case.");
+    } else {
+      reasons.push("Average age and run-time keep the fan in the normal range — nothing here is pushing the schedule on its own.");
+    }
+
+    /* Best-case relaxation: light use, airy, clean, newer */
+    if (!tighten && s.traffic === "light" && s.vent === "airy" && s.state === "good" && s.age === "new") {
+      months = 12;
+      reasons.push("A barely-used guest bath with a window, a clean newer fan, and dry air is the one case where once a year is genuinely plenty — a quick look more often is all it asks.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.vent === "trapped") {
+      note = "<strong>No window means the fan is everything:</strong> keep it clean and confirm it actually exhausts outside with the tissue test, because in a humid, windowless bath a struggling fan is what breeds the mold and peeling paint.";
+    } else if (s.state === "bad") {
+      note = "<strong>Don't wait on this one:</strong> a noisy, dusty fan that won't clear the mirror is overdue today. Cut the power, vacuum it out, check the duct and outside flap, and run the tissue test before you reset the clock.";
+    } else if (s.traffic === "heavy") {
+      note = "<strong>Heavy-use bathrooms need the airflow most:</strong> a quick vacuum every few months keeps the fan pulling steam out fast — and remember the kitchen range hood is its own separate, greasier job.";
+    } else {
+      note = "<strong>Make it part of a routine:</strong> fold this into a bathroom deep clean and pair it with the ceiling fans so the overhead dust all gets handled at once — and don't forget the other lint-and-fire-risk vent, the dryer vent.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.traffic || !quizState.vent || !quizState.state || !quizState.age) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: clean the exhaust fan " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Cut the power at the breaker, pop the cover, then <strong>vacuum the blades and housing, wash the cover, check the duct and outside flap, and run the tissue test</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & power off", text: "Switch off the bathroom's breaker at the panel", note: "Not just the wall switch — the fan can stay live with the switch off. Go to the electrical panel and switch off the breaker that controls the bathroom." },
+    { phase: "Prep & power off", text: "Confirm the fan is dead and won't spin", note: "Flip the wall switch on and make sure nothing happens. Let the motor cool if it was just running before you reach anywhere near the housing." },
+    { phase: "Prep & power off", text: "Set up a stable step stool and put on a dust mask", note: "Use a proper step stool or short ladder on a level floor — never the tub edge or a chair. The mask keeps you from breathing a faceful of years-old dust." },
+    { phase: "Cover & blades", text: "Pop the cover off — squeeze the spring clips", note: "Pull the cover down an inch, find the two wire or spring clips in the slots, and squeeze them inward to release. A few covers are screwed on — back out the screws instead." },
+    { phase: "Cover & blades", text: "Wash the cover in warm, soapy water and set it to dry", note: "Scrub the dust and grime off the grille, rinse it, and leave it somewhere to dry completely. Don't put it back wet." },
+    { phase: "Cover & blades", text: "Vacuum the dust off the blades, housing, and motor", note: "Use the vacuum's brush or crevice tool, loosening stubborn felt with a soft brush. Be gentle — don't bend the blades — and keep water away from the motor and wiring." },
+    { phase: "Cover & blades", text: "Wipe the housing with a barely-damp cloth", note: "A lightly damp microfiber cleans the housing walls of any film. Keep it away from the motor and any electrical connections, and don't soak anything." },
+    { phase: "Duct & vent", text: "Check the duct from the fan", note: "Where you can see it, make sure the duct is connected, not crushed, and not packed with lint — and that it actually runs to the outside, not loose in the attic." },
+    { phase: "Duct & vent", text: "Find and clear the exterior vent flap", note: "Locate the vent hood on the outside wall or roof and make sure the flap opens freely — clear away lint, debris, nests, or paint that's holding it shut." },
+    { phase: "Test & finish", text: "Reattach the dry cover and restore power", note: "Once the cover is fully dry, clip it back into the housing and switch the breaker back on at the panel." },
+    { phase: "Test & finish", text: "Run the tissue test", note: "Turn the fan on and hold a single square of toilet paper to the grille — it should suck flat and hold. If it falls, recheck the fan, duct, and flap. Step outside and feel for airflow at the vent too." },
+    { phase: "Test & finish", text: "Log the date", note: "A clean fan gives you no reminder that it's slowly clogging again. Note the date so the next clean lands in about six months (or your quiz interval) — and remember the dryer vent and range hood are their own jobs." }
+  ];
+
+  var LS_KEY = "upkeepguides:clean-exhaust-fans:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

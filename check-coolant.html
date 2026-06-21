@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check your coolant level — UpkeepGuides.com</title>
+<meta name="description" content="How to check your engine coolant in two minutes: only on a cold engine, reading the level against the MIN/MAX marks, checking the color, topping up with the right coolant type, and scanning for leaks before overheating ends the engine.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Check your coolant level — UpkeepGuides.com">
+<meta property="og:description" content="How to check your engine coolant in two minutes: only on a cold engine, reading the level against the MIN/MAX marks, checking the color, topping up with the right coolant type, and scanning for leaks before overheating ends the engine.">
+<meta property="og:url" content="https://upkeepguides.com/check-coolant.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check your coolant level — UpkeepGuides.com">
+<meta name="twitter:description" content="How to check your engine coolant in two minutes: only on a cold engine, reading the level against the MIN/MAX marks, checking the color, topping up with the right coolant type, and scanning for leaks before overheating ends the engine.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every 6 months</span>
+      <h1>Check Your Coolant Level</h1>
+      <p class="lede">It's the two-minute check that quietly saves the most expensive part of your car. Coolant — the antifreeze in the system — keeps the engine from boiling over in summer, freezing solid in winter, and rusting from the inside out year-round. It drops so slowly you never notice, until one day the temperature needle climbs into the red and a head gasket lets go. The check itself couldn't be simpler: with the engine fully <em>cold</em>, you find the translucent overflow reservoir, read the level against the MIN and MAX marks, glance at the color, top it up if it's low, and look underneath for leaks. Do it a couple of times a year and you'll catch a slow leak as a cheap puddle instead of a four-thousand-dollar overheat.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~2 min</em> at the reservoir</span>
+        <span class="chip">🌡️ Prevents <em>overheating &amp; freezing</em></span>
+        <span class="chip">💸 Top-up <em>~$10–25</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of checking engine coolant: a car with its hood propped open shows the engine bay, where a translucent coolant overflow reservoir with MIN and MAX marks sits beside the radiator cap, a hand checks the level against the marks on a cold engine, and a jug of green coolant stands ready on the ground nearby">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- car body, front three-quarter -->
+      <path d="M70 322 q4 -56 60 -64 l150 -10 q40 -2 70 24 l54 46 h70 q20 0 20 22 v22 q0 12 -14 12 h-470 q-12 0 -12 -12 v-44 q0 -16 22 -18 z" fill="#7fb3c8"/>
+      <path d="M130 258 l150 -10 q40 -2 70 24 l40 34 h-300 q6 -42 40 -48 z" fill="#9cc3d4"/>
+      <!-- windshield glint -->
+      <path d="M196 254 l84 -6 q26 -1 46 16 l22 18 h-168 z" fill="#dce8ee"/>
+      <!-- front wheel -->
+      <circle cx="160" cy="370" r="34" fill="#33393b"/>
+      <circle cx="160" cy="370" r="15" fill="#b9b1a3"/>
+      <!-- rear wheel -->
+      <circle cx="404" cy="370" r="34" fill="#33393b"/>
+      <circle cx="404" cy="370" r="15" fill="#b9b1a3"/>
+
+      <!-- open hood, propped up over the engine bay -->
+      <path d="M70 258 l8 -120 q1 -14 16 -14 l150 4 q12 0 10 14 l-22 124 z" fill="#9cc3d4" stroke="#5e9a78" stroke-width="4"/>
+      <path d="M82 252 l6 -104 l136 4 l-18 102 z" fill="#dce8ee"/>
+      <!-- prop rod -->
+      <line x1="120" y1="246" x2="100" y2="150" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- engine bay opening -->
+      <rect x="232" y="190" width="176" height="74" rx="8" fill="#b9b1a3"/>
+      <rect x="240" y="198" width="160" height="58" rx="5" fill="#8a6a4f"/>
+      <!-- engine block detail -->
+      <rect x="300" y="206" width="60" height="42" rx="4" fill="#6b7376"/>
+      <g stroke="#33393b" stroke-width="3">
+        <line x1="310" y1="206" x2="310" y2="248"/>
+        <line x1="324" y1="206" x2="324" y2="248"/>
+        <line x1="338" y1="206" x2="338" y2="248"/>
+        <line x1="352" y1="206" x2="352" y2="248"/>
+      </g>
+      <!-- radiator cap -->
+      <circle cx="384" cy="214" r="11" fill="#c96f4a"/>
+      <circle cx="384" cy="214" r="5" fill="#8a6a4f"/>
+      <text x="384" y="236" font-size="9" fill="#fffdf8" text-anchor="middle">cap</text>
+
+      <!-- translucent overflow reservoir with MIN/MAX -->
+      <rect x="246" y="196" width="44" height="62" rx="7" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3" opacity="0.92"/>
+      <!-- coolant inside, sitting between MIN and MAX -->
+      <rect x="249" y="224" width="38" height="31" rx="4" fill="#5e9a78" opacity="0.85"/>
+      <!-- MAX mark -->
+      <line x1="290" y1="214" x2="300" y2="214" stroke="#2c5a40" stroke-width="2.4"/>
+      <text x="302" y="217" font-size="8.5" fill="#2c5a40" font-weight="700">MAX</text>
+      <!-- MIN mark -->
+      <line x1="290" y1="246" x2="300" y2="246" stroke="#d9663f" stroke-width="2.4"/>
+      <text x="302" y="249" font-size="8.5" fill="#d9663f" font-weight="700">MIN</text>
+      <!-- reservoir cap -->
+      <rect x="258" y="190" width="20" height="9" rx="3" fill="#e0a93d"/>
+
+      <!-- hand checking the level, pointing at the reservoir -->
+      <ellipse cx="218" cy="232" rx="17" ry="12" fill="#e8b48f"/>
+      <path d="M232 230 q12 -2 18 4" stroke="#d99c73" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M204 238 q-22 18 -40 50" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+
+      <!-- jug of coolant on the ground -->
+      <rect x="446" y="320" width="56" height="62" rx="8" fill="#5e9a78"/>
+      <rect x="446" y="320" width="56" height="14" rx="6" fill="#3e7c59"/>
+      <rect x="460" y="300" width="20" height="22" rx="4" fill="#3e7c59"/>
+      <rect x="458" y="294" width="24" height="9" rx="3" fill="#2c5a40"/>
+      <!-- label on the jug -->
+      <rect x="452" y="340" width="44" height="28" rx="4" fill="#fffdf8"/>
+      <text x="474" y="352" font-size="8.5" fill="#3e7c59" text-anchor="middle" font-weight="700">COOLANT</text>
+      <text x="474" y="362" font-size="7" fill="#6b7376" text-anchor="middle">50/50</text>
+      <!-- a bright coolant droplet on the cap -->
+      <path d="M470 296 q3 5 0 9" stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <!-- "COLD" reminder tag -->
+      <rect x="92" y="300" width="78" height="26" rx="13" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <text x="131" y="317" font-size="12" fill="#2c5a40" text-anchor="middle" font-weight="700">engine COLD</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Coolant is the unsung fluid of your engine — not as famous as oil, but every bit as load-bearing. It carries heat away from the combustion chambers, stops the block from freezing and cracking in winter, and keeps corrosion from eating the cooling system from the inside. When it runs low, gets old, or gets mixed wrong, the engine doesn't complain politely; it overheats and dies. Here's exactly what's at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="15" y="5" width="6" height="20" rx="3" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <circle cx="18" cy="27" r="5.5" fill="#d9663f"/>
+          <rect x="16.4" y="12" width="3.2" height="14" rx="1.6" fill="#d9663f"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <line x1="27" y1="9" x2="31" y2="7"/>
+            <line x1="27" y1="15" x2="31" y2="15"/>
+            <line x1="27" y1="21" x2="31" y2="23"/>
+          </g>
+        </svg></div>
+        <h3>Low coolant overheats the engine</h3>
+        <p>Run low or old, and the engine can't shed its heat — it boils over, the head warps, the head gasket blows, and in the worst case the whole engine is scrap. Overheating is one of the most common ways a perfectly good car gets totaled by a repair bill.</p>
+        <span class="cost">$1,500–4,000+ engine damage</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 l3 6 l-3 -1 l-3 1 z" fill="#7fb3c8"/>
+          <line x1="18" y1="6" x2="18" y2="30" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="9" y1="11" x2="27" y2="25" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="27" y1="11" x2="9" y2="25" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18" cy="18" r="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="1.6"/>
+        </svg></div>
+        <h3>It stops freezing &amp; corrosion</h3>
+        <p>Antifreeze is doing two quiet jobs at once: lowering the freezing point so the block doesn't crack in a hard winter, and carrying rust-inhibitors that protect the metal. The wrong mix or worn-out fluid loses both — and corrosion eats the system from within.</p>
+        <span class="cost">A cracked block in a cold snap</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 6 q7 9 7 15 a7 7 0 0 1 -14 0 q0 -6 7 -15 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <path d="M15 20 q-1 4 2 6" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <g stroke="#5e9a78" stroke-width="2" stroke-linecap="round">
+            <path d="M27 9 l0 6 M24 12 l6 0"/>
+          </g>
+        </svg></div>
+        <h3>Catch a slow leak early &amp; cheap</h3>
+        <p>A puddle under the car, a sweet smell, or a level that keeps dropping is a leak telling on itself early — while it's still a cheap hose or clamp. Ignore it and the leak finishes the job by running you dry on the highway, where it becomes an engine.</p>
+        <span class="cost">$100s ignored becomes $1,000s</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="10" width="9" height="18" rx="3" fill="#5e9a78"/>
+          <rect x="20" y="10" width="9" height="18" rx="3" fill="#c96f4a"/>
+          <path d="M16 19 h4" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 13 q5 6 0 12 M23 13 q-5 6 0 12" stroke="#fffdf8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M18 30 l0 3 M14 31 l8 0" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Coolant TYPE is not interchangeable</h3>
+        <p>There are several incompatible chemistries — the wrong color isn't just cosmetic. Mix two that don't get along and they can gel into a sludge that clogs the radiator and heater core. Always use the exact type your owner's manual specifies.</p>
+        <span class="cost">A clogged, gelled cooling system</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check it?</h2>
+    <p class="sub">A glance at the reservoir every six months — and at every oil change — is the sensible default for most cars. But brutal heat or hard freezes, an older high-mileage engine, heavy towing or mountain driving, or any symptom at all all push toward a monthly look. (Note: this is the quick level <em>check</em> — the full coolant <strong>flush</strong> is a separate, much longer interval your manufacturer sets, often every 30,000–100,000 miles.) Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">1. What's your climate like?</div>
+        <div class="pills">
+          <button class="pill" data-v="extreme">Extreme — brutal heat or hard freezes</button>
+          <button class="pill" data-v="some">Some real summers or winters</button>
+          <button class="pill" data-v="mild">Mild and temperate year-round</button>
+        </div>
+        <div class="q-hint">Coolant earns its keep at the extremes — it's what keeps the engine from boiling over in desert heat and from freezing solid in a hard winter. Tough climates are exactly where a low or weak mix bites.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">2. How old and high-mileage is the car?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older, high-mileage (100k+ / 10+ yrs)</button>
+          <button class="pill" data-v="mid">Middle-aged, moderate miles</button>
+          <button class="pill" data-v="new">Newer, low miles</button>
+        </div>
+        <div class="q-hint">Hoses harden, clamps loosen, and water pumps and gaskets wear with age and miles. An older engine is far likelier to seep coolant slowly, so it's worth a more frequent eyeball.</div>
+      </div>
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">3. How hard do you work the engine?</div>
+        <div class="pills">
+          <button class="pill" data-v="hard">Towing, hauling, mountains, stop-and-go</button>
+          <button class="pill" data-v="mixed">A mix of highway and around-town</button>
+          <button class="pill" data-v="easy">Easy, mostly gentle commuting</button>
+        </div>
+        <div class="q-hint">Towing a trailer, climbing grades, or crawling in stop-and-go traffic loads the cooling system hard and runs it hot, which both stresses the fluid and surfaces a weak system fast.</div>
+      </div>
+      <div class="quiz-q" data-q="symptoms">
+        <div class="q-label">4. Noticing any warning signs?</div>
+        <div class="pills">
+          <button class="pill" data-v="signs">Yes — temp creeping up, level dropping, or a leak</button>
+          <button class="pill" data-v="maybe">Maybe — a faint sweet smell now and then</button>
+          <button class="pill" data-v="none">No — everything reads normal</button>
+        </div>
+        <div class="q-hint">A temperature gauge creeping up, a level that keeps dropping, or a puddle under the car are the system asking for help. Any of these means check often and get to the cause before it escalates.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is one of the most lopsided trades in all of car care. A jug of the correct coolant runs about ten to twenty-five dollars, and a top-up costs you nothing in labor — two minutes in the driveway. The flush, when the manual calls for it, is around a hundred to a hundred-fifty. Set that against what overheating does to an engine, and the math stops being a math problem:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–25</div><div class="l">a jug of the correct pre-mixed coolant — a top-up costs nothing in labor</div></div>
+        <div class="calc-stat"><div class="v">~2 min</div><div class="l">to check the reservoir, read the level and color, and scan underneath for leaks</div></div>
+        <div class="calc-stat"><div class="v bad">$1,500–4,000+</div><div class="l">a warped head or blown head gasket from an overheat you didn't see coming</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🫗 A free two-minute top-up to the cold MAX line</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 A jug of the correct pre-mixed coolant</span><span>$10–25</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 A proper coolant flush at the manual's interval</span><span>$100–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:18%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💧 Chasing a real leak — hose, water pump, or radiator</span><span>$150–900</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:40%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 Warped head / blown head gasket from overheating</span><span>$1,500–4,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a twenty-dollar jug and two minutes a couple of times a year</strong> against a warped head, a blown head gasket, or a tow off the highway and a totaled engine. Glance at the reservoir on a cold engine, keep it between MIN and MAX with the right fluid, and follow the manual's flush interval — and the most expensive part of your car keeps its temper.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check your coolant level</h2>
+    <p class="sub">The whole job is a two-minute routine on a <em>cold</em> engine: park level, find the translucent overflow reservoir, read the level against the MIN/MAX marks, check the color, top up if needed with the correct coolant, and scan underneath for leaks. Read the safety box first — the one rule that matters most is never opening a hot pressurized cap — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Cold engine only — scalding coolant is under pressure</h3>
+      <ul>
+        <li><strong>NEVER open the radiator cap or pressurized reservoir on a hot or warm engine.</strong> The system is pressurized when hot, and cracking the cap can erupt a geyser of scalding, pressurized coolant and steam into your face and arms. Check only when the engine is <em>fully cold</em> — ideally first thing in the morning, before you've driven.</li>
+        <li><strong>Coolant is toxic — and it tastes sweet.</strong> That sweetness attracts pets and small children, and even a small amount can be deadly. Wipe up every spill immediately, store the jug sealed and clearly labeled out of reach, and never leave a puddle in the driveway.</li>
+        <li><strong>Dispose of old coolant properly.</strong> Don't pour it down a drain, onto the ground, or into a storm sewer. Take used coolant to an auto parts store, a service shop, or a household hazardous-waste facility that accepts it.</li>
+        <li><strong>Use only the coolant TYPE your manual specifies.</strong> Mixing incompatible chemistries can gel and clog the system. When in doubt, buy the type your manufacturer lists, and prefer pre-mixed (50/50). If you mix concentrate yourself, use <strong>distilled</strong> water — never tap water, whose minerals leave deposits and promote corrosion.</li>
+        <li><strong>Don't overfill past the cold MAX line.</strong> The fluid expands as it heats, and an overfilled reservoir simply pushes the excess out the overflow. Fill to the cold MAX mark and stop.</li>
+        <li><strong>If you're unsure which cap, leave it alone and read the manual.</strong> The overflow reservoir is the translucent tank you check and top up at; the radiator cap is for a mechanic and a cold engine. When in doubt, top up only at the marked reservoir.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A fully cold engine</span>
+      <span class="tool-chip">Your owner's manual (for the coolant type)</span>
+      <span class="tool-chip">The correct pre-mixed coolant</span>
+      <span class="tool-chip">A clean rag or paper towels</span>
+      <span class="tool-chip">A funnel (optional, keeps it clean)</span>
+      <span class="tool-chip">Distilled water (only if mixing concentrate)</span>
+      <span class="tool-chip">Gloves &amp; eye protection</span>
+      <span class="tool-chip">A flashlight for the level &amp; leaks</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a car parked on level ground with the engine fully cold, a blue snowflake-style cold indicator showing it is safe to open the reservoir">
+          <ellipse cx="140" cy="150" rx="110" ry="12" fill="#efe7d8"/>
+          <!-- level ground line -->
+          <line x1="30" y1="148" x2="250" y2="148" stroke="#b9b1a3" stroke-width="3"/>
+          <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+            <line x1="50" y1="148" x2="44" y2="156"/>
+            <line x1="90" y1="148" x2="84" y2="156"/>
+            <line x1="130" y1="148" x2="124" y2="156"/>
+            <line x1="170" y1="148" x2="164" y2="156"/>
+            <line x1="210" y1="148" x2="204" y2="156"/>
+          </g>
+          <!-- simple car -->
+          <path d="M70 130 q2 -28 30 -30 l70 -4 q22 0 34 16 l16 18 h18 q8 0 8 8 v6 h-188 v-12 q0 -6 8 -6 z" fill="#7fb3c8"/>
+          <path d="M104 100 l60 -4 q18 0 28 12 l8 12 h-104 q2 -16 8 -20 z" fill="#dce8ee"/>
+          <circle cx="100" cy="146" r="14" fill="#33393b"/><circle cx="100" cy="146" r="6" fill="#b9b1a3"/>
+          <circle cx="196" cy="146" r="14" fill="#33393b"/><circle cx="196" cy="146" r="6" fill="#b9b1a3"/>
+          <!-- cold snowflake badge -->
+          <circle cx="210" cy="44" r="22" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <g stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round">
+            <line x1="210" y1="30" x2="210" y2="58"/>
+            <line x1="198" y1="37" x2="222" y2="51"/>
+            <line x1="222" y1="37" x2="198" y2="51"/>
+          </g>
+          <text x="118" y="172" font-size="11" fill="#3e7c59" font-weight="700">level ground · engine COLD</text>
+        </svg>
+        <h4>Park level &amp; let it go cold</h4>
+        <p>Park on flat ground so the level reads true, and make sure the engine is fully cold — ideally before you've driven that day. A cold engine isn't just for an accurate reading; it's the only safe time to open anything in the cooling system.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of finding the translucent overflow reservoir and reading the coolant level against the MIN and MAX marks, with the fluid sitting between them">
+          <!-- reservoir -->
+          <rect x="96" y="30" width="88" height="120" rx="12" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4" opacity="0.92"/>
+          <!-- cap -->
+          <rect x="120" y="18" width="40" height="16" rx="5" fill="#e0a93d"/>
+          <!-- coolant between marks -->
+          <rect x="100" y="96" width="80" height="50" rx="6" fill="#5e9a78" opacity="0.85"/>
+          <path d="M100 96 q20 -8 40 0 q20 8 40 0 v50 h-80 z" fill="#5e9a78" opacity="0.85"/>
+          <!-- MAX -->
+          <line x1="184" y1="64" x2="206" y2="64" stroke="#2c5a40" stroke-width="3"/>
+          <text x="210" y="68" font-size="12" fill="#2c5a40" font-weight="700">MAX</text>
+          <!-- MIN -->
+          <line x1="184" y1="124" x2="206" y2="124" stroke="#d9663f" stroke-width="3"/>
+          <text x="210" y="128" font-size="12" fill="#d9663f" font-weight="700">MIN</text>
+          <!-- "level" pointer -->
+          <path d="M70 96 l22 0 m-8 -5 l8 5 l-8 5" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="22" y="100" font-size="11" fill="#3e7c59" font-weight="700">level</text>
+          <text x="74" y="172" font-size="11" fill="#6b7376">read between MIN &amp; MAX (cold)</text>
+        </svg>
+        <h4>Find the reservoir &amp; read the level</h4>
+        <p>Look for the translucent plastic overflow tank — often near the radiator, usually marked with a coolant or thermometer symbol. The fluid line should sit between the MIN and MAX (cold) marks molded into the side. Below MIN, it needs topping up.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing good clean bright coolant against rusty brown coolant with floating gunk, which means the system is due for a flush">
+          <!-- good jar -->
+          <rect x="48" y="40" width="64" height="96" rx="10" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <rect x="52" y="64" width="56" height="68" rx="6" fill="#5e9a78" opacity="0.9"/>
+          <g stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round">
+            <path d="M70 82 l0 6 M67 85 l6 0"/>
+          </g>
+          <text x="80" y="156" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">bright &amp; clean</text>
+          <!-- bad jar -->
+          <rect x="168" y="40" width="64" height="96" rx="10" fill="#dce8ee" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="172" y="64" width="56" height="68" rx="6" fill="#8a6a4f" opacity="0.9"/>
+          <!-- floating gunk -->
+          <circle cx="186" cy="78" r="3.5" fill="#c96f4a"/>
+          <circle cx="210" cy="90" r="3" fill="#6b7376"/>
+          <circle cx="198" cy="104" r="4" fill="#c96f4a"/>
+          <circle cx="216" cy="116" r="2.6" fill="#6b7376"/>
+          <text x="200" y="156" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">rusty = flush due</text>
+        </svg>
+        <h4>Check the color &amp; clarity</h4>
+        <p>Healthy coolant is bright and clear — green, orange, pink, blue, or yellow depending on type. If it's gone rusty, muddy brown, or has floating particles or oily film, the corrosion-inhibitors are spent and the system is due for a flush, not just a top-up.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of topping up coolant to the cold MAX line with a funnel, pouring the correct pre-mixed coolant from a jug, then re-seating the cap snugly">
+          <!-- reservoir -->
+          <rect x="60" y="58" width="76" height="92" rx="10" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3" opacity="0.92"/>
+          <rect x="64" y="98" width="68" height="48" rx="6" fill="#5e9a78" opacity="0.85"/>
+          <!-- MAX target line -->
+          <line x1="136" y1="92" x2="156" y2="92" stroke="#2c5a40" stroke-width="3"/>
+          <text x="158" y="96" font-size="10" fill="#2c5a40" font-weight="700">MAX</text>
+          <!-- funnel -->
+          <path d="M78 44 l40 0 l-12 16 l-16 0 z" fill="#e0a93d"/>
+          <rect x="92" y="58 " width="12" height="14" fill="#d98e3b"/>
+          <!-- jug pouring -->
+          <path d="M150 24 h44 v34 h-44 z" fill="#5e9a78"/>
+          <rect x="150" y="24" width="44" height="10" rx="3" fill="#3e7c59"/>
+          <path d="M150 40 q-30 -2 -52 6" fill="none" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+          <!-- stream -->
+          <path d="M98 50 q0 6 0 12" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+          <text x="66" y="170" font-size="11" fill="#3e7c59" font-weight="700">fill to cold MAX · cap on snug</text>
+        </svg>
+        <h4>Top up to the cold MAX line</h4>
+        <p>If it's low, add the correct pre-mixed coolant up to — not past — the cold MAX mark. A funnel keeps it tidy and toxic-spill-free. Then re-seat the reservoir cap firmly until it clicks or seats, so the system can hold its pressure.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of scanning under the car for a coolant puddle, checking hoses and clamps for white crusty residue, and noting the manufacturer's flush interval">
+          <!-- car underside -->
+          <path d="M50 50 q2 -16 24 -18 l130 0 q22 2 24 18 l4 30 h-186 z" fill="#7fb3c8"/>
+          <rect x="46" y="80" width="190" height="12" rx="4" fill="#6b7376"/>
+          <!-- hose with clamp -->
+          <path d="M120 92 q14 16 36 14" fill="none" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+          <rect x="126" y="96" width="8" height="14" rx="2" fill="#b9b1a3"/>
+          <!-- white crusty residue at clamp -->
+          <circle cx="131" cy="112" r="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1"/>
+          <circle cx="137" cy="116" r="2.2" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1"/>
+          <!-- puddle on the ground -->
+          <ellipse cx="150" cy="150" rx="44" ry="11" fill="#5e9a78" opacity="0.85"/>
+          <ellipse cx="150" cy="148" rx="22" ry="5" fill="#3e7c59" opacity="0.6"/>
+          <!-- drip -->
+          <path d="M168 92 q3 18 -2 30" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="64" y="172" font-size="11" fill="#d9663f" font-weight="700">puddles · crusty residue · note flush date</text>
+        </svg>
+        <h4>Scan for leaks &amp; note the flush</h4>
+        <p>Look under the car for a puddle (coolant is usually green, orange, or pink and slick), and check hoses and clamps for damp spots or white crusty residue. While you're at it, note your manufacturer's flush interval so the big service never sneaks up on you.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Coolant-check progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Level read, color checked, topped to the cold MAX line, and no leaks underneath — logged and done. A quick glance again in about six months, and at your next oil change.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs of trouble — and when to call a pro</h2>
+    <p class="sub">A healthy cooling system is invisible: the temp gauge sits in the middle, the level stays put between checks, and there's nothing on the driveway. These are the warning signs that something's wrong — and the handful that aren't a top-up at all and mean a mechanic, now:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The temperature gauge running hot or a coolant warning light.</strong> If the needle climbs toward the red or a warning lights up, pull over safely and let the engine cool — driving on while it overheats is exactly how the head warps. Don't open anything hot; let it cool, check the level, and find the cause.</li>
+        <li><strong>A level that keeps dropping.</strong> Topping up is fine once, but if you're back at the reservoir again and again, you have a leak — internal or external. Coolant doesn't get "used up" in a healthy system, so a falling level always means it's going somewhere.</li>
+        <li><strong>A sweet smell or a puddle under the car.</strong> Coolant smells sweet and leaves a slick green, orange, or pink puddle. Either one means it's escaping — trace it to a hose, clamp, radiator, or the water pump before it runs you dry.</li>
+        <li><strong>Steam from under the hood.</strong> Steam or a hot, syrupy smell while driving means it's already boiling over. Stop, shut it down, and let it cool completely before going near it — and don't keep driving, even a short way.</li>
+        <li><strong>Milky or chocolate-colored oil — see a mechanic.</strong> If the oil on the dipstick looks like a milkshake, or you see white smoke from the exhaust and a dropping coolant level, coolant and oil are mixing. That's a likely head-gasket failure — serious, and not a driveway fix.</li>
+        <li><strong>Sludgy, rusty, or contaminated coolant — see a mechanic.</strong> If the fluid is muddy, oily, or full of gunk, the system needs a proper flush and an inspection for what's contaminating it. Pouring fresh coolant on top of sludge doesn't fix it.</li>
+        <li><strong>Pro tip:</strong> the level check is yours; the <em>flush</em> belongs to the schedule. Whenever you check coolant, glance at the dates and follow your manufacturer's flush interval — fresh fluid restores the corrosion-inhibitors that quietly protect the whole system.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I check my coolant?</summary>
+      <p>With the engine fully cold, park on level ground and pop the hood. Find the translucent plastic overflow reservoir — usually near the radiator and marked with a coolant or thermometer symbol — and look at the fluid line against the MIN and MAX marks molded into the side. It should sit between them; if it's at or below MIN, top it up with the correct pre-mixed coolant to the cold MAX line. While you're there, glance at the color (bright and clear is good; rusty or gunky means a flush is due) and look under the car for any puddle. The whole thing takes about two minutes. The one rule that overrides everything: never open the radiator cap or a pressurized reservoir on a warm or hot engine.</p>
+    </details>
+    <details>
+      <summary>Can I open the cap when the engine's hot?</summary>
+      <p>No — this is the single most important safety point in the whole job. When the engine is hot, the cooling system is pressurized and the coolant is well above its normal boiling point. Crack the cap and that pressure releases instantly, erupting a geyser of scalding coolant and steam that can cause serious burns to your face, arms, and hands. Always wait until the engine is completely cold — the surest time is first thing in the morning before you've driven. If you ever need to add coolant to a hot engine in an emergency, the safe move is to let it cool first; there's no top-up worth a trip to the burn unit.</p>
+    </details>
+    <details>
+      <summary>What coolant type do I use, and can I use water?</summary>
+      <p>Use exactly the type your owner's manual specifies — there are several incompatible chemistries (IAT, OAT, HOAT and others), and the color is a rough guide but not a guarantee. Mixing types that don't get along can gel into a sludge that clogs the radiator and heater core, so match the manual, not the color on the shelf. The easiest, safest choice is pre-mixed (50/50) coolant of the right type, which you pour straight in. In a pinch you can add a small amount of plain water to get home safely, but it dilutes the freeze and corrosion protection, so correct it soon. If you do mix concentrate yourself, use <strong>distilled</strong> water — never tap water, whose minerals leave scale and promote corrosion inside the system.</p>
+    </details>
+    <details>
+      <summary>How often should I check vs. flush?</summary>
+      <p>These are two different things. The level <em>check</em> is the quick two-minute glance at the reservoir — do it about every six months and at every oil change, more often (monthly) if you're in an extreme climate, drive an older high-mileage car, tow or climb hills, or notice any symptom. The <em>flush</em> is a full service that drains the old fluid and replaces it, restoring the spent corrosion-inhibitors; it's on a much longer interval set by your manufacturer — commonly somewhere between 30,000 and 100,000 miles or every few years, but check your manual for the exact figure. Think of the check as keeping an eye on the level, and the flush as renewing the fluid itself on schedule.</p>
+    </details>
+    <details>
+      <summary>Why does my coolant keep disappearing?</summary>
+      <p>In a healthy, sealed system, coolant doesn't get consumed — so a level that keeps dropping always means it's leaking somewhere. External leaks show up as a puddle, a sweet smell, or white crusty residue at a hose, clamp, the radiator, or the water pump, and are usually traceable and repairable. Internal leaks are sneakier: coolant can seep into the combustion chamber (look for white, sweet-smelling exhaust smoke) or mix with the oil (milky, chocolate-milkshake oil on the dipstick), both of which point to a head-gasket or related failure and need a mechanic right away. Either way, keep topping it up only as a stopgap and get the cause diagnosed — a slow leak left alone eventually becomes an overheating engine.</p>
+    </details>
+    <details>
+      <summary>What are the signs of a coolant leak or overheating?</summary>
+      <p>For a leak: a slick puddle under the car (typically green, orange, or pink), a sweet syrupy smell, white crusty deposits around hoses and clamps, and a reservoir level that keeps dropping. For overheating: the temperature gauge climbing toward the red, a coolant or temperature warning light, steam or a hot sweet smell from under the hood, and the heater blowing cold when it shouldn't. If you see steam or the gauge spikes, pull over safely, shut the engine off, and let it cool fully before opening anything — continuing to drive on an overheating engine is what turns a cheap fix into a warped head or blown head gasket. Pair this check with your <a href="oil-change.html">oil change</a> (check it every time), and while you're under the hood, learn the other engine-bay basics: the <a href="replace-engine-air-filter.html">engine air filter</a>, your <a href="replace-spark-plugs.html">spark plugs</a>, and your <a href="replace-car-battery.html">car battery</a>.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Coolant drops so slowly you never notice — until the temp needle climbs.</h2>
+        <p>The level check asks for two minutes a couple of times a year, on a fluid that vanishes a millimeter at a time. Upkeep Ledger ties this check to your oil changes so the level's never a surprise — and tracks your manufacturer's flush interval too, right alongside the air filter, the spark plugs, and every other quiet task that keeps the engine running cool.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-coolant&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-coolant&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning; coolant type, intervals, and procedures vary by vehicle — your owner's manual and a trusted mechanic outrank this guide for anything beyond a top-up.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { climate: null, age: null, use: null, symptoms: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Climate */
+    if (s.climate === "extreme") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("In extreme heat or hard freezes, coolant is doing its hardest work — preventing both boil-over and a frozen, cracked block. That's exactly where a low or weak mix bites, so check it more often.");
+    } else if (s.climate === "mild") {
+      reasons.push("A mild, temperate climate is gentle on the cooling system, so it isn't pushing your schedule on its own.");
+    } else {
+      reasons.push("Real summers and winters put normal seasonal demand on the coolant — the twice-a-year default covers it well.");
+    }
+
+    /* Age / mileage */
+    if (s.age === "old") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Older, high-mileage engines have aging hoses, clamps, gaskets, and water pumps that seep coolant slowly — a more frequent eyeball catches a falling level long before it becomes a problem.");
+    } else if (s.age === "new") {
+      reasons.push("A newer, low-mileage car has fresh hoses and seals that rarely leak, so it can comfortably lean toward the longer end of the range.");
+    } else {
+      reasons.push("A middle-aged car with moderate miles is the ordinary case the every-six-months default is written for.");
+    }
+
+    /* Use */
+    if (s.use === "hard") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Towing, hauling, climbing grades, or crawling in stop-and-go traffic runs the cooling system hot and hard, which stresses the fluid and surfaces any weakness fast — worth checking more often.");
+    } else if (s.use === "easy") {
+      reasons.push("Easy, gentle commuting keeps the system cool and unstressed, so heavy use isn't driving your schedule.");
+    } else {
+      reasons.push("A normal mix of highway and around-town driving is the middle case — no extra demand pushing the interval.");
+    }
+
+    /* Symptoms */
+    if (s.symptoms === "signs") {
+      months = 1;
+      tighten = true;
+      reasons.push("A temp gauge creeping up, a level that keeps dropping, or a visible leak means the system is already telling on itself — check it monthly (or sooner) and get to the cause before it escalates into an overheat.");
+    } else if (s.symptoms === "maybe") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("A faint sweet smell now and then can be the first hint of a slow coolant leak, so check more often and keep an eye out for a puddle or a falling level.");
+    } else {
+      reasons.push("Nothing out of the ordinary on the gauge or the ground is the all-clear — no symptom pushing you to check sooner.");
+    }
+
+    /* Best-case relaxation */
+    if (!tighten && s.climate === "mild" && s.age === "new" && s.use === "easy" && s.symptoms === "none") {
+      reasons.push("A newer, low-mileage car driven gently in a mild climate with no symptoms is the easy case — every six months, plus a glance at each oil change, is genuinely plenty.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.symptoms === "signs") {
+      note = "<strong>A symptom isn't a top-up problem — it's a diagnosis problem.</strong> Topping up buys you a little time, but a creeping gauge or a dropping level means coolant is going somewhere. Find the cause (a mechanic if it's the oil, exhaust steam, or you can't trace the leak) before it becomes an overheat.";
+    } else if (s.climate === "extreme") {
+      note = "<strong>Match the mix to the climate:</strong> use the coolant type and pre-mixed ratio your manual specifies — it's formulated for both the boil-over protection of brutal heat and the freeze protection of a hard winter. The right fluid is half the battle.";
+    } else if (s.age === "old") {
+      note = "<strong>On an older engine, watch the trend:</strong> a level that's a touch low once is normal; a level that's low <em>again</em> next check means a leak. Note where the line sits each time so a slow seep can't hide.";
+    } else {
+      note = "<strong>Tie it to the oil change, and don't forget the flush:</strong> checking coolant every time you change oil makes it automatic. The full flush is a separate, longer interval — follow the figure in your owner's manual so the corrosion-inhibitors stay fresh.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.climate || !quizState.age || !quizState.use || !quizState.symptoms) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: check the coolant " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "On a fully cold engine, <strong>read the level against the MIN/MAX marks, check the color, top up to the cold MAX line if low, and scan underneath for leaks</strong> — and glance at it at every oil change too. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Make sure the engine is fully cold", note: "Never open the radiator cap or a pressurized reservoir on a warm or hot engine — it can spray scalding, pressurized coolant. Check first thing in the morning, or wait until everything has cooled completely." },
+    { phase: "Prep", text: "Park on level ground and pop the hood", note: "Flat ground gives an accurate reading. Open the hood and locate the engine bay; have a rag, gloves, and the correct pre-mixed coolant within reach in case you need to top up." },
+    { phase: "Prep", text: "Find the translucent overflow reservoir", note: "It's the plastic tank near the radiator, usually marked with a coolant or thermometer symbol, with MIN and MAX lines molded into the side. That's where you read and top up — not the radiator cap." },
+    { phase: "Check level & condition", text: "Read the level against the MIN/MAX marks", note: "The fluid line should sit between MIN and MAX (cold). At or below MIN means it needs topping up. Use a flashlight if the tank is cloudy and the line is hard to see." },
+    { phase: "Check level & condition", text: "Check the coolant's color and clarity", note: "Bright and clear (green, orange, pink, blue, or yellow depending on type) is healthy. Rusty, muddy brown, oily, or full of floating gunk means the system is due for a flush, not just a top-up." },
+    { phase: "Check level & condition", text: "Confirm the coolant TYPE before adding any", note: "Check the owner's manual and use exactly the type it specifies — prefer pre-mixed (50/50). Mixing incompatible chemistries can gel and clog the system, so match the manual, not just the color." },
+    { phase: "Top up", text: "Top up to the cold MAX line if it's low", note: "Add the correct pre-mixed coolant up to — not past — the cold MAX mark. A funnel keeps it clean and toxic-spill-free. Don't overfill; the fluid expands as it heats." },
+    { phase: "Top up", text: "Re-seat the cap firmly and wipe up spills", note: "Press the reservoir cap on until it clicks or seats so the system holds pressure. Wipe up every drop immediately — coolant is toxic and tastes sweet, which attracts pets and kids." },
+    { phase: "Leaks & log", text: "Scan under the car and around the hoses for leaks", note: "Look for a slick green, orange, or pink puddle on the ground, and check hoses, clamps, the radiator, and the water pump for damp spots or white crusty residue." },
+    { phase: "Leaks & log", text: "Note your manufacturer's flush interval", note: "The level check is separate from the full flush, which renews the fluid on a longer schedule (often every 30,000–100,000 miles). Find the figure in your manual so the flush never sneaks up on you." },
+    { phase: "Leaks & log", text: "Log the date", note: "Coolant drops so slowly you'll never remember the last check. Note the date so the next one lands in about six months (or your quiz interval) — and tie it to your next oil change." }
+  ];
+
+  var LS_KEY = "upkeepguides:check-coolant:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

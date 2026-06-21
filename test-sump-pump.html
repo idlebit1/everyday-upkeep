@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test your sump pump — UpkeepGuides.com</title>
+<meta name="description" content="How to test your sump pump in two minutes: pour a bucket into the pit, watch the float rise and the pump kick on, check the discharge line and check valve, clear the pit, and confirm the battery backup before storm season.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Test your sump pump — UpkeepGuides.com">
+<meta property="og:description" content="How to test your sump pump in two minutes: pour a bucket into the pit, watch the float rise and the pump kick on, check the discharge line and check valve, clear the pit, and confirm the battery backup before storm season.">
+<meta property="og:url" content="https://upkeepguides.com/test-sump-pump.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Test your sump pump — UpkeepGuides.com">
+<meta name="twitter:description" content="How to test your sump pump in two minutes: pour a bucket into the pit, watch the float rise and the pump kick on, check the discharge line and check valve, clear the pit, and confirm the battery backup before storm season.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 3 months</span>
+      <h1>Test Your Sump Pump</h1>
+      <p class="lede">It sits quietly in a pit in the floor, and for months it does absolutely nothing — which is exactly the problem. The sump pump is the one machine standing between a heavy rain and a flooded basement, and when it fails, it fails <em>silently</em>. You don't find out it's dead until the worst possible moment: the night of the storm, with water rising over your shoes. The fix is almost insultingly simple. Pour a five-gallon bucket of water into the pit, watch the float rise, listen for the pump to kick on, see the water pump out and the pump shut off again. Two minutes, four times a year, and you'll never be surprised by a pump that quietly quit on you.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>~2–5 min</em> to test</span>
+        <span class="chip">🌧️ Saves you from <em>a flooded basement</em></span>
+        <span class="chip">💸 Costs <em>$0</em> to test</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of testing a sump pump: a basement sump pit set into a dry concrete floor holds a submersible pump with a rising float switch, a hand pours a bucket of water into the pit, the float has lifted and the pump has switched on, water is discharging up and out through a pipe that carries it away from the house, and the basement floor stays dry">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- dry basement floor -->
+      <rect x="40" y="300" width="480" height="100" fill="#dcd3c2"/>
+      <rect x="40" y="300" width="480" height="10" fill="#c9bfa9"/>
+      <!-- concrete floor seams -->
+      <g stroke="#c9bfa9" stroke-width="2.4">
+        <line x1="140" y1="310" x2="140" y2="400"/>
+        <line x1="420" y1="310" x2="420" y2="400"/>
+        <line x1="40" y1="356" x2="180" y2="356"/>
+        <line x1="380" y1="356" x2="520" y2="356"/>
+      </g>
+      <text x="60" y="388" font-size="12" fill="#3e7c59" font-weight="700">dry floor ✓</text>
+
+      <!-- basement wall behind -->
+      <rect x="40" y="120" width="480" height="180" fill="#efe7d8"/>
+      <g stroke="#e1d8c6" stroke-width="2">
+        <line x1="40" y1="160" x2="520" y2="160"/>
+        <line x1="40" y1="210" x2="520" y2="210"/>
+        <line x1="40" y1="260" x2="520" y2="260"/>
+      </g>
+
+      <!-- ===== sump pit cut into the floor ===== -->
+      <!-- pit opening + walls -->
+      <path d="M210 300 L250 388 H360 L390 300 Z" fill="#8a6a4f"/>
+      <path d="M218 300 L254 380 H356 L382 300 Z" fill="#6b5440"/>
+      <!-- water in the pit -->
+      <path d="M236 340 L256 380 H354 L368 340 Z" fill="#7fb3c8"/>
+      <path d="M236 340 L368 340" stroke="#9cc3d4" stroke-width="4"/>
+      <!-- pit rim / lid edge -->
+      <rect x="200" y="294" width="200" height="10" rx="3" fill="#b9b1a3"/>
+
+      <!-- submersible pump body in the pit -->
+      <rect x="276" y="320" width="48" height="56" rx="6" fill="#5e9a78"/>
+      <rect x="276" y="320" width="48" height="12" rx="6" fill="#3e7c59"/>
+      <ellipse cx="300" cy="376" rx="24" ry="6" fill="#2c5a40"/>
+      <!-- pump power cord -->
+      <path d="M318 326 q40 -10 56 -40" fill="none" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- float switch on its arm — lifted up (ON) -->
+      <rect x="262" y="330" width="6" height="40" rx="3" fill="#8a6a4f"/>
+      <ellipse cx="252" cy="332" rx="15" ry="12" fill="#e0a93d"/>
+      <ellipse cx="248" cy="329" rx="5" ry="4" fill="#faf0da"/>
+      <!-- "up" arrow showing the float rising -->
+      <path d="M252 360 l0 -16 m-5 6 l5 -6 l5 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="206" y="332" font-size="11" fill="#3e7c59" font-weight="700">float ↑</text>
+
+      <!-- discharge pipe rising from pump up and out -->
+      <rect x="312" y="150" width="16" height="172" fill="#b9b1a3"/>
+      <rect x="312" y="150" width="16" height="172" fill="#cdcabf" opacity="0.4"/>
+      <!-- check valve bulge on the pipe -->
+      <rect x="306" y="246" width="28" height="22" rx="6" fill="#8a6a4f"/>
+      <text x="338" y="262" font-size="10" fill="#6b7376">check valve</text>
+      <!-- pipe elbow turning out through the wall -->
+      <path d="M312 150 q0 -16 16 -16 h120 v16 h-104 v16 h-32 z" fill="#b9b1a3"/>
+      <rect x="440" y="134" width="40" height="16" rx="4" fill="#8a6a4f"/>
+      <!-- water discharging out of the pipe, away from the house -->
+      <g fill="#7fb3c8">
+        <path d="M480 140 q24 4 36 22 q-6 -22 -30 -30 z"/>
+        <circle cx="520" cy="170" r="5"/>
+        <circle cx="510" cy="184" r="4"/>
+        <circle cx="528" cy="186" r="3.5"/>
+      </g>
+      <text x="436" y="184" font-size="11" fill="#3e7c59" font-weight="700">out &amp; away →</text>
+
+      <!-- hand pouring the test bucket of water into the pit -->
+      <!-- bucket -->
+      <path d="M126 132 h70 l-9 64 h-52 z" fill="#c96f4a"/>
+      <path d="M122 130 h78 l-3 10 h-72 z" fill="#d9663f"/>
+      <path d="M130 128 q35 -18 64 0" fill="none" stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- the pour: a stream of water arcing into the pit -->
+      <path d="M182 196 q30 50 70 100 q14 22 38 36" fill="none" stroke="#7fb3c8" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+      <g fill="#9cc3d4">
+        <circle cx="262" cy="320" r="4"/>
+        <circle cx="276" cy="336" r="3.4"/>
+        <circle cx="290" cy="350" r="3"/>
+      </g>
+      <!-- hand gripping the bucket handle -->
+      <ellipse cx="150" cy="120" rx="16" ry="12" fill="#e8b48f"/>
+      <path d="M140 116 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M150 108 q-24 -10 -52 6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- battery backup box on the floor, right -->
+      <rect x="430" y="320" width="64" height="56" rx="6" fill="#c9a06b"/>
+      <rect x="430" y="320" width="64" height="14" rx="6" fill="#b9b1a3"/>
+      <rect x="438" y="342" width="48" height="8" rx="3" fill="#fffdf8"/>
+      <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round">
+        <path d="M456 358 l0 10 M451 363 l10 0"/>
+      </g>
+      <text x="430" y="392" font-size="10.5" fill="#6b7376">backup</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A sump pump is insurance you can't see working — it earns its keep on maybe a handful of stormy nights a year, and the rest of the time it just waits. The trouble is that a waiting pump and a dead pump look exactly alike from across the room. You only learn which one you have when the water comes, and by then it's far too late to do anything but bail. Here's what's actually at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="22" width="24" height="8" rx="2" fill="#dce8ee" stroke="#7fb3c8" stroke-width="1.6"/>
+          <path d="M6 26 q4 -3 8 0 q4 3 8 0 q4 -3 8 0" fill="none" stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M11 6 v10 M11 16 l-3 -3 M11 16 l3 -3" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20" y="8" width="9" height="11" rx="1.5" fill="#b9b1a3"/>
+          <path d="M20 19 q4.5 6 9 0" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>A dead pump floods the basement</h3>
+        <p>When the pump fails and the rain keeps coming, the water has nowhere to go but up — across the floor, into the drywall, and over everything you store down there. A flooded basement means thousands in cleanup, ruined belongings, and mold that takes hold within a day or two.</p>
+        <span class="cost">Thousands in damage &amp; mold</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="6" width="18" height="24" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="18" cy="18" r="6.5" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <path d="M18 14 v4 l3 2" stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 27 q5 4 10 0" fill="none" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It fails silently</h3>
+        <p>There's no warning light, no beep, no smell — a sump pump gives no sign that it's stopped working. So you discover the failure the one time you can't afford to: mid-storm, water rising, with no chance to swap a pump or call anyone in time. A quick test is the only way to find out before the weather does.</p>
+        <span class="cost">You find out mid-storm</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M22 5 l4 4 l-13 13 l-4 -4 z" fill="#e0a93d"/>
+          <path d="M9 18 l4 4 l-5 5 l-5 -5 z" fill="#8a6a4f"/>
+          <circle cx="26" cy="9" r="4.5" fill="#faf0da" stroke="#e0a93d" stroke-width="1.8"/>
+          <path d="M16 28 q4 -3 8 0" fill="none" stroke="#3e7c59" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="29" cy="26" r="2" fill="#5e9a78"/>
+          <circle cx="24" cy="30" r="1.6" fill="#5e9a78"/>
+        </svg></div>
+        <h3>The fixes are cheap &amp; quick</h3>
+        <p>Most "dead" pumps aren't dead at all. The usual culprits are a float stuck against the pit wall, a pit clogged with gravel and silt, a discharge line that's frozen or disconnected, or a tripped GFCI that cut the power. Every one of those is a two-minute catch — if you go looking before the storm does.</p>
+        <span class="cost">Five-minute problems, missed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="9" width="14" height="20" rx="2" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <rect x="15" y="6" width="6" height="3" rx="1" fill="#e0a93d"/>
+          <path d="M19 13 l-4 7 h4 l-3 6" stroke="#d98e3b" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 6 l3 4 M30 6 l-3 4" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Storms knock out the power</h3>
+        <p>The cruel irony: the same storm that floods the pit is the one most likely to cut your power — so the pump goes dark exactly when you need it most. That's why a battery backup (or a water-powered second pump) matters, and why testing it is part of the job, not an afterthought.</p>
+        <span class="cost">No power, no pump, full pit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> test it?</h2>
+    <p class="sub">Every three months — and always right before your wet or storm season — is the sensible default. But a finished basement full of things you can't replace, a high water table that keeps the pit working hard, an old pump, or no backup all push toward testing monthly. A dry crawlspace with a newer pump can relax a little. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="basement">
+        <div class="q-label">1. What's down there, and how wet does it get?</div>
+        <div class="pills">
+          <button class="pill" data-v="finished">Finished/lived-in basement, or high water table</button>
+          <button class="pill" data-v="normal">An ordinary unfinished basement</button>
+          <button class="pill" data-v="dry">Dry crawlspace, rarely any water</button>
+        </div>
+        <div class="q-hint">The more a flood would cost you — finished space, stored valuables — and the harder the pit works in a high water table or wet climate, the more often testing pays off.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">2. How old is the pump?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Old or original — 7+ years, or I'm not sure</button>
+          <button class="pill" data-v="mid">A few years old, still going strong</button>
+          <button class="pill" data-v="new">Newer — installed in the last couple of years</button>
+        </div>
+        <div class="q-hint">Sump pumps last roughly ten years, and failure odds climb steeply at the end. An old or unknown-age pump deserves more frequent testing — and a plan to replace it before it quits.</div>
+      </div>
+      <div class="quiz-q" data-q="storm">
+        <div class="q-label">3. How rough is your weather?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Heavy rain, snowmelt, or hard freezes</button>
+          <button class="pill" data-v="some">A wet season, but nothing extreme</button>
+          <button class="pill" data-v="mild">Mild and dry most of the year</button>
+        </div>
+        <div class="q-hint">Downpours and rapid snowmelt are when the pump runs flat-out, and hard freezes can lock up a discharge line. The bigger the storms, the more it's worth checking ahead of them.</div>
+      </div>
+      <div class="quiz-q" data-q="backup">
+        <div class="q-label">4. Do you have a backup if the pump or power fails?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">No — one pump, plugged into the wall</button>
+          <button class="pill" data-v="some">A battery backup, but it's old/untested</button>
+          <button class="pill" data-v="yes">Yes — a tested battery backup or second pump</button>
+        </div>
+        <div class="q-hint">Without a backup, a single failure or a power cut means a flooded basement. If the pump is your only line of defense, test it more often — and consider adding one.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The test itself is free — a bucket of water and two minutes. Even fixing what you find is cheap: a replacement pump runs about $100–300 plus install, a battery backup $150–400. Set all of that against the one number that actually matters, the cost of cleaning up a basement that flooded because nobody checked the pump:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to test — a five-gallon bucket of water and a couple of minutes, four times a year</div></div>
+        <div class="calc-stat"><div class="v">$100–300</div><div class="l">for a replacement submersible pump, plus install if you don't do it yourself</div></div>
+        <div class="calc-stat"><div class="v bad">$3k–10k+</div><div class="l">to clean up, dry out, and rebuild a basement that flooded when the pump failed</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🪣 Testing the pump with a bucket of water</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚙️ Replacing a tired or dead pump</span><span>$100–300 + install</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 Adding a battery backup or second pump</span><span>$150–400</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌊 Cleanup after a single flooded basement</span><span>$3,000–10,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free two-minute test and, at most, a few hundred dollars on a pump or backup</strong> against a flood that runs into the thousands — plus the belongings you can't replace and the mold that follows. A working sump pump is the cheapest flood insurance there is. The only thing that makes it worthless is never checking that it works.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to test your sump pump</h2>
+    <p class="sub">The test is the heart of it: pour water into the pit and watch the whole cycle happen — float rises, pump starts, water pumps out, pump shuts off. Around that, you check the things that quietly fail: the float, the discharge line, the pit itself, and the backup. It's a natural pairing with <a href="flush-water-heater.html">flushing the water heater</a> — the other basement-plumbing check worth doing while you're already down there. Read the techniques first (especially the safety box — this is water and electricity together), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Water and electricity — work carefully</h3>
+      <ul>
+        <li><strong>Keep your hands dry and out of the pit when the power is on.</strong> The pump is plugged into a GFCI outlet right beside standing water. Never reach into the pit while it's powered — water and electricity together is a real hazard, not a theoretical one.</li>
+        <li><strong>Unplug the pump before clearing debris or touching it.</strong> Anytime you're going to put a hand in the pit — to free a stuck float, scoop out gravel, or check the intake — pull the plug first, then plug it back in to test.</li>
+        <li><strong>Check the GFCI and outlet first.</strong> A tripped GFCI is one of the most common "dead pump" causes. Press reset on the outlet and confirm it has power before you assume the pump itself has failed — it's worth <a href="test-gfci-outlets.html">testing that GFCI</a> on its own schedule too, since the pump is only as reliable as the outlet it's plugged into.</li>
+        <li><strong>Lift water buckets with your legs.</strong> A five-gallon bucket of water weighs about forty pounds. Bend at the knees, keep it close, and don't twist while you pour — basements have plenty of edges to trip on.</li>
+        <li><strong>Don't run the pump dry.</strong> The pump is cooled by the water it moves. Letting it run dry for more than a moment can burn out the motor, so once the pit is pumped down, let it shut off — don't force it to keep running.</li>
+        <li><strong>Watch your footing on a wet floor.</strong> Test water can splash. Wipe up spills as you go and wear shoes with grip — a slick concrete floor is its own hazard.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A 5-gallon bucket</span>
+      <span class="tool-chip">Water (or a garden hose)</span>
+      <span class="tool-chip">A flashlight</span>
+      <span class="tool-chip">Work gloves</span>
+      <span class="tool-chip">A shop vac or scoop for the pit</span>
+      <span class="tool-chip">A rag or towel</span>
+      <span class="tool-chip">A phone to log the date</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pouring a five-gallon bucket of water slowly into the sump pit while the float rises, the pump switches on, water pumps out, and the pump shuts off again">
+          <!-- pit -->
+          <path d="M70 80 L92 158 H188 L210 80 Z" fill="#8a6a4f"/>
+          <path d="M78 80 L96 150 H184 L202 80 Z" fill="#6b5440"/>
+          <path d="M96 110 L106 150 H174 L184 110 Z" fill="#7fb3c8"/>
+          <rect x="60" y="74" width="160" height="9" rx="3" fill="#b9b1a3"/>
+          <!-- pump -->
+          <rect x="120" y="100" width="40" height="48" rx="5" fill="#5e9a78"/>
+          <rect x="120" y="100" width="40" height="10" rx="5" fill="#3e7c59"/>
+          <!-- float lifted -->
+          <ellipse cx="106" cy="106" rx="11" ry="9" fill="#e0a93d"/>
+          <path d="M106 130 l0 -14 m-4 5 l4 -5 l4 5" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- bucket pouring -->
+          <path d="M30 24 h44 l-6 36 h-32 z" fill="#c96f4a"/>
+          <path d="M27 22 h50 l-2 8 h-46 z" fill="#d9663f"/>
+          <path d="M52 60 q14 24 36 36" fill="none" stroke="#7fb3c8" stroke-width="5" stroke-linecap="round"/>
+          <text x="70" y="172" font-size="11" fill="#3e7c59" font-weight="700">pour → float → pump → off</text>
+        </svg>
+        <h4>Pour a bucket and watch the cycle</h4>
+        <p>Slowly pour five gallons of water into the pit and watch the whole sequence: the float rises, the pump kicks on, the water pumps out, and the pump shuts off by itself. That's a healthy pump. No start, no shut-off, or a strain to move water all mean something needs attention.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking the sump pump float, confirming it swings freely and is not jammed against the pit wall or tangled in the power cord">
+          <path d="M50 40 L70 150 H210 L230 40 Z" fill="#8a6a4f"/>
+          <path d="M58 40 L74 142 H206 L222 40 Z" fill="#6b5440"/>
+          <rect x="120" y="60" width="40" height="80" rx="5" fill="#5e9a78"/>
+          <!-- float arm swinging -->
+          <rect x="110" y="70" width="5" height="56" rx="2.5" fill="#b9b1a3"/>
+          <ellipse cx="92" cy="78" rx="14" ry="11" fill="#e0a93d"/>
+          <ellipse cx="88" cy="75" rx="4.5" ry="3.5" fill="#faf0da"/>
+          <!-- swing arc arrows -->
+          <path d="M84 102 q-12 -10 -6 -28" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M76 76 l2 -2 m-2 2 l2 2" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M100 116 q12 -8 8 -26" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="70" y="170" font-size="11" fill="#3e7c59" font-weight="700">free to swing, not jammed</text>
+        </svg>
+        <h4>Check the float moves freely</h4>
+        <p>The float is the switch — when it floats up, the pump turns on. A float jammed against the pit wall, snagged on the pump, or tangled in its own cord can't rise, so the pump never starts no matter how high the water gets. Give it a gentle lift by hand and confirm it swings clear.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of inspecting the discharge line, confirming it is clear, drains well away from the foundation, is not frozen, and has a working check valve so water does not run back into the pit">
+          <!-- house wall -->
+          <rect x="20" y="30" width="26" height="130" fill="#b9b1a3"/>
+          <rect x="20" y="30" width="26" height="130" fill="#c9bfa9" opacity="0.4"/>
+          <!-- pipe out and away -->
+          <path d="M46 70 h60 v-14 h60" fill="none" stroke="#8a6a4f" stroke-width="10" stroke-linecap="round"/>
+          <!-- check valve bulge -->
+          <rect x="70" y="62" width="22" height="16" rx="5" fill="#5e9a78"/>
+          <text x="60" y="56" font-size="9.5" fill="#6b7376">check valve</text>
+          <!-- water draining away -->
+          <g fill="#7fb3c8">
+            <path d="M166 56 q14 6 20 22 q-2 -16 -16 -22 z"/>
+            <circle cx="196" cy="86" r="4.5"/>
+            <circle cx="208" cy="98" r="3.6"/>
+          </g>
+          <!-- ground sloping away -->
+          <path d="M150 150 q40 -16 110 -6 v20 h-110 z" fill="#efe7d8"/>
+          <path d="M150 150 q40 -16 110 -6" fill="none" stroke="#c9bfa9" stroke-width="3"/>
+          <text x="120" y="174" font-size="11" fill="#3e7c59" font-weight="700">clear · sloped away · not frozen</text>
+        </svg>
+        <h4>Inspect the discharge line</h4>
+        <p>Trace the line that carries water out. It should be clear and unfrozen, drain well away from the foundation (not pooling right back against it), and have a working check valve so the water it pumps out doesn't just drain back into the pit. A clogged or frozen line means the pump runs but the basement still floods.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of cleaning gravel, silt, and debris out of the sump pit with a shop vac so the pump intake stays clear and cannot clog">
+          <path d="M60 40 L82 150 H198 L220 40 Z" fill="#8a6a4f"/>
+          <path d="M68 40 L86 142 H194 L212 40 Z" fill="#6b5440"/>
+          <!-- pump with intake at bottom -->
+          <rect x="118" y="70" width="42" height="64" rx="5" fill="#5e9a78"/>
+          <ellipse cx="139" cy="134" rx="22" ry="6" fill="#2c5a40"/>
+          <!-- debris / gravel / silt at the bottom -->
+          <g fill="#c9a06b">
+            <circle cx="100" cy="138" r="4"/>
+            <circle cx="112" cy="142" r="3"/>
+            <circle cx="170" cy="139" r="3.5"/>
+            <circle cx="184" cy="143" r="2.6"/>
+            <circle cx="150" cy="144" r="3"/>
+          </g>
+          <!-- shop vac nozzle -->
+          <rect x="176" y="50" width="10" height="46" rx="4" fill="#33393b" transform="rotate(20 181 73)"/>
+          <path d="M186 120 q8 -4 14 2" fill="none" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round"/>
+          <text x="78" y="172" font-size="11" fill="#3e7c59" font-weight="700">clear gravel &amp; silt from the pit</text>
+        </svg>
+        <h4>Clean debris out of the pit</h4>
+        <p>Gravel, silt, and grit settle in the bottom of the pit and can clog the pump's intake or jam the float. With the pump unplugged, scoop or shop-vac the muck out so the intake stays clear and the float has room to move. A clean pit is a pump that can actually do its job when it counts.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of testing the battery backup and confirming the GFCI outlet is live, with the pump plugged directly into its own outlet rather than a switched or daisy-chained one">
+          <!-- battery backup box -->
+          <rect x="40" y="60" width="80" height="70" rx="8" fill="#c9a06b"/>
+          <rect x="40" y="60" width="80" height="16" rx="8" fill="#b9b1a3"/>
+          <rect x="52" y="86" width="56" height="9" rx="3" fill="#fffdf8"/>
+          <g stroke="#3e7c59" stroke-width="3.4" stroke-linecap="round">
+            <path d="M70 106 l0 14 M63 113 l14 0"/>
+          </g>
+          <text x="44" y="148" font-size="10.5" fill="#6b7376">battery backup</text>
+          <!-- GFCI outlet -->
+          <rect x="180" y="56" width="58" height="78" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <circle cx="209" cy="80" r="4" fill="#d9663f"/>
+          <text x="220" y="84" font-size="9" fill="#6b7376">test</text>
+          <circle cx="209" cy="96" r="4" fill="#3e7c59"/>
+          <text x="220" y="100" font-size="9" fill="#6b7376">reset</text>
+          <rect x="200" y="112" width="6" height="12" rx="2" fill="#8a6a4f"/>
+          <rect x="212" y="112" width="6" height="12" rx="2" fill="#8a6a4f"/>
+          <!-- plug going straight in -->
+          <path d="M150 124 h26" stroke="#33393b" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="150" y="170" font-size="11" fill="#3e7c59" font-weight="700">backup charged · outlet live · direct</text>
+        </svg>
+        <h4>Test the backup &amp; the outlet</h4>
+        <p>Confirm the battery backup (or water-powered second pump) actually kicks in — unplug the main pump and run the test, or use the backup's self-test. Make sure the GFCI outlet is live and that the pump is plugged <em>directly</em> into it, not into a switched outlet or a daisy-chained power strip someone could accidentally cut.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Sump-pump test progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Float rises, pump runs, water discharges, pump shuts off, backup's charged — your basement's first line of defense is proven and ready. Same quick test again in about three months, and right before your wet season.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your pump is in trouble — and when to call a pro</h2>
+    <p class="sub">A healthy pump kicks on, clears the pit, and shuts off — quietly, occasionally, and completely. These are the signals that something's wrong, plus the cases that are a plumber's job, not a bucket-of-water test:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>It runs constantly or short-cycles.</strong> A pump that never seems to rest, or that clicks on and off every few seconds, usually has a stuck float, a too-small pit, a failed check valve letting water drain back in, or a pump that's wearing out. Constant running burns it out fast — get it diagnosed.</li>
+        <li><strong>It won't shut off.</strong> If the pit is empty and the pump keeps running, the float is stuck in the "on" position or the switch has failed. Running dry destroys the motor, so unplug it and sort out the float or switch before it does.</li>
+        <li><strong>It hums but doesn't move water.</strong> A pump that buzzes or hums without pumping may have a jammed impeller, an airlock, or a seized motor. Sometimes clearing debris frees it; often it means the pump is done.</li>
+        <li><strong>It's rusty, loud, or simply old.</strong> Sump pumps last about ten years. A rusty, rattly, or decade-old pump is living on borrowed time — replace it on your schedule, not the storm's.</li>
+        <li><strong>The discharge dumps right at the foundation.</strong> If the line drains water a foot from the wall, it just soaks back down to the pit and the pump keeps re-pumping the same water. A pro (or a length of pipe) can route it well away from the house.</li>
+        <li><strong>Frequent flooding, a wet basement, or a pit that fills constantly.</strong> If the pump runs nonstop even in dry weather, or the basement keeps taking on water, you may have a drainage or grading problem the pump alone can't solve. A plumber or waterproofing pro should look at the whole system.</li>
+        <li><strong>Pro tip:</strong> add a battery backup and a simple water alarm in the pit. The backup keeps the pump running when the storm cuts your power, and a $15 alarm screams the moment water rises past where it should — so you hear about a problem before the floor does. While you're thinking about keeping water out, pair this with <a href="gutters.html">cleaning the gutters</a> so roof runoff is carried away from the foundation instead of straight down to the pit, and keep <a href="update-emergency-kit.html">your emergency kit updated</a> for the storm that does knock the power out.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I test my sump pump?</summary>
+      <p>Test it about every three months, and always right before your wet or storm season — the spring thaw, the summer storm months, or whenever your region tends to get its heavy rain. Quarterly testing catches the slow failures (a pump wearing out, a float drifting out of position) while there's still time to fix them in calm weather. If you have a finished basement, a high water table, an older pump, or no backup, tighten that up to monthly. The whole point is to never let the storm be the thing that tells you the pump stopped working.</p>
+    </details>
+    <details>
+      <summary>How do I actually test it?</summary>
+      <p>Pour water in and watch the cycle. Fill a five-gallon bucket and pour it slowly into the pit until the water rises. As it does, the float should lift, the pump should switch on, the water should pump out through the discharge line, and the pump should shut off again once the pit is low. That's the whole test, and a healthy pump runs the sequence smoothly. While you're there, lift the float by hand to confirm it moves freely, glance at the discharge line to be sure it's clear and aimed away from the house, and check that the outlet and GFCI are live. The whole thing takes about two minutes.</p>
+    </details>
+    <details>
+      <summary>Why won't my pump shut off — or why does it run constantly?</summary>
+      <p>A pump that runs nonstop is almost always one of a few things. Most common is a float stuck in the "on" position — jammed against the pit wall, snagged on the pump, or tangled in the cord — so the switch never tells it to stop. Next is a failed check valve: without it, the water the pump pushes up the pipe just drains straight back into the pit, so the pump keeps re-pumping the same water forever. It can also mean the pit is undersized, the water table is genuinely high, or the pump is wearing out. Running dry or running constantly both burn out the motor, so unplug it, free or reposition the float, check the check valve, and if it still won't behave, call a plumber.</p>
+    </details>
+    <details>
+      <summary>Do I really need a battery backup?</summary>
+      <p>If a flooded basement would be a serious problem for you, yes. The catch with sump pumps is that the storms most likely to flood your pit are also the ones most likely to knock out your power — so the pump dies right when you need it. A battery backup ($150–400) keeps it running for hours on its own power; a water-powered backup pump runs off your home's water pressure with no battery to maintain. Either one turns "the power went out and the basement flooded" into a non-event. Pair it with a cheap water alarm in the pit and you've covered both the silent-failure and the no-power scenarios.</p>
+    </details>
+    <details>
+      <summary>Where should the water discharge to?</summary>
+      <p>Well away from the house — at least ten feet from the foundation, onto ground that slopes <em>away</em> so the water keeps moving instead of soaking back down to the pit. If the line dumps right at the wall, the pump ends up pumping the same water over and over, working itself to death and never really clearing the basement. Make sure the outlet isn't buried, crushed, or pointed at a low spot, and in cold climates check it isn't frozen, since a frozen discharge line backs water right up into the pit. Don't run it into a sanitary sewer where that's prohibited — route it to a yard, a storm drain, or a dry well per your local code.</p>
+    </details>
+    <details>
+      <summary>The pump runs but no water moves — or it has no power at all. What's wrong?</summary>
+      <p>If it has no power, start at the outlet: a tripped GFCI is one of the most common "dead pump" calls, so press reset and confirm the outlet is live, and make sure the pump is plugged directly in rather than into a switched outlet or power strip that got bumped off. If it has power and hums but moves no water, the likely causes are a jammed or worn impeller, an airlock, a clogged intake, or a frozen/blocked discharge line — clear the pit and the line, and if it still won't pump, the motor may be done. And bear in mind the lifespan: sump pumps last about ten years, so if yours is around that age and acting up, replacing it is often smarter than chasing the fault. When in doubt, a plumber can diagnose it in one visit.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A two-minute test that's invisible — until the storm that proves you skipped it.</h2>
+        <p>Testing the sump pump is the easiest job in the house to forget, precisely because nothing reminds you — until water's over your shoes. Upkeep Ledger logs the test and resurfaces it quarterly, and again right before your wet season, right alongside the gutters, the water heater, and every other quiet task that keeps the basement dry and the house cared-for.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-sump-pump&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-sump-pump&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your pump, plumbing, and local code may vary — when in doubt, unplug before reaching into the pit and call a licensed plumber.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { basement: null, age: null, storm: null, backup: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 3;
+    var tighten = false;
+
+    /* Basement & water table */
+    if (s.basement === "finished") {
+      months = 1;
+      tighten = true;
+      reasons.push("A finished or lived-in basement — or a high water table that keeps the pit working hard — raises both the stakes and the workload, so monthly testing is well worth it.");
+    } else if (s.basement === "dry") {
+      reasons.push("A dry crawlspace that rarely sees water is the gentlest case; quarterly is plenty, mostly as a just-in-case before the wet season.");
+    } else {
+      reasons.push("An ordinary unfinished basement is exactly the case the every-three-months default is written for.");
+    }
+
+    /* Pump age */
+    if (s.age === "old") {
+      months = 1;
+      tighten = true;
+      reasons.push("Sump pumps last about ten years and fail more often as they age, so an old or unknown-age pump deserves monthly checks — and a plan to replace it before it quits on you.");
+    } else if (s.age === "new") {
+      reasons.push("A newer pump is at its most reliable, so age isn't pushing your schedule — though even a new pump can be foiled by a stuck float or a clogged line.");
+    } else {
+      reasons.push("A pump that's a few years old and running well is in its dependable middle years; quarterly testing keeps an eye on it without overkill.");
+    }
+
+    /* Storm & freeze exposure */
+    if (s.storm === "heavy") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Heavy rain, fast snowmelt, and hard freezes are when the pump runs flat-out and the discharge line is most likely to lock up — so test ahead of every rough stretch.");
+    } else if (s.storm === "mild") {
+      reasons.push("Mild, mostly dry weather means the pump rarely has to work, but it's still worth a quarterly test so it's ready for the storm that does eventually come.");
+    } else {
+      reasons.push("A defined wet season without extremes is manageable — quarterly testing, timed just before that season, covers it.");
+    }
+
+    /* Backup */
+    if (s.backup === "none") {
+      months = 1;
+      tighten = true;
+      reasons.push("With a single pump and no backup, one failure or one power cut means a flooded basement — so test it monthly, and seriously consider adding a battery backup or second pump.");
+    } else if (s.backup === "some") {
+      reasons.push("An old or untested battery backup is only as good as its last charge — test the backup along with the pump, and replace the battery if it's getting tired.");
+    } else {
+      reasons.push("A tested battery backup or second pump gives you a real safety net, which takes some of the pressure off — though the primary pump still earns a regular check.");
+    }
+
+    /* Closing note */
+    var note;
+    if (months === 1) {
+      note = "<strong>Test it monthly, and right before every wet season.</strong> With this combination — a finished basement, an older pump, no backup, or rough weather — the pump is doing a lot and the cost of a failure is high. A two-minute monthly check is cheap insurance against a five-figure cleanup.";
+    } else {
+      note = "<strong>And always test right before your wet or storm season.</strong> Quarterly is the rhythm, but the test that matters most is the one you do just before the heavy rain or snowmelt arrives — that's when you want to <em>know</em> the pump works, not hope it does.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.basement || !quizState.age || !quizState.storm || !quizState.backup) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: test the sump pump " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Pour a bucket into the pit and <strong>watch the float rise, the pump start, the water discharge, and the pump shut off</strong> — then check the float, the line, the pit, and the backup. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep", text: "Find the pit, the pump, and the outlet", note: "Locate the sump pit in the lowest part of the basement, lift the lid if there is one, and find where the pump plugs in. Have a flashlight handy — pits are dark, and you want to see the float, the intake, and the water level clearly." },
+    { phase: "Prep", text: "Confirm the GFCI and outlet are live", note: "A tripped GFCI is one of the most common 'dead pump' causes. Press reset on the outlet, confirm it has power, and make sure the pump is plugged directly in — not into a switched outlet or a daisy-chained power strip." },
+    { phase: "Prep", text: "Fill a 5-gallon bucket with water", note: "Or have a garden hose ready. Lift with your legs — a full bucket weighs about forty pounds — and keep your footing on what may be a slick concrete floor." },
+    { phase: "Test the pump", text: "Pour the water in slowly and watch the float rise", note: "Pour steadily into the pit until the water level climbs. Watch the float lift as the water rises — it's the switch that tells the pump to start, so this is the moment the whole system either works or doesn't." },
+    { phase: "Test the pump", text: "Confirm the pump kicks on", note: "As the float reaches its trigger point, the pump should switch on with a hum and start moving water. If it doesn't start, stop and check the float, the outlet/GFCI, and that it's plugged in before assuming the pump is dead." },
+    { phase: "Test the pump", text: "Watch the water pump out — then shut off", note: "The water level should drop steadily as the pump clears the pit, and the pump should shut itself off once the water is low. A pump that won't shut off, short-cycles, or hums without moving water needs attention." },
+    { phase: "Discharge & pit", text: "Check the float swings freely", note: "With the pump unplugged, lift the float by hand and confirm it moves clear — not jammed against the pit wall, snagged on the pump, or tangled in the cord. A stuck float is the number-one reason a pump never starts." },
+    { phase: "Discharge & pit", text: "Inspect the discharge line outside", note: "Trace where the water comes out. It should drain at least ten feet from the foundation onto ground sloping away, with a clear, unfrozen, uncrushed pipe and a working check valve so water can't run back into the pit." },
+    { phase: "Discharge & pit", text: "Clear gravel, silt, and debris from the pit", note: "Unplug the pump first, then scoop or shop-vac out the muck that settles in the bottom of the pit. Debris clogs the intake and jams the float — a clean pit is a pump that can actually do its job." },
+    { phase: "Backup & log", text: "Test the battery backup or second pump", note: "Unplug the main pump and run the test again (or use the backup's self-test) to confirm the backup actually kicks in. If the battery is old or won't hold a charge, replace it — a dead backup is no backup at all." },
+    { phase: "Backup & log", text: "Plug everything back in and wipe up spills", note: "Restore power to the pump, double-check it's plugged directly into the live GFCI outlet, replace the pit lid, and mop up any test water so the floor isn't a slip hazard." },
+    { phase: "Backup & log", text: "Log the date", note: "Nothing about a silent pump reminds you it's due. Note the date so the next test lands in about three months (or your quiz interval) — and set one right before your wet or storm season, no matter what." }
+  ];
+
+  var LS_KEY = "upkeepguides:test-sump-pump:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
