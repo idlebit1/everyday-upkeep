@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service your generator — UpkeepGuides.com</title>
+<meta name="description" content="How to service your portable generator so it actually starts when the power's out: an annual oil change, spark plug, air filter, and fuel-system tune-up, a monthly test-run, plus carbon-monoxide and backfeed safety and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Service your generator — UpkeepGuides.com">
+<meta property="og:description" content="How to service your portable generator so it actually starts when the power's out: an annual oil change, spark plug, air filter, and fuel-system tune-up, a monthly test-run, plus carbon-monoxide and backfeed safety and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/service-generator.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Service your generator — UpkeepGuides.com">
+<meta name="twitter:description" content="How to service your portable generator so it actually starts when the power's out: an annual oil change, spark plug, air filter, and fuel-system tune-up, a monthly test-run, plus carbon-monoxide and backfeed safety and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Tools · Once a year</span>
+      <h1>Service Your Generator</h1>
+      <p class="lede">A generator only earns its keep if it fires up when the power's out — and that's exactly the moment neglected ones refuse to start. The usual culprit isn't the engine; it's the fuel. Ethanol-blended gas left in the tank gums up the carburetor and clogs the tiny jets within months, so the machine that sat untouched since the last storm just won't catch. One unhurried service a year — oil, spark plug, air filter, and fuel system — plus a monthly test-run keeps it ready. And before any of that: run it <strong>outside</strong>, never indoors, because carbon monoxide is invisible and deadly. Here's how to do the whole job right.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Full service <em>once a year</em></span>
+        <span class="chip">🔁 Test-run <em>monthly</em></span>
+        <span class="chip">🧰 DIY parts <em>~$20–40</em></span>
+        <span class="chip">⚠️ Run it <em>outdoors only</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of servicing a portable generator outdoors, well away from the house: the red-and-green generator sits on the ground under an open canopy at a safe distance from a house in the far background, a hand drains and refills the oil from a spout, a fresh spark plug and a new air filter rest on a cloth beside it, and a fuel can with a bottle of fuel stabilizer stands nearby">
+      <ellipse cx="280" cy="402" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- house far in the background, small, to show distance -->
+      <g opacity="0.7">
+        <rect x="392" y="86" width="96" height="64" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+        <path d="M386 88 L440 56 L494 88 Z" fill="#c96f4a"/>
+        <rect x="404" y="110" width="20" height="20" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+        <rect x="456" y="110" width="20" height="40" rx="2" fill="#8a6a4f"/>
+        <rect x="468" y="62" width="9" height="18" rx="2" fill="#b9b1a3"/>
+      </g>
+      <!-- distance line / shrub between house and generator to read "well away" -->
+      <text x="330" y="74" font-size="11" fill="#6b7376">house — keep clear</text>
+      <path d="M360 150 q-6 -16 6 -22 q-2 -10 10 -8" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="362" cy="156" rx="14" ry="9" fill="#5e9a78"/>
+      <ellipse cx="346" cy="160" rx="10" ry="7" fill="#3e7c59"/>
+
+      <!-- open canopy over the generator (rain cover, open sides) -->
+      <path d="M40 120 L196 96 L196 96" fill="none"/>
+      <path d="M44 124 L208 100 L208 112 L44 136 Z" fill="#7fb3c8"/>
+      <path d="M44 124 L208 100" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <line x1="56" y1="132" x2="56" y2="248" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <line x1="198" y1="108" x2="198" y2="244" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <text x="88" y="118" font-size="11" fill="#3e7c59" font-weight="700">open-air canopy</text>
+
+      <!-- portable generator body -->
+      <!-- frame / roll cage -->
+      <rect x="78" y="252" width="186" height="96" rx="14" fill="none" stroke="#b9b1a3" stroke-width="6"/>
+      <!-- fuel tank on top -->
+      <rect x="92" y="232" width="158" height="34" rx="12" fill="#d9663f"/>
+      <rect x="92" y="232" width="158" height="12" rx="8" fill="#c96f4a"/>
+      <!-- fuel cap -->
+      <rect x="150" y="224" width="26" height="14" rx="6" fill="#8a6a4f"/>
+      <!-- engine block -->
+      <rect x="100" y="262" width="86" height="72" rx="10" fill="#3e7c59"/>
+      <!-- cooling fins -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+        <line x1="108" y1="272" x2="108" y2="324"/>
+        <line x1="118" y1="272" x2="118" y2="324"/>
+        <line x1="128" y1="272" x2="128" y2="324"/>
+      </g>
+      <!-- recoil starter -->
+      <circle cx="160" cy="298" r="20" fill="#5e9a78"/>
+      <circle cx="160" cy="298" r="8" fill="#e3efe8"/>
+      <!-- pull handle -->
+      <rect x="184" y="290" width="26" height="9" rx="4.5" fill="#2c5a40"/>
+      <rect x="208" y="286" width="11" height="17" rx="4" fill="#b9b1a3"/>
+      <!-- control panel with outlets -->
+      <rect x="196" y="266" width="56" height="62" rx="8" fill="#2c5a40"/>
+      <circle cx="212" cy="284" r="6" fill="#e0a93d"/>
+      <circle cx="234" cy="284" r="6" fill="#e0a93d"/>
+      <rect x="206" y="300" width="40" height="10" rx="3" fill="#5e9a78"/>
+      <rect x="206" y="314" width="26" height="8" rx="3" fill="#7fb3c8"/>
+      <!-- exhaust muffler pointing away from house -->
+      <rect x="68" y="296" width="32" height="16" rx="6" fill="#8a6a4f"/>
+      <rect x="56" y="300" width="14" height="8" rx="4" fill="#b9b1a3"/>
+      <!-- wheels -->
+      <circle cx="106" cy="350" r="16" fill="#8a6a4f"/>
+      <circle cx="106" cy="350" r="6" fill="#efe7d8"/>
+      <circle cx="236" cy="350" r="16" fill="#8a6a4f"/>
+      <circle cx="236" cy="350" r="6" fill="#efe7d8"/>
+
+      <!-- hand draining / adding oil from a spouted bottle into the engine -->
+      <path d="M150 200 q26 -10 44 6 l-8 14 q-16 -10 -34 -4 z" fill="#e0a93d"/>
+      <rect x="186" y="206" width="22" height="9" rx="3" fill="#d98e3b" transform="rotate(30 197 210)"/>
+      <!-- oil stream into engine fill -->
+      <path d="M178 232 q-4 14 -10 24" fill="none" stroke="#d98e3b" stroke-width="4" stroke-linecap="round"/>
+      <!-- hand on the bottle -->
+      <ellipse cx="150" cy="204" rx="15" ry="11" fill="#e8b48f"/>
+      <path d="M140 200 q-5 6 -1 12" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M150 215 q-18 14 -34 24" stroke="#c96f4a" stroke-width="11" fill="none" stroke-linecap="round"/>
+
+      <!-- cloth with fresh spark plug and new air filter laid out front-left -->
+      <rect x="60" y="356" width="120" height="40" rx="6" fill="#dce8ee"/>
+      <rect x="60" y="356" width="120" height="9" rx="4" fill="#cdd9de"/>
+      <!-- fresh spark plug -->
+      <rect x="78" y="364" width="10" height="20" rx="3" fill="#b9b1a3"/>
+      <rect x="80" y="360" width="6" height="8" rx="2" fill="#8a6a4f"/>
+      <path d="M83 384 l0 6" stroke="#c9a06b" stroke-width="2.4" stroke-linecap="round"/>
+      <ellipse cx="83" cy="376" rx="6" ry="3" fill="#fffdf8"/>
+      <text x="74" y="394" font-size="8.5" fill="#3e7c59" font-weight="700">plug</text>
+      <!-- new air filter (pleated) -->
+      <rect x="112" y="362" width="52" height="26" rx="5" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.5"/>
+      <g stroke="#e0a93d" stroke-width="2">
+        <line x1="122" y1="364" x2="122" y2="386"/>
+        <line x1="132" y1="364" x2="132" y2="386"/>
+        <line x1="142" y1="364" x2="142" y2="386"/>
+        <line x1="152" y1="364" x2="152" y2="386"/>
+      </g>
+      <text x="118" y="396" font-size="8.5" fill="#3e7c59" font-weight="700">air filter</text>
+
+      <!-- fuel can with stabilizer bottle, front-right -->
+      <rect x="296" y="312" width="56" height="64" rx="8" fill="#d9663f"/>
+      <rect x="296" y="312" width="56" height="14" rx="8" fill="#c96f4a"/>
+      <rect x="312" y="300" width="24" height="16" rx="5" fill="#8a6a4f"/>
+      <path d="M336 304 l18 -8 l0 8 l-18 6 z" fill="#2c5a40"/>
+      <!-- flame-free label -->
+      <rect x="306" y="338" width="36" height="22" rx="4" fill="#fffdf8"/>
+      <path d="M324 342 l-4 7 h4 l-5 8 l1.5 -6 h-3.5 z" fill="#d9663f"/>
+      <!-- stabilizer bottle leaning beside the can -->
+      <rect x="362" y="328" width="22" height="48" rx="6" fill="#5e9a78"/>
+      <rect x="366" y="316" width="14" height="14" rx="3" fill="#3e7c59"/>
+      <rect x="366" y="344" width="14" height="20" rx="3" fill="#e3efe8" opacity="0.85"/>
+      <text x="300" y="392" font-size="10" fill="#3e7c59" font-weight="700">fuel + stabilizer</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A generator fails in exactly one circumstance: the day you finally need it, with the lights already out and the fridge warming up. Almost every no-start traces back to the same handful of neglected jobs — and the worst part is you don't find out until it's too late to fix. Here's what skipping the service actually costs (typical U.S. estimates):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="14" width="18" height="14" rx="3" fill="#b9b1a3"/>
+          <rect x="9" y="9" width="8" height="6" rx="2" fill="#8a6a4f"/>
+          <rect x="24" y="18" width="6" height="6" rx="1.5" fill="#2c5a40"/>
+          <path d="M30 13 l-4 7 h4 l-5 8 l1.5 -6 h-3.5 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>It won't start when it counts</h3>
+        <p>A generator that sits unserviced for a year routinely refuses to start when the storm hits — and an outage is exactly the moment failure hurts most, with every repair shop already buried in a backlog.</p>
+        <span class="cost">No power when you need it most</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="6" width="14" height="22" rx="4" fill="#d9663f"/>
+          <rect x="11" y="6" width="14" height="6" rx="3" fill="#c96f4a"/>
+          <path d="M14 16 q4 4 0 8 M22 16 q-4 4 0 8" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="18" cy="22" r="2" fill="#8a6a4f"/>
+          <circle cx="15" cy="31" r="1.6" fill="#8a6a4f"/>
+          <circle cx="21" cy="31" r="1.6" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Stale ethanol fuel is the #1 killer</h3>
+        <p>Pump gas with ethanol absorbs water and turns to varnish in months, gumming the carburetor and clogging its pinhole-sized jets. That sticky residue is the single most common reason a stored generator won't catch.</p>
+        <span class="cost">Carb rebuild ~$75–200</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="11" fill="#faf0da" stroke="#e0a93d" stroke-width="2.4"/>
+          <path d="M18 12 l1.6 4.6 l4.8 0 l-3.8 2.9 l1.4 4.6 l-4 -2.8 l-4 2.8 l1.4 -4.6 l-3.8 -2.9 l4.8 0 z" fill="#d98e3b"/>
+        </svg></div>
+        <h3>Old oil and a fouled plug wear it out</h3>
+        <p>Stale oil, a carbon-fouled spark plug, and a clogged air filter make a small engine run rough, overheat, and run lean or rich. Left alone, a no-start becomes a worn-out, hard-to-repair engine.</p>
+        <span class="cost">Rough running, then real damage</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 8 l-4 10 h8 z" fill="#e0a93d"/>
+          <rect x="6" y="20" width="24" height="10" rx="3" fill="#3e7c59"/>
+          <circle cx="12" cy="25" r="2" fill="#e0a93d"/>
+          <circle cx="24" cy="25" r="2" fill="#e0a93d"/>
+          <path d="M22 6 l-3 7 h4 l-4 7 l1.2 -5 h-2.8 z" fill="#d9663f"/>
+        </svg></div>
+        <h3>Service keeps the whole unit reliable</h3>
+        <p>Regular running and an annual tune-up keep the engine, the carburetor, and the electrical output all dependable. A generator that's exercised monthly and serviced yearly is one you can actually count on through storm season.</p>
+        <span class="cost">Reliable power, season after season</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> service it?</h2>
+    <p class="sub">A full service once a year is the sensible baseline for almost every portable generator — plus a test-run about every month and after every 50–200 run-hours, and a check before storm or winter season. But how you use it and what you feed it move the dial: frequent home-backup or jobsite duty and plain ethanol pump gas tighten the intervals, while a stabilized, ethanol-free, rarely-run unit can relax a little. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="pattern">
+        <div class="q-label">1. How do you actually use it?</div>
+        <div class="pills">
+          <button class="pill" data-v="standby">Standby — sits ready, rarely runs</button>
+          <button class="pill" data-v="backup">Home backup a few times a year</button>
+          <button class="pill" data-v="jobsite">Jobsite / heavy or near-daily use</button>
+        </div>
+        <div class="q-hint">Run-hours drive engine wear. A generator that sits is mostly a fuel-and-storage problem; one that works hard on a jobsite needs oil and filter service on a much shorter clock.</div>
+      </div>
+      <div class="quiz-q" data-q="fuel">
+        <div class="q-label">2. What fuel goes in it?</div>
+        <div class="pills">
+          <button class="pill" data-v="ethanol">Regular ethanol pump gas (E10)</button>
+          <button class="pill" data-v="stabilized">Ethanol-free or always stabilized</button>
+          <button class="pill" data-v="propane">Propane / dual-fuel</button>
+        </div>
+        <div class="q-hint">Ethanol gas is the top reason stored generators won't start — it absorbs water and varnishes the carb. Ethanol-free gas, stabilizer, and propane all dodge most of that.</div>
+      </div>
+      <div class="quiz-q" data-q="season">
+        <div class="q-label">3. What's your climate and storage like?</div>
+        <div class="pills">
+          <button class="pill" data-v="storm">Hurricane / winter-storm prone</button>
+          <button class="pill" data-v="some">Occasional outages, mild climate</button>
+          <button class="pill" data-v="stored">Stored long stretches between uses</button>
+        </div>
+        <div class="q-hint">If you live where the power goes out in big storms, the cost of a no-start is highest — so test more often. Long idle storage is when fuel goes stale and carbs gum up.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">4. How old is it, and how many hours?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older, or high run-hours</button>
+          <button class="pill" data-v="mid">A few years old, moderate use</button>
+          <button class="pill" data-v="new">Newer, low hours</button>
+        </div>
+        <div class="q-hint">Older engines and high-hour units are less forgiving — seals, the carburetor, and the plug all want fresher attention than a near-new machine.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A DIY service is about as cheap as engine maintenance gets — oil, a spark plug, an air filter, and a bottle of fuel stabilizer run roughly $20–40, and the test-run costs only the gas you'd run anyway. What skipping it costs is a no-start during an outage, a carburetor full of varnish that needs a rebuild, and — at the far end — a small engine worn out before its time:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–40</div><div class="l">DIY parts for a full service — oil, a spark plug, an air filter, and a bottle of fuel stabilizer</div></div>
+        <div class="calc-stat"><div class="v">~1 hr</div><div class="l">a once-a-year service, plus ~20–30 minutes for the monthly test-run under a real load</div></div>
+        <div class="calc-stat"><div class="v bad">$80–150</div><div class="l">a shop service if you'd rather hand it off — still cheap insurance against a no-start</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 DIY annual service (oil, plug, filter, stabilizer)</span><span>$20–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Shop service if you hand it off</span><span>$80–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:30%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Carburetor rebuild or clean from gummed fuel</span><span>$75–200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:48%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚫 A no-start during an outage (spoiled food, no heat)</span><span>$100s + the misery</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:72%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💀 A neglected engine run into the ground</span><span>Replace it — $400–1,500+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a twenty-dollar bottle-and-filter kit and an hour in the fall</strong> against a carburetor caked with varnish, a fridge full of spoiling food during an outage, or a ruined engine. Service it once a year, run it monthly, and the machine does the one job you bought it for — it starts when the power doesn't.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to service your generator</h2>
+    <p class="sub">The service itself is straightforward small-engine work — change the oil, service the plug, clean or swap the air filter, treat the fuel, and prove it runs under load. It's the same engine know-how behind <a href="service-snow-blower.html">servicing the snow blower</a>, and the basics carry straight over from a plain <a href="oil-change.html">oil change</a> and a set of <a href="replace-spark-plugs.html">spark plugs</a>. But two safety rules come before everything and have no exceptions: <strong>run it only outdoors</strong> (carbon monoxide kills), and <strong>never backfeed your house through a wall outlet</strong> (it kills line workers). Read the safety box and the techniques first, then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — carbon monoxide and backfeeding can kill</h3>
+      <ul>
+        <li><strong>NEVER run a generator indoors, in a garage, in a shed, or near open windows or doors — not even with the door open.</strong> The exhaust is carbon monoxide: invisible, odorless, and deadly within minutes. Run it <strong>outside</strong>, well away from the house (at least 20 feet) with the exhaust pointed away, under an open canopy if it's raining, and keep a working CO alarm inside.</li>
+        <li><strong>NEVER plug a generator into a wall outlet to "backfeed" your home.</strong> It pushes power back onto the utility lines and can electrocute line workers trying to restore service, and it bypasses your home's breakers and can start a fire. For whole-home power, use a proper transfer switch or interlock installed by a licensed electrician; otherwise run appliances directly on heavy-duty, outdoor-rated extension cords.</li>
+        <li><strong>Turn the engine OFF and let it COOL before servicing.</strong> A hot muffler and engine cause burns, and you don't want it starting while your hands are near moving parts. Let it cool fully before you touch oil, the plug, or the filter.</li>
+        <li><strong>Disconnect the spark-plug wire before working on the engine.</strong> Pull the boot off the plug so the engine can't possibly fire while you're servicing it.</li>
+        <li><strong>Refuel only on a cold engine — never while it's running or hot.</strong> Spilled gas on a hot muffler can ignite. Shut it down, let it cool, then fill it.</li>
+        <li><strong>Store fuel safely in approved containers and stabilize it.</strong> Keep gas in proper, sealed cans away from living spaces and ignition sources, add stabilizer, and never store fuel near the running generator.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">The owner's manual (oil grade, spark plug &amp; gap)</span>
+      <span class="tool-chip">Fresh engine oil (usually SAE 10W-30 or 5W-30)</span>
+      <span class="tool-chip">A new spark plug (right part number)</span>
+      <span class="tool-chip">A spark-plug socket &amp; gap gauge</span>
+      <span class="tool-chip">A new or cleanable air filter</span>
+      <span class="tool-chip">Fuel stabilizer</span>
+      <span class="tool-chip">An oil drain pan &amp; funnel</span>
+      <span class="tool-chip">Shop rags &amp; gloves</span>
+      <span class="tool-chip">A CO alarm (inside the house)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of changing the oil: run the engine briefly to warm it, shut it off, drain the old oil into a pan, then refill to the mark with the specified grade">
+          <!-- engine block -->
+          <rect x="58" y="40" width="96" height="74" rx="10" fill="#3e7c59"/>
+          <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+            <line x1="68" y1="50" x2="68" y2="104"/>
+            <line x1="78" y1="50" x2="78" y2="104"/>
+            <line x1="88" y1="50" x2="88" y2="104"/>
+          </g>
+          <!-- drain plug + old oil draining -->
+          <rect x="150" y="96" width="14" height="10" rx="3" fill="#8a6a4f"/>
+          <path d="M164 102 q10 18 6 36" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <!-- drain pan -->
+          <path d="M150 142 h64 l-6 18 h-52 z" fill="#b9b1a3"/>
+          <ellipse cx="182" cy="142" rx="32" ry="5" fill="#8a6a4f"/>
+          <!-- refill bottle to the mark -->
+          <rect x="64" y="14" width="20" height="24" rx="5" fill="#e0a93d"/>
+          <rect x="68" y="8" width="12" height="8" rx="3" fill="#d98e3b"/>
+          <path d="M74 38 l0 6" stroke="#d98e3b" stroke-width="3" stroke-linecap="round"/>
+          <text x="60" y="132" font-size="10.5" fill="#3e7c59" font-weight="700">warm, drain, refill</text>
+        </svg>
+        <h4>Change the oil</h4>
+        <p>Run it a minute to warm the oil so it flows, shut it off, then drain the old oil into a pan and refill to the dipstick mark with the grade your manual lists (often 10W-30). On a brand-new unit, do the early break-in change too. Recycle the old oil.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of servicing the spark plug: remove it, check the gap and condition, clean or replace it, and reconnect the plug wire">
+          <!-- spark plug -->
+          <rect x="124" y="30" width="28" height="40" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="128" y="20" width="20" height="12" rx="4" fill="#8a6a4f"/>
+          <rect x="126" y="70" width="24" height="40" rx="3" fill="#b9b1a3"/>
+          <!-- electrode + gap -->
+          <line x1="138" y1="110" x2="138" y2="126" stroke="#c9a06b" stroke-width="3" stroke-linecap="round"/>
+          <path d="M132 122 h12" stroke="#c9a06b" stroke-width="3" stroke-linecap="round"/>
+          <!-- gap gauge -->
+          <path d="M158 118 q14 0 14 8" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+          <text x="176" y="126" font-size="9.5" fill="#6b7376">gap</text>
+          <!-- plug wire boot -->
+          <path d="M138 20 q-26 -8 -44 6" fill="none" stroke="#2c5a40" stroke-width="6" stroke-linecap="round"/>
+          <rect x="86" y="20" width="14" height="14" rx="5" fill="#3e7c59"/>
+          <!-- spark sparkle -->
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <path d="M138 142 l0 8 M132 146 l12 0"/>
+          </g>
+          <text x="84" y="168" font-size="10.5" fill="#3e7c59" font-weight="700">check gap, clean or replace</text>
+        </svg>
+        <h4>Service the spark plug</h4>
+        <p>Pull the plug wire, unscrew the plug, and read it: tan is healthy, black and sooty or oily means trouble. Clean light deposits and set the gap to spec, or just fit a fresh plug — they're a couple of dollars. Reconnect the wire firmly when you're done.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of cleaning or replacing the air filter so the engine breathes, showing a dirty filter swapped for a clean pleated one">
+          <!-- air-box housing -->
+          <rect x="50" y="48" width="84" height="64" rx="8" fill="#2c5a40"/>
+          <rect x="58" y="56" width="68" height="48" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <!-- dirty filter -->
+          <g stroke="#b9b1a3" stroke-width="2">
+            <line x1="68" y1="58" x2="68" y2="102"/>
+            <line x1="78" y1="58" x2="78" y2="102"/>
+            <line x1="88" y1="58" x2="88" y2="102"/>
+          </g>
+          <g fill="#8a6a4f" opacity="0.7">
+            <circle cx="72" cy="70" r="2"/>
+            <circle cx="84" cy="84" r="2.2"/>
+            <circle cx="96" cy="74" r="1.8"/>
+          </g>
+          <text x="56" y="124" font-size="9.5" fill="#6b7376">dirty</text>
+          <!-- arrow to clean filter -->
+          <path d="M142 80 l24 0 m-8 -5 l8 5 l-8 5" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- clean pleated filter -->
+          <rect x="176" y="52" width="60" height="56" rx="6" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.5"/>
+          <g stroke="#e0a93d" stroke-width="2.2">
+            <line x1="188" y1="54" x2="188" y2="106"/>
+            <line x1="200" y1="54" x2="200" y2="106"/>
+            <line x1="212" y1="54" x2="212" y2="106"/>
+            <line x1="224" y1="54" x2="224" y2="106"/>
+          </g>
+          <text x="184" y="124" font-size="9.5" fill="#3e7c59" font-weight="700">clean / new</text>
+        </svg>
+        <h4>Clean or replace the air filter</h4>
+        <p>A clogged filter chokes the engine and makes it run rich and rough. Pop the air-box cover, lift out the element, and tap or wash a foam filter clean (re-oil if it's the oiled type) — or just drop in a fresh paper one. An engine that breathes starts easier.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of treating the fuel system: add stabilizer to the tank, run it through the carburetor, and for storage run the carburetor dry or drain it">
+          <!-- fuel tank -->
+          <rect x="40" y="40" width="92" height="48" rx="12" fill="#d9663f"/>
+          <rect x="40" y="40" width="92" height="14" rx="10" fill="#c96f4a"/>
+          <rect x="78" y="30" width="18" height="12" rx="5" fill="#8a6a4f"/>
+          <!-- stabilizer pour -->
+          <rect x="78" y="6" width="16" height="20" rx="4" fill="#5e9a78"/>
+          <path d="M86 26 l0 6" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <!-- fuel line to carb -->
+          <path d="M132 70 q26 6 30 26" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <!-- carburetor bowl -->
+          <rect x="150" y="92" width="40" height="34" rx="6" fill="#b9b1a3"/>
+          <rect x="156" y="120" width="28" height="14" rx="5" fill="#8a6a4f"/>
+          <!-- drain droplet (run dry / drain) -->
+          <path d="M170 134 q3 6 0 10" stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <text x="44" y="116" font-size="10" fill="#d9663f" font-weight="700">stabilize</text>
+          <text x="150" y="158" font-size="10" fill="#3e7c59" font-weight="700">run dry or drain to store</text>
+        </svg>
+        <h4>Treat the fuel system</h4>
+        <p>Add stabilizer to fresh gas and run it a few minutes so the treated fuel reaches the carburetor. For storage, either run the carb dry (close the fuel valve and let it stall) or drain the bowl. Stale ethanol gas left to varnish is the number-one no-start.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of testing under load: start the generator outdoors and run a few appliances for twenty to thirty minutes, then log the date">
+          <!-- generator -->
+          <rect x="40" y="74" width="74" height="46" rx="8" fill="#3e7c59"/>
+          <rect x="40" y="64" width="74" height="16" rx="8" fill="#d9663f"/>
+          <circle cx="64" cy="98" r="12" fill="#5e9a78"/>
+          <circle cx="64" cy="98" r="5" fill="#e3efe8"/>
+          <rect x="92" y="80" width="18" height="28" rx="5" fill="#2c5a40"/>
+          <circle cx="101" cy="90" r="3.5" fill="#e0a93d"/>
+          <!-- cord to a load -->
+          <path d="M110 96 q40 4 60 -10" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <!-- light bulb load, lit -->
+          <circle cx="196" cy="64" r="16" fill="#faf0da" stroke="#e0a93d" stroke-width="3"/>
+          <rect x="190" y="78" width="12" height="8" rx="2" fill="#b9b1a3"/>
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <line x1="196" y1="40" x2="196" y2="34"/>
+            <line x1="214" y1="50" x2="220" y2="46"/>
+            <line x1="178" y1="50" x2="172" y2="46"/>
+          </g>
+          <!-- clock ~25 min -->
+          <circle cx="214" cy="120" r="18" fill="#fffdf8" stroke="#5e9a78" stroke-width="3"/>
+          <path d="M214 120 l0 -10 M214 120 l7 4" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <text x="44" y="148" font-size="10.5" fill="#3e7c59" font-weight="700">run a real load ~20–30 min</text>
+        </svg>
+        <h4>Test under load monthly</h4>
+        <p>Once a month, take it outside, start it, and actually run a few appliances on it for 20–30 minutes — a load circulates fuel, charges the battery on electric-start units, and proves it works. Then log it, so you <em>know</em> it's ready before the next storm.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Generator-service progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Oil changed, plug and filter serviced, fuel stabilized, and proven under load — your generator is ready for the next outage. Run it again next month, and give it the full service in about a year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's overdue — and when to call a pro</h2>
+    <p class="sub">A healthy generator starts in a pull or two, idles steady, and puts out clean power. These are the signals it's overdue for service — and the handful of jobs that belong to an electrician or a small-engine dealer, not a Saturday afternoon:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Hard starting or won't start at all.</strong> If it takes many pulls, needs ether, or simply won't catch after sitting, suspect stale fuel and a gummed carburetor first — that's the classic neglected-generator symptom and exactly what the annual service prevents.</li>
+        <li><strong>Surging, hunting, or stalling under load.</strong> An engine that revs up and down or dies when you plug something in usually has a dirty carburetor, a clogged jet, or a fouled plug. Fresh fuel, a carb cleaning, and a new plug often fix it.</li>
+        <li><strong>No output or low/unstable voltage.</strong> If the engine runs fine but nothing's powered, or the voltage sags and surges, the problem is electrical — the alternator, capacitor, AVR, or outlets. That's diagnostic territory; have it checked rather than guessing.</li>
+        <li><strong>Smoking or burning oil.</strong> Blue smoke means oil is getting into the combustion chamber (often from overfilling or a tipped unit); black smoke means it's running too rich. Persistent smoking after a service points to deeper engine wear — a dealer's call.</li>
+        <li><strong>A carburetor that won't clear.</strong> If draining, fresh gas, and a cleaner-soak don't restore smooth running, the carb may need a full rebuild kit or replacement. Many people hand a badly varnished carb to a shop.</li>
+        <li><strong>Any standby or whole-home generator.</strong> Permanently installed standby units, automatic transfer switches, and the wiring that ties a generator into your house are licensed-electrician and authorized-dealer work — annual professional service and proper installation aren't DIY.</li>
+        <li><strong>Pro tip:</strong> the surest way to never get caught out is the monthly test under load — it surfaces a starting or fuel problem on a calm sunny day, not at 2 a.m. in the storm when the shops are closed. And a working generator is only half of outage readiness; pair it with a stocked <a href="update-emergency-kit.html">emergency kit</a> so the lights, water, and supplies are sorted too.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I service my generator?</summary>
+      <p>Give it a full service — oil change, spark plug, air filter, and fuel-system treatment — about once a year, and after the manufacturer's run-hour intervals (often an early break-in oil change, then every 50–200 hours for a hard-working unit). Between services, run it under a real load for 20–30 minutes about once a month, top up stabilizer in the tank, and always do a test-run before storm or winter season so you know it'll start. If you use it heavily on a jobsite or run plain ethanol pump gas, tighten the oil, filter, and fuel intervals; a stabilized, ethanol-free, rarely-run unit can lean toward the relaxed end. Always check your owner's manual for the exact oil grade, plug gap, and service schedule for your model.</p>
+    </details>
+    <details>
+      <summary>Why won't my generator start after sitting all year?</summary>
+      <p>Almost always: stale fuel. Pump gas with ethanol (E10) absorbs moisture and oxidizes within a few months, turning into a gummy varnish that clogs the carburetor's pinhole-sized jets — and a starved carb won't fire no matter how hard you pull. The fix and the prevention are the same: don't store untreated gas. Add stabilizer to fresh fuel, and for longer storage either run the carburetor dry (shut the fuel valve and let it stall) or drain the carb bowl. If it's already gummed up, draining the old fuel, filling with fresh stabilized gas, and cleaning or replacing the carburetor usually brings it back. Also check the basics: fuel valve open, choke set, oil at the right level (low-oil sensors prevent starting), and a good spark plug. A monthly test-run is the cheapest insurance against ever discovering this at the worst moment.</p>
+    </details>
+    <details>
+      <summary>Can I run it in my garage if I leave the door open?</summary>
+      <p>No. This is the most dangerous mistake people make with a generator, and it kills every year. The exhaust is carbon monoxide — invisible, odorless, and lethal — and it builds to deadly levels in an enclosed or partly enclosed space faster than you'd believe, even with the door open or near an open window. A garage, a shed, a carport, a covered porch, or a basement are all off-limits. Run the generator <strong>outdoors only</strong>, at least 20 feet from the house with the exhaust pointed away from doors and windows, and keep a working carbon-monoxide alarm inside your home. If it's raining, use a generator tent or open-sided canopy designed for the purpose rather than bringing it under cover. There is no safe way to run a generator indoors.</p>
+    </details>
+    <details>
+      <summary>Can I plug it into a wall outlet to power my house?</summary>
+      <p>No — this is called "backfeeding," and it's both illegal in most places and deadly. Plugging a running generator into a wall outlet pushes power backward through your home's wiring and out onto the utility lines, where it can electrocute the line workers trying to restore your power; it also bypasses your breakers and can overload wiring and start a fire. The safe ways to power your home are a <strong>manual transfer switch or generator interlock kit installed by a licensed electrician</strong>, which isolates your circuits from the grid and lets the generator feed them safely — or, for individual appliances, plugging them directly into the generator with heavy-duty, outdoor-rated extension cords sized for the load. Never improvise a connection into your home's wiring.</p>
+    </details>
+    <details>
+      <summary>What fuel should I use, and do I really need stabilizer?</summary>
+      <p>Use the fuel grade your manual specifies — for most portable gas generators that's fresh regular unleaded, ideally 87 octane with no more than 10% ethanol (E10); avoid higher ethanol blends like E15 or E85 unless your unit is specifically rated for them. Ethanol-free gas (sometimes sold as "rec fuel") stores much better and is worth seeking out if you don't run the generator often. And yes — stabilizer is genuinely worth it: ethanol gas starts degrading in as little as 30 days, and stabilizer extends usable life to a year or more by slowing oxidation and helping repel water, which is what protects the carburetor from varnish. Add it to fresh gas (not gas that's already gone stale), and run the engine a few minutes so the treated fuel reaches the carb. Dual-fuel and propane generators sidestep the fuel-staling problem entirely, since propane doesn't go bad — one reason many people like them for backup.</p>
+    </details>
+    <details>
+      <summary>How do I store it for the off-season?</summary>
+      <p>The goal is to leave no untreated fuel sitting in the carburetor. Two good approaches: either fill the tank with fresh, stabilized gas and run it a few minutes so the treated fuel circulates (which keeps the system wet and protected), or run the system dry — close the fuel valve while it's running and let the engine consume the gas in the carb until it stalls, and drain the tank. Whichever you choose, also change the oil before long storage so the engine isn't sitting in dirty oil, take out or fresh-up the spark plug, and store the unit clean, covered, and dry — off the ground, away from living spaces, and never with fuel cans beside it. Keep any electric-start battery topped up. Then, before the next storm season, do a full service and a test-run under load so it's ready the day you need it.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A generator is the one tool you only find out is broken when you desperately need it.</h2>
+        <p>The annual service, the monthly test-run, and the before-storm-season check are easy to do and even easier to forget — right up until the lights go out. Upkeep Ledger schedules all three and resurfaces them on time, right alongside the HVAC filter, the gutters, and every other quiet task that keeps the house running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=service-generator&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=service-generator&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Generators produce deadly carbon monoxide and can lethally backfeed utility lines — run it outdoors only and use a transfer switch; these are general guidelines and your manufacturer's manual and a licensed electrician outrank this page.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { pattern: null, fuel: null, season: null, age: null };
+
+  var FREQ_LABEL = {
+    6: "Every 6 months",
+    12: "Once a year",
+    24: "Every 2 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var tighten = false;
+
+    /* Pattern — how it's used */
+    if (s.pattern === "jobsite") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("Jobsite or near-daily use piles on run-hours fast, so the oil and air filter want service on a much shorter clock than a unit that just sits — figure a full service twice a year, plus oil changes by the manufacturer's run-hour interval.");
+    } else if (s.pattern === "backup") {
+      reasons.push("Occasional home-backup use is the case the once-a-year service is written for — it runs little, so the real risks are stale fuel and a no-start rather than worn-out internals.");
+    } else {
+      reasons.push("A standby unit that rarely runs is mostly a fuel-and-storage problem: the engine barely wears, but the fuel left in it will gum the carburetor if you don't stabilize it and run it.");
+    }
+
+    /* Fuel — what goes in it */
+    if (s.fuel === "ethanol") {
+      tighten = true;
+      reasons.push("Regular ethanol pump gas (E10) is the top reason stored generators won't start — it absorbs water and varnishes the carburetor within months, so stabilize every tank and test-run more often to keep fresh fuel moving through.");
+    } else if (s.fuel === "stabilized") {
+      reasons.push("Ethanol-free or always-stabilized fuel stores far better and is much kinder to the carburetor, taking the single biggest no-start risk largely off the table.");
+    } else {
+      reasons.push("Propane or dual-fuel sidesteps fuel staling entirely — propane doesn't go bad — so your service is really about oil, the plug, the filter, and regular test-runs rather than fighting varnish.");
+    }
+
+    /* Season — climate / storage */
+    if (s.season === "storm") {
+      tighten = true;
+      reasons.push("In hurricane- or winter-storm country the cost of a no-start is highest, so test it under load more often and always run a check before storm season — you want zero surprises when the grid goes down.");
+    } else if (s.season === "stored") {
+      tighten = true;
+      reasons.push("Long stretches in storage are exactly when fuel goes stale and carbs gum up, so don't skip the stabilizer, the run-dry-or-drain step, and a test-run before you'll actually need it.");
+    } else {
+      reasons.push("Occasional outages in a mild climate keep the stakes lower — the annual service and a monthly test-run are plenty to stay ready.");
+    }
+
+    /* Age — old / high hours */
+    if (s.age === "old") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("An older or high-hour engine is less forgiving — the carburetor, seals, and plug all want fresher attention — so service it more often and keep a closer eye on how it starts and runs.");
+    } else if (s.age === "mid") {
+      reasons.push("A few-year-old unit with moderate use is in its prime — the regular annual service keeps it that way.");
+    } else {
+      reasons.push("A newer, low-hour generator is forgiving, but don't let that lull you — fresh machines still gum up from stale fuel if they sit, so the fuel discipline matters most.");
+    }
+
+    /* Best-case relaxation: standby, clean fuel, mild, newer */
+    if (!tighten && s.pattern === "standby" && s.fuel !== "ethanol" && s.season === "some" && s.age === "new") {
+      months = 24;
+      reasons.push("A newer standby unit on clean fuel in a mild climate is the one case where you can stretch the deeper service toward every couple of years — but keep up the monthly test-run and the stabilizer regardless, because that's what actually prevents a no-start.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.fuel === "ethanol") {
+      note = "<strong>Treat every tank of ethanol gas:</strong> add stabilizer to fresh fuel and, for storage, run the carburetor dry or drain the bowl. Stale ethanol varnishing the carb is the single most common reason a generator won't start.";
+    } else if (s.season === "storm") {
+      note = "<strong>Test before every storm season:</strong> take it outside, start it, and run a real load for 20–30 minutes. Finding a problem on a calm day is the whole point — never discover a no-start at 2 a.m. in the dark.";
+    } else if (s.pattern === "jobsite") {
+      note = "<strong>Watch the run-hours, not just the calendar:</strong> hard-working units need oil and air-filter service by hours run, often well before a year is up. Keep a rough log of run-time so you change the oil on schedule.";
+    } else {
+      note = "<strong>Whatever the interval, run it monthly under load:</strong> a 20–30 minute test with appliances plugged in circulates fuel, exercises the engine, and proves it works — and always run it outdoors, never indoors, with a CO alarm inside.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.pattern || !quizState.fuel || !quizState.season || !quizState.age) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: a full service " + FREQ_LABEL[r.months].toLowerCase() + ", plus a monthly test-run";
+    document.getElementById("resultBody").innerHTML =
+      "Do the deep service on that interval — <strong>change the oil, service the spark plug, clean or replace the air filter, and treat the fuel system</strong> — and run it under load monthly. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & safety", text: "Move it outdoors, well away from the house", note: "Service and run it outside only — at least 20 feet from the house with the exhaust pointed away from doors and windows. Never in a garage, shed, or carport: carbon monoxide is invisible and deadly. Keep a working CO alarm inside." },
+    { phase: "Prep & safety", text: "Turn it off, let it cool, and disconnect the spark-plug wire", note: "Shut the engine down and let it cool so you don't get burned and it can't start mid-service. Pull the plug boot off so the engine can't possibly fire while your hands are near it." },
+    { phase: "Prep & safety", text: "Read the manual and gather oil, plug, filter, and stabilizer", note: "Check your owner's manual for the exact oil grade, spark-plug part and gap, air-filter type, and service intervals — then lay out the parts, a drain pan, a funnel, and rags before you start." },
+    { phase: "Oil, plug & filter", text: "Warm the engine briefly, then drain the old oil", note: "Run it a minute so the oil flows, shut it off, and drain the old oil into a pan through the drain plug. Catch it all and set it aside to recycle." },
+    { phase: "Oil, plug & filter", text: "Refill with fresh oil to the dipstick mark", note: "Fill with the grade your manual lists (often SAE 10W-30 or 5W-30) to the full mark — not over. On a brand-new unit, do the early break-in change on schedule too." },
+    { phase: "Oil, plug & filter", text: "Remove and read the spark plug, set the gap or replace it", note: "Unscrew the plug and inspect it: tan is healthy, black or oily means trouble. Clean light deposits and gap it to spec, or fit a fresh plug — they're cheap. Reconnect the wire firmly afterward." },
+    { phase: "Oil, plug & filter", text: "Clean or replace the air filter", note: "Open the air box and lift out the element. Tap or wash a foam filter clean (re-oil if it's the oiled type), or drop in a fresh paper one. A clean filter lets the engine breathe and start easily." },
+    { phase: "Fuel system", text: "Add fuel stabilizer to fresh gas", note: "Use the fuel grade your manual specifies — fresh regular unleaded, E10 or lower — and add stabilizer to it. Stabilize fresh gas, not gas that's already gone stale, to keep the carburetor from varnishing." },
+    { phase: "Fuel system", text: "Run it a few minutes so treated fuel reaches the carburetor", note: "Start it outdoors and let it run several minutes so the stabilized fuel circulates all the way through the fuel line and carb, not just the tank." },
+    { phase: "Fuel system", text: "For storage, run the carburetor dry or drain it", note: "If you're putting it away for the season, either close the fuel valve and let the engine stall on the gas in the carb, or drain the carburetor bowl and tank. Leaving untreated ethanol gas to varnish is the #1 no-start." },
+    { phase: "Test & log", text: "Start it outdoors and run a real load for 20–30 minutes", note: "Plug in a few appliances or a load bank and let it work — a real load circulates fuel, charges an electric-start battery, and actually proves the generator and its electrical output. Watch for surging, smoke, or low/unstable voltage." },
+    { phase: "Test & log", text: "Confirm safe use: no backfeeding, cords or a transfer switch", note: "Never plug the generator into a wall outlet to power your house — it can kill line workers and start a fire. Use heavy-duty outdoor-rated cords to appliances, or a transfer switch or interlock installed by a licensed electrician." },
+    { phase: "Test & log", text: "Log the date", note: "Nothing reminds you the fuel is staling or a year has slipped by. Note the date so the next full service and the monthly test-run land on schedule — and run a check before storm or winter season." }
+  ];
+
+  var LS_KEY = "upkeepguides:service-generator:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

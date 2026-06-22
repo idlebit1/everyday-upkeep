@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trim your trees — UpkeepGuides.com</title>
+<meta name="description" content="How to safely trim your trees yourself: a light yearly pass on dead, broken, low, and crossing branches, proper cuts and the 3-cut method, when to prune — and exactly when to call a certified arborist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Trim your trees — UpkeepGuides.com">
+<meta property="og:description" content="How to safely trim your trees yourself: a light yearly pass on dead, broken, low, and crossing branches, proper cuts and the 3-cut method, when to prune — and exactly when to call a certified arborist.">
+<meta property="og:url" content="https://upkeepguides.com/trim-trees.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trim your trees — UpkeepGuides.com">
+<meta name="twitter:description" content="How to safely trim your trees yourself: a light yearly pass on dead, broken, low, and crossing branches, proper cuts and the 3-cut method, when to prune — and exactly when to call a certified arborist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Yard &amp; Garden · Once a year</span>
+      <h1>Trim Your Trees</h1>
+      <p class="lede">Most of what kills a roof, a car, or a fence in the next big storm is already up there, plainly dead, a full year before it falls. A light yearly walk-around — taking out the dead, broken, low, and crossing branches you can reach from the ground — keeps a tree healthy, shaped, and far less likely to drop a limb on something expensive. The trick is knowing your lane: small branches, from the ground, with the right cut. Anything big, high, near a power line, or that needs a chainsaw up a ladder isn't a DIY job — it's a call to a certified arborist, and that's not a cop-out, it's the whole safety plan.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ A light pass <em>once a year</em></span>
+        <span class="chip">🌳 Best in <em>late dormant season</em></span>
+        <span class="chip">🪚 Hand tools <em>~$60–150</em></span>
+        <span class="chip">⚠️ Big/high work → <em>certified arborist</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person standing safely on the ground using a long pole pruner to cut a low branch of a healthy shaped tree; a dead branch and a low limb are marked with an X for removal, a house stands nearby, and power lines run well to the side, kept at a safe distance">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- sun -->
+      <circle cx="492" cy="58" r="22" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round">
+        <line x1="492" y1="22" x2="492" y2="30"/>
+        <line x1="492" y1="86" x2="492" y2="94"/>
+        <line x1="456" y1="58" x2="464" y2="58"/>
+        <line x1="520" y1="58" x2="528" y2="58"/>
+        <line x1="467" y1="33" x2="473" y2="39"/>
+        <line x1="511" y1="77" x2="517" y2="83"/>
+        <line x1="517" y1="33" x2="511" y2="39"/>
+      </g>
+      <ellipse cx="120" cy="64" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="166" cy="78" rx="28" ry="14" fill="#dce8ee"/>
+
+      <!-- power lines kept WELL to the side, far right, at a safe distance -->
+      <line x1="540" y1="120" x2="540" y2="356" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <line x1="528" y1="148" x2="552" y2="148" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <line x1="528" y1="166" x2="552" y2="166" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M528 150 q-40 26 -78 18" fill="none" stroke="#6b7376" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <path d="M528 168 q-40 30 -84 26" fill="none" stroke="#6b7376" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <text x="498" y="116" font-size="10.5" fill="#d9663f" font-weight="700" text-anchor="middle">keep clear</text>
+
+      <!-- house nearby, to the left -->
+      <rect x="40" y="250" width="118" height="110" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <path d="M32 252 L99 200 L166 252 Z" fill="#c96f4a"/>
+      <rect x="62" y="284" width="28" height="28" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+      <rect x="110" y="284" width="28" height="28" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+      <rect x="86" y="320" width="26" height="40" rx="2" fill="#8a6a4f"/>
+
+      <!-- healthy shaped tree, center-right -->
+      <!-- trunk -->
+      <path d="M352 360 L344 232 Q352 216 366 222 L366 360 Z" fill="#8a6a4f"/>
+      <path d="M352 360 L348 244 L358 244 L362 360 Z" fill="#6b4f37" opacity="0.5"/>
+      <!-- main canopy (healthy, rounded, shaped) -->
+      <ellipse cx="372" cy="160" rx="92" ry="78" fill="#2c5a40"/>
+      <ellipse cx="356" cy="148" rx="66" ry="56" fill="#3e7c59"/>
+      <ellipse cx="392" cy="170" rx="52" ry="44" fill="#5e9a78" opacity="0.6"/>
+      <!-- a few healthy structural branches -->
+      <g stroke="#6b4f37" stroke-width="6" stroke-linecap="round">
+        <path d="M358 232 q-30 -24 -48 -54"/>
+        <path d="M360 224 q24 -28 50 -50"/>
+        <path d="M362 250 q34 -10 60 -34"/>
+      </g>
+
+      <!-- DEAD branch up high, marked with X (bare, brown, no leaves) -->
+      <path d="M360 210 q40 -12 86 -8" stroke="#9a4f33" stroke-width="5" stroke-linecap="round" fill="none" stroke-dasharray="6 4"/>
+      <path d="M430 204 l8 -10 M444 203 l6 -8" stroke="#9a4f33" stroke-width="3" stroke-linecap="round"/>
+      <g stroke="#d9663f" stroke-width="3.5" stroke-linecap="round">
+        <line x1="396" y1="196" x2="410" y2="210"/>
+        <line x1="410" y1="196" x2="396" y2="210"/>
+      </g>
+      <text x="430" y="180" font-size="10.5" fill="#9a4f33" font-weight="700">dead</text>
+
+      <!-- LOW limb marked for removal — within ground reach, X marked -->
+      <path d="M356 270 q-44 6 -86 30" stroke="#6b4f37" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <g stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+        <path d="M300 286 l-6 -8 M286 292 l-5 -7 M272 298 l-5 -7"/>
+      </g>
+      <g stroke="#d9663f" stroke-width="3.5" stroke-linecap="round">
+        <line x1="322" y1="276" x2="336" y2="290"/>
+        <line x1="336" y1="276" x2="322" y2="290"/>
+      </g>
+      <text x="258" y="320" font-size="10.5" fill="#d9663f" font-weight="700">low limb</text>
+
+      <!-- person standing on the GROUND using a pole pruner -->
+      <g>
+        <!-- head -->
+        <circle cx="196" cy="262" r="15" fill="#e0a93d"/>
+        <path d="M184 254 q12 -12 24 0 q-2 -8 -12 -8 q-10 0 -12 8" fill="#8a6a4f"/>
+        <!-- body -->
+        <path d="M188 300 L182 360 L212 360 L206 300 Z" fill="#3e7c59"/>
+        <rect x="184" y="358" width="12" height="22" rx="4" fill="#33393b"/>
+        <rect x="200" y="358" width="12" height="22" rx="4" fill="#33393b"/>
+        <!-- arms gripping the pole, lifted but feet planted -->
+        <line x1="198" y1="306" x2="236" y2="270" stroke="#5e9a78" stroke-width="10" stroke-linecap="round"/>
+        <line x1="206" y1="312" x2="244" y2="288" stroke="#5e9a78" stroke-width="10" stroke-linecap="round"/>
+      </g>
+      <!-- POLE PRUNER reaching up to the low limb (long pole = stays on ground) -->
+      <line x1="238" y1="272" x2="312" y2="200" stroke="#b9b1a3" stroke-width="6" stroke-linecap="round"/>
+      <line x1="240" y1="278" x2="316" y2="206" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <!-- pruner head at the top -->
+      <path d="M312 200 q12 -6 22 2 l-6 10 q-10 -4 -16 -2 z" fill="#33393b"/>
+      <path d="M334 202 q6 6 4 14" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- ground-level emphasis: solid line under feet + tufts -->
+      <line x1="120" y1="382" x2="470" y2="382" stroke="#c9a06b" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+      <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round" fill="none">
+        <path d="M160 392 q-3 -12 -8 -17"/>
+        <path d="M236 394 q-3 -12 -8 -17"/>
+        <path d="M420 392 q2 -13 7 -19"/>
+      </g>
+      <!-- a fallen pruned branch on the ground + safety glasses note -->
+      <g stroke="#9a4f33" stroke-width="4" stroke-linecap="round">
+        <path d="M120 372 l40 6 M134 366 l14 8"/>
+      </g>
+      <text x="186" y="408" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">feet on the ground</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A tree mostly takes care of itself — which is exactly why it's easy to forget that the dead, weak, and overgrown wood in it is a liability quietly waiting for a windy night. A light yearly pass on the branches you can safely reach earns its keep four ways:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 31 h28" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M18 31 V10" stroke="#6b4f37" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="18" cy="11" r="8" fill="#3e7c59"/>
+          <!-- a broken/falling dead limb -->
+          <path d="M22 14 l9 8" stroke="#9a4f33" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M28 19 l5 1 M30 24 l3 -2" stroke="#9a4f33" stroke-width="1.8" stroke-linecap="round"/>
+          <g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round"><path d="M27 26 l3 3 M31 27 l1 4"/></g>
+        </svg></div>
+        <h3>Dead limbs are what fall in storms</h3>
+        <p>The dead, weak, and overgrown wood up in a tree is what comes down in high wind — onto roofs, cars, fences, and people. Taking it out on a calm day, while it's small and reachable, is how you skip the expensive 2 a.m. surprise.</p>
+        <span class="cost">A limb through the roof</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 31 h28" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M18 31 V8" stroke="#6b4f37" stroke-width="3" stroke-linecap="round"/>
+          <path d="M18 18 L9 10 M18 14 L27 8 M18 22 L11 26" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="9" cy="9" r="3.2" fill="#5e9a78"/>
+          <circle cx="27" cy="7" r="3.4" fill="#3e7c59"/>
+          <!-- airflow arrows through the open canopy -->
+          <g stroke="#7fb3c8" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 2"><path d="M14 16 h8 M13 20 h7"/></g>
+        </svg></div>
+        <h3>Good cuts keep a tree healthy</h3>
+        <p>Removing dead and diseased wood and the branches that cross and rub each other improves airflow and structure, so the tree puts its energy into strong growth instead of fighting infection or wounds it can't heal.</p>
+        <span class="cost">Disease taking hold</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="22" width="28" height="10" rx="1.5" fill="#c9a06b"/>
+          <path d="M6 27 h24" stroke="#8a6a4f" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M26 22 V9" stroke="#6b4f37" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="26" cy="9" r="6" fill="#3e7c59"/>
+          <!-- a low branch reaching over the path, marked -->
+          <path d="M24 14 L10 18" stroke="#9a4f33" stroke-width="2.4" stroke-linecap="round"/>
+          <g stroke="#d9663f" stroke-width="1.8" stroke-linecap="round"><path d="M14 14 l4 4 M18 14 l-4 4"/></g>
+        </svg></div>
+        <h3>Clears paths, drives &amp; sightlines</h3>
+        <p>Low and wayward branches that hang over the driveway, scrape the siding, block a window, or hide the corner where the driveway meets the street are a daily nuisance — and a hazard. Clearing them keeps everything open and safe.</p>
+        <span class="cost">A scraped car or blocked view</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M14 31 V14" stroke="#6b4f37" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- correct cut at collar, healing -->
+          <path d="M14 18 q8 -2 12 -8" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <circle cx="14" cy="17" r="2.4" fill="#5e9a78"/>
+          <g stroke="#3e7c59" stroke-width="1.4" stroke-linecap="round"><path d="M12 17 q2 -3 0 -6"/></g>
+          <!-- bad: a stub left, rotting -->
+          <path d="M14 24 h9" stroke="#9a4f33" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="2.6" fill="none" stroke="#d9663f" stroke-width="1.8"/>
+          <g stroke="#d9663f" stroke-width="1.6" stroke-linecap="round"><path d="M22 22 l4 4 M26 22 l-4 4"/></g>
+        </svg></div>
+        <h3>Right cuts heal — bad ones rot</h3>
+        <p>A cut just outside the branch collar seals itself over. Flush cuts, stubs, and "topping" tear the bark and leave open wounds that invite rot, disease, and weak, fast regrowth — branches that are more dangerous than what you removed.</p>
+        <span class="cost">Rot, decay &amp; weak regrowth</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> trim them?</h2>
+    <p class="sub">A light yearly pass — dead, broken, low, and crossing branches — is the sensible default for most trees, with bigger structural pruning every few years. But a fast-growing or storm-battered tree right over the house tightens the schedule, while a small, healthy ornamental can stretch out. Just as importantly, the right answer for a big tree is often "call an arborist" — answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="size">
+        <div class="q-label">1. How big is the tree — and how close to the house?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">Large &amp; mature, over the house/driveway/lines</button>
+          <button class="pill" data-v="medium">Mid-sized, near the house but not over it</button>
+          <button class="pill" data-v="small">Small ornamental I can reach from the ground</button>
+        </div>
+        <div class="q-hint">A big tree leaning over the roof, the driveway, or near power lines has the most at stake if a limb fails — and the work up there is squarely a pro's job. A small ornamental you can reach from the ground is the safe DIY case.</div>
+      </div>
+      <div class="quiz-q" data-q="growth">
+        <div class="q-label">2. How fast does it grow / how messy is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="fast">Fast-growing or messy (drops a lot)</button>
+          <button class="pill" data-v="slow">Slow and steady, fairly tidy</button>
+        </div>
+        <div class="q-hint">Fast-growing species (silver maple, willow, poplar) and brittle, messy droppers put on weak wood quickly and shed limbs more readily, so they're worth checking on more often than a slow, tidy tree.</div>
+      </div>
+      <div class="quiz-q" data-q="condition">
+        <div class="q-label">3. What kind of shape is it in right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="damaged">Dead wood, storm damage, disease, or rubbing limbs</button>
+          <button class="pill" data-v="minor">A few low or stray branches, otherwise fine</button>
+          <button class="pill" data-v="healthy">Healthy and tidy, nothing obvious</button>
+        </div>
+        <div class="q-hint">Dead, broken, diseased, or rubbing wood is the priority — it's the stuff that fails and the stuff that spreads. Storm damage and disease especially mean acting sooner (and often calling a pro to assess it).</div>
+      </div>
+      <div class="quiz-q" data-q="reach">
+        <div class="q-label">4. Can you do the work from the ground?</div>
+        <div class="pills">
+          <button class="pill" data-v="ground">Yes — all reachable from the ground or a short pole</button>
+          <button class="pill" data-v="ladder">Some of it needs a ladder or climbing</button>
+        </div>
+        <div class="q-hint">This is the line that matters most for safety. If you can reach it standing on the ground (or with a pole pruner), it can be a DIY job. The moment it needs a ladder, climbing, or a chainsaw overhead, it's an arborist's job — no exceptions.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The DIY side is cheap and lasts for years: a set of hand tools to clear the small, reachable stuff. The real money is in what neglect invites — a dropped limb on your roof or car, or a tree slowly killed by bad cuts and disease. And note that the bigger jobs <em>belong</em> on the paid side: hiring a certified arborist isn't the expensive failure case, it's the right call for anything big or high. Typical U.S. figures:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$60–150</div><div class="l">a one-time hand-tool kit — bypass pruners, loppers, a pruning saw, and a pole pruner — that lasts for years</div></div>
+        <div class="calc-stat"><div class="v">$200–800+</div><div class="l">a certified arborist for the bigger work — depending on tree size, height, and access — and worth every dollar for high or heavy limbs</div></div>
+        <div class="calc-stat"><div class="v bad">$1,000s</div><div class="l">a limb through the roof, a crushed car, or removing a tree that died from topping and bad cuts</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>✂️ A year of DIY ground-level trims (own the tools)</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🪚 One-time hand-tool kit (pruners, loppers, saw, pole pruner)</span><span>$60–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:12%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧗 A certified arborist for the high/heavy work</span><span>$200–800+/visit</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:40%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏠 A dropped limb through the roof or onto a car</span><span>$1,000s + the deductible</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:78%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌳 Removing a tree killed by topping / bad cuts</span><span>$1,000–3,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is lopsided: <strong>a $60–150 kit and an afternoon a year</strong> on the reachable wood, plus an arborist when the job calls for one, against the roof a dead limb caves in or the tree you have to remove because it was topped. Do the safe, small work yourself and pay a pro for the rest — both are cheap next to the damage you're preventing.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to trim your trees — the safe way</h2>
+    <p class="sub">This is built around doing only the <strong>safe, reachable</strong> work yourself: small branches, from the ground, with a clean cut — the same light-and-often logic as <a href="trim-hedges.html">trimming hedges and bushes</a>, just up a tree. Read the safety box first — it's the most important part of this page — then the techniques (what to cut, when, and the proper cut), and work the checklist. Keep your <a href="sharpen-pruners.html">pruners sharp</a> so every cut is clean. Your progress saves automatically. When in doubt, hire it out.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — most tree-work injuries are preventable</h3>
+      <ul>
+        <li><strong>Never run a chainsaw while standing on a ladder.</strong> A chainsaw kicks, the ladder shifts, and the limb drops where you don't expect — it's one of the most dangerous things a homeowner can do. Chainsaw-up-a-ladder work is an arborist's job, full stop.</li>
+        <li><strong>Never prune anything near power lines.</strong> A metal pole, a wet branch, or even your body close to a live line can be lethal. Don't touch it — call your utility (often free for line clearance) or a line-clearance professional. Every time.</li>
+        <li><strong>If it's big, high, over the roof, or above shoulder height, call a certified arborist.</strong> Anything that needs you to climb, work overhead, or handle a heavy limb is a pro job. Falls and falling limbs are a leading cause of serious tree-work injury — this is the single most important rule on this page.</li>
+        <li><strong>Wear the gear.</strong> Eye protection and a hard hat (things fall), gloves, and sturdy closed footwear. Falling debris doesn't announce itself.</li>
+        <li><strong>Never stand under the limb you're cutting.</strong> Plan where it will fall, keep your footing clear, and make sure no one (and nothing) is in the drop zone. Stand to the side, not beneath.</li>
+        <li><strong>Look up and around before you start.</strong> Check for wildlife and active nests, dead "widow-maker" branches hung up above you, and overhead hazards. Don't disturb an active nest — in many places they're legally protected.</li>
+        <li><strong>Keep tools sharp and clean.</strong> A sharp blade makes a clean cut that heals; a dull one tears. Disinfect blades between trees if disease is around, so you don't spread it.</li>
+        <li><strong>Know your limits.</strong> The whole strategy here is: do the small, ground-level stuff, and hire the rest. When in doubt, hire it out.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Bypass hand pruners (small branches)</span>
+      <span class="tool-chip">Loppers (thicker branches)</span>
+      <span class="tool-chip">A pruning saw (limbs over ~1½")</span>
+      <span class="tool-chip">A pole pruner (low limbs, from the ground)</span>
+      <span class="tool-chip">Gloves + eye protection + a hard hat</span>
+      <span class="tool-chip">Sturdy closed footwear</span>
+      <span class="tool-chip">Rubbing alcohol to disinfect blades</span>
+      <span class="tool-chip">A tarp or bags for debris</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a tree showing what to cut first: dead, diseased, damaged, and crossing or rubbing branches marked with an X, plus a low limb in the way, with a note not to remove more than about a quarter in one year">
+          <rect x="14" y="158" width="252" height="12" fill="#8a6a4f"/>
+          <path d="M140 158 V70" stroke="#6b4f37" stroke-width="7" stroke-linecap="round"/>
+          <ellipse cx="140" cy="56" rx="60" ry="40" fill="#3e7c59"/>
+          <ellipse cx="120" cy="50" rx="34" ry="26" fill="#5e9a78" opacity="0.6"/>
+          <!-- healthy branches -->
+          <g stroke="#6b4f37" stroke-width="4" stroke-linecap="round">
+            <path d="M140 96 L108 72"/>
+            <path d="M140 86 L172 66"/>
+          </g>
+          <!-- dead branch, brown dashed, X -->
+          <path d="M140 108 L196 96" stroke="#9a4f33" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 4"/>
+          <g stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"><line x1="162" y1="98" x2="172" y2="108"/><line x1="172" y1="98" x2="162" y2="108"/></g>
+          <!-- crossing/rubbing branch, X -->
+          <path d="M118 90 L168 124" stroke="#b9b1a3" stroke-width="4" stroke-linecap="round"/>
+          <g stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"><line x1="134" y1="100" x2="144" y2="110"/><line x1="144" y1="100" x2="134" y2="110"/></g>
+          <!-- low limb in the way -->
+          <path d="M140 138 L86 150" stroke="#6b4f37" stroke-width="4" stroke-linecap="round"/>
+          <g stroke="#d9663f" stroke-width="2.5" stroke-linecap="round"><line x1="106" y1="140" x2="116" y2="150" /><line x1="116" y1="140" x2="106" y2="150"/></g>
+          <text x="20" y="26" font-size="12" fill="#6b7376" font-weight="700">the 4 Ds + low limbs</text>
+          <text x="20" y="176" font-size="11" fill="#d9663f" font-weight="700">never more than ~25% in a year</text>
+        </svg>
+        <h4>Decide what to cut — the 4 Ds first</h4>
+        <p>Start with the four Ds: <strong>dead, diseased, damaged,</strong> and <strong>crossing/rubbing</strong> branches — plus any low limbs in the way. That's nearly all the trimming most trees need. Don't remove more than about a quarter of the canopy in a single year, or you stress the tree.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of timing: a small calendar highlighting late winter and early spring as the best time to prune most trees, with summer and fall marked to avoid for heavy cuts">
+          <rect x="40" y="36" width="200" height="116" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="40" y="36" width="200" height="22" rx="8" fill="#3e7c59"/>
+          <text x="140" y="52" font-size="12" fill="#fffdf8" font-weight="700" text-anchor="middle">PRUNE WHEN DORMANT</text>
+          <!-- four season cells -->
+          <rect x="50" y="66" width="42" height="76" rx="5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="71" y="92" font-size="10.5" fill="#2c5a40" font-weight="700" text-anchor="middle">Late</text>
+          <text x="71" y="105" font-size="10.5" fill="#2c5a40" font-weight="700" text-anchor="middle">winter</text>
+          <text x="71" y="128" font-size="13" fill="#2c5a40" text-anchor="middle">✓</text>
+          <rect x="98" y="66" width="42" height="76" rx="5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="119" y="92" font-size="10.5" fill="#2c5a40" font-weight="700" text-anchor="middle">Early</text>
+          <text x="119" y="105" font-size="10.5" fill="#2c5a40" font-weight="700" text-anchor="middle">spring</text>
+          <text x="119" y="128" font-size="13" fill="#2c5a40" text-anchor="middle">✓</text>
+          <rect x="146" y="66" width="42" height="76" rx="5" fill="#fbe9e1" stroke="#d9663f" stroke-width="1.5"/>
+          <text x="167" y="98" font-size="10.5" fill="#9a4f33" font-weight="700" text-anchor="middle">Summer</text>
+          <text x="167" y="128" font-size="13" fill="#d9663f" text-anchor="middle">✗</text>
+          <rect x="194" y="66" width="42" height="76" rx="5" fill="#fbe9e1" stroke="#d9663f" stroke-width="1.5"/>
+          <text x="215" y="104" font-size="10.5" fill="#9a4f33" font-weight="700" text-anchor="middle">Fall</text>
+          <text x="215" y="128" font-size="13" fill="#d9663f" text-anchor="middle">✗</text>
+        </svg>
+        <h4>Time it right — dormant season</h4>
+        <p>Most trees prune best in late dormant season — late winter into early spring, before the buds break — when wounds close fast and the structure is easy to see. Avoid heavy summer and fall cuts. The exception: spring-flowering trees, which you prune right after they bloom.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a proper pruning cut made just outside the swollen branch collar, contrasted with a flush cut too close to the trunk and a stub left too long, both marked wrong">
+          <!-- trunk -->
+          <rect x="40" y="20" width="34" height="140" fill="#8a6a4f"/>
+          <rect x="40" y="20" width="12" height="140" fill="#6b4f37" opacity="0.4"/>
+          <!-- correct: branch with collar, cut just outside it -->
+          <path d="M74 60 q26 -2 56 -10" stroke="#6b4f37" stroke-width="12" stroke-linecap="round"/>
+          <!-- the collar (slight swelling at base) -->
+          <path d="M74 52 q10 0 14 8 q-4 8 -14 8 z" fill="#5e3f2a"/>
+          <!-- correct cut line just outside collar -->
+          <line x1="96" y1="44" x2="96" y2="78" stroke="#3e7c59" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <text x="110" y="46" font-size="10.5" fill="#2c5a40" font-weight="700">✓ just outside collar</text>
+          <!-- WRONG: flush cut (too close) -->
+          <path d="M74 110 q26 0 50 0" stroke="#6b4f37" stroke-width="11" stroke-linecap="round"/>
+          <line x1="78" y1="96" x2="78" y2="124" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <text x="92" y="100" font-size="10" fill="#9a4f33" font-weight="700">✗ flush — too close</text>
+          <!-- WRONG: stub left -->
+          <path d="M74 142 q30 0 58 0" stroke="#6b4f37" stroke-width="11" stroke-linecap="round"/>
+          <line x1="120" y1="128" x2="120" y2="156" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <circle cx="128" cy="142" r="3" fill="none" stroke="#d9663f" stroke-width="1.6"/>
+          <text x="138" y="146" font-size="10" fill="#9a4f33" font-weight="700">✗ stub</text>
+        </svg>
+        <h4>Cut just outside the branch collar</h4>
+        <p>Find the <strong>branch collar</strong> — the slightly swollen ring of bark where the branch meets the trunk — and cut just <em>outside</em> it. Not flush against the trunk (that removes the tissue that heals the wound), and not leaving a long stub (which rots). The collar does the healing; leave it intact.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the three-cut method for a heavy limb: first an undercut partway from below, then a top cut farther out to drop the limb cleanly, then a final cut at the branch collar, so the bark does not tear">
+          <rect x="20" y="20" width="30" height="140" fill="#8a6a4f"/>
+          <!-- the limb extending right -->
+          <path d="M50 70 h200" stroke="#6b4f37" stroke-width="18" stroke-linecap="round"/>
+          <!-- cut 1: undercut from below, partway out -->
+          <line x1="150" y1="79" x2="150" y2="70" stroke="#fffdf8" stroke-width="3"/>
+          <text x="150" y="100" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">1</text>
+          <circle cx="150" cy="92" r="9" fill="none" stroke="#3e7c59" stroke-width="2"/>
+          <!-- cut 2: top cut farther out, drops the limb -->
+          <line x1="180" y1="61" x2="180" y2="72" stroke="#fffdf8" stroke-width="3"/>
+          <text x="180" y="50" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">2</text>
+          <circle cx="180" cy="44" r="9" fill="none" stroke="#3e7c59" stroke-width="2"/>
+          <!-- the dropping piece -->
+          <path d="M188 78 l24 56" stroke="#6b4f37" stroke-width="10" stroke-linecap="round" opacity="0.45"/>
+          <path d="M196 110 l10 4 M200 122 l8 -2" stroke="#9a4f33" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+          <!-- cut 3: final cut at collar -->
+          <line x1="70" y1="58" x2="70" y2="82" stroke="#3e7c59" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <text x="70" y="48" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">3</text>
+          <circle cx="70" cy="40" r="9" fill="none" stroke="#3e7c59" stroke-width="2"/>
+          <text x="140" y="172" font-size="11" fill="#6b7376" font-weight="700" text-anchor="middle">undercut · top cut · final cut at collar</text>
+        </svg>
+        <h4>The 3-cut method for any limb with weight</h4>
+        <p>For a limb heavy enough to tear the bark as it falls: (1) an <strong>undercut</strong> partway through from below, a foot or so out; (2) a <strong>top cut</strong> a little farther out to drop the limb cleanly; then (3) a <strong>final cut</strong> at the collar to remove the stub. The undercut stops the bark from peeling down the trunk.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram contrasting a topped tree cut to bare stubs with weak ugly regrowth, marked wrong, against a properly thinned and shaped tree, marked right, with debris being chipped or hauled away">
+          <rect x="14" y="158" width="252" height="12" fill="#8a6a4f"/>
+          <!-- LEFT: topped tree, bare stubs, weak regrowth, X -->
+          <path d="M78 158 V84" stroke="#6b4f37" stroke-width="8" stroke-linecap="round"/>
+          <g stroke="#9a4f33" stroke-width="5" stroke-linecap="round"><path d="M78 96 L52 84 M78 100 L104 86"/></g>
+          <!-- weak watersprout regrowth -->
+          <g stroke="#5e9a78" stroke-width="2" stroke-linecap="round"><path d="M52 84 v-14 M58 84 v-18 M64 85 v-12 M98 86 v-16 M104 86 v-12"/></g>
+          <line x1="60" y1="40" x2="74" y2="54" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="74" y1="40" x2="60" y2="54" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="78" y="148" font-size="11" fill="#9a4f33" font-weight="700" text-anchor="middle">topped ✗</text>
+          <!-- RIGHT: thinned & shaped, healthy, check -->
+          <path d="M200 158 V92" stroke="#6b4f37" stroke-width="8" stroke-linecap="round"/>
+          <ellipse cx="200" cy="74" rx="46" ry="34" fill="#3e7c59"/>
+          <ellipse cx="186" cy="68" rx="26" ry="20" fill="#5e9a78" opacity="0.6"/>
+          <path d="M218 50 l10 -10 l-2 10 l10 -2 l-10 8" stroke="#3e7c59" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M226 96 l5 5 l9 -10" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="200" y="148" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">thinned &amp; shaped ✓</text>
+        </svg>
+        <h4>Never "top" a tree — thin and shape</h4>
+        <p>"Topping" — hacking the whole crown back to stubs — is one of the worst things you can do: it triggers weak, dense regrowth that's <em>more</em> likely to fail later, and starves and disfigures the tree. Thin and shape instead, then clean up — chip or compost the small stuff and haul off the rest.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Tree-trimming progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Dead, low, and crossing branches cleared, every cut at the collar, debris hauled, and anything big or high handed to a pro — your trees are safer and healthier. Same light walk-around in about a year.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's a pro's job — and when to call one</h2>
+    <p class="sub">The most important skill in tree work is knowing what <em>not</em> to do yourself. A light yearly pass on small, reachable branches is genuinely DIY — but the moment you hit any of these, stop and call a certified arborist (and for power lines, the utility). It's the cheaper outcome, every time:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Large dead limbs, or a leaning or cracked trunk.</strong> Big deadwood overhead and any sign of structural failure — a lean that's new, a crack, a split fork, heaving roots — is serious. Don't probe it from a ladder; get an arborist to assess and remove it safely.</li>
+        <li><strong>Branches in or near power lines.</strong> Never your job, ever. Call your utility (line clearance is often free) or a line-clearance professional. A pole, a wet branch, or your body near a live line can kill.</li>
+        <li><strong>Big cuts over the house, the driveway, or anything you can't afford to drop on.</strong> Heavy limbs over a roof or car need to be rigged down in pieces — that's professional rigging, not a one-person ground job.</li>
+        <li><strong>Signs of disease, pests, or root and structural problems.</strong> Mushrooms at the base, oozing cankers, large areas of dead bark, sawdust from boring insects, or a tree that's declining overall — an arborist can diagnose it and tell you whether it's treatable or a hazard.</li>
+        <li><strong>Anything you can't reach with both feet on the ground.</strong> If it needs a ladder, climbing, or a chainsaw overhead, it's a pro job. This is the bright line — when in doubt, hire it out.</li>
+        <li><strong>Pro tip:</strong> hire an <em>ISA-certified arborist</em> specifically (ask to see the credential), get the scope in writing, and confirm they carry insurance. A good arborist prunes to keep the tree healthy — and will refuse to top it. Once-yearly DIY clearing pairs well with a pro check every few years on a big tree. Slot this yearly walk-around in with the rest of your seasonal yard work, like <a href="fall-leaf-cleanup.html">fall leaf cleanup</a> and <a href="mulch-beds.html">mulching beds</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I trim my trees?</summary>
+      <p>For most trees, a light pass once a year handles the routine work: take out the dead, broken, low, crossing, and rubbing branches you can safely reach from the ground. On top of that, bigger structural pruning every three to five years keeps a tree well-shaped over the long run — though on a large tree that's usually an arborist's job. Fast-growing or messy species (silver maple, willow, poplar) and any tree that's storm-damaged or hangs over the house are worth checking more often. Young trees benefit from light formative pruning in their first several years to build good structure, which saves a lot of trouble later. The one thing to avoid is the opposite of light-and-often: don't let a tree go for years and then cut it hard all at once.</p>
+    </details>
+    <details>
+      <summary>When is the best time of year to prune?</summary>
+      <p>For most trees, late dormant season — late winter into early spring, before the buds break — is ideal. The tree isn't actively growing, wounds close quickly as growth resumes, there are no leaves in the way so you can see the structure, and many pests and diseases that spread through fresh cuts are inactive. Avoid heavy pruning in summer (the tree is working hard and cuts stress it) and especially in fall, when fresh cuts heal slowly and decay fungi are releasing spores. Two exceptions: you can remove dead, broken, or hazardous branches any time of year, and spring-flowering trees (like flowering cherry, dogwood, or redbud) should be pruned right after they finish blooming, so you don't cut off the buds that became this year's flowers.</p>
+    </details>
+    <details>
+      <summary>How much can I safely cut off at once?</summary>
+      <p>As a rule of thumb, don't remove more than about a quarter (25%) of a tree's living canopy in a single year — and on mature trees, less. The leaves are how the tree feeds itself, so over-pruning starves it and triggers a flush of weak, watersprout regrowth as it scrambles to replace them. Dead wood doesn't count toward that limit — you can take out all the dead, broken, and diseased branches you find, since they're not contributing anything. If a tree clearly needs more than that to get back in shape, spread the work over two or three years rather than doing it all in one drastic session. Going slow is almost always better for the tree.</p>
+    </details>
+    <details>
+      <summary>How do I make a proper cut — and what's the 3-cut method?</summary>
+      <p>For a small branch, cut just <em>outside</em> the branch collar — the slightly swollen ring of bark where the branch joins the trunk or parent limb. Don't cut flush against the trunk (that removes the tissue that seals the wound and invites rot), and don't leave a long stub (it dies back and decays). The collar grows over the cut and heals it. For any limb heavy enough that its weight could tear the bark as it falls, use the <strong>3-cut method</strong>: first, an undercut a third of the way through from below, about a foot out from the trunk; second, a top cut an inch or two farther out, which lets the limb drop cleanly without the bark peeling down the trunk; third, a final cut to remove the remaining stub right at the collar. Skip the undercut on a heavy limb and the falling weight can strip a long wound of bark down the trunk — exactly the damage you're trying to avoid. And skip the wound paint or tar sealers: research shows they don't help and can trap moisture; a clean cut at the collar heals best on its own.</p>
+    </details>
+    <details>
+      <summary>Is tree topping bad?</summary>
+      <p>Yes — topping (cutting the whole crown back to stubs to reduce a tree's height) is one of the most harmful things you can do to a tree, and reputable arborists won't do it. It removes so much leaf area at once that the tree is starved and stressed, and it responds with a dense burst of fast, weakly-attached "watersprout" growth. That regrowth is actually <em>more</em> hazardous than the original limbs, because it's poorly anchored and prone to breaking — so topping makes the storm-damage problem worse, not better, within a few years. The big stub wounds also rot, opening the tree to decay and disease, and a topped tree is permanently disfigured. If a tree is genuinely too big for its spot, the right answer is proper crown reduction by a certified arborist (selective cuts back to healthy laterals) or, if it's truly the wrong tree in the wrong place, removal and replacement — never topping.</p>
+    </details>
+    <details>
+      <summary>When do I need to call an arborist instead of DIY?</summary>
+      <p>The simplest test: if you can't do it with both feet on the ground (or with a pole pruner from the ground), it's a pro's job. Specifically, call a certified arborist for anything big or high, work over the roof or driveway, large or heavy limbs, anything that would require you to climb the tree or run a chainsaw from a ladder, or any sign of disease, pests, or structural problems like a lean, crack, or root issue. Anything in or near power lines is never DIY — call your utility or a line-clearance pro. None of that is a failure on your part; matching the job to the right person is the safety plan. Falls and falling limbs are a leading cause of serious injury in this kind of work, so the rule is genuinely "when in doubt, hire it out." Look for an ISA-certified arborist, ask for proof of certification and insurance, and get the scope in writing.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The limb that takes out your roof was visibly dead for a year first.</h2>
+        <p>Hazards in a tree don't appear overnight — they sit there, plainly dead, until the night the wind finally finds them. Let Upkeep Ledger schedule a yearly walk-around so you catch and clear the small, reachable stuff — and call a pro on the big stuff — before the storm does, right alongside the gutters, the HVAC filter, and every other quiet task that protects the house.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=trim-trees&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=trim-trees&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Tree work can be dangerous; this guide covers only small, ground-level pruning — anything big, high, near power lines, or requiring a chainsaw up a ladder is a job for a certified arborist or your utility.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { size: null, growth: null, condition: null, reach: null };
+
+  var FREQ_LABEL = {
+    12: "Once a year",
+    24: "Every 2 years",
+    36: "Every 3 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;      // default: a light yearly pass
+    var proFlag = false;  // does the work really belong to an arborist?
+    var tighten = false;
+
+    /* Size & proximity */
+    if (s.size === "big") {
+      proFlag = true;
+      reasons.push("A large, mature tree over the house, driveway, or near power lines has the most to lose if a limb fails — and the work up there is genuinely dangerous. Plan on a yearly look from the ground, but treat the actual pruning as a certified-arborist job.");
+    } else if (s.size === "medium") {
+      reasons.push("A mid-sized tree near (but not over) the house is mostly a yearly ground-level job for the low and dead branches — with a pro for anything higher up.");
+    } else {
+      reasons.push("A small ornamental you can reach from the ground is the ideal DIY case: a light yearly pass on dead, low, and crossing branches keeps it healthy and tidy.");
+    }
+
+    /* Growth rate / messiness */
+    if (s.growth === "fast") {
+      tighten = true;
+      reasons.push("Fast-growing or messy species put on weak wood quickly and drop limbs more readily, so they're worth a closer eye — check it yearly and don't let deadwood accumulate.");
+    } else {
+      reasons.push("A slow, tidy tree holds its shape and sheds little, so a relaxed yearly (or every-couple-of-years) check is plenty.");
+    }
+
+    /* Condition */
+    if (s.condition === "damaged") {
+      tighten = true;
+      proFlag = true;
+      reasons.push("Dead wood, storm damage, disease, or rubbing limbs are the priority — that's the wood that fails and the problem that spreads. Address it sooner rather than later, and get a pro to assess storm or disease damage you can't safely reach.");
+    } else if (s.condition === "minor") {
+      reasons.push("A few low or stray branches on an otherwise healthy tree is exactly the light, reachable work this guide is built for.");
+    } else {
+      reasons.push("A healthy, tidy tree with nothing obvious wrong can stretch the interval — a quick yearly walk-around to confirm it's still clear is all it needs.");
+    }
+
+    /* Reach — the safety line */
+    if (s.reach === "ground") {
+      reasons.push("Because it's all reachable from the ground or a short pole pruner, this is safe DIY territory: small branches, feet planted, a clean cut at the collar.");
+    } else {
+      proFlag = true;
+      reasons.push("As soon as the work needs a ladder, climbing, or a chainsaw overhead, it crosses out of DIY and into arborist territory — falls and falling limbs are a leading cause of serious injury, so this part isn't worth doing yourself.");
+    }
+
+    /* Set the interval */
+    if (tighten) {
+      months = 12;
+    } else if (s.size === "small" && s.growth === "slow" && s.condition === "healthy") {
+      months = 24;
+      if (s.reach === "ground") {
+        reasons.push("A small, slow, healthy tree you can fully reach is the one case you can comfortably stretch to every couple of years — just glance at it each year for anything new.");
+      }
+    } else {
+      months = 12;
+    }
+
+    /* Closing note — always steer big/high/near-line work to a pro */
+    var note;
+    if (proFlag) {
+      note = "<strong>This one needs a certified arborist for the big work.</strong> Do the small, ground-level branches yourself if you like, but anything large, high, over the roof, near power lines, or needing a ladder or chainsaw is a pro's job — that's the safe plan, not a cop-out. For power lines, call your utility.";
+    } else {
+      note = "<strong>Stay in your lane and you're golden:</strong> small branches, both feet on the ground, every cut just outside the collar. The moment a job needs a ladder, a climb, a chainsaw overhead, or it's near a power line, stop and call a certified arborist (or your utility for lines). When in doubt, hire it out.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.size || !quizState.growth || !quizState.condition || !quizState.reach) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: a light pass " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Each pass, <strong>take out the dead, broken, low, crossing, and rubbing branches you can reach from the ground</strong>, cutting just outside the branch collar — and hand the big or high work to a pro. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Assess & plan", text: "Walk the tree and decide what to cut — the 4 Ds first", note: "Look for dead, diseased, damaged, and crossing/rubbing branches, plus any low limbs in the way. That's nearly all the trimming most trees need. Don't plan to remove more than about a quarter of the living canopy this year." },
+    { phase: "Assess & plan", text: "Be honest about your reach — flag the pro work", note: "If a branch needs a ladder, climbing, a chainsaw overhead, or it's big, over the roof, or anywhere near a power line, mark it for a certified arborist (and call your utility for lines). When in doubt, hire it out." },
+    { phase: "Assess & plan", text: "Check for nests, hazards, and the drop zone", note: "Look up for active nests (don't disturb them — often legally protected), dead 'widow-maker' branches hung up above you, and overhead hazards. Plan where each limb will fall and keep that zone clear." },
+    { phase: "Time it right", text: "Confirm it's a good time to prune", note: "Most trees prune best in late dormant season (late winter to early spring); avoid heavy summer/fall cuts. You can remove dead or hazardous wood any time; prune spring-flowering trees right after they bloom." },
+    { phase: "Time it right", text: "Gear up and ready your tools", note: "Eye protection and a hard hat, gloves, sturdy closed footwear. Sharpen and clean your pruners, loppers, saw, and pole pruner — and disinfect blades between trees if disease is around." },
+    { phase: "Make the cuts", text: "Remove dead, diseased, and damaged wood", note: "Start with the deadwood — it doesn't count toward the 25% limit and it's the stuff most likely to fall. Take crossing and rubbing branches at their base while you're at it." },
+    { phase: "Make the cuts", text: "Clear low and wayward branches from the ground", note: "Use a pole pruner for low limbs over paths, the drive, or the house so you can stay on the ground. Never stand under the limb you're cutting — work from the side." },
+    { phase: "Make the cuts", text: "Cut just outside the branch collar — no flush cuts, no stubs", note: "Find the swollen ring where the branch meets the trunk and cut just outside it. Flush cuts remove healing tissue; stubs rot. The collar seals the wound on its own — skip the wound paint." },
+    { phase: "Make the cuts", text: "Use the 3-cut method on any limb with weight", note: "Undercut from below a foot or so out, then a top cut farther out to drop the limb cleanly, then a final cut at the collar. The undercut stops the bark from tearing down the trunk." },
+    { phase: "Clean up & log", text: "Step back, check the shape — and never top", note: "Thin and shape; don't hack the crown to stubs. Step back and eye the tree from a distance to keep it balanced, and stop before you've taken too much." },
+    { phase: "Clean up & log", text: "Clean up the debris and log the date", note: "Chip or compost the small stuff and haul off the rest so it doesn't smother the lawn or harbor pests. Note today's date so the next light pass lands in about a year (or your quiz interval) — and schedule any pro work you flagged." }
+  ];
+
+  var LS_KEY = "upkeepguides:trim-trees:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

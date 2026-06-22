@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store your seasonal clothes — UpkeepGuides.com</title>
+<meta name="description" content="How to store seasonal clothes the right way: clean everything first so body oils don't attract moths or set as stains, dry fully, use breathable containers and cedar — not plastic — and a step-by-step checklist with a personalized swap schedule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Store your seasonal clothes — UpkeepGuides.com">
+<meta property="og:description" content="How to store seasonal clothes the right way: clean everything first so body oils don't attract moths or set as stains, dry fully, use breathable containers and cedar — not plastic — and a step-by-step checklist with a personalized swap schedule.">
+<meta property="og:url" content="https://upkeepguides.com/store-seasonal-clothes.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Store your seasonal clothes — UpkeepGuides.com">
+<meta name="twitter:description" content="How to store seasonal clothes the right way: clean everything first so body oils don't attract moths or set as stains, dry fully, use breathable containers and cedar — not plastic — and a step-by-step checklist with a personalized swap schedule.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Wardrobe · Twice a year</span>
+      <h1>Store Your Seasonal Clothes</h1>
+      <p class="lede">Twice a year the closet asks for a swap: pack the heavy sweaters and wool away in spring, fold the linens and tees away in fall. Done right, it hands you back half your closet and protects the off-season clothes until you want them again — only the current season is in front of you, and getting dressed gets easy. Done wrong, it's how a beloved cashmere comes out with moth holes, a white shirt comes out yellowed at the collar, and a down jacket comes out flat and smelling of basement. The whole job comes down to a few rules: clean everything before it goes away, dry it fully, and store it cool, dark, and dry in something that breathes — never sealed plastic on natural fibers. Get those right and the swap is a quick, satisfying afternoon, and next season everything's exactly as you left it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>twice a year</em></span>
+        <span class="chip">⏱️ <em>~2–3 hrs</em> per swap</span>
+        <span class="chip">🚪 Frees <em>half your closet</em></span>
+        <span class="chip">💸 Kit costs <em>~$20–60</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a seasonal clothes swap: folded sweaters and off-season clothes being packed into a breathable cotton storage bin and a hanging cotton garment bag, a cedar block resting on the folded knits, an open closet beside it holding the current season's clothes on hangers, and a neatly folded wool sweater in the foreground; the scene is tidy and warm">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- closet on the right with current-season clothes hung -->
+      <rect x="356" y="56" width="170" height="296" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- closet interior -->
+      <rect x="366" y="66" width="150" height="276" rx="5" fill="#efe7d8"/>
+      <!-- hanging rail -->
+      <rect x="372" y="92" width="138" height="7" rx="3" fill="#8a6a4f"/>
+      <!-- hangers + current-season garments -->
+      <g>
+        <!-- garment 1 (terracotta shirt) -->
+        <path d="M386 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M380 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 78 l-6 0 l0 -78 l-4 3 z" fill="#c96f4a"/>
+        <!-- garment 2 (green dress) -->
+        <path d="M410 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M404 104 l11 -8 l11 8 l-5 8 l4 86 l-20 0 l4 -86 z" fill="#5e9a78"/>
+        <!-- garment 3 (gold top) -->
+        <path d="M436 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M430 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 70 l-6 0 l0 -70 l-4 3 z" fill="#e0a93d"/>
+        <!-- garment 4 (water-blue shirt) -->
+        <path d="M462 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M456 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 74 l-6 0 l0 -74 l-4 3 z" fill="#7fb3c8"/>
+        <!-- garment 5 (deep green) -->
+        <path d="M488 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M482 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 66 l-6 0 l0 -66 l-4 3 z" fill="#3e7c59"/>
+      </g>
+      <!-- a couple of folded items on the closet shelf -->
+      <rect x="372" y="300" width="138" height="9" rx="2" fill="#8a6a4f"/>
+      <rect x="380" y="312" width="58" height="22" rx="3" fill="#dce8ee"/>
+      <rect x="380" y="312" width="58" height="7" rx="3" fill="#cdd9de"/>
+      <rect x="446" y="312" width="58" height="22" rx="3" fill="#c9a06b"/>
+      <rect x="446" y="312" width="58" height="7" rx="3" fill="#b9b1a3"/>
+
+      <!-- breathable cotton storage bin on the left, being packed -->
+      <rect x="40" y="232" width="186" height="118" rx="10" fill="#c9a06b"/>
+      <rect x="40" y="232" width="186" height="118" rx="10" fill="#b9b1a3" opacity="0.25"/>
+      <!-- canvas weave hint -->
+      <g stroke="#8a6a4f" stroke-width="1.4" opacity="0.4">
+        <line x1="40" y1="262" x2="226" y2="262"/>
+        <line x1="40" y1="292" x2="226" y2="292"/>
+        <line x1="40" y1="322" x2="226" y2="322"/>
+        <line x1="94" y1="232" x2="94" y2="350"/>
+        <line x1="148" y1="232" x2="148" y2="350"/>
+      </g>
+      <!-- open lid flap folded back -->
+      <path d="M40 232 q93 -34 186 0 l0 -16 q-93 -30 -186 0 z" fill="#dce8ee"/>
+      <path d="M40 220 q93 -28 186 0" fill="none" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round"/>
+      <!-- folded sweaters stacked inside the bin -->
+      <rect x="56" y="240" width="154" height="20" rx="4" fill="#7fb3c8"/>
+      <rect x="56" y="240" width="154" height="6" rx="3" fill="#9cc3d4"/>
+      <rect x="62" y="262" width="142" height="20" rx="4" fill="#c96f4a"/>
+      <rect x="62" y="262" width="142" height="6" rx="3" fill="#d9663f"/>
+      <rect x="58" y="284" width="150" height="20" rx="4" fill="#5e9a78"/>
+      <rect x="58" y="284" width="150" height="6" rx="3" fill="#3e7c59"/>
+
+      <!-- cedar block resting on the folded knits -->
+      <rect x="150" y="222" width="40" height="20" rx="4" fill="#c9a06b"/>
+      <rect x="150" y="222" width="40" height="7" rx="3" fill="#b9b1a3"/>
+      <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.7">
+        <path d="M156 226 q10 4 0 10"/>
+        <path d="M166 226 q8 4 0 10"/>
+        <path d="M176 226 q8 4 0 10"/>
+      </g>
+      <text x="150" y="216" font-size="10" fill="#8a6a4f" font-weight="700">cedar</text>
+
+      <!-- hanging cotton garment bag in the center -->
+      <!-- hook -->
+      <path d="M292 36 q10 -10 0 -20" fill="none" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <rect x="288" y="34" width="8" height="8" rx="2" fill="#8a6a4f"/>
+      <!-- bag body -->
+      <path d="M250 44 h84 q8 0 8 8 l0 196 q0 8 -8 8 h-84 q-8 0 -8 -8 l0 -196 q0 -8 8 -8 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- breathable weave hint on the bag -->
+      <g stroke="#e9e2d8" stroke-width="1.6">
+        <line x1="252" y1="78" x2="332" y2="78"/>
+        <line x1="252" y1="120" x2="332" y2="120"/>
+        <line x1="252" y1="162" x2="332" y2="162"/>
+        <line x1="252" y1="204" x2="332" y2="204"/>
+      </g>
+      <!-- zipper down the middle -->
+      <line x1="292" y1="48" x2="292" y2="252" stroke="#8a6a4f" stroke-width="2.4" stroke-dasharray="4 4"/>
+      <circle cx="292" cy="150" r="5" fill="#e0a93d"/>
+      <!-- garment shoulders peeking at the top of the bag -->
+      <path d="M268 56 l24 -10 l24 10 l-6 10 l-18 -6 l-18 6 z" fill="#2c5a40"/>
+      <text x="252" y="40" font-size="10" fill="#6b7376">garment bag</text>
+
+      <!-- neatly folded wool sweater in the foreground -->
+      <rect x="222" y="338" width="146" height="46" rx="8" fill="#d98e3b"/>
+      <rect x="222" y="338" width="146" height="14" rx="7" fill="#e0a93d"/>
+      <!-- folded sleeves crossing -->
+      <path d="M232 352 l40 18 l-10 6 l-30 -14 z" fill="#c96f4a"/>
+      <path d="M358 352 l-40 18 l10 6 l30 -14 z" fill="#c96f4a"/>
+      <!-- knit ribbing lines -->
+      <g stroke="#b9772b" stroke-width="1.4" opacity="0.7">
+        <line x1="240" y1="366" x2="240" y2="382"/>
+        <line x1="252" y1="366" x2="252" y2="382"/>
+        <line x1="338" y1="366" x2="338" y2="382"/>
+        <line x1="350" y1="366" x2="350" y2="382"/>
+      </g>
+      <!-- folded ribbed collar/hem -->
+      <rect x="278" y="370" width="34" height="14" rx="3" fill="#c9a06b"/>
+
+      <!-- a little lavender sachet for warmth, foreground left -->
+      <path d="M96 360 h40 l-5 24 h-30 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M106 360 l-2 -12 M116 360 l0 -14 M126 360 l2 -12"/>
+      </g>
+      <circle cx="104" cy="346" r="2.2" fill="#7c5ea0" opacity="0.55"/>
+      <circle cx="116" cy="344" r="2.2" fill="#7c5ea0" opacity="0.55"/>
+      <circle cx="128" cy="346" r="2.2" fill="#7c5ea0" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A seasonal swap looks like a tidiness chore, but it's really a protection job. The clothes you put away are the expensive, hard-to-replace ones — wool, cashmere, silk, down — and the months they spend in a box are exactly when invisible damage gets done. Do it right and you get back space, ease, and clothes in perfect shape; skip a step and you find out the hard way:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="10" width="24" height="20" rx="2" fill="#dce8ee" stroke="#3e7c59" stroke-width="2"/>
+          <rect x="18" y="10" width="12" height="20" rx="2" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <line x1="9" y1="6" x2="27" y2="6" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 6 l3 4 M16 6 l0 4 M22 6 l-3 4" stroke="#5e9a78" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M22 6 l2 4 M26 6 l0 4" stroke="#c96f4a" stroke-width="1.8" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It doubles your usable closet</h3>
+        <p>Stash the off-season half and the closet stops being a wall-to-wall jumble — only what you'll actually wear is in front of you. Getting dressed gets faster and clothes stay less crushed when they have room to hang.</p>
+        <span class="cost">A crammed, hard-to-use closet</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="19" rx="5" ry="7" fill="#c9a06b"/>
+          <path d="M13 16 q-7 -6 -10 -2 q4 4 9 4 z" fill="#b9b1a3"/>
+          <path d="M23 16 q7 -6 10 -2 q-4 4 -9 4 z" fill="#b9b1a3"/>
+          <path d="M14 13 q-3 -5 -1 -8 M22 13 q3 -5 1 -8" stroke="#8a6a4f" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="14" r="1.2" fill="#33393b"/>
+          <circle cx="20" cy="14" r="1.2" fill="#33393b"/>
+          <!-- chewed hole hint -->
+          <circle cx="30" cy="28" r="3" fill="none" stroke="#d9663f" stroke-width="1.8" stroke-dasharray="2 2"/>
+        </svg></div>
+        <h3>Moths feast on natural fibers</h3>
+        <p>Clothes moths and carpet beetles eat wool, cashmere, and silk — and they're drawn to the sweat, skin oils, and food traces on clothes that <em>look</em> clean. An unwashed sweater in a dark box is a buffet with an invitation pinned to it.</p>
+        <span class="cost">Holes in your best knits</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M10 5 h13 l3 4 v22 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-24 a2 2 0 0 1 0 -2 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <ellipse cx="17" cy="20" rx="6" ry="7" fill="#e0a93d" opacity="0.55"/>
+          <ellipse cx="17" cy="20" rx="3.5" ry="4.5" fill="#d98e3b" opacity="0.6"/>
+          <path d="M13 11 h8" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Hidden stains set permanently</h3>
+        <p>Deodorant, body oil, and spills you can't even see oxidize over months in storage into yellow and brown marks — and by then they're set. The shirt that went away looking spotless comes out scarred at the collar and underarms.</p>
+        <span class="cost">Set-in yellow &amp; brown marks</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="10" width="24" height="20" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <!-- trapped moisture droplets -->
+          <path d="M14 16 q-2 3 0 4 q2 -1 0 -4 z" fill="#7fb3c8"/>
+          <path d="M22 18 q-2 3 0 4 q2 -1 0 -4 z" fill="#7fb3c8"/>
+          <!-- mildew speckle -->
+          <circle cx="11" cy="25" r="1.6" fill="#8a6a4f" opacity="0.7"/>
+          <circle cx="25" cy="25" r="1.4" fill="#5e9a78" opacity="0.6"/>
+          <circle cx="18" cy="27" r="1.2" fill="#8a6a4f" opacity="0.7"/>
+          <!-- no-plastic slash -->
+          <line x1="7" y1="9" x2="29" y2="31" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Wrong storage does its own damage</h3>
+        <p>Damp brings mildew; sealed plastic traps moisture, yellows fabric, and crushes the loft out of down and wool; hangers stretch heavy knits into droopy shoulders; and overpacking leaves everything creased and squashed.</p>
+        <span class="cost">Mildew, yellowing &amp; stretched knits</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> swap?</h2>
+    <p class="sub">Twice a year — pack winter away in spring, summer away in fall — is the default, and it's the right call for most people. But four-distinct-seasons climates and tight closets make a thorough rotation pay off, while a mild, two-season climate with a roomy closet might only need a light once-a-year pass. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">1. What's your climate like?</div>
+        <div class="pills">
+          <button class="pill" data-v="four">Four distinct seasons — real winter &amp; summer</button>
+          <button class="pill" data-v="mild">Mild — really just two gentle seasons</button>
+        </div>
+        <div class="q-hint">A true cold winter and hot summer means whole categories of clothing go dormant for months — heavy coats, wool, swimwear, linens — so a full swap frees real space. A mild climate keeps more of your wardrobe in play year-round.</div>
+      </div>
+      <div class="quiz-q" data-q="space">
+        <div class="q-label">2. How much closet space do you have?</div>
+        <div class="pills">
+          <button class="pill" data-v="tight">Tight — I have to rotate to fit it all</button>
+          <button class="pill" data-v="roomy">Roomy — everything fits with room to spare</button>
+        </div>
+        <div class="q-hint">If the closet only holds one season comfortably, rotating isn't optional — it's the only way to keep clothes uncrushed and findable. A roomy closet lets you stretch the swap or do a lighter one.</div>
+      </div>
+      <div class="quiz-q" data-q="fibers">
+        <div class="q-label">3. What's your wardrobe mostly made of?</div>
+        <div class="pills">
+          <button class="pill" data-v="natural">Lots of wool, cashmere, down &amp; delicates</button>
+          <button class="pill" data-v="synthetic">Mostly synthetics, denim &amp; cottons</button>
+        </div>
+        <div class="q-hint">Wool, cashmere, silk, and down are what moths eat and what bad storage ruins — they reward the care of a proper seasonal pack-away. Synthetics and sturdy cottons are far more forgiving and can sit anywhere.</div>
+      </div>
+      <div class="quiz-q" data-q="spot">
+        <div class="q-label">4. Where would you store the off-season clothes?</div>
+        <div class="pills">
+          <button class="pill" data-v="good">A clean, dry closet shelf or under the bed</button>
+          <button class="pill" data-v="bad">A damp basement, hot attic, or the garage</button>
+        </div>
+        <div class="q-hint">A cool, dark, dry spot is what keeps stored clothes safe — and is worth seeking out. A damp basement, baking attic, or garage adds moisture, heat, and pests, so if that's all you have, store less and check it often.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The whole kit — breathable bins, a couple of cotton garment bags, acid-free tissue, and cedar blocks — runs about $20 to $60 and lasts for years. What skipping the swap (or doing it the lazy way, in sealed plastic over unwashed clothes) costs is the clothes themselves: a moth-eaten cashmere sweater, a wardrobe yellowed and mildewed by bad storage, a down jacket that comes out flat and musty:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–60</div><div class="l">a one-time kit — breathable bins, cotton garment bags, acid-free tissue, and cedar blocks that last for years</div></div>
+        <div class="calc-stat"><div class="v">~2–3 hrs</div><div class="l">per swap once you have a system — sort, clean, fold, pack, protect, and bring the new season forward</div></div>
+        <div class="calc-stat"><div class="v bad">$150+</div><div class="l">to replace one moth-eaten cashmere sweater — and the holes usually come in clusters</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🌿 Cedar blocks + lavender sachets</span><span>~$10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧺 Breathable bins, garment bags &amp; acid-free tissue</span><span>$20–60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧶 Replacing a moth-eaten wool or cashmere sweater</span><span>$80–250+ each</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:50%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>👕 Stripping set-in yellow stains &amp; musty mildew smell</span><span>Often unsalvageable</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:68%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧥 Re-buying a wardrobe ruined by years of bad storage</span><span>$100s–$1,000s</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $20–60 kit and an afternoon twice a year</strong> against replacing the best, most expensive clothes you own — the cashmere, the wool coat, the silk — because moths got in, or a sealed plastic bin yellowed and mildewed them. Clean everything first, store it breathing in a cool dry spot, and the same clothes last a decade or more.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to store your seasonal clothes</h2>
+    <p class="sub">The order is the whole secret: sort and cull first, clean and fully dry everything that's going away, fold or hang it into the right breathable container, add cedar or lavender for pests, then label and stash it cool, dark, and dry — and bring the new season forward. Read the rules first (especially "clean everything" and "no sealed plastic on natural fibers"), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Protect the clothes — the rules that decide whether they survive</h3>
+      <ul>
+        <li><strong>Clean everything before it goes away — even items worn once.</strong> Body oils, sweat, deodorant, and invisible food traces are what attract moths <em>and</em> what oxidize into permanent stains over months in storage. "Looks clean" isn't clean enough; launder or dry-clean before packing.</li>
+        <li><strong>Make sure everything is bone-dry.</strong> Even slightly damp fabric in a sealed-up container grows mildew and that musty smell that never fully leaves. Let washed items dry completely — air them an extra hour if you're not sure — before they go in.</li>
+        <li><strong>No plastic vacuum bags or sealed plastic bins for natural fibers long-term.</strong> They trap residual moisture (mildew), can yellow fabric, and crush the loft out of down and wool so it never fully recovers. Use breathable cotton or canvas containers and cotton garment bags instead.</li>
+        <li><strong>Skip mothballs around living spaces.</strong> The active ingredients are toxic to breathe and the smell soaks into everything and lingers for years. Use cedar blocks or lavender sachets instead — and refresh cedar by lightly sanding it to reopen the scented wood.</li>
+        <li><strong>Fold heavy knits; don't hang them.</strong> Hanging stretches sweaters into drooping shoulders and saggy hems. Fold wool, cashmere, and chunky knits flat, and reserve sturdy hangers for tailored pieces like coats and jackets. Don't overpack — squashed clothes crease and can't breathe.</li>
+        <li><strong>Store cool, dark, and dry, off the floor.</strong> Keep bins off basement floors and out of hot attics and garages, where heat, damp, and pests do the most damage. A closet shelf, under the bed, or a dry interior spare room is ideal — away from direct light, which fades fabric.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Breathable cotton/canvas storage bins</span>
+      <span class="tool-chip">Cotton garment bags</span>
+      <span class="tool-chip">Acid-free tissue paper</span>
+      <span class="tool-chip">Cedar blocks or lavender sachets</span>
+      <span class="tool-chip">Sturdy hangers (for tailored pieces)</span>
+      <span class="tool-chip">A donate / repair pile</span>
+      <span class="tool-chip">Labels and a marker</span>
+      <span class="tool-chip">A lint roller for stray fibers</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of sorting clothes into keep, donate, and repair piles before storing, honestly culling whatever wasn't worn this season">
+          <!-- keep pile -->
+          <rect x="20" y="70" width="64" height="60" rx="6" fill="#5e9a78"/>
+          <rect x="20" y="70" width="64" height="14" rx="6" fill="#3e7c59"/>
+          <text x="52" y="148" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">keep</text>
+          <!-- donate pile -->
+          <rect x="108" y="84" width="64" height="46" rx="6" fill="#e0a93d"/>
+          <rect x="108" y="84" width="64" height="12" rx="6" fill="#d98e3b"/>
+          <text x="140" y="148" font-size="11" fill="#8a6a4f" font-weight="700" text-anchor="middle">donate</text>
+          <!-- repair pile -->
+          <rect x="196" y="92" width="64" height="38" rx="6" fill="#c96f4a"/>
+          <rect x="196" y="92" width="64" height="10" rx="6" fill="#b9572f"/>
+          <text x="228" y="148" font-size="11" fill="#c96f4a" font-weight="700" text-anchor="middle">repair</text>
+          <!-- sorting arrows -->
+          <path d="M140 30 l-60 30 m6 -14 l-8 16 l16 0" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M140 30 l88 50 m-2 -16 l4 18 l-16 -4" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="140" cy="24" r="9" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+        </svg>
+        <h4>Sort by season &amp; honestly cull</h4>
+        <p>Pull everything for the season you're packing away, then be honest: if you didn't wear it this year, donate it or set it aside to repair. Storing only what you'll actually use saves space and means you're not protecting clothes you've quietly stopped loving.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of cleaning everything before storage — laundering or dry-cleaning per the care tag, removing dry-cleaning plastic, and letting clothes dry fully">
+          <!-- washtub / care -->
+          <path d="M70 60 h60 l-6 64 a6 6 0 0 1 -6 6 h-36 a6 6 0 0 1 -6 -6 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <path d="M64 60 h72" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+          <!-- suds -->
+          <circle cx="86" cy="74" r="6" fill="#fffdf8"/>
+          <circle cx="100" cy="70" r="7" fill="#eef4f7"/>
+          <circle cx="114" cy="74" r="5" fill="#fffdf8"/>
+          <!-- care tag -->
+          <rect x="160" y="50" width="58" height="40" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="168" y1="60" x2="210" y2="60" stroke="#8a6a4f" stroke-width="1.6"/>
+          <line x1="168" y1="68" x2="210" y2="68" stroke="#8a6a4f" stroke-width="1.6"/>
+          <line x1="168" y1="76" x2="196" y2="76" stroke="#8a6a4f" stroke-width="1.6"/>
+          <!-- no plastic on dry-cleaning -->
+          <rect x="170" y="104" width="40" height="40" rx="4" fill="#cdd9de" opacity="0.5"/>
+          <line x1="168" y1="102" x2="212" y2="146" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="40" y="166" font-size="11" fill="#3e7c59" font-weight="700">clean &amp; fully dry — no DC plastic</text>
+        </svg>
+        <h4>Clean everything &amp; dry it fully</h4>
+        <p>Launder or dry-clean per the care tag — every item, even ones worn once, because body oils attract moths and set as stains. Air out dry-cleaning and pull off the plastic film (it traps chemicals and moisture), and let everything dry completely before packing.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of choosing the right container — a breathable cotton bin and a cotton garment bag, with acid-free tissue layered into the folds of a delicate item">
+          <!-- breathable bin -->
+          <rect x="24" y="74" width="100" height="64" rx="8" fill="#c9a06b"/>
+          <g stroke="#8a6a4f" stroke-width="1.4" opacity="0.45">
+            <line x1="24" y1="96" x2="124" y2="96"/>
+            <line x1="24" y1="118" x2="124" y2="118"/>
+            <line x1="58" y1="74" x2="58" y2="138"/>
+            <line x1="90" y1="74" x2="90" y2="138"/>
+          </g>
+          <rect x="20" y="66" width="108" height="12" rx="5" fill="#dce8ee"/>
+          <!-- folded item with acid-free tissue -->
+          <rect x="36" y="82" width="76" height="14" rx="3" fill="#7fb3c8"/>
+          <rect x="36" y="82" width="76" height="5" rx="3" fill="#fffdf8" opacity="0.8"/>
+          <!-- garment bag -->
+          <rect x="156" y="44" width="58" height="100" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <line x1="185" y1="48" x2="185" y2="140" stroke="#8a6a4f" stroke-width="1.8" stroke-dasharray="4 4"/>
+          <path d="M170 52 l15 -6 l15 6 l-4 7 l-11 -4 l-11 4 z" fill="#5e9a78"/>
+          <path d="M185 28 q8 -8 0 -14" fill="none" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="40" y="160" font-size="11" fill="#3e7c59" font-weight="700">breathable, not sealed plastic</text>
+        </svg>
+        <h4>Choose the right container</h4>
+        <p>Use breathable cotton or canvas bins for folded clothes and cotton garment bags for hanging pieces — not sealed plastic. Layer acid-free tissue into the folds of delicate items to stop creases and yellowing, and reserve sturdy hangers for tailored coats and jackets only.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of adding pest protection — a cedar block and a lavender sachet tucked among folded clothes, with no mothballs, in a container sealed enough to deter moths but still able to breathe">
+          <!-- folded stack -->
+          <rect x="44" y="92" width="120" height="18" rx="4" fill="#7fb3c8"/>
+          <rect x="40" y="112" width="128" height="18" rx="4" fill="#c96f4a"/>
+          <rect x="46" y="74" width="116" height="18" rx="4" fill="#5e9a78"/>
+          <!-- cedar block -->
+          <rect x="186" y="70" width="44" height="22" rx="4" fill="#c9a06b"/>
+          <rect x="186" y="70" width="44" height="7" rx="3" fill="#b9b1a3"/>
+          <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.7">
+            <path d="M194 74 q9 4 0 10"/>
+            <path d="M206 74 q8 4 0 10"/>
+          </g>
+          <text x="208" y="104" font-size="9.5" fill="#8a6a4f" font-weight="700" text-anchor="middle">cedar</text>
+          <!-- lavender sachet -->
+          <path d="M196 116 h36 l-4 22 h-28 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round">
+            <path d="M204 116 l-2 -10 M214 116 l0 -12 M224 116 l2 -10"/>
+          </g>
+          <circle cx="202" cy="104" r="2" fill="#7c5ea0" opacity="0.55"/>
+          <circle cx="214" cy="102" r="2" fill="#7c5ea0" opacity="0.55"/>
+          <circle cx="226" cy="104" r="2" fill="#7c5ea0" opacity="0.55"/>
+          <!-- no mothballs -->
+          <circle cx="100" cy="150" r="8" fill="#e9e2d8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="93" y1="143" x2="107" y2="157" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="116" y="154" font-size="10" fill="#d9663f" font-weight="700">no mothballs</text>
+        </svg>
+        <h4>Add pest protection</h4>
+        <p>Tuck cedar blocks or lavender sachets among the folds — never mothballs, which are toxic and reek for years. Keep the container closed enough to deter moths but breathable enough to release moisture; refresh cedar now and then by lightly sanding it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of labeling a storage bin and stashing it in a cool, dark, dry spot off the floor, then bringing the new season's clothes forward into the closet">
+          <!-- labeled bin on a shelf -->
+          <rect x="30" y="84" width="110" height="56" rx="8" fill="#c9a06b"/>
+          <g stroke="#8a6a4f" stroke-width="1.4" opacity="0.4">
+            <line x1="30" y1="104" x2="140" y2="104"/>
+            <line x1="66" y1="84" x2="66" y2="140"/>
+            <line x1="104" y1="84" x2="104" y2="140"/>
+          </g>
+          <!-- label -->
+          <rect x="58" y="100" width="54" height="22" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="64" y1="108" x2="106" y2="108" stroke="#3e7c59" stroke-width="1.8"/>
+          <line x1="64" y1="115" x2="96" y2="115" stroke="#8a6a4f" stroke-width="1.6"/>
+          <!-- shelf off the floor -->
+          <rect x="20" y="148" width="130" height="8" rx="3" fill="#8a6a4f"/>
+          <!-- arrow to closet -->
+          <path d="M156 112 l40 0 m-10 -7 l10 7 l-10 7" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- closet with new season forward -->
+          <rect x="204" y="52" width="60" height="100" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <line x1="210" y1="68" x2="258" y2="68" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M216 72 l8 -6 l8 6 l-3 5 l-3 -2 l0 40 l-4 0 l0 -40 l-3 2 z" fill="#c96f4a"/>
+          <path d="M238 72 l8 -6 l8 6 l-3 5 l-3 -2 l0 36 l-4 0 l0 -36 l-3 2 z" fill="#7fb3c8"/>
+          <text x="40" y="172" font-size="11" fill="#3e7c59" font-weight="700">label · store · bring new season up</text>
+        </svg>
+        <h4>Label, store cool &amp; rotate</h4>
+        <p>Write what's inside and the date on each container so you're not opening every bin next season. Stash them in a cool, dark, dry spot off the floor — closet shelf or under the bed, not attic or damp basement — then bring the new season's clothes forward into the closet.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Seasonal-swap progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Sorted, cleaned, dried, folded into breathing bins with cedar tucked in, labeled, and stashed cool and dry — the off-season clothes are safe and the closet's yours again. Same easy swap in about six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs of trouble — and when to call a pro</h2>
+    <p class="sub">Well-stored clothes come out next season exactly as they went in: fresh, soft, and ready to wear. These are the warning signs that something's gone wrong in storage — and the handful of pieces valuable or delicate enough to hand to a professional rather than risk yourself:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Moth holes or little larvae casings.</strong> Small, clustered holes in wool or cashmere, or tiny silk tubes and grain-like casings in the folds, mean an active infestation. Don't just reseal it — isolate the affected items, clean everything (washing or freezing kills eggs and larvae), and treat the whole storage spot before anything else goes back.</li>
+        <li><strong>A musty, mildew smell.</strong> That damp basement odor means moisture got trapped — clothes went in damp, or the spot is too humid. Wash and fully dry the items, air the container out in the sun, and move storage somewhere cooler and drier; a lingering smell on a valuable piece is worth a pro cleaner.</li>
+        <li><strong>Set-in yellow or brown stains.</strong> Marks that appeared in storage are oxidized body oils that have set. Home stain treatment sometimes helps if caught early; for a white shirt, a wedding dress, or anything precious, a professional cleaner has the best shot — and time is against you.</li>
+        <li><strong>Flattened down or crushed knits.</strong> A down jacket or wool sweater that comes out limp was likely sealed in plastic or overpacked. A gentle wash and tumble (with dryer balls for down) often restores loft; if it doesn't recover, the storage method, not the garment, was the problem to fix.</li>
+        <li><strong>Wedding dresses, heirloom wool &amp; fine silk.</strong> Irreplaceable or very delicate pieces are worth professional cleaning and archival storage — acid-free boxes and tissue, climate-controlled if possible. A wedding-dress preservation service is built precisely for the decades-long, perfect-condition storage these need.</li>
+        <li><strong>Leather, suede &amp; structured outerwear.</strong> Leather and suede need air (never sealed plastic, which dries and molds them), gentle conditioning before storage, and a breathable cover on a wide hanger. For valuable leather or tailored coats, a leather specialist's clean-and-condition before the off-season is money well spent.</li>
+        <li><strong>Pro tip:</strong> condition and protect the things going <em>into</em> storage before you pack them — <a href="condition-leather.html">condition leather goods</a> so they don't dry out, and <a href="waterproof-boots.html">re-treat boots</a> so they store ready to wear — and they'll come out next season in far better shape.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How should I store winter clothes (and summer clothes) for the off-season?</summary>
+      <p>The method is the same in both directions, only the contents change. Clean every item first, dry it fully, then fold heavy knits and bulky things flat into breathable cotton or canvas bins, and hang structured pieces — coats, blazers, dresses — in cotton garment bags. Tuck a cedar block or lavender sachet among the folds, label each container with what's inside and the date, and stash it in a cool, dark, dry spot off the floor: a closet shelf, under the bed, or a dry spare room. Packing winter away in spring, you're protecting wool, cashmere, and down from moths and crushing; packing summer away in fall, you're mostly saving closet space, so linens and cottons can go more simply into the same breathable bins. In both cases, avoid sealed plastic for anything natural-fiber, and bring the incoming season's clothes forward into the closet as you go.</p>
+    </details>
+    <details>
+      <summary>Do I really need to wash everything before storing it?</summary>
+      <p>Yes — this is the single most important rule, and the one most people skip. Clothes that look perfectly clean still carry sweat, body oils, deodorant residue, and invisible food and drink traces. Two bad things happen to that residue over months in a dark box. First, it's exactly what clothes moths and carpet beetles are drawn to — they're after the proteins in your sweat and skin oils as much as the wool itself, so an unwashed sweater is far likelier to get eaten than a clean one. Second, oils and stains oxidize and set over time, turning into permanent yellow and brown marks (the classic yellowed underarms and collar) that no amount of later washing removes. So launder or dry-clean per the care tag before storing — every item, even one you wore once — and make sure it's completely dry before it goes in.</p>
+    </details>
+    <details>
+      <summary>Are vacuum-seal bags good for clothes storage?</summary>
+      <p>For the right clothes, short-term, they're great; for the wrong ones, long-term, they cause damage. Vacuum bags are excellent for sturdy synthetics, cottons, and bedding when you need to save maximum space — sucking the air out crushes bulk down to a fraction of the size, and the seal keeps out moths and dust. The problem is natural fibers and lofted items: down, wool, and cashmere need air, and compressing them for months crushes the loft out of down (it may not fully recover) and creases knits hard. Worse, any residual moisture sealed in with no airflow can yellow fabric and breed mildew. So use vacuum bags for puffy synthetic comforters and casual cottons over a single season, but store your good wool, cashmere, silk, and down in breathable cotton bins and garment bags instead.</p>
+    </details>
+    <details>
+      <summary>How do I keep moths out without using mothballs?</summary>
+      <p>Start with the foundation: moths go for soiled natural fibers, so cleaning everything before storage removes most of the attraction. Then store clean clothes in breathable but reasonably closed containers — sealed cotton bins or zipped garment bags — so adult moths can't get in to lay eggs. For scent-based deterrents, skip mothballs entirely: their active ingredients (naphthalene or paradichlorobenzene) are toxic to breathe and the smell saturates fabric and lingers for years. Use cedar (blocks, hangers, or chips) or dried lavender sachets instead — both repel moths, and you can refresh cedar's strength by lightly sanding the surface or adding a drop of cedar oil when the scent fades. If you ever find an active infestation, washing in hot water or sealing items in a freezer for a few days kills eggs and larvae before you re-store them.</p>
+    </details>
+    <details>
+      <summary>Where's the best place to store off-season clothes?</summary>
+      <p>Cool, dark, and dry, off the floor — those four conditions matter more than the exact room. Heat accelerates fabric breakdown and yellowing, light fades color, and damp grows mildew, so the worst common spots are precisely the ones people reach for: a hot attic, a damp basement, and an uninsulated garage (which also invites pests). The best spots are interior and climate-stable: a bedroom closet's top shelf, under-bed boxes, a dry spare-room closet, or a hallway linen closet. Keep bins off concrete floors — set them on a shelf or a low rack so any floor moisture can't wick up — and keep them out of direct sunlight. If a basement is genuinely your only option, choose one that stays dry, use a dehumidifier, raise everything off the floor, and check on it periodically.</p>
+    </details>
+    <details>
+      <summary>Should I hang or fold — and how do I store sweaters, down, and leather?</summary>
+      <p>The rule of thumb is fold the heavy and knitted, hang the structured and tailored. Sweaters, cashmere, and any chunky knit should be folded flat — hanging stretches them into drooping shoulders and saggy hems that don't recover; fold along the seams, and lay acid-free tissue in the folds of the finest pieces to prevent hard creases. Down (jackets, vests, comforters) should be stored loosely so the loft isn't crushed — a breathable bin with room to spare, or hung in a roomy garment bag, never compressed in a vacuum bag for the long haul. Leather and suede need to breathe and stay supple: condition them first so they don't dry out, hang them on a wide, padded hanger inside a cotton garment bag (never sealed plastic, which can dry the leather or trap moisture and mold it), and keep them somewhere cool and not too dry. Tailored coats, blazers, and dresses are the clear hang-it cases — on sturdy hangers, in breathable bags.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The seasonal swap is easy to put off — until the closet's a mess and the moths have moved in.</h2>
+        <p>Twice a year the clothes need rotating, and it's a small job that quietly turns into a big one the longer it waits. Let Upkeep Ledger time the spring and fall swaps so it's a quick, clean afternoon every time — logged and resurfaced on schedule, right alongside the gutters, the HVAC filter, and every other quiet task that keeps your home and your wardrobe in good shape.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=store-seasonal-clothes&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=store-seasonal-clothes&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Always follow the care label on each garment; fabrics, fills, and finishes vary, and the manufacturer's cleaning and storage instructions outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { climate: null, space: null, fibers: null, spot: null };
+
+  var FREQ_LABEL = {
+    3: "Every 3 months",
+    6: "Twice a year",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Climate — four seasons vs mild */
+    if (s.climate === "four") {
+      tighten = true;
+      reasons.push("With four distinct seasons, whole categories of clothing go dormant for months — heavy coats and wool in summer, swimwear and linens in winter — so a full twice-a-year swap frees real closet space and protects what's resting.");
+    } else {
+      reasons.push("A mild, two-season climate keeps more of your wardrobe in play year-round, so there's less that truly needs packing away — a lighter swap, or even once a year, can be plenty.");
+    }
+
+    /* Space — tight vs roomy */
+    if (s.space === "tight") {
+      tighten = true;
+      reasons.push("A tight closet that only holds one season comfortably makes rotating non-negotiable — it's the only way to keep clothes uncrushed and easy to find, so plan on the full twice-a-year swap.");
+    } else {
+      reasons.push("A roomy closet with space to spare means you're not forced to rotate to fit everything, so you can stretch the swap or do a lighter pass.");
+    }
+
+    /* Fibers — natural vs synthetic */
+    if (s.fibers === "natural") {
+      tighten = true;
+      reasons.push("Lots of wool, cashmere, down, and delicates is exactly what moths eat and what bad storage ruins — these reward the care of a proper clean-and-pack-away every season.");
+    } else {
+      reasons.push("A wardrobe of mostly synthetics, denim, and sturdy cottons is far more forgiving — it isn't moth food and survives simpler storage, so the swap is more about space than protection.");
+    }
+
+    /* Spot — good vs bad storage location */
+    if (s.spot === "bad") {
+      reasons.push("A damp basement, hot attic, or garage is the riskiest place to store clothes — so if that's your only option, store less, check it often, and lean toward shorter intervals so problems get caught early.");
+    } else {
+      reasons.push("A clean, dry closet shelf or under-bed spot is the ideal place to store off-season clothes — cool, dark, and dry is exactly what keeps them safe between swaps.");
+    }
+
+    /* Best-case relaxation: mild climate, roomy closet, forgiving fibers, good spot */
+    if (s.climate === "mild" && s.space === "roomy" && s.fibers === "synthetic") {
+      months = 12;
+      tighten = false;
+      reasons.push("A mild climate, a roomy closet, and a forgiving, mostly-synthetic wardrobe is the one case where a light once-a-year pass — tidy, refold, and tuck away the little that's truly off-season — is genuinely enough.");
+    } else if (tighten) {
+      months = 6;
+    }
+
+    /* Closing note */
+    var note;
+    if (s.fibers === "natural") {
+      note = "<strong>For natural fibers, cleaning is everything:</strong> wash or dry-clean every wool, cashmere, and silk piece before it goes away, then add cedar or lavender. Moths chase the body oils on \"clean-looking\" clothes — take that away and you take away the buffet.";
+    } else if (s.spot === "bad") {
+      note = "<strong>Make the most of a tough storage spot:</strong> get bins up off the floor, run a dehumidifier if it's damp, keep clothes out of any direct light, and open things up to check a couple of times over the season so trapped moisture or pests get caught early.";
+    } else if (s.space === "tight") {
+      note = "<strong>In a tight closet, breathable still beats sealed:</strong> use under-bed cotton bins and slim garment bags to reclaim space without resorting to vacuum bags on your good knits and down — those crush the loft and trap moisture.";
+    } else {
+      note = "<strong>Remember the order:</strong> sort and cull, clean and fully dry, fold or hang into breathable containers, add cedar, then label and store cool, dark, and dry — and bring the new season's clothes forward as you go.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.climate || !quizState.space || !quizState.fibers || !quizState.spot) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: swap your seasonal clothes " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Sort and cull, clean and fully dry, then <strong>fold or hang everything into breathable containers, add cedar, and store it cool, dark, and dry</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Sort & cull", text: "Pull everything for the season you're packing away", note: "Gather all the off-season clothing into one place so you can see it together — coats, knits, and boots in spring; linens, swimwear, and tees in fall. You can't sort what's still scattered across drawers and the closet." },
+    { phase: "Sort & cull", text: "Cull honestly — donate or set aside to repair", note: "If you didn't wear it this year, be honest: donate it or put it in a repair pile. Storing only what you'll actually use saves space and means you're not babying clothes you've quietly stopped loving." },
+    { phase: "Sort & cull", text: "Set aside anything needing a pro or special care", note: "Pull out fine silk, heirloom wool, leather and suede, and anything precious like a wedding dress — these may want professional cleaning and archival storage rather than a bin." },
+    { phase: "Clean & dry", text: "Clean every item going into storage", note: "Launder or dry-clean per the care tag — even pieces worn once. Invisible body oils and food traces attract moths and oxidize into permanent stains over months. \"Looks clean\" isn't clean enough." },
+    { phase: "Clean & dry", text: "Air out dry-cleaning and remove the plastic", note: "Take garments out of the dry-cleaner's plastic film, which traps chemicals and moisture, and let them air for a few hours before packing." },
+    { phase: "Clean & dry", text: "Make sure everything is bone-dry", note: "Even slightly damp fabric breeds mildew and a musty smell in a closed container. Let everything dry completely — give it an extra hour if you're unsure — before it goes in." },
+    { phase: "Pack right", text: "Choose breathable containers — not sealed plastic", note: "Use cotton or canvas bins for folded clothes and cotton garment bags for hanging pieces. Sealed plastic traps moisture, yellows fabric, and crushes the loft out of down and wool over time." },
+    { phase: "Pack right", text: "Fold heavy knits flat; hang only tailored pieces", note: "Fold sweaters, cashmere, and chunky knits along the seams — hanging stretches them. Lay acid-free tissue in the folds of delicate items, and reserve sturdy hangers for coats, blazers, and dresses." },
+    { phase: "Pack right", text: "Pack loosely — don't overstuff", note: "Leave room so clothes aren't crushed and air can move. Overpacking creases everything and squeezes the loft out of down; a half-full breathable bin protects better than a crammed one." },
+    { phase: "Protect & store", text: "Tuck in cedar or lavender — never mothballs", note: "Add cedar blocks or lavender sachets among the folds to deter moths. Skip mothballs: the active ingredients are toxic and the smell lingers for years. Refresh cedar by lightly sanding it." },
+    { phase: "Protect & store", text: "Label, then store cool, dark, and dry off the floor", note: "Write what's inside and the date on each container. Stash it on a closet shelf, under the bed, or a dry spare room — off the floor, out of direct light, and away from hot attics and damp basements." },
+    { phase: "Protect & store", text: "Bring the new season forward and log the date", note: "Move the incoming season's clothes up into the closet so they're ready to wear. Note the date so the next swap lands in about six months (or your quiz interval) — nothing about a packed bin reminds you." }
+  ];
+
+  var LS_KEY = "upkeepguides:store-seasonal-clothes:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

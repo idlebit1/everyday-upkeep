@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check your fire extinguisher — UpkeepGuides.com</title>
+<meta name="description" content="A 30-second fire-extinguisher check that makes sure it actually works the day you need it: gauge in the green, pin and seal intact, no rust or damage, plus the right ABC type, placement, and when to recharge or replace.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Check your fire extinguisher — UpkeepGuides.com">
+<meta property="og:description" content="A 30-second fire-extinguisher check that makes sure it actually works the day you need it: gauge in the green, pin and seal intact, no rust or damage, plus the right ABC type, placement, and when to recharge or replace.">
+<meta property="og:url" content="https://upkeepguides.com/check-fire-extinguisher.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check your fire extinguisher — UpkeepGuides.com">
+<meta name="twitter:description" content="A 30-second fire-extinguisher check that makes sure it actually works the day you need it: gauge in the green, pin and seal intact, no rust or damage, plus the right ABC type, placement, and when to recharge or replace.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 6 months</span>
+      <h1>Check Your Fire Extinguisher</h1>
+      <p class="lede">It hangs on the wall for years and you stop seeing it — until the one minute you need it, when a pan flares up or a cord starts smoking and there's no time to wonder whether it works. A fire doubles in size every thirty to sixty seconds, so the extinguisher only helps if it's charged, sealed, and within reach in those first moments. The good news: confirming it's ready takes about thirty seconds. Glance at the gauge — is the needle in the green? Is the pin and tamper seal still in place? Any dents, rust, or a clogged hose? For a dry-chemical unit, lift it and give it a shake so the powder hasn't caked at the bottom. Do that a couple of times a year and it'll be ready the day it matters.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Glance <em>monthly</em>, check <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~30 sec</em> per unit</span>
+        <span class="chip">🧯 Right type: <em>ABC</em></span>
+        <span class="chip">💸 Costs <em>$0</em> to check</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a red fire extinguisher mounted on a kitchen or garage wall: a hand checks the round pressure gauge, the needle sitting in the green zone, the pull pin and tamper seal are in place at the handle, and a paper inspection tag hangs from the neck; the scene is calm and reassuring">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall panel behind the extinguisher -->
+      <rect x="120" y="30" width="320" height="330" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- subtle wall tile / board lines -->
+      <g stroke="#efe7d8" stroke-width="3">
+        <line x1="120" y1="120" x2="440" y2="120"/>
+        <line x1="120" y1="210" x2="440" y2="210"/>
+        <line x1="120" y1="300" x2="440" y2="300"/>
+      </g>
+      <!-- baseboard / floor edge -->
+      <rect x="110" y="356" width="340" height="14" rx="4" fill="#8a6a4f"/>
+
+      <!-- wall mounting bracket -->
+      <rect x="226" y="208" width="80" height="14" rx="4" fill="#8a6a4f"/>
+      <rect x="200" y="148" width="14" height="120" rx="4" fill="#b9b1a3"/>
+      <path d="M214 168 q34 -14 52 0" fill="none" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <path d="M214 250 q34 14 52 0" fill="none" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- extinguisher body (terracotta red-orange cylinder) -->
+      <rect x="216" y="120" width="100" height="180" rx="22" fill="#d9663f"/>
+      <!-- body shading stripe -->
+      <rect x="222" y="124" width="20" height="172" rx="10" fill="#c96f4a" opacity="0.55"/>
+      <!-- white instruction label band -->
+      <rect x="234" y="178" width="64" height="78" rx="8" fill="#fffdf8"/>
+      <g fill="#b9b1a3">
+        <rect x="242" y="188" width="48" height="6" rx="3"/>
+        <rect x="242" y="200" width="40" height="5" rx="2.5"/>
+        <rect x="242" y="210" width="44" height="5" rx="2.5"/>
+      </g>
+      <!-- little PASS pictograms on the label -->
+      <g fill="#d9663f">
+        <circle cx="248" cy="232" r="6"/>
+        <circle cx="266" cy="232" r="6"/>
+        <circle cx="284" cy="232" r="6"/>
+      </g>
+
+      <!-- neck / valve assembly -->
+      <rect x="244" y="100" width="44" height="24" rx="6" fill="#8a6a4f"/>
+      <!-- carry + squeeze handle -->
+      <path d="M236 96 h60 a8 8 0 0 1 8 8 v6 h-12 v-6 h-52 v6 h-12 v-6 a8 8 0 0 1 8 -8 z" fill="#5e9a78"/>
+      <rect x="248" y="86" width="40" height="12" rx="5" fill="#3e7c59"/>
+
+      <!-- pull pin + tamper seal -->
+      <circle cx="306" cy="104" r="9" fill="none" stroke="#e0a93d" stroke-width="5"/>
+      <line x1="306" y1="104" x2="232" y2="104" stroke="#e0a93d" stroke-width="5" stroke-linecap="round"/>
+      <!-- tamper seal -->
+      <path d="M306 113 l7 12 l-14 0 z" fill="#d98e3b"/>
+
+      <!-- pressure gauge (round, green zone) -->
+      <circle cx="262" cy="150" r="26" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <!-- green safe arc -->
+      <path d="M246 134 A22 22 0 0 1 278 134" fill="none" stroke="#3e7c59" stroke-width="7" stroke-linecap="round"/>
+      <!-- low / high fail edges -->
+      <path d="M243 138 A22 22 0 0 0 240 150" fill="none" stroke="#c96f4a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M281 138 A22 22 0 0 1 284 150" fill="none" stroke="#c96f4a" stroke-width="6" stroke-linecap="round"/>
+      <!-- needle pointing into the green -->
+      <line x1="262" y1="150" x2="262" y2="130" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="262" cy="150" r="3.5" fill="#33393b"/>
+
+      <!-- hose curling down the side -->
+      <path d="M288 132 q40 6 34 60 q-4 40 -10 70" fill="none" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <!-- nozzle -->
+      <path d="M306 296 l16 6 l-4 14 l-16 -6 z" fill="#5e9a78"/>
+
+      <!-- paper inspection tag hanging from the neck -->
+      <line x1="250" y1="112" x2="180" y2="138" stroke="#b9b1a3" stroke-width="2.5"/>
+      <rect x="150" y="138" width="44" height="58" rx="5" fill="#fffdf8" stroke="#c9a06b" stroke-width="2.5" transform="rotate(-6 172 167)"/>
+      <g transform="rotate(-6 172 167)">
+        <rect x="158" y="148" width="28" height="5" rx="2.5" fill="#3e7c59"/>
+        <rect x="158" y="160" width="24" height="4" rx="2" fill="#b9b1a3"/>
+        <rect x="158" y="170" width="26" height="4" rx="2" fill="#b9b1a3"/>
+        <path d="M160 184 l5 5 l9 -11" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- hand checking the gauge -->
+      <ellipse cx="246" cy="172" rx="17" ry="13" fill="#e8b48f" transform="rotate(-18 246 172)"/>
+      <!-- pointing finger toward gauge -->
+      <path d="M250 162 q10 -7 16 -14" stroke="#e8b48f" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M236 178 q-6 5 -2 12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M240 184 q-26 22 -54 30" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+
+      <!-- small reassuring sparkle near the green gauge -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M300 158 l0 10 M295 163 l10 0"/>
+      </g>
+
+      <!-- a little potted plant for warmth, right -->
+      <path d="M404 332 h30 l-5 28 h-20 z" fill="#c96f4a"/>
+      <path d="M418 332 q-3 -22 -13 -30" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M418 332 q4 -20 15 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="402" cy="298" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 402 298)"/>
+      <ellipse cx="433" cy="302" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 433 302)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A fire extinguisher is the rare household device you buy hoping never to use — which is exactly why it gets forgotten on the wall, slowly losing pressure or caking inside while you assume it's fine. The whole value of one is that it works <em>instantly</em>, in the seconds that decide whether a small fire stays small. Here's what's actually at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 c4 6 -2 8 0 13 c5 -3 6 4 4 9 c4 -2 5 -8 2 -13 c4 4 6 11 1 17 c-3 4 -11 4 -14 -1 c-4 -6 0 -13 4 -16 c-1 5 2 7 3 4 c1 -4 -3 -7 -3 -13 z" fill="#d9663f"/>
+          <path d="M18 16 c2 3 -1 4 0 7 c2 -1 3 2 1 5 c-2 2 -6 1 -7 -2 c-1 -3 1 -6 3 -8 c0 3 1 3 2 2 c0 -2 -2 -3 -2 -4 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>A fire doubles in ~30–60 seconds</h3>
+        <p>Those first moments are everything. A small grease or wastebasket fire can be put out by hand — but only if the extinguisher is charged and reachable right now. Seconds spent finding a dud are seconds the fire uses to grow past anything you can stop.</p>
+        <span class="cost">The window to act closes fast</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M9 12 A11 11 0 0 1 27 12" fill="none" stroke="#c96f4a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="18" y1="18" x2="11" y2="22" stroke="#33393b" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18" cy="18" r="2.4" fill="#33393b"/>
+        </svg></div>
+        <h3>Pressure leaks &amp; powder cakes</h3>
+        <p>An extinguisher quietly loses charge over the years, and the dry chemical inside can pack into a solid cake at the bottom. A unit bought a decade ago and never touched may do absolutely nothing when you squeeze the handle — without warning.</p>
+        <span class="cost">A unit that does nothing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="13" y="9" width="10" height="20" rx="4" fill="#d9663f"/>
+          <rect x="14" y="6" width="8" height="5" rx="2" fill="#5e9a78"/>
+          <rect x="9" y="14" width="18" height="2.6" rx="1.3" fill="#8a6a4f"/>
+          <path d="M9 30 l18 0" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M27 11 l5 -2 l0 4 l-5 1 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>The right type &amp; place matter</h3>
+        <p>You want an ABC unit — good for ordinary combustibles, liquids, and electrical fires — mounted by the exit near the kitchen, the garage, and on each floor. One buried in a cabinet or down in the basement is an extinguisher you can't reach in time.</p>
+        <span class="cost">Wrong type or out of reach</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="10" width="14" height="20" rx="5" fill="#d9663f"/>
+          <rect x="13" y="7" width="10" height="5" rx="2" fill="#5e9a78"/>
+          <rect x="9" y="16" width="20" height="9" rx="2" fill="#fffdf8"/>
+          <line x1="9" y1="9" x2="27" y2="29" stroke="#c96f4a" stroke-width="3" stroke-linecap="round"/>
+        </svg></div>
+        <h3>After any use, it's done</h3>
+        <p>Even a one-second burst breaks the seal and bleeds pressure, so a partly-used extinguisher is an empty promise — it may not have enough left to finish a fire. Once it's discharged at all, it must be professionally recharged or replaced before it goes back on the wall.</p>
+        <span class="cost">A false sense of safety</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check yours?</h2>
+    <p class="sub">A quick glance at the gauge every month plus a thorough hands-on check every six months covers nearly every home. But an old or unknown unit, a damp garage or coastal climate, or having just one extinguisher for the whole house all push toward checking more often — and replacing sooner. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="coverage">
+        <div class="q-label">1. How many extinguishers, and where?</div>
+        <div class="pills">
+          <button class="pill" data-v="one">Just one for the whole house</button>
+          <button class="pill" data-v="some">A couple, in key spots</button>
+          <button class="pill" data-v="full">Kitchen, garage &amp; each floor</button>
+        </div>
+        <div class="q-hint">If a single unit is your whole plan, it had better always work — so check it more often. Good coverage means an ABC extinguisher near the kitchen and garage and on every floor, each mounted by an exit.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">2. Do you know the type and age?</div>
+        <div class="pills">
+          <button class="pill" data-v="unknown">Not sure — old or inherited</button>
+          <button class="pill" data-v="aging">Known, but getting up there</button>
+          <button class="pill" data-v="fresh">ABC, in date, fairly new</button>
+        </div>
+        <div class="q-hint">An extinguisher of unknown type or age is a question mark in an emergency. If you can't confirm it's an in-date ABC unit, the safest move is usually to replace it rather than trust it.</div>
+      </div>
+      <div class="quiz-q" data-q="env">
+        <div class="q-label">3. Where does it live?</div>
+        <div class="pills">
+          <button class="pill" data-v="damp">Garage, basement, or coastal/humid</button>
+          <button class="pill" data-v="mixed">A bit of both</button>
+          <button class="pill" data-v="dry">Dry, climate-controlled indoors</button>
+        </div>
+        <div class="q-hint">Damp, salty, or temperature-swinging spots speed up corrosion on the cylinder and valve — exactly the places extinguishers often live. Those units deserve a closer look and earlier replacement.</div>
+      </div>
+      <div class="quiz-q" data-q="kind">
+        <div class="q-label">4. Rechargeable or disposable?</div>
+        <div class="pills">
+          <button class="pill" data-v="disposable">Disposable (plastic valve, no recharge)</button>
+          <button class="pill" data-v="notsure">Not sure</button>
+          <button class="pill" data-v="rechargeable">Rechargeable (metal valve)</button>
+        </div>
+        <div class="q-hint">Disposable units can't be refilled and have an expiration date — replace at the date. Rechargeable units have a metal valve and a service schedule, but they're built to last and refill, which is why most households are better off with them.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Checking an extinguisher costs nothing but thirty seconds. Even replacing one is cheap — a household ABC unit runs about $20–50, and a professional recharge is roughly $15–40. Set any of that against the one thing it's there to prevent: a small fire that grows into a catastrophic one because the extinguisher on the wall turned out to be empty.</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to check it — a glance at the gauge, a look at the pin and seal, and a shake takes about thirty seconds</div></div>
+        <div class="calc-stat"><div class="v">$20–50</div><div class="l">a new household ABC extinguisher — the right type for kitchens, garages, and general home use</div></div>
+        <div class="calc-stat"><div class="v bad">$15–40</div><div class="l">a professional recharge after any use, or on a rechargeable unit's service schedule</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧯 Checking the gauge, pin, and seal</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔁 Recharging a used or due rechargeable unit</span><span>$15–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🆕 Replacing an old or expired extinguisher</span><span>$20–50</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:20%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 A kitchen fire that spreads to the cabinets</span><span>$1,000s in damage</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏠 A house fire a working extinguisher could have stopped</span><span>Everything</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>thirty seconds and, at most, a $20–50 replacement</strong> against the loss when a fire that an extinguisher could have stopped in the first minute instead takes the kitchen, the floor, or the whole house. A working extinguisher is the cheapest insurance in the home — but only the day it's actually charged and reachable. The check is what keeps it that way.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check your fire extinguisher</h2>
+    <p class="sub">The whole inspection is a thirty-second loop: gauge in the green, pin and tamper seal intact, body and hose undamaged, powder loose (for dry-chem), and the unit in the right place. Read the safety notes first — especially the rule about <em>not</em> test-firing it — then work through the checklist for each extinguisher in the house. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this before you touch it — this is a life-safety device</h3>
+      <ul>
+        <li><strong>Do NOT pull the pin or test-fire it to "check" it.</strong> Even a partial discharge bleeds pressure and can leave it unreliable, and you can't fully reseat the tamper seal afterward. Inspect by looking and lifting — never by spraying.</li>
+        <li><strong>If you ever use it — even for one second — recharge or replace it immediately.</strong> A partly-discharged extinguisher may not have enough charge to finish a fire. Never put a used one back on the wall.</li>
+        <li><strong>Disposable units can't be recharged and they expire.</strong> Many have a roughly 12-year service life from the manufacture date. Replace a disposable unit at its date — don't try to refill it.</li>
+        <li><strong>Rechargeable units need professional service on a schedule.</strong> Commonly an internal service around every 6 years, plus periodic hydrostatic (pressure) testing of the cylinder. Follow the manufacturer's and a licensed servicer's schedule.</li>
+        <li><strong>For dry-chemical units, turn it over and shake or tap it monthly.</strong> This loosens powder that settles and cakes at the bottom, so it discharges fully instead of sputtering.</li>
+        <li><strong>Mount it where you can grab it on the way toward the exit.</strong> Never put it where you'd have to move <em>toward</em> the fire or trap yourself reaching for it. Know the PASS technique — but if a fire is spreading, get everyone out and call 911 first.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your fire extinguisher(s)</span>
+      <span class="tool-chip">Good light to read the gauge</span>
+      <span class="tool-chip">A soft cloth to wipe off dust</span>
+      <span class="tool-chip">The inspection tag (or a phone note)</span>
+      <span class="tool-chip">A pen to date the tag</span>
+      <span class="tool-chip">The owner's manual, if you have it</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a round pressure gauge with a green safe zone in the middle and red fail zones on either side, the needle pointing into the green and labels reading too low and too high">
+          <circle cx="140" cy="84" r="58" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <!-- green safe arc -->
+          <path d="M104 50 A50 50 0 0 1 176 50" fill="none" stroke="#3e7c59" stroke-width="13" stroke-linecap="round"/>
+          <!-- low fail zone -->
+          <path d="M95 60 A50 50 0 0 0 90 84" fill="none" stroke="#c96f4a" stroke-width="12" stroke-linecap="round"/>
+          <!-- high fail zone -->
+          <path d="M185 60 A50 50 0 0 1 190 84" fill="none" stroke="#c96f4a" stroke-width="12" stroke-linecap="round"/>
+          <!-- needle into the green -->
+          <line x1="140" y1="84" x2="140" y2="42" stroke="#33393b" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="140" cy="84" r="6" fill="#33393b"/>
+          <text x="62" y="100" font-size="10" fill="#c96f4a" font-weight="700">low</text>
+          <text x="200" y="100" font-size="10" fill="#c96f4a" font-weight="700">high</text>
+          <text x="64" y="168" font-size="11" fill="#3e7c59" font-weight="700">needle in the GREEN = charged</text>
+        </svg>
+        <h4>Read the pressure gauge</h4>
+        <p>The needle must sit in the green zone. Too low means it has lost charge and may do nothing; too high means it's overpressured. Both are a fail — a green needle is the single most important sign the extinguisher is ready.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the top of an extinguisher showing the pull pin through the handle and a tamper seal, with a note that the pin should pull freely and then be re-secured">
+          <!-- handle -->
+          <rect x="84" y="70" width="112" height="16" rx="6" fill="#5e9a78"/>
+          <rect x="100" y="56" width="80" height="16" rx="6" fill="#3e7c59"/>
+          <!-- valve neck -->
+          <rect x="124" y="86" width="32" height="22" rx="5" fill="#8a6a4f"/>
+          <!-- pull pin ring -->
+          <circle cx="206" cy="78" r="14" fill="none" stroke="#e0a93d" stroke-width="6"/>
+          <line x1="192" y1="78" x2="96" y2="78" stroke="#e0a93d" stroke-width="6" stroke-linecap="round"/>
+          <!-- tamper seal -->
+          <path d="M206 92 l9 16 l-18 0 z" fill="#d98e3b"/>
+          <text x="222" y="60" font-size="10" fill="#6b7376">pin</text>
+          <text x="186" y="128" font-size="10" fill="#6b7376">seal</text>
+          <!-- pulls-freely arrow -->
+          <path d="M222 100 q18 6 18 24 m-7 -8 l7 8 l8 -7" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="40" y="158" font-size="11" fill="#3e7c59" font-weight="700">pin + seal in place, pulls free</text>
+        </svg>
+        <h4>Check the pin &amp; tamper seal</h4>
+        <p>The safety pin and tamper seal should both be in place — a missing one means it may have been used or tampered with. Confirm the pin isn't seized, then leave it secured. Don't actually pull it as a test.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of inspecting an extinguisher body, hose, and nozzle for dents, rust, corrosion, cracks, or clogs, and checking the label is legible">
+          <!-- body -->
+          <rect x="96" y="40" width="64" height="112" rx="16" fill="#d9663f"/>
+          <rect x="100" y="44" width="14" height="104" rx="7" fill="#c96f4a" opacity="0.5"/>
+          <!-- label -->
+          <rect x="110" y="86" width="40" height="42" rx="5" fill="#fffdf8"/>
+          <g fill="#b9b1a3"><rect x="116" y="94" width="28" height="4" rx="2"/><rect x="116" y="104" width="22" height="3.5" rx="1.75"/></g>
+          <!-- rust / corrosion spots flagged -->
+          <circle cx="104" cy="62" r="4" fill="#8a6a4f"/>
+          <circle cx="152" cy="138" r="3.5" fill="#8a6a4f"/>
+          <!-- dent -->
+          <path d="M158 100 q-8 6 0 14" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+          <!-- magnifier inspecting -->
+          <circle cx="206" cy="84" r="20" fill="#dce8ee" stroke="#5e9a78" stroke-width="4"/>
+          <line x1="220" y1="98" x2="236" y2="116" stroke="#5e9a78" stroke-width="6" stroke-linecap="round"/>
+          <!-- hose -->
+          <path d="M150 56 q40 4 36 40" fill="none" stroke="#33393b" stroke-width="6" stroke-linecap="round"/>
+          <text x="56" y="172" font-size="11" fill="#d9663f" font-weight="700">no rust, dents, cracks, or clogs</text>
+        </svg>
+        <h4>Inspect body, hose &amp; nozzle</h4>
+        <p>Look the whole unit over for dents, rust, corrosion, cracks, or a clogged hose or nozzle — any of these can make it fail or burst. Wipe off dust and make sure the label and instructions are still legible.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of lifting a dry-chemical extinguisher to feel it is not empty, then turning it over and shaking or tapping it to loosen settled powder">
+          <!-- inverted extinguisher with motion arcs -->
+          <g transform="rotate(168 140 90)">
+            <rect x="116" y="40" width="48" height="96" rx="14" fill="#d9663f"/>
+            <rect x="120" y="44" width="10" height="88" rx="5" fill="#c96f4a" opacity="0.5"/>
+            <rect x="128" y="30" width="24" height="14" rx="5" fill="#5e9a78"/>
+          </g>
+          <!-- caked powder loosening -->
+          <g fill="#e0a93d">
+            <circle cx="132" cy="60" r="3"/>
+            <circle cx="148" cy="66" r="2.4"/>
+            <circle cx="140" cy="50" r="2.2"/>
+            <circle cx="156" cy="56" r="2.6"/>
+          </g>
+          <!-- shake arrows -->
+          <path d="M196 70 q18 12 0 24 m4 -22 l-5 -2 l1 6 m-1 16 l5 2 l-1 -6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M84 70 q-18 12 0 24 m-4 -22 l5 -2 l-1 6 m1 16 l-5 2 l1 -6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="56" y="170" font-size="11" fill="#3e7c59" font-weight="700">turn over &amp; shake — feel it's not empty</text>
+        </svg>
+        <h4>Lift &amp; shake (dry-chem)</h4>
+        <p>Lift the extinguisher to confirm it feels full, not suspiciously light or empty. For a dry-chemical unit, turn it over and shake or tap it so the powder that settles and cakes at the bottom loosens up and will actually spray.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a floor plan with extinguisher symbols mounted by exits near the kitchen, garage, and each floor, plus an inspection tag being dated">
+          <!-- simple house outline -->
+          <rect x="36" y="40" width="150" height="100" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <line x1="111" y1="40" x2="111" y2="140" stroke="#e9e2d8" stroke-width="3"/>
+          <line x1="36" y1="90" x2="186" y2="90" stroke="#e9e2d8" stroke-width="3"/>
+          <!-- extinguisher dots by exits -->
+          <g fill="#d9663f">
+            <rect x="46" y="62" width="9" height="16" rx="3"/>
+            <rect x="166" y="62" width="9" height="16" rx="3"/>
+            <rect x="46" y="112" width="9" height="16" rx="3"/>
+            <rect x="166" y="112" width="9" height="16" rx="3"/>
+          </g>
+          <!-- exit door marks -->
+          <g fill="#3e7c59"><rect x="44" y="86" width="14" height="4"/><rect x="164" y="86" width="14" height="4"/></g>
+          <!-- inspection tag dated -->
+          <rect x="208" y="56" width="40" height="56" rx="5" fill="#fffdf8" stroke="#c9a06b" stroke-width="3"/>
+          <rect x="216" y="66" width="24" height="5" rx="2.5" fill="#3e7c59"/>
+          <rect x="216" y="78" width="20" height="4" rx="2" fill="#b9b1a3"/>
+          <path d="M216 94 l5 5 l9 -11" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="50" y="166" font-size="11" fill="#3e7c59" font-weight="700">covered by exits — and log the date</text>
+        </svg>
+        <h4>Confirm placement &amp; log it</h4>
+        <p>Make sure an ABC unit is mounted near the kitchen, the garage, and on each floor — by an exit, where you can grab it on the way out. Then note the inspection on the tag so the next check lands on schedule.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Extinguisher-check progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Gauge in the green, pin and seal intact, body and hose sound, powder loose, and the right units in the right places — your extinguishers are ready. Glance at the gauges monthly and run this check again in about six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it needs service or replacing — and when to call a pro</h2>
+    <p class="sub">A ready extinguisher is quietly perfect: needle in the green, pin and seal in place, clean metal, the right type by the exit. These are the signals it needs a professional recharge or an outright replacement — and when in doubt, replace it, because this is one device you can't afford to gamble on:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The gauge needle is out of the green.</strong> Too low means it has lost charge and may not discharge; too high means it's overpressured. Either way it needs a professional recharge (rechargeable) or replacement (disposable) — don't trust it as is.</li>
+        <li><strong>The pin or tamper seal is missing.</strong> A missing pin or broken seal means it may have been discharged or tampered with, even a little. Have it recharged or replace it — you can't assume it's full.</li>
+        <li><strong>Dents, rust, or corrosion on the cylinder or valve.</strong> Damage weakens the pressure vessel and can let it fail or even rupture. Visible rust or corrosion — common in garages and damp or coastal homes — means retire the unit.</li>
+        <li><strong>A clogged, cracked, or brittle hose or nozzle.</strong> If the discharge path is blocked or the hose is cracked, the extinguisher won't spray where you aim it. A pro can service it; if it's a cheap disposable, just replace it.</li>
+        <li><strong>It's past its expiration / manufacture date.</strong> Disposable units typically last about 12 years from manufacture — replace at the date. Rechargeable units need internal service (commonly ~6 years) and periodic hydrostatic testing on schedule.</li>
+        <li><strong>It's been used at all — even a quick burst.</strong> Any discharge means it must be recharged (pro) or replaced before it goes back up. A partly-used extinguisher is not a backup; it's a liability.</li>
+        <li><strong>When in doubt, replace it.</strong> If you can't confirm the type, the age, or that it's an in-date ABC unit, don't bet your home on it — a new household extinguisher is $20–50, and that's the easiest decision you'll make all year.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I check my fire extinguisher?</summary>
+      <p>Two rhythms. Give the gauge a quick glance every month — about ten seconds to confirm the needle is in the green and the unit is still on its bracket, undamaged, and not blocked by clutter. Then do a thorough hands-on check every six months: gauge, pin and tamper seal, the body and hose for dents, rust, corrosion, or clogs, a lift to feel it's full, and a shake to loosen the powder in a dry-chemical unit. On top of your own checks, rechargeable extinguishers need professional service on a schedule (commonly an internal service around every six years, plus periodic hydrostatic pressure testing), and disposable ones get replaced at their expiration date. Pair the six-month check with your <a href="test-smoke-detectors.html">testing smoke detectors</a> and <a href="test-co-detectors.html">testing CO detectors</a> routine so they all land on the same day and nothing gets forgotten.</p>
+    </details>
+    <details>
+      <summary>Should I test it by spraying a little to make sure it works?</summary>
+      <p>No — and this is the most important "don't" with an extinguisher. Even a one-second burst breaks the seal, bleeds off pressure, and starts the powder leaking past the valve, and you can't fully reseat the tamper seal afterward. So a test-fire can actually <em>cause</em> the failure you were trying to rule out, leaving a unit that looks armed but may sputter or do nothing the day you need it. Inspect by looking and lifting instead: confirm the gauge is in the green, the pin and seal are intact, the body and hose are sound, and (for dry-chem) shake it to loosen the powder. If you ever do discharge it — even briefly, even by accident — treat it as spent and have it recharged or replace it immediately rather than putting it back on the wall.</p>
+    </details>
+    <details>
+      <summary>What do the gauge zones mean?</summary>
+      <p>Most household extinguishers have a round pressure gauge with a colored arc. The green zone in the middle is "good to go" — the unit is at proper operating pressure. If the needle has drifted to the left of green (often a red "recharge" zone), it has lost pressure and may not discharge fully or at all; that's a fail. If it has crept to the right of green into an "overcharge" zone, it's overpressured, which can also cause it to malfunction — also a fail. In short, only a needle sitting squarely in the green means ready; anything else means recharge it (if rechargeable) or replace it (if disposable). Temperature can nudge the needle slightly, but a unit that reads well outside the green at room temperature needs attention, not a wait-and-see.</p>
+    </details>
+    <details>
+      <summary>Do fire extinguishers expire, and when do I replace one?</summary>
+      <p>Yes — they don't last forever. Disposable extinguishers (the kind with a plastic valve head that can't be refilled) have a service life of roughly 12 years from their manufacture date; once you hit that date, replace the whole unit. Rechargeable extinguishers (metal valve) are built to be serviced and refilled, but they're not maintenance-free: they typically need an internal service on a schedule — commonly around every six years — plus periodic hydrostatic (pressure) testing of the cylinder, and of course a recharge after any use. Beyond the calendar, replace any extinguisher right away if the gauge is out of the green, the pin or seal is missing, or you see dents, rust, or corrosion. And if you simply can't tell how old it is or what type it is, the safe and inexpensive answer is to replace it — guessing isn't worth it with a life-safety device.</p>
+    </details>
+    <details>
+      <summary>What type and how many do I need, and where do they go?</summary>
+      <p>For a home, you want multipurpose ABC extinguishers. The letters are the fire classes they handle: A is ordinary combustibles (wood, paper, cloth), B is flammable liquids (grease, oil, gasoline), and C is energized electrical equipment — so an ABC unit covers the realistic mix of household fires in one. As for how many: at minimum one on each floor, plus one near the kitchen and one in the garage or workshop, since that's where fires actually start. Mount each one by an exit at a reachable height, so you can grab it on the way <em>out</em> of a room rather than having to move toward the flames. Don't bury an extinguisher in a cabinet, behind boxes, or down in a far corner of the basement — an extinguisher you can't reach in a few seconds isn't protecting much.</p>
+    </details>
+    <details>
+      <summary>Rechargeable vs. disposable — which should I buy?</summary>
+      <p>For most homes, a rechargeable ABC unit is the better buy. You can tell them apart by the valve head: disposable units have a plastic head and must be thrown out (and replaced) once used or expired, while rechargeable units have a metal head and can be professionally refilled. Rechargeables cost a little more up front but last longer, can be serviced rather than landfilled, and — crucially — can be recharged after a small kitchen fire instead of forcing you to buy a whole new one. Disposables are fine as inexpensive backups or for spots where simplicity matters, but remember they still expire (around 12 years) and can't be tested or topped up. Whichever you choose, the rules are the same: keep the gauge in the green, recharge or replace after any use, and replace at the expiration date. While you're thinking about home safety, it's a great time to round out the basics — <a href="replace-smoke-detector-batteries.html">replacing detector batteries</a>, <a href="test-gfci-outlets.html">testing GFCI outlets</a>, and <a href="update-emergency-kit.html">updating the emergency kit</a>.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The device you hope to never use — and can't afford to have fail.</h2>
+        <p>A fire extinguisher is a thirty-second check twice a year, on the one tool whose entire job is to work instantly the day it matters. Upkeep Ledger logs each inspection and resurfaces it on schedule — right alongside your smoke and CO detector tests — so the gauge stays in the green, the unit stays in date, and the safest device in the house never quietly becomes a dud.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-fire-extinguisher&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-fire-extinguisher&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This guide is general home-safety information, not professional fire-safety advice; follow your extinguisher's manufacturer instructions and local fire codes, have units serviced by a licensed professional, and in a real fire get everyone out and call 911.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { coverage: null, age: null, env: null, kind: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Coverage — how many / where */
+    if (s.coverage === "one") {
+      months = 1;
+      tighten = true;
+      reasons.push("With a single extinguisher covering the whole house, it absolutely has to work — so glance at it monthly, and seriously consider adding units near the kitchen, the garage, and on each floor.");
+    } else if (s.coverage === "full") {
+      reasons.push("An ABC unit near the kitchen, the garage, and on each floor by an exit is exactly the coverage you want — now it's just about keeping each one ready.");
+    } else {
+      reasons.push("A couple of units in key spots is a solid start; aim to round it out so there's an ABC extinguisher near the kitchen, the garage, and on every floor.");
+    }
+
+    /* Age — type & age */
+    if (s.age === "unknown") {
+      months = 1;
+      tighten = true;
+      reasons.push("An extinguisher of unknown type or age is a gamble in an emergency — the safest move is usually to replace it with a fresh, in-date ABC unit rather than trust it, and check it often until you do.");
+    } else if (s.age === "aging") {
+      if (months > 6) months = 6;
+      reasons.push("A known but aging unit is worth watching closely as it nears its service or expiration date — keep an eye on the gauge and plan to recharge or replace it on schedule.");
+    } else {
+      reasons.push("A fairly new, in-date ABC extinguisher is in great shape — a routine check is all it needs.");
+    }
+
+    /* Environment — humidity / corrosion */
+    if (s.env === "damp") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("Garages, basements, and humid or coastal homes speed up corrosion on the cylinder and valve, so inspect those units more closely for rust and plan to replace them earlier than a dry-stored one.");
+    } else if (s.env === "dry") {
+      reasons.push("A dry, climate-controlled spot is gentle on the cylinder and valve, so corrosion isn't pushing your schedule.");
+    } else {
+      reasons.push("A mix of locations means at least the damp-stored units deserve a closer look for rust and earlier replacement.");
+    }
+
+    /* Kind — rechargeable vs disposable */
+    if (s.kind === "disposable") {
+      reasons.push("Disposable units can't be refilled and expire (often around 12 years) — so the plan is simple: check the gauge, and replace the whole unit at its date or after any use.");
+    } else if (s.kind === "notsure") {
+      tighten = true;
+      reasons.push("Not knowing whether it's rechargeable or disposable is itself a reason to look closer — check the valve head (plastic = disposable, metal = rechargeable) so you know whether it can be serviced or must be replaced.");
+    } else {
+      reasons.push("A rechargeable unit is the durable choice — keep up its professional service schedule (commonly internal service around every six years plus periodic pressure testing) and recharge it after any use.");
+    }
+
+    /* Best-case relaxation: full coverage, fresh in-date, dry, rechargeable */
+    if (!tighten && s.coverage === "full" && s.age === "fresh" && s.env === "dry" && s.kind === "rechargeable") {
+      months = 12;
+      reasons.push("Good coverage, fresh in-date ABC units, dry storage, and rechargeable construction is the one case where a thorough hands-on check once a year is genuinely enough — just keep the monthly gauge glance going in between.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.kind === "disposable") {
+      note = "<strong>Remember the longer intervals:</strong> a disposable unit can't be recharged — replace it at its expiration date (often around 12 years from manufacture), or immediately after any use. And never test-fire it to \"check\" it; that's how a good unit becomes a dud.";
+    } else if (s.age === "unknown" || s.kind === "notsure") {
+      note = "<strong>When in doubt, replace it:</strong> if you can't confirm the type, age, or that it's an in-date ABC unit, a new household extinguisher is only $20–50 — far cheaper than betting your home on a question mark.";
+    } else if (s.env === "damp") {
+      note = "<strong>Watch for corrosion:</strong> damp and coastal storage rusts cylinders and valves, so inspect closely and retire any unit showing rust. Rechargeables still need professional service (commonly ~6 years internal, plus periodic hydrostatic testing).";
+    } else {
+      note = "<strong>Don't forget the longer schedule:</strong> beyond your own checks, rechargeable units need professional service (commonly internal service around every six years plus periodic pressure testing), and disposable units get replaced at their expiration date — and any unit that's been used must be recharged or replaced right away.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.coverage || !quizState.age || !quizState.env || !quizState.kind) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: do a thorough check " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Glance at the gauge monthly, and run the full inspection — <strong>gauge in the green, pin and seal intact, body and hose sound, powder loose, and the right unit in the right place</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Gauge & seal", text: "Read the pressure gauge — needle in the green", note: "The single most important check. Green means it's at operating pressure and ready. Too low (lost charge) or too high (overpressure) are both a fail — recharge it if rechargeable, replace it if disposable." },
+    { phase: "Gauge & seal", text: "Confirm the pull pin is in place and not seized", note: "The safety pin should be seated through the handle. Check it isn't bent or stuck — but do NOT pull it as a test. Just confirm it's there and would pull free in an emergency." },
+    { phase: "Gauge & seal", text: "Check the tamper seal is intact", note: "An unbroken tamper seal means the unit hasn't been discharged or fiddled with. A missing or broken seal means treat it as possibly used — have it recharged or replace it." },
+    { phase: "Body & hose", text: "Inspect the cylinder for dents, rust, or corrosion", note: "Damage weakens the pressure vessel and can cause failure or rupture. Wipe off dust and look it over — rust or corrosion, common in garages and damp or coastal homes, means retire the unit." },
+    { phase: "Body & hose", text: "Check the hose and nozzle are clear and uncracked", note: "Make sure the discharge path isn't clogged, cracked, or brittle. If it's blocked or split, the extinguisher won't spray where you aim it — service it (pro) or replace a cheap disposable." },
+    { phase: "Body & hose", text: "Make sure the label and instructions are legible", note: "You need to read the PASS instructions and confirm it's an ABC unit in the seconds you're using it. Wipe the label clean; if it's worn off entirely, consider replacing the unit." },
+    { phase: "Powder & weight", text: "Lift it to confirm it feels full, not empty", note: "Heft it. A unit that feels suspiciously light may have leaked its charge. Compare against how it felt when new, or against a matching full unit." },
+    { phase: "Powder & weight", text: "Turn over and shake/tap a dry-chemical unit", note: "The powder in dry-chem extinguishers settles and cakes at the bottom over time. Invert it and shake or tap it (do this monthly) so the powder loosens and will actually discharge fully." },
+    { phase: "Placement & log", text: "Confirm it's an ABC unit in the right spot", note: "It should be a multipurpose ABC extinguisher mounted near the kitchen, the garage, and on each floor — by an exit, at a reachable height, never buried in a cabinet or behind boxes." },
+    { phase: "Placement & log", text: "Make sure nothing blocks your path to it", note: "You need to grab it on the way toward the exit, not move toward the fire to reach it. Clear any clutter, and never store it where you'd trap yourself getting to it." },
+    { phase: "Placement & log", text: "Log the date and any service or replacement due", note: "Note the inspection on the tag so the next check lands on schedule. Flag the disposable expiration date or the rechargeable's professional-service date — and recharge or replace any unit that's been used." }
+  ];
+
+  var LS_KEY = "upkeepguides:check-fire-extinguisher:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
