@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flush your engine coolant — UpkeepGuides.com</title>
+<meta name="description" content="How to flush your engine coolant: why spent coolant turns acidic and rusts the radiator, water pump, and heater core, how to drain and capture it on a cold engine, refill with the right 50/50 mix, and bleed the air out afterward.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Flush your engine coolant — UpkeepGuides.com">
+<meta property="og:description" content="How to flush your engine coolant: why spent coolant turns acidic and rusts the radiator, water pump, and heater core, how to drain and capture it on a cold engine, refill with the right 50/50 mix, and bleed the air out afterward.">
+<meta property="og:url" content="https://upkeepguides.com/coolant-flush.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flush your engine coolant — UpkeepGuides.com">
+<meta name="twitter:description" content="How to flush your engine coolant: why spent coolant turns acidic and rusts the radiator, water pump, and heater core, how to drain and capture it on a cold engine, refill with the right 50/50 mix, and bleed the air out afterward.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every ~3 years</span>
+      <h1>Flush Your Engine Coolant</h1>
+      <p class="lede">Coolant doesn't last forever, even though it looks like it just sits there. Its job is partly chemical: a package of corrosion-inhibitors keeps the inside of your engine, radiator, water pump, and heater core from rusting. Those additives wear out over a few years, the fluid slowly turns acidic, and old coolant starts doing the opposite of its job — eating the very metal it's supposed to protect. A flush drains all that spent fluid, clears the system, and refills it with fresh — which is a different job from just <em>topping up</em> the level. On many cars it's a doable afternoon in the driveway: drain and capture the old stuff, refill with the right coolant at a 50/50 mix, and bleed the trapped air out so the engine doesn't run hot. Done on schedule, it's the cheap maintenance that keeps the expensive parts alive.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every ~3 years</em></span>
+        <span class="chip">⏱️ <em>~1–2 hours</em> DIY drain-and-fill</span>
+        <span class="chip">🛡️ Protects the <em>radiator &amp; water pump</em></span>
+        <span class="chip">💸 Coolant <em>~$20–50</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of flushing engine coolant: a car with its hood open over the engine bay on a driveway, the radiator drain petcock open with old rusty brown coolant draining down into a catch pan below, the radiator cap removed and set aside on a cold engine, and a jug of fresh green coolant and a jug of distilled water standing ready beside the car">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- car body, front three-quarter -->
+      <path d="M70 322 q4 -56 60 -64 l150 -10 q40 -2 70 24 l54 46 h70 q20 0 20 22 v22 q0 12 -14 12 h-470 q-12 0 -12 -12 v-44 q0 -16 22 -18 z" fill="#7fb3c8"/>
+      <path d="M130 258 l150 -10 q40 -2 70 24 l40 34 h-300 q6 -42 40 -48 z" fill="#9cc3d4"/>
+      <!-- windshield glint -->
+      <path d="M196 254 l84 -6 q26 -1 46 16 l22 18 h-168 z" fill="#dce8ee"/>
+      <!-- front wheel -->
+      <circle cx="160" cy="370" r="34" fill="#33393b"/>
+      <circle cx="160" cy="370" r="15" fill="#b9b1a3"/>
+      <!-- rear wheel -->
+      <circle cx="404" cy="370" r="34" fill="#33393b"/>
+      <circle cx="404" cy="370" r="15" fill="#b9b1a3"/>
+
+      <!-- open hood, propped up over the engine bay -->
+      <path d="M70 258 l8 -120 q1 -14 16 -14 l150 4 q12 0 10 14 l-22 124 z" fill="#9cc3d4" stroke="#5e9a78" stroke-width="4"/>
+      <path d="M82 252 l6 -104 l136 4 l-18 102 z" fill="#dce8ee"/>
+      <!-- prop rod -->
+      <line x1="120" y1="246" x2="100" y2="150" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- engine bay opening -->
+      <rect x="232" y="186" width="180" height="76" rx="8" fill="#b9b1a3"/>
+      <rect x="240" y="194" width="164" height="60" rx="5" fill="#8a6a4f"/>
+      <!-- radiator block at the front of the bay -->
+      <rect x="248" y="198" width="56" height="52" rx="3" fill="#6b7376"/>
+      <g stroke="#33393b" stroke-width="2.4">
+        <line x1="256" y1="200" x2="256" y2="248"/>
+        <line x1="266" y1="200" x2="266" y2="248"/>
+        <line x1="276" y1="200" x2="276" y2="248"/>
+        <line x1="286" y1="200" x2="286" y2="248"/>
+        <line x1="296" y1="200" x2="296" y2="248"/>
+      </g>
+      <!-- engine block detail -->
+      <rect x="328" y="206" width="62" height="42" rx="4" fill="#6b7376"/>
+      <g stroke="#33393b" stroke-width="3">
+        <line x1="340" y1="206" x2="340" y2="248"/>
+        <line x1="354" y1="206" x2="354" y2="248"/>
+        <line x1="368" y1="206" x2="368" y2="248"/>
+      </g>
+
+      <!-- radiator cap removed, set aside on the engine (cold) -->
+      <circle cx="402" cy="196" r="11" fill="#c96f4a"/>
+      <circle cx="402" cy="196" r="5" fill="#8a6a4f"/>
+      <text x="402" y="180" font-size="9" fill="#2c5a40" text-anchor="middle" font-weight="700">cap off</text>
+
+      <!-- drain petcock at the bottom of the radiator, open -->
+      <rect x="262" y="250" width="14" height="9" rx="2" fill="#e0a93d"/>
+      <path d="M266 259 l4 0 l-2 8 z" fill="#8a6a4f"/>
+      <!-- stream of old rusty/brown coolant draining down -->
+      <path d="M268 266 q-2 24 -6 50 q-2 14 0 24" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M268 266 q-2 24 -6 50" fill="none" stroke="#c96f4a" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- catch pan on the ground, full of old brown coolant -->
+      <path d="M214 352 h120 l-10 30 h-100 z" fill="#b9b1a3"/>
+      <path d="M210 348 h128 l-4 8 h-120 z" fill="#8a6a4f"/>
+      <!-- old coolant pooled in the pan -->
+      <ellipse cx="274" cy="356" rx="58" ry="6" fill="#8a6a4f"/>
+      <ellipse cx="274" cy="356" rx="40" ry="4" fill="#6b4a2f" opacity="0.7"/>
+      <!-- a few floating rust flecks -->
+      <circle cx="256" cy="356" r="2" fill="#c96f4a"/>
+      <circle cx="288" cy="357" r="1.8" fill="#c96f4a"/>
+      <text x="274" y="394" font-size="10" fill="#d9663f" text-anchor="middle" font-weight="700">old &amp; rusty</text>
+
+      <!-- jug of FRESH coolant on the ground, right -->
+      <rect x="450" y="318" width="52" height="62" rx="8" fill="#5e9a78"/>
+      <rect x="450" y="318" width="52" height="14" rx="6" fill="#3e7c59"/>
+      <rect x="462" y="298" width="20" height="22" rx="4" fill="#3e7c59"/>
+      <rect x="460" y="292" width="24" height="9" rx="3" fill="#2c5a40"/>
+      <rect x="456" y="338" width="40" height="28" rx="4" fill="#fffdf8"/>
+      <text x="476" y="350" font-size="8" fill="#3e7c59" text-anchor="middle" font-weight="700">COOLANT</text>
+      <text x="476" y="360" font-size="6.5" fill="#6b7376" text-anchor="middle">fresh 50/50</text>
+
+      <!-- jug of DISTILLED WATER beside it -->
+      <rect x="398" y="330" width="44" height="50" rx="7" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="406" y="314" width="16" height="18" rx="3" fill="#9cc3d4"/>
+      <rect x="404" y="309" width="20" height="8" rx="3" fill="#7fb3c8"/>
+      <rect x="402" y="346" width="36" height="24" rx="3" fill="#fffdf8"/>
+      <text x="420" y="357" font-size="7.5" fill="#2c5a40" text-anchor="middle" font-weight="700">DISTILLED</text>
+      <text x="420" y="366" font-size="7" fill="#6b7376" text-anchor="middle">water</text>
+
+      <!-- "COLD" reminder tag -->
+      <rect x="92" y="300" width="78" height="26" rx="13" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <text x="131" y="317" font-size="12" fill="#2c5a40" text-anchor="middle" font-weight="700">engine COLD</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Coolant looks inert, but it's a working chemical that slowly wears out. Beyond its famous job of preventing freezing and boil-over, it carries a package of corrosion-inhibitors whose whole purpose is to keep the inside of the cooling system from rusting. Those additives deplete over a few years; the fluid turns acidic; and old coolant quietly corrodes the very metal it was protecting. A flush — distinct from simply <a href="check-coolant.html">checking your coolant level</a> and topping it up — drains the spent fluid and renews it. Here's why it's worth doing on schedule:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="6" width="18" height="24" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="11" y="18" width="14" height="10" rx="2" fill="#8a6a4f" opacity="0.85"/>
+          <circle cx="15" cy="13" r="1.6" fill="#c96f4a"/>
+          <circle cx="21" cy="11" r="1.4" fill="#c96f4a"/>
+          <path d="M14 16 q4 3 8 0" stroke="#c96f4a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M30 9 l3 0 l-1.5 3 z" fill="#d9663f"/>
+          <text x="31.5" y="20" font-size="7" fill="#d9663f" text-anchor="middle" font-weight="700">pH</text>
+        </svg></div>
+        <h3>Spent coolant turns acidic &amp; corrosive</h3>
+        <p>The anti-corrosion additives are sacrificial — they get used up over time. Once they're gone, the coolant slowly turns acidic and starts rusting the radiator, water pump, and heater core from the inside out. Fluid that was protecting the metal begins eating it instead.</p>
+        <span class="cost">Rust eating the system from within</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="24" height="18" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <g stroke="#8a6a4f" stroke-width="2.4">
+            <line x1="11" y1="9" x2="11" y2="27"/>
+            <line x1="16" y1="9" x2="16" y2="27"/>
+            <line x1="21" y1="9" x2="21" y2="27"/>
+            <line x1="26" y1="9" x2="26" y2="27"/>
+          </g>
+          <circle cx="13.5" cy="15" r="2.2" fill="#c96f4a"/>
+          <circle cx="18.5" cy="21" r="2.4" fill="#c96f4a"/>
+          <circle cx="23.5" cy="14" r="2" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Scale clogs passages &amp; the heater core</h3>
+        <p>As old coolant breaks down it leaves scale and gunk that narrows the thin passages in the radiator and heater core. The result is an engine that runs hot and a cabin heater that blows lukewarm — because the clogged core can't transfer the heat anymore.</p>
+        <span class="cost">No cabin heat &amp; an engine running hot</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 14 q10 -8 20 0 q-3 12 -10 16 q-7 -4 -10 -16 z" fill="#5e9a78"/>
+          <path d="M18 8 l0 18" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 18 l5 -4 l5 4" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="30" y="14" font-size="8" fill="#d9663f" text-anchor="middle" font-weight="700">$</text>
+        </svg></div>
+        <h3>A flush is far cheaper than the repair</h3>
+        <p>The whole case for a flush is the math behind it: $20–50 of coolant now versus a water pump, a new radiator, a labor-heavy heater core, or — worst of all — the head gasket or engine an overheat destroys. The flush is the cheap insurance.</p>
+        <span class="cost">$400–800+ pump, radiator, or worse</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 6 q7 9 7 15 a7 7 0 0 1 -14 0 q0 -6 7 -15 z" fill="#5e9a78" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M15 19 q-1 4 2 6" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <line x1="27" y1="8" x2="31" y2="6"/>
+            <line x1="28" y1="13" x2="32" y2="13"/>
+            <line x1="27" y1="18" x2="31" y2="20"/>
+          </g>
+        </svg></div>
+        <h3>Fresh coolant restores protection</h3>
+        <p>A flush resets the clock. The new fluid brings back full freeze and boil-over protection and a fresh charge of corrosion-inhibitors, so the cooling system runs clean and protected for years again — exactly the way the engineers intended it to.</p>
+        <span class="cost">Years of clean, protected cooling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> flush it?</h2>
+    <p class="sub">Follow your owner's manual first — it's the final word. As a rule of thumb, conventional green coolant runs roughly every 2–3 years or ~30,000 miles, while modern long-life OAT coolant can stretch to about 5 years or ~100,000 miles. The chemistry of your coolant, how many years and miles are on the current fill, how hard you work the car, and the condition of the fluid right now all move that number. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What coolant type is in the car?</div>
+        <div class="pills">
+          <button class="pill" data-v="green">Conventional green (IAT)</button>
+          <button class="pill" data-v="longlife">Long-life OAT/HOAT (orange, pink, etc.)</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+        <div class="q-hint">Chemistry sets the baseline. Old-style conventional green coolant has the shortest life; modern long-life OAT and HOAT formulas are designed to go far longer. If you're unsure, the manual (or the color and the bottle it was last filled from) will tell you.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">2. How long since the last flush — miles or years?</div>
+        <div class="pills">
+          <button class="pill" data-v="high">High — lots of miles or many years on it</button>
+          <button class="pill" data-v="mid">Middling — somewhere in between</button>
+          <button class="pill" data-v="recent">Recent — fresh fill, low miles</button>
+        </div>
+        <div class="q-hint">The additives wear with both time and mileage. A fill that's been in for many years or tens of thousands of miles is closer to spent, so the next flush is sooner; a recent fill buys you the full interval.</div>
+      </div>
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">3. How hard do you work the engine?</div>
+        <div class="pills">
+          <button class="pill" data-v="hard">Towing, mountains, extreme heat/cold, stop-and-go</button>
+          <button class="pill" data-v="mixed">A mix of highway and around-town</button>
+          <button class="pill" data-v="easy">Easy, mostly gentle commuting</button>
+        </div>
+        <div class="q-hint">Heat is what ages coolant. Towing, climbing grades, brutal summers or winters, and stop-and-go crawling all run the system hotter and harder, which uses up the inhibitors faster and pulls the flush interval in.</div>
+      </div>
+      <div class="quiz-q" data-q="condition">
+        <div class="q-label">4. What does the coolant look like right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="bad">Rusty, brown, murky — or it's overdue</button>
+          <button class="pill" data-v="meh">A little dull, hard to tell</button>
+          <button class="pill" data-v="clean">Bright, clean, and recent</button>
+        </div>
+        <div class="q-hint">The fluid tells on itself. Bright and clear means the inhibitors are still working; rusty, brown, or murky coolant (or anything past the manual's interval) means it's spent and overdue — flush it now regardless of the calendar.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is one of the most lopsided trades in car care. A DIY drain-and-fill is about twenty to fifty dollars in the correct coolant; a full machine flush at a shop runs roughly a hundred to two hundred. Set either against what spent, corrosive coolant does over years — a seized water pump, a rotted radiator, a labor-heavy heater core, or an overheating-induced head gasket — and the math stops being a math problem:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–50</div><div class="l">a DIY drain-and-fill — the correct coolant and some distilled water, done in your driveway</div></div>
+        <div class="calc-stat"><div class="v">$100–200</div><div class="l">a full machine flush at a shop, which pushes fresh fluid through the whole system</div></div>
+        <div class="calc-stat"><div class="v bad">$400–800+</div><div class="l">a water pump, a radiator, or a heater core — the parts old coolant quietly destroys</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 DIY drain-and-fill — coolant + distilled water</span><span>$20–50</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 A full machine flush at a shop</span><span>$100–200</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💧 A new water pump (the classic neglect casualty)</span><span>$400–800</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:42%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌡️ A rotted radiator or a labor-heavy heater core</span><span>$500–1,200</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:60%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 An overheat-induced head gasket or engine failure</span><span>$1,500–4,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $20–50 drain-and-fill (or a $100–200 shop flush) on schedule</strong> against a water pump, a radiator, a heater core, or a totaled engine. Renew the fluid at your manual's interval, and the corrosion-inhibitors stay fresh, the passages stay clear, and the expensive parts keep doing their jobs for years.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to flush your engine coolant</h2>
+    <p class="sub">On a fully <em>cold</em> engine, the job runs in four moves: drain the old coolant from the radiator petcock into a catch pan, flush the system with distilled water until it runs clear, refill with the correct coolant at a 50/50 mix, and bleed the trapped air out so the engine doesn't run hot. Read the safety box first — the rules about burns, toxicity, the right coolant type, and bleeding the air aren't optional — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Cold engine, toxic fluid, right coolant, bleed the air</h3>
+      <ul>
+        <li><strong>Work ONLY on a fully COLD engine.</strong> A hot cooling system is pressurized — opening the cap or petcock while it's warm can spray scalding coolant and steam over your hands and face. Let the car sit until everything is stone cold, ideally first thing in the morning, before you touch anything.</li>
+        <li><strong>Coolant is TOXIC — and it tastes sweet.</strong> That sweetness draws pets and small children, and even a little can be deadly. Capture <em>all</em> of it in your catch pan, never let it hit the driveway, the ground, or a storm drain, wipe up every spill immediately, and take the used coolant to an auto parts store or hazardous-waste facility for proper disposal/recycling.</li>
+        <li><strong>Use the EXACT coolant type your manual specifies — don't mix chemistries.</strong> There are several incompatible formulas (IAT, OAT, HOAT and others), and mixing types that don't get along can gel into sludge that clogs the radiator and heater core. Use pre-mixed (50/50), or cut concentrate 50/50 with <strong>distilled</strong> water — never tap water, whose minerals leave scale and promote corrosion.</li>
+        <li><strong>You MUST bleed the air out after refilling.</strong> Air trapped in the system creates hot spots and false readings, and it will overheat the engine. Run the engine with the cap off and the heater on high (or open the bleeder valve) until the thermostat opens and the bubbles stop, then top off — skipping this is the most common way a DIY flush goes wrong.</li>
+        <li><strong>If you jack the car, use jack stands.</strong> Many cars drain fine on level ground, but if you need to get underneath for the petcock or a block drain, lift it properly and support it on rated jack stands. Never work under a car held up by a jack alone.</li>
+        <li><strong>When unsure, a shop flush is inexpensive insurance.</strong> If you can't find the petcock, can't fully drain or bleed the system, or have a hard-to-access or electric/hybrid cooling system, a $100–200 machine flush is cheap peace of mind — and far cheaper than getting it wrong.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A fully cold engine</span>
+      <span class="tool-chip">Your owner's manual (for the coolant type &amp; capacity)</span>
+      <span class="tool-chip">The correct coolant (pre-mixed, or concentrate)</span>
+      <span class="tool-chip">Distilled water</span>
+      <span class="tool-chip">A large catch pan (drain pan)</span>
+      <span class="tool-chip">Sealable jugs for disposal</span>
+      <span class="tool-chip">A funnel (a no-spill funnel helps bleeding)</span>
+      <span class="tool-chip">Gloves &amp; eye protection</span>
+      <span class="tool-chip">Jack &amp; jack stands (if needed)</span>
+      <span class="tool-chip">A flashlight</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a cold engine with the radiator cap off and the drain petcock opened, old coolant draining down into a catch pan placed on the ground below">
+          <!-- radiator -->
+          <rect x="60" y="26" width="96" height="74" rx="6" fill="#6b7376"/>
+          <g stroke="#33393b" stroke-width="2.4">
+            <line x1="72" y1="28" x2="72" y2="98"/>
+            <line x1="84" y1="28" x2="84" y2="98"/>
+            <line x1="96" y1="28" x2="96" y2="98"/>
+            <line x1="108" y1="28" x2="108" y2="98"/>
+            <line x1="120" y1="28" x2="120" y2="98"/>
+            <line x1="132" y1="28" x2="132" y2="98"/>
+            <line x1="144" y1="28" x2="144" y2="98"/>
+          </g>
+          <!-- cap off, set aside -->
+          <circle cx="178" cy="34" r="9" fill="#c96f4a"/>
+          <circle cx="178" cy="34" r="4" fill="#8a6a4f"/>
+          <text x="178" y="22" font-size="9" fill="#2c5a40" text-anchor="middle" font-weight="700">cap off</text>
+          <!-- petcock at the bottom -->
+          <rect x="96" y="100" width="14" height="9" rx="2" fill="#e0a93d"/>
+          <path d="M103 109 l4 0 l-2 8 z" fill="#8a6a4f"/>
+          <!-- draining stream -->
+          <path d="M104 116 q-2 14 -4 28" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <!-- catch pan -->
+          <path d="M64 150 h84 l-8 18 h-68 z" fill="#b9b1a3"/>
+          <ellipse cx="100" cy="152" rx="40" ry="4" fill="#8a6a4f"/>
+          <text x="100" y="176" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">COLD · open the petcock</text>
+        </svg>
+        <h4>Cold engine — open &amp; drain</h4>
+        <p>On a stone-cold engine, place a catch pan underneath and open the radiator drain petcock (and the block drain too, if your engine has one). Take the radiator cap off so it drains freely. Let all the old coolant run out into the pan.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of capturing every drop of old coolant in a pan and bottling it into a sealed jug for recycling, with a struck-out storm drain showing it must never go down the drain">
+          <!-- catch pan full of old coolant -->
+          <path d="M30 70 h94 l-9 22 h-76 z" fill="#b9b1a3"/>
+          <ellipse cx="77" cy="72" rx="46" ry="5" fill="#8a6a4f"/>
+          <!-- pouring into a jug -->
+          <path d="M118 60 q26 -6 44 8" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <rect x="160" y="58" width="44" height="62" rx="8" fill="#5e9a78"/>
+          <rect x="160" y="58" width="44" height="12" rx="5" fill="#3e7c59"/>
+          <rect x="166" y="86" width="32" height="28" rx="4" fill="#8a6a4f" opacity="0.85"/>
+          <text x="182" y="134" font-size="10" fill="#3e7c59" text-anchor="middle" font-weight="700">seal &amp; recycle</text>
+          <!-- struck-out storm drain -->
+          <rect x="40" y="128" width="56" height="26" rx="3" fill="#6b7376"/>
+          <g stroke="#33393b" stroke-width="2">
+            <line x1="48" y1="132" x2="48" y2="150"/>
+            <line x1="58" y1="132" x2="58" y2="150"/>
+            <line x1="68" y1="132" x2="68" y2="150"/>
+            <line x1="78" y1="132" x2="78" y2="150"/>
+            <line x1="88" y1="132" x2="88" y2="150"/>
+          </g>
+          <circle cx="68" cy="141" r="20" fill="none" stroke="#d9663f" stroke-width="3"/>
+          <line x1="54" y1="127" x2="82" y2="155" stroke="#d9663f" stroke-width="3"/>
+          <text x="68" y="172" font-size="10.5" fill="#d9663f" font-weight="700" text-anchor="middle">never down the drain</text>
+        </svg>
+        <h4>Capture &amp; dispose of every drop</h4>
+        <p>Collect all the old coolant in the pan and bottle it into sealable jugs for recycling. It's toxic and tastes sweet, so never pour it on the ground or into a storm drain — take it to an auto parts store or hazardous-waste facility that accepts it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of refilling the system with distilled water, running the engine to temperature, then draining again, repeating until the water runs clear">
+          <!-- distilled water jug pouring in -->
+          <rect x="40" y="26" width="40" height="50" rx="7" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <text x="60" y="56" font-size="8" fill="#2c5a40" text-anchor="middle" font-weight="700">H2O</text>
+          <path d="M80 60 q24 -2 40 10" fill="none" stroke="#9cc3d4" stroke-width="4" stroke-linecap="round"/>
+          <!-- radiator -->
+          <rect x="120" y="46" width="80" height="60" rx="6" fill="#6b7376"/>
+          <g stroke="#33393b" stroke-width="2.2">
+            <line x1="132" y1="48" x2="132" y2="104"/>
+            <line x1="146" y1="48" x2="146" y2="104"/>
+            <line x1="160" y1="48" x2="160" y2="104"/>
+            <line x1="174" y1="48" x2="174" y2="104"/>
+            <line x1="188" y1="48" x2="188" y2="104"/>
+          </g>
+          <!-- temperature / run cycle -->
+          <circle cx="232" cy="60" r="16" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <line x1="232" y1="50" x2="232" y2="66" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="232" cy="68" r="4" fill="#d9663f"/>
+          <!-- drain-again arrow loop -->
+          <path d="M140 120 q20 18 48 0 m-8 -6 l8 6 l-8 6" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="74" y="150" font-size="11" fill="#3e7c59" font-weight="700">run warm · drain · repeat</text>
+          <text x="86" y="168" font-size="10.5" fill="#6b7376">until it runs clear</text>
+        </svg>
+        <h4>Flush until it runs clear</h4>
+        <p>Refill with distilled water (or a flush product), run the engine up to temperature so the thermostat opens and it circulates, then let it cool and drain again. Repeat until what comes out runs clear — that's how you carry the old gunk out of the block.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of refilling the system with the correct coolant at a 50/50 mix through a funnel up to the proper fill level">
+          <!-- funnel -->
+          <path d="M104 26 l52 0 l-16 22 l-20 0 z" fill="#e0a93d"/>
+          <rect x="124" y="48" width="12" height="16" fill="#d98e3b"/>
+          <!-- coolant jug pouring -->
+          <path d="M156 22 h46 v34 h-46 z" fill="#5e9a78"/>
+          <rect x="156" y="22" width="46" height="10" rx="3" fill="#3e7c59"/>
+          <path d="M156 38 q-28 -2 -28 -2" fill="none" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+          <text x="179" y="44" font-size="8" fill="#fffdf8" text-anchor="middle" font-weight="700">50/50</text>
+          <!-- reservoir / radiator with fill level -->
+          <rect x="92" y="70" width="76" height="80" rx="8" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3" opacity="0.92"/>
+          <rect x="96" y="104" width="68" height="42" rx="5" fill="#5e9a78" opacity="0.85"/>
+          <!-- fill / FULL line -->
+          <line x1="168" y1="98" x2="190" y2="98" stroke="#2c5a40" stroke-width="3"/>
+          <text x="192" y="102" font-size="10" fill="#2c5a40" font-weight="700">FULL</text>
+          <text x="74" y="170" font-size="11" fill="#3e7c59" font-weight="700">correct coolant · 50/50 · to level</text>
+        </svg>
+        <h4>Refill with the correct 50/50 mix</h4>
+        <p>Add the exact coolant your manual specifies — pre-mixed, or concentrate cut 50/50 with distilled water — up to the proper level. Match the type, not just the color; the wrong chemistry can gel and clog the system you just cleaned out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of bleeding the air out after refilling: running the engine with the cap off and the heater on high until the thermostat opens and the bubbles stop, then topping off">
+          <!-- radiator neck with cap off -->
+          <rect x="60" y="40" width="70" height="74" rx="6" fill="#6b7376"/>
+          <rect x="84" y="28" width="22" height="14" rx="3" fill="#8a6a4f"/>
+          <!-- coolant with rising bubbles -->
+          <rect x="64" y="74" width="62" height="36" rx="4" fill="#5e9a78" opacity="0.85"/>
+          <g fill="#dce8ee">
+            <circle cx="80" cy="66" r="4"/>
+            <circle cx="96" cy="58" r="5"/>
+            <circle cx="110" cy="64" r="3.5"/>
+            <circle cx="90" cy="48" r="3"/>
+          </g>
+          <text x="95" y="128" font-size="9.5" fill="#2c5a40" text-anchor="middle" font-weight="700">cap off · bubbles out</text>
+          <!-- heater dial on high -->
+          <circle cx="206" cy="64" r="26" fill="#fbe9e1" stroke="#d9663f" stroke-width="3"/>
+          <line x1="206" y1="64" x2="222" y2="50" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="206" cy="64" r="3.5" fill="#d9663f"/>
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <path d="M196 96 q3 -5 0 -10 M206 98 q3 -5 0 -10 M216 96 q3 -5 0 -10"/>
+          </g>
+          <text x="206" y="118" font-size="10" fill="#d9663f" text-anchor="middle" font-weight="700">heater HIGH</text>
+          <text x="64" y="160" font-size="11" fill="#3e7c59" font-weight="700">run till thermostat opens · top off</text>
+        </svg>
+        <h4>Bleed the air out, then top off</h4>
+        <p>Run the engine with the cap off and the heater on high (or open the bleeder valve) until the thermostat opens and the bubbles stop. Top off to the line, button it up, and recheck the level after a drive once it has fully cooled.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Coolant-flush progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Old coolant drained and captured, system flushed clear, refilled with the right 50/50 mix, and the air bled out — logged and done. Fresh fluid, fresh corrosion protection, and the next flush set by your coolant type.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's overdue — and when to call a pro</h2>
+    <p class="sub">Fresh coolant is invisible: bright fluid, a steady temp gauge, strong cabin heat, and nothing on the driveway. These are the signals the system is overdue for a flush — and the handful of problems that aren't a flush at all and mean a mechanic now:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Rusty, brown, oily, or murky coolant.</strong> Healthy fluid is bright and clear. If it's gone the color of weak coffee, has floating particles, or shows an oily film, the corrosion-inhibitors are spent and the system is well past due — flush it.</li>
+        <li><strong>Overheating or weak cabin heat.</strong> An engine that creeps hot, or a heater that blows lukewarm when it used to roast, often means scale and gunk are clogging the radiator and heater core. Fresh coolant and a proper flush are the first thing to rule out.</li>
+        <li><strong>A sweet smell or visible leaks.</strong> Coolant smells sweet and leaves slick puddles. A leak means it's escaping — and old, acidic coolant is exactly what corrodes the hoses, water pump, and radiator that start leaking in the first place. Trace and fix it.</li>
+        <li><strong>You can't fully drain or bleed it.</strong> If the petcock won't pass clean fluid, the system won't empty, or you can't get the air out and the engine keeps running hot, stop and hand it to a mechanic — trapped air or a stuck thermostat needs proper diagnosis.</li>
+        <li><strong>An electric or hybrid, or a hard-to-access system.</strong> EVs and hybrids have their own coolant loops (sometimes for the battery and electronics) that are not a driveway job, and some engines bury the petcock or need special bleeding. When in doubt, let a pro do it.</li>
+        <li><strong>Milky oil or white exhaust smoke — see a pro now.</strong> Oil that looks like a milkshake on the dipstick, or sweet white smoke from the exhaust with a dropping coolant level, means coolant and oil are mixing — a likely head-gasket failure. That's serious and not a flush; get it diagnosed right away.</li>
+        <li><strong>Pro tip:</strong> the flush is the big job; the quick <a href="check-coolant.html">level check</a> is the small one you do between flushes. Glance at the reservoir every six months and at each oil change, and pair this with the rest of your engine-bay upkeep — the <a href="oil-change.html">oil change</a> and your <a href="replace-spark-plugs.html">spark plugs</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Coolant flush vs. just topping it up — what's the difference?</summary>
+      <p>They solve two different problems. <a href="check-coolant.html">Topping up</a> just adds fluid to bring a low level back between the MIN and MAX marks — it fixes the <em>amount</em>, not the <em>quality</em>. A flush is a full service that drains out all the old coolant, clears the system, and refills it with fresh — it fixes the quality. Here's why that matters: coolant's corrosion-inhibitors are sacrificial and wear out over a few years, and the fluid slowly turns acidic. Pouring fresh coolant on top of spent, acidic coolant doesn't restore the protection — you've just diluted old, worn-out fluid. So if the level is fine but the coolant is years old, rusty, or overdue, it's a flush you need, not a top-up. Think of the top-up as keeping an eye on the level, and the flush as renewing the fluid itself on schedule.</p>
+    </details>
+    <details>
+      <summary>How often should I flush coolant?</summary>
+      <p>Your owner's manual is the final word, but the rules of thumb are easy. Conventional green coolant (the old IAT type) runs roughly every 2–3 years or about 30,000 miles. Modern long-life OAT and HOAT coolants — the orange, pink, blue, and yellow extended-life formulas — can stretch to around 5 years or 100,000 miles. Pull the interval in if you run conventional green coolant, work the car hard (towing, mountains, extreme heat or cold, stop-and-go), or if the fluid already looks rusty or murky; you can lean toward the longer end with a long-life coolant in a gently driven car. When in doubt, follow the manual and the condition of the fluid — bright and clear can wait, rusty and brown cannot.</p>
+    </details>
+    <details>
+      <summary>What coolant type do I use, and can I mix colors?</summary>
+      <p>Use exactly the type your owner's manual specifies, and no, don't mix colors or chemistries. The color is a rough guide but not a guarantee — there are several incompatible families (IAT, OAT, HOAT and others), and mixing two that don't get along can react and gel into a sludge that clogs the radiator and heater core, which is the opposite of what you wanted. Match the manual's specification, not just the shade on the shelf. The easiest, safest choice is pre-mixed (50/50) coolant of the correct type, which you pour straight in. If you buy concentrate, cut it 50/50 with distilled water yourself. If you're switching types or aren't sure what's currently in the car, that's a good reason to do a thorough flush (or have a shop do it) so you start clean with one known chemistry.</p>
+    </details>
+    <details>
+      <summary>Can I use water instead of coolant?</summary>
+      <p>Only distilled water, only in a 50/50 mix, and only ever briefly as plain water in an emergency. Coolant is doing two jobs that water can't: it lowers the freezing point so the block doesn't crack in winter and raises the boiling point so it doesn't boil over in summer, and it carries the corrosion-inhibitors that keep the system from rusting. Plain water freezes, boils sooner, and offers no rust protection, so it's never a long-term fill. When you do mix concentrate or flush the system, use <strong>distilled</strong> water — never tap water, whose dissolved minerals leave scale and promote corrosion inside the engine and radiator. The standard target is a 50/50 blend of the correct coolant and distilled water, which most manufacturers specify; in a true roadside pinch you can add a little plain water to get home, but correct it to the proper mix as soon as you can.</p>
+    </details>
+    <details>
+      <summary>How do I bleed the air out after refilling?</summary>
+      <p>This step is not optional — trapped air creates hot spots and false temperature readings and will overheat the engine, so a refill isn't finished until the air is out. With the system filled to the line, leave the radiator or reservoir cap off, start the engine, and turn the cabin heater to high (this opens the heater core to the flow). As the engine warms and the thermostat opens, you'll see the level drop and bubbles rise — keep topping off with the correct mix as it does. Some cars have a dedicated bleeder valve or screw you open to let the air escape; others recommend a no-spill "spill-free" funnel that lets you watch the bubbles work out. Run it until the bubbles stop and the upper radiator hose is hot (meaning it's circulating), then cap it. Let it cool completely, recheck the level, and check it again after your first drive — it often needs one more top-off once everything has settled.</p>
+    </details>
+    <details>
+      <summary>How do I dispose of old coolant?</summary>
+      <p>Capture every drop and recycle it — never pour it out. Coolant is toxic and tastes sweet, which makes it dangerous to pets and small children, and it's an environmental hazard, so it must never go onto the ground, down a household drain, or into a storm sewer. Drain it into a clean catch pan, then funnel it into sealable jugs (old coolant or laundry-detergent bottles work well) and label them clearly. Most auto parts stores, service shops, and municipal household hazardous-waste facilities accept used coolant for recycling, often for free — call ahead to confirm. Keep used and fresh coolant sealed and out of reach until you can drop it off, and wipe up any spill on the driveway immediately so a curious pet never finds it.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Coolant turns acidic years before it leaves you stranded.</h2>
+        <p>Coolant quietly turns acidic and corrosive years before it leaves you stranded with an overheating engine — and the flush interval depends on whether you're running conventional green or a long-life OAT formula. Let Upkeep Ledger track the flush interval for your coolant type, right alongside the level checks, the oil changes, and every other quiet task that keeps the engine running cool.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=coolant-flush&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=coolant-flush&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning; coolant type, flush intervals, and drain-and-bleed procedures vary by vehicle — your owner's manual and a trusted mechanic outrank this guide for anything beyond the basics.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, age: null, use: null, condition: null };
+
+  var FREQ_LABEL = {
+    2: "Every 2 years",
+    3: "Every 3 years",
+    5: "Every 5 years"
+  };
+
+  var MILES_LABEL = {
+    2: "roughly 30,000 miles",
+    3: "roughly 30,000–50,000 miles",
+    5: "roughly 100,000 miles"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var years = 3;
+    var tighten = false;
+
+    /* Coolant type — sets the baseline */
+    if (s.type === "green") {
+      if (years > 2) years = 2;
+      tighten = true;
+      reasons.push("Conventional green (IAT) coolant has the shortest life — its inhibitors are spent in a couple of years or around 30,000 miles, so it wants flushing on the sooner end.");
+    } else if (s.type === "longlife") {
+      reasons.push("Long-life OAT/HOAT coolant is formulated to go far longer — often about 5 years or 100,000 miles — so the chemistry itself buys you a longer interval.");
+    } else {
+      reasons.push("If you're not sure of the type, treat the manual as the final word and lean conservative — the color and the bottle it was last filled from will tell you which family it is.");
+    }
+
+    /* Age / miles on the current fill */
+    if (s.age === "high") {
+      if (years > 2) years = 2;
+      tighten = true;
+      reasons.push("With a lot of years or miles on the current fill, the additives are close to spent — the next flush is sooner rather than later.");
+    } else if (s.age === "recent") {
+      reasons.push("A recent fill with low miles has most of its protective life left, so it isn't pulling the interval in.");
+    } else {
+      reasons.push("A middling amount of time and mileage on the fill is the ordinary case the rule-of-thumb interval is written for.");
+    }
+
+    /* Use — heat ages coolant */
+    if (s.use === "hard") {
+      if (years > 2) years = 2;
+      tighten = true;
+      reasons.push("Towing, mountains, extreme heat or cold, and stop-and-go crawling all run the system hotter, which uses up the inhibitors faster and shortens the interval.");
+    } else if (s.use === "easy") {
+      reasons.push("Easy, gentle commuting keeps the system cool and unstressed, so hard use isn't shortening the interval.");
+    } else {
+      reasons.push("A normal mix of highway and around-town driving is the middle case — no extra heat load pushing the flush sooner.");
+    }
+
+    /* Current condition — overrides toward sooner */
+    if (s.condition === "bad") {
+      years = 2;
+      tighten = true;
+      reasons.push("Rusty, brown, or murky coolant (or anything past the manual's interval) is spent and overdue — flush it now, regardless of what the calendar says.");
+    } else if (s.condition === "clean") {
+      reasons.push("Bright, clean, recent fluid means the inhibitors are still doing their job — no reason to rush the next flush.");
+    } else {
+      reasons.push("Dull, hard-to-read fluid is worth keeping an eye on; check the color in good light and against a white background to judge it.");
+    }
+
+    /* Best-case relaxation: long-life, recent fill, easy use, clean fluid */
+    if (!tighten && s.type === "longlife" && s.age === "recent" && s.use === "easy" && s.condition === "clean") {
+      years = 5;
+      reasons.push("A recent fill of long-life coolant in a gently driven car with bright, clean fluid is the easy case — stretching to about 5 years or 100,000 miles is genuinely fine, just keep an eye on the color.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.condition === "bad") {
+      note = "<strong>Condition beats the calendar:</strong> rusty or murky coolant means the protection is gone and corrosion is already underway, so don't wait for an interval to roll around — drain, flush until it runs clear, and refill with the correct 50/50 mix.";
+    } else if (s.type === "green") {
+      note = "<strong>Conventional green is short-life by design:</strong> keep it to the ~2–3 year / ~30,000-mile range, and consider asking your shop whether a modern long-life coolant is approved for your engine if you'd rather flush less often.";
+    } else if (s.type === "longlife") {
+      note = "<strong>Long-life doesn't mean forever:</strong> the ~5-year / 100,000-mile figure assumes the right fluid kept clean — use the exact type your manual specifies and never mix chemistries, or you lose the extended interval.";
+    } else {
+      note = "<strong>Tie it to the manual and the fluid:</strong> follow your owner's manual interval, and let the color of the coolant be your tiebreaker — bright and clear can wait, rusty and brown cannot. Glance at the level between flushes, too.";
+    }
+
+    return { years: years, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.age || !quizState.use || !quizState.condition) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: flush roughly every " + r.years + " years";
+    document.getElementById("resultBody").innerHTML =
+      "On a fully cold engine, <strong>drain and capture the old coolant, flush with distilled water until it runs clear, refill with the correct 50/50 mix, and bleed the air out</strong> — that's " + FREQ_LABEL[r.years].toLowerCase() + " (about " + MILES_LABEL[r.years] + "). Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep (cold engine)", text: "Make sure the engine is completely cold", note: "A hot cooling system is pressurized and will spray scalding coolant. Let the car sit until everything is stone cold — ideally first thing in the morning, before you've driven — before you open anything." },
+    { phase: "Prep (cold engine)", text: "Check the manual for coolant type, capacity, and bleed steps", note: "Note the exact coolant type your manufacturer specifies, the system capacity, and whether your engine has a block drain or a bleeder valve. Buy the correct coolant (pre-mixed or concentrate) and distilled water." },
+    { phase: "Prep (cold engine)", text: "Set up: pan, jugs, gloves, eye protection (jack stands if needed)", note: "Park level. Position a large catch pan under the radiator drain. Have sealable jugs ready for disposal. If you must get underneath, lift the car and support it on rated jack stands — never a jack alone." },
+    { phase: "Drain & capture", text: "Take off the radiator cap and open the drain petcock", note: "Remove the cap so the system drains freely, then open the radiator drain petcock (and the block drain too, if equipped) and let all the old coolant run out into the pan." },
+    { phase: "Drain & capture", text: "Capture every drop — never let it hit the ground", note: "Collect all the old coolant in the pan. It's toxic and tastes sweet, so don't let any reach the driveway or a storm drain, and wipe up spills immediately." },
+    { phase: "Drain & capture", text: "Bottle the old coolant for proper disposal/recycling", note: "Funnel the used coolant into sealable, labeled jugs and set them aside. Take them to an auto parts store, a shop, or a household hazardous-waste facility that accepts coolant." },
+    { phase: "Flush & refill", text: "Flush with distilled water until it runs clear", note: "Close the drain, refill with distilled water (or a flush product), run the engine to temperature so it circulates, let it cool, and drain again. Repeat until what comes out runs clear." },
+    { phase: "Flush & refill", text: "Close everything up and confirm the coolant type", note: "Re-close the petcock (and block drain) snugly. Double-check you have the exact coolant type your manual specifies — never mix chemistries, which can gel and clog the system." },
+    { phase: "Flush & refill", text: "Refill with the correct coolant at a 50/50 mix to level", note: "Add pre-mixed coolant, or concentrate cut 50/50 with distilled water, up to the proper fill level. A funnel keeps it clean and spill-free." },
+    { phase: "Bleed & verify", text: "Bleed the air out — cap off, heater on high", note: "Run the engine with the cap off and the cabin heater on high (or open the bleeder valve) until the thermostat opens and the bubbles stop. Keep topping off as the level drops — trapped air will overheat the engine." },
+    { phase: "Bleed & verify", text: "Top off, cap it, and recheck after a drive", note: "Once the bubbles stop and the upper hose is hot, top off to the line and cap it. Let it cool completely, recheck the level, and check it again after your first drive — it often needs one more top-off." },
+    { phase: "Bleed & verify", text: "Log the date and set the next flush by your coolant type", note: "Note the date so the next flush lands on schedule — roughly every 2–3 years for conventional green, up to ~5 years / 100,000 miles for long-life — and keep doing the quick level check in between." }
+  ];
+
+  var LS_KEY = "upkeepguides:coolant-flush:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

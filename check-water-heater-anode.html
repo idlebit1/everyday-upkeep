@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check your water heater anode rod — UpkeepGuides.com</title>
+<meta name="description" content="How to check and replace your water heater's sacrificial anode rod: why the cheap metal rod corrodes on purpose to save the tank, how to cut power and water, break the hex head loose, inspect, and swap it to double your heater's life.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Check your water heater anode rod — UpkeepGuides.com">
+<meta property="og:description" content="How to check and replace your water heater's sacrificial anode rod: why the cheap metal rod corrodes on purpose to save the tank, how to cut power and water, break the hex head loose, inspect, and swap it to double your heater's life.">
+<meta property="og:url" content="https://upkeepguides.com/check-water-heater-anode.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check your water heater anode rod — UpkeepGuides.com">
+<meta name="twitter:description" content="How to check and replace your water heater's sacrificial anode rod: why the cheap metal rod corrodes on purpose to save the tank, how to cut power and water, break the hex head loose, inspect, and swap it to double your heater's life.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 2 years</span>
+      <h1>Check Your Water Heater Anode Rod</h1>
+      <p class="lede">There's one part inside your water heater whose entire job is to die so the tank doesn't: a long metal rod, screwed into the top, that corrodes <em>on purpose</em>. As long as it's there to give itself up, the rust attacks the rod instead of your steel tank — but once it's eaten down to the bare core wire, the tank itself starts rusting from the inside, and that's the day the clock starts on a $1,000–2,000 replacement. Check the rod every couple of years, swap a depleted one for $20–40, and you can genuinely double the life of the most expensive appliance in your basement. It's an hour with a socket wrench, and almost nobody does it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 2 years</em></span>
+        <span class="chip">⏱️ <em>~45–90 min</em>, plus cool-down</span>
+        <span class="chip">🛡️ Can <em>double</em> a tank's lifespan</span>
+        <span class="chip">💸 Rod runs <em>~$20–40</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a basement utility room where a tall water heater tank has its top hex-head anode plug being loosened with a long breaker bar and socket; a corroded, depleted anode rod is pulled partway out of the top of the tank, and a fresh new rod waits beside it; the cold-water and hot-water lines run across the top of the tank">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall shelf with supplies -->
+      <rect x="38" y="70" width="132" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="52" y="40" width="24" height="30" rx="4" fill="#c96f4a"/>
+      <rect x="84" y="46" width="30" height="24" rx="4" fill="#7fb3c8"/>
+      <rect x="124" y="36" width="18" height="34" rx="4" fill="#e0a93d"/>
+
+      <!-- water heater tank -->
+      <rect x="232" y="118" width="170" height="252" rx="36" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <!-- jacket bands -->
+      <rect x="232" y="158" width="170" height="13" rx="6.5" fill="#dce8ee"/>
+      <rect x="232" y="322" width="170" height="13" rx="6.5" fill="#dce8ee"/>
+      <!-- rating label -->
+      <rect x="276" y="198" width="82" height="96" rx="8" fill="#dce8ee"/>
+      <rect x="284" y="210" width="64" height="7" rx="3.5" fill="#fffdf8"/>
+      <rect x="284" y="224" width="48" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="284" y="236" width="56" height="6" rx="3" fill="#fffdf8"/>
+      <circle cx="296" cy="268" r="9" fill="#7fb3c8"/>
+      <rect x="312" y="262" width="34" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="312" y="274" width="26" height="6" rx="3" fill="#fffdf8"/>
+      <!-- legs -->
+      <rect x="250" y="370" width="14" height="38" rx="5" fill="#b9b1a3"/>
+      <rect x="370" y="370" width="14" height="38" rx="5" fill="#b9b1a3"/>
+
+      <!-- top of tank dome -->
+      <path d="M232 136 q85 -34 170 0" fill="none" stroke="#e6dccb" stroke-width="3"/>
+
+      <!-- cold-water inlet line (blue) on top right -->
+      <rect x="356" y="78" width="12" height="46" rx="5" fill="#7fb3c8"/>
+      <rect x="342" y="92" width="40" height="11" rx="5" fill="#5e9a78"/>
+      <text x="362" y="72" font-size="10" fill="#7fb3c8" font-weight="700" text-anchor="middle">cold</text>
+      <!-- hot-water outlet line (terracotta) on top left -->
+      <rect x="262" y="78" width="12" height="46" rx="5" fill="#b9b1a3"/>
+      <rect x="248" y="92" width="40" height="11" rx="5" fill="#d9663f"/>
+      <text x="268" y="72" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">hot</text>
+
+      <!-- anode hex-head plug, center top of tank -->
+      <polygon points="305,128 323,128 332,138 323,148 305,148 296,138" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2"/>
+      <!-- depleted/corroded anode rod pulled partway up out of the plug -->
+      <rect x="311" y="40" width="6" height="92" rx="3" fill="#8a6a4f"/>
+      <!-- corrosion pitting on the old rod -->
+      <g fill="#c96f4a">
+        <circle cx="314" cy="58" r="4.5"/>
+        <circle cx="313" cy="74" r="3.5"/>
+        <circle cx="315" cy="90" r="4"/>
+        <circle cx="314" cy="106" r="3"/>
+      </g>
+      <!-- exposed bare core wire near the top -->
+      <line x1="314" y1="40" x2="314" y2="52" stroke="#b9b1a3" stroke-width="2"/>
+
+      <!-- breaker bar + socket loosening the hex head -->
+      <!-- socket over the hex -->
+      <rect x="300" y="120" width="28" height="20" rx="4" fill="#5e9a78"/>
+      <!-- long breaker bar handle angling up-right -->
+      <rect x="326" y="58" width="120" height="11" rx="5" fill="#3e7c59" transform="rotate(34 326 64)"/>
+      <!-- counter-clockwise loosen arrow -->
+      <path d="M356 120 a30 30 0 0 1 -44 -8" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round"/>
+      <path d="M312 112 l-2 9 l9 -2" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- fresh new anode rod leaning beside the tank, ready -->
+      <rect x="442" y="156" width="9" height="214" rx="4.5" fill="#c9a06b"/>
+      <rect x="438" y="150" width="17" height="14" rx="3" fill="#8a6a4f"/>
+      <!-- bright shine on the new rod -->
+      <line x1="446" y1="172" x2="446" y2="350" stroke="#fffdf8" stroke-width="2" opacity="0.7"/>
+      <text x="447" y="388" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">new rod</text>
+
+      <!-- socket set / wrench on the floor -->
+      <g transform="rotate(-16 150 378)">
+        <rect x="136" y="374" width="36" height="7" rx="3.5" fill="#8a6a4f"/>
+        <circle cx="134" cy="377" r="7" fill="#8a6a4f"/>
+        <circle cx="134" cy="377" r="3" fill="#efe7d8"/>
+      </g>
+      <!-- a couple of sockets -->
+      <rect x="184" y="372" width="16" height="16" rx="3" fill="#b9b1a3"/>
+      <circle cx="192" cy="380" r="3.5" fill="#efe7d8"/>
+      <rect x="206" y="376" width="13" height="13" rx="3" fill="#5e9a78"/>
+
+      <!-- thread tape roll -->
+      <circle cx="100" cy="384" r="12" fill="#dce8ee"/>
+      <circle cx="100" cy="384" r="5" fill="#fffdf8"/>
+
+      <!-- small plant for warmth -->
+      <path d="M510 348 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M510 348 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="497" cy="316" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 497 316)"/>
+      <ellipse cx="525" cy="320" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 525 320)"/>
+      <path d="M498 348 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A water heater is a steel can of hot water, and hot water rusts steel. The whole design rests on a clever bit of chemistry: a more-reactive metal rod that the corrosion eats <em>first</em>, sacrificing itself so the tank survives. It works beautifully — right up until the rod is gone and no one noticed. Here's what's at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="4" width="18" height="28" rx="5" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="16.5" y="6" width="3" height="22" rx="1.5" fill="#8a6a4f"/>
+          <circle cx="18" cy="13" r="2.4" fill="#c96f4a"/>
+          <circle cx="17" cy="20" r="2" fill="#c96f4a"/>
+          <circle cx="19" cy="25" r="1.8" fill="#c96f4a"/>
+          <rect x="13" y="2" width="10" height="4" rx="1.5" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>The rod corrodes so the tank doesn't</h3>
+        <p>The sacrificial anode is a more-reactive metal — usually magnesium or aluminum — wired to the steel tank. Electrochemically, the rust goes for the rod first and leaves the steel alone. The catch: once the rod is consumed, that protection is simply gone, and the tank begins rusting from the inside out.</p>
+        <span class="cost">Tank rusts once the rod's gone</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="14" cy="22" r="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <text x="14" y="26" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">$</text>
+          <circle cx="24" cy="14" r="9" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <text x="24" y="18" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">$$$</text>
+        </svg></div>
+        <h3>A $30 rod can double tank life</h3>
+        <p>This is the best return on any home-maintenance dollar there is. A fresh rod swapped on time keeps an 8-year tank going for 15 or more. Neglect it and you're buying a whole new $1,000–2,000 heater years before you needed to — to save a part that costs less than a pizza.</p>
+        <span class="cost">$1,000–2,000 replacement, years early</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M14 6 q4 -3 8 0 q4 3 2 8 q-3 5 -6 5 q-3 0 -6 -5 q-2 -5 2 -8" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <circle cx="18" cy="14" r="2.4" fill="#8a6a4f"/>
+          <path d="M11 26 q3 3 7 3 q4 0 7 -3" fill="none" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M13 31 q5 2 10 0" fill="none" stroke="#c96f4a" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Smelly or rusty hot water is a warning</h3>
+        <p>A depleted or reacting anode often announces itself: rotten-egg-smelling hot water, or water that runs rusty and discolored from the hot tap. Most people just live with it, or blame the city. It's usually the rod telling you to take a look — an early warning worth catching.</p>
+        <span class="cost">Rotten-egg smell, rusty hot water</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="6" width="22" height="24" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M12 14 q3 3 0 6 q-3 3 0 6" fill="none" stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M22 12 l-2 12 m-2 -4 l4 0" stroke="#c96f4a" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="23" cy="27" r="1.6" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Soft and hard water both eat it faster</h3>
+        <p>Softened water is electrically conductive and chews through anodes alarmingly fast; very hard water drives a different kind of attack. Either way, the rod is the one component that actually wears out on a schedule you can't predict from the outside — which is exactly why it earns a real inspection.</p>
+        <span class="cost">Conditions vary — so check it</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check it?</h2>
+    <p class="sub">Every two years is the sensible default — pull the rod, look, and replace it when it's heavily consumed. But softened water, a tank that's getting on in years, or any smell or rust in the hot water all tighten that to a yearly look and a sooner swap. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="water">
+        <div class="q-label">1. What kind of water feeds the heater?</div>
+        <div class="pills">
+          <button class="pill" data-v="softened">Softened (we run a water softener)</button>
+          <button class="pill" data-v="hard">Hard / well water, no softener</button>
+          <button class="pill" data-v="normal">Normal municipal water</button>
+        </div>
+        <div class="q-hint">Softened water is the anode's worst enemy — the salt makes it conductive and the rod can disappear in a couple of years. Hard water is tough on it too. Normal city water is the gentlest case.</div>
+      </div>
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">2. How old is the water heater?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older, or honestly not sure</button>
+          <button class="pill" data-v="mid">A few years in, working fine</button>
+          <button class="pill" data-v="new">New — installed recently</button>
+        </div>
+        <div class="q-hint">On an older or unknown-age tank, the original rod may already be long gone, so checking sooner tells you whether you're still protected — or already running on borrowed time.</div>
+      </div>
+      <div class="quiz-q" data-q="signs">
+        <div class="q-label">3. Any smell or color in the hot water?</div>
+        <div class="pills">
+          <button class="pill" data-v="smell">Rotten-egg smell from the hot tap</button>
+          <button class="pill" data-v="rust">Rusty or discolored hot water</button>
+          <button class="pill" data-v="clean">No — hot water runs clean</button>
+        </div>
+        <div class="q-hint">A sulfur (rotten-egg) smell or rusty hot water are classic anode signals — bacteria reacting with the rod, or a depleted rod letting the tank rust. Either means look now, not in two years.</div>
+      </div>
+      <div class="quiz-q" data-q="last">
+        <div class="q-label">4. When was the rod last checked?</div>
+        <div class="pills">
+          <button class="pill" data-v="never">Never, or no idea</button>
+          <button class="pill" data-v="while">A few years back</button>
+          <button class="pill" data-v="recent">Within the last year or two</button>
+        </div>
+        <div class="q-hint">If the rod has never been pulled, you simply don't know what's left of it — and "never" is the most common answer there is. The first check is the one that matters most.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A replacement anode rod is one of the cheapest parts in your house, and what skipping it costs is the whole appliance. The math here isn't a close call — it's one of the most lopsided maintenance trades you'll ever make:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–40</div><div class="l">a standard replacement anode rod — magnesium or aluminum/zinc, from a hardware store or online</div></div>
+        <div class="calc-stat"><div class="v">~45–90 min</div><div class="l">to check and swap it once you've got a 1 1/16" socket and a breaker bar handy</div></div>
+        <div class="calc-stat"><div class="v bad">$1,000–2,000+</div><div class="l">a new water heater installed — what you're buying years early if the tank rusts through</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔩 Standard replacement anode rod</span><span>$20–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🪢 Flexible / segmented rod (tight clearance)</span><span>$30–55</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:5%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚡ Powered (impressed-current) anode — one-time</span><span>$60–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:9%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Plumber pulls a seized rod for you</span><span>$100–250 labor</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚱 A new water heater the rusted tank forced</span><span>$1,000–2,000+ installed</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $30 rod and an hour every couple of years</strong> against a $1,000–2,000 appliance you'd be replacing years before its time, plus the day-without-hot-water hassle of an emergency swap-out. Spend the thirty dollars when the rod's worn, and a single tank can outlast two that were left to rust. There is no cheaper insurance in the whole house.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check and replace the anode rod</h2>
+    <p class="sub">The job is short but unforgiving of shortcuts: kill the power or gas and the cold-water supply, relieve the pressure, break the hex head loose on top, pull the rod and look, and either drop it back in or replace it. Read the safety box and the techniques first — the two things that bite people are scalding water and a plug torqued down impossibly tight. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Cut the power, drop the pressure, brace the tank</h3>
+      <ul>
+        <li><strong>Turn off the energy first.</strong> On an electric heater, switch off its breaker at the panel. On a gas heater, turn the gas control dial to PILOT (or OFF). Never pull an anode with the burner or element live.</li>
+        <li><strong>Shut the cold-water supply and relieve pressure.</strong> Close the cold inlet valve on top of the tank, then open a hot tap somewhere in the house and drain a couple of gallons from the tank's drain valve. This drops the pressure so nothing sprays when the plug breaks free.</li>
+        <li><strong>The water is scalding — respect it.</strong> The tank holds 120–140°F+ water. Let it cool for an hour or two if you can, and keep hands and face clear of the opening. A little water will weep around the threads; that's normal, but it's hot.</li>
+        <li><strong>The plug can be brutally tight — use the right tools.</strong> Anode plugs are factory-torqued and often seized. Use a 1 1/16" socket (6-point) and a long breaker bar, and brace the tank so you don't rock it and damage the water connections. A helper steadying it, or a strap to the wall studs, makes this far safer.</li>
+        <li><strong>Mind the headroom, and don't overtighten the new one.</strong> A standard rod is ~44" long and needs that much clearance above the tank — a tight ceiling calls for a flexible/segmented rod. Going back in, wrap the threads with PTFE tape rated for water heaters and snug it firmly, but don't gorilla it.</li>
+        <li><strong>Gas units: relight the pilot per the label, and know when to stop.</strong> Restore the gas dial and relight following the instructions printed on the tank. And if the tank is already leaking, or the rod is rusted in solid and won't budge with a breaker bar, stop — that's a plumber's call, and a leaking tank usually means it's done.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A 1 1/16" socket (6-point)</span>
+      <span class="tool-chip">A breaker bar or long ratchet</span>
+      <span class="tool-chip">A replacement anode rod (standard or flexible/segmented)</span>
+      <span class="tool-chip">PTFE / Teflon thread tape</span>
+      <span class="tool-chip">A garden hose for the drain valve</span>
+      <span class="tool-chip">A bucket &amp; towels</span>
+      <span class="tool-chip">Work gloves</span>
+      <span class="tool-chip">A helper or tank strap (recommended)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of shutting off power or gas and the cold-water supply, then relieving pressure by opening a hot tap and draining a couple of gallons from the tank">
+          <rect x="92" y="22" width="96" height="138" rx="20" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <!-- gas dial set to pilot -->
+          <rect x="110" y="120" width="46" height="28" rx="6" fill="#d98e3b"/>
+          <circle cx="124" cy="134" r="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <line x1="124" y1="134" x2="119" y2="129" stroke="#33393b" stroke-width="2" stroke-linecap="round"/>
+          <text x="146" y="137" font-size="7" fill="#fffdf8" font-weight="700" text-anchor="middle">PILOT</text>
+          <!-- cold valve closed on top -->
+          <rect x="150" y="14" width="34" height="9" rx="4" fill="#d9663f"/>
+          <circle cx="184" cy="18" r="6" fill="#e0a93d"/>
+          <!-- hot tap dripping a drain to relieve pressure -->
+          <rect x="34" y="40" width="10" height="40" rx="4" fill="#b9b1a3"/>
+          <rect x="22" y="38" width="26" height="9" rx="4" fill="#7fb3c8"/>
+          <path d="M39 80 q0 8 0 12" stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- bucket catching a couple gallons -->
+          <path d="M28 96 h26 l-3 28 h-20 z" fill="#7fb3c8"/>
+          <path d="M28 96 h26 l-1 8 h-24 z" fill="#dce8ee"/>
+          <text x="140" y="174" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">power/gas + water OFF, relieve pressure</text>
+        </svg>
+        <h4>Cut power, water &amp; pressure</h4>
+        <p>Switch off the breaker (electric) or set the gas to PILOT, close the cold-water inlet, then open a hot tap and drain a couple of gallons. That kills the heat and drops the tank pressure so nothing sprays scalding water when the plug lets go.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of finding the anode rod's hex head on top of the tank, sometimes hidden under a plastic cap or combined with the hot-water outlet">
+          <rect x="56" y="58" width="168" height="100" rx="24" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <path d="M56 76 q84 -30 168 0" fill="none" stroke="#e6dccb" stroke-width="3"/>
+          <!-- plastic cap peeled back -->
+          <ellipse cx="118" cy="50" rx="20" ry="8" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M138 48 q14 -6 22 -2" fill="none" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- the hex head revealed -->
+          <polygon points="160,44 178,44 187,54 178,64 160,64 151,54" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2"/>
+          <!-- combined hot outlet nearby -->
+          <rect x="196" y="36" width="11" height="26" rx="5" fill="#d9663f"/>
+          <text x="140" y="174" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">hex head on top — sometimes capped</text>
+        </svg>
+        <h4>Find the anode hex head</h4>
+        <p>Look for a hexagonal plug on top of the tank — about 1 1/16". It may hide under a snap-off plastic cap, or share the hot-water outlet (a combo anode). If you can't find a standalone one, the outlet-port anode is what your tank uses.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of breaking the anode plug loose with a one and one-sixteenth inch socket on a long breaker bar while a hand braces the tank so it does not rock">
+          <rect x="40" y="62" width="128" height="96" rx="20" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <!-- socket on the hex -->
+          <rect x="86" y="50" width="30" height="22" rx="4" fill="#5e9a78"/>
+          <!-- long breaker bar -->
+          <rect x="108" y="22" width="120" height="11" rx="5" fill="#3e7c59" transform="rotate(20 108 28)"/>
+          <!-- loosen arrow -->
+          <path d="M132 52 a26 26 0 0 0 -38 -6" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round"/>
+          <path d="M94 46 l-2 8 l8 -1" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- bracing hand on the tank side -->
+          <ellipse cx="46" cy="112" rx="13" ry="10" fill="#c9a06b"/>
+          <path d="M37 108 q-5 5 -1 12" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <text x="140" y="174" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">socket + breaker bar — brace the tank</text>
+        </svg>
+        <h4>Break it loose &amp; brace</h4>
+        <p>Fit the 1 1/16" socket and lean on a long breaker bar to crack the plug counter-clockwise — it's often seized hard. Brace the tank (a helper, or a strap to the wall) so you don't rock it and crack a water connection while you heave.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pulling the anode rod out and inspecting it: a worn rod pitted and coated in calcium, down to the bare steel core wire, meaning it needs replacing">
+          <!-- worn rod, mostly consumed -->
+          <rect x="60" y="22" width="14" height="20" rx="3" fill="#8a6a4f"/>
+          <rect x="64" y="42" width="6" height="34" rx="3" fill="#8a6a4f"/>
+          <!-- bare core wire below — replace -->
+          <line x1="67" y1="76" x2="67" y2="150" stroke="#b9b1a3" stroke-width="2.4"/>
+          <!-- calcium / pitting blobs -->
+          <g fill="#c96f4a">
+            <circle cx="70" cy="52" r="4"/>
+            <circle cx="63" cy="66" r="3.4"/>
+          </g>
+          <text x="92" y="58" font-size="11" fill="#d9663f" font-weight="700">eaten down to</text>
+          <text x="92" y="74" font-size="11" fill="#d9663f" font-weight="700">the core wire</text>
+          <!-- a healthy rod beside it for contrast -->
+          <rect x="196" y="22" width="13" height="128" rx="5" fill="#c9a06b"/>
+          <rect x="193" y="18" width="19" height="10" rx="3" fill="#8a6a4f"/>
+          <text x="220" y="64" font-size="10" fill="#3e7c59" font-weight="700">fresh</text>
+          <text x="220" y="78" font-size="10" fill="#3e7c59" font-weight="700">= full</text>
+          <text x="140" y="174" font-size="11" fill="#6b7376" text-anchor="middle">half-inch or less left? replace it</text>
+        </svg>
+        <h4>Pull it &amp; inspect</h4>
+        <p>Lift the rod out and read it. Heavy pitting, a thick calcium crust, or steel core wire showing — about a half-inch of metal or less left — all mean replace. Still fat and coated in metal? Drop it back in and check again in a couple of years.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of wrapping the new rod's threads with PTFE tape, installing it, and restoring water and power before checking for leaks">
+          <!-- new rod going in -->
+          <rect x="48" y="40" width="12" height="100" rx="5" fill="#c9a06b"/>
+          <rect x="44" y="34" width="20" height="12" rx="3" fill="#8a6a4f"/>
+          <!-- thread tape wrap -->
+          <path d="M46 132 q8 -3 16 0 q-8 4 -16 7" fill="none" stroke="#dce8ee" stroke-width="3" stroke-linecap="round"/>
+          <text x="74" y="60" font-size="10" fill="#3e7c59" font-weight="700">wrap threads</text>
+          <text x="74" y="76" font-size="10" fill="#3e7c59" font-weight="700">with PTFE tape</text>
+          <!-- segmented/flexible rod option -->
+          <g>
+            <rect x="206" y="40" width="10" height="20" rx="3" fill="#c9a06b"/>
+            <rect x="206" y="64" width="10" height="20" rx="3" fill="#c9a06b"/>
+            <rect x="206" y="88" width="10" height="20" rx="3" fill="#c9a06b"/>
+            <rect x="206" y="112" width="10" height="20" rx="3" fill="#c9a06b"/>
+            <circle cx="211" cy="62" r="2.4" fill="#8a6a4f"/>
+            <circle cx="211" cy="86" r="2.4" fill="#8a6a4f"/>
+            <circle cx="211" cy="110" r="2.4" fill="#8a6a4f"/>
+          </g>
+          <text x="224" y="78" font-size="9.5" fill="#6b7376">flexible if</text>
+          <text x="224" y="92" font-size="9.5" fill="#6b7376">no headroom</text>
+          <text x="140" y="172" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">install, restore water/power, check for leaks</text>
+        </svg>
+        <h4>Wrap, install &amp; restore</h4>
+        <p>Tape the new rod's threads, thread it in by hand, then snug it firmly with the socket. Use a flexible/segmented rod if the ceiling's tight. Reopen the cold supply, let the tank refill (open a hot tap until water runs steady), restore power or relight the pilot, and watch for leaks.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Anode check progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Rod inspected, swapped if needed, tank refilled, power back on, no leaks. You may have just bought your water heater an extra decade. Check it again in about two years (sooner on softened water).</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs the rod is overdue — and when to call a pro</h2>
+    <p class="sub">A protected tank is silent and clean; the trouble shows up in the water and in the noise. These are the signals it's time to look, and the handful of cases that are a plumber's job — or a sign the heater itself is finished:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Rotten-egg-smelling hot water.</strong> A sulfur smell that's only in the hot water (not the cold) is the classic anode tell — sulfate-reducing bacteria reacting with a magnesium rod. Switching to an aluminum/zinc rod or a powered anode usually clears it.</li>
+        <li><strong>Rusty or discolored hot water.</strong> If hot water runs orange or cloudy while the cold runs clear, the rod may be gone and the tank starting to rust internally. Check the anode now — this is the warning before a leak.</li>
+        <li><strong>A rumbling, aging tank.</strong> Popping and rumbling usually means sediment, but on an older heater it's a nudge to verify the anode too while you're in there — the two tank-longevity jobs go together.</li>
+        <li><strong>A rod seized solid.</strong> If a 1 1/16" socket and breaker bar won't budge the plug and you're worried about twisting the tank, stop and let a plumber break it loose with the right gear rather than damage the connections.</li>
+        <li><strong>No clearance above the tank.</strong> If a low ceiling or shelf means you can't lift a 44" rod straight out, a flexible/segmented rod solves it — but if you can't even fit that, a pro can advise on a combo or powered anode.</li>
+        <li><strong>A tank that's already weeping or leaking.</strong> Water pooling under the heater or seeping from the tank body means the steel has already rusted through. That's not an anode fix — a leaking tank means replacement. Call a plumber.</li>
+        <li><strong>Pro tip:</strong> the anode is one of the two jobs that decide how long a tank lasts. Do it alongside <a href="flush-water-heater.html">flushing the water heater</a> — drain the sediment and check the rod in the same session — and pair your heating-season checks with <a href="bleed-radiators.html">bleeding the radiators</a> so the whole system gets looked at once a year.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What does the anode rod actually do?</summary>
+      <p>It's a sacrificial part — a long rod of a more-reactive metal (usually magnesium, sometimes aluminum or an aluminum/zinc alloy) screwed into the top of the tank and wired electrically to the steel. Because that metal is more reactive than steel, the corrosion that would otherwise attack your tank goes for the rod instead. It "sacrifices" itself, slowly dissolving over the years. As long as a meaningful amount of rod is left, your steel tank is protected. The moment the rod is consumed down to its bare steel core wire, the protection ends and the tank begins rusting from the inside — which is why checking and replacing the rod is the single biggest factor in how long a water heater lasts.</p>
+    </details>
+    <details>
+      <summary>How often should I check or replace the anode rod?</summary>
+      <p>Check it about every two years and replace it when it's heavily consumed — that's the sensible default for most homes on normal municipal water. Tighten to once a year if you have a water softener (softened water can devour an anode in as little as two to three years), very hard or well water, an older or unknown-age tank, or any rotten-egg smell or rust in the hot water. The first check is the most important one of all, because if nobody has ever pulled the rod, you genuinely don't know whether you're still protected or already running on a bare wire. Take the quiz above for a schedule tuned to your water and tank.</p>
+    </details>
+    <details>
+      <summary>How do I know when the rod needs replacing?</summary>
+      <p>Pull it out and look. A healthy rod is still fat with metal along its length. Replace it when you see any of these: it's eaten down so that the steel core wire is exposed for long stretches, there's roughly a half-inch of metal or less left around the wire, it's deeply pitted and thin, or it's caked in a thick crust of calcium or other deposits that has effectively passivated it. If more than about six inches of bare core wire is showing, or chunks have fallen off, it's overdue. When in doubt, a new rod is $20–40 — far cheaper than guessing wrong and losing the tank.</p>
+    </details>
+    <details>
+      <summary>Why does my hot water smell like rotten eggs?</summary>
+      <p>That sulfur smell is almost always a reaction between a magnesium anode rod and sulfate-reducing bacteria in the water — harmless to health, but unpleasant, and it tells you the rod is active. The usual fix is to swap the magnesium rod for an aluminum/zinc alloy rod, which doesn't feed the same reaction, or to install a powered (impressed-current) anode that protects the tank electrically without dissolving and so doesn't produce the smell at all. Shock-disinfecting the tank with a chlorine treatment and flushing can help temporarily, but if the smell returns, changing the rod type is the durable answer.</p>
+    </details>
+    <details>
+      <summary>What if there's no clearance above the tank?</summary>
+      <p>A standard anode rod is one solid piece about 44 inches long, so it needs that much headroom to lift straight out — and many tanks tucked under a low basement ceiling, a shelf, or in a closet simply don't have it. The answer is a flexible (also called segmented or "linked") rod: it comes in short jointed sections connected by a flexible cable, so you feed it in piece by piece and it bends into the tank through a much smaller opening. It costs a little more than a standard rod and protects the tank just as well. If even that's a struggle, a powered anode, which is rigid but shorter, or a plumber's advice on a combo-port unit, is the next step.</p>
+    </details>
+    <details>
+      <summary>Does softened water really shorten anode life?</summary>
+      <p>Yes — noticeably. Water softeners replace hardness minerals with sodium, which makes the water more electrically conductive, and that supercharges the sacrificial reaction. A magnesium rod that might last six or eight years on normal water can be eaten down in as little as two to three years on softened water. It's not a reason to stop softening — soft water is gentler on the rest of the plumbing and on the tank's sediment buildup — but it is a strong reason to check the rod yearly rather than every two years, and many people on softeners switch to a longer-lasting powered anode so they're not pulling a fresh rod every couple of years.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The cheap part that decides whether your tank lasts 8 years or 16.</h2>
+        <p>The anode rod is the one component that quietly determines your water heater's lifespan — and it's the one almost nobody remembers to check. Upkeep Ledger logs this inspection and resurfaces it every couple of years (or yearly if you're on softened water), so you catch a worn rod before the tank rusts — right alongside the flush, the HVAC filter, and every other quiet task that keeps the house running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-water-heater-anode&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-water-heater-anode&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your heater, water conditions, and local labor will vary — and if the tank is already leaking, treat it as a replacement and call a pro rather than a DIY anode job.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { water: null, age: null, signs: null, last: null };
+
+  var FREQ_LABEL = {
+    12: "Once a year",
+    24: "Every 2 years",
+    36: "Every 3 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 24;
+    var tighten = false;
+
+    /* Water type — softened is the anode killer */
+    if (s.water === "softened") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Softened water is the single biggest accelerant there is — the sodium makes it conductive and can eat a magnesium rod in as little as two to three years, so check it yearly and consider a powered anode that won't need swapping so often.");
+    } else if (s.water === "hard") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Hard or well water drives faster corrosion and heavier deposits, so a yearly look keeps you ahead of a rod that's wearing quicker than the every-two-years average.");
+    } else {
+      reasons.push("Normal municipal water is the gentlest case for an anode, so the standard every-two-years check is exactly what it's written for.");
+    }
+
+    /* Tank age */
+    if (s.age === "old") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("On an older or unknown-age tank the original rod may already be long gone, so checking sooner tells you whether you're still protected — and whether it's worth the swap or the tank is near the end anyway.");
+    } else if (s.age === "new") {
+      reasons.push("A newer tank still has plenty of rod, so you're verifying rather than rescuing — the standard interval is fine, with a first look to confirm what type and length your rod is.");
+    } else {
+      reasons.push("A tank a few years in is squarely in anode-checking territory; the every-two-years rhythm catches the rod while there's still tank worth saving.");
+    }
+
+    /* Signs in the hot water */
+    if (s.signs === "smell") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("A rotten-egg smell in the hot water is the rod reacting with bacteria — look now, and plan to switch to an aluminum/zinc rod or a powered anode, which usually clears the smell for good.");
+    } else if (s.signs === "rust") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Rusty or discolored hot water can mean the rod is spent and the tank is starting to rust internally — that's a check-it-this-weekend signal, not a check-it-eventually one.");
+    } else {
+      reasons.push("Clean, odorless hot water is a good sign the rod is still doing its job, so there's no urgency beyond the routine check.");
+    }
+
+    /* Last checked */
+    if (s.last === "never") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("If the rod has never been pulled, you simply don't know what's left of it — and that's the most common situation there is. The first inspection is the one that matters most, so do it sooner rather than later.");
+    } else if (s.last === "recent") {
+      reasons.push("Since you've looked recently and know what's in there, you can lean toward the longer end of the range and just keep an eye on the interval.");
+    } else {
+      reasons.push("A few years since the last look puts you right on schedule for another check — pull it and see how the wear is tracking.");
+    }
+
+    /* Best-case relaxation: normal water, new tank, no signs, recently checked */
+    if (!tighten && s.water === "normal" && s.age === "new" && s.signs === "clean" && s.last === "recent") {
+      months = 36;
+      reasons.push("A newer tank on normal water, with clean hot water and a recent inspection, is the one case where you can comfortably stretch to every three years — just don't lose the thread on it entirely.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.water === "softened") {
+      note = "<strong>On a softener, think about a powered anode:</strong> an impressed-current rod protects the tank electrically without dissolving, so it doesn't get eaten every couple of years and won't feed a sulfur smell. It's a $60–150 one-time fix that ends the yearly swap.";
+    } else if (s.signs === "smell") {
+      note = "<strong>For the rotten-egg smell, change the rod type:</strong> swap the magnesium rod for an aluminum/zinc alloy rod, or go to a powered anode. Either stops the bacterial reaction that causes the sulfur odor — a temporary chlorine flush only buys time.";
+    } else if (s.signs === "rust") {
+      note = "<strong>Rusty hot water means act now:</strong> pull the rod this week. If it's down to the core wire, replace it immediately — and if the tank itself is weeping, treat it as a replacement, not an anode job.";
+    } else {
+      note = "<strong>Pair it with the flush:</strong> the anode and the annual sediment flush are the two jobs that decide how long your tank lasts. Do them in the same session — drain a bit, pull the rod, and you've covered the heater's whole longevity checklist at once.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.water || !quizState.age || !quizState.signs || !quizState.last) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: check the anode rod " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Cut the power and water, relieve the pressure, then <strong>break the hex head loose, pull the rod, inspect it, and replace it if it's eaten down to the core</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & shut off", text: "Turn off the power or set the gas to PILOT", note: "On an electric heater, switch off its breaker at the panel. On a gas heater, turn the control dial to PILOT (or OFF). Never pull the anode with the element or burner live." },
+    { phase: "Prep & shut off", text: "Close the cold-water supply valve", note: "Shut the cold inlet valve on top of the tank so it can't keep refilling while you work. Leave the hot-water connection alone." },
+    { phase: "Prep & shut off", text: "Relieve the pressure — open a hot tap and drain a couple of gallons", note: "Open a hot faucet somewhere in the house and drain a gallon or two from the tank's drain valve into a bucket or down a hose. This drops the internal pressure so nothing sprays when the plug breaks free." },
+    { phase: "Access the rod", text: "Find the anode hex head on top of the tank", note: "Look for a ~1 1/16\" hex plug on the tank top. It may hide under a snap-off plastic cap, or be combined with the hot-water outlet (a combo anode) — that's the one to use if there's no standalone plug." },
+    { phase: "Access the rod", text: "Fit the 1 1/16\" socket and breaker bar", note: "Use a 6-point 1 1/16\" socket on a long breaker bar or long ratchet. Avoid a flimsy short ratchet — these plugs are factory-torqued and often seized." },
+    { phase: "Access the rod", text: "Brace the tank and break the plug loose", note: "Have a helper steady the tank, or strap it to the wall studs, then lean on the bar counter-clockwise. Bracing keeps you from rocking the tank and cracking a water connection while you heave." },
+    { phase: "Inspect & decide", text: "Lift the rod out and inspect it", note: "Pull the rod straight up out of the tank. Expect it to be ugly — that's its job. A standard rod is ~44\" long, so make sure you have the headroom (or you'll need a flexible/segmented rod)." },
+    { phase: "Inspect & decide", text: "Decide: keep it or replace it", note: "Replace it if the steel core wire is exposed for long stretches, there's about a half-inch of metal or less left, it's deeply pitted and thin, or it's caked in heavy calcium. Still fat with metal? Drop it back in." },
+    { phase: "Replace & restore", text: "Wrap the new rod's threads with PTFE tape", note: "If you're replacing it, wrap the threads with PTFE/Teflon tape rated for water heaters. Choose an aluminum/zinc rod or powered anode if you've had a rotten-egg smell, or a flexible/segmented rod if clearance is tight." },
+    { phase: "Replace & restore", text: "Thread the rod in and snug it firmly", note: "Start it by hand to avoid cross-threading, then tighten it firmly with the socket — snug and sealed, but don't gorilla it and risk stripping or cracking the fitting." },
+    { phase: "Replace & restore", text: "Reopen the water, refill, and restore power/gas", note: "Reopen the cold-water valve, then open a hot tap and let it run until water flows steady and air is purged — this confirms the tank is full. Only then switch the breaker back on or relight the gas pilot per the label." },
+    { phase: "Replace & restore", text: "Check for leaks and log the date", note: "Watch the plug for any weeping once pressure is back; snug it a touch more if needed. Then note the date so the next check lands in about two years (or yearly on softened water) before the rod runs out again." }
+  ];
+
+  var LS_KEY = "upkeepguides:check-water-heater-anode:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

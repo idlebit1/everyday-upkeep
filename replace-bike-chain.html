@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace your bike chain — UpkeepGuides.com</title>
+<meta name="description" content="When and how to replace your bike chain: measure wear with a chain checker, swap a $25 chain before it grinds your cassette into hooks, size and join the right chain for your drivetrain.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace your bike chain — UpkeepGuides.com">
+<meta property="og:description" content="When and how to replace your bike chain: measure wear with a chain checker, swap a $25 chain before it grinds your cassette into hooks, size and join the right chain for your drivetrain.">
+<meta property="og:url" content="https://upkeepguides.com/replace-bike-chain.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace your bike chain — UpkeepGuides.com">
+<meta name="twitter:description" content="When and how to replace your bike chain: measure wear with a chain checker, swap a $25 chain before it grinds your cassette into hooks, size and join the right chain for your drivetrain.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every ~2,000 miles</span>
+      <h1>Replace Your Bike Chain</h1>
+      <p class="lede">A chain doesn't snap one day — it stretches, link by link, until it stops meshing cleanly and starts filing your cassette and chainrings into matching hooks. Catch it with a $12 chain checker and swap a $25 chain on time, and the expensive parts last for years. Miss the window, and the bill jumps to $150–300 for a whole drivetrain. Here's how to measure wear, pick the right chain for your bike, and join it correctly.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Roughly <em>every 2,000 miles</em></span>
+        <span class="chip">📏 <em>Measure</em>, don't guess</span>
+        <span class="chip">⏱️ <em>~20–30 min</em> to swap</span>
+        <span class="chip">💸 A <em>$25</em> chain saves a <em>$250</em> drivetrain</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bike drivetrain in a workshop: a rear cassette and front chainring linked by a chain, a chain-wear checker tool dropped onto the chain, a hand holding chain-breaker and quick-link pliers nearby, and a fresh replacement chain coiled on the bench">
+      <ellipse cx="280" cy="402" rx="252" ry="22" fill="#efe7d8"/>
+      <!-- workshop pegboard / wall -->
+      <rect x="36" y="30" width="180" height="120" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <g fill="#c9a06b" opacity="0.6">
+        <circle cx="64" cy="58" r="3"/><circle cx="96" cy="58" r="3"/><circle cx="128" cy="58" r="3"/><circle cx="160" cy="58" r="3"/><circle cx="192" cy="58" r="3"/>
+        <circle cx="64" cy="92" r="3"/><circle cx="96" cy="92" r="3"/><circle cx="128" cy="92" r="3"/><circle cx="160" cy="92" r="3"/><circle cx="192" cy="92" r="3"/>
+        <circle cx="64" cy="126" r="3"/><circle cx="96" cy="126" r="3"/><circle cx="128" cy="126" r="3"/><circle cx="160" cy="126" r="3"/><circle cx="192" cy="126" r="3"/>
+      </g>
+      <!-- hung tool silhouette on the wall -->
+      <rect x="84" y="64" width="9" height="40" rx="3" fill="#5e9a78"/>
+      <rect x="78" y="58" width="21" height="9" rx="3" fill="#3e7c59"/>
+      <!-- workbench top -->
+      <rect x="0" y="346" width="560" height="22" rx="4" fill="#8a6a4f"/>
+      <rect x="0" y="368" width="560" height="8" fill="#6f543c"/>
+
+      <!-- ===== drivetrain glow ===== -->
+      <ellipse cx="300" cy="246" rx="200" ry="96" fill="#faf0da" opacity="0.7"/>
+
+      <!-- rear cassette (stack of cogs) -->
+      <g>
+        <circle cx="150" cy="250" r="62" fill="#dce8ee"/>
+        <circle cx="150" cy="250" r="62" fill="none" stroke="#b9b1a3" stroke-width="3"/>
+        <circle cx="150" cy="250" r="48" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+        <circle cx="150" cy="250" r="35" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+        <circle cx="150" cy="250" r="22" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+        <circle cx="150" cy="250" r="9" fill="#6f543c"/>
+        <!-- cog teeth on the outer ring -->
+        <g stroke="#8a6a4f" stroke-width="4" stroke-linecap="round">
+          <line x1="150" y1="188" x2="150" y2="180"/>
+          <line x1="194" y1="206" x2="200" y2="200"/>
+          <line x1="212" y1="250" x2="220" y2="250"/>
+          <line x1="194" y1="294" x2="200" y2="300"/>
+          <line x1="150" y1="312" x2="150" y2="320"/>
+          <line x1="106" y1="294" x2="100" y2="300"/>
+          <line x1="88" y1="250" x2="80" y2="250"/>
+          <line x1="106" y1="206" x2="100" y2="200"/>
+        </g>
+      </g>
+
+      <!-- front chainring -->
+      <g>
+        <circle cx="408" cy="262" r="56" fill="none" stroke="#d98e3b" stroke-width="9"/>
+        <circle cx="408" cy="262" r="11" fill="#8a6a4f"/>
+        <g stroke="#d98e3b" stroke-width="5" stroke-linecap="round">
+          <line x1="408" y1="200" x2="408" y2="192"/>
+          <line x1="452" y1="218" x2="458" y2="212"/>
+          <line x1="470" y1="262" x2="478" y2="262"/>
+          <line x1="452" y1="306" x2="458" y2="312"/>
+          <line x1="408" y1="324" x2="408" y2="332"/>
+          <line x1="364" y1="306" x2="358" y2="312"/>
+          <line x1="346" y1="262" x2="338" y2="262"/>
+          <line x1="364" y1="218" x2="358" y2="212"/>
+        </g>
+        <!-- crank arm -->
+        <line x1="408" y1="262" x2="436" y2="312" stroke="#2c5a40" stroke-width="8" stroke-linecap="round"/>
+      </g>
+
+      <!-- chain spanning cassette to chainring -->
+      <line x1="150" y1="190" x2="408" y2="206" stroke="#6b7376" stroke-width="8" stroke-linecap="round"/>
+      <line x1="150" y1="190" x2="408" y2="206" stroke="#b9b1a3" stroke-width="4" stroke-dasharray="7 6" stroke-linecap="round"/>
+      <line x1="150" y1="312" x2="408" y2="318" stroke="#6b7376" stroke-width="8" stroke-linecap="round"/>
+      <line x1="150" y1="312" x2="408" y2="318" stroke="#b9b1a3" stroke-width="4" stroke-dasharray="7 6" stroke-linecap="round"/>
+
+      <!-- chain-wear checker dropped onto the lower span -->
+      <rect x="232" y="296" width="96" height="16" rx="6" fill="#e0a93d" transform="rotate(2 280 304)"/>
+      <path d="M242 312 v18" stroke="#d98e3b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M318 314 v22" stroke="#d98e3b" stroke-width="7" stroke-linecap="round"/>
+      <rect x="262" y="284" width="36" height="13" rx="5" fill="#d9663f"/>
+      <text x="280" y="294" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">0.5%</text>
+
+      <!-- a hand holding quick-link / chain-breaker pliers, upper right -->
+      <rect x="448" y="118" width="58" height="13" rx="5" fill="#5e9a78" transform="rotate(34 477 124)"/>
+      <rect x="452" y="146" width="58" height="13" rx="5" fill="#3e7c59" transform="rotate(20 481 152)"/>
+      <circle cx="450" cy="138" r="6" fill="#2c5a40"/>
+      <!-- hand grip -->
+      <ellipse cx="492" cy="176" rx="20" ry="15" fill="#c9a06b"/>
+      <path d="M480 170 q-6 7 -1 15" stroke="#8a6a4f" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M500 198 q14 22 34 26" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- fresh replacement chain, coiled on the bench (right) -->
+      <ellipse cx="470" cy="336" rx="44" ry="16" fill="none" stroke="#7fb3c8" stroke-width="9"/>
+      <ellipse cx="470" cy="336" rx="44" ry="16" fill="none" stroke="#dce8ee" stroke-width="4" stroke-dasharray="6 5"/>
+      <ellipse cx="478" cy="330" rx="30" ry="11" fill="none" stroke="#7fb3c8" stroke-width="8"/>
+      <ellipse cx="478" cy="330" rx="30" ry="11" fill="none" stroke="#dce8ee" stroke-width="3.5" stroke-dasharray="6 5"/>
+      <text x="470" y="362" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">new chain</text>
+
+      <!-- quick link on the bench, front -->
+      <rect x="208" y="354" width="40" height="14" rx="7" fill="none" stroke="#5e9a78" stroke-width="4"/>
+      <circle cx="216" cy="361" r="4" fill="#5e9a78"/>
+      <circle cx="240" cy="361" r="4" fill="#5e9a78"/>
+
+      <!-- small greenery for warmth -->
+      <circle cx="40" cy="384" r="14" fill="#5e9a78"/>
+      <circle cx="60" cy="390" r="11" fill="#3e7c59"/>
+      <ellipse cx="520" cy="388" rx="8" ry="12" fill="#5e9a78" transform="rotate(-22 520 388)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A chain is built to be the sacrificial part — it wears out so the costly parts don't have to. But that only works if you replace it <em>before</em> it stretches far enough to start chewing up everything it touches. Here's what's actually at stake (typical U.S. cost ranges):</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+          <circle cx="18" cy="18" r="4" fill="#6f543c"/>
+          <g stroke="#d9663f" stroke-width="2.6" stroke-linecap="round">
+            <path d="M18 5 l0 3 M31 18 l-3 0 M18 31 l0 -3 M5 18 l3 0"/>
+          </g>
+          <path d="M26 9 l3 -3 l-1 4 M9 26 l-3 3 l4 -1" fill="#d9663f"/>
+        </svg></div>
+        <h3>A worn chain eats the cassette &amp; rings</h3>
+        <p>As pins and rollers wear, the chain "stretches" and stops meshing — so it files the cassette and chainring teeth into matching hooks. Let it go and you're not replacing a chain, you're replacing the whole drivetrain.</p>
+        <span class="cost">$150 – $300 drivetrain</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="15" width="9" height="6" rx="3" fill="none" stroke="#8a6a4f" stroke-width="2.6"/>
+          <rect x="14" y="11" width="9" height="6" rx="3" fill="none" stroke="#8a6a4f" stroke-width="2.6" transform="rotate(-12 18 14)"/>
+          <rect x="24" y="16" width="9" height="6" rx="3" fill="none" stroke="#8a6a4f" stroke-width="2.6" transform="rotate(10 28 19)"/>
+          <path d="M6 28 l5 -4 l4 5 l5 -5 l4 4" fill="none" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Skipping &amp; slipping under power</h3>
+        <p>A worn chain shifts badly and slips or skips just as you stand on the pedals — annoying on the flat, genuinely dangerous when you're sprinting or cranking up a climb and your foot suddenly lurches forward.</p>
+        <span class="cost">A safety issue on the climb</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="14" width="28" height="8" rx="3" fill="#b9b1a3"/>
+          <line x1="11" y1="14" x2="11" y2="19" stroke="#33393b" stroke-width="2"/>
+          <line x1="18" y1="14" x2="18" y2="19" stroke="#33393b" stroke-width="2"/>
+          <line x1="25" y1="14" x2="25" y2="19" stroke="#33393b" stroke-width="2"/>
+          <path d="M9 22 v5 M27 22 v5" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="18" cy="8" r="4" fill="#e0a93d"/>
+        </svg></div>
+        <h3>A $12 gauge turns $250 into $25</h3>
+        <p>A cheap chain-wear checker drops into the links and tells you the exact moment to swap. Catch wear at the mark and you spend ~$25 on a chain instead of ~$150–300 on a cassette-and-chainring rebuild.</p>
+        <span class="cost">$10 – $15, lasts forever</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="15" width="8" height="6" rx="3" fill="none" stroke="#3e7c59" stroke-width="2.6"/>
+          <rect x="14" y="15" width="8" height="6" rx="3" fill="none" stroke="#3e7c59" stroke-width="2.6"/>
+          <rect x="23" y="15" width="8" height="6" rx="3" fill="none" stroke="#3e7c59" stroke-width="2.6"/>
+          <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round">
+            <path d="M27 8 l0 5 M24.5 10.5 l5 0"/>
+          </g>
+        </svg></div>
+        <h3>The right chain shifts crisp &amp; lasts</h3>
+        <p>A chain matched to your drivetrain's speed and brand drops into gear cleanly and wears slowly. The wrong one — too wide, or off-brand on a fussy groupset — shifts vaguely, wears fast, and can damage the parts you just bought.</p>
+        <span class="cost">Match the speed, every time</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace it?</h2>
+    <p class="sub">"Around every 2,000 miles" is the rule of thumb, but it's only a starting point — chain life swings wildly with where you ride, how much, how well you maintain it, and which drivetrain you run. The honest answer is always the same: measure with a chain checker, don't trust the odometer. Answer four quick questions for a realistic interval:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="volume">
+        <div class="q-label">1. How much do you ride?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Heavy weekly mileage / daily commute</button>
+          <button class="pill" data-v="regular">A few rides a week</button>
+          <button class="pill" data-v="occasional">Occasional weekend spins</button>
+        </div>
+        <div class="q-hint">Miles are what wear a chain, so a heavy commuter or trainee burns through chains far faster than a fair-weather weekender — and hits the checker's mark sooner than the calendar suggests.</div>
+      </div>
+      <div class="quiz-q" data-q="conditions">
+        <div class="q-label">2. What do you mostly ride through?</div>
+        <div class="pills">
+          <button class="pill" data-v="rough">Wet, muddy, gritty, or off-road</button>
+          <button class="pill" data-v="mixed">A mix of conditions</button>
+          <button class="pill" data-v="clean">Clean, dry pavement</button>
+        </div>
+        <div class="q-hint">Water flushes lube out and grit grinds the rollers from the inside, so wet, muddy, or gravelly riding can halve chain life. Clean dry roads are the kindest condition there is.</div>
+      </div>
+      <div class="quiz-q" data-q="care">
+        <div class="q-label">3. How well do you maintain it?</div>
+        <div class="pills">
+          <button class="pill" data-v="rare">Rarely clean or lube it</button>
+          <button class="pill" data-v="some">Lube it now and then</button>
+          <button class="pill" data-v="diligent">Clean &amp; lube on a schedule</button>
+        </div>
+        <div class="q-hint">A clean, lubed chain wears slowly; a dry, gritty one wears fast. Regular care is the single biggest thing you control — a neglected chain can wear out in half the miles.</div>
+      </div>
+      <div class="quiz-q" data-q="drivetrain">
+        <div class="q-label">4. What drivetrain do you run?</div>
+        <div class="pills">
+          <button class="pill" data-v="modern">Modern 11/12-speed or e-bike</button>
+          <button class="pill" data-v="mid">10-speed</button>
+          <button class="pill" data-v="old">8/9-speed or singlespeed</button>
+        </div>
+        <div class="q-hint">Narrow 11- and 12-speed chains and high-torque e-bikes run tighter tolerances and wear faster, so replace at ~0.5% stretch. Older, wider 8/9-speed chains are more forgiving — replace nearer 0.75%.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of waiting too long</h2>
+    <p class="sub">Drivetrain wear is a chain reaction — literally. Swap the cheap part at the mark and the expensive parts last for years; wait, and a stretched chain recuts the cassette and chainrings until the whole stack has to go together (typical U.S. estimates):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–50</div><div class="l">a new chain — under $30 for most road and MTB drivetrains, more for 12-speed and e-bike chains</div></div>
+        <div class="calc-stat"><div class="v bad">$150–300</div><div class="l">chain + cassette + chainrings, once a worn chain has hooked everything it touches</div></div>
+        <div class="calc-stat"><div class="v">$25–45</div><div class="l">the tools — a chain checker (~$10–15) plus a chain tool or quick-link pliers (~$15–30), bought once</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>📏 Chain checker — the tool that times the swap</span><span>~$12</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:5%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔗 A new chain, swapped at the mark</span><span>$20–50</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Shop chain replacement (labor only)</span><span>$20–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚙️ New cassette once the teeth are hooked</span><span>$50–250</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Full drivetrain: chain + cassette + chainrings</span><span>$150–300+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $12 gauge and a $25 chain swapped on time</strong> against a $150–300 drivetrain you ground up by waiting. Chains are <strong>designed to be the sacrificial part</strong> — replace them at 0.5–0.75% wear and you'll buy a handful of cheap chains over the life of the bike instead of one expensive rebuild, and your shifting stays crisp the whole time.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your bike chain</h2>
+    <p class="sub">The skill that matters isn't the swap — it's the <em>measurement</em>. Measure wear with a checker, and if it's at the limit, remove the old chain, size the new one to match, route it through the derailleur, and join it with a fresh quick-link or connecting pin. Read the techniques first (especially "match the speed" and "if the new chain skips, the cassette's worn too"), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Work smart — secure the bike, match the chain, test before you ride</h3>
+      <ul>
+        <li><strong>Shift to a middle gear and secure the bike before you start.</strong> A repair stand makes everything easier; if you don't have one, lean the bike securely or hang the saddle on a sturdy hook so the cranks can spin freely and the bike can't tip.</li>
+        <li><strong>Keep fingers clear of the chainring teeth and the chain tool's path.</strong> Chainring teeth are sharp, and a chain tool puts real force on a small pin — keep hands out of the way so a slip pinches metal, not skin. Wear gloves and protect your eyes around degreaser and lube.</li>
+        <li><strong>Match the new chain to your drivetrain's <em>speed</em> and brand.</strong> An 11-speed chain for an 11-speed cassette, 12 for 12, and so on — narrower chains for more speeds. Some groupsets (notably certain SRAM and Shimano 12-speed) want their own brand's chain; check compatibility before you buy.</li>
+        <li><strong>Size it correctly, and never reuse a worn joint.</strong> Match the new chain's length to the old one, or use the big-big + 2 links method. Don't reuse a pressed-out standard pin or a used quick-link — fit a new connecting pin or quick-link rated for your chain's speed.</li>
+        <li><strong>If the new chain skips on the old cassette under load, the cassette is worn too.</strong> A brand-new chain that slips when you push hard means the old chain already recut the cog teeth — the cassette (and sometimes chainrings) need replacing alongside the chain.</li>
+        <li><strong>Test in a safe spot before riding in traffic.</strong> Run through every gear and stand on the pedals in an empty lot or quiet street first. E-bikes put far more torque through the chain — always use the manufacturer's specified chain and double-check the join.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A chain-wear checker (or a ruler)</span>
+      <span class="tool-chip">The right new chain (matched to your speed)</span>
+      <span class="tool-chip">A chain tool / chain breaker</span>
+      <span class="tool-chip">Quick-link pliers (master-link pliers)</span>
+      <span class="tool-chip">A new quick-link or connecting pin</span>
+      <span class="tool-chip">Nitrile gloves &amp; a rag</span>
+      <span class="tool-chip">Chain lube</span>
+      <span class="tool-chip">A repair stand (optional, helps a lot)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a chain-wear checker dropped onto the chain, with the 0.5 percent end for 11 and 12-speed and the 0.75 percent end for older chains; if the end seats fully the chain is worn out">
+          <rect x="36" y="58" width="208" height="18" rx="6" fill="#b9b1a3"/>
+          <path d="M52 76 v22" stroke="#6b7376" stroke-width="7" stroke-linecap="round"/>
+          <path d="M228 76 v26" stroke="#6b7376" stroke-width="7" stroke-linecap="round"/>
+          <rect x="96" y="48" width="36" height="14" rx="6" fill="#e0a93d"/>
+          <text x="114" y="59" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">0.5</text>
+          <rect x="156" y="48" width="42" height="14" rx="6" fill="#d9663f"/>
+          <text x="177" y="59" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">0.75</text>
+          <g>
+            <rect x="14" y="108" width="40" height="20" rx="9" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+            <rect x="70" y="108" width="40" height="20" rx="9" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+            <rect x="126" y="108" width="40" height="20" rx="9" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+            <rect x="182" y="108" width="40" height="20" rx="9" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+          </g>
+          <g fill="#b9b1a3">
+            <circle cx="14" cy="118" r="7"/>
+            <circle cx="56" cy="118" r="7"/>
+            <circle cx="112" cy="118" r="7"/>
+            <circle cx="168" cy="118" r="7"/>
+            <circle cx="224" cy="118" r="7"/>
+          </g>
+          <text x="40" y="156" font-size="11" fill="#d9663f" font-weight="700">end seats fully = worn out, replace</text>
+        </svg>
+        <h4>Measure wear with a checker</h4>
+        <p>Drop the gauge into the chain. If the 0.5% end (11/12-speed) or the 0.75% end (older chains) seats fully into the links, the chain's worn out. No tool? Twelve links on a new chain measure exactly 12 inches pin-to-pin — at ~12 1/16" it's done.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of removing the old chain: quick-link pliers popping a master link open, or a chain tool pushing a pin out of a link">
+          <!-- quick link being popped -->
+          <g>
+            <rect x="30" y="64" width="40" height="16" rx="8" fill="none" stroke="#5e9a78" stroke-width="4"/>
+            <circle cx="38" cy="72" r="4" fill="#5e9a78"/>
+            <circle cx="62" cy="72" r="4" fill="#5e9a78"/>
+            <rect x="22" y="40" width="40" height="9" rx="4" fill="#5e9a78" transform="rotate(-22 42 44)"/>
+            <rect x="38" y="40" width="40" height="9" rx="4" fill="#3e7c59" transform="rotate(22 58 44)"/>
+            <text x="40" y="104" font-size="10.5" fill="#3e7c59" font-weight="700" text-anchor="middle">pop the quick-link</text>
+          </g>
+          <!-- divider -->
+          <line x1="140" y1="28" x2="140" y2="140" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="4 4"/>
+          <text x="140" y="20" font-size="10" fill="#6b7376" text-anchor="middle">or</text>
+          <!-- chain tool pushing a pin -->
+          <g>
+            <rect x="176" y="100" width="56" height="20" rx="9" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+            <circle cx="186" cy="110" r="6" fill="#b9b1a3"/>
+            <circle cx="222" cy="110" r="6" fill="#b9b1a3"/>
+            <rect x="190" y="48" width="20" height="44" rx="6" fill="#c96f4a"/>
+            <rect x="196" y="44" width="8" height="40" rx="3" fill="#8a6a4f"/>
+            <path d="M204 90 v14 m-4 -5 l4 5 l4 -5" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="204" y="140" font-size="10.5" fill="#3e7c59" font-weight="700" text-anchor="middle">push a pin out</text>
+          </g>
+        </svg>
+        <h4>Remove the old chain</h4>
+        <p>If your chain has a quick-link, squeeze it open with master-link pliers — fast and clean. Otherwise, seat a chain tool on a pin and wind the handle to press the pin out. Either way, note how the chain routed through the rear derailleur before it comes off.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of sizing the new chain by laying it next to the old chain to match length, and checking the chain box for the correct speed and brand">
+          <!-- old chain (top) -->
+          <g fill="#b9b1a3">
+            <circle cx="30" cy="46" r="7"/><circle cx="62" cy="46" r="7"/><circle cx="94" cy="46" r="7"/><circle cx="126" cy="46" r="7"/><circle cx="158" cy="46" r="7"/><circle cx="190" cy="46" r="7"/><circle cx="222" cy="46" r="7"/>
+          </g>
+          <line x1="30" y1="46" x2="222" y2="46" stroke="#8a6a4f" stroke-width="3"/>
+          <text x="232" y="50" font-size="10" fill="#6b7376">old</text>
+          <!-- new chain (bottom), matched length -->
+          <g fill="#7fb3c8">
+            <circle cx="30" cy="86" r="7"/><circle cx="62" cy="86" r="7"/><circle cx="94" cy="86" r="7"/><circle cx="126" cy="86" r="7"/><circle cx="158" cy="86" r="7"/><circle cx="190" cy="86" r="7"/><circle cx="222" cy="86" r="7"/>
+          </g>
+          <line x1="30" y1="86" x2="222" y2="86" stroke="#5e9a78" stroke-width="3"/>
+          <text x="232" y="90" font-size="10" fill="#3e7c59">new</text>
+          <!-- match guides -->
+          <line x1="30" y1="40" x2="30" y2="92" stroke="#d98e3b" stroke-width="2" stroke-dasharray="3 3"/>
+          <line x1="222" y1="40" x2="222" y2="92" stroke="#d98e3b" stroke-width="2" stroke-dasharray="3 3"/>
+          <!-- chain box -->
+          <rect x="92" y="112" width="96" height="44" rx="6" fill="#fffdf8" stroke="#c96f4a" stroke-width="3"/>
+          <text x="140" y="132" font-size="11" font-weight="700" fill="#c96f4a" text-anchor="middle">11-SPEED</text>
+          <text x="140" y="148" font-size="9.5" fill="#6b7376" text-anchor="middle">check brand + speed</text>
+        </svg>
+        <h4>Size the new chain</h4>
+        <p>Lay the new chain beside the old one and match the length exactly (or use the big-big chainring/cog + 2 links method if the old chain was wrong). First, confirm the box says the right speed and a compatible brand — that's the step that saves a ruined chain.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of installing the new chain: routing it correctly through the rear derailleur cage pulleys and joining the ends with a new quick-link">
+          <!-- derailleur cage with two jockey wheels -->
+          <circle cx="80" cy="62" r="18" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+          <circle cx="80" cy="62" r="4" fill="#6f543c"/>
+          <circle cx="96" cy="116" r="15" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+          <circle cx="96" cy="116" r="3.5" fill="#6f543c"/>
+          <!-- chain routed in an S through the pulleys -->
+          <path d="M30 50 q40 4 50 12 q14 12 4 36 q-12 22 12 32 q40 14 150 6" fill="none" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+          <path d="M30 50 q40 4 50 12 q14 12 4 36 q-12 22 12 32 q40 14 150 6" fill="none" stroke="#dce8ee" stroke-width="2.5" stroke-dasharray="5 4"/>
+          <!-- quick link being joined at the ends -->
+          <rect x="196" y="138" width="34" height="14" rx="7" fill="none" stroke="#3e7c59" stroke-width="4"/>
+          <path d="M196 145 l-10 -6 M230 145 l10 -6" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <text x="200" y="40" font-size="10.5" fill="#3e7c59" font-weight="700">route through the cage</text>
+          <text x="148" y="170" font-size="10.5" fill="#3e7c59" font-weight="700">join with a new quick-link</text>
+        </svg>
+        <h4>Install &amp; join it</h4>
+        <p>Thread the chain over the chainring and cassette and route it correctly through the rear derailleur's two jockey wheels (an S-path — note how the old one ran). Join the ends with a new quick-link, then seat it by pedaling against the brake or standing on the pedal.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking shifting across the gears and watching for the chain skipping under load, then applying lube one drop per roller">
+          <!-- cassette with chain -->
+          <circle cx="84" cy="92" r="40" fill="none" stroke="#8a6a4f" stroke-width="5"/>
+          <circle cx="84" cy="92" r="26" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+          <circle cx="84" cy="92" r="7" fill="#6f543c"/>
+          <line x1="124" y1="84" x2="220" y2="78" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+          <line x1="124" y1="100" x2="220" y2="106" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+          <!-- shifting arrows across cogs -->
+          <path d="M150 40 l40 0 m-9 -5 l9 5 l-9 5" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="150" y="34" font-size="10" fill="#6b7376">run the gears</text>
+          <!-- skip warning -->
+          <text x="150" y="92" font-size="11" font-weight="700" fill="#d9663f">skips under load?</text>
+          <text x="150" y="108" font-size="9.5" fill="#6b7376">→ cassette's worn too</text>
+          <!-- lube drop -->
+          <path d="M150 134 c4 6 6 9 0 13 c-6 -4 -4 -7 0 -13" fill="#7fb3c8"/>
+          <text x="166" y="148" font-size="10" fill="#6b7376">then lube, one drop per roller</text>
+        </svg>
+        <h4>Check shifting &amp; for skipping</h4>
+        <p>Run through every gear and push hard on the pedals. Smooth and quiet? You're done. If it skips under load, the old chain already recut the cassette — that needs replacing too. Finish by lubing the new chain, one drop per roller, and wiping the excess.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Chain-replacement progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 New chain measured, sized, installed, and joined — shifting's crisp, nothing's skipping, and the cassette and chainrings live to ride another few thousand miles. Log the date and check wear again with the gauge in a month or so.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's overdue — and when to call a pro</h2>
+    <p class="sub">A healthy chain is invisible: it shifts crisply, holds under power, and the gauge reads short of the limit. These are the signals it's time for a new one — and the cases where it's worth handing to a bike shop:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A chain checker reading past the limit.</strong> This is the whole game: when the 0.5% end (11/12-speed) or 0.75% end (older) seats fully, the chain is done. Measuring monthly catches it before any damage spreads — don't wait for symptoms.</li>
+        <li><strong>Skipping or slipping under power.</strong> If the chain jumps or slips when you stand on the pedals, especially in your most-used gears, it's worn well past the swap point — and the cassette has likely worn with it.</li>
+        <li><strong>Poor, hesitant shifting.</strong> A stretched chain meshes badly and shifts vaguely. If clean and lubed it still won't drop crisply into gear, suspect chain wear before you start fiddling with the derailleur.</li>
+        <li><strong>Hooked, shark-fin cassette teeth.</strong> If the cog teeth have curled into sharp hooks, the chain went unmeasured for far too long — by now it's a cassette (and maybe chainring) job, not just a chain.</li>
+        <li><strong>No tools, or a new chain that skips.</strong> If you don't own a chain tool and gauge, or the new chain skips on the old cassette under load, let a shop handle it — that's a full cassette-and-chainring replacement and worth the labor to get right. A shop chain swap is usually ~$20–40 in labor.</li>
+        <li><strong>E-bikes, internal hubs, and belt drives.</strong> E-bikes put far more torque through a chain (use the specified one); internal-gear hubs and belt drives play by completely different rules — those are shop jobs, not DIY chain swaps.</li>
+        <li><strong>Pro tip:</strong> buy two or three chains for the same drivetrain and rotate them, swapping every few hundred miles — each wears evenly with the cassette, and the whole drivetrain lasts dramatically longer. Then keep the new chain alive by <a href="clean-bike-chain.html">cleaning and lubing it</a> regularly, fold chain checks into your <a href="bike-tune-up.html">annual tune-up</a>, and don't forget to <a href="replace-helmet.html">replace your helmet</a> on its own schedule.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I know when my bike chain is worn out?</summary>
+      <p>Measure it — don't guess by feel or mileage. A chain-wear checker is a ~$12 tool that drops into the links: if the 0.5% end seats fully it's worn out on an 11- or 12-speed drivetrain, and the 0.75% end is the limit for older 8/9-speed chains. No gauge? Use a ruler: twelve full links on a brand-new chain measure exactly 12 inches pin-to-pin, and once that span reaches about 12 1/16" the chain is done. Late-stage symptoms — skipping under power, sloppy shifting, a chain you can lift off the front chainring — mean you've waited too long and the cassette is probably already damaged. Measure monthly and you'll never get there.</p>
+    </details>
+    <details>
+      <summary>How often should I replace my chain?</summary>
+      <p>Roughly every 2,000 miles is the rule of thumb, but treat it as a reminder to <em>measure</em>, not a hard rule. Real-world chain life runs anywhere from about 1,000 miles for heavy, wet, neglected riding to 3,000+ for clean, dry, well-lubed road miles — and meticulous chain-waxers report even more. Wet, muddy, or gritty conditions, high weekly mileage, and skipping cleaning all shorten the interval; clean dry roads with regular lube stretch it. Modern 11/12-speed and e-bike chains wear faster and have less margin, so check them more often. The chain checker is what turns all that variability into a clear yes-or-no answer.</p>
+    </details>
+    <details>
+      <summary>What's "chain stretch" and how do I measure it?</summary>
+      <p>Chains don't actually stretch like a rubber band — the metal doesn't elongate. What "stretch" means is wear: the pins and the holes in the inner links wear down with every pedal stroke, so each link grows a tiny bit longer and the whole chain spans a fraction more than it did new. Measured as a percentage, 0.5% growth is the replacement point for 11- and 12-speed drivetrains and 0.75% for older ones. A chain checker reads this directly — drop it in and see which end seats. The ruler method works too: 12 links should measure 12 inches pin-to-pin when new, and you replace as that creeps toward 12 1/16". That fraction of an inch is the difference between a $25 chain swap and a $250 drivetrain.</p>
+    </details>
+    <details>
+      <summary>Will a new chain skip on my old cassette?</summary>
+      <p>It can — and if it does, that's a diagnosis, not a defect. A worn chain gradually files the cassette cog teeth into hooks shaped to match the stretched chain. Fit a fresh, correctly-sized chain onto those worn cogs and the teeth no longer grip it, so it skips and slips under load, usually in your most-used gears. The fix is a new cassette (and sometimes chainrings) to go with the new chain. This is exactly why you replace the chain <em>before</em> it stretches far — catch it at the gauge mark and the cassette is fine; wait, and you're buying the whole drivetrain. If your new chain skips, stop riding it hard and plan a cassette replacement.</p>
+    </details>
+    <details>
+      <summary>How do I pick the right chain (speed and compatibility)?</summary>
+      <p>Start with your drivetrain's speed — the number of cogs on the rear cassette. An 11-speed cassette needs an 11-speed chain, 12 needs 12, and so on; more speeds mean a narrower chain, and the wrong width shifts poorly or won't fit. Beyond speed, some modern groupsets are brand-specific: certain SRAM and Shimano 12-speed systems shift best (or only well) with their own chain, while many road and mountain chains are cross-compatible at the same speed. E-bikes should use the chain the manufacturer specifies, as they're built for the extra torque. When in doubt, take the old chain or your groupset's model name to a shop or look it up, and buy a chain rated for your exact speed and system.</p>
+    </details>
+    <details>
+      <summary>Quick-link vs. chain-tool pin — which should I use?</summary>
+      <p>A quick-link (master link) is the easier and more reliable choice for most riders: it's a two-piece connector you snap together by hand and seat by pedaling against the brake, and master-link pliers make opening and closing it effortless. Always use a <em>new</em> quick-link rated for your chain's speed — they're cheap, and reusing one weakens it. The chain-tool pin method presses a connecting pin in with a chain tool, which is how Shimano chains in particular are traditionally joined; use the special directional connecting pin made for your chain, never a pin you've pressed out and reused. Both work well when done with the right new hardware; the cardinal sin either way is reusing a worn joint, which is where chains fail.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A chain wears out invisibly — and takes the cassette with it.</h2>
+        <p>A chain wears out invisibly and takes the cassette with it if you miss the window — let Upkeep Ledger prompt a chain-wear check on your mileage so a $25 part never becomes a $250 one. It logs the swap and resurfaces the next check, right alongside the gutters, the HVAC filter, and every other quiet task that keeps your gear running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-bike-chain&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-bike-chain&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; chain compatibility varies by drivetrain — your groupset manufacturer's specs and your local bike shop outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { volume: null, conditions: null, care: null, drivetrain: null };
+
+  var FREQ_LABEL = {
+    1000: "~Every 1,000 miles",
+    2000: "~Every 2,000 miles",
+    3000: "~Every 3,000 miles"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var miles = 2000;
+    var shorten = false;
+
+    /* Volume — how much you ride */
+    if (s.volume === "heavy") {
+      reasons.push("Heavy weekly mileage or a daily commute piles on the miles that wear a chain, so you'll reach the checker's mark faster than the calendar suggests — measure often.");
+    } else if (s.volume === "occasional") {
+      reasons.push("Occasional weekend riding means fewer wearing miles between checks — but a chain that sits unused can still rust, so lube before a ride if it's been parked a while.");
+    } else {
+      reasons.push("Riding a few times a week is the classic case the ~2,000-mile rule of thumb is written for.");
+    }
+
+    /* Conditions — what you ride through */
+    if (s.conditions === "rough") {
+      if (miles > 1000) miles = 1000;
+      shorten = true;
+      reasons.push("Wet, muddy, gritty, or off-road riding can halve chain life — water flushes the lube out and grit grinds the rollers from the inside, so expect to replace sooner.");
+    } else if (s.conditions === "clean") {
+      reasons.push("Clean, dry pavement is the kindest condition there is: lube stays put, grit stays off, and chains last toward the long end of the range.");
+    } else {
+      reasons.push("A mix of conditions lands you in the middle — keep measuring, since a few wet or gritty rides shorten things more than you'd expect.");
+    }
+
+    /* Care — maintenance */
+    if (s.care === "rare") {
+      if (miles > 1000) miles = 1000;
+      shorten = true;
+      reasons.push("A rarely-cleaned, dry chain wears fast — grit plus old lube makes grinding paste, and a neglected chain can wear out in roughly half the miles a cared-for one would.");
+    } else if (s.care === "diligent") {
+      reasons.push("Cleaning and lubing on a schedule is the single biggest thing you control — a well-kept chain wears slowly and reaches the longer end of its life.");
+    } else {
+      reasons.push("Lubing now and then helps, but the occasional dry, gritty stretch still adds wear — a regular habit would buy you more miles.");
+    }
+
+    /* Drivetrain — speed / e-bike */
+    if (s.drivetrain === "modern") {
+      if (miles > 2000) miles = 2000;
+      shorten = true;
+      reasons.push("Narrow 11/12-speed chains and high-torque e-bikes run tighter tolerances and wear faster — replace at about 0.5% stretch, and check more often than you would an older chain.");
+    } else if (s.drivetrain === "old") {
+      reasons.push("Wider 8/9-speed and singlespeed chains are the most forgiving and longest-lived — you can run them to about 0.75% stretch before replacing.");
+    } else {
+      reasons.push("A 10-speed chain sits in the middle of the durability range — replace it nearer 0.5–0.75% stretch depending on how it's measuring.");
+    }
+
+    /* Best-case relaxation: light miles, clean, diligent, forgiving drivetrain */
+    if (!shorten && s.volume === "occasional" && s.conditions === "clean" && s.care === "diligent" && (s.drivetrain === "old" || s.drivetrain === "mid")) {
+      miles = 3000;
+      reasons.push("Clean dry roads, careful maintenance, light mileage, and a forgiving drivetrain is the one combination where a chain genuinely stretches toward 3,000 miles — but keep measuring, because that's an upper bound, not a guarantee.");
+    }
+
+    reasons.push("Whatever the mileage: this is a guide, not a deadline — drop a chain checker into the links about once a month and replace at the mark. The measurement is the only thing that actually protects the drivetrain.");
+
+    /* Closing note */
+    var note;
+    if (s.drivetrain === "modern") {
+      note = "<strong>Tighter tolerances, tighter window:</strong> 11/12-speed and e-bike chains have less margin before they start hooking the cassette, so replace at ~0.5% stretch and use the chain your system specifies — don't stretch the interval to save a few dollars.";
+    } else if (s.conditions === "rough" || s.care === "rare") {
+      note = "<strong>The fix is cheap and in your hands:</strong> a wipe-and-re-lube after every wet or gritty ride dramatically slows wear. The checker still rules the swap, but good habits are what get you to the high end of the mileage range.";
+    } else {
+      note = "<strong>Measure, don't guess:</strong> mileage is a reminder to check, not a replacement schedule. Drop the gauge in monthly and swap at the mark — and if a brand-new chain skips under load, the cassette wore with the old one and needs replacing too.";
+    }
+
+    return { miles: miles, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.volume || !quizState.conditions || !quizState.care || !quizState.drivetrain) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: replace roughly every " + r.miles.toLocaleString() + " miles — but measure wear, don't guess";
+    document.getElementById("resultBody").innerHTML =
+      "Plan on a new chain <strong>" + FREQ_LABEL[r.miles].toLowerCase() + "</strong>, but let a chain checker make the final call — drop it in monthly and swap at the mark. Why this estimate:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Measure wear", text: "Secure the bike and shift to a middle gear", note: "Pop it in a repair stand or lean it securely so the cranks spin freely and it can't tip. A centered chain line makes everything easier to reach and work on." },
+    { phase: "Measure wear", text: "Drop a chain checker into the links", note: "If the 0.5% end seats fully (11/12-speed) or the 0.75% end seats (older chains), the chain's worn out. No gauge? Twelve links measure 12 inches pin-to-pin when new — replace near 12 1/16\"." },
+    { phase: "Measure wear", text: "If it's at the limit, plan the swap; if not, you're done", note: "A chain short of the mark just needs cleaning and lube, not replacing. Only continue if the gauge says it's worn — and note your drivetrain's speed before you buy a chain." },
+    { phase: "Remove the old chain", text: "Note how the chain routes through the rear derailleur", note: "Snap a photo or trace the S-path through the two jockey wheels before anything comes off, so you can re-route the new chain exactly the same way." },
+    { phase: "Remove the old chain", text: "Pop the quick-link, or push a pin with a chain tool", note: "Squeeze a master link open with quick-link pliers, or seat a chain tool on a pin and wind it out. Keep fingers clear of the tool's path and the sharp chainring teeth." },
+    { phase: "Remove the old chain", text: "Lift the old chain off and set it aside", note: "Keep it — you'll lay the new chain beside it to match the length. Give the cassette, chainrings, and jockey wheels a quick wipe while the chain's off." },
+    { phase: "Size & install", text: "Confirm the new chain matches your speed and brand", note: "An 11-speed chain for an 11-speed cassette, and so on. Check that the box lists a compatible brand for fussy 12-speed groupsets, and use the manufacturer's chain on e-bikes." },
+    { phase: "Size & install", text: "Size the new chain to match the old one", note: "Lay it beside the old chain and match the length exactly, then remove the extra links with the chain tool. If the old chain was the wrong length, use the big-big + 2 links method." },
+    { phase: "Size & install", text: "Route the chain and join it with a new connector", note: "Thread it over the chainring and cassette and through the derailleur cage the way the old one ran. Join with a NEW quick-link or directional connecting pin — never a reused joint." },
+    { phase: "Check & lube", text: "Seat the join and run through every gear", note: "Pedal against the brake (or stand on a pedal) to fully seat a quick-link, then shift across the whole cassette to confirm crisp, quiet shifting." },
+    { phase: "Check & lube", text: "Push hard on the pedals — watch for skipping", note: "Stand on it in a safe spot. If the new chain skips under load, the old chain already recut the cassette — plan a cassette (and maybe chainring) replacement before riding it hard." },
+    { phase: "Check & lube", text: "Lube the new chain, then log the date and mileage", note: "One drop per roller along the lower span, then wipe the excess. Note the date and your odometer so you know when to check wear again — about a month or a few hundred miles out." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-bike-chain:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

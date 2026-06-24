@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean your bird feeder — UpkeepGuides.com</title>
+<meta name="description" content="How to clean your bird feeder so it stops spreading disease: scrub with hot soapy water, sanitize with a 1:9 bleach rinse, dry it completely, and clean nectar feeders every few days in heat.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Clean your bird feeder — UpkeepGuides.com">
+<meta property="og:description" content="How to clean your bird feeder so it stops spreading disease: scrub with hot soapy water, sanitize with a 1:9 bleach rinse, dry it completely, and clean nectar feeders every few days in heat.">
+<meta property="og:url" content="https://upkeepguides.com/clean-bird-feeder.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clean your bird feeder — UpkeepGuides.com">
+<meta name="twitter:description" content="How to clean your bird feeder so it stops spreading disease: scrub with hot soapy water, sanitize with a 1:9 bleach rinse, dry it completely, and clean nectar feeders every few days in heat.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Yard &amp; Garden · Every month</span>
+      <h1>Clean Your Bird Feeder</h1>
+      <p class="lede">A feeder is a kindness — and a crowd. Birds gather at it shoulder to shoulder, dropping seed husks and droppings, and in damp weather the leftover seed clumps, molds, and turns toxic. Left dirty, that feeder stops being a gift and becomes a disease hub: salmonella, avian pox, and trichomoniasis spread bird-to-bird at the very spot you set out to help them, and a nectar feeder can grow black mold in a matter of days. The fix is simple and cheap. Take the feeder down, toss the old seed, scrub it with hot soapy water, sanitize it with a quick bleach or vinegar rinse, and — the step everyone skips — let it dry completely before you refill. Do that on a schedule and your backyard flock stays healthy instead of sickened by your generosity.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Seed feeders <em>~monthly</em></span>
+        <span class="chip">🐦 Nectar feeders <em>every few days in heat</em></span>
+        <span class="chip">⏱️ <em>~15–20 min</em> per feeder</span>
+        <span class="chip">💸 Costs <em>~$5–10</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a bird feeder outdoors: a tube-and-hopper feeder has been taken down and is being scrubbed with a bottle brush in a bucket of soapy water, a pair of friendly songbirds wait on a leafy branch, a red hummingbird nectar feeder hangs nearby, and a pair of gloves rests in a sunny backyard">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- backyard ground stripe -->
+      <rect x="35" y="372" width="500" height="30" rx="14" fill="#efe7d8"/>
+      <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round" opacity="0.8">
+        <path d="M70 372 q3 -12 0 -22"/>
+        <path d="M82 372 q5 -14 12 -20"/>
+        <path d="M470 372 q-3 -12 0 -22"/>
+        <path d="M484 372 q5 -14 12 -20"/>
+      </g>
+
+      <!-- leafy branch top-right with two songbirds waiting -->
+      <path d="M560 96 q-90 6 -150 40" fill="none" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+      <path d="M470 116 q-22 -16 -40 -14" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="500" cy="96" rx="9" ry="15" fill="#3e7c59" transform="rotate(-32 500 96)"/>
+      <ellipse cx="524" cy="104" rx="9" ry="15" fill="#5e9a78" transform="rotate(24 524 104)"/>
+      <ellipse cx="446" cy="116" rx="8" ry="13" fill="#3e7c59" transform="rotate(-20 446 116)"/>
+      <!-- songbird 1 -->
+      <ellipse cx="436" cy="138" rx="20" ry="15" fill="#7fb3c8"/>
+      <circle cx="420" cy="130" r="10" fill="#7fb3c8"/>
+      <circle cx="416" cy="128" r="2" fill="#33393b"/>
+      <path d="M408 130 l-8 2 l8 4 z" fill="#e0a93d"/>
+      <path d="M448 140 l16 6 l-14 6 z" fill="#5e9a78"/>
+      <path d="M428 152 l-3 8 M436 153 l-2 8" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- songbird 2, smaller -->
+      <ellipse cx="496" cy="146" rx="16" ry="12" fill="#c96f4a"/>
+      <circle cx="484" cy="140" r="8" fill="#d9663f"/>
+      <circle cx="481" cy="138" r="1.7" fill="#33393b"/>
+      <path d="M475 140 l-7 2 l7 3 z" fill="#e0a93d"/>
+      <path d="M506 148 l13 5 l-11 5 z" fill="#b9583a"/>
+      <path d="M490 157 l-2 6 M497 158 l-2 6" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- hummingbird nectar feeder hanging on left -->
+      <path d="M96 40 q14 8 0 20" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <path d="M96 60 l0 28" stroke="#b9b1a3" stroke-width="3"/>
+      <!-- reservoir of red sugar water -->
+      <path d="M74 88 h44 v34 q0 18 -22 18 q-22 0 -22 -18 z" fill="#d9663f"/>
+      <path d="M74 88 h44 v14 h-44 z" fill="#e07a55"/>
+      <ellipse cx="96" cy="88" rx="22" ry="6" fill="#fffdf8" opacity="0.8"/>
+      <!-- base + flower ports -->
+      <path d="M70 122 h52 l-6 14 h-40 z" fill="#3e7c59"/>
+      <circle cx="82" cy="130" r="5" fill="#e0a93d"/>
+      <circle cx="96" cy="133" r="5" fill="#e0a93d"/>
+      <circle cx="110" cy="130" r="5" fill="#e0a93d"/>
+      <circle cx="82" cy="130" r="1.6" fill="#c96f4a"/>
+      <circle cx="96" cy="133" r="1.6" fill="#c96f4a"/>
+      <circle cx="110" cy="130" r="1.6" fill="#c96f4a"/>
+      <text x="60" y="160" font-size="11" fill="#d9663f" font-weight="700">nectar: clean often</text>
+
+      <!-- bucket of soapy water, center -->
+      <path d="M196 250 h150 l-16 110 h-118 z" fill="#7fb3c8"/>
+      <path d="M188 246 h166 l-5 12 h-156 z" fill="#9cc3d4"/>
+      <path d="M198 244 q73 -22 142 0" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+      <!-- soapy water surface + suds -->
+      <ellipse cx="271" cy="262" rx="70" ry="12" fill="#dce8ee"/>
+      <circle cx="224" cy="258" r="9" fill="#eef4f7"/>
+      <circle cx="246" cy="252" r="11" fill="#fffdf8"/>
+      <circle cx="300" cy="256" r="8" fill="#eef4f7"/>
+      <circle cx="320" cy="250" r="9" fill="#fffdf8"/>
+      <circle cx="270" cy="248" r="7" fill="#eef4f7"/>
+
+      <!-- the tube-and-hopper feeder taken down, standing in the bucket being scrubbed -->
+      <!-- hopper roof -->
+      <path d="M236 96 l34 -26 l34 26 z" fill="#c96f4a"/>
+      <path d="M236 96 l34 -26 l4 3 l-30 23 z" fill="#d9663f"/>
+      <!-- clear tube body with seed -->
+      <rect x="252" y="96" width="36" height="150" rx="8" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="258" y="150" width="24" height="90" rx="4" fill="#c9a06b"/>
+      <g fill="#b9b1a3">
+        <circle cx="266" cy="170" r="2"/>
+        <circle cx="276" cy="184" r="2"/>
+        <circle cx="264" cy="198" r="2"/>
+        <circle cx="278" cy="210" r="2"/>
+      </g>
+      <!-- feed ports + perches -->
+      <rect x="246" y="160" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="286" y="160" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="232" y="166" width="18" height="4" rx="2" fill="#8a6a4f"/>
+      <rect x="290" y="166" width="18" height="4" rx="2" fill="#8a6a4f"/>
+      <rect x="246" y="200" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="286" y="200" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="232" y="206" width="18" height="4" rx="2" fill="#8a6a4f"/>
+      <rect x="290" y="206" width="18" height="4" rx="2" fill="#8a6a4f"/>
+
+      <!-- bottle brush scrubbing inside, with a hand -->
+      <rect x="316" y="120" width="9" height="120" rx="4" fill="#5e9a78" transform="rotate(14 320 180)"/>
+      <g fill="#3e7c59">
+        <ellipse cx="300" cy="150" rx="14" ry="8" transform="rotate(14 300 150)"/>
+        <ellipse cx="306" cy="170" rx="15" ry="9" transform="rotate(14 306 170)"/>
+        <ellipse cx="312" cy="190" rx="14" ry="8" transform="rotate(14 312 190)"/>
+      </g>
+      <!-- gloved hand on brush handle -->
+      <ellipse cx="350" cy="116" rx="18" ry="13" fill="#e0a93d"/>
+      <path d="M338 110 q-4 7 0 14" stroke="#d98e3b" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M352 128 q24 16 0 44" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+
+      <!-- spilled / clumped old seed dumped on the ground, front-left -->
+      <ellipse cx="120" cy="362" rx="38" ry="11" fill="#8a6a4f" opacity="0.55"/>
+      <g fill="#c9a06b">
+        <circle cx="104" cy="360" r="3"/>
+        <circle cx="118" cy="364" r="3.4"/>
+        <circle cx="134" cy="359" r="3"/>
+        <circle cx="126" cy="366" r="2.6"/>
+        <circle cx="110" cy="366" r="2.4"/>
+      </g>
+      <!-- a little mold tuft on the discarded seed -->
+      <circle cx="122" cy="356" r="5" fill="#5e9a78" opacity="0.6"/>
+      <text x="86" y="386" font-size="11" fill="#6b7376">toss moldy seed</text>
+
+      <!-- pair of gloves resting front-right -->
+      <path d="M408 348 q-4 -22 8 -30 q4 16 12 14 q4 18 -6 26 z" fill="#e0a93d"/>
+      <path d="M416 318 l-2 -10 M422 320 l1 -10 M428 322 l4 -8" stroke="#d98e3b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M438 352 q-2 -18 8 -24 q3 13 11 11 q4 15 -4 22 z" fill="#d98e3b"/>
+
+      <!-- sun for the dry-in-the-sun cue -->
+      <circle cx="496" cy="50" r="20" fill="#faf0da" stroke="#e0a93d" stroke-width="3"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="496" y1="16" x2="496" y2="24"/>
+        <line x1="528" y1="50" x2="536" y2="50"/>
+        <line x1="520" y1="26" x2="526" y2="20"/>
+        <line x1="520" y1="74" x2="526" y2="80"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Feeding birds feels like pure generosity — and it can be. But a feeder concentrates dozens of birds in one small, shared spot, day after day, and that crowding is exactly how disease spreads. The seed and sugar water you put out only stay safe if the feeder stays clean and dry. Here's what a neglected feeder actually does to the flock you're trying to help:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="20" rx="9" ry="7" fill="#dce8ee"/>
+          <circle cx="11" cy="14" r="5.5" fill="#7fb3c8"/>
+          <circle cx="9.5" cy="13" r="1.4" fill="#33393b"/>
+          <path d="M5 14 l-4 1 l4 2 z" fill="#e0a93d"/>
+          <path d="M24 18 l6 2 l-5 3 z" fill="#5e9a78"/>
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round">
+            <path d="M22 6 l8 8 M30 6 l-8 8"/>
+          </g>
+        </svg></div>
+        <h3>A dirty feeder spreads deadly disease</h3>
+        <p>Moldy seed, droppings, and damp at a crowded feeder spread bird diseases — salmonellosis, avian pox, and trichomoniasis pass mouth-to-mouth and through contaminated food. A single filthy feeder can sicken or kill a whole local flock during an outbreak.</p>
+        <span class="cost">Sick &amp; dying backyard birds</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M9 12 h18 l-3 19 h-12 z" fill="#c9a06b"/>
+          <path d="M9 12 h18 l-1 6 h-16 z" fill="#d8b985"/>
+          <circle cx="14" cy="9" r="4.5" fill="#5e9a78" opacity="0.8"/>
+          <circle cx="22" cy="10" r="3.5" fill="#3e7c59" opacity="0.8"/>
+          <circle cx="18" cy="22" r="2" fill="#8a6a4f"/>
+          <circle cx="15" cy="26" r="1.6" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Wet seed molds and turns toxic</h3>
+        <p>Rain and humidity clump the seed, and damp, packed seed grows mold and aflatoxin — a fungal poison that's harmful even in small amounts. Birds eating moldy, fermenting seed get sick from the very food you put out for them.</p>
+        <span class="cost">Aflatoxin in moldy seed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M12 8 h12 v10 q0 6 -6 6 q-6 0 -6 -6 z" fill="#d9663f"/>
+          <path d="M12 8 h12 v4 h-12 z" fill="#e07a55"/>
+          <path d="M10 24 h16 l-2 5 h-12 z" fill="#3e7c59"/>
+          <circle cx="14" cy="27" r="2" fill="#e0a93d"/>
+          <circle cx="22" cy="27" r="2" fill="#e0a93d"/>
+          <circle cx="15" cy="15" r="2.5" fill="#33393b" opacity="0.55"/>
+          <circle cx="20" cy="18" r="2" fill="#33393b" opacity="0.5"/>
+        </svg></div>
+        <h3>Nectar ferments &amp; molds in days</h3>
+        <p>Sugar water is a magnet for fermentation and black mold, and in the heat a hummingbird feeder can go cloudy and foul in just a day or two. Spoiled nectar can harm the tiny birds that rely on it — so nectar feeders need cleaning far more often than seed.</p>
+        <span class="cost">Cloudy, moldy hummingbird nectar</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 5 q9 3 9 9 v6 q0 9 -9 11 q-9 -2 -9 -11 v-6 q0 -6 9 -9 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M13 17 l4 4 l7 -8" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It protects people, too</h3>
+        <p>Handling old seed and droppings can pass salmonella to you — that's why you wear gloves, clean outside (never in the kitchen sink), and wash your hands afterward. A quick, careful scrub keeps the birds <em>and</em> your household healthy.</p>
+        <span class="cost">Salmonella risk to your family</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> clean it?</h2>
+    <p class="sub">A seed feeder wants a real scrub about every month — every two weeks if the weather is hot and humid or your feeder is mobbed all day. Nectar and hummingbird feeders are in a different league entirely: in summer heat they need cleaning <strong>every few days</strong>. And the moment you see a sick or dead bird, the schedule goes out the window — clean now, and consider pausing feeding. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What kind of feeder is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="nectar">Nectar / hummingbird (sugar water)</button>
+          <button class="pill" data-v="seed">Seed — a tube or hopper</button>
+          <button class="pill" data-v="suet">Suet or a simple tray</button>
+        </div>
+        <div class="q-hint">Sugar water ferments and molds within days in warm weather, so nectar feeders need cleaning far more often than any seed feeder — this single answer can override everything below.</div>
+      </div>
+      <div class="quiz-q" data-q="weather">
+        <div class="q-label">2. What's the weather like where it hangs?</div>
+        <div class="pills">
+          <button class="pill" data-v="hot">Hot &amp; humid, or it rains often</button>
+          <button class="pill" data-v="mild">Ordinary, changeable weather</button>
+          <button class="pill" data-v="dry">Cool and dry most of the time</button>
+        </div>
+        <div class="q-hint">Heat and moisture are what grow the mold. Wet seed clumps and ferments fast, and warm sugar water spoils almost overnight — so a hot, humid or rainy spot pushes the schedule much tighter.</div>
+      </div>
+      <div class="quiz-q" data-q="traffic">
+        <div class="q-label">3. How busy is the feeder?</div>
+        <div class="pills">
+          <button class="pill" data-v="busy">Mobbed — birds all day long</button>
+          <button class="pill" data-v="some">A steady handful of visitors</button>
+          <button class="pill" data-v="quiet">Quiet — only the occasional bird</button>
+        </div>
+        <div class="q-hint">More birds means more droppings, more shed feathers, and more seed turned over and left damp — so a crowded feeder both spreads disease faster and gets dirty far sooner than a quiet one.</div>
+      </div>
+      <div class="quiz-q" data-q="signs">
+        <div class="q-label">4. Seen anything worrying lately?</div>
+        <div class="pills">
+          <button class="pill" data-v="sick">Yes — sick/dead birds, mold, or clumped seed</button>
+          <button class="pill" data-v="hint">A little — maybe some damp or buildup</button>
+          <button class="pill" data-v="clear">No, everything looks healthy</button>
+        </div>
+        <div class="q-hint">A sick or dead bird near the feeder is a red flag for disease. If you've seen one — or mold and clumped, sour seed — don't wait for the schedule: clean and disinfect now, and consider pausing feeding.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is one of the cheapest chores there is. A bottle brush and a bottle of dish soap run about five to ten dollars, and the disinfectant — household bleach or plain white vinegar — is almost certainly already in your cupboard. Weigh that against what a dirty feeder actually costs: bird die-offs you caused, sacks of moldy seed dumped uneaten, and the small but real chance of making your own family sick:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$5–10</div><div class="l">one-time kit — a bottle brush and dish soap; the bleach or vinegar to sanitize you likely already own</div></div>
+        <div class="calc-stat"><div class="v">~15–20 min</div><div class="l">per feeder — take it down, empty it, scrub, sanitize, rinse, and set it out to dry fully</div></div>
+        <div class="calc-stat"><div class="v bad">~$0</div><div class="l">the disinfectant — a splash of bleach in water (about 1:9), or white vinegar, costs almost nothing</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 Bleach or vinegar sanitizing rinse</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Bottle brush + dish soap</span><span>$5–10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌽 Moldy, clumped seed dumped uneaten</span><span>$10–30 a bag, wasted</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:32%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🐦 A disease outbreak that kills your backyard flock</span><span>The whole reason you feed them</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:70%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🤒 A salmonella infection in your own household</span><span>Doctor visits &amp; misery</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a five-dollar brush and twenty minutes a month</strong> against moldy seed you have to throw out, a sickened flock at the feeder you set up to help them, and a real chance of salmonella in your own kitchen. Keep the feeder clean and bone-dry, and the cost is essentially nothing — and the birds you feed actually stay healthy.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to clean your bird feeder</h2>
+    <p class="sub">The order matters: empty out the old seed, scrub everything with hot soapy water, sanitize with a diluted bleach or vinegar rinse, then rinse clean and — the step that actually protects the birds — let it dry completely before refilling. Read the techniques first (especially the safety box on protecting both birds and yourself), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Protect the birds — and yourself</h3>
+      <ul>
+        <li><strong>Wear gloves and clean outside — never in the kitchen sink.</strong> Old seed and droppings can carry salmonella and other pathogens that infect people. Use a dedicated bucket and brush kept just for this, work outdoors, and wash your hands well afterward.</li>
+        <li><strong>Scrub with hot soapy water, then sanitize.</strong> After scrubbing, soak or rinse in a diluted bleach solution — about 1 part bleach to 9 parts water — or a white-vinegar solution for a few minutes to kill the pathogens a scrub alone leaves behind.</li>
+        <li><strong>Rinse thoroughly and let it DRY COMPLETELY before refilling.</strong> Rinse out every trace of bleach or soap, then air-dry the feeder fully — ideally in the sun. A damp feeder grows mold, and wet seed makes toxic aflatoxin; drying is the whole point.</li>
+        <li><strong>Discard moldy, clumped, or wet seed — don't just top it off.</strong> Old seed at the bottom is where mold and toxins live. Dump it all out and start fresh rather than pouring new seed on top of stale.</li>
+        <li><strong>For nectar feeders, use only a 1:4 sugar-water mix.</strong> One part white table sugar to four parts water — NEVER honey, brown sugar, or red dye, all of which can harm hummingbirds. Clean and refill every few days in heat, sooner if the nectar looks cloudy.</li>
+        <li><strong>If you see sick or dead birds, take the feeder down.</strong> Disinfect everything and pause feeding for a couple of weeks to break the spread. During avian-flu or salmonella outbreaks, follow your local wildlife agency's guidance on whether to feed at all.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A bottle brush (or small scrub brush)</span>
+      <span class="tool-chip">Dish soap &amp; hot water</span>
+      <span class="tool-chip">Household bleach <em>or</em> white vinegar</span>
+      <span class="tool-chip">A dedicated bucket or tub</span>
+      <span class="tool-chip">Rubber gloves</span>
+      <span class="tool-chip">An old toothbrush for ports &amp; corners</span>
+      <span class="tool-chip">A spot in the sun to air-dry</span>
+      <span class="tool-chip">A trash bag for old seed</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of taking a feeder down and emptying it: a tube feeder tipped over a trash bag with moldy, clumped seed falling out, never topping off over old seed">
+          <!-- trash bag -->
+          <path d="M70 96 q-8 60 22 70 h60 q30 -10 22 -70 z" fill="#5e9a78"/>
+          <path d="M70 96 q40 -14 104 0 q-8 10 -52 10 q-44 0 -52 -10 z" fill="#3e7c59"/>
+          <!-- tube feeder tipped, pouring seed out -->
+          <rect x="150" y="20" width="26" height="70" rx="6" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3" transform="rotate(38 163 55)"/>
+          <path d="M186 56 l30 18 l-26 24 z" fill="#c96f4a"/>
+          <!-- falling clumped, moldy seed -->
+          <g fill="#c9a06b">
+            <circle cx="150" cy="80" r="4"/>
+            <circle cx="138" cy="92" r="5"/>
+            <circle cx="126" cy="78" r="3.5"/>
+            <circle cx="120" cy="98" r="4.5"/>
+          </g>
+          <circle cx="138" cy="92" r="6" fill="#5e9a78" opacity="0.5"/>
+          <circle cx="120" cy="98" r="5" fill="#8a6a4f" opacity="0.4"/>
+          <text x="58" y="170" font-size="11" fill="#d9663f" font-weight="700">toss it — don't top off</text>
+        </svg>
+        <h4>Take it down &amp; empty it</h4>
+        <p>Bring the feeder down and dump out everything — toss any moldy, wet, or clumped seed straight into the trash, never onto the ground for birds. Clear the seed tray and ports, too. Don't ever pour fresh seed on top of old.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of scrubbing a feeder with a bottle brush in hot soapy water, getting into the ports, perches, and corners">
+          <!-- tube body -->
+          <rect x="104" y="22" width="44" height="130" rx="10" fill="#dce8ee" stroke="#8a6a4f" stroke-width="4"/>
+          <!-- ports + perches -->
+          <rect x="98" y="60" width="8" height="8" rx="2" fill="#2c5a40"/>
+          <rect x="146" y="60" width="8" height="8" rx="2" fill="#2c5a40"/>
+          <rect x="84" y="66" width="16" height="4" rx="2" fill="#8a6a4f"/>
+          <rect x="152" y="66" width="16" height="4" rx="2" fill="#8a6a4f"/>
+          <rect x="98" y="104" width="8" height="8" rx="2" fill="#2c5a40"/>
+          <rect x="146" y="104" width="8" height="8" rx="2" fill="#2c5a40"/>
+          <!-- bottle brush inside -->
+          <rect x="120" y="6" width="8" height="120" rx="4" fill="#5e9a78"/>
+          <g fill="#3e7c59">
+            <ellipse cx="124" cy="50" rx="16" ry="8"/>
+            <ellipse cx="124" cy="74" rx="17" ry="9"/>
+            <ellipse cx="124" cy="98" rx="16" ry="8"/>
+          </g>
+          <!-- suds -->
+          <g fill="#fffdf8">
+            <circle cx="200" cy="60" r="9"/>
+            <circle cx="216" cy="52" r="7"/>
+            <circle cx="206" cy="46" r="6"/>
+          </g>
+          <text x="74" y="172" font-size="11" fill="#3e7c59" font-weight="700">hot soapy water, every corner</text>
+        </svg>
+        <h4>Scrub with hot soapy water</h4>
+        <p>Work a bottle brush and hot, soapy water into every part — the tube, the seed ports, the perches, the corners, and the seams where gunk hides. An old toothbrush gets into the tight spots. This is what physically removes the film and droppings.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of sanitizing feeder parts by soaking them in a roughly one part bleach to nine parts water solution to kill pathogens">
+          <!-- tub of solution -->
+          <path d="M44 64 h192 l-14 90 h-164 z" fill="#7fb3c8"/>
+          <path d="M38 60 h204 l-4 10 h-196 z" fill="#9cc3d4"/>
+          <ellipse cx="140" cy="74" rx="92" ry="10" fill="#dce8ee"/>
+          <!-- feeder parts soaking -->
+          <rect x="78" y="50" width="22" height="78" rx="6" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3" transform="rotate(-12 89 89)"/>
+          <path d="M150 60 l34 0 l-6 60 h-22 z" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+          <!-- germs being zapped -->
+          <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round">
+            <path d="M120 96 l8 8 M128 96 l-8 8"/>
+            <path d="M196 104 l7 7 M203 104 l-7 7"/>
+          </g>
+          <text x="60" y="170" font-size="11" fill="#3e7c59" font-weight="700">~1:9 bleach (or vinegar)</text>
+        </svg>
+        <h4>Sanitize to kill pathogens</h4>
+        <p>Scrubbing isn't enough on its own. Soak or rinse the parts in a roughly 1:9 bleach solution (one part bleach, nine parts water) — or a white-vinegar solution — for a few minutes to kill the salmonella and other pathogens left on the surfaces.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of rinsing a feeder thoroughly and then air-drying it completely in the sun before refilling, because moisture grows mold">
+          <!-- sun -->
+          <circle cx="226" cy="44" r="20" fill="#faf0da" stroke="#e0a93d" stroke-width="3"/>
+          <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+            <line x1="226" y1="12" x2="226" y2="20"/>
+            <line x1="258" y1="44" x2="266" y2="44"/>
+            <line x1="250" y1="20" x2="256" y2="14"/>
+          </g>
+          <!-- feeder upside down to drain/dry -->
+          <rect x="96" y="40" width="40" height="104" rx="10" fill="#dce8ee" stroke="#8a6a4f" stroke-width="4"/>
+          <path d="M90 142 l26 22 l26 -22 z" fill="#c96f4a"/>
+          <!-- water droplets draining off -->
+          <g fill="#7fb3c8">
+            <path d="M104 150 q3 6 0 10 q-3 -4 0 -10z"/>
+            <path d="M128 150 q3 6 0 10 q-3 -4 0 -10z"/>
+          </g>
+          <!-- shine on dry glass -->
+          <g stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity="0.85">
+            <line x1="106" y1="100" x2="124" y2="64"/>
+          </g>
+          <text x="60" y="172" font-size="11" fill="#3e7c59" font-weight="700">rinse, then DRY fully</text>
+        </svg>
+        <h4>Rinse &amp; dry completely</h4>
+        <p>Rinse out every trace of bleach, vinegar, and soap, then let the feeder air-dry all the way through — ideally in the sun — before you refill. Moisture is what grows the mold, so a feeder refilled while still damp is back to square one.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of fully disassembling a hummingbird nectar feeder, cleaning it every few days in heat, refilling with fresh one-to-four sugar water, and raking the ground litter beneath any feeder">
+          <!-- nectar reservoir -->
+          <path d="M96 28 h44 v40 q0 18 -22 18 q-22 0 -22 -18 z" fill="#d9663f"/>
+          <path d="M96 28 h44 v14 h-44 z" fill="#e07a55"/>
+          <ellipse cx="118" cy="28" rx="22" ry="6" fill="#fffdf8" opacity="0.8"/>
+          <!-- base + flower ports, detached below -->
+          <path d="M90 100 h56 l-6 16 h-44 z" fill="#3e7c59"/>
+          <circle cx="104" cy="108" r="5" fill="#e0a93d"/>
+          <circle cx="118" cy="111" r="5" fill="#e0a93d"/>
+          <circle cx="132" cy="108" r="5" fill="#e0a93d"/>
+          <!-- 1:4 label -->
+          <rect x="158" y="40" width="56" height="26" rx="8" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="186" y="58" font-size="13" fill="#3e7c59" font-weight="700" text-anchor="middle">1:4</text>
+          <!-- rake under the feeder -->
+          <rect x="44" y="120" width="40" height="5" rx="2" fill="#8a6a4f"/>
+          <g stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round">
+            <line x1="48" y1="125" x2="46" y2="134"/>
+            <line x1="58" y1="125" x2="57" y2="134"/>
+            <line x1="68" y1="125" x2="68" y2="134"/>
+            <line x1="78" y1="125" x2="80" y2="134"/>
+          </g>
+          <text x="58" y="172" font-size="11" fill="#d9663f" font-weight="700">nectar: disassemble &amp; rake litter</text>
+        </svg>
+        <h4>Nectar feeders &amp; ground litter</h4>
+        <p>Hummingbird feeders come fully apart — disassemble every piece, clean every few days in heat, and refill with fresh 1:4 sugar water (no dye or honey). And under any feeder, rake up the spilled seed and droppings so mold and disease don't fester below.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Feeder-cleaning progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Emptied, scrubbed, sanitized, rinsed, and dried bone-dry — your feeder is clean and the flock stays healthy. Log the date and do it again in about a month (every few days for nectar in the heat).</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's overdue — and when to act now</h2>
+    <p class="sub">A clean feeder is quiet and easy to miss: clear glass, dry seed, healthy birds coming and going. These are the warning signs it's past due — and the handful that mean you should stop and disinfect everything immediately, not wait for your usual schedule:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Sick, lethargic, or dead birds near the feeder.</strong> This is the one that overrides everything. A puffed-up, sluggish, or dead bird at your feeder is a disease signal — take the feeder down, disinfect it all, and consider pausing feeding for a couple of weeks to break the spread.</li>
+        <li><strong>Black mold inside a nectar feeder.</strong> Cloudy, dark, or stringy growth in the sugar water means it's gone bad — empty it, scrub out the ports and reservoir, sanitize, and refill with fresh nectar. In heat, this is a clean-every-few-days job, not a weekly one.</li>
+        <li><strong>Clumped, sprouting, or crusted seed.</strong> Seed that's stuck together, growing little shoots, or caked around the ports has gotten wet and is breeding mold and aflatoxin. Dump it, clean the feeder, and dry it fully before refilling.</li>
+        <li><strong>A sour, fermented, or musty smell.</strong> If the feeder or its seed smells off, fermentation and mold are already underway. Trust your nose — clean it now rather than topping it off.</li>
+        <li><strong>A noticeable wave of unwell birds in the area.</strong> If neighbors or local birders are reporting sick birds, treat it as an outbreak: clean and disinfect everything, and follow your state wildlife agency's guidance on whether to keep feeding at all.</li>
+        <li><strong>During avian-flu or salmonella outbreaks, follow local guidance.</strong> Wildlife agencies sometimes recommend taking feeders down entirely for a period. This isn't a cleaning question — it's a public-health one, so check your local advisories when an outbreak is active.</li>
+        <li><strong>Pair it with the rest of the outdoor cleaning.</strong> A feeder scrub slots in nicely alongside <a href="clean-patio-furniture.html">cleaning the patio furniture</a> and <a href="pressure-wash.html">pressure washing the deck or patio</a> — knock them out together when you're already outside with the bucket and hose.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I clean my bird feeder?</summary>
+      <p>For a seed feeder — a tube, hopper, or tray — about once a month is the sensible baseline, tightening to every two weeks when the weather is hot and humid or rainy, or when the feeder is mobbed with birds all day. The damper and busier the feeder, the faster seed clumps and molds and the faster droppings build up, so those conditions push you toward the shorter interval. Nectar and hummingbird feeders are a completely different story: sugar water ferments and grows mold within days, so in summer heat they need cleaning every few days. And regardless of schedule, if you ever see a sick or dead bird, mold, or clumped, sour seed, clean immediately — don't wait for the calendar.</p>
+    </details>
+    <details>
+      <summary>How do I clean it, and what disinfectant should I use?</summary>
+      <p>Work outside, wearing gloves, with a bucket and brush you keep just for this — never the kitchen sink, because old seed and droppings can carry salmonella. First empty the feeder completely and throw out the old seed (don't top it off). Then scrub every part — tube, ports, perches, corners — with hot, soapy water and a bottle brush, using an old toothbrush for the tight spots. Next, sanitize: soak or rinse the parts for a few minutes in a roughly 1-part-bleach-to-9-parts-water solution, or a white-vinegar solution. Finally, rinse out all the bleach and soap thoroughly, and let the feeder air-dry completely — ideally in the sun — before refilling. Wash your hands well when you're done.</p>
+    </details>
+    <details>
+      <summary>How often do hummingbird and nectar feeders need cleaning?</summary>
+      <p>Far more often than seed feeders. Sugar water is essentially a culture medium — in warm weather it ferments and grows black mold within a day or two, and spoiled nectar can harm the tiny birds that depend on it. In summer heat, plan to empty, clean, and refill every two to three days; in cooler weather you can stretch it to roughly twice a week. Don't just top off the reservoir — dump the old nectar, take the feeder apart, scrub the ports and bottle, and refill with a fresh batch. If the nectar ever looks cloudy, dark, or stringy, it's gone bad and needs cleaning right away no matter how recently you filled it.</p>
+    </details>
+    <details>
+      <summary>Can a dirty feeder make birds sick — or make me sick?</summary>
+      <p>Yes to both. A feeder crowds many birds into one shared spot, and moldy seed, droppings, and damp let diseases spread bird-to-bird — salmonellosis, avian pox, and trichomoniasis are the common ones, and a single contaminated feeder can drive a local die-off during an outbreak. Wet, clumped seed also grows aflatoxin, a fungal toxin that poisons birds directly. And people aren't immune: handling old seed and bird droppings can pass salmonella to you, which is exactly why you wear gloves, clean outdoors rather than in your kitchen sink, and wash your hands afterward. Regular cleaning protects the whole flock and your household at the same time.</p>
+    </details>
+    <details>
+      <summary>What sugar-water ratio is right for hummingbirds — and what about red dye?</summary>
+      <p>Use a simple 1:4 ratio — one part plain white granulated sugar dissolved in four parts water. That's it. Do not use honey (it ferments fast and can grow a fungus deadly to hummingbirds), brown or raw sugar (the iron content can harm them), or any artificial sweetener. And skip the red dye entirely: it's unnecessary — the red parts of the feeder itself attract birds — and there are concerns it may be harmful, so clear sugar water is the safe choice. Make a batch, store extra in the fridge for up to a week, and bring it to room temperature before refilling. In heat, change it out every few days even if there's plenty left.</p>
+    </details>
+    <details>
+      <summary>What do I do if I see sick or dead birds at the feeder?</summary>
+      <p>Treat it as a disease event. Take the feeder down, dump and bag the seed, and thoroughly clean and disinfect everything — feeder, tray, and the ground beneath it where droppings and spilled seed collect. The strongest recommendation from most wildlife agencies is to then pause feeding for a couple of weeks (some say longer), which disperses the birds and breaks the chain of transmission, before cleaning again and resuming. If you find a dead bird, handle it with gloves or a plastic bag, and check your state wildlife agency's website — during active avian-flu or salmonella outbreaks they may ask you to report it and to keep feeders down for a defined period. When in doubt, err toward taking it down and following local guidance.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A feeder is a kindness only if it's clean.</h2>
+        <p>Left dirty, it quietly spreads disease through the very flock you set out to help — and nectar feeders go bad in days, not weeks. Upkeep Ledger logs this scrub and resurfaces it on schedule — about monthly for seed, far more often for nectar in the heat — right alongside the gutters, the HVAC filter, and every other quiet task that keeps the place (and your backyard birds) healthy.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-bird-feeder&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=clean-bird-feeder&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cleaning frequencies and disinfectant ratios are general guidance for healthy backyard feeding; during active bird-disease outbreaks, your state or local wildlife agency's advice outranks this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, weather: null, traffic: null, signs: null };
+
+  var FREQ_LABEL = {
+    0.1: "Every few days",
+    0.5: "Every 2 weeks",
+    1: "Every month",
+    2: "Every 2 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;
+    var tighten = false;
+
+    /* Type — the dominant factor */
+    if (s.type === "nectar") {
+      months = 0.1;
+      tighten = true;
+      reasons.push("Nectar feeders are in a class of their own: sugar water ferments and grows black mold within a day or two in warm weather, so a hummingbird feeder needs emptying, scrubbing, and refilling every few days — far more often than any seed feeder.");
+    } else if (s.type === "suet") {
+      reasons.push("Suet and open trays don't hold damp seed the way a tube does, but they still collect droppings and grease, so a roughly monthly scrub keeps them safe.");
+    } else {
+      reasons.push("A seed tube or hopper is the classic monthly-scrub case — old seed settles and clumps at the bottom and the ports collect gunk, so plan on a real clean about every month.");
+    }
+
+    /* Weather — heat and moisture grow the mold */
+    if (s.weather === "hot") {
+      if (months > 0.5) months = 0.5;
+      tighten = true;
+      reasons.push("Hot, humid, or rainy weather is exactly what grows the mold — seed clumps and ferments fast and droppings stay damp — so tighten a seed feeder to about every two weeks (and a nectar feeder even more).");
+    } else if (s.weather === "dry") {
+      reasons.push("Cool, dry conditions are forgiving — seed stays loose and dry longer — so a seed feeder can comfortably sit toward the monthly end.");
+    } else {
+      reasons.push("Ordinary, changeable weather is the middle case the monthly default is written for — just watch the feeder after a wet spell.");
+    }
+
+    /* Traffic — more birds, faster dirt and faster spread */
+    if (s.traffic === "busy") {
+      if (months > 0.5) months = 0.5;
+      tighten = true;
+      reasons.push("A mobbed feeder gets dirty fast — more droppings, more shed feathers, more seed turned over and left damp — and crowding is also how disease spreads, so a busy feeder rewards a tighter schedule.");
+    } else if (s.traffic === "quiet") {
+      reasons.push("A quiet feeder with only the occasional visitor stays cleaner longer, so you can lean toward the longer interval — but don't let seed sit and go stale just because few birds are eating it.");
+    } else {
+      reasons.push("A steady handful of regular visitors is normal traffic and won't push the schedule on its own.");
+    }
+
+    /* Signs — overrides toward 'now' */
+    if (s.signs === "sick") {
+      months = 0.1;
+      tighten = true;
+      reasons.push("You've seen sick or dead birds, mold, or clumped seed — that's a clean-now situation, not a scheduled one. Take the feeder down, disinfect everything, and seriously consider pausing feeding for a couple of weeks to break the spread.");
+    } else if (s.signs === "hint") {
+      if (months > 0.5) months = 0.5;
+      reasons.push("Some damp or buildup is an early warning — clean it sooner rather than later so it doesn't tip over into mold.");
+    } else {
+      reasons.push("Everything looking healthy means you can stick to the preventive schedule — keeping it clean is what keeps it that way.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.signs === "sick") {
+      note = "<strong>This is a clean-now, not a wait situation:</strong> take the feeder down, disinfect everything (a ~1:9 bleach rinse), rake the ground beneath it, and pause feeding for a couple of weeks. During active outbreaks, follow your state wildlife agency's guidance.";
+    } else if (s.type === "nectar") {
+      note = "<strong>Nectar feeders go bad in days:</strong> in summer heat, empty, scrub, and refill every two to three days with fresh 1:4 sugar water — one part white sugar to four parts water, never honey, brown sugar, or red dye.";
+    } else if (s.weather === "hot" || s.traffic === "busy") {
+      note = "<strong>Heat and crowds speed everything up:</strong> in hot, humid weather or at a mobbed feeder, scrub every two weeks, toss any clumped or wet seed instead of topping off, and always let the feeder dry completely before refilling.";
+    } else {
+      note = "<strong>Remember the order:</strong> empty it, scrub with hot soapy water, sanitize with a ~1:9 bleach rinse (or vinegar), then rinse and dry completely before refilling — a damp feeder grows the very mold you just cleaned off.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.weather || !quizState.traffic || !quizState.signs) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: clean it roughly " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Empty out the old seed, then <strong>scrub with hot soapy water, sanitize with a ~1:9 bleach (or vinegar) rinse, rinse clean, and dry completely before refilling</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Take down & empty", text: "Bring the feeder down and put on gloves", note: "Take the feeder off its hook or pole and pull on rubber gloves before you handle anything — old seed and droppings can carry salmonella, so this stays an outdoor, gloves-on job from the start." },
+    { phase: "Take down & empty", text: "Empty it completely and bag the old seed", note: "Dump out every bit of seed — and toss any moldy, wet, or clumped seed straight into a trash bag, never onto the ground for birds. Don't pour fresh seed on top of old; start clean." },
+    { phase: "Take down & empty", text: "Clear the seed tray, ports, and any leftover gunk", note: "Knock out the caked seed around the ports, the bottom tray, and the corners where buildup hides. Getting the loose debris out now makes the scrub far easier." },
+    { phase: "Scrub", text: "Disassemble the feeder as far as it comes apart", note: "Take off the base, lid, and any removable ports or perches — especially on nectar feeders, which fully disassemble. You can't clean what you can't reach." },
+    { phase: "Scrub", text: "Scrub every part with hot soapy water and a bottle brush", note: "Work hot, soapy water into the tube, ports, perches, seams, and corners with a bottle brush. Use an old toothbrush for the tight spots and the flower ports on nectar feeders." },
+    { phase: "Sanitize & rinse", text: "Mix a ~1:9 bleach solution (or a vinegar solution)", note: "In your dedicated bucket, mix about one part household bleach to nine parts water — or use a white-vinegar solution instead. This is the step that actually kills the pathogens a scrub leaves behind." },
+    { phase: "Sanitize & rinse", text: "Soak or rinse the parts for a few minutes", note: "Let the feeder parts sit in the sanitizing solution for a few minutes so it has time to work on the surfaces, ports, and corners." },
+    { phase: "Sanitize & rinse", text: "Rinse thoroughly until no bleach or soap remains", note: "Rinse every part well with clean water — you don't want any bleach, vinegar, or soap residue left where birds will eat. Rinse until it's completely clear." },
+    { phase: "Dry & refill", text: "Air-dry the feeder completely — ideally in the sun", note: "Let every part dry all the way through before it goes back together. Moisture is what grows the mold and aflatoxin, so a feeder refilled while still damp undoes everything — sun-drying is best." },
+    { phase: "Dry & refill", text: "Rake and clean the ground litter beneath the feeder", note: "Spilled seed, husks, and droppings pile up under the feeder and breed mold and disease. Rake it up and bag it while you're waiting for the feeder to dry." },
+    { phase: "Dry & refill", text: "Reassemble and refill with fresh food", note: "Once it's bone-dry, put it back together and refill — fresh seed for seed feeders, or fresh 1:4 sugar water (no dye, honey, or brown sugar) for nectar feeders." },
+    { phase: "Dry & refill", text: "Log the date and set the next clean", note: "Note the date so the next scrub lands on schedule — about a month for seed (every two weeks in heat or at a busy feeder), and every few days for nectar in the heat. A dirty feeder gives you no reminder of its own." }
+  ];
+
+  var LS_KEY = "upkeepguides:clean-bird-feeder:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review your will and estate documents — UpkeepGuides.com</title>
+<meta name="description" content="A calm, periodic review of your will and estate plan: the will, beneficiaries, advance directive, power of attorney, and guardianship — why life events make them go stale, and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Review your will and estate documents — UpkeepGuides.com">
+<meta property="og:description" content="A calm, periodic review of your will and estate plan: the will, beneficiaries, advance directive, power of attorney, and guardianship — why life events make them go stale, and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/will-estate-review.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Review your will and estate documents — UpkeepGuides.com">
+<meta name="twitter:description" content="A calm, periodic review of your will and estate plan: the will, beneficiaries, advance directive, power of attorney, and guardianship — why life events make them go stale, and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Every 2 years</span>
+      <h1>Review Your Will &amp; Estate Documents</h1>
+      <p class="lede">A will isn't a "sign it once and forget it" document — and neither is the rest of an estate plan. Life keeps moving: a marriage, a divorce, a new child, the death of someone you named, a big change in what you own, a move to another state — and any one of them can quietly make your plan wrong without your lawyer or anyone else flagging it. An out-of-date plan can send your assets to the wrong people, hand a hard year to the family you meant to protect, or leave everyone in court just to make a decision for you. A calm review every couple of years — and after any major life event — keeps the whole thing current: the will, your beneficiaries, your advance directive, your power of attorney, guardianship for the kids, and where it's all stored.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 2 years</em></span>
+        <span class="chip">⚡ And after <em>any major life event</em></span>
+        <span class="chip">🛡️ Spares your family <em>a mess</em></span>
+        <span class="chip">💸 Review is <em>free</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm, organized desk scene for reviewing estate documents: an open folder labeled Will and Estate with neatly stacked papers for a will, an advance directive, and a power of attorney, a pen resting on top, a small fireproof lockbox beside it, and a framed family photo — reassuring and orderly, not morbid">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface -->
+      <rect x="40" y="300" width="480" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="74" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+      <rect x="471" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+
+      <!-- open "Will & Estate" folder, center -->
+      <path d="M150 150 h150 l16 18 h94 v122 h-260 z" fill="#5e9a78"/>
+      <rect x="150" y="168" width="260" height="104" rx="6" fill="#3e7c59"/>
+      <!-- folder tab label -->
+      <rect x="166" y="156" width="120" height="16" rx="5" fill="#fffdf8"/>
+      <text x="176" y="168" font-size="11" fill="#2c5a40" font-weight="700">Will &amp; Estate</text>
+
+      <!-- the documents fanned inside the folder -->
+      <!-- back doc: power of attorney -->
+      <rect x="196" y="120" width="120" height="150" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-9 256 195)"/>
+      <g transform="rotate(-9 256 195)">
+        <rect x="208" y="132" width="44" height="9" rx="3" fill="#7fb3c8"/>
+        <text x="208" y="156" font-size="8.5" fill="#6b7376" font-weight="700">POWER OF</text>
+        <text x="208" y="166" font-size="8.5" fill="#6b7376" font-weight="700">ATTORNEY</text>
+        <line x1="208" y1="180" x2="300" y2="180" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="208" y1="190" x2="300" y2="190" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="208" y1="200" x2="282" y2="200" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <!-- middle doc: advance directive -->
+      <rect x="230" y="122" width="118" height="148" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(2 289 196)"/>
+      <g transform="rotate(2 289 196)">
+        <rect x="242" y="134" width="40" height="9" rx="3" fill="#c96f4a"/>
+        <text x="242" y="158" font-size="8.5" fill="#6b7376" font-weight="700">ADVANCE</text>
+        <text x="242" y="168" font-size="8.5" fill="#6b7376" font-weight="700">DIRECTIVE</text>
+        <line x1="242" y1="182" x2="340" y2="182" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="242" y1="192" x2="340" y2="192" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="242" y1="202" x2="320" y2="202" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <!-- front doc: the will -->
+      <rect x="252" y="118" width="124" height="156" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="3" transform="rotate(11 314 196)"/>
+      <g transform="rotate(11 314 196)">
+        <rect x="266" y="132" width="56" height="11" rx="4" fill="#e0a93d"/>
+        <text x="266" y="160" font-size="13" fill="#2c5a40" font-weight="800">WILL</text>
+        <line x1="266" y1="176" x2="362" y2="176" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="266" y1="188" x2="362" y2="188" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="266" y1="200" x2="362" y2="200" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="266" y1="212" x2="340" y2="212" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <!-- signature line -->
+        <line x1="266" y1="244" x2="330" y2="244" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M270 240 q8 -8 14 0 q5 6 12 -2" fill="none" stroke="#2c5a40" stroke-width="2.2" stroke-linecap="round"/>
+        <!-- notary seal -->
+        <circle cx="346" cy="240" r="13" fill="none" stroke="#e0a93d" stroke-width="2.4"/>
+        <path d="M340 240 l4 4 l8 -8" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- pen resting on top of the will -->
+      <rect x="338" y="252" width="86" height="9" rx="4.5" fill="#2c5a40" transform="rotate(22 381 256)"/>
+      <path d="M414 262 l12 6 l-10 4 z" fill="#e0a93d" transform="rotate(22 420 266)"/>
+
+      <!-- fireproof lockbox, front-left -->
+      <rect x="58" y="244" width="92" height="60" rx="8" fill="#b9b1a3"/>
+      <rect x="58" y="244" width="92" height="16" rx="8" fill="#8a6a4f"/>
+      <rect x="58" y="252" width="92" height="6" fill="#8a6a4f"/>
+      <!-- lock + handle -->
+      <rect x="96" y="270" width="16" height="20" rx="3" fill="#fffdf8"/>
+      <circle cx="104" cy="280" r="3.2" fill="#e0a93d"/>
+      <rect x="86" y="236" width="36" height="8" rx="4" fill="#6b7376"/>
+      <text x="70" y="300" font-size="9" fill="#33393b" font-weight="700">FIREPROOF</text>
+
+      <!-- framed family photo, far right on desk -->
+      <rect x="430" y="226" width="74" height="74" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <rect x="438" y="234" width="58" height="58" rx="3" fill="#dce8ee"/>
+      <!-- two figures + a small one -->
+      <circle cx="456" cy="256" r="8" fill="#c96f4a"/>
+      <path d="M444 288 q12 -16 24 0 z" fill="#c96f4a"/>
+      <circle cx="478" cy="258" r="7" fill="#5e9a78"/>
+      <path d="M468 288 q10 -14 20 0 z" fill="#5e9a78"/>
+      <circle cx="468" cy="270" r="5" fill="#e0a93d"/>
+      <path d="M461 290 q7 -9 14 0 z" fill="#e0a93d"/>
+      <!-- little sun for warmth in the photo -->
+      <circle cx="486" cy="244" r="4" fill="#e0a93d"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">An estate plan feels like a "done" thing once it's signed — which is exactly why it's so easy to let it quietly fall out of step with your life. But the documents only do their job if they still match who you'd choose and what you own <em>today</em>. Here's what a stale or missing plan actually costs the people you'd most want to protect:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="6" width="14" height="6" rx="2" fill="#8a6a4f"/>
+          <path d="M6 30 a12 12 0 0 1 24 0 z" fill="#3e7c59"/>
+          <rect x="14" y="12" width="8" height="8" fill="#8a6a4f"/>
+          <line x1="18" y1="18" x2="18" y2="30" stroke="#2c5a40" stroke-width="2"/>
+          <circle cx="18" cy="9" r="2.4" fill="#e0a93d"/>
+        </svg></div>
+        <h3>No will means the state decides</h3>
+        <p>Die without a valid, current will and the law of your state — through probate court — decides who gets what, on a rigid formula that may be nothing like your wishes. It's slower, costlier, and more public, and it can leave the people you actually meant to provide for out in the cold.</p>
+        <span class="cost">A court splits your estate, not you</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 16 a12 12 0 0 1 22 -6" fill="none" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M30 20 a12 12 0 0 1 -22 6" fill="none" stroke="#c96f4a" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M28 5 l1 6 l-6 -1 z" fill="#3e7c59"/>
+          <path d="M8 31 l-1 -6 l6 1 z" fill="#c96f4a"/>
+          <circle cx="18" cy="18" r="2.4" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Life events quietly break the plan</h3>
+        <p>Marriage, divorce, a new child, the death of someone you named, new assets, or a move to a new state can each invalidate or misdirect parts of your plan. The classic disaster: an ex-spouse still listed on a beneficiary line years after the divorce — and the money goes straight to them.</p>
+        <span class="cost">An ex still on the beneficiary line</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="24" height="18" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <rect x="6" y="13" width="24" height="4" fill="#7fb3c8"/>
+          <circle cx="11" cy="22" r="1.8" fill="#3e7c59"/>
+          <path d="M20 30 l5 -5 m0 5 l-5 -5" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M27 6 l3 3 l5 -6" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Beneficiary forms override your will</h3>
+        <p>The named beneficiaries on your retirement accounts and life insurance pass directly to those people — they <em>override</em> whatever your will says. If a designation is stale, no will can fix it. These forms have to be checked and updated at the account itself, not just on paper in a drawer.</p>
+        <span class="cost">A current will can't undo them</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 7 C12 14 9 18 9 23 a9 9 0 0 0 18 0 c0 -5 -3 -9 -9 -16 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M18 16 v8 M14 20 h8" stroke="#c96f4a" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>No directive or POA means court</h3>
+        <p>Without an advance directive and a power of attorney, if you're ever incapacitated your family may have to go to court — guardianship or conservatorship — just to make medical or financial decisions for you. Those documents name your trusted people in advance and keep that crisis out of a courtroom.</p>
+        <span class="cost">A guardianship case at the worst time</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> review it?</h2>
+    <p class="sub">Every two to three years is the sensible default for most people — plus, always, after any major life event. But a complex estate, a big change since you last looked, or no documents at all push toward a sooner or first review, while a simple, steady, fully-current plan can comfortably stretch toward the longer end. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="complexity">
+        <div class="q-label">1. How complex is your situation?</div>
+        <div class="pills">
+          <button class="pill" data-v="complex">Kids, property, a business, or significant assets</button>
+          <button class="pill" data-v="moderate">Middle of the road</button>
+          <button class="pill" data-v="simple">Simple — modest assets, straightforward family</button>
+        </div>
+        <div class="q-hint">Minor children, real estate, a business, a blended family, or larger assets all add moving parts that can drift out of date — and they're exactly the situations where a careful, more frequent look pays off.</div>
+      </div>
+      <div class="quiz-q" data-q="changes">
+        <div class="q-label">2. Any major life events since you last looked?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">Yes — marriage, divorce, birth, death, move, or new assets</button>
+          <button class="pill" data-v="minor">A small change or two</button>
+          <button class="pill" data-v="steady">No, it's been steady</button>
+        </div>
+        <div class="q-hint">A major life event is the single biggest reason a plan goes wrong — it can invalidate or misdirect documents all at once. After one, review now rather than waiting for the calendar.</div>
+      </div>
+      <div class="quiz-q" data-q="documents">
+        <div class="q-label">3. What's actually in place right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="current">A current will, directives, and a POA</button>
+          <button class="pill" data-v="old">Something, but old or incomplete</button>
+          <button class="pill" data-v="none">Nothing yet</button>
+        </div>
+        <div class="q-hint">If you have no documents at all, the "review" is really a first plan — and it's the most urgent box on this whole page. Old or incomplete documents are worth a careful look soon, too.</div>
+      </div>
+      <div class="quiz-q" data-q="confidence">
+        <div class="q-label">4. How confident are you it's all current and findable?</div>
+        <div class="pills">
+          <button class="pill" data-v="unsure">Unsure — or I'm not sure where it all is</button>
+          <button class="pill" data-v="mostly">Mostly, with a few question marks</button>
+          <button class="pill" data-v="current">Everything's current and easy to find</button>
+        </div>
+        <div class="q-hint">A plan no one can locate is almost as much trouble as no plan at all. If you're unsure it's current — or where the originals even are — that's a strong reason to sit down with it sooner.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — and the cost of skipping it</h2>
+    <p class="sub">Reviewing what you already have costs nothing but an afternoon. Putting a plan in place is modest next to what a missing or stale one causes: a simple will and estate package from an attorney commonly runs about $300–1,000 (more for trusts or complex situations), and reputable DIY or online will tools are roughly $0–200 for simple cases. Set any of those against the thousands a bad plan racks up in probate fees, taxes, and family conflict:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to review — sit down with the documents you already have and check the people, the beneficiaries, and where it's all stored</div></div>
+        <div class="calc-stat"><div class="v">$0–200</div><div class="l">reputable DIY or online will tools for a simple situation — a low-cost way to get a basic plan in place</div></div>
+        <div class="calc-stat"><div class="v bad">$300–1,000+</div><div class="l">a simple will/estate package from an attorney — more for trusts, blended families, or larger estates</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>📝 Reviewing the plan you already have</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💻 A DIY/online will for a simple situation</span><span>$0–200</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚖️ A simple will &amp; estate package from an attorney</span><span>$300–1,000</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:24%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏛️ Probate on an intestate or messy estate</span><span>$1,000s + months in court</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💔 A family fight over a stale or unclear plan</span><span>Legal fees &amp; relationships</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free afternoon every couple of years</strong> — or a few hundred dollars to put a basic plan in place — against the thousands in probate costs and taxes, the months in court, and the lasting family conflict that a missing or out-of-date plan can leave behind. The review is the cheapest move there is, because its whole job is to head off the expensive ones while you still can.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to review your will and estate documents</h2>
+    <p class="sub">The flow is straightforward: gather and locate everything, check that the people you named are still the right ones, check the beneficiaries (including the account forms that override your will), reflect any life or law changes, then update properly and tell the right people where things are. Read the techniques first — especially the "handle with care" notes below — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Handle with care — this is general information, not legal advice</h3>
+      <ul>
+        <li><strong>This guide is general information, not legal advice.</strong> Estate laws and document rules vary by state and by situation. For your actual plan — and especially for trusts, blended families, business interests, or a larger estate — consult a licensed estate attorney who can look at your real circumstances.</li>
+        <li><strong>Beneficiary designations override your will.</strong> The named beneficiaries on retirement accounts, life insurance, and payable-on-death accounts pass directly to those people, no matter what the will says. Check and update them directly at each account — the will can't fix a stale form.</li>
+        <li><strong>Keep the original signed documents safe.</strong> A fireproof box, a safe, or your attorney's office are all good. Make sure your executor and a trusted person know where the originals are and how to access them — a plan no one can find can fail just like no plan at all.</li>
+        <li><strong>Verify your state's signing, witness, and notary rules.</strong> An improperly executed will can be ruled void. Requirements for witnesses and notarization differ by state, so confirm yours — or have an attorney handle the signing — before you rely on a document.</li>
+        <li><strong>Be careful sharing documents digitally, and watch for scams.</strong> These papers hold sensitive personal and financial details. Share them only over secure channels with people you trust, and be wary of anyone pressuring you toward a particular product or "urgent" estate service.</li>
+        <li><strong>Update — don't just re-sign — when life changes.</strong> A real change (a divorce, a new child, a death) usually calls for a proper amendment or a new will, not a fresh signature on the old one. Make the change with the right legal formalities so it actually holds up.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your will (and any trust)</span>
+      <span class="tool-chip">Advance directive / living will</span>
+      <span class="tool-chip">Healthcare proxy</span>
+      <span class="tool-chip">Financial power of attorney</span>
+      <span class="tool-chip">A list of accounts &amp; assets</span>
+      <span class="tool-chip">Beneficiary forms / account logins</span>
+      <span class="tool-chip">Insurance policies</span>
+      <span class="tool-chip">A licensed estate attorney (for changes)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of gathering and locating every estate document — the will, a trust, advance directive, healthcare proxy, financial power of attorney, and a list of accounts — and confirming you and your executor can find the originals">
+          <!-- folder holding stacked, labeled docs -->
+          <path d="M44 56 h70 l10 12 h112 v74 h-192 z" fill="#5e9a78"/>
+          <rect x="44" y="68" width="192" height="62" rx="5" fill="#3e7c59"/>
+          <!-- doc tabs poking up -->
+          <rect x="70" y="44" width="30" height="30" rx="3" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <text x="74" y="62" font-size="9" fill="#6b7376" font-weight="700">WILL</text>
+          <rect x="108" y="40" width="30" height="34" rx="3" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <text x="111" y="58" font-size="7" fill="#6b7376" font-weight="700">TRUST</text>
+          <rect x="146" y="44" width="30" height="30" rx="3" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <text x="149" y="62" font-size="7" fill="#6b7376" font-weight="700">DIR.</text>
+          <rect x="184" y="42" width="30" height="32" rx="3" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <text x="188" y="60" font-size="7.5" fill="#6b7376" font-weight="700">POA</text>
+          <!-- magnifier = locate the originals -->
+          <circle cx="226" cy="118" r="18" fill="none" stroke="#e0a93d" stroke-width="4"/>
+          <line x1="239" y1="131" x2="252" y2="144" stroke="#e0a93d" stroke-width="5" stroke-linecap="round"/>
+          <path d="M218 118 l5 5 l9 -10" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="44" y="164" font-size="11" fill="#3e7c59" font-weight="700">find the originals</text>
+        </svg>
+        <h4>Gather &amp; locate everything</h4>
+        <p>Pull together the will, any trust, your advance directive or living will, healthcare proxy, financial power of attorney, and a list of your accounts and assets. Then confirm the part everyone forgets: that you — and your executor — can actually find the originals.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking the people named in the plan — the executor, the guardian for minor children, the healthcare agent, and the power of attorney — confirming each is still the right, willing, and living choice">
+          <!-- four named roles as person chips with checks -->
+          <g>
+            <circle cx="70" cy="56" r="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+            <circle cx="70" cy="51" r="5" fill="#3e7c59"/>
+            <path d="M62 64 q8 -9 16 0 z" fill="#3e7c59"/>
+            <text x="92" y="54" font-size="10" fill="#33393b" font-weight="700">Executor</text>
+            <path d="M92 60 l4 4 l8 -8" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g>
+            <circle cx="70" cy="100" r="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+            <circle cx="70" cy="95" r="5" fill="#5e9a78"/>
+            <path d="M62 108 q8 -9 16 0 z" fill="#5e9a78"/>
+            <text x="92" y="98" font-size="10" fill="#33393b" font-weight="700">Guardian</text>
+            <path d="M92 104 l4 4 l8 -8" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g>
+            <circle cx="166" cy="56" r="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+            <circle cx="166" cy="51" r="5" fill="#c96f4a"/>
+            <path d="M158 64 q8 -9 16 0 z" fill="#c96f4a"/>
+            <text x="188" y="54" font-size="10" fill="#33393b" font-weight="700">Health agent</text>
+            <path d="M188 60 l4 4 l8 -8" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g>
+            <circle cx="166" cy="100" r="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+            <circle cx="166" cy="95" r="5" fill="#e0a93d"/>
+            <path d="M158 108 q8 -9 16 0 z" fill="#e0a93d"/>
+            <text x="188" y="98" font-size="10" fill="#33393b" font-weight="700">POA agent</text>
+            <path d="M188 104 l4 4 l8 -8" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <text x="48" y="158" font-size="11" fill="#3e7c59" font-weight="700">still right, willing &amp; living?</text>
+        </svg>
+        <h4>Check the people</h4>
+        <p>Look hard at everyone you named: the executor, the guardian for minor children, your healthcare agent, and your power of attorney. Are they each still the right person — and still willing, able, and living? People move, fall out, and pass away; the roles have to keep up.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing that beneficiary designations on retirement accounts, life insurance, and payable-on-death accounts override the will, and that an outdated beneficiary such as an ex should be removed">
+          <!-- will on the left -->
+          <rect x="28" y="44" width="76" height="92" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+          <rect x="40" y="56" width="36" height="9" rx="3" fill="#e0a93d"/>
+          <line x1="40" y1="76" x2="92" y2="76" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="40" y1="88" x2="92" y2="88" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="40" y1="100" x2="78" y2="100" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="40" y="128" font-size="9" fill="#6b7376" font-weight="700">WILL</text>
+          <!-- overriding arrow -->
+          <path d="M112 90 l40 0 m-10 -7 l10 7 l-10 7" fill="none" stroke="#d9663f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="112" y="80" font-size="9" fill="#d9663f" font-weight="700">overridden by</text>
+          <!-- account beneficiary form on the right -->
+          <rect x="160" y="40" width="92" height="100" rx="6" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+          <text x="170" y="58" font-size="9" fill="#2c5a40" font-weight="700">401(k) · life ins.</text>
+          <text x="170" y="70" font-size="8" fill="#6b7376">payable-on-death</text>
+          <!-- current beneficiary kept -->
+          <rect x="170" y="80" width="72" height="16" rx="4" fill="#e3efe8"/>
+          <path d="M174 88 l4 4 l7 -8" fill="none" stroke="#3e7c59" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="190" y="92" font-size="9" fill="#3e7c59" font-weight="700">current</text>
+          <!-- stale "ex" beneficiary removed -->
+          <rect x="170" y="102" width="72" height="16" rx="4" fill="#fbe9e1"/>
+          <text x="178" y="114" font-size="9" fill="#d9663f" font-weight="700">ex-spouse</text>
+          <path d="M230 104 l8 12 m0 -12 l-8 12" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="160" y="158" font-size="11" fill="#3e7c59" font-weight="700">remove anyone outdated</text>
+        </svg>
+        <h4>Check the beneficiaries</h4>
+        <p>Check who inherits — on the will <em>and</em> directly on the forms that override it: retirement accounts, life insurance, and payable-on-death accounts. These pass to the named person regardless of the will, so remove anyone outdated (the ex-spouse is the classic example).</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of reflecting life and law changes in the plan — marriage, divorce, births, deaths, new property or a business, a move to a new state, and any tax-law changes">
+          <!-- calendar / life events grid -->
+          <rect x="34" y="40" width="120" height="100" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="34" y="40" width="120" height="20" rx="8" fill="#3e7c59"/>
+          <rect x="34" y="52" width="120" height="8" fill="#3e7c59"/>
+          <!-- icons of events -->
+          <circle cx="58" cy="84" r="6" fill="#c96f4a"/><text x="50" y="104" font-size="7" fill="#6b7376">marry</text>
+          <path d="M88 78 l10 12 m0 -12 l-10 12" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/><text x="80" y="104" font-size="7" fill="#6b7376">divorce</text>
+          <circle cx="124" cy="84" r="6" fill="#e0a93d"/><text x="116" y="104" font-size="7" fill="#6b7376">birth</text>
+          <rect x="46" y="116" width="14" height="10" rx="2" fill="#5e9a78"/><text x="42" y="136" font-size="7" fill="#6b7376">home</text>
+          <path d="M82 122 h18 m-6 -5 l6 5 l-6 5" fill="none" stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round"/><text x="80" y="136" font-size="7" fill="#6b7376">move</text>
+          <circle cx="124" cy="121" r="6" fill="#b9b1a3"/><text x="116" y="136" font-size="7" fill="#6b7376">loss</text>
+          <!-- map pin = new state + tax -->
+          <path d="M214 50 c-14 0 -22 10 -22 22 c0 16 22 38 22 38 s22 -22 22 -38 c0 -12 -8 -22 -22 -22 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="214" y="80" font-size="12" fill="#3e7c59" font-weight="800" text-anchor="middle">new</text>
+          <text x="214" y="92" font-size="9" fill="#5e9a78" text-anchor="middle">state</text>
+          <text x="186" y="138" font-size="9" fill="#6b7376" text-anchor="middle">+ tax-law changes</text>
+          <text x="40" y="160" font-size="11" fill="#3e7c59" font-weight="700">reflect what's changed</text>
+        </svg>
+        <h4>Reflect life &amp; law changes</h4>
+        <p>Walk through what's actually changed: a marriage, a divorce, births, deaths, new property or a business, or a move to a new state (estate law is state-specific). Note any tax-law shifts too. Each of these can quietly mean your documents no longer say what you'd want.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of updating the plan properly with the right legal formalities — a codicil or new will, properly witnessed and notarized — then storing the originals safely, telling key people where they are, and scheduling the next review">
+          <!-- updated, signed document -->
+          <rect x="32" y="36" width="84" height="104" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+          <rect x="44" y="48" width="40" height="9" rx="3" fill="#e0a93d"/>
+          <line x1="44" y1="68" x2="104" y2="68" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="44" y1="80" x2="104" y2="80" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- signature + notary -->
+          <line x1="44" y1="112" x2="92" y2="112" stroke="#8a6a4f" stroke-width="2"/>
+          <path d="M48 108 q7 -7 12 0 q4 5 10 -2" fill="none" stroke="#2c5a40" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="98" cy="108" r="9" fill="none" stroke="#e0a93d" stroke-width="2.2"/>
+          <path d="M93 108 l3 3 l6 -6" fill="none" stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- arrow to lockbox -->
+          <path d="M124 90 l24 0 m-8 -6 l8 6 l-8 6" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- fireproof lockbox -->
+          <rect x="156" y="64" width="80" height="56" rx="8" fill="#b9b1a3"/>
+          <rect x="156" y="64" width="80" height="14" rx="8" fill="#8a6a4f"/>
+          <rect x="156" y="71" width="80" height="6" fill="#8a6a4f"/>
+          <rect x="190" y="88" width="14" height="18" rx="3" fill="#fffdf8"/>
+          <circle cx="197" cy="97" r="2.8" fill="#e0a93d"/>
+          <text x="196" y="138" font-size="9" fill="#33393b" font-weight="700" text-anchor="middle">store + tell key people</text>
+          <text x="32" y="162" font-size="11" fill="#3e7c59" font-weight="700">witness / notarize, then store</text>
+        </svg>
+        <h4>Update properly &amp; communicate</h4>
+        <p>Make any changes with the right legal formalities — a codicil or a new will, properly witnessed and notarized for your state. Then store the originals safely, tell the key people where they are and how to access them, and set the date for your next review.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Estate-review progress</span><span id="progText">0 of 13 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Documents gathered and located, the people and beneficiaries checked, life and law changes reflected, and anything updated properly and stored where the right people can find it. The plan matches your life again — same calm review in about two years, or sooner after any big change.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time — and when to see an estate attorney</h2>
+    <p class="sub">Some of a review you can handle yourself with an afternoon and a folder. But certain situations are genuinely legal work, where an estate attorney earns their fee — these are the signals to get professional help (and a reminder that this guide is general information, not legal advice for your specific situation):</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A major life event.</strong> Marriage, divorce, a new child, the death of a beneficiary or executor, an inheritance, starting a business, or a move to a new state each reshapes your plan at once — review now, and bring in an attorney if the change is significant.</li>
+        <li><strong>No will or directives at all.</strong> If you have nothing in place, that's the most urgent item here. Even a basic will, advance directive, and power of attorney spare your family the worst of probate and guardianship — get a plan started.</li>
+        <li><strong>A blended family or minor children.</strong> Stepchildren, children from a prior relationship, or kids who'd need a named guardian make the "who gets what and who's in charge" questions genuinely complicated — exactly the situation an attorney is built for.</li>
+        <li><strong>Significant or complex assets.</strong> Real estate, a business, investment accounts, or a larger estate raise tax and structuring questions that DIY tools don't handle well. Professional help here usually pays for itself in mistakes avoided.</li>
+        <li><strong>Anything involving trusts or estate tax.</strong> Trusts and estate-tax planning are firmly legal-and-financial territory. Don't guess — an estate attorney (often with a CPA) should set these up and keep them current.</li>
+        <li><strong>Pro tip:</strong> pair this with your <a href="financial-review.html">annual financial review</a> and <a href="review-insurance.html">insurance review</a> — beneficiaries and coverage tie directly together — and keep a current <a href="home-inventory.html">home inventory</a> for your estate records, so what you own is documented alongside who it goes to.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I review my will and estate documents?</summary>
+      <p>For most people, every two to three years is a sensible default — plus, always, after any major life event. Move toward a sooner review if your situation is complex (minor children, real estate, a business, a blended family, or significant assets), if something big has changed since you last looked, or if you're not even sure your documents are current or where the originals are. A simple, steady situation with a fully current plan can comfortably sit toward the longer end. The point is that an estate plan drifts out of date quietly, so a periodic check keeps it matching your actual life. <em>This is general information, not legal advice — an estate attorney can advise on the right cadence for your situation.</em></p>
+    </details>
+    <details>
+      <summary>When must I update them — what life events count?</summary>
+      <p>Treat any major life event as a trigger to review right away rather than waiting for the calendar. The big ones: marriage or divorce, the birth or adoption of a child, the death of someone you named (a beneficiary, executor, guardian, or agent), a significant change in what you own — a home, a business, a large inheritance — and a move to a new state, since estate law is state-specific and documents valid in one state may need adjusting in another. Changes in your relationships or in tax law matter too. A divorce in particular is notorious for leaving an ex-spouse on documents and beneficiary forms, so it deserves a prompt, careful pass. After any of these, sit down with the plan; don't assume it updated itself.</p>
+    </details>
+    <details>
+      <summary>What documents make up an estate plan?</summary>
+      <p>A basic plan usually has a few pieces working together. A <strong>will</strong> says who gets your assets and, if you have minor children, names a guardian and an executor to carry it out. A <strong>financial power of attorney</strong> names someone to handle money and property matters if you can't. An <strong>advance directive</strong> (sometimes a living will plus a healthcare proxy or medical power of attorney) states your wishes for medical care and names someone to make health decisions if you're incapacitated. Some people also use a <strong>trust</strong> to manage how and when assets pass, often to avoid probate or handle more complex situations. Alongside the documents, keep a current list of your accounts and assets, and note where the originals are stored. Which pieces you actually need depends on your situation — an estate attorney can tell you.</p>
+    </details>
+    <details>
+      <summary>Do beneficiary designations override my will?</summary>
+      <p>Yes — and this surprises people. Accounts with a named beneficiary — retirement accounts like a 401(k) or IRA, life insurance, and payable-on-death or transfer-on-death accounts — pass directly to the person named on that form when you die, regardless of what your will says. The will simply doesn't control those assets. That's why a stale designation is so dangerous: if your will leaves everything to your current spouse but your old 401(k) still names an ex, the ex generally gets that account, and a perfectly current will can't undo it. So updating beneficiaries isn't something you do in the will at all — you have to go to each account and insurance policy directly and change the designation there. Reviewing those forms is one of the highest-value parts of the whole exercise.</p>
+    </details>
+    <details>
+      <summary>Do I need a lawyer, or can I DIY a will?</summary>
+      <p>For a genuinely simple situation — modest assets, a straightforward family, clear wishes — a reputable DIY or online will tool can produce a valid basic will for roughly $0–200, and that's far better than having nothing. But there are real cautions: the document must be executed correctly for your state (witness and notary rules vary, and an improperly signed will can be void), and DIY tools handle complexity poorly. Bring in a licensed estate attorney if you have a blended family, minor children needing a guardian, a business, significant or complex assets, or anything involving trusts or estate tax — there, professional help typically pays for itself in mistakes avoided. A simple attorney-drafted will and estate package commonly runs about $300–1,000, more for complex plans. <em>This is general information, not legal advice; an attorney can tell you which path fits your situation.</em></p>
+    </details>
+    <details>
+      <summary>Where should I store the originals, and who should know?</summary>
+      <p>Keep the original signed documents somewhere safe from fire, water, and loss — a fireproof box or home safe, a safe deposit box, or with your attorney are all common choices. Be a little careful with a bank safe deposit box, since access can be complicated right after a death; some people keep the originals at home or with the attorney for that reason. Wherever they live, the part people forget is just as important: make sure your executor and at least one other trusted person know the documents exist, where the originals are, and how to access them. A plan no one can find — or can't get into when it's needed — can fail almost as badly as no plan at all. It also helps to keep a simple list of your accounts and assets with the documents, and to revisit storage whenever you update anything.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>An estate plan drifts out of date with every life change — silently.</h2>
+        <p>The cost of a stale plan doesn't land on you; it lands on the people you love, at the worst possible time. An estate review asks for just an afternoon every couple of years — on the one set of documents that quietly decides who's looked after. Let Upkeep Ledger resurface the review on schedule and nudge you after the big life events, right alongside the financial review, the insurance check, and every other quiet task that keeps your life in order.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=will-estate-review&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=will-estate-review&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This guide is general information for planning purposes only — not legal advice; estate laws vary by state and situation, so consult a licensed estate attorney about your specific plan.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { complexity: null, changes: null, documents: null, confidence: null };
+
+  var FREQ_LABEL = {
+    12: "Once a year",
+    24: "Every 2 years",
+    36: "Every 3 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 36;
+    var tighten = false;
+    var noPlan = false;
+
+    /* Complexity */
+    if (s.complexity === "complex") {
+      if (months > 24) months = 24;
+      tighten = true;
+      reasons.push("With kids, property, a business, or significant assets, there are more moving parts that can drift out of date between looks — and these are exactly the situations a careful, more frequent review (and an estate attorney) pays off.");
+    } else if (s.complexity === "simple") {
+      reasons.push("A simple situation — modest assets and a straightforward family — doesn't change much, so the longer end of the every-two-to-three-years range is genuinely fine.");
+    } else {
+      reasons.push("A middle-of-the-road situation is right in the range the every-two-to-three-years default is written for.");
+    }
+
+    /* Recent life changes */
+    if (s.changes === "big") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("A major life event — marriage, divorce, a birth, a death, a move, or new assets — is the single biggest reason a plan goes wrong, because it can invalidate or misdirect documents all at once. Review now rather than waiting for the calendar.");
+    } else if (s.changes === "minor") {
+      reasons.push("A small change or two is worth folding into this review, but it won't drive the schedule on its own.");
+    } else {
+      reasons.push("A steady stretch with no major events means fewer things to update, so the longer rhythm holds.");
+    }
+
+    /* Documents in place */
+    if (s.documents === "none") {
+      if (months > 12) months = 12;
+      tighten = true;
+      noPlan = true;
+      reasons.push("Having no documents at all makes this less a review than a first plan — and it's the most urgent item on this page. Even a basic will, advance directive, and power of attorney spare your family the worst of probate and guardianship.");
+    } else if (s.documents === "old") {
+      if (months > 24) months = 24;
+      reasons.push("Old or incomplete documents are worth a careful look soon — laws, people, and your life have likely moved on since they were drawn up.");
+    } else {
+      reasons.push("A current will, directives, and a power of attorney already in place is the strong position — your review is mostly confirming they still match your life.");
+    }
+
+    /* Confidence / findability */
+    if (s.confidence === "unsure") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Being unsure it's current — or unsure where the originals even are — is a strong reason to sit down with it sooner. A plan no one can locate can fail almost as badly as no plan at all.");
+    } else if (s.confidence === "mostly") {
+      reasons.push("A few question marks are normal — this review is the place to resolve them, and they don't by themselves call for a tighter schedule.");
+    } else {
+      reasons.push("Feeling confident it's all current and easy to find is a good sign your rhythm is working — keep confirming it on schedule.");
+    }
+
+    /* Best-case relaxation: simple, steady, current, confident */
+    if (!tighten && s.complexity === "simple" && s.changes === "steady" && s.documents === "current" && s.confidence === "current") {
+      months = 36;
+      reasons.push("A simple, steady situation with a current, findable plan is the clearest case where every three years is genuinely plenty — just remember to review right away after any major life event.");
+    }
+
+    /* Closing note */
+    var note;
+    if (noPlan) {
+      note = "<strong>Start with the basics:</strong> a will (with a guardian named if you have minor children), an advance directive, and a power of attorney cover most of the worst-case gaps. For anything beyond a simple situation, see a licensed estate attorney — this is general information, not legal advice.";
+    } else if (months <= 12) {
+      note = "<strong>Look sooner, then ease off:</strong> a tighter cadence makes sense while things are complex or in flux, or just after a big change. Once the plan settles and you're confident it's current, you can relax back toward every two to three years.";
+    } else if (months <= 24) {
+      note = "<strong>Every couple of years keeps it current</strong> — and remember the real trigger is any major life event. After a marriage, divorce, birth, death, or move, review right away rather than waiting for the calendar.";
+    } else {
+      note = "<strong>Every three years is plenty here</strong> — but the calendar isn't the only trigger. Any major life event (marriage, divorce, a birth, a death, a move, or significant new assets) should send you back to the plan right away.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.complexity || !quizState.changes || !quizState.documents || !quizState.confidence) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: review the estate documents " + FREQ_LABEL[r.months].toLowerCase() + " — and after any major life event";
+    document.getElementById("resultBody").innerHTML =
+      "Work through the whole sweep — <strong>gather and locate everything, check the people, check the beneficiaries, reflect life and law changes, then update properly and tell the right people</strong> — at this cadence. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Gather & locate", text: "Pull together every estate document", note: "Gather the will, any trust, your advance directive or living will, healthcare proxy, and financial power of attorney. If you can't find a document, that's a finding in itself — note what's missing." },
+    { phase: "Gather & locate", text: "Make or update a list of accounts and assets", note: "Write down your accounts, property, insurance policies, and major assets, with where each lives. This is what your executor will need, and what tells you which beneficiary forms to check." },
+    { phase: "Gather & locate", text: "Confirm you and your executor can find the originals", note: "Locate the original signed documents and confirm your executor — and a trusted person — know they exist, where they are, and how to access them. A plan no one can find can fail like no plan at all." },
+    { phase: "Check the people", text: "Confirm your executor is still the right, willing person", note: "Is the person you named to carry out your will still living, willing, and someone you trust to do it? People move, fall out, and pass away — the role has to keep up." },
+    { phase: "Check the people", text: "Check the guardian for any minor children", note: "If you have minor children, confirm the named guardian is still the right choice and is willing to take it on. This is one of the most important calls in the whole plan — don't leave it to a court." },
+    { phase: "Check the people", text: "Check your healthcare agent and power of attorney", note: "Confirm the person named to make medical decisions (in your advance directive) and the person named in your financial power of attorney are each still the right, available, living choice." },
+    { phase: "Beneficiaries & changes", text: "Check beneficiaries directly on accounts and policies", note: "Go to each retirement account, life insurance policy, and payable-on-death account and check the named beneficiary — these override the will, so they must be checked at the account itself, not just on paper." },
+    { phase: "Beneficiaries & changes", text: "Remove anyone outdated (e.g., an ex-spouse)", note: "Update any stale designation directly with the account or insurer. The classic disaster is an ex-spouse left on a beneficiary line after a divorce — the money goes to them regardless of your will." },
+    { phase: "Beneficiaries & changes", text: "Reflect any major life events", note: "Walk through what's changed since you last looked: marriage, divorce, births, deaths, new property or a business. Each can mean a document or beneficiary no longer says what you'd want." },
+    { phase: "Beneficiaries & changes", text: "Note any move to a new state or tax-law changes", note: "Estate law is state-specific, so a move may mean documents need adjusting. Note any relevant tax-law changes too — for anything beyond simple, ask a licensed estate attorney." },
+    { phase: "Update & store", text: "Make changes with the right legal formalities", note: "Update with a codicil or a new will, properly witnessed and notarized for your state — an improperly executed will can be void. Don't just re-sign the old one; make the change correctly, with an attorney for anything complex." },
+    { phase: "Update & store", text: "Store the originals safely and tell key people", note: "Keep the original signed documents in a fireproof box, a safe, or with your attorney, and make sure your executor and a trusted person know where they are and how to get to them." },
+    { phase: "Update & store", text: "Log the date and schedule the next review", note: "Nothing reminds you that your plan has quietly gone stale. Note today's date and put the next review (in about two years, or your quiz interval) on the calendar — and remember any major life event is its own trigger." }
+  ];
+
+  var LS_KEY = "upkeepguides:will-estate-review:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

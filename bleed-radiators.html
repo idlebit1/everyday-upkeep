@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bleed your radiators — UpkeepGuides.com</title>
+<meta name="description" content="How to bleed your radiators: why trapped air leaves them cold at the top and runs up your heating bill, the quarter-turn bleed-key method, working low floor to high, and re-pressurizing a sealed boiler afterward.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Bleed your radiators — UpkeepGuides.com">
+<meta property="og:description" content="How to bleed your radiators: why trapped air leaves them cold at the top and runs up your heating bill, the quarter-turn bleed-key method, working low floor to high, and re-pressurizing a sealed boiler afterward.">
+<meta property="og:url" content="https://upkeepguides.com/bleed-radiators.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bleed your radiators — UpkeepGuides.com">
+<meta name="twitter:description" content="How to bleed your radiators: why trapped air leaves them cold at the top and runs up your heating bill, the quarter-turn bleed-key method, working low floor to high, and re-pressurizing a sealed boiler afterward.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Once a year</span>
+      <h1>Bleed Your Radiators</h1>
+      <p class="lede">There's a particular kind of cold-radiator mystery that drives people to crank the thermostat in autumn: the boiler's roaring, the pipes are warm, and yet one radiator sits stone-cold across its top half while the room never quite warms. The culprit is almost always trapped air. In a hot-water system, air bubbles rise to the top of each radiator and form a pocket that hot water can't push through — so the top stays cold, the room underperforms, and the boiler burns extra fuel for nothing. Bleeding lets that air out with a quarter-turn of a small key. It's the classic ten-minute job to do every autumn before the heating season kicks in, plus any time a radiator goes cold up top or starts gurgling.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>once a year</em></span>
+        <span class="chip">⏱️ <em>~2–5 min</em> per radiator</span>
+        <span class="chip">🔥 <em>Warmer rooms, lower bills</em></span>
+        <span class="chip">💸 Costs <em>~$2–5</em> (a key)</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of bleeding a radiator: a tall panel radiator with its top half cooler-toned and its bottom half warm and glowing, a hand at the top corner turning a small bleed key in the valve, a thin hiss of air escaping, and a cloth and a small cup held underneath to catch the dribble of water, in a cozy room with a window and a plant">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- back wall / cozy room: window -->
+      <rect x="372" y="42" width="150" height="150" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <rect x="382" y="52" width="60" height="130" rx="3" fill="#dce8ee"/>
+      <rect x="452" y="52" width="60" height="130" rx="3" fill="#dce8ee"/>
+      <rect x="372" y="186" width="150" height="14" rx="4" fill="#b9b1a3"/>
+      <!-- soft sun in the window -->
+      <circle cx="412" cy="84" r="13" fill="#faf0da"/>
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" opacity="0.8">
+        <line x1="412" y1="60" x2="412" y2="66"/>
+        <line x1="430" y1="84" x2="436" y2="84"/>
+        <line x1="425" y1="71" x2="429" y2="67"/>
+      </g>
+
+      <!-- skirting line -->
+      <rect x="20" y="356" width="530" height="10" rx="3" fill="#c9a06b" opacity="0.55"/>
+
+      <!-- ===== panel/column radiator ===== -->
+      <!-- top valve manifold -->
+      <rect x="92" y="120" width="236" height="18" rx="6" fill="#b9b1a3"/>
+      <rect x="92" y="312" width="236" height="18" rx="6" fill="#b9b1a3"/>
+      <!-- radiator body (column fins) -->
+      <g>
+        <!-- bottom (warm) glow behind the body -->
+        <rect x="98" y="220" width="224" height="110" rx="8" fill="#f6dcca" opacity="0.6"/>
+      </g>
+      <rect x="98" y="132" width="224" height="186" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <!-- TOP HALF: cooler tint (trapped air, cold) -->
+      <rect x="103" y="137" width="214" height="86" rx="6" fill="#dce8ee"/>
+      <text x="208" y="170" font-size="12" fill="#7fb3c8" font-weight="700" text-anchor="middle">cold (air)</text>
+      <!-- BOTTOM HALF: warm tint -->
+      <rect x="103" y="225" width="214" height="88" rx="6" fill="#f3c9a8"/>
+      <text x="208" y="278" font-size="12" fill="#c96f4a" font-weight="700" text-anchor="middle">warm</text>
+      <!-- vertical column fins -->
+      <g stroke="#b9b1a3" stroke-width="3">
+        <line x1="138" y1="137" x2="138" y2="313"/>
+        <line x1="173" y1="137" x2="173" y2="313"/>
+        <line x1="208" y1="137" x2="208" y2="313"/>
+        <line x1="243" y1="137" x2="243" y2="313"/>
+        <line x1="278" y1="137" x2="278" y2="313"/>
+      </g>
+      <!-- dividing line where warm meets cold -->
+      <line x1="103" y1="223" x2="317" y2="223" stroke="#c96f4a" stroke-width="2" stroke-dasharray="6 5" opacity="0.7"/>
+      <!-- legs -->
+      <rect x="120" y="330" width="12" height="22" rx="3" fill="#8a6a4f"/>
+      <rect x="288" y="330" width="12" height="22" rx="3" fill="#8a6a4f"/>
+
+      <!-- bleed valve at top corner -->
+      <circle cx="312" cy="129" r="11" fill="#c9a06b" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="308" y="118" width="8" height="8" rx="1.5" fill="#8a6a4f"/>
+      <!-- the bleed key on the valve -->
+      <rect x="306" y="96" width="12" height="26" rx="3" fill="#5e9a78"/>
+      <rect x="298" y="90" width="28" height="10" rx="3" fill="#3e7c59"/>
+      <!-- turn arrow (anticlockwise) -->
+      <path d="M338 104 a18 18 0 1 0 -10 22" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+      <path d="M328 126 l-2 -10 l10 4" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- hiss of escaping air -->
+      <g stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
+        <path d="M326 108 q10 -6 18 -2"/>
+        <path d="M328 116 q12 -3 22 2"/>
+      </g>
+      <g fill="#dce8ee">
+        <circle cx="352" cy="104" r="3"/>
+        <circle cx="360" cy="112" r="2.2"/>
+        <circle cx="356" cy="120" r="1.8"/>
+      </g>
+      <text x="362" y="100" font-size="10.5" fill="#6b7376">hiss</text>
+
+      <!-- hand turning the key -->
+      <ellipse cx="312" cy="76" rx="17" ry="13" fill="#e8b48f"/>
+      <path d="M302 72 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M312 64 q22 -22 52 -16" stroke="#c96f4a" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- cloth held under the valve -->
+      <path d="M286 150 h44 l-6 26 h-32 z" fill="#7fb3c8"/>
+      <path d="M286 150 h44 l-3 8 h-38 z" fill="#9cc3d4"/>
+      <g stroke="#cdd9de" stroke-width="1.4">
+        <line x1="296" y1="160" x2="320" y2="160"/>
+        <line x1="294" y1="166" x2="318" y2="166"/>
+      </g>
+
+      <!-- small cup catching the dribble -->
+      <path d="M300 182 h40 l-5 34 h-30 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+      <ellipse cx="320" cy="182" rx="20" ry="5" fill="#dce8ee"/>
+      <!-- a dribble of water from valve into the cup -->
+      <path d="M316 142 q-2 18 2 36" stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+      <circle cx="318" cy="178" r="2.4" fill="#7fb3c8"/>
+
+      <!-- small plant for warmth, front-left -->
+      <path d="M44 330 h30 l-4 28 h-22 z" fill="#c96f4a"/>
+      <path d="M58 330 q-3 -22 -13 -30" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M58 330 q4 -20 15 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="42" cy="296" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 42 296)"/>
+      <ellipse cx="74" cy="300" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 74 300)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A radiator is the most honest thing in your house: lay a hand on it and it tells you exactly what's wrong. Cold across the top while warm at the bottom means trapped air, and that single pocket of air does more harm than its size suggests — it dims the heat, drives up the bill, and quietly corrodes the system from the inside. Here's what trapped air costs you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="6" width="20" height="24" rx="2" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <rect x="10" y="8" width="16" height="9" rx="1.5" fill="#dce8ee"/>
+          <rect x="10" y="19" width="16" height="9" rx="1.5" fill="#f3c9a8"/>
+          <g stroke="#b9b1a3" stroke-width="1.4">
+            <line x1="14" y1="8" x2="14" y2="28"/>
+            <line x1="18" y1="8" x2="18" y2="28"/>
+            <line x1="22" y1="8" x2="22" y2="28"/>
+          </g>
+          <circle cx="14" cy="11" r="1.4" fill="#7fb3c8"/>
+          <circle cx="20" cy="12" r="1.6" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Cold tops, rooms that never warm</h3>
+        <p>Air rises to the top of each radiator and forms a pocket the hot water can't push past, so the upper half sits cold and the radiator gives out a fraction of its heat. The room never gets cozy — and you end up cranking the thermostat to chase warmth that isn't coming.</p>
+        <span class="cost">A cold room you can't heat</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 C12 12 9 16 9 22 a9 9 0 0 0 18 0 c0 -6 -3 -10 -9 -18 z" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <path d="M18 14 C15 18 13.5 20 13.5 23 a4.5 4.5 0 0 0 9 0 c0 -3 -1.5 -5 -4.5 -9 z" fill="#e0a93d"/>
+        </svg></div>
+        <h3>The boiler burns more fuel</h3>
+        <p>To force heat through an air-blocked radiator, the boiler and pump run harder and longer, fighting a system that can't release what it makes. Bleeding clears the path so heat flows freely — one of the cheapest things you can do to cut a winter heating bill.</p>
+        <span class="cost">A heating bill inflated all winter</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="10" width="18" height="16" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+          <circle cx="14" cy="16" r="1.6" fill="#7fb3c8"/>
+          <circle cx="20" cy="14" r="1.3" fill="#7fb3c8"/>
+          <circle cx="22" cy="20" r="1.5" fill="#7fb3c8"/>
+          <!-- rust / sludge -->
+          <path d="M11 22 q4 3 8 0 q4 -3 7 1" stroke="#8a6a4f" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="23" r="1.6" fill="#c96f4a"/>
+          <circle cx="22" cy="24" r="1.4" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Trapped air corrodes the system</h3>
+        <p>That pocket isn't just dead space — the oxygen it carries reacts with the steel inside your radiators and pipes, breeding rust, black magnetic sludge, and eventually pinhole leaks. Letting the air out keeps oxygen from feeding the corrosion that wears a system out early.</p>
+        <span class="cost">Rust, sludge &amp; pinhole leaks</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="8" width="20" height="20" rx="2" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <rect x="10" y="10" width="16" height="7" rx="1.5" fill="#dce8ee"/>
+          <rect x="10" y="19" width="16" height="7" rx="1.5" fill="#f3c9a8"/>
+          <!-- sound waves -->
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round" fill="none">
+            <path d="M29 13 q4 5 0 10"/>
+            <path d="M32 10 q6 8 0 16"/>
+          </g>
+        </svg></div>
+        <h3>Gurgling &amp; banging are warnings</h3>
+        <p>Bubbling, gurgling, tapping, or uneven warmth aren't quirks — they're the system telling you air is sloshing around inside. Listening to those signs and bleeding promptly means catching the problem while it's still a two-minute job, not a service call.</p>
+        <span class="cost">Noise that signals trouble brewing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> bleed them?</h2>
+    <p class="sub">Once a year — every autumn, before you fire up the heating for the season — is the sensible default for a hot-water system. But a radiator that's cold up top right now, gurgling pipes, a system you've recently drained or refilled, or a boiler whose pressure keeps dropping all push toward doing it more often (and investigating why air keeps getting in). Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="symptoms">
+        <div class="q-label">1. What are the radiators doing right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="cold">Cold at the top / gurgling now</button>
+          <button class="pill" data-v="mixed">A bit uneven, mostly fine</button>
+          <button class="pill" data-v="even">Heating evenly, top to bottom</button>
+        </div>
+        <div class="q-hint">A radiator that's cold across its top, or one you can hear bubbling and gurgling, has trapped air in it today — that's a bleed-now signal, not a wait-for-autumn one.</div>
+      </div>
+      <div class="quiz-q" data-q="system">
+        <div class="q-label">2. What kind of heating system is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="hydronic">Hot-water radiators with bleed valves</button>
+          <button class="pill" data-v="steam">Steam radiators (one pipe, a vent)</button>
+          <button class="pill" data-v="unsure">Not sure which I have</button>
+        </div>
+        <div class="q-hint">This guide is for hot-water (hydronic) radiators — the ones with a little square bleed valve at a top corner. Steam radiators are a different animal and must not be bled the same way (see the safety note and FAQ).</div>
+      </div>
+      <div class="quiz-q" data-q="recurs">
+        <div class="q-label">3. How often does air seem to come back?</div>
+        <div class="pills">
+          <button class="pill" data-v="often">Often — or the pressure keeps dropping</button>
+          <button class="pill" data-v="some">Now and then</button>
+          <button class="pill" data-v="rarely">Rarely — set it and forget it</button>
+        </div>
+        <div class="q-hint">Air that returns quickly, or a sealed system whose pressure keeps falling, means air is getting drawn in somewhere — usually a small leak or a worn part — so bleed more often and have the cause looked at.</div>
+      </div>
+      <div class="quiz-q" data-q="work">
+        <div class="q-label">4. Any recent work on the system?</div>
+        <div class="pills">
+          <button class="pill" data-v="refilled">Yes — refilled, drained, or added a radiator</button>
+          <button class="pill" data-v="minor">Minor tweaks only</button>
+          <button class="pill" data-v="none">No changes lately</button>
+        </div>
+        <div class="q-hint">Anytime the system's been drained and refilled, or a new radiator added, fresh air comes in with the water — so plan to bleed once or twice in the weeks after, until the system settles.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">As home jobs go, this one's almost free: a bleed key costs a couple of dollars, many newer valves take a flat screwdriver you already own, and the bleeding itself is minutes per radiator. What skipping it costs is a heating bill inflated all winter by a system fighting itself, corrosion that shortens the life of expensive parts, and — left long enough — the call-out fees and bigger jobs that follow:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$2–5</div><div class="l">a bleed key — and many newer radiator valves take a flat screwdriver you already have</div></div>
+        <div class="calc-stat"><div class="v">~2–5 min</div><div class="l">per radiator: cool down, fit the key, quarter-turn, wait for the dribble, close</div></div>
+        <div class="calc-stat"><div class="v bad">$0</div><div class="l">the job itself — bleeding is free; the only outlay is the once-off key</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔑 A bleed key (or a screwdriver you own)</span><span>$2–5</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Doing the whole house each autumn</span><span>Free, ~30 min</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 A winter of higher heating bills from trapped air</span><span>$100s over the season</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:42%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ A power-flush to clear corrosion sludge</span><span>~$400–900 (est.)</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:70%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💧 A failed pump or valve / leak repair &amp; call-out</span><span>$100s–$1,000+ (est.)</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a five-dollar key and half an hour each autumn</strong> against a winter of inflated bills, corrosion eating the system from inside, and the call-out fees that follow. To be clear, a <strong>power-flush or a pump/valve repair is a separate, bigger job</strong> — bleeding won't fix sludge or a leak — but staying on top of the air is exactly what keeps you out of that territory in the first place. (Repair figures are rough estimates; U.S. and UK prices vary widely.)</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to bleed your radiators</h2>
+    <p class="sub">The whole job is calm and simple if you do it in order: turn the heating off and let everything cool, find the bleed valve at a top corner, open it a quarter-turn until air hisses out, wait for a steady dribble of water, then close it snugly. Work through every radiator from the lowest floor up, then turn the heating back on and — on a sealed system — check and restore the boiler pressure. Read the safety box first, then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Cool it down, mind the steam, and check the pressure after</h3>
+      <ul>
+        <li><strong>Turn the heating OFF and let the radiators go cold first.</strong> Bleeding a hot system sends out scalding water and pressurized hot air. Switch the heating off and wait — usually an hour or more — until the radiators are cool to the touch before you open any valve.</li>
+        <li><strong>This is for HOT-WATER (hydronic) radiators only — never bleed a STEAM radiator this way.</strong> Steam systems use air vents and a completely different method; forcing a steam radiator's vent or fitting can scald you or break it. If you have steam radiators (typically one pipe and a little vent on the side), stop and read the FAQ — or call a pro.</li>
+        <li><strong>Have a cloth and a small cup or container ready.</strong> A little water always follows the air, and it can be dirty. Hold a cloth under the valve and a cup beneath that to catch the dribble so it doesn't run down the radiator, the wall, or the floor.</li>
+        <li><strong>Open the valve only a quarter to half turn — never remove it.</strong> Turn just until you hear air hiss; once water dribbles steadily, close it again. Fully unscrewing the valve can shoot it out under pressure and leave you fighting an open jet of water.</li>
+        <li><strong>On a sealed or combi system, check the boiler pressure afterward.</strong> Letting air (and a little water) out drops the pressure. When you're done, top it up via the filling loop to the normal range — usually about 1–1.5 bar — following your boiler's instructions.</li>
+        <li><strong>Call a heating engineer if water comes out brown or sludgy, the pressure won't hold, or air keeps coming back fast.</strong> Those point to corrosion sludge, a leak, or air being drawn in — problems bleeding alone won't fix, and worth a professional's eyes.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A radiator bleed key (or a flat screwdriver)</span>
+      <span class="tool-chip">An old cloth or rag</span>
+      <span class="tool-chip">A small cup or container</span>
+      <span class="tool-chip">Maybe rubber gloves (the water can be dirty)</span>
+      <span class="tool-chip">A towel for the floor</span>
+      <span class="tool-chip">Your boiler's pressure-gauge / filling-loop instructions</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of turning the heating off at the thermostat or boiler and waiting for the radiators to cool before bleeding">
+          <!-- thermostat dial -->
+          <circle cx="90" cy="80" r="42" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <circle cx="90" cy="80" r="30" fill="#dce8ee"/>
+          <!-- pointer turned to off / low -->
+          <line x1="90" y1="80" x2="68" y2="62" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="90" cy="80" r="4" fill="#3e7c59"/>
+          <text x="90" y="138" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">heating OFF</text>
+          <!-- small radiator going cool -->
+          <rect x="170" y="52" width="78" height="56" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="176" y="58" width="66" height="22" rx="3" fill="#dce8ee"/>
+          <rect x="176" y="84" width="66" height="18" rx="3" fill="#cdd9de"/>
+          <g stroke="#b9b1a3" stroke-width="2.5">
+            <line x1="196" y1="58" x2="196" y2="102"/>
+            <line x1="216" y1="58" x2="216" y2="102"/>
+            <line x1="236" y1="58" x2="236" y2="102"/>
+          </g>
+          <text x="209" y="130" font-size="11" fill="#7fb3c8" font-weight="700" text-anchor="middle">let it cool first</text>
+        </svg>
+        <h4>Turn the heating off &amp; let it cool</h4>
+        <p>Switch the heating off at the thermostat or boiler and wait until the radiators are cool to the touch — usually an hour or more. Bleeding a hot system sends out scalding water and hot air, so this is the step you never skip.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of locating the square bleed valve at the top corner of a radiator and fitting a bleed key onto it, with a cloth and cup held underneath">
+          <rect x="60" y="30" width="160" height="100" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <rect x="66" y="36" width="148" height="88" rx="4" fill="#dce8ee"/>
+          <g stroke="#b9b1a3" stroke-width="2.5">
+            <line x1="96" y1="36" x2="96" y2="124"/>
+            <line x1="126" y1="36" x2="126" y2="124"/>
+            <line x1="156" y1="36" x2="156" y2="124"/>
+            <line x1="186" y1="36" x2="186" y2="124"/>
+          </g>
+          <!-- bleed valve, top-right corner -->
+          <circle cx="216" cy="36" r="9" fill="#c9a06b" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="213" y="28" width="6" height="6" rx="1" fill="#8a6a4f"/>
+          <!-- bleed key fitted -->
+          <rect x="211" y="14" width="10" height="16" rx="2.5" fill="#5e9a78"/>
+          <rect x="204" y="8" width="24" height="9" rx="2.5" fill="#3e7c59"/>
+          <!-- cloth + cup under it -->
+          <path d="M198 42 h36 l-5 16 h-26 z" fill="#7fb3c8"/>
+          <path d="M202 62 h28 l-4 22 h-20 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <text x="130" y="152" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">square valve, top corner</text>
+        </svg>
+        <h4>Find the valve &amp; fit the key</h4>
+        <p>The bleed valve is the small square nipple at a top corner of the radiator. Fit your bleed key onto it (or a flat screwdriver if it has a slot), and hold a cloth and a small cup right underneath to catch what comes out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of turning the bleed key a quarter to half turn anticlockwise until air hisses out of the valve">
+          <!-- valve close-up -->
+          <circle cx="120" cy="92" r="36" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <circle cx="120" cy="92" r="22" fill="#c9a06b"/>
+          <rect x="115" y="78" width="10" height="10" rx="2" fill="#8a6a4f"/>
+          <!-- key -->
+          <rect x="112" y="48" width="16" height="32" rx="3" fill="#5e9a78"/>
+          <rect x="100" y="40" width="40" height="12" rx="3" fill="#3e7c59"/>
+          <!-- anticlockwise arrow, quarter turn -->
+          <path d="M168 70 a34 34 0 1 0 6 38" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M174 108 l-3 -12 l12 5" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- hiss -->
+          <g stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
+            <path d="M150 60 q12 -6 22 -2"/>
+            <path d="M154 68 q12 -3 22 2"/>
+          </g>
+          <text x="200" y="56" font-size="11" fill="#6b7376">hiss…</text>
+          <text x="120" y="150" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">¼–½ turn anticlockwise</text>
+        </svg>
+        <h4>Quarter-turn until air hisses</h4>
+        <p>Turn the key slowly anticlockwise — only a quarter to half turn. You'll hear the trapped air hiss out. That hiss is exactly what you're after, so don't open it any further; never fully unscrew the valve.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of waiting until the hissing stops and a steady dribble of water appears, then closing the valve snugly without overtightening">
+          <circle cx="120" cy="78" r="34" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <circle cx="120" cy="78" r="20" fill="#c9a06b"/>
+          <rect x="115" y="64" width="10" height="10" rx="2" fill="#8a6a4f"/>
+          <!-- key clockwise to close -->
+          <rect x="112" y="36" width="16" height="30" rx="3" fill="#5e9a78"/>
+          <rect x="100" y="28" width="40" height="12" rx="3" fill="#3e7c59"/>
+          <path d="M72 70 a34 34 0 1 1 -6 38" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <path d="M66 108 l3 -12 l-12 5" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- dribble of water + cup -->
+          <path d="M120 96 q-1 18 1 30" stroke="#7fb3c8" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M104 128 h34 l-4 26 h-26 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <ellipse cx="121" cy="128" rx="17" ry="4" fill="#dce8ee"/>
+          <text x="120" y="172" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">dribble = close snugly</text>
+        </svg>
+        <h4>Wait for water, then close it</h4>
+        <p>When the hissing stops and a steady dribble of water appears, all the air is out. Close the valve snugly — firm but not forced; overtightening can damage it. The dribble should stop with the valve shut.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of working through every radiator from the lowest floor up to the highest, then turning the heating back on and checking the boiler pressure gauge on a sealed system">
+          <!-- two-floor house outline with radiators -->
+          <rect x="24" y="100" width="120" height="48" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <rect x="24" y="48" width="120" height="48" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <!-- radiators -->
+          <rect x="36" y="112" width="34" height="24" rx="3" fill="#f3c9a8"/>
+          <rect x="36" y="60" width="34" height="24" rx="3" fill="#f3c9a8"/>
+          <!-- up arrow low to high -->
+          <path d="M100 132 l0 -64 m-7 12 l7 -12 l7 12" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="118" y="100" font-size="9.5" fill="#3e7c59" font-weight="700">low → high</text>
+          <!-- boiler pressure gauge -->
+          <circle cx="208" cy="96" r="38" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <circle cx="208" cy="96" r="27" fill="#e3efe8"/>
+          <!-- green normal zone -->
+          <path d="M188 76 a27 27 0 0 1 40 0" fill="none" stroke="#5e9a78" stroke-width="5"/>
+          <line x1="208" y1="96" x2="220" y2="80" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="208" cy="96" r="4" fill="#33393b"/>
+          <text x="208" y="152" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">~1–1.5 bar</text>
+        </svg>
+        <h4>Work through the house, then check pressure</h4>
+        <p>Bleed every radiator, going lowest floor to highest so the air all clears upward. Then turn the heating back on, and on a sealed or combi system check the boiler pressure — top it up via the filling loop to about 1–1.5 bar if it's dropped.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Radiator-bleeding progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Air out, valves closed, every radiator warm top to bottom, and the boiler back at pressure — your heating's running clean and efficient. Same quick job again next autumn before the season starts.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your radiators are overdue — and when to call a pro</h2>
+    <p class="sub">A healthy hot-water system is quiet and warms each radiator evenly, top to bottom. These are the signals it's overdue for a bleed — and the handful of problems that bleeding won't fix and that are worth a heating engineer's eyes:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Cold at the top, warm at the bottom.</strong> The classic trapped-air signature: lay a hand on the radiator and feel the divide. That's the textbook case for a bleed, and it usually clears in a couple of minutes.</li>
+        <li><strong>Gurgling, bubbling, or banging.</strong> Noises from the radiators or pipes when the heating's running mean air is sloshing around inside. Bleed promptly; if banging persists after bleeding, it can also be air still in the pipework or a balancing issue worth a pro's look.</li>
+        <li><strong>Some radiators stone-cold while others are hot.</strong> Often air, sometimes balancing — bleed first, and if a radiator still won't warm, it may need balancing or have a stuck valve.</li>
+        <li><strong>Still cold in the <em>middle</em> or across the bottom after bleeding.</strong> A cold strip low down or a cold center usually means sludge and cold spots, not air — that points to a flush or a balancing job, which is a heating engineer's call, not a bleed.</li>
+        <li><strong>Boiler pressure that won't hold or keeps dropping.</strong> If you keep having to top up a sealed system, or the gauge falls again soon after, suspect a leak somewhere — radiator, valve, or pipe. Have it traced before it does damage.</li>
+        <li><strong>Brown, rusty, or sludgy bleed water.</strong> A little discoloration can be normal, but consistently brown or gritty water signals internal corrosion — the system may need a chemical clean or power-flush. Worth a professional assessment.</li>
+        <li><strong>A steam system, or you're not sure what you have.</strong> Steam radiators are bled and maintained completely differently and can scald or break if you treat them like a hot-water radiator. If you have (or suspect) steam, don't improvise — call a heating professional.</li>
+        <li><strong>Pro tip:</strong> bleeding is the autumn heating-prep job, and it pairs naturally with two others — give the boiler a quick service, and tackle the rest of your seasonal list at the same time, like <a href="replace-hvac-filter.html">replacing the HVAC filter</a> and <a href="flush-water-heater.html">flushing the water heater</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I know my radiators need bleeding?</summary>
+      <p>The surest test is your hand. Run the heating until the radiators are hot, then feel each one from top to bottom: if a radiator is warm at the bottom but cold across the top, there's trapped air and it wants bleeding. Other tells are gurgling, bubbling, tapping, or banging noises when the heating runs; a room that won't warm up no matter how high you set the thermostat; or a boiler that's working hard while the radiators underperform. Cold at the <em>top</em> almost always means air; cold at the <em>bottom</em> is a different problem (see below). When in doubt, bleeding does no harm on a hot-water system — if no air comes out and water dribbles straight away, that radiator simply didn't need it.</p>
+    </details>
+    <details>
+      <summary>How often should I bleed them?</summary>
+      <p>For a typical hot-water system, once a year is the right rhythm — do it every autumn before you fire up the heating for the season, so you start winter with every radiator working at full output. Beyond that, bleed any time a radiator goes cold at the top, starts gurgling, or a room stops heating properly. You should also bleed once or twice in the weeks after any work that introduces air: a system drain and refill, a new radiator, or repairs. If you find yourself bleeding the same radiators often, or a sealed system's pressure keeps dropping, that's a sign air is being drawn in somewhere — worth investigating rather than just bleeding repeatedly.</p>
+    </details>
+    <details>
+      <summary>Hot-water vs steam radiators — does the method differ?</summary>
+      <p>Completely, and this matters for your safety. This guide is for <strong>hot-water (hydronic)</strong> radiators — the kind with a small square bleed valve at a top corner, fed and returned by two pipes, where you release trapped air with a bleed key. <strong>Steam</strong> radiators are different: they're usually fed by a single pipe and have an air vent on the side that opens and closes automatically as steam rises. You do not bleed a steam radiator with a key — forcing its vent or fittings can scald you with steam or damage the system. Steam radiators have their own maintenance (keeping the air vent clear and working, checking the pitch so condensate drains). If you have steam radiators, or you genuinely can't tell which type you have, don't improvise — look it up for your specific system or call a heating engineer.</p>
+    </details>
+    <details>
+      <summary>Why is my radiator cold at the top (vs cold at the bottom)?</summary>
+      <p>The location of the cold spot is a diagnosis. <strong>Cold at the top, warm below</strong> means trapped air has risen and pooled at the top, blocking the hot water — that's exactly what bleeding fixes. <strong>Cold at the bottom, warm at the top</strong> is the opposite story: it usually means sludge — that black, magnetic corrosion debris — has settled in the bottom of the radiator and is blocking flow there. Bleeding won't touch sludge; that's a job for flushing the radiator or a system power-flush. <strong>Cold in patches or across the middle</strong> also points to sludge or cold spots. And if a whole radiator stays cold while others are hot, suspect a closed or stuck valve, or a system that needs balancing. So: top-cold, bleed it; bottom- or middle-cold, it's likely sludge and a pro's job.</p>
+    </details>
+    <details>
+      <summary>Do I need to re-pressurize my boiler after?</summary>
+      <p>On a <strong>sealed or combi system</strong> — most modern setups, with a pressure gauge on the boiler — yes, usually. Letting air and a little water out drops the system pressure, and if it falls too low the boiler may stop working or lock out. After you've finished bleeding, check the gauge: if it's below the normal range, top it up using the filling loop (the little braided hose or valves near the boiler) until it reads in the usual band, which for most homes is about 1–1.5 bar cold. Follow your boiler's own instructions for exactly how to do this. On an older <strong>open-vented system</strong> with a header tank in the loft, you generally don't need to re-pressurize — the tank tops the system up automatically. If you can't get the pressure to hold, or it keeps dropping, that suggests a leak and is worth a professional's attention.</p>
+    </details>
+    <details>
+      <summary>Why does air keep coming back?</summary>
+      <p>If you bleed a radiator and it's full of air again within days or weeks, the air isn't just lingering — it's getting <em>drawn in</em>, and that's worth investigating. Common causes include a small leak somewhere in the system (so as water seeps out, air is pulled in to replace it — often shown by pressure that keeps dropping on a sealed system), a faulty automatic air vent or a failing expansion vessel, a pump set too fast that pulls air past seals, or corrosion inside producing hydrogen gas — which often comes with black, sludgy bleed water. The occasional bit of air after a refill is normal and settles in a week or two. But persistent, fast-returning air, especially with falling pressure or dirty water, is a symptom rather than the problem — have a heating engineer trace the cause rather than bleeding on repeat all winter.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Ten minutes in autumn pays you back all winter.</h2>
+        <p>Bleeding the radiators is a ten-minute job that pays you back all season in lower bills and warmer rooms — and it's exactly the kind of once-a-year task that's easy to forget until a radiator's already cold. Upkeep Ledger logs this bleed and resurfaces it before each heating season, right alongside the boiler service, the HVAC filter, and every other quiet task that keeps the house warm and running clean.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=bleed-radiators&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=bleed-radiators&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This guide is for hot-water (hydronic) radiators; steam radiators are different and must not be bled the same way — cost and pressure figures are estimates, and your boiler's instructions outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { symptoms: null, system: null, recurs: null, work: null };
+
+  var FREQ_LABEL = {
+    6: "Every 6 months",
+    12: "Once a year",
+    24: "Every 2 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var tighten = false;
+
+    /* Symptoms — what the radiators are doing now */
+    if (s.symptoms === "cold") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("A radiator that's cold at the top or gurgling right now has trapped air in it today — bleed it straight away rather than waiting for autumn, and recheck it in a week.");
+    } else if (s.symptoms === "mixed") {
+      reasons.push("Slightly uneven heat that's mostly fine is the ordinary case — an annual autumn bleed will catch the air before it becomes a real cold spot.");
+    } else {
+      reasons.push("Radiators heating evenly from top to bottom are doing their job, so the once-a-year autumn bleed is plenty to keep them that way.");
+    }
+
+    /* System type */
+    if (s.system === "steam") {
+      reasons.push("Heads up: steam radiators are NOT bled with a key the way hot-water radiators are — this guide doesn't apply to them, and forcing a steam radiator can scald you or break it. Look up steam-radiator maintenance or call a pro.");
+    } else if (s.system === "unsure") {
+      reasons.push("Before you bleed anything, confirm you have hot-water (hydronic) radiators — a small square valve at a top corner is the giveaway. If it might be a steam system, stop and check, because the method is completely different.");
+    } else {
+      reasons.push("Hot-water radiators with bleed valves are exactly what this method is for — a quarter-turn of the key releases the trapped air safely.");
+    }
+
+    /* How often air returns */
+    if (s.recurs === "often") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("Air that keeps coming back fast — or a sealed system whose pressure keeps dropping — means air is being drawn in somewhere, so bleed more often and have a heating engineer trace the cause rather than bleeding on repeat.");
+    } else if (s.recurs === "some") {
+      reasons.push("Air that returns now and then is normal-ish; an annual bleed with a mid-season check if a radiator goes cold will stay on top of it.");
+    } else {
+      reasons.push("Air that rarely returns means the system's well sealed — once a year is all the routine bleeding you'll need.");
+    }
+
+    /* Recent work */
+    if (s.work === "refilled") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("After a drain-and-refill or a newly added radiator, fresh air comes in with the water — plan to bleed once or twice over the next few weeks until the system settles, then return to the annual rhythm.");
+    } else if (s.work === "minor") {
+      reasons.push("Minor tweaks rarely introduce much air, but it's worth a quick top-of-radiator check after any work, just in case.");
+    } else {
+      reasons.push("No recent work means no fresh air has been introduced — one less reason to bleed off-schedule.");
+    }
+
+    /* Best-case relaxation: even heat, hydronic, rarely returns, no work */
+    if (!tighten && s.symptoms === "even" && s.system === "hydronic" && s.recurs === "rarely" && s.work === "none") {
+      months = 24;
+      reasons.push("Evenly heating hot-water radiators in a well-sealed system that rarely needs bleeding, with no recent work, is the one case you can comfortably stretch to every couple of years — though a quick autumn hand-check costs nothing.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.system === "steam") {
+      note = "<strong>Important — this is a hot-water guide:</strong> do not bleed a steam radiator with a key. Steam systems use air vents and a different method entirely; treating them like hot-water radiators can scald you or break the system. Look up steam-specific maintenance or call a heating professional.";
+    } else if (s.system === "unsure") {
+      note = "<strong>First, identify your system:</strong> hot-water radiators have a small square bleed valve at a top corner and two pipes; steam radiators usually have one pipe and a vent on the side. If there's any chance it's steam, stop and confirm — the methods are not interchangeable.";
+    } else if (s.recurs === "often" || s.work === "refilled") {
+      note = "<strong>If air keeps coming back, look for why:</strong> fast-returning air or falling pressure points to a leak, a worn part, or corrosion — not something endless bleeding fixes. And on a sealed system, re-check and top up the boiler pressure (about 1–1.5 bar) each time you bleed.";
+    } else {
+      note = "<strong>Remember the order:</strong> heating off and radiators cool first, then bleed lowest floor to highest, then turn the heating back on and — on a sealed system — restore the boiler pressure to about 1–1.5 bar. It pairs neatly with your other autumn heating prep.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.symptoms || !quizState.system || !quizState.recurs || !quizState.work) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: bleed the radiators " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Turn the heating off and let it cool, then <strong>open each bleed valve a quarter-turn until air hisses, wait for a steady dribble of water, and close it snugly — working lowest floor to highest, and restoring the boiler pressure afterward on a sealed system</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & cool down", text: "Turn the heating off and let the radiators go cold", note: "Switch off at the thermostat or boiler and wait — usually an hour or more — until the radiators are cool to the touch. Bleeding a hot system sends out scalding water and pressurized hot air." },
+    { phase: "Prep & cool down", text: "Confirm these are hot-water (hydronic) radiators", note: "Look for a small square bleed valve at a top corner and two pipes feeding the radiator. If you have (or suspect) a steam system — one pipe and a side vent — stop here; it's bled differently and forcing it can scald or break it." },
+    { phase: "Prep & cool down", text: "Gather a bleed key, a cloth, and a small cup", note: "Have a bleed key (or the right flat screwdriver), an old cloth, and a cup or container ready. A little water always follows the air and it can be dirty, so lay a towel down and maybe wear gloves." },
+    { phase: "Bleed each radiator", text: "Fit the key on the valve, cloth and cup underneath", note: "Find the square bleed nipple at the top corner, fit your key (or screwdriver) onto it, and hold the cloth and cup right below to catch the dribble before it runs down the radiator or wall." },
+    { phase: "Bleed each radiator", text: "Open a quarter-to-half turn anticlockwise until air hisses", note: "Turn the key slowly anticlockwise, only a quarter to half turn. You'll hear the trapped air hiss out — that's the sound you want. Never open it further, and never fully unscrew the valve." },
+    { phase: "Bleed each radiator", text: "Wait for the hiss to stop and a steady dribble of water", note: "The air is fully out when the hissing stops and a steady dribble of water appears at the valve. Let it run for a second so you know the pocket has cleared." },
+    { phase: "Bleed each radiator", text: "Close the valve snugly — don't overtighten", note: "Turn the key back clockwise until the water stops and the valve feels firm. Snug is enough; forcing it can damage the valve. Wipe up any spills." },
+    { phase: "Work through the house", text: "Repeat on every radiator, lowest floor to highest", note: "Work systematically through the whole house, starting on the lowest floor and finishing on the highest, so the air all clears upward and you don't miss one. Bleed even the ones that seem fine — it takes seconds." },
+    { phase: "Work through the house", text: "Turn the heating back on and let it come up to temperature", note: "Switch the heating back on, then give it time to fully warm the system so you can check your work with everything hot." },
+    { phase: "Re-pressurize & check", text: "On a sealed or combi system, check the boiler pressure", note: "Letting air and water out drops the pressure. Check the boiler's gauge; if it's below the normal band, top it up via the filling loop to about 1–1.5 bar cold, following your boiler's instructions. (Open-vented systems with a header tank usually self-top-up.)" },
+    { phase: "Re-pressurize & check", text: "Feel each radiator top to bottom for even heat", note: "Once everything's hot, run a hand over each radiator. Even warmth top to bottom means success. Still cold at the top? Bleed again. Cold at the bottom or middle? That's likely sludge — a flush or a pro's job, not a bleed." },
+    { phase: "Re-pressurize & check", text: "Log the date for next autumn", note: "Nothing reminds you a radiator is slowly filling with air again. Note the date so the next bleed lands next autumn before the heating season (or your quiz interval) — and pair it with the rest of your seasonal heating prep." }
+  ];
+
+  var LS_KEY = "upkeepguides:bleed-radiators:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backflush your espresso machine — UpkeepGuides.com</title>
+<meta name="description" content="How to backflush an espresso machine: why rancid coffee oils behind the shower screen ruin good beans, which machines have a three-way valve and can backflush with a blind basket, the weekly detergent routine, and a personalized schedule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Backflush your espresso machine — UpkeepGuides.com">
+<meta property="og:description" content="How to backflush an espresso machine: why rancid coffee oils behind the shower screen ruin good beans, which machines have a three-way valve and can backflush with a blind basket, the weekly detergent routine, and a personalized schedule.">
+<meta property="og:url" content="https://upkeepguides.com/backflush-espresso-machine.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Backflush your espresso machine — UpkeepGuides.com">
+<meta name="twitter:description" content="How to backflush an espresso machine: why rancid coffee oils behind the shower screen ruin good beans, which machines have a three-way valve and can backflush with a blind basket, the weekly detergent routine, and a personalized schedule.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Every week</span>
+      <h1>Backflush Your Espresso Machine</h1>
+      <p class="lede">Every shot you pull leaves a film of coffee oil behind the shower screen and in the three-way valve at the heart of the group — and oil, left to sit, goes rancid. It's the reason a machine that once made bright, clean shots slowly starts turning even fresh, expensive beans bitter and stale-tasting, while the gunk packs into the screen and chokes the flow. Backflushing fixes it the easy way: a blind basket and a small scoop of espresso detergent let the pump push water <em>backward</em> through the group, blasting the rancid oils out the drain. A quick water flush after each day's use and a detergent backflush about once a week keeps the shots tasting the way they should — and it's a completely different job from descaling.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every week</em></span>
+        <span class="chip">⏱️ <em>~3–5 min</em>, start to finish</span>
+        <span class="chip">🧴 Detergent is <em>~$10–$20</em>, lasts months</span>
+        <span class="chip">⚠️ Needs a <em>three-way valve</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of backflushing an espresso machine: the group head holds a portafilter fitted with a rubber blind basket, a small scoop of espresso detergent sits beside it, the brew lever is engaged with a hand on it, dirty brown coffee-oil water drains out below, a wisp of steam rises, and a clean shiny group head is shown alongside">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- counter -->
+      <rect x="40" y="318" width="480" height="16" rx="6" fill="#c9a06b"/>
+      <rect x="64" y="334" width="432" height="58" fill="#b9b1a3"/>
+      <rect x="84" y="346" width="180" height="36" rx="5" fill="#8a6a4f"/>
+      <rect x="296" y="346" width="180" height="36" rx="5" fill="#8a6a4f"/>
+      <circle cx="174" cy="364" r="4" fill="#e0a93d"/>
+      <circle cx="386" cy="364" r="4" fill="#e0a93d"/>
+
+      <!-- ===== espresso machine body ===== -->
+      <!-- main chassis -->
+      <rect x="150" y="116" width="190" height="184" rx="14" fill="#d9663f"/>
+      <rect x="150" y="116" width="190" height="44" rx="14" fill="#c96f4a"/>
+      <!-- cup-warmer top rail -->
+      <rect x="162" y="104" width="166" height="16" rx="8" fill="#8a6a4f"/>
+      <!-- pressure gauge -->
+      <circle cx="296" cy="150" r="16" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M296 150 l9 -6" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+      <circle cx="296" cy="150" r="2.4" fill="#8a6a4f"/>
+
+      <!-- ===== brew lever / button, engaged, with a hand ===== -->
+      <rect x="186" y="150" width="60" height="10" rx="5" fill="#5a4634"/>
+      <rect x="234" y="138" width="14" height="34" rx="6" fill="#8a6a4f" transform="rotate(-22 241 155)"/>
+      <ellipse cx="252" cy="146" rx="15" ry="11" fill="#e8b48f"/>
+      <path d="M242 142 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <text x="190" y="186" font-size="9.5" fill="#fffdf8" font-weight="700">brew ON</text>
+
+      <!-- ===== group head with portafilter + blind basket ===== -->
+      <!-- group head body -->
+      <rect x="206" y="232" width="78" height="26" rx="7" fill="#8a6a4f"/>
+      <rect x="206" y="232" width="78" height="10" rx="5" fill="#a07b56"/>
+      <!-- shower screen hint -->
+      <rect x="218" y="256" width="54" height="6" rx="3" fill="#5a4634"/>
+      <g fill="#3e2e20">
+        <circle cx="228" cy="259" r="1.2"/>
+        <circle cx="238" cy="259" r="1.2"/>
+        <circle cx="248" cy="259" r="1.2"/>
+        <circle cx="258" cy="259" r="1.2"/>
+      </g>
+      <!-- portafilter cup + handle -->
+      <rect x="222" y="262" width="46" height="20" rx="5" fill="#b9b1a3"/>
+      <rect x="222" y="262" width="46" height="7" rx="3.5" fill="#cdbfa9"/>
+      <!-- rubber blind basket (no holes) seated inside -->
+      <rect x="229" y="266" width="32" height="13" rx="4" fill="#5a4634"/>
+      <text x="271" y="272" font-size="9" fill="#3e7c59" font-weight="700">blind</text>
+      <text x="271" y="282" font-size="9" fill="#3e7c59" font-weight="700">basket</text>
+      <!-- portafilter handle to the front-right -->
+      <rect x="266" y="270" width="56" height="11" rx="5" fill="#3e2e20" transform="rotate(8 294 275)"/>
+      <circle cx="322" cy="282" r="7" fill="#5a4634"/>
+
+      <!-- ===== dirty brown coffee-oil water draining out below ===== -->
+      <path d="M236 282 q-3 18 -8 30" stroke="#5a4634" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M250 282 q2 16 0 30" stroke="#6b4a30" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <!-- drip tray catching the dirty water -->
+      <rect x="196" y="312" width="120" height="14" rx="4" fill="#8a6a4f"/>
+      <rect x="200" y="314" width="112" height="7" rx="3" fill="#6b4a30"/>
+      <!-- brown oily flecks in the runoff -->
+      <g fill="#6b4a30">
+        <circle cx="226" cy="306" r="2.6"/>
+        <circle cx="244" cy="308" r="2.2"/>
+        <circle cx="236" cy="316" r="2.4"/>
+        <circle cx="258" cy="314" r="2"/>
+      </g>
+      <text x="200" y="338" font-size="9.5" fill="#d9663f" font-weight="700">rancid oils flushed out</text>
+
+      <!-- ===== steam wisp from a hot group ===== -->
+      <g stroke="#b9b1a3" stroke-width="3.2" fill="none" stroke-linecap="round" opacity="0.8">
+        <path d="M210 226 q8 -12 1 -24 q-7 -11 1 -22"/>
+        <path d="M222 224 q9 -12 2 -24"/>
+      </g>
+
+      <!-- ===== scoop of espresso detergent, left of the machine ===== -->
+      <!-- detergent tub -->
+      <rect x="64" y="246" width="48" height="54" rx="8" fill="#3e7c59"/>
+      <rect x="62" y="238" width="52" height="12" rx="5" fill="#2c5a40"/>
+      <rect x="70" y="258" width="36" height="30" rx="4" fill="#fffdf8"/>
+      <text x="88" y="276" font-size="7.5" fill="#3e7c59" font-weight="700" text-anchor="middle">ESPRESSO</text>
+      <text x="88" y="285" font-size="7.5" fill="#3e7c59" font-weight="700" text-anchor="middle">DETERGENT</text>
+      <!-- little measuring scoop with white powder -->
+      <path d="M120 274 q14 -2 26 4 l-3 12 q-12 -4 -23 -2 z" fill="#cdbfa9"/>
+      <ellipse cx="133" cy="278" rx="13" ry="4" fill="#fffdf8"/>
+      <path d="M145 280 l16 -6" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+      <!-- ===== clean, shiny group head shown alongside, right ===== -->
+      <rect x="408" y="232" width="74" height="26" rx="7" fill="#a07b56"/>
+      <rect x="408" y="232" width="74" height="9" rx="4.5" fill="#c9a06b"/>
+      <!-- shiny shower screen -->
+      <ellipse cx="445" cy="262" rx="26" ry="6" fill="#cdbfa9"/>
+      <ellipse cx="445" cy="262" rx="26" ry="6" fill="#fffdf8" opacity="0.4"/>
+      <!-- sparkle shine on the clean group -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M462 240 l0 9 M457.5 244.5 l9 0"/>
+      </g>
+      <g stroke="#fffdf8" stroke-width="3" stroke-linecap="round" opacity="0.85">
+        <line x1="418" y1="252" x2="430" y2="240"/>
+      </g>
+      <text x="408" y="226" font-size="9.5" fill="#3e7c59" font-weight="700">clean group</text>
+
+      <!-- small plant for warmth, right end -->
+      <path d="M508 296 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M508 296 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="495" cy="266" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 495 266)"/>
+      <ellipse cx="523" cy="270" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 523 270)"/>
+      <path d="M496 296 h24 l-4 22 h-16 z" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Coffee is full of oils, and a lot of them never make it into your cup — they collect behind the shower screen, around the group gasket, and inside the three-way valve where the pressure releases. Fresh, those oils are part of what makes espresso taste good; left in the warm, damp group for days, they oxidize and turn rancid, and that staleness ends up in every shot you pull afterward. Here's what the buildup does:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="8" width="18" height="6" rx="3" fill="#8a6a4f"/>
+          <rect x="11" y="14" width="14" height="4" rx="2" fill="#5a4634"/>
+          <ellipse cx="18" cy="22" rx="7" ry="4" fill="#6b4a30" opacity="0.55"/>
+          <ellipse cx="14" cy="26" rx="3" ry="2" fill="#6b4a30" opacity="0.5"/>
+          <ellipse cx="22" cy="27" rx="3" ry="2" fill="#6b4a30" opacity="0.45"/>
+          <path d="M14 32 q4 3 8 0" stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Coffee oils go rancid behind the screen</h3>
+        <p>The oils that collect behind the shower screen and inside the group don't just sit there — in a warm, damp head they oxidize and go rancid within days. That staleness leaches into every shot, so even fresh, expensive beans come out tasting bitter and old.</p>
+        <span class="cost">Bitter, stale-tasting shots</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="13" rx="13" ry="5" fill="#b9b1a3"/>
+          <g fill="#5a4634">
+            <circle cx="11" cy="13" r="1.4"/>
+            <circle cx="18" cy="14" r="1.4"/>
+            <circle cx="25" cy="13" r="1.4"/>
+            <circle cx="14.5" cy="11" r="1.2"/>
+            <circle cx="21.5" cy="11" r="1.2"/>
+          </g>
+          <!-- gunk clogging the holes -->
+          <circle cx="18" cy="14" r="2.6" fill="#6b4a30"/>
+          <circle cx="25" cy="13" r="2.2" fill="#6b4a30"/>
+          <path d="M18 18 l-3 12 M18 18 l3 12" stroke="#7fb3c8" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 26 l3 2 M24 26 l-3 2" stroke="#d9663f" stroke-width="1.8" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Gunk clogs the screen &amp; valve</h3>
+        <p>Built-up grounds and dried oil cake onto the shower screen and pack into the three-way valve. That restricts the flow and throws off pressure — shots channel and run unevenly, and the valve that's supposed to release cleanly starts to stick.</p>
+        <span class="cost">Weak, channeling flow &amp; a sticky valve</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M4 10 q5 5 0 10 q5 5 0 10" stroke="#7fb3c8" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M9 10 l-3 -2 l-3 2 M9 30 l-3 2 l-3 -2" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <ellipse cx="22" cy="18" rx="9" ry="4" fill="#cdbfa9"/>
+          <ellipse cx="22" cy="18" rx="9" ry="4" fill="#fffdf8" opacity="0.4"/>
+          <g stroke="#5e9a78" stroke-width="2" stroke-linecap="round">
+            <path d="M30 9 l0 6 M27 12 l6 0"/>
+          </g>
+        </svg></div>
+        <h3>A weekly backflush keeps shots clean</h3>
+        <p>A quick detergent backflush about once a week scrubs the rancid oils out the drain and keeps the group running smoothly. The payoff is immediate: shots taste bright and clean again, the flow stays even, and the machine simply behaves the way it did when it was new.</p>
+        <span class="cost">Lets a good machine taste muddy</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 l13 5 v8 c0 8 -6 13 -13 15 c-7 -2 -13 -7 -13 -15 v-8 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M12 18 l4 4 l8 -9" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It protects expensive group parts</h3>
+        <p>The group head, shower screen, gasket, and three-way valve are some of the priciest parts of a machine that can run $500 to $2,000 and beyond. Flushing the oils out before they harden and gum up those components is cheap insurance against premature wear, leaks, and a service bill.</p>
+        <span class="cost">Worn seals &amp; a service call</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> backflush?</h2>
+    <p class="sub">A detergent backflush about once a week — plus a quick plain-water flush after each day's use — is the sensible default for most home machines with a three-way valve. A household pulling many shots a day pushes toward a couple of times a week, while the occasional weekend cappuccino can stretch it out. And the most important answer: if your machine has <em>no</em> three-way valve, you can't backflush at all, and the right move is wiping and soaking instead. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">1. How much do you pull?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Several shots a day / a whole household</button>
+          <button class="pill" data-v="medium">A couple of drinks a day</button>
+          <button class="pill" data-v="light">Just occasionally — weekends or guests</button>
+        </div>
+        <div class="q-hint">Every shot leaves more oil in the group, so the more you brew the faster it builds. A busy household machine wants cleaning more often than one that pulls a shot or two on the weekend.</div>
+      </div>
+      <div class="quiz-q" data-q="machine">
+        <div class="q-label">2. Does your machine have a three-way valve?</div>
+        <div class="pills">
+          <button class="pill" data-v="threeway">Yes — e61-style / prosumer, takes a blind basket</button>
+          <button class="pill" data-v="none">No — single-boiler, no 3-way valve</button>
+          <button class="pill" data-v="unsure">Not sure — I'd have to check</button>
+        </div>
+        <div class="q-hint">This is the make-or-break question. Backflushing only works on machines with a three-way solenoid valve, which gives the water somewhere to go. Many entry-level single-boiler pump machines don't have one and <em>cannot</em> be backflushed — forcing it can damage them.</div>
+      </div>
+      <div class="quiz-q" data-q="taste">
+        <div class="q-label">3. How do your shots taste and flow right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="bad">Bitter or stale, or the flow's gone slow</button>
+          <button class="pill" data-v="ok">Fine, but it's been a while</button>
+          <button class="pill" data-v="clean">Clean and bright, flow is steady</button>
+        </div>
+        <div class="q-hint">Bitter, muddy shots or a flow that's slowed down are classic signs of rancid oil and gunk in the group — a backflush now, then a regular schedule, usually brings the cup right back.</div>
+      </div>
+      <div class="quiz-q" data-q="habit">
+        <div class="q-label">4. What's your after-use habit?</div>
+        <div class="pills">
+          <button class="pill" data-v="good">I wipe &amp; water-flush after each session</button>
+          <button class="pill" data-v="none">I don't really do anything after</button>
+        </div>
+        <div class="q-hint">A quick plain-water backflush and a wipe of the screen after each day's use clears most of the loose grounds before they harden, so the weekly detergent backflush has far less to fight.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Backflushing is about as cheap as machine maintenance gets. A tub of espresso-machine detergent like Cafiza or Puly Caff runs $10–$20 and lasts many months, and a rubber blind basket is $5–$10 — often it came with the machine. Set that against bitter shots from beans you paid good money for, a group that's clogged and channeling, and the real risk: servicing or replacing fouled group components on a machine worth hundreds to thousands:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–20</div><div class="l">a tub of espresso-machine detergent (Cafiza, Puly Caff) — lasts many months of weekly use</div></div>
+        <div class="calc-stat"><div class="v">~3–5 min</div><div class="l">per backflush once you have the rhythm down — bursts, dwell, rinse, refit</div></div>
+        <div class="calc-stat"><div class="v bad">$5–10</div><div class="l">a rubber blind/blank basket — and many machines already include one</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🫧 A blind basket (often already in the box)</span><span>$5–10 once</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 A tub of espresso detergent</span><span>$10–20, lasts months</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:11%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>☕ Pricey beans turned bitter by a fouled group</span><span>Wasted, shot after shot</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:38%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Servicing a clogged group or stuck 3-way valve</span><span>$80–200+ in parts &amp; labor</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:64%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Replacing worn group gaskets, screen &amp; seals over time</span><span>$100s, plus a machine that ages fast</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:90%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $10–20 tub of detergent and a few minutes a week</strong> against shots that taste stale, a group that channels and chokes, and a service bill — or premature wear — on the most expensive parts of the machine. Backflush on schedule and the group stays clean, the shots stay bright, and the oils never get the chance to harden.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to backflush your espresso machine</h2>
+    <p class="sub">First, confirm your machine <em>can</em> be backflushed — it needs a three-way solenoid valve and must accept a blind basket. Then the routine is simple: a plain-water backflush to clear loose grounds (do this after daily use), a detergent backflush about once a week, then rinse, rinse, rinse so no soapy taste is left, and finish by wiping down. Read the techniques first (especially "confirm your machine can do this"), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Confirm the valve first — and use the right detergent</h3>
+      <ul>
+        <li><strong>Only backflush if your machine has a three-way solenoid valve and takes a blind basket.</strong> The valve is what gives the water somewhere to go when the pump pushes back. Many entry-level single-boiler pump machines don't have one and <em>cannot</em> be backflushed — forcing it can damage the machine or simply won't work. When in doubt, check the manual and don't force it.</li>
+        <li><strong>Use a blind (blank, no-holes) basket.</strong> A rubber or steel basket with no perforations is what blocks the flow and forces the water back through the group. A normal filter basket will just let it through and won't backflush at all.</li>
+        <li><strong>Use espresso-machine detergent — never dish soap or other cleaners.</strong> Cafiza, Puly Caff, and similar are formulated to dissolve coffee oils and rinse clean. Dish soap, bleach, and household cleaners can leave residue, ruin the taste, and damage seals — don't substitute.</li>
+        <li><strong>The machine is hot and pressurized — keep hands clear.</strong> The group, portafilter, and water coming out are hot, and there's pressure behind the flush. Keep your hands away from the hot group and lock the portafilter in firmly before you start.</li>
+        <li><strong>Rinse thoroughly so no soapy taste remains.</strong> After the detergent, do several plain-water backflushes, then pull and discard a shot of plain water through the group. If anything tastes soapy, keep rinsing — detergent has no business in your next espresso.</li>
+        <li><strong>Don't confuse backflushing with descaling.</strong> Backflushing clears <em>coffee oils</em> from the group; descaling clears <em>mineral scale</em> from the water path. They're different jobs on different schedules — do both, and never substitute one for the other.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A blind (blank, no-holes) basket</span>
+      <span class="tool-chip">Espresso-machine detergent (Cafiza / Puly Caff)</span>
+      <span class="tool-chip">Your machine's manual (to confirm the 3-way valve)</span>
+      <span class="tool-chip">A small measuring scoop</span>
+      <span class="tool-chip">A group brush &amp; a cloth</span>
+      <span class="tool-chip">Fresh water</span>
+      <span class="tool-chip">A cup for the rinse shot</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of confirming a machine can be backflushed by checking it has a three-way solenoid valve, then swapping the normal filter basket for a blind no-holes basket">
+          <!-- divider line of comparison -->
+          <text x="40" y="34" font-size="11" fill="#3e7c59" font-weight="700">3-way valve?</text>
+          <!-- group head -->
+          <rect x="44" y="44" width="80" height="20" rx="6" fill="#8a6a4f"/>
+          <!-- valve symbol -->
+          <circle cx="84" cy="80" r="14" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.6"/>
+          <path d="M84 80 l0 -10 M84 80 l8 6 M84 80 l-8 6" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <text x="48" y="118" font-size="9.5" fill="#6b7376">three-way release</text>
+          <!-- arrow to basket swap -->
+          <path d="M132 70 l24 0 m-7 -5 l7 5 l-7 5" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- normal basket crossed -->
+          <ellipse cx="186" cy="58" rx="20" ry="6" fill="#b9b1a3"/>
+          <g fill="#5a4634"><circle cx="178" cy="58" r="1.4"/><circle cx="186" cy="59" r="1.4"/><circle cx="194" cy="58" r="1.4"/></g>
+          <line x1="170" y1="66" x2="202" y2="50" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+          <!-- blind basket below -->
+          <ellipse cx="186" cy="100" rx="20" ry="6" fill="#5a4634"/>
+          <text x="210" y="104" font-size="9.5" fill="#3e7c59" font-weight="700">blind</text>
+          <text x="40" y="166" font-size="11" fill="#d9663f" font-weight="700">no valve = don't backflush</text>
+        </svg>
+        <h4>Confirm it can backflush, fit the blind basket</h4>
+        <p>First make sure the machine has a three-way solenoid valve (most e61 and prosumer machines do; many single-boiler pump machines don't) — the manual will tell you. Then swap the normal filter basket for a blind, no-holes basket so the water has to push back through the group.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a plain-water backflush: running the pump in short bursts so water surges backward through the group head and flushes loose coffee grounds out the drain">
+          <!-- group head with portafilter -->
+          <rect x="96" y="28" width="88" height="22" rx="6" fill="#8a6a4f"/>
+          <rect x="112" y="50" width="56" height="16" rx="5" fill="#b9b1a3"/>
+          <rect x="120" y="54" width="40" height="9" rx="3" fill="#5a4634"/>
+          <!-- backward surge arrows (up into the group) -->
+          <g stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M132 70 l0 -14 m-5 6 l5 -6 l5 6"/>
+            <path d="M148 70 l0 -14 m-5 6 l5 -6 l5 6"/>
+          </g>
+          <!-- loose grounds flushing out below -->
+          <g fill="#6b4a30">
+            <circle cx="128" cy="92" r="2.4"/>
+            <circle cx="146" cy="96" r="2.2"/>
+            <circle cx="138" cy="102" r="2.4"/>
+            <circle cx="120" cy="100" r="1.8"/>
+          </g>
+          <path d="M118 110 q20 8 44 0" stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <!-- short-burst timing dots -->
+          <g fill="#e0a93d"><circle cx="218" cy="44" r="4"/><circle cx="232" cy="44" r="4"/><circle cx="246" cy="44" r="4"/></g>
+          <text x="206" y="68" font-size="9" fill="#d98e3b" font-weight="700">short bursts</text>
+          <text x="86" y="150" font-size="11" fill="#3e7c59" font-weight="700">water flush after daily use</text>
+        </svg>
+        <h4>Plain-water backflush (after daily use)</h4>
+        <p>With the blind basket in and no detergent, run the pump in short bursts — a few seconds on, then off. Each burst surges water backward through the group and flushes the loose grounds out the drain. Do this quick water flush after each day's brewing.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of adding a small measured scoop of espresso detergent to the blind basket and running several short cycles, letting dirty brown water drain between bursts">
+          <!-- blind basket receiving a scoop of detergent -->
+          <ellipse cx="120" cy="70" rx="34" ry="9" fill="#b9b1a3"/>
+          <ellipse cx="120" cy="68" rx="26" ry="6" fill="#5a4634"/>
+          <ellipse cx="120" cy="66" rx="14" ry="3.5" fill="#fffdf8"/>
+          <!-- scoop pouring powder -->
+          <path d="M150 38 q14 -2 24 4 l-3 11 q-11 -4 -21 -2 z" fill="#cdbfa9"/>
+          <g fill="#fffdf8"><circle cx="138" cy="58" r="1.6"/><circle cx="128" cy="60" r="1.4"/><circle cx="145" cy="56" r="1.4"/></g>
+          <text x="120" y="100" font-size="9.5" fill="#3e7c59" font-weight="700" text-anchor="middle">small scoop</text>
+          <!-- dirty brown drain below -->
+          <path d="M104 112 q16 12 32 0" stroke="#6b4a30" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <g fill="#6b4a30"><circle cx="112" cy="128" r="2.6"/><circle cx="128" cy="132" r="2.4"/><circle cx="120" cy="124" r="2"/></g>
+          <!-- several-cycles dots -->
+          <g fill="#e0a93d"><circle cx="216" cy="64" r="4"/><circle cx="230" cy="64" r="4"/><circle cx="244" cy="64" r="4"/><circle cx="258" cy="64" r="4"/></g>
+          <text x="204" y="88" font-size="9" fill="#d98e3b" font-weight="700">several cycles</text>
+          <text x="80" y="166" font-size="11" fill="#c96f4a" font-weight="700">dirty brown water = it's working</text>
+        </svg>
+        <h4>Add the detergent (weekly)</h4>
+        <p>Once a week, put a small measured scoop of espresso detergent in the blind basket, lock it in, and run several short cycles — a burst, a pause to dwell, a burst. Let the dirty brown water drain between bursts; that color is the rancid oil washing out of the group.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of rinsing after the detergent backflush: removing the detergent and running five or more plain-water backflushes until the water runs clear and tasteless">
+          <!-- five tally cycles -->
+          <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round">
+            <line x1="56" y1="40" x2="56" y2="70"/>
+            <line x1="68" y1="40" x2="68" y2="70"/>
+            <line x1="80" y1="40" x2="80" y2="70"/>
+            <line x1="92" y1="40" x2="92" y2="70"/>
+            <line x1="50" y1="58" x2="98" y2="52"/>
+          </g>
+          <text x="44" y="88" font-size="9.5" fill="#3e7c59" font-weight="700">5+ rinses</text>
+          <!-- water getting clearer, left dirty to right clear -->
+          <rect x="128" y="40" width="22" height="40" rx="6" fill="#6b4a30"/>
+          <rect x="158" y="40" width="22" height="40" rx="6" fill="#b9b1a3"/>
+          <rect x="188" y="40" width="22" height="40" rx="6" fill="#9cc3d4"/>
+          <rect x="218" y="40" width="22" height="40" rx="6" fill="#dce8ee"/>
+          <path d="M150 60 l8 0 m-3 -4 l4 4 l-4 4 M180 60 l8 0 m-3 -4 l4 4 l-4 4 M210 60 l8 0 m-3 -4 l4 4 l-4 4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- clean check -->
+          <circle cx="229" cy="112" r="16" fill="#e3efe8"/>
+          <path d="M222 112 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="40" y="166" font-size="11" fill="#3e7c59" font-weight="700">rinse until it runs clear &amp; tasteless</text>
+        </svg>
+        <h4>Rinse, rinse, rinse</h4>
+        <p>Remove the detergent (tip out the basket and refit it clean), then do five or more plain-water backflushes until the water runs clear and there's no soapy taste or smell. Leftover detergent ruins the next shot and shouldn't be ingested, so don't shortcut the rinse.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of finishing up: refitting the normal filter basket, wiping the shower screen and group gasket with a brush, purging a shot of plain water, and wiping the portafilter and baskets">
+          <!-- group + brush wiping the screen -->
+          <rect x="44" y="34" width="76" height="20" rx="6" fill="#8a6a4f"/>
+          <ellipse cx="82" cy="58" rx="24" ry="5" fill="#cdbfa9"/>
+          <!-- brush -->
+          <rect x="96" y="62" width="34" height="8" rx="4" fill="#c96f4a" transform="rotate(-18 113 66)"/>
+          <g stroke="#5a4634" stroke-width="1.6" stroke-linecap="round">
+            <line x1="96" y1="60" x2="94" y2="66"/>
+            <line x1="102" y1="58" x2="100" y2="64"/>
+          </g>
+          <text x="40" y="92" font-size="9" fill="#3e7c59" font-weight="700">wipe screen &amp; gasket</text>
+          <!-- purge a water shot into a cup -->
+          <rect x="156" y="40" width="44" height="16" rx="5" fill="#8a6a4f"/>
+          <path d="M178 56 l0 22" stroke="#7fb3c8" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M166 80 l4 24 h16 l4 -24 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <text x="150" y="120" font-size="9" fill="#3e7c59" font-weight="700">purge a water shot</text>
+          <!-- portafilter + basket soaking, right -->
+          <rect x="214" y="64" width="46" height="11" rx="5" fill="#3e2e20"/>
+          <ellipse cx="222" cy="69" rx="9" ry="9" fill="#b9b1a3"/>
+          <text x="206" y="98" font-size="9" fill="#6b7376">wipe / soak basket</text>
+          <text x="56" y="166" font-size="11" fill="#3e7c59" font-weight="700">refit normal basket &amp; finish</text>
+        </svg>
+        <h4>Finish &amp; wipe down</h4>
+        <p>Refit the normal filter basket, brush and wipe the shower screen and group gasket, then purge a plain-water shot through the group to clear the lines. Separately, wipe down — or soak — the portafilter and baskets so the whole brew path is clean.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Backflushing progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Oils flushed out, group rinsed clean, screen and gasket wiped, normal basket back in — your shots will taste bright again. Same quick backflush in about a week (or your quiz interval).</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs something's wrong — and when to call a pro</h2>
+    <p class="sub">A clean, well-backflushed group just works: bright shots, even flow, a clean release when the shot ends. These are the signals there's more going on than a routine backflush will fix — and the handful of problems that mean it's time for a machine service:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Brown gunk still draining after you've rinsed.</strong> If the water keeps coming out dirty long after the detergent should be gone, there's heavy buildup or the screen and dispersion block need to come off for a proper clean — and on an older neglected machine, a deeper service.</li>
+        <li><strong>A group gasket that leaks, or a portafilter that won't seal.</strong> If the portafilter drips around the edge or won't lock in firmly anymore, the group gasket has likely hardened or worn out. That's a cheap part but it usually means pulling the group apart — a job for a tech if you're not comfortable doing it.</li>
+        <li><strong>Weak flow that backflushing doesn't fix.</strong> If the shot still trickles or channels after a thorough backflush, the restriction may be scale in the water path (descale it), or a clogged screen, gicleur, or valve that needs disassembly — not more flushing.</li>
+        <li><strong>A three-way valve that's stuck.</strong> If the group doesn't release pressure cleanly when the shot ends — the puck stays soupy, or water keeps dribbling — the three-way solenoid valve may be gummed up or failing. Cleaning or replacing it is a service job.</li>
+        <li><strong>Pro tip:</strong> backflushing and descaling are two different routines. If your shots taste off, oily bitterness is usually coffee residue (backflush), while sour or scorched shots and slow heat-up point to <a href="descale-espresso-machine.html">mineral scale (descale)</a> — clean both, on their own schedules.</li>
+        <li><strong>Pro tip:</strong> if your machine has no three-way valve, don't try to force a backflush. Wipe the shower screen, soak the portafilter and baskets, and run a plain-water shot to flush the group — that's the right maintenance for those machines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>What's the difference between backflushing and descaling?</summary>
+      <p>They clean two different kinds of gunk in two different places. <strong>Backflushing</strong> clears <em>coffee oils and grounds</em> out of the group head, shower screen, and three-way valve. You fit a blind (no-hole) basket and let the pump push water — and, weekly, espresso detergent — <em>backward</em> through the group so it flushes the rancid oils out the drain. It only works on machines with a three-way solenoid valve. <strong>Descaling</strong> dissolves <em>mineral scale</em> — the calcium and magnesium limescale that builds up inside the boiler, valves, and water lines from the water you run through them — by running a descaling solution through the whole water path and rinsing. Different problem, different product, different schedule: backflush roughly weekly for oils, descale every few months for scale. Neither replaces the other. See <a href="descale-espresso-machine.html">descaling the espresso machine</a> for that companion job.</p>
+    </details>
+    <details>
+      <summary>Can my machine be backflushed — how do I know if it has a three-way valve?</summary>
+      <p>Backflushing only works on machines with a <strong>three-way solenoid valve</strong>, which gives the water somewhere to go when the pump pushes back against a blocked (blind) basket. Most prosumer and commercial machines — e61 group heads and similar — have one. Many entry-level single-boiler pump machines (the common under-$500 home espresso makers) do <em>not</em>: when you block the basket, the water has nowhere to release, so backflushing does nothing useful and can stress or damage the machine. The surest way to know is your manual — look for a "backflush" or "cleaning cycle" section, or a mention of a three-way valve or a blind/cleaning basket. A practical tell: on a three-way-valve machine, when a normal shot ends the puck comes out as a firm, nearly dry cake (the valve released the pressure); on a machine without one, the puck stays wet and soupy. When in doubt, don't force it — wipe and soak instead.</p>
+    </details>
+    <details>
+      <summary>How often should I backflush?</summary>
+      <p>For a machine with a three-way valve, a good default is a <strong>detergent backflush about once a week</strong>, plus a quick <strong>plain-water backflush after each day's use</strong> to clear loose grounds before they harden. Tighten to a couple of times a week if you're a heavy household pulling many shots a day, since more shots mean more oil in the group. Stretch it out if you only brew occasionally — every couple of weeks may be plenty for a weekend-only machine. And if your shots have started tasting bitter or stale, or the flow has slowed, do one now regardless of the calendar. The plain-water flush after use is the habit that does most of the work; the weekly detergent backflush is what deep-cleans the oils the water alone can't shift.</p>
+    </details>
+    <details>
+      <summary>What detergent should I use — can I use dish soap?</summary>
+      <p>No — don't use dish soap, and don't improvise with bleach or household cleaners. Use a <strong>purpose-made espresso-machine detergent</strong> such as Cafiza or Puly Caff (the same products commercial cafes use). They're formulated specifically to dissolve coffee oils, are food-safe for the job, and — critically — rinse clean without leaving residue or a lingering taste. Dish soap foams unpredictably, can be hard to rinse fully out of the group, may leave a soapy taste in your shots, and can degrade rubber seals over time. A small tub of espresso detergent is only $10–$20 and lasts many months of weekly use, so there's no reason to substitute. Always use a small measured scoop — more isn't better, and it just makes rinsing harder.</p>
+    </details>
+    <details>
+      <summary>What's a blind (blank) basket?</summary>
+      <p>A blind basket — also called a blank or backflush basket — looks like a normal portafilter basket but has <strong>no holes</strong> in the bottom. That solid bottom is the whole point: when you lock it in and run the pump, the water can't flow out through the basket, so it's forced backward through the shower screen and out the three-way valve, carrying the loosened oils with it. Most are a simple rubber disk that drops into your existing basket, or a solid stainless basket; many machines ship with one in the box. If you can't find yours, they're $5–$10 to buy and you'll want one sized to your portafilter (commonly 58&nbsp;mm, but check). Don't try to backflush with a normal perforated basket — the water just runs straight through and nothing gets cleaned.</p>
+    </details>
+    <details>
+      <summary>My single-boiler machine has no three-way valve — what do I do instead?</summary>
+      <p>If your machine can't be backflushed, you keep the group clean a different way — and it's still quick. After brewing, knock out the puck, then <strong>wipe the shower screen</strong> with a damp cloth or a group brush to clear the loose grounds and oil sitting on it. Run a short shot of plain water through the empty group (no coffee) to rinse the screen from the front. Periodically, <strong>soak the portafilter and baskets</strong> in a solution of espresso detergent and hot water — pull the basket out, drop both in, let them sit, then scrub and rinse well; this dissolves the baked-on oil that a wipe won't shift. Many machines also let you unscrew and remove the shower screen for a deeper clean and soak. Done regularly, wiping plus the occasional soak keeps a no-valve machine's shots tasting clean — you're just cleaning the group from the outside instead of flushing it from the inside.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Rancid oils build up invisibly — until good beans start tasting off.</h2>
+        <p>You can't see the coffee oil collecting behind the shower screen, and by the time the shots go bitter it's well established. Let Upkeep Ledger keep the weekly backflush on schedule — and the periodic descale right alongside it — so the whole espresso-care routine gets done on time and your machine keeps pulling shots the way you dialed them.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=backflush-espresso-machine&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=backflush-espresso-machine&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Only backflush a machine with a three-way solenoid valve; your machine's manual outranks this guide, and many single-boiler machines should be wiped and soaked instead.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { use: null, machine: null, taste: null, habit: null };
+
+  var FREQ_LABEL = {
+    0.5: "A few times a week",
+    1: "Every week",
+    2: "Every 2 weeks"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var weeks = 1;
+    var tighten = false;
+    var noValve = (s.machine === "none");
+
+    /* Use volume */
+    if (s.use === "heavy") {
+      if (weeks > 0.5) weeks = 0.5;
+      tighten = true;
+      reasons.push("Several shots a day pushes a lot of coffee oil into the group, so it builds fast — a detergent backflush a few times a week keeps the rancid oils from ever taking hold.");
+    } else if (s.use === "light") {
+      reasons.push("Brewing only occasionally leaves far less oil in the group between cleanings, so you can comfortably lean toward the longer end of the range.");
+    } else {
+      reasons.push("A couple of drinks a day is steady, ordinary use that fits the standard once-a-week detergent backflush.");
+    }
+
+    /* Machine type — the make-or-break factor */
+    if (s.machine === "threeway") {
+      reasons.push("A three-way solenoid valve (e61-style or prosumer) is exactly what backflushing needs — the valve gives the water somewhere to go, so a blind basket and detergent can flush the group.");
+    } else if (s.machine === "none") {
+      reasons.push("A single-boiler machine with no three-way valve CANNOT be backflushed — the water has nowhere to release and you can damage it. Instead, wipe the shower screen and soak the portafilter and baskets.");
+    } else {
+      reasons.push("Until you're sure there's a three-way valve, don't backflush — check the manual for a backflush or cleaning-cycle section. If there's no valve, wipe and soak the group instead.");
+    }
+
+    /* Current taste / flow */
+    if (s.taste === "bad") {
+      if (weeks > 0.5) weeks = 0.5;
+      tighten = true;
+      reasons.push("Bitter, stale shots or a flow that's slowed down are classic signs of rancid oil and gunk in the group — do a detergent backflush now, then keep up a tight schedule until the cup comes back.");
+    } else if (s.taste === "clean") {
+      reasons.push("Clean, bright shots with steady flow mean you're staying ahead of the oils — keep the regular schedule and you'll hold that.");
+    } else {
+      reasons.push("Shots that are fine but haven't been backflushed in a while are due for one — a detergent backflush will clear the oil before it starts showing up in the cup.");
+    }
+
+    /* After-use habit */
+    if (s.habit === "good") {
+      reasons.push("A plain-water backflush and a wipe after each session clears the loose grounds before they harden, so the weekly detergent backflush has far less to fight — keep it up.");
+    } else {
+      reasons.push("Without an after-use water flush, more oil and grounds sit in the group between cleanings — add a quick plain-water backflush after each day's use to make the weekly job easier.");
+    }
+
+    /* Best-case relaxation: light use, clean shots, good habits, real valve */
+    if (!tighten && s.machine === "threeway" && s.use === "light" && s.taste === "clean" && s.habit === "good") {
+      weeks = 2;
+      reasons.push("Light use, clean-tasting shots, a good after-use habit, and a proper three-way valve together is the one case where every couple of weeks is genuinely plenty for the detergent backflush.");
+    }
+
+    /* Closing note */
+    var note;
+    if (noValve) {
+      note = "<strong>Your machine likely can't be backflushed:</strong> with no three-way valve, the water has nowhere to go. Instead, wipe the shower screen after each use, run a plain-water shot through the empty group, and periodically soak the portafilter and baskets in espresso detergent.";
+    } else if (s.machine === "unsure") {
+      note = "<strong>Check the manual before you backflush:</strong> look for a backflush or cleaning-cycle section, or a mention of a three-way valve or a blind basket. A firm, dry puck at the end of a shot is a good sign there's a valve; a soupy puck suggests there isn't — and then you wipe and soak instead.";
+    } else if (s.taste === "bad") {
+      note = "<strong>Backflush isn't descale:</strong> oily, bitter shots are usually coffee residue (backflush), while sour or scorched shots and slow heat-up point to mineral scale — that's a <a href=\"descale-espresso-machine.html\">descale</a>, a separate job. If a backflush doesn't fix it, look at scale next.";
+    } else {
+      note = "<strong>Remember the rhythm:</strong> a plain-water backflush after each day's use, a detergent backflush about weekly, then rinse with several plain-water flushes until no soapy taste remains and purge a water shot. And backflushing isn't descaling — do both, on their own schedules.";
+    }
+
+    return { weeks: weeks, reasons: reasons, note: note, noValve: noValve };
+  }
+
+  function onQuizChange() {
+    if (!quizState.use || !quizState.machine || !quizState.taste || !quizState.habit) return;
+    var r = computePlan(quizState);
+    if (r.noValve) {
+      document.getElementById("resultFreq").textContent =
+        "Your machine likely can't be backflushed — wipe and soak instead";
+      document.getElementById("resultBody").innerHTML =
+        "With no three-way valve, don't force a backflush. Instead, <strong>wipe the shower screen after each use, run a plain-water shot through the empty group, and periodically soak the portafilter and baskets</strong> in espresso detergent. Why:";
+    } else {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: backflush with detergent roughly " + FREQ_LABEL[r.weeks].toLowerCase();
+      document.getElementById("resultBody").innerHTML =
+        "Confirm the three-way valve, fit the blind basket, then <strong>backflush with espresso detergent on this schedule (plus a plain-water flush after daily use), and rinse until no soapy taste remains</strong>. Why this schedule:";
+    }
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Prep & confirm", text: "Confirm your machine has a three-way valve", note: "Check the manual for a backflush or cleaning-cycle section, or a mention of a three-way valve or blind basket. No valve means you can't backflush — wipe the screen and soak the portafilter instead, and stop here." },
+    { phase: "Prep & confirm", text: "Swap in the blind (no-holes) basket", note: "Drop the rubber blind disk into your basket, or fit a solid blind basket — it has no holes, so the water is forced backward through the group. A normal perforated basket won't backflush at all." },
+    { phase: "Prep & confirm", text: "Make sure the machine is on, hot, and at pressure", note: "Backflushing needs the pump and brew pressure, so the machine should be on and up to temperature. Keep your hands clear of the hot group and lock the portafilter in firmly." },
+    { phase: "Water backflush", text: "Run short plain-water bursts through the group", note: "With no detergent yet, engage the brew in short bursts — a few seconds on, then off. Each burst surges water backward through the group and flushes the loose grounds out the drain. Do this after each day's use." },
+    { phase: "Water backflush", text: "Repeat until the loose grounds are gone", note: "A few short bursts clears most of the loose coffee. If you're only doing the daily water flush (not the weekly detergent one), you can stop after this and refit the normal basket." },
+    { phase: "Detergent backflush", text: "Add a small measured scoop of espresso detergent", note: "About once a week, put a small measured scoop of Cafiza, Puly Caff, or similar in the blind basket and lock it back in. Never use dish soap, bleach, or household cleaners — and don't overdose it." },
+    { phase: "Detergent backflush", text: "Run several short cycles, letting it dwell between bursts", note: "Engage the brew in short bursts with a pause to dwell between them. Let the dirty brown water drain out each time — that color is the rancid oil washing out of the group and valve." },
+    { phase: "Rinse & finish", text: "Remove the detergent and refit the clean blind basket", note: "Tip the detergent out of the blind basket and rinse it, then refit it (or knock it out and reseat) so the next flushes run clean water only — no more detergent in the group." },
+    { phase: "Rinse & finish", text: "Do 5+ plain-water backflushes until it runs clear", note: "Run at least five short plain-water backflushes until the water runs clear and there's no soapy taste or smell. Leftover detergent ruins the next shot and shouldn't be ingested — don't shortcut this." },
+    { phase: "Rinse & finish", text: "Refit the normal basket, wipe the screen & gasket, purge a shot", note: "Put the normal filter basket back, brush and wipe the shower screen and group gasket, then purge a plain-water shot through the group to clear the lines before you brew for real." },
+    { phase: "Rinse & finish", text: "Wipe/soak the portafilter & baskets, and log the date", note: "Separately, wipe down or soak the portafilter and baskets so the whole brew path is clean. Note the date so the next backflush lands on your interval — and remember descaling is a separate job." }
+  ];
+
+  var LS_KEY = "upkeepguides:backflush-espresso-machine:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
