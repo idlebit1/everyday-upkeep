@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check your bike tire pressure — UpkeepGuides.com</title>
+<meta name="description" content="How to check your bike tire pressure the right way: read the PSI range on the tire sidewall, use a gauge instead of thumb-testing, handle presta vs schrader valves, and dial pressure to your tire type and weight — with a checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Check your bike tire pressure — UpkeepGuides.com">
+<meta property="og:description" content="How to check your bike tire pressure the right way: read the PSI range on the tire sidewall, use a gauge instead of thumb-testing, handle presta vs schrader valves, and dial pressure to your tire type and weight — with a checklist.">
+<meta property="og:url" content="https://upkeepguides.com/check-bike-tire-pressure.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check your bike tire pressure — UpkeepGuides.com">
+<meta name="twitter:description" content="How to check your bike tire pressure the right way: read the PSI range on the tire sidewall, use a gauge instead of thumb-testing, handle presta vs schrader valves, and dial pressure to your tire type and weight — with a checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every 2 weeks</span>
+      <h1>Check Your Bike Tire Pressure</h1>
+      <p class="lede">Bike tires lose air far faster than car tires — a skinny road tire can drop a usable chunk of pressure in just a few days, so "I pumped it last month" really isn't enough. And pressure is the single biggest, cheapest thing that decides how a bike rides: too soft and it's slow, squirmy, and prone to pinch flats; too hard and it rides harsh and skips over bumps instead of gripping. Dial it into the range printed on the sidewall — with a gauge, not a thumb — and the same bike rolls faster, grips better, soaks up the road, and flats far less. It's a 30-second check that transforms the ride.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Check <em>every 1–2 weeks</em></span>
+        <span class="chip">⏱️ <em>~30 seconds</em> per tire</span>
+        <span class="chip">🚲 Biggest lever on <em>how it rides</em></span>
+        <span class="chip">💸 A floor pump is <em>~$25–60</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone pumping up a bike tire in a garage: a floor pump with a round pressure gauge has its hose connected to the tire valve, a hand grips the pump handle, the bike's wheel and tire fill the scene with the sidewall showing a PSI range, and small insets show a tall skinny presta valve next to a fatter car-style schrader valve">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- garage / workshop back wall -->
+      <rect x="40" y="40" width="120" height="120" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <line x1="100" y1="40" x2="100" y2="160" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="40" y1="100" x2="160" y2="100" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- pegboard tools hint -->
+      <rect x="68" y="58" width="6" height="26" rx="2" fill="#8a6a4f"/>
+      <rect x="120" y="58" width="6" height="22" rx="2" fill="#c96f4a"/>
+      <rect x="116" y="116" width="28" height="8" rx="3" fill="#5e9a78"/>
+
+      <!-- bike frame hint (top tube + seat) angling in from the right -->
+      <path d="M398 150 l86 -34" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M474 112 l16 -6 l4 12 l-16 6 z" fill="#2c5a40"/>
+
+      <!-- rear wheel / tire (the one being pumped) -->
+      <circle cx="360" cy="270" r="118" fill="#3a4144"/>
+      <circle cx="360" cy="270" r="116" fill="none" stroke="#2c3234" stroke-width="6" stroke-dasharray="13 11"/>
+      <!-- tire sidewall band showing PSI range -->
+      <circle cx="360" cy="270" r="100" fill="none" stroke="#5b6366" stroke-width="14"/>
+      <circle cx="360" cy="270" r="86" fill="#dce8ee"/>
+      <circle cx="360" cy="270" r="86" fill="none" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- spokes -->
+      <g stroke="#cdd9de" stroke-width="3">
+        <line x1="360" y1="186" x2="360" y2="354"/>
+        <line x1="276" y1="270" x2="444" y2="270"/>
+        <line x1="301" y1="211" x2="419" y2="329"/>
+        <line x1="419" y1="211" x2="301" y2="329"/>
+      </g>
+      <!-- hub -->
+      <circle cx="360" cy="270" r="16" fill="#7fb3c8"/>
+      <circle cx="360" cy="270" r="7" fill="#fffdf8"/>
+      <!-- PSI range printed on the sidewall -->
+      <text x="360" y="200" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle" transform="rotate(0 360 200)">MAX 65 PSI</text>
+      <text x="360" y="350" font-size="11" fill="#6b7376" font-weight="700" text-anchor="middle">40–65 PSI</text>
+
+      <!-- valve stem at bottom of wheel with pump head clamped on -->
+      <rect x="356" y="354" width="8" height="20" rx="2" fill="#8a6a4f"/>
+      <rect x="346" y="372" width="28" height="16" rx="4" fill="#2c5a40"/>
+
+      <!-- floor pump barrel -->
+      <rect x="150" y="150" width="26" height="210" rx="8" fill="#c96f4a"/>
+      <rect x="150" y="150" width="26" height="40" rx="8" fill="#d9663f"/>
+      <!-- pump base -->
+      <path d="M120 372 h86 l-8 12 h-70 z" fill="#5b6366"/>
+      <rect x="120" y="368" width="86" height="8" rx="3" fill="#3a4144"/>
+      <!-- pump handle + hand -->
+      <rect x="138" y="122" width="50" height="12" rx="6" fill="#3a4144"/>
+      <ellipse cx="163" cy="128" rx="17" ry="12" fill="#e8b48f"/>
+      <path d="M152 124 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M178 130 q34 -10 60 -6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- round pressure gauge mounted on the pump base -->
+      <circle cx="210" cy="320" r="34" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <circle cx="210" cy="320" r="26" fill="#faf0da"/>
+      <!-- gauge ticks -->
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="210" y1="298" x2="210" y2="303"/>
+        <line x1="232" y1="320" x2="227" y2="320"/>
+        <line x1="188" y1="320" x2="193" y2="320"/>
+        <line x1="194" y1="304" x2="198" y2="308"/>
+        <line x1="226" y1="304" x2="222" y2="308"/>
+      </g>
+      <!-- needle pointing to target -->
+      <line x1="210" y1="320" x2="224" y2="306" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="210" cy="320" r="3.5" fill="#3a4144"/>
+      <text x="210" y="354" font-size="9" fill="#6b7376" font-weight="700" text-anchor="middle">PSI</text>
+
+      <!-- hose from pump gauge to valve -->
+      <path d="M236 322 q60 30 110 56" fill="none" stroke="#3a4144" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- valve insets, lower-left: presta vs schrader -->
+      <rect x="44" y="300" width="56" height="92" rx="8" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+      <!-- presta (skinny, tall, with locknut) -->
+      <rect x="58" y="330" width="6" height="40" rx="2" fill="#b9b1a3"/>
+      <rect x="57" y="320" width="8" height="14" rx="2" fill="#8a6a4f"/>
+      <circle cx="61" cy="318" r="3" fill="#e0a93d"/>
+      <text x="61" y="384" font-size="8" fill="#6b7376" font-weight="700" text-anchor="middle">presta</text>
+      <!-- schrader (fatter, car-style) -->
+      <rect x="80" y="338" width="12" height="32" rx="3" fill="#b9b1a3"/>
+      <rect x="78" y="334" width="16" height="8" rx="2" fill="#8a6a4f"/>
+      <circle cx="86" cy="338" r="2" fill="#3a4144"/>
+      <text x="86" y="384" font-size="8" fill="#6b7376" font-weight="700" text-anchor="middle">schrader</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Of all the things you can fuss over on a bike — fancy tires, a lighter wheelset, an aero this-or-that — none of it makes as big a difference as simply running the <em>right air pressure</em>, and none of it is anywhere near as cheap or as fast. Here's what pressure quietly does to every ride:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="22" r="11" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2.4"/>
+          <!-- squished / under-inflated tire flattening at the bottom -->
+          <path d="M9 28 q9 6 18 0" fill="none" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <ellipse cx="18" cy="22" rx="4.5" ry="4.5" fill="#7fb3c8"/>
+          <path d="M14 7 l8 0 M18 7 l0 4" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M11 12 q7 -4 14 0" fill="none" stroke="#d9663f" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3"/>
+        </svg></div>
+        <h3>Too soft is slow &amp; flat-prone</h3>
+        <p>Under-inflated tires squirm under you, roll sluggishly, and steal your effort. Worse, a soft tire lets the rim slam through to the road when you hit a bump — that's a pinch flat (the classic "snakebite") and, hit hard enough, a dented rim.</p>
+        <span class="cost">Pinch flats &amp; bent rims</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="20" r="11" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2.4"/>
+          <circle cx="18" cy="20" r="4.5" fill="#7fb3c8"/>
+          <!-- harsh bounce / skipping marks -->
+          <path d="M6 8 l4 -4 M30 8 l-4 -4 M18 4 l0 -2" stroke="#e0a93d" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M9 31 l3 -4 l3 4 l3 -4 l3 4 l3 -4 l3 4" fill="none" stroke="#d9663f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Too hard rides harsh &amp; slips</h3>
+        <p>Over-inflate and the tire turns rigid: it skips and chatters over bumps instead of conforming to them, so you actually get <em>less</em> grip and a punishing ride. Pump well past the max and a tire can blow off the rim with a bang.</p>
+        <span class="cost">No grip, harsh ride, blow-offs</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="20" r="11" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2.4"/>
+          <circle cx="18" cy="20" r="4" fill="#7fb3c8"/>
+          <!-- air escaping fast -->
+          <path d="M27 14 l6 -3 M28 18 l7 -1 M27 22 l6 3" stroke="#c96f4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <circle cx="31" cy="11" r="1.4" fill="#c96f4a"/>
+          <circle cx="33" cy="25" r="1.4" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Bike tires leak air fast</h3>
+        <p>Small air volume and thin tubes mean bike tires lose pressure far quicker than car tires. A skinny high-pressure road tire can shed meaningful PSI in just a few days — so "I pumped it a few weeks ago" tells you almost nothing about today.</p>
+        <span class="cost">Soft within days, not months</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="20" r="11" fill="#dce8ee" stroke="#3e7c59" stroke-width="2.4"/>
+          <circle cx="18" cy="20" r="4.5" fill="#7fb3c8"/>
+          <!-- check / dialed-in -->
+          <path d="M12 20 l4 4 l8 -9" stroke="#3e7c59" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <path d="M30 8 l0 5 M27.5 10.5 l5 0"/>
+          </g>
+        </svg></div>
+        <h3>Right pressure transforms the ride</h3>
+        <p>Dial it into the range for your tire and your weight and the same bike feels new — faster on smooth roads, plusher over rough ones, grippier in corners, and far less flat-prone. All from a check that takes about 30 seconds with a pump.</p>
+        <span class="cost">A free 30-second upgrade</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check?</h2>
+    <p class="sub">Every week or two is the sensible default for a casual rider. But skinny high-pressure road tires and tubeless setups bleed air in days and want a check before most rides, while a fat, low-pressure mountain or hybrid tire holds on longer. Answer four quick questions and we'll land on a cadence:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="tire">
+        <div class="q-label">1. What kind of tires are on the bike?</div>
+        <div class="pills">
+          <button class="pill" data-v="road">Skinny, high-pressure road tires</button>
+          <button class="pill" data-v="gravel">Gravel / hybrid (medium)</button>
+          <button class="pill" data-v="mtb">Wide, low-pressure mountain tires</button>
+          <button class="pill" data-v="tubeless">Tubeless setup</button>
+        </div>
+        <div class="q-hint">High pressure in a small air volume drops noticeably with even a little leakage, so a road tire at 80–100 PSI feels soft far sooner than a mountain tire at 25. Tubeless can also seep through the casing as it sits.</div>
+      </div>
+      <div class="quiz-q" data-q="ride">
+        <div class="q-label">2. How often do you actually ride?</div>
+        <div class="pills">
+          <button class="pill" data-v="daily">Most days — it's my regular ride</button>
+          <button class="pill" data-v="weekly">Once or twice a week</button>
+          <button class="pill" data-v="rarely">Occasionally — it sits a lot</button>
+        </div>
+        <div class="q-hint">If you ride often, a quick squeeze-and-gauge before rolling out is cheap insurance. A bike that sits for weeks needs a check before every outing, because it's quietly been losing air the whole time it sat.</div>
+      </div>
+      <div class="quiz-q" data-q="leak">
+        <div class="q-label">3. How fast do your tires go soft?</div>
+        <div class="pills">
+          <button class="pill" data-v="fast">Noticeably soft within a few days</button>
+          <button class="pill" data-v="slow">Holds pretty well for a couple of weeks</button>
+          <button class="pill" data-v="unsure">Honestly, I've never tracked it</button>
+        </div>
+        <div class="q-hint">Every tire leaks a little; some leak a lot — a porous tube, a slow puncture, or a so-so valve seal speeds it up. If yours go flat-ish fast, check more often (and read the signs section — it may be a fixable leak).</div>
+      </div>
+      <div class="quiz-q" data-q="valve">
+        <div class="q-label">4. What valve do your tubes have?</div>
+        <div class="pills">
+          <button class="pill" data-v="presta">Presta (skinny, with a tiny top nut)</button>
+          <button class="pill" data-v="schrader">Schrader (fat, car-style)</button>
+          <button class="pill" data-v="mixed">Not sure / a mix</button>
+        </div>
+        <div class="q-hint">This doesn't change how often to check, but it changes the technique: a presta valve has a small locknut you unscrew before pumping and finger-tighten after; a schrader is the same valve as your car. Knowing which you have saves fumbling.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The gear is almost nothing and lasts for years — a floor pump with a built-in gauge is the one thing worth buying, and pumping a tire to the right pressure is free and faster than fixing a flat. What skipping it costs is ride-ruining flats on the road, pinch punctures and dinged rims from running too soft, and a slow, miserable ride you might never trace back to the air:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$25–60</div><div class="l">a floor pump with a built-in gauge — buy once, use for a decade; a mini-pump plus a separate gauge costs less</div></div>
+        <div class="calc-stat"><div class="v">~30 sec</div><div class="l">to check and top off a tire at home before you roll out — versus 15–20 minutes patching a tube roadside</div></div>
+        <div class="calc-stat"><div class="v bad">$0</div><div class="l">the cost of the air itself — pumping to the right pressure is free and prevents most of what follows</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>💨 Pumping to the right pressure</span><span>Free, ~30 sec</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Floor pump with a gauge (one-time)</span><span>$25–60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🩹 A pinch flat on the road — new tube + lost ride time</span><span>$6–10 a tube, every time</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:36%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛞 A dented rim from bottoming out on a soft tire</span><span>$40–120+ wheel work</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>😖 Months of slow, harsh, flat-plagued riding</span><span>The whole point of the bike</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $30 pump and a 30-second check</strong> against pinch flats that strand you, rims you have to true or replace, and a bike that rides like a sponge for no reason. The air is free — the only thing it costs you to run the right pressure is the half-minute it takes to look.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check &amp; set your bike tire pressure</h2>
+    <p class="sub">The whole job is: find your range on the sidewall, figure out your valve, pump to a target with a gauge, finish the valve cleanly, and tune by feel. Read the techniques first — especially how presta valves work and why mountain and tubeless tires run much lower — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Inflate to the sidewall range — and know your valve</h3>
+      <ul>
+        <li><strong>Use the PSI range printed on the tire sidewall.</strong> Inflate within that range and dial it by your weight and feel — and <em>never exceed the tire's max</em> (or, for tubeless, the rim's lower max). Don't guess or thumb-test; squeezing can't tell 40 PSI from 70.</li>
+        <li><strong>Use a gauge — eyeballing can't do this.</strong> A floor pump with a built-in gauge is easiest; a separate stick or dial gauge works too. Pressure is a number, and the difference between a great ride and a flat-prone one is often just 10–15 PSI you'd never feel by hand.</li>
+        <li><strong>Know your valve before you start.</strong> A <em>presta</em> valve is skinny with a small locknut on top — unscrew it a couple of turns before pumping, then finger-tighten it after (don't crank it). Don't bend a presta valve sideways or you'll snap it. A <em>schrader</em> is the fatter, car-style valve.</li>
+        <li><strong>Pull the pump head straight off.</strong> Seat the pump head square on the valve and lift or pull it off straight when you're done — yanking it at an angle can damage a presta valve or let a burst of air out.</li>
+        <li><strong>Mountain and especially tubeless tires run much lower.</strong> A road tire might be 80 PSI; a mountain tire is often 20–30, and tubeless has a <em>minimum</em> pressure to keep the bead seated on the rim. Don't over-inflate a low-pressure tire — you'll lose grip and ride quality, and tubeless can burp or unseat.</li>
+        <li><strong>Mind CO2 cartridges.</strong> If you use a CO2 inflator on the road, the cartridge gets frostbite-cold as it empties — hold it through a glove or cloth, not bare skin.</li>
+        <li><strong>Look the tire over while you're there.</strong> A 30-second pressure check is also when you'll spot a cut, a bulge, embedded glass, or worn-through tread — catch those before they leave you walking home.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A floor pump with a gauge (ideal)</span>
+      <span class="tool-chip">Or a mini-pump + a separate gauge</span>
+      <span class="tool-chip">A presta↔schrader adapter (if needed)</span>
+      <span class="tool-chip">Your tire's PSI range (on the sidewall)</span>
+      <span class="tool-chip">A rag to wipe the valve / rim</span>
+      <span class="tool-chip">CO2 inflator + cartridges (for the road)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of reading the recommended pressure range molded into the tire sidewall, showing a minimum and maximum PSI and bar, then choosing a point within it for your weight and the surface">
+          <!-- tire arc -->
+          <path d="M30 150 q110 -150 220 0" fill="none" stroke="#3a4144" stroke-width="22" stroke-linecap="round"/>
+          <path d="M44 150 q96 -126 192 0" fill="none" stroke="#5b6366" stroke-width="8"/>
+          <!-- molded text on the sidewall -->
+          <rect x="84" y="74" width="112" height="22" rx="5" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <text x="140" y="89" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">40 – 65 PSI</text>
+          <text x="140" y="112" font-size="9.5" fill="#6b7376" text-anchor="middle">(2.8 – 4.5 bar)</text>
+          <!-- pointer to a chosen spot in the range -->
+          <path d="M140 120 l0 18 m-5 -7 l5 7 l5 -7" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="46" y="172" font-size="11" fill="#3e7c59" font-weight="700">read the range, then pick within it</text>
+        </svg>
+        <h4>Find your range on the sidewall</h4>
+        <p>Molded into the tire's sidewall is a recommended PSI range (often a bar figure too). That's your guardrail: stay inside it, never over the max, and pick a point within it — lower if you're lighter or the road's rough, higher if you're heavier or it's smooth.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing a tall skinny presta valve with its small locknut to a fatter car-style schrader valve, and setting the pump head or adapter to match">
+          <!-- presta -->
+          <rect x="60" y="64" width="10" height="70" rx="3" fill="#b9b1a3"/>
+          <rect x="58" y="44" width="14" height="22" rx="3" fill="#8a6a4f"/>
+          <circle cx="65" cy="40" r="5" fill="#e0a93d"/>
+          <text x="65" y="152" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">presta</text>
+          <text x="65" y="166" font-size="8.5" fill="#6b7376" text-anchor="middle">skinny + locknut</text>
+          <!-- schrader -->
+          <rect x="196" y="74" width="22" height="60" rx="4" fill="#b9b1a3"/>
+          <rect x="192" y="66" width="30" height="12" rx="3" fill="#8a6a4f"/>
+          <circle cx="207" cy="74" r="4" fill="#3a4144"/>
+          <text x="207" y="152" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">schrader</text>
+          <text x="207" y="166" font-size="8.5" fill="#6b7376" text-anchor="middle">fat, car-style</text>
+          <!-- vs -->
+          <text x="135" y="104" font-size="13" fill="#6b7376" font-weight="700" text-anchor="middle">vs</text>
+        </svg>
+        <h4>Identify your valve</h4>
+        <p>Two kinds: a <strong>presta</strong> is skinny and tall with a tiny locknut on top; a <strong>schrader</strong> is the fat, car-style valve. Set your pump head to match (most fit both), or use an adapter — getting this right first saves a frustrating fight at the valve.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pumping with a gauge: for a presta valve unscrew the tiny top nut first, seat the pump head squarely on the valve, inflate to the target, and read the round gauge">
+          <!-- valve with pump head -->
+          <rect x="66" y="70" width="10" height="56" rx="3" fill="#b9b1a3"/>
+          <rect x="64" y="52" width="14" height="20" rx="3" fill="#8a6a4f"/>
+          <circle cx="71" cy="48" r="4.5" fill="#e0a93d"/>
+          <rect x="52" y="96" width="38" height="18" rx="5" fill="#2c5a40"/>
+          <text x="71" y="148" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">unscrew nut first</text>
+          <!-- gauge -->
+          <circle cx="196" cy="86" r="40" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <circle cx="196" cy="86" r="30" fill="#faf0da"/>
+          <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+            <line x1="196" y1="60" x2="196" y2="66"/>
+            <line x1="222" y1="86" x2="216" y2="86"/>
+            <line x1="170" y1="86" x2="176" y2="86"/>
+          </g>
+          <line x1="196" y1="86" x2="214" y2="70" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="196" cy="86" r="4" fill="#3a4144"/>
+          <text x="196" y="142" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">inflate to target, read gauge</text>
+        </svg>
+        <h4>Pump with a gauge to a target</h4>
+        <p>For a presta, unscrew the tiny top nut a couple of turns first. Push the pump head on square, lock the lever if it has one, and pump to your target while watching the gauge — stop at the number, not at "feels firm."</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of finishing the valve: pull the pump head straight off, and on a presta valve gently re-tighten the small locknut and replace the dust cap">
+          <!-- valve -->
+          <rect x="120" y="58" width="12" height="70" rx="3" fill="#b9b1a3"/>
+          <rect x="118" y="40" width="16" height="20" rx="3" fill="#8a6a4f"/>
+          <circle cx="126" cy="36" r="5" fill="#e0a93d"/>
+          <!-- pull-off arrow (straight off) -->
+          <path d="M126 32 l0 -18 m-6 8 l6 -8 l6 8" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="126" y="150" font-size="9.5" fill="#3e7c59" font-weight="700" text-anchor="middle">pull head off straight</text>
+          <!-- tighten arrows around the locknut -->
+          <path d="M150 36 a14 14 0 1 1 -3 -9" fill="none" stroke="#d98e3b" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M147 27 l1 -6 l5 4" fill="none" stroke="#d98e3b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="190" y="40" font-size="9" fill="#6b7376" font-weight="700" text-anchor="middle">finger-tight</text>
+        </svg>
+        <h4>Finish the valve cleanly</h4>
+        <p>Pull the pump head straight off so you don't tug the valve sideways. On a presta, gently finger-tighten the locknut again (snug, not cranked) and pop the dust cap back on. A schrader just needs its cap.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of tuning pressure to feel: softer toward the low end for comfort and grip on rough ground, firmer toward the high end for speed on smooth roads, all within the printed range">
+          <!-- scale bar -->
+          <rect x="40" y="80" width="200" height="14" rx="7" fill="#dce8ee"/>
+          <rect x="40" y="80" width="60" height="14" rx="7" fill="#5e9a78"/>
+          <rect x="180" y="80" width="60" height="14" rx="7" fill="#c96f4a"/>
+          <!-- labels -->
+          <text x="70" y="68" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">softer</text>
+          <text x="70" y="116" font-size="8.5" fill="#6b7376" text-anchor="middle">comfort + grip</text>
+          <text x="210" y="68" font-size="10" fill="#c96f4a" font-weight="700" text-anchor="middle">firmer</text>
+          <text x="210" y="116" font-size="8.5" fill="#6b7376" text-anchor="middle">speed, smooth roads</text>
+          <!-- pointer in the middle -->
+          <path d="M140 70 l0 8 m-5 -3 l5 3 l5 -3" stroke="#3a4144" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="140" y="150" font-size="10.5" fill="#3e7c59" font-weight="700" text-anchor="middle">tune within the range, recheck next ride</text>
+        </svg>
+        <h4>Tune to feel</h4>
+        <p>Within your range, go softer for comfort and grip on rough or loose ground, firmer for speed on smooth pavement. Heavier riders run a bit higher. Find what feels best, remember it — and recheck before the next ride, because it's already leaking down.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Pressure-check progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Range read, valves handled, both tires pumped to target and tuned — that's a faster, comfier, flat-resistant ride for the cost of 30 seconds. Same quick check before the next ride or two.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs something's off — and when it's not just air</h2>
+    <p class="sub">Most "my bike rides badly" problems are simply low pressure, and the fix is the pump. But a few signs point past pressure to a tube, tire, or valve that needs fixing — and a couple are worth a bike shop:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The ride feels sluggish or you bottom out on bumps.</strong> A bike that suddenly feels slow, squirmy, or harsh — or where you feel the rim thud through on potholes — is almost always running low. Gauge it before you assume anything's broken.</li>
+        <li><strong>Repeated pinch flats (two side-by-side holes).</strong> Two little slits near each other — a "snakebite" — mean the tube got pinched between rim and road on a bump. That's the signature of running too soft; bump the pressure up within the range and they usually stop.</li>
+        <li><strong>A tire that won't hold air.</strong> If a tire is soft again within a day or two no matter how you pump it, you likely have a slow puncture, a porous tube, or a leaking valve. Find the leak, patch or replace the tube, or have a shop sort the valve.</li>
+        <li><strong>A bulge, cut, or cracked sidewall.</strong> A blister or bulge in the tire, a cut deep enough to see the casing, or a dry, cracked sidewall means the tire itself is failing — and it can blow out under pressure. Don't just keep pumping it; replace the tire.</li>
+        <li><strong>Tubeless that keeps burping or losing pressure.</strong> If a tubeless tire repeatedly unseats, "burps" air in corners, or drops pressure overnight, the sealant may be low, the bead may not be seated, or the setup needs attention. Top up sealant, reseat, or take it to a shop that does tubeless.</li>
+        <li><strong>Pro tip:</strong> if you're chasing flats or chasing the "right" feel and never getting there, a shop can check the tube, the rim tape, the valve, and recommend a pressure for your exact tire and weight — often in a few minutes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I check my bike tire pressure?</summary>
+      <p>For most casual riders, every week or two is a good rhythm — and always before a ride if the bike has been sitting. But it really depends on the tire: skinny, high-pressure road tires and tubeless setups lose air noticeably in just a few days, so serious road and tubeless riders top off before most rides. Fat, low-pressure mountain and hybrid tires hold on longer and can stretch to a week or two comfortably. The honest shortcut is to make it a 30-second habit at the start of any ride after a gap — pump's quick, a flat on the road is not.</p>
+    </details>
+    <details>
+      <summary>What PSI should my bike tires be?</summary>
+      <p>Start with the range molded into the tire's sidewall — every tire has a recommended minimum and maximum (and often a bar figure too). Stay inside that range and never exceed the max. Within it, pick by your weight and the surface: heavier riders and smoother roads call for the higher end, lighter riders and rough or loose ground for the lower end. As rough ballparks: a 23–25mm road tire often runs 80–100 PSI, a 28–32mm closer to 60–80, gravel/hybrid roughly 40–60, and mountain bikes often 22–30. Those are starting points — fine-tune by feel and you'll quickly find your number.</p>
+    </details>
+    <details>
+      <summary>Presta vs schrader — how do I pump each?</summary>
+      <p>A <strong>schrader</strong> valve is the fat, car-style valve — pump head goes straight on, just like a car or a gas-station air pump. A <strong>presta</strong> valve is skinny and tall with a small locknut on top: unscrew that little nut a couple of turns first (you'll feel it free up), then push the pump head on square and pump. When you're done, pull the pump head straight off and gently finger-tighten the locknut again — snug, not cranked — and replace the dust cap. Don't bend a presta valve sideways; it can snap. Most modern floor pumps fit both valves with no changeover, but a cheap brass presta↔schrader adapter lets a schrader-only pump (or a gas-station air hose, carefully) fill a presta.</p>
+    </details>
+    <details>
+      <summary>Why do my bike tires lose air so fast?</summary>
+      <p>It's normal — and physics. A bike tire holds a tiny volume of air at relatively high pressure, so even a small amount of seepage shows up as a big percentage drop. Thin butyl tubes are slightly porous and let air diffuse out over days; latex tubes leak faster still, and tubeless can seep through the casing. The higher the pressure, the faster it falls, which is why a 90-PSI road tire feels soft within days while a 25-PSI mountain tire holds for a couple of weeks. If a tire goes from firm to flat-ish in a day, though, that's not normal diffusion — suspect a slow puncture or a bad valve and check the signs section.</p>
+    </details>
+    <details>
+      <summary>Can I just squeeze the tire to check?</summary>
+      <p>No — squeezing is a rough "is there air in it at all?" test, not a pressure check. Your thumb genuinely can't tell 40 PSI from 70, and that 30-PSI gap is the difference between a fast, planted ride and a squirmy, pinch-flat-prone one. A firm-feeling tire can still be 20 PSI under where it rides best. Use a gauge — a floor pump with a built-in gauge is the easiest, or a small stick or dial gauge. Pressure is a number; treat it like one. Thumb-testing is fine for a quick "did it go flat overnight" glance, but it's no substitute for actually reading the PSI.</p>
+    </details>
+    <details>
+      <summary>What pressure for road vs gravel vs mountain vs tubeless?</summary>
+      <p>Different tires live in very different pressure worlds, and the sidewall range is always the final word. Roughly: <strong>road</strong> tires run high — a narrow 23–25mm tire often 80–100 PSI, wider 28–32mm road tires more like 60–80. <strong>Gravel/hybrid</strong> sits lower, around 40–60 PSI, for grip and comfort on loose surfaces. <strong>Mountain</strong> tires run much lower, often 22–30 PSI, to conform to rough terrain and grip. <strong>Tubeless</strong> setups let you go lower still (often 5–10 PSI below an equivalent tubed tire) because there's no tube to pinch — but they have a <em>minimum</em> pressure to keep the bead seated and avoid burping, so don't drop too far. Lighter riders go toward the low end of any range, heavier riders toward the high end.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The fastest, cheapest upgrade on the bike — that quietly leaks away every week.</h2>
+        <p>Bike tires go soft in days, and most flats and sluggish rides trace right back to pressure. Let Upkeep Ledger nudge the 30-second check so every ride rolls fast and flat-free — logged alongside the chain lube, the brake pads, and the annual tune-up that keep the whole bike happy.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-bike-tire-pressure&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-bike-tire-pressure&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This is the bike version; for cars see <a href="check-tire-pressure.html">checking car tire pressure</a>, and round out the bike kit with <a href="clean-bike-chain.html">cleaning and lubing the chain</a>, <a href="replace-bike-chain.html">replacing a worn chain</a>, and the annual <a href="bike-tune-up.html">tune-up</a>. Pressure figures and ranges are typical starting points for planning — the range printed on your tire's sidewall, and the rim's limits for tubeless, always outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { tire: null, ride: null, leak: null, valve: null };
+
+  var FREQ_LABEL = {
+    0.3: "Before every ride",
+    1: "Every week",
+    2: "Every 2 weeks"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var weeks = 2;
+    var tighten = false;
+
+    /* Tire type — the biggest driver of how fast it goes soft */
+    if (s.tire === "road" || s.tire === "tubeless") {
+      weeks = 0.3;
+      tighten = true;
+      if (s.tire === "road") {
+        reasons.push("Skinny, high-pressure road tires hold a tiny air volume at 80–100 PSI, so even normal seepage shows up fast — they can feel soft within a few days and are best checked before most rides.");
+      } else {
+        reasons.push("Tubeless setups can seep air through the casing as they sit, and they have a minimum pressure to keep the bead seated, so a quick check before each ride keeps them sealed and predictable.");
+      }
+    } else if (s.tire === "gravel") {
+      if (weeks > 1) weeks = 1;
+      reasons.push("Gravel and hybrid tires run a middle pressure, so they hold better than road tires but still drift down over a week — a weekly check keeps them where you like them.");
+    } else if (s.tire === "mtb") {
+      reasons.push("Wide, low-pressure mountain tires hold their (lower) pressure relatively well, so every week or two is usually plenty — though they're the most sensitive to a few PSI, so still gauge them.");
+    }
+
+    /* Ride frequency */
+    if (s.ride === "daily") {
+      if (weeks > 1) weeks = 1;
+      reasons.push("Riding most days means a quick squeeze-and-gauge before you roll is cheap insurance — and it folds naturally into your routine.");
+    } else if (s.ride === "rarely") {
+      reasons.push("A bike that sits between rides has been quietly losing air the whole time it sat, so always check before you head out no matter what the calendar says.");
+    } else {
+      reasons.push("Riding once or twice a week, a check every week or so keeps you ahead of the slow leak-down between outings.");
+    }
+
+    /* How fast they go soft */
+    if (s.leak === "fast") {
+      weeks = 0.3;
+      tighten = true;
+      reasons.push("If your tires go noticeably soft within a few days, check before each ride for now — and read the signs section, because unusually fast leaking can mean a slow puncture or a tired valve worth fixing.");
+    } else if (s.leak === "slow") {
+      reasons.push("Tires that hold well for a couple of weeks give you more slack, so you can lean toward the longer end of the interval.");
+    } else {
+      reasons.push("Since you haven't tracked how fast they drop, start by checking on the shorter side and watch how much they've lost each time — you'll quickly learn your tires' pace.");
+    }
+
+    /* Valve type — doesn't change cadence, but flavors the advice */
+    if (s.valve === "presta") {
+      reasons.push("Yours are presta valves, so remember the routine: unscrew the tiny top nut before pumping, finger-tighten it after, and never bend the valve sideways.");
+    } else if (s.valve === "schrader") {
+      reasons.push("Yours are schrader valves — the same as a car — so any pump head or gas-station air hose fits, no top nut to fuss with.");
+    } else {
+      reasons.push("Check which valve you have before you pump: a presta is skinny with a small top locknut, a schrader is the fat, car-style valve.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.tire === "tubeless") {
+      note = "<strong>Tubeless has a floor, not just a ceiling:</strong> stay above the minimum that keeps the bead seated, top up sealant now and then, and don't over-inflate — much of tubeless's magic is running lower than a tubed tire safely.";
+    } else if (s.tire === "road") {
+      note = "<strong>Road tires reward a gauge:</strong> the difference between 75 and 90 PSI is a different bike, and you'll never feel it by thumb. A floor pump with a built-in gauge makes the before-ride top-off a 30-second habit.";
+    } else if (s.leak === "fast") {
+      note = "<strong>Fast leak-down is worth investigating:</strong> if a tire's soft within a day, suspect a slow puncture, a porous tube, or a leaking valve — patch or swap the tube before you just keep pumping it.";
+    } else if (s.tire === "mtb") {
+      note = "<strong>Mountain tires live on a few PSI:</strong> a couple of pounds either way changes grip and feel a lot, so gauge them rather than guessing — and lower for loose, rocky ground, a touch higher for hardpack and speed.";
+    } else {
+      note = "<strong>Make it a pre-ride reflex:</strong> a 30-second gauge-and-top-off before you head out catches the slow leak-down before it costs you a flat or a sluggish ride.";
+    }
+
+    return { weeks: weeks, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.tire || !quizState.ride || !quizState.leak || !quizState.valve) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: check it " + FREQ_LABEL[r.weeks].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Read the range on the sidewall, then <strong>pump to a target with a gauge, finish the valve cleanly, and tune by feel</strong>. Why this cadence:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Find your range", text: "Read the PSI range molded into the tire sidewall", note: "Find the recommended minimum and maximum (often a bar figure too) printed on the side of the tire. That's your guardrail — stay inside it and never exceed the max (or, for tubeless, the rim's lower max)." },
+    { phase: "Find your range", text: "Pick a target for your weight and the surface", note: "Within the range, lean low if you're lighter or riding rough/loose ground, high if you're heavier or on smooth pavement. Pick a number to aim for rather than 'feels firm.'" },
+    { phase: "Find your range", text: "Identify your valve — presta or schrader", note: "A presta is skinny and tall with a small locknut on top; a schrader is the fat, car-style valve. Set your pump head to match, or grab a presta↔schrader adapter if needed." },
+    { phase: "Read the pressure", text: "Remove the dust cap and prep the valve", note: "Unscrew the dust cap. On a presta, unscrew the tiny top locknut a couple of turns until it frees up — that's what lets air in and out. Don't bend the valve sideways." },
+    { phase: "Read the pressure", text: "Gauge the current pressure (don't thumb-test)", note: "Press the gauge or pump head squarely onto the valve and read the number. Squeezing the tire can't tell 40 PSI from 70 — let the gauge tell you how far down it's drifted." },
+    { phase: "Inflate to target", text: "Seat the pump head square and lock it on", note: "Push the pump head straight onto the valve and flip the lock lever if it has one. A square seat is what stops air hissing out around the valve as you pump." },
+    { phase: "Inflate to target", text: "Pump to your target while watching the gauge", note: "Inflate steadily and stop at your target number — not at 'feels hard.' If you overshoot, press the valve to bleed a little back out and re-read." },
+    { phase: "Inflate to target", text: "Pull the pump head straight off", note: "Lift or pull the head off in line with the valve, not at an angle — yanking sideways can damage a presta or release a burst of air. Repeat the whole process on the other tire." },
+    { phase: "Finish & tune", text: "Re-tighten the presta locknut and replace caps", note: "On a presta, gently finger-tighten the small locknut again — snug, not cranked — then put the dust cap back. A schrader just needs its cap." },
+    { phase: "Finish & tune", text: "Spin the tires and check for cuts, bulges, or wear", note: "While you're here, look the tread and sidewall over for cuts, embedded glass, bulges, or cracking — a 30-second pressure check is the perfect time to catch a tire about to fail." },
+    { phase: "Finish & tune", text: "Note the date and how soft they were", note: "Jot down when you checked and how much they'd lost. That tells you your tires' real leak-down pace so you can set the right interval — and remember it leaks down again starting now." }
+  ];
+
+  var LS_KEY = "upkeepguides:check-bike-tire-pressure:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

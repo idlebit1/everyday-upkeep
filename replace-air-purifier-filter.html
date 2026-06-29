@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace your air purifier filter — UpkeepGuides.com</title>
+<meta name="description" content="How to replace your air purifier filter: why a loaded HEPA filters less and chokes airflow, why true HEPA filters are never washable, how to clean the pre-filter and carbon layers on their own schedules, reset the indicator, and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace your air purifier filter — UpkeepGuides.com">
+<meta property="og:description" content="How to replace your air purifier filter: why a loaded HEPA filters less and chokes airflow, why true HEPA filters are never washable, how to clean the pre-filter and carbon layers on their own schedules, reset the indicator, and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/replace-air-purifier-filter.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace your air purifier filter — UpkeepGuides.com">
+<meta name="twitter:description" content="How to replace your air purifier filter: why a loaded HEPA filters less and chokes airflow, why true HEPA filters are never washable, how to clean the pre-filter and carbon layers on their own schedules, reset the indicator, and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 6 months</span>
+      <h1>Replace Your Air Purifier Filter</h1>
+      <p class="lede">A HEPA filter only cleans the air while it still has room to hold what it catches. As it loads up with dust, dander, pollen, and smoke, it captures less and less — and at the same time it strangles the airflow, so the fan hums along moving almost nothing. The unit sounds like it's working, the room feels stuffier, and you wonder why the allergies are back. Swap the HEPA on schedule, clean or change the pre-filter and carbon layers on their own clocks, and reset the indicator — and the purifier goes back to actually pulling the bad stuff out of the air instead of just making white noise. The one rule that catches everyone: a true HEPA filter is not washable. Wash it and you destroy it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ HEPA <em>every 6–12 months</em></span>
+        <span class="chip">⏱️ <em>~5 min</em> to swap</span>
+        <span class="chip">🌬️ <em>Cleaner air &amp; quieter run</em></span>
+        <span class="chip">💸 Costs <em>~$20–60</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing an air purifier filter: a tower air purifier sits with its back panel open, a hand pulls a grey, dust-loaded cylindrical HEPA filter out of the unit, a clean white replacement filter stands ready beside it, a green indicator light glows on the front, and clean-air arcs rise from the vents at the top in a cozy room">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- clean-air arcs rising from the top of the purifier -->
+      <g fill="none" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round" opacity="0.75">
+        <path d="M196 88 q22 -26 44 0"/>
+        <path d="M212 70 q28 -30 56 0"/>
+        <path d="M230 54 q22 -22 44 0"/>
+      </g>
+      <g fill="#dce8ee">
+        <circle cx="188" cy="96" r="4"/>
+        <circle cx="276" cy="78" r="3.4"/>
+        <circle cx="252" cy="58" r="3"/>
+      </g>
+
+      <!-- purifier body (tower) -->
+      <rect x="150" y="104" width="140" height="250" rx="22" fill="#fffdf8" stroke="#b9b1a3" stroke-width="6"/>
+      <!-- top vent grille (clean air out) -->
+      <rect x="170" y="116" width="100" height="26" rx="13" fill="#dce8ee"/>
+      <g stroke="#9cc3d4" stroke-width="3" stroke-linecap="round">
+        <line x1="182" y1="122" x2="182" y2="136"/>
+        <line x1="196" y1="122" x2="196" y2="136"/>
+        <line x1="210" y1="122" x2="210" y2="136"/>
+        <line x1="224" y1="122" x2="224" y2="136"/>
+        <line x1="238" y1="122" x2="238" y2="136"/>
+        <line x1="252" y1="122" x2="252" y2="136"/>
+      </g>
+      <!-- control panel + green indicator light (filter OK) -->
+      <circle cx="220" cy="166" r="13" fill="#e3efe8" stroke="#b9b1a3" stroke-width="2"/>
+      <circle cx="220" cy="166" r="6" fill="#5e9a78"/>
+      <rect x="200" y="186" width="40" height="6" rx="3" fill="#e9e2d8"/>
+
+      <!-- open back panel, swung out to the left, exposing the filter cavity -->
+      <path d="M150 196 l-58 -14 v150 l58 -14 z" fill="#efe7d8" stroke="#b9b1a3" stroke-width="5"/>
+      <g stroke="#c9a06b" stroke-width="2.4" stroke-linecap="round" opacity="0.8">
+        <line x1="104" y1="200" x2="104" y2="312"/>
+        <line x1="118" y1="198" x2="118" y2="314"/>
+        <line x1="132" y1="197" x2="132" y2="315"/>
+      </g>
+      <!-- the dark cavity inside where the filter sits -->
+      <rect x="166" y="196" width="48" height="130" rx="8" fill="#8a6a4f" opacity="0.35"/>
+
+      <!-- the OLD grey, loaded HEPA filter being pulled out -->
+      <g>
+        <rect x="206" y="198" width="58" height="128" rx="10" fill="#b9b1a3"/>
+        <rect x="206" y="198" width="58" height="128" rx="10" fill="#8a6a4f" opacity="0.28"/>
+        <!-- accordion pleats -->
+        <g stroke="#8a6a4f" stroke-width="2.4">
+          <line x1="216" y1="206" x2="216" y2="318"/>
+          <line x1="226" y1="206" x2="226" y2="318"/>
+          <line x1="236" y1="206" x2="236" y2="318"/>
+          <line x1="246" y1="206" x2="246" y2="318"/>
+          <line x1="256" y1="206" x2="256" y2="318"/>
+        </g>
+        <!-- dust caked on it -->
+        <g fill="#8a6a4f" opacity="0.6">
+          <circle cx="221" cy="224" r="2.4"/>
+          <circle cx="241" cy="248" r="2"/>
+          <circle cx="231" cy="288" r="2.6"/>
+          <circle cx="252" cy="300" r="1.8"/>
+        </g>
+        <text x="208" y="344" font-size="11" fill="#6b7376" font-weight="700">loaded — toss</text>
+      </g>
+
+      <!-- hand pulling the old filter out -->
+      <ellipse cx="276" cy="262" rx="17" ry="13" fill="#e8b48f"/>
+      <path d="M266 256 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M276 274 q26 18 52 8" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- the CLEAN white replacement filter standing ready, front-right -->
+      <g>
+        <rect x="400" y="246" width="64" height="120" rx="12" fill="#fffdf8" stroke="#5e9a78" stroke-width="4"/>
+        <g stroke="#dce8ee" stroke-width="2.6">
+          <line x1="411" y1="254" x2="411" y2="358"/>
+          <line x1="422" y1="254" x2="422" y2="358"/>
+          <line x1="433" y1="254" x2="433" y2="358"/>
+          <line x1="444" y1="254" x2="444" y2="358"/>
+          <line x1="455" y1="254" x2="455" y2="358"/>
+        </g>
+        <!-- fresh / sparkle on the new filter -->
+        <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+          <path d="M432 288 l0 12 M426 294 l12 0"/>
+        </g>
+        <text x="404" y="382" font-size="11" fill="#3e7c59" font-weight="700">new HEPA</text>
+      </g>
+
+      <!-- small plant for warmth, far right -->
+      <path d="M506 348 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <path d="M518 348 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M518 348 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="503" cy="316" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 503 316)"/>
+      <ellipse cx="533" cy="320" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 533 320)"/>
+
+      <!-- a low side table / surface line under the new filter and plant -->
+      <rect x="384" y="366" width="170" height="10" rx="4" fill="#c9a06b"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">An air purifier is one of the few appliances that quietly stops doing its job long before it stops running. The filter is a sponge with a fixed capacity, and once it's full it can't take any more — yet the fan keeps spinning and the light keeps glowing, so nothing tells you the air has stopped getting cleaner. Here's what a neglected filter actually does:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="7" width="22" height="22" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <g stroke="#8a6a4f" stroke-width="1.8">
+            <line x1="12" y1="9" x2="12" y2="27"/>
+            <line x1="18" y1="9" x2="18" y2="27"/>
+            <line x1="24" y1="9" x2="24" y2="27"/>
+          </g>
+          <g fill="#8a6a4f" opacity="0.65">
+            <circle cx="14" cy="14" r="1.6"/>
+            <circle cx="21" cy="19" r="1.8"/>
+            <circle cx="16" cy="24" r="1.4"/>
+          </g>
+          <path d="M30 12 l4 -2 M30 18 l4 0 M30 24 l4 2" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A full filter stops catching</h3>
+        <p>Once the media is packed with dust, dander, smoke, and allergens, there's nowhere left for the next particle to land — so it passes straight through. The purifier runs, but the air it pushes out is barely cleaner than the air it pulled in.</p>
+        <span class="cost">Pushing dirty air right back out</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="11" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M18 18 m-7 0 a7 7 0 1 1 14 0" fill="none" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M18 11 l0 7 l5 3" stroke="#8a6a4f" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M18 5 q-3 2 0 4 q3 -2 0 -4" fill="#c96f4a"/>
+        </svg></div>
+        <h3>Clogged airflow, harder work</h3>
+        <p>A choked filter is a wall the fan has to fight. The unit moves far less air per minute, so it cleans a smaller room more slowly — and strains to do it, which means more noise and more electricity for less and less benefit.</p>
+        <span class="cost">More noise, more energy, less air</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M10 30 q-2 -8 4 -12 q-2 -7 4 -10 q6 3 4 10 q6 4 4 12 z" fill="#5e9a78"/>
+          <path d="M18 10 q1 8 0 18" stroke="#2c5a40" stroke-width="1.6" fill="none"/>
+          <g fill="#8a6a4f" opacity="0.7">
+            <circle cx="22" cy="9" r="1.6"/>
+            <circle cx="27" cy="14" r="1.4"/>
+            <circle cx="25" cy="20" r="1.2"/>
+          </g>
+        </svg></div>
+        <h3>Damp filters grow mold</h3>
+        <p>A filter packed with organic dust that gets damp — high humidity, a spill, a wet pre-filter put back too soon — becomes a place for mold and mildew to grow. Then the unit does the opposite of its job: it blows musty odors and spores back into the room.</p>
+        <span class="cost">Musty odors &amp; spores blown around</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="6" height="18" rx="1.5" fill="#7fb3c8"/>
+          <rect x="15" y="9" width="6" height="18" rx="1.5" fill="#c96f4a"/>
+          <rect x="24" y="9" width="6" height="18" rx="1.5" fill="#5e9a78"/>
+          <path d="M9 7 l0 -2 M18 7 l0 -2 M27 7 l0 -2" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="9" cy="31" r="1.6" fill="#7fb3c8"/>
+          <circle cx="18" cy="31" r="1.6" fill="#c96f4a"/>
+          <circle cx="27" cy="31" r="1.6" fill="#5e9a78"/>
+        </svg></div>
+        <h3>Three layers, three clocks</h3>
+        <p>The pre-filter, the HEPA, and the carbon layer wear out on different schedules — the pre-filter wants cleaning monthly, the HEPA replacing in 6–12 months, the carbon sooner if you want odor control. Ignore the shorter clocks and you lose odor control and shorten the HEPA's life.</p>
+        <span class="cost">Lost odor control, a shorter-lived HEPA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> change it?</h2>
+    <p class="sub">For most homes, the HEPA filter runs 6 to 12 months and the pre-filter wants a vacuum or rinse about monthly. But pets, smoking, wildfire-smoke season, allergies in the house, or running the unit around the clock all eat through a filter faster — and a true HEPA gets replaced, while a washable pre-filter just gets cleaned. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="load">
+        <div class="q-label">1. What's the air it's cleaning?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Pets, smoking, wildfire smoke, or heavy dust</button>
+          <button class="pill" data-v="some">A bit of dust or the odd dusty stretch</button>
+          <button class="pill" data-v="clean">A pretty clean, low-dust home</button>
+        </div>
+        <div class="q-hint">Dander, smoke, and dust are exactly what loads a filter, so a home full of them fills the media far faster than a clean, low-traffic room — and during wildfire season even a normally tidy house can clog a filter in weeks.</div>
+      </div>
+      <div class="quiz-q" data-q="runtime">
+        <div class="q-label">2. How much does it run?</div>
+        <div class="pills">
+          <button class="pill" data-v="always">Basically 24/7, often on high</button>
+          <button class="pill" data-v="daily">A good chunk of most days</button>
+          <button class="pill" data-v="occasional">Just now and then</button>
+        </div>
+        <div class="q-hint">A filter's life is really about how much air has passed through it, not the calendar — running it constantly on high pulls many times the air of an occasional low-fan session, so the same filter is spent much sooner.</div>
+      </div>
+      <div class="quiz-q" data-q="who">
+        <div class="q-label">3. Who's breathing this air?</div>
+        <div class="pills">
+          <button class="pill" data-v="sensitive">Allergies, asthma, kids, or someone sensitive</button>
+          <button class="pill" data-v="mild">Mild seasonal stuff, nothing serious</button>
+          <button class="pill" data-v="none">No particular sensitivities</button>
+        </div>
+        <div class="q-hint">If the purifier was bought for allergies or asthma, a half-spent filter quietly undercuts the whole point — sensitive lungs are worth a fresher filter and a tighter schedule than a household that just likes clean air.</div>
+      </div>
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">4. What filter does it use?</div>
+        <div class="pills">
+          <button class="pill" data-v="hepacarbon">True HEPA + a carbon (odor) layer</button>
+          <button class="pill" data-v="hepa">True HEPA, no real carbon stage</button>
+          <button class="pill" data-v="washable">Mostly a washable pre-filter</button>
+        </div>
+        <div class="q-hint">A true HEPA gets replaced on schedule (never washed), while a carbon layer fades faster if you care about odors. A washable pre-filter, by contrast, just gets cleaned monthly — so the kind of filter you have changes what "due" even means.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A replacement HEPA filter runs about $20–60, with carbon and pre-filters usually cheaper or bundled in. Set that against what a neglected filter actually costs you: a purifier that's become expensive white noise, electricity spent pushing air through a wall of dust, and the allergy or asthma symptoms the machine was bought to prevent quietly coming back. Vacuuming the pre-filter between changes stretches the HEPA's life and keeps the bill down:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–60</div><div class="l">a replacement HEPA filter — carbon and pre-filters usually less, and often bundled together for your model</div></div>
+        <div class="calc-stat"><div class="v">~5 min</div><div class="l">to actually do the swap — unplug, open, pull the old filter, seat the new one, close, reset</div></div>
+        <div class="calc-stat"><div class="v bad">~$0</div><div class="l">vacuuming the washable pre-filter monthly — costs nothing and noticeably extends the HEPA's life</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧹 Vacuuming the pre-filter between changes</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌀 A fresh HEPA filter on schedule</span><span>$20–60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔌 Wasted electricity running a choked unit</span><span>Pennies a day that add up</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:34%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🤧 Allergy &amp; asthma symptoms creeping back</span><span>The whole point, undone</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🗑️ A mold-grown filter, or a ruined washed HEPA</span><span>Replace it — or the unit</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:90%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $20–60 filter once or twice a year, plus a free monthly pre-filter vacuum</strong>, against a purifier that's become costly white noise, electricity burned for almost no cleaning, and the very symptoms the machine was meant to stop. Change the HEPA on schedule, clean the pre-filter, and reset the indicator, and the unit keeps earning its keep instead of just glowing in the corner.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your air purifier filter</h2>
+    <p class="sub">The job itself takes about five minutes: unplug it, open the panel, pull the loaded HEPA, drop in the exact replacement the right way around, clean the pre-filter while you're in there, close it up, plug in, and reset the indicator. The catches are all in the details — especially "never wash a true HEPA" and "match the exact filter." Read the techniques first, then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Before you open it — unplug, and never wash a true HEPA</h3>
+      <ul>
+        <li><strong>Unplug the purifier before you open it.</strong> There's a fan and electronics inside; pull the plug first so nothing spins up while your hands are in the housing. It also resets cleanly when you power it back on.</li>
+        <li><strong>True HEPA filters are NOT washable — washing destroys them.</strong> Water collapses and tears the fine fiber media, and it never filters properly again. Only clean a part the manual specifically calls washable — almost always the pre-filter, never the HEPA itself.</li>
+        <li><strong>Never run the unit with no filter or a wet filter.</strong> With no filter it just throws dust around the room; with a damp one it grows mold and blows musty air back at you. Always have the replacement on hand before you pull the old one.</li>
+        <li><strong>Match the EXACT replacement filter for your model.</strong> Universal and off-brand filters often fit loosely and let unfiltered air leak around the edges, so the unit reads "clean" while bypassing the media. Buy the filter listed for your model number.</li>
+        <li><strong>Treat the old filter as loaded with allergens.</strong> Everything it trapped is still in it. Bag it before it leaves the unit, and if you're sensitive, do the swap outdoors or wear a dust mask so you're not breathing the cloud you knock loose.</li>
+        <li><strong>Reset the filter-change indicator, and let any washed pre-filter dry completely.</strong> Reset so the countdown actually tracks the new filter — and never reinstall a pre-filter that's even slightly damp, or you've just built yourself a mold farm.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">The exact replacement HEPA for your model</span>
+      <span class="tool-chip">A replacement carbon filter (if it uses one)</span>
+      <span class="tool-chip">A vacuum with a brush attachment</span>
+      <span class="tool-chip">A trash bag for the old filter</span>
+      <span class="tool-chip">A damp cloth for the housing</span>
+      <span class="tool-chip">A dust mask (if you're sensitive)</span>
+      <span class="tool-chip">Your model number or manual</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of unplugging an air purifier and opening the filter panel, with the plug pulled and the back or side panel swung open to reveal the filter compartment and its airflow arrows">
+          <rect x="84" y="24" width="92" height="132" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="5"/>
+          <rect x="96" y="32" width="68" height="18" rx="9" fill="#dce8ee"/>
+          <!-- open panel swung to the right -->
+          <path d="M176 50 l40 -10 v100 l-40 -10 z" fill="#efe7d8" stroke="#b9b1a3" stroke-width="4"/>
+          <!-- airflow arrows on the panel -->
+          <path d="M186 70 l16 0 m-5 -4 l5 4 l-5 4" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M186 110 l16 0 m-5 -4 l5 4 l-5 4" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- the plug pulled out -->
+          <rect x="34" y="118" width="22" height="14" rx="3" fill="#8a6a4f"/>
+          <line x1="56" y1="125" x2="80" y2="135" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="34" y1="122" x2="26" y2="122" stroke="#c9a06b" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="34" y1="128" x2="26" y2="128" stroke="#c9a06b" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="20" y="150" font-size="11" fill="#d9663f" font-weight="700">UNPLUG first</text>
+        </svg>
+        <h4>Unplug &amp; open the panel</h4>
+        <p>Pull the plug, then find the filter compartment — it's on the back, a side, or the bottom depending on the model. Note how the filter sits and which way the airflow arrows point so the new one goes back the same way.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pulling the old grey loaded HEPA filter out and comparing it to a clean white one, with a no-water symbol over the dirty filter to show it must not be washed">
+          <!-- old grey loaded filter -->
+          <rect x="44" y="36" width="64" height="108" rx="10" fill="#b9b1a3"/>
+          <g stroke="#8a6a4f" stroke-width="2.4">
+            <line x1="56" y1="44" x2="56" y2="136"/>
+            <line x1="68" y1="44" x2="68" y2="136"/>
+            <line x1="80" y1="44" x2="80" y2="136"/>
+            <line x1="92" y1="44" x2="92" y2="136"/>
+          </g>
+          <g fill="#8a6a4f" opacity="0.6">
+            <circle cx="62" cy="60" r="2.2"/>
+            <circle cx="84" cy="92" r="2"/>
+            <circle cx="70" cy="120" r="2.4"/>
+          </g>
+          <!-- no-wash symbol over the old filter -->
+          <circle cx="76" cy="90" r="22" fill="none" stroke="#d9663f" stroke-width="3"/>
+          <line x1="61" y1="75" x2="91" y2="105" stroke="#d9663f" stroke-width="3"/>
+          <path d="M68 90 q8 -8 16 0 q-8 8 -16 0 z" fill="#7fb3c8" opacity="0.7"/>
+          <!-- clean white filter -->
+          <rect x="172" y="36" width="64" height="108" rx="10" fill="#fffdf8" stroke="#5e9a78" stroke-width="4"/>
+          <g stroke="#dce8ee" stroke-width="2.4">
+            <line x1="184" y1="44" x2="184" y2="136"/>
+            <line x1="196" y1="44" x2="196" y2="136"/>
+            <line x1="208" y1="44" x2="208" y2="136"/>
+            <line x1="220" y1="44" x2="220" y2="136"/>
+          </g>
+          <text x="46" y="162" font-size="11" fill="#6b7376" font-weight="700">grey = replace</text>
+          <text x="178" y="162" font-size="11" fill="#3e7c59" font-weight="700">don't wash it</text>
+        </svg>
+        <h4>Pull the old HEPA &amp; compare</h4>
+        <p>Slide out the HEPA and look at it. Grey, packed flat, or past its date means replace — drop in the new one instead. And do not be tempted to wash it: water destroys a true HEPA's media for good.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of vacuuming or rinsing the washable pre-filter screen and standing it up to dry, the part you clean monthly rather than replace">
+          <!-- the pre-filter mesh screen -->
+          <rect x="40" y="30" width="96" height="120" rx="10" fill="#dce8ee" stroke="#5e9a78" stroke-width="4"/>
+          <g stroke="#9cc3d4" stroke-width="2">
+            <line x1="54" y1="34" x2="54" y2="146"/>
+            <line x1="72" y1="34" x2="72" y2="146"/>
+            <line x1="90" y1="34" x2="90" y2="146"/>
+            <line x1="108" y1="34" x2="108" y2="146"/>
+            <line x1="122" y1="34" x2="122" y2="146"/>
+            <line x1="44" y1="56" x2="132" y2="56"/>
+            <line x1="44" y1="86" x2="132" y2="86"/>
+            <line x1="44" y1="116" x2="132" y2="116"/>
+          </g>
+          <!-- vacuum nozzle cleaning it -->
+          <rect x="156" y="50" width="14" height="40" rx="4" fill="#5e9a78" transform="rotate(20 163 70)"/>
+          <path d="M170 92 q12 -6 22 0" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <!-- water drops to show rinse-and-dry option -->
+          <path d="M210 110 q3 6 0 10 q-3 -4 0 -10 z" fill="#7fb3c8"/>
+          <path d="M224 122 q3 6 0 10 q-3 -4 0 -10 z" fill="#7fb3c8"/>
+          <text x="150" y="150" font-size="11" fill="#3e7c59" font-weight="700">clean monthly, dry fully</text>
+        </svg>
+        <h4>Clean the washable pre-filter</h4>
+        <p>The outer screen is the part you actually clean — vacuum it, or rinse it if the manual allows, and stand it up to dry completely. Do this roughly monthly and the HEPA behind it lasts noticeably longer.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking and replacing the dark carbon odor filter layer on its own schedule, with a faded old layer beside a fresh black one">
+          <!-- old, faded carbon layer -->
+          <rect x="46" y="38" width="60" height="104" rx="8" fill="#8a6a4f" opacity="0.5"/>
+          <g stroke="#b9b1a3" stroke-width="2" opacity="0.8">
+            <circle cx="62" cy="58" r="3"/>
+            <circle cx="86" cy="74" r="3"/>
+            <circle cx="68" cy="100" r="3"/>
+            <circle cx="90" cy="120" r="3"/>
+          </g>
+          <text x="48" y="160" font-size="11" fill="#6b7376">faded, weak on odors</text>
+          <!-- arrow to fresh -->
+          <path d="M120 90 l30 0 m-9 -6 l9 6 l-9 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- fresh carbon layer -->
+          <rect x="168" y="38" width="60" height="104" rx="8" fill="#8a6a4f"/>
+          <g fill="#c9a06b">
+            <circle cx="184" cy="58" r="3"/>
+            <circle cx="208" cy="74" r="3"/>
+            <circle cx="190" cy="100" r="3"/>
+            <circle cx="212" cy="120" r="3"/>
+          </g>
+          <text x="172" y="160" font-size="11" fill="#3e7c59" font-weight="700">fresh carbon</text>
+        </svg>
+        <h4>Check the carbon (odor) layer</h4>
+        <p>The carbon layer handles smells, gases, and smoke, and it fades on its own clock — often sooner than the HEPA. If odors are creeping back, swap or refresh the carbon stage even when the HEPA still has life left.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of seating the new filter the correct way around, closing the panel, plugging in, and pressing the reset button so the filter indicator light turns from red back to green">
+          <rect x="64" y="22" width="92" height="132" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="5"/>
+          <!-- new filter seated, airflow arrow -->
+          <rect x="82" y="40" width="56" height="96" rx="8" fill="#dce8ee"/>
+          <path d="M96 88 l30 0 m-8 -6 l8 6 l-8 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="86" y="34" font-size="9.5" fill="#6b7376">arrows in</text>
+          <!-- reset button, light turning green -->
+          <circle cx="200" cy="70" r="18" fill="#e3efe8" stroke="#b9b1a3" stroke-width="2.4"/>
+          <circle cx="200" cy="70" r="8" fill="#5e9a78"/>
+          <path d="M180 96 q20 14 40 0" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <!-- finger pressing reset -->
+          <ellipse cx="216" cy="100" rx="12" ry="9" fill="#e8b48f"/>
+          <path d="M210 92 q-3 4 0 8" stroke="#d99c73" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <text x="166" y="150" font-size="11" fill="#3e7c59" font-weight="700">seat, close, RESET</text>
+        </svg>
+        <h4>Seat it, close up &amp; reset</h4>
+        <p>Set the new filter in the right way around — match the airflow arrows — then close the panel, plug in, and reset the filter indicator so the countdown is accurate. Then log the date so you're not guessing next time.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Filter-change progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 New HEPA seated, pre-filter cleaned, carbon checked, indicator reset, and the date logged — your purifier is back to actually cleaning the air. Next HEPA change in about 6–12 months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your filter is overdue — and when to service the unit</h2>
+    <p class="sub">A purifier doing its job is almost silent about it: steady quiet airflow, fresh-smelling air, a calm indicator light. These are the signals the filters are spent — and the cases where a fresh filter won't fix it and the unit itself needs attention:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The filter-change light is on (or won't reset).</strong> That indicator is your first cue — change the filter, then reset it. If it comes right back on after a genuine reset with a new filter, the sensor or reset procedure is worth a closer look in the manual.</li>
+        <li><strong>Noticeably weaker airflow.</strong> Hold a hand over the outlet — if the breeze has gone faint compared to when it was new, the filter is choked and the fan is fighting a wall of dust. A fresh filter should restore the push.</li>
+        <li><strong>Odors or dust coming back.</strong> If smells you used to not notice have returned, or surfaces are dustier again, the carbon and HEPA stages are spent and particles and gases are passing straight through.</li>
+        <li><strong>A musty smell from the unit itself.</strong> A damp, dust-packed filter can grow mold and blow it back into the room. Replace the filter — and if the odor lingers after a fresh one, wipe out the housing and make sure nothing inside stays wet.</li>
+        <li><strong>Allergy or asthma symptoms creeping back despite running it.</strong> The clearest sign of all: the machine is on, but the very symptoms it was bought to ease are returning. The filter has stopped capturing — change it.</li>
+        <li><strong>When a new filter doesn't restore airflow.</strong> If you've fitted the correct fresh filter, cleaned the pre-filter, and the airflow is still weak or the unit is louder than it should be, the fan or motor may be failing — that's a service or replacement call, not a filter job.</li>
+        <li><strong>Pro tip:</strong> the change-the-filter logic here is the same one behind your <a href="replace-hvac-filter.html">HVAC filter</a> and the <a href="replace-water-filter.html">refrigerator water filter</a> — the household filter cluster. Put all three on a schedule together and you stop letting any of them quietly slip.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I replace my air purifier filter?</summary>
+      <p>For a true HEPA filter, plan on every 6 to 12 months for most homes — closer to every 6 months if you have pets, smokers, allergies or asthma in the house, run the unit around the clock, or live through a smoky wildfire season; closer to 12 if it's a clean, low-dust home running occasionally. What really matters is how much air has passed through the filter, not the date on the calendar, so a unit on high 24/7 will need the HEPA sooner than the box suggests. The other layers are on their own clocks: the washable pre-filter wants a vacuum or rinse about monthly, and the carbon (odor) layer often fades faster than the HEPA, so refresh it when smells start coming back. Whatever schedule you land on, reset the indicator and log the date so the next change isn't a guess.</p>
+    </details>
+    <details>
+      <summary>Can I wash and reuse a HEPA filter?</summary>
+      <p>No — and this is the mistake that quietly kills more purifiers than anything else. A true HEPA filter cleans the air with an extremely fine, pleated mat of fibers, and that mat is what does the work. Run it under water and the fibers collapse, mat together, and tear; even if it looks fine once it dries, it no longer filters to HEPA standard, and it's likely warped enough to let air leak around the edges too. Some manufacturers sell "washable" or "permanent" filters, but those are a different, coarser type — if your manual doesn't explicitly say a part is washable, treat it as not washable. The part you <em>can</em> clean is the pre-filter: the outer screen that catches the big stuff. Vacuum it, or rinse and fully dry it if the manual allows, and let the real HEPA do its job until you replace it.</p>
+    </details>
+    <details>
+      <summary>What's the difference between the pre-filter, HEPA, and carbon filter?</summary>
+      <p>They're three stages, each catching something different, and air passes through them in order. The <strong>pre-filter</strong> is the coarse outer screen — it grabs the big stuff (hair, lint, large dust) so it doesn't clog the finer media behind it, and it's usually the washable part you clean monthly. The <strong>HEPA filter</strong> is the heart of the machine: a dense pleated fiber filter that traps the fine particles — pollen, dander, smoke particles, fine dust — and it's the one you replace on schedule and never wash. The <strong>carbon (or activated-charcoal) filter</strong> handles a completely different problem: it adsorbs odors, gases, smoke smell, and VOCs that the HEPA can't catch, and it fades on its own faster timeline. Keeping the pre-filter clean protects the HEPA, the HEPA protects your lungs, and the carbon keeps the air smelling fresh — so all three matter, each on its own clock.</p>
+    </details>
+    <details>
+      <summary>Do I need the brand's exact filter, or will a universal one work?</summary>
+      <p>Buy the exact filter listed for your model number whenever you can. A purifier is engineered so air is forced <em>through</em> the filter rather than around it, and that depends on the filter fitting its housing precisely. Universal and cheaper off-brand filters often sit a millimeter or two loose, and unfiltered air takes the path of least resistance straight around the gap — so the unit reads "clean" while quietly bypassing the media. Off-brand filters can also use lower-grade material that doesn't truly meet HEPA standard even if the label says so. If you do go third-party to save money, choose a well-reviewed maker that lists your exact model, and check that it seats snugly with no visible gaps when the panel closes. The filter is the whole point of the machine; saving a few dollars on one that leaks defeats it entirely.</p>
+    </details>
+    <details>
+      <summary>How do I reset the filter indicator light?</summary>
+      <p>It varies by model, but the pattern is almost always the same: after you've installed the new filter, power the unit on, then press and hold the reset button — sometimes labeled "filter," "reset," or marked with a filter icon — for a few seconds until the light blinks or changes from red back to green or off. On some models you hold the power or a combination of buttons instead, so it's worth a glance at the manual the first time. The reset matters because the indicator is usually just a timer or a run-hours counter, not a real sensor of how dirty the filter is — if you don't reset it, the countdown stays wrong and either nags you early or, worse, never warns you again. Reset it every time you change the filter so the schedule stays honest, and pair it with logging the date as a backup.</p>
+    </details>
+    <details>
+      <summary>How do I know it's really time — or is the timer just being optimistic?</summary>
+      <p>The indicator light is a helpful nudge, but it's usually a simple timer rather than a measurement, so it can be both too early and too late. Trust your senses alongside it. Pull the filter and look: if the HEPA is grey, packed, or past its printed date, it's done regardless of what the light says. Feel the airflow at the outlet — if it's gone weak, the filter is choked. Notice the air itself — returning odors, more dust on surfaces, a musty smell, or allergy symptoms creeping back all mean the filter has stopped working even if the timer hasn't tripped. The flip side is true too: a unit that barely runs in a clean home can hit its timer with plenty of filter life left, so a quick look at a still-white, still-breathing filter can save you a replacement. When in doubt, the look-and-feel test beats the clock — then reset the indicator to match reality.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A loaded filter turns a good purifier into expensive white noise.</h2>
+        <p>The indicator light is easy to ignore, and the HEPA, carbon, and pre-filter all run on separate clocks — so it's the kind of upkeep that quietly slips. Upkeep Ledger logs this change and resurfaces each filter on its own schedule, right alongside the HVAC filter, the fridge water filter, and every other small task that keeps the house running the way it's supposed to.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-air-purifier-filter&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-air-purifier-filter&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Filter intervals and cost figures are typical U.S. ranges for planning; your model, filter type, and air quality vary — your purifier's own manual outranks this guide, especially on which parts are washable.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { load: null, runtime: null, who: null, type: null };
+
+  var FREQ_LABEL = {
+    3: "Every 3 months",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var tighten = false;
+
+    /* Washable pre-filter as the main filter — different game entirely */
+    if (s.type === "washable") {
+      reasons.push("If your unit is mostly a washable pre-filter rather than a true HEPA, you're cleaning rather than replacing — vacuum or rinse it on a monthly rhythm and let it dry fully before it goes back in.");
+    }
+
+    /* Air load — the biggest driver */
+    if (s.load === "heavy") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Pets, smoke, wildfire haze, or heavy dust are exactly what fills a filter, so yours loads up fast — lean toward the short end and change it more like every few months.");
+    } else if (s.load === "clean") {
+      reasons.push("A clean, low-dust home is gentle on a filter, so there's no reason to rush — the longer end of the range is yours.");
+    } else {
+      if (months > 6) months = 6;
+      reasons.push("Ordinary household dust puts a moderate, steady load on the filter — the everyday middle case the 6-to-12-month range is built around.");
+    }
+
+    /* Runtime — air through the filter */
+    if (s.runtime === "always") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Running it basically 24/7, often on high, pushes many times the air through the media — so the filter is spent on hours, not the calendar, and needs changing sooner.");
+    } else if (s.runtime === "occasional") {
+      reasons.push("Running it only now and then means far less air has passed through, so a filter can comfortably last toward the long end before it's used up.");
+    } else {
+      if (months > 6) months = 6;
+      reasons.push("Running a good chunk of most days is a normal, moderate duty cycle — enough to keep the filter working without burning through it.");
+    }
+
+    /* Who's breathing it */
+    if (s.who === "sensitive") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("With allergies, asthma, kids, or a sensitive person in the house, a half-spent filter quietly undercuts the whole point — keep it fresher and change on the shorter side.");
+    } else if (s.who === "none") {
+      reasons.push("No particular sensitivities means you've got a little more leeway on timing without anyone paying for a tired filter.");
+    } else {
+      reasons.push("Mild seasonal sensitivities are worth staying on top of, but they won't drive the schedule on their own.");
+    }
+
+    /* Carbon stage — odor clock */
+    if (s.type === "hepacarbon") {
+      reasons.push("Because yours has a carbon (odor) layer, watch that separately — carbon usually fades faster than the HEPA, so refresh it whenever smells start coming back, even if the HEPA still has life.");
+    } else if (s.type === "hepa") {
+      reasons.push("With a true HEPA and no real carbon stage, you're mainly tracking particles — great for dust and allergens, but it won't do much for lingering odors or gases.");
+    }
+
+    /* Best-case relaxation: clean home, occasional use, no sensitivities, plain HEPA */
+    if (!tighten && s.load === "clean" && s.runtime === "occasional" && s.who === "none") {
+      months = 12;
+      reasons.push("A clean home running the unit only occasionally with no one sensitive is the one case where stretching to a full year is genuinely fine — just eyeball the filter now and then.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.type === "washable") {
+      note = "<strong>Clean, never wash, the wrong part:</strong> only the pre-filter your manual calls washable should ever meet water. If your unit also has a true HEPA, that one gets replaced on schedule — washing it destroys it.";
+    } else if (s.load === "heavy" || s.runtime === "always") {
+      note = "<strong>Stretch the HEPA's life with the pre-filter:</strong> vacuum the washable pre-filter about monthly so the big stuff never reaches the HEPA. It costs nothing and meaningfully delays the next replacement.";
+    } else if (s.who === "sensitive") {
+      note = "<strong>For sensitive lungs, don't wait for the light:</strong> the indicator is just a timer. If symptoms creep back or airflow weakens, change the HEPA early — and always reset the indicator afterward so the countdown stays honest.";
+    } else {
+      note = "<strong>Remember the layers run on different clocks:</strong> HEPA every 6–12 months, the washable pre-filter about monthly, and the carbon stage whenever odors return. Reset the indicator and log the date with each HEPA change.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.load || !quizState.runtime || !quizState.who || !quizState.type) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: replace the HEPA " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Change the HEPA on this schedule, <strong>vacuum the washable pre-filter about monthly, refresh the carbon when odors return, and reset the indicator</strong> each time. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Unplug & open", text: "Have the exact replacement filter on hand first", note: "Match the filter to your model number before you start — universal filters often fit loosely and let unfiltered air leak around the edges. Never pull the old filter until the new one is ready, so the unit never runs filterless." },
+    { phase: "Unplug & open", text: "Unplug the purifier", note: "Pull the plug before opening the housing so the fan can't spin up while your hands are inside — and so it powers back up clean afterward." },
+    { phase: "Unplug & open", text: "Open the filter panel and note the orientation", note: "Find the compartment — back, side, or bottom depending on the model — and note how the filter sits and which way the airflow arrows point so the new one goes in the same way." },
+    { phase: "Swap the HEPA", text: "Pull the old HEPA and bag it", note: "Slide it out and treat it as loaded with allergens — bag it before it leaves the unit. If you're sensitive, wear a dust mask or do the swap outdoors so you're not breathing what you knock loose. Grey, packed, or past its date all mean replace." },
+    { phase: "Swap the HEPA", text: "Do NOT wash the HEPA — replace it", note: "A true HEPA is never washable; water destroys the fiber media for good. Only ever clean a part the manual specifically calls washable (the pre-filter). Drop the fresh HEPA in instead." },
+    { phase: "Swap the HEPA", text: "Wipe out the housing", note: "While it's open, wipe any loose dust out of the empty compartment with a damp cloth so the new filter starts in a clean cavity." },
+    { phase: "Pre-filter & carbon", text: "Vacuum or rinse the washable pre-filter", note: "Clean the outer screen — vacuum it, or rinse it if the manual allows. This is the part you clean about monthly, and a clean pre-filter makes the HEPA last longer." },
+    { phase: "Pre-filter & carbon", text: "Let any washed pre-filter dry completely", note: "Never reinstall a damp pre-filter — a wet filter grows mold and blows musty air back into the room. Stand it up and let it dry fully before it goes back in." },
+    { phase: "Pre-filter & carbon", text: "Check or replace the carbon (odor) layer", note: "If your unit has a carbon stage, check it on its own schedule — it fades faster than the HEPA. Swap or refresh it if odors have been creeping back, even when the HEPA still looks fine." },
+    { phase: "Reset & log", text: "Seat the new filter, close up, and plug in", note: "Set the HEPA in the right way around — match the airflow arrows — make sure it seats snugly with no gaps, then close the panel, plug in, and power on." },
+    { phase: "Reset & log", text: "Reset the indicator and log the date", note: "Hold the reset (or filter) button until the light clears, so the countdown tracks the new filter. Then note the date so the next HEPA change in 6–12 months — and the monthly pre-filter clean — isn't a guess." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-air-purifier-filter:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service your transmission fluid — UpkeepGuides.com</title>
+<meta name="description" content="How to service your transmission fluid: why degraded fluid kills the transmission, drain-and-fill vs flush, the all-important fluid-type warning (ATF vs CVT vs DCT), severe-service intervals, and a step-by-step checklist with a personalized schedule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Service your transmission fluid — UpkeepGuides.com">
+<meta property="og:description" content="How to service your transmission fluid: why degraded fluid kills the transmission, drain-and-fill vs flush, the all-important fluid-type warning (ATF vs CVT vs DCT), severe-service intervals, and a step-by-step checklist with a personalized schedule.">
+<meta property="og:url" content="https://upkeepguides.com/transmission-service.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Service your transmission fluid — UpkeepGuides.com">
+<meta name="twitter:description" content="How to service your transmission fluid: why degraded fluid kills the transmission, drain-and-fill vs flush, the all-important fluid-type warning (ATF vs CVT vs DCT), severe-service intervals, and a step-by-step checklist with a personalized schedule.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Vehicle · Every ~60,000 miles</span>
+      <h1>Service Your Transmission Fluid</h1>
+      <p class="lede">Transmission fluid does three jobs at once on one of the most expensive parts of your car: it lubricates the gears and clutches, it carries away the heat they make, and in an automatic it's the hydraulic muscle that actually shifts the gears. It looks like it just sits there, but it doesn't last forever — it gets heat-baked, fills with clutch debris and varnish, and slowly stops doing its job, which shows up as harsh, slipping, or hesitant shifts. A service drains that spent fluid and refills with fresh (a drain-and-fill or a full machine flush, often with a new filter) — a different job from just topping up the level. The catch is that fluid <em>type</em> is everything: ATF, CVT fluid, and DCT fluid are not interchangeable, and the wrong one can wreck the transmission. Done on schedule with the right fluid, it's the cheap maintenance that prevents a catastrophic rebuild.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Commonly <em>every ~60,000 miles</em></span>
+        <span class="chip">🔧 <em>~$100–300</em> at a shop</span>
+        <span class="chip">🛡️ Prevents a <em>$2,000–5,000+ rebuild</em></span>
+        <span class="chip">⚠️ <em>Fluid type is critical</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a transmission fluid service: a car raised on jack stands in a driveway garage with the transmission pan underneath being drained of old brown fluid into a catch pan, a bottle of fresh pink-red transmission fluid standing ready beside it, and an inset comparing two dipsticks — one bright red for fresh fluid and one dark brown for old, burnt fluid">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- garage / driveway backdrop -->
+      <rect x="40" y="60" width="300" height="150" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <line x1="40" y1="110" x2="340" y2="110" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="140" y1="60" x2="140" y2="210" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="240" y1="60" x2="240" y2="210" stroke="#e9e2d8" stroke-width="3"/>
+
+      <!-- car body, side profile raised on stands -->
+      <path d="M70 250 q4 -52 58 -58 l150 -8 q40 -2 70 22 l52 44 h66 q20 0 20 22 v18 q0 10 -14 10 h-462 q-12 0 -12 -12 v-46 q0 -16 22 -18 z" fill="#7fb3c8"/>
+      <path d="M130 196 l148 -8 q40 -2 70 22 l38 32 h-296 q6 -40 40 -46 z" fill="#9cc3d4"/>
+      <!-- windshield glint -->
+      <path d="M196 192 l82 -5 q26 -1 46 16 l20 16 h-164 z" fill="#dce8ee"/>
+
+      <!-- front wheel, lifted (gap to ground) -->
+      <circle cx="158" cy="300" r="32" fill="#33393b"/>
+      <circle cx="158" cy="300" r="14" fill="#b9b1a3"/>
+      <!-- rear wheel, lifted -->
+      <circle cx="398" cy="300" r="32" fill="#33393b"/>
+      <circle cx="398" cy="300" r="14" fill="#b9b1a3"/>
+
+      <!-- jack stands under the body -->
+      <path d="M236 360 l-16 -38 h32 z" fill="#c96f4a"/>
+      <rect x="228" y="316" width="16" height="8" rx="2" fill="#8a6a4f"/>
+      <rect x="216" y="356" width="40" height="8" rx="2" fill="#8a6a4f"/>
+      <path d="M316 360 l-16 -38 h32 z" fill="#c96f4a"/>
+      <rect x="308" y="316" width="16" height="8" rx="2" fill="#8a6a4f"/>
+      <rect x="296" y="356" width="40" height="8" rx="2" fill="#8a6a4f"/>
+
+      <!-- transmission pan underneath, between the stands -->
+      <rect x="252" y="282" width="60" height="22" rx="4" fill="#6b7376"/>
+      <rect x="256" y="286" width="52" height="14" rx="3" fill="#8a6a4f"/>
+      <!-- drain bolt / stream of old brown fluid -->
+      <circle cx="282" cy="304" r="3" fill="#33393b"/>
+      <path d="M282 308 q-2 14 0 28 q2 12 0 22" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M280 318 q-1 8 0 16" fill="none" stroke="#6b4a33" stroke-width="2.4" stroke-linecap="round"/>
+
+      <!-- catch pan on the ground catching old fluid -->
+      <path d="M236 360 h92 l-8 26 h-76 z" fill="#b9b1a3"/>
+      <path d="M232 358 h100 l-3 8 h-94 z" fill="#8a6a4f"/>
+      <!-- old brown fluid pooled in the pan -->
+      <path d="M244 366 h76 l-2 8 h-72 z" fill="#6b4a33"/>
+      <text x="282" y="396" font-size="10" fill="#8a6a4f" text-anchor="middle" font-weight="700">old fluid — burnt brown</text>
+
+      <!-- bottle of fresh pink/red transmission fluid, standing ready -->
+      <rect x="78" y="318" width="34" height="58" rx="6" fill="#fbe9e1"/>
+      <rect x="84" y="300" width="22" height="20" rx="4" fill="#c96f4a"/>
+      <rect x="88" y="290" width="14" height="12" rx="3" fill="#8a6a4f"/>
+      <!-- fresh reddish-pink fluid level inside -->
+      <rect x="82" y="334" width="26" height="38" rx="4" fill="#d9663f"/>
+      <rect x="82" y="334" width="26" height="14" rx="4" fill="#e08a6a"/>
+      <rect x="84" y="344" width="22" height="20" rx="3" fill="#fffdf8" opacity="0.55"/>
+      <text x="95" y="392" font-size="10" fill="#c96f4a" text-anchor="middle" font-weight="700">fresh ATF</text>
+
+      <!-- inset: dipstick comparison, top-right -->
+      <rect x="360" y="78" width="170" height="118" rx="10" fill="#fffdf8" stroke="#5e9a78" stroke-width="3"/>
+      <text x="445" y="98" font-size="11" fill="#2c5a40" text-anchor="middle" font-weight="700">read the dipstick</text>
+      <!-- fresh dipstick: bright red -->
+      <rect x="392" y="108" width="9" height="74" rx="4" fill="#b9b1a3"/>
+      <rect x="392" y="142" width="9" height="40" rx="4" fill="#d9663f"/>
+      <circle cx="396" cy="105" r="6" fill="#8a6a4f"/>
+      <text x="396" y="194" font-size="9" fill="#c96f4a" text-anchor="middle" font-weight="700">good</text>
+      <!-- old dipstick: dark brown -->
+      <rect x="488" y="108" width="9" height="74" rx="4" fill="#b9b1a3"/>
+      <rect x="488" y="142" width="9" height="40" rx="4" fill="#6b4a33"/>
+      <circle cx="492" cy="105" r="6" fill="#8a6a4f"/>
+      <text x="492" y="194" font-size="9" fill="#8a6a4f" text-anchor="middle" font-weight="700">overdue</text>
+      <!-- vs divider -->
+      <text x="445" y="150" font-size="12" fill="#6b7376" text-anchor="middle" font-weight="700">vs</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A transmission is a sealed box of gears, clutches, and tight hydraulic passages, and the fluid is the one thing that keeps all of it cool, lubricated, and shifting. It's also the single most expensive thing on most cars to replace — which is exactly why the cheap fluid that protects it is one of the highest-payoff maintenance items there is. Here's what fresh fluid does, and what old fluid quietly stops doing:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="11" fill="none" stroke="#5e9a78" stroke-width="2.6"/>
+          <circle cx="18" cy="18" r="3.4" fill="#3e7c59"/>
+          <g stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round">
+            <line x1="18" y1="4" x2="18" y2="9"/>
+            <line x1="18" y1="27" x2="18" y2="32"/>
+            <line x1="4" y1="18" x2="9" y2="18"/>
+            <line x1="27" y1="18" x2="32" y2="18"/>
+            <line x1="8" y1="8" x2="11.5" y2="11.5"/>
+            <line x1="24.5" y1="24.5" x2="28" y2="28"/>
+            <line x1="8" y1="28" x2="11.5" y2="24.5"/>
+            <line x1="24.5" y1="11.5" x2="28" y2="8"/>
+          </g>
+        </svg></div>
+        <h3>Fresh fluid lubricates &amp; cools</h3>
+        <p>Healthy fluid keeps the gears and clutches lubricated, carries away the heat they generate, and gives an automatic the hydraulic pressure it needs to shift cleanly. Let it degrade and you get the opposite: harsh shifts, slipping, hesitation, and a transmission that runs hot.</p>
+        <span class="cost">Harsh shifts, slipping &amp; overheating</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M7 12 h22 v4 l-3 16 h-16 l-3 -16 z" fill="#fbe9e1" stroke="#8a6a4f" stroke-width="2"/>
+          <path d="M9 21 h18 l-2 11 h-14 z" fill="#6b4a33"/>
+          <circle cx="14" cy="25" r="1.6" fill="#33393b"/>
+          <circle cx="20" cy="28" r="1.4" fill="#33393b"/>
+          <circle cx="23" cy="24" r="1.2" fill="#33393b"/>
+          <circle cx="16" cy="29" r="1.2" fill="#33393b"/>
+        </svg></div>
+        <h3>Old fluid is full of grit &amp; varnish</h3>
+        <p>Over miles and heat, fluid fills with worn clutch debris and bakes into varnish that clogs the tiny passages and valves that control shifting — and wears the internals it's supposed to protect. That gritty, gummed-up fluid is exactly what kills a transmission.</p>
+        <span class="cost">Clogged passages, worn internals</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#faf0da" stroke="#e0a93d" stroke-width="2.4"/>
+          <text x="18" y="23" font-size="15" fill="#d98e3b" text-anchor="middle" font-weight="800">$</text>
+          <path d="M9 9 L27 27 M27 9 L9 27" stroke="#d9663f" stroke-width="2" stroke-linecap="round" opacity="0.0"/>
+        </svg></div>
+        <h3>It prevents a catastrophic bill</h3>
+        <p>A service runs about $150–300. A transmission rebuild or replacement runs $2,000–5,000 and up. Spending a little on fresh fluid on schedule is maybe the best maintenance-dollar return on the whole car — it's cheap insurance against the priciest failure a car can hand you.</p>
+        <span class="cost">A $2,000–5,000+ rebuild</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 4 L31 28 H5 Z" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.2" stroke-linejoin="round"/>
+          <line x1="18" y1="13" x2="18" y2="21" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="18" cy="25" r="1.6" fill="#d9663f"/>
+        </svg></div>
+        <h3>"Lifetime" fluid is marketing</h3>
+        <p>Many automakers call the fluid "lifetime" and skip listing an interval — but the fluid still degrades with heat and miles. "Lifetime" really means "the life of the transmission," and ignoring the fluid is how that life ends early. A periodic service is what keeps it from coming true.</p>
+        <span class="cost">A "life" that ends with the unit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> service it?</h2>
+    <p class="sub">Roughly every 60,000 miles is a sensible default for many conventional automatics — but the honest answer is "whatever your owner's manual says for your fluid type," and that ranges from ~30,000 miles for hard, severe-service driving to ~100,000 for some long-life specs. Towing, stop-and-go, mountains, and heat all pull it sooner, and your transmission type drives both the fluid and the method. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="driving">
+        <div class="q-label">1. How do you drive it?</div>
+        <div class="pills">
+          <button class="pill" data-v="severe">Towing, hauling, stop-and-go, mountains, or hot climate</button>
+          <button class="pill" data-v="mixed">A normal mix of city and highway</button>
+          <button class="pill" data-v="easy">Mostly easy highway miles, light loads</button>
+        </div>
+        <div class="q-hint">Towing, heavy loads, crawling traffic, mountain grades, and high heat all cook the fluid faster — that's "severe service," and nearly every manual lists a much shorter interval for it.</div>
+      </div>
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">2. What kind of transmission is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="auto">Conventional automatic</button>
+          <button class="pill" data-v="cvtdct">CVT or dual-clutch (DCT)</button>
+          <button class="pill" data-v="manual">Manual</button>
+        </div>
+        <div class="q-hint">CVTs and dual-clutch units use their own specific fluids and often shorter intervals, and the wrong fluid can wreck them. Manuals use gear oil on a different schedule. The type decides both the fluid and the method.</div>
+      </div>
+      <div class="quiz-q" data-q="history">
+        <div class="q-label">3. Mileage and service history?</div>
+        <div class="pills">
+          <button class="pill" data-v="unknown">High miles, or I don't know its history</button>
+          <button class="pill" data-v="duesoon">Moderate miles, due about now</button>
+          <button class="pill" data-v="fresh">Lower miles, recently serviced</button>
+        </div>
+        <div class="q-hint">A transmission with unknown history or lots of neglected miles needs a careful look — and possibly a gentler drain-and-fill rather than an aggressive flush, which a shop can advise on.</div>
+      </div>
+      <div class="quiz-q" data-q="condition">
+        <div class="q-label">4. What does the fluid look and smell like?</div>
+        <div class="pills">
+          <button class="pill" data-v="burnt">Dark brown and burnt-smelling</button>
+          <button class="pill" data-v="dingy">Darkening, a little dull</button>
+          <button class="pill" data-v="clean">Bright red/pink and clean (or sealed — can't check)</button>
+        </div>
+        <div class="q-hint">On a unit with a dipstick, fresh fluid is bright red or pink and smells faintly sweet; dark brown and burnt-smelling means it's overdue now. Many modern units are sealed with no dipstick — that's a shop check.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is one of the most lopsided cost comparisons on the whole car. The service is cheap — a drain-and-fill is about $100–250, a full machine flush about $150–300 (CVT and DCT services often cost more), and a DIY drain-and-fill is mostly the price of fluid, roughly $40–100. What skipping it risks is a transmission rebuild or replacement at $2,000–5,000 and up — which makes the fluid maybe the best maintenance-dollar return you can buy:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$100–250</div><div class="l">a shop drain-and-fill — swaps the pan's fluid, often with a new filter and gasket</div></div>
+        <div class="calc-stat"><div class="v">$150–300</div><div class="l">a full machine flush — exchanges nearly all the fluid (CVT/DCT often more)</div></div>
+        <div class="calc-stat"><div class="v bad">$2,000–5,000+</div><div class="l">a transmission rebuild or replacement — the failure the service is meant to prevent</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🛢️ DIY drain-and-fill (fluid only)</span><span>~$40–100</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Shop drain-and-fill</span><span>$100–250</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:9%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 Full machine flush (CVT/DCT often more)</span><span>$150–300</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:13%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚙️ Limping along on burnt fluid → early failure</span><span>You're rolling the dice</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:55%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💥 Transmission rebuild or replacement</span><span>$2,000–5,000+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't remotely close: <strong>a couple hundred dollars on the schedule your manual sets</strong> against a four- or five-figure rebuild that can total an older car. Spend a little keeping the right fluid fresh, and you protect the single most expensive part on the vehicle for pennies on the dollar. Few maintenance items pay back like this one.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to service your transmission fluid</h2>
+    <p class="sub">The first job is knowing exactly what you have — automatic, CVT, DCT, or manual — and the exact fluid spec from your manual, because that decides everything. Then check the fluid, pick a drain-and-fill or a flush, refill to the correct level by the manual's procedure, and verify with a test drive. Read the safety box first (especially the fluid-type warning), then work through the checklist. Your progress saves automatically — and on a sealed or high-mileage unit, this is comfortably a shop job.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — the wrong fluid can destroy the transmission</h3>
+      <ul>
+        <li><strong>Use the EXACT fluid your manual specifies — no substitutes.</strong> ATF, CVT fluid, and DCT fluid are <em>not</em> interchangeable, and even within ATF there are many incompatible specs. The wrong fluid can ruin the transmission. Match the exact spec in your owner's manual; "universal" fluids are a gamble.</li>
+        <li><strong>Never overfill, and check the level the way the manual says.</strong> Many transmissions must be checked at a specific fluid temperature, in gear, on level ground — overfilling causes foaming and overheating, underfilling starves it. Many modern units are "sealed" with no dipstick; that check is a shop job with the right tools.</li>
+        <li><strong>Be cautious flushing a high-mileage, never-serviced transmission.</strong> An aggressive power-flush can dislodge built-up debris and trigger new problems on a neglected unit. A gentler drain-and-fill is often the safer choice — ask a trustworthy shop before flushing an old transmission for the first time.</li>
+        <li><strong>If you go under the car, use jack stands on level ground — never just a jack.</strong> A jack alone can drop the car. Set rated jack stands on a hard, level surface and chock the wheels before any part of you is underneath it.</li>
+        <li><strong>Let the vehicle cool — transmission fluid runs hot.</strong> Fresh from a drive it can scald. Let it cool to a safe temperature before you open anything, and wear gloves and eye protection.</li>
+        <li><strong>Dispose of old fluid responsibly, and don't mix up your fluids.</strong> Drain it into a sealed container and take it to an auto-parts store or recycling facility — never down a drain. And don't confuse transmission fluid with engine oil or coolant; they go in different places and aren't interchangeable.</li>
+        <li><strong>When in doubt, have a transmission specialist do it.</strong> Sealed units, CVTs, DCTs, and any uncertainty about fluid type or condition all point to a shop. A correct service is cheap; a wrong one is how a rebuild starts.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your owner's manual (for fluid spec &amp; procedure)</span>
+      <span class="tool-chip">The EXACT specified fluid (enough for the job)</span>
+      <span class="tool-chip">A new filter &amp; pan gasket (if doing a filter)</span>
+      <span class="tool-chip">A drain pan / fluid catch container</span>
+      <span class="tool-chip">Jack and rated jack stands</span>
+      <span class="tool-chip">Wheel chocks</span>
+      <span class="tool-chip">A fluid pump or funnel for refilling</span>
+      <span class="tool-chip">Gloves, eye protection, rags</span>
+      <span class="tool-chip">A scan tool / temp gauge (some level checks)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of identifying the transmission type — automatic, CVT, dual-clutch, or manual — and looking up the exact specified fluid in the owner's manual, which decides everything">
+          <!-- manual open -->
+          <path d="M40 40 q70 -16 100 6 q30 -22 100 -6 v100 q-70 -14 -100 6 q-30 -20 -100 -6 z" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <line x1="140" y1="46" x2="140" y2="146" stroke="#b9b1a3" stroke-width="2.4"/>
+          <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+            <line x1="56" y1="62" x2="120" y2="58"/>
+            <line x1="56" y1="78" x2="116" y2="76"/>
+            <line x1="56" y1="94" x2="120" y2="92"/>
+          </g>
+          <text x="150" y="64" font-size="9" fill="#2c5a40" font-weight="700">FLUID SPEC</text>
+          <text x="150" y="82" font-size="8.5" fill="#6b7376">ATF / CVT</text>
+          <text x="150" y="96" font-size="8.5" fill="#6b7376">/ DCT?</text>
+          <text x="50" y="168" font-size="11" fill="#d9663f" font-weight="700">know what you have first</text>
+        </svg>
+        <h4>Identify the type &amp; the exact fluid</h4>
+        <p>Is it a conventional automatic, a CVT, a dual-clutch (DCT), or a manual? Each takes its own fluid and interval, and the wrong fluid can wreck it. Look up the exact spec and procedure in your owner's manual — this one step decides everything that follows.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking the transmission fluid on a dipstick, comparing bright red and pink healthy fluid against dark brown burnt fluid that smells overdue">
+          <!-- two dipstick swatches -->
+          <rect x="60" y="30" width="36" height="100" rx="8" fill="#fbe9e1"/>
+          <rect x="60" y="30" width="36" height="100" rx="8" fill="none" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="68" y="40" width="20" height="80" rx="6" fill="#d9663f"/>
+          <rect x="68" y="40" width="20" height="30" rx="6" fill="#e08a6a"/>
+          <text x="78" y="150" font-size="10" fill="#3e7c59" text-anchor="middle" font-weight="700">good</text>
+
+          <rect x="184" y="30" width="36" height="100" rx="8" fill="#efe7d8"/>
+          <rect x="184" y="30" width="36" height="100" rx="8" fill="none" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="192" y="40" width="20" height="80" rx="6" fill="#6b4a33"/>
+          <!-- stink lines -->
+          <path d="M198 28 q4 -6 0 -12 M206 28 q4 -6 0 -12" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <text x="202" y="150" font-size="10" fill="#d9663f" text-anchor="middle" font-weight="700">overdue</text>
+
+          <text x="140" y="86" font-size="13" fill="#6b7376" text-anchor="middle" font-weight="700">vs</text>
+          <text x="140" y="172" font-size="11" fill="#3e7c59" text-anchor="middle" font-weight="700">color + smell tell you</text>
+        </svg>
+        <h4>Check the fluid: color &amp; smell</h4>
+        <p>If your transmission has a dipstick, pull it and look. Bright red or pink, slightly translucent, faintly sweet smell? Healthy. Dark brown, opaque, with a burnt smell? Overdue. (Sealed, no-dipstick units skip this — it's a shop check with the right equipment.)</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing a drain-and-fill, which swaps the pan's fluid and the filter, against a full machine flush that exchanges nearly all the fluid but is harsher on neglected units">
+          <!-- left: drain-and-fill pan -->
+          <rect x="36" y="44" width="80" height="26" rx="5" fill="#6b7376"/>
+          <rect x="40" y="48" width="72" height="18" rx="3" fill="#8a6a4f"/>
+          <circle cx="76" cy="70" r="3" fill="#33393b"/>
+          <path d="M76 74 q-1 10 0 20" fill="none" stroke="#6b4a33" stroke-width="4" stroke-linecap="round"/>
+          <text x="76" y="118" font-size="10" fill="#3e7c59" text-anchor="middle" font-weight="700">drain &amp; fill</text>
+          <text x="76" y="132" font-size="8.5" fill="#6b7376" text-anchor="middle">part of fluid + filter</text>
+
+          <text x="140" y="74" font-size="12" fill="#6b7376" text-anchor="middle" font-weight="700">vs</text>
+
+          <!-- right: flush machine -->
+          <rect x="172" y="38" width="68" height="46" rx="6" fill="#7fb3c8"/>
+          <circle cx="190" cy="52" r="5" fill="#dce8ee"/>
+          <circle cx="206" cy="52" r="5" fill="#fbe9e1"/>
+          <path d="M172 70 q-14 0 -14 12 M240 70 q14 0 14 12" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+          <text x="206" y="118" font-size="10" fill="#3e7c59" text-anchor="middle" font-weight="700">full flush</text>
+          <text x="206" y="132" font-size="8.5" fill="#6b7376" text-anchor="middle">nearly all of it</text>
+          <text x="50" y="162" font-size="11" fill="#d9663f" font-weight="700">flush is harsher on old units</text>
+        </svg>
+        <h4>Drain-and-fill vs full flush</h4>
+        <p>A drain-and-fill empties the pan and refills — often with a new filter and gasket — swapping a chunk of the fluid. A machine flush exchanges nearly all of it: more thorough, but harsher on a neglected high-mileage unit. On an old, never-serviced box, the gentler drain-and-fill is usually safer.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of refilling the transmission to the correct level using the manual's procedure, often at a set temperature, with a clear warning never to overfill">
+          <!-- fill funnel / pump -->
+          <path d="M120 26 h40 l-10 26 h-20 z" fill="#5e9a78"/>
+          <rect x="134" y="52" width="12" height="40" rx="3" fill="#3e7c59"/>
+          <!-- fresh pink fluid stream -->
+          <path d="M140 92 q-1 12 0 24" fill="none" stroke="#d9663f" stroke-width="5" stroke-linecap="round"/>
+          <!-- transmission with fill level -->
+          <rect x="92" y="116" width="96" height="38" rx="6" fill="#b9b1a3"/>
+          <rect x="98" y="122" width="84" height="26" rx="4" fill="#8a6a4f"/>
+          <rect x="98" y="134" width="84" height="14" rx="2" fill="#d9663f"/>
+          <!-- correct level marker -->
+          <line x1="92" y1="134" x2="80" y2="134" stroke="#3e7c59" stroke-width="2.4"/>
+          <text x="60" y="138" font-size="9" fill="#3e7c59" font-weight="700">FULL</text>
+          <text x="100" y="172" font-size="11" fill="#d9663f" font-weight="700">never overfill — check by spec</text>
+        </svg>
+        <h4>Refill to the correct level</h4>
+        <p>Add the exact fluid back the way the manual says — often to a precise level checked at a set temperature, in gear, on level ground. Overfilling causes foaming and overheating; underfilling starves it. Add a little, recheck, repeat. Sealed units need a tool and a procedure most shops handle.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of verifying the service — checking for leaks under the car, confirming smooth shifting on a short test drive, and logging the mileage for the next service">
+          <!-- car silhouette -->
+          <path d="M60 90 q4 -22 30 -24 l70 -4 q22 0 36 14 l24 18 h28 q10 0 10 10 v8 q0 6 -8 6 h-218 q-6 0 -6 -6 v-22 q0 -8 12 -10 z" fill="#7fb3c8"/>
+          <circle cx="96" cy="124" r="14" fill="#33393b"/>
+          <circle cx="206" cy="124" r="14" fill="#33393b"/>
+          <!-- check mark for smooth shift -->
+          <circle cx="150" cy="56" r="14" fill="#e3efe8"/>
+          <path d="M143 56 l5 5 l9 -10" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- no-leak ground check -->
+          <line x1="60" y1="146" x2="244" y2="146" stroke="#b9b1a3" stroke-width="3"/>
+          <text x="70" y="166" font-size="10" fill="#3e7c59" font-weight="700">no drips</text>
+          <text x="150" y="166" font-size="10" fill="#3e7c59" font-weight="700">smooth shifts</text>
+          <text x="222" y="166" font-size="10" fill="#3e7c59" text-anchor="middle" font-weight="700">log it</text>
+        </svg>
+        <h4>Verify: leaks, shifts, and log it</h4>
+        <p>After refilling, check the ground and the pan for leaks, then take a short test drive and confirm the shifts are smooth and crisp through the range. Finally, write down the mileage and date so the next service lands on schedule instead of by surprise.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Transmission-service progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Right fluid, correct level, leaks checked, shifts smooth, mileage logged — the most expensive part of your car is protected for the price of a tank or two of fuel. See you at the next interval.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Warning signs — and when to call a transmission shop</h2>
+    <p class="sub">A healthy transmission is invisible: it just shifts smoothly and you never think about it. These are the signals the fluid (or the transmission) needs attention — and the cases where you should head straight to a transmission specialist rather than do anything yourself. Don't ignore early symptoms: a fluid service is cheap, a rebuild isn't.</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Harsh, delayed, or slipping shifts.</strong> Clunky changes, a pause before the gear engages, or the engine revving without the car accelerating all point to fluid or pressure problems — degraded fluid is a common, fixable cause if you catch it early.</li>
+        <li><strong>A burnt smell or dark, dirty fluid.</strong> If the dipstick shows dark brown fluid or smells scorched, it's overheated and overdue. That's the fluid telling you it has stopped protecting the clutches — service it before the damage compounds.</li>
+        <li><strong>Shuddering, whining, or hesitation.</strong> A shudder under light acceleration (common as CVT or torque-converter fluid wears), a whine that rises with speed, or a hesitation when you press the pedal are all worth a fluid check and a professional look.</li>
+        <li><strong>A check-engine or transmission warning light.</strong> Modern transmissions throw codes for temperature, pressure, and shift faults. A transmission or check-engine light is a "get it scanned" signal — don't keep driving hard on it.</li>
+        <li><strong>Leaks — red or brown spots under the car.</strong> Transmission fluid is usually reddish; a brown puddle may be old fluid. A leak both lowers the level (starving the transmission) and signals a failing seal or gasket. Get it found and fixed promptly.</li>
+        <li><strong>A sealed transmission with no dipstick.</strong> Many modern automatics, and nearly all CVTs and DCTs, are sealed with no dipstick — checking and servicing them needs specific tools, fluid, and a temperature-controlled fill procedure. That's a job for a shop, not a driveway.</li>
+        <li><strong>Pro tip:</strong> a transmission service is one of the cheapest big-ticket protections you can buy, but only with the right fluid done the right way. When in doubt about your fluid type, your interval, or whether to flush a high-mileage unit, a trustworthy transmission specialist will save you far more than they cost.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I service my transmission fluid?</summary>
+      <p>The real answer is "whatever your owner's manual specifies for your fluid type" — and that varies a lot. A common ballpark for conventional automatics is around every 60,000 miles, but severe-service driving (towing, heavy loads, constant stop-and-go, mountains, or hot climates) can pull it down toward 30,000, while some long-life specs stretch to 100,000. CVTs and dual-clutch transmissions usually have their own, often shorter, intervals. If your manual lists no interval and calls the fluid "lifetime," many mechanics still recommend a periodic drain-and-fill — because the fluid degrades regardless of the marketing. When in doubt, check the manual first and ask a transmission shop second.</p>
+    </details>
+    <details>
+      <summary>Is "lifetime" transmission fluid actually real?</summary>
+      <p>No — at least not in the way the word suggests. "Lifetime" fluid still breaks down with heat and miles; the additives wear out, it fills with clutch debris, and it loses the properties that protect the transmission. What "lifetime" really means is "the life of the transmission" — and ignoring the fluid is exactly how that life ends sooner than it should. Automakers often skip an interval to advertise lower maintenance costs, but plenty of independent mechanics see neglected "lifetime" units fail early. A periodic service — even just a drain-and-fill — is cheap insurance against a very expensive failure, so most experts recommend changing it on a sensible schedule rather than trusting the label.</p>
+    </details>
+    <details>
+      <summary>Drain-and-fill or full flush — which is better?</summary>
+      <p>Each has a place. A drain-and-fill empties the transmission pan and refills it — often with a new filter and gasket — replacing a portion of the total fluid (the rest stays in the torque converter and lines). It's gentler and lets you also service the filter, but it takes a couple of repeat services to fully refresh the fluid. A machine flush connects to the cooler lines and exchanges nearly all of the fluid at once: more thorough, but more aggressive. On a well-maintained transmission, either is fine, and many shops do a drain-and-fill with a filter as the default. On a neglected, high-mileage unit, a power-flush can dislodge built-up debris and cause new problems — so a gentler drain-and-fill is often the safer first move. Ask a trustworthy shop what fits your transmission's history.</p>
+    </details>
+    <details>
+      <summary>Can the wrong fluid really damage my transmission?</summary>
+      <p>Yes — this is the single most important warning in this guide. ATF (for conventional automatics), CVT fluid (for continuously variable transmissions), and DCT fluid (for dual-clutch transmissions) are formulated very differently and are <em>not</em> interchangeable. Putting CVT fluid in a regular automatic, or ATF in a CVT, can cause slipping, shuddering, overheating, and outright failure. Even within ATF there are many manufacturer-specific specifications that aren't cross-compatible, and "universal" or "all-makes" fluids don't always meet them. The only safe approach is to use the exact fluid spec your owner's manual lists — by name — and if you're not certain, have a shop confirm it. The wrong fluid is one of the fastest ways to turn a routine service into a rebuild.</p>
+    </details>
+    <details>
+      <summary>Should I flush a high-mileage transmission that's never been done?</summary>
+      <p>Be careful here. On a transmission with a lot of neglected miles, the old fluid and the accumulated varnish are, in a sense, "holding things together" — and a full power-flush can wash debris into passages or wash away friction material that the worn clutches had come to rely on, sometimes triggering slipping or failure shortly after. That's the origin of the (overstated but not baseless) idea that "a flush killed my transmission." The safer approach on an old, never-serviced unit is usually a gentle drain-and-fill — swapping a portion of the fluid without an aggressive machine flush — and possibly repeating it. Talk to a trustworthy transmission specialist first; they can assess the fluid and history and tell you whether servicing it is wise at all, or whether you're better off leaving a borderline unit alone.</p>
+    </details>
+    <details>
+      <summary>What are the warning signs my transmission fluid is bad?</summary>
+      <p>Watch for harsh, delayed, or slipping shifts; the engine revving without the car accelerating; a shudder, whine, or hesitation; and a burnt smell or dark, dirty fluid on the dipstick (healthy fluid is bright red or pink). A check-engine or transmission warning light, or red/brown leak spots under the car, are also clear signals. Catch these early and a fluid service may be all you need; ignore them and you risk the slow death that ends in a rebuild. If your transmission is sealed with no dipstick, you can't check the fluid yourself — so let any of these symptoms send you to a transmission shop for a proper inspection. While you're thinking about fluids, the other services worth keeping on schedule are <a href="oil-change.html">oil changes</a>, <a href="coolant-flush.html">coolant flushes</a>, and routine <a href="check-coolant.html">coolant checks</a>.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Transmission fluid degrades silently — and the bill for ignoring it is one of the biggest a car can hand you.</h2>
+        <p>A transmission service asks for a couple hundred dollars on a schedule that depends on your fluid type and how you drive — and it protects the single most expensive part on the car. Upkeep Ledger tracks the service interval for your transmission type and resurfaces it on time, right alongside the oil changes, coolant flushes, and every other quiet task that keeps the vehicle alive.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=transmission-service&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=transmission-service&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning; your transmission type, fluid spec, and interval may differ — your owner's manual and a qualified transmission shop outrank this guide, and the right fluid is non-negotiable.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { driving: null, type: null, history: null, condition: null };
+
+  var FREQ_LABEL = {
+    30000: "~Every 30,000 miles",
+    60000: "~Every 60,000 miles",
+    100000: "~Every 100,000 miles"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var miles = 60000;
+    var tighten = false;
+
+    /* Driving — severe service vs easy highway */
+    if (s.driving === "severe") {
+      if (miles > 30000) miles = 30000;
+      tighten = true;
+      reasons.push("Towing, heavy loads, constant stop-and-go, mountain grades, or hot climates all cook the fluid fast — that's \"severe service,\" and nearly every manual lists a much shorter interval for it, often around 30,000 miles.");
+    } else if (s.driving === "easy") {
+      reasons.push("Mostly easy highway miles under light loads are the gentlest case, so you can lean toward the longer end of whatever your manual specifies.");
+    } else {
+      reasons.push("A normal mix of city and highway driving is the ordinary middle case the standard interval is written for.");
+    }
+
+    /* Type — automatic vs CVT/DCT vs manual */
+    if (s.type === "cvtdct") {
+      if (miles > 60000) miles = 60000;
+      reasons.push("CVTs and dual-clutch (DCT) transmissions use their own specific fluids and frequently shorter intervals — and the wrong fluid can wreck them, so let the manual and a shop set both the fluid and the schedule.");
+    } else if (s.type === "manual") {
+      reasons.push("A manual uses gear oil on its own schedule rather than ATF — check your manual for its specific gear-oil interval, which is a different number from the automatic figures here.");
+    } else {
+      reasons.push("A conventional automatic is the case the ~60,000-mile default fits best — but always confirm the exact figure and fluid spec in your manual.");
+    }
+
+    /* History — high miles / unknown vs maintained */
+    if (s.history === "unknown") {
+      if (miles > 30000) miles = 30000;
+      tighten = true;
+      reasons.push("High miles or unknown service history means you should look at the fluid now and tread carefully — and possibly choose a gentler drain-and-fill over an aggressive flush, which a shop can advise on.");
+    } else if (s.history === "fresh") {
+      reasons.push("Lower miles and a recent service mean you're in good shape — just keep the next interval logged so it doesn't quietly slip past.");
+    } else {
+      reasons.push("Moderate miles with a service coming due about now is the textbook moment to do it on schedule.");
+    }
+
+    /* Condition — burnt/dark vs clean */
+    if (s.condition === "burnt") {
+      if (miles > 30000) miles = 30000;
+      tighten = true;
+      reasons.push("Dark brown, burnt-smelling fluid is overdue right now — that's the fluid telling you it has overheated and stopped protecting the clutches, so service it without waiting for a mileage number.");
+    } else if (s.condition === "dingy") {
+      reasons.push("Fluid that's darkening and a little dull is on its way out — plan the service soon rather than stretching it.");
+    } else {
+      reasons.push("Bright red or pink, clean-smelling fluid (or a sealed unit you can't check) means there's no condition red flag pulling the interval forward — follow your manual.");
+    }
+
+    /* Best-case relaxation: easy driving, conventional auto, fresh history, clean fluid */
+    if (!tighten && s.driving === "easy" && s.type === "auto" && s.history === "fresh" && s.condition === "clean") {
+      miles = 100000;
+      reasons.push("Easy highway miles in a well-maintained conventional automatic with clean fluid is the one case where a longer interval can be genuinely reasonable — but only if your manufacturer's long-life spec actually allows it, so check the manual before stretching it this far.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.type === "cvtdct") {
+      note = "<strong>CVT and DCT fluids are special — and unforgiving:</strong> use only the exact fluid your manual names, never a \"universal\" ATF, and have a shop with the right tools do it. The wrong fluid in a CVT or dual-clutch can destroy it.";
+    } else if (s.condition === "burnt" || s.history === "unknown") {
+      note = "<strong>Be cautious with a neglected unit:</strong> on high-mileage or burnt fluid that's never been serviced, a gentle drain-and-fill is usually safer than an aggressive power-flush, which can dislodge debris. Ask a trustworthy transmission shop first.";
+    } else if (s.driving === "severe") {
+      note = "<strong>Severe service means shorter intervals:</strong> towing and heavy use justify servicing the fluid well ahead of the easy-driving schedule. Your manual almost certainly lists a separate, shorter \"severe service\" interval — use that one.";
+    } else {
+      note = "<strong>Above all, use the exact specified fluid:</strong> ATF, CVT, and DCT fluids are not interchangeable, and the wrong one can wreck the transmission. The manual's fluid spec and interval — not this estimate — are the final word.";
+    }
+
+    return { miles: miles, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.driving || !quizState.type || !quizState.history || !quizState.condition) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: service it roughly every " + r.miles.toLocaleString() + " miles — but follow your manual";
+    document.getElementById("resultBody").innerHTML =
+      "Confirm your exact fluid spec and procedure in the manual, then <strong>check the fluid, choose a drain-and-fill or flush, refill to the correct level, and verify with a test drive</strong>. Why this interval:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Identify & check", text: "Identify the transmission type and look up the exact fluid spec", note: "Conventional automatic, CVT, dual-clutch (DCT), or manual? Find the exact fluid specification and the service procedure in your owner's manual — this decides everything, and the wrong fluid can wreck the transmission." },
+    { phase: "Identify & check", text: "Inspect the fluid — color, smell, and level", note: "If your unit has a dipstick, check it the way the manual says: bright red/pink and faintly sweet is healthy; dark brown and burnt-smelling is overdue. Sealed, no-dipstick units skip this — that's a shop check." },
+    { phase: "Identify & check", text: "Decide DIY vs shop — sealed, CVT, DCT, or unsure means shop", note: "Sealed transmissions, CVTs, DCTs, and any uncertainty about fluid type, condition, or whether to service a high-mileage unit all point to a transmission specialist. There's no shame in handing this one off." },
+    { phase: "Choose the method", text: "Choose a drain-and-fill or a full flush", note: "A drain-and-fill (often with a new filter and gasket) is gentler and swaps part of the fluid; a machine flush exchanges nearly all of it but is harsher. On a neglected, high-mileage unit, lean toward the drain-and-fill." },
+    { phase: "Choose the method", text: "Buy the EXACT specified fluid and any filter/gasket", note: "Match the fluid spec your manual names, by name — not a \"universal\" substitute. Get enough for the method you chose, plus the correct filter and pan gasket if you're doing a filter." },
+    { phase: "Choose the method", text: "Let it cool, park level, and raise on jack stands safely", note: "Transmission fluid runs hot — let the vehicle cool. Park on level ground, chock the wheels, and support the car on rated jack stands (never just a jack) before anything goes underneath it." },
+    { phase: "Drain & refill", text: "Drain the old fluid into a catch container", note: "Position the drain pan and drain the fluid per the procedure. Wear gloves and eye protection. If you're servicing the filter, drop the pan, swap the filter and gasket, and clean the pan before reinstalling." },
+    { phase: "Drain & refill", text: "Refill with the correct fluid — never overfill", note: "Add the exact fluid back the way the manual specifies. Add a little, then check — overfilling causes foaming and overheating, underfilling starves the transmission. A pump or long funnel makes this much easier." },
+    { phase: "Drain & refill", text: "Set and verify the level by the manual's procedure", note: "Many transmissions are checked at a specific fluid temperature, in gear, on level ground. Follow that procedure exactly. Sealed units need a scan tool or temp reading and the manufacturer's fill steps." },
+    { phase: "Verify & log", text: "Check for leaks at the pan, drain plug, and on the ground", note: "Look over the pan, drain bolt, and fill point, and check the ground beneath the car for fresh red or brown spots. Re-torque anything weeping, and fix a leak before driving on it." },
+    { phase: "Verify & log", text: "Test drive and confirm smooth, crisp shifting", note: "Take a short drive through the gear range. Shifts should be smooth and prompt with no slipping, shudder, or hesitation. If anything feels off, recheck the level and the fluid, or get it to a shop." },
+    { phase: "Verify & log", text: "Dispose of the old fluid and log the mileage and date", note: "Seal the old fluid and take it to an auto-parts store or recycling facility — never down a drain. Record the mileage and date so the next service lands on your interval instead of by surprise." }
+  ];
+
+  var LS_KEY = "upkeepguides:transmission-service:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

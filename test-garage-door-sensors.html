@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test your garage door safety sensors — UpkeepGuides.com</title>
+<meta name="description" content="How to test your garage door safety sensors in two minutes: the beam test (wave an object through the photo-eyes) and the 2x4 contact-reversal test, what the sensor lights mean, and what to do the instant your door won't reverse.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Test your garage door safety sensors — UpkeepGuides.com">
+<meta property="og:description" content="How to test your garage door safety sensors in two minutes: the beam test (wave an object through the photo-eyes) and the 2x4 contact-reversal test, what the sensor lights mean, and what to do the instant your door won't reverse.">
+<meta property="og:url" content="https://upkeepguides.com/test-garage-door-sensors.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Test your garage door safety sensors — UpkeepGuides.com">
+<meta name="twitter:description" content="How to test your garage door safety sensors in two minutes: the beam test (wave an object through the photo-eyes) and the 2x4 contact-reversal test, what the sensor lights mean, and what to do the instant your door won't reverse.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 6 months</span>
+      <h1>Test Your Garage Door Safety Sensors</h1>
+      <p class="lede">Down near the floor on each side of your garage door track sit two little eyes — the photo-eye sensors — pointing an invisible beam at each other. They are the entire reason an automatic door reverses instead of crushing whatever's underneath it: a kid chasing a ball, a dog, a bumper, a foot. They've been required on every opener since 1993, and they quietly drift out of alignment, get bumped, gum up with dust, or simply fail — usually without telling you. A two-minute test confirms the door actually reverses: wave something through the beam, then close the door onto a flat 2x4. If it doesn't bounce back, that's not a chore, that's an emergency — stop using the opener until it's fixed.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Test <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~2 min</em> for both tests</span>
+        <span class="chip">🛡️ A genuine <em>life-safety</em> check</span>
+        <span class="chip">💸 Costs <em>$0</em> to test</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of testing garage door safety sensors: an open sectional garage door over a driveway, two photo-eye sensors mounted near the floor on each track with small green LED lights, a dotted beam running between them, a broom breaking the beam as the door starts down, and an up-arrow showing the door reversing back up">
+      <ellipse cx="285" cy="406" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- garage opening header / lintel -->
+      <rect x="120" y="34" width="320" height="20" rx="4" fill="#8a6a4f"/>
+      <rect x="128" y="30" width="304" height="8" rx="3" fill="#b9b1a3"/>
+
+      <!-- side jambs -->
+      <rect x="120" y="54" width="16" height="300" rx="3" fill="#b9b1a3"/>
+      <rect x="424" y="54" width="16" height="300" rx="3" fill="#b9b1a3"/>
+
+      <!-- vertical tracks just inside the jambs -->
+      <rect x="146" y="60" width="10" height="294" rx="3" fill="#c9a06b"/>
+      <rect x="404" y="60" width="10" height="294" rx="3" fill="#c9a06b"/>
+
+      <!-- the OPEN sectional door, raised up under the header -->
+      <rect x="150" y="56" width="260" height="58" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <g stroke="#b9b1a3" stroke-width="2.6">
+        <line x1="150" y1="75" x2="410" y2="75"/>
+        <line x1="150" y1="94" x2="410" y2="94"/>
+      </g>
+      <g fill="#f3ece0" stroke="#dce8ee" stroke-width="1.4">
+        <rect x="162" y="62" width="110" height="11" rx="2"/>
+        <rect x="288" y="62" width="110" height="11" rx="2"/>
+        <rect x="162" y="80" width="110" height="11" rx="2"/>
+        <rect x="288" y="80" width="110" height="11" rx="2"/>
+      </g>
+      <!-- door is moving DOWN: a thin leading edge below the open panels -->
+      <rect x="150" y="116" width="260" height="9" rx="3" fill="#8a6a4f"/>
+
+      <!-- driveway / garage floor inside the opening -->
+      <rect x="156" y="330" width="248" height="24" fill="#dce8ee" opacity="0.5"/>
+
+      <!-- LEFT photo-eye sensor near the floor -->
+      <rect x="158" y="300" width="22" height="34" rx="5" fill="#5e9a78"/>
+      <rect x="161" y="304" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <!-- lens facing inward -->
+      <circle cx="180" cy="312" r="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="2"/>
+      <circle cx="182" cy="312" r="2.6" fill="#7fb3c8"/>
+      <!-- green indicator LED -->
+      <circle cx="168" cy="328" r="3.4" fill="#3e7c59"/>
+      <circle cx="168" cy="328" r="6" fill="none" stroke="#5e9a78" stroke-width="1.4" opacity="0.7"/>
+
+      <!-- RIGHT photo-eye sensor near the floor -->
+      <rect x="380" y="300" width="22" height="34" rx="5" fill="#5e9a78"/>
+      <rect x="383" y="304" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <circle cx="380" cy="312" r="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="2"/>
+      <circle cx="378" cy="312" r="2.6" fill="#7fb3c8"/>
+      <circle cx="392" cy="328" r="3.4" fill="#3e7c59"/>
+      <circle cx="392" cy="328" r="6" fill="none" stroke="#5e9a78" stroke-width="1.4" opacity="0.7"/>
+
+      <!-- the invisible beam between the two eyes, shown as a dotted line -->
+      <line x1="188" y1="312" x2="372" y2="312" stroke="#e0a93d" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 11"/>
+
+      <!-- a broom breaking the beam -->
+      <!-- broom handle -->
+      <rect x="276" y="150" width="8" height="150" rx="4" fill="#c9a06b" transform="rotate(10 280 225)"/>
+      <!-- broom head down in the beam path -->
+      <rect x="258" y="298" width="40" height="14" rx="4" fill="#c96f4a" transform="rotate(10 278 305)"/>
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="262" y1="312" x2="260" y2="324"/>
+        <line x1="270" y1="314" x2="269" y2="326"/>
+        <line x1="278" y1="315" x2="278" y2="327"/>
+        <line x1="286" y1="316" x2="288" y2="328"/>
+        <line x1="294" y1="317" x2="297" y2="329"/>
+      </g>
+      <!-- beam-broken burst where the broom crosses the beam -->
+      <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round">
+        <line x1="278" y1="300" x2="278" y2="292"/>
+        <line x1="266" y1="304" x2="260" y2="298"/>
+        <line x1="290" y1="304" x2="296" y2="298"/>
+      </g>
+
+      <!-- big up-arrow: the door REVERSES -->
+      <g>
+        <path d="M470 320 l0 -150" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+        <path d="M448 196 l22 -30 l22 30" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <rect x="438" y="332" width="66" height="20" rx="6" fill="#3e7c59"/>
+      <text x="471" y="346" font-size="11" fill="#fffdf8" font-weight="700" text-anchor="middle">REVERSES</text>
+
+      <!-- little label on the beam -->
+      <text x="280" y="280" font-size="11" fill="#d98e3b" font-weight="700" text-anchor="middle">beam</text>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Most garage-door upkeep is about comfort and cost — a quieter door, a longer-lived opener. This one is different. The photo-eye sensors are the single safety device that stands between a heavy, motorized door and whatever ends up under it. Here's why a two-minute test belongs on your calendar:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 5 c-4 5 -8 8 -8 13 a8 8 0 0 0 16 0 c0 -5 -4 -8 -8 -13 z" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.2"/>
+          <circle cx="18" cy="19" r="3.4" fill="#d9663f"/>
+          <path d="M12 24 q6 5 12 0" fill="none" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It's the auto-reverse that saves lives</h3>
+        <p>The photo-eye beam is what makes a closing door stop and reverse instead of crushing a child, a pet, or a car bumper. This isn't a convenience feature — it's the safety system, and a test is how you know it still works.</p>
+        <span class="cost">A door that crushes instead of reversing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="5" y="13" width="9" height="14" rx="2.5" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="22" y="13" width="9" height="14" rx="2.5" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="14" cy="20" r="2.4" fill="#7fb3c8"/>
+          <circle cx="22" cy="20" r="2.4" fill="#7fb3c8"/>
+          <line x1="16" y1="20" x2="20" y2="20" stroke="#e0a93d" stroke-width="2.2" stroke-dasharray="1.5 3" stroke-linecap="round"/>
+          <path d="M9 9 l-3 -3 M27 9 l3 -3" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Sensors drift and fail silently</h3>
+        <p>A bumped bracket, a cobweb over a lens, a knocked-loose wire, or simple age can leave a sensor misaligned or dead. A misaligned eye leaves the door unsafe — or refusing to close at all — and nothing announces it until you check.</p>
+        <span class="cost">An unsafe door you don't know about</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="6" width="20" height="22" rx="2" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <g stroke="#b9b1a3" stroke-width="1.8"><line x1="8" y1="13" x2="28" y2="13"/><line x1="8" y1="20" x2="28" y2="20"/></g>
+          <path d="M18 28 l0 4 M14 30 l4 2 l4 -2" stroke="#d9663f" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The door is heavy enough to kill</h3>
+        <p>A residential door weighs well over a hundred pounds and travels with real force. The reversing system is the only thing standing between that weight and whatever's beneath it — which is exactly why it's worth confirming it works.</p>
+        <span class="cost">Serious injury under a heavy door</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="16" r="9" fill="none" stroke="#3e7c59" stroke-width="2.6"/>
+          <line x1="22.5" y1="22.5" x2="30" y2="30" stroke="#3e7c59" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M12 16 l3 3 l6 -7" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>A quick test catches it in time</h3>
+        <p>Two minutes — wave something through the beam, close the door on a board — and you know for certain. The whole point is to find a failed sensor on purpose, on a calm afternoon, instead of the hard way at the worst possible moment.</p>
+        <span class="cost">Finding out the hard way</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> test them?</h2>
+    <p class="sub">Every six months is the sensible default — and honestly, monthly is the ideal, which is what many opener manufacturers actually recommend. A garage with young kids or pets, a door that cycles all day, or an opener that's been acting up all push toward testing every month. And one answer trumps everything: a pre-1993 opener with no photo-eyes at all needs replacing, not testing. Four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="household">
+        <div class="q-label">1. Who's around the garage?</div>
+        <div class="pills">
+          <button class="pill" data-v="kids">Young kids and/or pets</button>
+          <button class="pill" data-v="some">Occasionally kids or pets</button>
+          <button class="pill" data-v="adults">Adults only</button>
+        </div>
+        <div class="q-hint">The auto-reverse exists above all for the small and fast — a toddler darting under a closing door, a dog slipping out. If kids or pets are ever near the garage, you want this confirmed working far more often.</div>
+      </div>
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">2. How much does the door get used?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Many times a day — main entrance</button>
+          <button class="pill" data-v="normal">A few cycles a day</button>
+          <button class="pill" data-v="light">Occasionally</button>
+        </div>
+        <div class="q-hint">Every cycle is a chance for a sensor to get bumped, for a bracket to shift, or for the beam to inch out of alignment. A heavily used door deserves more frequent checks because there's more that can knock it off.</div>
+      </div>
+      <div class="quiz-q" data-q="opener">
+        <div class="q-label">3. How old is the opener?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">Old — no photo-eyes at all</button>
+          <button class="pill" data-v="aging">Older, but it has sensors</button>
+          <button class="pill" data-v="modern">Modern opener</button>
+        </div>
+        <div class="q-hint">Photo-eyes have been federally required since 1993. If your opener predates them and has no sensors near the floor, no test will make it safe — it needs to be replaced with a modern opener.</div>
+      </div>
+      <div class="quiz-q" data-q="behavior">
+        <div class="q-label">4. How's the door behaving lately?</div>
+        <div class="pills">
+          <button class="pill" data-v="flaky">Reverses for no reason / won't close / lights blink</button>
+          <button class="pill" data-v="minor">An occasional odd close</button>
+          <button class="pill" data-v="fine">Working normally</button>
+        </div>
+        <div class="q-hint">A door that reverses with nothing in the way, refuses to close, or shows blinking sensor lights is telling you the eyes are dirty or misaligned right now — test and realign today, then keep a close eye on it.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The test itself is free — you already own everything it takes. Even a full repair is cheap by home-maintenance standards. What's on the other side of the ledger is the one cost that can't be measured in dollars at all, which is exactly why this is worth two minutes:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to test — all you need is a roll of paper towel, a cardboard box, or a 2x4 you almost certainly already have</div></div>
+        <div class="calc-stat"><div class="v">~2 min</div><div class="l">for both tests once you know the routine — the beam test and the contact-reversal test, start to finish</div></div>
+        <div class="calc-stat"><div class="v bad">$15–40</div><div class="l">a replacement photo-eye sensor pair if you swap it yourself — or roughly $75–150 for a service call</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧻 Testing it (paper towel, box, or a 2x4)</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 DIY replacement photo-eye sensor pair</span><span>$15–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Pro service call to align or replace sensors</span><span>$75–150</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:34%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚙️ Full opener replacement (pre-1993, no sensors)</span><span>$200–500</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💔 A door that won't reverse onto a child or pet</span><span>Unthinkable</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math here isn't really about money: <strong>a free two-minute test, twice a year</strong>, against the one outcome no repair bill can undo. Even the worst-case fix — a new opener — is a few hundred dollars. The thing the sensors prevent is priceless. Test them, and you simply know the safety system works.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to test your garage door safety sensors</h2>
+    <p class="sub">Two tests, both of which the door must pass: the <strong>beam test</strong> (break the invisible beam and watch the door reverse) and the <strong>contact-reversal test</strong> (close the door onto a flat 2x4 and watch it bounce back). Read the safety box first — it tells you exactly what to do if the door <em>fails</em>, because that's an emergency, not a to-do item. Then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — what a failed test actually means</h3>
+      <ul>
+        <li><strong>If the door does NOT reverse in either test, stop using the automatic opener immediately.</strong> Pull the manual-release cord to disconnect the opener and operate the door by hand, and don't let kids or pets near it until it's repaired. A door that won't reverse is genuinely dangerous.</li>
+        <li><strong>NEVER disable, bypass, or tape over the sensors to force a balky door to close.</strong> The internet is full of "tricks" to make a door close past misaligned eyes — every one of them removes the life-safety system. If the eyes won't let the door close, fix the eyes; don't defeat them.</li>
+        <li><strong>Do BOTH tests.</strong> The beam test confirms the door reverses when something breaks the beam; the contact-reversal (2x4) test confirms it reverses when it physically touches an obstacle and checks the opener's force setting. They cover different failures — a door can pass one and fail the other.</li>
+        <li><strong>Keep the beam path and the area under the door clear when it's closing, and never walk, run, or drive under a moving door.</strong> The sensors are a backup, not a license — treat the door as if it won't stop, every time.</li>
+        <li><strong>Openers made before 1993 have no photo-eyes at all.</strong> Federal law has required them since then. If yours has no sensors near the floor, no test makes it safe — it should be replaced with a modern opener.</li>
+        <li><strong>If you're not sure it's working right, call a garage-door technician.</strong> Sensor alignment and force adjustments can be fiddly, and this is the one device where "close enough" isn't good enough. A pro visit is cheap peace of mind.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A roll of paper towel, a cardboard box, or a broom</span>
+      <span class="tool-chip">A flat 2x4 (or a similar sturdy board)</span>
+      <span class="tool-chip">A soft, dry cloth for the lenses</span>
+      <span class="tool-chip">A flashlight or headlamp</span>
+      <span class="tool-chip">Nothing else — no tools to test</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of finding the two photo-eye sensors mounted within about six inches of the floor on each garage door track, and confirming both indicator lights are lit and steady">
+          <!-- floor line -->
+          <rect x="20" y="140" width="240" height="10" rx="2" fill="#b9b1a3"/>
+          <!-- left track + sensor near floor -->
+          <rect x="48" y="30" width="10" height="110" rx="3" fill="#c9a06b"/>
+          <rect x="44" y="104" width="20" height="32" rx="5" fill="#5e9a78"/>
+          <circle cx="64" cy="116" r="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="2"/>
+          <circle cx="54" cy="130" r="3.4" fill="#3e7c59"/>
+          <!-- right track + sensor near floor -->
+          <rect x="222" y="30" width="10" height="110" rx="3" fill="#c9a06b"/>
+          <rect x="216" y="104" width="20" height="32" rx="5" fill="#5e9a78"/>
+          <circle cx="216" cy="116" r="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="2"/>
+          <circle cx="226" cy="130" r="3.4" fill="#3e7c59"/>
+          <!-- the beam -->
+          <line x1="72" y1="116" x2="208" y2="116" stroke="#e0a93d" stroke-width="2.6" stroke-dasharray="2 8" stroke-linecap="round"/>
+          <!-- "~6 in" marker -->
+          <path d="M90 136 l0 -20 m-3 4 l3 -4 l3 4 m-3 16 l0 4" stroke="#6b7376" stroke-width="1.6" fill="none"/>
+          <text x="100" y="120" font-size="9.5" fill="#6b7376">≤ 6 in</text>
+          <text x="58" y="170" font-size="11" fill="#3e7c59" font-weight="700">both lights on &amp; steady</text>
+        </svg>
+        <h4>Find the two sensors</h4>
+        <p>The photo-eyes are mounted low — within about six inches of the floor — on each track. Confirm both indicator LEDs are lit and steady. A blinking light almost always means the two eyes aren't aimed at each other.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of wiping dust and cobwebs off a sensor lens with a soft cloth and nudging the bracket until the indicator light goes solid">
+          <!-- sensor body -->
+          <rect x="60" y="50" width="40" height="70" rx="8" fill="#5e9a78"/>
+          <rect x="66" y="58" width="28" height="22" rx="4" fill="#3e7c59"/>
+          <!-- lens -->
+          <circle cx="100" cy="90" r="13" fill="#fffdf8" stroke="#2c5a40" stroke-width="3"/>
+          <circle cx="103" cy="90" r="5" fill="#7fb3c8"/>
+          <!-- cobweb / dust being wiped -->
+          <g stroke="#b9b1a3" stroke-width="1.4" opacity="0.7"><path d="M88 80 q-8 4 -10 14"/><path d="M90 100 q-8 -2 -14 4"/></g>
+          <!-- cloth -->
+          <rect x="118" y="70" width="34" height="24" rx="6" fill="#7fb3c8" transform="rotate(-12 135 82)"/>
+          <rect x="118" y="70" width="34" height="9" rx="4" fill="#9cc3d4" transform="rotate(-12 135 75)"/>
+          <!-- solid light indicator -->
+          <circle cx="80" cy="132" r="5" fill="#3e7c59"/>
+          <circle cx="80" cy="132" r="9" fill="none" stroke="#5e9a78" stroke-width="1.6"/>
+          <text x="94" y="136" font-size="9.5" fill="#3e7c59" font-weight="700">solid = aligned</text>
+          <text x="60" y="166" font-size="11" fill="#3e7c59" font-weight="700">wipe lens · nudge to align</text>
+        </svg>
+        <h4>Clean the lenses &amp; check alignment</h4>
+        <p>Wipe dust and cobwebs off both lenses and make sure nothing — a bin, a bike, a leaf pile — blocks them. If a light is blinking, gently nudge the sensor in its bracket until both lights glow solid.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the beam test: starting the door closing, then waving a broom or box through the beam so the door immediately stops and reverses back up">
+          <!-- floor -->
+          <rect x="20" y="146" width="240" height="8" rx="2" fill="#b9b1a3"/>
+          <!-- two low sensors -->
+          <rect x="40" y="116" width="16" height="30" rx="4" fill="#5e9a78"/>
+          <rect x="224" y="116" width="16" height="30" rx="4" fill="#5e9a78"/>
+          <line x1="58" y1="128" x2="222" y2="128" stroke="#e0a93d" stroke-width="2.6" stroke-dasharray="2 8" stroke-linecap="round"/>
+          <!-- broom breaking the beam -->
+          <rect x="138" y="40" width="7" height="86" rx="3" fill="#c9a06b" transform="rotate(8 141 83)"/>
+          <rect x="124" y="120" width="34" height="12" rx="4" fill="#c96f4a" transform="rotate(8 141 126)"/>
+          <!-- burst -->
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"><line x1="141" y1="118" x2="141" y2="110"/><line x1="130" y1="122" x2="124" y2="116"/><line x1="152" y1="122" x2="158" y2="116"/></g>
+          <!-- up arrow: reverses -->
+          <path d="M200 120 l0 -64" stroke="#3e7c59" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M188 72 l12 -16 l12 16" stroke="#3e7c59" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="40" y="172" font-size="11" fill="#3e7c59" font-weight="700">break beam → door reverses</text>
+        </svg>
+        <h4>The BEAM test</h4>
+        <p>Start the door closing, then wave a broom, a box, or your foot through the beam — never your hand near the door's edge. The instant the beam breaks, the door should stop and reverse all the way back up.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the contact-reversal test: laying a flat 2x4 board on the floor in the door's path so that when the closing door touches the wood it reverses back up">
+          <!-- floor -->
+          <rect x="20" y="140" width="240" height="10" rx="2" fill="#b9b1a3"/>
+          <!-- 2x4 lying flat in the path -->
+          <rect x="110" y="124" width="64" height="16" rx="2" fill="#c9a06b" stroke="#8a6a4f" stroke-width="2"/>
+          <line x1="110" y1="132" x2="174" y2="132" stroke="#8a6a4f" stroke-width="1" opacity="0.5"/>
+          <text x="142" y="136" font-size="8" fill="#8a6a4f" font-weight="700" text-anchor="middle">2x4</text>
+          <!-- door bottom edge just touching the board -->
+          <rect x="70" y="100" width="140" height="22" rx="3" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <!-- contact burst -->
+          <g stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"><line x1="142" y1="124" x2="142" y2="118"/><line x1="128" y1="124" x2="122" y2="120"/><line x1="156" y1="124" x2="162" y2="120"/></g>
+          <!-- up arrow -->
+          <path d="M230 122 l0 -56" stroke="#3e7c59" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M218 80 l12 -14 l12 14" stroke="#3e7c59" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="40" y="170" font-size="11" fill="#3e7c59" font-weight="700">touches wood → door reverses</text>
+        </svg>
+        <h4>The CONTACT-reversal test</h4>
+        <p>Lay a 2x4 flat on the floor in the door's path and close the door. When the bottom edge touches the wood, it should reverse — this checks the opener's force setting, the second layer of protection beyond the beam.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of what to do if a test fails: disconnect the opener by pulling the manual release cord, keep everyone clear, and realign or replace the sensors, then log the date">
+          <!-- opener rail + motor -->
+          <rect x="30" y="30" width="120" height="9" rx="3" fill="#8a6a4f"/>
+          <rect x="40" y="20" width="44" height="28" rx="5" fill="#5e9a78"/>
+          <!-- manual release cord with red handle -->
+          <path d="M110 39 l0 40" stroke="#8a6a4f" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M104 79 a6 6 0 0 0 12 0 z" fill="#d9663f"/>
+          <text x="124" y="64" font-size="9" fill="#d9663f" font-weight="700">pull</text>
+          <!-- keep clear: a barrier / warning -->
+          <circle cx="60" cy="118" r="20" fill="none" stroke="#d9663f" stroke-width="4"/>
+          <line x1="46" y1="104" x2="74" y2="132" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="60" y="152" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">keep clear</text>
+          <!-- wrench / fix + log -->
+          <path d="M178 110 l18 -18 a8 8 0 0 0 -11 -11 l-9 9 z" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="206" y="100" width="40" height="30" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <path d="M212 110 l4 4 l8 -8" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="212" y1="122" x2="240" y2="122" stroke="#b9b1a3" stroke-width="2"/>
+          <text x="150" y="172" font-size="11" fill="#d9663f" font-weight="700">if it fails: disconnect &amp; fix</text>
+        </svg>
+        <h4>If either test fails</h4>
+        <p>Disconnect the opener with the manual-release cord, keep everyone clear, and realign or replace the sensors — or call a technician. Don't return the door to automatic use until it passes. Then log the date you tested.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Sensor-test progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Sensors found and cleaned, lights solid, and the door reversed on both the beam test and the 2x4 — your auto-reverse is confirmed working. Same quick check again in about six months (monthly is even better).</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs something's wrong — and when to call a pro</h2>
+    <p class="sub">A healthy setup is quiet about itself: two solid lights, a door that closes smoothly and reverses the instant anything's in the way. These are the signals that the sensors — or the opener — need attention now, and the cases that belong to a garage-door technician:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The door won't close, or reverses randomly.</strong> The most common symptom of dirty or misaligned photo-eyes. Clean the lenses, clear anything in the beam path, and nudge the sensors back into alignment until both lights are solid — that fixes most cases.</li>
+        <li><strong>A sensor light blinks and won't go solid.</strong> ⚠️ A blinking LED means the eyes aren't seeing each other. If gentle realignment and a lens wipe don't get a steady light, the bracket, wiring, or sensor may be the problem — and a technician can sort it quickly.</li>
+        <li><strong>The door doesn't reverse on the beam test or the board.</strong> ⚠️ This is the serious one. Stop using the automatic opener, operate the door by hand with the release cord, and get it repaired before anyone uses it again. A door that won't reverse is an emergency.</li>
+        <li><strong>A sensor is cracked, damaged, or hanging loose.</strong> Physical damage means a replacement. A photo-eye pair is inexpensive and many people swap it themselves, but if the wiring or alignment is beyond you, a pro handles it fast.</li>
+        <li><strong>Any opener made before 1993.</strong> ⚠️ If there are no photo-eyes near the floor, the door has no auto-reverse beam at all. No test makes it safe — it needs a modern opener with sensors, which is a worthwhile upgrade for the safety alone.</li>
+        <li><strong>The force setting seems off.</strong> If the door slams shut without reversing on the 2x4, or won't close at all, the opener's down-force may need adjusting — a setting best left to a technician on most units rather than guessed at.</li>
+        <li><strong>Pro tip:</strong> fold this into your home-safety round so it never gets skipped — it pairs naturally with the same five-minute pass you make for the rest of the house's safety devices.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I test my garage door safety sensors?</summary>
+      <p>Two short tests, and the door should pass both. First, the <strong>beam test</strong>: with the door open, press the wall button or remote to start it closing, then wave a broom, a cardboard box, or your foot through the invisible beam between the two low sensors — keeping your hand well away from the door's edge. The door should stop and reverse all the way back up the instant the beam is broken. Second, the <strong>contact-reversal test</strong>: lay a flat 2x4 on the floor in the door's path, directly under the door, and close it; when the bottom edge touches the wood, the door should reverse. The beam test checks the photo-eyes; the contact test checks the opener's force setting. Both are quick, both are free, and if the door fails either one, stop using the automatic opener until it's fixed. This pairs nicely with <a href="lubricate-garage-door.html">lubricating the garage door</a>, since you're already down at the tracks.</p>
+    </details>
+    <details>
+      <summary>How often should I test them?</summary>
+      <p>Every six months is a sensible default, and it slots neatly into a spring-and-fall maintenance rhythm. That said, monthly is the ideal — and it's what many opener manufacturers actually recommend, because the sensors are the device most worth confirming and the test is so quick. Tighten to monthly if you have young kids or pets around the garage, if the door is your main entrance and cycles many times a day, or if it's recently been misbehaving. Whatever the interval, the test never expires from your memory the way it should from your calendar: if the door ever reverses for no reason, refuses to close, or shows a blinking sensor light, test it that day regardless of when you last did. The quiz above turns your specifics into a personalized interval.</p>
+    </details>
+    <details>
+      <summary>Why does my garage door reverse before it closes, or won't close at all?</summary>
+      <p>Nine times out of ten it's the photo-eye sensors, and the fix is simple. The two eyes have to "see" each other across the beam; if one is dirty, knocked out of alignment, or blocked, the opener assumes something is in the way and refuses to let the door close — that's the safety system doing exactly its job. Start by wiping both lenses clean with a soft, dry cloth — dust, cobwebs, and even bright low sun shining into a lens can break the connection. Then clear anything in the beam path (a trash bin, a bike, leaves) and check that both indicator lights are glowing solid. If one is blinking, gently nudge that sensor in its bracket until the light goes steady. Loose wiring or a failed sensor can also be the culprit; if cleaning and realigning don't bring the lights solid, the sensor or its wiring likely needs attention. Whatever you do, don't tape over or bypass the eyes to force the door shut — that removes the protection entirely.</p>
+    </details>
+    <details>
+      <summary>The sensor light is blinking — what does that mean?</summary>
+      <p>A blinking light is the sensor's way of saying "I can't see my partner." The two photo-eyes have to be aimed precisely at each other; a blink usually means one has been bumped out of alignment, has a dirty or obstructed lens, or has a loose connection. Start easy: wipe both lenses with a soft dry cloth and make sure nothing is sitting in the beam path. If it's still blinking, look at the bracket — gently bend or nudge the sensor a hair at a time until the light glows solid and steady, which is your signal the eyes are locked on each other again. If you can't get a steady light no matter how you adjust it, suspect the wiring (check for a chewed or pinched wire) or a failed sensor, both of which a garage-door technician can resolve quickly. Until both lights are solid, the door may not close — and shouldn't be forced to.</p>
+    </details>
+    <details>
+      <summary>My door doesn't reverse — what do I do?</summary>
+      <p>Treat this as an emergency, not a weekend project. A door that won't reverse on the beam test or the 2x4 has lost its safety system, and it can seriously injure or kill a child, pet, or anyone underneath it. Right now: <strong>stop using the automatic opener.</strong> Pull the manual-release cord (the rope with the red handle hanging from the opener rail) to disconnect the door from the motor, and operate it by hand until it's fixed. Keep kids and pets well away from it. Then diagnose: clean and realign the photo-eyes and re-run the beam test; if it now reverses, great. If the door reverses on the beam but not on the 2x4, the opener's down-force setting likely needs adjusting — often a technician's call. And never, ever disable or tape over the sensors to make the door close; that doesn't fix anything, it just removes the protection. If you can't get both tests to pass, call a garage-door technician before putting the door back on automatic.</p>
+    </details>
+    <details>
+      <summary>My opener has no photo-eyes — is that legal or safe?</summary>
+      <p>If your opener has no sensors near the floor, it predates 1993 — and it should be replaced. Federal law (UL 325) has required photo-eye sensors and an auto-reverse on every residential garage door opener manufactured since 1993, precisely because doors without them were injuring and killing children. An older opener with only a contact-reversal feature (and no beam) offers far less protection: it only reverses after the door has already pressed down on something. A modern opener with photo-eyes is inexpensive, dramatically safer, quieter, and adds conveniences like battery backup and smartphone control. If you have an old unit with no beam sensors, fold this into your home-safety round alongside testing your <a href="test-smoke-detectors.html">smoke detectors</a> and <a href="test-gfci-outlets.html">GFCI outlets</a>, and put "replace the garage opener" near the top of the list. It's one of the highest-value safety upgrades a home can get.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The one feature you hope never gets tested for real.</h2>
+        <p>The auto-reverse is the feature you hope never gets tested by an actual child or pet under the door — so test it on purpose, on a schedule, where the only thing that breaks the beam is your broom. Upkeep Ledger logs this check and resurfaces it every six months (or monthly, if you set it that way), right alongside the smoke detectors, the GFCI outlets, and every other quiet safety task that keeps the house — and the people in it — protected.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-garage-door-sensors&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-garage-door-sensors&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This is a life-safety device — if your door doesn't reverse in either test, stop using the automatic opener and have it repaired before anyone uses it again.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { household: null, use: null, opener: null, behavior: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+    var replace = false;
+
+    /* Opener age — pre-1993 trumps everything */
+    if (s.opener === "none") {
+      replace = true;
+      reasons.push("An opener with no photo-eyes near the floor predates 1993 and has no auto-reverse beam at all — there's nothing to test. It needs to be replaced with a modern opener with sensors; that's the safety fix, not a schedule.");
+    } else if (s.opener === "aging") {
+      reasons.push("An older opener that does have sensors is worth testing on the regular schedule and watching a little more closely, since older electronics and brackets drift over time.");
+    } else {
+      reasons.push("A modern opener with photo-eyes is exactly what the test is for — keep it on a steady rhythm so you always know the auto-reverse works.");
+    }
+
+    /* Household — kids / pets */
+    if (s.household === "kids") {
+      months = 1;
+      tighten = true;
+      reasons.push("With young kids or pets around the garage, the auto-reverse is the one feature protecting the smallest, fastest members of the house — test it monthly so you're never relying on a sensor you haven't confirmed.");
+    } else if (s.household === "some") {
+      reasons.push("Kids or pets near the garage now and then raise the stakes enough to keep this on a tight, regular schedule.");
+    } else {
+      reasons.push("An adults-only household lowers the everyday risk a little, though the door is heavy enough that the test still matters.");
+    }
+
+    /* Use — cycles per day */
+    if (s.use === "heavy") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("A door that cycles many times a day as the main entrance has more chances for a sensor to get bumped or a bracket to shift, so a monthly check keeps you ahead of any drift.");
+    } else if (s.use === "light") {
+      reasons.push("An occasionally-used door sees less of the bumping and jostling that knocks sensors out of alignment, so the standard interval is plenty.");
+    } else {
+      reasons.push("A few cycles a day is ordinary use — the twice-a-year default fits it well.");
+    }
+
+    /* Behavior — recent symptoms */
+    if (s.behavior === "flaky") {
+      months = 1;
+      tighten = true;
+      reasons.push("A door that reverses for no reason, won't close, or shows blinking sensor lights is telling you the eyes are dirty or misaligned right now — clean and realign them today, then keep a tight interval until it's been reliably solid for a while.");
+    } else if (s.behavior === "minor") {
+      reasons.push("An occasional odd close is an early nudge to check the lenses and alignment, and to keep the test on a steady schedule.");
+    } else {
+      reasons.push("A door that's behaving normally is the easy case — your job is just to confirm, on a schedule, that it still does.");
+    }
+
+    /* Best-case relaxation: modern opener, adults only, light use, behaving fine */
+    if (!replace && !tighten && s.opener === "modern" && s.household === "adults" && s.use === "light" && s.behavior === "fine") {
+      months = 12;
+      reasons.push("A modern, well-behaved opener on an occasionally-used door in an adults-only home is the one case where an annual confirmation is reasonable — though many manufacturers still suggest monthly, since the test costs nothing but two minutes.");
+    }
+
+    /* Closing note */
+    var note;
+    if (replace) {
+      note = "<strong>This one isn't about a schedule — it's about an upgrade:</strong> an opener with no photo-eyes has no beam to test. Replacing a pre-1993 unit with a modern opener (sensors, auto-reverse, often battery backup) is one of the highest-value safety upgrades a home can make.";
+    } else if (s.behavior === "flaky") {
+      note = "<strong>Treat the symptoms as a same-day test:</strong> wipe both lenses, clear the beam path, and nudge the sensors until both lights are solid — then run the beam and 2x4 tests. Never tape over or bypass the eyes to force the door closed.";
+    } else if (s.household === "kids") {
+      note = "<strong>Monthly is worth it here:</strong> it takes two minutes and it's the device most worth confirming with little ones around. Make it part of the same round you use for smoke detectors and GFCI outlets so it never slips.";
+    } else {
+      note = "<strong>Remember the rule that overrides the calendar:</strong> if the door ever reverses for no reason, won't close, or fails either test, stop using the automatic opener and fix it before anyone uses it again.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.household || !quizState.use || !quizState.opener || !quizState.behavior) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: test the safety sensors " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Find and clean the two photo-eyes, then <strong>run the beam test and the 2x4 contact-reversal test, and confirm the door reverses on both</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Check the sensors", text: "Locate both photo-eye sensors near the floor", note: "Find the two small sensors mounted on each track, within about six inches of the floor. One sends the beam, the other receives it — they have to point straight at each other across the door opening." },
+    { phase: "Check the sensors", text: "Confirm both indicator lights are on and steady", note: "Each sensor has a small LED. Both should be lit and solid. A blinking light almost always means the two eyes are out of alignment and can't see each other — note which one is blinking." },
+    { phase: "Check the sensors", text: "Clear anything sitting in the beam path", note: "Move bins, bikes, boxes, or leaf piles out from between the two sensors. Anything blocking the low beam will keep the door from closing and can look like a sensor fault." },
+    { phase: "Clean & align", text: "Wipe both lenses with a soft, dry cloth", note: "Gently clean dust, cobwebs, and grime off each lens. A dirty lens — or even bright low sun shining into one — can break the connection and make the door refuse to close." },
+    { phase: "Clean & align", text: "Nudge the sensors until both lights are solid", note: "If a light is blinking, gently adjust that sensor in its bracket a hair at a time until the LED glows steady. A solid light on both means the eyes are locked onto each other and the beam is intact." },
+    { phase: "Run the tests", text: "Beam test — break the beam and watch it reverse", note: "Start the door closing, then wave a broom, box, or your foot through the beam (keep your hand away from the door's edge). The door must immediately stop and reverse all the way back up." },
+    { phase: "Run the tests", text: "Contact test — close the door onto a flat 2x4", note: "Lay a 2x4 flat on the floor in the door's path and close the door. When the bottom edge touches the wood, the door must reverse. This checks the opener's force setting — the second layer of protection." },
+    { phase: "Run the tests", text: "Confirm the door passed BOTH tests", note: "The door should reverse cleanly on the beam test and on the board. A door can pass one and fail the other, so both have to pass before you trust the automatic opener." },
+    { phase: "Fix or log", text: "If it failed, disconnect the opener and keep everyone clear", note: "Pull the manual-release cord (the rope with the red handle) to disconnect the door from the motor, operate it by hand, and don't let kids or pets near it. Never tape over or bypass the sensors to force it closed." },
+    { phase: "Fix or log", text: "Realign or replace the sensors — or call a pro", note: "Re-clean and realign the eyes and re-test. If it still won't pass, a replacement photo-eye pair is inexpensive, or a garage-door technician can sort the alignment, wiring, or force setting. Don't return it to automatic use until it passes." },
+    { phase: "Fix or log", text: "Log the date you tested", note: "Nothing reminds you that a sensor has drifted. Note the date so the next test lands in about six months (or monthly, your quiz interval) — and pair it with your smoke detector and GFCI checks." }
+  ];
+
+  var LS_KEY = "upkeepguides:test-garage-door-sensors:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

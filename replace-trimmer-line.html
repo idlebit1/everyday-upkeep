@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace your string trimmer line — UpkeepGuides.com</title>
+<meta name="description" content="How to replace string trimmer line in five minutes: power it down safely so it can't start, use the right line diameter for your trimmer, wind it tightly in the arrow direction so it actually feeds, plus a bump-feed vs pre-wound checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace your string trimmer line — UpkeepGuides.com">
+<meta property="og:description" content="How to replace string trimmer line in five minutes: power it down safely so it can't start, use the right line diameter for your trimmer, wind it tightly in the arrow direction so it actually feeds, plus a bump-feed vs pre-wound checklist.">
+<meta property="og:url" content="https://upkeepguides.com/replace-trimmer-line.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace your string trimmer line — UpkeepGuides.com">
+<meta name="twitter:description" content="How to replace string trimmer line in five minutes: power it down safely so it can't start, use the right line diameter for your trimmer, wind it tightly in the arrow direction so it actually feeds, plus a bump-feed vs pre-wound checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Tools · As needed</span>
+      <h1>Replace Your String Trimmer Line</h1>
+      <p class="lede">There's a specific kind of frustration that comes from firing up the trimmer mid-job and finding a bare, spinning head waving at the weeds — no line, no cutting, nothing. Re-spooling looks like the sort of thing you take to a shop, which is exactly why so many people do. But it's a five-minute job once you know the moves: kill the power so it can't start, use the right line diameter for your head, and wind it on tightly in the arrow's direction without crossing the strands. Do that — or just drop in a pre-wound spool — and you're back to clean edges and a trimmer that feeds line every time you bump it, instead of one collecting dust because the string ran out.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Re-spool <em>as needed</em></span>
+        <span class="chip">⏱️ <em>~5 min</em> once you know it</span>
+        <span class="chip">🌿 <em>Clean-cutting</em> edges again</span>
+        <span class="chip">💸 Costs <em>~$5–20</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone re-spooling a string trimmer: the trimmer head is opened up with the spool lifted out, two hands wind fresh green-and-yellow line onto the spool in the direction of an arrow stamped on it, the battery and spark-plug wire sit disconnected and set aside on a workbench, and a freshly cut strip of grass edge runs along the bottom of a garage and yard scene">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- garage / yard backdrop -->
+      <rect x="40" y="60" width="200" height="150" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <line x1="40" y1="110" x2="240" y2="110" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="40" y1="160" x2="240" y2="160" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="106" y1="60" x2="106" y2="210" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="173" y1="60" x2="173" y2="210" stroke="#e9e2d8" stroke-width="3"/>
+      <!-- pegboard tool hanging -->
+      <rect x="376" y="50" width="150" height="96" rx="6" fill="#f4ede0" stroke="#c9a06b" stroke-width="3"/>
+      <g fill="#c9a06b"><circle cx="396" cy="70" r="2"/><circle cx="426" cy="70" r="2"/><circle cx="456" cy="70" r="2"/><circle cx="486" cy="70" r="2"/></g>
+      <!-- a spare bulk spool of line hanging on a peg -->
+      <circle cx="446" cy="104" r="26" fill="#e3efe8" stroke="#5e9a78" stroke-width="4"/>
+      <circle cx="446" cy="104" r="9" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+      <g stroke="#3e7c59" stroke-width="2" fill="none" opacity="0.7">
+        <circle cx="446" cy="104" r="15"/>
+        <circle cx="446" cy="104" r="20"/>
+      </g>
+      <path d="M446 78 v-8" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- workbench surface -->
+      <rect x="60" y="300" width="440" height="20" rx="4" fill="#c9a06b"/>
+      <rect x="60" y="320" width="440" height="10" rx="3" fill="#8a6a4f"/>
+
+      <!-- battery set aside on the bench, left -->
+      <rect x="92" y="262" width="60" height="38" rx="6" fill="#5e9a78"/>
+      <rect x="100" y="252" width="20" height="12" rx="3" fill="#3e7c59"/>
+      <rect x="126" y="252" width="20" height="12" rx="3" fill="#3e7c59"/>
+      <g stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round">
+        <line x1="104" y1="280" x2="116" y2="280"/>
+        <line x1="110" y1="274" x2="110" y2="286"/>
+        <line x1="130" y1="280" x2="142" y2="280"/>
+      </g>
+      <text x="98" y="296" font-size="9.5" fill="#fffdf8" font-weight="700">removed</text>
+
+      <!-- spark-plug wire / boot, disconnected, set aside right -->
+      <path d="M448 296 q-18 -14 -38 -10 q-22 4 -30 -14" fill="none" stroke="#33393b" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="450" cy="296" rx="11" ry="9" fill="#8a6a4f"/>
+      <ellipse cx="450" cy="296" rx="5" ry="4" fill="#33393b"/>
+      <text x="408" y="288" font-size="9.5" fill="#6b7376">plug wire off</text>
+
+      <!-- the trimmer head, opened up, center of the bench -->
+      <!-- cap popped off, to the side -->
+      <ellipse cx="178" cy="294" rx="34" ry="12" fill="#b9b1a3"/>
+      <ellipse cx="178" cy="290" rx="34" ry="12" fill="#c96f4a"/>
+      <ellipse cx="178" cy="290" rx="14" ry="5" fill="#a9542f"/>
+      <text x="150" y="318" font-size="9.5" fill="#6b7376">cap</text>
+
+      <!-- the spool, lifted out, being wound -->
+      <!-- spool body -->
+      <ellipse cx="300" cy="248" rx="70" ry="26" fill="#dce8ee"/>
+      <ellipse cx="300" cy="240" rx="70" ry="26" fill="#7fb3c8"/>
+      <ellipse cx="300" cy="240" rx="70" ry="26" fill="none" stroke="#5e9a78" stroke-width="3"/>
+      <!-- center hub -->
+      <ellipse cx="300" cy="238" rx="16" ry="7" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+      <!-- fresh line wound on, green & yellow strands -->
+      <g fill="none" stroke-linecap="round">
+        <ellipse cx="300" cy="240" rx="56" ry="20" stroke="#5e9a78" stroke-width="4"/>
+        <ellipse cx="300" cy="240" rx="46" ry="16" stroke="#e0a93d" stroke-width="4"/>
+        <ellipse cx="300" cy="240" rx="36" ry="12" stroke="#5e9a78" stroke-width="4"/>
+        <ellipse cx="300" cy="240" rx="26" ry="9" stroke="#e0a93d" stroke-width="4"/>
+      </g>
+      <!-- winding-direction arrow stamped on the spool -->
+      <path d="M256 232 a46 16 0 0 1 88 0" fill="none" stroke="#2c5a40" stroke-width="3"/>
+      <path d="M344 232 l-9 -5 m9 5 l-5 9" fill="none" stroke="#2c5a40" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- fresh line feeding up off the spool toward the hands -->
+      <path d="M356 236 q40 -30 70 -86" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+      <path d="M352 244 q44 -22 78 -74" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- two hands winding the line -->
+      <!-- right hand, pulling line -->
+      <ellipse cx="432" cy="150" rx="17" ry="13" fill="#e8b48f" transform="rotate(-22 432 150)"/>
+      <path d="M422 142 q-6 5 -2 12" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M432 162 q22 26 40 40" stroke="#c96f4a" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- left hand, steadying the spool -->
+      <ellipse cx="248" cy="214" rx="16" ry="12" fill="#e8b48f" transform="rotate(18 248 214)"/>
+      <path d="M256 206 q6 5 3 12" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M240 222 q-26 22 -44 40" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- the rest of the trimmer head base, set down right of spool -->
+      <ellipse cx="408" cy="296" rx="40" ry="14" fill="#b9b1a3"/>
+      <ellipse cx="408" cy="290" rx="40" ry="14" fill="#d9663f"/>
+      <ellipse cx="408" cy="288" rx="16" ry="6" fill="#a9542f"/>
+      <!-- eyelets on the head -->
+      <circle cx="376" cy="290" r="3.5" fill="#fffdf8" stroke="#8a6a4f" stroke-width="1.6"/>
+      <circle cx="440" cy="290" r="3.5" fill="#fffdf8" stroke="#8a6a4f" stroke-width="1.6"/>
+
+      <!-- fresh-cut grass edge along the front of the scene -->
+      <g stroke="#3e7c59" stroke-width="4" stroke-linecap="round">
+        <path d="M70 384 q4 -22 8 -28"/>
+        <path d="M90 386 q-2 -20 2 -30"/>
+        <path d="M112 384 q4 -20 9 -26"/>
+        <path d="M150 386 q-3 -22 1 -30"/>
+        <path d="M190 384 q5 -20 9 -26"/>
+      </g>
+      <g stroke="#5e9a78" stroke-width="4" stroke-linecap="round">
+        <path d="M80 386 q-3 -18 1 -26"/>
+        <path d="M132 386 q3 -18 8 -24"/>
+        <path d="M170 384 q4 -18 8 -24"/>
+      </g>
+      <!-- clean cut line edge (where trimming stopped) -->
+      <path d="M230 392 q120 -8 300 0" fill="none" stroke="#c9a06b" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+      <!-- a couple of clipped clippings -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <line x1="300" y1="378" x2="312" y2="374"/>
+        <line x1="356" y1="382" x2="368" y2="377"/>
+        <line x1="412" y1="378" x2="424" y2="374"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A string trimmer doesn't cut with a blade — it cuts with a piece of nylon line whipping around at a few hundred miles an hour. That line is a <em>consumable</em>: it wears down, snaps off, and runs out, and when it does the trimmer simply stops working. Almost every "my trimmer's broken" complaint is really a line problem in disguise. Here's why keeping fresh, correct line on the spool is the whole game:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="6.5" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.2"/>
+          <circle cx="18" cy="18" r="2.4" fill="#d9663f"/>
+          <g stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round">
+            <path d="M18 18 l8 -10"/>
+            <path d="M18 18 l-9 -6"/>
+          </g>
+          <circle cx="26" cy="8" r="1.8" fill="#b9b1a3"/>
+          <circle cx="9" cy="12" r="1.6" fill="#b9b1a3"/>
+        </svg></div>
+        <h3>No line, no cutting</h3>
+        <p>Worn-down or broken line means you're waving a bare head at the weeds — fast, loud, and cutting nothing. The line <em>is</em> the cutting edge, so the moment it's gone the trimmer is just a noisy stick. Fresh line is what actually cuts.</p>
+        <span class="cost">A loud stick that cuts nothing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <line x1="6" y1="10" x2="30" y2="10" stroke="#5e9a78" stroke-width="4.5" stroke-linecap="round"/>
+          <line x1="6" y1="18" x2="30" y2="18" stroke="#e0a93d" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="6" y1="25" x2="22" y2="25" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+          <path d="M24 23 l4 4 M28 23 l-4 4" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>The wrong line fights you</h3>
+        <p>Too thick and it bogs the motor and won't feed; too thin and it snaps constantly; the wrong shape doesn't cut clean. Line comes in specific diameters and profiles for a reason — match your trimmer and it just works.</p>
+        <span class="cost">A bogged motor &amp; constant snapping</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="13" r="6.5" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2"/>
+          <g stroke="#e0a93d" stroke-width="1.8" stroke-linecap="round">
+            <line x1="18" y1="2" x2="18" y2="5"/>
+            <line x1="28" y1="6" x2="26" y2="8"/>
+            <line x1="8" y1="6" x2="10" y2="8"/>
+          </g>
+          <path d="M14 22 l3 4 l-3 4 M22 22 l-3 4 l3 4" stroke="#b9b1a3" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Old line goes brittle</h3>
+        <p>Nylon dries out and gets brittle from sun and age, so a spool that's been baking in the shed feeds poorly and snaps the instant it touches anything. Old, dry line is half the reason people think their trimmer "won't feed."</p>
+        <span class="cost">Brittle line that snaps on contact</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M12 18.5 l4 4 l8 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It's a five-minute DIY</h3>
+        <p>Knowing how to re-spool yourself turns a "take it to the shop" errand into a five-minute job in the garage. No appointment, no wait, no markup — just wind on fresh line or drop in a spool, and you're back to cutting.</p>
+        <span class="cost">A shop trip &amp; a stalled chore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often will <em>you</em> need to re-spool?</h2>
+    <p class="sub">Line is a consumable, so there's no fixed schedule — you re-spool whenever it runs out or snaps short, plus a fresh spool to start each season. How fast you burn through it depends entirely on your yard: a big lot with lots of concrete, fence, and gravel edging eats line fast, while a small yard with soft grass edges stretches a spool a long way. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="yard">
+        <div class="q-label">1. How big is the yard — and how often do you trim?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">Big yard, I trim a lot</button>
+          <button class="pill" data-v="normal">Average yard, a normal amount</button>
+          <button class="pill" data-v="small">Small yard, only now and then</button>
+        </div>
+        <div class="q-hint">More trimming time means more line worn away and snapped off. A big lot you go over every week burns through string far faster than a small patch you tidy up occasionally.</div>
+      </div>
+      <div class="quiz-q" data-q="edging">
+        <div class="q-label">2. What are you trimming <em>against</em>?</div>
+        <div class="pills">
+          <button class="pill" data-v="hard">Lots of concrete, fences, gravel &amp; rock</button>
+          <button class="pill" data-v="mixed">A mix of hard edges and grass</button>
+          <button class="pill" data-v="soft">Mostly soft grass edges</button>
+        </div>
+        <div class="q-hint">Hardscape is what really eats line — every brush against a sidewalk, a brick wall, a chain-link fence, or a gravel bed shaves the tip down or snaps it. Soft grass edges are gentle by comparison.</div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. How's the line behaving right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="bad">Snapping, feeding poorly, or old &amp; brittle</button>
+          <button class="pill" data-v="meh">A little short, but feeding OK</button>
+          <button class="pill" data-v="fine">Fine — plenty left and feeding well</button>
+        </div>
+        <div class="q-hint">If line snaps the moment it touches anything, feeds reluctantly, or came off a spool that's been baking in the shed for a year, it's gone brittle — re-spool with fresh line rather than fight it.</div>
+      </div>
+      <div class="quiz-q" data-q="head">
+        <div class="q-label">4. What kind of head does your trimmer have?</div>
+        <div class="pills">
+          <button class="pill" data-v="bump">Bump-feed / auto-feed spool</button>
+          <button class="pill" data-v="prewound">It takes pre-wound spools</button>
+          <button class="pill" data-v="fixed">Fixed-line (I push in pieces)</button>
+        </div>
+        <div class="q-hint">A bump- or auto-feed head holds a long wound spool you refill from a bulk roll; a pre-wound head takes a drop-in cartridge; a fixed-line head takes short individual strands. They change how — and how often — you reload.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of doing it yourself vs. not</h2>
+    <p class="sub">Trimmer line is one of the cheapest consumables in the shed. A bulk spool re-loads the head many times over, and even drop-in cartridges are a few dollars each. Set that against paying a shop to re-spool, buying a whole new head because the old one "won't feed," or limping along with the wrong line that strains the motor — and the DIY math isn't close:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–20</div><div class="l">a bulk spool of the right-diameter line — re-loads a bump-feed head many, many times over</div></div>
+        <div class="calc-stat"><div class="v">$5–10</div><div class="l">a pre-wound replacement spool, if your head takes drop-in cartridges</div></div>
+        <div class="calc-stat"><div class="v bad">~5 min</div><div class="l">to re-spool yourself once you know the steps — versus a trip to the shop and back</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧵 Refill from a bulk spool (price per re-load)</span><span>~$1 or less</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔁 Drop in a pre-wound spool</span><span>$5–10</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:12%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏪 Pay a shop to re-spool it for you</span><span>$15–30+ &amp; a drop-off</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:34%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 Wrong-diameter line straining the motor</span><span>Bogging, overheating, early wear</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛒 Buying a whole new head (or trimmer) you didn't need</span><span>$25–150+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is lopsided: <strong>a $10–20 bulk spool that re-loads the head dozens of times</strong> against shop fees, a needlessly replaced head, or a motor worn early by the wrong line. Buy the diameter your manual specifies, keep it out of the sun so it stays pliable, and re-spool yourself — and a single spool of line can outlast everything else on the trimmer.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your trimmer line</h2>
+    <p class="sub">The whole job is five short moves: power it down so it can't start, open the head and note how the spool sits, wind fresh line on tightly in the arrow's direction (or drop in a pre-wound spool), thread the ends and reassemble, then test-feed and trim. Read the techniques first — especially powering down safely and matching the line diameter — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Kill the power first — and match the line</h3>
+      <ul>
+        <li><strong>Power it down before you touch the head — it can start.</strong> Unplug a corded trimmer, <strong>remove the battery</strong> on a cordless, or <strong>disconnect the spark-plug wire</strong> on a gas trimmer. A trimmer that fires while your fingers are at the head can take them off — this is non-negotiable.</li>
+        <li><strong>Let the head stop completely and cool.</strong> The head keeps spinning after you let go of the trigger, and a gas head runs hot. Wait for it to come to a full stop before you start prying off the cap.</li>
+        <li><strong>Use the line diameter and shape your manual specifies.</strong> Common sizes are 0.065", 0.080", and 0.095" — too-thick line strains and overheats the motor and won't feed, too-thin snaps constantly. Match the diameter (and round/twisted/serrated profile) to your trimmer.</li>
+        <li><strong>Wind in the arrow's direction and don't let the strands cross.</strong> The spool is stamped with a winding arrow for a reason. Wind tightly and keep the two strands parallel — crossed or tangled line is the number-one cause of a head that won't feed.</li>
+        <li><strong>Store line out of the sun, and revive brittle line in water.</strong> UV makes nylon brittle, so keep the spool in a cool, dark spot. If old line snaps the moment it's used, soak it in water for a day to make it pliable again.</li>
+        <li><strong>Gear up before you trim, and keep people and pets clear.</strong> Flying line and debris come off the head fast — wear eye protection and long pants with closed shoes, keep bystanders well back, and never bypass or remove the head's guard.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Fresh line in your trimmer's diameter (or a pre-wound spool)</span>
+      <span class="tool-chip">Your trimmer's manual (for the size &amp; head type)</span>
+      <span class="tool-chip">Scissors or wire cutters</span>
+      <span class="tool-chip">Work gloves</span>
+      <span class="tool-chip">Eye protection</span>
+      <span class="tool-chip">A clean, flat work surface</span>
+      <span class="tool-chip">A bucket of water (to revive brittle line)</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five moves that make up the whole job</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of powering the trimmer down safely before touching the head: unplug a corded trimmer, remove the battery on a cordless, or disconnect the spark-plug wire on a gas trimmer, and let the head stop">
+          <!-- trimmer shaft & head -->
+          <rect x="40" y="40" width="120" height="9" rx="4" fill="#8a6a4f" transform="rotate(20 100 44)"/>
+          <ellipse cx="60" cy="120" rx="30" ry="11" fill="#d9663f"/>
+          <ellipse cx="60" cy="118" rx="13" ry="5" fill="#a9542f"/>
+          <!-- battery being pulled off -->
+          <rect x="150" y="44" width="42" height="26" rx="5" fill="#5e9a78"/>
+          <rect x="156" y="38" width="12" height="8" rx="2" fill="#3e7c59"/>
+          <path d="M198 57 l18 0 m-6 -5 l6 5 l-6 5" stroke="#d9663f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- a slashed circle = power off -->
+          <circle cx="208" cy="120" r="20" fill="none" stroke="#d9663f" stroke-width="4"/>
+          <line x1="194" y1="106" x2="222" y2="134" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="48" y="166" font-size="11" fill="#d9663f" font-weight="700">kill the power — it can start</text>
+        </svg>
+        <h4>Power down safely first</h4>
+        <p>Before anything else, make it impossible to start: unplug a corded trimmer, remove the battery on a cordless, or pull the spark-plug wire on a gas one. Let the head spin down to a full stop and cool. This step is the one that matters most.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of opening the trimmer head by pressing the two side tabs and popping the cap off to lift out the spool, noting how it sits before removing it">
+          <!-- head body -->
+          <ellipse cx="140" cy="104" rx="68" ry="34" fill="#d9663f"/>
+          <ellipse cx="140" cy="100" rx="68" ry="34" fill="#e2774f"/>
+          <ellipse cx="140" cy="98" rx="30" ry="14" fill="#a9542f"/>
+          <!-- the two tabs being pressed -->
+          <rect x="64" y="92" width="16" height="14" rx="3" fill="#b9b1a3"/>
+          <rect x="200" y="92" width="16" height="14" rx="3" fill="#b9b1a3"/>
+          <path d="M52 99 l12 0 m-4 -4 l4 4 l-4 4" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M228 99 l-12 0 m4 -4 l-4 4 l4 4" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- cap popping up -->
+          <ellipse cx="140" cy="52" rx="40" ry="14" fill="#c96f4a"/>
+          <ellipse cx="140" cy="50" rx="40" ry="14" fill="#d9663f"/>
+          <path d="M140 86 l0 -18 m-6 6 l6 -6 l6 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="56" y="160" font-size="11" fill="#3e7c59" font-weight="700">press tabs · note how it sits</text>
+        </svg>
+        <h4>Open the head &amp; note the layout</h4>
+        <p>Press the two tabs on the sides of the cap and pop it off to lift out the spool. Before it's all the way out, look at how it sits and which way the line ran — a quick mental snapshot makes reassembly foolproof.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of winding fresh line onto the spool: anchor a cut length in the notch and wind it tightly in the direction of the arrow stamped on the spool, keeping the two strands parallel and not crossing">
+          <!-- spool -->
+          <circle cx="140" cy="92" r="58" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4"/>
+          <circle cx="140" cy="92" r="16" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <!-- wound line rings -->
+          <circle cx="140" cy="92" r="44" fill="none" stroke="#5e9a78" stroke-width="4"/>
+          <circle cx="140" cy="92" r="34" fill="none" stroke="#e0a93d" stroke-width="4"/>
+          <circle cx="140" cy="92" r="24" fill="none" stroke="#5e9a78" stroke-width="4"/>
+          <!-- winding arrow -->
+          <path d="M100 70 a52 52 0 0 1 80 0" fill="none" stroke="#2c5a40" stroke-width="3.5"/>
+          <path d="M180 70 l-10 -3 m10 3 l-3 10" fill="none" stroke="#2c5a40" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- line feeding in to anchor notch -->
+          <path d="M198 92 q30 -2 56 6" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+          <text x="62" y="168" font-size="11" fill="#3e7c59" font-weight="700">wind tight · follow the arrow</text>
+        </svg>
+        <h4>Wind fresh line in the arrow direction</h4>
+        <p>Cut the length your manual calls for, anchor the end in the spool's notch, and wind it on <em>tightly</em> in the direction of the arrow, keeping the strands parallel and never crossing. Or skip all this and drop in a pre-wound spool.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of threading the line ends out through the eyelets in the head, seating the spool back down, and clicking the cap into place">
+          <!-- head base -->
+          <ellipse cx="140" cy="100" rx="66" ry="32" fill="#d9663f"/>
+          <ellipse cx="140" cy="98" rx="66" ry="32" fill="#e2774f"/>
+          <!-- eyelets -->
+          <circle cx="80" cy="98" r="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.4"/>
+          <circle cx="200" cy="98" r="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.4"/>
+          <!-- line threaded out each eyelet -->
+          <path d="M80 98 q-26 -10 -44 -2" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+          <path d="M200 98 q26 -10 44 -2" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+          <!-- cap clicking down -->
+          <ellipse cx="140" cy="64" rx="40" ry="13" fill="#c96f4a"/>
+          <path d="M140 78 l0 12 m-6 -6 l6 6 l6 -6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="64" y="162" font-size="11" fill="#3e7c59" font-weight="700">thread eyelets · click the cap</text>
+        </svg>
+        <h4>Thread the eyelets &amp; reassemble</h4>
+        <p>Feed each line end out through its eyelet in the head, seat the spool back down on its post, and press the cap until the tabs click home. A firm click means it's seated — a half-seated cap throws the spool the first time you bump it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of test-feeding the line by bumping the head on the ground to release more line, trimming it to the cutoff blade on the guard, and storing leftover line out of the sun">
+          <!-- head -->
+          <ellipse cx="120" cy="78" rx="46" ry="22" fill="#d9663f"/>
+          <ellipse cx="120" cy="76" rx="46" ry="22" fill="#e2774f"/>
+          <!-- guard with cutoff blade -->
+          <path d="M150 60 q40 12 30 44" fill="none" stroke="#b9b1a3" stroke-width="6" stroke-linecap="round"/>
+          <rect x="176" y="96" width="12" height="7" rx="2" fill="#8a6a4f"/>
+          <text x="190" y="104" font-size="9" fill="#6b7376">cutoff</text>
+          <!-- line whipping out -->
+          <path d="M120 76 q40 6 64 16" fill="none" stroke="#5e9a78" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M120 76 q-44 4 -70 18" fill="none" stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- bump arrow down to ground -->
+          <path d="M120 104 l0 28 m-7 -8 l7 8 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="60" y1="140" x2="200" y2="140" stroke="#c9a06b" stroke-width="4" stroke-linecap="round"/>
+          <text x="58" y="166" font-size="11" fill="#3e7c59" font-weight="700">bump to feed · trim to guard</text>
+        </svg>
+        <h4>Test-feed, trim &amp; store the rest</h4>
+        <p>Power back up and bump the head (or let auto-feed run) to release line, letting the guard's cutoff blade trim it to length. Confirm both strands feed, then store the leftover spool somewhere cool and dark so it stays pliable.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Re-spooling progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Power was off the whole time, fresh line is wound the right way, the cap clicked home, and both strands feed — you're back to clean edges. That's a shop trip you'll never make again.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>When it's not the line — and when to replace the head</h2>
+    <p class="sub">Most trimmer trouble is solved by fresh, correctly wound line. But sometimes the head itself or the trimmer is the problem, and no amount of re-spooling fixes it. Here's how to tell the difference, and what's worth a new head or a service visit:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>It won't feed line no matter what you do.</strong> First re-check the obvious — crossed or tangled winding and brittle, dried-out line cause most no-feed problems. If the winding's clean and the line's fresh and it still won't advance, a worn feed spring, a stripped bump knob, or a chewed-up eyelet is the culprit — replace the head.</li>
+        <li><strong>The head is cracked or melted.</strong> A trimmer head takes a beating against curbs and rocks, and a gas head runs hot. Cracks let the spool wobble or fly out, and a melted cap won't seat — either way it's time for a new head, which usually swaps on in a couple of minutes.</li>
+        <li><strong>The auto-feed mechanism has failed.</strong> Bump- and auto-feed heads have small springs and indexing parts that wear out. If it stopped advancing line even after a clean re-spool, the mechanism is done — a replacement head is far cheaper than a whole trimmer.</li>
+        <li><strong>The trimmer bogs, stalls, or won't run.</strong> If the motor itself struggles, surges, or won't start — not just the line failing to feed — that's an engine or motor issue: stale fuel and a clogged carburetor on a gas unit, or a tired battery or motor on an electric. Time for a tune-up or service.</li>
+        <li><strong>You're constantly fighting the wrong line.</strong> If line snaps or bogs the motor no matter how carefully you wind it, double-check the diameter and shape against the manual before blaming the trimmer — using line that's too thick for the head is a surprisingly common, fixable mistake.</li>
+        <li><strong>Pro tip:</strong> keep a backup spool (or a couple of pre-wound cartridges) on the shelf and a spare head for older trimmers. The whole point of learning to re-spool is never being stopped mid-job again — a backup on hand is what makes that true.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How do I replace or wind string trimmer line?</summary>
+      <p>Five steps. First, make the trimmer impossible to start — unplug a corded model, remove the battery on a cordless, or disconnect the spark-plug wire on a gas one — and let the head stop and cool. Second, press the tabs and pop the cap off to remove the spool, noting how it sits. Third, either wind fresh line of the correct diameter onto the spool: anchor the end in the notch and wind it on tightly in the direction of the arrow stamped on the spool, keeping the two strands parallel; or just drop in a pre-wound replacement spool. Fourth, thread the line ends out through the eyelets, seat the spool, and click the cap back on. Fifth, power up, bump the head to feed line, and trim it to the guard's cutoff. The whole thing takes about five minutes once you've done it once.</p>
+    </details>
+    <details>
+      <summary>What size and type of line do I need?</summary>
+      <p>Use the diameter and shape your trimmer's manual specifies — that's the single most important spec. Diameter is measured in inches (or millimeters), with common sizes being 0.065" for light-duty electric trimmers, 0.080" and 0.095" for general residential use, and thicker still for heavy gas units. Going too thick strains the motor, overheats it, and often won't feed through the eyelets; too thin snaps constantly. Shape matters too: round line is durable and cheap, twisted or multi-sided (square, star, serrated) profiles cut a bit cleaner and faster but wear quicker. When in doubt, match exactly what the manual lists, or read the size off the old spool or the head itself.</p>
+    </details>
+    <details>
+      <summary>Why won't my trimmer feed line?</summary>
+      <p>Three causes account for nearly all no-feed problems. The most common is crossed or overlapped winding — if the two strands cross each other on the spool, they bind and jam instead of unspooling smoothly; rewind it neatly with the strands kept parallel. Second is brittle, dried-out line: old nylon that's been baking in the sun gets stiff and snaps off short before it can feed, so it never advances; replace it with fresh line (and soak any brittle line in water for a day to revive it). Third is worn parts — a tired feed spring, a stripped bump knob, or a chewed eyelet on a bump- or auto-feed head. If the winding is clean and the line is fresh and it still won't feed, the head's mechanism has worn out and is worth replacing.</p>
+    </details>
+    <details>
+      <summary>Can I use any line in any trimmer?</summary>
+      <p>No — and this trips a lot of people up. Trimmer line comes in specific diameters, and your trimmer is built around one range. Line that's too thick won't feed through the eyelets and forces the motor to work harder than it was designed to, which overheats and prematurely wears it; line that's too thin for a powerful head snaps almost immediately. The shape matters less for compatibility but affects how it cuts and wears. The safe move is to match the diameter (and ideally the profile) the manufacturer specifies. The good news is that "the right line" is cheap and widely available — there's no reason to make do with the wrong size.</p>
+    </details>
+    <details>
+      <summary>How do I keep line from breaking so often?</summary>
+      <p>Start with the right diameter — undersized line for your trimmer snaps constantly, so confirm the size against the manual first. Then look after the line itself: nylon goes brittle from UV and age, so store spare line in a cool, dark place rather than letting it bake in the sun, and if a spool has already gone stiff, soak it in a bucket of water for a day before use to make it pliable again. Technique helps too — trim with just the tip of the line rather than burying the whole string into thick growth or grinding it against concrete and rock, which is what shaves and snaps it fastest. Right size, fresh and pliable, and a lighter touch against hard edges: that's most of the battle.</p>
+    </details>
+    <details>
+      <summary>Bump-feed, fixed-line, or pre-wound spools — what's the difference?</summary>
+      <p>They're three ways a head holds and releases line. A <strong>bump-feed</strong> (and the similar auto-feed) head carries a long spool you wind from a bulk roll; you tap the head on the ground to advance more line as it wears, which makes a bulk spool by far the cheapest way to go. A <strong>pre-wound spool</strong> head takes a drop-in cartridge already loaded with line — costlier per refill but about as easy as it gets, since there's no winding at all. A <strong>fixed-line</strong> head holds a few short, individual pieces of line you push into place by hand; there's no spool to wind, just replace each strand as it wears. Knowing which one you have tells you whether to buy a bulk roll, cartridges, or pre-cut strands — and how the reload goes.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Nothing's worse than a bare head mid-job.</h2>
+        <p>Re-spooling is a five-minute fix — but only if you've got line on the shelf when the trimmer runs out. Let Upkeep Ledger remind you to start each season with a fresh spool and keep a backup on hand, right alongside <a href="mow-lawn.html">mowing</a>, <a href="sharpen-mower-blade.html">sharpening the mower blade</a>, <a href="trim-hedges.html">trimming hedges</a>, and seasonal <a href="service-snow-blower.html">snow-blower service</a> — the rest of the lawn-and-tool kit that keeps the yard sharp.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-trimmer-line&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-trimmer-line&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Line sizes, head designs, and prices are typical U.S. examples for planning; always follow your trimmer's manual for the correct line diameter and the right way to power it down.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { yard: null, edging: null, state: null, head: null };
+
+  var FREQ_LABEL = {
+    3: "Every few weeks in season",
+    6: "A few times a season",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Yard size & use */
+    if (s.yard === "big") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("A big yard you trim often runs through a lot of line — expect to re-spool every few weeks in the busy season, so keep a bulk spool handy and stay ahead of it.");
+    } else if (s.yard === "small") {
+      reasons.push("A small yard you only tidy up now and then sips line slowly — a single spool can last a long time, so you're mostly re-spooling to start fresh each season.");
+    } else {
+      reasons.push("An average yard trimmed a normal amount is the middle case — a few re-spools across a season covers it.");
+    }
+
+    /* Edging surface */
+    if (s.edging === "hard") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Trimming against concrete, fences, gravel, and rock is what really eats line — every brush against a hard edge shaves or snaps the tip, so you'll be reloading far more often than someone edging soft grass.");
+    } else if (s.edging === "soft") {
+      reasons.push("Mostly soft grass edges are gentle on line — it wears slowly and snaps rarely, so a spool stretches a long way.");
+    } else {
+      reasons.push("A mix of hard edges and grass puts you in the middle — the hardscape stretches do the most damage, so go easy against them to make the line last.");
+    }
+
+    /* Line state */
+    if (s.state === "bad") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Line that's snapping, feeding poorly, or has gone brittle in the shed is overdue right now — re-spool with fresh line of the correct diameter rather than fighting the old stuff, and soak any brittle line in water first.");
+    } else if (s.state === "meh") {
+      reasons.push("Line that's getting short but still feeding has some life left — top it off when convenient, but you'll be back here before long.");
+    } else {
+      reasons.push("Plenty of line that feeds well means there's nothing urgent — your next re-spool is really just the fresh-start-of-season one.");
+    }
+
+    /* Head type */
+    if (s.head === "prewound") {
+      reasons.push("A pre-wound-spool head is the quickest reload of all — keep a couple of cartridges on the shelf and just drop one in when the line runs low; no winding at all.");
+    } else if (s.head === "fixed") {
+      reasons.push("A fixed-line head takes short individual strands you push in by hand — no spool to wind, just swap in a fresh piece whenever one wears down.");
+    } else {
+      reasons.push("A bump- or auto-feed head holds a long wound spool, so a bulk roll of line is by far your cheapest option — wind it on neatly in the arrow direction and bump to feed.");
+    }
+
+    /* Best-case relaxation: small yard, soft edges, line fine */
+    if (!tighten && s.yard === "small" && s.edging === "soft" && s.state === "fine") {
+      months = 12;
+      reasons.push("A small yard with soft grass edges and line that's still in good shape is the one case where a single re-spool a year — a fresh start each season — is genuinely all you'll need.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.head === "prewound") {
+      note = "<strong>Stock a couple of pre-wound spools:</strong> since your head takes drop-in cartridges, the whole job is popping the cap and swapping the spool. Keep a spare or two on the shelf and you'll never be stopped mid-trim.";
+    } else if (s.edging === "hard") {
+      note = "<strong>Save line against hard edges:</strong> let just the tip of the string do the cutting along concrete, fences, and gravel rather than burying the whole strand into them — a lighter touch is the difference between a spool that lasts and one you're constantly reloading.";
+    } else if (s.state === "bad") {
+      note = "<strong>Match the diameter and revive brittle line:</strong> re-spool with the exact line size your manual lists, and if the old spool snaps the instant it's used, soak it in water for a day first so it's pliable again.";
+    } else {
+      note = "<strong>Start every season fresh:</strong> wind a full spool on at the start of the season and keep a backup on hand. Power it down before you touch the head, wind in the arrow direction, and you'll never get caught with a bare head mid-job.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.yard || !quizState.edging || !quizState.state || !quizState.head) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: expect to re-spool " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Power the trimmer down so it can't start, then <strong>open the head, wind fresh line of the right diameter in the arrow direction (or drop in a pre-wound spool), thread the eyelets, reassemble, and test-feed</strong>. Why this pace:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Power down", text: "Kill the power so it can't start", note: "Unplug a corded trimmer, remove the battery on a cordless, or disconnect the spark-plug wire on a gas one. A trimmer that fires while your hands are at the head can injure you — this step is non-negotiable." },
+    { phase: "Power down", text: "Let the head stop completely and cool", note: "The head keeps spinning after you release the trigger, and a gas head runs hot. Wait for a full stop and let it cool before you pry off the cap." },
+    { phase: "Power down", text: "Confirm the right line diameter and shape", note: "Check the manual (or read the old spool or head) for the diameter your trimmer needs — commonly 0.065\", 0.080\", or 0.095\" — plus the round or shaped profile. Too-thick line strains the motor and won't feed." },
+    { phase: "Open the head", text: "Press the tabs and pop off the cap", note: "Squeeze the two side tabs and lift the cap off to expose the spool. Don't force it — work the tabs evenly so nothing cracks." },
+    { phase: "Open the head", text: "Lift out the spool and note how it sits", note: "Take a mental snapshot of how the spool seats and which way the line ran before it's all the way out. That makes reassembly foolproof, and you can clear any tangled old line while it's open." },
+    { phase: "Wind fresh line", text: "Cut the length your manual specifies", note: "Measure and cut the right length of fresh line (for two strands, fold it and find the midpoint if your spool has a center notch). Have a bucket of water ready to soak any line that's gone brittle." },
+    { phase: "Wind fresh line", text: "Anchor the end and wind tightly in the arrow direction", note: "Hook the line into the spool's notch and wind it on snugly in the direction of the arrow stamped on the spool, keeping the two strands parallel and never letting them cross — crossed line is the top cause of a head that won't feed. (Or just drop in a pre-wound spool.)" },
+    { phase: "Wind fresh line", text: "Leave a few inches loose in the holding slots", note: "Most spools have little notches to clip the line ends into so they don't unravel while you reassemble. Park the loose ends there with a few inches to spare." },
+    { phase: "Reassemble & test", text: "Thread the ends through the eyelets and seat the spool", note: "Feed each line end out through its eyelet in the head, drop the spool back onto its post the way it came out, and pull the ends to free them from the holding slots." },
+    { phase: "Reassemble & test", text: "Click the cap back on", note: "Press the cap down until the tabs snap fully home — a firm click means it's seated. A half-seated cap will throw the spool the first time you bump the head." },
+    { phase: "Reassemble & test", text: "Power up, test-feed, trim, and store the rest", note: "Restore power, bump the head (or let auto-feed run) to release line, and let the guard's cutoff trim it to length. Confirm both strands feed, then store the leftover spool somewhere cool and dark so it stays pliable." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-trimmer-line:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
