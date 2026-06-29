@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace your CO detector — UpkeepGuides.com</title>
+<meta name="description" content="Why your carbon monoxide detector silently expires in about 5–7 years even though it still beeps, how the test button only checks the horn not the sensor, what a replacement costs, and a step-by-step checklist to swap it on time.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace your CO detector — UpkeepGuides.com">
+<meta property="og:description" content="Why your carbon monoxide detector silently expires in about 5–7 years even though it still beeps, how the test button only checks the horn not the sensor, what a replacement costs, and a step-by-step checklist to swap it on time.">
+<meta property="og:url" content="https://upkeepguides.com/replace-co-detector.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace your CO detector — UpkeepGuides.com">
+<meta name="twitter:description" content="Why your carbon monoxide detector silently expires in about 5–7 years even though it still beeps, how the test button only checks the horn not the sensor, what a replacement costs, and a step-by-step checklist to swap it on time.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every 5–7 years</span>
+      <h1>Replace Your CO Detector</h1>
+      <p class="lede">Here's the part almost no one knows: the carbon monoxide sensor inside your detector quietly wears out in about five to seven years, and after that the unit can still power on, still light up, still beep when you press test — while detecting nothing at all. The test button only checks the horn and the battery, never the sensor. So the one thing that actually keeps an invisible, odorless gas from harming your family is replacing the whole unit by the "replace by" date stamped on its back. This isn't testing it, and it isn't changing the battery. It's the deadline you've probably never looked for.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Replace <em>every 5–7 years</em> (combo units ~10)</span>
+        <span class="chip">🔘 The test button <em>doesn't check the sensor</em></span>
+        <span class="chip">💸 New unit <em>~$20–40</em></span>
+        <span class="chip">☠️ CO is <em>invisible &amp; odorless</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone in a hallway near a bedroom door taking an old carbon monoxide detector down off the wall, the back of the old unit showing a faded replace-by date label, and a fresh new detector waiting on a side table beside it, calm and reassuring">
+      <ellipse cx="280" cy="402" rx="244" ry="22" fill="#efe7d8"/>
+      <!-- back wall line -->
+      <rect x="36" y="14" width="488" height="16" rx="4" fill="#efe7d8"/>
+      <line x1="36" y1="30" x2="524" y2="30" stroke="#d8cfbe" stroke-width="3"/>
+
+      <!-- bedroom door, right side of the hallway -->
+      <rect x="386" y="70" width="92" height="232" rx="4" fill="#e6dccb" stroke="#d8cfbe" stroke-width="3"/>
+      <rect x="398" y="82" width="68" height="94" rx="3" fill="#f1e9dc"/>
+      <rect x="398" y="186" width="68" height="104" rx="3" fill="#f1e9dc"/>
+      <circle cx="456" cy="196" r="4.5" fill="#b9b1a3"/>
+
+      <!-- empty mounting bracket left on the wall where the old unit hung -->
+      <circle cx="214" cy="96" r="22" fill="none" stroke="#d8cfbe" stroke-width="3" stroke-dasharray="5 5"/>
+      <circle cx="206" cy="90" r="2.5" fill="#b9b1a3"/>
+      <circle cx="222" cy="102" r="2.5" fill="#b9b1a3"/>
+
+      <!-- OLD detector being taken down, tilted, back facing us with a faded date label -->
+      <g transform="rotate(-14 250 150)">
+        <rect x="214" y="116" width="72" height="72" rx="16" fill="#f1e9dc" stroke="#b9b1a3" stroke-width="3.5"/>
+        <!-- faded replace-by label on the back -->
+        <rect x="228" y="132" width="44" height="30" rx="5" fill="#e9e2d8" stroke="#b9b1a3" stroke-width="2"/>
+        <text x="250" y="145" font-size="7.5" font-weight="700" fill="#8a6a4f" text-anchor="middle">REPLACE BY</text>
+        <text x="250" y="157" font-size="11" font-weight="800" fill="#9a4f33" text-anchor="middle">2024</text>
+        <rect x="232" y="170" width="36" height="6" rx="2" fill="#d8cfbe"/>
+      </g>
+      <!-- "expired" tag -->
+      <rect x="150" y="196" width="74" height="22" rx="8" fill="#d9663f"/>
+      <text x="187" y="211" font-size="11" font-weight="800" fill="#fffdf8" text-anchor="middle">expired</text>
+
+      <!-- person reaching up to lift the old unit off -->
+      <!-- step stool -->
+      <rect x="206" y="350" width="80" height="11" rx="5" fill="#c96f4a"/>
+      <rect x="212" y="361" width="9" height="26" fill="#9a4f33"/>
+      <rect x="271" y="361" width="9" height="26" fill="#9a4f33"/>
+      <rect x="222" y="370" width="48" height="9" rx="4" fill="#c96f4a"/>
+      <!-- legs -->
+      <rect x="232" y="290" width="14" height="62" rx="6" fill="#2c5a40"/>
+      <rect x="252" y="290" width="14" height="62" rx="6" fill="#2c5a40"/>
+      <!-- torso -->
+      <rect x="224" y="214" width="50" height="84" rx="18" fill="#3e7c59"/>
+      <!-- reaching arm up to the old unit -->
+      <path d="M262 228 Q272 178 256 150" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="252" cy="146" r="7" fill="#c9a06b"/>
+      <!-- other arm down -->
+      <path d="M230 238 Q216 262 222 286" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <circle cx="223" cy="292" r="6.5" fill="#c9a06b"/>
+      <!-- head -->
+      <circle cx="244" cy="190" r="18" fill="#c9a06b"/>
+      <path d="M226 186 q4 -16 20 -16 q12 0 16 10 q-10 -4 -18 -2 q-12 2 -18 8" fill="#8a6a4f"/>
+
+      <!-- side table with the FRESH new detector, boxed and ready -->
+      <rect x="452" y="326" width="92" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="462" y="336" width="10" height="58" fill="#8a6a4f"/>
+      <rect x="524" y="336" width="10" height="58" fill="#8a6a4f"/>
+      <!-- new unit, clean and bright -->
+      <rect x="466" y="278" width="64" height="48" rx="14" fill="#fffdf8" stroke="#5e9a78" stroke-width="3.5"/>
+      <g stroke="#9cc0d4" stroke-width="2.4" stroke-linecap="round">
+        <line x1="478" y1="292" x2="518" y2="292"/>
+        <line x1="478" y1="300" x2="518" y2="300"/>
+      </g>
+      <rect x="484" y="308" width="28" height="12" rx="3" fill="#dce8ee"/>
+      <text x="498" y="318" font-size="9" font-weight="800" fill="#5e9a78" text-anchor="middle">CO</text>
+      <circle cx="474" cy="288" r="4" fill="#e0a93d"/>
+      <!-- a little "new" sparkle -->
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <path d="M538 272 l0 8 M534 276 l8 0"/>
+      </g>
+      <rect x="466" y="262" width="46" height="16" rx="6" fill="#3e7c59"/>
+      <text x="489" y="274" font-size="10" font-weight="800" fill="#fffdf8" text-anchor="middle">fresh</text>
+
+      <!-- plant for warmth, low left -->
+      <circle cx="96" cy="346" r="17" fill="#5e9a78"/>
+      <circle cx="114" cy="334" r="14" fill="#3e7c59"/>
+      <circle cx="118" cy="354" r="11" fill="#5e9a78"/>
+      <rect x="92" y="362" width="30" height="28" rx="4" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A carbon monoxide detector is the rare device that fails in total silence. It doesn't go dark, it doesn't throw an error — it just stops being able to do the one thing you bought it for, while looking and sounding completely fine. Here's why "replace it on a date" matters more than any other CO-alarm habit:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="14" width="24" height="14" rx="3" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.4"/>
+          <rect x="6" y="6" width="6" height="10" rx="2" fill="#b9b1a3"/>
+          <path d="M12 24 c1.4 2 1.9 2.9 1.9 3.8 a1.9 1.9 0 0 1 -3.8 0 c0 -0.9 0.5 -1.8 1.9 -3.8 z" fill="#d9663f"/>
+          <path d="M22 11 q2 2 0 4 q-2 2 0 4" stroke="#b9b1a3" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M27 9 q2.4 2.5 0 5 q-2.4 2.5 0 5" stroke="#b9b1a3" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>CO is invisible and deadly</h3>
+        <p>Carbon monoxide has no color, no smell, and no taste — people fall asleep and don't wake up. A dead sensor gives you zero warning while you go on assuming you're protected. The only thing standing between your family and the gas is a working detector, so "working" can't be a guess.</p>
+        <span class="cost">A silent gap in your only warning</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="18" r="11" fill="none" stroke="#3e7c59" stroke-width="2.5"/>
+          <line x1="16" y1="18" x2="16" y2="11" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="16" y1="18" x2="21" y2="21" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <rect x="22" y="22" width="13" height="9" rx="4.5" fill="#e0a93d"/>
+          <text x="28.5" y="29" font-size="6.5" font-weight="800" fill="#fffdf8" text-anchor="middle">5-7y</text>
+        </svg></div>
+        <h3>The sensor wears out silently</h3>
+        <p>A CO sensor is a chemical cell that degrades whether or not it ever sees any gas — most are rated for about 5–7 years. Past that point it simply stops detecting, even though the unit still looks new, still lights up, and still tests "fine." Nothing tells you it's gone blind.</p>
+        <span class="cost">Looks &amp; tests fine — detects nothing</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#3e7c59" stroke-width="2.5"/>
+          <circle cx="18" cy="18" r="3" fill="#e0a93d"/>
+          <g stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round">
+            <path d="M18 8 a10 10 0 0 1 8.7 5"/>
+            <path d="M9.3 23 a10 10 0 0 1 -1.1 -9"/>
+          </g>
+          <path d="M11 26 l-2.8 -3 l3.6 -1.4" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The test button can't prove it</h3>
+        <p>Pressing TEST confirms the battery, the electronics, and the horn — it does <strong>not</strong> expose the sensor to carbon monoxide, so it can't tell you the sensor still works. A passing test on an expired unit is a false sense of safety. Date-based replacement is the only real safeguard.</p>
+        <span class="cost">Test ≠ proof the sensor works</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="6" width="18" height="26" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.4"/>
+          <rect x="13" y="10" width="10" height="14" rx="2" fill="#e0a93d"/>
+          <rect x="15" y="6" width="6" height="3" rx="1.5" fill="#b9b1a3"/>
+          <circle cx="18" cy="28" r="2" fill="#b9b1a3"/>
+          <path d="M30 8 l3 -3 m-3 8 l5 -5 m-5 11 l4 -4" stroke="#d9663f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Battery swaps hide the deadline</h3>
+        <p>Most people dutifully change the battery for years and never realize the whole detector expired underneath their hand. A fresh battery makes a dead-sensor unit feel cared-for and current — so the house sits unprotected while everyone believes the opposite.</p>
+        <span class="cost">Cared-for battery, expired sensor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace yours?</h2>
+    <p class="sub">A standalone CO detector lasts about 5–7 years; a combination smoke/CO unit often runs closer to 10. But two things override the rule of thumb: the date printed on the unit, and an end-of-life chirp — either one means replace now, no matter the math. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What kind of detector is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="standalone">Standalone CO detector</button>
+          <button class="pill" data-v="combo">Combo smoke/CO unit</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+        <div class="q-hint">A standalone CO detector typically lasts about 5–7 years; a combination smoke/CO alarm usually about 10. If you're not sure, read the label on the front or back — and when in doubt, plan for the shorter life.</div>
+      </div>
+      <div class="quiz-q" data-q="date">
+        <div class="q-label">2. Can you read a date on it?</div>
+        <div class="pills">
+          <button class="pill" data-v="readable">Yes — there's a manufacture or replace-by date</button>
+          <button class="pill" data-v="nodate">No date, or I can't tell how old it is</button>
+        </div>
+        <div class="q-hint">Take the unit down and look at the back or side. A manufacture date plus the rated life tells you the deadline. No readable date at all almost always means the unit is old enough to replace on principle.</div>
+      </div>
+      <div class="quiz-q" data-q="behavior">
+        <div class="q-label">3. How is it behaving — and do you remember installing it?</div>
+        <div class="pills">
+          <button class="pill" data-v="chirp">It's chirping an end-of-life pattern</button>
+          <button class="pill" data-v="cant">Can't remember ever replacing it</button>
+          <button class="pill" data-v="recent">Installed it recently — I know it's new</button>
+        </div>
+        <div class="q-hint">A unit chirping its end-of-life signal is telling you in plain language that it's done — that's not a battery, it's the whole alarm. And if you can't recall replacing it, assume it's older than you'd like.</div>
+      </div>
+      <div class="quiz-q" data-q="fuel">
+        <div class="q-label">4. Does your home burn fuel?</div>
+        <div class="pills">
+          <button class="pill" data-v="fuel">Gas/oil furnace, gas range, fireplace, or attached garage</button>
+          <button class="pill" data-v="electric">All-electric, no garage or fireplace</button>
+        </div>
+        <div class="q-hint">A furnace, water heater, gas range, fireplace, wood stove, or an attached garage all produce CO — which raises the stakes of an expired detector and makes replacing on time non-negotiable.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">A replacement detector is one of the cheapest things you'll ever buy — and it guards against something fatal. Here's the math for a typical home, with U.S. estimates for planning:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20 – $40</div><div class="l">a standalone CO detector — a 10-year sealed-battery model costs a bit more but never needs a battery change</div></div>
+        <div class="calc-stat"><div class="v">$30 – $60</div><div class="l">a combination smoke/CO unit — covers both threats on one ceiling puck, typically rated ~10 years</div></div>
+        <div class="calc-stat"><div class="v bad">$0</div><div class="l">what an expired detector is worth as protection — a dead sensor warns you of nothing</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 A fresh battery in an expired unit</span><span>~$3 — and false comfort</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🟢 A new standalone CO detector</span><span>$20–$40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🟢 A combo smoke/CO unit (covers both)</span><span>$30–$60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:22%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 A single CO-poisoning hospital stay</span><span>thousands</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>☠️ A CO death — the real number</span><span>catastrophic</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>twenty to forty dollars every five-to-seven years</strong> — pennies a week — against a gas that sends roughly 50,000 Americans to the ER each year and kills around 400. There is no cheaper life-safety upgrade you can make to a home, and no version of "saving money" that beats replacing a worn-out CO sensor on time.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your CO detector</h2>
+    <p class="sub">The whole job is short: read the date, tell the chirp apart from a low battery, buy the right unit, mount and test it, then do it across the house and write the dates down. Read the safety notes first — especially what a real alarm means and what the test button does <em>not</em> prove — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — this is a life-safety device</h3>
+      <ul>
+        <li><strong>If a CO alarm ever sounds for real, get everyone outside to fresh air immediately and call 911 or the fire department.</strong> Do not ignore it, silence it, and stay. Don't go back in until responders say it's safe — then have your fuel appliances inspected before you run them again.</li>
+        <li><strong>The test/silence button only checks the horn and battery — not the sensor.</strong> A unit can pass the button test and be blind to CO. The only way to know the sensor still works is to replace the whole unit by the date stamped on it — typically about 5–7 years for CO, and roughly 10 for combo and smoke alarms.</li>
+        <li><strong>Learn the difference between a low-battery chirp and an end-of-life chirp.</strong> A low-battery chirp means replace the battery; an end-of-life chirp means replace the whole unit. The patterns differ by brand — check the manual so you don't throw out a good alarm or keep a dead one.</li>
+        <li><strong>Place CO detectors on every level and near each sleeping area</strong> — but follow the manual on distance from fuel-burning appliances and the garage. Too close and you'll get false alarms; the manufacturer's placement guidance wins.</li>
+        <li><strong>Never pull a battery to stop a chirp and forget about it.</strong> A silenced alarm is no alarm at all. If it's chirping low-battery, swap the battery; if it's end-of-life, replace the unit that day.</li>
+        <li><strong>Have working smoke alarms too.</strong> CO and fire are two separate threats. A combo unit covers both, or keep separate smoke alarms on their own replacement clock (~10 years) alongside your CO coverage.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A step stool (or a steady reach to the unit)</span>
+      <span class="tool-chip">The unit's manual (or its brand for the chirp pattern)</span>
+      <span class="tool-chip">A replacement detector — the right type per location</span>
+      <span class="tool-chip">A fresh battery (or a 10-year sealed-battery model)</span>
+      <span class="tool-chip">A small screwdriver for the bracket</span>
+      <span class="tool-chip">A permanent marker</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of taking a CO detector down off the wall and turning it over to read the manufacture or replace-by date printed on the back, with a note that no date means it is old">
+          <rect x="56" y="30" width="100" height="100" rx="22" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+          <rect x="74" y="52" width="64" height="40" rx="6" fill="#faf0da" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="106" y="68" font-size="9" font-weight="700" fill="#6b7376" text-anchor="middle">REPLACE BY</text>
+          <text x="106" y="84" font-size="13" font-weight="800" fill="#33393b" text-anchor="middle">2027</text>
+          <rect x="80" y="102" width="52" height="8" rx="2" fill="#e9e2d8"/>
+          <!-- hand turning it over -->
+          <path d="M178 156 Q160 124 150 96" stroke="#c9a06b" stroke-width="11" fill="none" stroke-linecap="round"/>
+          <circle cx="150" cy="92" r="6.5" fill="#c9a06b"/>
+          <!-- arrow: read the back -->
+          <line x1="168" y1="60" x2="208" y2="60" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="208,52 224,60 208,68" fill="#3e7c59"/>
+          <text x="206" y="46" font-size="10" font-weight="700" fill="#3e7c59">read it</text>
+          <text x="140" y="170" font-size="11" fill="#6b7376" text-anchor="middle">no date? it's old — replace it</text>
+        </svg>
+        <h4>Find the date on the back</h4>
+        <p>Take the unit down and read the manufacture or "replace by" date on the back or side. Most CO detectors are rated about 5–7 years from manufacture; combo units roughly 10. If there's no readable date at all, it's old enough — replace it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram contrasting two beep patterns: a single occasional chirp meaning low battery and replace the battery, versus a repeating chirp meaning end of life and replace the whole unit, with a note to check the manual">
+          <rect x="20" y="26" width="240" height="52" rx="10" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="34" y="46" font-size="11" font-weight="700" fill="#9a7117">one chirp now and then</text>
+          <circle cx="44" cy="62" r="4" fill="#e0a93d"/>
+          <text x="58" y="66" font-size="10" fill="#6b7376">= low battery — swap the battery</text>
+          <rect x="20" y="92" width="240" height="62" rx="10" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <text x="34" y="112" font-size="11" font-weight="700" fill="#d9663f">chirp · chirp · chirp, repeating</text>
+          <g>
+            <circle cx="44" cy="128" r="4" fill="#d9663f"/>
+            <circle cx="62" cy="128" r="4" fill="#d9663f"/>
+            <circle cx="80" cy="128" r="4" fill="#d9663f"/>
+          </g>
+          <text x="34" y="148" font-size="10" fill="#6b7376">= end of life — replace the whole unit</text>
+        </svg>
+        <h4>Know the chirp</h4>
+        <p>Match the beep pattern to the manual. A single occasional chirp usually means low battery — change the battery. A distinct, repeating end-of-life pattern means the unit itself is done. A detector chirping end-of-life is finished, battery or not.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of choosing the right replacement detector, showing a standalone CO unit and a combination smoke and CO unit side by side, ideally a sealed ten-year battery model">
+          <!-- standalone CO -->
+          <rect x="40" y="44" width="78" height="78" rx="18" fill="#fffdf8" stroke="#5e9a78" stroke-width="3"/>
+          <g stroke="#9cc0d4" stroke-width="2.2" stroke-linecap="round">
+            <line x1="54" y1="60" x2="104" y2="60"/>
+            <line x1="54" y1="68" x2="104" y2="68"/>
+          </g>
+          <rect x="62" y="80" width="34" height="14" rx="3" fill="#dce8ee"/>
+          <text x="79" y="91" font-size="9" font-weight="800" fill="#5e9a78" text-anchor="middle">CO</text>
+          <text x="79" y="138" font-size="10" fill="#6b7376" text-anchor="middle">standalone CO</text>
+          <!-- combo smoke/CO -->
+          <rect x="162" y="44" width="78" height="78" rx="18" fill="#fffdf8" stroke="#5e9a78" stroke-width="3"/>
+          <g stroke="#9cc0d4" stroke-width="2.2" stroke-linecap="round">
+            <line x1="176" y1="60" x2="226" y2="60"/>
+            <line x1="176" y1="68" x2="226" y2="68"/>
+          </g>
+          <rect x="178" y="80" width="46" height="14" rx="3" fill="#dce8ee"/>
+          <text x="201" y="91" font-size="8" font-weight="800" fill="#5e9a78" text-anchor="middle">SMOKE+CO</text>
+          <text x="201" y="138" font-size="10" fill="#6b7376" text-anchor="middle">combo smoke/CO</text>
+          <!-- 10-year tag -->
+          <rect x="98" y="150" width="84" height="20" rx="9" fill="#e0a93d"/>
+          <text x="140" y="164" font-size="10" font-weight="800" fill="#fffdf8" text-anchor="middle">10-yr sealed</text>
+        </svg>
+        <h4>Buy the right replacement</h4>
+        <p>Pick a CO or combo smoke/CO detector to match each location — ideally a 10-year sealed-battery model, which never needs a battery and dies and gets replaced on one clean clock. Get the right type for each spot before you start pulling old units down.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of mounting a new CO detector on the wall per the manual at the right level and distance from appliances, writing the install date on it, and pressing the test button to confirm the horn sounds">
+          <rect x="92" y="34" width="96" height="72" rx="16" fill="#fffdf8" stroke="#5e9a78" stroke-width="3"/>
+          <g stroke="#9cc0d4" stroke-width="2.4" stroke-linecap="round">
+            <line x1="108" y1="52" x2="172" y2="52"/>
+            <line x1="108" y1="61" x2="172" y2="61"/>
+          </g>
+          <rect x="116" y="72" width="48" height="18" rx="4" fill="#dce8ee"/>
+          <text x="140" y="85" font-size="11" font-weight="800" fill="#5e9a78" text-anchor="middle">CO</text>
+          <circle cx="140" cy="48" r="6.5" fill="#e0a93d"/>
+          <!-- sound arcs from test -->
+          <g stroke="#d9663f" stroke-width="3.5" fill="none" stroke-linecap="round">
+            <path d="M74 48 q-12 22 0 44"/>
+            <path d="M206 48 q12 22 0 44"/>
+          </g>
+          <!-- install date written below -->
+          <rect x="96" y="120" width="88" height="22" rx="6" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="140" y="135" font-size="10" font-weight="700" fill="#9a7117" text-anchor="middle">installed 2026</text>
+          <!-- finger pressing test -->
+          <path d="M214 168 Q188 138 168 102" stroke="#c9a06b" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <circle cx="166" cy="98" r="5.5" fill="#c9a06b"/>
+          <text x="140" y="160" font-size="10.5" fill="#6b7376" text-anchor="middle">mount · date it · test the horn</text>
+        </svg>
+        <h4>Install it and test the horn</h4>
+        <p>Mount the new unit per the manual — the right level and the right distance from fuel appliances and the garage. Write the install date on it, then press TEST to confirm the horn sounds. Now you have a known-good alarm and a known clock.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a small house cross-section with a fresh CO detector on each level and near each sleeping area, each marked with its install date logged in a notebook">
+          <polygon points="42,38 140,8 238,38" fill="#c96f4a"/>
+          <rect x="54" y="38" width="172" height="42" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <rect x="54" y="80" width="172" height="42" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+          <line x1="120" y1="38" x2="120" y2="80" stroke="#e6dccb" stroke-width="2"/>
+          <g>
+            <circle cx="88" cy="58" r="6.5" fill="#5e9a78"/><text x="88" y="60.5" font-size="4.5" font-weight="800" fill="#fffdf8" text-anchor="middle">CO</text>
+            <circle cx="172" cy="58" r="6.5" fill="#5e9a78"/><text x="172" y="60.5" font-size="4.5" font-weight="800" fill="#fffdf8" text-anchor="middle">CO</text>
+            <circle cx="140" cy="100" r="6.5" fill="#5e9a78"/><text x="140" y="102.5" font-size="4.5" font-weight="800" fill="#fffdf8" text-anchor="middle">CO</text>
+          </g>
+          <!-- logbook -->
+          <rect x="160" y="128" width="86" height="40" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="172" y1="140" x2="234" y2="140" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="172" y1="150" x2="234" y2="150" stroke="#e9e2d8" stroke-width="2"/>
+          <line x1="172" y1="160" x2="220" y2="160" stroke="#e9e2d8" stroke-width="2"/>
+          <path d="M176 140 l3 3 l5 -6" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="100" y="168" font-size="11" font-weight="700" fill="#6b7376" text-anchor="middle">every level · log each date</text>
+        </svg>
+        <h4>Do the house &amp; log the dates</h4>
+        <p>Replace every expired unit — on each level and near every sleeping area — not just the one that chirped. Write the install date on each, and note the next replacement year somewhere you'll actually see it, so the deadline never sneaks up again.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Replacement progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Every expired unit swapped, dated, and tested — fresh sensors on every level and near every bedroom. That's real protection again, with a deadline you'll actually see coming.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time — and what counts as an emergency</h2>
+    <p class="sub">Replacing a CO detector is a routine swap on a schedule. These are the signals it's due — and the one situation that isn't maintenance at all but an emergency, every single time:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>An end-of-life chirp.</strong> A distinct, repeating chirp pattern (check the manual to be sure it's not just low battery) means the unit has reached the end of its service life. A new battery won't fix it — replace the whole detector that day.</li>
+        <li><strong>No readable date, or older than its rated life.</strong> A standalone CO unit past about 7 years, or a combo/smoke alarm past about 10, is at or beyond the end of its sensor life. If you can't find a date at all, treat it as expired and replace it.</li>
+        <li><strong>It won't pass its horn test.</strong> If pressing TEST produces a weak or silent response even after a fresh battery, the unit is failing — replace it. A detector you can't hear isn't protecting anyone.</li>
+        <li><strong>A real CO alarm — the loud, repeating emergency pattern.</strong> This is not maintenance. Get everyone, including pets, outside to fresh air and call 911 or the fire department from outside. Don't re-enter until responders clear it, and have your fuel-burning appliances inspected to find the source before you run them again.</li>
+        <li><strong>You're already doing a home-safety round.</strong> Replacing a CO detector pairs naturally with <a href="test-co-detectors.html">testing your CO detectors</a>, checking your <a href="test-smoke-detectors.html">smoke detectors</a>, swapping <a href="replace-smoke-detector-batteries.html">detector batteries</a>, inspecting <a href="check-fire-extinguisher.html">the fire extinguisher</a>, and testing your <a href="test-gfci-outlets.html">GFCI outlets</a> — bundle them and the whole house gets safer in one afternoon.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often do CO detectors need to be replaced?</summary>
+      <p>Most standalone carbon monoxide detectors are rated for about 5–7 years, because the CO sensor is a chemical cell that wears out whether or not it ever detects any gas. Combination smoke/CO units often last closer to 10 years, and standalone smoke alarms are generally a 10-year item too. The exact deadline is the "replace by" date printed on the unit — replace the whole detector by that date, even if it still powers on and passes a button test. If there's no readable date, the unit is old enough to replace on principle.</p>
+    </details>
+    <details>
+      <summary>Doesn't the test button prove it works?</summary>
+      <p>No — and this is the single most important thing to understand about CO detectors. The test button verifies the battery, the electronics, and the horn. It does <em>not</em> expose the sensor to carbon monoxide, so it cannot confirm the sensor still detects CO. A unit with a dead sensor will happily pass the button test and beep right on cue while detecting nothing. That's exactly why every unit carries an expiration date, and why date-based replacement — not a passing test — is what actually keeps you protected.</p>
+    </details>
+    <details>
+      <summary>What's the difference between a low-battery chirp and an end-of-life chirp?</summary>
+      <p>Both are intermittent chirps, but they mean very different things. A low-battery chirp — usually a single chirp every minute or so — means swap the battery and the alarm is fine. An end-of-life chirp means the unit itself has reached the end of its service life and must be replaced; a fresh battery won't silence it for long. The two patterns differ by manufacturer (often a different number of chirps or a different interval), so check the unit's manual to tell them apart. The simple rule: if a new battery doesn't stop the chirping, it's end of life — replace the whole detector.</p>
+    </details>
+    <details>
+      <summary>Where should CO detectors go?</summary>
+      <p>Put one on every level of the home, including a finished basement, and one near (or inside) every sleeping area so it can wake you. Carbon monoxide mixes fairly evenly with air, so many modern units can be placed at any height — but follow the manufacturer's guidance, which often suggests keeping them at least 10–15 feet from fuel-burning appliances like the furnace, water heater, or stove, and away from the garage, to avoid nuisance trips. Keep them out of dead-air corners and away from very humid or dusty spots. When in doubt, the manual's placement instructions outrank any general rule.</p>
+    </details>
+    <details>
+      <summary>CO vs combo smoke/CO detectors — which, and how often?</summary>
+      <p>A standalone CO detector does one job and typically lasts about 5–7 years. A combination smoke/CO unit covers both fire and CO on a single device and usually carries a ~10-year rating — convenient, one less puck on the ceiling, and many announce which threat they've detected. Two things to keep in mind: a combo unit retires on the earlier of its two clocks (the CO sensor often ages out first, so go by the printed replace-by date), and either way you still need enough units to cover every level and every sleeping area. Whichever you choose, replace it by the date stamped on it.</p>
+    </details>
+    <details>
+      <summary>My CO alarm is going off — what do I do?</summary>
+      <p>Treat it as real, every time. Get everyone — including pets — out of the house and into fresh air immediately, then call 911 or the fire department from outside. Don't try to "air it out" by opening windows first, don't go searching for the source, and don't silence the alarm and stay. Don't re-enter until emergency responders tell you it's safe. If anyone has a headache, dizziness, nausea, confusion, or drowsiness, tell the dispatcher you suspect carbon monoxide. Before running any fuel-burning appliance again, have it inspected to find and fix what caused the alarm.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A CO detector expires years before you'd ever notice.</h2>
+        <p>It still powers on, still beeps when you press test — and quietly stops protecting you against a gas you can't see or smell. Upkeep Ledger tracks the replace-by date on every unit so it's never a guess: it logs today's swap, marks the install date, and nudges you when the next replacement is due — right alongside your smoke alarms, the fire extinguisher, and every other quiet task that keeps the house safe.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-co-detector&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-co-detector&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Lifespan and cost figures are typical U.S. ranges for planning purposes; your detector may differ — the manufacturer's manual and your local code outrank this guide. If a CO alarm sounds, treat it as real, get out, and call 911.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, date: null, behavior: null, fuel: null };
+
+  var FREQ_LABEL = {
+    5: "Every 5 years",
+    7: "Every 7 years",
+    10: "Every 10 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var years = 7;
+    var replaceNow = false;
+
+    /* Detector type sets the baseline life */
+    if (s.type === "combo") {
+      years = 10;
+      reasons.push("A combination smoke/CO unit is usually rated for about 10 years — but it retires on the earlier of its two clocks, and the CO sensor often ages out first, so go by the replace-by date printed on it.");
+    } else if (s.type === "standalone") {
+      years = 7;
+      reasons.push("A standalone CO detector's sensor is a chemical cell rated for roughly 5–7 years. Plan to replace it about every 7 years at the latest — sooner if the printed date says so.");
+    } else {
+      years = 7;
+      reasons.push("Not sure of the type? Plan for the shorter, standalone CO life of about 5–7 years until you can read the label — it's the safer assumption.");
+    }
+
+    /* The date — overrides the rule of thumb */
+    if (s.date === "nodate") {
+      replaceNow = true;
+      reasons.push("No readable date, or no idea how old it is, almost always means the unit is past its service life. When you can't prove it's current, replace it — the sensor may already be dead.");
+    } else {
+      reasons.push("Good — there's a date on it. The manufacture or replace-by date is the real deadline: replace the whole unit by it, no matter how well it tests.");
+    }
+
+    /* Behavior — chirp or unknown age */
+    if (s.behavior === "chirp") {
+      replaceNow = true;
+      reasons.push("An end-of-life chirp is the unit telling you in plain language that it's done. That's not a battery — a fresh one won't silence it for long. Replace the whole detector now.");
+    } else if (s.behavior === "cant") {
+      replaceNow = true;
+      reasons.push("If you can't remember ever replacing it, assume it's older than its rated life. The cheapest way to stop guessing is to swap it and start a fresh, dated clock.");
+    } else {
+      reasons.push("You know it's recently installed — so it just needs a logged install date and a replace-by reminder so the deadline can't sneak up on you.");
+    }
+
+    /* Fuel sources — raise the stakes */
+    if (s.fuel === "fuel") {
+      reasons.push("A gas or oil furnace, gas range, fireplace, or attached garage all produce CO — which makes an expired detector a real and present gap. Don't stretch the schedule; replace on time, every time.");
+    } else {
+      reasons.push("An all-electric home with no garage or fireplace has fewer CO sources, but a portable generator, a neighboring unit, or a future appliance can still produce it — so keep a working, in-date detector regardless.");
+    }
+
+    return { years: years, replaceNow: replaceNow, reasons: reasons };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.date || !quizState.behavior || !quizState.fuel) return;
+    var r = computePlan(quizState);
+
+    if (r.replaceNow) {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: replace it now — then about every " + r.years + " years";
+    } else {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: " + FREQ_LABEL[r.years].toLowerCase();
+    }
+
+    document.getElementById("resultBody").innerHTML = r.replaceNow
+      ? "Swap this unit now, and from then on <strong>replace it about every " + r.years + " years — or by the date stamped on the unit</strong>, whichever comes first. Why:"
+      : "<strong>Replace it about every " + r.years + " years — or by the date stamped on the unit</strong>, whichever comes first. Why this plan:";
+
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML =
+      "<strong>The test button isn't the test:</strong> pressing it only proves the horn and battery work — it never checks the sensor. The sensor's hard deadline is the date stamped on the unit and any end-of-life chirp, and either one overrides everything else. When that date arrives, swap the whole detector.";
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Find the date", text: "Take the unit down and read its date", note: "Turn it over and find the manufacture or replace-by date on the back or side. Most CO detectors are rated about 5–7 years; combo units roughly 10. No readable date at all means it's old enough to replace." },
+    { phase: "Find the date", text: "Note whether it's a CO or combo smoke/CO unit", note: "The label tells you. A standalone CO detector lasts ~5–7 years; a combo smoke/CO unit ~10, but retires on the earlier of its two clocks. This sets which replacement you'll buy." },
+    { phase: "Find the date", text: "Walk the house and check every detector", note: "Look at every CO and combo unit on every level and near each sleeping area — not just the one that prompted this. Flag every one that's undated or past its date." },
+    { phase: "Check the chirp", text: "Identify any chirping unit's pattern in the manual", note: "If a unit is chirping, check the brand's manual to tell a low-battery chirp from an end-of-life chirp. Low battery = swap the battery; end of life = replace the whole unit." },
+    { phase: "Check the chirp", text: "Replace the battery only on a low-battery chirp", note: "If a fresh battery silences it and the unit is still in date, you're done with that one. If it keeps chirping, it's end of life — that unit gets replaced, not re-batteried." },
+    { phase: "Check the chirp", text: "Mark every expired or end-of-life unit to replace", note: "Anything past its date, with no readable date, or chirping end-of-life goes on the replace list today — a passing button test doesn't redeem an expired sensor." },
+    { phase: "Install the new unit", text: "Buy the right replacement for each location", note: "A CO or combo smoke/CO detector to match each spot, ideally a 10-year sealed-battery model that never needs a battery and dies on one clean clock. Buy enough to cover every gap." },
+    { phase: "Install the new unit", text: "Mount it per the manual — right level and distance", note: "Follow the placement guidance: every level, near each sleeping area, and the recommended distance from fuel appliances and the garage so it won't false-alarm." },
+    { phase: "Install the new unit", text: "Write the install date on the new unit", note: "Mark today's date on the detector with a permanent marker, and note its replace-by year. Future-you never has to guess how old it is." },
+    { phase: "Install the new unit", text: "Press TEST to confirm the horn sounds", note: "Once it's mounted and powered, hold the test button until it sounds. A loud, steady horn means it's seated and live — a known-good alarm on a known clock." },
+    { phase: "Do the house & log", text: "Replace every other expired unit too", note: "Don't stop at the one that chirped. Swap each undated or expired detector across the house so coverage on every level and near every bedroom is current." },
+    { phase: "Do the house & log", text: "Log the dates and set the next reminder", note: "Record each unit's install and replace-by date somewhere you'll see it, and make sure the household knows the CO alarm sound and the evacuate-and-call-911 plan. Keep working smoke alarms too." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-co-detector:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
