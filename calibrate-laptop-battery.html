@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calibrate your laptop battery — UpkeepGuides.com</title>
+<meta name="description" content="Calibrating a laptop battery fixes an inaccurate percentage readout, not the battery's health — why modern sealed lithium-ion laptops rarely need it, how to do the drain-and-recharge cycle only when the gauge is truly wrong, and the charge habits that actually make it last.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Calibrate your laptop battery — UpkeepGuides.com">
+<meta property="og:description" content="Calibrating a laptop battery fixes an inaccurate percentage readout, not the battery's health — why modern sealed lithium-ion laptops rarely need it, how to do the drain-and-recharge cycle only when the gauge is truly wrong, and the charge habits that actually make it last.">
+<meta property="og:url" content="https://upkeepguides.com/calibrate-laptop-battery.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calibrate your laptop battery — UpkeepGuides.com">
+<meta name="twitter:description" content="Calibrating a laptop battery fixes an inaccurate percentage readout, not the battery's health — why modern sealed lithium-ion laptops rarely need it, how to do the drain-and-recharge cycle only when the gauge is truly wrong, and the charge habits that actually make it last.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every 3 months</span>
+      <h1>Calibrate Your Laptop Battery</h1>
+      <p class="lede">Here's the thing almost nobody tells you: "calibrating" a laptop battery doesn't fix the battery — it fixes the <em>number</em>. When the meter says 20% but the laptop dies moments later, or the percentage sticks and jumps, the battery's little fuel gauge has drifted out of sync with the real charge underneath. A calibration re-syncs that reading so 40% means 40% again. What it can't do is bring back lost capacity. And on a modern sealed lithium-ion laptop, the gauge usually stays accurate on its own — so this is an occasional fix for a wrong readout, not a routine ritual. For the battery to actually <em>last</em>, good charge habits matter far more.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Only <em>if the % is wrong</em></span>
+        <span class="chip">⏱️ Cycle takes <em>a few hours</em></span>
+        <span class="chip">🔋 Fixes the <em>gauge, not health</em></span>
+        <span class="chip">💸 Costs <em>$0</em> — just time</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a laptop on a clean desk: the screen shows a battery meter reading 20 percent in text while the drawn battery bar looks nearly two-thirds full, highlighting a mismatched, inaccurate readout; a charging cable runs to the side, and a small twenty-to-eighty percent charge-range indicator sits nearby">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk -->
+      <rect x="40" y="330" width="480" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="70" y="346" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <rect x="476" y="346" width="14" height="44" rx="6" fill="#8a6a4f"/>
+
+      <!-- laptop base -->
+      <path d="M150 320 h260 l26 22 h-312 z" fill="#b9b1a3"/>
+      <rect x="152" y="316" width="256" height="8" rx="3" fill="#8a6a4f"/>
+      <!-- keyboard hint on the base -->
+      <g fill="#8a6a4f" opacity="0.55">
+        <rect x="176" y="326" width="208" height="4" rx="2"/>
+        <rect x="200" y="334" width="160" height="4" rx="2"/>
+      </g>
+      <!-- trackpad notch -->
+      <rect x="256" y="333" width="48" height="5" rx="2.5" fill="#8a6a4f" opacity="0.4"/>
+
+      <!-- laptop screen / lid -->
+      <rect x="158" y="70" width="244" height="250" rx="12" fill="#2c5a40"/>
+      <rect x="170" y="82" width="220" height="226" rx="6" fill="#fffdf8"/>
+
+      <!-- screen: battery settings header -->
+      <rect x="184" y="98" width="120" height="9" rx="4.5" fill="#b9b1a3"/>
+      <circle cx="372" cy="102" r="6" fill="#e3efe8"/>
+      <path d="M369 102 l2.5 2.5 l4.5 -5" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- big drawn battery, looks mostly full -->
+      <rect x="196" y="130" width="150" height="70" rx="10" fill="#fff" stroke="#8a6a4f" stroke-width="4"/>
+      <rect x="346" y="150" width="10" height="30" rx="3" fill="#8a6a4f"/>
+      <!-- fill: nearly two-thirds full, contradicting the 20% text -->
+      <rect x="204" y="138" width="90" height="54" rx="5" fill="#5e9a78"/>
+      <!-- charge bolt over the fill -->
+      <path d="M262 146 l-14 22 h11 l-9 20 l24 -28 h-13 z" fill="#e0a93d"/>
+
+      <!-- the mismatched text readout -->
+      <text x="271" y="234" font-size="34" font-weight="800" fill="#d9663f" text-anchor="middle" font-family="Georgia, serif">20%</text>
+      <text x="271" y="256" font-size="12" fill="#6b7376" text-anchor="middle">reads 20% — but look at the bar</text>
+      <!-- little "mismatch" marker -->
+      <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M348 218 q10 6 20 0"/>
+        <circle cx="358" cy="212" r="1.6" fill="#d9663f" stroke="none"/>
+      </g>
+      <text x="360" y="200" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">?!</text>
+
+      <!-- screen: little inaccurate-gauge note row -->
+      <rect x="184" y="274" width="176" height="16" rx="8" fill="#fbe9e1"/>
+      <circle cx="194" cy="282" r="4" fill="#d9663f"/>
+      <rect x="204" y="278" width="120" height="6" rx="3" fill="#d98e3b"/>
+
+      <!-- charging cable running off to the wall -->
+      <path d="M402 250 q46 -6 60 20 q12 22 -14 30" stroke="#b9b1a3" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <rect x="396" y="242" width="18" height="14" rx="4" fill="#8a6a4f"/>
+      <rect x="490" y="298" width="18" height="26" rx="4" fill="#5e9a78"/>
+      <line x1="496" y1="292" x2="496" y2="298" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <line x1="502" y1="292" x2="502" y2="298" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- 20–80% charge-range indicator card on the desk -->
+      <rect x="66" y="292" width="82" height="46" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-4 107 315)"/>
+      <!-- mini range bar -->
+      <rect x="76" y="304" width="62" height="10" rx="5" fill="#e9e2d8" transform="rotate(-4 107 309)"/>
+      <rect x="88" y="304" width="37" height="10" rx="5" fill="#3e7c59" transform="rotate(-4 107 309)"/>
+      <text x="107" y="331" font-size="11" font-weight="700" fill="#2c5a40" text-anchor="middle" transform="rotate(-4 107 327)">20–80%</text>
+
+      <!-- coffee mug for warmth -->
+      <rect x="408" y="298" width="34" height="34" rx="6" fill="#c96f4a"/>
+      <path d="M442 306 q14 4 0 18" stroke="#c96f4a" stroke-width="6" fill="none"/>
+      <path d="M418 288 q3 -7 0 -12" stroke="#b9b1a3" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- small plant -->
+      <path d="M512 388 q-2 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M512 388 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="497" cy="356" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 497 356)"/>
+      <ellipse cx="527" cy="360" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 527 360)"/>
+      <path d="M500 388 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">The single most useful thing to understand here is what calibration <em>is</em>: it's a fix for a lying gauge, not a tune-up for a tired battery. Get that straight and you'll do it far less often — and put your energy where it actually pays off. Here's what's really going on:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="12" width="24" height="14" rx="3" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <rect x="28" y="16" width="3.5" height="6" rx="1.5" fill="#8a6a4f"/>
+          <rect x="7" y="15" width="12" height="8" rx="1.5" fill="#5e9a78"/>
+          <path d="M23 8 l3 3 l4 -5" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="22" cy="20" r="1.6" fill="#d9663f"/>
+        </svg></div>
+        <h3>It fixes the gauge, not the battery</h3>
+        <p>Calibration re-syncs an inaccurate percentage readout so "40%" really means 40% again. That's genuinely useful when the number has drifted — but it does <em>not</em> restore lost capacity or improve the battery's health. A worn battery that reads accurately is still worn.</p>
+        <span class="cost">Won't add back lost capacity</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="22" height="15" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <rect x="28" y="13" width="3.5" height="7" rx="1.5" fill="#7fb3c8"/>
+          <path d="M17 12 l-3 5 h3 l-2.5 5 l6 -6.5 h-3 z" fill="#e0a93d"/>
+          <path d="M9 30 q9 -4 18 0" stroke="#5e9a78" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <circle cx="13" cy="30.5" r="1.2" fill="#3e7c59"/>
+          <circle cx="23" cy="30.5" r="1.2" fill="#3e7c59"/>
+        </svg></div>
+        <h3>Modern laptops rarely need it</h3>
+        <p>Sealed lithium-ion packs and smart OS battery management usually keep the reading accurate on their own. Routine calibration is mostly a leftover habit from old nickel batteries — many current laptop makers say plainly that it isn't required anymore.</p>
+        <span class="cost">Mostly an outdated ritual</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="10" width="20" height="13" rx="3" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <rect x="28" y="14" width="3.5" height="5" rx="1.5" fill="#d9663f"/>
+          <rect x="11" y="13" width="4" height="7" rx="1" fill="#d9663f"/>
+          <path d="M18 4 v4 M14.5 6 l3.5 -3 l3.5 3" stroke="#c96f4a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="24" y="20" font-size="9" font-weight="800" fill="#d9663f" text-anchor="middle">0</text>
+        </svg></div>
+        <h3>Deep discharges aren't "good for it"</h3>
+        <p>Draining a lithium-ion battery to 0% on a regular schedule is mildly stressful on the cell — the opposite of maintenance. So calibrate <em>only</em> when the readout is genuinely off, and never as a routine "exercise the battery" habit.</p>
+        <span class="cost">Don't drain to 0% on a schedule</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="4" y="14" width="26" height="9" rx="4.5" fill="#e9e2d8"/>
+          <rect x="10" y="14" width="14" height="9" rx="4.5" fill="#3e7c59"/>
+          <text x="8" y="12" font-size="7" font-weight="700" fill="#6b7376">20</text>
+          <text x="26" y="12" font-size="7" font-weight="700" fill="#6b7376">80</text>
+          <path d="M30 9 q3 1 3 4" stroke="#e0a93d" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="32" cy="28" r="4.5" fill="#faf0da" stroke="#e0a93d" stroke-width="1.6"/>
+        </svg></div>
+        <h3>Charge habits beat calibration</h3>
+        <p>For real longevity, keeping the charge in a healthy range and out of heat matters far more than any calibration routine. If you fuss over one thing, make it your habits — roughly 20–80%, cool, and no living pegged at 100% while hot.</p>
+        <span class="cost">Where the real payoff is</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>Do <em>you</em> even need to calibrate?</h2>
+    <p class="sub">For most modern laptops the honest answer is "not on a schedule — only if the percentage is clearly wrong." Calibration earns its keep on older or removable batteries whose gauge has drifted; a healthy sealed pack that reads accurately just needs good habits. Answer four quick questions and we'll tell you which camp you're in:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="battery">
+        <div class="q-label">1. What kind of laptop battery is it?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older laptop, or a removable/older battery</button>
+          <button class="pill" data-v="modern">Modern laptop, sealed lithium-ion</button>
+          <button class="pill" data-v="unsure">Not sure</button>
+        </div>
+        <div class="q-hint">Older packs and their simpler gauges drift out of sync more readily, so they're the ones a calibration actually helps. Modern sealed lithium-ion batteries usually track themselves well.</div>
+      </div>
+      <div class="quiz-q" data-q="symptom">
+        <div class="q-label">2. Is the percentage actually misbehaving?</div>
+        <div class="pills">
+          <button class="pill" data-v="wrong">Yes — it jumps, sticks, or dies at "20%"</button>
+          <button class="pill" data-v="maybe">Maybe a little off</button>
+          <button class="pill" data-v="fine">No — the reading seems accurate</button>
+        </div>
+        <div class="q-hint">A gauge that jumps around, freezes on a number, or lets the laptop shut off while it still claims 20% is the classic sign of an inaccurate readout — the one thing calibration is for. An accurate reading doesn't need it.</div>
+      </div>
+      <div class="quiz-q" data-q="os">
+        <div class="q-label">3. Does your OS have battery-health tools?</div>
+        <div class="pills">
+          <button class="pill" data-v="yes">Yes — health/optimized-charging features on</button>
+          <button class="pill" data-v="no">No, or I'm not sure</button>
+        </div>
+        <div class="q-hint">Optimized/limited charging and built-in battery reports keep the gauge honest and slow aging on their own. If those are on, routine calibration matters even less; if not, turning them on beats any calibration ritual.</div>
+      </div>
+      <div class="quiz-q" data-q="usage">
+        <div class="q-label">4. How do you usually treat it?</div>
+        <div class="pills">
+          <button class="pill" data-v="rough">Plugged in at 100% and hot, or run to 0% a lot</button>
+          <button class="pill" data-v="healthy">Charged in a healthy range, kept cool</button>
+        </div>
+        <div class="q-hint">Living pegged at 100% while hot, or repeatedly running to empty, both age the battery faster and can throw the gauge off. Charging roughly 20–80% and staying cool is gentler on both the cell and the reading.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of getting this wrong</h2>
+    <p class="sub">Calibrating costs nothing but time, and good charge habits cost nothing at all. The real money is on the other side: a battery worn out early by heat and extreme charge levels — and the mistake of thinking a calibration will fix a battery that's genuinely spent, when what it actually needs is a replacement (typical U.S. prices, for planning):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">a calibration cycle — just a few hours of drain-and-recharge, and only when the gauge is truly off</div></div>
+        <div class="calc-stat"><div class="v">$0</div><div class="l">good charge habits — keeping it roughly 20–80%, cool, and out of hot cars costs nothing</div></div>
+        <div class="calc-stat"><div class="v bad">~$50–200+</div><div class="l">a genuinely worn battery replaced — which calibration can't fix, no matter how many cycles you run</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 One calibration cycle, only when the % is wrong</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>♻️ Good charge habits (20–80%, cool, optimized charging)</span><span>$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔁 Needlessly draining to 0% again and again</span><span>Wear you can't undo</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:40%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔥 A battery worn out early by heat + extreme charge</span><span>Runtime gone in 1–2 years</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:66%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛠️ Replacing a genuinely worn battery (calibration won't fix it)</span><span>~$50–200+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is lopsided in an unusual way: <strong>the fix that costs nothing — habits — is the one that actually helps, and the free ritual people over-do — calibration — mostly doesn't.</strong> Calibrate only to correct a wrong readout, keep the charge roughly 20–80% and cool, and if the runtime is genuinely short even with an accurate gauge, budget ~$50–200+ for the real fix: a new battery. No amount of draining to zero brings a worn cell back.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to calibrate your laptop battery (only if you need to)</h2>
+    <p class="sub">Most of this checklist is deciding whether you even should — because for a healthy modern laptop, the answer is often "skip it and just follow the habits." If the gauge really is wrong, the actual calibration is one careful drain-and-recharge cycle. Read the notes first (especially "it fixes the readout, not the battery"), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — what calibration can and can't do</h3>
+      <ul>
+        <li><strong>Calibration fixes the readout, not the battery's health.</strong> If your runtime is short even when the gauge is accurate, the battery is worn — it needs replacing, not calibrating. Running more cycles won't add capacity back.</li>
+        <li><strong>Don't routinely deep-discharge a lithium-ion battery to 0%.</strong> It's mildly stressful on li-ion, so only do a full drain-and-recharge when the percentage is genuinely inaccurate — and not more than every few months at most.</li>
+        <li><strong>For real battery life, keep the charge roughly between 20% and 80%.</strong> Avoid leaving it plugged in at 100% while it's hot, keep it out of heat and hot cars, and turn <em>on</em> your OS's battery-health / optimized-charging feature.</li>
+        <li><strong>Check your manufacturer's guidance first.</strong> Some laptop makers explicitly say calibration isn't needed on their modern models; a few older or business machines include a built-in calibration tool in the BIOS/UEFI. Their word outranks any generic advice.</li>
+        <li><strong>A swollen or bulging battery is a hazard — stop.</strong> If the battery is swollen, the trackpad or case is bulging, the laptop gets very hot, or it shuts off abruptly, stop using it and get it serviced. Never puncture or pry at a lithium battery.</li>
+        <li><strong>Don't confuse this with battery health.</strong> To see the battery's true remaining capacity, use your OS's battery report (a macOS battery-condition readout or a Windows <code>powercfg /batteryreport</code>), not the moment-to-moment percentage.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your laptop + its charger</span>
+      <span class="tool-chip">A few hours you're not using it hard</span>
+      <span class="tool-chip">Your OS battery report (macOS / powercfg)</span>
+      <span class="tool-chip">Your maker's support page</span>
+      <span class="tool-chip">Somewhere to log the date</span>
+      <span class="tool-chip">Optimized/limit-charging setting handy</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of deciding whether you need to calibrate: a decision fork where an accurate battery gauge sends you to just good habits, while a gauge that jumps around or dies at twenty percent points toward a calibration">
+          <rect x="98" y="16" width="84" height="34" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <text x="140" y="30" font-size="10.5" font-weight="700" fill="#33393b" text-anchor="middle">Is the %</text>
+          <text x="140" y="43" font-size="10.5" font-weight="700" fill="#33393b" text-anchor="middle">accurate?</text>
+          <!-- branches -->
+          <path d="M120 50 q-40 14 -56 40" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M160 50 q40 14 56 40" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- left: accurate -> habits -->
+          <rect x="18" y="92" width="92" height="30" rx="7" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <text x="64" y="105" font-size="9.5" font-weight="700" fill="#2c5a40" text-anchor="middle">Accurate →</text>
+          <text x="64" y="117" font-size="9.5" font-weight="700" fill="#2c5a40" text-anchor="middle">just good habits</text>
+          <!-- right: wrong -> calibrate -->
+          <rect x="170" y="92" width="92" height="30" rx="7" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.2"/>
+          <text x="216" y="105" font-size="9.5" font-weight="700" fill="#d9663f" text-anchor="middle">Jumps / dies</text>
+          <text x="216" y="117" font-size="9.5" font-weight="700" fill="#d9663f" text-anchor="middle">at "20%" → maybe</text>
+          <text x="60" y="150" font-size="10.5" fill="#3e7c59" font-weight="700">skip it</text>
+          <text x="176" y="150" font-size="10.5" fill="#d9663f" font-weight="700">consider a calibration</text>
+        </svg>
+        <h4>Decide if you even need it</h4>
+        <p>Only calibrate if the readout is actually wrong — the percentage jumps around, sticks on a number, or the laptop dies while it still claims "20%." If the gauge is accurate, skip calibration entirely and just follow the charge habits below.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking the manufacturer support page and the operating system battery report, which shows the battery's true remaining capacity as a number">
+          <!-- maker page -->
+          <rect x="22" y="26" width="96" height="118" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="34" y="38" width="72" height="9" rx="4.5" fill="#5e9a78"/>
+          <rect x="34" y="56" width="72" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="34" y="66" width="60" height="5" rx="2.5" fill="#e9e2d8"/>
+          <rect x="34" y="82" width="72" height="5" rx="2.5" fill="#d8cfbe"/>
+          <rect x="34" y="92" width="52" height="5" rx="2.5" fill="#e9e2d8"/>
+          <rect x="34" y="112" width="66" height="18" rx="6" fill="#e3efe8"/>
+          <text x="67" y="124" font-size="8.5" font-weight="700" fill="#2c5a40" text-anchor="middle">"no need to calibrate"</text>
+          <text x="26" y="160" font-size="10" fill="#6b7376">maker's guidance</text>
+          <!-- arrow -->
+          <path d="M124 84 h20" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round"/>
+          <polygon points="144,78 156,84 144,90" fill="#3e7c59"/>
+          <!-- OS report -->
+          <rect x="164" y="26" width="94" height="118" rx="8" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.5"/>
+          <text x="211" y="44" font-size="10" font-weight="700" fill="#33393b" text-anchor="middle">Battery report</text>
+          <line x1="176" y1="52" x2="246" y2="52" stroke="#e9e2d8" stroke-width="2"/>
+          <text x="176" y="70" font-size="9" fill="#6b7376">Design</text>
+          <rect x="176" y="74" width="70" height="7" rx="3.5" fill="#dce8ee"/>
+          <text x="176" y="98" font-size="9" fill="#6b7376">Full charge (now)</text>
+          <rect x="176" y="102" width="52" height="7" rx="3.5" fill="#3e7c59"/>
+          <text x="211" y="132" font-size="16" font-weight="800" fill="#2c5a40" text-anchor="middle" font-family="Georgia, serif">84%</text>
+          <text x="188" y="160" font-size="10" fill="#6b7376">true capacity</text>
+        </svg>
+        <h4>Check the maker's guidance &amp; OS report</h4>
+        <p>Many modern laptops don't need calibration, and some makers say so outright — check first. Your OS battery report (macOS battery condition, or <code>powercfg /batteryreport</code> on Windows) shows the true remaining capacity, which the live percentage doesn't.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of the calibration cycle in three steps: charge fully to one hundred percent and rest, then run the battery down to nearly empty in one go, then charge uninterrupted back to one hundred percent to re-sync the gauge">
+          <!-- step 1: full -->
+          <rect x="16" y="60" width="60" height="30" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="76" y="68" width="4" height="14" rx="2" fill="#8a6a4f"/>
+          <rect x="20" y="64" width="52" height="22" rx="3" fill="#3e7c59"/>
+          <text x="46" y="108" font-size="9" font-weight="700" fill="#2c5a40" text-anchor="middle">100% + rest</text>
+          <path d="M84 75 h18" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="102,70 112,75 102,80" fill="#3e7c59"/>
+          <!-- step 2: drain to near-empty -->
+          <rect x="112" y="60" width="60" height="30" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="172" y="68" width="4" height="14" rx="2" fill="#8a6a4f"/>
+          <rect x="116" y="64" width="9" height="22" rx="2" fill="#d9663f"/>
+          <text x="142" y="108" font-size="9" font-weight="700" fill="#d9663f" text-anchor="middle">drain, one go</text>
+          <path d="M180 75 h18" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="198,70 208,75 198,80" fill="#3e7c59"/>
+          <!-- step 3: recharge uninterrupted -->
+          <rect x="208" y="60" width="60" height="30" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="268" y="68" width="4" height="14" rx="2" fill="#8a6a4f"/>
+          <rect x="212" y="64" width="52" height="22" rx="3" fill="#3e7c59"/>
+          <path d="M240 66 l-6 10 h5 l-4 9 l11 -13 h-6 z" fill="#e0a93d"/>
+          <text x="238" y="108" font-size="9" font-weight="700" fill="#2c5a40" text-anchor="middle">recharge 100%</text>
+          <text x="140" y="150" font-size="10.5" font-weight="700" fill="#33393b" text-anchor="middle">re-syncs the gauge — do this only if the % is wrong</text>
+        </svg>
+        <h4>The calibration cycle (only if needed)</h4>
+        <p>If the gauge really is off: charge to 100%, let it rest a bit, then run it down to near-empty in one session, and finally charge uninterrupted back to 100%. That single full swing re-syncs the fuel gauge — it doesn't heal the battery, and once is enough.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of good charge habits: a charge bar highlighting the twenty to eighty percent range, a no-heat symbol, and an optimized or limit-charging toggle switched on">
+          <!-- charge range bar -->
+          <rect x="30" y="30" width="220" height="26" rx="13" fill="#e9e2d8"/>
+          <rect x="74" y="30" width="132" height="26" rx="13" fill="#3e7c59"/>
+          <text x="52" y="24" font-size="10" font-weight="700" fill="#6b7376" text-anchor="middle">20%</text>
+          <text x="206" y="24" font-size="10" font-weight="700" fill="#6b7376" text-anchor="middle">80%</text>
+          <text x="140" y="48" font-size="11" font-weight="700" fill="#fffdf8" text-anchor="middle">healthy range</text>
+          <!-- no heat -->
+          <circle cx="78" cy="118" r="24" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.5"/>
+          <path d="M72 106 q3 6 -1 12 M80 106 q3 6 -1 12 M87 108 q3 5 -1 10" stroke="#d9663f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <line x1="60" y1="136" x2="96" y2="100" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="78" y="158" font-size="10" font-weight="700" fill="#d9663f" text-anchor="middle">avoid heat</text>
+          <!-- optimized charging toggle ON -->
+          <rect x="150" y="104" width="56" height="28" rx="14" fill="#3e7c59"/>
+          <circle cx="192" cy="118" r="11" fill="#fffdf8"/>
+          <path d="M187 118 l3 3 l6 -6" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="178" y="158" font-size="10" font-weight="700" fill="#2c5a40" text-anchor="middle">optimized charging on</text>
+        </svg>
+        <h4>Adopt good habits</h4>
+        <p>This is the part that actually extends battery life. Keep the charge roughly 20–80%, avoid heat and constant 100%-while-hot, and enable your OS's optimized or limit charging so it holds back for you. Do this and you'll rarely think about calibration again.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing that a battery with an accurate gauge but genuinely short runtime is worn hardware needing replacement, alongside a small logbook for noting any calibration you do">
+          <!-- accurate gauge but short runtime -->
+          <rect x="22" y="34" width="80" height="40" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="102" y="46" width="4" height="16" rx="2" fill="#8a6a4f"/>
+          <rect x="26" y="38" width="16" height="32" rx="2" fill="#d9663f"/>
+          <text x="62" y="90" font-size="9" fill="#6b7376" text-anchor="middle">gauge is right…</text>
+          <text x="62" y="104" font-size="9" font-weight="700" fill="#d9663f" text-anchor="middle">but dies fast</text>
+          <!-- arrow to replace -->
+          <path d="M112 60 h18" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="130,55 140,60 130,65" fill="#8a6a4f"/>
+          <!-- replace / wrench -->
+          <circle cx="176" cy="60" r="26" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M186 50 a8 8 0 1 0 2 8 l8 8 4 -4 -8 -8 a8 8 0 0 0 -6 -4z" fill="#3e7c59"/>
+          <text x="176" y="100" font-size="9.5" font-weight="700" fill="#2c5a40" text-anchor="middle">plan a replacement</text>
+          <!-- logbook -->
+          <rect x="214" y="34" width="52" height="40" rx="5" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.2"/>
+          <line x1="222" y1="46" x2="258" y2="46" stroke="#e9e2d8" stroke-width="2.5"/>
+          <line x1="222" y1="56" x2="258" y2="56" stroke="#e9e2d8" stroke-width="2.5"/>
+          <line x1="222" y1="66" x2="246" y2="66" stroke="#e9e2d8" stroke-width="2.5"/>
+          <text x="240" y="90" font-size="9" fill="#6b7376" text-anchor="middle">log the date</text>
+          <text x="140" y="148" font-size="10.5" font-weight="700" fill="#33393b" text-anchor="middle">accurate gauge + poor runtime = hardware, not calibration</text>
+        </svg>
+        <h4>Know when it's the hardware</h4>
+        <p>If runtime is genuinely poor <em>and</em> the gauge reads accurately, calibration won't help — the cell is worn, so plan a battery replacement instead. And whenever you do run a calibration, log the date so you're not repeating it needlessly.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Calibration decision progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Sorted — you know whether you needed a calibration, you've re-synced the gauge if it was off, and your charge habits are set to actually make the battery last. Check the readout again only if it starts misbehaving.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs to watch for — and when it's not a calibration job</h2>
+    <p class="sub">Calibration solves exactly one problem: a lying gauge. Everything else on this list is either a habit fix or a hardware fix. Here's how to tell them apart — and the one that means stop using the laptop right now:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>The percentage jumps around, sticks, or the laptop dies at "20%."</strong> This is the inaccurate-gauge signature — the reading has drifted out of sync with the real charge. A single careful calibration cycle may bring it back in line. If it's a modern laptop, first make sure the OS is fully updated, since an update often fixes the gauge on its own.</li>
+        <li><strong>Genuinely short runtime, but the gauge reads accurately.</strong> If the laptop honestly reports its charge and simply doesn't last long, the battery is worn — that's lost capacity, and no calibration adds it back. Confirm with your OS battery report (true full-charge capacity vs. design), then plan a replacement (~$50–200+).</li>
+        <li><strong>Runtime dropping fast on a laptop that lives hot or pegged at 100%.</strong> This isn't a calibration or a hardware surprise — it's habits. Move it off heat, stop leaving it charging at 100% while warm, and turn on optimized/limit charging. You can't undo the wear, but you can stop making it worse.</li>
+        <li><strong>A swollen or bulging battery, a case or trackpad lifting, or a laptop that gets very hot or shuts off abruptly.</strong> Stop. This is a fire and safety hazard, not a maintenance task. Power it down, unplug it, keep it off soft surfaces, and get it serviced immediately. Never puncture, pry, or press on a lithium battery.</li>
+        <li><strong>A brand-new laptop whose percentage seems slightly off.</strong> Give it a couple of normal charge cycles and an OS update before doing anything — new gauges often settle themselves, and you'd be deep-discharging a fresh battery for no reason.</li>
+        <li><strong>It's all one habit of caring for your batteries.</strong> The same thinking applies everywhere: check your phone's <a href="battery-health-check-phone.html">battery health</a> with the same charge habits, keep the laptop cool by <a href="clean-laptop-fans.html">cleaning its fans</a> so heat doesn't cook the cell, and remember the same battery-care thinking applies to <a href="replace-cordless-batteries.html">cordless tool batteries</a> too.</li>
+        <li><strong>Pro tip:</strong> if the gauge misbehaves and a calibration doesn't fix it — or the battery is old and the runtime is poor — a repair shop or the manufacturer can test the cell's true health and quote a replacement. On sealed laptops especially, leave the actual battery swap to someone with the right tools rather than prying the case yourself.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I calibrate my laptop battery?</summary>
+      <p>Not on a schedule — only when the percentage readout is actually wrong. For a modern sealed lithium-ion laptop, that might be almost never; the gauge usually stays accurate on its own, and an OS update often corrects it if it drifts. If your laptop does need it, once every few months <em>at most</em>, and only when you're seeing symptoms like a percentage that jumps around or a laptop that dies at "20%." The reason not to do it routinely is that a full calibration means draining the battery to near-empty, and repeated deep discharges are mildly stressful on lithium-ion. So: watch for a wrong readout, calibrate when you see one, and otherwise leave it alone and focus on good charge habits.</p>
+    </details>
+    <details>
+      <summary>Do modern (lithium-ion) laptops need calibration?</summary>
+      <p>Usually not. Routine calibration is largely a leftover habit from older nickel-based batteries, which genuinely had a "memory effect" and benefited from periodic full cycles. Today's sealed lithium-ion packs, paired with smart battery management in macOS, Windows, and ChromeOS, generally keep the percentage accurate without any intervention — and several laptop makers say outright that calibration isn't required on their current models. Some older or business-class laptops do include a built-in calibration routine in the BIOS/UEFI, which is worth using if yours has one and the gauge is off. But for most modern machines, the honest answer is: don't calibrate on a schedule, calibrate only if the readout is clearly wrong, and put your effort into charge habits instead.</p>
+    </details>
+    <details>
+      <summary>What does calibrating actually do?</summary>
+      <p>It re-syncs the battery's fuel gauge — the little circuit that estimates how full the battery is — with the real charge in the cells. Over time, especially on older batteries, that estimate can drift, so "40%" no longer means 40%, the number jumps or sticks, or the laptop shuts down while still claiming there's charge left. A calibration cycle (a full charge, a full drain, and a full recharge) gives the gauge fresh reference points at the top and bottom of the range so its readings line up with reality again. Crucially, that's <em>all</em> it does: it corrects the reading, not the battery. It does not restore lost capacity, improve battery health, or make a worn battery last longer — a battery that's genuinely worn will simply report its diminished capacity more accurately.</p>
+    </details>
+    <details>
+      <summary>Is it bad to drain my battery to 0%?</summary>
+      <p>For lithium-ion, don't do it routinely. Deep discharges to 0% are among the more stressful things you can do to a li-ion cell, so the old advice to "exercise" the battery by running it flat every so often is exactly backwards for modern laptops. The gentle pattern is the opposite — shallow, partial charges, kept roughly between 20% and 80%. The one legitimate exception is calibration: if the gauge is genuinely inaccurate, a single controlled drain-to-near-empty-and-recharge can re-sync it, and doing that occasionally is fine. Just don't make a habit of running to zero, and if the laptop shuts off on its own before you reach 0%, that's fine — you don't need to force it further.</p>
+    </details>
+    <details>
+      <summary>How do I actually make my laptop battery last longer?</summary>
+      <p>Habits, not rituals. Three things do most of the work. First, charge range: try to keep it roughly between 20% and 80% rather than living at 0% or pegged at 100% — most laptops now offer an optimized or limit-charging setting that holds it back for you, and turning that on is the single best move. Second, heat: sustained heat is what ages lithium-ion fastest, so keep the laptop off soft surfaces that block its vents, out of hot cars and direct sun, and cool while charging. Third, don't leave it plugged in at 100% while it runs hot for hours on end. Do those and the battery ages on the gentlest possible curve — far more effective than any calibration, which only fixes the reading and not the cell.</p>
+    </details>
+    <details>
+      <summary>My laptop dies at 20% / the percentage is wrong — what do I do?</summary>
+      <p>That's the textbook case for a calibration, but work through it in order. First, update your operating system — a surprising number of "wrong percentage" issues are fixed by an OS or firmware update that corrects the gauge. If it persists, run one clean calibration cycle: charge to 100%, let it rest, run it down until it shuts off on its own, then charge uninterrupted back to 100%. That usually re-syncs the reading. If the gauge <em>still</em> misbehaves afterward, or if it now reads accurately but the runtime is genuinely short, the problem isn't the reading — it's a worn battery, and the fix is a replacement (~$50–200+), which a repair shop or the manufacturer can confirm and handle. And if you ever notice the battery is swollen or the laptop gets very hot, stop using it and get it serviced right away — that's a safety issue, not a calibration one.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Laptop-battery "calibration" is a myth most people do far too often.</h2>
+        <p>The real wins are simple: good charge habits, and only re-syncing the gauge when it's actually wrong. But "only when it's wrong" is easy to forget, and so are the habits. Upkeep Ledger keeps the occasional readout check — and the charge-habit reminders — on track, right alongside the HVAC filter, the phone battery, and every other quiet task that keeps your gear running longer.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=calibrate-laptop-battery&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=calibrate-laptop-battery&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Calibration fixes an inaccurate battery percentage, not the battery's health; settings, calibration tools, and battery guidance vary by maker and OS version, and your laptop manufacturer's own support pages outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { battery: null, symptom: null, os: null, usage: null };
+
+  var FREQ_LABEL = {
+    3: "Every 3 months",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var needsCalibration = false;
+
+    /* Symptom is the deciding factor: is the gauge actually wrong? */
+    if (s.symptom === "wrong") {
+      needsCalibration = true;
+      months = 3;
+      reasons.push("A percentage that jumps, sticks, or lets the laptop die at “20%” is the one real reason to calibrate — the gauge has drifted out of sync, and a single drain-and-recharge cycle may bring it back.");
+    } else if (s.symptom === "maybe") {
+      months = 6;
+      reasons.push("A reading that seems a little off is worth watching — update your OS first, since that often corrects the gauge, and only run a calibration if it clearly misbehaves.");
+    } else {
+      months = 12;
+      reasons.push("An accurate percentage means there's nothing for a calibration to fix — skip the drain-and-recharge entirely and just keep an eye on the reading over time.");
+    }
+
+    /* Battery type: older/removable gauges drift more; modern sealed rarely need it */
+    if (s.battery === "old") {
+      reasons.push("Older or removable batteries and their simpler gauges drift out of sync more readily, so if yours is misbehaving, this is exactly the case a calibration is meant for.");
+    } else if (s.battery === "modern") {
+      if (!needsCalibration && months < 12) months = 12;
+      reasons.push("A modern sealed lithium-ion battery usually keeps its own reading accurate, so routine calibration mostly isn't needed — treat it as a fix for a wrong readout, not a schedule.");
+    } else {
+      reasons.push("If you're not sure of the battery type, check your maker's support page — many modern laptops explicitly don't need calibration, which settles the question.");
+    }
+
+    /* OS features: health/optimized charging keeps the gauge honest and slows aging */
+    if (s.os === "yes") {
+      reasons.push("With battery-health and optimized-charging features on, the gauge tends to stay honest and the battery ages more slowly — routine calibration matters even less.");
+    } else {
+      reasons.push("If your OS's battery-health or optimized-charging tools are off (or you're unsure), turning them on will do more for both the reading and the battery's life than any calibration.");
+    }
+
+    /* Usage: rough habits age the cell and can throw the gauge off */
+    if (s.usage === "rough") {
+      reasons.push("Living pegged at 100% while hot, or running to 0% often, ages the battery faster and can nudge the gauge off — fixing those habits is the highest-value change you can make here.");
+    } else {
+      reasons.push("Charging in a healthy range and keeping it cool is gentle on both the cell and the reading — you're already doing the part that actually matters most.");
+    }
+
+    if (months < 3) months = 3;
+    if (months > 12) months = 12;
+
+    /* Closing note */
+    var note;
+    if (needsCalibration) {
+      note = "<strong>Run one clean calibration cycle:</strong> update your OS first, then charge to 100%, rest, drain to near-empty in one go, and recharge uninterrupted to 100%. That re-syncs the gauge — but if runtime is still poor with an accurate reading afterward, the battery is worn and wants replacing, not calibrating.";
+    } else if (s.symptom === "maybe") {
+      note = "<strong>Try the free fix first:</strong> update your operating system and give it a couple of normal charge cycles. Modern gauges often re-settle on their own, so you avoid deep-discharging the battery for no reason. Calibrate only if it's still clearly off.";
+    } else if (s.usage === "rough") {
+      note = "<strong>Your biggest win isn't calibration — it's habits:</strong> keep the charge roughly 20–80%, stop leaving it at 100% while hot, avoid heat and hot cars, and turn on optimized/limit charging. That protects the battery far more than any drain-and-recharge ever could.";
+    } else {
+      note = "<strong>You're in good shape:</strong> the gauge is accurate and your habits are sound, so there's nothing to calibrate. Just keep charging roughly 20–80%, keep it cool, and re-check the reading only if it ever starts misbehaving.";
+    }
+
+    return { months: months, reasons: reasons, note: note, needsCalibration: needsCalibration };
+  }
+
+  function onQuizChange() {
+    if (!quizState.battery || !quizState.symptom || !quizState.os || !quizState.usage) return;
+    var r = computePlan(quizState);
+    if (r.needsCalibration) {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: calibrate now, then re-check no more than " + FREQ_LABEL[r.months].toLowerCase();
+    } else {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: skip routine calibration — just re-check the readout " + FREQ_LABEL[r.months].toLowerCase();
+    }
+    document.getElementById("resultBody").innerHTML =
+      "Remember: calibration fixes the <strong>readout, not the battery's health</strong> — good charge habits do the heavy lifting. Why this plan:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Decide if you need it", text: "Watch whether the percentage is actually inaccurate", note: "Does the reading jump around, stick on a number, or does the laptop die while it still claims “20%”? Those are the only real reasons to calibrate. If the gauge is accurate, skip calibration and go straight to the habits phase." },
+    { phase: "Decide if you need it", text: "Update your OS and firmware first", note: "A surprising share of “wrong percentage” problems are fixed by an operating-system or firmware update that corrects the fuel gauge — so update before you deep-discharge anything." },
+    { phase: "Decide if you need it", text: "Rule out the safety cases", note: "If the battery is swollen or bulging, the case or trackpad is lifting, the laptop gets very hot, or it shuts off abruptly — stop. That's a hazard, not a calibration job: power down, unplug, and get it serviced. Never puncture a lithium battery." },
+    { phase: "Check guidance & OS report", text: "Check your manufacturer's guidance", note: "Look up your model's support page — many modern laptops explicitly don't need calibration, and some older or business machines have a built-in calibration tool in the BIOS/UEFI. The maker's word outranks generic advice." },
+    { phase: "Check guidance & OS report", text: "Read the OS battery report for true capacity", note: "macOS shows a battery condition/health readout; on Windows, run powercfg /batteryreport for full-charge vs. design capacity. This tells you the battery's real health, which the live percentage never does." },
+    { phase: "Check guidance & OS report", text: "Decide: calibration, habits, or replacement", note: "Wrong readout on a battery with decent capacity → a calibration may help. Accurate readout but short runtime → the battery is worn; plan a replacement (~$50–200+). Accurate readout and good runtime → nothing to calibrate; just do habits." },
+    { phase: "Calibrate if needed", text: "Charge to 100% and let it rest", note: "Only do this if the gauge is genuinely off. Charge fully to 100%, then leave it plugged in and resting for a little while so the top of the range is settled before you start." },
+    { phase: "Calibrate if needed", text: "Run it down to near-empty in one go", note: "Unplug and use it (or let it idle) until it shuts off on its own — one continuous session, not topped up in the middle. This is the one time a deep discharge is okay; don't make it a routine." },
+    { phase: "Calibrate if needed", text: "Charge uninterrupted back to 100% and log the date", note: "Plug in and let it charge all the way to 100% without interruption to re-sync the gauge. Note the date so you don't repeat this needlessly — once is enough, and repeated deep cycles are hard on li-ion." },
+    { phase: "Adopt good habits", text: "Keep the charge roughly between 20% and 80%", note: "This is the habit that actually extends battery life. Avoid living at 0% or pegged at 100% for hours — shallow, partial charges are the gentle pattern for lithium-ion." },
+    { phase: "Adopt good habits", text: "Turn on optimized / limit charging and keep it cool", note: "Enable your OS's optimized or limit-charging feature so it holds back for you, keep the laptop off soft surfaces that block vents, and keep it out of heat, hot cars, and direct sun — heat ages li-ion fastest." },
+    { phase: "Adopt good habits", text: "Set a reminder to re-check the readout", note: "Nothing tells you when a gauge starts drifting again except noticing it. Log today and set a reminder to glance at the percentage behavior periodically — and re-calibrate only if it clearly misbehaves." }
+  ];
+
+  var LS_KEY = "upkeepguides:calibrate-laptop-battery:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

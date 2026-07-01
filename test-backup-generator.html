@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test your backup generator — UpkeepGuides.com</title>
+<meta name="description" content="How to test your backup generator every month with a real under-load run: why a no-load idle proves nothing, the boring no-start causes to catch (dead starter battery, stale fuel, a tripped breaker), CO and backfeed safety, and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Test your backup generator — UpkeepGuides.com">
+<meta property="og:description" content="How to test your backup generator every month with a real under-load run: why a no-load idle proves nothing, the boring no-start causes to catch (dead starter battery, stale fuel, a tripped breaker), CO and backfeed safety, and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/test-backup-generator.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Test your backup generator — UpkeepGuides.com">
+<meta name="twitter:description" content="How to test your backup generator every month with a real under-load run: why a no-load idle proves nothing, the boring no-start causes to catch (dead starter battery, stale fuel, a tripped breaker), CO and backfeed safety, and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Home · Every month</span>
+      <h1>Test Your Backup Generator</h1>
+      <p class="lede">A backup generator earns its keep exactly once: the night the power fails and it starts, runs, and carries your house through the dark. The trouble is that most people find out whether it will on that very night — and the answer, for an untested unit, is often no. The killers are boring and catchable: a dead starter battery, a tank of stale gas, a breaker someone tripped, a switch left in the wrong spot. A monthly test-run <strong>under load</strong> — not a lazy idle, but the real thing, actually powering your furnace, fridge, and well pump — proves it can do the job and surfaces those faults while you can still fix them. And before any of it: run it <strong>outside</strong>, well away from windows, because carbon monoxide is invisible and deadly. Here's how to test it right.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Test <em>every month</em></span>
+        <span class="chip">⚡ Run it <em>under load</em></span>
+        <span class="chip">💸 The test itself is <em>free</em></span>
+        <span class="chip">⚠️ Run it <em>outdoors only</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a standby home backup generator running on a pad beside a house, set well away from the windows: a few windows in the house glow warm to show it is carrying a load, a propane tank and a small starter battery sit next to the generator, and inside the house a carbon-monoxide alarm on the wall shows a green light">
+      <ellipse cx="280" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- house on the right -->
+      <rect x="286" y="132" width="230" height="196" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <path d="M276 136 L401 58 L526 136 Z" fill="#c96f4a"/>
+      <path d="M276 136 L401 58 L526 136 Z" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- chimney -->
+      <rect x="470" y="74" width="20" height="40" rx="2" fill="#b9b1a3"/>
+
+      <!-- lit windows (carrying a load) -->
+      <rect x="308" y="160" width="44" height="44" rx="3" fill="#e0a93d" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="330" y1="160" x2="330" y2="204" stroke="#8a6a4f" stroke-width="2.4"/>
+      <line x1="308" y1="182" x2="352" y2="182" stroke="#8a6a4f" stroke-width="2.4"/>
+      <rect x="368" y="160" width="44" height="44" rx="3" fill="#e0a93d" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="390" y1="160" x2="390" y2="204" stroke="#8a6a4f" stroke-width="2.4"/>
+      <line x1="368" y1="182" x2="412" y2="182" stroke="#8a6a4f" stroke-width="2.4"/>
+      <!-- one unlit upper window for contrast -->
+      <rect x="428" y="160" width="44" height="44" rx="3" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="450" y1="160" x2="450" y2="204" stroke="#8a6a4f" stroke-width="2.4"/>
+      <line x1="428" y1="182" x2="472" y2="182" stroke="#8a6a4f" stroke-width="2.4"/>
+      <!-- glow rays from lit windows -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.55">
+        <line x1="330" y1="150" x2="330" y2="140"/>
+        <line x1="390" y1="150" x2="390" y2="140"/>
+      </g>
+      <!-- lit door -->
+      <rect x="360" y="252" width="42" height="76" rx="3" fill="#8a6a4f"/>
+      <rect x="366" y="260" width="30" height="30" rx="2" fill="#e0a93d"/>
+      <circle cx="392" cy="292" r="2.4" fill="#e0a93d"/>
+
+      <!-- CO alarm indoors, on the wall inside the house (shown through) -->
+      <rect x="304" y="250" width="34" height="34" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+      <circle cx="321" cy="267" r="6" fill="#5e9a78"/>
+      <g stroke="#8a6a4f" stroke-width="1.4">
+        <line x1="310" y1="278" x2="332" y2="278"/>
+        <line x1="310" y1="281" x2="332" y2="281"/>
+      </g>
+      <text x="300" y="298" font-size="9.5" fill="#3e7c59" font-weight="700">CO alarm</text>
+
+      <!-- clearance / distance label between house and generator -->
+      <text x="150" y="150" font-size="11" fill="#6b7376">set well away — clear of windows</text>
+      <path d="M244 168 h34 m-9 -5 l9 5 l-9 5" stroke="#6b7376" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- concrete pad -->
+      <rect x="44" y="326" width="196" height="20" rx="4" fill="#c9a06b"/>
+      <rect x="44" y="326" width="196" height="7" rx="4" fill="#d8c39a"/>
+
+      <!-- standby generator enclosure -->
+      <rect x="70" y="238" width="150" height="90" rx="10" fill="#3e7c59"/>
+      <rect x="70" y="238" width="150" height="20" rx="10" fill="#5e9a78"/>
+      <!-- louvered vents on the side -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+        <line x1="84" y1="272" x2="84" y2="312"/>
+        <line x1="94" y1="272" x2="94" y2="312"/>
+        <line x1="104" y1="272" x2="104" y2="312"/>
+        <line x1="114" y1="272" x2="114" y2="312"/>
+      </g>
+      <!-- status panel with green "running" light -->
+      <rect x="150" y="270" width="56" height="44" rx="6" fill="#2c5a40"/>
+      <circle cx="164" cy="284" r="5" fill="#5e9a78"/>
+      <rect x="176" y="280" width="22" height="7" rx="3.5" fill="#e3efe8"/>
+      <rect x="158" y="298" width="40" height="8" rx="3" fill="#7fb3c8"/>
+      <text x="150" y="230" font-size="11" fill="#3e7c59" font-weight="700">running under load</text>
+
+      <!-- exhaust with heat shimmer, pointing away from house -->
+      <rect x="52" y="278" width="22" height="14" rx="5" fill="#8a6a4f"/>
+      <rect x="42" y="281" width="12" height="8" rx="4" fill="#b9b1a3"/>
+      <g stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round" opacity="0.7" fill="none">
+        <path d="M40 274 q-6 -6 0 -12 q6 -6 0 -12"/>
+        <path d="M30 278 q-6 -6 0 -12 q6 -6 0 -12"/>
+      </g>
+
+      <!-- small starter battery beside the generator -->
+      <rect x="248" y="352" width="52" height="38" rx="5" fill="#33393b"/>
+      <rect x="248" y="352" width="52" height="10" rx="5" fill="#4a5153"/>
+      <!-- terminals -->
+      <rect x="256" y="344" width="10" height="10" rx="2" fill="#d9663f"/>
+      <rect x="282" y="344" width="10" height="10" rx="2" fill="#7fb3c8"/>
+      <text x="258" y="346" font-size="10" fill="#fffdf8" font-weight="700">+</text>
+      <!-- little charge bolt -->
+      <path d="M272 366 l-5 8 h5 l-6 10 l2 -8 h-4 z" fill="#e0a93d"/>
+      <text x="242" y="404" font-size="10" fill="#3e7c59" font-weight="700">starter battery</text>
+
+      <!-- propane / fuel tank in the back-left -->
+      <rect x="24" y="242" width="30" height="70" rx="15" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="24" y="252" width="30" height="10" rx="5" fill="#9cc3d4"/>
+      <rect x="34" y="230" width="10" height="14" rx="3" fill="#8a6a4f"/>
+      <path d="M39 230 l0 -8" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <text x="14" y="326" font-size="10" fill="#3e7c59" font-weight="700">fuel / propane</text>
+
+      <!-- a couple of shrubs at a safe distance for warmth -->
+      <ellipse cx="262" cy="330" rx="16" ry="11" fill="#5e9a78"/>
+      <ellipse cx="248" cy="336" rx="11" ry="8" fill="#3e7c59"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A generator is the rare machine whose whole purpose is to sit idle, ready, and then perform flawlessly on the worst night of the year. That's exactly why it fails: nothing about sitting there ready tells you it still works, and the moment you find out it doesn't is the moment you needed it. A monthly test — a real one, under load — is the only thing that closes that gap. Here's what the neglect costs:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="12" width="24" height="16" rx="3" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <rect x="10" y="8" width="16" height="6" rx="2" fill="#5e9a78"/>
+          <path d="M20 15 l-5 8 h5 l-6 9 l2.5 -10 h-4.5 z" fill="#d9663f"/>
+          <circle cx="27" cy="24" r="1.6" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Untested means unproven when it counts</h3>
+        <p>A generator that sits untested is a promise nobody has checked. Outages are the single worst time to discover it won't start — you're already in the dark, the storm's outside, and the one machine meant to save the night just clicks and dies. A monthly test moves that discovery to a calm Saturday.</p>
+        <span class="cost">A no-start in the middle of the outage</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="12" width="22" height="16" rx="3" fill="#33393b"/>
+          <rect x="7" y="12" width="22" height="5" rx="3" fill="#4a5153"/>
+          <rect x="12" y="7" width="5" height="6" rx="1.5" fill="#d9663f"/>
+          <rect x="20" y="7" width="5" height="6" rx="1.5" fill="#7fb3c8"/>
+          <path d="M14 24 l6 0 M17 21 l0 6" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>The usual culprits are boring — and catchable</h3>
+        <p>It's almost never dramatic. On standby units it's a dead starter battery; on portables it's gas gone stale; on both it's a tripped breaker or a transfer switch left in the wrong position. Every one of those is obvious in a monthly test and invisible until the outage otherwise.</p>
+        <span class="cost">A $40 battery you never knew was flat</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="10" width="14" height="18" rx="2" fill="#c96f4a"/>
+          <rect x="6" y="10" width="14" height="5" rx="2" fill="#d9663f"/>
+          <path d="M22 15 l8 0 M22 21 l8 0" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 13 l6 4 l-6 4" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Under load is the only real test</h3>
+        <p>A unit can idle sweetly and still stall the instant it has to carry the furnace, fridge, and well pump — the exact loads you bought it for. A no-load run proves the engine turns over; it proves nothing about whether it can power your house. Only a real load does that.</p>
+        <span class="cost">A generator that idles fine but can't carry the house</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="11" fill="none" stroke="#5e9a78" stroke-width="2.4"/>
+          <path d="M18 11 v7 l5 3" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 4 a14 14 0 0 1 12 7" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M30 8 l1 5 l-5 -1" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Regular running keeps the engine healthy</h3>
+        <p>An engine that never runs is quietly deteriorating: oil settles, seals dry out and start to leak, and condensation collects in the crankcase and exhaust. A monthly run circulates the oil, keeps the seals supple, and burns off that moisture — so the machine stays healthy between the storms it's saved for.</p>
+        <span class="cost">Dried seals, gummed fuel &amp; a crankcase full of moisture</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> test it?</h2>
+    <p class="sub">A monthly test-run under load is the sensible default for any backup generator — it's free, it's quick, and it's the only way to know. But how critical your loads are, what fuel you burn, and how old the unit is all matter. Answer four quick questions and we'll set your interval. (Note: many whole-home standby units already auto-exercise weekly on their own — helpful, but usually a no-load self-check, so it doesn't replace a real load test.)</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. What kind of backup do you have?</div>
+        <div class="pills">
+          <button class="pill" data-v="standby">A permanent whole-home standby unit</button>
+          <button class="pill" data-v="portable">A portable I start and connect by hand</button>
+        </div>
+        <div class="q-hint">Standby units usually run their own weekly self-exercise and have a transfer switch built in; portables depend entirely on you remembering to start and test them, and on fresh fuel and a proper transfer switch or interlock.</div>
+      </div>
+      <div class="quiz-q" data-q="critical">
+        <div class="q-label">2. How critical is the power when it's out?</div>
+        <div class="pills">
+          <button class="pill" data-v="high">Medical gear, a well pump, or frequent/long outages</button>
+          <button class="pill" data-v="normal">Comfort and the fridge — but I can cope a while</button>
+          <button class="pill" data-v="low">Rare, short outages; it's mostly a nice-to-have</button>
+        </div>
+        <div class="q-hint">If someone's oxygen concentrator, a sump or well pump, or a fridge full of medication rides on this machine — or your outages are frequent and long — the cost of a no-start is high enough that you never want to skip a month.</div>
+      </div>
+      <div class="quiz-q" data-q="fuel">
+        <div class="q-label">3. What does it run on?</div>
+        <div class="pills">
+          <button class="pill" data-v="gas">Gasoline</button>
+          <button class="pill" data-v="clean">Natural gas or propane</button>
+        </div>
+        <div class="q-hint">Gasoline goes stale in months — ethanol absorbs water and gums up the carburetor — so gas units need frequent running and stabilizer. Natural gas and propane stay fresh indefinitely, which removes the single most common portable no-start cause.</div>
+      </div>
+      <div class="quiz-q" data-q="history">
+        <div class="q-label">4. How old is it — and when did it last run under load?</div>
+        <div class="pills">
+          <button class="pill" data-v="old">Older, or I honestly don't know</button>
+          <button class="pill" data-v="mid">A few years, tested now and then</button>
+          <button class="pill" data-v="new">Newer, and I test it regularly</button>
+        </div>
+        <div class="q-hint">An older unit — or one whose last real test you can't recall — is exactly the one that surprises you. The battery, the fuel, and the seals all age, and a machine that hasn't carried a load in a year is an unknown until you prove it.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The test itself costs nothing — you're just running a machine you already own. The parts it protects are cheap too: a replacement starter battery runs about $30–60, and fuel stabilizer is a few dollars a bottle. A professional standby service runs roughly $150–300 a year. Set all of that against the one thing testing prevents — a generator that no-starts during a multi-day outage:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">the monthly test — you're just running the generator you already have, for about twenty minutes</div></div>
+        <div class="calc-stat"><div class="v">$30–60</div><div class="l">a replacement starter battery if the test finds it's flat — the single most common standby no-start</div></div>
+        <div class="calc-stat"><div class="v bad">$100s–$1,000s</div><div class="l">what a no-start during a multi-day outage really costs: spoiled food, a frozen or flooded house, an emergency call</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🕒 The monthly under-load test itself</span><span>Free</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧴 Fuel stabilizer for a gas unit</span><span>~$5 / bottle</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔋 A fresh starter battery</span><span>$30–60</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Annual professional standby service</span><span>$150–300 / yr</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:34%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🥶 A no-start in a multi-day winter outage</span><span>Spoiled food, frozen pipes, a flooded basement</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free twenty-minute run once a month</strong>, plus a $40 battery and a $5 bottle of stabilizer when the test flags them, against a generator that no-starts the one night you needed it — a fridge and freezer emptied to the trash, a house dropping below freezing or filling with water, and an emergency service call at holiday rates when every technician in town is already booked. Test it monthly and the day you actually need it, it starts.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to test your backup generator</h2>
+    <p class="sub">The whole point is a real run: pre-check the basics, start it up, let it carry actual circuits for about twenty minutes, watch and listen, then shut it down set up for next time. Read the safety notes first — carbon monoxide and backfeed are the two things that turn a routine test into a tragedy — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Carbon monoxide and backfeed can kill — read this first</h3>
+      <ul>
+        <li><strong>NEVER run any generator indoors, in a garage, in a shed, or near open windows or doors — even for a quick test.</strong> Carbon monoxide is invisible, odorless, and deadly, and an open garage door does not make it safe. Run it OUTSIDE, well away from the house, exhaust pointed away, with working CO alarms inside.</li>
+        <li><strong>NEVER backfeed a portable generator into a wall outlet to power your home.</strong> A cord run from the generator into an outlet energizes your house wiring backward — it can electrocute utility line workers restoring power and start fires. Use a proper transfer switch or interlock installed by a licensed electrician. (Whole-home standby units already have one.)</li>
+        <li><strong>Test UNDER LOAD, not at a lazy idle.</strong> Let a standby run its self-test while actually carrying real circuits, or plug real appliances into a portable through rated, heavy-gauge cords. A no-load run proves the engine turns; it does not prove the machine can carry your house.</li>
+        <li><strong>Keep the starter battery charged.</strong> On standby units a dead battery is the number-one no-start. Keep the maintainer/charger working and the terminals clean, and replace a battery that's swollen or won't hold a charge before it strands you.</li>
+        <li><strong>Keep fuel fresh, oil topped up, and the unit clear.</strong> Use stabilizer in gasoline and rotate it; check the oil before every test; and keep the enclosure clear of snow, leaves, and debris with the manufacturer's clearances so it can breathe and cool.</li>
+        <li><strong>Let it cool before you touch it, and never refuel a hot or running generator.</strong> Spilled gas on a hot muffler ignites. Shut down, let it cool, then refuel. And remember a standby unit still needs its annual professional service — the monthly test doesn't replace it.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">The owner's manual for start &amp; exercise steps</span>
+      <span class="tool-chip">Fresh fuel + stabilizer (gas units)</span>
+      <span class="tool-chip">Engine oil to top up</span>
+      <span class="tool-chip">Rated heavy-gauge extension cords (portables)</span>
+      <span class="tool-chip">A battery charger / maintainer</span>
+      <span class="tool-chip">Working CO alarms indoors</span>
+      <span class="tool-chip">A brush or blower to clear debris</span>
+      <span class="tool-chip">A log or the Upkeep Ledger app</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pre-checking a generator before testing: a dipstick showing the oil level, a fuel can with a stabilizer bottle, a charged starter battery, and the outdoor location marked clear and away from the house">
+          <!-- oil dipstick -->
+          <rect x="24" y="30" width="8" height="70" rx="4" fill="#b9b1a3"/>
+          <rect x="20" y="24" width="16" height="10" rx="3" fill="#e0a93d"/>
+          <rect x="24" y="80" width="8" height="16" rx="3" fill="#d98e3b"/>
+          <text x="16" y="114" font-size="10" fill="#3e7c59" font-weight="700">oil</text>
+          <!-- fuel can + stabilizer -->
+          <rect x="70" y="52" width="40" height="46" rx="6" fill="#d9663f"/>
+          <rect x="70" y="52" width="40" height="10" rx="6" fill="#c96f4a"/>
+          <rect x="82" y="42" width="16" height="12" rx="4" fill="#8a6a4f"/>
+          <rect x="116" y="58" width="14" height="40" rx="4" fill="#5e9a78"/>
+          <rect x="118" y="48" width="10" height="12" rx="3" fill="#3e7c59"/>
+          <text x="72" y="114" font-size="10" fill="#3e7c59" font-weight="700">fresh fuel</text>
+          <!-- starter battery, charged -->
+          <rect x="158" y="56" width="46" height="34" rx="4" fill="#33393b"/>
+          <rect x="164" y="50" width="8" height="8" rx="2" fill="#d9663f"/>
+          <rect x="190" y="50" width="8" height="8" rx="2" fill="#7fb3c8"/>
+          <path d="M181 62 l-4 8 h4 l-5 9 l2 -8 h-3 z" fill="#e0a93d"/>
+          <text x="156" y="106" font-size="10" fill="#3e7c59" font-weight="700">battery</text>
+          <!-- clear & outside marker -->
+          <circle cx="238" cy="60" r="18" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <path d="M230 60 l6 6 l10 -12" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="212" y="96" font-size="10" fill="#3e7c59" font-weight="700">clear + OUTSIDE</text>
+          <text x="24" y="140" font-size="11" fill="#d9663f" font-weight="700">check the basics before you start</text>
+        </svg>
+        <h4>Pre-check the basics</h4>
+        <p>Before you hit start: confirm the oil level, make sure the fuel's fresh (with stabilizer for gas), check the starter battery and its charger, and make sure the area is clear of debris and the unit is OUTSIDE, well away from the house.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of starting the generator: a standby enclosure with a green running light and steady exhaust, warming up and running smoothly">
+          <rect x="70" y="60" width="140" height="80" rx="10" fill="#3e7c59"/>
+          <rect x="70" y="60" width="140" height="18" rx="10" fill="#5e9a78"/>
+          <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+            <line x1="84" y1="92" x2="84" y2="128"/>
+            <line x1="94" y1="92" x2="94" y2="128"/>
+            <line x1="104" y1="92" x2="104" y2="128"/>
+          </g>
+          <rect x="150" y="90" width="48" height="40" rx="6" fill="#2c5a40"/>
+          <circle cx="164" cy="104" r="6" fill="#5e9a78"/>
+          <rect x="176" y="100" width="16" height="8" rx="4" fill="#e3efe8"/>
+          <rect x="158" y="116" width="34" height="7" rx="3" fill="#7fb3c8"/>
+          <!-- exhaust shimmer -->
+          <rect x="52" y="96" width="20" height="12" rx="5" fill="#8a6a4f"/>
+          <g stroke="#b9b1a3" stroke-width="2.2" stroke-linecap="round" opacity="0.7" fill="none">
+            <path d="M50 92 q-5 -5 0 -10 q5 -5 0 -10"/>
+            <path d="M40 96 q-5 -5 0 -10 q5 -5 0 -10"/>
+          </g>
+          <text x="86" y="52" font-size="11" fill="#3e7c59" font-weight="700">green = running</text>
+          <text x="70" y="164" font-size="11" fill="#3e7c59" font-weight="700">start &amp; let it warm up</text>
+        </svg>
+        <h4>Start it up &amp; let it warm</h4>
+        <p>Start the unit — or let a standby begin its exercise cycle — and give it a minute or two to warm up and settle into a smooth, steady run before you ask it to do anything. Watch for a clean start and a green run light.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of testing under load for about twenty minutes: the generator connected through a transfer switch to real circuits, a furnace, a refrigerator, and a well pump drawing power, with a twenty-minute clock">
+          <rect x="20" y="70" width="60" height="50" rx="8" fill="#3e7c59"/>
+          <circle cx="34" cy="86" r="4" fill="#5e9a78"/>
+          <!-- cable to transfer switch -->
+          <path d="M80 96 q26 0 30 -20" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+          <rect x="108" y="52" width="26" height="40" rx="4" fill="#b9b1a3"/>
+          <path d="M115 60 l0 24 M127 60 l0 24" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+          <text x="102" y="106" font-size="9" fill="#6b7376">transfer switch</text>
+          <!-- real loads -->
+          <rect x="150" y="44" width="30" height="30" rx="3" fill="#c96f4a"/>
+          <path d="M158 52 l6 6 l-6 6" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="150" y="86" font-size="8.5" fill="#6b7376">furnace</text>
+          <rect x="188" y="40" width="24" height="38" rx="3" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+          <line x1="188" y1="58" x2="212" y2="58" stroke="#8a6a4f" stroke-width="2"/>
+          <text x="186" y="90" font-size="8.5" fill="#6b7376">fridge</text>
+          <rect x="222" y="52" width="26" height="26" rx="4" fill="#7fb3c8"/>
+          <path d="M235 56 v18 M228 65 h14" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="220" y="90" font-size="8.5" fill="#6b7376">well pump</text>
+          <!-- 20-minute clock -->
+          <circle cx="60" cy="146" r="16" fill="#fffdf8" stroke="#3e7c59" stroke-width="2.4"/>
+          <path d="M60 146 v-9 M60 146 l7 4" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="86" y="150" font-size="11" fill="#3e7c59" font-weight="700">~20 min UNDER LOAD</text>
+        </svg>
+        <h4>Test under load ~20 minutes</h4>
+        <p>Now the real test: have it carry actual circuits — throw the transfer switch on a standby, or plug real appliances into a portable through rated cords — for about twenty minutes, so you know it can handle the demand, not just idle.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of watching and listening while the generator runs: an ear symbol for smooth sound with no surging, a steady bright bulb for good output, and a magnifier checking for leaks or overheating">
+          <!-- ear / listen -->
+          <path d="M44 60 q0 -22 22 -22 q22 0 22 22 q0 16 -14 22 q-8 4 -8 14" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <path d="M56 60 q0 -10 10 -10 q10 0 10 10" fill="none" stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round"/>
+          <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" fill="none">
+            <path d="M96 50 q6 8 0 16"/>
+            <path d="M104 44 q10 14 0 28"/>
+          </g>
+          <text x="40" y="102" font-size="9.5" fill="#6b7376">smooth, no surge</text>
+          <!-- steady bulb / output -->
+          <circle cx="160" cy="58" r="18" fill="#faf0da" stroke="#e0a93d" stroke-width="2.4"/>
+          <rect x="153" y="74" width="14" height="8" rx="2" fill="#b9b1a3"/>
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <line x1="160" y1="30" x2="160" y2="24"/>
+            <line x1="182" y1="42" x2="188" y2="38"/>
+            <line x1="138" y1="42" x2="132" y2="38"/>
+          </g>
+          <text x="138" y="102" font-size="9.5" fill="#6b7376">steady output</text>
+          <!-- magnifier for leaks / heat -->
+          <circle cx="224" cy="56" r="14" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+          <line x1="234" y1="66" x2="246" y2="78" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="222" cy="60" r="3" fill="#d9663f"/>
+          <text x="206" y="102" font-size="9.5" fill="#6b7376">no leaks / heat</text>
+          <text x="40" y="150" font-size="11" fill="#3e7c59" font-weight="700">watch, listen, and check the output</text>
+        </svg>
+        <h4>Watch, listen &amp; check output</h4>
+        <p>While it carries the load, pay attention: is it running smoothly with no surging or alarms? Is the output steady — lights not flickering, motors starting cleanly? Any leaks, burning smells, or signs of overheating? A healthy test is quiet and boring.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of shutting down after the test: the generator cooling, topping off the fuel for next time, a switch set to AUTO, and a logbook entry with the date">
+          <rect x="24" y="60" width="60" height="50" rx="8" fill="#3e7c59"/>
+          <g stroke="#b9b1a3" stroke-width="2.2" stroke-linecap="round" opacity="0.7" fill="none">
+            <path d="M40 54 q-4 -6 0 -12"/>
+            <path d="M52 54 q-4 -6 0 -12"/>
+            <path d="M64 54 q-4 -6 0 -12"/>
+          </g>
+          <text x="26" y="126" font-size="9.5" fill="#6b7376">let it cool</text>
+          <!-- AUTO switch -->
+          <rect x="104" y="60" width="52" height="34" rx="6" fill="#2c5a40"/>
+          <circle cx="120" cy="77" r="8" fill="#5e9a78"/>
+          <text x="132" y="81" font-size="9" fill="#fffdf8" font-weight="700">AUTO</text>
+          <text x="104" y="110" font-size="9.5" fill="#6b7376">set to auto-start</text>
+          <!-- fuel top-off -->
+          <path d="M170 66 q18 -8 30 4 l-6 10 q-10 -8 -22 -4 z" fill="#d9663f"/>
+          <path d="M184 90 q-3 8 -8 12" fill="none" stroke="#c96f4a" stroke-width="3" stroke-linecap="round"/>
+          <text x="168" y="120" font-size="9.5" fill="#6b7376">top off fuel</text>
+          <!-- logbook -->
+          <rect x="216" y="58" width="46" height="56" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round">
+            <line x1="224" y1="70" x2="254" y2="70"/>
+            <line x1="224" y1="80" x2="254" y2="80"/>
+            <line x1="224" y1="90" x2="246" y2="90"/>
+          </g>
+          <path d="M226 100 l4 4 l8 -8" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="222" y="130" font-size="9.5" fill="#3e7c59" font-weight="700">log the date</text>
+          <text x="24" y="156" font-size="11" fill="#3e7c59" font-weight="700">cool, refuel, reset to auto, log</text>
+        </svg>
+        <h4>Shut down, reset &amp; log</h4>
+        <p>When the test's done, let it cool, then top off the fuel so it's ready for next time. Confirm a standby is set back to auto-start so it'll transfer on its own, and log the test date so the next month's run lands on schedule.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Generator-test progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Started clean, carried a real load, ran smooth, and shut down set to auto and logged — your generator is proven ready. Same quick test again in about a month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it needs service — and when to call a pro</h2>
+    <p class="sub">A healthy test is boring: it starts on the first try, runs smoothly, carries the load, and shuts down clean. These are the signals that your test just found a problem worth a professional's eyes — and the one that means stop everything and call 911:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Hard starting or repeated cranking.</strong> If it takes several tries, cranks slowly, or barely catches, something's wrong — most often the starter battery, stale fuel, or a fouled plug. Don't wait for it to fail completely; get ahead of it.</li>
+        <li><strong>Surging, hunting, or stalling under load.</strong> An engine that revs up and down or dies when the load comes on has a fuel-delivery, governor, or capacity problem. It idles but can't work — exactly the failure a load test exists to catch.</li>
+        <li><strong>Low, no, or unsteady output.</strong> Lights that flicker or dim, motors that won't start, or a meter reading low or wildly voltage points to an alternator, regulator, or capacitor issue — a job for a technician, not a homeowner.</li>
+        <li><strong>Alarms or fault codes.</strong> Any warning light, error code, or fault message on the panel means the unit has flagged something itself. Note the code, check the manual, and call for service — don't just clear it and hope.</li>
+        <li><strong>A swollen, leaking, or dead starter battery.</strong> A battery that's bulged, corroded, or won't hold a charge is the number-one no-start cause on standby units. Replace it — it's cheap insurance against a silent failure on the worst night.</li>
+        <li><strong>A standby that won't auto-transfer.</strong> If the unit runs when you start it by hand but doesn't kick in and take over when the power drops, the transfer switch or controller needs a pro. That auto-transfer is the whole reason you bought a standby.</li>
+        <li><strong>⚠️ Any CO alarm sounding means evacuate and call 911.</strong> Carbon monoxide is invisible and deadly. If an alarm goes off, get everyone outside into fresh air immediately, then call 911 — don't stop to investigate or shut anything off first.</li>
+        <li><strong>Pro tip:</strong> testing works best as part of a whole outage-readiness habit. Pair the monthly test with the full annual <a href="service-generator.html">generator service</a> (test the one you service), keep your <a href="update-emergency-kit.html">emergency kit</a> current so you're covered the moment the power drops, and make sure the <a href="test-sump-pump.html">sump pump</a> — which often rides on backup power — actually works too. Together they mean the whole house is ready, not just one machine.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I test my backup generator?</summary>
+      <p>Once a month, under load, is the sensible default for any backup generator — and it's free, since you're just running a machine you already own. A monthly run keeps the starter battery charged, the seals from drying out, and the fuel from sitting stale, and it surfaces any no-start problem while you can still fix it calmly. Tighten to strictly-never-skip monthly if your loads are critical (medical equipment, a well pump, a house you can't let freeze), if you burn gasoline (which goes stale fast), or if the unit is older or you can't remember its last real test. Many whole-home standby units auto-exercise weekly on their own, which is helpful — but that self-test is usually a short no-load run, so it doesn't replace a real monthly load test. Pair the monthly test with a full professional service once a year.</p>
+    </details>
+    <details>
+      <summary>Why test it under load instead of just letting it idle?</summary>
+      <p>Because idling proves almost nothing. A generator can start, warm up, and purr along at no load while being completely incapable of carrying your house — the moment the furnace blower, the refrigerator compressor, and the well pump all draw current, an engine with a fuel-delivery problem, a weak governor, or simply not enough real capacity will surge, bog down, or stall. Those are exactly the loads you bought it for, and exactly what a no-load run never asks it to do. Testing under load means putting real demand on it: on a standby, let it run its exercise while actually carrying circuits through the transfer switch; on a portable, plug in real appliances through rated cords. Twenty minutes carrying a genuine load tells you what an hour of idling can't.</p>
+    </details>
+    <details>
+      <summary>Why won't my generator start when I need it?</summary>
+      <p>Almost always for one of a few boring, preventable reasons. On standby units, the number-one cause is a dead starter battery — it sits for months slowly self-discharging, and the maintainer fails silently, so it's flat the day the power drops. On gasoline portables, it's stale fuel: ethanol-blended gas absorbs water and gums up the carburetor within a few months, so the machine that sat since the last storm just won't catch. Beyond those, it's a tripped breaker, a fuel valve or choke in the wrong position, a transfer switch left in the wrong spot, low oil triggering a shutdown sensor, or a fouled spark plug. Every one of these is obvious in a monthly test and invisible until the outage otherwise — which is the entire argument for testing.</p>
+    </details>
+    <details>
+      <summary>Can I run it in the garage with the door open for a test?</summary>
+      <p>No — never, not even with the door open, not even for a few minutes. Generators produce carbon monoxide, which is invisible, odorless, and deadly, and it builds up in an enclosed or partly-enclosed space far faster than an open door can clear it. People die every year running generators in garages and near windows during outages, and a quick test is no safer than the real thing. Run it OUTSIDE, well away from the house, with the exhaust pointed away from any doors, windows, or vents, and keep working CO alarms inside your home. If a CO alarm ever sounds, get everyone outside into fresh air and call 911 immediately. There is no version of running a generator indoors that's acceptable.</p>
+    </details>
+    <details>
+      <summary>Can I plug a portable generator into an outlet to power my house?</summary>
+      <p>No — this is called backfeeding, and it's genuinely dangerous. Running a cord from the generator into a wall outlet energizes your home's wiring backward, which can push power out onto the utility lines and electrocute the line workers trying to restore your power — and it bypasses your breakers, creating a serious fire risk. It's illegal in most places for exactly these reasons. The right way to power your house from a portable is a transfer switch or an interlock kit, installed by a licensed electrician, which safely isolates your home from the grid before feeding your circuits. (Whole-home standby units already include an automatic transfer switch, which is why they're wired in by a pro.) If you don't have a transfer switch, power appliances individually with rated extension cords instead.</p>
+    </details>
+    <details>
+      <summary>Do standby generators still need testing if they self-exercise?</summary>
+      <p>Yes. The weekly self-exercise cycle built into most standby units is genuinely useful — it runs the engine to circulate oil, keep the seals moist, keep the battery topped up, and burn off condensation — but it's usually a short, no-load run. It confirms the engine starts and runs; it does not confirm the unit can actually carry your house, that the transfer switch will hand over the load when the grid drops, or that the battery still has the muscle for a real start under strain. So let it do its weekly exercise, but still do a monthly under-load test yourself: watch a start, let it carry real circuits, confirm it auto-transfers, and check the battery and fuel. And keep the annual professional service on the calendar — self-exercise doesn't change the oil, the plug, or the filter.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A generator is the one machine you find out is broken when the lights are already out.</h2>
+        <p>The monthly under-load test is free and quick — and it's the only thing standing between "ready" and a no-start on the worst night of the year. Upkeep Ledger keeps that test on the calendar so it never slips, logs each run, and resurfaces the annual service too — right alongside the emergency kit, the sump pump, the HVAC filter, and every other quiet task that keeps the house safe when the power fails.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-backup-generator&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=test-backup-generator&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Generators produce deadly carbon monoxide and must be run outdoors only; never backfeed a portable into an outlet — these steps don't replace your manufacturer's instructions, a licensed electrician's transfer switch, or annual professional service.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, critical: null, fuel: null, history: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;
+    var relaxable = true;
+
+    /* Type — standby vs portable */
+    if (s.type === "standby") {
+      reasons.push("A whole-home standby unit usually auto-exercises weekly on its own — but that's typically a short no-load run, so it still needs a real under-load test to prove it can carry the house and auto-transfer.");
+    } else if (s.type === "portable") {
+      relaxable = false;
+      reasons.push("A portable depends entirely on you: fresh fuel, a battery or recoil that starts, and a proper transfer switch. Nothing self-exercises it, so a hands-on monthly test is the only thing keeping it ready.");
+    }
+
+    /* Critical — how much rides on it */
+    if (s.critical === "high") {
+      relaxable = false;
+      reasons.push("With medical equipment, a well or sump pump, or frequent, long outages riding on this machine, the cost of a no-start is far too high to ever skip a month — test it under load every single time.");
+    } else if (s.critical === "normal") {
+      reasons.push("Comfort and a full fridge are worth protecting, but you can cope for a while — a steady monthly test keeps you ready without the machine being life-or-death.");
+    } else if (s.critical === "low") {
+      reasons.push("If outages are rare and short and the generator is mostly a nice-to-have, the stakes are lower — so you have a little room to stretch the interval if everything else checks out.");
+    }
+
+    /* Fuel — gas goes stale */
+    if (s.fuel === "gas") {
+      relaxable = false;
+      reasons.push("Gasoline goes stale within months — ethanol absorbs water and gums up the carburetor — so a gas unit needs frequent running and stabilizer to keep it from becoming the classic storm-day no-start. Keep it monthly.");
+    } else if (s.fuel === "clean") {
+      reasons.push("Natural gas or propane stays fresh indefinitely, which removes the single most common portable no-start cause — one less reason to worry between tests.");
+    }
+
+    /* History — age and last test */
+    if (s.history === "old") {
+      relaxable = false;
+      reasons.push("An older unit — or one whose last real test you can't recall — is exactly the one that surprises you, since the battery, fuel, and seals have all aged unproven. Test it monthly until you trust it again.");
+    } else if (s.history === "mid") {
+      reasons.push("A few years old and tested now and then is fine, but 'now and then' is how the battery quietly dies between checks — a regular monthly run keeps it honest.");
+    } else if (s.history === "new") {
+      reasons.push("A newer unit you already test regularly is in good shape — keep the habit, since it's the habit, not the machine's age, that guarantees it starts.");
+    }
+
+    /* Best-case relaxation: low stakes, clean fuel, newer + well tested, and standby */
+    if (relaxable && s.type === "standby" && s.critical === "low" && s.fuel === "clean" && s.history === "new") {
+      months = 3;
+      reasons.push("A newer, well-tested standby on natural gas or propane, backing up only low-stakes short outages, is the one case where you can reasonably stretch to a quarterly under-load test — as long as you still glance at it monthly and never let the battery die.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.critical === "high") {
+      note = "<strong>Critical loads mean zero tolerance for a no-start:</strong> test under load every month, keep the starter battery fresh, and have a backup plan (a second unit, cords, or a place to go) for the rare day even a tested generator fails.";
+    } else if (s.fuel === "gas") {
+      note = "<strong>Fight stale fuel:</strong> add stabilizer to every fill, run the generator monthly to keep fresh fuel through the carburetor, and store gas no longer than a few months. Stale gas is the number-one reason a portable won't catch.";
+    } else if (s.type === "standby") {
+      note = "<strong>Don't trust the weekly self-exercise alone:</strong> it's a no-load run. Once a month, watch a start, let it carry real circuits, confirm it auto-transfers, and check the battery — that's the test the self-exercise can't do for you.";
+    } else {
+      note = "<strong>Remember the order:</strong> pre-check oil, fuel, and battery; start and warm it; carry a real load for about twenty minutes; watch and listen; then cool it, refuel, reset to auto, and log the date. And book the annual service too.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.critical || !quizState.fuel || !quizState.history) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: test the generator under load " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Pre-check the oil, fuel, and battery, then <strong>start it, carry a real load for about twenty minutes, watch and listen, and shut down set to auto and logged</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Pre-check", text: "Confirm it's OUTSIDE, well away from windows and doors", note: "Never run a generator indoors, in a garage, in a shed, or near openings — even for a test. Carbon monoxide is invisible and deadly. Run it outside with the exhaust pointed away, and make sure working CO alarms are on inside the house." },
+    { phase: "Pre-check", text: "Check the oil level and top up if low", note: "Pull the dipstick and confirm the oil is at the full mark before every test — low oil trips a shutdown sensor on most units and is hard on the engine. Top up with the manufacturer's oil if it's low." },
+    { phase: "Pre-check", text: "Confirm fresh fuel and add stabilizer (gas units)", note: "Make sure there's fresh fuel and that the fuel valve is open. On gasoline units, treat the fuel with stabilizer and don't run gas that's been sitting more than a few months — stale gas is the classic no-start." },
+    { phase: "Pre-check", text: "Check the starter battery and its charger", note: "On standby units, confirm the starter battery is charged, the terminals are clean, and the maintainer is working — a dead battery is the number-one no-start. Replace a battery that's swollen or won't hold a charge." },
+    { phase: "Start it up", text: "Start the unit (or begin the standby's exercise cycle)", note: "Start it per the owner's manual — choke and pull for a portable, or initiate the exercise/manual run on a standby. Watch for a clean, first-try start; hard cranking is itself a warning sign to note." },
+    { phase: "Start it up", text: "Let it warm up and settle into a smooth run", note: "Give it a minute or two to warm up before you ask it to carry anything. Listen for a steady, even run and watch for a green run light with no fault codes on the panel." },
+    { phase: "Test under load", text: "Transfer or connect real circuits", note: "This is the real test. On a standby, engage the transfer switch so it carries actual house circuits. On a portable, plug in real appliances through rated, heavy-gauge cords — never backfeed a wall outlet." },
+    { phase: "Test under load", text: "Run it under load for about 20 minutes", note: "Let it carry the furnace, fridge, well pump, or whatever it'll power in an outage for roughly twenty minutes, so you know it can handle the sustained demand — not just idle. A no-load run proves nothing about capacity." },
+    { phase: "Test under load", text: "Watch, listen, and check the output", note: "Confirm it runs smoothly with no surging, hunting, or alarms; that output is steady (lights not flickering, motors starting cleanly); and that there are no leaks, burning smells, or signs of overheating." },
+    { phase: "Shut down & log", text: "Let it cool, then top off the fuel", note: "Shut it down and let it cool before you touch it — never refuel a hot or running generator, since spilled gas on a hot muffler ignites. Once cool, top off the fuel so it's ready for next time." },
+    { phase: "Shut down & log", text: "Reset a standby to auto-start", note: "Confirm a standby unit is switched back to AUTO so it'll start and transfer on its own when the grid drops — a unit left in manual or off after a test won't come on when you need it." },
+    { phase: "Shut down & log", text: "Log the test date", note: "Nothing about a ready generator reminds you it's due again. Note the date so next month's test lands on schedule — and keep the annual professional service on the calendar too, since the monthly test doesn't replace it." }
+  ];
+
+  var LS_KEY = "upkeepguides:test-backup-generator:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
