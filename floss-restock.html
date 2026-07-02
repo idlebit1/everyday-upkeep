@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restock your dental floss — UpkeepGuides.com</title>
+<meta name="description" content="Never run out of floss: why a gap means skipped days, how long a container lasts, which floss type (waxed, tape, picks, water flosser) suits you, and a restock checklist with a personalized reminder plan.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Restock your dental floss — UpkeepGuides.com">
+<meta property="og:description" content="Never run out of floss: why a gap means skipped days, how long a container lasts, which floss type (waxed, tape, picks, water flosser) suits you, and a restock checklist with a personalized reminder plan.">
+<meta property="og:url" content="https://upkeepguides.com/floss-restock.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Restock your dental floss — UpkeepGuides.com">
+<meta name="twitter:description" content="Never run out of floss: why a gap means skipped days, how long a container lasts, which floss type (waxed, tape, picks, water flosser) suits you, and a restock checklist with a personalized reminder plan.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Every 2 months</span>
+      <h1>Restock Your Dental Floss</h1>
+      <p class="lede">Here's the honest truth about flossing: the hard part isn't the technique, it's simply not running out. A container of floss lasts a couple of months of daily use, and it always seems to empty on the one night you're tired and ready for bed. You reach in, the reel's spent, and you skip — and skipped days are exactly when plaque and gum trouble creep in between your teeth. The fix costs nothing: keep a spare in the drawer, restock <em>before</em> the container's empty, and pick a floss type you'll actually reach for every day. Do that and the habit runs itself.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ A container lasts <em>~2 months</em></span>
+        <span class="chip">🪥 <em>Daily</em> between-teeth cleaning</span>
+        <span class="chip">🛒 Restock <em>before empty</em></span>
+        <span class="chip">💸 Costs <em>~$2–4</em> a container</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of dental floss restocking on a clean bathroom shelf: a nearly-empty floss container with its bare reel showing sits beside a fresh sealed backup pack, a few floss picks and a small interdental brush lie nearby, a toothbrush stands in a cup, all lined up on a tidy shelf">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- bathroom shelf -->
+      <rect x="70" y="322" width="430" height="14" rx="4" fill="#b9b1a3"/>
+      <rect x="70" y="336" width="430" height="8" rx="3" fill="#8a6a4f"/>
+
+      <!-- nearly-empty floss container (left), lid open, bare reel showing -->
+      <rect x="120" y="238" width="96" height="84" rx="14" fill="#7fb3c8"/>
+      <rect x="120" y="238" width="96" height="26" rx="13" fill="#9cc3d4"/>
+      <!-- open flip lid -->
+      <path d="M124 238 q-14 -20 6 -34 l70 0 q10 10 0 20" fill="#5e9a78"/>
+      <!-- bare reel showing through window -->
+      <circle cx="168" cy="288" r="26" fill="#eef4f7"/>
+      <circle cx="168" cy="288" r="20" fill="#dce8ee"/>
+      <circle cx="168" cy="288" r="8" fill="#b9b1a3"/>
+      <!-- last thin wisp of floss -->
+      <path d="M168 288 q10 8 4 22 q-4 8 6 14" fill="none" stroke="#fffdf8" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- little cutter notch -->
+      <rect x="196" y="252" width="16" height="7" rx="2" fill="#3e7c59"/>
+      <text x="126" y="230" font-size="11" fill="#d9663f" font-weight="700">nearly empty</text>
+
+      <!-- fresh sealed backup pack (center) -->
+      <rect x="248" y="222" width="104" height="100" rx="12" fill="#3e7c59"/>
+      <rect x="248" y="222" width="104" height="30" rx="12" fill="#5e9a78"/>
+      <!-- reel graphic on the pack -->
+      <circle cx="300" cy="284" r="24" fill="#e3efe8"/>
+      <circle cx="300" cy="284" r="15" fill="#fffdf8"/>
+      <circle cx="300" cy="284" r="6" fill="#5e9a78"/>
+      <!-- "NEW" tag -->
+      <rect x="258" y="230" width="42" height="15" rx="7.5" fill="#e0a93d"/>
+      <text x="279" y="241" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">NEW</text>
+      <text x="254" y="214" font-size="11" fill="#3e7c59" font-weight="700">backup ready</text>
+
+      <!-- toothbrush standing in a cup (right) -->
+      <path d="M420 262 h48 l-6 60 h-36 z" fill="#dce8ee"/>
+      <path d="M420 262 h48 l-2 8 h-44 z" fill="#cdd9de"/>
+      <!-- toothbrush handle -->
+      <rect x="438" y="176" width="12" height="92" rx="6" fill="#c96f4a"/>
+      <!-- brush head -->
+      <rect x="432" y="164" width="24" height="20" rx="6" fill="#5e9a78"/>
+      <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+        <line x1="437" y1="164" x2="437" y2="156"/>
+        <line x1="444" y1="164" x2="444" y2="154"/>
+        <line x1="451" y1="164" x2="451" y2="156"/>
+      </g>
+
+      <!-- a few floss picks lying on the shelf (front-left) -->
+      <g transform="rotate(-8 150 356)">
+        <path d="M120 352 h44 l4 10 l-4 10 h-44 z" fill="#e0a93d"/>
+        <path d="M164 352 l14 -18 l0 40 l-14 -18 z" fill="#d98e3b"/>
+        <line x1="168" y1="342" x2="176" y2="352" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g transform="rotate(6 210 366)">
+        <path d="M180 362 h44 l4 10 l-4 10 h-44 z" fill="#7fb3c8"/>
+        <path d="M224 362 l14 -18 l0 40 l-14 -18 z" fill="#5e9a78"/>
+        <line x1="228" y1="352" x2="236" y2="362" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+      </g>
+
+      <!-- small interdental brush (front-center) -->
+      <g transform="rotate(14 330 360)">
+        <rect x="300" y="356" width="56" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="356" y="354" width="26" height="11" rx="4" fill="#3e7c59"/>
+        <g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round">
+          <line x1="304" y1="352" x2="304" y2="345"/>
+          <line x1="312" y1="352" x2="312" y2="344"/>
+          <line x1="320" y1="352" x2="320" y2="345"/>
+          <line x1="328" y1="352" x2="328" y2="344"/>
+          <line x1="304" y1="367" x2="304" y2="374"/>
+          <line x1="312" y1="367" x2="312" y2="375"/>
+          <line x1="320" y1="367" x2="320" y2="374"/>
+          <line x1="328" y1="367" x2="328" y2="375"/>
+        </g>
+      </g>
+
+      <!-- small plant for warmth (right) -->
+      <path d="M486 300 h26 l-4 22 h-18 z" fill="#c96f4a"/>
+      <path d="M498 300 q-3 -18 -12 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M498 300 q4 -16 14 -20" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="483" cy="272" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 483 272)"/>
+      <ellipse cx="513" cy="276" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 513 276)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Flossing is one of those tiny habits that only works if it's frictionless — and the biggest source of friction is the day you run out. This whole guide is really about that: keep a backup, restock before empty, and use a floss type you'll actually reach for. Here's why the small stuff matters so much:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="6" width="20" height="24" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <circle cx="18" cy="19" r="6" fill="#eef4f7" stroke="#b9b1a3" stroke-width="1.6"/>
+          <circle cx="18" cy="19" r="2" fill="#b9b1a3"/>
+          <path d="M11 30 l14 -20" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Running out = skipped days</h3>
+        <p>The night the container's empty is the night you skip — and gaps are exactly when plaque hardens and gum inflammation creeps in between the teeth. A few missed days become a habit that quietly slips away. Not running out is the whole game.</p>
+        <span class="cost">Skipped flossing &amp; creeping plaque</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M13 8 q5 -3 10 0 l0 14 q-5 5 -10 0 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="1.8"/>
+          <path d="M13 12 q5 -3 10 0" fill="none" stroke="#dce8ee" stroke-width="1.4"/>
+          <path d="M6 18 q12 6 24 0" fill="none" stroke="#3e7c59" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="9" cy="18" r="2" fill="#3e7c59"/>
+          <circle cx="27" cy="18" r="2" fill="#3e7c59"/>
+        </svg></div>
+        <h3>It cleans where a brush can't</h3>
+        <p>A toothbrush can't reach the tight contact between two teeth or just under the gumline — that's floss's whole job. Daily flossing is what prevents cavities between the teeth and helps hold off gum disease, the stuff brushing alone leaves behind.</p>
+        <span class="cost">Between-teeth cavities &amp; gum disease</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="12" cy="12" r="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <circle cx="24" cy="24" r="6" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M14 14 q6 2 8 8" fill="none" stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M9 15 l3 3 l3 -3" fill="none" stroke="#3e7c59" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The "right" floss is the one you'll use</h3>
+        <p>There's no single best floss — only the one you'll actually reach for daily. Tight teeth? Thin waxed floss or tape slides through. Braces or a bridge? A threader or water flosser. Trouble with your hands? Picks. Match it to your mouth and you'll keep it up.</p>
+        <span class="cost">Fighting a floss that doesn't fit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="10" width="10" height="16" rx="3" fill="#7fb3c8"/>
+          <rect x="7" y="10" width="10" height="5" rx="2.5" fill="#9cc3d4"/>
+          <rect x="19" y="10" width="10" height="16" rx="3" fill="#3e7c59"/>
+          <rect x="19" y="10" width="10" height="5" rx="2.5" fill="#5e9a78"/>
+          <path d="M22 18 l3 3 l4 -5" fill="none" stroke="#fffdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 30 l2 -2 M12 6 l0 2 M24 6 l0 2" stroke="#e0a93d" stroke-width="1.8" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A backup makes the habit effortless</h3>
+        <p>One spare in the drawer removes the only real failure point. When the reel runs low you swap in the fresh pack the same night — no gap, no trip to the store mid-routine, no excuse to skip. Then you just reorder one more backup.</p>
+        <span class="cost">The habit quietly falling apart</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> restock?</h2>
+    <p class="sub">A standard container lasts about two months of daily flossing — the real job is keeping a backup so you never run out (a gap = skipped days). But a shared household container empties faster, floss picks and specialty floss get used up quicker, and whether you keep a spare decides whether a low reel is a shrug or a skipped week. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="people">
+        <div class="q-label">1. Who's using this floss?</div>
+        <div class="pills">
+          <button class="pill" data-v="household">A whole household shares it</button>
+          <button class="pill" data-v="couple">Two of us</button>
+          <button class="pill" data-v="solo">Just me</button>
+        </div>
+        <div class="q-hint">The more people reaching for the same container, the faster the reel empties — a family container can run out in weeks, not months, so the backup matters even more.</div>
+      </div>
+      <div class="quiz-q" data-q="teeth">
+        <div class="q-label">2. What are your teeth like?</div>
+        <div class="pills">
+          <button class="pill" data-v="tight">Tight contacts — floss catches or shreds</button>
+          <button class="pill" data-v="appliance">Braces, a bridge, or implants</button>
+          <button class="pill" data-v="standard">Standard — regular floss works fine</button>
+        </div>
+        <div class="q-hint">Your teeth decide the <em>type</em>, not just the frequency: tight contacts want thin waxed floss or tape, while braces, bridges, and implants call for a threader, superfloss, or a water flosser.</div>
+      </div>
+      <div class="quiz-q" data-q="format">
+        <div class="q-label">3. How do you like to floss?</div>
+        <div class="pills">
+          <button class="pill" data-v="picks">Floss picks, mostly</button>
+          <button class="pill" data-v="water">A water flosser</button>
+          <button class="pill" data-v="string">String floss from a container</button>
+        </div>
+        <div class="q-hint">Format changes what "restock" means: picks are one-and-done, so a bag disappears fast; string floss is the most economical per use; a water flosser is a one-time buy with no reel to run out of.</div>
+      </div>
+      <div class="quiz-q" data-q="backup">
+        <div class="q-label">4. Do you keep a spare on hand?</div>
+        <div class="pills">
+          <button class="pill" data-v="none">No — I buy when I run out</button>
+          <button class="pill" data-v="sometimes">Sometimes, if I remember</button>
+          <button class="pill" data-v="always">Always — a backup's in the drawer</button>
+        </div>
+        <div class="q-hint">This is the answer that actually protects the habit. Buying only when empty guarantees a gap; a spare in the drawer means you swap it the same night and never skip.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Floss is about as cheap as personal upkeep gets — a couple of dollars a container — and keeping a backup costs nothing extra. What running out costs is skipped days, and skipped days compound: plaque hardens into tartar only a hygienist can scrape off, and neglected gums slide toward the fillings and periodontal work that actually hurt your wallet:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$2–4</div><div class="l">a container of string floss — picks and specialty floss run a little more, and a container lasts about two months</div></div>
+        <div class="calc-stat"><div class="v">$40–80</div><div class="l">a water flosser — a one-time buy with no reel to run out of, handy for braces and dexterity issues</div></div>
+        <div class="calc-stat"><div class="v bad">$0</div><div class="l">keeping a backup — the spare costs nothing beyond floss you'd have bought anyway, and it protects the whole habit</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🧵 A container of floss (two months)</span><span>~$2–4</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:5%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💧 A water flosser (one-time)</span><span>~$40–80</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🦷 A between-teeth filling from skipped days</span><span>~$150–300 a tooth</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:40%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🪥 A deep cleaning for gum disease</span><span>~$150–400 per quadrant</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:62%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>😬 Ongoing periodontal treatment</span><span>$1,000s over time</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a two-dollar container and a spare in the drawer</strong> against fillings, deep cleanings, and gum treatment that add up to thousands over the years. Floss itself is almost free — the only thing that costs real money is the day you run out and skip. Keep a backup, restock before empty, and the cheap habit does its quiet work.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to never run out of floss</h2>
+    <p class="sub">The plan is simple: always keep one spare, pick the floss type that fits your mouth, floss daily with decent technique, and restock the backup the moment you open it. Read the notes first (especially the type-and-technique box), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>ℹ️ The real moves — backup, the right type, and gentle technique</h3>
+      <ul>
+        <li><strong>Keep a BACKUP and restock before the container's empty.</strong> This is the whole point — a spare in the drawer means you never reach for floss and find nothing, so you never skip. Swap in the fresh one the night the reel runs low, then buy one more backup.</li>
+        <li><strong>Pick the floss TYPE that fits your mouth and you'll actually use daily.</strong> Waxed or PTFE floss and tape slide through tight contacts; floss threaders and superfloss handle braces, bridges, and implants; a <strong>water flosser</strong> helps with braces and dexterity issues; and interdental brushes suit larger gaps. These complement flossing rather than replace it.</li>
+        <li><strong>Technique matters more than the product.</strong> Gently curve the floss into a C-shape around each tooth and slide just below the gumline, then move to the next tooth — don't saw straight down or snap it hard onto your gums, which can cut them.</li>
+        <li><strong>A little bleeding when you start is common.</strong> Gums that aren't used to flossing often bleed a bit for the first week or two, then settle down as they get healthier. Persistent bleeding, pain, or swollen gums that don't improve is worth a dentist visit.</li>
+        <li><strong>Store floss dry.</strong> Keep it in its container away from standing water so it stays clean and easy to grab — a tidy shelf makes the whole habit easier to keep up.</li>
+        <li><strong>This is general information, not dental advice.</strong> Your dentist or hygienist can recommend what's best for you and your teeth, and your <a href="dentist-visit.html">regular cleanings</a> matter most of all.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll want on hand</h3>
+    <div class="tools">
+      <span class="tool-chip">Your current floss (string, tape, or picks)</span>
+      <span class="tool-chip">One sealed backup pack</span>
+      <span class="tool-chip">Floss threaders or superfloss (braces/bridges)</span>
+      <span class="tool-chip">An interdental brush for larger gaps</span>
+      <span class="tool-chip">A water flosser (optional)</span>
+      <span class="tool-chip">A spot on the shelf to keep it visible</span>
+      <span class="tool-chip">A reminder or reorder set up</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth getting right</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of keeping a backup: a low floss container next to a fresh sealed pack, with an arrow showing you swap in the spare before the reel runs empty">
+          <!-- low container -->
+          <rect x="46" y="70" width="72" height="72" rx="12" fill="#7fb3c8"/>
+          <rect x="46" y="70" width="72" height="20" rx="10" fill="#9cc3d4"/>
+          <circle cx="82" cy="112" r="20" fill="#eef4f7"/>
+          <circle cx="82" cy="112" r="7" fill="#b9b1a3"/>
+          <text x="46" y="62" font-size="10" fill="#d9663f" font-weight="700">low</text>
+          <!-- arrow -->
+          <path d="M126 106 l30 0 m-8 -6 l8 6 l-8 6" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- backup -->
+          <rect x="166" y="62" width="78" height="80" rx="12" fill="#3e7c59"/>
+          <rect x="166" y="62" width="78" height="22" rx="11" fill="#5e9a78"/>
+          <circle cx="205" cy="108" r="18" fill="#e3efe8"/>
+          <circle cx="205" cy="108" r="6" fill="#5e9a78"/>
+          <rect x="174" y="68" width="34" height="13" rx="6.5" fill="#e0a93d"/>
+          <text x="191" y="78" font-size="9" font-weight="700" fill="#fffdf8" text-anchor="middle">NEW</text>
+          <text x="60" y="170" font-size="11" fill="#3e7c59" font-weight="700">swap in the spare before empty</text>
+        </svg>
+        <h4>Keep a backup, restock before empty</h4>
+        <p>Always have one sealed pack waiting. When the reel runs low, open the spare the same night — no gap, no skipped days — then add one more backup to your next order so you're never caught out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of choosing a floss type: thin waxed floss for tight teeth, a threader for braces, an interdental brush for gaps, and picks for dexterity">
+          <!-- tight teeth + thin floss -->
+          <rect x="20" y="30" width="26" height="34" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="48" y="30" width="26" height="34" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="47" y1="26" x2="47" y2="68" stroke="#7fb3c8" stroke-width="2"/>
+          <text x="18" y="82" font-size="9" fill="#6b7376">tight → thin/tape</text>
+          <!-- braces + threader -->
+          <rect x="150" y="30" width="60" height="14" rx="4" fill="#dce8ee"/>
+          <circle cx="162" cy="37" r="3" fill="#8a6a4f"/>
+          <circle cx="178" cy="37" r="3" fill="#8a6a4f"/>
+          <circle cx="194" cy="37" r="3" fill="#8a6a4f"/>
+          <path d="M150 60 q30 -16 60 0" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <text x="150" y="82" font-size="9" fill="#6b7376">braces → threader</text>
+          <!-- interdental brush -->
+          <rect x="24" y="112" width="46" height="6" rx="3" fill="#5e9a78"/>
+          <g stroke="#e0a93d" stroke-width="1.4" stroke-linecap="round">
+            <line x1="30" y1="108" x2="30" y2="102"/><line x1="38" y1="108" x2="38" y2="101"/><line x1="46" y1="108" x2="46" y2="102"/>
+            <line x1="30" y1="122" x2="30" y2="128"/><line x1="38" y1="122" x2="38" y2="129"/><line x1="46" y1="122" x2="46" y2="128"/>
+          </g>
+          <text x="20" y="150" font-size="9" fill="#6b7376">gaps → brush</text>
+          <!-- pick -->
+          <path d="M156 126 h40 l4 8 l-4 8 h-40 z" fill="#e0a93d"/>
+          <path d="M196 126 l12 -14 l0 34 l-12 -14 z" fill="#d98e3b"/>
+          <text x="150" y="168" font-size="9" fill="#6b7376">dexterity → picks</text>
+        </svg>
+        <h4>Choose the floss type that fits</h4>
+        <p>Tight teeth want thin waxed floss or tape; braces, bridges, and implants want a threader, superfloss, or a water flosser; larger gaps suit interdental brushes; and if grip or reach is hard, floss picks make it doable. The best type is the one you'll use.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of good flossing technique: the floss curved in a C-shape hugging the side of a tooth and slipping just below the gumline, not snapped straight down">
+          <!-- two teeth -->
+          <path d="M96 40 q10 -10 20 0 l0 60 q-10 12 -20 0 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M164 40 q10 -10 20 0 l0 60 q-10 12 -20 0 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <!-- gumline -->
+          <path d="M70 104 q70 14 140 0" fill="none" stroke="#c96f4a" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+          <!-- floss curved in a C against the left tooth, dipping below gumline -->
+          <path d="M140 50 q-30 24 -22 58 q2 10 14 6" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <text x="150" y="46" font-size="10" fill="#3e7c59" font-weight="700">C-shape</text>
+          <text x="60" y="150" font-size="11" fill="#3e7c59" font-weight="700">hug the tooth, go below the gumline</text>
+          <text x="60" y="166" font-size="10" fill="#d9663f">don't snap it down</text>
+        </svg>
+        <h4>Floss daily with good technique</h4>
+        <p>Curve the floss into a C around each tooth and slide gently below the gumline, hugging one tooth then the next with a fresh section. Don't force it straight down or snap it — a slow C-shape cleans well without cutting the gums.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a water flosser and an interdental brush shown as complements alongside a floss container, all working together">
+          <!-- water flosser handle -->
+          <rect x="40" y="44" width="20" height="70" rx="8" fill="#7fb3c8"/>
+          <path d="M50 44 q0 -18 14 -22" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="66" cy="20" r="4" fill="#9cc3d4"/>
+          <g fill="#9cc3d4"><circle cx="74" cy="16" r="2"/><circle cx="80" cy="22" r="1.6"/></g>
+          <text x="34" y="132" font-size="9" fill="#6b7376">water flosser</text>
+          <!-- interdental brush -->
+          <rect x="118" y="70" width="60" height="7" rx="3.5" fill="#5e9a78"/>
+          <rect x="178" y="68" width="24" height="11" rx="4" fill="#3e7c59"/>
+          <g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round">
+            <line x1="124" y1="66" x2="124" y2="59"/><line x1="134" y1="66" x2="134" y2="58"/><line x1="144" y1="66" x2="144" y2="59"/>
+            <line x1="124" y1="81" x2="124" y2="88"/><line x1="134" y1="81" x2="134" y2="89"/><line x1="144" y1="81" x2="144" y2="88"/>
+          </g>
+          <text x="118" y="104" font-size="9" fill="#6b7376">interdental brush</text>
+          <!-- plus + floss container -->
+          <text x="122" y="140" font-size="16" fill="#3e7c59" font-weight="700">+ floss</text>
+          <text x="60" y="168" font-size="11" fill="#3e7c59" font-weight="700">complements, not replacements</text>
+        </svg>
+        <h4>Add a water flosser or brushes</h4>
+        <p>A water flosser is a real help with braces or if your hands struggle with string, and interdental brushes clean larger gaps well. Treat them as complements to flossing, not swaps — together they cover more than any one tool alone.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of pairing flossing with brushing and regular dental cleanings: a toothbrush, a floss container, and a calendar with a check mark for a dentist visit">
+          <!-- toothbrush -->
+          <rect x="40" y="36" width="10" height="70" rx="5" fill="#c96f4a"/>
+          <rect x="36" y="26" width="18" height="16" rx="5" fill="#5e9a78"/>
+          <g stroke="#3e7c59" stroke-width="1.8" stroke-linecap="round">
+            <line x1="40" y1="26" x2="40" y2="20"/><line x1="45" y1="26" x2="45" y2="18"/><line x1="50" y1="26" x2="50" y2="20"/>
+          </g>
+          <text x="30" y="122" font-size="9" fill="#6b7376">brush</text>
+          <!-- floss container -->
+          <rect x="112" y="46" width="52" height="56" rx="10" fill="#7fb3c8"/>
+          <rect x="112" y="46" width="52" height="16" rx="8" fill="#9cc3d4"/>
+          <circle cx="138" cy="80" r="14" fill="#eef4f7"/>
+          <circle cx="138" cy="80" r="5" fill="#5e9a78"/>
+          <text x="118" y="122" font-size="9" fill="#6b7376">floss</text>
+          <!-- calendar with check -->
+          <rect x="200" y="40" width="56" height="52" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="200" y="40" width="56" height="14" rx="6" fill="#3e7c59"/>
+          <path d="M214 70 l7 8 l14 -16" fill="none" stroke="#3e7c59" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="200" y="112" font-size="9" fill="#6b7376">dentist visit</text>
+          <text x="52" y="150" font-size="11" fill="#3e7c59" font-weight="700">brush + floss + regular cleanings</text>
+        </svg>
+        <h4>Pair it with brushing &amp; cleanings</h4>
+        <p>Flossing isn't a solo act — it works alongside brushing twice a day and your regular dental cleanings. The three together are what actually keep your teeth and gums healthy, so keep all of them on schedule.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Floss-restock progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Type chosen, daily habit set, backup in the drawer, and a reorder ready — you're set up to never run out. Check the backup again in about two months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs to act on — and when to see a dentist</h2>
+    <p class="sub">Most floss signals are simple logistics — the reel's low, the floss feels off, restock or adjust. A couple, though, are your mouth telling you something a new container won't fix, and those are worth a professional's eyes:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>An empty or nearly-empty container.</strong> The obvious one, and the whole reason for this guide: the moment the reel's running low, open your backup the same night and add one more spare to your next order. Don't let it hit zero.</li>
+        <li><strong>Floss that shreds or catches in the same spot.</strong> If it frays or snags every time between two particular teeth, that's usually a rough filling edge, a chip, or tartar buildup — not a floss defect. Mention it at your next dentist visit; smoothing or cleaning it fixes the snag.</li>
+        <li><strong>Persistent gum bleeding, pain, or swelling.</strong> A little bleeding for the first week or two of a new flossing habit is normal and improves. Bleeding, tenderness, or swollen gums that stick around despite good daily habits can be a sign of gum disease — see a dentist.</li>
+        <li><strong>Gaps that floss slides through without any resistance.</strong> Very loose contacts, or spaces that string floss can't clean well, may do better with superfloss or an interdental brush — and a dentist can tell you which size fits, since a too-big brush can irritate the gums.</li>
+        <li><strong>You've tried and just can't make string floss work.</strong> If manual flossing is a genuine struggle — arthritis, a strong gag reflex, braces — that's exactly when floss picks, a threader, or a water flosser earn their keep. Any consistent method beats a "correct" one you skip.</li>
+        <li><strong>Pro tip:</strong> restocking floss is one small piece of dental upkeep — it pairs with replacing your <a href="replace-toothbrush.html">toothbrush</a> or <a href="replace-electric-toothbrush-head.html">electric brush head</a> and keeping up your <a href="dentist-visit.html">dentist visits</a>. Set them all on a rough schedule and none of them slips.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often do I restock floss, and how long does a container last?</summary>
+      <p>A standard container of string floss lasts roughly two months for one person flossing once a day — a typical spool holds somewhere around 50 to 55 yards, and daily use burns through it steadily. Two people sharing one container will empty it in about a month, and a whole household faster still, so scale accordingly. Floss picks go quicker per use, so a bag of them disappears faster than you'd expect. The number to remember, though, isn't the exact interval — it's this: keep a backup and restock <em>before</em> the container's empty. The day you run out is the day you skip, and the goal is to never give yourself that opening.</p>
+    </details>
+    <details>
+      <summary>Which floss type is best for me?</summary>
+      <p>The best floss is simply the one you'll actually use every day, and the right pick depends on your mouth. If your teeth have tight contacts and regular floss shreds or won't slip through, try thin waxed floss, PTFE (single-filament) floss, or dental tape — all of which glide more easily. If you have braces, a bridge, or implants, a floss threader or superfloss lets you get under the wire or false tooth, and a water flosser can make the whole job much easier. If gripping and maneuvering string floss is hard, floss picks are a perfectly good option. And for larger gaps between teeth, interdental brushes often clean better than floss. There's no single "correct" answer — match the tool to your teeth and your hands, and your dentist or hygienist can point you to the right one.</p>
+    </details>
+    <details>
+      <summary>Is a water flosser as good as string floss?</summary>
+      <p>Think of a water flosser as a strong complement rather than a straight replacement. It's genuinely excellent for people with braces, bridges, or implants, and for anyone whose hands struggle with string floss, and it flushes food and bacteria from around the gumline well. Many people find they clean more consistently with one simply because it's easier and quicker, and consistency is what matters most. That said, string floss physically scrapes the flat surfaces between two tight teeth in a way a water stream doesn't always match. If you can, using both — string floss (or picks) plus a water flosser — covers the most ground. But a water flosser you'll actually use daily beats string floss you skip, every time.</p>
+    </details>
+    <details>
+      <summary>My gums bleed when I floss — is that bad?</summary>
+      <p>If you've just started flossing regularly, a little bleeding is common and usually nothing to worry about. Gums that aren't used to being cleaned between the teeth are mildly inflamed, and as flossing removes the plaque that's irritating them, they get healthier and typically stop bleeding within a week or two. So the fix for start-up bleeding is usually to keep going gently, not to stop. What's worth attention is bleeding that persists beyond a couple of weeks of consistent, gentle flossing, or gums that are painful, swollen, or receding — those can be signs of gum disease and are worth a dentist visit. Also make sure you're not snapping the floss hard onto the gums, which causes its own bleeding; a gentle C-shape below the gumline is the goal.</p>
+    </details>
+    <details>
+      <summary>How do I floss with braces or a bridge?</summary>
+      <p>The trick is getting the floss <em>under</em> the wire or the false tooth, which is where a floss threader or superfloss comes in. A threader is a flexible loop you thread the floss through, then pass the stiff end under the archwire or bridge before flossing normally against each tooth. Superfloss has a stiff threading end and a spongy middle section built in, so you skip the separate threader — feed the stiff end under, then clean with the spongy part. Both take a little practice but become quick. A water flosser is often the easiest option of all with braces, since it flushes around the brackets and wires without any threading. Whichever you choose, keeping a backup of the threaders or superfloss matters just as much as with regular floss — running out means skipping.</p>
+    </details>
+    <details>
+      <summary>Does flossing really matter?</summary>
+      <p>Yes. A toothbrush simply can't reach the tight spaces between your teeth or clean just under the gumline, and that's exactly where plaque builds into the cavities and gum disease that brushing alone leaves behind. Flossing (or cleaning between the teeth some other way — picks, a water flosser, interdental brushes) is the piece that covers those surfaces. What matters most is consistency, not the brand or even the exact method: any daily between-teeth cleaning you'll stick with beats a "perfect" technique you do twice a month. That's why not running out is the real task — the habit only protects your teeth and gums if it actually happens every day, and it happens every day only if there's floss in the drawer.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Running out of floss is the small thing that quietly breaks a daily habit.</h2>
+        <p>A container lasts about two months, and it always empties on the night you least expect it — so let Upkeep Ledger nudge you to restock from your backup before the reel's empty. It sits alongside your toothbrush swaps, brush-head changes, and dentist visits, so every small piece of dental upkeep stays on schedule and none of them slips.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=floss-restock&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=floss-restock&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; this is general information about a household habit, not dental advice — your dentist or hygienist can recommend what's best for you.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { people: null, teeth: null, format: null, backup: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    2: "Every 2 months",
+    3: "Every 3 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 2;
+
+    /* People — how many share the container */
+    if (s.people === "household") {
+      if (months > 1) months = 1;
+      reasons.push("A container shared across a whole household empties fast — often in weeks, not months — so plan to restock roughly monthly and keep the backup topped up.");
+    } else if (s.people === "solo") {
+      reasons.push("Flossing solo, a standard container lasts you close to the full two months, so the default interval fits well.");
+    } else {
+      reasons.push("Two people sharing one container run through it noticeably faster than one, landing you around every month or two.");
+      if (months > 2) months = 2;
+    }
+
+    /* Teeth — drives the type, notes frequency for picks/specialty */
+    if (s.teeth === "tight") {
+      reasons.push("Tight contacts call for thin waxed floss, PTFE floss, or dental tape that slides through without shredding — that's a type choice, not a frequency one, but it's the difference between flossing daily and giving up.");
+    } else if (s.teeth === "appliance") {
+      reasons.push("Braces, a bridge, or implants mean a floss threader, superfloss, or a water flosser rather than plain string — and threaders and superfloss get used up quicker, so keep a backup of those specifically.");
+    } else {
+      reasons.push("Standard spacing means regular floss works fine, so you can pick whatever type feels easiest and just focus on not running out.");
+    }
+
+    /* Format — picks empty faster, water flosser has no reel */
+    if (s.format === "picks") {
+      if (months > 2) months = 2;
+      if (months > 1 && s.people === "household") months = 1;
+      reasons.push("Floss picks are one-and-done, so a bag disappears faster than a spool of string — check your supply more often and keep a spare bag on hand.");
+    } else if (s.format === "water") {
+      reasons.push("A water flosser has no reel to run out of, so \"restock\" mostly means keeping any replacement tips and cleaning it — a rare cost rather than a monthly one.");
+    } else {
+      reasons.push("String floss from a container is the most economical per use and lasts about two months solo, so it's easy to keep one backup a step ahead.");
+    }
+
+    /* Backup — the habit-protector */
+    if (s.backup === "none") {
+      reasons.push("Buying only when you're empty guarantees a gap — the whole risk this guide is about. Buy one spare now, and the next time the reel runs low you'll swap it the same night instead of skipping.");
+    } else if (s.backup === "sometimes") {
+      reasons.push("Having a spare only sometimes still leaves you exposed on the times you don't — make \"buy the next backup the moment you open this one\" the rule so there's always one waiting.");
+    } else {
+      reasons.push("Always keeping a backup in the drawer is exactly right — that single spare is what turns running low into a shrug instead of a skipped week.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.backup === "none" || s.backup === "sometimes") {
+      note = "<strong>The one habit that fixes everything:</strong> buy your next backup the moment you open the current pack. One spare always waiting means you never reach for floss and find nothing — and never skip a night because of it.";
+    } else if (s.teeth === "appliance") {
+      note = "<strong>For braces, a bridge, or implants:</strong> a floss threader, superfloss, or a water flosser is what gets under the wire or false tooth. Keep a backup of the threaders or superfloss too — running out of those means skipping just the same.";
+    } else if (s.people === "household") {
+      note = "<strong>Shared containers empty fast:</strong> a family reel can be gone in a few weeks, so keep two backups rather than one and treat restocking as a roughly monthly check rather than a seasonal one.";
+    } else {
+      note = "<strong>Remember what actually matters:</strong> consistency, not the brand or even the exact method. Any daily between-teeth cleaning you'll keep up beats a perfect one you skip — so pick the type you like and never let it run out.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.people || !quizState.teeth || !quizState.format || !quizState.backup) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: check the floss backup " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Keep a spare in the drawer and <strong>restock before the container's empty</strong>, using the floss type that fits your mouth. Why this rhythm:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Keep a backup", text: "Check what floss you have right now", note: "Open the drawer and look: is the current container running low, and is there a sealed spare behind it? Knowing where you stand is the whole point — you're guarding against the empty-reel surprise." },
+    { phase: "Keep a backup", text: "Buy one sealed backup pack", note: "The single most useful move in this guide. One spare in the drawer means the night the reel runs low, you swap it in and don't skip. If you're the household, keep two." },
+    { phase: "Keep a backup", text: "Give it a visible home on the shelf", note: "Keep your floss (and its backup) somewhere dry and in plain sight near your toothbrush, so reaching for it is automatic and you'll notice when it's getting low." },
+    { phase: "Choose your type", text: "Match the floss type to your teeth", note: "Tight contacts → thin waxed floss, PTFE, or tape. Braces, bridge, or implants → a threader, superfloss, or a water flosser. Larger gaps → interdental brushes. Trouble gripping → floss picks. Pick what you'll actually use daily." },
+    { phase: "Choose your type", text: "Try it for a few days and adjust", note: "Give your chosen type a fair run. If it shreds, won't slip through, or you keep avoiding it, switch — the best floss is the one that doesn't give you an excuse to skip." },
+    { phase: "Floss daily", text: "Floss once a day, gently and in a C-shape", note: "Curve the floss around each tooth in a C and slide just below the gumline with a fresh section for each gap. Don't snap it straight down onto the gums — go slow and gentle." },
+    { phase: "Floss daily", text: "Expect a little start-up bleeding, and keep going", note: "New to daily flossing? A bit of bleeding for a week or two is normal and improves as your gums get healthier. Persistent bleeding, pain, or swelling despite good habits is worth a dentist visit." },
+    { phase: "Complement & restock", text: "Consider a water flosser or interdental brushes", note: "For braces, bridges, dexterity issues, or larger gaps, add a water flosser or interdental brushes as a complement to flossing — together they clean more than either alone." },
+    { phase: "Complement & restock", text: "Pair it with brushing and dental cleanings", note: "Flossing works alongside brushing twice a day and your regular dental cleanings. Keep all three on schedule — that's what actually protects your teeth and gums." },
+    { phase: "Complement & restock", text: "Reorder the backup the moment you open a pack", note: "The rule that makes it self-sustaining: as soon as you break the seal on a new container, add the next backup to your cart or list. There's always one waiting." },
+    { phase: "Complement & restock", text: "Log the date", note: "Set a reminder for about two months out (or your quiz interval) to check the backup — the reel gives no warning before it's empty, so a nudge is what keeps you from ever skipping." }
+  ];
+
+  var LS_KEY = "upkeepguides:floss-restock:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

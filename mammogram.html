@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep up your mammograms — UpkeepGuides.com</title>
+<meta name="description" content="A mammogram finds breast cancer years before you could feel it. Why the start age and interval vary by guideline and risk, how to prepare, screening vs diagnostic, and a checklist — your doctor decides.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Keep up your mammograms — UpkeepGuides.com">
+<meta property="og:description" content="A mammogram finds breast cancer years before you could feel it. Why the start age and interval vary by guideline and risk, how to prepare, screening vs diagnostic, and a checklist — your doctor decides.">
+<meta property="og:url" content="https://upkeepguides.com/mammogram.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keep up your mammograms — UpkeepGuides.com">
+<meta name="twitter:description" content="A mammogram finds breast cancer years before you could feel it. Why the start age and interval vary by guideline and risk, how to prepare, screening vs diagnostic, and a checklist — your doctor decides.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Per your doctor</span>
+      <h1>Keep Up Your Mammograms</h1>
+      <p class="lede">A mammogram is a low-dose X-ray of the breast that can spot cancer <em>years</em> before anyone could feel a lump — when it's smallest, most treatable, and needs the least aggressive treatment. That head start is the whole point, and it's one of the highest-impact preventive habits there is. The part that trips people up: the recommended <em>start age</em> and how often to screen genuinely vary between expert guidelines, and shift with your personal risk — so this isn't one-size-fits-all. Your doctor sets your start age and interval. The upkeep job is having that conversation once, then simply not letting the screening lapse.</p>
+      <div class="stat-chips">
+        <span class="chip">🩺 Screening <em>every 1–2 years</em></span>
+        <span class="chip">🔎 Finds cancer <em>years early</em></span>
+        <span class="chip">👩‍⚕️ Start age <em>your doctor decides</em></span>
+        <span class="chip">💸 Often <em>fully covered</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="A warm, reassuring breast-imaging clinic scene: a friendly technologist stands beside a screening machine, a screening-appointment card and a results letter sit on a small table, a calendar on the wall shows a circled reminder, a small heart with a checkmark adds a supportive touch, and a leafy plant softens the room">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- warm back wall panel -->
+      <rect x="60" y="40" width="440" height="330" rx="14" fill="#fbf8f2"/>
+      <rect x="60" y="40" width="440" height="330" rx="14" fill="none" stroke="#e9e2d8" stroke-width="4"/>
+
+      <!-- calendar reminder on the wall -->
+      <rect x="86" y="70" width="96" height="96" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <rect x="86" y="70" width="96" height="22" rx="8" fill="#3e7c59"/>
+      <rect x="86" y="82" width="96" height="10" fill="#3e7c59"/>
+      <rect x="104" y="62" width="8" height="16" rx="4" fill="#8a6a4f"/>
+      <rect x="156" y="62" width="8" height="16" rx="4" fill="#8a6a4f"/>
+      <!-- grid dots -->
+      <g fill="#cdd9de">
+        <circle cx="102" cy="108" r="3"/><circle cx="118" cy="108" r="3"/><circle cx="134" cy="108" r="3"/><circle cx="150" cy="108" r="3"/><circle cx="166" cy="108" r="3"/>
+        <circle cx="102" cy="126" r="3"/><circle cx="118" cy="126" r="3"/><circle cx="150" cy="126" r="3"/><circle cx="166" cy="126" r="3"/>
+        <circle cx="102" cy="144" r="3"/><circle cx="118" cy="144" r="3"/><circle cx="134" cy="144" r="3"/><circle cx="166" cy="144" r="3"/>
+      </g>
+      <!-- circled reminder day -->
+      <circle cx="134" cy="126" r="9" fill="none" stroke="#d9663f" stroke-width="3"/>
+
+      <!-- supportive heart-with-check motif on the wall -->
+      <g transform="translate(392 78)">
+        <path d="M28 44 C6 26 8 6 24 6 C32 6 28 14 28 14 C28 14 24 6 32 6 C48 6 50 26 28 44 Z" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+        <path d="M18 24 l7 7 l13 -15" fill="none" stroke="#3e7c59" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- the imaging machine (soft, non-clinical) -->
+      <rect x="330" y="150" width="120" height="200" rx="12" fill="#dce8ee"/>
+      <rect x="330" y="150" width="120" height="200" rx="12" fill="none" stroke="#9cc3d4" stroke-width="4"/>
+      <!-- machine head / arm -->
+      <rect x="352" y="176" width="76" height="16" rx="6" fill="#9cc3d4"/>
+      <rect x="382" y="192" width="16" height="30" rx="4" fill="#7fb3c8"/>
+      <!-- gentle compression plates -->
+      <rect x="360" y="222" width="60" height="9" rx="4" fill="#5e9a78"/>
+      <rect x="360" y="238" width="60" height="9" rx="4" fill="#3e7c59"/>
+      <!-- machine screen with a soft heart -->
+      <rect x="348" y="264" width="84" height="60" rx="8" fill="#2c5a40"/>
+      <path d="M390 300 c-11 -9 -10 -20 -2 -20 c4 0 2 4 2 4 c0 0 -2 -4 2 -4 c8 0 9 11 -2 20 Z" fill="#e0a93d"/>
+
+      <!-- friendly technologist -->
+      <!-- head -->
+      <circle cx="196" cy="196" r="26" fill="#e8b48f"/>
+      <!-- hair -->
+      <path d="M170 190 q4 -34 26 -34 q22 0 26 34 q-8 -14 -26 -14 q-18 0 -26 14 Z" fill="#8a6a4f"/>
+      <!-- friendly smile + eyes -->
+      <g stroke="#5a4636" stroke-width="2.4" stroke-linecap="round" fill="none">
+        <path d="M186 192 q0 3 0 4"/>
+        <path d="M206 192 q0 3 0 4"/>
+        <path d="M188 206 q8 6 16 0"/>
+      </g>
+      <!-- body / scrubs (accent green) -->
+      <path d="M160 300 q0 -66 36 -66 q36 0 36 66 Z" fill="#3e7c59"/>
+      <!-- collar -->
+      <path d="M186 236 l10 12 l10 -12" fill="none" stroke="#2c5a40" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- lanyard / ID badge -->
+      <path d="M196 240 l0 30" stroke="#e0a93d" stroke-width="3"/>
+      <rect x="188" y="268" width="18" height="24" rx="3" fill="#fffdf8" stroke="#e0a93d" stroke-width="2"/>
+      <!-- welcoming arm gesturing toward the machine -->
+      <path d="M228 268 q40 -8 66 -30" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <ellipse cx="298" cy="238" rx="12" ry="9" fill="#e8b48f"/>
+
+      <!-- small table with appointment card + results letter -->
+      <rect x="86" y="318" width="150" height="12" rx="4" fill="#b9b1a3"/>
+      <rect x="96" y="330" width="10" height="34" rx="3" fill="#8a6a4f"/>
+      <rect x="216" y="330" width="10" height="34" rx="3" fill="#8a6a4f"/>
+      <!-- results letter (envelope) -->
+      <g transform="rotate(-6 120 300)">
+        <rect x="96" y="286" width="70" height="46" rx="5" fill="#fffdf8" stroke="#cdd9de" stroke-width="3"/>
+        <path d="M96 290 l35 24 l35 -24" fill="none" stroke="#9cc3d4" stroke-width="3"/>
+      </g>
+      <!-- screening-appointment card -->
+      <g transform="rotate(7 190 300)">
+        <rect x="160" y="284" width="72" height="48" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+        <rect x="170" y="294" width="42" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="170" y="306" width="52" height="5" rx="2.5" fill="#9cc3d4"/>
+        <rect x="170" y="316" width="30" height="5" rx="2.5" fill="#9cc3d4"/>
+        <circle cx="216" cy="318" r="7" fill="#e0a93d"/>
+        <path d="M212 318 l3 3 l5 -6" fill="none" stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- leafy plant for warmth -->
+      <path d="M470 344 h34 l-5 30 h-24 z" fill="#c96f4a"/>
+      <path d="M487 344 q-4 -26 -16 -34" stroke="#3e7c59" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <path d="M487 344 q5 -24 18 -30" stroke="#3e7c59" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="468" cy="304" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 468 304)"/>
+      <ellipse cx="506" cy="308" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 506 308)"/>
+      <ellipse cx="487" cy="296" rx="7" ry="12" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Breast cancer is common, and the single biggest lever on how it turns out is <em>when</em> it's caught. A mammogram gives you a head start measured in years — but only if the screening actually happens, on a schedule you and your doctor have set. Here's what's really at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="16" cy="16" r="9" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="22.5" y1="22.5" x2="30" y2="30" stroke="#3e7c59" stroke-width="2.8" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="2.4" fill="#e0a93d"/>
+        </svg></div>
+        <h3>It finds cancer early</h3>
+        <p>A mammogram can detect breast cancer before a lump can be felt — often years earlier — which is exactly when treatment is most effective and least invasive. Screening is looking for trouble while it's still small and quiet, not waiting for it to announce itself.</p>
+        <span class="cost">Found late = fewer options</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 30 C6 21 6 11 12 9 C15 8 18 11 18 13 C18 11 21 8 24 9 C30 11 30 21 18 30 Z" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M12 18 l4 4 l7 -8" fill="none" stroke="#e0a93d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Early detection saves lives</h3>
+        <p>Caught early, breast cancer is far more survivable — and often treatable with less aggressive treatment. The earlier it's found, the more choices you and your care team have, and the gentler the path through it tends to be.</p>
+        <span class="cost">More treatment, harder odds</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="6" width="22" height="24" rx="3" fill="none" stroke="#3e7c59" stroke-width="2.2"/>
+          <line x1="12" y1="14" x2="24" y2="14" stroke="#9cc3d4" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="12" y1="19" x2="24" y2="19" stroke="#9cc3d4" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="12" y1="24" x2="19" y2="24" stroke="#9cc3d4" stroke-width="2.2" stroke-linecap="round"/>
+          <text x="30" y="12" font-size="10" fill="#d9663f" font-weight="700">?</text>
+        </svg></div>
+        <h3>The schedule varies</h3>
+        <p>Expert guidelines genuinely differ on the right start age and interval, so a lot of people aren't sure when to begin — and "not sure" quietly turns into "not yet," then "never." The confusion, not the test, is what makes screening slip.</p>
+        <span class="cost">Falling through the cracks</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="12" cy="9" r="3.2" fill="none" stroke="#3e7c59" stroke-width="2.2"/>
+          <circle cx="24" cy="9" r="3.2" fill="none" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M12 12 L12 22 M24 12 L24 22 M18 22 L18 30" stroke="#9cc3d4" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M6 30 L30 30" stroke="#9cc3d4" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="18" cy="18" r="2.4" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Risk changes the plan</h3>
+        <p>Family history, a known gene like BRCA, and dense breasts can all mean starting earlier and screening more often — sometimes adding an MRI. Your history isn't a footnote; it's the thing that tailors the whole plan to you.</p>
+        <span class="cost">A generic plan can miss it</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> be screened?</h2>
+    <p class="sub">There's no single right answer — that's the honest truth of it. For average risk, screening commonly starts somewhere around age 40–50 and repeats every 1–2 years; higher risk means starting earlier and screening more often. The four questions below sketch the <em>general</em> shape of a plan, but they can't replace the conversation: your doctor sets your start age and interval. And if you've noticed a lump or breast change, that's not a "wait for screening" situation — see a doctor now.</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="age">
+        <div class="q-label">1. Which age band are you in?</div>
+        <div class="pills">
+          <button class="pill" data-v="under40">Under 40</button>
+          <button class="pill" data-v="40s">40–49</button>
+          <button class="pill" data-v="50to74">50–74</button>
+          <button class="pill" data-v="75plus">75 or older</button>
+        </div>
+        <div class="q-hint">Most average-risk screening begins somewhere in the 40–50 range and continues through the 70s — but exactly when to start, and when it's reasonable to stop, is a call your doctor makes with you.</div>
+      </div>
+      <div class="quiz-q" data-q="risk">
+        <div class="q-label">2. Do you have anything that raises your risk?</div>
+        <div class="pills">
+          <button class="pill" data-v="high">Family history, a known gene (BRCA), dense breasts, or prior findings</button>
+          <button class="pill" data-v="average">Not that I know of — average risk</button>
+        </div>
+        <div class="q-hint">Family history of breast or ovarian cancer, a known gene like BRCA, dense breasts, or prior findings can all mean starting earlier, screening more often, or adding MRI. Your doctor decides what your risk calls for.</div>
+      </div>
+      <div class="quiz-q" data-q="history">
+        <div class="q-label">3. Where are you with screening right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="current">Up to date</button>
+          <button class="pill" data-v="overdue">Overdue, or I've never been screened</button>
+        </div>
+        <div class="q-hint">If it's been longer than your interval — or you've never started — the most useful next step is simply booking the conversation and the screening. Lapsing is the most common way the benefit gets lost.</div>
+      </div>
+      <div class="quiz-q" data-q="symptom">
+        <div class="q-label">4. Have you noticed a lump or any breast change?</div>
+        <div class="pills">
+          <button class="pill" data-v="symptom">Yes — a lump or a change I've noticed</button>
+          <button class="pill" data-v="none">No new lumps or changes</button>
+        </div>
+        <div class="q-hint">A new lump, skin dimpling, nipple change or discharge, or any new breast change means see a doctor <em>now</em> — don't wait for routine screening. A symptom usually needs a diagnostic workup, not a screening mammogram.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — and the cost of skipping it</h2>
+    <p class="sub">Here's the reassuring part: a <em>screening</em> mammogram is widely covered as preventive care, and for many people that means little or no out-of-pocket cost — check your plan. If you're uninsured, free and low-cost programs exist (in the US, the CDC's NBCCEDP is a starting point). A <em>diagnostic</em> mammogram — done for a symptom or to follow up on a finding — may cost more. Whatever the number, set it against what a late-caught cancer costs in treatment, options, and outcome. (Coverage varies.)</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$0</div><div class="l">a screening mammogram is widely covered as preventive care — often no out-of-pocket cost (check your plan)</div></div>
+        <div class="calc-stat"><div class="v">Free–low cost</div><div class="l">programs for the uninsured exist — in the US, the CDC's NBCCEDP is one place to start</div></div>
+        <div class="calc-stat"><div class="v bad">More</div><div class="l">a diagnostic mammogram (for a symptom or follow-up) may cost more than a routine screening</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 Screening mammogram, covered as preventive</span><span>Often ~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🤝 Uninsured, via a free/low-cost program</span><span>Free–low cost</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔬 Diagnostic mammogram or callback workup</span><span>May cost more</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:34%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 A cancer caught late — more treatment, fewer options</span><span>Far higher, in every way</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a screening that's usually free against a cancer caught late</strong> — which costs more in treatment, in options, and in the things that matter most. Staying on schedule is one of the cheapest, highest-return preventive habits there is. <em>Coverage varies, and this is general information, not medical advice.</em></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep up with your mammograms</h2>
+    <p class="sub">The "how-to" here isn't a technique you perform — it's a habit you protect: have the start-age conversation with your doctor, book the screening, prepare so the day goes smoothly, know when a symptom means going in <em>now</em> instead, and follow up on the results and the next date. Read the safety notes first (especially "guidelines vary — your doctor decides" and "a symptom is not a screening"), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Not medical advice — guidelines vary, your doctor decides (and how to prepare)</h3>
+      <ul>
+        <li><strong>The right start age and interval for YOU depend on your risk and which guideline your doctor follows — they genuinely vary.</strong> For average risk, screening commonly starts somewhere around 40–50 and repeats every 1–2 years; higher risk often means earlier and more often. Have the conversation with your doctor rather than guessing from headlines.</li>
+        <li><strong>A screening mammogram is for people WITHOUT symptoms.</strong> If you notice a lump, skin dimpling or puckering, nipple changes or discharge, or any new breast change, don't wait for routine screening — see a doctor promptly. You likely need a <em>diagnostic</em> workup, not a screening.</li>
+        <li><strong>Prepare so the day goes smoothly.</strong> Schedule when your breasts are least tender — often the week <em>after</em> your period. On the day, don't wear deodorant, antiperspirant, powder, or lotion on your chest or underarms; they can show up as artifacts on the images. Wear a two-piece outfit so you only undress from the waist up.</li>
+        <li><strong>Bring or transfer your prior images.</strong> Comparing this year's scan to last year's is how radiologists catch subtle changes, so make sure they have your priors. Tell them about implants, any symptoms, and whether you're breastfeeding.</li>
+        <li><strong>Expect brief compression — and don't panic at a callback.</strong> The compression is uncomfortable, not usually painful, and lasts only seconds per view. Being called back for more views is common and usually <em>not</em> cancer — it just means the radiologist wants a clearer look.</li>
+        <li><strong>Ask about breast density.</strong> Dense breasts can hide cancer on a mammogram and may warrant additional screening. It's a fair, important question to ask about your own results.</li>
+        <li><strong>Keep a copy of your results and the next-due date, and practice breast self-awareness.</strong> Know what's normal for you so you'd notice a change between screenings. This is general information, not medical advice.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What to have on hand</h3>
+    <div class="tools">
+      <span class="tool-chip">Your doctor (or a clinic to book with)</span>
+      <span class="tool-chip">Your family and personal risk history</span>
+      <span class="tool-chip">Prior mammogram images or a records-release form</span>
+      <span class="tool-chip">Your insurance card (or a program to check)</span>
+      <span class="tool-chip">A two-piece outfit for the day</span>
+      <span class="tool-chip">A calendar for the next-due date</span>
+      <span class="tool-chip">A note of any symptoms to mention</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you go</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a patient talking with a doctor about the right start age and screening interval based on personal risk, rather than guessing from headlines">
+          <rect x="24" y="30" width="232" height="120" rx="10" fill="#fffdf8" stroke="#e9e2d8" stroke-width="4"/>
+          <!-- doctor -->
+          <circle cx="88" cy="74" r="17" fill="#e8b48f"/>
+          <path d="M74 70 q4 -16 14 -16 q10 0 14 16 q-6 -8 -14 -8 q-8 0 -14 8 Z" fill="#8a6a4f"/>
+          <path d="M64 132 q0 -34 24 -34 q24 0 24 34 Z" fill="#3e7c59"/>
+          <!-- patient -->
+          <circle cx="192" cy="74" r="17" fill="#e8b48f"/>
+          <path d="M178 66 q6 -14 14 -14 q8 0 14 14 q-4 -6 -14 -6 q-10 0 -14 6 Z" fill="#5a4636"/>
+          <path d="M168 132 q0 -34 24 -34 q24 0 24 34 Z" fill="#9cc3d4"/>
+          <!-- speech / question -->
+          <path d="M120 60 q20 -10 40 0 q0 14 -20 14 l-6 8 l-2 -8 q-12 -4 -12 -14 Z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4"/>
+          <text x="140" y="70" font-size="14" fill="#3e7c59" font-weight="700" text-anchor="middle">?</text>
+          <text x="140" y="170" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">ask, don't guess</text>
+        </svg>
+        <h4>Talk to your doctor about start age &amp; interval</h4>
+        <p>Don't try to reverse-engineer your plan from the headlines. Ask your doctor when you should start and how often, based on your risk — that conversation, not a guideline you read, is what sets your schedule.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of booking the screening on a calendar and transferring prior images so they can be compared year to year">
+          <rect x="40" y="26" width="120" height="128" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="40" y="26" width="120" height="26" rx="8" fill="#3e7c59"/>
+          <rect x="40" y="40" width="120" height="12" fill="#3e7c59"/>
+          <g fill="#cdd9de">
+            <circle cx="60" cy="72" r="4"/><circle cx="80" cy="72" r="4"/><circle cx="100" cy="72" r="4"/><circle cx="120" cy="72" r="4"/><circle cx="140" cy="72" r="4"/>
+            <circle cx="60" cy="94" r="4"/><circle cx="80" cy="94" r="4"/><circle cx="120" cy="94" r="4"/><circle cx="140" cy="94" r="4"/>
+            <circle cx="60" cy="116" r="4"/><circle cx="100" cy="116" r="4"/><circle cx="120" cy="116" r="4"/><circle cx="140" cy="116" r="4"/>
+          </g>
+          <circle cx="100" cy="94" r="11" fill="none" stroke="#d9663f" stroke-width="3.4"/>
+          <path d="M96 94 l3 3 l6 -7" fill="none" stroke="#d9663f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- prior images being transferred -->
+          <rect x="182" y="52" width="56" height="70" rx="5" fill="#dce8ee" stroke="#9cc3d4" stroke-width="3"/>
+          <path d="M210 108 c-8 -7 -7 -15 -1 -15 c3 0 1 3 1 3 c0 0 -2 -3 1 -3 c6 0 7 8 -1 15 Z" fill="#7fb3c8"/>
+          <path d="M172 88 l14 0 m-5 -5 l5 5 l-5 5" stroke="#3e7c59" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="140" y="172" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">book it &amp; bring priors</text>
+        </svg>
+        <h4>Book it — and transfer prior images</h4>
+        <p>Once you've set the plan, get the appointment on the calendar so it can't drift. If you've screened elsewhere, transfer your prior images so the radiologist can compare year to year and catch subtle changes.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of preparing for the day: schedule after your period when breasts are least tender, skip deodorant lotion and powder, and wear a two-piece outfit">
+          <rect x="24" y="26" width="232" height="128" rx="10" fill="#fffdf8" stroke="#e9e2d8" stroke-width="4"/>
+          <!-- two-piece outfit -->
+          <path d="M60 60 l16 -8 l6 8 l6 -8 l16 8 l-8 12 l-6 -4 l0 28 l-32 0 l0 -28 l-6 4 Z" fill="#3e7c59"/>
+          <rect x="66" y="104" width="36" height="30" rx="4" fill="#9cc3d4"/>
+          <text x="84" y="150" font-size="10" fill="#6b7376" text-anchor="middle">two-piece</text>
+          <!-- no deodorant (crossed-out bottle) -->
+          <rect x="150" y="60" width="24" height="40" rx="6" fill="#dce8ee" stroke="#9cc3d4" stroke-width="2.4"/>
+          <rect x="156" y="50" width="12" height="12" rx="3" fill="#9cc3d4"/>
+          <circle cx="162" cy="80" r="24" fill="none" stroke="#d9663f" stroke-width="3.4"/>
+          <line x1="145" y1="63" x2="179" y2="97" stroke="#d9663f" stroke-width="3.4" stroke-linecap="round"/>
+          <text x="162" y="150" font-size="10" fill="#6b7376" text-anchor="middle">no deodorant</text>
+          <!-- calendar tip: after period -->
+          <rect x="204" y="58" width="40" height="42" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4"/>
+          <rect x="204" y="58" width="40" height="12" rx="6" fill="#3e7c59"/>
+          <path d="M212 84 l6 6 l10 -12" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="224" y="150" font-size="10" fill="#6b7376" text-anchor="middle">after period</text>
+        </svg>
+        <h4>Prepare for the day</h4>
+        <p>Schedule when your breasts are least tender — often the week after your period. On the day, skip deodorant, antiperspirant, powder, and lotion on your chest and underarms (they cause artifacts), and wear a two-piece outfit.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram contrasting a routine screening for no symptoms with going in now for a diagnostic workup if you notice a new lump or breast change">
+          <rect x="16" y="30" width="118" height="120" rx="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="3.4"/>
+          <text x="75" y="52" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">no symptoms</text>
+          <circle cx="75" cy="92" r="22" fill="none" stroke="#3e7c59" stroke-width="3"/>
+          <path d="M64 92 l8 8 l16 -20" fill="none" stroke="#3e7c59" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="75" y="136" font-size="10" fill="#6b7376" text-anchor="middle">routine screening</text>
+          <rect x="146" y="30" width="118" height="120" rx="10" fill="#fbe9e1" stroke="#d9663f" stroke-width="3.4"/>
+          <text x="205" y="52" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">a lump / change</text>
+          <path d="M205 70 l16 30 l-32 0 Z" fill="none" stroke="#d9663f" stroke-width="3.2" stroke-linejoin="round"/>
+          <line x1="205" y1="82" x2="205" y2="92" stroke="#d9663f" stroke-width="3.2" stroke-linecap="round"/>
+          <circle cx="205" cy="98" r="1.8" fill="#d9663f"/>
+          <text x="205" y="136" font-size="10" fill="#d9663f" text-anchor="middle" font-weight="700">go NOW — diagnostic</text>
+        </svg>
+        <h4>Know screening vs. diagnostic</h4>
+        <p>A screening mammogram is for people with no symptoms. A new lump, skin dimpling, nipple change or discharge, or any new breast change means going in now for a diagnostic workup — not waiting for the next routine screening.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of following up on results: read the results letter, ask about breast density, keep a copy, and schedule the next screening">
+          <rect x="30" y="30" width="96" height="120" rx="8" fill="#fffdf8" stroke="#cdd9de" stroke-width="3.4"/>
+          <rect x="44" y="48" width="68" height="7" rx="3.5" fill="#3e7c59"/>
+          <rect x="44" y="64" width="68" height="6" rx="3" fill="#cdd9de"/>
+          <rect x="44" y="78" width="68" height="6" rx="3" fill="#cdd9de"/>
+          <rect x="44" y="92" width="48" height="6" rx="3" fill="#cdd9de"/>
+          <!-- density question badge -->
+          <circle cx="100" cy="128" r="14" fill="#faf0da" stroke="#e0a93d" stroke-width="2.4"/>
+          <text x="100" y="133" font-size="13" fill="#e0a93d" font-weight="700" text-anchor="middle">?</text>
+          <!-- next appointment -->
+          <rect x="160" y="44" width="88" height="92" rx="8" fill="#e3efe8" stroke="#3e7c59" stroke-width="3.4"/>
+          <rect x="160" y="44" width="88" height="18" rx="8" fill="#3e7c59"/>
+          <path d="M176 96 l10 10 l22 -26" fill="none" stroke="#3e7c59" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="204" y="126" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">next due</text>
+          <path d="M132 90 l22 0 m-7 -6 l7 6 l-7 6" stroke="#8a6a4f" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h4>Follow up on results &amp; schedule the next</h4>
+        <p>Read your results, ask about your breast density, and keep a copy. Then put the next screening on the calendar for your interval — following up and re-booking is what turns one mammogram into an actual habit.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Mammogram upkeep progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Plan set with your doctor, screening booked, priors transferred, day prepped, results followed up, and the next one on the calendar — that's the whole habit, done. Same steps again at your interval.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>When to see a doctor now — don't wait for screening</h2>
+    <p class="sub">Screening is for when nothing feels wrong. But some things aren't a "wait for the next mammogram" situation at all — they're a "call your doctor promptly" situation, because they need a diagnostic workup, not a routine screen. Watch for these:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A new lump or thickening.</strong> Any new lump, hardness, or thickened area in the breast or underarm that wasn't there before — see a doctor promptly. Most turn out to be benign, but it's checked, not assumed.</li>
+        <li><strong>Skin dimpling or puckering.</strong> If the skin of the breast starts to pull in, pit like an orange peel, or look dimpled, don't wait for routine screening — get it looked at.</li>
+        <li><strong>Nipple retraction or discharge.</strong> A nipple that newly turns inward, or any spontaneous discharge (especially clear or bloody) from one breast, is worth a prompt appointment.</li>
+        <li><strong>Any new breast change at all.</strong> Persistent pain in one spot, redness or warmth, a change in size or shape, or anything that just seems different from your normal — trust that and get it evaluated. A symptom usually needs a diagnostic mammogram, not a screening one.</li>
+        <li><strong>Approaching or past the typical start age, or higher-risk, without a plan.</strong> If you're nearing or past the age screening usually starts, or you have family history, a known gene like BRCA, or dense breasts and haven't had the conversation — that's your cue to book it and ask your doctor about your start age and interval.</li>
+        <li><strong>Reminder:</strong> a screening mammogram looks for cancer before symptoms appear; it's not the tool for evaluating a symptom you've already noticed. If something feels off, go in for a diagnostic workup rather than waiting for your next scheduled screen.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I get a mammogram, and when do I start?</summary>
+      <p>Honestly — it varies, and that's not a dodge, it's the state of the evidence. For people at average risk, screening commonly starts somewhere around age 40 to 50 and repeats every one to two years, continuing into the seventies; higher risk often means starting earlier and screening more often. But different expert guidelines land on different start ages and intervals, and your personal risk shifts the answer further. So there isn't a single number that's right for everyone. The right move is to ask your doctor when you should start and how often, based on your history and risk — they set your start age and interval, not a headline or a chart. This is general information, not medical advice.</p>
+    </details>
+    <details>
+      <summary>Does it hurt? What is a mammogram actually like?</summary>
+      <p>It's quick and, for most people, more awkward than painful. You'll undress from the waist up (a two-piece outfit makes this easier), and a technologist positions one breast at a time on the machine's plate. A second plate then presses down to flatten the tissue for a few seconds while the image is taken — that brief compression is uncomfortable and can pinch, but it's over in seconds per view, and there are usually two views per breast. The compression is what makes the image clear and keeps the radiation dose low, so it's doing real work. If you tend to be tender, scheduling the week after your period helps, and you can tell the technologist if anything is too much — they do this all day and can adjust.</p>
+    </details>
+    <details>
+      <summary>Why do the guidelines disagree on when to start?</summary>
+      <p>Because reasonable experts weigh the same evidence differently. Screening earlier and more often catches more cancers early — but it also leads to more callbacks, more follow-up imaging and biopsies that turn out benign, and some anxiety along the way. Different organizations put different weight on those benefits and harms, especially in the 40s where the trade-offs are closest, so they arrive at different recommended start ages and intervals. None of them is "wrong"; they're just balancing the same facts with different priorities. That's exactly why it comes down to a conversation with your doctor, who can factor in your specific risk, your preferences, and how you feel about the trade-offs — rather than one number applied to everyone.</p>
+    </details>
+    <details>
+      <summary>What if I get called back for more images?</summary>
+      <p>First: don't panic. Being called back after a screening mammogram is common, and the large majority of callbacks turn out to be nothing — usually the radiologist just wants a clearer or closer look at an area that was hard to read, often because of overlapping tissue or the way it was positioned. A callback typically means additional mammogram views, sometimes an ultrasound, and only occasionally a biopsy. It is not a diagnosis, and it is far more often reassurance than bad news. It can feel unnerving to get that call, especially if it's your first time screening, but treat it as a routine second look rather than a verdict, and go to the follow-up promptly so you get your answer sooner.</p>
+    </details>
+    <details>
+      <summary>What is breast density, and does it matter?</summary>
+      <p>Breast density describes how much of the breast is dense glandular and connective tissue versus fatty tissue, as it appears on the mammogram — it's not about how the breast feels. It matters for two reasons. First, dense tissue shows up white on a mammogram, and so does cancer, so dense breasts can hide cancer and make it harder to spot. Second, having dense breasts is itself a modest risk factor. Many places now report your density to you, and for some people with dense breasts, doctors recommend additional screening such as ultrasound or MRI alongside the mammogram. It's a fair and important thing to ask about when you get your results: what's my density, and does it change what my screening should look like?</p>
+    </details>
+    <details>
+      <summary>What's the difference between a screening and a diagnostic mammogram?</summary>
+      <p>A screening mammogram is a routine check for people with no symptoms — it's the once-every-one-to-two-years scan meant to catch cancer early, and it's the one that's widely covered as preventive care. A diagnostic mammogram is done for a reason: to evaluate a symptom like a lump or nipple change, or to take a closer look after something showed up on a screening or a callback. It usually involves more images and more angles, is read by the radiologist while you're still there, and may be paired with an ultrasound. Because it's investigating something specific rather than screening a healthy person, it may cost more than a screening. The key thing to remember: if you've noticed a change, you need the diagnostic path, not the routine screen — so tell your doctor about the symptom rather than just booking a screening.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A mammogram finds cancer years before you could feel it — so don't let it lapse.</h2>
+        <p>The "when do I start" confusion is exactly what makes screening easy to put off. Once you and your doctor have set your start age and interval, let Upkeep Ledger hold the screening dates — logging this one and resurfacing the next when it's due, right alongside your well-woman visit, your bloodwork, and every other quiet task that keeps you looked after. (Not medical advice — your doctor sets your schedule.)</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=mammogram&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>It fits with your other women's-health and preventive care — the <a href="gyn-exam.html">well-woman visit</a>, <a href="annual-blood-work.html">annual blood work</a>, and your <a href="physical-exam.html">annual physical</a>.</p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=mammogram&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This is general information, not medical advice; screening guidelines vary and your doctor decides your start age and interval — always defer to your own doctor.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { age: null, risk: null, history: null, symptom: null };
+
+  var FREQ_LABEL = {
+    12: "Once a year",
+    24: "Every 2 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 24;
+
+    /* Age band */
+    if (s.age === "under40") {
+      reasons.push("Under 40, routine screening usually hasn't started for average risk — but that's a conversation to have with your doctor, especially if anything raises your risk. Start age genuinely varies by guideline.");
+    } else if (s.age === "40s") {
+      reasons.push("In your 40s, screening commonly begins for average risk — but exactly when, and how often, is where the guidelines differ most, so this is the age to have the conversation with your doctor.");
+    } else if (s.age === "50to74") {
+      reasons.push("From about 50 through the early 70s is the age range where regular screening is most broadly recommended for average risk — your doctor confirms the interval that fits you.");
+    } else if (s.age === "75plus") {
+      reasons.push("At 75 and older, whether to keep screening — and how often — becomes an individual decision based on your health and preferences, so it's very much a talk-to-your-doctor call.");
+    }
+
+    /* Risk */
+    if (s.risk === "high") {
+      if (months > 12) months = 12;
+      reasons.push("Family history, a known gene like BRCA, dense breasts, or prior findings can mean starting earlier and screening more often — sometimes adding MRI. Higher risk leans toward more frequent screening, and your doctor tailors it.");
+    } else {
+      reasons.push("At average risk, screening every one to two years is the usual shape — with your doctor setting the interval that fits your age and history.");
+    }
+
+    /* Screening history */
+    if (s.history === "overdue") {
+      reasons.push("Since you're overdue or have never been screened, the single most useful step is booking the conversation and the screening — lapsing is the most common way the benefit of early detection gets lost.");
+    } else {
+      reasons.push("You're up to date, so the job is simply keeping it that way — put the next screening on the calendar now so it doesn't quietly slip.");
+    }
+
+    /* Symptom — overrides everything */
+    var symptomFlag = (s.symptom === "symptom");
+    if (symptomFlag) {
+      reasons.unshift("You mentioned a lump or breast change — that is not a wait-for-screening situation. See a doctor promptly for a diagnostic workup; a routine screening mammogram is for people without symptoms.");
+    }
+
+    /* Closing note — ALWAYS defers to the doctor */
+    var note;
+    if (symptomFlag) {
+      note = "<strong>A new lump or change means go NOW, not later:</strong> book a prompt appointment for a diagnostic evaluation rather than waiting for routine screening. Whatever your regular interval, a symptom takes priority — and your doctor decides your start age and interval either way.";
+    } else if (s.risk === "high") {
+      note = "<strong>Higher risk earns a tailored plan:</strong> ask your doctor whether you should start earlier, screen more often, or add MRI. This tool gives general guidance only — your doctor sets your start age and interval.";
+    } else if (s.history === "overdue") {
+      note = "<strong>The best next step is a phone call:</strong> book the conversation and the screening. Screening commonly starts around 40–50 and runs every 1–2 years for average risk, earlier and more often for higher risk — but your doctor decides your start age and interval.";
+    } else {
+      note = "<strong>Keep it from lapsing:</strong> put the next screening on the calendar the day you finish this one. Remember this is general guidance, not a prescription — your doctor sets your start age and interval.";
+    }
+
+    return { months: months, reasons: reasons, note: note, symptom: symptomFlag };
+  }
+
+  function onQuizChange() {
+    if (!quizState.age || !quizState.risk || !quizState.history || !quizState.symptom) return;
+    var r = computePlan(quizState);
+    if (r.symptom) {
+      document.getElementById("resultFreq").textContent =
+        "See a doctor now — don't wait for routine screening";
+    } else {
+      document.getElementById("resultFreq").textContent =
+        "General guidance: screening " + FREQ_LABEL[r.months].toLowerCase();
+    }
+    document.getElementById("resultBody").innerHTML = r.symptom
+      ? "This is <strong>general information, not medical advice</strong>. Because you noted a lump or change, the priority is a prompt diagnostic evaluation — not a routine screen. Here's the reasoning:"
+      : "This is <strong>general guidance only, not medical advice</strong> — screening commonly starts around age 40–50 and repeats every 1–2 years for average risk, and earlier and more often for higher risk. <strong>Your doctor sets your start age and interval.</strong> Here's the reasoning:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Set your schedule with your doctor", text: "Ask your doctor when you should start and how often", note: "The right start age and interval depend on your risk and the guideline your doctor follows — they genuinely vary. Have the conversation rather than guessing from headlines; your doctor sets your start age and interval." },
+    { phase: "Set your schedule with your doctor", text: "Share your family and personal risk history", note: "Family history of breast or ovarian cancer, a known gene like BRCA, dense breasts, or prior findings can mean starting earlier, screening more often, or adding MRI. Give your doctor the full picture so the plan fits you." },
+    { phase: "Set your schedule with your doctor", text: "Agree on your screening plan and next start date", note: "Land on a concrete plan with your doctor — when to screen and how often — so it's a decision, not a vague intention. Write down what you agreed on." },
+    { phase: "Book & transfer priors", text: "Book the screening appointment", note: "Get it on the calendar so it can't drift. Confirm it's a screening (no symptoms) vs. diagnostic — if you have a symptom, tell them, because you likely need a diagnostic workup instead." },
+    { phase: "Book & transfer priors", text: "Transfer or request your prior images", note: "If you've screened elsewhere, have your prior mammogram images sent to the new facility so the radiologist can compare year to year and catch subtle changes." },
+    { phase: "Book & transfer priors", text: "Check coverage or a low-cost program", note: "Screening mammograms are widely covered as preventive care, often at no out-of-pocket cost — confirm with your plan. If you're uninsured, look into free/low-cost programs (in the US, the CDC's NBCCEDP). Coverage varies." },
+    { phase: "Prepare", text: "Schedule when your breasts are least tender", note: "Booking the week after your period is often more comfortable, since breasts tend to be less tender then. Small thing, real difference on the day." },
+    { phase: "Prepare", text: "Skip deodorant, powder, and lotion; wear two pieces", note: "On the day, don't wear deodorant, antiperspirant, powder, or lotion on your chest or underarms — they can show up as artifacts on the images. Wear a two-piece outfit so you only undress from the waist up." },
+    { phase: "Prepare", text: "Note any symptoms, implants, or breastfeeding to mention", note: "Tell the technologist about any lump or breast change, breast implants, or if you're breastfeeding. Remember: a screening mammogram is for people without symptoms — a new change needs a diagnostic workup." },
+    { phase: "Follow up & schedule next", text: "Get your results, ask about density, keep a copy", note: "Read your results and ask about your breast density (dense breasts can hide cancer and may warrant additional screening). Keep a copy for your records. A callback for more views is common and usually not cancer — don't panic." },
+    { phase: "Follow up & schedule next", text: "Put the next screening on the calendar", note: "Schedule the next screening at your interval, or note when to have the conversation again. Nothing reminds you a screening is due — so set the reminder yourself, and keep practicing breast self-awareness in between." }
+  ];
+
+  var LS_KEY = "upkeepguides:mammogram:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

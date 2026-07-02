@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace your headphone earpads — UpkeepGuides.com</title>
+<meta name="description" content="How to replace worn headphone earpads: why the foam flattens and the leatherette flakes, how to find pads that fit, the pull/twist/clip removal, and a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Replace your headphone earpads — UpkeepGuides.com">
+<meta property="og:description" content="How to replace worn headphone earpads: why the foam flattens and the leatherette flakes, how to find pads that fit, the pull/twist/clip removal, and a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/replace-headphone-earpads.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Replace your headphone earpads — UpkeepGuides.com">
+<meta name="twitter:description" content="How to replace worn headphone earpads: why the foam flattens and the leatherette flakes, how to find pads that fit, the pull/twist/clip removal, and a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Every 2 years</span>
+      <h1>Replace Your Headphone Earpads</h1>
+      <p class="lede">You probably noticed the little black flakes on your ears before you noticed anything else — that's the leatherette on your earpads disintegrating, and by the time it's flaking, the foam underneath has long since flattened. Worn pads don't just look grim; they break the seal against your head, so the bass thins out, the world leaks back in, and you nudge the volume up to compensate. Here's the good news: on most over-ear and on-ear headphones the cushions simply pull, twist, or clip off, and a fresh pair costs a fraction of new headphones. Swap them and a tired old pair feels — and sounds — brand new.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every ~2 years</em></span>
+        <span class="chip">⏱️ <em>~10–20 min</em> for the pair</span>
+        <span class="chip">🎧 Restores <em>bass &amp; isolation</em></span>
+        <span class="chip">💸 Costs <em>~$10–30</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing headphone earpads: a pair of over-ear headphones rests on a desk, one earcup has its old cracked and flaking pad peeled off and lying beside it while hands twist a fresh plush replacement pad onto the cup, and the other earcup shows the bare mounting ring exposed">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface line -->
+      <rect x="40" y="356" width="490" height="8" rx="4" fill="#d8cfbe"/>
+
+      <!-- ===== headphones: headband arc ===== -->
+      <path d="M150 250 q0 -180 260 0" fill="none" stroke="#3e7c59" stroke-width="20" stroke-linecap="round"/>
+      <path d="M150 250 q0 -180 260 0" fill="none" stroke="#5e9a78" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+      <!-- headband padding highlight -->
+      <path d="M232 92 q48 -12 96 0" fill="none" stroke="#2c5a40" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- ===== RIGHT earcup: bare mounting ring exposed ===== -->
+      <g transform="translate(410,250)">
+        <circle r="58" fill="#8a6a4f"/>
+        <circle r="58" fill="none" stroke="#6b7376" stroke-width="4" opacity="0.5"/>
+        <!-- inner mounting ring (the plastic ring the pad clips onto) -->
+        <circle r="42" fill="#b9b1a3"/>
+        <circle r="30" fill="#33393b"/>
+        <!-- driver-protecting mesh under the pad -->
+        <circle r="24" fill="#484f52"/>
+        <g stroke="#6b7376" stroke-width="1.4" opacity="0.7">
+          <line x1="-20" y1="-8" x2="20" y2="-8"/>
+          <line x1="-22" y1="0" x2="22" y2="0"/>
+          <line x1="-20" y1="8" x2="20" y2="8"/>
+        </g>
+        <text x="0" y="86" font-size="11" fill="#6b7376" text-anchor="middle">bare ring — mesh intact</text>
+      </g>
+
+      <!-- ===== LEFT earcup: hands twisting a fresh plush pad on ===== -->
+      <g transform="translate(150,250)">
+        <!-- cup body -->
+        <circle r="58" fill="#8a6a4f"/>
+        <circle r="58" fill="none" stroke="#6b7376" stroke-width="4" opacity="0.5"/>
+        <!-- fresh plush replacement pad seating on -->
+        <circle r="56" fill="#2c5a40"/>
+        <circle r="54" fill="#3e7c59"/>
+        <circle r="34" fill="#33393b"/>
+        <!-- plush sheen on the new pad -->
+        <path d="M-40 -22 q18 -20 44 -18" fill="none" stroke="#5e9a78" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+        <!-- twist arrow showing the seating motion -->
+        <path d="M44 -30 q22 18 6 44" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+        <path d="M50 12 l1 -14 l-12 6 z" fill="#e0a93d"/>
+        <text x="0" y="88" font-size="11" fill="#3e7c59" text-anchor="middle" font-weight="700">twist the fresh pad on</text>
+      </g>
+
+      <!-- hands twisting/clipping the new pad (over the left cup) -->
+      <!-- upper hand -->
+      <ellipse cx="118" cy="196" rx="20" ry="14" fill="#e8b48f" transform="rotate(-24 118 196)"/>
+      <path d="M104 190 q-6 5 -2 12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M132 208 q30 -14 52 -6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- lower hand -->
+      <ellipse cx="120" cy="308" rx="20" ry="14" fill="#e8b48f" transform="rotate(20 120 308)"/>
+      <path d="M106 314 q-6 -5 -2 -12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M134 296 q30 14 52 6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- ===== old cracked, flaking pad lying on the desk ===== -->
+      <g transform="translate(285,338)">
+        <ellipse cx="0" cy="6" rx="60" ry="22" fill="#d8cfbe" opacity="0.5"/>
+        <!-- flattened worn ring -->
+        <ellipse cx="0" cy="0" rx="56" ry="26" fill="#5a5f61"/>
+        <ellipse cx="0" cy="0" rx="34" ry="15" fill="#33393b"/>
+        <!-- cracks in the leatherette cover -->
+        <g stroke="#33393b" stroke-width="2" stroke-linecap="round" opacity="0.85">
+          <path d="M-44 -8 l-8 -6"/>
+          <path d="M-30 12 l-6 8"/>
+          <path d="M40 -6 l10 -4"/>
+          <path d="M36 14 l8 8"/>
+          <path d="M-14 -18 l-3 -8 M14 18 l4 8"/>
+        </g>
+        <!-- peeling / lifted flakes of coating -->
+        <path d="M-52 -2 q-10 -4 -14 4 l12 2 z" fill="#6b7376"/>
+        <path d="M50 6 q10 6 16 0 l-12 -4 z" fill="#6b7376"/>
+        <!-- little black flakes scattered on the desk -->
+        <g fill="#484f52">
+          <path d="M-70 26 l4 -3 l3 4 z"/>
+          <path d="M62 24 l4 3 l-4 3 z"/>
+          <path d="M-40 34 l3 3 l-4 2 z"/>
+          <circle cx="30" cy="34" r="2"/>
+          <circle cx="-8" cy="38" r="1.6"/>
+          <circle cx="48" cy="36" r="1.8"/>
+        </g>
+        <text x="0" y="46" font-size="11" fill="#d9663f" text-anchor="middle" font-weight="700">old pad — cracked &amp; flaking</text>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Earpads are the one part of a good pair of headphones that's designed to be consumable — they sit against your skin all day, soaking up oils, sweat, and friction — yet most people never think to swap them. Instead the sound and comfort erode so gradually that you just adapt, when a few dollars of fresh foam would bring the whole pair back to life. Here's what worn pads actually cost you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="18" rx="12" ry="9" fill="#5a5f61"/>
+          <ellipse cx="18" cy="18" rx="6" ry="4" fill="#33393b"/>
+          <g stroke="#33393b" stroke-width="1.6" stroke-linecap="round">
+            <path d="M7 15 l-3 -2"/>
+            <path d="M8 22 l-3 3"/>
+            <path d="M28 14 l3 -2"/>
+            <path d="M27 23 l3 2"/>
+          </g>
+          <path d="M5 18 q-3 -1 -4 2 l4 1 z" fill="#6b7376"/>
+        </svg></div>
+        <h3>The foam flattens &amp; the cover flakes</h3>
+        <p>Over months the plush foam compresses into a hard, thin disc, and the leatherette cover starts to crack and peel — that black "flaking" you find on your ears and shoulders is the coating literally disintegrating. It's uncomfortable and it makes a mess.</p>
+        <span class="cost">Hard, flat pads &amp; black flakes everywhere</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="14" cy="18" r="9" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M23 12 q4 6 0 12" fill="none" stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M27 9 q7 9 0 18" fill="none" stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round" opacity="0.5"/>
+          <path d="M9 24 l-4 4 M6 14 l-4 -2" stroke="#d9663f" stroke-width="1.8" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A broken seal kills the bass</h3>
+        <p>The pad forms an acoustic seal against your head. Once it's flattened or cracked, that seal leaks — so the low end thins out, passive noise isolation drops, and outside sound bleeds in. You end up turning the volume up to make up for foam that gave out.</p>
+        <span class="cost">Weak bass &amp; sound leaking in and out</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="19" rx="11" ry="8" fill="#8a6a4f" opacity="0.7"/>
+          <ellipse cx="18" cy="19" rx="5" ry="3.5" fill="#33393b"/>
+          <path d="M12 8 q1 5 -2 7 M18 6 q1 6 -1 8 M24 8 q-1 5 2 7" stroke="#7fb3c8" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <circle cx="27" cy="12" r="1.4" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>They soak up sweat &amp; skin oils</h3>
+        <p>Pads press against your skin for hours, so they absorb sweat, oils, and whatever's in the air. Over time they get grimy, discolored, and frankly unhygienic — a smell and a sheen no wipe-down really fixes once the material has broken down.</p>
+        <span class="cost">Grimy, smelly, unhygienic cushions</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <circle cx="18" cy="18" r="4.5" fill="#33393b"/>
+          <path d="M18 5 l1.6 4.2 4.4 .3 -3.4 2.9 1.1 4.3 -3.7 -2.4 -3.7 2.4 1.1 -4.3 -3.4 -2.9 4.4 -.3 z" fill="#e0a93d" transform="translate(0,-2) scale(0.55) translate(15,15)"/>
+        </svg></div>
+        <h3>Fresh pads revive the whole pair</h3>
+        <p>For a few dollars, new pads restore the plush comfort, the seal, the bass, and the looks — all at once. It's the single cheapest upgrade you can make to a set of headphones, and it saves a $150 pair from being retired over a $15 problem.</p>
+        <span class="cost">Living with degraded $100–400 headphones</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> replace them?</h2>
+    <p class="sub">About every two years is the sensible default for daily-driver headphones, but it swings a lot. Long daily sessions, hot gym or commute use, and cheap leatherette pads all wear out in a year or less, while velour pads on a pair you use occasionally can go three years or more. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">1. How hard do you use them?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Daily, all-day — or at the gym</button>
+          <button class="pill" data-v="normal">Regularly, a few hours most days</button>
+          <button class="pill" data-v="light">Occasionally, here and there</button>
+        </div>
+        <div class="q-hint">Every hour against your head compresses the foam and abrades the cover. All-day wear or sweaty gym and commute sessions age pads far faster than the odd hour on the couch.</div>
+      </div>
+      <div class="quiz-q" data-q="material">
+        <div class="q-label">2. What are the pads made of?</div>
+        <div class="pills">
+          <button class="pill" data-v="pleather">Leatherette / protein-leather (smooth)</button>
+          <button class="pill" data-v="mixed">A mix, or hybrid pads</button>
+          <button class="pill" data-v="velour">Velour / cloth (fuzzy)</button>
+        </div>
+        <div class="q-hint">The smooth "leather" covers are a coating over foam, and that coating cracks and flakes within a couple of years. Velour and fabric last longer but flatten and hold odor instead.</div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. What kind of shape are they in now?</div>
+        <div class="pills">
+          <button class="pill" data-v="shot">Flaking, cracked, flattened, or grimy</button>
+          <button class="pill" data-v="worn">A little worn but holding up</button>
+          <button class="pill" data-v="fresh">Plush and intact</button>
+        </div>
+        <div class="q-hint">This is the tie-breaker. No matter the schedule, the moment the foam flakes, flattens, or the seal goes soft, the pads are done — replace them now, then reset the clock.</div>
+      </div>
+      <div class="quiz-q" data-q="climate">
+        <div class="q-label">4. How warm and sweaty is your typical use?</div>
+        <div class="pills">
+          <button class="pill" data-v="hot">Hot, sweaty — gym, commute, warm room</button>
+          <button class="pill" data-v="some">Sometimes warm</button>
+          <button class="pill" data-v="cool">Cool, dry, mostly desk use</button>
+        </div>
+        <div class="q-hint">Heat and sweat break down foam and coatings and grime up the surface fastest. Cool, dry desk use is the gentlest life a pad can have.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Replacement earpads are one of the best-value repairs in all of consumer tech: a pair runs about $10–30, whether you buy the brand's official set or a reputable compatible one. Set that against the $100–400 headphones you'd otherwise replace — or keep using with degraded sound and crumbling foam — and the math is almost comical:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$10–30</div><div class="l">a replacement pair of earpads — OEM from the maker, or a well-reviewed compatible set</div></div>
+        <div class="calc-stat"><div class="v">~10–20 min</div><div class="l">to swap both pads on most headphones once you know the attachment type</div></div>
+        <div class="calc-stat"><div class="v bad">$100–400</div><div class="l">the price of the headphones you'd otherwise replace — or live with sounding worse</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🎧 A compatible replacement pad set</span><span>~$10–20</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:6%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏷️ Official OEM earpads from the maker</span><span>~$20–30</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:12%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 Manufacturer pad-replacement service (premium models)</span><span>~$40–80</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:30%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🎚️ Living with weak bass, no isolation &amp; flaking foam</span><span>Every listen, degraded</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:52%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛒 Replacing the whole pair of headphones</span><span>$100–400</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:95%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $10–30 pair of pads and fifteen minutes</strong> against a set of headphones you'd otherwise retire or keep suffering through. Fresh pads restore the seal, the bass, the isolation, and the comfort all at once — the single biggest sound-and-feel upgrade you can buy for the money.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to replace your headphone earpads</h2>
+    <p class="sub">The whole job hinges on two things: getting <em>the right pads for your exact model</em>, and knowing how they attach. Most pull straight off and press, twist, or bayonet-clip back on; some sit in a plastic ring you transfer; a few are glued. Read the techniques first (especially "identify the model" and "note the attachment"), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Get the right pads, and work gently</h3>
+      <ul>
+        <li><strong>Buy pads that fit your exact model.</strong> Earpads are model-specific in size and attachment — order the brand's OEM pads or a reputable compatible set made for your headphones by name. A "close enough" pad won't seat, won't seal, and won't sound right.</li>
+        <li><strong>Know your attachment type before you pull.</strong> Most pads pull straight off and press/twist/bayonet-clip back on; some sit in a plastic ring you transfer from the old pad; a handful are glued. Check a teardown or the maker's guide so you don't force the wrong motion.</li>
+        <li><strong>Don't disturb the mesh or foam under the pad.</strong> Under the cushion is a thin layer of foam and mesh that protects the driver — leave it intact. Work gently so you don't tear it or crack the plastic cup while prying.</li>
+        <li><strong>Keep moisture away from the driver.</strong> If you're cleaning the cup ring, use a barely-damp cloth and let it dry — never let water run into the exposed driver behind the mesh.</li>
+        <li><strong>Glued or sealed? Consider the maker's service.</strong> If your pads are glued in, or the headphones are high-end and sealed, prying can damage them. Warm the adhesive gently and pry carefully — or, for premium models, use the manufacturer's pad-replacement service instead of forcing it.</li>
+        <li><strong>Wipe the ring clean, and recycle the old pads.</strong> Before fitting the new pad, wipe the cup's mounting ring so the fresh pad seats cleanly. Then bin or recycle the old cushions rather than leaving them to keep shedding flakes.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Replacement earpads for your exact model</span>
+      <span class="tool-chip">Your headphones' model number</span>
+      <span class="tool-chip">A soft, barely-damp cloth</span>
+      <span class="tool-chip">A plastic pry tool or guitar pick (if clipped)</span>
+      <span class="tool-chip">A hair dryer (only if glued)</span>
+      <span class="tool-chip">Good light and a clear table</span>
+      <span class="tool-chip">Patience — no forcing</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of identifying the headphone model from a label inside the headband and buying matching replacement earpads">
+          <path d="M60 120 q0 -80 120 0" fill="none" stroke="#3e7c59" stroke-width="12" stroke-linecap="round"/>
+          <!-- label inside the band -->
+          <rect x="96" y="46" width="52" height="26" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+          <g stroke="#6b7376" stroke-width="1.6" stroke-linecap="round">
+            <line x1="104" y1="54" x2="140" y2="54"/>
+            <line x1="104" y1="60" x2="132" y2="60"/>
+            <line x1="104" y1="66" x2="136" y2="66"/>
+          </g>
+          <!-- magnifier over the label -->
+          <circle cx="150" cy="66" r="16" fill="none" stroke="#3e7c59" stroke-width="3.5"/>
+          <line x1="161" y1="77" x2="176" y2="92" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+          <!-- matching pad box -->
+          <rect x="196" y="96" width="56" height="40" rx="5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <circle cx="224" cy="116" r="13" fill="#2c5a40"/>
+          <circle cx="224" cy="116" r="6" fill="#33393b"/>
+          <text x="70" y="164" font-size="11" fill="#3e7c59" font-weight="700">find the model → buy matching pads</text>
+        </svg>
+        <h4>Identify the model &amp; buy matching pads</h4>
+        <p>Find your exact model — it's usually printed inside the headband or on the box. Then order the brand's OEM pads or a reputable compatible set made for that model by name. Right size, right attachment, right sound.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram showing the three ways earpads attach: pulling straight off, twisting or bayonet-clipping, and a transferable plastic ring, plus a glued type">
+          <!-- pull-off -->
+          <circle cx="66" cy="56" r="22" fill="#3e7c59"/>
+          <circle cx="66" cy="56" r="10" fill="#33393b"/>
+          <path d="M66 26 l0 -14 m-6 6 l6 -6 l6 6" stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="66" y="94" font-size="10" fill="#6b7376" text-anchor="middle">pull off</text>
+          <!-- twist -->
+          <circle cx="150" cy="56" r="22" fill="#3e7c59"/>
+          <circle cx="150" cy="56" r="10" fill="#33393b"/>
+          <path d="M172 46 q10 12 -2 24" stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M170 70 l0 -8 l-8 4 z" fill="#e0a93d"/>
+          <text x="150" y="94" font-size="10" fill="#6b7376" text-anchor="middle">twist / clip</text>
+          <!-- ring transfer -->
+          <circle cx="234" cy="56" r="22" fill="#b9b1a3"/>
+          <circle cx="234" cy="56" r="16" fill="#3e7c59"/>
+          <circle cx="234" cy="56" r="8" fill="#33393b"/>
+          <text x="234" y="94" font-size="10" fill="#6b7376" text-anchor="middle">ring transfer</text>
+          <text x="30" y="128" font-size="11" fill="#3e7c59" font-weight="700">most pull, twist, or clip — a few are glued</text>
+          <path d="M30 140 h220" stroke="#e9e2d8" stroke-width="2"/>
+        </svg>
+        <h4>Note how they attach</h4>
+        <p>Most pads pull straight off and press, twist, or bayonet-clip back on. Some sit in a plastic ring you transfer from the old pad to the new one. A few are glued — those need heat and care, or the maker's service.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of gently removing the old earpad by working around the edge with fingers, without disturbing the mesh and foam protecting the driver underneath">
+          <circle cx="140" cy="90" r="52" fill="#8a6a4f"/>
+          <circle cx="140" cy="90" r="40" fill="#5a5f61"/>
+          <!-- pad being lifted at the top edge -->
+          <path d="M100 62 q40 -22 80 0 q-8 -14 -40 -14 q-32 0 -40 14 z" fill="#5a5f61"/>
+          <!-- exposed mesh under the pad -->
+          <circle cx="140" cy="90" r="26" fill="#484f52"/>
+          <g stroke="#6b7376" stroke-width="1.4" opacity="0.8">
+            <line x1="118" y1="82" x2="162" y2="82"/>
+            <line x1="116" y1="90" x2="164" y2="90"/>
+            <line x1="118" y1="98" x2="162" y2="98"/>
+          </g>
+          <!-- fingers peeling the edge -->
+          <ellipse cx="96" cy="60" rx="12" ry="8" fill="#e8b48f" transform="rotate(-30 96 60)"/>
+          <path d="M162 148 l-6 -10 M118 148 l6 -10" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+          <text x="140" y="170" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">don't disturb the mesh underneath</text>
+        </svg>
+        <h4>Remove the old pad gently</h4>
+        <p>Work a finger under the edge and peel or unclip the old pad off all the way around — no yanking. Leave the thin foam and mesh over the driver exactly where it is; that layer protects the driver and stays put.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of seating a fresh earpad evenly all the way around the cup, pressing or twisting it into the groove or clipping it onto the ring so it sits flush">
+          <circle cx="140" cy="88" r="54" fill="#8a6a4f"/>
+          <circle cx="140" cy="88" r="52" fill="#2c5a40"/>
+          <circle cx="140" cy="88" r="46" fill="#3e7c59"/>
+          <circle cx="140" cy="88" r="24" fill="#33393b"/>
+          <!-- plush sheen -->
+          <path d="M104 66 q18 -16 40 -14" fill="none" stroke="#5e9a78" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+          <!-- press-around arrows -->
+          <g stroke="#e0a93d" stroke-width="2.6" fill="none" stroke-linecap="round">
+            <path d="M140 30 l0 8 M132 34 l8 4 l8 -4"/>
+            <path d="M198 88 l-8 0 M194 80 l-4 8 l4 8"/>
+            <path d="M140 146 l0 -8 M132 142 l8 -4 l8 4"/>
+            <path d="M82 88 l8 0 M86 80 l4 8 l-4 8"/>
+          </g>
+          <text x="140" y="170" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">seat it evenly all the way around</text>
+        </svg>
+        <h4>Seat the new pad evenly</h4>
+        <p>Line the new pad up and work it into the groove — or clip it onto the ring — pressing or twisting your way all the way around so it sits flush with no lifted edges. An unevenly seated pad pops off and won't seal.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of checking the seal by putting the headphones on, and wiping down the headband cushion while the headphones are already apart">
+          <!-- headphones on a head silhouette -->
+          <circle cx="140" cy="96" r="34" fill="#d8cfbe"/>
+          <path d="M96 96 q0 -60 88 0" fill="none" stroke="#3e7c59" stroke-width="10" stroke-linecap="round"/>
+          <ellipse cx="96" cy="98" rx="14" ry="20" fill="#2c5a40"/>
+          <ellipse cx="184" cy="98" rx="14" ry="20" fill="#2c5a40"/>
+          <!-- seal check: sound staying in -->
+          <path d="M70 88 q-8 8 0 20" fill="none" stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round"/>
+          <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+            <path d="M198 90 l6 6 l-6 6"/>
+          </g>
+          <!-- cloth wiping the headband -->
+          <rect x="122" y="30" width="34" height="16" rx="5" fill="#7fb3c8" transform="rotate(-6 139 38)"/>
+          <text x="140" y="166" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">check the seal · wipe the headband</text>
+        </svg>
+        <h4>Check the seal &amp; clean up</h4>
+        <p>Put them on and press gently around each cup — the bass should snap back and outside sound should drop. While you're at it, wipe down the headband cushion (the other spot that gets grimy) and bin the old pads.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Earpad-swap progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Fresh pads seated, seal restored, headband wiped, old pads recycled — your headphones sound and feel brand new. Next swap in about two years, or the moment the foam flakes again.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your earpads are overdue — and when to call the maker</h2>
+    <p class="sub">Good pads are plush, quiet, and invisible — you just hear the music and forget they're there. These are the signals it's time for a swap, and the handful of cases where the manufacturer's service is the smarter move:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Black flakes on your ears, neck, or shoulders.</strong> That's the leatherette coating disintegrating. Once it starts flaking it only gets worse, and it never comes back — replace the pads.</li>
+        <li><strong>Cracked or peeling covers.</strong> Visible cracks, splits, or lifting patches in the surface mean the cover has failed. It'll shed and feel rough against your skin.</li>
+        <li><strong>Flattened, hard foam.</strong> If the cushion is thin and firm instead of plush and springy, the foam is spent — comfort and seal both suffer.</li>
+        <li><strong>A poor seal — weak bass, less isolation.</strong> If the low end sounds thin, outside noise leaks in, or you keep nudging the volume up, the pads have stopped sealing. Fresh ones bring the bass and quiet right back.</li>
+        <li><strong>Grimy, discolored, or smelly pads.</strong> Once the material has soaked up enough sweat and oils that it looks grungy or smells, cleaning won't recover it — swap them for hygiene as much as comfort.</li>
+        <li><strong>Glued-in or sealed premium models.</strong> If the pads are adhered rather than clipped, or the headphones are high-end and sealed, prying risks damage. Many makers sell a pad-replacement service or replacement kit — use it rather than forcing the job.</li>
+        <li><strong>Pro tip:</strong> when you buy new pads, consider whether you want the same material or a switch — velour is cooler and more durable, leatherette seals bass better. Either way, fresh pads are the cheapest way to make old headphones feel new.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I replace my earpads?</summary>
+      <p>About every two years is a good default for a daily-driver pair, but it depends heavily on how you use them. Long daily sessions, warm or sweaty use (the gym, a hot commute), and smooth leatherette pads all wear out faster — often within a year — while velour or fabric pads on headphones you use occasionally can easily last three years or more. Honestly, the calendar is just a reminder; the real trigger is the pads themselves. The moment the foam flakes, flattens, or the seal goes soft, they're done — replace them then and reset the clock, regardless of how long it's been.</p>
+    </details>
+    <details>
+      <summary>Why are my earpads flaking and peeling?</summary>
+      <p>Because the smooth "leather" surface on most earpads isn't leather at all — it's a coating (usually polyurethane, sometimes called protein leather or leatherette) bonded over foam. That coating breaks down over time from skin oils, sweat, sunlight, and friction, and once it starts to degrade it cracks, peels, and sheds those little black flakes onto your ears and shoulders. It's completely normal and it happens to almost every leatherette pad eventually; nothing you do will restore a coating that's already flaking. The fix is simply new pads — and if you're tired of the shedding, velour or fabric pads don't have a coating to flake at all.</p>
+    </details>
+    <details>
+      <summary>Do worn earpads actually affect the sound?</summary>
+      <p>Yes, more than most people realize. The pad forms an acoustic seal between the earcup and your head, and that seal is a big part of how closed and over-ear headphones produce bass and block outside noise. When the foam flattens or the cover cracks, the seal leaks: the low end thins out and loses punch, passive noise isolation drops so more of the room bleeds in, and you tend to crank the volume to compensate. Because it happens gradually you adapt without noticing — which is exactly why a fresh pair of pads can sound like an upgrade. The bass snaps back and the outside world goes quiet again.</p>
+    </details>
+    <details>
+      <summary>How do I know which replacement pads fit?</summary>
+      <p>Start with your exact model name and number — it's usually printed inside the headband, on the earcup, or on the original box. Then buy either the manufacturer's official (OEM) pads for that model, or a well-reviewed compatible set that explicitly lists your model by name. Earpads are model-specific in both size and attachment method, so a pad that's a few millimeters off, or built for a different clip, won't seat, won't seal, and won't sound right. When in doubt, OEM pads are the safe choice; compatible sets are cheaper and often just as good, but read reviews from people with your exact headphones before you order.</p>
+    </details>
+    <details>
+      <summary>Are earpads hard to replace myself?</summary>
+      <p>On most over-ear and on-ear headphones, no — it's a ten-to-twenty-minute job with no tools. The majority of pads simply pull straight off and then press, twist, or bayonet-clip back on; work a finger around the edge to remove the old one, then seat the new one evenly all the way around. Some pads sit in a plastic ring that you transfer from the old pad to the new one. The exceptions are pads that are glued in place or headphones that are sealed shut — those need gentle heat and careful prying, and on premium models it's often wiser to use the maker's pad-replacement service than to risk damage. The one rule throughout: don't disturb the thin mesh and foam protecting the driver underneath, and never force anything.</p>
+    </details>
+    <details>
+      <summary>Leatherette or velour pads — which should I get?</summary>
+      <p>It's a trade-off, not a clear winner. Leatherette (protein leather) seals tightly against your head, so it gives you the strongest bass and best passive isolation, and it wipes clean — but the coating cracks and flakes within a couple of years, and it gets warm and sweaty on your ears. Velour or fabric pads are cooler, more breathable, more comfortable for long sessions, and far more durable since there's no coating to degrade — but they seal a little less, so bass can be slightly softer, and they absorb odor over time. If bass and isolation matter most, go leatherette; if all-day comfort and longevity matter most, go velour. Many popular headphones offer both as replacement options, so you can swap the character of your headphones just by changing the pad material.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Earpads flake and flatten so slowly you just live with worse sound.</h2>
+        <p>Nothing tells you your headphones are quietly getting worse — the foam gives out, the seal goes soft, and you turn the volume up instead. Upkeep Ledger logs this swap and resurfaces it on schedule, so a cheap pad replacement makes an old pair feel new — right alongside the laptop fans, the phone battery, and every other quiet task that keeps your gear running well.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-headphone-earpads&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=replace-headphone-earpads&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>While you're keeping your tech in shape, clean your <a href="clean-laptop-fans.html">laptop fans</a>, mind your <a href="calibrate-laptop-battery.html">laptop battery</a>, and check your <a href="battery-health-check-phone.html">phone's battery health</a>.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your headphones, pad material, and attachment type may vary — the manufacturer's care and replacement instructions outrank this guide.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { use: null, material: null, state: null, climate: null };
+
+  var FREQ_LABEL = {
+    1: "Every year",
+    2: "Every 2 years",
+    3: "Every ~3 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var years = 2;
+    var tighten = false;
+
+    /* Use — how hard */
+    if (s.use === "heavy") {
+      if (years > 1) years = 1;
+      tighten = true;
+      reasons.push("All-day daily wear — or gym and commute use — compresses the foam and abrades the cover fast, so expect to replace the pads closer to once a year.");
+    } else if (s.use === "light") {
+      reasons.push("Using them only occasionally puts little wear on the pads, so you can comfortably lean toward the longer end of the range.");
+    } else {
+      reasons.push("Regular a-few-hours-a-day use is exactly the case the two-year default is written for.");
+    }
+
+    /* Material — pleather vs velour */
+    if (s.material === "pleather") {
+      if (years > 1) years = 1;
+      tighten = true;
+      reasons.push("Leatherette (protein-leather) is a coating over foam, and that coating cracks and flakes within a year or two — so smooth pads tend to need replacing sooner.");
+    } else if (s.material === "velour") {
+      reasons.push("Velour and fabric pads have no coating to flake, so they last longer — they flatten and hold odor eventually, but you can stretch the interval.");
+    } else {
+      reasons.push("Hybrid or mixed-material pads land in the middle — more durable than pure leatherette, but still worth watching for wear.");
+    }
+
+    /* State — current condition (the tie-breaker) */
+    if (s.state === "shot") {
+      years = 1;
+      tighten = true;
+      reasons.push("Flaking, cracked, flattened, or grimy pads are done right now — no schedule overrides that. Replace them today, then reset the clock from here.");
+    } else if (s.state === "worn") {
+      reasons.push("A little wear that's still holding up means you're getting close — keep an eye on the foam and the seal so you catch it before it flakes.");
+    } else {
+      reasons.push("Plush, intact pads have life left, so this is about planning the next swap rather than needing one now.");
+    }
+
+    /* Climate — heat and sweat */
+    if (s.climate === "hot") {
+      if (years > 1) years = 1;
+      tighten = true;
+      reasons.push("Heat and sweat break down foam and coatings and grime up the surface fastest, so warm, sweaty use shortens pad life noticeably.");
+    } else if (s.climate === "cool") {
+      reasons.push("Cool, dry desk use is the gentlest life a pad can have, so climate isn't pushing your schedule — one less reason to rush the next swap.");
+    } else {
+      reasons.push("Sometimes-warm use is the ordinary middle case and won't drive the timing much on its own.");
+    }
+
+    /* Best-case relaxation: light use, velour, fresh, cool */
+    if (!tighten && s.use === "light" && s.material === "velour" && s.state === "fresh" && s.climate === "cool") {
+      years = 3;
+      reasons.push("Plush velour pads on an occasionally-used pair in cool, dry conditions is the one case where about three years is genuinely realistic — just swap them the moment they flatten or the seal softens.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.state === "shot") {
+      note = "<strong>Don't wait on this one:</strong> flaking, flattened, or grimy pads are already costing you bass, isolation, and comfort. Order pads for your exact model today — it's the cheapest upgrade your headphones will ever get.";
+    } else if (s.material === "pleather") {
+      note = "<strong>Watch for the first flakes:</strong> the moment the smooth coating starts shedding little black bits, the foam underneath is spent too. If you're tired of the flaking, consider velour pads next time — no coating means nothing to peel.";
+    } else if (s.use === "heavy" || s.climate === "hot") {
+      note = "<strong>Heavy, sweaty use eats pads:</strong> wipe them down after hot sessions to slow the grime, and keep a spare set on hand so a flaked-out pad never sidelines your headphones.";
+    } else {
+      note = "<strong>Remember the real trigger:</strong> the calendar is just a nudge — replace the pads the moment the foam flakes, flattens, or cracks, whichever comes first. And buy pads made for your exact model.";
+    }
+
+    return { years: years, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.use || !quizState.material || !quizState.state || !quizState.climate) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: replace the earpads " + FREQ_LABEL[r.years].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "For your headphones, <strong>expect to replace them about every " + r.years + " year" + (r.years === 1 ? "" : "s") +
+      " — or the moment the foam flakes, flattens, or cracks</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Identify & buy", text: "Find your exact headphone model", note: "Check inside the headband, on the earcup, or on the original box for the model name and number. This is what your replacement pads have to match — size and attachment are model-specific." },
+    { phase: "Identify & buy", text: "Order pads for that model (OEM or compatible)", note: "Buy the maker's official pads, or a well-reviewed compatible set that lists your model by name. OEM is the safe choice; compatible sets are cheaper and often just as good — read reviews from owners of your headphones." },
+    { phase: "Identify & buy", text: "Decide on the material — leatherette or velour", note: "Leatherette seals tighter for more bass and isolation but cracks and flakes over time; velour is cooler, more comfortable, and more durable but seals a little less. Pick the character you want." },
+    { phase: "Check the attachment", text: "Figure out how the pads attach", note: "Most pull straight off and press, twist, or bayonet-clip back on; some sit in a plastic ring you transfer; a few are glued. Check a teardown or the maker's guide before you pull, so you use the right motion." },
+    { phase: "Check the attachment", text: "If glued or sealed, weigh the maker's service", note: "Glued-in pads and sealed premium models can be damaged by prying. Warm the adhesive gently and pry carefully — or, for high-end headphones, use the manufacturer's pad-replacement service instead of forcing it." },
+    { phase: "Swap the pads", text: "Peel or unclip the old pad off, gently", note: "Work a finger around the edge and remove the old pad all the way around — no yanking. Twist to release a bayonet clip, or lift the ring if it's a ring type." },
+    { phase: "Swap the pads", text: "Leave the driver's mesh and foam untouched", note: "Under the pad is a thin layer of foam and mesh that protects the driver — leave it exactly in place. Don't tear it, and keep moisture away from the exposed driver behind it." },
+    { phase: "Swap the pads", text: "Seat the new pad evenly all the way around", note: "Line the new pad up and work it into the groove, or clip it onto the ring, pressing or twisting your way around so it sits flush with no lifted edges. Transfer the plastic ring first if it's a ring type." },
+    { phase: "Seat & clean", text: "Wipe the cup ring before fitting (if you haven't)", note: "A quick wipe of the mounting ring with a barely-damp cloth clears old grime so the fresh pad seats cleanly. Let it dry before seating the pad." },
+    { phase: "Seat & clean", text: "Check the seal and wipe the headband", note: "Put them on and press gently around each cup — the bass should return and outside sound should drop. While you're at it, wipe down the headband cushion, the other spot that gets grimy, and recycle the old pads." },
+    { phase: "Seat & clean", text: "Log the date", note: "Nothing reminds you when pads slowly wear out again. Note the date so the next swap lands in about two years (or your quiz interval) — or sooner, the moment the new pads start to flake or flatten." }
+  ];
+
+  var LS_KEY = "upkeepguides:replace-headphone-earpads:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

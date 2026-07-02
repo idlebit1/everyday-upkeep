@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep up your well-woman / gyn visit — UpkeepGuides.com</title>
+<meta name="description" content="Keep your well-woman / gyn visit on schedule: why a yearly visit isn't a yearly Pap, how to know what's due, how to prepare, warning signs to go now, and a checklist — general info, not medical advice.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Keep up your well-woman / gyn visit — UpkeepGuides.com">
+<meta property="og:description" content="Keep your well-woman / gyn visit on schedule: why a yearly visit isn't a yearly Pap, how to know what's due, how to prepare, warning signs to go now, and a checklist — general info, not medical advice.">
+<meta property="og:url" content="https://upkeepguides.com/gyn-exam.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keep up your well-woman / gyn visit — UpkeepGuides.com">
+<meta name="twitter:description" content="Keep your well-woman / gyn visit on schedule: why a yearly visit isn't a yearly Pap, how to know what's due, how to prepare, warning signs to go now, and a checklist — general info, not medical advice.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Once a year</span>
+      <h1>Keep Up Your Well-Woman Visit</h1>
+      <p class="lede">The annual well-woman visit is preventive maintenance for your reproductive and general health — the calm, once-a-year check-in where a provider keeps you on track for the screenings that matter and where you get to raise anything at all: contraception, periods, menopause, fertility, sexual health, or a worry you've been sitting on. Here's the part almost everyone gets wrong, and it's worth saying plainly: a yearly <em>visit</em> is common, but a Pap smear is usually only needed every three to five years now — the visit and the Pap are not the same schedule. The upkeep job isn't complicated. It's keeping the visit on the calendar and staying current on the screenings your provider recommends, so nothing quietly falls off the radar. This is general information, not medical advice — your provider sets your schedule.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Visit is commonly <em>yearly</em></span>
+        <span class="chip">🔬 Pap/HPV often <em>every 3–5 yrs</em></span>
+        <span class="chip">💬 Time to <em>raise anything</em></span>
+        <span class="chip">💸 Often <em>covered preventive care</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a warm, reassuring women's-health clinic scene: a friendly doctor stands with a clipboard beside a wall calendar marked with a yearly reminder, a labelled health-record folder rests on a small table, and a leafy plant adds warmth — calm and non-clinical, with no anatomical detail">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- soft room panel behind -->
+      <rect x="150" y="40" width="330" height="300" rx="14" fill="#fffdf8" stroke="#e9e2d8" stroke-width="4"/>
+      <!-- warm window on the wall letting in light -->
+      <rect x="332" y="66" width="120" height="128" rx="8" fill="#dce8ee" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="390" y="70" width="6" height="120" fill="#8a6a4f"/>
+      <rect x="336" y="126" width="112" height="6" fill="#8a6a4f"/>
+      <g stroke="#fffdf8" stroke-width="6" stroke-linecap="round" opacity="0.85">
+        <line x1="348" y1="176" x2="392" y2="96"/>
+        <line x1="366" y1="182" x2="404" y2="110"/>
+      </g>
+
+      <!-- wall calendar with a yearly reminder ring -->
+      <rect x="178" y="70" width="118" height="112" rx="10" fill="#fffdf8" stroke="#e9e2d8" stroke-width="3"/>
+      <rect x="178" y="70" width="118" height="26" rx="10" fill="#3e7c59"/>
+      <rect x="178" y="86" width="118" height="12" fill="#3e7c59"/>
+      <circle cx="200" cy="70" r="5" fill="#8a6a4f"/>
+      <circle cx="274" cy="70" r="5" fill="#8a6a4f"/>
+      <g fill="#cdd9de">
+        <rect x="188" y="106" width="16" height="12" rx="2"/>
+        <rect x="210" y="106" width="16" height="12" rx="2"/>
+        <rect x="232" y="106" width="16" height="12" rx="2"/>
+        <rect x="254" y="106" width="16" height="12" rx="2"/>
+        <rect x="188" y="124" width="16" height="12" rx="2"/>
+        <rect x="210" y="124" width="16" height="12" rx="2"/>
+        <rect x="254" y="124" width="16" height="12" rx="2"/>
+        <rect x="188" y="142" width="16" height="12" rx="2"/>
+        <rect x="232" y="142" width="16" height="12" rx="2"/>
+        <rect x="254" y="142" width="16" height="12" rx="2"/>
+      </g>
+      <!-- the annual reminder circled in gold -->
+      <circle cx="240" cy="130" r="14" fill="none" stroke="#e0a93d" stroke-width="3.5"/>
+      <path d="M234 130 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- friendly doctor with a clipboard -->
+      <!-- head -->
+      <circle cx="118" cy="150" r="26" fill="#e8b48f"/>
+      <path d="M92 146 q0 -30 26 -30 q26 0 26 30 q-8 -12 -26 -12 q-18 0 -26 12 z" fill="#5b4636"/>
+      <!-- warm smile -->
+      <path d="M108 158 q10 8 20 0" stroke="#b5764f" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <circle cx="110" cy="147" r="2.4" fill="#5b4636"/>
+      <circle cx="126" cy="147" r="2.4" fill="#5b4636"/>
+      <!-- body / white coat -->
+      <path d="M78 320 q0 -110 40 -142 q40 32 40 142 z" fill="#fffdf8" stroke="#e9e2d8" stroke-width="3"/>
+      <!-- teal top under the coat -->
+      <path d="M104 188 q14 12 28 0 l0 40 q-14 10 -28 0 z" fill="#5e9a78"/>
+      <!-- coat lapels -->
+      <path d="M118 182 l-16 26 l10 6 z" fill="#f4f0e8"/>
+      <path d="M118 182 l16 26 l-10 6 z" fill="#f4f0e8"/>
+      <!-- stethoscope, gentle and non-clinical -->
+      <path d="M108 190 q-14 26 6 44 q20 18 20 -8" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="134" cy="228" r="6" fill="#5e9a78"/>
+      <!-- arm holding clipboard -->
+      <path d="M138 224 q22 6 30 26" stroke="#fffdf8" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M138 224 q22 6 30 26" stroke="#e9e2d8" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.4"/>
+      <!-- clipboard -->
+      <rect x="150" y="242" width="60" height="76" rx="6" fill="#c96f4a"/>
+      <rect x="156" y="250" width="48" height="60" rx="4" fill="#fffdf8"/>
+      <rect x="172" y="238" width="16" height="8" rx="3" fill="#8a6a4f"/>
+      <g stroke="#cdd9de" stroke-width="2.4" stroke-linecap="round">
+        <line x1="164" y1="264" x2="196" y2="264"/>
+        <line x1="164" y1="276" x2="196" y2="276"/>
+        <line x1="164" y1="288" x2="184" y2="288"/>
+      </g>
+      <g stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round">
+        <path d="M164 264 l-6 0 M161 261 l0 6"/>
+      </g>
+
+      <!-- small table with a labelled health-record folder -->
+      <rect x="330" y="300" width="150" height="12" rx="4" fill="#8a6a4f"/>
+      <rect x="342" y="312" width="10" height="30" rx="3" fill="#8a6a4f"/>
+      <rect x="458" y="312" width="10" height="30" rx="3" fill="#8a6a4f"/>
+      <!-- folder -->
+      <path d="M356 258 h44 l8 12 h44 v34 h-96 z" fill="#e0a93d"/>
+      <rect x="356" y="270" width="96" height="30" rx="3" fill="#f0c765"/>
+      <rect x="372" y="252" width="60" height="20" rx="4" fill="#fffdf8"/>
+      <g stroke="#d8cfbe" stroke-width="2" stroke-linecap="round">
+        <line x1="380" y1="260" x2="424" y2="260"/>
+        <line x1="380" y1="266" x2="412" y2="266"/>
+      </g>
+      <!-- little health cross on the folder tab -->
+      <g stroke="#c96f4a" stroke-width="3" stroke-linecap="round">
+        <path d="M402 256 l0 12 M396 262 l12 0"/>
+      </g>
+
+      <!-- plant for warmth -->
+      <path d="M486 344 h34 l-5 34 h-24 z" fill="#c96f4a"/>
+      <path d="M503 344 q-4 -26 -16 -36" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M503 344 q5 -24 18 -32" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="484" cy="304" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 484 304)"/>
+      <ellipse cx="522" cy="308" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 522 308)"/>
+      <ellipse cx="503" cy="296" rx="7" ry="12" fill="#5e9a78"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">It's easy to skip a check-in when you feel fine — but the well-woman visit isn't about being sick, it's about staying ahead. It's the one appointment built entirely around keeping you well: catching things early, tracking your screenings on the right schedule, and giving you a private, professional space to ask anything. Here's what the yearly habit does for you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="6" width="22" height="24" rx="2" fill="#dce8ee" stroke="#3e7c59" stroke-width="2"/>
+          <line x1="7" y1="12" x2="29" y2="12" stroke="#3e7c59" stroke-width="2"/>
+          <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round">
+            <path d="M11 18 l3 3 l5 -6"/>
+            <path d="M11 25 l3 3 l5 -6"/>
+          </g>
+          <line x1="21" y1="18" x2="26" y2="18" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="25" x2="26" y2="25" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It keeps you on top of screenings</h3>
+        <p>The visit is where cervical-cancer screening, breast health, STI testing, and blood pressure all get checked and tracked on the schedule that's right for you. Without that regular anchor, it's easy for one to slip a year or three past due without anyone noticing.</p>
+        <span class="cost">Screenings quietly falling overdue</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 10 h18 a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 h-9 l-6 5 v-5 h-3 a4 4 0 0 1 -4 -4 v-6 a4 4 0 0 1 4 -4 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <circle cx="12" cy="17" r="1.6" fill="#3e7c59"/>
+          <circle cx="17" cy="17" r="1.6" fill="#3e7c59"/>
+          <circle cx="22" cy="17" r="1.6" fill="#3e7c59"/>
+        </svg></div>
+        <h3>It's your time to raise anything</h3>
+        <p>Periods, contraception, fertility, menopause, pain, sexual health, mental health, or just a nagging concern — this is the appointment made for asking, privately and without judgment. Nothing is too small or too awkward to bring up here.</p>
+        <span class="cost">Worries left unspoken for years</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="15" cy="15" r="9" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2"/>
+          <line x1="21.5" y1="21.5" x2="30" y2="30" stroke="#e0a93d" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+            <path d="M15 11 l0 8 M11 15 l8 0"/>
+          </g>
+        </svg></div>
+        <h3>It catches problems early</h3>
+        <p>Many gynecologic issues are silent in their early stages — you can feel completely fine while something is quietly getting easier to miss and harder to treat. Regular visits are how those things get found while they're still simple to deal with.</p>
+        <span class="cost">Silent issues found late</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="14" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2"/>
+          <path d="M18 10 a3.4 3.4 0 1 1 -3 5" fill="none" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="18" y1="18" x2="18" y2="21" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18" cy="26" r="1.8" fill="#d9663f"/>
+        </svg></div>
+        <h3>The schedule is misunderstood</h3>
+        <p>A yearly visit does <em>not</em> mean a yearly Pap — Paps are usually every three to five years now. Without guidance, people either over-screen (getting Paps they don't need) or under-screen (skipping the visit because they think they don't need a Pap). The visit is where that gets sorted.</p>
+        <span class="cost">Over- or under-screening</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> go?</h2>
+    <p class="sub">A well-woman visit is commonly recommended about once a year, but your age, your history, and what's going on with you all shape the picture — and your provider always sets the exact schedule. Answer four quick questions for general guidance on when to book, and a reminder of how the visit and the Pap differ. This is not medical advice.</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="stage">
+        <div class="q-label">1. What life stage are you in?</div>
+        <div class="pills">
+          <button class="pill" data-v="young">Teens / 20s</button>
+          <button class="pill" data-v="repro">Reproductive years (roughly 20s–40s)</button>
+          <button class="pill" data-v="meno">Perimenopause / menopause</button>
+        </div>
+        <div class="q-hint">Needs shift with age — from starting screenings and contraception, through fertility and pregnancy planning, into menopause and bone and heart health. The visit adapts to wherever you are.</div>
+      </div>
+      <div class="quiz-q" data-q="history">
+        <div class="q-label">2. Are you up to date on your Pap / HPV screening?</div>
+        <div class="pills">
+          <button class="pill" data-v="current">Yes — up to date and I know when</button>
+          <button class="pill" data-v="unsure">Not sure when I last had one</button>
+          <button class="pill" data-v="overdue">No — I know I'm overdue</button>
+        </div>
+        <div class="q-hint">Being overdue — or simply not knowing — is one of the best reasons to book, because the visit is exactly where your provider figures out what's due and gets you current.</div>
+      </div>
+      <div class="quiz-q" data-q="concern">
+        <div class="q-label">3. Anything you'd like to discuss?</div>
+        <div class="pills">
+          <button class="pill" data-v="symptom">Yes — a symptom or something worrying me</button>
+          <button class="pill" data-v="topic">Yes — contraception, fertility, periods or menopause</button>
+          <button class="pill" data-v="routine">No — just routine, feeling fine</button>
+        </div>
+        <div class="q-hint">Any new symptom is a reason to go sooner rather than wait for the routine visit. Everyday topics like contraception, periods, fertility, or menopause fit perfectly into the yearly check-in.</div>
+      </div>
+      <div class="quiz-q" data-q="last">
+        <div class="q-label">4. When was your last well-woman / gyn visit?</div>
+        <div class="pills">
+          <button class="pill" data-v="recent">Within the last year or so</button>
+          <button class="pill" data-v="while">A couple of years ago</button>
+          <button class="pill" data-v="long">Years ago, or never</button>
+        </div>
+        <div class="q-hint">If it's been a while — or you've never had one — this is a good moment to reconnect with a provider and get your screenings and any concerns back on a clear track.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — and what skipping it can cost</h2>
+    <p class="sub">The good news up front: a preventive well-woman visit is often covered as preventive care with no out-of-pocket cost — but coverage varies, so check your plan. Even paying out of pocket, it's modest, and low-cost options exist. What's genuinely expensive is the flip side: a serious problem that went undiagnosed until it was advanced. This is general information, not medical or financial advice.</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">common out-of-pocket for a preventive well-woman visit if it's covered as preventive care (check your plan — coverage varies)</div></div>
+        <div class="calc-stat"><div class="v">~$100–250</div><div class="l">typical out-of-pocket for the visit if it isn't covered — more once labs or extra tests are added</div></div>
+        <div class="calc-stat"><div class="v">sliding scale</div><div class="l">community health centers and clinics like Planned Parenthood offer low-cost, income-based care</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🩺 Covered preventive visit</span><span>often $0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 Low-cost / sliding-scale clinic visit</span><span>a little, income-based</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:9%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💵 Out-of-pocket visit with labs / tests</span><span>~$100–250+</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:20%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚠️ A problem caught late instead of early</span><span>much harder &amp; costlier to treat</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:70%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💔 An advanced, undiagnosed condition</span><span>the highest cost of all</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The comparison isn't really about dollars: <strong>a visit that's often free (and modest even when it isn't)</strong> against the cost — in health, treatment, and money — of a problem found late that could have been caught early. Between insurance coverage and sliding-scale clinics, cost rarely needs to be the reason to skip it. If it's a barrier for you, a community health center is a good place to start. (Coverage varies; confirm the details with your plan and provider.)</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep up your well-woman visit</h2>
+    <p class="sub">Keeping this on track is really five things: book the visit, know what's actually due (visit vs. Pap — they're different), prepare well, use the visit fully, and record your results so the next one is easy. Read the safety notes first — especially the difference between a yearly visit and a Pap — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read first — this is general information, not medical advice</h3>
+      <ul>
+        <li><strong>Your provider decides — not a web page.</strong> How often you need a visit and which screenings you need depends on your age, history, and risk. The general ranges here are only a starting point for a conversation, not a personal recommendation.</li>
+        <li><strong>Understand the difference: a yearly VISIT is not a yearly PAP.</strong> A well-woman visit is commonly recommended about once a year, but <em>cervical-cancer screening</em> (a Pap and/or HPV test) is typically every 3–5 years for average-risk people, and often starts around age 21. So don't assume you need a Pap every year — and don't skip the visit just because you don't need a Pap this year.</li>
+        <li><strong>Prepare for a Pap if one's planned.</strong> Try to schedule when you're not on your period, and many providers advise avoiding sex, douching, or vaginal products for about 24–48 hours beforehand — ask your clinic what they'd like. Not on your period yet? Still keep the visit; the provider can advise.</li>
+        <li><strong>Bring your history and your questions.</strong> Note the date of your last period and your last Pap, bring a list of your medications, and jot down anything you want to ask so it doesn't slip your mind in the moment.</li>
+        <li><strong>You're allowed to ask for comfort and privacy.</strong> You can ask for a chaperone to be present, and you can raise sensitive topics — sexual health, contraception, pain, mental health — this is normal, expected, and confidential.</li>
+        <li><strong>Don't skip out of embarrassment or because you feel fine.</strong> Providers do this every day and have heard it all. Feeling well is exactly when preventive care works best — many issues are silent early on.</li>
+        <li><strong>See a provider promptly — don't wait for the routine visit — for warning signs</strong> like abnormal or postmenopausal bleeding, severe pelvic pain, a breast lump or change, unusual discharge with other symptoms, or pain or bleeding during sex.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What to have ready</h3>
+    <div class="tools">
+      <span class="tool-chip">Your insurance card (or a clinic that fits your budget)</span>
+      <span class="tool-chip">Date of your last period</span>
+      <span class="tool-chip">Date of your last Pap / HPV test</span>
+      <span class="tool-chip">A list of your medications</span>
+      <span class="tool-chip">Your questions, written down</span>
+      <span class="tool-chip">Menstrual / health history notes</span>
+      <span class="tool-chip">A calendar or reminder for next time</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you go</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of booking the well-woman visit and marking it on a calendar so it stays on the schedule year after year">
+          <rect x="70" y="30" width="140" height="120" rx="10" fill="#fffdf8" stroke="#e9e2d8" stroke-width="4"/>
+          <rect x="70" y="30" width="140" height="28" rx="10" fill="#3e7c59"/>
+          <rect x="70" y="48" width="140" height="10" fill="#3e7c59"/>
+          <circle cx="96" cy="30" r="6" fill="#8a6a4f"/>
+          <circle cx="184" cy="30" r="6" fill="#8a6a4f"/>
+          <g fill="#cdd9de">
+            <rect x="84" y="70" width="18" height="14" rx="2"/>
+            <rect x="110" y="70" width="18" height="14" rx="2"/>
+            <rect x="136" y="70" width="18" height="14" rx="2"/>
+            <rect x="162" y="70" width="18" height="14" rx="2"/>
+            <rect x="84" y="90" width="18" height="14" rx="2"/>
+            <rect x="136" y="90" width="18" height="14" rx="2"/>
+            <rect x="162" y="90" width="18" height="14" rx="2"/>
+            <rect x="84" y="110" width="18" height="14" rx="2"/>
+            <rect x="110" y="110" width="18" height="14" rx="2"/>
+            <rect x="162" y="110" width="18" height="14" rx="2"/>
+          </g>
+          <circle cx="119" cy="97" r="15" fill="none" stroke="#e0a93d" stroke-width="4"/>
+          <path d="M112 97 l5 5 l8 -10" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="78" y="168" font-size="11" fill="#3e7c59" font-weight="700">book it &amp; put it on the calendar</text>
+        </svg>
+        <h4>Book it and put it on the calendar</h4>
+        <p>The whole habit starts with actually scheduling the visit and marking it down so it doesn't drift. If you're due or overdue, call now; if you're current, note when the next one lands so it never quietly slips a year.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram contrasting two schedules: a yearly well-woman visit on one row and a Pap or HPV test every three to five years on another, showing they are not the same">
+          <text x="20" y="46" font-size="12" fill="#33393b" font-weight="700">Visit</text>
+          <g fill="#3e7c59">
+            <circle cx="90" cy="42" r="7"/>
+            <circle cx="130" cy="42" r="7"/>
+            <circle cx="170" cy="42" r="7"/>
+            <circle cx="210" cy="42" r="7"/>
+            <circle cx="250" cy="42" r="7"/>
+          </g>
+          <text x="82" y="66" font-size="8.5" fill="#6b7376">every year</text>
+          <line x1="20" y1="88" x2="260" y2="88" stroke="#e9e2d8" stroke-width="2"/>
+          <text x="20" y="118" font-size="12" fill="#33393b" font-weight="700">Pap /</text>
+          <text x="20" y="132" font-size="12" fill="#33393b" font-weight="700">HPV</text>
+          <g fill="#e0a93d">
+            <circle cx="90" cy="120" r="7"/>
+            <circle cx="210" cy="120" r="7"/>
+          </g>
+          <text x="76" y="144" font-size="8.5" fill="#6b7376">every 3–5 years</text>
+          <text x="20" y="170" font-size="11" fill="#d9663f" font-weight="700">not the same schedule — ask what's due</text>
+        </svg>
+        <h4>Know your screening schedule</h4>
+        <p>A yearly visit and a Pap are two different clocks: the visit is commonly yearly, but Pap/HPV testing is usually every 3–5 years, depending on your age and test. At each visit, ask plainly: <em>what am I actually due for?</em></p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of preparing for the visit: a checklist with the last period date, last Pap date, a medication list, and questions written down">
+          <rect x="76" y="20" width="128" height="140" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="112" y="14" width="56" height="14" rx="5" fill="#8a6a4f"/>
+          <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M92 46 l5 5 l9 -10"/>
+            <path d="M92 74 l5 5 l9 -10"/>
+            <path d="M92 102 l5 5 l9 -10"/>
+            <path d="M92 130 l5 5 l9 -10"/>
+          </g>
+          <g stroke="#cdd9de" stroke-width="3" stroke-linecap="round">
+            <line x1="114" y1="48" x2="190" y2="48"/>
+            <line x1="114" y1="76" x2="190" y2="76"/>
+            <line x1="114" y1="104" x2="190" y2="104"/>
+            <line x1="114" y1="132" x2="176" y2="132"/>
+          </g>
+          <text x="82" y="176" font-size="10.5" fill="#3e7c59" font-weight="700">dates, meds &amp; questions ready</text>
+        </svg>
+        <h4>Prepare before you go</h4>
+        <p>Timing matters if a Pap is planned (not on your period; ask about avoiding sex or vaginal products for 24–48 hours first). Bring your last-period and last-Pap dates, your medication list, and your written questions.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of using the visit fully: a speech bubble listing topics to raise, such as contraception, periods, menopause, sexual health, and mental health">
+          <path d="M40 34 h200 a12 12 0 0 1 12 12 v70 a12 12 0 0 1 -12 12 h-150 l-30 24 v-24 h-20 a12 12 0 0 1 -12 -12 v-70 a12 12 0 0 1 12 -12 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+          <g fill="#3e7c59">
+            <circle cx="66" cy="60" r="4"/>
+            <circle cx="66" cy="82" r="4"/>
+            <circle cx="66" cy="104" r="4"/>
+          </g>
+          <g stroke="#8a6a4f" stroke-width="3" stroke-linecap="round">
+            <line x1="80" y1="60" x2="222" y2="60"/>
+            <line x1="80" y1="82" x2="210" y2="82"/>
+            <line x1="80" y1="104" x2="196" y2="104"/>
+          </g>
+          <text x="60" y="168" font-size="11" fill="#3e7c59" font-weight="700">raise anything — nothing's off-limits</text>
+        </svg>
+        <h4>Use the visit fully</h4>
+        <p>You're already there — make it count. Raise contraception, periods, fertility, menopause, sexual health, mental health, and any concern, however small. It's confidential, it's normal, and it's exactly what the appointment is for.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of recording your results and the date the next screening or visit is due, then scheduling the next visit">
+          <rect x="64" y="26" width="120" height="128" rx="8" fill="#fffdf8" stroke="#e9e2d8" stroke-width="4"/>
+          <rect x="64" y="26" width="120" height="24" rx="8" fill="#e0a93d"/>
+          <rect x="64" y="42" width="120" height="8" fill="#e0a93d"/>
+          <text x="74" y="43" font-size="10" fill="#fffdf8" font-weight="700">Results</text>
+          <g stroke="#cdd9de" stroke-width="3" stroke-linecap="round">
+            <line x1="78" y1="72" x2="170" y2="72"/>
+            <line x1="78" y1="90" x2="150" y2="90"/>
+          </g>
+          <rect x="78" y="108" width="92" height="30" rx="6" fill="#e3efe8"/>
+          <text x="86" y="122" font-size="9" fill="#3e7c59" font-weight="700">Next due:</text>
+          <text x="86" y="133" font-size="8.5" fill="#6b7376">on your calendar</text>
+          <g stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round" fill="none">
+            <circle cx="212" cy="96" r="26"/>
+            <path d="M212 80 l0 16 l11 8"/>
+          </g>
+          <text x="70" y="172" font-size="11" fill="#3e7c59" font-weight="700">log results &amp; the next-due date</text>
+        </svg>
+        <h4>Track results and next-due dates</h4>
+        <p>Before you leave, get your results and note when each screening and the next visit are due. Then schedule the next visit — or set a reminder — so nothing has to be remembered from scratch a year from now.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Well-woman visit progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Visit booked, screenings sorted, questions asked, results logged, and the next one on the calendar. That's the whole upkeep job — your provider keeps the specifics on track from here.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs to go now — don't wait for the routine visit</h2>
+    <p class="sub">The routine yearly visit keeps most things on schedule, but some symptoms shouldn't wait for it. If any of these show up, contact a provider promptly rather than holding out for your next appointment. This is general information, not medical advice — when in doubt, ask a professional.</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Abnormal bleeding.</strong> Bleeding between periods, after sex, or any bleeding after menopause is worth checking promptly rather than waiting — see a provider.</li>
+        <li><strong>Severe or new pelvic pain.</strong> Pain that's severe, sudden, or new isn't something to sit on until the next routine visit — get it looked at.</li>
+        <li><strong>A breast lump or change.</strong> A new lump, a change in shape or skin, or nipple changes should be evaluated promptly, not filed away for the annual visit.</li>
+        <li><strong>Unusual discharge with other symptoms.</strong> Discharge that's changed and comes with itching, odor, pain, or fever is worth a prompt check for infection or other causes.</li>
+        <li><strong>Pain or bleeding during sex.</strong> This is common but not something to just live with — a provider can help find the cause and options.</li>
+        <li><strong>You're overdue for screening.</strong> If you know you've missed a Pap, HPV test, or other recommended screening, that alone is a good reason to book — the visit is where you get current again.</li>
+        <li><strong>Anything that's worrying you.</strong> You don't need to justify a visit or wait for a symptom to become severe. If something feels off, that's reason enough to reach out — a provider would rather hear from you early.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I have a well-woman / gyn visit?</summary>
+      <p>A well-woman visit is commonly recommended about once a year, and it's a good default to build the habit around — but the right frequency for you depends on your age, your health history, and any risk factors, so your provider is the one who sets it. Some people are seen more often because of a specific condition, pregnancy, contraception follow-up, or something being monitored; others in a stable stretch might be advised differently. The key point is to have a provider you check in with regularly, so your screenings stay on schedule and you have a place to raise anything. This is general information, not medical advice — ask your provider what's right for you.</p>
+    </details>
+    <details>
+      <summary>Is a well-woman visit the same as a Pap smear?</summary>
+      <p>No — and this is the thing most people get mixed up. A well-woman visit is the broader check-in: a conversation about your health, blood-pressure and general checks, tracking your screenings, and space to discuss contraception, periods, menopause, sexual health, and any concerns. A Pap smear (often paired with an HPV test) is one specific screening for cervical-cancer risk. They run on different schedules: the visit is commonly yearly, while the Pap/HPV test is usually only needed every 3–5 years for average-risk people. So you can absolutely have a yearly visit that doesn't include a Pap — and you shouldn't skip the visit just because you're not due for a Pap this year. Your provider decides what's due at each visit.</p>
+    </details>
+    <details>
+      <summary>How often do I actually need a Pap or HPV test?</summary>
+      <p>For average-risk people, cervical-cancer screening is typically done every 3–5 years, and it often starts around age 21 — the exact interval depends on your age and which test is used (a Pap alone, an HPV test, or both together). That's a big change from the old "every year" habit many people still assume. But averages aren't personal advice: if you've had abnormal results, certain risk factors, a weakened immune system, or specific health history, your provider may recommend a different, closer schedule — or, in some cases, a different plan entirely. The reliable answer is to ask your provider at your visit: <em>what cervical-cancer screening am I due for, and when's the next one?</em> This is general information, not medical advice.</p>
+    </details>
+    <details>
+      <summary>How do I prepare for the visit — or for a Pap?</summary>
+      <p>A little prep makes the visit smoother. Bring the date of your last period and your last Pap, a list of your medications, and your questions written down so nothing slips your mind. If a Pap is planned, try to schedule it for a day you're not on your period, and many providers advise avoiding sex, douching, or vaginal products for roughly 24–48 hours beforehand — call your clinic and ask what they prefer. It also helps to note any symptoms or changes you've noticed since last time. Remember you can ask for a chaperone to be present, and that sensitive topics — contraception, sexual health, pain, mental health — are normal and confidential. If your timing doesn't work out for a Pap, keep the visit anyway; your provider can advise on next steps.</p>
+    </details>
+    <details>
+      <summary>Do I still need visits after menopause or a hysterectomy?</summary>
+      <p>Often, yes — but it depends on your situation, so ask your provider. Menopause doesn't end your need for preventive care: bone health, heart health, breast health, and other screenings still matter, and the visit remains your place to discuss symptoms and concerns. After a hysterectomy it varies with the type of surgery and why it was done — some people no longer need cervical-cancer screening while others still do, and there's usually still a role for a general well-woman check. Because the answer really is individual, don't assume you're "done" with visits after either milestone — confirm with your provider what ongoing care makes sense for you. This is general information, not medical advice.</p>
+    </details>
+    <details>
+      <summary>What symptoms mean I should go now instead of waiting?</summary>
+      <p>Contact a provider promptly — rather than waiting for your routine visit — for warning signs like abnormal bleeding (between periods, after sex, or any bleeding after menopause), severe or new pelvic pain, a breast lump or other breast change, unusual discharge accompanied by symptoms like itching, odor, pain, or fever, or pain or bleeding during sex. Being overdue for a recommended screening is also a reason to book. And you never need a dramatic symptom to justify reaching out — if something feels off or is worrying you, that's reason enough. A provider would much rather see you early than have you wait. This is general information, not a diagnosis; when in doubt, ask a professional.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The visit keeps your screenings on track — and the Pap schedule is easy to get wrong.</h2>
+        <p>A yearly visit, a Pap every few years, a mammogram on its own clock — it's exactly the kind of every-few-years timing that's easy to lose track of. Let Upkeep Ledger hold your visit date and next-due dates, right alongside the rest of your preventive care, so nothing quietly falls overdue. (Not medical advice — your provider sets your schedule.)</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=gyn-exam&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>This visit fits with your other preventive care — an <a href="annual-blood-work.html">annual blood work</a> panel, a <a href="mammogram.html">mammogram</a> on your doctor's schedule, and your <a href="physical-exam.html">annual physical</a>.</p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=gyn-exam&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; coverage, clinics, and prices vary, and your plan and provider outrank this guide.</p>
+    <p>This guide is general information for planning and education only — it is <strong>not medical advice</strong>, diagnosis, or a substitute for care from a qualified professional. Your doctor sets your schedule and screenings.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { stage: null, history: null, concern: null, last: null };
+
+  var FREQ_LABEL = {
+    12: "Once a year",
+    24: "Every 2 years",
+    36: "Every 3 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 12;
+    var soon = false;
+
+    /* Stage — age / life stage */
+    if (s.stage === "young") {
+      reasons.push("In your teens and 20s, a well-woman visit is where things like contraception, periods, sexual health, and the start of cervical-cancer screening (often around age 21) get set up — a yearly check-in is a good habit to build early.");
+    } else if (s.stage === "meno") {
+      soon = true;
+      reasons.push("Around perimenopause and menopause, the visit shifts toward symptoms, bone and heart health, and breast screening — it stays valuable every year, and it's a good time to make sure you're seen.");
+    } else {
+      reasons.push("Through your reproductive years, a yearly visit keeps contraception, screenings, and any fertility or pregnancy planning on track — the once-a-year default is written for exactly this stretch.");
+    }
+
+    /* History — screening up to date */
+    if (s.history === "overdue") {
+      soon = true;
+      reasons.push("Since you know you're overdue for screening, booking now matters — the visit is exactly where your provider works out what's due and gets you current again.");
+    } else if (s.history === "unsure") {
+      soon = true;
+      reasons.push("Not knowing when your last Pap or HPV test was is itself a reason to go — a provider can check your records and sort out what, if anything, you're due for.");
+    } else {
+      reasons.push("Being up to date on your Pap/HPV screening is great — keep the yearly visit anyway, because the visit and the Pap run on different schedules and the visit does far more than that one test.");
+    }
+
+    /* Concern — symptom or topic */
+    if (s.concern === "symptom") {
+      soon = true;
+      months = 12;
+      reasons.push("A symptom or something that's worrying you is a reason to be seen sooner rather than later — don't wait for a routine visit; contact a provider promptly, and if it's a warning sign like abnormal bleeding or severe pain, go now.");
+    } else if (s.concern === "topic") {
+      reasons.push("Everyday topics like contraception, fertility, periods, or menopause fit naturally into the yearly visit — bring your questions and use the appointment fully.");
+    } else {
+      reasons.push("Even feeling fine with nothing specific to raise, the routine yearly visit is worth keeping — a lot of what it catches is silent early on.");
+    }
+
+    /* Last visit — recency */
+    if (s.last === "long") {
+      soon = true;
+      reasons.push("If it's been years since your last visit — or you've never had one — this is a good moment to reconnect with a provider and get your screenings and any concerns onto a clear track.");
+    } else if (s.last === "while") {
+      soon = true;
+      reasons.push("A couple of years since your last visit is a bit of a gap for a check-in that's commonly yearly — worth booking to get back on rhythm.");
+    } else {
+      reasons.push("Having been seen within the last year, you're on a good rhythm — note when the next visit is due so it stays on the calendar.");
+    }
+
+    /* Closing note — always defers to the provider and clarifies visit vs Pap */
+    var note;
+    if (s.concern === "symptom") {
+      note = "<strong>Don't wait on a symptom.</strong> A routine schedule is for staying well when nothing's wrong — anything new or worrying deserves a prompt call to a provider, separate from your yearly visit. And remember: <em>your provider sets your exact screening schedule.</em>";
+    } else if (s.history === "overdue" || s.history === "unsure") {
+      note = "<strong>Visit ≠ Pap.</strong> Being overdue (or unsure) is a great reason to book — but don't assume that means a Pap every year. A well-woman visit is commonly yearly, while a Pap/HPV test is usually every 3–5 years. Your provider will tell you what's actually due.";
+    } else {
+      note = "<strong>Keep the visit even when the Pap isn't due.</strong> A yearly visit does far more than a Pap, and the Pap is usually only every 3–5 years — so the two aren't the same schedule. Either way, <em>your provider sets the exact timing</em> based on your age, history, and risk.";
+    }
+
+    return { months: months, reasons: reasons, note: note, soon: soon };
+  }
+
+  function onQuizChange() {
+    if (!quizState.stage || !quizState.history || !quizState.concern || !quizState.last) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "General guidance: aim for a well-woman visit " + FREQ_LABEL[r.months].toLowerCase()
+      + (r.soon ? " — and it looks worth booking one soon" : "");
+    document.getElementById("resultBody").innerHTML =
+      "This is general information, not medical advice — <strong>your provider sets your exact visit and screening schedule</strong> based on your age, history, and risk. Here's what's shaping the guidance for you:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Book the visit", text: "Find a provider or clinic that fits you", note: "A gynecologist, a family or primary-care provider, or a community health center (like Planned Parenthood) can all do a well-woman visit. If cost is a worry, ask about sliding-scale, income-based care — it exists." },
+    { phase: "Book the visit", text: "Call and schedule the well-woman visit", note: "If you're due or overdue, book now. Ask when scheduling whether a Pap is expected this time, so you can time it away from your period and follow any pre-visit prep." },
+    { phase: "Book the visit", text: "Put it on your calendar with a reminder", note: "A booked visit only helps if you don't forget it. Add it to your calendar, and note roughly when the next one should land so it never quietly slips a year." },
+    { phase: "Know what's due", text: "Ask what screenings you're actually due for", note: "A yearly visit is not a yearly Pap. Ask your provider plainly what's due for you — cervical-cancer screening (Pap/HPV) is typically every 3–5 years, while other checks may be yearly. Your provider decides." },
+    { phase: "Know what's due", text: "Note your last Pap / HPV date (if you know it)", note: "Knowing when you last had a Pap or HPV test helps your provider work out what's due. If you're not sure, that's fine — they can often check records; just don't skip the visit over it." },
+    { phase: "Prepare", text: "Time it right and follow any pre-Pap guidance", note: "If a Pap is planned, aim for a day you're not on your period, and many providers advise avoiding sex, douching, or vaginal products for about 24–48 hours beforehand — ask your clinic what they prefer." },
+    { phase: "Prepare", text: "Gather your history, meds, and questions", note: "Bring the date of your last period, a list of your medications, notes on any symptoms or changes, and your questions written down so nothing gets forgotten in the moment." },
+    { phase: "Use the visit & schedule next", text: "Raise your concerns and any sensitive topics", note: "Contraception, periods, fertility, menopause, sexual health, pain, mental health, any worry — it's all normal and confidential here. You can also ask for a chaperone to be present. Don't hold back out of embarrassment." },
+    { phase: "Use the visit & schedule next", text: "Get and record your results and next-due dates", note: "Before you leave, find out your results (or how you'll get them) and when each screening and the next visit are due. Write it down — this is exactly the kind of timing that's easy to lose." },
+    { phase: "Use the visit & schedule next", text: "Schedule or set a reminder for the next visit", note: "Book the next visit if you can, or set a reminder for when it's due. Keeping the visit on the calendar is the whole upkeep job — your provider handles the specifics." },
+    { phase: "Use the visit & schedule next", text: "Know the warning signs to go sooner", note: "Between routine visits, contact a provider promptly for abnormal or postmenopausal bleeding, severe pelvic pain, a breast lump or change, unusual discharge with other symptoms, or pain/bleeding during sex. Don't wait for the yearly visit." }
+  ];
+
+  var LS_KEY = "upkeepguides:gyn-exam:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

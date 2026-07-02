@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep up date night and relationship check-ins — UpkeepGuides.com</title>
+<meta name="description" content="Keep a relationship healthy with two simple habits: a regular logistics-free date and a short, kind check-in. Why it matters, how often, ground rules, and a checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Keep up date night and relationship check-ins — UpkeepGuides.com">
+<meta property="og:description" content="Keep a relationship healthy with two simple habits: a regular logistics-free date and a short, kind check-in. Why it matters, how often, ground rules, and a checklist.">
+<meta property="og:url" content="https://upkeepguides.com/date-night-check-in.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keep up date night and relationship check-ins — UpkeepGuides.com">
+<meta name="twitter:description" content="Keep a relationship healthy with two simple habits: a regular logistics-free date and a short, kind check-in. Why it matters, how often, ground rules, and a checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Every 2 weeks</span>
+      <h1>Keep Up Date Night &amp; Relationship Check-Ins</h1>
+      <p class="lede">It happens so gradually you barely notice: work, kids, chores, and logistics quietly crowd out the time you used to spend just being together, until one day you're roommates running a household instead of partners. The fix isn't grand — it's two small habits kept on the calendar. A regular <em>date</em>: time together that is not about logistics. And a short <em>check-in</em>: a calm "how are we doing?" conversation. Protected the way you'd protect any maintenance, they head off the slow drift that's so much harder to repair once it sets in. Consistency beats grandeur every time — a walk and a real conversation does more than a fancy dinner you keep cancelling.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ A date <em>every ~2 weeks</em></span>
+        <span class="chip">💬 A check-in <em>weekly-ish</em></span>
+        <span class="chip">🌱 Prevents <em>slow drift</em></span>
+        <span class="chip">💸 Can cost <em>$0</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a cozy date night at home: two people sit across a small table talking warmly over two mugs, a phone lies face-down and set aside off the table, and on the wall a calendar shows a recurring date marked with a heart, with a plant and soft lamp light for warmth">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall calendar with a recurring heart date -->
+      <rect x="392" y="40" width="132" height="118" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="392" y="40" width="132" height="26" rx="10" fill="#3e7c59"/>
+      <rect x="392" y="58" width="132" height="8" fill="#3e7c59"/>
+      <text x="458" y="59" font-size="12" fill="#fffdf8" font-weight="700" text-anchor="middle">DATE NIGHT</text>
+      <!-- calendar rings -->
+      <rect x="416" y="30" width="6" height="18" rx="3" fill="#8a6a4f"/>
+      <rect x="494" y="30" width="6" height="18" rx="3" fill="#8a6a4f"/>
+      <!-- calendar grid dots -->
+      <g fill="#d8cfbe">
+        <circle cx="410" cy="82" r="3.2"/><circle cx="430" cy="82" r="3.2"/><circle cx="450" cy="82" r="3.2"/><circle cx="470" cy="82" r="3.2"/><circle cx="490" cy="82" r="3.2"/><circle cx="510" cy="82" r="3.2"/>
+        <circle cx="410" cy="104" r="3.2"/><circle cx="430" cy="104" r="3.2"/><circle cx="450" cy="104" r="3.2"/><circle cx="490" cy="104" r="3.2"/><circle cx="510" cy="104" r="3.2"/>
+        <circle cx="410" cy="126" r="3.2"/><circle cx="430" cy="126" r="3.2"/><circle cx="450" cy="126" r="3.2"/><circle cx="490" cy="126" r="3.2"/><circle cx="510" cy="126" r="3.2"/>
+      </g>
+      <!-- recurring heart marks on a repeating day -->
+      <path d="M470 100 q-4 -6 -10 -3 q-5 3 0 9 l10 9 l10 -9 q5 -6 0 -9 q-6 -3 -10 3 z" fill="#d9663f"/>
+      <path d="M470 122 q-4 -6 -10 -3 q-5 3 0 9 l10 9 l10 -9 q5 -6 0 -9 q-6 -3 -10 3 z" fill="#d9663f" opacity="0.45"/>
+
+      <!-- hanging lamp for warmth -->
+      <line x1="150" y1="20" x2="150" y2="52" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M128 52 h44 l-8 26 h-28 z" fill="#e0a93d"/>
+      <ellipse cx="150" cy="80" rx="20" ry="6" fill="#faf0da" opacity="0.7"/>
+
+      <!-- small table -->
+      <rect x="150" y="300" width="220" height="16" rx="6" fill="#8a6a4f"/>
+      <rect x="168" y="316" width="12" height="70" rx="4" fill="#7a5c44"/>
+      <rect x="340" y="316" width="12" height="70" rx="4" fill="#7a5c44"/>
+
+      <!-- LEFT person -->
+      <ellipse cx="120" cy="248" rx="26" ry="27" fill="#e8b48f"/>
+      <path d="M94 240 q26 -34 52 0 q2 -30 -26 -32 q-28 2 -26 32 z" fill="#5b4636"/>
+      <!-- warm smile -->
+      <path d="M110 254 q10 8 20 0" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="112" cy="244" r="2.2" fill="#5b4636"/>
+      <circle cx="128" cy="244" r="2.2" fill="#5b4636"/>
+      <!-- body / shoulders -->
+      <path d="M84 316 q0 -40 36 -44 q36 4 36 44 z" fill="#3e7c59"/>
+
+      <!-- RIGHT person -->
+      <ellipse cx="300" cy="248" rx="26" ry="27" fill="#d99c73"/>
+      <path d="M274 244 q10 -36 52 -6 q4 -32 -26 -34 q-30 4 -26 40 z" fill="#8a6a4f"/>
+      <!-- warm smile -->
+      <path d="M290 254 q10 8 20 0" stroke="#6b4a34" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="292" cy="244" r="2.2" fill="#6b4a34"/>
+      <circle cx="308" cy="244" r="2.2" fill="#6b4a34"/>
+      <!-- body / shoulders -->
+      <path d="M264 316 q0 -40 36 -44 q36 4 36 44 z" fill="#c96f4a"/>
+
+      <!-- two mugs on the table -->
+      <path d="M196 276 h34 l-4 22 h-26 z" fill="#7fb3c8"/>
+      <path d="M230 280 q14 2 12 12 q-2 8 -12 6" fill="none" stroke="#5e9a78" stroke-width="3"/>
+      <ellipse cx="213" cy="276" rx="17" ry="4" fill="#9cc3d4"/>
+      <!-- steam -->
+      <path d="M208 268 q-4 -8 2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M218 268 q4 -8 -2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <path d="M290 276 h34 l-4 22 h-26 z" fill="#e0a93d"/>
+      <path d="M324 280 q14 2 12 12 q-2 8 -12 6" fill="none" stroke="#d98e3b" stroke-width="3"/>
+      <ellipse cx="307" cy="276" rx="17" ry="4" fill="#f0c877"/>
+      <!-- steam -->
+      <path d="M302 268 q-4 -8 2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M312 268 q4 -8 -2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <!-- speech / connection hearts between them -->
+      <path d="M212 208 q-4 -6 -10 -3 q-5 3 0 9 l10 9 l10 -9 q5 -6 0 -9 q-6 -3 -10 3 z" fill="#e0a93d" opacity="0.8"/>
+      <path d="M244 190 q-3 -5 -8 -2 q-4 2 0 7 l8 7 l8 -7 q4 -5 0 -7 q-5 -3 -8 2 z" fill="#5e9a78" opacity="0.8"/>
+
+      <!-- phone set FACE-DOWN and aside, off the table -->
+      <rect x="60" y="380" width="46" height="26" rx="6" fill="#5b4636" transform="rotate(-8 83 393)"/>
+      <rect x="66" y="384" width="34" height="18" rx="3" fill="#4a3a2c" transform="rotate(-8 83 393)"/>
+      <circle cx="72" cy="399" r="1.8" fill="#8a6a4f" transform="rotate(-8 83 393)"/>
+      <text x="52" y="418" font-size="10.5" fill="#6b7376">phone away</text>
+
+      <!-- plant for warmth -->
+      <path d="M470 356 h30 l-4 30 h-22 z" fill="#c96f4a"/>
+      <path d="M484 356 q-4 -24 -14 -32" stroke="#3e7c59" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <path d="M484 356 q4 -22 16 -28" stroke="#3e7c59" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="467" cy="320" rx="8" ry="12" fill="#5e9a78" transform="rotate(-30 467 320)"/>
+      <ellipse cx="502" cy="326" rx="8" ry="12" fill="#3e7c59" transform="rotate(28 502 326)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Relationships run on attention, and attention is exactly what a busy life is best at stealing. The erosion is so slow you don't feel it happening — you're just tired, the calendar is full, and somewhere along the way the two of you stopped being a couple and started being co-managers of a household. Here's what the drift actually costs, and why two small protected habits are the antidote:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 30 C6 22 4 13 10 9 c4 -3 7 0 8 3 c1 -3 4 -6 8 -3 c6 4 4 13 -8 21 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M13 20 l2 2 M22 15 l1.5 1.5" stroke="#d9663f" stroke-width="1.8" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Connection erodes without attention</h3>
+        <p>A busy life quietly crowds out couple time until you're just co-managing a household — sharing a calendar, a mortgage, and a to-do list, but not much of each other. The drift is gradual and easy to miss, which is exactly what makes it dangerous.</p>
+        <span class="cost">Slowly becoming roommates</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="9" width="24" height="16" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M12 25 l-3 5 l8 -5 z" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" stroke-linejoin="round"/>
+          <line x1="11" y1="15" x2="25" y2="15" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+          <line x1="11" y1="19" x2="21" y2="19" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Logistics aren't connection</h3>
+        <p>If all your talk is chores, schedules, and the kids, the relationship slowly starves — you're communicating constantly but never actually connecting. A date with <em>no</em> logistics allowed is what feeds the part of you that fell for each other in the first place.</p>
+        <span class="cost">Talking, but never connecting</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 5 l4 8 l9 1 l-6.5 6 l1.5 9 L18 25 l-8 4 l1.5 -9 L5 14 l9 -1 z" fill="none" stroke="#e0a93d" stroke-width="2" stroke-linejoin="round" opacity="0.6"/>
+          <circle cx="18" cy="18" r="7" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.2"/>
+          <line x1="18" y1="14" x2="18" y2="19" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="18" cy="22" r="1.4" fill="#d9663f"/>
+        </svg></div>
+        <h3>Small issues compound</h3>
+        <p>Unspoken resentments and unmet needs don't disappear — they quietly stack up until something small sets off something big. A regular, calm check-in surfaces them early, while they're still a five-minute conversation instead of a crisis.</p>
+        <span class="cost">Little things become big blowups</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="24" height="22" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="6" y1="14" x2="30" y2="14" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="12" y1="5" x2="12" y2="11" stroke="#8a6a4f" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="24" y1="5" x2="24" y2="11" stroke="#8a6a4f" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M18 26 c-4 -3 -5 -6 -3 -8 c1.5 -1.5 3 0 3 1.5 c0 -1.5 1.5 -3 3 -1.5 c2 2 1 5 -3 8 z" fill="#d9663f"/>
+        </svg></div>
+        <h3>Ritual beats spontaneity</h3>
+        <p>"We'll do it when we have time" is how it never happens — free time in a busy life gets eaten before it arrives. A protected, recurring slot on the calendar is boring on paper and exactly what keeps a relationship alive in practice.</p>
+        <span class="cost">"Someday" that never comes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often do <em>you</em> need it?</h2>
+    <p class="sub">About every two weeks for a real date is a solid default, with a quick weekly check-in to keep small things small. But the answer shifts with your life: a slammed, drifting, kid-heavy season needs more frequent, fiercely-protected time, while a calm, close, more-flexible stretch can lean on the lighter end. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="load">
+        <div class="q-label">1. How full is life right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="slammed">Slammed — new baby, big jobs, caregiving</button>
+          <button class="pill" data-v="normal">Normal busy, but manageable</button>
+          <button class="pill" data-v="calm">Fairly calm, plenty of breathing room</button>
+        </div>
+        <div class="q-hint">The busier and more stretched you are, the more couple time gets crowded out by default — which is exactly when protecting it on purpose matters most, not least.</div>
+      </div>
+      <div class="quiz-q" data-q="connection">
+        <div class="q-label">2. How connected do you feel lately?</div>
+        <div class="pills">
+          <button class="pill" data-v="drifting">Drifting, bickering, or roommate-mode</button>
+          <button class="pill" data-v="okay">Fine, but could be closer</button>
+          <button class="pill" data-v="close">Close and connected</button>
+        </div>
+        <div class="q-hint">If you're feeling like roommates or snapping at each other over small stuff, that's the signal to reconnect more often and get a gentle check-in on the calendar soon.</div>
+      </div>
+      <div class="quiz-q" data-q="logistics">
+        <div class="q-label">3. How much do kids and schedules eat your time?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">A lot — kids and packed schedules</button>
+          <button class="pill" data-v="some">Some — a bit of juggling</button>
+          <button class="pill" data-v="free">Not much — we have freedom</button>
+        </div>
+        <div class="q-hint">Kids and tight schedules make couple time both scarcer and more essential — the more logistics fill your days, the more you need protected time that has none.</div>
+      </div>
+      <div class="quiz-q" data-q="habit">
+        <div class="q-label">4. Do you already protect couple time?</div>
+        <div class="pills">
+          <button class="pill" data-v="cancel">No — it keeps getting cancelled</button>
+          <button class="pill" data-v="loose">Sometimes, but it's hit or miss</button>
+          <button class="pill" data-v="solid">Yes — we protect it well</button>
+        </div>
+        <div class="q-hint">If dates keep getting bumped, the habit hasn't taken hold yet — starting with a more frequent, firmly-protected rhythm helps it stick before life crowds it out again.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of letting it slide</h2>
+    <p class="sub">Here's the good news: this maintenance is basically free. A walk, a coffee, cooking together at home after the kids are down — none of it costs a thing, and consistency matters far more than the price tag. The occasional paid date or a babysitter is worth budgeting for, but set even that against the real cost of a relationship left to drift: the emotional toll, and — at the far end — the very literal cost of a breakup or a crisis you have to climb back out of.</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">a walk, a coffee at home, or cooking together after bedtime — the best dates are often the free ones</div></div>
+        <div class="calc-stat"><div class="v">~1–2 hrs</div><div class="l">a real date every couple of weeks, plus a 10–15 minute check-in — small time, outsized payoff</div></div>
+        <div class="calc-stat"><div class="v bad">$15–20/hr</div><div class="l">a babysitter for an out-of-the-house date — worth flagging, but cheap next to the alternative</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🚶 A walk, a coffee, cooking together at home</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🍽️ An occasional dinner out or paid date</span><span>$40–100</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧑‍🍼 A babysitter so you can get out now and then</span><span>$50–80 a night</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:22%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💬 Couples therapy once you're already in crisis</span><span>$100–250 a session</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💔 A breakup or divorce after a long, quiet drift</span><span>Immense — emotional &amp; financial</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free walk-and-talk every couple of weeks and a ten-minute check-in</strong> against the slow, expensive unwinding of a relationship that drifted too far to easily repair. Protecting couple time is the cheapest, highest-return maintenance there is — and the one a busy life is quickest to cancel.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep date night and check-ins going</h2>
+    <p class="sub">The whole thing rests on two habits done consistently: a protected, logistics-free <em>date</em>, and a short, kind <em>check-in</em>. Read the ground rules first — especially "protect the time," "make the date logistics-free," and "keep the check-in kind" — then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>💛 Make it work — ground rules for a check-in (and date) that actually helps</h3>
+      <ul>
+        <li><strong>Protect the time — put it on the calendar as a real recurring commitment.</strong> Treat it like an appointment you don't cancel, and line up childcare in advance if you need it. "When we have time" never arrives; a protected slot does.</li>
+        <li><strong>Make the date logistics-free.</strong> No chore lists, no scheduling, no problem-solving the household. The date is for enjoying each other — do something you both like. Save the logistics for a different time entirely.</li>
+        <li><strong>Phones away — face-down or in another room.</strong> Presence is the whole point. A phone on the table, even face-down, splits your attention; put it out of reach so you're actually there with each other.</li>
+        <li><strong>For the check-in, stay kind and curious — not a grievance dump.</strong> Try gentle prompts like "what's felt good between us lately? what do you need more of? anything on your mind?" Use "I feel…" rather than "you always…", listen to understand rather than to win, and take turns.</li>
+        <li><strong>Don't ambush your partner.</strong> Agree on the check-in together and pick a calm moment — springing a Serious Talk on someone who's exhausted or distracted rarely goes well. A shared, expected time lets you both show up ready.</li>
+        <li><strong>Keep it short and end on appreciation.</strong> A check-in doesn't need to be long or heavy — a few minutes is plenty. Close by naming something you're genuinely grateful for in your partner. It doesn't have to be fancy or expensive; consistency beats grandeur.</li>
+        <li><strong>Know when it's bigger than a check-in.</strong> If the same serious issues keep coming up, you're stuck in conflict, or there's contempt or resentment you can't shift, a couples therapist is a normal, helpful step — not a last resort. And if there is any abuse, or you ever feel unsafe, please reach out to a domestic-violence resource or your local emergency number.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What helps</h3>
+    <div class="tools">
+      <span class="tool-chip">A shared calendar with a recurring slot</span>
+      <span class="tool-chip">Childcare lined up (if you need it)</span>
+      <span class="tool-chip">A few go-to check-in prompts</span>
+      <span class="tool-chip">Phones parked out of reach</span>
+      <span class="tool-chip">An activity you both enjoy</span>
+      <span class="tool-chip">Something you can do cheap or at home</span>
+      <span class="tool-chip">A little willingness to listen first</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a calendar with a recurring date slot marked by a heart, locked in and protected like an appointment you don't cancel">
+          <rect x="70" y="26" width="140" height="128" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <rect x="70" y="26" width="140" height="26" rx="8" fill="#3e7c59"/>
+          <rect x="70" y="44" width="140" height="8" fill="#3e7c59"/>
+          <rect x="94" y="16" width="6" height="18" rx="3" fill="#8a6a4f"/>
+          <rect x="180" y="16" width="6" height="18" rx="3" fill="#8a6a4f"/>
+          <g fill="#d8cfbe">
+            <circle cx="90" cy="72" r="3.4"/><circle cx="112" cy="72" r="3.4"/><circle cx="134" cy="72" r="3.4"/><circle cx="156" cy="72" r="3.4"/><circle cx="190" cy="72" r="3.4"/>
+            <circle cx="90" cy="98" r="3.4"/><circle cx="112" cy="98" r="3.4"/><circle cx="156" cy="98" r="3.4"/><circle cx="178" cy="98" r="3.4"/><circle cx="190" cy="98" r="3.4"/>
+            <circle cx="90" cy="124" r="3.4"/><circle cx="112" cy="124" r="3.4"/><circle cx="156" cy="124" r="3.4"/><circle cx="178" cy="124" r="3.4"/><circle cx="190" cy="124" r="3.4"/>
+          </g>
+          <path d="M134 96 q-5 -7 -12 -3 q-6 4 0 11 l12 11 l12 -11 q6 -7 0 -11 q-7 -4 -12 3 z" fill="#d9663f"/>
+          <path d="M134 122 q-5 -7 -12 -3 q-6 4 0 11 l12 11 l12 -11 q6 -7 0 -11 q-7 -4 -12 3 z" fill="#d9663f" opacity="0.45"/>
+          <text x="80" y="170" font-size="11" fill="#3e7c59" font-weight="700">recurring — don't cancel it</text>
+        </svg>
+        <h4>Schedule &amp; protect it</h4>
+        <p>Put a recurring date and check-in on the shared calendar and line up childcare in advance. Then treat it like an appointment you don't cancel — protecting the time is the single thing that makes all the rest possible.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a logistics-free date: two mugs on a small table with a phone set face-down and aside, and a crossed-out chore list, meaning no logistics and no phones">
+          <rect x="52" y="120" width="176" height="12" rx="5" fill="#8a6a4f"/>
+          <!-- two mugs -->
+          <path d="M96 96 h30 l-3 20 h-24 z" fill="#7fb3c8"/>
+          <path d="M126 100 q12 2 10 11 q-2 7 -10 5" fill="none" stroke="#5e9a78" stroke-width="3"/>
+          <ellipse cx="111" cy="96" rx="15" ry="3.5" fill="#9cc3d4"/>
+          <path d="M150 96 h30 l-3 20 h-24 z" fill="#e0a93d"/>
+          <path d="M180 100 q12 2 10 11 q-2 7 -10 5" fill="none" stroke="#d98e3b" stroke-width="3"/>
+          <ellipse cx="165" cy="96" rx="15" ry="3.5" fill="#f0c877"/>
+          <!-- phone face down and aside -->
+          <rect x="196" y="128" width="40" height="22" rx="5" fill="#5b4636" transform="rotate(-8 216 139)"/>
+          <rect x="201" y="132" width="30" height="14" rx="3" fill="#4a3a2c" transform="rotate(-8 216 139)"/>
+          <!-- crossed-out chore list -->
+          <rect x="40" y="34" width="70" height="52" rx="5" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+          <line x1="50" y1="46" x2="98" y2="46" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="50" y1="56" x2="90" y2="56" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="50" y1="66" x2="94" y2="66" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="34" y1="30" x2="116" y2="90" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+          <text x="112" y="166" font-size="11" fill="#3e7c59" font-weight="700">no logistics · phones away</text>
+        </svg>
+        <h4>Make the date logistics-free &amp; phone-free</h4>
+        <p>On the date, ban chores, schedules, and household problem-solving — and put the phones away, face-down or in another room. Do something you both actually enjoy. Presence and fun, not efficiency, are the whole point.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of a gentle check-in shown as two speech bubbles with warm prompts, using I-feel language and real listening">
+          <path d="M40 40 h100 q10 0 10 10 v34 q0 10 -10 10 h-70 l-16 16 v-16 h-4 q-10 0 -10 -10 v-34 q0 -10 10 -10 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="56" y1="58" x2="128" y2="58" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="56" y1="70" x2="116" y2="70" stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M240 96 h-90 q-10 0 -10 10 v30 q0 10 10 10 h60 l16 16 v-16 h14 q10 0 10 -10 v-30 q0 -10 -10 -10 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2.4"/>
+          <line x1="156" y1="114" x2="228" y2="114" stroke="#d98e3b" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="156" y1="126" x2="214" y2="126" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="34" y="172" font-size="11" fill="#3e7c59" font-weight="700">"what's good? what do you need?"</text>
+        </svg>
+        <h4>Do a gentle check-in</h4>
+        <p>Ask "what's felt good between us? what do you need more of? anything on your mind?" Use "I feel…" instead of "you always…", and listen to understand rather than to win. Take turns — it's a conversation, not a verdict.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of ending on appreciation, shown as a heart with a warm glow and a thumbs-up, keeping it kind">
+          <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.7">
+            <line x1="140" y1="24" x2="140" y2="38"/>
+            <line x1="100" y1="34" x2="108" y2="46"/>
+            <line x1="180" y1="34" x2="172" y2="46"/>
+            <line x1="74" y1="66" x2="88" y2="72"/>
+            <line x1="206" y1="66" x2="192" y2="72"/>
+          </g>
+          <path d="M140 138 C104 112 96 84 112 72 c11 -8 22 -1 28 10 c6 -11 17 -18 28 -10 c16 12 8 40 -28 66 z" fill="#fbe9e1" stroke="#d9663f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M126 96 l8 8 l18 -18" stroke="#d9663f" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="70" y="168" font-size="11" fill="#3e7c59" font-weight="700">kind — end on gratitude</text>
+        </svg>
+        <h4>Keep it kind &amp; end on appreciation</h4>
+        <p>Stay warm even when something's hard, and close every check-in by naming something you genuinely appreciate about your partner. Ending on gratitude keeps the whole thing something you both look forward to, not dread.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of keeping it simple and consistent: a small home date and a repeating loop arrow, with the next date already set">
+          <!-- simple little house / at-home -->
+          <path d="M70 88 l40 -32 l40 32 z" fill="#e0a93d"/>
+          <rect x="80" y="88" width="60" height="46" rx="3" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <rect x="100" y="104" width="20" height="30" fill="#3e7c59"/>
+          <path d="M104 116 q-3 -6 -8 -3 q-4 3 0 7 l8 7 l8 -7 q4 -4 0 -7 q-5 -3 -8 3 z" fill="#d9663f" transform="translate(6 0) scale(0.6) translate(70 60)"/>
+          <!-- repeating loop arrow -->
+          <path d="M186 76 a34 34 0 1 1 -12 -22" fill="none" stroke="#3e7c59" stroke-width="5" stroke-linecap="round"/>
+          <path d="M174 46 l6 10 l-12 2 z" fill="#3e7c59"/>
+          <path d="M196 100 q-3 -5 -8 -2 q-4 2 0 6 l8 7 l8 -7 q4 -4 0 -6 q-5 -3 -8 2 z" fill="#d9663f"/>
+          <text x="70" y="168" font-size="11" fill="#3e7c59" font-weight="700">simple · repeat · set the next one</text>
+        </svg>
+        <h4>Keep it simple &amp; consistent</h4>
+        <p>It doesn't have to be fancy or expensive — cheap and at-home counts, and a modest ritual you actually keep beats a grand one you don't. Before you finish, set the next date so the rhythm never quietly lapses.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Date &amp; check-in progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">💛 Time protected, phones away, a real date and a kind check-in done, and the next one already on the calendar — this is the maintenance a relationship actually runs on. Same again in a couple of weeks.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time to reconnect — and when to get support</h2>
+    <p class="sub">A healthy relationship is easy to take for granted: you laugh, you feel like a team, small stuff stays small. These are the signals that it's time to protect the time and check in — and the handful that point toward professional support, which is a sign of care, not failure:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>You only ever talk logistics.</strong> If your conversations have narrowed to chores, schedules, and the kids, the relationship is running on maintenance mode. Book a logistics-free date and give the other part of you some air.</li>
+        <li><strong>You're bickering or feel like roommates.</strong> Frequent snapping over small things, or a flat, polite co-existence with no real warmth, both point the same way: it's time to reconnect on purpose, not wait for it to fix itself.</li>
+        <li><strong>Dates keep getting cancelled.</strong> If couple time is always the first thing to go when life gets busy, the habit hasn't taken hold. Protect it harder — put it on the calendar, line up childcare, and treat it as non-negotiable.</li>
+        <li><strong>Resentment is quietly building.</strong> Little unspoken frustrations that you've stopped mentioning are exactly what a calm, kind check-in is for. Surface them gently now, before they harden into something bigger.</li>
+        <li><strong>Recurring serious conflict, contempt, or feeling stuck.</strong> If the same painful arguments keep cycling, there's contempt or eye-rolling creeping in, or you just feel stuck no matter what you try, a couples therapist is a normal, genuinely helpful step — the earlier the better, not only in a crisis.</li>
+        <li><strong>You're just not okay.</strong> If you feel persistently low, anxious, or hopeless about the relationship, that's worth taking seriously with a professional — for the relationship and for you.</li>
+        <li><strong>Any abuse, or feeling unsafe.</strong> If there is emotional, verbal, physical, or financial abuse, or you ever feel unsafe, this isn't a check-in situation — please reach out to a domestic-violence resource or your local emergency number. Your safety comes first, always.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should we have a date night or a relationship check-in?</summary>
+      <p>A real date roughly every two weeks is a solid default for most couples, paired with a short check-in more like once a week to keep small things from piling up. But it's genuinely personal: a slammed, drifting, or kid-heavy season calls for more frequent and more fiercely-protected time, while a calm, close, more-flexible stretch can lean lighter. The exact interval matters far less than the consistency — a modest rhythm you actually keep does more than an ambitious one you keep cancelling. The four-question tool above will suggest a starting cadence based on your life; adjust from there and treat it as a floor, not a ceiling.</p>
+    </details>
+    <details>
+      <summary>What's the difference between a date and a check-in?</summary>
+      <p>They do two different jobs, and you need both. A <strong>date</strong> is time together that is emphatically <em>not</em> about logistics — no chore lists, no scheduling, no problem-solving the household. It's for enjoying each other and remembering why you're a couple: a walk, a meal, a shared activity, phones away. A <strong>check-in</strong> is a short, calm, intentional conversation about the relationship itself — "how are we doing? what do you need? anything on your mind?" One feeds the connection; the other maintains it and catches small issues early. A great date won't surface a quiet resentment, and a good check-in isn't a substitute for actually having fun together. Protect both.</p>
+    </details>
+    <details>
+      <summary>What do we actually talk about in a check-in?</summary>
+      <p>Keep it kind and curious rather than a list of grievances. A few reliable prompts: "What's felt good between us lately?" "What do you need more of from me?" "Is there anything on your mind or bugging you?" "Anything coming up we should be on the same page about?" Use "I feel…" language instead of "you always…", listen to understand rather than to win, and take turns so it's a real two-way conversation. Don't ambush your partner — agree on the check-in together and pick a calm moment, not the end of an exhausting day. Keep it short, and end by naming something you genuinely appreciate about them. That closing gratitude is what keeps it a habit you both want to keep.</p>
+    </details>
+    <details>
+      <summary>How do we make time with kids and busy jobs?</summary>
+      <p>You protect it, the same way you'd protect any important appointment. Put a recurring date and check-in on the shared calendar and defend it — decline other things that land on it, and line up childcare in advance rather than hoping a window appears. It absolutely does not have to mean going out: cooking together after the kids are down, a walk around the block, or coffee on the porch once the house is quiet all count, and they're free. The trap is "we'll do it when we have time," because in a busy life that time never arrives on its own. A protected, recurring slot is the whole trick — boring on paper, and exactly what keeps couple time from being the first thing that gets cancelled.</p>
+    </details>
+    <details>
+      <summary>Does date night have to cost money?</summary>
+      <p>Not at all — consistency beats grandeur, every time. The best dates are often the free ones: a walk and a real conversation, cooking a meal together, coffee on the porch, a shared hobby, or just sitting down with phones away after the kids are asleep. What matters is protected, present time together, not the price tag. The occasional paid date or a babysitter is worth budgeting for when you can, and it's a treat — but a cheap or at-home ritual you actually keep will do far more for your relationship than an expensive night out you keep postponing. Don't let "we can't afford a nice date right now" become the reason you stop connecting.</p>
+    </details>
+    <details>
+      <summary>When should we see a couples therapist?</summary>
+      <p>Sooner than most people think, and as a sign of care rather than failure. Good reasons to go: the same serious arguments keep cycling without resolution; you feel stuck and nothing you try changes it; there's contempt, eye-rolling, or steady resentment creeping in; you've drifted far enough that you're not sure how to find your way back; or you're persistently unhappy in the relationship. You don't need to be in crisis — therapists often say the couples who come early get the most out of it. A couples therapist gives you tools and a neutral space to actually talk. One important exception: if there is any abuse — emotional, verbal, physical, or financial — or you ever feel unsafe, joint counseling is not the right first step. Please reach out to a domestic-violence resource or your local emergency number; your safety comes first.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Couple time is the first thing a busy life cancels — and the drift is slow and quiet.</h2>
+        <p>A protected date and a short check-in are small tasks with outsized returns, but they're exactly the kind of thing that quietly slips when the calendar fills up. Upkeep Ledger keeps a recurring date and check-in on the calendar so the relationship gets real attention — right alongside the HVAC filter, the gutters, and every other quiet task that keeps your life running well. Pair it with your other life check-ins: a <a href="mental-check-in.html">monthly mental check-in</a> and a <a href="career-check-in.html">quarterly career check-in</a>.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=date-night-check-in&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=date-night-check-in&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This is general relationship-wellbeing information for planning purposes, not therapy or professional advice; if you're struggling, a couples or individual therapist can help, and if there's any abuse or you feel unsafe, contact a domestic-violence resource or your local emergency number.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { load: null, connection: null, logistics: null, habit: null };
+
+  var FREQ_LABEL = {
+    1: "Every week",
+    2: "Every 2 weeks",
+    4: "Every month"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var weeks = 2;
+    var tighten = false;
+
+    /* Life load */
+    if (s.load === "slammed") {
+      if (weeks > 1) weeks = 1;
+      tighten = true;
+      reasons.push("A slammed season — a new baby, big jobs, or caregiving — is exactly when couple time gets crowded out by default, so it's the time to protect it hardest, not to let it slide.");
+    } else if (s.load === "calm") {
+      reasons.push("A fairly calm stretch with breathing room means couple time isn't fighting as hard for space, so you can lean toward the lighter end of the range.");
+    } else {
+      reasons.push("Normal-busy-but-manageable is the ordinary middle case the every-couple-of-weeks default is written for.");
+    }
+
+    /* Connection lately */
+    if (s.connection === "drifting") {
+      if (weeks > 1) weeks = 1;
+      tighten = true;
+      reasons.push("Feeling like roommates, drifting, or bickering is the clearest signal to reconnect more often — and to get a gentle check-in on the calendar soon, while things are still easy to talk through.");
+    } else if (s.connection === "close") {
+      reasons.push("Feeling close and connected means you're maintaining something that's already working, so a steady, lighter rhythm is plenty to keep it there.");
+    } else {
+      reasons.push("Fine-but-could-be-closer is a good reason to keep the habit steady — a regular date and check-in is how 'fine' turns back into 'close.'");
+    }
+
+    /* Logistics load */
+    if (s.logistics === "heavy") {
+      if (weeks > 1) weeks = 1;
+      tighten = true;
+      reasons.push("When kids and packed schedules eat your days, couple time becomes both scarcer and more essential — protecting a frequent, logistics-free slot (with childcare lined up) is what keeps it from vanishing entirely.");
+    } else if (s.logistics === "free") {
+      reasons.push("More freedom and fewer scheduling demands means couple time is easier to find, so it doesn't need to be defended quite as fiercely.");
+    } else {
+      reasons.push("Some juggling is normal — a protected recurring slot keeps date night from being the thing that quietly gets bumped when the week fills up.");
+    }
+
+    /* Current habit */
+    if (s.habit === "cancel") {
+      if (weeks > 1) weeks = 1;
+      tighten = true;
+      reasons.push("If dates keep getting cancelled, the habit hasn't taken hold yet — starting with a more frequent, firmly-protected rhythm helps it stick before life crowds it out again.");
+    } else if (s.habit === "solid") {
+      reasons.push("You already protect couple time well, so this is about keeping a good habit going rather than rebuilding one — a steady cadence is exactly right.");
+    } else {
+      reasons.push("A hit-or-miss habit is worth firming up — putting the next date on the calendar every time is what turns 'sometimes' into 'reliably.'");
+    }
+
+    /* Best-case relaxation: calm, close, free, solid habit */
+    if (!tighten && s.load === "calm" && s.connection === "close" && s.logistics === "free" && s.habit === "solid") {
+      weeks = 4;
+      reasons.push("A calm, close, low-logistics season where you already protect couple time well is the one case where a monthly bigger date is genuinely plenty — with a quick weekly check-in keeping small things small in between.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.connection === "drifting") {
+      note = "<strong>Start with a gentle check-in, not a grand date:</strong> agree on a calm time, ask 'what's felt good, and what do you need?', use 'I feel…' rather than 'you always…', and end on something you appreciate. Reconnecting first makes the fun come easier.";
+    } else if (s.logistics === "heavy") {
+      note = "<strong>Line up childcare in advance and keep it cheap:</strong> couple time doesn't have to mean going out — a walk, or coffee once the kids are down, counts. Protect the slot on the calendar and treat it like an appointment you don't cancel.";
+    } else if (s.habit === "cancel") {
+      note = "<strong>Make it recurring and non-negotiable:</strong> put it on the shared calendar as a repeating event, and set the next one before each date ends. A protected slot is what stops date night from being the first thing bumped.";
+    } else {
+      note = "<strong>Remember the two habits:</strong> a logistics-free, phone-free date for connection, plus a short, kind weekly check-in to catch small things early. Keep it simple and consistent — and set the next date before you finish.";
+    }
+
+    return { weeks: weeks, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.load || !quizState.connection || !quizState.logistics || !quizState.habit) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: protect a real date or check-in roughly every " + r.weeks + (r.weeks === 1 ? " week" : " weeks");
+    document.getElementById("resultBody").innerHTML =
+      "Put a recurring, logistics-free date on the calendar, keep the phones away, and <strong>do a short, kind check-in — 'what's good? what do you need? anything on your mind?' — and end on appreciation</strong>. A quick weekly check-in complements the bigger date. Why this cadence:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Schedule & protect", text: "Put a recurring date on the shared calendar", note: "Pick a rhythm — about every couple of weeks — and make it a repeating event you both see. A protected slot is the single thing that makes all the rest possible; 'when we have time' never arrives." },
+    { phase: "Schedule & protect", text: "Line up childcare in advance (if you need it)", note: "Don't wait for a free window to appear — arrange a sitter, a swap with friends, or after-bedtime timing ahead of time so nothing can quietly bump the date." },
+    { phase: "Schedule & protect", text: "Treat it like an appointment you don't cancel", note: "Decline other things that land on it, and protect it the way you'd protect any important commitment. Defending the time is what turns a nice idea into an actual habit." },
+    { phase: "Make it logistics-free", text: "Ban chores, schedules, and problem-solving", note: "No chore lists, no logistics, no fixing the household — save all of that for a different time. The date is for enjoying each other, not running the operation." },
+    { phase: "Make it logistics-free", text: "Put the phones away — face-down or in another room", note: "Presence is the whole point, and a phone on the table splits your attention even face-down. Park them out of reach so you're actually there together." },
+    { phase: "Make it logistics-free", text: "Do something you both enjoy — keep it simple", note: "A walk, a meal, a shared hobby, coffee on the porch — cheap and at-home counts. Consistency beats grandeur, so pick something easy you'll actually look forward to." },
+    { phase: "Do the check-in", text: "Agree on the check-in and pick a calm moment", note: "Don't ambush your partner with a Serious Talk. Agree on it together and choose a time you're both reasonably relaxed — not the end of an exhausting day." },
+    { phase: "Do the check-in", text: "Ask 'what's good? what do you need? anything on your mind?'", note: "Stay kind and curious rather than dumping grievances. Use 'I feel…' instead of 'you always…', listen to understand rather than to win, and take turns so it's a real conversation." },
+    { phase: "Appreciate & plan next", text: "End on appreciation — name something you're grateful for", note: "Close by naming something you genuinely appreciate about your partner. Ending on gratitude keeps the whole thing something you both look forward to, not dread." },
+    { phase: "Appreciate & plan next", text: "Set the next date before you finish", note: "Put the next one on the calendar now, while you're together, so the rhythm never quietly lapses. A quick weekly check-in complements the bigger date." },
+    { phase: "Appreciate & plan next", text: "Log it", note: "Nothing reminds you that couple time is slipping until it already has. Note the date so the next one lands on schedule — and if the same serious issues keep coming up or you feel stuck, a couples therapist is a normal, helpful step." }
+  ];
+
+  var LS_KEY = "upkeepguides:date-night-check-in:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

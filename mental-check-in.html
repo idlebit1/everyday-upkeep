@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do a monthly mental check-in — UpkeepGuides.com</title>
+<meta name="description" content="We do upkeep on our cars and teeth but rarely on ourselves. A gentle monthly mental check-in — sleep, stress, connection, mood — helps you notice early and reach out.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Do a monthly mental check-in — UpkeepGuides.com">
+<meta property="og:description" content="We do upkeep on our cars and teeth but rarely on ourselves. A gentle monthly mental check-in — sleep, stress, connection, mood — helps you notice early and reach out.">
+<meta property="og:url" content="https://upkeepguides.com/mental-check-in.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Do a monthly mental check-in — UpkeepGuides.com">
+<meta name="twitter:description" content="We do upkeep on our cars and teeth but rarely on ourselves. A gentle monthly mental check-in — sleep, stress, connection, mood — helps you notice early and reach out.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Every month</span>
+      <h1>Do a Monthly Mental Check-In</h1>
+      <p class="lede">We service the car, descale the kettle, floss for the dentist, and rotate the tires — but the one thing we rarely put on a schedule is ourselves. And mental health doesn't announce itself. It drifts, quietly: a little less sleep, a little more stress, one more cancelled plan, until one day you realize you've been running on empty for months. A mental check-in is just routine maintenance for you — a gentle, honest pause once a month to ask "how am I, really?" and tend the basics: sleep, stress, connection, movement, and the things that bring you joy. It won't fix everything, and it isn't therapy. But it helps you notice when you're running low and do one small thing about it — or reach out for real help — before things get hard.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Takes <em>~10 minutes</em>, once a month</span>
+        <span class="chip">🌱 Catches low periods <em>early</em></span>
+        <span class="chip">🫶 Costs <em>nothing</em> to start</span>
+        <span class="chip">💚 A kindness, <em>not a test</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Calm illustration of someone taking a mental check-in: a person sits under a tree with a warm cup of tea and an open journal on their lap, a soft sun glows overhead, a gentle path winds through grass and small plants, and a little note reads how am I, really — the mood is warm, quiet, and reassuring">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- soft sky glow -->
+      <circle cx="452" cy="96" r="52" fill="#faf0da"/>
+      <circle cx="452" cy="96" r="34" fill="#f6e6bf"/>
+      <!-- soft sun -->
+      <circle cx="452" cy="96" r="24" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round" opacity="0.8">
+        <line x1="452" y1="52" x2="452" y2="42"/>
+        <line x1="452" y1="150" x2="452" y2="140"/>
+        <line x1="408" y1="96" x2="398" y2="96"/>
+        <line x1="506" y1="96" x2="496" y2="96"/>
+        <line x1="420" y1="64" x2="413" y2="57"/>
+        <line x1="491" y1="135" x2="484" y2="128"/>
+        <line x1="420" y1="128" x2="413" y2="135"/>
+        <line x1="491" y1="57" x2="484" y2="64"/>
+      </g>
+
+      <!-- gentle winding path -->
+      <path d="M40 400 q90 -30 150 -20 q90 16 150 -18 q80 -26 180 -30" fill="none" stroke="#e9d9bf" stroke-width="20" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- tree behind the figure -->
+      <rect x="120" y="230" width="16" height="120" rx="6" fill="#8a6a4f"/>
+      <circle cx="128" cy="200" r="56" fill="#5e9a78"/>
+      <circle cx="92" cy="222" r="38" fill="#3e7c59"/>
+      <circle cx="162" cy="220" r="40" fill="#3e7c59"/>
+      <circle cx="128" cy="176" r="40" fill="#7bb894"/>
+      <!-- a couple of soft falling leaves -->
+      <ellipse cx="180" cy="252" rx="6" ry="9" fill="#7bb894" transform="rotate(30 180 252)"/>
+      <ellipse cx="76" cy="266" rx="5" ry="8" fill="#5e9a78" transform="rotate(-25 76 266)"/>
+
+      <!-- seated person -->
+      <!-- legs / lap blanket -->
+      <path d="M232 356 q40 -22 92 0 q6 22 -6 32 h-80 q-12 -10 -6 -32 z" fill="#c96f4a"/>
+      <path d="M240 360 q42 -14 76 0" fill="none" stroke="#b25c3a" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      <!-- torso -->
+      <path d="M246 300 q32 -26 64 0 l6 60 h-76 z" fill="#3e7c59"/>
+      <!-- left arm resting -->
+      <path d="M250 316 q-16 20 -6 44" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- right arm holding tea -->
+      <path d="M306 316 q22 14 30 34" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- neck + head -->
+      <rect x="272" y="272" width="14" height="18" rx="6" fill="#e8b48f"/>
+      <circle cx="279" cy="256" r="24" fill="#e8b48f"/>
+      <!-- hair -->
+      <path d="M256 252 q4 -30 32 -28 q20 2 22 24 q-10 -10 -26 -8 q-18 2 -28 12 z" fill="#8a6a4f"/>
+      <!-- calm, closed-eye content face -->
+      <path d="M270 254 q4 4 8 0" stroke="#6b5240" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M284 254 q4 4 8 0" stroke="#6b5240" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M274 266 q6 5 12 0" stroke="#c96f4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <!-- open journal on the lap -->
+      <path d="M244 356 q34 -12 70 0 l0 6 q-34 -12 -70 0 z" fill="#8a6a4f"/>
+      <path d="M246 350 h32 v14 h-32 z" fill="#fffdf8" transform="rotate(-4 262 357)"/>
+      <path d="M282 350 h32 v14 h-32 z" fill="#fffdf8" transform="rotate(4 298 357)"/>
+      <g stroke="#cdd9de" stroke-width="1.4">
+        <line x1="250" y1="354" x2="272" y2="353"/>
+        <line x1="250" y1="359" x2="270" y2="358"/>
+        <line x1="288" y1="353" x2="310" y2="354"/>
+        <line x1="288" y1="358" x2="308" y2="359"/>
+      </g>
+
+      <!-- warm cup of tea with steam -->
+      <path d="M330 344 h30 l-3 22 h-24 z" fill="#fffdf8" stroke="#d8cfbe" stroke-width="2"/>
+      <path d="M360 348 q10 0 8 10 q-2 6 -9 5" fill="none" stroke="#d8cfbe" stroke-width="2.4"/>
+      <ellipse cx="345" cy="344" rx="15" ry="4" fill="#c96f4a"/>
+      <g stroke="#cdd9de" stroke-width="2.4" stroke-linecap="round" opacity="0.7">
+        <path d="M340 332 q-4 -6 0 -12"/>
+        <path d="M350 332 q4 -6 0 -12"/>
+      </g>
+
+      <!-- a small mood note pinned nearby -->
+      <g transform="rotate(-5 430 300)">
+        <rect x="392" y="270" width="88" height="64" rx="8" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+        <circle cx="436" cy="276" r="3" fill="#e0a93d"/>
+        <text x="436" y="300" font-size="12.5" fill="#3e7c59" font-weight="700" text-anchor="middle">how am I,</text>
+        <text x="436" y="318" font-size="12.5" fill="#3e7c59" font-weight="700" text-anchor="middle">really?</text>
+      </g>
+
+      <!-- small friendly plants near the path -->
+      <path d="M70 388 q-3 -18 -12 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M70 388 q3 -16 12 -22" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="56" cy="360" rx="6" ry="10" fill="#5e9a78" transform="rotate(-30 56 360)"/>
+      <ellipse cx="84" cy="364" rx="6" ry="10" fill="#3e7c59" transform="rotate(28 84 364)"/>
+      <circle cx="510" cy="388" r="5" fill="#e0a93d"/>
+      <path d="M510 388 q-2 -14 -10 -18" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">You wouldn't drive 50,000 miles without an oil change, or skip the dentist for a decade — you'd know something was quietly wearing out. Your wellbeing is exactly the same, except it doesn't have a warning light. A monthly check-in is the warning light you build for yourself. Here's what a regular pause does:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 5 v10 M18 22 v9" stroke="#e0a93d" stroke-width="2.6" stroke-linecap="round" opacity="0.35"/>
+          <circle cx="18" cy="18" r="12" fill="none" stroke="#e0a93d" stroke-width="2.4"/>
+          <path d="M18 8 v10 l7 4" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It catches the slow drift</h3>
+        <p>Mental health rarely falls off a cliff — it drifts. Stress, low mood, and burnout build so gradually you adapt to each small dip, until one day the gap is huge. A monthly pause lets you spot the trend early, while it's still a nudge and not a crisis.</p>
+        <span class="cost">A quiet slide you don't notice</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 30 C6 22 4 13 10 9 c4 -3 7 0 8 3 c1 -3 4 -6 8 -3 c6 4 4 13 -8 21 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M12 18 h4 l2 -4 l2 8 l2 -4 h4" fill="none" stroke="#3e7c59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>The basics move the needle</h3>
+        <p>Most low stretches trace back to the same handful of things: not enough sleep, no movement, too little sunlight, no real rest, and not enough connection. They're the "maintenance items" of a mind — and tending even one of them often lifts more than you'd expect.</p>
+        <span class="cost">The basics quietly running out</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="8" width="22" height="16" rx="4" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2"/>
+          <path d="M13 24 l0 5 l6 -5 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2" stroke-linejoin="round"/>
+          <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+            <line x1="12" y1="14" x2="24" y2="14"/>
+            <line x1="12" y1="18" x2="20" y2="18"/>
+          </g>
+        </svg></div>
+        <h3>Naming it lowers the pressure</h3>
+        <p>Feelings you can't name quietly steer you. Saying "I'm actually pretty worn down" — in a journal, a walk, or out loud to someone — takes the vague weight off your chest and turns it into something you can look at, understand, and gently do something about.</p>
+        <span class="cost">A fog you can't get a grip on</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="12" cy="13" r="4.5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <circle cx="24" cy="13" r="4.5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M5 28 c0 -5 4 -8 7 -8 c2 0 3 1 4 2" fill="none" stroke="#3e7c59" stroke-width="2" stroke-linecap="round"/>
+          <path d="M31 28 c0 -5 -4 -8 -7 -8 c-3 0 -6 3 -6 8" fill="none" stroke="#e0a93d" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Small early steps beat crisis fixes</h3>
+        <p>A short rest, a boundary, an honest conversation, or booking a therapist is far easier to do when you're merely tired than when you're in freefall. Catching it early means the fix is small and gentle — not an emergency you have to claw your way out of.</p>
+        <span class="cost">Waiting until it's a crisis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check in?</h2>
+    <p class="sub">Once a month is a gentle, sustainable default for most people — frequent enough to catch a drift, light enough to actually keep up. But a hard stretch, a low mood, or feeling isolated all make a more frequent rhythm worth it. The questions below just suggest a cadence and remind you that help is always available. They do <em>not</em> score or diagnose your mental health — please be kind to yourself as you answer.</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="feeling">
+        <div class="q-label">1. How have you been feeling lately?</div>
+        <div class="pills">
+          <button class="pill" data-v="low">Stressed, low, anxious, or a bit numb</button>
+          <button class="pill" data-v="mixed">Up and down — some good, some hard days</button>
+          <button class="pill" data-v="okay">Mostly steady and okay</button>
+        </div>
+        <div class="q-hint">There are no wrong answers here, and a hard week doesn't mean anything is broken. If things have felt heavy, checking in a little more often — and being gentle with yourself — is worth it.</div>
+      </div>
+      <div class="quiz-q" data-q="load">
+        <div class="q-label">2. What's life asking of you right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">A big stressor — grief, a move, a new baby, overwork</button>
+          <button class="pill" data-v="some">A bit more than usual on my plate</button>
+          <button class="pill" data-v="calm">A fairly calm, ordinary stretch</button>
+        </div>
+        <div class="q-hint">The hardest seasons are exactly when we drop our own maintenance — and when we need it most. During a big life load, checking in more often is a way of looking after yourself while you carry it.</div>
+      </div>
+      <div class="quiz-q" data-q="support">
+        <div class="q-label">3. How connected do you feel to support?</div>
+        <div class="pills">
+          <button class="pill" data-v="isolated">Pretty isolated — I don't have many people right now</button>
+          <button class="pill" data-v="some">A few people, though I keep things to myself</button>
+          <button class="pill" data-v="strong">People I talk to, and/or a therapist</button>
+        </div>
+        <div class="q-hint">Isolation makes everything heavier and quieter. If you're feeling alone, more frequent check-ins — and gently reaching toward one person or a professional — can matter a great deal.</div>
+      </div>
+      <div class="quiz-q" data-q="habits">
+        <div class="q-label">4. Do you already have ways of tending yourself?</div>
+        <div class="pills">
+          <button class="pill" data-v="push">Not really — I tend to push things down</button>
+          <button class="pill" data-v="some">A few, on and off</button>
+          <button class="pill" data-v="yes">Yes — I journal, walk, talk it out, or check in</button>
+        </div>
+        <div class="q-hint">If you usually push things down, a set monthly rhythm gives your feelings a scheduled, permitted place to surface — so they don't have to build up until they demand your attention all at once.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — and what skipping it costs</h2>
+    <p class="sub">The check-in itself is free: a walk, a journal, a phone call, ten quiet minutes. And if the check-in ever points you toward therapy, that's a normal, worthwhile investment in yourself — not a last resort. Many workplaces offer an EAP (Employee Assistance Program) with a few free sessions, and community clinics and therapists often work on a sliding scale. Set any of that against the real cost of letting things slide:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">the check-in itself — a walk, a journal, a cup of tea, an honest phone call</div></div>
+        <div class="calc-stat"><div class="v">~10 min</div><div class="l">a month — a small, repeatable pause to ask how you're really doing</div></div>
+        <div class="calc-stat"><div class="v bad">Often $0</div><div class="l">therapy through a workplace EAP (a few free sessions) or a sliding-scale clinic</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🫖 A monthly check-in (walk, journal, a call)</span><span>Free · ~10 min</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💬 Workplace EAP counselling sessions</span><span>Often free (a few sessions)</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌱 Sliding-scale or low-cost therapy</span><span>A worthwhile investment</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:24%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>😔 Burnout that forces time off work</span><span>Weeks or months lost</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:60%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💔 A crisis you didn't see coming</span><span>The highest cost of all</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math is quietly lopsided: <strong>ten free minutes a month</strong> against burnout that costs you weeks, relationships that fray, and — at the far end — a crisis that costs far more than time. Therapy isn't the expensive option here; letting things slide unnoticed is. Checking in early, and reaching out when you need to, is the cheapest and kindest thing you can do for the person doing all the living.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to do a monthly mental check-in</h2>
+    <p class="sub">There's no right way to do this, and it's meant to feel like care, not homework. Find ten quiet minutes, be honest and gentle with yourself, and work through the small steps below. Read the caring note first — it matters more than any technique — then move through the ideas and the checklist. Your progress saves automatically, just on this device.</p>
+
+    <div class="safety">
+      <h3>💚 Checking in on the check-in — and when to reach out for real help</h3>
+      <ul>
+        <li><strong>This is a supportive habit, not a substitute for professional care.</strong> A monthly check-in helps you notice and tend the basics — it is not therapy or a diagnosis. If you're struggling, reaching out is a sign of strength, not weakness.</li>
+        <li><strong>Please talk to a doctor or a mental-health professional</strong> if low mood, anxiety, hopelessness, sleeplessness, or loss of interest last more than about two weeks, keep getting worse, or start affecting your work, relationships, or daily life. You don't have to wait until it's unbearable to deserve help.</li>
+        <li><strong>There is no shame in therapy or medication.</strong> They're maintenance too — the same as glasses for your eyes or a cast for a broken arm. Getting support early is wisdom, not weakness.</li>
+        <li><strong>If you're in crisis or having thoughts of harming yourself, please reach out right now.</strong> In the US, call or text <strong>988</strong> (the Suicide &amp; Crisis Lifeline, 24/7), or text <strong>HOME to 741741</strong> (Crisis Text Line), or call your local emergency number. You are not alone, and help is available. Outside the US, contact your local crisis line — <a href="https://findahelpline.com/">findahelpline.com</a> lists services by country.</li>
+        <li><strong>Be gentle with yourself in the check-in.</strong> This is about noticing and caring, not judging or "fixing" yourself. There are no bad answers and no failing grade — only honesty and kindness.</li>
+        <li><strong>Reach out to someone you trust when things feel heavy.</strong> You don't have to carry it alone or have the right words. "I've been having a hard time" is a complete sentence, and the people who care about you would want to know.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🫶 What you'll want on hand</h3>
+    <div class="tools">
+      <span class="tool-chip">Ten quiet minutes</span>
+      <span class="tool-chip">A journal, notes app, or voice memo</span>
+      <span class="tool-chip">Somewhere you feel comfortable</span>
+      <span class="tool-chip">A warm drink, maybe</span>
+      <span class="tool-chip">The crisis numbers saved in your phone</span>
+      <span class="tool-chip">A trusted person you could call</span>
+      <span class="tool-chip">Honesty and kindness</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🌿 Five gentle ways to check in</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Gentle diagram of asking how am I really and naming the feeling in a journal or a voice note, with a soft heart and a page of writing">
+          <rect x="56" y="24" width="120" height="132" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="66" y="34" width="100" height="112" rx="4" fill="#f4f8f5"/>
+          <g stroke="#cdd9de" stroke-width="2.4" stroke-linecap="round">
+            <line x1="78" y1="52" x2="150" y2="52"/>
+            <line x1="78" y1="66" x2="140" y2="66"/>
+            <line x1="78" y1="80" x2="150" y2="80"/>
+            <line x1="78" y1="94" x2="128" y2="94"/>
+          </g>
+          <path d="M116 130 c-10 -7 -12 -14 -7 -18 c3 -3 6 -1 7 1 c1 -2 4 -4 7 -1 c5 4 3 11 -7 18 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.2" stroke-linejoin="round"/>
+          <!-- soft speech / voice note -->
+          <path d="M196 60 q34 0 34 26 q0 26 -34 26 q-10 0 -18 -4 l-12 6 l4 -12 q-8 -8 -8 -16 q0 -26 34 -26 z" fill="#faf0da" stroke="#e0a93d" stroke-width="2.4"/>
+          <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+            <line x1="188" y1="80" x2="188" y2="92"/>
+            <line x1="196" y1="74" x2="196" y2="98"/>
+            <line x1="204" y1="80" x2="204" y2="92"/>
+            <line x1="212" y1="76" x2="212" y2="96"/>
+          </g>
+          <text x="66" y="170" font-size="11" fill="#3e7c59" font-weight="700">name what you feel</text>
+        </svg>
+        <h4>1. Ask honestly: "How am I, really?"</h4>
+        <p>Not the reflex "fine" — the real answer. Sit with it for a moment and name the feeling: worn down, restless, content, lonely, hopeful. Journaling or a quick voice note gives it somewhere to land. Naming it is most of the work.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Gentle diagram of checking the basics — sleep, movement, food, sunlight, connection, and rest — shown as six small icons, with one running low">
+          <text x="140" y="26" font-size="12" fill="#6b7376" text-anchor="middle" font-weight="700">which one's running low?</text>
+          <!-- moon (sleep) -->
+          <circle cx="60" cy="62" r="20" fill="#e3efe8"/>
+          <path d="M66 52 a12 12 0 1 0 0 20 a9 9 0 0 1 0 -20 z" fill="#3e7c59"/>
+          <!-- movement -->
+          <circle cx="140" cy="62" r="20" fill="#e3efe8"/>
+          <circle cx="140" cy="54" r="4" fill="#3e7c59"/>
+          <path d="M140 58 v9 M140 62 l-6 4 M140 62 l6 4 M140 67 l-5 8 M140 67 l5 8" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <!-- sunlight -->
+          <circle cx="220" cy="62" r="20" fill="#faf0da"/>
+          <circle cx="220" cy="62" r="8" fill="#e0a93d"/>
+          <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+            <line x1="220" y1="46" x2="220" y2="50"/><line x1="220" y1="74" x2="220" y2="78"/>
+            <line x1="204" y1="62" x2="208" y2="62"/><line x1="232" y1="62" x2="236" y2="62"/>
+          </g>
+          <!-- food -->
+          <circle cx="60" cy="122" r="20" fill="#e3efe8"/>
+          <circle cx="60" cy="122" r="9" fill="none" stroke="#3e7c59" stroke-width="2.4"/>
+          <line x1="60" y1="113" x2="60" y2="131" stroke="#3e7c59" stroke-width="2.4"/>
+          <!-- connection (running low — warm highlight) -->
+          <circle cx="140" cy="122" r="20" fill="#fbe9e1" stroke="#d9663f" stroke-width="2.4"/>
+          <circle cx="134" cy="118" r="4" fill="#d9663f"/>
+          <circle cx="147" cy="118" r="4" fill="#d9663f"/>
+          <path d="M129 132 q11 8 22 0" fill="none" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- rest -->
+          <circle cx="220" cy="122" r="20" fill="#e3efe8"/>
+          <text x="220" y="127" font-size="15" fill="#3e7c59" text-anchor="middle" font-weight="700">z</text>
+        </svg>
+        <h4>2. Check the basics</h4>
+        <p>Run down the maintenance items: sleep, movement, food, sunlight, connection, and real rest. Which one's running low? Nine times out of ten, a rough patch traces back to one of these — and that's good news, because those you can tend.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Gentle diagram of tending one small thing — a walk outdoors, less phone time, more of what brings joy — shown as a person walking on a path toward a small sun">
+          <rect x="20" y="24" width="240" height="132" rx="10" fill="#f4f8f5"/>
+          <!-- little sun of hope -->
+          <circle cx="222" cy="58" r="16" fill="#faf0da"/>
+          <circle cx="222" cy="58" r="9" fill="#e0a93d"/>
+          <!-- path -->
+          <path d="M40 140 q60 -20 100 -10 q60 14 100 -30" fill="none" stroke="#e9d9bf" stroke-width="12" stroke-linecap="round"/>
+          <!-- little plants -->
+          <path d="M60 132 q-2 -12 -8 -16 M60 132 q2 -12 8 -14" stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M188 96 q-2 -12 -8 -16 M188 96 q2 -12 8 -14" stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <!-- walking person -->
+          <circle cx="120" cy="96" r="9" fill="#e8b48f"/>
+          <path d="M120 105 l-2 22" stroke="#3e7c59" stroke-width="9" stroke-linecap="round"/>
+          <path d="M120 112 l-10 8 M120 112 l11 6" stroke="#3e7c59" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M119 127 l-9 12 M119 127 l9 11" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <text x="34" y="170" font-size="11" fill="#3e7c59" font-weight="700">just one small thing</text>
+        </svg>
+        <h4>3. Tend one thing</h4>
+        <p>Not everything — one thing. A walk outside, an earlier night, a boundary, less doomscrolling, or more of whatever quietly brings you joy. Small and doable beats ambitious and abandoned. One gentle nudge in the right direction is a win.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Gentle diagram of reaching out — two hands almost touching, a phone with a warm message, and a small heart — normalizing calling a friend or a therapist">
+          <rect x="20" y="24" width="240" height="132" rx="10" fill="#f4f8f5"/>
+          <!-- reaching hands -->
+          <path d="M44 100 q22 -6 44 4" stroke="#e8b48f" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <path d="M236 100 q-22 -6 -44 4" stroke="#c98a63" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <!-- little heart between them -->
+          <path d="M140 118 c-12 -9 -15 -18 -8 -23 c4 -3 8 -1 8 2 c0 -3 4 -5 8 -2 c7 5 4 14 -8 23 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4" stroke-linejoin="round"/>
+          <!-- phone with warm message -->
+          <rect x="118" y="40" width="44" height="34" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <path d="M126 82 l6 -8 h-10 z" fill="#fffdf8"/>
+          <g stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round">
+            <line x1="126" y1="52" x2="152" y2="52"/>
+            <line x1="126" y1="60" x2="146" y2="60"/>
+          </g>
+          <text x="34" y="168" font-size="11" fill="#3e7c59" font-weight="700">you don't have to do it alone</text>
+        </svg>
+        <h4>4. Reach out</h4>
+        <p>Send the text. Call the friend. Book or keep the therapy appointment. Reaching out isn't a last resort or an admission of failure — it's normal, healthy maintenance, the same as any other. "I've been struggling a bit" is enough to start.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Gentle diagram of knowing the signs it's time for professional help and the crisis resources, showing a lifeline number 988 and a calendar marking the next check-in">
+          <rect x="20" y="24" width="240" height="132" rx="10" fill="#f4f8f5"/>
+          <!-- lifeline card -->
+          <rect x="40" y="52" width="94" height="52" rx="10" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.4"/>
+          <path d="M52 76 a8 8 0 0 1 30 0 a8 8 0 0 1 22 0" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="87" y="98" font-size="17" fill="#2c5a40" text-anchor="middle" font-weight="800">988</text>
+          <!-- calendar for next check-in -->
+          <rect x="158" y="52" width="82" height="66" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.4"/>
+          <rect x="158" y="52" width="82" height="16" rx="8" fill="#3e7c59"/>
+          <g fill="#cdd9de">
+            <rect x="168" y="76" width="12" height="10" rx="2"/><rect x="186" y="76" width="12" height="10" rx="2"/><rect x="204" y="76" width="12" height="10" rx="2"/>
+            <rect x="168" y="92" width="12" height="10" rx="2"/>
+          </g>
+          <rect x="204" y="92" width="12" height="10" rx="2" fill="#e0a93d"/>
+          <path d="M206 96 l3 3 l5 -6" stroke="#fffdf8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="34" y="146" font-size="11" fill="#3e7c59" font-weight="700">know the signs · save the numbers · set the next check-in</text>
+        </svg>
+        <h4>5. Know the signs — and set the next one</h4>
+        <p>Learn the signs it's time for a professional (below), and save the crisis numbers in your phone before you ever need them. Then pick a gentle date for your next check-in — a recurring nudge means you never have to remember on your own.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Check-in progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">💚 You checked in with yourself — honestly and kindly. That's real self-care, not a small thing. Be gentle with yourself, follow through on the one thing you chose, and reach out if you need to. See you next month.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time to reach out for professional help</h2>
+    <p class="sub">A check-in helps you notice — this is what to notice <em>for</em>. If any of these show up, please treat it as a nudge to talk to a doctor or a mental-health professional. Needing help isn't a failure of the check-in; it's exactly what the check-in is meant to catch. You deserve support long before things become unbearable.</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Low mood, anxiety, hopelessness, irritability, or loss of interest lasting 2+ weeks.</strong> A hard week is human. When the heaviness settles in and stays — especially when things you used to enjoy stop feeling good — that's the two-week signal to reach out to a professional.</li>
+        <li><strong>Changes in sleep, appetite, or energy.</strong> Sleeping far too much or too little, big shifts in eating, or a fatigue that rest doesn't fix are your body flagging that something needs attention. They're common, treatable, and worth mentioning to a doctor.</li>
+        <li><strong>Withdrawing from people.</strong> Quietly cancelling plans, dodging messages, and pulling away from the people who care about you is one of the clearest early signs — and one of the easiest to explain away. If you notice it, gently reach back out.</li>
+        <li><strong>Using alcohol or substances to cope.</strong> Leaning on a drink, a substance, or anything else to get through the day or numb the feeling is a sign the load has outgrown your current tools. A professional can help you find steadier ones, without judgement.</li>
+        <li><strong>Feeling overwhelmed or unable to function.</strong> When ordinary tasks — work, chores, showing up — start to feel impossible, that's not laziness or weakness. It's a real signal that you're running past empty and it's time to get support.</li>
+        <li><strong>Any thoughts of harming yourself.</strong> Please don't wait on this one. Reach out to a professional or a crisis line right away — in the US, call or text <strong>988</strong> (the Suicide &amp; Crisis Lifeline), or text <strong>HOME to 741741</strong>. You are not alone, and things can get better with help.</li>
+        <li><strong>Gentle reminder:</strong> you don't need to be "bad enough" to deserve help. If you're wondering whether to talk to someone, that wondering is reason enough. Therapy is maintenance, not a rescue — and starting early is a gift to your future self.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I check in on my mental health?</summary>
+      <p>Once a month is a gentle, sustainable rhythm for most people — often enough to catch a slow drift, light enough that you'll actually keep it up. Think of it like any other maintenance interval: frequent enough to prevent problems, not so frequent it becomes a chore. During a stressful stretch — a big loss, a move, a new baby, a rough patch at work — it's worth checking in more often, even weekly, because those are exactly the times we tend to drop our own care. And there's no rule against a quick, lighter check-in whenever you sense something shifting; the monthly one is just the anchor that makes sure it happens even when life is busy.</p>
+    </details>
+    <details>
+      <summary>What does a mental check-in actually involve?</summary>
+      <p>It's simpler than it sounds — no special training, app, or ritual required. Find ten quiet minutes and honestly ask yourself "how am I, really?", naming whatever comes up instead of settling for "fine." Then run through the basics: how's your sleep, movement, eating, sunlight, connection, and rest? Notice which one is running low. Pick one small thing to tend — a walk, an earlier night, a text to a friend, less scrolling. Reach out to someone if things feel heavy, and if the answers worry you, take it as a cue to talk to a professional. Journaling, a voice note, a walk, or a conversation are all fine ways to do it. The whole point is noticing and caring — gently, without judgement.</p>
+    </details>
+    <details>
+      <summary>Is this a substitute for therapy?</summary>
+      <p>No — and it's important to be clear about that. A monthly check-in is a supportive self-care habit, like flossing or a daily walk. It helps you notice how you're doing and tend the basics, but it can't diagnose anything, and it's no replacement for professional care. Think of it as the smoke detector, not the fire department: its job is to help you notice early and prompt you to get real help when you need it. If your check-in keeps turning up heaviness — or if low mood, anxiety, or hopelessness last more than a couple of weeks or start affecting your daily life — please treat that as your signal to see a doctor or therapist. The habit and the professional support work best together.</p>
+    </details>
+    <details>
+      <summary>How do I know when to see a professional?</summary>
+      <p>A useful rule of thumb is the two-week mark: if low mood, anxiety, hopelessness, sleeplessness, or loss of interest lasts more than about two weeks, keeps getting worse, or starts affecting your work, relationships, or ability to get through the day, it's time to talk to a doctor or a mental-health professional. The other key question is functioning — are ordinary things starting to feel impossible? You also never have to hit a threshold to deserve help; if you're wondering whether to reach out, that's reason enough. And any thoughts of harming yourself mean reaching out right now, not waiting — in the US, call or text 988, or text HOME to 741741. Getting help early makes everything easier, and it's a sign of strength, not weakness.</p>
+    </details>
+    <details>
+      <summary>Is therapy worth it, and how do I find affordable help?</summary>
+      <p>For many people, yes — therapy is one of the most worthwhile investments they make, and it's completely normal, not a last resort. If cost is a worry, there are more options than people realize. Start with your workplace: many employers offer an EAP (Employee Assistance Program) that includes a handful of free, confidential counselling sessions. Community mental-health clinics, university training clinics, and lots of independent therapists offer sliding-scale fees based on income. Online directories let you filter by "sliding scale" or "low cost," and a primary-care doctor can point you toward local resources. Group therapy and support groups are often free or low-cost too. Weighed against the toll of an untreated low period, even paid therapy usually pays for itself — and there is genuinely no shame in getting help, or in medication if a professional recommends it. That's maintenance too.</p>
+    </details>
+    <details>
+      <summary>What do I do in a crisis?</summary>
+      <p>If you're in crisis or having any thoughts of harming yourself, please reach out right now — you don't have to get through it alone, and help is available 24/7. In the US, call or text <strong>988</strong> to reach the Suicide &amp; Crisis Lifeline, or text <strong>HOME to 741741</strong> to reach the Crisis Text Line and talk with a trained counsellor. If you or someone else is in immediate danger, call your local emergency number (911 in the US). If you can, tell one person you trust what's happening — you don't need the right words, just "I'm not okay" is enough. Outside the US, <a href="https://findahelpline.com/">findahelpline.com</a> lists free, confidential crisis services by country. Whatever you're feeling right now, it can change — and reaching out is the bravest, kindest thing you can do.</p>
+    </details>
+  </section>
+
+  <!-- ============ CROSS-LINKS ============ -->
+  <section id="track" style="padding-top:0;">
+    <p class="sub" style="margin-bottom:26px;">A mental check-in pairs naturally with the other quiet life check-ins worth keeping on a rhythm — a <a href="career-check-in.html">quarterly career check-in</a> and a <a href="date-night-check-in.html">relationship check-in</a>. Different corners of a life, same gentle idea: pause, notice honestly, and tend what needs it before it drifts.</p>
+    <div class="ledger-cta">
+      <div>
+        <h2>We schedule maintenance for everything but ourselves.</h2>
+        <p>The car, the filters, the dentist — all on the calendar. You, somehow, are the one thing that never makes the list. Let Upkeep Ledger keep a gentle monthly check-in on the schedule, right alongside every other quiet task, so you notice how you're really doing before it gets hard — and so caring for yourself becomes as routine as caring for everything else.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=mental-check-in&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=mental-check-in&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This guide offers general wellbeing information only — it is not medical or mental-health advice, diagnosis, or treatment. If you're struggling, please talk to a qualified professional; in a crisis, call or text 988 (US) or your local emergency number.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { feeling: null, load: null, support: null, habits: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;      /* a monthly check-in is the default */
+    var tighten = false; /* hard stretches / low mood / isolation nudge more often */
+
+    /* Feeling — how you've been lately */
+    if (s.feeling === "low") {
+      tighten = true;
+      reasons.push("Since things have felt stressed, low, or numb lately, checking in a little more often — and being extra gentle with yourself — helps you keep a caring eye on how you're doing.");
+    } else if (s.feeling === "mixed") {
+      reasons.push("Up-and-down stretches are part of being human. A steady monthly rhythm helps you see the pattern over time rather than judging any single hard day.");
+    } else {
+      reasons.push("Feeling mostly steady is genuinely good to hear — a monthly check-in is a light way to stay that way and to notice early if things start to shift.");
+    }
+
+    /* Load — what life is asking */
+    if (s.load === "big") {
+      tighten = true;
+      reasons.push("A big life load — grief, a move, a new baby, overwork — is exactly when we drop our own maintenance and most need it. Checking in more often is a way of caring for yourself while you carry it.");
+    } else if (s.load === "some") {
+      reasons.push("A bit more than usual on your plate is worth keeping an eye on, but a regular monthly pause is plenty to stay ahead of it.");
+    } else {
+      reasons.push("A calm, ordinary stretch is the easy case — a monthly check-in keeps the habit warm so it's already there when a harder season comes.");
+    }
+
+    /* Support — how connected you feel */
+    if (s.support === "isolated") {
+      tighten = true;
+      reasons.push("Feeling isolated makes everything heavier and quieter, so more frequent check-ins matter — and gently reaching toward even one person, or a professional, can make a real difference.");
+    } else if (s.support === "some") {
+      reasons.push("Having a few people, even if you tend to keep things to yourself, is a real foundation — the check-in is a nudge to actually lean on them when you need to.");
+    } else {
+      reasons.push("People you talk to, and maybe a therapist, are a wonderful support to have — the monthly check-in just helps you use them before things build up.");
+    }
+
+    /* Habits — how you tend yourself */
+    if (s.habits === "push") {
+      tighten = true;
+      reasons.push("If you tend to push things down, a set monthly rhythm gives your feelings a scheduled, permitted place to surface — so they don't have to wait until they build up to be heard.");
+    } else if (s.habits === "some") {
+      reasons.push("A few on-and-off habits are a great start; a regular check-in helps them add up instead of slipping away when life gets busy.");
+    } else {
+      reasons.push("Already journaling, walking, or talking it out means you've built the muscle — the monthly check-in is simply the calendar reminder that protects it.");
+    }
+
+    /* If a hard stretch, low mood, or isolation shows up, gently suggest more often */
+    if (tighten) {
+      reasons.push("Because a hard stretch, low mood, or isolation is in the mix, leaning toward more frequent check-ins — and reaching out for support — is a kind choice right now. This isn't a diagnosis; it's just a gentle nudge to look after yourself.");
+    }
+
+    /* Closing note — always mention the lighter weekly option and that help is available */
+    var note;
+    if (tighten) {
+      note = "<strong>Be gentle, and go a little more often for now.</strong> During heavier stretches, a lighter weekly check-in — even just \"how am I today?\" — can help, alongside the deeper monthly one. And please remember: reaching out is strength, not weakness. If things feel like too much, talk to someone you trust or a professional, and in a crisis call or text 988 (US) any time.";
+    } else {
+      note = "<strong>Anchor it monthly, top it up weekly.</strong> A deeper check-in once a month is the anchor; a quick \"how am I today?\" any week you sense something shifting is a lovely light option in between. Whatever it turns up, help is always available — reaching out is a sign of strength.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.feeling || !quizState.load || !quizState.support || !quizState.habits) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "A gentle rhythm for you: a deeper check-in " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Take ten quiet minutes to ask <strong>how am I, really?</strong>, check the basics, tend one thing, and reach out if you need to. This is a suggested rhythm, not a score — here's the thinking:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Ask honestly", text: "Find ten quiet minutes and settle in", note: "Somewhere you feel comfortable, with a journal, notes app, or voice memo — and maybe a warm drink. This is time for you, not a task to rush. Be kind to yourself before you even start." },
+    { phase: "Ask honestly", text: "Ask \"how am I, really?\" and name the feeling", note: "Skip the reflex \"fine\" and sit with the real answer. Worn down? Restless? Content? Lonely? Naming it — on paper or out loud — takes the vague weight off and turns it into something you can actually look at." },
+    { phase: "Ask honestly", text: "Notice it without judging or fixing", note: "Whatever's there is allowed to be there. This step is only about noticing honestly and with compassion — there are no bad answers and nothing to grade. You're checking in, not putting yourself on trial." },
+    { phase: "Check the basics", text: "Run through sleep, movement, food, sunlight, connection, rest", note: "Go down the maintenance list one by one. How's each been this past month? These are the things most low stretches trace back to — and the good news is they're the ones you can tend." },
+    { phase: "Check the basics", text: "Spot which one's running low", note: "You'll usually feel it right away — the one that's been getting squeezed. Name it plainly (\"I haven't slept well in weeks\") so you know where a small change would help the most." },
+    { phase: "Tend one thing", text: "Pick one small, doable thing to tend", note: "Just one — a walk, an earlier night, a boundary, less doomscrolling, more of what brings you joy. Small and kept beats big and abandoned. One gentle nudge in the right direction is a real win." },
+    { phase: "Tend one thing", text: "Decide when you'll actually do it", note: "A plan without a time tends to evaporate. Attach it to something — \"a walk after lunch tomorrow,\" \"phone off by ten tonight\" — so the one thing you chose has a real chance of happening." },
+    { phase: "Reach out & note", text: "Reach out to someone if things feel heavy", note: "Send the text, call the friend, or book/keep a therapy appointment. \"I've been having a hard time\" is a complete sentence. Reaching out is normal maintenance and a sign of strength, not weakness." },
+    { phase: "Reach out & note", text: "Review the signs it's time for professional help", note: "If low mood, anxiety, hopelessness, or loss of interest have lasted 2+ weeks, are getting worse, or affect daily life, please talk to a doctor or therapist. Any thoughts of self-harm mean reaching out now." },
+    { phase: "Reach out & note", text: "Save the crisis numbers in your phone", note: "Before you ever need them: in the US, 988 (call or text) for the Suicide & Crisis Lifeline, and 741741 (text HOME) for the Crisis Text Line. Outside the US, findahelpline.com lists local services. You are not alone." },
+    { phase: "Reach out & note", text: "Set the date for your next check-in", note: "Nothing reminds you to check in on yourself — so schedule it. Pick a gentle date about a month out (or sooner if you're in a harder stretch or your quiz suggested it), and let a recurring nudge carry the remembering for you." }
+  ];
+
+  var LS_KEY = "upkeepguides:mental-check-in:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

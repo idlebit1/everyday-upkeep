@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do a quarterly career check-in — UpkeepGuides.com</title>
+<meta name="description" content="A short quarterly career check-in keeps you intentional and ready: reflect on the quarter, log your wins, set a couple of goals, and keep your résumé, network, and money current — with a checklist and a personalized schedule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Do a quarterly career check-in — UpkeepGuides.com">
+<meta property="og:description" content="A short quarterly career check-in keeps you intentional and ready: reflect on the quarter, log your wins, set a couple of goals, and keep your résumé, network, and money current — with a checklist and a personalized schedule.">
+<meta property="og:url" content="https://upkeepguides.com/career-check-in.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Do a quarterly career check-in — UpkeepGuides.com">
+<meta name="twitter:description" content="A short quarterly career check-in keeps you intentional and ready: reflect on the quarter, log your wins, set a couple of goals, and keep your résumé, network, and money current — with a checklist and a personalized schedule.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Other · Every 3 months</span>
+      <h1>Do a Quarterly Career Check-In</h1>
+      <p class="lede">Careers drift when the only time you think about them is a crisis — a layoff, a burnout, a promotion that went to someone else. A short quarterly check-in changes that: an hour with a notebook to reflect on the last three months, take stock of your skills and wins, set a couple of goals, and keep your résumé, network, and money current. It's the professional equivalent of routine maintenance — cheap, quick, and it quietly prevents the expensive surprise. Do it four times a year and you stay intentional and ready for opportunities instead of scrambling to react to them.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Typically <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>~1 hour</em> with a notebook</span>
+        <span class="chip">🎯 Turns drift into <em>direction</em></span>
+        <span class="chip">💸 Costs <em>$0 to do</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm desk for a career check-in: an open notebook headed 'Career check-in' with a short goals list, a steaming coffee mug, a laptop showing a simple goals list beside an updated résumé and LinkedIn profile, a small upward progress arrow, and a little potted plant — reflective and encouraging, not corporate or grim">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface -->
+      <rect x="40" y="300" width="480" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="74" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+      <rect x="471" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+
+      <!-- laptop showing a goals list + updated résumé / LinkedIn -->
+      <rect x="150" y="120" width="232" height="158" rx="12" fill="#8a6a4f"/>
+      <rect x="162" y="132" width="208" height="134" rx="6" fill="#fffdf8"/>
+      <!-- screen split: goals list (left) -->
+      <rect x="174" y="146" width="70" height="9" rx="4.5" fill="#3e7c59"/>
+      <g stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round">
+        <line x1="180" y1="170" x2="240" y2="170"/>
+        <line x1="180" y1="184" x2="234" y2="184"/>
+        <line x1="180" y1="198" x2="240" y2="198"/>
+      </g>
+      <!-- little check bullets on the goals -->
+      <g stroke="#5e9a78" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M168 168 l2.5 2.5 l4 -5"/>
+        <path d="M168 182 l2.5 2.5 l4 -5"/>
+        <path d="M168 196 l2.5 2.5 l4 -5"/>
+      </g>
+      <!-- résumé / LinkedIn card (right) -->
+      <rect x="288" y="150" width="70" height="102" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+      <circle cx="304" cy="170" r="8" fill="#5e9a78"/>
+      <rect x="318" y="164" width="30" height="5" rx="2.5" fill="#5e9a78"/>
+      <rect x="318" y="173" width="22" height="5" rx="2.5" fill="#9cc3d4"/>
+      <line x1="298" y1="192" x2="348" y2="192" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="298" y1="202" x2="348" y2="202" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="298" y1="212" x2="340" y2="212" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- small "updated" badge -->
+      <rect x="316" y="232" width="34" height="12" rx="6" fill="#e0a93d"/>
+      <text x="333" y="241" font-size="8" fill="#fffdf8" font-weight="700" text-anchor="middle">updated</text>
+      <!-- laptop base -->
+      <rect x="132" y="276" width="268" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="236" y="276" width="60" height="7" rx="3.5" fill="#8a6a4f"/>
+
+      <!-- open notebook headed "Career check-in", front-left -->
+      <rect x="58" y="248" width="108" height="64" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-7 112 280)"/>
+      <line x1="108" y1="252" x2="108" y2="312" stroke="#e9e2d8" stroke-width="2" transform="rotate(-7 112 280)"/>
+      <g transform="rotate(-7 112 280)">
+        <rect x="68" y="256" width="44" height="7" rx="3.5" fill="#3e7c59"/>
+        <line x1="68" y1="272" x2="102" y2="272" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="68" y1="282" x2="98" y2="282" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="68" y1="292" x2="102" y2="292" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="68" y1="302" x2="94" y2="302" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <rect x="140" y="266" width="46" height="7" rx="3.5" fill="#e0a93d" transform="rotate(20 163 269)"/>
+      <polygon points="184,284 192,290 183,292" fill="#8a6a4f"/>
+
+      <!-- coffee mug with steam, left -->
+      <path d="M62 230 q3 -16 10 -22" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M82 226 q-3 -18 6 -28" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="50" y="234" width="50" height="40" rx="8" fill="#c96f4a"/>
+      <rect x="50" y="234" width="50" height="9" rx="4.5" fill="#d9663f"/>
+      <path d="M100 242 q18 2 18 14 q0 12 -18 12" stroke="#c96f4a" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- small upward progress arrow on the desk, right -->
+      <g>
+        <rect x="398" y="248" width="118" height="64" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <line x1="412" y1="298" x2="502" y2="298" stroke="#e9e2d8" stroke-width="2.5"/>
+        <line x1="412" y1="266" x2="412" y2="298" stroke="#e9e2d8" stroke-width="2.5"/>
+        <path d="M418 292 l22 -16 l18 8 l40 -34" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M486 250 l12 0 l0 12" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="498" cy="250" r="3.5" fill="#e0a93d"/>
+      </g>
+
+      <!-- small plant for warmth, far right on desk -->
+      <path d="M455 248 q-4 -28 -16 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M455 248 q6 -26 18 -34" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="436" cy="202" rx="9" ry="14" fill="#5e9a78" transform="rotate(-32 436 202)"/>
+      <ellipse cx="476" cy="206" rx="9" ry="14" fill="#3e7c59" transform="rotate(30 476 206)"/>
+      <ellipse cx="455" cy="190" rx="8" ry="13" fill="#5e9a78"/>
+      <path d="M438 248 h36 l-6 34 h-24 z" fill="#c96f4a"/>
+      <rect x="434" y="242" width="44" height="10" rx="5" fill="#d9663f"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Work is a treadmill of the immediate — this week's deadlines, this quarter's fire drills — and none of it ever steps back to ask the bigger question: <em>am I actually going somewhere I want to go?</em> That's what a quarterly check-in is for. Here's what a short, regular pause catches that the daily grind never does:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 30 a13 13 0 1 1 24 -8" fill="none" stroke="#dce8ee" stroke-width="3" stroke-linecap="round"/>
+          <path d="M6 30 a13 13 0 0 1 13 -13" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <line x1="18" y1="18" x2="27" y2="10" stroke="#33393b" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M27 10 l-1 5 l-5 -1 z" fill="#e0a93d"/>
+          <circle cx="18" cy="18" r="2.6" fill="#33393b"/>
+        </svg></div>
+        <h3>Careers drift without attention</h3>
+        <p>Left alone, a career doesn't stall so much as slide — you stay busy, you stay employed, and years pass without any deliberate choice about where you're headed. A quarterly pause is what keeps you moving toward what you actually want instead of just wherever the current takes you.</p>
+        <span class="cost">Years of busy, aimless drift</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="5" width="20" height="26" rx="2.5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M14 11 l1.6 1.6 l3 -3.4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 17 l1.6 1.6 l3 -3.4" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 23 l1.6 1.6 l3 -3.4" stroke="#5e9a78" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="21" y1="11.5" x2="25" y2="11.5" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="17.5" x2="25" y2="17.5" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="27" cy="9" r="2.4" fill="#e0a93d"/>
+        </svg></div>
+        <h3>You forget your own wins</h3>
+        <p>The project you saved, the skill you picked up, the praise you got in March — by review time in November, it's all a blur. Logging accomplishments as they happen builds a "brag document" that makes performance reviews, raise conversations, and résumé updates dramatically easier, because you're not scrambling to remember a whole year at once.</p>
+        <span class="cost">A blank mind at review time</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="12" width="22" height="17" rx="2.5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M13 12 v-2 a5 5 0 0 1 10 0 v2" fill="none" stroke="#3e7c59" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="18" cy="20" r="2.4" fill="#3e7c59"/>
+          <line x1="18" y1="22" x2="18" y2="25.5" stroke="#3e7c59" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Opportunity favors the ready</h3>
+        <p>The good role, the reorg, the surprise layoff — these rarely give you notice. A current résumé, a network you've kept warm, and up-to-date skills mean you can act the moment something appears (or lands on you) instead of starting a frantic scramble from zero. Readiness is something you build in calm quarters, not crisis weeks.</p>
+        <span class="cost">Scrambling from a standing start</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 26 l7 -6 l6 3 l11 -12" fill="none" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M25 11 l5 0 l0 5" fill="none" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="13" cy="20" r="2.4" fill="#e0a93d"/>
+          <circle cx="19" cy="23" r="2.2" fill="#5e9a78"/>
+        </svg></div>
+        <h3>Small corrections beat big crises</h3>
+        <p>Burnout, quiet stagnation, a skills gap opening under you — caught early, each is a small, fixable adjustment. Left until it's a crisis, the same thing becomes a resignation you regret or a job hunt you're not ready for. A regular check-in is how you notice the drift while it's still a nudge, not a wall.</p>
+        <span class="cost">A fixable nudge turned into a wall</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check in?</h2>
+    <p class="sub">Once a quarter is the sensible default — often enough to stay intentional, rarely enough that it never feels like a chore. But a new job, a shaky industry, or a stretch of feeling stuck all push toward monthly, while a steady role you're happy in can lean toward every six months (with a lighter monthly note). Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="stage">
+        <div class="q-label">1. Where are you in your career right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="flux">New job, job hunting, or a shaky industry</button>
+          <button class="pill" data-v="normal">Settled, ordinary ups and downs</button>
+          <button class="pill" data-v="steady">A steady long-term role I'm happy in</button>
+        </div>
+        <div class="q-hint">A new role, an active search, or an industry in flux means more is changing under you — and more reason to check in often so you stay ready and oriented.</div>
+      </div>
+      <div class="quiz-q" data-q="feel">
+        <div class="q-label">2. How do you feel about work lately?</div>
+        <div class="pills">
+          <button class="pill" data-v="stuck">Stuck, bored, or burning out</button>
+          <button class="pill" data-v="mixed">A mix — some good days, some flat</button>
+          <button class="pill" data-v="growing">Energized and growing</button>
+        </div>
+        <div class="q-hint">Feeling stuck or burnt out is a signal worth acting on sooner rather than later — a tighter rhythm helps you name the problem and take small steps before it becomes a crisis.</div>
+      </div>
+      <div class="quiz-q" data-q="goals">
+        <div class="q-label">3. How clear is your direction?</div>
+        <div class="pills">
+          <button class="pill" data-v="unsure">Unsure what's next</button>
+          <button class="pill" data-v="rough">A rough idea, still fuzzy</button>
+          <button class="pill" data-v="clear">Clear on where I'm headed</button>
+        </div>
+        <div class="q-hint">When the path ahead is fuzzy, more frequent check-ins are how you find it — each one turns "I don't know" into one small experiment or conversation that makes the next step clearer.</div>
+      </div>
+      <div class="quiz-q" data-q="habits">
+        <div class="q-label">4. Do you already track your wins and network?</div>
+        <div class="pills">
+          <button class="pill" data-v="crisis">No — I only think about it in a crisis</button>
+          <button class="pill" data-v="some">Sometimes, not consistently</button>
+          <button class="pill" data-v="yes">Yes — I log wins and keep in touch</button>
+        </div>
+        <div class="q-hint">If you only think about your career when something goes wrong, a regular check-in is exactly the habit that gets you ahead of it — and until it's routine, doing it more often helps it stick.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>What it costs — and the cost of skipping it</h2>
+    <p class="sub">The check-in itself is free: an hour of reflection with a notebook, done four times a year. Optional investments — a course to close a skills gap, an occasional coach, a conference — are worth flagging in your plan when they'd genuinely move you forward. Set all of that against the real cost of not doing it: drifting for years without a deliberate choice, or scrambling to job-hunt from a cold start after a surprise nobody saw coming.</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">to do the check-in itself — an hour with a notebook (or a notes app) and a little honest reflection is the whole requirement</div></div>
+        <div class="calc-stat"><div class="v">~1 hour</div><div class="l">once a quarter — reflect on the last three months, log wins, set a couple of goals, and keep your toolkit current</div></div>
+        <div class="calc-stat"><div class="v bad">$0–1,000s</div><div class="l">optional and only when it pays off — a course, a certification, a coach, or a conference to close a real gap</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>📓 The quarterly check-in itself</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🎓 An optional course or coach to close a gap</span><span>Worth it when it moves you</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:20%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>😶 Missed raises &amp; promotions you never asked for</span><span>Real money, quietly forgone</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:48%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏃 Job-hunting from zero after a surprise layoff</span><span>Weeks of frantic catch-up</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:68%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🌫️ Years of drift in the wrong direction</span><span>A career you didn't choose</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free hour four times a year</strong> — plus the occasional worth-it investment — against raises you never negotiated, opportunities you weren't ready for, and years drifting somewhere you never meant to go. The check-in is one of the cheapest moves in your whole career, because its entire job is to catch the expensive ones before they compound.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to do a quarterly career check-in</h2>
+    <p class="sub">The flow is simple: reflect on the last quarter, log your wins, set one to three goals for the next one, and keep your toolkit, network, and money current — then book the next check-in. Read the "make it useful" notes first (this is direction and small next steps, not a self-critique session), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>🌱 Make it useful, not a stress spiral</h3>
+      <ul>
+        <li><strong>The point is direction, not judgment.</strong> This is a check-in to find your next small steps — not a session for grading yourself or listing everything you're doing wrong. Keep it constructive; be honest but kind, and list your wins alongside the gaps.</li>
+        <li><strong>Keep it on your <em>personal</em> device and accounts if you're exploring.</strong> Don't do career reflection, résumé edits, or any job search on your employer's laptop, email, or accounts — keep all of it on your own device and mind confidentiality about your current role.</li>
+        <li><strong>Protect your privacy on LinkedIn while job-hunting.</strong> Before you polish your profile, turn off "share profile updates with your network" (activity broadcasts) so a flurry of edits doesn't quietly signal your boss that you're looking.</li>
+        <li><strong>A check-in is planning, not a rash decision.</strong> Reflection can stir up strong feelings. Sleep on any big move — quitting, a pivot, a confrontation — rather than acting on it in one frustrated sitting. Note the impulse, then revisit it with a clear head.</li>
+        <li><strong>Take persistent burnout seriously.</strong> If you feel ongoing dread, anxiety, or exhaustion about work, that's worth real attention — pair this with a proper rest and <a href="mental-check-in.html">mental check-in</a>, and if it's affecting your health, talk to a professional. This guide is planning, not mental-health care.</li>
+        <li><strong>Celebrate progress and revisit goals kindly.</strong> A goal you didn't hit is information, not failure — adjust it, break it smaller, or let it go. Momentum comes from noticing what <em>did</em> move, not from punishing yourself for what didn't.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A notebook or notes app</span>
+      <span class="tool-chip">Your ongoing "brag document" (or start one)</span>
+      <span class="tool-chip">Last quarter's goals (if you set any)</span>
+      <span class="tool-chip">Your current résumé</span>
+      <span class="tool-chip">Your LinkedIn / portfolio</span>
+      <span class="tool-chip">A recent pay stub or comp details</span>
+      <span class="tool-chip">A quiet, uninterrupted hour</span>
+      <span class="tool-chip">Honesty and a little kindness</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five steps worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of reflecting on the past quarter in a notebook: noting what went well, what drained you, and what you learned">
+          <rect x="60" y="24" width="160" height="118" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <line x1="140" y1="30" x2="140" y2="136" stroke="#e9e2d8" stroke-width="2"/>
+          <!-- left column: went well (check) -->
+          <path d="M74 52 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="90" y1="52" x2="128" y2="52" stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M74 72 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="90" y1="72" x2="122" y2="72" stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round"/>
+          <!-- left column: drained (minus) -->
+          <line x1="74" y1="98" x2="82" y2="98" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="90" y1="98" x2="128" y2="98" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="74" y1="116" x2="82" y2="116" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <line x1="90" y1="116" x2="120" y2="116" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+          <!-- right column: learned (lightbulb) -->
+          <circle cx="178" cy="58" r="10" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <rect x="174" y="68" width="8" height="5" rx="1.5" fill="#e0a93d"/>
+          <line x1="196" y1="90" x2="206" y2="90" stroke="#e9e2d8" stroke-width="2.6" stroke-linecap="round" transform="rotate(0)"/>
+          <line x1="160" y1="92" x2="200" y2="92" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="160" y1="106" x2="196" y2="106" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+          <text x="64" y="162" font-size="11" fill="#3e7c59" font-weight="700">what worked · what drained · learned</text>
+        </svg>
+        <h4>Reflect on the quarter</h4>
+        <p>Start by looking back at the last three months honestly: what went well and why, what drained or frustrated you, and what you learned. You're not grading yourself — you're gathering the raw material. The patterns here (what energizes you, what doesn't) quietly point at everything you set next.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of logging your wins into a brag document: a page titled Wins with dated accomplishments and a star">
+          <rect x="76" y="20" width="128" height="140" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="88" y="32" width="60" height="9" rx="4.5" fill="#3e7c59"/>
+          <text x="118" y="40" font-size="0" fill="#3e7c59"></text>
+          <!-- star badge -->
+          <path d="M182 30 l3 7 l7.5 0.6 l-5.7 4.9 l1.8 7.3 l-6.6 -4 l-6.6 4 l1.8 -7.3 l-5.7 -4.9 l7.5 -0.6 z" fill="#e0a93d"/>
+          <!-- win entries -->
+          <g stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M92 62 l3 3 l5 -6"/>
+            <path d="M92 84 l3 3 l5 -6"/>
+            <path d="M92 106 l3 3 l5 -6"/>
+            <path d="M92 128 l3 3 l5 -6"/>
+          </g>
+          <g stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round">
+            <line x1="106" y1="63" x2="190" y2="63"/>
+            <line x1="106" y1="85" x2="184" y2="85"/>
+            <line x1="106" y1="107" x2="190" y2="107"/>
+            <line x1="106" y1="129" x2="178" y2="129"/>
+          </g>
+          <text x="82" y="152" font-size="11" fill="#3e7c59" font-weight="700">log it while you remember</text>
+        </svg>
+        <h4>Log your wins (the brag document)</h4>
+        <p>Write down what you accomplished this quarter — shipped projects, problems solved, praise received, skills gained, numbers moved. Keep it in one running "brag document" you add to as things happen, so your next review, raise ask, and résumé update start from a rich list instead of a blank page.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of setting one to three concrete goals for the next quarter, each with a small first next step">
+          <!-- target -->
+          <circle cx="80" cy="80" r="42" fill="#fbf8f2" stroke="#7fb3c8" stroke-width="3"/>
+          <circle cx="80" cy="80" r="27" fill="#fbf8f2" stroke="#7fb3c8" stroke-width="3"/>
+          <circle cx="80" cy="80" r="11" fill="#d9663f"/>
+          <path d="M40 44 l40 36" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <path d="M32 38 l12 2 l-2 -12 z" fill="#3e7c59"/>
+          <!-- 3 goal lines with a first-step arrow each -->
+          <g>
+            <rect x="150" y="44" width="14" height="14" rx="3" fill="none" stroke="#3e7c59" stroke-width="2"/>
+            <line x1="172" y1="51" x2="248" y2="51" stroke="#b9b1a3" stroke-width="2.8" stroke-linecap="round"/>
+            <rect x="150" y="72" width="14" height="14" rx="3" fill="none" stroke="#3e7c59" stroke-width="2"/>
+            <line x1="172" y1="79" x2="242" y2="79" stroke="#b9b1a3" stroke-width="2.8" stroke-linecap="round"/>
+            <rect x="150" y="100" width="14" height="14" rx="3" fill="none" stroke="#3e7c59" stroke-width="2"/>
+            <line x1="172" y1="107" x2="248" y2="107" stroke="#b9b1a3" stroke-width="2.8" stroke-linecap="round"/>
+          </g>
+          <text x="150" y="140" font-size="11" fill="#3e7c59" font-weight="700">1–3 goals · a next step each</text>
+        </svg>
+        <h4>Set 1–3 goals for next quarter</h4>
+        <p>Pick just one to three concrete goals for the coming quarter — a skill to build, a project to land, a relationship to grow. Keep the list short so it's real, and give each goal a small, specific first step you can take this week. A goal with a next step is a plan; a goal without one is a wish.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of keeping your toolkit current: an updated résumé, a LinkedIn profile, and a portfolio, with an updated badge">
+          <!-- résumé -->
+          <rect x="34" y="30" width="74" height="106" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+          <circle cx="50" cy="50" r="8" fill="#5e9a78"/>
+          <rect x="64" y="45" width="34" height="5" rx="2.5" fill="#5e9a78"/>
+          <rect x="64" y="54" width="26" height="5" rx="2.5" fill="#9cc3d4"/>
+          <line x1="44" y1="74" x2="98" y2="74" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="44" y1="86" x2="98" y2="86" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="44" y1="98" x2="90" y2="98" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="44" y1="110" x2="98" y2="110" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- LinkedIn / portfolio card -->
+          <rect x="122" y="46" width="80" height="74" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <rect x="134" y="58" width="24" height="24" rx="4" fill="#5e9a78"/>
+          <line x1="166" y1="62" x2="192" y2="62" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="166" y1="72" x2="188" y2="72" stroke="#9cc3d4" stroke-width="2.6" stroke-linecap="round"/>
+          <line x1="134" y1="94" x2="192" y2="94" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="134" y1="104" x2="180" y2="104" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- updated badge -->
+          <rect x="206" y="118" width="52" height="18" rx="9" fill="#e0a93d"/>
+          <text x="232" y="131" font-size="10" fill="#fffdf8" font-weight="700" text-anchor="middle">updated</text>
+          <text x="34" y="158" font-size="11" fill="#3e7c59" font-weight="700">keep it current, not last-minute</text>
+        </svg>
+        <h4>Keep your toolkit current</h4>
+        <p>Give your résumé, LinkedIn, and portfolio a quick refresh with this quarter's wins while they're fresh — updating a little each quarter beats rebuilding it all in a panic. Note one skill worth building next, so your toolkit keeps pace with where you're headed, not just where you've been.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of tending your network and money: reconnecting with a few people, checking compensation, and scheduling the next check-in on a calendar">
+          <!-- network nodes -->
+          <circle cx="60" cy="46" r="11" fill="#5e9a78"/>
+          <circle cx="42" cy="94" r="11" fill="#7fb3c8"/>
+          <circle cx="86" cy="100" r="11" fill="#e0a93d"/>
+          <circle cx="70" cy="70" r="9" fill="#3e7c59"/>
+          <g stroke="#b9b1a3" stroke-width="2.4">
+            <line x1="60" y1="46" x2="70" y2="70"/>
+            <line x1="42" y1="94" x2="70" y2="70"/>
+            <line x1="86" y1="100" x2="70" y2="70"/>
+          </g>
+          <text x="60" y="128" font-size="10" fill="#6b7376" text-anchor="middle">reconnect</text>
+          <!-- money / comp -->
+          <circle cx="168" cy="72" r="26" fill="#e3efe8" stroke="#3e7c59" stroke-width="2.5"/>
+          <text x="168" y="80" font-size="20" fill="#3e7c59" font-weight="800" text-anchor="middle">$</text>
+          <text x="168" y="116" font-size="10" fill="#6b7376" text-anchor="middle">check comp</text>
+          <!-- calendar / next check-in -->
+          <rect x="212" y="46" width="52" height="48" rx="5" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+          <rect x="212" y="46" width="52" height="12" rx="5" fill="#8a6a4f"/>
+          <path d="M226 76 l4 4 l8 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="238" y="112" font-size="10" fill="#6b7376" text-anchor="middle">book the next one</text>
+        </svg>
+        <h4>Tend your network &amp; money</h4>
+        <p>Reconnect with a few people — a former colleague, a mentor, someone whose work you admire — before you ever need a favor. Glance at the money side too: your comp against the market, your benefits, and when a raise or review is due. Then put the next check-in on the calendar so it actually happens.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Career-check-in progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Quarter reflected on, wins logged, goals set with a next step each, toolkit and network refreshed, and the next check-in on the calendar — you're intentional and ready, not reactive. Same calm hour again in about three months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time — or time to go deeper</h2>
+    <p class="sub">A career you're tending quietly hums along: you know your wins, you have a rough direction, and opportunities feel like choices rather than emergencies. These are the signals it's overdue for a check-in — and the ones that deserve real support beyond a notebook:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>You dread Mondays.</strong> The occasional bad week is normal; a steady Sunday-night dread that's lasted a while is your gut flagging something a check-in should name and address before it hardens into misery.</li>
+        <li><strong>You've felt stuck or bored for months.</strong> Coasting can be restful for a season, but months of flat, unchallenged sameness is stagnation — sit down and ask what a next step, a stretch project, or a change would look like.</li>
+        <li><strong>You keep getting passed over.</strong> A promotion or raise that went elsewhere again is worth examining honestly and unemotionally: is it a skills gap, a visibility gap, or a sign this isn't the right place for you? A check-in turns the sting into a plan.</li>
+        <li><strong>Your industry is in flux.</strong> Layoffs in your field, a company that's shaky, or technology reshaping your role are all reasons to check in more often and keep your toolkit and network ready — so a surprise is an inconvenience, not a catastrophe.</li>
+        <li><strong>You can't remember your last raise or review.</strong> If it's been so long you're not sure, that's a flag in itself — line up your wins, check your comp against the market, and start the conversation you've been putting off.</li>
+        <li><strong>Consider a mentor or a coach.</strong> When the same questions keep coming up and you can't see a way through on your own, a mentor's perspective or a career coach can turn a fog into concrete options — often faster than another solo round.</li>
+        <li><strong>Take burnout and work anxiety seriously.</strong> Persistent burnout, dread, or work-related anxiety isn't a productivity problem to optimize away — it deserves real rest and, if it's affecting your health, a mental-health professional. Pair this check-in with a proper <a href="mental-check-in.html">mental check-in</a>, and don't try to plan your way out of something that needs care.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I do a career check-in?</summary>
+      <p>Once a quarter is the sweet spot for most people — frequent enough to stay intentional and catch drift early, rare enough that it never feels like a burden. Move to monthly (even a lighter version) if you're in a new job, actively job hunting, in a shaky industry, or feeling stuck or burnt out — the more that's changing, the more a regular pause is worth it. If you're in a steady, long-term role you're genuinely happy in and on top of your wins and network, you can stretch toward every six months, ideally with a quick monthly note so nothing important slips. The four-question quiz above tailors the interval to your situation.</p>
+    </details>
+    <details>
+      <summary>What should a career check-in cover?</summary>
+      <p>Keep it to about an hour and hit five things. First, <strong>reflect</strong> on the past quarter — what went well, what drained you, what you learned. Second, <strong>log your wins</strong> into an ongoing brag document. Third, <strong>set one to three concrete goals</strong> for the next quarter, each with a small first step. Fourth, <strong>keep your toolkit current</strong> — a quick refresh of your résumé, LinkedIn, and portfolio, plus a skill worth building. Fifth, <strong>tend your network and money</strong> — reconnect with a few people, glance at your comp and benefits and when a raise is due — and book the next check-in. The point is breadth over depth: a light sweep across the things the daily grind never surfaces.</p>
+    </details>
+    <details>
+      <summary>What's a "brag document" and why should I log my wins?</summary>
+      <p>A brag document is a running list of your accomplishments — projects shipped, problems solved, skills learned, praise received, numbers moved — that you add to as they happen rather than trying to reconstruct them once a year. It's the single highest-leverage career habit, because memory is terrible at this: by review season you'll have forgotten most of what you did in the spring. With a brag document, your performance review writes itself, your case for a raise is concrete instead of vague, and updating your résumé becomes copy-editing rather than archaeology. It also quietly boosts your confidence — seeing the list reminds you how much you actually got done. Keep it somewhere personal that you'll return to, and jot wins down the day they happen.</p>
+    </details>
+    <details>
+      <summary>How do I set career goals that actually stick?</summary>
+      <p>Three things make the difference. Keep the list <strong>short</strong> — one to three goals, not ten; a long list is really just a wish list, and it fractures your attention. Make each one <strong>concrete</strong> enough that you'll know if you hit it ("give one conference talk," "learn enough SQL to pull my own reports," "have four coffees with people outside my team") rather than fuzzy ("grow," "network more"). And give each goal a <strong>small first step</strong> you can take this week — the thing that turns intention into momentum. Then revisit them at the next check-in kindly: a goal you missed is information, not a verdict. Adjust it, break it smaller, or drop it if it stopped mattering. Progress comes from noticing what moved and building on it, not from punishing the misses.</p>
+    </details>
+    <details>
+      <summary>Should I always keep my résumé updated, even when I'm not looking?</summary>
+      <p>Yes — and it's one of the most quietly valuable habits there is. Opportunities and disruptions rarely announce themselves: a great role opens, a recruiter reaches out, a reorg or a layoff lands. If your résumé and LinkedIn are current, you can act in a day instead of losing a week to a frantic rewrite while trying to remember what you did three years ago. Keeping it fresh is also far easier when you do it in small quarterly passes — you just add this quarter's wins from your brag document — than when you rebuild the whole thing from scratch under pressure. And the act of updating it is clarifying in itself: it shows you whether your recent work is actually building the story you want to tell. Update it as part of every check-in, whether or not you're looking.</p>
+    </details>
+    <details>
+      <summary>How do I job-hunt discreetly while I'm still employed?</summary>
+      <p>Keep it entirely off your employer's systems. Do your reflection, résumé edits, applications, and any recruiter email on your <strong>personal</strong> device and personal accounts — never the work laptop, work email, or work Wi-Fi, which employers can often monitor. On LinkedIn, turn off activity broadcasts (the "share profile updates with your network" setting) before you polish your profile, so a wave of edits doesn't tip off your manager, and consider turning on the "open to work" signal in the recruiters-only mode rather than the public badge. Be thoughtful about references and about connecting with recruiters your colleagues can see. Mind confidentiality — don't take company data with you or discuss it in interviews. And remember a check-in is planning, not a rash exit: if a search grows out of frustration, sleep on the big decisions and let a clear head, not a bad week, drive them.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Careers drift when the only time you think about them is a crisis.</h2>
+        <p>A quarterly check-in asks for one calm hour — on the one thing that quietly decides whether you're moving toward what you want. Let Upkeep Ledger keep the check-in on the calendar so you stay intentional and ready, right alongside your <a href="mental-check-in.html">monthly mental check-in</a>, your <a href="financial-review.html">annual financial review</a>, and every other quiet task that keeps your life running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=career-check-in&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=career-check-in&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This guide is general information for planning purposes only — not career, legal, or mental-health advice; for persistent burnout or big decisions, talk to a professional about your specific situation.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { stage: null, feel: null, goals: null, habits: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 3;
+    var tighten = false;
+
+    /* Career stage / stability */
+    if (s.stage === "flux") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("A new job, an active search, or a shaky industry means a lot is changing under you — a monthly check-in keeps your goals, your toolkit, and your network ready while things are in motion.");
+    } else if (s.stage === "steady") {
+      reasons.push("A steady long-term role you're happy in doesn't shift much quarter to quarter, so a lighter cadence with a quick monthly note is genuinely enough.");
+    } else {
+      reasons.push("A settled role with ordinary ups and downs is exactly what the quarterly default is written for.");
+    }
+
+    /* How you feel */
+    if (s.feel === "stuck") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("Feeling stuck, bored, or burnt out is a signal worth acting on sooner rather than later — checking in monthly helps you name the problem and take small steps before it hardens into a crisis.");
+    } else if (s.feel === "growing") {
+      reasons.push("Feeling energized and growing is a good sign your current rhythm is working — keep confirming it, and enjoy the momentum.");
+    } else {
+      reasons.push("A mix of good days and flat ones is normal; this check-in is the place to notice which is which and gently tilt toward more of the good.");
+    }
+
+    /* Goals / direction */
+    if (s.goals === "unsure") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("When you're unsure what's next, more frequent check-ins are how you find the way — each one turns 'I don't know' into one small experiment or conversation that makes the next step clearer.");
+    } else if (s.goals === "clear") {
+      reasons.push("Being clear on where you're headed means the check-in is mostly about steady progress, so you don't need to look as often — just keep the momentum honest.");
+    } else {
+      reasons.push("A rough, still-fuzzy idea of your direction is normal — the check-in is where it sharpens a little each time.");
+    }
+
+    /* Habits / tracking */
+    if (s.habits === "crisis") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("If you only think about your career in a crisis, doing the check-in monthly for a while is what builds the habit — once it's routine, you can ease back to quarterly and stay ahead of the surprises.");
+    } else if (s.habits === "yes") {
+      reasons.push("Already logging your wins and keeping in touch means you've got the habit — a quarterly sweep is plenty to keep it all current.");
+    } else {
+      reasons.push("Tracking things sometimes but not consistently is common — a regular check-in is what turns the on-and-off habit into a reliable one.");
+    }
+
+    /* Best-case relaxation: steady, growing, clear, already tracking */
+    if (!tighten && s.stage === "steady" && s.feel === "growing" && s.goals === "clear" && s.habits === "yes") {
+      months = 6;
+      reasons.push("A steady, energizing role with a clear direction and habits already in place is the one case where every six months is genuinely enough — a quick monthly note in between keeps nothing from slipping.");
+    }
+
+    /* Closing note */
+    var note;
+    if (months === 1) {
+      note = "<strong>Monthly for now, then ease off:</strong> a tighter rhythm is most useful while things are changing, uncertain, or hard. Once you feel settled and on track, you can relax back toward a calm quarterly check-in with a lighter monthly note.";
+    } else if (months === 6) {
+      note = "<strong>Every six months works here</strong> — but keep a lighter monthly note going so wins and to-dos don't slip through the six-month gaps. Even five quiet minutes to jot an accomplishment keeps your brag document (and your readiness) alive between the deeper check-ins.";
+    } else {
+      note = "<strong>Quarterly is the sweet spot</strong> — often enough to stay intentional, rare enough that it never feels like a chore. Between check-ins, jot wins into your brag document as they happen so the next quarter's sit-down starts from a full page, not a blank one.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.stage || !quizState.feel || !quizState.goals || !quizState.habits) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: a career check-in " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Each time, do the short sweep — <strong>reflect on the quarter, log your wins, set 1–3 goals, and keep your toolkit, network, and money current</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Reflect on the quarter", text: "Set aside a quiet hour and gather your materials", note: "Pull together your brag document (or start one), last quarter's goals, your résumé and LinkedIn, and a recent pay stub. Find an hour without interruptions — and if you're exploring options, keep it all on your personal device and accounts." },
+    { phase: "Reflect on the quarter", text: "Note what went well, what drained you, and what you learned", note: "Look back at the last three months honestly but kindly. Name what energized you, what frustrated or exhausted you, and what you picked up. You're gathering raw material, not grading yourself — the patterns point at what to do next." },
+    { phase: "Reflect on the quarter", text: "Sit with any big feelings before acting on them", note: "Reflection can stir up strong reactions. If a big move surfaces — quitting, a pivot, a hard conversation — note the impulse and sleep on it. And if you notice persistent burnout or dread, take it seriously and pair this with a real rest and mental check-in." },
+    { phase: "Log your wins", text: "Add this quarter's accomplishments to your brag document", note: "Write down what you shipped, the problems you solved, the praise you got, the skills you gained, and any numbers you moved. Keep it in one running list you add to as things happen — it makes reviews, raises, and résumé updates far easier." },
+    { phase: "Log your wins", text: "Note any skills, feedback, or growth from the quarter", note: "Capture what you got better at and any useful feedback, positive or critical. This is the record that shows your trajectory over time — and reminds you, on a flat week, how much you've actually done." },
+    { phase: "Set the next goals", text: "Choose 1–3 concrete goals for next quarter", note: "Keep the list short so it's real. Pick a skill to build, a project to land, or a relationship to grow — specific enough that you'll know if you hit it. A short list of real goals beats a long list of wishes every time." },
+    { phase: "Set the next goals", text: "Give each goal a small first step for this week", note: "Turn each goal into a plan by naming the very next action — send one email, sign up for one course, block one hour. The first step is what creates momentum; a goal without one is just a hope." },
+    { phase: "Set the next goals", text: "Revisit last quarter's goals kindly", note: "Check what moved and what didn't. Celebrate the progress, and treat a missed goal as information, not failure — adjust it, break it smaller, or let it go if it stopped mattering." },
+    { phase: "Toolkit, network & next", text: "Refresh your résumé, LinkedIn, and portfolio", note: "Add this quarter's wins while they're fresh — updating a little each quarter beats a panicked rebuild later. If you're job-hunting, turn off LinkedIn activity broadcasts before you edit so a flurry of changes doesn't tip off your employer." },
+    { phase: "Toolkit, network & next", text: "Pick one skill worth building next", note: "Choose a single skill or area to grow toward where you're headed — and if a course, certification, or conference would genuinely help, flag it in your plan as a worthwhile investment." },
+    { phase: "Toolkit, network & next", text: "Reconnect with a few people and check your money", note: "Reach out to a couple of contacts — a former colleague, a mentor — before you ever need a favor. Then glance at your comp against the market, your benefits, and when a raise or review is due, so you're ready to make the case." },
+    { phase: "Toolkit, network & next", text: "Log the date and schedule the next check-in", note: "Note today's date and put the next check-in (at your quiz interval) on the calendar so it actually happens. Careers drift when nothing reminds you to look — a scheduled hour is what keeps you intentional." }
+  ];
+
+  var LS_KEY = "upkeepguides:career-check-in:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

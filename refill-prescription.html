@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refill your prescriptions on time — UpkeepGuides.com</title>
+<meta name="description" content="Refill maintenance meds before you run out: why gaps undo the treatment, how to use auto-refill, 90-day supplies, and reminders, and a checklist to never hit zero pills.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Refill your prescriptions on time — UpkeepGuides.com">
+<meta property="og:description" content="Refill maintenance meds before you run out: why gaps undo the treatment, how to use auto-refill, 90-day supplies, and reminders, and a checklist to never hit zero pills.">
+<meta property="og:url" content="https://upkeepguides.com/refill-prescription.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Refill your prescriptions on time — UpkeepGuides.com">
+<meta name="twitter:description" content="Refill maintenance meds before you run out: why gaps undo the treatment, how to use auto-refill, 90-day supplies, and reminders, and a checklist to never hit zero pills.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Monthly</span>
+      <h1>Refill Your Prescriptions on Time</h1>
+      <p class="lede">If you take a medication every day, the quiet failure isn't dramatic — it's the morning you shake the bottle and it's empty, and the refill you thought you could grab is stuck behind a doctor's re-authorization, a pharmacy backlog, or an insurance approval. For a maintenance medication that only works if you take it consistently, that gap isn't a minor annoyance: it can let your condition flare or rebound, and some meds are genuinely dangerous to stop suddenly. The upkeep job is simple and important. Refill <em>before</em> you run out, lean on the tools that do it for you — auto-refill, a 90-day supply, reminders, a pill organizer — and never let the count reach zero. This is general information, not medical advice; your doctor and pharmacist are your guides.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Refill <em>before it's empty</em></span>
+        <span class="chip">⏳ Leave <em>~a week's buffer</em></span>
+        <span class="chip">💊 <em>90-day</em> supplies help</span>
+        <span class="chip">🔁 Auto-refill <em>does the work</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of staying ahead on prescription refills: a nearly-empty amber pill bottle with a refills-remaining label sits next to a fresh full bottle on a kitchen counter, a phone shows a pharmacy app with an auto-refill ready notice, a weekly pill organizer with seven day compartments sits nearby, and a wall calendar has a refill reminder circled">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- kitchen counter -->
+      <rect x="40" y="356" width="490" height="14" rx="4" fill="#b9b1a3"/>
+      <rect x="40" y="370" width="490" height="10" rx="3" fill="#8a6a4f"/>
+
+      <!-- calendar on the wall with a reminder circled -->
+      <rect x="392" y="46" width="132" height="120" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="392" y="46" width="132" height="26" rx="10" fill="#3e7c59"/>
+      <rect x="392" y="60" width="132" height="12" fill="#3e7c59"/>
+      <rect x="414" y="38" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <rect x="494" y="38" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <!-- calendar grid dots -->
+      <g fill="#cdd9de">
+        <circle cx="410" cy="90" r="4"/><circle cx="432" cy="90" r="4"/><circle cx="454" cy="90" r="4"/><circle cx="476" cy="90" r="4"/><circle cx="498" cy="90" r="4"/>
+        <circle cx="410" cy="112" r="4"/><circle cx="432" cy="112" r="4"/><circle cx="454" cy="112" r="4"/><circle cx="476" cy="112" r="4"/><circle cx="498" cy="112" r="4"/>
+        <circle cx="410" cy="134" r="4"/><circle cx="432" cy="134" r="4"/>
+      </g>
+      <!-- reminder circled in gold -->
+      <circle cx="476" cy="134" r="12" fill="none" stroke="#e0a93d" stroke-width="3.5"/>
+      <circle cx="476" cy="134" r="4" fill="#e0a93d"/>
+      <text x="404" y="158" font-size="10" fill="#3e7c59" font-weight="700">refill day</text>
+
+      <!-- phone showing pharmacy app: auto-refill ready -->
+      <rect x="60" y="150" width="118" height="196" rx="18" fill="#33393b"/>
+      <rect x="68" y="164" width="102" height="168" rx="8" fill="#fffdf8"/>
+      <!-- app header -->
+      <rect x="68" y="164" width="102" height="30" rx="8" fill="#3e7c59"/>
+      <rect x="68" y="178" width="102" height="16" fill="#3e7c59"/>
+      <text x="119" y="185" font-size="10" fill="#fffdf8" font-weight="700" text-anchor="middle">Pharmacy</text>
+      <!-- pill row in the app -->
+      <rect x="78" y="204" width="24" height="14" rx="7" fill="#e0a93d"/>
+      <rect x="90" y="204" width="12" height="14" rx="0" fill="#d98e3b"/>
+      <rect x="110" y="207" width="52" height="6" rx="3" fill="#d8cfbe"/>
+      <rect x="110" y="217" width="36" height="5" rx="2.5" fill="#e9e2d8"/>
+      <!-- auto-refill ready badge -->
+      <rect x="78" y="236" width="84" height="26" rx="8" fill="#e3efe8"/>
+      <path d="M86 249 l5 5 l10 -11" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="130" y="252" font-size="9" fill="#2c5a40" font-weight="700" text-anchor="middle">Auto-refill</text>
+      <!-- toggle switch on -->
+      <rect x="78" y="272" width="40" height="18" rx="9" fill="#5e9a78"/>
+      <circle cx="108" cy="281" r="7" fill="#fffdf8"/>
+      <rect x="126" y="277" width="36" height="6" rx="3" fill="#e9e2d8"/>
+      <rect x="78" y="300" width="84" height="20" rx="8" fill="#3e7c59"/>
+      <text x="120" y="314" font-size="9.5" fill="#fffdf8" font-weight="700" text-anchor="middle">Ready to pick up</text>
+
+      <!-- nearly-empty amber pill bottle with refills-remaining label -->
+      <rect x="210" y="250" width="70" height="96" rx="10" fill="#d98e3b" opacity="0.9"/>
+      <rect x="210" y="250" width="70" height="96" rx="10" fill="#e0a93d" opacity="0.5"/>
+      <!-- white childproof cap -->
+      <rect x="204" y="234" width="82" height="22" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- label -->
+      <rect x="216" y="272" width="58" height="66" rx="4" fill="#fffdf8"/>
+      <rect x="222" y="280" width="46" height="5" rx="2.5" fill="#8a6a4f"/>
+      <rect x="222" y="290" width="36" height="4" rx="2" fill="#cdd9de"/>
+      <text x="245" y="312" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">Refills: 1</text>
+      <rect x="222" y="320" width="46" height="4" rx="2" fill="#e9e2d8"/>
+      <rect x="222" y="328" width="30" height="4" rx="2" fill="#e9e2d8"/>
+      <!-- one lonely pill left inside near the bottom -->
+      <ellipse cx="248" cy="342" rx="6" ry="4" fill="#e3efe8"/>
+      <text x="245" y="360" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">nearly empty</text>
+
+      <!-- fresh, full pill bottle -->
+      <rect x="300" y="228" width="72" height="118" rx="10" fill="#3e7c59"/>
+      <rect x="300" y="228" width="72" height="118" rx="10" fill="#5e9a78" opacity="0.4"/>
+      <rect x="294" y="210" width="84" height="22" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- label -->
+      <rect x="308" y="252" width="56" height="64" rx="4" fill="#fffdf8"/>
+      <rect x="314" y="260" width="44" height="5" rx="2.5" fill="#8a6a4f"/>
+      <rect x="314" y="270" width="34" height="4" rx="2" fill="#cdd9de"/>
+      <text x="336" y="292" font-size="9" fill="#2c5a40" font-weight="700" text-anchor="middle">90-day</text>
+      <rect x="314" y="300" width="44" height="4" rx="2" fill="#e9e2d8"/>
+      <rect x="314" y="308" width="28" height="4" rx="2" fill="#e9e2d8"/>
+      <!-- full of pills -->
+      <g fill="#e3efe8">
+        <ellipse cx="322" cy="330" rx="6" ry="4"/>
+        <ellipse cx="338" cy="334" rx="6" ry="4"/>
+        <ellipse cx="352" cy="330" rx="6" ry="4"/>
+        <ellipse cx="330" cy="340" rx="6" ry="4"/>
+        <ellipse cx="346" cy="341" rx="6" ry="4"/>
+      </g>
+      <text x="336" y="360" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">fresh supply</text>
+
+      <!-- weekly pill organizer with seven compartments -->
+      <rect x="392" y="300" width="150" height="46" rx="8" fill="#7fb3c8"/>
+      <rect x="392" y="300" width="150" height="14" rx="8" fill="#9cc3d4"/>
+      <g stroke="#5e9a78" stroke-width="2.5">
+        <line x1="413" y1="316" x2="413" y2="344"/>
+        <line x1="434" y1="316" x2="434" y2="344"/>
+        <line x1="455" y1="316" x2="455" y2="344"/>
+        <line x1="476" y1="316" x2="476" y2="344"/>
+        <line x1="497" y1="316" x2="497" y2="344"/>
+        <line x1="518" y1="316" x2="518" y2="344"/>
+      </g>
+      <!-- day letters -->
+      <g font-size="8" fill="#2c5a40" font-weight="700" text-anchor="middle">
+        <text x="402" y="311">S</text><text x="423" y="311">M</text><text x="444" y="311">T</text>
+        <text x="465" y="311">W</text><text x="487" y="311">T</text><text x="508" y="311">F</text><text x="530" y="311">S</text>
+      </g>
+      <!-- a couple of pills in compartments -->
+      <ellipse cx="402" cy="330" rx="4" ry="3" fill="#e0a93d"/>
+      <ellipse cx="444" cy="330" rx="4" ry="3" fill="#e0a93d"/>
+      <ellipse cx="487" cy="330" rx="4" ry="3" fill="#e0a93d"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A maintenance medication is one of the few things you do that only works if you never skip it — and running out is a bigger deal than it feels like in the moment. Here's why staying ahead of the refill matters, and why "I'll get it when it's empty" is cutting it too close:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M8 20 h20" stroke="#e0a93d" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M11 16 q7 -9 14 0" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M25 25 l3 3 M28 25 l-3 3" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="12" cy="24" r="1.6" fill="#e0a93d"/>
+        </svg></div>
+        <h3>Missing doses undoes the treatment</h3>
+        <p>Many maintenance meds only work if they're in your system consistently. A gap can let your condition flare or rebound — and some medications (blood pressure, heart, seizure, mental-health, and more) are genuinely dangerous to stop suddenly. The steady dose is the whole point.</p>
+        <span class="cost">Your condition can flare or rebound</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="12" fill="none" stroke="#e0a93d" stroke-width="2.4"/>
+          <path d="M18 11 v8 l6 4" stroke="#e0a93d" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M28 8 l2 -2 M8 8 l-2 -2" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Refills have lead time</h3>
+        <p>Getting a refill is rarely instant. You may need the doctor to re-authorize it, the pharmacy to order or fill it, or insurance to approve it — any of which can take days. Requesting it the moment you're empty leaves no room for a snag, so the bottle sits dry while you wait.</p>
+        <span class="cost">Days of delay you didn't plan for</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="9" y="6" width="18" height="24" rx="3" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2"/>
+          <line x1="13" y1="13" x2="23" y2="13" stroke="#e0a93d" stroke-width="2" stroke-linecap="round"/>
+          <line x1="13" y1="18" x2="23" y2="18" stroke="#cdd9de" stroke-width="2" stroke-linecap="round"/>
+          <text x="18" y="27" font-size="8" fill="#d9663f" font-weight="700" text-anchor="middle">0</text>
+        </svg></div>
+        <h3>Prescriptions run out of refills</h3>
+        <p>A script only carries so many refills, and it expires. Eventually "no refills remaining" comes up — which usually means contacting your doctor, often tied to a check-in appointment. If you wait until the last pill to notice, you can't get more in time.</p>
+        <span class="cost">A new script (and often a visit) needed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 6 a12 12 0 1 1 -8.5 3.5" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M9 6 l1 6 l6 -1" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 19 l4 4 l7 -8" stroke="#5e9a78" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Tools make it effortless</h3>
+        <p>You don't have to hold this in your head. Pharmacy auto-refill and auto-reminders, a 90-day or mail-order supply for maintenance meds, and a simple pill organizer mean you refill on autopilot and never scramble at the last pill.</p>
+        <span class="cost">Set it up once, stop worrying</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> refill?</h2>
+    <p class="sub">Many prescriptions are filled monthly; many maintenance meds can move to a 90-day supply. The real answer isn't a fixed number — it's "refill before you run out, with enough buffer that a delay can't leave you empty." More meds, more critical meds, and no system in place all mean building in more buffer and more reminders. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="count">
+        <div class="q-label">1. How many prescriptions are you managing?</div>
+        <div class="pills">
+          <button class="pill" data-v="many">Several daily meds (or a whole household)</button>
+          <button class="pill" data-v="few">Two or three</button>
+          <button class="pill" data-v="one">Just one</button>
+        </div>
+        <div class="q-hint">The more bottles you juggle — and the more people you're refilling for — the easier it is for one to slip through the cracks, so more meds means leaning harder on a system and reminders.</div>
+      </div>
+      <div class="quiz-q" data-q="supply">
+        <div class="q-label">2. What supply do you get at a time?</div>
+        <div class="pills">
+          <button class="pill" data-v="monthly">Monthly (30-day) fills</button>
+          <button class="pill" data-v="mixed">A mix of monthly and longer</button>
+          <button class="pill" data-v="ninety">90-day or mail-order</button>
+        </div>
+        <div class="q-hint">Monthly fills mean twelve chances a year to run out, so they need more attention. A 90-day or mail-order supply means fewer refills to track and a longer buffer built right in.</div>
+      </div>
+      <div class="quiz-q" data-q="critical">
+        <div class="q-label">3. Is any of it critical — dangerous to miss or stop?</div>
+        <div class="pills">
+          <button class="pill" data-v="critical">Yes — heart, seizure, mental-health, diabetes, etc.</button>
+          <button class="pill" data-v="some">Maybe one that matters a lot</button>
+          <button class="pill" data-v="none">No, nothing critical</button>
+        </div>
+        <div class="q-hint">Some medications cause a dangerous rebound or withdrawal if a dose is missed or they're stopped abruptly. For anything critical, the buffer should be generous — never let it get close to zero.</div>
+      </div>
+      <div class="quiz-q" data-q="system">
+        <div class="q-label">4. Do you have a refill system set up?</div>
+        <div class="pills">
+          <button class="pill" data-v="setup">Yes — auto-refill and reminders</button>
+          <button class="pill" data-v="partial">Sort of — one or the other</button>
+          <button class="pill" data-v="none">No — I refill when the bottle's empty</button>
+        </div>
+        <div class="q-hint">Refilling only when a bottle empties is the setup that fails, because there's no lead time left. Auto-refill and reminders quietly stay ahead of empty for you, so the schedule matters far less.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of getting it wrong</h2>
+    <p class="sub">A refill itself costs your copay, which varies enormously by drug and plan. The bigger money — and the bigger risk — is in what happens when you skip, ration, or run out. Here's the shape of it (your actual prices will differ; ask your pharmacist for specifics):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">Your copay</div><div class="l">a refill costs what your plan sets — anywhere from a few dollars to a lot, depending on the drug and coverage</div></div>
+        <div class="calc-stat"><div class="v">Often less</div><div class="l">90-day and mail-order supplies are frequently cheaper per dose than three monthly fills, and generics can cost a fraction of the brand</div></div>
+        <div class="calc-stat"><div class="v bad">Much more</div><div class="l">an ER visit or a health crisis from a gap or a dangerous rebound dwarfs any refill copay</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>💊 A generic on a discount or assistance program</span><span>Often a few dollars</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>📦 A 90-day / mail-order maintenance supply</span><span>Often cheaper per dose</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏷️ Your ordinary monthly copay</span><span>Varies widely</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:26%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>⚠️ Rationing or skipping doses to save money</span><span>Your condition worsens</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:60%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚑 An ER visit or crisis from a gap or rebound</span><span>$1,000s — and your health</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:94%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a copay on schedule</strong> against a health crisis from a gap. If cost is the barrier, don't ration in silence — ask your pharmacist or doctor about generics, discount programs (like GoodRx), and patient-assistance programs, and never skip or stretch doses to save money without talking to them first. There's almost always a cheaper path that doesn't involve going without.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to stay ahead of your refills</h2>
+    <p class="sub">The whole job comes down to one rule — never hit zero — and a handful of habits and tools that make it automatic. Read the safety notes first (they matter more here than the technique), then set up the tools and work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Read this first — general information, not medical advice</h3>
+      <ul>
+        <li><strong>Never stop, skip, or change the dose of a prescribed medication on your own.</strong> Many meds — blood pressure, heart, seizure, steroids, antidepressants and other mental-health meds, and more — can cause a serious rebound or withdrawal if stopped abruptly. If you want to change or stop something, or you're having side effects, talk to your doctor or pharmacist <em>first</em>.</li>
+        <li><strong>Refill before you run out.</strong> Request the refill when you have about a week's worth left. That buffer covers doctor re-authorization, pharmacy fill time, and insurance approval — the delays that leave you empty if you wait for the last pill.</li>
+        <li><strong>Watch the "refills remaining" and expiration on the label.</strong> When refills run out you'll usually need to contact your doctor — often tied to a check-in appointment — so don't wait until the last dose to discover there are none left.</li>
+        <li><strong>Use the tools.</strong> Turn on pharmacy auto-refill and auto-reminders, move maintenance meds to a 90-day or mail-order supply, and use a pill organizer so you take doses consistently and can see at a glance when you're running low.</li>
+        <li><strong>Keep meds in their original labeled bottle.</strong> And keep a current list of everything you take — doses and all — for your doctor and for emergencies.</li>
+        <li><strong>Store them properly.</strong> Cool and dry, not a steamy bathroom cabinet; some need refrigeration — follow the label. Keep everything out of reach of children and pets.</li>
+        <li><strong>Plan for travel.</strong> Take enough for the trip plus a buffer, and keep medications in your carry-on, not checked luggage.</li>
+        <li><strong>Don't use expired medication, and don't double up to "catch up" on a missed dose.</strong> Follow the label or ask your pharmacist what to do about a missed dose.</li>
+        <li><strong>This is general information, not medical advice.</strong> Your doctor and pharmacist are your guides — when in doubt, ask them.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What helps</h3>
+    <div class="tools">
+      <span class="tool-chip">Pharmacy app or online account</span>
+      <span class="tool-chip">Auto-refill turned on</span>
+      <span class="tool-chip">Refill &amp; pickup reminders</span>
+      <span class="tool-chip">A 90-day or mail-order supply</span>
+      <span class="tool-chip">A weekly (or monthly) pill organizer</span>
+      <span class="tool-chip">A written list of all your meds</span>
+      <span class="tool-chip">Your doctor's and pharmacy's contact info</span>
+      <span class="tool-chip">A calendar or reminder app</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of tracking your pill supply and refilling with a buffer, showing a pill bottle with about a week of pills left and an arrow to requesting the refill before it empties">
+          <rect x="40" y="34" width="60" height="100" rx="10" fill="#e0a93d"/>
+          <rect x="34" y="22" width="72" height="18" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <!-- low fill line -->
+          <rect x="40" y="112" width="60" height="22" rx="0" fill="#d98e3b"/>
+          <line x1="40" y1="112" x2="100" y2="112" stroke="#d9663f" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <text x="70" y="106" font-size="10" fill="#fffdf8" font-weight="700" text-anchor="middle">~1 week</text>
+          <!-- arrow -->
+          <path d="M118 84 l40 0 m-8 -6 l8 6 l-8 6" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- refill request card -->
+          <rect x="170" y="52" width="86" height="66" rx="8" fill="#e3efe8"/>
+          <path d="M182 78 l6 6 l12 -14" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="213" y="104" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">refill now</text>
+          <text x="70" y="164" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">refill with a buffer</text>
+        </svg>
+        <h4>Track your supply, refill with a buffer</h4>
+        <p>Know roughly how many days you have left, and request the refill when you're down to about a week. That cushion covers doctor re-authorization, pharmacy fill time, and insurance — so a delay can't leave you empty.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of setting up pharmacy auto-refill, reminders, and a 90-day supply, showing a phone with an auto-refill toggle switched on and a repeat cycle arrow">
+          <rect x="96" y="20" width="88" height="140" rx="16" fill="#33393b"/>
+          <rect x="104" y="34" width="72" height="112" rx="6" fill="#fffdf8"/>
+          <rect x="104" y="34" width="72" height="24" rx="6" fill="#3e7c59"/>
+          <text x="140" y="50" font-size="9.5" fill="#fffdf8" font-weight="700" text-anchor="middle">Pharmacy</text>
+          <!-- toggle on -->
+          <rect x="114" y="72" width="44" height="20" rx="10" fill="#5e9a78"/>
+          <circle cx="148" cy="82" r="8" fill="#fffdf8"/>
+          <text x="162" y="87" font-size="9" fill="#2c5a40" font-weight="700" text-anchor="end">on</text>
+          <!-- repeat cycle -->
+          <path d="M120 112 a16 16 0 1 1 -4 12" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round"/>
+          <path d="M116 106 l4 6 l6 -3" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="140" y="140" font-size="9" fill="#3e7c59" font-weight="700" text-anchor="middle">auto-refill</text>
+          <text x="140" y="174" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">set it and forget it</text>
+        </svg>
+        <h4>Set up auto-refill, reminders &amp; 90-day</h4>
+        <p>Turn on auto-refill and refill reminders at your pharmacy, and for maintenance meds ask about a 90-day or mail-order supply. Fewer refills to track, a longer buffer, and the pharmacy nudging you means the system does the remembering.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of watching the refills-remaining count and expiration date on a prescription label, showing a bottle label reading zero refills and a reminder to contact the doctor">
+          <rect x="70" y="26" width="140" height="128" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <rect x="84" y="40" width="112" height="7" rx="3.5" fill="#8a6a4f"/>
+          <rect x="84" y="54" width="88" height="5" rx="2.5" fill="#cdd9de"/>
+          <!-- refills remaining -->
+          <rect x="84" y="72" width="112" height="26" rx="5" fill="#fbe9e1"/>
+          <text x="140" y="90" font-size="12" fill="#d9663f" font-weight="700" text-anchor="middle">Refills left: 0</text>
+          <!-- expiration -->
+          <rect x="84" y="106" width="112" height="5" rx="2.5" fill="#e9e2d8"/>
+          <text x="84" y="128" font-size="9.5" fill="#6b7376">Expires — watch this</text>
+          <path d="M84 136 h96" stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="140" y="172" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">call your doctor before zero</text>
+        </svg>
+        <h4>Watch "refills remaining" &amp; expiration</h4>
+        <p>The label tells you how many refills are left and when the script expires. When you're on the last refill — not the last pill — contact your doctor, since a new script often means a check-in appointment that takes time to schedule.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of keeping a current medication list and storing meds properly in their original labeled bottles, cool and dry and away from children">
+          <!-- med list -->
+          <rect x="34" y="30" width="86" height="118" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+          <rect x="46" y="44" width="62" height="6" rx="3" fill="#8a6a4f"/>
+          <g stroke="#cdd9de" stroke-width="3" stroke-linecap="round">
+            <line x1="46" y1="62" x2="106" y2="62"/>
+            <line x1="46" y1="76" x2="106" y2="76"/>
+            <line x1="46" y1="90" x2="106" y2="90"/>
+            <line x1="46" y1="104" x2="96" y2="104"/>
+          </g>
+          <path d="M46 118 l5 5 l10 -11" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="90" y="140" font-size="9" fill="#3e7c59" font-weight="700" text-anchor="middle">my meds</text>
+          <!-- labeled bottle stored right -->
+          <rect x="160" y="60" width="52" height="88" rx="9" fill="#3e7c59"/>
+          <rect x="155" y="48" width="62" height="16" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <rect x="168" y="78" width="36" height="42" rx="4" fill="#fffdf8"/>
+          <rect x="174" y="86" width="24" height="4" rx="2" fill="#8a6a4f"/>
+          <rect x="174" y="94" width="18" height="3" rx="1.5" fill="#cdd9de"/>
+          <!-- cool/dry marks -->
+          <text x="238" y="72" font-size="16" text-anchor="middle">❄️</text>
+          <text x="238" y="108" font-size="12" fill="#6b7376" text-anchor="middle">cool</text>
+          <text x="238" y="124" font-size="12" fill="#6b7376" text-anchor="middle">&amp; dry</text>
+          <text x="140" y="172" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">list it, store it right</text>
+        </svg>
+        <h4>Keep a med list &amp; store meds properly</h4>
+        <p>Hold a current list of everything you take for your doctor and for emergencies. Keep each med in its original labeled bottle, stored cool and dry (some need the fridge), and out of reach of children and pets.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of never self-adjusting a medication, showing a person talking with a pharmacist about changes, side effects, or cost before making any change">
+          <!-- speech between two people -->
+          <circle cx="76" cy="66" r="18" fill="#e3efe8"/>
+          <path d="M58 118 q0 -26 18 -26 q18 0 18 26" fill="#5e9a78"/>
+          <circle cx="76" cy="66" r="10" fill="#e8b48f"/>
+          <!-- pharmacist with cross badge -->
+          <circle cx="196" cy="66" r="18" fill="#e3efe8"/>
+          <path d="M178 118 q0 -26 18 -26 q18 0 18 26" fill="#3e7c59"/>
+          <circle cx="196" cy="66" r="10" fill="#e8b48f"/>
+          <rect x="188" y="102" width="16" height="10" rx="2" fill="#fffdf8"/>
+          <path d="M196 103 v8 M192 107 h8" stroke="#3e7c59" stroke-width="2" stroke-linecap="round"/>
+          <!-- speech bubble in the middle -->
+          <rect x="108" y="44" width="56" height="34" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M126 78 l-6 12 l16 -12 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <text x="136" y="66" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">ask first</text>
+          <text x="140" y="170" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">never self-adjust</text>
+        </svg>
+        <h4>Never self-adjust — ask first</h4>
+        <p>Talk to your doctor or pharmacist before changing, stopping, or reacting to side effects — and before rationing over cost. A pill organizer keeps your daily doses consistent, but any change to <em>what</em> or <em>how much</em> you take is a conversation, not a solo decision.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Refill setup progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Supply tracked, auto-refill and reminders on, refills-and-expiration watched, med list and storage sorted, and a review set. You're staying ahead of empty — exactly where you want to be.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs to act now — and when to call your doctor</h2>
+    <p class="sub">Most of staying ahead is quiet and routine. These are the moments that call for action — and the ones where the answer isn't a refill at all but a conversation with your doctor or pharmacist. When in doubt, ask them; this is general information, not medical advice:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Down to about a week of a maintenance med — refill now.</strong> That's the buffer, not a warning to wait longer. Request the refill (or let auto-refill handle it) so the fill, any re-authorization, and insurance all have time to clear before the bottle's empty.</li>
+        <li><strong>"No refills remaining" on the label — contact your doctor.</strong> You'll likely need a new prescription, which often means a check-in appointment. Reach out as soon as you see it, not on your last pill, because scheduling and re-authorization take time.</li>
+        <li><strong>Side effects, or you're thinking about stopping or changing a med — talk to your doctor or pharmacist first.</strong> Don't just quit. Many medications cause a dangerous rebound or withdrawal if stopped abruptly; there's almost always a safe way to adjust, but it's their call, not a solo one.</li>
+        <li><strong>Cost is making you skip or ration — ask before you do.</strong> Your pharmacist can often point you to a generic, a discount program, or a patient-assistance program. Going without quietly is the one option that isn't safe.</li>
+        <li><strong>Any severe reaction is urgent.</strong> Trouble breathing, swelling of the face or throat, a rash spreading fast, chest pain, fainting, or any reaction that scares you is not a "wait and see" — seek emergency care right away.</li>
+        <li><strong>Pro tip:</strong> your prescriptions get reviewed at your regular check-ups, so refills, re-authorizations, and dose changes often line up naturally with an annual visit. Keeping those appointments is part of keeping your meds current.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often do I refill a prescription, and when should I request it?</summary>
+      <p>It depends on your supply: many prescriptions are filled monthly, and many maintenance meds can be moved to a 90-day supply. But the timing that actually matters isn't the interval — it's requesting the refill <em>before</em> you run out. A good rule is to ask for it when you have about a week's worth of pills left. That buffer covers the things that can slow a refill down: the pharmacy needing to order or fill it, insurance approval, and — if you're low on refills — the doctor re-authorizing it. Better still, turn on auto-refill so the pharmacy stays ahead of empty for you. This is general information, not medical advice; your pharmacist can tell you exactly what applies to your medication.</p>
+    </details>
+    <details>
+      <summary>What happens when I run out of refills?</summary>
+      <p>Every prescription carries a limited number of refills and an expiration date. When the label reads "no refills remaining," you'll usually need to contact your doctor for a new prescription — and for many maintenance meds that's tied to a check-in appointment, so they can see how you're doing before renewing. Because scheduling that visit and getting the new script authorized takes time, don't wait until your last pill. As soon as you notice you're on your final refill, reach out to your doctor's office (many have online portals or a nurse line for exactly this) so there's no gap. Your pharmacy can often send the renewal request to the doctor on your behalf, too.</p>
+    </details>
+    <details>
+      <summary>Can I get a 90-day supply or set up auto-refill?</summary>
+      <p>For most maintenance medications, yes — and both are worth doing. Ask your pharmacist or doctor about a 90-day supply (sometimes through mail-order), which means fewer refills to track, a longer built-in buffer, and often a lower cost per dose than three monthly fills. Separately, ask your pharmacy to turn on auto-refill, so they prepare your next fill automatically, plus refill and pickup reminders by text, app, or call. The two together are the closest thing to "set it and forget it" for prescriptions. Not every medication qualifies for auto-refill or a 90-day supply (some controlled substances are limited), so check what applies to yours.</p>
+    </details>
+    <details>
+      <summary>Is it safe to stop a medication once I feel better?</summary>
+      <p>No — not on your own. Feeling better is often <em>because</em> the medication is working, and many maintenance meds only keep working if you keep taking them; stopping can let your condition come right back. More seriously, a number of medications — blood pressure and heart drugs, seizure medications, steroids, antidepressants and other mental-health meds, and others — can cause a dangerous rebound or withdrawal if they're stopped abruptly. If you want to stop or change a medication, or you feel you no longer need it, talk to your doctor or pharmacist first. There's often a safe way to taper or adjust, but it has to be their call. This is general information, not medical advice.</p>
+    </details>
+    <details>
+      <summary>What if I can't afford my medication?</summary>
+      <p>Don't ration or skip doses to stretch it — talk to your pharmacist or doctor first, because there's almost always a cheaper path. Ask whether a generic version exists (often a fraction of the brand-name price), and about discount programs like GoodRx, manufacturer coupons, or patient-assistance programs for people who qualify. A 90-day or mail-order supply can lower the per-dose cost, and your pharmacist may know which pharmacy in your area prices your drug best. Your doctor may also be able to switch you to an equally effective medication that your insurance covers better. The one thing not to do is quietly go without — that's the option that risks your health.</p>
+    </details>
+    <details>
+      <summary>What do I do about a missed dose?</summary>
+      <p>Follow the guidance on the label or, better, ask your pharmacist — the right answer depends on the medication. A common rule is to take it as soon as you remember, unless it's almost time for the next dose, in which case you skip the missed one and carry on. What you should <em>not</em> do is double up to "catch up," which can push you into an unsafe amount. If you miss doses often, that's worth mentioning to your doctor or pharmacist too — a pill organizer, a daily reminder, or a simpler dosing schedule can fix it. And never use expired medication to fill a gap. This is general information, not medical advice.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Running out of a maintenance med can undo its benefit — or be dangerous.</h2>
+        <p>And refills have lead time — a re-authorization, a pharmacy fill, an insurance approval — so "I'll get it when it's empty" cuts it too close. Let Upkeep Ledger keep your refills ahead of empty, resurfacing each one on schedule right alongside the appointments, the filters, and every other quiet task that keeps your life running. (Not medical advice — never stop or change a med without your doctor.)</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=refill-prescription&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>Keep your other health items stocked too — <a href="restock-vitamins.html">vitamins and supplements</a> — and your prescriptions connect to your <a href="physical-exam.html">annual physical</a> and <a href="annual-blood-work.html">blood work</a>, where meds get reviewed.</p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=refill-prescription&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This guide is general information for planning purposes only, and is <strong>not medical advice</strong> — never start, stop, or change a medication without your doctor or pharmacist, who are your guides.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { count: null, supply: null, critical: null, system: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;      // default: many meds are monthly fills
+    var buffer = false;  // does this person need extra buffer / vigilance?
+
+    /* Count — how many meds */
+    if (s.count === "many") {
+      buffer = true;
+      reasons.push("With several daily meds (or a whole household to refill for), it's easy for one bottle to slip through the cracks — so lean hard on auto-refill and reminders and give yourself extra buffer.");
+    } else if (s.count === "one") {
+      reasons.push("A single prescription is the easiest to stay ahead of — but even one is worth putting on auto-refill so a busy week can't catch you empty.");
+    } else {
+      reasons.push("Two or three meds is manageable, as long as each one has its own refill reminder or is on auto-refill so none gets forgotten.");
+    }
+
+    /* Supply — how much per fill */
+    if (s.supply === "ninety") {
+      if (months < 3) months = 3;
+      reasons.push("A 90-day or mail-order supply means fewer refills to track and a longer buffer built right in — refill roughly every three months, and still request the next one about a week before you'd run out.");
+    } else if (s.supply === "mixed") {
+      reasons.push("With a mix of fill lengths, handle each on its own cycle — and ask your pharmacist whether the monthly ones can move to a 90-day supply to simplify things.");
+    } else {
+      reasons.push("Monthly fills mean roughly twelve chances a year to run out, so they need the most attention — this is exactly where auto-refill earns its keep.");
+    }
+
+    /* Critical — dangerous to miss */
+    if (s.critical === "critical") {
+      buffer = true;
+      reasons.push("A medication that's dangerous to miss or stop — heart, seizure, mental-health, diabetes, and the like — should never get close to zero. Keep a generous buffer and never let a refill lapse without talking to your doctor.");
+    } else if (s.critical === "some") {
+      reasons.push("Even one med that matters a lot is worth treating with extra care — give it more buffer than the rest and don't let its refill slide.");
+    } else {
+      reasons.push("Nothing critical in the mix means a gap is less risky — but consistency still matters for the medication to do its job, so stay ahead anyway.");
+    }
+
+    /* System — do they have one */
+    if (s.system === "none") {
+      buffer = true;
+      reasons.push("Refilling only when a bottle empties is the setup that fails, because it leaves no lead time for the pharmacy, the doctor, or insurance — the single biggest win here is turning on auto-refill and reminders.");
+    } else if (s.system === "partial") {
+      reasons.push("You're partway there — finish the job by turning on both auto-refill and reminders so nothing depends on you remembering.");
+    } else {
+      reasons.push("With auto-refill and reminders already set up, the pharmacy is quietly staying ahead of empty for you — the schedule matters far less when the system is doing the work.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.critical === "critical") {
+      note = "<strong>For a critical med, buffer is everything:</strong> never let it get close to zero, keep a current med list for emergencies, and if you ever want to change or stop it — or you're having side effects — talk to your doctor or pharmacist first. Stopping some meds abruptly is dangerous.";
+    } else if (s.system === "none") {
+      note = "<strong>Your biggest win is one setup:</strong> ask your pharmacy to turn on auto-refill plus refill and pickup reminders. That single change moves you from scrambling at the last pill to the refill quietly being ready before you're out.";
+    } else if (s.supply === "monthly") {
+      note = "<strong>Ask about a 90-day supply:</strong> for maintenance meds it means fewer refills to track, a longer buffer, and often a lower cost per dose than three monthly fills — a real upgrade over the monthly scramble.";
+    } else {
+      note = "<strong>Remember the one rule:</strong> refill before you run out, with about a week's buffer. And keep your prescriptions in view at your check-ups — that's where meds get reviewed and refills renewed. This is general information, not medical advice.";
+    }
+
+    return { months: months, reasons: reasons, note: note, buffer: buffer };
+  }
+
+  function onQuizChange() {
+    if (!quizState.count || !quizState.supply || !quizState.critical || !quizState.system) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your rhythm: refill " + FREQ_LABEL[r.months].toLowerCase() + " — before you run out";
+    document.getElementById("resultBody").innerHTML =
+      "Whatever the interval, the job is the same: <strong>refill before you're empty, leaving about a week's buffer, and let auto-refill and reminders do the remembering</strong>. Why this fits you:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Track & buffer", text: "Know how many days of each med you have left", note: "Glance at your bottles (or your pharmacy app) so you're never surprised by an empty one. The whole game is knowing you're getting low before you actually run out." },
+    { phase: "Track & buffer", text: "Request each refill with about a week's buffer", note: "When you're down to roughly a week's worth, request the refill — or let auto-refill trigger it. That cushion covers pharmacy fill time, insurance approval, and any doctor re-authorization." },
+    { phase: "Track & buffer", text: "Save your pharmacy and doctor contact info", note: "Keep the pharmacy number and your doctor's office (or patient portal) handy, so requesting a refill or a renewal is a two-minute job instead of a hunt." },
+    { phase: "Set up auto-refill & 90-day", text: "Turn on pharmacy auto-refill", note: "Ask your pharmacy to prepare each eligible prescription automatically. Not everything qualifies (some controlled meds are limited), so confirm which of yours are on it." },
+    { phase: "Set up auto-refill & 90-day", text: "Turn on refill and pickup reminders", note: "Get a text, app, or call when a refill is due and when it's ready to collect — so a fill sitting at the pharmacy doesn't quietly become an out-of-stock at home." },
+    { phase: "Set up auto-refill & 90-day", text: "Ask about a 90-day or mail-order supply", note: "For maintenance meds, a 90-day supply means fewer refills to track, a longer buffer, and often a lower cost per dose than three monthly fills." },
+    { phase: "Watch refills & expiration", text: "Check 'refills remaining' on each label", note: "When you're on the last refill — not the last pill — it's time to act, because a new script may need a doctor's visit that takes time to schedule." },
+    { phase: "Watch refills & expiration", text: "Contact your doctor before refills run out", note: "As soon as you see 'no refills remaining' (or you're on the final one), reach out for a renewal. Many offices handle this by portal or nurse line; your pharmacy can send the request too." },
+    { phase: "Watch refills & expiration", text: "Note expiration dates and don't use expired meds", note: "Prescriptions expire; expired medication may not work as intended. Replace anything past date rather than relying on it in a pinch." },
+    { phase: "Med list, storage & review", text: "Keep a current list of everything you take", note: "Name, dose, and schedule for each med, kept somewhere you (and your doctor, in an emergency) can find it. Update it whenever something changes." },
+    { phase: "Med list, storage & review", text: "Store meds in original bottles, cool, dry & safe", note: "Keep each med in its labeled bottle, out of a steamy bathroom (some need the fridge — check the label), and out of reach of children and pets. For travel, take a buffer and keep them in your carry-on." },
+    { phase: "Med list, storage & review", text: "Bring your meds up at your next check-up", note: "Prescriptions get reviewed at appointments — the natural moment to renew refills, adjust doses, or ask about side effects and cost. Never stop or change a med on your own; ask your doctor or pharmacist first." }
+  ];
+
+  var LS_KEY = "upkeepguides:refill-prescription:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

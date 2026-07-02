@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep up your eye exams — UpkeepGuides.com</title>
+<meta name="description" content="An eye exam is more than a glasses check — it catches silent, sight-stealing disease early. How often you need one, how to prepare, dilation, and a checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Keep up your eye exams — UpkeepGuides.com">
+<meta property="og:description" content="An eye exam is more than a glasses check — it catches silent, sight-stealing disease early. How often you need one, how to prepare, dilation, and a checklist.">
+<meta property="og:url" content="https://upkeepguides.com/eye-exam.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keep up your eye exams — UpkeepGuides.com">
+<meta name="twitter:description" content="An eye exam is more than a glasses check — it catches silent, sight-stealing disease early. How often you need one, how to prepare, dilation, and a checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Personal · Once a year</span>
+      <h1>Keep Up Your Eye Exams</h1>
+      <p class="lede">It's easy to think of an eye exam as a glasses check — if you can still read the road signs, why go? But a comprehensive exam is really a health check for your eyes, and it's the one place a doctor looks straight at your blood vessels and optic nerve without a single incision. Some of the most serious eye diseases — glaucoma, macular degeneration, diabetic damage — do their harm quietly, with no pain and no blur, until sight you can't get back is already gone. The upkeep job isn't complicated: don't let the appointment lapse, keep it on the calendar, know how to prepare (dilation means a ride and sunglasses), and update your prescription when it drifts. How often <em>you</em> need one is your eye doctor's call — this guide just helps you stay on top of it.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Adults typically <em>every 1–2 years</em></span>
+        <span class="chip">👁️ Catches <em>silent disease</em> early</span>
+        <span class="chip">💸 Often <em>~$50–150</em> out of pocket</span>
+        <span class="chip">🩺 Your <em>eye doctor</em> sets the pace</span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a reassuring optometry scene: a wall-mounted eye chart with big letters descending to small ones, a phoropter — the which-is-better lens device you look through — a pair of glasses and a small contact-lens case on a table, and a calendar with a marked reminder, all in warm, calm colors">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- eye chart on the wall, left -->
+      <rect x="40" y="46" width="150" height="230" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <!-- chart lines, big to small -->
+      <text x="115" y="86" font-size="30" fill="#33393b" font-weight="800" text-anchor="middle" font-family="Georgia, serif">E</text>
+      <text x="115" y="120" font-size="22" fill="#33393b" font-weight="700" text-anchor="middle" font-family="Georgia, serif">F P</text>
+      <text x="115" y="150" font-size="17" fill="#33393b" font-weight="700" text-anchor="middle" font-family="Georgia, serif">T O Z</text>
+      <text x="115" y="176" font-size="13" fill="#6b7376" font-weight="700" text-anchor="middle" font-family="Georgia, serif">L P E D</text>
+      <text x="115" y="198" font-size="10" fill="#6b7376" font-weight="700" text-anchor="middle" font-family="Georgia, serif">P E C F D</text>
+      <text x="115" y="216" font-size="8" fill="#a8aeb0" font-weight="700" text-anchor="middle" font-family="Georgia, serif">E D F C Z P</text>
+      <text x="115" y="230" font-size="6.5" fill="#a8aeb0" font-weight="700" text-anchor="middle" font-family="Georgia, serif">F E L O P Z D</text>
+      <!-- little pointer resting on the chart -->
+      <rect x="150" y="150" width="56" height="4" rx="2" fill="#c96f4a" transform="rotate(14 178 152)"/>
+
+      <!-- phoropter — the "which is better, 1 or 2?" lens device, center -->
+      <!-- support arm from the ceiling -->
+      <rect x="288" y="40" width="8" height="46" rx="3" fill="#b9b1a3"/>
+      <!-- main body -->
+      <rect x="236" y="86" width="118" height="70" rx="12" fill="#5e9a78"/>
+      <rect x="236" y="86" width="118" height="18" rx="9" fill="#3e7c59"/>
+      <!-- two eye lens discs -->
+      <circle cx="266" cy="126" r="20" fill="#2c5a40"/>
+      <circle cx="266" cy="126" r="12" fill="#7fb3c8"/>
+      <circle cx="266" cy="126" r="5" fill="#dce8ee"/>
+      <circle cx="324" cy="126" r="20" fill="#2c5a40"/>
+      <circle cx="324" cy="126" r="12" fill="#7fb3c8"/>
+      <circle cx="324" cy="126" r="5" fill="#dce8ee"/>
+      <!-- dial knobs on the sides -->
+      <circle cx="234" cy="120" r="8" fill="#e0a93d"/>
+      <circle cx="356" cy="120" r="8" fill="#e0a93d"/>
+      <!-- "1 or 2?" note card floating beside it -->
+      <rect x="360" y="150" width="72" height="34" rx="7" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+      <text x="396" y="172" font-size="13" fill="#3e7c59" font-weight="700" text-anchor="middle">1 or 2?</text>
+
+      <!-- table / counter surface -->
+      <rect x="150" y="300" width="330" height="16" rx="5" fill="#b9b1a3"/>
+      <rect x="158" y="312" width="314" height="10" rx="4" fill="#8a6a4f"/>
+
+      <!-- glasses on the table, left -->
+      <g>
+        <circle cx="210" cy="288" r="18" fill="none" stroke="#33393b" stroke-width="5"/>
+        <circle cx="256" cy="288" r="18" fill="none" stroke="#33393b" stroke-width="5"/>
+        <path d="M228 288 q6 -8 10 0" fill="none" stroke="#33393b" stroke-width="5" stroke-linecap="round"/>
+        <path d="M192 282 l-16 -8" stroke="#33393b" stroke-width="5" stroke-linecap="round"/>
+        <path d="M274 282 l16 -8" stroke="#33393b" stroke-width="5" stroke-linecap="round"/>
+        <!-- lens tint / shine -->
+        <circle cx="210" cy="288" r="14" fill="#dce8ee" opacity="0.55"/>
+        <circle cx="256" cy="288" r="14" fill="#dce8ee" opacity="0.55"/>
+      </g>
+
+      <!-- contact lens case, right -->
+      <rect x="360" y="272" width="60" height="28" rx="8" fill="#7fb3c8"/>
+      <circle cx="378" cy="286" r="9" fill="#5e9a78"/>
+      <circle cx="378" cy="286" r="4" fill="#e3efe8"/>
+      <text x="378" y="290" font-size="7" fill="#2c5a40" font-weight="700" text-anchor="middle">L</text>
+      <circle cx="402" cy="286" r="9" fill="#3e7c59"/>
+      <circle cx="402" cy="286" r="4" fill="#e3efe8"/>
+      <text x="402" y="290" font-size="7" fill="#2c5a40" font-weight="700" text-anchor="middle">R</text>
+
+      <!-- calendar reminder, far right -->
+      <rect x="452" y="196" width="86" height="78" rx="9" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+      <rect x="452" y="196" width="86" height="20" rx="9" fill="#c96f4a"/>
+      <rect x="466" y="190" width="6" height="12" rx="3" fill="#8a6a4f"/>
+      <rect x="518" y="190" width="6" height="12" rx="3" fill="#8a6a4f"/>
+      <!-- grid dots -->
+      <g fill="#e9e2d8">
+        <circle cx="468" cy="230" r="3"/><circle cx="484" cy="230" r="3"/><circle cx="500" cy="230" r="3"/><circle cx="516" cy="230" r="3"/>
+        <circle cx="468" cy="246" r="3"/><circle cx="500" cy="246" r="3"/><circle cx="516" cy="246" r="3"/>
+        <circle cx="468" cy="262" r="3"/><circle cx="484" cy="262" r="3"/><circle cx="516" cy="262" r="3"/>
+      </g>
+      <!-- circled exam day -->
+      <circle cx="484" cy="246" r="9" fill="none" stroke="#3e7c59" stroke-width="3"/>
+      <path d="M480 246 l3 3 l6 -7" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="495" y="290" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">exam day</text>
+
+      <!-- a friendly plant on the counter for warmth -->
+      <path d="M150 276 h26 l-4 24 h-18 z" fill="#c96f4a"/>
+      <path d="M162 276 q-3 -18 -12 -25" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M162 276 q4 -16 14 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="147" cy="248" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 147 248)"/>
+      <ellipse cx="177" cy="252" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 177 252)"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">The trap with eyes is that "I can see fine" and "my eyes are healthy" are not the same thing. Vision is what you notice; eye <em>health</em> is what an exam checks — and the gap between them is exactly where the serious, sight-stealing conditions hide. Here's what a regular, comprehensive exam is really doing for you:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="18" rx="14" ry="9" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2"/>
+          <circle cx="18" cy="18" r="5" fill="#e0a93d"/>
+          <circle cx="18" cy="18" r="2" fill="#fffdf8"/>
+          <!-- slash across the "no warning" idea -->
+          <line x1="8" y1="9" x2="28" y2="27" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>It catches silent eye disease early</h3>
+        <p>Glaucoma and several other conditions cause no early symptoms — no pain, no blur — while they quietly damage your sight, and what's lost can't be restored. A comprehensive exam can spot the signs long before you'd ever notice, when treatment can still protect the vision you have.</p>
+        <span class="cost">Irreversible vision loss, missed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="18" rx="14" ry="9" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <circle cx="18" cy="18" r="5.5" fill="#5e9a78"/>
+          <circle cx="18" cy="18" r="2.4" fill="#2c5a40"/>
+          <!-- blood vessels branching -->
+          <g stroke="#d9663f" stroke-width="1.4" stroke-linecap="round" fill="none">
+            <path d="M9 15 q4 2 7 1"/>
+            <path d="M27 21 q-4 -2 -7 -1"/>
+            <path d="M14 24 q1 -3 3 -4"/>
+          </g>
+        </svg></div>
+        <h3>It's a window into whole-body health</h3>
+        <p>The eye is the one spot a doctor can see your blood vessels and nerves directly, without cutting anything. That means an exam can turn up the first signs of diabetes, high blood pressure, and other conditions — sometimes before your regular doctor knows they're there.</p>
+        <span class="cost">Whole-body clues, unnoticed</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="14" cy="16" r="8" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+          <circle cx="26" cy="16" r="8" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+          <path d="M20 16 q3 -4 4 0" fill="none" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- one lens blurry -->
+          <circle cx="26" cy="16" r="4.5" fill="#b9b1a3" opacity="0.5"/>
+          <path d="M6 12 l-2 -2 M30 12 l2 -2" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Your prescription drifts</h3>
+        <p>Vision changes gradually, so you adapt without realizing it — squinting, holding your phone farther away, driving a little less at night. An out-of-date prescription brings headaches, eye strain, and unsafe driving. An exam brings the world back into focus and your glasses back up to date.</p>
+        <span class="cost">Headaches, strain &amp; unsafe driving</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="8" width="22" height="17" rx="2.5" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <line x1="11" y1="14" x2="25" y2="14" stroke="#5e9a78" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="11" y1="18" x2="22" y2="18" stroke="#5e9a78" stroke-width="1.8" stroke-linecap="round"/>
+          <!-- pencil -->
+          <path d="M22 30 l8 -8 l3 3 l-8 8 z" fill="#e0a93d"/>
+          <path d="M22 30 l2 2 z" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Kids especially need it</h3>
+        <p>A child can't tell you that everyone else sees the board more clearly — to them, blurry <em>is</em> normal. Undetected vision problems hurt reading and learning and are easy to miss, and some (like a lazy eye) are best treated young. A proper exam catches what a quick school screening can't.</p>
+        <span class="cost">Learning problems, mistaken</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> get one?</h2>
+    <p class="sub">There's no single answer — it depends on your age, whether you wear glasses or contacts, your health, and your family history. As a very general starting point, healthy adults often go every one to two years, kids and older adults more often, and anyone with diabetes or an eye condition on whatever schedule their doctor sets. Answer four quick questions for a rough sense of where you land — but treat it as a conversation-starter, not a prescription. <strong>Your eye doctor sets your real schedule.</strong></p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="stage">
+        <div class="q-label">1. What life stage are you (or the person) in?</div>
+        <div class="pills">
+          <button class="pill" data-v="child">A child or teen</button>
+          <button class="pill" data-v="senior">60 or older</button>
+          <button class="pill" data-v="adult">A younger or middle-aged adult</button>
+        </div>
+        <div class="q-hint">Kids' eyes are still developing and problems affect learning, while risk of age-related conditions climbs after 60 — both groups are usually seen more often than a healthy younger adult.</div>
+      </div>
+      <div class="quiz-q" data-q="aids">
+        <div class="q-label">2. Do you wear glasses or contacts?</div>
+        <div class="pills">
+          <button class="pill" data-v="contacts">Yes — contact lenses</button>
+          <button class="pill" data-v="glasses">Yes — glasses</button>
+          <button class="pill" data-v="none">No correction</button>
+        </div>
+        <div class="q-hint">If you rely on correction your prescription needs checking, and contact-lens wearers are usually seen at least yearly to keep the lenses safe for the eye's surface.</div>
+      </div>
+      <div class="quiz-q" data-q="risk">
+        <div class="q-label">3. Any health or family risk factors?</div>
+        <div class="pills">
+          <button class="pill" data-v="diabetes">Diabetes</button>
+          <button class="pill" data-v="family">High BP, family eye disease, or an eye condition</button>
+          <button class="pill" data-v="none">None that I know of</button>
+        </div>
+        <div class="q-hint">Diabetes can damage the retina silently and usually calls for a yearly dilated exam; high blood pressure, a family history of glaucoma or macular degeneration, or an existing eye condition also push toward closer monitoring.</div>
+      </div>
+      <div class="quiz-q" data-q="symptoms">
+        <div class="q-label">4. Any symptoms, or how long since your last exam?</div>
+        <div class="pills">
+          <button class="pill" data-v="symptoms">Blurry vision, headaches, or strain</button>
+          <button class="pill" data-v="overdue">It's been years (or I can't remember)</button>
+          <button class="pill" data-v="recent">Recent exam, seeing fine</button>
+        </div>
+        <div class="q-hint">New blur, headaches, or eye strain are reasons to go sooner rather than wait; and if it's simply been years, a comprehensive exam is overdue regardless of how fine your vision feels.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">An eye exam is one of the cheaper checkups you can get — and one of the highest-leverage, because the thing it's screening for is your eyesight, which you can't buy back. A routine exam runs roughly $50–150 out of pocket, and vision insurance often covers most or all of it. Set that against what undetected, sight-threatening disease can cost — in money and in vision — and the math is lopsided (coverage and prices vary):</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">~$50–150</div><div class="l">a comprehensive exam out of pocket — often mostly or fully covered by vision insurance</div></div>
+        <div class="calc-stat"><div class="v">+ small fee</div><div class="l">a contact-lens fitting or evaluation adds a charge on top of the basic exam</div></div>
+        <div class="calc-stat"><div class="v bad">priceless</div><div class="l">the sight you protect by catching a silent disease early, while it's still treatable</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>👁️ Routine comprehensive eye exam</span><span>~$50–150</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔬 Exam with extra retinal imaging</span><span>A little more</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:16%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>👓 Exam + contact-lens fitting</span><span>Exam plus a fitting fee</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:22%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💊 Treating a disease caught late instead of early</span><span>More cost, less to save</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:64%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🚫 Vision lost to a condition that had no early symptoms</span><span>Can't be undone</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:96%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The comparison isn't close: <strong>a modest exam fee once every year or two</strong> against the cost of a sight-threatening disease found only after it's done irreversible damage. This isn't medical advice about your case — but as upkeep, few things you do return so much for so little. <strong>How often you need an exam is your eye doctor's call.</strong></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to keep up your eye exams</h2>
+    <p class="sub">The "how-to" here isn't performing the exam — that's your eye doctor's job — it's the upkeep around it: booking the right kind of exam, showing up prepared, planning for dilation, updating your eyewear, and knowing which symptoms can't wait for the next appointment. Read the safety box first (it's the most important part), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Not medical advice — your eye doctor decides — and how to prepare</h3>
+      <ul>
+        <li><strong>This guide can't tell you how often <em>you</em> need an exam.</strong> That depends on your age, whether you wear glasses or contacts, your health (diabetes especially), and your family history — and your eye doctor sets it. Any general ranges here are just a starting point for that conversation.</li>
+        <li><strong>Know the difference: a "vision screening" is not a comprehensive eye exam.</strong> A school, workplace, or DMV screening checks whether you can read a chart — it does not examine the health of your eyes. A comprehensive exam is a different, far more thorough thing.</li>
+        <li><strong>Prepare — bring what your doctor will need.</strong> Your current glasses and contacts (and your contact brand and prescription if you know them), your medical and family eye history, your insurance card, and a pair of sunglasses. A short list of questions or symptoms helps too.</li>
+        <li><strong>If your pupils will be DILATED, plan for it.</strong> Dilating drops leave your vision blurry and very light-sensitive for a few hours. Arrange a ride or plan not to drive right after, and bring sunglasses for the trip home.</li>
+        <li><strong>Contact-lens wearers: ask about lens-free time before the exam.</strong> You may be asked not to wear your lenses for a stretch beforehand so the eye's surface reads true. Call ahead and ask.</li>
+        <li><strong>Keep a copy of your prescription and note when it expires.</strong> You're entitled to your prescription. Hold on to it so you can order glasses or contacts, and watch the expiration date so it doesn't lapse before your next visit.</li>
+        <li><strong>Don't ignore new symptoms between exams.</strong> Sudden vision loss, flashes of light, a curtain or shadow across your vision, a sudden shower of new floaters, eye pain, or double vision can be an emergency — like a retinal detachment. Seek care right away; do not wait for your routine appointment.</li>
+        <li><strong>This is general information, not medical advice.</strong> For anything about your own eyes, defer to an eye doctor.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What to bring</h3>
+    <div class="tools">
+      <span class="tool-chip">Your current glasses</span>
+      <span class="tool-chip">Your contacts, case &amp; brand/prescription</span>
+      <span class="tool-chip">Your medical &amp; family eye history</span>
+      <span class="tool-chip">A list of any symptoms or questions</span>
+      <span class="tool-chip">Your insurance card</span>
+      <span class="tool-chip">Sunglasses (for after dilation)</span>
+      <span class="tool-chip">A ride, if you'll be dilated</span>
+      <span class="tool-chip">A copy of your last prescription</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you go</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of booking a comprehensive eye exam on a calendar rather than settling for a quick vision screening">
+          <rect x="70" y="26" width="140" height="120" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+          <rect x="70" y="26" width="140" height="26" rx="10" fill="#c96f4a"/>
+          <rect x="96" y="18" width="7" height="16" rx="3.5" fill="#8a6a4f"/>
+          <rect x="177" y="18" width="7" height="16" rx="3.5" fill="#8a6a4f"/>
+          <g fill="#e9e2d8">
+            <circle cx="96" cy="74" r="4"/><circle cx="120" cy="74" r="4"/><circle cx="144" cy="74" r="4"/><circle cx="168" cy="74" r="4"/><circle cx="192" cy="74" r="4"/>
+            <circle cx="96" cy="98" r="4"/><circle cx="120" cy="98" r="4"/><circle cx="168" cy="98" r="4"/><circle cx="192" cy="98" r="4"/>
+            <circle cx="96" cy="122" r="4"/><circle cx="120" cy="122" r="4"/><circle cx="144" cy="122" r="4"/>
+          </g>
+          <circle cx="144" cy="98" r="12" fill="none" stroke="#3e7c59" stroke-width="3.5"/>
+          <path d="M138 98 l4 4 l8 -9" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="140" y="170" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">comprehensive — on the calendar</text>
+        </svg>
+        <h4>Book a comprehensive exam</h4>
+        <p>Ask specifically for a comprehensive eye exam, not just a vision screening — a screening only checks whether you can read a chart. Then put the appointment on the calendar so it doesn't quietly slip by another year.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of preparing for an eye exam: bringing glasses, a contact case, a history list, insurance card, and sunglasses">
+          <rect x="30" y="40" width="220" height="110" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <!-- glasses -->
+          <circle cx="66" cy="80" r="12" fill="none" stroke="#33393b" stroke-width="3.5"/>
+          <circle cx="94" cy="80" r="12" fill="none" stroke="#33393b" stroke-width="3.5"/>
+          <path d="M78 80 q4 -5 6 0" fill="none" stroke="#33393b" stroke-width="3.5"/>
+          <!-- contact case -->
+          <rect x="120" y="70" width="40" height="20" rx="6" fill="#7fb3c8"/>
+          <circle cx="132" cy="80" r="6" fill="#5e9a78"/>
+          <circle cx="148" cy="80" r="6" fill="#3e7c59"/>
+          <!-- insurance card -->
+          <rect x="180" y="66" width="46" height="28" rx="4" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <line x1="186" y1="76" x2="220" y2="76" stroke="#5e9a78" stroke-width="2" stroke-linecap="round"/>
+          <line x1="186" y1="84" x2="210" y2="84" stroke="#5e9a78" stroke-width="2" stroke-linecap="round"/>
+          <!-- history list -->
+          <rect x="58" y="108" width="70" height="30" rx="4" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <line x1="66" y1="118" x2="118" y2="118" stroke="#e0a93d" stroke-width="2" stroke-linecap="round"/>
+          <line x1="66" y1="126" x2="106" y2="126" stroke="#e0a93d" stroke-width="2" stroke-linecap="round"/>
+          <text x="93" y="150" font-size="9" fill="#6b7376" text-anchor="middle">history</text>
+          <!-- sunglasses -->
+          <circle cx="176" cy="122" r="11" fill="#33393b"/>
+          <circle cx="202" cy="122" r="11" fill="#33393b"/>
+          <path d="M187 122 q4 -5 6 0" fill="none" stroke="#33393b" stroke-width="3"/>
+          <text x="189" y="150" font-size="9" fill="#6b7376" text-anchor="middle">sunglasses</text>
+        </svg>
+        <h4>Prepare what to bring</h4>
+        <p>Gather your current glasses and contacts, your medical and family eye history, your insurance card, and sunglasses. Knowing your contact brand and prescription — and jotting down any symptoms — makes the visit smoother and more useful.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of planning for pupil dilation: dilated eyes are light-sensitive, so arrange a ride and wear sunglasses instead of driving right after">
+          <!-- dilated eye -->
+          <ellipse cx="90" cy="70" rx="34" ry="22" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <circle cx="90" cy="70" r="16" fill="#5e9a78"/>
+          <circle cx="90" cy="70" r="11" fill="#2c5a40"/>
+          <!-- sun rays hitting it -->
+          <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+            <line x1="90" y1="30" x2="90" y2="40"/>
+            <line x1="120" y1="38" x2="114" y2="46"/>
+            <line x1="60" y1="38" x2="66" y2="46"/>
+          </g>
+          <text x="90" y="112" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">light-sensitive</text>
+          <!-- car with a driver / ride -->
+          <rect x="168" y="86" width="86" height="30" rx="8" fill="#5e9a78"/>
+          <path d="M180 86 l10 -16 h44 l10 16 z" fill="#3e7c59"/>
+          <rect x="192" y="74" width="18" height="12" rx="2" fill="#dce8ee"/>
+          <rect x="216" y="74" width="18" height="12" rx="2" fill="#dce8ee"/>
+          <circle cx="188" cy="118" r="9" fill="#33393b"/>
+          <circle cx="236" cy="118" r="9" fill="#33393b"/>
+          <text x="210" y="146" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">get a ride home</text>
+        </svg>
+        <h4>Plan for dilation</h4>
+        <p>If your pupils are dilated, your vision goes blurry and light-sensitive for a few hours. Line up a ride or plan not to drive right after, and bring sunglasses for the way home. Ask when you book whether they'll dilate.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of updating your eyewear and keeping a copy of your prescription in a folder">
+          <!-- prescription paper -->
+          <rect x="46" y="28" width="96" height="124" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <text x="94" y="50" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">Rx</text>
+          <g stroke="#e9e2d8" stroke-width="2.4" stroke-linecap="round">
+            <line x1="60" y1="66" x2="128" y2="66"/>
+            <line x1="60" y1="80" x2="128" y2="80"/>
+            <line x1="60" y1="94" x2="112" y2="94"/>
+          </g>
+          <text x="94" y="126" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">exp. date</text>
+          <line x1="66" y1="132" x2="122" y2="132" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+          <!-- new glasses -->
+          <circle cx="182" cy="92" r="20" fill="none" stroke="#33393b" stroke-width="5"/>
+          <circle cx="228" cy="92" r="20" fill="none" stroke="#33393b" stroke-width="5"/>
+          <path d="M202 92 q6 -8 8 0" fill="none" stroke="#33393b" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="182" cy="92" r="15" fill="#dce8ee" opacity="0.6"/>
+          <circle cx="228" cy="92" r="15" fill="#dce8ee" opacity="0.6"/>
+          <!-- little sparkle -->
+          <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+            <path d="M244 62 l0 9 M240 66 l9 0"/>
+          </g>
+        </svg>
+        <h4>Update eyewear, keep the Rx</h4>
+        <p>If your prescription changed, update your glasses or contacts so you're not straining through old lenses. Keep a copy of the prescription — you're entitled to it — and note its expiration so it doesn't lapse before your next exam.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of watching for urgent symptoms between exams — flashes of light, new floaters, a shadow or curtain — and seeking care right away">
+          <ellipse cx="140" cy="86" rx="70" ry="44" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+          <!-- floaters -->
+          <g fill="#6b7376" opacity="0.7">
+            <circle cx="110" cy="70" r="3.5"/>
+            <path d="M126 62 q6 3 2 9" stroke="#6b7376" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <circle cx="150" cy="76" r="2.6"/>
+            <circle cx="134" cy="88" r="2"/>
+          </g>
+          <!-- flash of light -->
+          <path d="M172 60 l-10 14 l7 2 l-9 14" fill="none" stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- shadow / curtain over one edge -->
+          <path d="M188 60 a70 44 0 0 1 0 52 z" fill="#33393b" opacity="0.35"/>
+          <text x="140" y="150" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">flashes · floaters · a shadow → go NOW</text>
+        </svg>
+        <h4>Watch for urgent symptoms</h4>
+        <p>Between exams, treat sudden vision loss, flashes of light, a curtain or shadow, a burst of new floaters, eye pain, or double vision as an emergency and seek care right away — don't wait. Then get the next routine exam back on the calendar.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Eye-exam upkeep progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Exam booked and done, prescription updated, next one on the calendar — you're keeping your eyes checked, not just your glasses. Your eye doctor will tell you when to come back.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's time to book — and symptoms that mean go NOW</h2>
+    <p class="sub">Some of the most important eye conditions have no early warning at all, which is the whole reason to keep exams on a schedule. But there are also signs it's overdue for a routine visit — and a short list of symptoms that are urgent and shouldn't wait for one. This is general information, not medical advice; when in doubt, call your eye doctor:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Blurry vision, up close or far away.</strong> If print, screens, or road signs aren't as sharp as they were, or you're squinting and holding things at arm's length, your eyes want a look — book a comprehensive exam.</li>
+        <li><strong>Frequent headaches or eye strain.</strong> Regular headaches, tired or achy eyes, especially after screens or reading, often trace back to an out-of-date prescription or an uncorrected issue worth checking.</li>
+        <li><strong>Trouble seeing at night.</strong> New glare, halos around lights, or difficulty driving after dark can signal changes worth an exam sooner rather than later.</li>
+        <li><strong>An outdated or expiring prescription.</strong> If your glasses or contacts feel "off," or the prescription is near its expiration, it's time — you're entitled to a fresh one, but it takes an exam to write it.</li>
+        <li><strong>It's simply been over a year or two.</strong> Even if everything feels fine, that's precisely when a silent condition would be advancing unnoticed. Feeling fine is not the same as being checked.</li>
+        <li><strong>⛑️ Treat these as urgent — seek care immediately:</strong> sudden vision loss, flashes of light, a curtain or shadow moving across your vision, a sudden shower of new floaters, eye pain, or double vision. These can signal something serious like a retinal detachment. Don't wait for your routine appointment — get seen right away.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I get an eye exam?</summary>
+      <p>There isn't one number that fits everyone, and this guide can't tell you yours — your eye doctor sets it based on your age, whether you wear glasses or contacts, your health (diabetes in particular), and your family history. As a very rough, general starting point, many healthy adults go about every one to two years, kids and adults over 60 are usually seen more often, and people with diabetes or an existing eye condition follow whatever schedule their doctor recommends — often at least yearly. Use those ranges to open the conversation, then let your eye doctor tell you what's right for you.</p>
+    </details>
+    <details>
+      <summary>What does a comprehensive eye exam actually check?</summary>
+      <p>Much more than whether you need new glasses. A comprehensive exam checks the health of your eyes, not just your vision — it can look at the retina and optic nerve, measure the pressure inside the eye, and inspect the blood vessels, which is how it can catch conditions like glaucoma, macular degeneration, and diabetic damage before you'd notice any symptoms. Because the eye is the one place a doctor sees blood vessels directly, an exam can even turn up early signs of whole-body conditions such as diabetes and high blood pressure. The glasses check is real, but it's only one part of a much broader health check.</p>
+    </details>
+    <details>
+      <summary>Is a vision screening the same as an eye exam?</summary>
+      <p>No — and this is an important difference. A vision screening, like the ones done at school, work, or the DMV, is a quick check of whether you can read a chart at a certain distance. It's useful for flagging obvious problems, but it does not examine the health of your eyes and can easily pass someone who has a serious, symptomless condition developing. A comprehensive eye exam, done by an eye doctor, is a far more thorough evaluation of both your vision and your eye health. Passing a screening is not a substitute for a real exam.</p>
+    </details>
+    <details>
+      <summary>What is dilation, and will I need a ride?</summary>
+      <p>Dilation is when the eye doctor puts in drops that widen your pupils so they can see more of the inside of your eye — the retina and optic nerve especially. It's a routine and valuable part of many exams. The trade-off is that for a few hours afterward your vision is blurry (especially up close) and your eyes are very sensitive to light. That's why it's smart to arrange a ride or plan not to drive right after your appointment, and to bring sunglasses for the trip home. Ask when you book whether they plan to dilate so you can plan the day around it.</p>
+    </details>
+    <details>
+      <summary>Do kids really need eye exams?</summary>
+      <p>Yes. A child usually can't tell you their vision is off — if the world has always looked a little blurry, that's simply "normal" to them. Undetected vision problems can quietly hurt reading, schoolwork, and confidence, and some conditions (like a lazy eye) are far easier to treat when caught early, while the eyes are still developing. A quick school screening is helpful but limited; it can miss things a comprehensive exam would catch. Ask your child's doctor or an eye doctor how often your child should be seen — the right schedule depends on their age and any risk factors.</p>
+    </details>
+    <details>
+      <summary>What symptoms mean I should go NOW instead of waiting?</summary>
+      <p>Some eye symptoms are potential emergencies and shouldn't wait for a routine appointment. Seek care right away for sudden vision loss, flashes of light, a curtain or shadow moving across part of your vision, a sudden shower of new floaters, eye pain, or double vision. These can be signs of something serious, such as a retinal detachment, where getting seen quickly can make the difference for your sight. When in doubt, don't wait it out — contact your eye doctor or seek urgent care. This is general information, not medical advice.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>The exam that catches silent disease is the one that's easiest to put off.</h2>
+        <p>An eye exam catches sight-stealing disease long before you'd notice — but with nothing hurting and nothing blurry, it's easy to let it slide for years. Upkeep Ledger logs your last exam and resurfaces the next on schedule, right alongside the HVAC filter, the smoke-alarm batteries, and every other quiet task that's easy to forget until it matters. (Not medical advice — your eye doctor sets your schedule.)</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=eye-exam&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=eye-exam&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>If you wear contacts, keep up your <a href="replace-contact-lenses.html">lens replacement schedule</a> and <a href="replace-contact-solution.html">case-and-solution</a> routine, and protect your eyes with UV-blocking <a href="replace-sunglasses.html">sunglasses</a>.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your prices, insurance coverage, and needs may vary.</p>
+    <p><em>This guide is general information, not medical advice. It cannot tell you how often you need an eye exam or diagnose anything — your eye doctor decides your schedule and your care. For any concern about your eyes or vision, see an eye doctor.</em></p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { stage: null, aids: null, risk: null, symptoms: null };
+
+  var FREQ_LABEL = {
+    6: "Every 6 months",
+    12: "Once a year",
+    24: "Every 2 years"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 24;
+    var tighten = false;
+
+    /* Stage — age / life stage */
+    if (s.stage === "child") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Kids' and teens' eyes are still developing, and vision problems can quietly affect learning — so children are usually seen more often than a healthy younger adult. Ask their doctor exactly how often.");
+    } else if (s.stage === "senior") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("The risk of age-related conditions like glaucoma and macular degeneration climbs after 60, so older adults are generally examined more frequently to catch them early.");
+    } else {
+      reasons.push("A healthy younger or middle-aged adult often falls toward the every-one-to-two-years end of the general range — but only your eye doctor can confirm that fits you.");
+    }
+
+    /* Aids — glasses or contacts */
+    if (s.aids === "contacts") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Contact lenses sit right on the eye's surface, so wearers are typically seen at least once a year to keep the lenses safe and the prescription current — a contact-lens evaluation is part of that.");
+    } else if (s.aids === "glasses") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("If you wear glasses, your prescription drifts over time, so a regular check keeps you from straining through outdated lenses and driving with vision that's no longer sharp.");
+    } else {
+      reasons.push("Not needing correction is a good sign, but it doesn't remove the need for exams — plenty of serious conditions have nothing to do with whether you currently need glasses.");
+    }
+
+    /* Risk — health / family history */
+    if (s.risk === "diabetes") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("Diabetes can damage the retina silently, so a yearly dilated exam is commonly recommended to catch diabetic changes before they threaten your sight — follow your doctor's guidance closely here.");
+    } else if (s.risk === "family") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("High blood pressure, a family history of glaucoma or macular degeneration, or an existing eye condition all raise your risk, so your eye doctor will likely want to monitor you more closely.");
+    } else {
+      reasons.push("No known health or family risk factors is reassuring, though it isn't a guarantee — some conditions appear with no warning and no history, which is exactly why routine exams matter.");
+    }
+
+    /* Symptoms — symptoms / time since last exam */
+    if (s.symptoms === "symptoms") {
+      if (months > 6) months = 6;
+      tighten = true;
+      reasons.push("New blurry vision, headaches, or eye strain are reasons to be seen sooner rather than waiting for a routine slot — book an exam and mention the symptoms when you do.");
+    } else if (s.symptoms === "overdue") {
+      if (months > 12) months = 12;
+      tighten = true;
+      reasons.push("If it's been years — or you can't remember your last exam — a comprehensive exam is simply overdue, no matter how fine your vision feels day to day.");
+    } else {
+      reasons.push("A recent exam with vision that feels fine is the best case, and lets you lean toward the longer end of your personal range — right up until your eye doctor says otherwise.");
+    }
+
+    /* Closing note — always defers to the eye doctor */
+    var note;
+    if (s.symptoms === "symptoms") {
+      note = "<strong>Symptoms change the timing:</strong> new blur, headaches, or strain are reasons to go sooner, not to wait for the calendar. And remember — sudden vision loss, flashes, a shadow, a burst of floaters, eye pain, or double vision are urgent; seek care right away. <em>Your eye doctor decides your schedule.</em>";
+    } else if (s.risk === "diabetes") {
+      note = "<strong>With diabetes, don't guess the interval:</strong> a yearly dilated exam is commonly advised, but your care team sets the exact schedule based on your health. <em>This is general information, not medical advice — your eye doctor decides.</em>";
+    } else if (s.stage === "child") {
+      note = "<strong>For kids, ask a professional what's right:</strong> the ideal schedule depends on age and risk factors, and a school screening isn't a substitute for a comprehensive exam. <em>Your child's eye doctor decides how often.</em>";
+    } else {
+      note = "<strong>Treat this as a starting point, not a prescription:</strong> these are only general ranges. <em>How often you actually need an eye exam is your eye doctor's call</em> — bring this to your next visit and let them set your real schedule.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.stage || !quizState.aids || !quizState.risk || !quizState.symptoms) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "A general starting point: about " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "This is <strong>general guidance, not a diagnosis</strong> — book a <strong>comprehensive</strong> exam (not just a screening) and let your eye doctor set the real interval. Why this rough range:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Book a comprehensive exam", text: "Ask for a COMPREHENSIVE exam, not a screening", note: "A vision screening only checks whether you can read a chart. Ask specifically for a comprehensive eye exam with an eye doctor, which looks at the health of your eyes, not just your vision." },
+    { phase: "Book a comprehensive exam", text: "Put the appointment on the calendar", note: "The exam is easy to put off because nothing hurts. Book a date and add it to your calendar so it doesn't quietly slip past another year." },
+    { phase: "Book a comprehensive exam", text: "Ask whether they'll dilate, and about lens-free time", note: "Find out if your pupils will be dilated so you can plan the day. If you wear contacts, ask whether to skip your lenses for a stretch beforehand." },
+    { phase: "Prepare", text: "Gather your glasses, contacts, case, and prescription", note: "Bring your current glasses and contacts, and know your contact brand and prescription if you can. It helps your eye doctor see where you're starting from." },
+    { phase: "Prepare", text: "Write down your medical and family eye history", note: "Note conditions like diabetes or high blood pressure, any medications, and any family history of glaucoma or macular degeneration — plus any symptoms you've noticed." },
+    { phase: "Prepare", text: "Pack your insurance card and sunglasses", note: "Bring your vision or medical insurance card so coverage is sorted, and sunglasses in case your eyes are light-sensitive after the exam." },
+    { phase: "Plan for dilation", text: "Arrange a ride or plan not to drive after", note: "If your pupils are dilated, your vision will be blurry and light-sensitive for a few hours. Line up a ride or plan to avoid driving right after the appointment." },
+    { phase: "Plan for dilation", text: "Keep sunglasses handy for the trip home", note: "Dilated eyes are very sensitive to bright light. Have your sunglasses ready for the walk out and the drive or ride home." },
+    { phase: "Update & schedule next", text: "Update your glasses or contacts if the Rx changed", note: "If your prescription changed, order updated glasses or contacts so you're not straining through old lenses — and driving with vision that's no longer sharp." },
+    { phase: "Update & schedule next", text: "Keep a copy of your prescription and note the expiration", note: "You're entitled to your prescription. Save a copy so you can order eyewear, and note when it expires so it doesn't lapse before your next visit." },
+    { phase: "Update & schedule next", text: "Log the date and set the next exam per your doctor", note: "Note today's date and put the next exam on the calendar for whenever your eye doctor recommends. Between exams, treat sudden vision loss, flashes, a shadow, new floaters, eye pain, or double vision as an emergency and seek care right away." }
+  ];
+
+  var LS_KEY = "upkeepguides:eye-exam:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
