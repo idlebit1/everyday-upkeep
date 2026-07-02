@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service your skis or snowboard — UpkeepGuides.com</title>
+<meta name="description" content="How to service your skis or snowboard: sharpen the edges to grip on ice, wax the base so it glides and doesn't dry out, fill rock nicks, know DIY vs. shop work, and never skip the off-season storage wax.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Service your skis or snowboard — UpkeepGuides.com">
+<meta property="og:description" content="How to service your skis or snowboard: sharpen the edges to grip on ice, wax the base so it glides and doesn't dry out, fill rock nicks, know DIY vs. shop work, and never skip the off-season storage wax.">
+<meta property="og:url" content="https://upkeepguides.com/service-skis.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Service your skis or snowboard — UpkeepGuides.com">
+<meta name="twitter:description" content="How to service your skis or snowboard: sharpen the edges to grip on ice, wax the base so it glides and doesn't dry out, fill rock nicks, know DIY vs. shop work, and never skip the off-season storage wax.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Equipment · Each season</span>
+      <h1>Service Your Skis or Snowboard</h1>
+      <p class="lede">Skis and boards don't get slow all at once — they lose it a run at a time. The wax wears out of the base until it dries pale and grabby and you find yourself poling across the flats; the steel edges round off on hard-pack and ice until the thing skids sideways where it used to bite; and a few rocks in an early-season traverse leave gouges that snag and let water into the core. A tune fixes all three: sharp edges to grip, a waxed base to glide, and base repairs for the nicks. Some of it is a happy garage evening with an iron and a scraper; some of it — grinds, deep repairs, and anything to do with your bindings — belongs to a shop. And the one rule you never skip is the off-season storage wax, because an unwaxed base oxidizes all summer. Do it right and an expensive setup stays fast for years.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Full tune <em>each season</em></span>
+        <span class="chip">🕯️ Wax <em>every few outings</em></span>
+        <span class="chip">🔧 DIY wax, <em>shop the grinds</em></span>
+        <span class="chip">💸 Shop tune <em>~$30–60</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of tuning skis in a garage workshop: a ski clamped base-up on a bench with a waxing iron dripping and ironing hot wax onto the base, a small snowboard leaning against the bench, an edge tool sharpening the steel edge, a P-Tex candle filling a base gouge, and a scraper and brush lying nearby">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- pegboard workshop wall, top -->
+      <rect x="40" y="20" width="480" height="96" rx="6" fill="#f3ecdd"/>
+      <g fill="#d8cfbe">
+        <circle cx="72" cy="44" r="2.4"/><circle cx="104" cy="44" r="2.4"/><circle cx="136" cy="44" r="2.4"/>
+        <circle cx="72" cy="72" r="2.4"/><circle cx="104" cy="72" r="2.4"/><circle cx="136" cy="72" r="2.4"/>
+      </g>
+      <!-- tools hung on the pegboard -->
+      <rect x="430" y="34" width="8" height="46" rx="3" fill="#c96f4a"/>
+      <rect x="424" y="30" width="20" height="8" rx="3" fill="#8a6a4f"/>
+      <rect x="466" y="34" width="8" height="40" rx="3" fill="#5e9a78"/>
+      <rect x="460" y="30" width="20" height="8" rx="3" fill="#3e7c59"/>
+
+      <!-- the workbench -->
+      <rect x="60" y="252" width="440" height="26" rx="4" fill="#b9662f" opacity="0"/>
+      <rect x="60" y="250" width="440" height="24" rx="4" fill="#c9a06b"/>
+      <rect x="60" y="272" width="440" height="8" rx="2" fill="#8a6a4f"/>
+      <!-- bench legs -->
+      <rect x="86" y="280" width="16" height="96" rx="3" fill="#8a6a4f"/>
+      <rect x="458" y="280" width="16" height="96" rx="3" fill="#8a6a4f"/>
+
+      <!-- vise holding the ski at center of the bench -->
+      <rect x="256" y="228" width="52" height="24" rx="4" fill="#6b7376"/>
+      <rect x="264" y="220" width="12" height="12" rx="2" fill="#8a8f92"/>
+      <rect x="288" y="220" width="12" height="12" rx="2" fill="#8a8f92"/>
+
+      <!-- the ski, clamped base-up, running across the bench -->
+      <path d="M96 214 q-22 2 -22 12 q0 10 22 12 l360 0 q30 -2 30 -12 q0 -10 -30 -12 z" fill="#2c5a40"/>
+      <!-- upturned tip on the left -->
+      <path d="M96 214 q-30 -6 -46 -22 q18 8 46 8 z" fill="#2c5a40"/>
+      <!-- the base surface (pale, being waxed) -->
+      <rect x="110" y="210" width="336" height="12" rx="3" fill="#dce8ee"/>
+      <!-- dry white patch near the tail (right) -->
+      <rect x="392" y="210" width="46" height="12" rx="3" fill="#eef4f7"/>
+      <!-- steel edges as bright lines -->
+      <line x1="112" y1="209" x2="446" y2="209" stroke="#8a8f92" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="112" y1="223" x2="446" y2="223" stroke="#8a8f92" stroke-width="2.4" stroke-linecap="round"/>
+
+      <!-- hot wax dripped in beads onto the base, center -->
+      <g fill="#e0a93d">
+        <circle cx="214" cy="212" r="3.4"/>
+        <circle cx="234" cy="212" r="3"/>
+        <circle cx="254" cy="212" r="3.4"/>
+      </g>
+      <!-- the waxing iron ironing it in, moving -->
+      <rect x="196" y="176" width="76" height="26" rx="6" fill="#5e9a78"/>
+      <rect x="196" y="196" width="76" height="8" rx="3" fill="#3e7c59"/>
+      <path d="M224 176 q10 -20 34 -20 l0 8 q-18 0 -26 16 z" fill="#8a6a4f"/>
+      <!-- motion streaks showing the iron moving -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" opacity="0.6">
+        <line x1="182" y1="184" x2="192" y2="184"/>
+        <line x1="178" y1="192" x2="192" y2="192"/>
+      </g>
+      <!-- heat wisps rising off the wax -->
+      <g stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5">
+        <path d="M228 174 q-4 -6 0 -12"/>
+        <path d="M244 174 q4 -6 0 -12"/>
+      </g>
+      <text x="196" y="170" font-size="10.5" fill="#3e7c59" font-weight="700">keep it moving</text>
+
+      <!-- edge tool sharpening the steel edge, left of the wax -->
+      <rect x="120" y="188" width="44" height="20" rx="4" fill="#c96f4a" transform="rotate(-6 142 198)"/>
+      <rect x="120" y="204" width="44" height="6" rx="2" fill="#8a6a4f" transform="rotate(-6 142 207)"/>
+      <!-- tiny filings sparking off the edge -->
+      <g fill="#8a8f92">
+        <circle cx="128" cy="216" r="1.4"/>
+        <circle cx="136" cy="220" r="1.2"/>
+        <circle cx="120" cy="219" r="1.2"/>
+      </g>
+      <text x="114" y="184" font-size="10.5" fill="#d9663f" font-weight="700">edge tool</text>
+
+      <!-- P-Tex candle filling a base gouge, right of the wax -->
+      <rect x="356" y="150" width="8" height="52" rx="3" fill="#b9b1a3"/>
+      <path d="M360 148 q-5 -8 0 -14 q5 6 0 14 z" fill="#d9663f"/>
+      <!-- a drip of molten P-Tex falling to the base -->
+      <circle cx="360" cy="206" r="3" fill="#8a6a4f"/>
+      <path d="M360 202 l0 4" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="336" y="146" font-size="10.5" fill="#8a6a4f" font-weight="700">fill the nick</text>
+
+      <!-- scraper lying on the bench, front-right -->
+      <rect x="404" y="256" width="60" height="14" rx="3" fill="#e0a93d"/>
+      <rect x="404" y="256" width="60" height="5" rx="2.5" fill="#d98e3b"/>
+      <!-- wax curls shaved off beside the scraper -->
+      <path d="M470 268 q6 -4 12 0 q-4 4 -12 2 z" fill="#e0a93d" opacity="0.8"/>
+      <path d="M474 262 q6 -4 12 0 q-4 4 -12 2 z" fill="#faf0da"/>
+
+      <!-- nylon brush lying on the bench, front-left -->
+      <rect x="96" y="256" width="70" height="12" rx="3" fill="#8a6a4f"/>
+      <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round">
+        <line x1="104" y1="268" x2="104" y2="276"/>
+        <line x1="114" y1="268" x2="114" y2="276"/>
+        <line x1="124" y1="268" x2="124" y2="276"/>
+        <line x1="134" y1="268" x2="134" y2="276"/>
+        <line x1="144" y1="268" x2="144" y2="276"/>
+        <line x1="154" y1="268" x2="154" y2="276"/>
+      </g>
+
+      <!-- small snowboard leaning against the bench, right -->
+      <g transform="rotate(14 508 320)">
+        <rect x="490" y="250" width="36" height="150" rx="18" fill="#c96f4a"/>
+        <rect x="490" y="250" width="36" height="150" rx="18" fill="none" stroke="#8a8f92" stroke-width="2"/>
+        <!-- binding straps -->
+        <rect x="498" y="292" width="20" height="8" rx="3" fill="#2c5a40"/>
+        <rect x="498" y="336" width="20" height="8" rx="3" fill="#2c5a40"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A ski or board is a tuned instrument: it grips because the steel edges are sharp, it glides because the base is waxed, and it stays healthy because the nicks get filled before water finds the core. Let any one of those go and the whole thing feels wrong — slow, grabby, and hard to turn just when you need it to hold. Here's what a skipped tune actually costs:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M6 26 L22 6 L26 6 L12 26 Z" fill="#dce8ee" stroke="#8a8f92" stroke-width="1.8"/>
+          <line x1="7" y1="27" x2="25" y2="5" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+          <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+            <path d="M24 24 l0 6 M21 27 l6 0"/>
+          </g>
+        </svg></div>
+        <h3>Sharp edges grip</h3>
+        <p>The steel edges are what let the ski carve and hold on a slope. Dull, rounded edges skid instead of biting, and on hard-pack or ice they simply won't hold a turn — that's a control problem, and a safety one, not just a slow day.</p>
+        <span class="cost">Skidding &amp; no grip on ice</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="7" y="14" width="22" height="10" rx="3" fill="#dce8ee" stroke="#8a8f92" stroke-width="1.6"/>
+          <g stroke="#e0a93d" stroke-width="2.6" stroke-linecap="round">
+            <line x1="7" y1="19" x2="29" y2="19"/>
+          </g>
+          <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+            <path d="M14 30 l8 0 M18 26 l0 8"/>
+          </g>
+        </svg></div>
+        <h3>A waxed base glides &amp; lasts</h3>
+        <p>Wax fills the base's pores so it slides smoothly and fast — but it does more than make you quicker. It keeps the base from drying out, going chalky white, and oxidizing. A dry base is a slow base, and oxidation is damage you can't just wax away.</p>
+        <span class="cost">Slow, dry, oxidizing base</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="15" width="24" height="8" rx="2.5" fill="#dce8ee" stroke="#8a8f92" stroke-width="1.6"/>
+          <path d="M15 15 l2 6 l2 -4 l2 4 l2 -6 z" fill="#8a6a4f"/>
+          <circle cx="12" cy="19" r="1.4" fill="#8a6a4f"/>
+          <path d="M25 12 q-4 -6 0 -8" stroke="#7fb3c8" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Rock nicks get worse</h3>
+        <p>A gouge or core shot from an early-season rock catches snow and drags, so a nicked base is a slow one. Worse, an open gouge lets water into the core, and left alone it spreads. Fill the small ones and get the deep ones repaired before they grow.</p>
+        <span class="cost">Snagging &amp; water in the core</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="6" y="8" width="16" height="22" rx="3" fill="#dce8ee" stroke="#8a8f92" stroke-width="1.6"/>
+          <path d="M9 12 l0 14 M13 12 l0 14" stroke="#5e9a78" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="26" cy="24" r="7.5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <text x="26" y="27.5" font-size="9" fill="#d98e3b" font-weight="700" text-anchor="middle">$</text>
+        </svg></div>
+        <h3>Tuning beats replacing</h3>
+        <p>A season tune and regular waxing are cheap next to what they protect — a setup that easily runs into the hundreds. Keep the edges sharp and the base fed with wax and your gear stays fast and lasts for many years instead of going dead in a few.</p>
+        <span class="cost">A dead setup, replaced early</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> tune?</h2>
+    <p class="sub">The default is a full tune once a season — start of winter — plus a fresh coat of wax every few outings if you ride a lot. But it shifts with how you ski: a season-pass regular on icy hard-pack wants edges and wax far more often than someone who takes a couple of soft-snow trips a year. And whether you do it yourself or hand it to a shop changes the plan entirely. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="frequency">
+        <div class="q-label">1. How often do you ride?</div>
+        <div class="pills">
+          <button class="pill" data-v="lots">A season pass / lots of days</button>
+          <button class="pill" data-v="some">A few trips a year</button>
+          <button class="pill" data-v="rare">Rarely — once in a while</button>
+        </div>
+        <div class="q-hint">Every day on snow scrubs a little wax off the base and rounds the edges a touch. The more you ride, the more often the base needs feeding and the edges need a touch-up between full season tunes.</div>
+      </div>
+      <div class="quiz-q" data-q="conditions">
+        <div class="q-label">2. What conditions do you usually ride?</div>
+        <div class="pills">
+          <button class="pill" data-v="hard">Icy, hard-pack, or rocky / early-season</button>
+          <button class="pill" data-v="mixed">A bit of everything</button>
+          <button class="pill" data-v="soft">Mostly soft powder</button>
+        </div>
+        <div class="q-hint">Ice and hard-pack dull edges fast, and rocky or thin early-season snow gouges bases. Soft powder is gentle on both. Rough conditions mean more frequent edge work and more base repairs.</div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. What shape is the gear in right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="bad">Dry white base, dull edges, or gouges</button>
+          <button class="pill" data-v="okay">A little tired — due for wax</button>
+          <button class="pill" data-v="good">Tuned and glossy, edges sharp</button>
+        </div>
+        <div class="q-hint">Run a fingernail across the edge — if it doesn't shave a curl, it's dull. A chalky white, dry-looking base needs wax now. Visible gouges or a core shot need repair before your next day out.</div>
+      </div>
+      <div class="quiz-q" data-q="who">
+        <div class="q-label">4. Do you tune at home or take it to a shop?</div>
+        <div class="pills">
+          <button class="pill" data-v="diy">I wax and tune at home</button>
+          <button class="pill" data-v="both">Some at home, shop for the big stuff</button>
+          <button class="pill" data-v="shop">I take it to a shop</button>
+        </div>
+        <div class="q-hint">Home waxing is cheap and easy once you're set up, so DIYers can wax often. Grinds, deep repairs, and bindings are shop jobs regardless — this answer just shapes how much of the how-to below you'll do yourself.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">Tuning is one of the cheapest ways there is to protect an expensive setup. A full shop tune runs about $30–60; a home wax kit is a one-time $40–80 that covers dozens of waxings; an edge tool is another $20–40. Set that against a season of a slow, grabby, hard-to-control ride — and, at the far end, a base you let dry out and oxidize until it needs a grind or replacement:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$30–60</div><div class="l">a full shop tune — base grind, edge sharpen, and a hot wax, done properly by a tech</div></div>
+        <div class="calc-stat"><div class="v">$40–80</div><div class="l">a home wax kit — iron, wax, scraper, and brush — a one-time buy that does many waxings</div></div>
+        <div class="calc-stat"><div class="v bad">$100s</div><div class="l">an oxidized, gouged base you let go — a heavy grind or, at worst, a replacement</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🕯️ A single DIY hot waxing (once you own the kit)</span><span>~$1–2 of wax</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 An edge tool for light home touch-ups</span><span>$20–40 one-time</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🧰 A full shop tune (grind + edges + wax)</span><span>$30–60 a season</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:24%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🪨 A P-Tex / core-shot repair from a neglected gouge</span><span>$30–80 at a shop</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:45%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>💀 A dried-out, oxidized base — heavy grind or replace</span><span>$100s, or new gear</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a season tune and a few dollars of wax</strong> against a base you let oxidize until it needs a grind — or a setup that goes dead years early. Wax on a schedule, keep the edges sharp, and never skip the storage wax, and an expensive pair stays fast for a decade. One thing that's <em>not</em> a DIY savings: <strong>binding and DIN release settings are a certified-tech job</strong> — always have a shop set those.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to service your skis or snowboard</h2>
+    <p class="sub">A full tune goes in order: inspect, repair the base, tune the edges, hot wax, then — for the off-season — leave a coat of storage wax on and put it away dry. Some of this is a satisfying garage evening; some of it belongs to a shop. Read the safety notes first (especially the iron and the storage wax), then work through the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Sharp steel, a hot iron, and jobs that belong to a tech</h3>
+      <ul>
+        <li><strong>Sharp edges and tuning tools cut — protect yourself.</strong> Wear gloves when you handle the steel edges and files, and secure the ski or board in a vise or on a stable bench so it can't shift while you work a tool along it.</li>
+        <li><strong>Leave grinds and deep repairs to a shop.</strong> Base grinds and core-shot (deep gouge) repairs are easy to overdo, and a shop does them properly. Over-filing an edge or removing too much base ruins the ski — do light touch-ups at home and hand the big stuff to a tech.</li>
+        <li><strong>Use a proper waxing iron and keep it moving.</strong> If you hot-wax at home, use a real waxing iron (or a dedicated old clothes iron) at the right temperature and never let it sit still — overheating scorches the base and can delaminate it. Work in a ventilated area.</li>
+        <li><strong>Storage wax is the single most important off-season step.</strong> Leave a thick, unscraped coat of wax on the base for the summer. An unwaxed base dries out and oxidizes — the number-one off-season damage — so this one habit protects the gear more than anything else you'll do.</li>
+        <li><strong>Store it dry, in a cool place.</strong> Wet steel edges rust. Dry the ski or board and put it somewhere cool — never a hot attic or a damp garage — for the off-season.</li>
+        <li><strong>Bindings and DIN are a certified-tech job — never DIY.</strong> Do not adjust your own binding release settings. A wrong setting can fail to release, or release early, and cause injury. Have a shop check and set your bindings and DIN.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A vise or a stable bench</span>
+      <span class="tool-chip">Gloves</span>
+      <span class="tool-chip">A waxing iron (or dedicated old iron)</span>
+      <span class="tool-chip">Ski/snowboard wax</span>
+      <span class="tool-chip">A plastic scraper</span>
+      <span class="tool-chip">A nylon or brass brush</span>
+      <span class="tool-chip">An edge tool / file guide</span>
+      <span class="tool-chip">A P-Tex candle (or repair sticks)</span>
+      <span class="tool-chip">A clean rag &amp; base cleaner</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of inspecting a ski base for dry white patches and gouges, feeling the steel edge for sharpness and burrs, and looking for rust">
+          <!-- ski base running across, viewed flat -->
+          <rect x="30" y="70" width="220" height="40" rx="12" fill="#dce8ee" stroke="#8a8f92" stroke-width="3"/>
+          <!-- steel edges -->
+          <line x1="42" y1="72" x2="238" y2="72" stroke="#8a8f92" stroke-width="3" stroke-linecap="round"/>
+          <line x1="42" y1="108" x2="238" y2="108" stroke="#8a8f92" stroke-width="3" stroke-linecap="round"/>
+          <!-- dry white patch -->
+          <rect x="70" y="76" width="42" height="28" rx="6" fill="#eef4f7"/>
+          <!-- a gouge -->
+          <path d="M170 78 l6 10 l6 -8 l6 12 l6 -10" fill="none" stroke="#8a6a4f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- rust speck on the edge -->
+          <circle cx="214" cy="108" r="3" fill="#c96f4a"/>
+          <!-- fingernail testing the edge -->
+          <path d="M118 128 q10 -8 20 -2 l0 12 q-12 4 -20 -4 z" fill="#e8b48f"/>
+          <path d="M124 126 q6 -3 12 0" stroke="#d99c73" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <text x="66" y="150" font-size="10.5" fill="#3e7c59" font-weight="700">check base &amp; feel the edge</text>
+        </svg>
+        <h4>Inspect first</h4>
+        <p>Look the base over for dry, chalky white patches and any gouges, run a fingernail across the edges to feel for sharpness and burrs, and check the steel for rust. Knowing what you're dealing with tells you what the tune needs.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of base repair: filling a small gouge with a burning P-Tex candle drip, with a note that deep core shots and full base grinds go to a shop">
+          <rect x="30" y="96" width="220" height="34" rx="10" fill="#dce8ee" stroke="#8a8f92" stroke-width="3"/>
+          <!-- a gouge in the base -->
+          <path d="M96 100 l8 14 l8 -12" fill="none" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- P-Tex candle dripping into it -->
+          <rect x="98" y="44" width="10" height="42" rx="4" fill="#b9b1a3"/>
+          <path d="M103 42 q-6 -9 0 -16 q6 7 0 16 z" fill="#d9663f"/>
+          <circle cx="103" cy="92" r="3.4" fill="#8a6a4f"/>
+          <path d="M103 88 l0 4" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- shop-it note for the deep core shot -->
+          <path d="M190 100 l10 18 l10 -16" fill="none" stroke="#d9663f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="176" y="90" font-size="10" fill="#d9663f" font-weight="700">core shot → shop</text>
+          <text x="52" y="158" font-size="10.5" fill="#3e7c59" font-weight="700">fill small nicks with P-Tex</text>
+        </svg>
+        <h4>Base repair (or shop it)</h4>
+        <p>Fill small gouges with a P-Tex candle drip, letting it cool and shaving it flush. Deep core shots and a full base grind, though, go to a shop — a burning candle can't reach the core, and a grind needs a machine.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of lightly sharpening and deburring a steel ski edge with an edge tool held at the correct angle, with a caution not to overdo it">
+          <!-- ski on edge, corner view -->
+          <path d="M40 120 L240 120 L240 92 L52 92 Z" fill="#dce8ee" stroke="#8a8f92" stroke-width="2.4"/>
+          <!-- the steel edge highlighted -->
+          <line x1="40" y1="120" x2="240" y2="120" stroke="#8a8f92" stroke-width="4" stroke-linecap="round"/>
+          <!-- edge tool held at an angle to the edge -->
+          <rect x="120" y="70" width="52" height="22" rx="4" fill="#c96f4a" transform="rotate(-14 146 81)"/>
+          <rect x="120" y="86" width="52" height="6" rx="2" fill="#8a6a4f" transform="rotate(-14 146 89)"/>
+          <!-- angle guide marks -->
+          <path d="M146 92 l0 26 M146 118 l14 -8" stroke="#3e7c59" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- filings -->
+          <g fill="#8a8f92"><circle cx="128" cy="124" r="1.6"/><circle cx="138" cy="127" r="1.4"/></g>
+          <text x="58" y="150" font-size="10.5" fill="#3e7c59" font-weight="700">light &amp; even — don't overdo it</text>
+        </svg>
+        <h4>Tune the edges</h4>
+        <p>Lightly sharpen and deburr the steel edges with an edge tool held at the right angle — a few even passes to bring back the bite. Don't overdo it: taking off too much steel ruins the ski, so leave major edge work to a shop.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of hot waxing: dripping wax onto the base, ironing it in with a moving waxing iron, then letting it cool and scraping and brushing it off">
+          <rect x="30" y="104" width="220" height="30" rx="10" fill="#dce8ee" stroke="#8a8f92" stroke-width="3"/>
+          <!-- wax beads on the base -->
+          <g fill="#e0a93d"><circle cx="96" cy="106" r="3.4"/><circle cx="120" cy="106" r="3"/><circle cx="144" cy="106" r="3.4"/></g>
+          <!-- the iron ironing it in -->
+          <rect x="94" y="66" width="60" height="22" rx="6" fill="#5e9a78"/>
+          <rect x="94" y="84" width="60" height="6" rx="3" fill="#3e7c59"/>
+          <path d="M120 66 q8 -16 26 -16 l0 6 q-14 0 -20 12 z" fill="#8a6a4f"/>
+          <!-- motion streaks -->
+          <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round" opacity="0.6"><line x1="80" y1="74" x2="90" y2="74"/><line x1="76" y1="82" x2="90" y2="82"/></g>
+          <!-- scraper shown to the right, curling wax off -->
+          <rect x="196" y="72" width="40" height="12" rx="3" fill="#e0a93d"/>
+          <path d="M206 88 q6 -4 12 0 q-4 5 -12 2 z" fill="#faf0da"/>
+          <text x="72" y="158" font-size="10.5" fill="#3e7c59" font-weight="700">iron in, cool, scrape &amp; brush</text>
+        </svg>
+        <h4>Hot wax</h4>
+        <p>Drip wax onto the base, then iron it in with the waxing iron moving the whole time so it never scorches. Let it cool fully, scrape off the excess with a plastic scraper, and brush the base out for glide.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of off-season storage: a thick unscraped coat of storage wax left on the base, the ski dried and stored upright in a cool place, and a note to have a shop check the bindings">
+          <!-- ski standing upright with a thick wax coat -->
+          <rect x="60" y="24" width="30" height="120" rx="14" fill="#2c5a40"/>
+          <rect x="63" y="30" width="24" height="108" rx="10" fill="#e0a93d"/>
+          <text x="98" y="70" font-size="9.5" fill="#d98e3b" font-weight="700">thick</text>
+          <text x="98" y="84" font-size="9.5" fill="#d98e3b" font-weight="700">storage</text>
+          <text x="98" y="98" font-size="9.5" fill="#d98e3b" font-weight="700">wax</text>
+          <!-- no-rust: a dry edge with a crossed-out water drop -->
+          <path d="M186 40 q-6 8 0 14 q6 -6 0 -14 z" fill="#7fb3c8"/>
+          <line x1="176" y1="38" x2="196" y2="58" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="176" y="74" font-size="9.5" fill="#3e7c59" font-weight="700">store dry</text>
+          <!-- binding check note -->
+          <rect x="176" y="96" width="20" height="14" rx="3" fill="#6b7376"/>
+          <path d="M186 110 l0 16" stroke="#8a8f92" stroke-width="3" stroke-linecap="round"/>
+          <text x="150" y="140" font-size="9.5" fill="#d9663f" font-weight="700">shop checks bindings</text>
+        </svg>
+        <h4>Store waxed &amp; dry</h4>
+        <p>For the off-season, leave a thick coat of storage wax on the base (unscraped), dry the edges so they can't rust, and loosen the bindings per current advice. Store it cool, and have a shop check the bindings and DIN. Then log the tune.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Tune progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎿 Base repaired, edges sharp, base waxed and glossy, and — for the off-season — a thick coat of storage wax on and everything put away dry. Your gear will grip, glide, and last. Next full tune at the start of the season.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs your gear needs a tune — and when to see a shop</h2>
+    <p class="sub">A well-tuned pair is quiet about it: it grips when you tip it on edge, glides on the flats, and turns without a fight. These are the signals it's overdue — and the handful of jobs that belong to a certified technician, not your garage bench:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Chattering or skidding on hard snow.</strong> If the ski rattles and washes out sideways on hard-pack or ice where it used to hold, the edges are dull and rounded. A sharpen brings the bite back.</li>
+        <li><strong>A slow, dry, chalky-white base.</strong> When the base looks pale and dried-out and you're poling across the flats, it's starved of wax. A hot wax makes it fast and smooth again — and stops the drying from turning into oxidation.</li>
+        <li><strong>Deep base gouges or a core shot.</strong> Small nicks you can fill with P-Tex; a deep gouge that reaches the core catches snow and lets water in. That's a P-Tex or base-grind repair — the deep ones at a shop.</li>
+        <li><strong>Rusty edges.</strong> Rust on the steel means the gear went away wet. Light surface rust cleans up, but rust is a sign the storage habits need fixing — dry it and keep it cool.</li>
+        <li><strong>Delamination — the base or topsheet peeling or lifting.</strong> Layers separating (often from an overheated iron or age) is not a DIY fix. Take it to a shop to see whether it's repairable or the gear is done.</li>
+        <li><strong>Base grinds, deep repairs, and anything binding-related.</strong> A full base grind and core-shot repairs need a shop's machines and hands. And <em>bindings and DIN release settings must be set by a certified technician</em> — never adjust your own, and have them checked each season.</li>
+        <li><strong>Pro tip:</strong> the store-it-right habit isn't just for skis. The same off-season logic applies to your camp gear — <a href="seamseal-tent.html">seam-sealing a tent</a> and <a href="wash-sleeping-bag.html">washing a sleeping bag</a> — and keep your winter footwear ready by <a href="waterproof-boots.html">re-waterproofing boots</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I tune and wax my skis or snowboard?</summary>
+      <p>Get a full tune once a season — the start of winter is ideal, so you begin the year with sharp edges, a repaired base, and fresh wax. Waxing is more frequent: if you ride a lot, plan on a fresh coat every few outings, because each day on snow scrubs wax out of the base. Someone who skis only a few soft-snow days a year can stretch that, while a season-pass regular on icy hard-pack will want to wax often and touch up the edges between full tunes. The one appointment nobody should skip is the off-season storage wax at the end of the season — that's what keeps the base from drying out over the summer.</p>
+    </details>
+    <details>
+      <summary>What does a full ski tune include?</summary>
+      <p>Three things, in order. First the <strong>base</strong>: any gouges are filled and the base is flattened and cleaned up, often with a machine grind that resets the base structure. Then the <strong>edges</strong>: the steel is sharpened and deburred to the right angle so the ski grips again. Finally the <strong>wax</strong>: a hot wax is ironed into the base, cooled, scraped, and brushed so it glides fast and the base stays fed. A shop tune ($30–60) does all three by machine; at home you can handle the wax and light edge work while leaving grinds and deep repairs to a tech.</p>
+    </details>
+    <details>
+      <summary>Can I wax and tune my skis at home?</summary>
+      <p>Some of it, yes — and it's satisfying and cheap once you're set up. Hot waxing is very doable at home with a waxing iron, wax, a scraper, and a brush, and light edge touch-ups with an edge tool are within reach too. What you should <em>not</em> do at home is a full base grind, a deep core-shot repair, or anything to do with your bindings. Grinds need a machine, deep repairs need a shop's tools and skill, and binding and DIN release settings must be set by a certified technician for safety. A good split is: wax and light edges at home, grinds and bindings at the shop.</p>
+    </details>
+    <details>
+      <summary>How do I store my skis or board for the summer?</summary>
+      <p>The single most important step is a <strong>storage wax</strong>: iron a thick coat of wax onto the base and leave it unscraped for the whole off-season. An unwaxed base dries out and oxidizes over the summer — the number-one cause of off-season damage — and that thick coat seals it. Beyond that, make sure everything goes away <strong>dry</strong>, because wet steel edges rust. Store the gear somewhere cool and stable, not a hot attic or a damp garage, and loosen the bindings per current advice. In the fall, scrape and brush off the storage wax, tune, and you're ready.</p>
+    </details>
+    <details>
+      <summary>Why is my base dry and white?</summary>
+      <p>That pale, chalky look is oxidation — the base has dried out and the surface is degrading, usually because it went a long time without wax (often a summer stored unwaxed). It's more than cosmetic: an oxidized, dried base is slow and won't hold wax well. A hot wax or two will feed the surface and darken it back up if the oxidation is light. If it's badly oxidized, a shop base grind removes the dead layer and gives you a fresh surface to wax. The fix for next time is simple: wax regularly, and never store it over the summer without a storage-wax coat.</p>
+    </details>
+    <details>
+      <summary>Should I adjust my own bindings?</summary>
+      <p>No. Binding release settings — the DIN — are a safety system, and setting them is a job for a certified technician with the right tools and a release-check machine. A setting that's too high can fail to release in a crash and injure your knee; too low and the ski releases when it shouldn't, which is its own hazard. The correct number depends on your weight, height, boot sole length, ability, and age, and it should be verified, not guessed. Have a shop set and check your bindings each season, and never turn those screws yourself.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Skis go slow, grabby, and dried-out between seasons.</h2>
+        <p>A tune asks for a garage evening once a season and a fresh coat of wax every few outings — and an unwaxed base quietly oxidizes all summer while it sits. Upkeep Ledger logs the season tune and, most importantly, the all-important storage wax, then resurfaces both on schedule — right alongside the tent seams, the sleeping bag, and every other quiet task that keeps your gear ready.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=service-skis&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=service-skis&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Cost figures are typical U.S. ranges for planning purposes; your gear, conditions, and shop prices vary — and binding and DIN release settings must always be set by a certified technician, never adjusted at home.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { frequency: null, conditions: null, state: null, who: null };
+
+  var FREQ_LABEL = {
+    1: "Every few outings",
+    6: "Each season",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Frequency — how often you ride */
+    if (s.frequency === "lots") {
+      months = 1;
+      tighten = true;
+      reasons.push("Riding a lot scrubs wax out of the base and rounds the edges quickly, so plan on a fresh wax every few outings and edge touch-ups between your full season tune.");
+    } else if (s.frequency === "rare") {
+      reasons.push("If you only ride once in a while, a full tune each season is plenty — the gear isn't seeing enough days to need waxing in between.");
+    } else {
+      reasons.push("A few trips a year sits right in the middle: a season tune covers most of it, with a mid-season wax if the base starts looking dry.");
+    }
+
+    /* Conditions — what dulls edges and gouges bases */
+    if (s.conditions === "hard") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("Icy, hard-pack, or rocky early-season snow is the hard case — it dulls edges fast and gouges bases — so tune the edges and wax more often, and check for nicks after every rocky day.");
+    } else if (s.conditions === "soft") {
+      reasons.push("Mostly soft powder is gentle on both edges and base, so nothing here is pushing your schedule tighter.");
+    } else {
+      reasons.push("A mix of conditions is ordinary — a season tune with the odd mid-season wax and edge touch-up keeps up with it.");
+    }
+
+    /* Current state — what the gear needs right now */
+    if (s.state === "bad") {
+      months = 1;
+      tighten = true;
+      reasons.push("A dry white base, dull edges, or visible gouges mean it needs attention now — wax the base, sharpen the edges, and fill the nicks (or shop the deep ones) before your next day out.");
+    } else if (s.state === "okay") {
+      reasons.push("A little tired and due for wax is an easy fix — a hot wax now and you're set for a while.");
+    } else {
+      reasons.push("Tuned and glossy with sharp edges means you're in good shape — just keep to the schedule so it stays that way.");
+    }
+
+    /* Who does the work — shapes the how-to */
+    if (s.who === "diy") {
+      reasons.push("Since you tune at home, waxing often is cheap and quick — but a full base grind, deep repairs, and especially the bindings still belong to a shop.");
+    } else if (s.who === "shop") {
+      reasons.push("Handing it to a shop makes a season tune the simple plan — and it means grinds, deep repairs, and binding/DIN checks are handled correctly.");
+    } else {
+      reasons.push("Splitting the work — wax and light edges at home, grinds and bindings at the shop — is the sweet spot most riders land on.");
+    }
+
+    /* Best-case relaxation: rare rider, soft snow, good shape, shop it */
+    if (!tighten && s.frequency === "rare" && s.conditions === "soft" && s.state === "good" && s.who === "shop") {
+      months = 12;
+      reasons.push("A few gentle soft-snow days a year on gear that's already tuned, with a shop handling everything, is the one case where a once-a-year tune is genuinely all you need.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.conditions === "hard") {
+      note = "<strong>Rough conditions dull edges and gouge bases:</strong> feel the edges before each trip and check the base for nicks after any rocky day. Sharp edges are what let you hold on ice — don't let them go round.";
+    } else if (s.state === "bad") {
+      note = "<strong>Deal with the base first:</strong> fill small gouges and send deep core shots to a shop before you wax, then sharpen. And if the base is chalky-white, that's oxidation — feed it with a hot wax or two.";
+    } else if (s.who === "diy") {
+      note = "<strong>Home waxing pays off:</strong> a $40–80 kit does dozens of waxings. Keep the iron moving so it never scorches — and remember the bindings are the one thing you never touch yourself.";
+    } else {
+      note = "<strong>Never skip the storage wax:</strong> whatever your riding schedule, end the season with a thick, unscraped coat of wax on the base and store the gear dry. An unwaxed base oxidizes all summer.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.frequency || !quizState.conditions || !quizState.state || !quizState.who) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: a full tune each season, plus wax " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Inspect, repair the base, tune the edges, hot wax, and <strong>store it waxed and dry for the off-season</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Inspect", text: "Secure the ski or board and pull on gloves", note: "Clamp it in a vise or lay it on a stable bench so it can't shift, and wear gloves — the steel edges and files cut. A ski that moves under a tool is how a tune becomes a trip to the first-aid kit." },
+    { phase: "Inspect", text: "Check the base for dry white patches and gouges", note: "Look the base over: a pale, chalky-white surface is dried out and oxidizing and needs wax, while gouges and any deep core shots need filling before you ride again." },
+    { phase: "Inspect", text: "Feel the edges and look for rust", note: "Run a fingernail across the steel edges — if it doesn't shave a curl, they're dull. Check for burrs and for any rust, which means the gear went away wet last time." },
+    { phase: "Base repair", text: "Clean the base and fill small gouges with P-Tex", note: "Wipe the base with a base cleaner or rag so the repair sticks. Drip a P-Tex candle (or repair stick) into small gouges, let it cool, and shave it flush with a scraper." },
+    { phase: "Base repair", text: "Send deep core shots and grinds to a shop", note: "A burning candle can't reach the core, and a base grind needs a machine. Deep core shots, a badly oxidized base, and a full grind are shop jobs — don't try to grind at home." },
+    { phase: "Edges & wax", text: "Lightly sharpen and deburr the edges", note: "Work an edge tool along the steel at the right angle in a few even passes to bring back the bite, and knock off any burrs. Don't overdo it — removing too much steel ruins the ski, and major work goes to a shop." },
+    { phase: "Edges & wax", text: "Drip wax and iron it in — keep the iron moving", note: "Melt drips of wax onto the base, then iron them in with a proper waxing iron (or dedicated old iron) at the right temperature, moving it the whole time. A parked iron scorches and can delaminate the base — work in a ventilated area." },
+    { phase: "Edges & wax", text: "Let it cool, then scrape and brush the base", note: "Let the wax cool completely, scrape off the excess with a plastic scraper, and brush the base out with a nylon or brass brush so it glides. (Skip the scrape-and-brush if this is your end-of-season storage wax.)" },
+    { phase: "Store waxed & dry", text: "For the off-season, leave a thick storage-wax coat on", note: "This is the step you never skip: iron on a thick coat of wax and leave it UNSCRAPED for the summer. An unwaxed base dries out and oxidizes — the number-one off-season damage — and this coat seals it." },
+    { phase: "Store waxed & dry", text: "Dry the edges and store somewhere cool", note: "Wet steel edges rust, so dry everything and put the gear somewhere cool and stable — never a hot attic or a damp garage. Loosen the bindings per current advice." },
+    { phase: "Store waxed & dry", text: "Have a shop check the bindings and DIN", note: "Never adjust your own binding release settings — a wrong DIN can fail to release or release early and cause injury. A certified technician sets and verifies them; make it part of the routine." },
+    { phase: "Store waxed & dry", text: "Log the date", note: "Note the tune so the next one lands at the start of the season — and so the all-important storage wax happens at season's end. A slow, oxidizing base gives you no reminder on its own." }
+  ];
+
+  var LS_KEY = "upkeepguides:service-skis:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

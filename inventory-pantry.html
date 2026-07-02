@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory and clean out your pantry — UpkeepGuides.com</title>
+<meta name="description" content="How to inventory and clean out your pantry every few months: toss expired and infested food, catch pantry moths and weevils early, rotate older items to the front (FIFO), store staples airtight, and stop buying duplicates — with a checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Inventory and clean out your pantry — UpkeepGuides.com">
+<meta property="og:description" content="How to inventory and clean out your pantry every few months: toss expired and infested food, catch pantry moths and weevils early, rotate older items to the front (FIFO), store staples airtight, and stop buying duplicates — with a checklist.">
+<meta property="og:url" content="https://upkeepguides.com/inventory-pantry.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Inventory and clean out your pantry — UpkeepGuides.com">
+<meta name="twitter:description" content="How to inventory and clean out your pantry every few months: toss expired and infested food, catch pantry moths and weevils early, rotate older items to the front (FIFO), store staples airtight, and stop buying duplicates — with a checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Kitchen · Every 3 months</span>
+      <h1>Inventory &amp; Clean Out Your Pantry</h1>
+      <p class="lede">A pantry fills the way clutter always does — quietly, from the back. A can slides behind the pasta and expires unseen; a half-open bag of flour goes rancid; you buy your fourth jar of cumin because you couldn't see the other three. And then there's the worst of it: pantry moths and weevils that hitchhike in on one bag of grain and spread their fine webbing to every open box nearby. A quarterly pull-everything-out reset fixes all of it — toss what's expired or infested, rotate the older stuff to the front, move the staples into airtight jars, and write down what you actually have. Cooking gets easier, the grocery bill drops, and nothing rots in the dark again.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Full inventory <em>every 3 months</em></span>
+        <span class="chip">⏱️ <em>~1–2 hours</em> for the deep pass</span>
+        <span class="chip">🐛 Stops <em>pantry-pest spread</em></span>
+        <span class="chip">💸 Containers <em>~$20–40</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of a pantry clean-out: an open pantry cabinet with shelves half-emptied, canned goods and boxes pulled out onto the kitchen counter, a dented bulging can and a moth-infested bag of flour heading toward a trash bin, a row of clear airtight storage jars of flour, rice, and pasta being lined up front-to-back on a shelf, and a handwritten checklist on the counter">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- open pantry cabinet, left -->
+      <rect x="24" y="34" width="196" height="330" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- open door swung out to the left -->
+      <path d="M24 40 l-18 -8 v320 l18 -6 z" fill="#c9a06b" stroke="#8a6a4f" stroke-width="4"/>
+      <circle cx="14" cy="200" r="3.5" fill="#8a6a4f"/>
+      <!-- shelves -->
+      <rect x="30" y="112" width="184" height="7" rx="2" fill="#b9b1a3"/>
+      <rect x="30" y="196" width="184" height="7" rx="2" fill="#b9b1a3"/>
+      <rect x="30" y="280" width="184" height="7" rx="2" fill="#b9b1a3"/>
+
+      <!-- top shelf: a few airtight jars lined front-to-back -->
+      <rect x="42" y="70" width="26" height="40" rx="4" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="45" y="66" width="20" height="8" rx="3" fill="#5e9a78"/>
+      <rect x="46" y="88" width="18" height="18" rx="2" fill="#e0a93d" opacity="0.7"/>
+      <rect x="78" y="72" width="26" height="38" rx="4" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="81" y="68" width="20" height="8" rx="3" fill="#5e9a78"/>
+      <rect x="82" y="90" width="18" height="16" rx="2" fill="#c9a06b" opacity="0.8"/>
+      <!-- top shelf: cereal box -->
+      <rect x="120" y="66" width="34" height="44" rx="3" fill="#c96f4a"/>
+      <rect x="120" y="66" width="34" height="12" rx="3" fill="#d9663f"/>
+
+      <!-- middle shelf: mixed cans & a jar -->
+      <rect x="44" y="158" width="28" height="34" rx="3" fill="#b9b1a3"/>
+      <rect x="44" y="158" width="28" height="9" rx="3" fill="#8a6a4f"/>
+      <rect x="80" y="158" width="28" height="34" rx="3" fill="#5e9a78"/>
+      <rect x="80" y="158" width="28" height="9" rx="3" fill="#3e7c59"/>
+      <rect x="118" y="150" width="26" height="42" rx="4" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="121" y="146" width="20" height="8" rx="3" fill="#5e9a78"/>
+      <rect x="122" y="168" width="18" height="22" rx="2" fill="#e0a93d" opacity="0.6"/>
+      <!-- a lonely duplicate spice jar tucked at the back -->
+      <rect x="184" y="164" width="16" height="28" rx="3" fill="#d98e3b"/>
+      <rect x="184" y="164" width="16" height="7" rx="3" fill="#8a6a4f"/>
+
+      <!-- bottom shelf: bag & box, partly cleared -->
+      <path d="M46 240 q4 -16 22 -16 q18 0 22 16 v40 h-44 z" fill="#c9a06b"/>
+      <path d="M46 240 q4 -16 22 -16 q18 0 22 16 h-44 z" fill="#b9995b"/>
+      <rect x="104" y="234" width="36" height="46" rx="3" fill="#7fb3c8"/>
+      <rect x="104" y="234" width="36" height="12" rx="3" fill="#5e9a78"/>
+
+      <!-- counter, center-right -->
+      <rect x="236" y="300" width="316" height="16" rx="4" fill="#c9a06b"/>
+      <rect x="236" y="316" width="316" height="10" rx="3" fill="#8a6a4f"/>
+
+      <!-- items pulled onto the counter -->
+      <!-- grouped cans -->
+      <rect x="250" y="256" width="30" height="44" rx="3" fill="#b9b1a3"/>
+      <rect x="250" y="256" width="30" height="11" rx="3" fill="#8a6a4f"/>
+      <rect x="254" y="272" width="22" height="18" rx="2" fill="#c96f4a" opacity="0.55"/>
+      <rect x="286" y="264" width="30" height="36" rx="3" fill="#5e9a78"/>
+      <rect x="286" y="264" width="30" height="11" rx="3" fill="#3e7c59"/>
+      <!-- a jar of pasta -->
+      <rect x="324" y="248" width="30" height="52" rx="5" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="327" y="243" width="24" height="9" rx="3" fill="#5e9a78"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.75">
+        <line x1="331" y1="262" x2="331" y2="294"/>
+        <line x1="338" y1="260" x2="338" y2="294"/>
+        <line x1="345" y1="262" x2="345" y2="294"/>
+      </g>
+
+      <!-- row of airtight jars being lined up front-to-back on a shelf ledge, right -->
+      <rect x="404" y="196" width="148" height="8" rx="3" fill="#b9b1a3"/>
+      <rect x="410" y="150" width="30" height="46" rx="5" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="413" y="145" width="24" height="9" rx="3" fill="#5e9a78"/>
+      <rect x="415" y="170" width="20" height="24" rx="2" fill="#fffdf8" opacity="0.8"/>
+      <text x="414" y="188" font-size="8.5" fill="#3e7c59" font-weight="700">flour</text>
+      <rect x="448" y="146" width="30" height="50" rx="5" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="451" y="141" width="24" height="9" rx="3" fill="#5e9a78"/>
+      <rect x="453" y="164" width="20" height="30" rx="2" fill="#fffdf8" opacity="0.75"/>
+      <text x="453" y="188" font-size="8.5" fill="#3e7c59" font-weight="700">rice</text>
+      <rect x="486" y="150" width="30" height="46" rx="5" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="489" y="145" width="24" height="9" rx="3" fill="#5e9a78"/>
+      <rect x="491" y="170" width="20" height="24" rx="2" fill="#e0a93d" opacity="0.6"/>
+      <text x="486" y="188" font-size="8.5" fill="#3e7c59" font-weight="700">pasta</text>
+      <!-- little arrows showing FIFO front-to-back order -->
+      <path d="M425 128 l30 0 m-8 -5 l8 5 l-8 5" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="458" y="126" font-size="9.5" fill="#6b7376">oldest to front</text>
+
+      <!-- trash bin with the bad stuff, far right -->
+      <path d="M470 340 h60 l-7 58 h-46 z" fill="#8a6a4f"/>
+      <path d="M466 336 h68 l-2 10 h-64 z" fill="#b9b1a3"/>
+      <!-- dented, bulging can going into the bin -->
+      <path d="M484 316 q14 -4 26 0 l-2 22 q-11 4 -22 0 z" fill="#b9b1a3"/>
+      <ellipse cx="497" cy="316" rx="13" ry="5" fill="#c96f4a"/>
+      <path d="M486 328 q11 5 22 0" stroke="#8a6a4f" stroke-width="2" fill="none"/>
+      <!-- a moth-infested flour bag also going in -->
+      <path d="M512 320 q4 -12 16 -12 q12 0 16 12 v20 h-32 z" fill="#c9a06b"/>
+      <!-- webbing / moths on the bag -->
+      <g stroke="#8a6a4f" stroke-width="1" opacity="0.7">
+        <path d="M518 326 q6 3 12 0 M520 332 q5 3 10 0"/>
+      </g>
+      <ellipse cx="516" cy="304" rx="5" ry="3" fill="#8a6a4f" opacity="0.85" transform="rotate(-18 516 304)"/>
+      <ellipse cx="540" cy="300" rx="5" ry="3" fill="#8a6a4f" opacity="0.7" transform="rotate(20 540 300)"/>
+      <text x="470" y="332" font-size="9.5" fill="#d9663f" font-weight="700">toss</text>
+
+      <!-- handwritten checklist on the counter, center -->
+      <rect x="250" y="336" width="86" height="56" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2" transform="rotate(-5 293 364)"/>
+      <g transform="rotate(-5 293 364)">
+        <path d="M258 348 l4 4 l7 -8" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="274" y1="350" x2="326" y2="350" stroke="#d8cfbe" stroke-width="3" stroke-linecap="round"/>
+        <path d="M258 362 l4 4 l7 -8" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="274" y1="364" x2="320" y2="364" stroke="#e9e2d8" stroke-width="3" stroke-linecap="round"/>
+        <rect x="258" y="374" width="9" height="9" rx="2" fill="none" stroke="#b9b1a3" stroke-width="2"/>
+        <line x1="274" y1="379" x2="322" y2="379" stroke="#e9e2d8" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A pantry is the one storage spot where the contents actively go bad — quietly, and mostly out of sight in the back. Left alone for a year or two, it turns into a pile of expired cans, rancid staples, forgotten duplicates, and — if you're unlucky — a moth infestation you didn't catch until it had spread. Here's what the neglect actually costs:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="11" y="6" width="14" height="26" rx="2" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="1.8"/>
+          <rect x="11" y="6" width="14" height="6" rx="2" fill="#8a6a4f"/>
+          <path d="M14 18 l8 8 M22 18 l-8 8" stroke="#d9663f" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Food expires and goes stale</h3>
+        <p>Flour, oils, nuts, and whole grains go rancid; spices fade to sawdust; and canned goods you forgot about slide past their dates in the back. Without a periodic look, half your shelf is quietly aging into things you wouldn't want to cook with.</p>
+        <span class="cost">A shelf of expired, rancid food</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <ellipse cx="18" cy="19" rx="4" ry="7" fill="#8a6a4f"/>
+          <path d="M18 14 q-9 -4 -12 2 q8 1 12 4 Z" fill="#b9b1a3"/>
+          <path d="M18 14 q9 -4 12 2 q-8 1 -12 4 Z" fill="#b9b1a3"/>
+          <line x1="17" y1="10" x2="14" y2="5" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+          <line x1="19" y1="10" x2="22" y2="5" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="9" cy="30" r="1.4" fill="#8a6a4f"/>
+          <circle cx="27" cy="29" r="1.4" fill="#8a6a4f"/>
+          <circle cx="18" cy="31" r="1.2" fill="#8a6a4f"/>
+        </svg></div>
+        <h3>Pantry pests spread fast</h3>
+        <p>Moths and weevils hitchhike in on grains, flour, and even birdseed, then crawl and fly into every open bag and box nearby. One infested sack of flour becomes webbing in the cereal, larvae in the rice, and beetles in the spices — a whole-pantry problem from a single source.</p>
+        <span class="cost">One bad bag infests them all</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="#faf0da" stroke="#e0a93d" stroke-width="2.2"/>
+          <path d="M18 10 v16 M14 13 q4 -3 8 0 q0 4 -4 5 q-4 1 -4 5 q4 3 8 0" fill="none" stroke="#d98e3b" stroke-width="2.2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>You waste money and food</h3>
+        <p>When you can't see what you have, you buy it again — your third bottle of soy sauce, your fourth jar of cumin — while the items in the back expire unused. It's money spent twice and food thrown out uneaten, quietly, month after month.</p>
+        <span class="cost">Duplicates bought, food binned</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="8" y="6" width="16" height="24" rx="2" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+          <path d="M12 13 l2 2 l4 -4" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 21 l2 2 l4 -4" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="21" y1="14" x2="28" y2="14" stroke="#e0a93d" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="22" x2="28" y2="22" stroke="#e0a93d" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>A quick inventory resets it</h3>
+        <p>Toss, rotate, contain, restock — a couple of hours every few months clears the expired stuff, moves older items to the front, seals the staples against pests, and leaves you a list of what you actually own. Cooking gets faster and cheaper, and the pantry stays a place you can see into.</p>
+        <span class="cost">Easier, cheaper cooking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> do it?</h2>
+    <p class="sub">A full pull-everything-out inventory about every three months is the sensible default — with a quick glance for expiring items and pest signs whenever you're already in there. But a big, deep, packed pantry, bulk buying, or any history of pantry moths pushes toward monthly checks, while a small, tidy cabinet can stretch to twice a year. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="size">
+        <div class="q-label">1. How big and deep is your pantry?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">Big, deep, and packed full</button>
+          <button class="pill" data-v="medium">A normal pantry or a few shelves</button>
+          <button class="pill" data-v="small">A small cabinet, not much in it</button>
+        </div>
+        <div class="q-hint">The deeper and more packed the pantry, the more easily things vanish into the back and expire unseen — a big pantry needs a look more often just to keep the back reachable.</div>
+      </div>
+      <div class="quiz-q" data-q="shop">
+        <div class="q-label">2. How do you shop and cook?</div>
+        <div class="pills">
+          <button class="pill" data-v="bulk">Bulk buying and batch cooking</button>
+          <button class="pill" data-v="normal">A normal amount, ordinary cooking</button>
+          <button class="pill" data-v="minimal">Minimal — I keep little on hand</button>
+        </div>
+        <div class="q-hint">Buying in bulk and stocking up means more open bags of grain and flour sitting longer — exactly what pantry pests and rancidity feed on, so a fuller, faster-turning pantry rewards more frequent checks.</div>
+      </div>
+      <div class="quiz-q" data-q="pests">
+        <div class="q-label">3. Any history of pantry pests?</div>
+        <div class="pills">
+          <button class="pill" data-v="had">Yes — moths or weevils before, or it's warm/humid here</button>
+          <button class="pill" data-v="maybe">Not sure, maybe once</button>
+          <button class="pill" data-v="never">Never, and it's cool and dry here</button>
+        </div>
+        <div class="q-hint">Once pantry moths or weevils have been in a kitchen, eggs and stragglers hide in cracks and re-emerge — and warm, humid rooms speed everything up. A past infestation is the single strongest reason to check monthly.</div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">4. What kind of shape is it in now?</div>
+        <div class="pills">
+          <button class="pill" data-v="cluttered">Cluttered — unknown dates and duplicates</button>
+          <button class="pill" data-v="okay">Somewhat organized, could be better</button>
+          <button class="pill" data-v="organized">Organized — I know what's in there</button>
+        </div>
+        <div class="q-hint">A pantry that's already a jumble of unknown dates and duplicate buys needs a real reset now and a shorter leash after; a labeled, rotated pantry you can see into needs far less babysitting.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">The inventory itself is free — it's an afternoon and a trash bag. The one real purchase is a set of airtight storage containers, about $20–40, and it pays for itself the first time it stops a moth infestation or keeps a bag of flour from going rancid. What skipping the whole thing costs is the expensive part: duplicate staples bought over and over, food binned uneaten, and — at the far end — a full-pantry infestation you throw out and replace:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$0</div><div class="l">the inventory — pull it out, sort it, toss the bad, and write down what's left</div></div>
+        <div class="calc-stat"><div class="v">$20–40</div><div class="l">a set of airtight containers for flour, sugar, rice, and grains — bought once</div></div>
+        <div class="calc-stat"><div class="v bad">~1–2 hrs</div><div class="l">the quarterly deep pass; a quick expiry-and-pest glance in between takes minutes</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>📋 The inventory itself (time only)</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:3%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🫙 Airtight containers for the staples</span><span>$20–40</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛒 Duplicate staples you buy because you can't see what you have</span><span>$50–150 / year</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:42%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🗑️ Food that expires unused in the back</span><span>$100s / year wasted</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:60%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🐛 Throwing out an entire moth-infested pantry &amp; restocking</span><span>$200–500+ at once</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a free afternoon and one $20–40 set of jars</strong> against duplicate groceries you buy twice, food you throw out uneaten, and — at the worst end — a whole pantry you empty into the trash because moths spread through it. Do the inventory on a schedule and seal the staples, and you cook from a pantry you can actually see, at a fraction of the cost of letting it rot.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to inventory and clean out your pantry</h2>
+    <p class="sub">The order is simple: pull everything out and group like with like, toss what's expired or infested, wipe and check the empty shelves, then rotate the keepers older-to-front and move staples into airtight jars — and finish by writing down what you have so you stop buying duplicates. Read the safety notes first (especially on dented cans and pests), then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ The food-safety notes worth knowing before you start</h3>
+      <ul>
+        <li><strong>Never eat from a can that's bulging, leaking, spurting, or badly dented at the seam.</strong> Those can signal botulism or contamination, and you cannot taste- or smell-test your way to safety — so toss it in the trash. Don't open it "just to check": puffed or gas-releasing cans should go straight in the bin.</li>
+        <li><strong>Watch for pantry pests.</strong> Fine webbing, tiny beetles or moths, or small larvae in flour, grains, rice, cereal, pet food, or spices means an infestation. If you find them, throw out the infested items, check everything nearby (they spread), and clean the shelves. Freezing new grains for a few days, or storing everything airtight, helps keep them from coming back.</li>
+        <li><strong>Store staples airtight.</strong> Flour, sugar, rice, nuts, and oils keep far longer in sealed containers — airtight jars lock out pests and moisture and slow the rancidity that overtakes open bags.</li>
+        <li><strong>"Best by" is about quality, not safety.</strong> For most shelf-stable foods, "best by" or "best before" is a freshness estimate — use your judgment and your senses. "Use by" on perishables matters more; when in doubt on anything questionable, throw it out.</li>
+        <li><strong>Keep the pantry cool, dry, and dark.</strong> Heat and light speed spoilage and rancidity. While the shelves are empty, wipe them down and check for leaks, drips, and any signs of mice.</li>
+        <li><strong>Donate, don't trash, the good surplus.</strong> Unexpired food you won't use — extra cans, unopened boxes — is welcome at a local food bank. Sort it into a donate box instead of the bin.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">A clear counter or table to sort on</span>
+      <span class="tool-chip">A trash bag and a donate box</span>
+      <span class="tool-chip">Airtight storage containers for staples</span>
+      <span class="tool-chip">A damp cloth &amp; all-purpose cleaner</span>
+      <span class="tool-chip">A vacuum for crumbs and corners</span>
+      <span class="tool-chip">A marker and masking tape (for dates/labels)</span>
+      <span class="tool-chip">A notepad or a list on your phone</span>
+      <span class="tool-chip">A flashlight for the dark back corners</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five moves that make up the whole job</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of emptying the pantry shelf by shelf and grouping like items together on the counter — cans with cans, grains with grains, spices with spices — so you can see everything you have">
+          <rect x="16" y="24" width="90" height="132" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="22" y="70" width="78" height="5" rx="2" fill="#b9b1a3"/>
+          <rect x="22" y="114" width="78" height="5" rx="2" fill="#b9b1a3"/>
+          <!-- a couple of items still on the shelf -->
+          <rect x="30" y="42" width="16" height="24" rx="2" fill="#5e9a78"/>
+          <rect x="52" y="46" width="14" height="20" rx="2" fill="#b9b1a3"/>
+          <!-- arrow to the counter -->
+          <path d="M112 90 l30 0 m-8 -5 l8 5 l-8 5" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- counter with grouped items -->
+          <rect x="150" y="120" width="120" height="8" rx="2" fill="#c9a06b"/>
+          <!-- group: cans -->
+          <rect x="156" y="96" width="16" height="24" rx="2" fill="#b9b1a3"/>
+          <rect x="174" y="96" width="16" height="24" rx="2" fill="#b9b1a3"/>
+          <!-- group: jars -->
+          <rect x="200" y="90" width="15" height="30" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="1.6"/>
+          <rect x="218" y="90" width="15" height="30" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="1.6"/>
+          <!-- group: box -->
+          <rect x="244" y="98" width="20" height="22" rx="2" fill="#c96f4a"/>
+          <text x="150" y="146" font-size="11" fill="#3e7c59" font-weight="700">pull out &amp; group like items</text>
+        </svg>
+        <h4>Empty &amp; sort</h4>
+        <p>Pull everything out — the whole pantry, or one shelf at a time — and group like with like on the counter: cans together, grains together, spices together. Only when it's all in front of you can you see what you actually have (and what you have three of).</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of tossing the bad food: expired and rancid items, any bulging or leaking or badly dented cans, and pest-infested bags with webbing, all going into a trash bin">
+          <!-- trash bin -->
+          <path d="M150 66 h70 l-9 82 h-52 z" fill="#8a6a4f"/>
+          <path d="M144 60 h82 l-3 12 h-76 z" fill="#b9b1a3"/>
+          <!-- bulging dented can heading in -->
+          <path d="M60 44 q18 -5 34 0 l-3 30 q-14 5 -28 0 z" fill="#b9b1a3"/>
+          <ellipse cx="77" cy="44" rx="17" ry="6" fill="#c96f4a"/>
+          <path d="M62 60 q15 6 30 0" stroke="#8a6a4f" stroke-width="2" fill="none"/>
+          <text x="46" y="90" font-size="10" fill="#d9663f" font-weight="700">bulging / dented</text>
+          <!-- arrow into bin -->
+          <path d="M100 70 q26 -4 44 4 m-10 -8 l10 8 l-12 3" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- infested bag with webbing above the bin -->
+          <path d="M168 30 q4 -14 20 -14 q16 0 20 14 v22 h-40 z" fill="#c9a06b"/>
+          <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.8">
+            <path d="M176 36 q8 4 16 0 M178 44 q7 4 14 0"/>
+          </g>
+          <ellipse cx="174" cy="20" rx="5" ry="3" fill="#8a6a4f" transform="rotate(-20 174 20)"/>
+          <text x="150" y="168" font-size="11" fill="#d9663f" font-weight="700">toss expired &amp; infested</text>
+        </svg>
+        <h4>Toss the bad</h4>
+        <p>Bin anything expired or rancid, any bulging, leaking, or badly-dented cans (don't open them to check), and any pest-infested bags — look for fine webbing and tiny beetles or moths. When in doubt on something questionable, throw it out.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of wiping down the now-empty pantry shelves with a cloth and checking the corners with a flashlight for pest signs, crumbs, and leaks">
+          <rect x="40" y="24" width="150" height="132" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+          <rect x="46" y="76" width="138" height="6" rx="2" fill="#b9b1a3"/>
+          <rect x="46" y="122" width="138" height="6" rx="2" fill="#b9b1a3"/>
+          <!-- cloth wiping the top shelf -->
+          <rect x="70" y="52" width="40" height="20" rx="4" fill="#7fb3c8"/>
+          <rect x="70" y="52" width="40" height="7" rx="4" fill="#9cc3d4"/>
+          <path d="M116 62 q10 -3 18 0" stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <!-- sparkle on cleaned shelf -->
+          <g stroke="#5e9a78" stroke-width="2" stroke-linecap="round">
+            <path d="M150 60 l0 8 M146 64 l8 0"/>
+          </g>
+          <!-- flashlight beam into a dark corner -->
+          <rect x="214" y="120" width="26" height="10" rx="3" fill="#e0a93d" transform="rotate(-24 227 125)"/>
+          <path d="M210 116 l-22 6 l0 12 l22 -4 z" fill="#faf0da" opacity="0.7"/>
+          <!-- a couple crumbs / a stray beetle in the corner -->
+          <circle cx="60" cy="132" r="1.6" fill="#8a6a4f"/>
+          <circle cx="70" cy="133" r="1.4" fill="#8a6a4f"/>
+          <ellipse cx="82" cy="132" rx="2.4" ry="1.4" fill="#8a6a4f"/>
+          <text x="46" y="172" font-size="11" fill="#3e7c59" font-weight="700">wipe &amp; check the corners</text>
+        </svg>
+        <h4>Wipe &amp; check</h4>
+        <p>With the shelves empty, wipe them down and look — really look, with a flashlight in the back corners — for pest signs, crumbs, sticky spills, leaks, and any mouse droppings. This is the one moment you can catch a problem before it starts spreading again.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of rotating items so the older ones sit in front (FIFO, first in first out) and pouring staples like flour and rice from their bags into clear airtight containers">
+          <!-- shelf with FIFO ordering -->
+          <rect x="20" y="120" width="120" height="8" rx="2" fill="#b9b1a3"/>
+          <rect x="28" y="86" width="24" height="34" rx="2" fill="#5e9a78"/>
+          <rect x="28" y="86" width="24" height="9" rx="2" fill="#3e7c59"/>
+          <text x="30" y="106" font-size="8" fill="#fffdf8" font-weight="700">old</text>
+          <rect x="60" y="80" width="24" height="40" rx="2" fill="#b9b1a3"/>
+          <rect x="92" y="74" width="24" height="46" rx="2" fill="#7fb3c8"/>
+          <text x="95" y="100" font-size="8" fill="#fffdf8" font-weight="700">new</text>
+          <path d="M36 66 l70 0 m-8 -5 l8 5 l-8 5" stroke="#3e7c59" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="30" y="58" font-size="9.5" fill="#6b7376">oldest in front</text>
+          <!-- bag pouring into an airtight jar -->
+          <path d="M176 34 q4 -12 18 -12 q14 0 18 12 l-2 20 h-32 z" fill="#c9a06b"/>
+          <path d="M188 54 q6 10 6 20" stroke="#e0a93d" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+          <rect x="176" y="92" width="42" height="56" rx="6" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.4"/>
+          <rect x="180" y="84" width="34" height="10" rx="3" fill="#5e9a78"/>
+          <rect x="182" y="112" width="30" height="34" rx="3" fill="#e0a93d" opacity="0.55"/>
+          <text x="168" y="170" font-size="11" fill="#3e7c59" font-weight="700">rotate to front &amp; contain</text>
+        </svg>
+        <h4>Rotate &amp; contain</h4>
+        <p>Put the older items in front and the new ones behind — first in, first out (FIFO) — so nothing ages out in the back again. As you go, pour staples like flour, sugar, rice, and grains out of their bags and into airtight containers to keep pests and moisture out. Pair it with the monthly <a href="deep-clean-kitchen.html">kitchen deep clean</a>, store staples in fresh <a href="replace-plastic-containers.html">food containers</a>, and keep the fridge side fresh with <a href="replace-baking-soda-fridge.html">a fresh box of baking soda</a>.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of listing what you have and what's low so you stop buying duplicates, setting aside a donate box of unexpired surplus for a food bank, and logging the inventory date">
+          <!-- notepad / list -->
+          <rect x="26" y="30" width="104" height="120" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+          <path d="M40 54 l5 5 l9 -10" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="62" y1="55" x2="118" y2="55" stroke="#d8cfbe" stroke-width="4" stroke-linecap="round"/>
+          <path d="M40 78 l5 5 l9 -10" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="62" y1="79" x2="112" y2="79" stroke="#e9e2d8" stroke-width="4" stroke-linecap="round"/>
+          <rect x="40" y="98" width="11" height="11" rx="2" fill="none" stroke="#b9b1a3" stroke-width="2.4"/>
+          <line x1="62" y1="104" x2="118" y2="104" stroke="#e9e2d8" stroke-width="4" stroke-linecap="round"/>
+          <rect x="40" y="120" width="11" height="11" rx="2" fill="none" stroke="#b9b1a3" stroke-width="2.4"/>
+          <line x1="62" y1="126" x2="106" y2="126" stroke="#e9e2d8" stroke-width="4" stroke-linecap="round"/>
+          <!-- donate box -->
+          <path d="M168 96 h84 v46 h-84 z" fill="#c9a06b"/>
+          <path d="M168 96 h84 l-8 -14 h-68 z" fill="#b9995b"/>
+          <line x1="210" y1="82" x2="210" y2="142" stroke="#8a6a4f" stroke-width="2"/>
+          <!-- a heart marking it as donate -->
+          <path d="M210 108 q-6 -6 -11 0 q-4 5 11 15 q15 -10 11 -15 q-5 -6 -11 0" fill="#c96f4a"/>
+          <text x="170" y="162" font-size="11" fill="#3e7c59" font-weight="700">list, donate &amp; log</text>
+        </svg>
+        <h4>List &amp; restock</h4>
+        <p>Jot down what you have and what's running low so your next shop fills real gaps instead of buying a fourth jar of cumin. Set the unexpired surplus you won't use into a donate box for a food bank, then log the inventory date so the next one lands on schedule.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Pantry inventory progress</span><span id="progText">0 of 12 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Pantry emptied, the bad stuff tossed, shelves wiped and checked, keepers rotated to the front and sealed airtight, and a fresh list in hand — you're cooking from a pantry you can actually see. Same clear-out again in about three months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's overdue — and when to act now</h2>
+    <p class="sub">A healthy pantry is one you can see into: staples in labeled jars, dates rotated to the front, no mystery cans in the back. These are the signals it's overdue for an inventory — and the few that mean you clean it out <em>today</em>, not next weekend:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>A bulging, leaking, or badly dented can — toss it immediately.</strong> A puffed lid, a seeping seam, or a deep dent right at the seam can mean the seal has failed and gas is building inside. That's a botulism risk you can't taste or smell your way around: bin it, don't open it.</li>
+        <li><strong>Fine webbing, moths, weevils, or beetles in the grains or flour — act now.</strong> That's an active infestation, and it spreads. Throw out every infested item, empty the whole pantry, check everything nearby, clean the shelves and corners, and switch to airtight storage. Waiting a week lets it get into everything.</li>
+        <li><strong>A musty smell or rancid, bitter oils and nuts.</strong> A stale, oily, or off smell when you open the door means something has turned — usually an open bag of flour, some old nuts, or a bottle of oil past its prime. Track it down and clear it out.</li>
+        <li><strong>Mouse droppings, gnaw marks, or chewed packaging.</strong> Small dark droppings, shredded corners, or chewed bags mean rodents are getting in. Clean it out now, store food in hard containers, and — if it keeps happening — that's a job for pest control, not just a wipe-down.</li>
+        <li><strong>You keep discovering duplicates.</strong> A third bottle of soy sauce or a fourth jar of the same spice is a sign you can't see what you own — a clear signal the inventory is overdue and worth doing this week.</li>
+        <li><strong>Pro tip:</strong> a persistent pest problem that comes back after a thorough clean-out — or any sign of mice you can't keep out — is worth a call to a pest-control professional. For everything else, the quarterly inventory and airtight storage is the whole fix.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I clean out and inventory my pantry?</summary>
+      <p>A full pull-everything-out inventory about every three months is the sensible default — it keeps expired food from piling up, catches pests before they spread, and keeps you from buying duplicates. In between, take a quick glance for anything expiring soon or any pest signs whenever you're already in there; that takes minutes. Tighten to monthly if you have a big, deep, packed pantry, if you buy in bulk, or — most of all — if you've ever had pantry moths or weevils, since stragglers hide and re-emerge. A small, tidy cabinet in a cool, dry home that you can already see into can comfortably stretch to twice a year. The quiz above will give you a personalized interval based on your size, shopping, pest history, and how organized things are right now.</p>
+    </details>
+    <details>
+      <summary>Is it safe to eat food past the "best by" date?</summary>
+      <p>Usually, yes — for most shelf-stable pantry foods, "best by" or "best before" is a quality date, not a safety date. It's the manufacturer's estimate of peak freshness, and canned goods, dried pasta, rice, and many packaged staples are often perfectly fine well past it, though they may lose some flavor, crunch, or nutritional punch. Use your judgment and your senses: if it smells, looks, or tastes off, or the packaging is damaged, throw it out. "Use by" dates on perishables (and "sell by" on some fresh items) matter more and are worth respecting. The big exception where you should <em>never</em> rely on senses is a bulging, leaking, or badly dented can — that's a safety issue regardless of the date, and it goes straight in the trash unopened.</p>
+    </details>
+    <details>
+      <summary>What do I do about a bulging or badly dented can?</summary>
+      <p>Throw it out — don't open it, don't taste it, don't try to save it. A can that's bulging, has a swollen or popped lid, leaks, spurts when opened, or is badly dented right at the seam can harbor <em>Clostridium botulinum</em>, the bacterium behind botulism, which produces a toxin you cannot see, smell, or taste. A small dent in the body of a can that's otherwise intact is usually fine, but anything on the seam, any swelling, or any leaking is a hard no. Put it in the trash (sealed in a bag if it's leaking) rather than the recycling or the sink, and wash your hands and any surface it touched. When you're inventorying, a quick press on suspect lids — a lid that flexes or pops is a warning — helps you catch the bad ones fast.</p>
+    </details>
+    <details>
+      <summary>How do I get rid of — and prevent — pantry moths and weevils?</summary>
+      <p>Getting rid of them takes a full clear-out. Empty the entire pantry and throw away everything infested — anything with webbing, larvae, or live moths or beetles, plus open bags of grain, flour, cereal, rice, spices, and pet food that could be harboring eggs. Vacuum the shelves, corners, cracks, and the holes where shelf pegs sit (eggs hide there), then wipe everything down; a vinegar wash helps. To prevent a comeback: store all grains and flour in airtight containers, freeze new bags of grain or flour for about three to four days to kill any eggs before you shelve them, buy staples in amounts you'll use within a few months, and keep the pantry cool and dry. Pantry-moth pheromone traps help you monitor whether they're truly gone. If they keep returning after a thorough clean-out, call pest control.</p>
+    </details>
+    <details>
+      <summary>How should I store flour, grains, and other staples?</summary>
+      <p>In airtight containers — that one habit does more than anything else to keep a pantry healthy. Sealed jars or canisters lock out pantry pests (moths and weevils can't get into or out of them), keep moisture and humidity from clumping and spoiling dry goods, and slow the rancidity that overtakes open bags of flour, whole grains, nuts, and anything oily. Glass, sturdy food-grade plastic, or metal all work; clear containers have the bonus that you can see what's inside and how much is left, which helps the whole no-more-duplicates goal. Label each one with the contents and the date you filled it. For flours, nuts, and whole grains you won't use quickly, the fridge or freezer extends their life considerably. Keep everything cool, dry, and out of direct light.</p>
+    </details>
+    <details>
+      <summary>What's the best way to organize a pantry so food doesn't expire?</summary>
+      <p>The single most useful rule is FIFO — first in, first out. When you unpack groceries, put the newest items at the back and pull the older ones forward, so you naturally reach for the oldest first and nothing ages out unseen in the depths. Beyond that: group like with like (all the cans together, all the grains together, baking in one zone) so you can see what you have at a glance and stop buying duplicates; put the things you use most at eye level and the rarely-used stuff up high or down low; use clear, labeled airtight containers for staples; and keep a running list of what's low. A quick date-and-pest glance whenever you're in there, plus the full quarterly inventory, keeps the whole system honest so food gets used instead of expiring.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>A pantry fills with expired cans, stale flour, and the odd moth — quietly, from the back.</h2>
+        <p>A pantry silently fills with expired cans, stale flour, and the odd moth infestation — none of it announces itself until you go looking. Let Upkeep Ledger prompt the quarterly clear-out and resurface it on schedule, right alongside every other quiet task that keeps the kitchen running — so you cook from a pantry you actually know.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=inventory-pantry&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=inventory-pantry&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This is a general food-storage guide, not food-safety advice: when a can is bulging or dented or you suspect spoilage, follow USDA guidance and your local food-safety resources — and when in doubt, throw it out.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { size: null, shop: null, pests: null, state: null };
+
+  var FREQ_LABEL = {
+    1: "Every month",
+    3: "Every 3 months",
+    6: "Every 6 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 3;
+    var tighten = false;
+
+    /* Size — how big / deep the pantry is */
+    if (s.size === "big") {
+      months = 1;
+      tighten = true;
+      reasons.push("A big, deep, packed pantry hides things in the back where they expire unseen — a look about once a month keeps the back reachable and nothing rotting out of sight.");
+    } else if (s.size === "small") {
+      reasons.push("A small cabinet with little in it is easy to see into, so it doesn't need frequent attention — you can lean toward the longer end of the range.");
+    } else {
+      reasons.push("A normal pantry or a few shelves is exactly the case the every-three-months default is written for.");
+    }
+
+    /* Shop — how you shop and cook */
+    if (s.shop === "bulk") {
+      if (months > 1) months = 1;
+      tighten = true;
+      reasons.push("Bulk buying and batch cooking means more open bags of grain and flour sitting around longer — exactly what pests and rancidity feed on, so a fuller pantry rewards checking more often.");
+    } else if (s.shop === "minimal") {
+      reasons.push("Keeping little on hand means fewer open bags aging and less to sort through, so your inventory can be lighter and less frequent.");
+    } else {
+      reasons.push("Ordinary shopping and cooking puts a normal amount of turnover through the pantry — no special pressure on the schedule from how you stock it.");
+    }
+
+    /* Pests — history of pantry pests */
+    if (s.pests === "had") {
+      months = 1;
+      tighten = true;
+      reasons.push("Once pantry moths or weevils have been in a kitchen, eggs and stragglers hide in cracks and re-emerge — and warm, humid rooms speed it up. A past infestation is the single strongest reason to check monthly.");
+    } else if (s.pests === "maybe") {
+      if (months > 3) months = 3;
+      reasons.push("A possible past pest problem is worth staying watchful about, so keep an eye out for webbing and beetles each time you're in there.");
+    } else {
+      reasons.push("No pest history in a cool, dry kitchen means one less reason to rush the next inventory — airtight storage keeps it that way.");
+    }
+
+    /* State — current condition */
+    if (s.state === "cluttered") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("A pantry that's already a jumble of unknown dates and duplicates needs a real reset now, and a shorter leash after, until you can see into it again.");
+    } else if (s.state === "organized") {
+      reasons.push("A labeled, rotated pantry you can already see into needs far less babysitting — you'll catch problems early just by using it.");
+    } else {
+      reasons.push("A somewhat-organized pantry is on the right track; a proper inventory will tighten it up and make the next one quicker.");
+    }
+
+    /* Best-case relaxation: small, minimal, never pests, organized */
+    if (!tighten && s.size === "small" && s.shop === "minimal" && s.pests === "never" && s.state === "organized") {
+      months = 6;
+      reasons.push("A small, organized pantry with little in it, no pest history, and staples already sealed is the one case where twice a year is genuinely plenty — a quick glance in between is all you'll need.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.pests === "had") {
+      note = "<strong>Because you've had pantry pests, storage is everything:</strong> keep every grain, flour, and cereal in airtight containers, freeze new bags for three to four days before shelving to kill any eggs, and set out a pheromone trap to know they're truly gone.";
+    } else if (s.size === "big" || s.shop === "bulk") {
+      note = "<strong>For a big or bulk-stocked pantry, contain and rotate:</strong> move staples into airtight jars so open bags don't sit and spoil, and always rotate older items to the front so nothing ages out in the back before you get to it.";
+    } else if (s.state === "cluttered") {
+      note = "<strong>Start with one big reset:</strong> pull everything out, group like with like, toss what's expired, and put the older items in front (FIFO). After that first proper inventory, the quarterly ones go much faster.";
+    } else {
+      note = "<strong>Remember the order:</strong> empty and sort, toss the bad, wipe and check the shelves, then rotate to the front and seal staples airtight — and log what you have so you stop buying duplicates.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.size || !quizState.shop || !quizState.pests || !quizState.state) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: a full pantry inventory " + FREQ_LABEL[r.months].toLowerCase();
+    document.getElementById("resultBody").innerHTML =
+      "Empty and sort, toss what's expired or infested, wipe and check the shelves, then <strong>rotate older items to the front, seal the staples airtight, and write down what you have</strong>. Why this schedule:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Empty & sort", text: "Clear a counter and set out a trash bag and a donate box", note: "Give yourself a staging area before you start pulling things out. One bag for the trash, one box for unexpired surplus you'll donate — deciding where things go is half the job." },
+    { phase: "Empty & sort", text: "Pull everything out — the whole pantry or shelf by shelf", note: "Take it all out onto the counter. If a full empty feels like too much, do it one shelf at a time, but everything has to come out so you can actually see it." },
+    { phase: "Empty & sort", text: "Group like with like as you go", note: "Cans with cans, grains with grains, baking together, spices together. Grouping is what reveals the duplicates — the three soy sauces and the fourth jar of cumin." },
+    { phase: "Toss the bad", text: "Toss expired and rancid items — trust your senses", note: "Bin anything clearly past it or that smells or looks off. Remember \"best by\" is about quality for most shelf-stable food, so use judgment — but when in real doubt, throw it out." },
+    { phase: "Toss the bad", text: "Bin any bulging, leaking, or badly dented cans — unopened", note: "A puffed lid, a leaking seam, or a deep dent at the seam can mean botulism risk. Don't open it to \"check\" — you can't taste your way to safety. Straight in the trash." },
+    { phase: "Toss the bad", text: "Throw out any pest-infested bags — check for webbing and beetles", note: "Look for fine webbing, tiny beetles or moths, and small larvae in flour, grains, rice, cereal, pet food, and spices. If you find them, toss the infested items and check everything nearby." },
+    { phase: "Wipe & check", text: "Wipe the empty shelves and vacuum the corners", note: "With the shelves clear, wipe them down and vacuum crumbs, spills, and the cracks and shelf-peg holes where pest eggs hide. This is the moment to reset the space clean." },
+    { phase: "Wipe & check", text: "Check for pest signs, leaks, and mouse droppings", note: "Take a flashlight to the dark back corners. Look for droppings, gnaw marks, chewed packaging, sticky leaks, and any lingering webbing — catch a problem now before it spreads again." },
+    { phase: "Rotate, contain & list", text: "Rotate older items to the front (FIFO)", note: "Put the newest items at the back and pull the older ones forward, so you reach for the oldest first and nothing ages out unseen in the depths." },
+    { phase: "Rotate, contain & list", text: "Move staples into airtight containers and label them", note: "Pour flour, sugar, rice, grains, and nuts out of their bags into sealed jars to lock out pests and moisture and slow rancidity. Label each with the contents and the date you filled it." },
+    { phase: "Rotate, contain & list", text: "List what you have and what's low — and set aside the donate box", note: "Jot down your inventory and your gaps so the next shop fills real needs instead of buying duplicates. Drop the unexpired surplus you won't use at a food bank." },
+    { phase: "Rotate, contain & list", text: "Log the date", note: "Nothing about a tidy pantry reminds you it's slowly filling from the back again. Note the date so the next full inventory lands in about three months (or your quiz interval), with quick expiry-and-pest glances in between." }
+  ];
+
+  var LS_KEY = "upkeepguides:inventory-pantry:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
