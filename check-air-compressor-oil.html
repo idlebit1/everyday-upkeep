@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check your air compressor oil — UpkeepGuides.com</title>
+<meta name="description" content="How to check and change your air compressor oil: confirm it's oil-lubricated (not oil-free), depressurize and cool it, read the sight glass or dipstick, use the right compressor oil, and drain the tank's water — with a step-by-step checklist.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Check your air compressor oil — UpkeepGuides.com">
+<meta property="og:description" content="How to check and change your air compressor oil: confirm it's oil-lubricated (not oil-free), depressurize and cool it, read the sight glass or dipstick, use the right compressor oil, and drain the tank's water — with a step-by-step checklist.">
+<meta property="og:url" content="https://upkeepguides.com/check-air-compressor-oil.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check your air compressor oil — UpkeepGuides.com">
+<meta name="twitter:description" content="How to check and change your air compressor oil: confirm it's oil-lubricated (not oil-free), depressurize and cool it, read the sight glass or dipstick, use the right compressor oil, and drain the tank's water — with a step-by-step checklist.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Tools · Every 6 months</span>
+      <h1>Check Your Air Compressor Oil</h1>
+      <p class="lede">An oil-lubricated air compressor runs on oil the same way an engine does — the pump has pistons and bearings that need a clean film between them, and let it run low or dirty and that pump overheats, wears, and eventually seizes. The good news is that keeping it alive is almost nothing: a glance at the sight glass takes a minute, a top-up takes two, and an oil change every so often per the manual keeps a several-hundred-dollar tool running for years. Two things trip people up — many small compressors are <em>oil-free</em> and have no oil to check at all, and the ones that do need a specific compressor oil, not whatever motor oil is on the shelf. While you're at it, crack the tank drain and let the water out, because moisture is the other thing quietly killing your compressor.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Check <em>every 6 months</em></span>
+        <span class="chip">⏱️ <em>~1–2 min</em> to check the level</span>
+        <span class="chip">🛢️ A quart <em>lasts years</em></span>
+        <span class="chip">💸 Oil is <em>~$8–15</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of checking an oil-lubricated air compressor in a shop: a belt-drive compressor sits on a horizontal tank, its pump has a round oil sight glass with the amber oil at the fill line, a hand points at the sight glass to read it, a bottle of compressor oil stands beside it, and the tank's bottom drain valve is open letting water condensate drip into a pan on the shop floor">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- horizontal tank -->
+      <rect x="96" y="256" width="330" height="86" rx="43" fill="#7fb3c8"/>
+      <rect x="96" y="256" width="330" height="30" rx="15" fill="#9cc3d4"/>
+      <!-- tank end caps -->
+      <ellipse cx="96" cy="299" rx="20" ry="43" fill="#5e9a78"/>
+      <ellipse cx="426" cy="299" rx="20" ry="43" fill="#5e9a78"/>
+      <!-- tank feet -->
+      <rect x="128" y="342" width="20" height="34" rx="4" fill="#8a6a4f"/>
+      <rect x="372" y="342" width="20" height="34" rx="4" fill="#8a6a4f"/>
+
+      <!-- motor (left) -->
+      <rect x="120" y="188" width="96" height="70" rx="12" fill="#b9b1a3"/>
+      <circle cx="168" cy="223" r="24" fill="#8a6a4f"/>
+      <circle cx="168" cy="223" r="10" fill="#c9a06b"/>
+      <!-- motor cooling fins -->
+      <g stroke="#8a6a4f" stroke-width="2.2">
+        <line x1="128" y1="198" x2="128" y2="248"/>
+        <line x1="136" y1="198" x2="136" y2="248"/>
+        <line x1="144" y1="198" x2="144" y2="248"/>
+      </g>
+
+      <!-- pump (right) with cast body -->
+      <rect x="286" y="176" width="94" height="82" rx="10" fill="#5e9a78"/>
+      <rect x="286" y="176" width="94" height="20" rx="8" fill="#3e7c59"/>
+      <!-- pump cooling fins on head -->
+      <g stroke="#2c5a40" stroke-width="2.4">
+        <line x1="300" y1="180" x2="300" y2="196"/>
+        <line x1="312" y1="180" x2="312" y2="196"/>
+        <line x1="324" y1="180" x2="324" y2="196"/>
+        <line x1="336" y1="180" x2="336" y2="196"/>
+        <line x1="348" y1="180" x2="348" y2="196"/>
+        <line x1="360" y1="180" x2="360" y2="196"/>
+      </g>
+      <!-- air filter on top of pump -->
+      <circle cx="366" cy="164" r="14" fill="#c96f4a"/>
+      <circle cx="366" cy="164" r="6" fill="#d9663f"/>
+
+      <!-- belt guard between motor and pump -->
+      <path d="M216 200 q52 -18 78 8 q-6 40 0 44 q-58 22 -84 -6 z" fill="#e0a93d" opacity="0.55"/>
+      <ellipse cx="234" cy="224" rx="16" ry="16" fill="none" stroke="#d98e3b" stroke-width="4"/>
+      <ellipse cx="276" cy="224" rx="12" ry="12" fill="none" stroke="#d98e3b" stroke-width="4"/>
+
+      <!-- OIL SIGHT GLASS on the pump, oil at fill line -->
+      <circle cx="312" cy="232" r="18" fill="#fffdf8" stroke="#2c5a40" stroke-width="3"/>
+      <!-- amber oil filling to the middle dot -->
+      <path d="M295 232 a17 17 0 0 0 34 0 z" fill="#e0a93d"/>
+      <!-- fill-line dot at center -->
+      <circle cx="312" cy="232" r="3" fill="#c96f4a"/>
+      <line x1="298" y1="232" x2="326" y2="232" stroke="#8a6a4f" stroke-width="1.4" opacity="0.6"/>
+
+      <!-- hand pointing at / reading the sight glass -->
+      <path d="M420 244 q-40 4 -78 -6" stroke="#e8b48f" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <ellipse cx="352" cy="238" rx="15" ry="11" fill="#e8b48f"/>
+      <!-- index finger toward the glass -->
+      <path d="M340 236 q-10 -1 -18 -3" stroke="#e8b48f" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- pressure gauge on top -->
+      <circle cx="272" cy="150" r="16" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="272" y1="150" x2="280" y2="140" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+      <circle cx="272" cy="150" r="2" fill="#33393b"/>
+      <rect x="268" y="164" width="8" height="14" fill="#8a6a4f"/>
+
+      <!-- bottle of compressor oil (right, on floor) -->
+      <rect x="470" y="300" width="46" height="72" rx="8" fill="#e0a93d"/>
+      <rect x="470" y="300" width="46" height="20" rx="8" fill="#d98e3b"/>
+      <rect x="482" y="282" width="22" height="20" rx="4" fill="#2c5a40"/>
+      <rect x="478" y="330" width="30" height="30" rx="4" fill="#fffdf8" opacity="0.85"/>
+      <text x="493" y="342" font-size="8" fill="#8a6a4f" font-weight="700" text-anchor="middle">SAE</text>
+      <text x="493" y="352" font-size="7.5" fill="#6b7376" text-anchor="middle">comp.</text>
+
+      <!-- tank drain valve at bottom, open, water dripping -->
+      <rect x="250" y="342" width="10" height="22" rx="2" fill="#8a6a4f"/>
+      <rect x="242" y="360" width="26" height="8" rx="3" fill="#c96f4a"/>
+      <!-- petcock handle -->
+      <rect x="266" y="356" width="18" height="5" rx="2.5" fill="#d9663f" transform="rotate(24 275 358)"/>
+      <!-- dripping water condensate -->
+      <path d="M255 370 q-2 8 0 12" stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="255" cy="388" r="3" fill="#7fb3c8"/>
+      <!-- drip pan on the floor -->
+      <path d="M228 392 h56 l-6 12 h-44 z" fill="#b9b1a3"/>
+      <ellipse cx="256" cy="393" rx="28" ry="4" fill="#7fb3c8" opacity="0.8"/>
+
+      <!-- shop pegboard hint upper left -->
+      <rect x="20" y="60" width="70" height="90" rx="6" fill="#c9a06b" opacity="0.55"/>
+      <g fill="#8a6a4f" opacity="0.5">
+        <circle cx="34" cy="74" r="2"/>
+        <circle cx="52" cy="74" r="2"/>
+        <circle cx="70" cy="74" r="2"/>
+        <circle cx="34" cy="94" r="2"/>
+        <circle cx="52" cy="94" r="2"/>
+        <circle cx="70" cy="94" r="2"/>
+      </g>
+      <!-- a wrench hanging on the pegboard -->
+      <path d="M44 100 l0 34 m-5 0 l10 0" stroke="#5e9a78" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="44" cy="100" r="6" fill="none" stroke="#5e9a78" stroke-width="4"/>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">A compressor is one of those tools that seems to run forever with no attention — right up until the day it doesn't. The pump is a little air engine, and like any engine it lives and dies by its oil. Here's what a low, dirty, or wrong-oil pump — and a tank full of water — actually does:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- oil drop -->
+          <path d="M18 5 C24 15 27 20 27 25 a9 9 0 0 1 -18 0 C9 20 12 15 18 5 z" fill="#e0a93d" stroke="#d98e3b" stroke-width="1.6"/>
+          <path d="M14 24 a4 4 0 0 0 4 4" fill="none" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Oil is the pump's lifeblood</h3>
+        <p>The pump's pistons, rings, and bearings need a clean film of oil between the moving parts. Let the level drop or the oil break down, and metal starts grinding on metal — the pump overheats, wears fast, and eventually seizes solid, which is the end of the compressor.</p>
+        <span class="cost">A seized, dead pump</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- shield / insurance -->
+          <path d="M18 5 l11 4 v9 c0 7 -5 11 -11 13 c-6 -2 -11 -6 -11 -13 v-9 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+          <path d="M13 18 l3.5 3.5 l7 -8" fill="none" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>It's the cheapest insurance there is</h3>
+        <p>A minute-long level check and an occasional oil change protect a tool that cost you several hundred dollars. There is almost no other maintenance with a payoff this lopsided — a glance and a splash of oil against a machine you'd otherwise have to replace.</p>
+        <span class="cost">Replacing the whole unit</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- wrong-oil bottle with no-sign -->
+          <rect x="12" y="10" width="14" height="20" rx="3" fill="#b9b1a3"/>
+          <rect x="15" y="5" width="8" height="6" rx="2" fill="#8a6a4f"/>
+          <circle cx="19" cy="20" r="13" fill="none" stroke="#d9663f" stroke-width="2.6"/>
+          <line x1="10" y1="11" x2="28" y2="29" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+        </svg></div>
+        <h3>The wrong oil ruins it too</h3>
+        <p>Compressor pumps want a non-detergent compressor oil of the right weight. Pour in ordinary motor oil (loaded with detergents) or the wrong grade and it can foam, carbon up the valves, and fail to protect the pump. Using the specified oil matters as much as keeping it topped up.</p>
+        <span class="cost">Foaming &amp; carbon buildup</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- tank with water & rust -->
+          <rect x="6" y="14" width="24" height="12" rx="6" fill="#7fb3c8"/>
+          <ellipse cx="6" cy="20" rx="3" ry="6" fill="#5e9a78"/>
+          <ellipse cx="30" cy="20" rx="3" ry="6" fill="#5e9a78"/>
+          <!-- rust spots -->
+          <circle cx="14" cy="21" r="2" fill="#c96f4a"/>
+          <circle cx="22" cy="19" r="1.6" fill="#c96f4a"/>
+          <!-- water drip from drain -->
+          <path d="M18 26 l0 5" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18" cy="33" r="2.2" fill="#7fb3c8"/>
+        </svg></div>
+        <h3>Moisture is the other killer</h3>
+        <p>Every time it runs, the compressor pulls humid air in and water condenses inside the tank. Left there, it rusts the steel from the inside out — and a rusted tank can fail dangerously under pressure. Draining the tank goes hand in hand with the oil check.</p>
+        <span class="cost">A rusted-through tank</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> check it?</h2>
+    <p class="sub">For an oil-lubricated compressor, glance at the level about every six months (and change the oil per the manual's run-hours — often somewhere around every few hundred hours). Heavy shop or jobsite use, or oil that already looks low, milky, or dark, pulls that toward every three months. And if your compressor is oil-free, there's simply no oil to check. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="type">
+        <div class="q-label">1. Is your compressor oil-lubricated or oil-free?</div>
+        <div class="pills">
+          <button class="pill" data-v="oiled">Oil-lubricated — it has an oil sight glass or fill</button>
+          <button class="pill" data-v="oilfree">Oil-free — sealed, no oil fill (or not sure)</button>
+        </div>
+        <div class="q-hint">Look for a round sight glass on the pump or a fill cap/dipstick — those mean it takes oil. Many small pancake and portable compressors are oil-free and sealed for life, with nothing to check. When in doubt, the manual settles it.</div>
+      </div>
+      <div class="quiz-q" data-q="use">
+        <div class="q-label">2. How hard do you run it?</div>
+        <div class="pills">
+          <button class="pill" data-v="heavy">Heavy — daily shop or jobsite duty</button>
+          <button class="pill" data-v="regular">Regular — weekend projects, a few tasks a month</button>
+          <button class="pill" data-v="occasional">Occasional — a few times a year for tires and nailing</button>
+        </div>
+        <div class="q-hint">Oil life is measured in run-hours, not calendar time. A compressor working all day racks up hours (and heat) fast, so it needs checking and changing far sooner than one that wakes up a few times a year.</div>
+      </div>
+      <div class="quiz-q" data-q="state">
+        <div class="q-label">3. How does it look and sound right now?</div>
+        <div class="pills">
+          <button class="pill" data-v="bad">Oil low, milky, or dark — running hot or louder</button>
+          <button class="pill" data-v="okay">Not sure — haven't looked in a while</button>
+          <button class="pill" data-v="good">Oil clear and full, runs smooth and cool</button>
+        </div>
+        <div class="q-hint">Milky oil means water has gotten in; dark oil means it's degraded and carboned up. A pump that runs hotter or louder than it used to is telling you something. Any of these means check now and change soon.</div>
+      </div>
+      <div class="quiz-q" data-q="humid">
+        <div class="q-label">4. How humid is where it lives?</div>
+        <div class="pills">
+          <button class="pill" data-v="humid">Humid — muggy garage, lots of tank water</button>
+          <button class="pill" data-v="mixed">Average — the usual seasonal swings</button>
+          <button class="pill" data-v="dry">Dry — arid climate, little condensate</button>
+        </div>
+        <div class="q-hint">Humid air means more water condensing in the tank every run — more draining, more rust risk, and a better chance water works its way into the oil. Dry shops get off easier on both counts.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of skipping it</h2>
+    <p class="sub">This is one of the most lopsided bits of maintenance you'll ever do. A quart of the right compressor oil runs about eight to fifteen dollars and lasts through multiple changes, and checking the level costs nothing but a minute. Set that against a seized pump or a tank rusted through from trapped water — repairs that often cost more than the compressor is worth:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$8–15</div><div class="l">a quart of compressor oil — enough for several oil changes on a small unit</div></div>
+        <div class="calc-stat"><div class="v">~1–2 min</div><div class="l">to read the sight glass or pull the dipstick and crack the tank drain</div></div>
+        <div class="calc-stat"><div class="v bad">$0</div><div class="l">the level check itself — essentially free, and it's what saves the pump</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>👀 Checking the oil level &amp; draining the tank</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛢️ A quart of the right compressor oil</span><span>$8–15</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:10%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🔧 A pump rebuild kit or replacement pump</span><span>$100–300+</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:48%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛑 A seized pump or rusted-through tank</span><span>More than the compressor's worth</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a fifteen-dollar quart of oil and a one-minute check</strong> against a seized pump or a rusted tank you have to replace the whole machine over. For a compressor that does take oil, keeping it topped up with the right stuff and draining the tank is about the highest-return minute of maintenance in the whole shop.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to check your air compressor oil</h2>
+    <p class="sub">The order is simple: confirm the thing even takes oil, kill the power and bleed off the pressure, read the level with it cool and level, top up or change with the right oil, then drain the tank's water and log it. Read the techniques first — especially the oil-free check and depressurizing — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Depressurize, cool it, and use the RIGHT oil</h3>
+      <ul>
+        <li><strong>First, confirm it's oil-lubricated.</strong> Many small compressors are <em>oil-free</em> — sealed and permanently lubricated, with no oil to check or change. Check the manual; if it's oil-free, there's nothing to do here, and you must <em>not</em> try to add oil to it.</li>
+        <li><strong>Turn it OFF, UNPLUG it, and release ALL tank pressure.</strong> Before checking or changing anything, open the drain or relief valve to bleed the tank to zero, then let the pump cool. A pressurized tank and a hot pump are both real hazards — never work on either.</li>
+        <li><strong>Use the compressor oil your manual specifies.</strong> That's a non-detergent compressor oil of the right weight, or a synthetic if the manual calls for one. Do <em>not</em> use regular motor oil unless the manual explicitly allows it — motor-oil detergents foam and carbon up a compressor pump.</li>
+        <li><strong>Check the level with the unit off, cool, and LEVEL.</strong> Read the sight-glass dot or the dipstick with the compressor sitting flat. The oil should be at or near the fill line — and don't overfill, which is as bad as running low.</li>
+        <li><strong>Drain the tank's water condensate regularly.</strong> With the tank depressurized, open the drain valve at the bottom and let the water out. Trapped water rusts the tank from the inside and can cause a dangerous tank failure — do this every time, more often in humid weather.</li>
+        <li><strong>Change the oil on the manual's schedule.</strong> Follow its run-hours or interval, and dispose of the used oil at a recycling facility — never in the trash or down a drain.</li>
+        <li><strong>Wear eye protection and keep the belt guard on.</strong> Never run a belt-drive compressor with the guard removed — the belt and pulleys will grab anything nearby.</li>
+      </ul>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">Your compressor's manual (for oil type &amp; interval)</span>
+      <span class="tool-chip">The specified compressor oil (or synthetic)</span>
+      <span class="tool-chip">A funnel</span>
+      <span class="tool-chip">A drain pan or catch container</span>
+      <span class="tool-chip">Rags or shop towels</span>
+      <span class="tool-chip">A wrench for the drain plug</span>
+      <span class="tool-chip">Safety glasses</span>
+      <span class="tool-chip">Gloves</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram comparing an oil-lubricated compressor pump with a round oil sight glass against a sealed oil-free pump with no fill, showing that only the oil-lubricated one has oil to check">
+          <!-- oil-lubricated pump (left) -->
+          <rect x="24" y="52" width="90" height="76" rx="8" fill="#5e9a78"/>
+          <rect x="24" y="52" width="90" height="16" rx="6" fill="#3e7c59"/>
+          <g stroke="#2c5a40" stroke-width="2"><line x1="36" y1="55" x2="36" y2="68"/><line x1="48" y1="55" x2="48" y2="68"/><line x1="60" y1="55" x2="60" y2="68"/></g>
+          <circle cx="70" cy="98" r="14" fill="#fffdf8" stroke="#2c5a40" stroke-width="2.5"/>
+          <path d="M56 98 a14 14 0 0 0 28 0 z" fill="#e0a93d"/>
+          <circle cx="70" cy="98" r="2.4" fill="#c96f4a"/>
+          <text x="30" y="146" font-size="10" fill="#3e7c59" font-weight="700">oil-lubricated ✓</text>
+          <!-- oil-free pump (right) -->
+          <rect x="166" y="52" width="90" height="76" rx="8" fill="#b9b1a3"/>
+          <rect x="166" y="52" width="90" height="16" rx="6" fill="#8a6a4f"/>
+          <g stroke="#8a6a4f" stroke-width="2"><line x1="178" y1="55" x2="178" y2="68"/><line x1="190" y1="55" x2="190" y2="68"/><line x1="202" y1="55" x2="202" y2="68"/></g>
+          <circle cx="212" cy="98" r="12" fill="none" stroke="#d9663f" stroke-width="2.4"/>
+          <line x1="204" y1="90" x2="220" y2="106" stroke="#d9663f" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="176" y="146" font-size="10" fill="#6b7376" font-weight="700">oil-free — nothing</text>
+        </svg>
+        <h4>Confirm it takes oil at all</h4>
+        <p>Look for a sight glass or an oil fill/dipstick — that's an oil-lubricated pump. A sealed unit with no fill is oil-free and permanently lubricated, so there's genuinely nothing to check or change. The manual tells you which you have; don't add oil to an oil-free one.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of depressurizing and cooling the compressor: the plug pulled from the outlet, a power switch off, the tank drain open venting air, and a cooldown timer">
+          <!-- unplugged cord -->
+          <rect x="20" y="34" width="34" height="24" rx="4" fill="#33393b"/>
+          <line x1="30" y1="42" x2="30" y2="50" stroke="#c9a06b" stroke-width="2.6"/>
+          <line x1="44" y1="42" x2="44" y2="50" stroke="#c9a06b" stroke-width="2.6"/>
+          <path d="M54 46 q22 0 22 20" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+          <text x="18" y="74" font-size="10" fill="#d9663f" font-weight="700">unplug</text>
+          <!-- OFF switch -->
+          <rect x="112" y="30" width="46" height="26" rx="13" fill="#b9b1a3"/>
+          <circle cx="124" cy="43" r="9" fill="#fffdf8"/>
+          <text x="140" y="47" font-size="11" fill="#33393b" font-weight="700">OFF</text>
+          <!-- tank venting air -->
+          <rect x="176" y="96" width="86" height="40" rx="20" fill="#7fb3c8"/>
+          <rect x="196" y="136" width="8" height="14" fill="#8a6a4f"/>
+          <rect x="188" y="148" width="24" height="6" rx="3" fill="#c96f4a"/>
+          <g stroke="#9cc3d4" stroke-width="2.6" stroke-linecap="round">
+            <path d="M200 150 q-8 8 -14 8"/>
+            <path d="M204 152 q-4 12 -12 16"/>
+          </g>
+          <text x="184" y="90" font-size="10" fill="#3e7c59" font-weight="700">bleed to 0 psi</text>
+          <!-- cooldown -->
+          <circle cx="52" cy="128" r="18" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.6"/>
+          <line x1="52" y1="128" x2="52" y2="116" stroke="#d98e3b" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="52" y1="128" x2="62" y2="132" stroke="#d98e3b" stroke-width="2.4" stroke-linecap="round"/>
+          <text x="28" y="164" font-size="10" fill="#6b7376" font-weight="700">let it cool</text>
+        </svg>
+        <h4>Depressurize &amp; cool it first</h4>
+        <p>Turn it off, unplug it, and open the drain to release every last psi from the tank, then let the pump cool and settle level. A hot pump and a pressurized tank are both dangerous to work on — this step is non-negotiable before you touch the oil.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of reading the oil level at the sight glass: the amber oil filled to the center red dot at the fill line, with a magnifier showing it should be clear amber, not milky or dark">
+          <rect x="70" y="26" width="140" height="128" rx="10" fill="#5e9a78"/>
+          <rect x="70" y="26" width="140" height="24" rx="8" fill="#3e7c59"/>
+          <!-- big sight glass -->
+          <circle cx="140" cy="98" r="42" fill="#fffdf8" stroke="#2c5a40" stroke-width="4"/>
+          <path d="M98 98 a42 42 0 0 0 84 0 z" fill="#e0a93d"/>
+          <!-- fill line + center dot -->
+          <line x1="102" y1="98" x2="178" y2="98" stroke="#8a6a4f" stroke-width="2" opacity="0.6"/>
+          <circle cx="140" cy="98" r="6" fill="#c96f4a"/>
+          <text x="188" y="82" font-size="10" fill="#3e7c59" font-weight="700">at the</text>
+          <text x="188" y="95" font-size="10" fill="#3e7c59" font-weight="700">dot ✓</text>
+          <text x="80" y="146" font-size="10" fill="#6b7376">clear amber — not milky / dark</text>
+        </svg>
+        <h4>Read the level — cool &amp; level</h4>
+        <p>With the compressor off and sitting flat, read the oil at the sight-glass dot or on the dipstick. It should be right at or near the fill line and a clear amber. Milky oil means water's gotten in; dark, thick oil means it's overdue for a change.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of topping up or changing the oil: a bottle of compressor oil pouring through a funnel into the fill port up to the line, with a warning not to overfill and not to use motor oil">
+          <rect x="150" y="70" width="96" height="84" rx="8" fill="#5e9a78"/>
+          <rect x="150" y="70" width="96" height="16" rx="6" fill="#3e7c59"/>
+          <!-- fill port + funnel -->
+          <rect x="188" y="54" width="20" height="18" fill="#8a6a4f"/>
+          <path d="M178 40 h40 l-12 16 h-16 z" fill="#b9b1a3"/>
+          <!-- oil bottle pouring -->
+          <rect x="150" y="10" width="34" height="46" rx="6" fill="#e0a93d" transform="rotate(28 167 33)"/>
+          <path d="M182 40 q6 8 8 12" stroke="#e0a93d" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- fill line inside glass -->
+          <circle cx="212" cy="122" r="14" fill="#fffdf8" stroke="#2c5a40" stroke-width="2.5"/>
+          <path d="M198 122 a14 14 0 0 0 28 0 z" fill="#e0a93d"/>
+          <line x1="200" y1="122" x2="224" y2="122" stroke="#8a6a4f" stroke-width="1.4" opacity="0.6"/>
+          <!-- warnings -->
+          <text x="24" y="110" font-size="10.5" fill="#d9663f" font-weight="700">don't overfill</text>
+          <text x="24" y="128" font-size="10.5" fill="#d9663f" font-weight="700">no motor oil*</text>
+          <text x="24" y="146" font-size="8.5" fill="#6b7376">*unless the manual says</text>
+        </svg>
+        <h4>Top up or change with the right oil</h4>
+        <p>Add the specified compressor oil to the fill line, or drain and refill on the run-hour interval. Use a funnel, go slow, and stop at the line — overfilling causes foaming and blow-by. And unless the manual says otherwise, never reach for motor oil.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of draining the tank: the bottom drain valve opened, water condensate running into a catch pan, then closing the valve and logging the check on a calendar">
+          <!-- tank -->
+          <rect x="40" y="40" width="150" height="46" rx="23" fill="#7fb3c8"/>
+          <ellipse cx="40" cy="63" rx="10" ry="23" fill="#5e9a78"/>
+          <ellipse cx="190" cy="63" rx="10" ry="23" fill="#5e9a78"/>
+          <!-- open drain valve -->
+          <rect x="108" y="86" width="8" height="18" fill="#8a6a4f"/>
+          <rect x="100" y="102" width="24" height="7" rx="3" fill="#c96f4a"/>
+          <rect x="122" y="98" width="16" height="5" rx="2.5" fill="#d9663f" transform="rotate(26 130 100)"/>
+          <!-- water draining -->
+          <path d="M112 110 q-1 10 0 16" stroke="#7fb3c8" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+          <circle cx="112" cy="130" r="3" fill="#7fb3c8"/>
+          <!-- catch pan -->
+          <path d="M84 134 h60 l-7 14 h-46 z" fill="#b9b1a3"/>
+          <ellipse cx="114" cy="135" rx="30" ry="4" fill="#7fb3c8" opacity="0.8"/>
+          <!-- calendar / log -->
+          <rect x="206" y="96" width="52" height="48" rx="6" fill="#fffdf8" stroke="#e0a93d" stroke-width="2.4"/>
+          <rect x="206" y="96" width="52" height="12" rx="6" fill="#e0a93d"/>
+          <path d="M218 124 l6 6 l12 -13" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="66" y="170" font-size="10" fill="#3e7c59" font-weight="700">drain water, then log it</text>
+        </svg>
+        <h4>Drain the tank &amp; finish</h4>
+        <p>With the tank empty of pressure, open the bottom drain valve and let the water condensate run out into a pan until it's just air, then close it back up. Wipe everything down, and note the date so the next check and the manual's oil change land on schedule.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Oil-check progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Oil checked (and topped up or changed), tank drained of water, and the date logged — your compressor's pump is protected and ready to run. Same quick check again in about six months.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs it's overdue — and when to call a pro</h2>
+    <p class="sub">A healthy compressor has clean amber oil at the line, a dry-ish tank you drain regularly, and a pump that builds pressure smoothly without running hot. These are the signals it needs attention now — and the handful of failures that mean the pump or tank itself, not just the oil, is done:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Oil that's low, milky, or dark and dirty.</strong> Below the line means top it up; milky oil means water has contaminated it (drain the tank more often and change the oil); dark, sludgy oil means it's degraded and overdue for a change.</li>
+        <li><strong>The pump running hotter, louder, or struggling.</strong> A pump that's noticeably warmer to be near, noisier than it used to be, or laboring to build pressure is often crying out for oil — check the level and change it, and back off the duty cycle to let it cool.</li>
+        <li><strong>Water pouring from the tank drain.</strong> A lot of water each time you crack the drain means you're not draining often enough for your humidity — do it more frequently to stay ahead of the rust.</li>
+        <li><strong>Oil leaks around the pump or fittings.</strong> Fresh oil weeping from the pump base or a fitting drops your level between checks and points to a worn seal or gasket — top up and keep an eye on it, and have persistent leaks looked at.</li>
+        <li><strong>A compressor that won't build or hold pressure.</strong> If it runs but never reaches cutoff pressure, or bleeds down fast when off, the pump valves, rings, or a fitting may be worn — top up and drain first, but a pump that still won't build pressure needs a rebuild or a repair tech.</li>
+        <li><strong>Rust, pitting, or bulges on the tank.</strong> Visible rust flaking off, deep pitting, or any bulge in the tank steel is a safety problem — a rusted tank can fail violently under pressure. Stop using it and have it inspected or replaced.</li>
+        <li><strong>Pro tip:</strong> for a worn or seized pump, a leaking or rusted tank, or a compressor that overheats no matter what you do, see a repair tech — and if the tank itself is compromised, it's usually time to replace the machine rather than gamble on a pressure vessel.</li>
+      </ul>
+      <p style="margin:16px 0 0; font-size:15px; color:var(--ink-soft);">While the oil's on your mind, keep the rest of the workshop in shape too — <a href="lubricate-hand-tools.html">lubricating hand tools</a> and cleaning the <a href="clean-shop-vac-filter.html">shop vac filter</a> — and the same oil-and-service logic applies to your <a href="service-generator.html">generator</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I check and change my air compressor oil?</summary>
+      <p>For an oil-lubricated compressor, glance at the level about every six months — and more like every three if you use it hard, if it lives somewhere humid, or if the oil already looks low, milky, or dark. Changing the oil, though, is measured in run-hours rather than the calendar: many manuals call for a change somewhere around the first several dozen hours to break it in, then every few hundred hours after that, so your manual's number is the one that matters. A weekend-warrior compressor that runs a few hours a month might go a year or more between changes; a shop unit running all day needs it far sooner. When in doubt, a quick check costs nothing, and clean, full oil is cheap insurance against a seized pump.</p>
+    </details>
+    <details>
+      <summary>Does my compressor even use oil?</summary>
+      <p>Maybe not — and it's the first thing to sort out. Compressors come in two flavors. <strong>Oil-lubricated</strong> pumps have a splash of oil bathing the pistons and bearings, and you'll see a round sight glass on the pump or an oil fill cap and dipstick; these need checking and changing. <strong>Oil-free</strong> compressors — common in small pancake, hotdog, and portable units — use sealed, permanently lubricated components and have <em>no</em> oil to check, top up, or change. If yours is oil-free, there's genuinely nothing to do here, and you should never try to add oil to it. Not sure which you have? Look for a sight glass or fill port, and check the manual — it'll say plainly whether the unit takes oil.</p>
+    </details>
+    <details>
+      <summary>What oil should I use — can I use motor oil?</summary>
+      <p>Use the compressor oil your manual specifies, which is almost always a <em>non-detergent</em> oil of a particular weight (a 20-weight or 30-weight air-compressor oil is common), or a synthetic compressor oil if the manual calls for one. The reason not to grab regular motor oil is that motor oils are loaded with detergents and additives designed for an engine's needs — in a compressor pump those can foam, carbon up the valves, and fail to protect the way the pump was designed for. Some manuals do permit a specific non-detergent motor oil as a substitute, so if yours explicitly says so, follow it; otherwise stick to a dedicated compressor oil. A quart is cheap and lasts a long time, so there's no reason to improvise.</p>
+    </details>
+    <details>
+      <summary>How do I check the oil level?</summary>
+      <p>Do it with the compressor off, unplugged, cooled down, and sitting level. Most oil-lubricated pumps have a round sight glass on the side, usually with a red dot or a fill line at its center — the oil should reach that dot and read as clear amber. If your unit uses a dipstick or fill plug instead, pull it, wipe it, reinsert and read it like a car's dipstick, or just look that the oil is up to the fill threads. If it's below the line, top up with the specified oil to (but not past) the line — overfilling causes just as many problems as running low. And note the color: milky oil means water contamination and dark oil means it's time for a change.</p>
+    </details>
+    <details>
+      <summary>Do I need to drain the tank too?</summary>
+      <p>Yes — and it's just as important as the oil. Every time the compressor runs, it draws in humid air and water condenses inside the tank. Left there, that water rusts the steel from the inside out, and a rusted tank can eventually fail under pressure, which is genuinely dangerous. So make draining part of every check: with the tank pressure released, open the drain valve at the lowest point of the tank and let the water (and a little oily mist) run out into a pan until only air hisses, then close it. Do it after each heavy session, and at least every time you check the oil — more often in humid weather. It takes seconds and it's the single best thing you can do to make the tank last.</p>
+    </details>
+    <details>
+      <summary>What happens if I run it low on oil?</summary>
+      <p>The pump overheats and wears fast, and eventually it seizes. The oil is what keeps a film between the pistons, rings, and bearings; run low and those parts start rubbing metal-on-metal, generating heat that thins the remaining oil and accelerates the damage. You'll usually notice it running hotter and louder first, then losing the ability to build pressure as the rings and valves wear, and finally the pump locks up solid — a failure that's often not worth repairing on a smaller compressor. The same thing happens, more slowly, with the wrong oil or oil that's degraded to sludge. Since a level check takes a minute and a quart of oil is a few dollars, there's no reason to ever let it get there.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>An air compressor runs low and full of water in total silence.</h2>
+        <p>An oil-lubricated compressor gives no warning — the level slips and the tank fills with condensate quietly, right up until the pump seizes or the tank rusts through. Upkeep Ledger logs this oil check and tank drain and resurfaces them on schedule — right alongside lubricating your tools, servicing the generator, and every other quiet job that keeps the shop running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-air-compressor-oil&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=check-air-compressor-oil&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>Oil types, capacities, and change intervals vary by compressor — always follow your unit's manual, and confirm whether yours is oil-lubricated or oil-free before adding anything. This guide is for planning only.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { type: null, use: null, state: null, humid: null };
+
+  var FREQ_LABEL = {
+    3: "Every 3 months",
+    6: "Every 6 months",
+    12: "Once a year"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 6;
+    var tighten = false;
+
+    /* Oil-free short-circuits everything */
+    if (s.type === "oilfree") {
+      return {
+        months: 0,
+        reasons: [
+          "Your compressor is oil-free — its pump is sealed and permanently lubricated, so there is no oil to check, top up, or change. That's one less job forever.",
+          "Do NOT try to add oil to an oil-free unit; there's nowhere for it to go and it can't help.",
+          "The one thing you should still do: drain the tank's water condensate regularly, since even an oil-free compressor pulls humid air in and rusts from the inside if the water sits."
+        ],
+        note: "<strong>Not 100% sure it's oil-free?</strong> Look for a round sight glass on the pump or an oil fill cap/dipstick — if there's neither, and the manual confirms it, you're oil-free. Still drain that tank."
+      };
+    }
+
+    /* Use — run hours */
+    if (s.use === "heavy") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("Running it hard every day racks up run-hours and heat fast, so both the level check and the oil change come around much sooner — check it about every three months and follow the manual's run-hour interval closely.");
+    } else if (s.use === "occasional") {
+      reasons.push("A compressor that only wakes up a few times a year accumulates run-hours slowly, so a check every six months is plenty and oil changes are infrequent.");
+    } else {
+      reasons.push("Regular weekend use is the ordinary middle case the twice-a-year check is written for — glance at the level each time and change the oil on the manual's hours.");
+    }
+
+    /* State — how it looks/sounds now */
+    if (s.state === "bad") {
+      months = 3;
+      tighten = true;
+      reasons.push("Oil that's low, milky, or dark — or a pump running hot or louder — means don't wait: check it now, change the oil, and drain the tank, then keep a closer eye on it (about every three months) until it settles.");
+    } else if (s.state === "good") {
+      reasons.push("Clear, full oil and a pump that runs smooth and cool is exactly what you want to see — you're on top of it, so just keep to your interval.");
+    } else {
+      reasons.push("If you haven't looked in a while, treat this check as the baseline — read the level and note the color, and you'll know whether to tighten the schedule from here.");
+    }
+
+    /* Humidity — tank water */
+    if (s.humid === "humid") {
+      if (months > 3) months = 3;
+      tighten = true;
+      reasons.push("A humid shop means a lot of water condensing in the tank every run — drain it more often to stay ahead of rust, and check the oil more frequently since water can work its way in and turn it milky.");
+    } else if (s.humid === "dry") {
+      reasons.push("A dry climate puts far less water in the tank, so there's less rust risk and less chance of water in the oil — one less thing pushing your interval.");
+    } else {
+      reasons.push("Average humidity means ordinary tank condensate — drain it each time you check, a bit more often in the muggy months.");
+    }
+
+    /* Best case relaxation: occasional use, all good, dry */
+    if (!tighten && s.use === "occasional" && s.state === "good" && s.humid === "dry") {
+      months = 12;
+      reasons.push("Light use, clean full oil, and a dry shop is the one case where a look once a year is genuinely enough — though a quick tank drain after each use is still worth the ten seconds.");
+    }
+
+    /* Closing note */
+    var note;
+    if (s.state === "bad") {
+      note = "<strong>Don't run it hard until you've sorted the oil:</strong> top up or change it and drain the tank first. Milky oil especially means water intrusion — change it and drain more often, and if the pump still runs hot, ease off the duty cycle and have it looked at.";
+    } else if (s.humid === "humid") {
+      note = "<strong>In a humid shop, draining is the daily habit:</strong> crack the tank drain after each session, not just at oil-check time. That's what keeps water out of both the tank steel and the oil.";
+    } else if (s.use === "heavy") {
+      note = "<strong>Track run-hours, not just months:</strong> a hard-working compressor hits its oil-change interval on hours, so log its use and change the oil on the manual's schedule — heat and hours, not the calendar, wear the pump.";
+    } else {
+      note = "<strong>Remember the order:</strong> confirm it takes oil, unplug it and bleed the tank to zero, read the level cool and level, top up with the specified oil, then drain the tank's water. And always follow your manual's oil type and interval.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.type || !quizState.use || !quizState.state || !quizState.humid) return;
+    var r = computePlan(quizState);
+    if (r.months === 0) {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: nothing to check — it's oil-free";
+      document.getElementById("resultBody").innerHTML =
+        "There's no oil in a sealed oil-free pump, so <strong>skip the oil check entirely — but still drain the tank's water regularly</strong>. Why:";
+    } else {
+      document.getElementById("resultFreq").textContent =
+        "Your plan: check the oil " + FREQ_LABEL[r.months].toLowerCase();
+      document.getElementById("resultBody").innerHTML =
+        "Confirm it's oil-lubricated, then <strong>depressurize and cool it, read the level, top up or change with the specified oil, and drain the tank</strong>. Why this schedule:";
+    }
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Confirm it takes oil", text: "Check whether it's oil-lubricated or oil-free", note: "Look for a round sight glass on the pump, or an oil fill cap/dipstick — those mean it takes oil. A sealed unit with no fill is oil-free: there's nothing to check and you must not add oil. The manual settles it." },
+    { phase: "Confirm it takes oil", text: "Find the manual's oil type and change interval", note: "Note the specified oil — a non-detergent compressor oil of the right weight, or a synthetic if called for — and the run-hour or time interval for changes. Don't substitute motor oil unless the manual explicitly allows it." },
+    { phase: "Depressurize & cool", text: "Turn it off and unplug it", note: "Switch the compressor off and pull the plug so it can't cycle on while you work. Never check or add oil to a running or energized machine." },
+    { phase: "Depressurize & cool", text: "Release all tank pressure and let it cool", note: "Open the drain or relief valve and bleed the tank to zero psi, then give the pump time to cool. A pressurized tank and a hot pump are both hazards — work on neither." },
+    { phase: "Depressurize & cool", text: "Set it level and put on safety glasses", note: "The compressor must sit flat for an accurate reading. Wear eye protection, and keep the belt guard in place — never run a belt-drive unit with the guard off." },
+    { phase: "Check the level", text: "Read the oil at the sight glass or dipstick", note: "With it off, cool, and level, read the oil at the sight-glass dot or on the dipstick. It should be at or near the fill line — not below it, not overfilled." },
+    { phase: "Check the level", text: "Check the oil's color and condition", note: "Clear amber is healthy. Milky or cloudy means water has gotten in (drain the tank more often and change the oil); dark, thick, or sludgy means it's degraded and due for a change." },
+    { phase: "Top up & drain tank", text: "Top up or change the oil with the right type", note: "Add the specified compressor oil to the fill line with a funnel — slowly, and stop at the line, since overfilling causes foaming. If it's due per the manual's hours, drain the old oil and refill instead." },
+    { phase: "Top up & drain tank", text: "Drain the tank's water condensate", note: "With the tank depressurized, open the bottom drain valve and let the water run out into a pan until only air hisses, then close it. Do this more often in humid weather to stay ahead of rust." },
+    { phase: "Top up & drain tank", text: "Wipe it down and dispose of used oil properly", note: "Clean up any spills, reinstall caps and plugs snugly, and take any used oil to a recycling facility — never the trash or a drain." },
+    { phase: "Top up & drain tank", text: "Log the date", note: "Nothing reminds you the oil is slipping or the tank is filling with water. Note the date so the next check lands in about six months (or your quiz interval), and the oil change lands on the manual's run-hours." }
+  ];
+
+  var LS_KEY = "upkeepguides:check-air-compressor-oil:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>

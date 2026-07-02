@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restock your pet food (and keep it fresh) — UpkeepGuides.com</title>
+<meta name="description" content="Restock pet food before you run out and keep it fresh: time your reorder with a week's buffer, store kibble airtight in its original bag, buy a size you'll finish, and switch foods gradually to avoid stomach upset.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#2c5a40">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UpkeepGuides.com">
+<meta property="og:title" content="Restock your pet food (and keep it fresh) — UpkeepGuides.com">
+<meta property="og:description" content="Restock pet food before you run out and keep it fresh: time your reorder with a week's buffer, store kibble airtight in its original bag, buy a size you'll finish, and switch foods gradually to avoid stomach upset.">
+<meta property="og:url" content="https://upkeepguides.com/refill-pet-food.html">
+<meta property="og:image" content="https://upkeepguides.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Restock your pet food (and keep it fresh) — UpkeepGuides.com">
+<meta name="twitter:description" content="Restock pet food before you run out and keep it fresh: time your reorder with a week's buffer, store kibble airtight in its original bag, buy a size you'll finish, and switch foods gradually to avoid stomach upset.">
+<meta name="twitter:image" content="https://upkeepguides.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --card: #ffffff;
+    --ink: #33393b;
+    --ink-soft: #6b7376;
+    --accent: #3e7c59;
+    --accent-soft: #e3efe8;
+    --accent-deep: #2c5a40;
+    --warn: #d9663f;
+    --warn-soft: #fbe9e1;
+    --gold: #e0a93d;
+    --gold-soft: #faf0da;
+    --line: #e9e2d8;
+    --radius: 16px;
+    --shadow: 0 2px 12px rgba(70, 60, 40, 0.07);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent-deep); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- header ---------- */
+  header.site {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+  }
+  header.site .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 12px; padding-bottom: 12px;
+  }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--accent); }
+  nav.toc { display: flex; gap: 16px; flex-wrap: wrap; }
+  nav.toc a { font-size: 14px; text-decoration: none; color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-deep); }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 56px 0 36px; }
+  .kicker {
+    display: inline-block; background: var(--accent-soft); color: var(--accent-deep);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.12; margin: 0 0 14px; }
+  .hero p.lede { font-size: 20px; color: var(--ink-soft); max-width: 620px; margin: 0 0 22px; }
+  .stat-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+  }
+  .chip em { font-style: normal; color: var(--accent-deep); }
+
+  /* ---------- sections & cards ---------- */
+  section { padding: 36px 0; }
+  h2 { font-size: 28px; margin: 0 0 6px; scroll-margin-top: 80px; }
+  .sub { color: var(--ink-soft); margin: 0 0 22px; max-width: 640px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px;
+  }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+  .why-card h3 { margin: 0 0 6px; font-size: 17px; display: flex; align-items: center; gap: 8px; }
+  .why-card p { margin: 0; font-size: 15px; color: var(--ink-soft); }
+  .why-card .cost { display: inline-block; margin-top: 10px; background: var(--warn-soft); color: var(--warn);
+    font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 999px; }
+
+  /* ---------- quiz ---------- */
+  .quiz-q { margin-bottom: 20px; }
+  .quiz-q .q-label { font-weight: 700; margin-bottom: 8px; }
+  .quiz-q .q-hint { font-size: 13.5px; color: var(--ink-soft); margin-top: 6px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill {
+    border: 1.5px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 999px; padding: 8px 16px; font-size: 15px; cursor: pointer;
+    transition: all 0.15s ease; font-family: inherit;
+  }
+  .pill:hover { border-color: var(--accent); }
+  .pill.selected { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .quiz-result {
+    display: none; margin-top: 8px; border-radius: var(--radius);
+    background: var(--accent-soft); border: 1.5px solid var(--accent);
+    padding: 20px 22px;
+  }
+  .quiz-result.show { display: block; animation: pop 0.25s ease; }
+  @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .quiz-result .freq { font-size: 24px; font-weight: 800; color: var(--accent-deep); margin: 0 0 4px; }
+  .quiz-result ul { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+  .quiz-result ul li { margin-bottom: 4px; }
+  .quiz-result .flip-note {
+    margin-top: 14px; font-size: 14.5px; background: var(--gold-soft);
+    border: 1px solid var(--gold); border-radius: 12px; padding: 10px 14px;
+  }
+
+  /* ---------- cost comparison ---------- */
+  .calc-out { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 18px; }
+  .calc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+  .calc-stat .v { font-size: 26px; font-weight: 800; color: var(--accent-deep); }
+  .calc-stat .v.bad { color: var(--warn); }
+  .calc-stat .l { font-size: 13.5px; color: var(--ink-soft); }
+  .bars { display: grid; gap: 12px; }
+  .bar-row .bar-label { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .bar-track { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease; min-width: 2%; }
+  .bar-fill.good { background: var(--accent); }
+  .bar-fill.bad { background: var(--warn); }
+  .calc-verdict { margin-top: 16px; font-size: 15px; background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; }
+  .calc-verdict strong { color: var(--accent-deep); }
+
+  /* ---------- checklist ---------- */
+  .safety {
+    background: var(--warn-soft); border: 1.5px solid var(--warn); border-radius: var(--radius);
+    padding: 18px 22px; margin-bottom: 22px;
+  }
+  .safety h3 { margin: 0 0 8px; color: var(--warn); font-size: 16px; }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .safety li { margin-bottom: 4px; }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .tool-chip { background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .progress-wrap { position: sticky; top: 58px; z-index: 40; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+    box-shadow: var(--shadow); }
+  .progress-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+  .progress-track { background: var(--bg); border-radius: 999px; height: 10px; overflow: hidden; }
+  .progress-fill { background: var(--accent); height: 100%; border-radius: 999px; width: 0%; transition: width 0.3s ease; }
+  .phase { margin-bottom: 8px; }
+  .phase h3 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-deep);
+    margin: 22px 0 10px; }
+  .step {
+    display: flex; gap: 12px; align-items: flex-start; background: var(--card);
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; margin-bottom: 8px;
+    cursor: pointer; transition: all 0.15s ease;
+  }
+  .step:hover { border-color: var(--accent); }
+  .step input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .step .step-text { font-size: 15.5px; }
+  .step .step-text small { display: block; color: var(--ink-soft); font-size: 13.5px; margin-top: 2px; }
+  .step.done { background: var(--accent-soft); border-color: var(--accent); }
+  .step.done .step-text { text-decoration: line-through; color: var(--ink-soft); }
+  .reset-btn {
+    margin-top: 14px; background: none; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 8px 18px; font-family: inherit; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+  }
+  .reset-btn:hover { border-color: var(--warn); color: var(--warn); }
+  .done-banner { display: none; margin-top: 16px; background: var(--accent); color: #fff;
+    border-radius: 12px; padding: 14px 18px; font-weight: 700; text-align: center; }
+  .done-banner.show { display: block; animation: pop 0.3s ease; }
+
+  /* ---------- pro / faq ---------- */
+  .pro-list { margin: 0; padding-left: 22px; }
+  .pro-list li { margin-bottom: 8px; font-size: 15.5px; }
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 18px; margin-bottom: 10px;
+  }
+  details summary { font-weight: 700; cursor: pointer; font-size: 15.5px; }
+  details p { margin: 10px 0 0; font-size: 15px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px;
+    font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--accent-deep); }
+
+  @media (max-width: 640px) {
+    nav.toc { display: none; }
+  }
+
+  /* ===== v2 visual layer: typography + illustrations ===== */
+  h1, h2, .brand, .quiz-result .freq {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  }
+  h1 { letter-spacing: -0.01em; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 36px; align-items: center; }
+  .hero-art { width: 100%; height: auto; display: block; }
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; gap: 16px; }
+    .hero-art { max-width: 380px; margin: 0 auto; }
+  }
+
+  .why-icon {
+    width: 54px; height: 54px; border-radius: 16px; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .why-icon svg { width: 34px; height: 34px; display: block; }
+
+  .technique-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 26px; }
+  .technique {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 16px;
+  }
+  .technique svg { width: 100%; height: auto; display: block; background: #fbf8f2; border-radius: 10px; }
+  .technique h4 { margin: 12px 0 4px; font-size: 15.5px; }
+  .technique p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ===== Upkeep Ledger closing card ===== */
+  .ledger-cta {
+    background: var(--accent-deep); border-radius: var(--radius);
+    padding: 32px 34px; display: grid; grid-template-columns: 1.4fr 0.6fr;
+    gap: 26px; align-items: center; color: #f2f7f3;
+  }
+  .ledger-cta h2 { color: #fffdf8; margin: 0 0 8px; font-size: 26px; }
+  .ledger-cta p { margin: 0 0 20px; font-size: 15.5px; color: #cfe0d4; max-width: 470px; }
+  .ledger-cta .cta-btn {
+    display: inline-block; background: #fffdf8; color: var(--accent-deep);
+    font-weight: 700; text-decoration: none; border-radius: 999px;
+    padding: 11px 24px; font-size: 15.5px; transition: background 0.15s ease;
+  }
+  .ledger-cta .cta-btn:hover { background: var(--gold-soft); }
+  .ledger-cta .cta-art { width: 100%; max-width: 190px; height: auto; display: block; margin: 0 auto; }
+  @media (max-width: 640px) {
+    .ledger-cta { grid-template-columns: 1fr; padding: 26px 24px; }
+    .ledger-cta .cta-art { max-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 512 512" aria-hidden="true" style="width:25px;height:25px;vertical-align:-5px;margin-right:4px"><rect width="512" height="512" rx="112" fill="#2c5a40"/><polygon points="120,252 256,134 392,252" fill="#fffdf8"/><rect x="152" y="244" width="208" height="148" rx="10" fill="#fffdf8"/><path d="M202 304 L246 348 L322 258" fill="none" stroke="#e0a93d" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/></svg>Upkeep <span>Guides</span><span style="color:#a8aeb0;font-size:12.5px;font-weight:700;letter-spacing:0.02em">.com</span></a>
+    <nav class="toc">
+      <a href="#why">Why</a>
+      <a href="#how-often">How often</a>
+      <a href="#cost">Cost</a>
+      <a href="#how-to">How-to</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-copy">
+      <span class="kicker">Pets · Every month</span>
+      <h1>Restock Your Pet Food (and Keep It Fresh)</h1>
+      <p class="lede">This one's really two chores hiding in a bag. The first is never <em>running out</em> — that 9pm realization the scoop hit the bottom, the store run in the rain, or worse, an abrupt swap to whatever's on the shelf that wrecks your pet's stomach for three days. The second is keeping the food you already have <em>fresh</em> — because once you roll a bag open, the fats start to oxidize, the kibble goes stale and eventually rancid, and the smell draws pantry moths, weevils, and mice. Do both right — reorder with a week's buffer, store it airtight but still in its original bag, and buy a size you'll actually finish — and mealtime stays boring in the best way.</p>
+      <div class="stat-chips">
+        <span class="chip">🗓️ Restock <em>about monthly</em></span>
+        <span class="chip">🦴 Reorder with <em>~a week's buffer</em></span>
+        <span class="chip">🫙 Store <em>airtight, bag-and-all</em></span>
+        <span class="chip">💸 Container <em>~$15–35 once</em></span>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 560 430" role="img" aria-label="Illustration of pet food being restocked and stored: kibble pours from its original bag through a scoop into an airtight storage bin in a pantry corner, the bag shows a best-by date and is nearly empty as a signal to reorder, and a happy dog and cat wait beside their bowls">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- pantry corner: back wall & shelf -->
+      <rect x="40" y="40" width="360" height="300" fill="#fffdf8"/>
+      <rect x="40" y="150" width="360" height="10" fill="#c9a06b"/>
+      <rect x="40" y="146" width="360" height="6" fill="#b9b1a3"/>
+
+      <!-- airtight storage bin on the floor -->
+      <path d="M96 250 h150 l-10 118 h-130 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4"/>
+      <!-- bin body highlight -->
+      <path d="M104 258 h134 l-2 24 h-130 z" fill="#eef4f7"/>
+      <!-- clip-lock lid, tilted open -->
+      <path d="M88 236 h166 l-6 16 h-154 z" fill="#7fb3c8"/>
+      <rect x="86" y="232" width="172" height="8" rx="4" fill="#5e9a78"/>
+      <!-- side latch clips -->
+      <rect x="90" y="290" width="10" height="22" rx="3" fill="#5e9a78"/>
+      <rect x="240" y="290" width="10" height="22" rx="3" fill="#5e9a78"/>
+      <!-- original bag sitting INSIDE the bin (peeking above the rim) -->
+      <path d="M150 200 h70 l6 40 h-82 z" fill="#c96f4a"/>
+      <path d="M150 200 h70 l3 8 h-76 z" fill="#d9663f"/>
+      <text x="162" y="222" font-size="10" fill="#fffdf8" font-weight="700">bag inside</text>
+
+      <!-- the pouring bag, held above, tipping kibble out -->
+      <g transform="rotate(20 300 120)">
+        <path d="M262 60 h76 l10 130 h-96 z" fill="#c96f4a"/>
+        <path d="M262 60 h76 l4 12 h-84 z" fill="#8a6a4f"/>
+        <!-- rolled-open top -->
+        <path d="M258 56 q40 -14 84 0 l-4 10 q-38 -12 -76 0 z" fill="#d9663f"/>
+        <!-- best-by date panel on the bag -->
+        <rect x="276" y="150" width="52" height="26" rx="4" fill="#fffdf8"/>
+        <text x="302" y="162" font-size="8" fill="#6b7376" text-anchor="middle">BEST BY</text>
+        <text x="302" y="172" font-size="9" fill="#3e7c59" text-anchor="middle" font-weight="700">12/2026</text>
+        <!-- little paw logo on bag -->
+        <circle cx="302" cy="96" r="9" fill="#e0a93d"/>
+        <circle cx="299" cy="93" r="1.8" fill="#8a6a4f"/>
+        <circle cx="305" cy="93" r="1.8" fill="#8a6a4f"/>
+        <ellipse cx="302" cy="99" rx="4" ry="3" fill="#8a6a4f"/>
+      </g>
+
+      <!-- scoop catching the stream -->
+      <path d="M196 196 q22 -10 40 2 l-6 22 q-20 -8 -38 0 z" fill="#e0a93d"/>
+      <rect x="230" y="188" width="34" height="8" rx="4" fill="#d98e3b" transform="rotate(18 247 192)"/>
+
+      <!-- stream of kibble falling from bag into scoop / bin -->
+      <g fill="#b9772f">
+        <circle cx="286" cy="150" r="4.5"/>
+        <circle cx="278" cy="166" r="4"/>
+        <circle cx="290" cy="176" r="4.2"/>
+        <circle cx="280" cy="188" r="4"/>
+        <circle cx="292" cy="198" r="4.4"/>
+        <ellipse cx="272" cy="204" rx="5" ry="3.6"/>
+      </g>
+      <!-- kibble piled in the scoop -->
+      <g fill="#c9822f">
+        <circle cx="206" cy="200" r="4"/>
+        <circle cx="216" cy="198" r="4.4"/>
+        <circle cx="226" cy="201" r="4"/>
+      </g>
+
+      <!-- nearly-empty bag on the shelf, a reorder signal -->
+      <g transform="translate(330 66)">
+        <path d="M0 30 h40 l4 54 h-48 z" fill="#c9a06b"/>
+        <path d="M-2 26 q20 -8 44 0 l-2 8 q-20 -7 -40 0 z" fill="#b9b1a3"/>
+        <!-- slumped, almost-flat look -->
+        <path d="M2 66 h36 l2 18 h-40 z" fill="#8a6a4f" opacity="0.5"/>
+        <text x="20" y="100" font-size="9" fill="#d9663f" text-anchor="middle" font-weight="700">almost empty</text>
+        <text x="20" y="112" font-size="8" fill="#6b7376" text-anchor="middle">reorder!</text>
+      </g>
+
+      <!-- happy dog waiting by his bowl, front-left -->
+      <g transform="translate(60 300)">
+        <!-- body -->
+        <ellipse cx="46" cy="56" rx="42" ry="26" fill="#c9a06b"/>
+        <!-- head -->
+        <circle cx="16" cy="38" r="22" fill="#c9a06b"/>
+        <!-- ear -->
+        <path d="M2 22 q-12 4 -8 24 q10 -6 12 -18 z" fill="#8a6a4f"/>
+        <!-- snout -->
+        <ellipse cx="2" cy="44" rx="10" ry="8" fill="#e0c48f"/>
+        <circle cx="-4" cy="43" r="3" fill="#33393b"/>
+        <!-- happy eye -->
+        <path d="M12 32 q4 -4 8 0" stroke="#33393b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <!-- tongue / open smile -->
+        <path d="M0 50 q4 6 10 3" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- wagging tail -->
+        <path d="M84 46 q22 -10 24 -30" stroke="#c9a06b" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <!-- front legs -->
+        <rect x="22" y="70" width="9" height="24" rx="4" fill="#c9a06b"/>
+        <rect x="52" y="72" width="9" height="22" rx="4" fill="#c9a06b"/>
+        <!-- food bowl -->
+        <path d="M8 96 h48 l-6 14 h-36 z" fill="#3e7c59"/>
+        <ellipse cx="32" cy="96" rx="24" ry="6" fill="#5e9a78"/>
+        <circle cx="24" cy="95" r="2.6" fill="#c9822f"/>
+        <circle cx="34" cy="96" r="2.6" fill="#b9772f"/>
+        <circle cx="42" cy="95" r="2.6" fill="#c9822f"/>
+      </g>
+
+      <!-- happy cat waiting by her bowl, front-right -->
+      <g transform="translate(410 320)">
+        <!-- body -->
+        <ellipse cx="40" cy="46" rx="34" ry="22" fill="#b9b1a3"/>
+        <!-- head -->
+        <circle cx="66" cy="28" r="18" fill="#b9b1a3"/>
+        <!-- ears -->
+        <path d="M54 14 l-4 -14 l12 8 z" fill="#b9b1a3"/>
+        <path d="M78 14 l4 -14 l-12 8 z" fill="#b9b1a3"/>
+        <path d="M55 12 l-2 -8 l7 5 z" fill="#c96f4a"/>
+        <path d="M77 12 l2 -8 l-7 5 z" fill="#c96f4a"/>
+        <!-- content eyes -->
+        <path d="M60 26 q3 -3 6 0" stroke="#33393b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <path d="M70 26 q3 -3 6 0" stroke="#33393b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <!-- nose -->
+        <path d="M67 32 l4 0 l-2 3 z" fill="#c96f4a"/>
+        <!-- whiskers -->
+        <g stroke="#8a6a4f" stroke-width="1.2" stroke-linecap="round">
+          <line x1="66" y1="33" x2="50" y2="32"/>
+          <line x1="66" y1="35" x2="50" y2="38"/>
+          <line x1="72" y1="33" x2="88" y2="32"/>
+          <line x1="72" y1="35" x2="88" y2="38"/>
+        </g>
+        <!-- curled tail -->
+        <path d="M8 46 q-16 -4 -12 -22" stroke="#b9b1a3" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <!-- cat bowl -->
+        <path d="M18 66 h40 l-5 12 h-30 z" fill="#c96f4a"/>
+        <ellipse cx="38" cy="66" rx="20" ry="5" fill="#d9663f"/>
+        <circle cx="31" cy="65" r="2.2" fill="#c9822f"/>
+        <circle cx="40" cy="66" r="2.2" fill="#b9772f"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <h2>Why it matters</h2>
+    <p class="sub">Feeding your pet feels automatic until the day it isn't — the scoop hits the bottom of the bag, or you catch a sour whiff off food that looked fine yesterday. Both failures are quiet right up until they aren't, and both are easy to prevent once you know what actually goes wrong. Here's what's at stake:</p>
+    <div class="grid cols-3">
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- empty bowl with clock -->
+          <path d="M6 20 h20 l-3 8 h-14 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+          <ellipse cx="16" cy="20" rx="10" ry="3" fill="#eef4f7" stroke="#7fb3c8" stroke-width="1.6"/>
+          <circle cx="27" cy="12" r="6.5" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+          <path d="M27 8.5 v3.5 l2.5 1.5" stroke="#d98e3b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+        <h3>Running out forces a rough switch</h3>
+        <p>An empty bag means an emergency store run — or, if the shelf is bare, an abrupt swap to a different food. Sudden diet changes upset many pets' stomachs, so the miss can turn into days of diarrhea and a vet call. A week's buffer avoids the whole scramble.</p>
+        <span class="cost">A 9pm run &amp; a queasy pet</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- open bag with wilt / oxidation waves -->
+          <path d="M9 12 h18 l2 20 h-22 z" fill="#c9a06b" stroke="#8a6a4f" stroke-width="1.6"/>
+          <path d="M8 10 q10 -5 20 0 l-1 4 q-9 -4 -18 0 z" fill="#b9b1a3"/>
+          <g stroke="#d9663f" stroke-width="1.8" fill="none" stroke-linecap="round">
+            <path d="M13 20 q3 -3 6 0 q3 3 6 0"/>
+            <path d="M13 26 q3 -3 6 0 q3 3 6 0"/>
+          </g>
+        </svg></div>
+        <h3>Open bags go stale and rancid</h3>
+        <p>The moment air gets in, kibble's fats begin to oxidize — the food loses nutrients and flavor and eventually turns rancid, which is genuinely bad for your pet. A bag rolled down on the counter for weeks is slowly spoiling even when it looks fine.</p>
+        <span class="cost">Lost nutrients, rancid fats</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- pantry moth / bug -->
+          <ellipse cx="18" cy="20" rx="4" ry="8" fill="#8a6a4f"/>
+          <path d="M18 14 q-11 -6 -13 4 q10 5 13 2 z" fill="#c9a06b" stroke="#8a6a4f" stroke-width="1.2"/>
+          <path d="M18 14 q11 -6 13 4 q-10 5 -13 2 z" fill="#c9a06b" stroke="#8a6a4f" stroke-width="1.2"/>
+          <g stroke="#8a6a4f" stroke-width="1.4" stroke-linecap="round">
+            <path d="M18 13 q-2 -5 -5 -6"/>
+            <path d="M18 13 q2 -5 5 -6"/>
+          </g>
+          <circle cx="18" cy="12" r="1.6" fill="#33393b"/>
+        </svg></div>
+        <h3>Food attracts pests</h3>
+        <p>An open or loosely stored bag is a dinner bell for pantry moths, weevils, ants, and even mice. Once they're in the food — and the pantry — they're a real chore to clear out. Airtight storage keeps the smell locked in and the bugs shut out.</p>
+        <span class="cost">Moths, weevils, ants &amp; mice</span>
+      </div>
+      <div class="card why-card">
+        <div class="why-icon"><svg viewBox="0 0 36 36" aria-hidden="true">
+          <!-- oversized bag with a big X / warning -->
+          <path d="M8 9 h20 l2 22 h-24 z" fill="#c96f4a" stroke="#8a6a4f" stroke-width="1.6"/>
+          <path d="M7 7 q11 -5 22 0 l-1 4 q-10 -4 -20 0 z" fill="#d9663f"/>
+          <circle cx="27" cy="26" r="7" fill="#fbe9e1" stroke="#d9663f" stroke-width="2"/>
+          <path d="M24 23 l6 6 M30 23 l-6 6" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+        </svg></div>
+        <h3>Over-buying backfires</h3>
+        <p>Not running out is only half the job. A bag too big to finish before its best-by date goes stale on you — so the bulk deal that looked thrifty ends in the trash. Buying the right size and finishing it fresh matters as much as never scraping the bottom.</p>
+        <span class="cost">A bulk bag wasted stale</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW OFTEN / QUIZ ============ -->
+  <section id="how-often">
+    <h2>How often should <em>you</em> restock?</h2>
+    <p class="sub">Restocking about monthly — reordering before you run out — is the sensible default. But two multiple large dogs empty a bag in a week or two, while one small cat on a big bag might take two months (and risk staleness). The right answer is a bag size you'll finish while it's fresh, reordered with a buffer. Answer four quick questions:</p>
+
+    <div class="card">
+      <div class="quiz-q" data-q="pets">
+        <div class="q-label">1. How many pets — and how big?</div>
+        <div class="pills">
+          <button class="pill" data-v="many">Multiple, or one large pet</button>
+          <button class="pill" data-v="one">One medium pet</button>
+          <button class="pill" data-v="small">One small pet</button>
+        </div>
+        <div class="q-hint">A big dog or a multi-pet household plows through a bag in weeks, so you'll restock often; one small pet sips at the same bag for a month or more — which is where staleness, not running out, becomes the risk.</div>
+      </div>
+      <div class="quiz-q" data-q="bag">
+        <div class="q-label">2. What size bag do you buy?</div>
+        <div class="pills">
+          <button class="pill" data-v="big">A big bulk bag</button>
+          <button class="pill" data-v="medium">A mid-size bag</button>
+          <button class="pill" data-v="small">A small bag</button>
+        </div>
+        <div class="q-hint">A big bag is cheaper per pound but only a bargain if you finish it fresh — pair a bulk bag with a big appetite. A small pet is often better off on a smaller bag they'll empty before it goes stale.</div>
+      </div>
+      <div class="quiz-q" data-q="storage">
+        <div class="q-label">3. How do you store the open bag?</div>
+        <div class="pills">
+          <button class="pill" data-v="airtight">Airtight container (bag inside)</button>
+          <button class="pill" data-v="rolled">The bag, rolled down &amp; clipped</button>
+          <button class="pill" data-v="open">Honestly, just left open</button>
+        </div>
+        <div class="q-hint">Airtight storage slows the fats' oxidation and shuts out pests, so the food stays good longer between refills. An open or loosely rolled bag goes stale faster — which shortens how long a bag lasts.</div>
+      </div>
+      <div class="quiz-q" data-q="buy">
+        <div class="q-label">4. How do you buy it?</div>
+        <div class="pills">
+          <button class="pill" data-v="auto">Auto-ship / subscription</button>
+          <button class="pill" data-v="planned">Planned store runs</button>
+          <button class="pill" data-v="adhoc">Whenever I remember</button>
+        </div>
+        <div class="q-hint">Auto-ship or a scheduled bulk pickup builds the buffer in for you — the food arrives before you run out. Ad-hoc "I'll grab it when I notice" buying is exactly how the 9pm scramble happens.</div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <p class="freq" id="resultFreq"></p>
+        <div id="resultBody"></div>
+        <ul id="resultReasons"></ul>
+        <div class="flip-note" id="flipNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section id="cost">
+    <h2>The cost of getting it wrong</h2>
+    <p class="sub">Pet food itself ranges widely — roughly $20 to $80 or more a bag depending on size and quality — and that's a cost you pay no matter what. What sloppy restocking adds on top is waste and trouble: rancid food you toss, an emergency small-bag store run at a premium, and vet bills when a spoiled meal or an abrupt food switch upsets your pet. A one-time airtight container is the cheap insurance against most of it:</p>
+    <div class="card">
+      <div class="calc-out">
+        <div class="calc-stat"><div class="v">$20–80+</div><div class="l">a bag of food, by size and quality — the baseline you pay either way</div></div>
+        <div class="calc-stat"><div class="v">$15–35</div><div class="l">a good airtight storage container — a one-time buy that keeps food fresh and pest-free for years</div></div>
+        <div class="calc-stat"><div class="v bad">$0</div><div class="l">the buffer itself — reordering a week early costs nothing but a little foresight</div></div>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="bar-label"><span>🦴 Reorder with a week's buffer</span><span>~$0</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:2%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🫙 One airtight storage container</span><span>$15–35 once</span></div>
+          <div class="bar-track"><div class="bar-fill good" style="width:14%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🛒 Emergency small-bag run when you're out</span><span>Premium price, per pound</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:38%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🗑️ Tossing a rancid or bug-ridden bag</span><span>Half a bag in the trash</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:58%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span>🏥 Vet visit for an abrupt-switch or spoiled-food upset</span><span>$100s</span></div>
+          <div class="bar-track"><div class="bar-fill bad" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="calc-verdict">The math isn't close: <strong>a $15–35 container and a habit of reordering a week early</strong> against wasted rancid food, premium prices on emergency small bags, and a vet bill when a spoiled meal or a forced food switch upsets your pet. Buy a size you'll finish, store it airtight in its original bag, and time the restock with a buffer — and both failure modes just stop happening.</div>
+    </div>
+  </section>
+
+  <!-- ============ HOW-TO ============ -->
+  <section id="how-to">
+    <h2>How to restock and store pet food</h2>
+    <p class="sub">The whole system is small: notice when the bag's down to about a week's worth and reorder, store the open bag airtight (and inside its own original bag), keep it cool and dry, finish it before the best-by date, and clean the bin between bags. Read the techniques first — especially the buffer and the "keep the original bag" rule — then work the checklist. Your progress saves automatically.</p>
+
+    <div class="safety">
+      <h3>⚠️ Do it safely — buffer, airtight, cool and dry</h3>
+      <ul>
+        <li><strong>Keep a buffer — reorder before the bag is empty.</strong> Aim to have about a week's worth of food left when your next bag arrives or gets picked up, so you never have to switch foods abruptly. Sudden diet changes cause GI upset — any <em>new</em> food should be transitioned in gradually over about a week.</li>
+        <li><strong>Store kibble airtight — but keep it in its ORIGINAL BAG inside the bin.</strong> An airtight container keeps out air, moisture, and pests; the original bag is engineered to preserve the fats and, critically, carries the best-by date and the lot/batch code you'll need for a recall or a quality complaint. Set the whole bag inside the bin rather than dumping loose kibble.</li>
+        <li><strong>Keep it cool and dry.</strong> Heat speeds up rancidity, so a hot garage or a sunny spot is the wrong place — a cool, dry cupboard or closet is ideal. Always use the food before its best-by date.</li>
+        <li><strong>Don't pour a new bag onto old residue.</strong> Rancid crumbs and oils at the bottom of a bin taint fresh food. Finish the old bag first, then wash and thoroughly dry the bin before the next bag goes in.</li>
+        <li><strong>Toss anything off.</strong> Food that smells rancid or sour, looks moldy, or shows bugs goes in the trash — don't try to salvage it.</li>
+        <li><strong>Refrigerate opened wet or canned food.</strong> Cover it and use it within a couple of days; don't leave it out.</li>
+        <li><strong>Keep the food sealed from the pets themselves.</strong> A pet that breaks into the bin and gorges can make itself dangerously sick — a latching, chew-resistant container protects them as much as the food.</li>
+      </ul>
+      <p style="margin:10px 0 0; font-size:14px;">This is general information — follow your vet's guidance on your pet's diet and any food transition.</p>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">🧰 What you'll need</h3>
+    <div class="tools">
+      <span class="tool-chip">An airtight storage container (bin)</span>
+      <span class="tool-chip">The food's original bag</span>
+      <span class="tool-chip">A scoop or measuring cup</span>
+      <span class="tool-chip">A cool, dry storage spot</span>
+      <span class="tool-chip">A reorder reminder (or auto-ship)</span>
+      <span class="tool-chip">A clip for the bag, if needed</span>
+      <span class="tool-chip">Mild soap &amp; a towel to clean the bin</span>
+      <span class="tool-chip">A little new food, if transitioning</span>
+    </div>
+
+    <h3 style="font-size:16px; margin:0 0 10px;">📐 Five things worth knowing before you start</h3>
+    <div class="technique-grid">
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of tracking the food level in the bag and reordering with a buffer once it is down to about a week's worth, with auto-ship helping the food arrive in time">
+          <!-- bag with a fill level marked low -->
+          <path d="M96 40 h88 l8 108 h-104 z" fill="#c9a06b" stroke="#8a6a4f" stroke-width="4"/>
+          <path d="M94 36 q46 -14 92 0 l-3 10 q-44 -12 -86 0 z" fill="#b9b1a3"/>
+          <!-- remaining food (low) -->
+          <path d="M92 120 h104 l4 28 h-112 z" fill="#c9822f"/>
+          <!-- "about a week left" line -->
+          <line x1="80" y1="120" x2="212" y2="120" stroke="#d9663f" stroke-width="2.4" stroke-dasharray="6 5"/>
+          <text x="146" y="112" font-size="11" fill="#d9663f" font-weight="700" text-anchor="middle">~1 week left</text>
+          <!-- reorder arrow / truck hint -->
+          <path d="M212 96 q26 -6 30 -30" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+          <path d="M238 66 l4 -8 l6 6" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="60" y="170" font-size="11" fill="#3e7c59" font-weight="700">reorder now — auto-ship helps</text>
+        </svg>
+        <h4>Track the level &amp; reorder with a buffer</h4>
+        <p>Notice when the bag's down to about a week's worth and reorder or plan a pickup right then — before you're scraping the bottom. An auto-ship subscription or a standing bulk order builds the buffer in so the next bag simply shows up in time.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of storing food airtight by placing the original bag, with its best-by date and batch code intact, inside a sealed bin kept cool and dry">
+          <!-- airtight bin -->
+          <path d="M70 70 h140 l-10 90 h-120 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4"/>
+          <path d="M62 56 h156 l-6 16 h-144 z" fill="#7fb3c8"/>
+          <rect x="60" y="52" width="160" height="8" rx="4" fill="#5e9a78"/>
+          <!-- latch clips -->
+          <rect x="64" y="108" width="9" height="20" rx="3" fill="#5e9a78"/>
+          <rect x="206" y="108" width="9" height="20" rx="3" fill="#5e9a78"/>
+          <!-- original bag inside -->
+          <path d="M108 78 h64 l6 74 h-76 z" fill="#c96f4a"/>
+          <path d="M106 74 q34 -10 68 0 l-3 8 q-32 -8 -62 0 z" fill="#d9663f"/>
+          <!-- best-by + batch panel -->
+          <rect x="118" y="118" width="46" height="24" rx="3" fill="#fffdf8"/>
+          <text x="141" y="129" font-size="7.5" fill="#6b7376" text-anchor="middle">BEST BY · LOT</text>
+          <text x="141" y="139" font-size="8" fill="#3e7c59" text-anchor="middle" font-weight="700">kept intact</text>
+          <text x="52" y="176" font-size="11" fill="#3e7c59" font-weight="700">airtight · bag inside · cool &amp; dry</text>
+        </svg>
+        <h4>Store it airtight, bag-and-all</h4>
+        <p>Set the original bag — best-by date and batch code still on it — inside an airtight bin, and keep the bin somewhere cool and dry. The bag preserves the fats and holds the code you'd need for a recall; the bin locks out air, moisture, and pests.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of not over-buying by choosing a bag size you will finish before its best-by date, comparing a right-sized bag against an oversized bag that goes stale">
+          <!-- right-size bag, check -->
+          <path d="M52 66 h44 l4 84 h-52 z" fill="#5e9a78" stroke="#3e7c59" stroke-width="3"/>
+          <path d="M50 62 q24 -8 48 0 l-2 8 q-22 -7 -44 0 z" fill="#3e7c59"/>
+          <circle cx="74" cy="112" r="14" fill="#e3efe8"/>
+          <path d="M67 112 l5 5 l9 -10" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="74" y="166" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">finish it fresh</text>
+          <!-- oversized bag, X -->
+          <path d="M158 40 h74 l8 110 h-90 z" fill="#c9a06b" stroke="#8a6a4f" stroke-width="3"/>
+          <path d="M156 36 q40 -12 78 0 l-3 9 q-36 -10 -72 0 z" fill="#b9b1a3"/>
+          <circle cx="196" cy="104" r="16" fill="#fbe9e1"/>
+          <path d="M189 97 l14 14 M203 97 l-14 14" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+          <text x="196" y="166" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">too big → goes stale</text>
+        </svg>
+        <h4>Don't over-buy</h4>
+        <p>Pick a bag size your pet will empty before the best-by date. A bulk bag only saves money if it's finished fresh; on a small appetite it oxidizes and goes stale before the bottom, and half of it ends up wasted. Match the bag to the mouth feeding from it.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of rotating stock and cleaning the bin, finishing the old bag before opening the new one and washing and drying the container between bags">
+          <!-- old bag, nearly empty -->
+          <path d="M46 70 h48 l4 78 h-56 z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+          <text x="72" y="118" font-size="9" fill="#6b7376" text-anchor="middle">finish</text>
+          <text x="72" y="130" font-size="9" fill="#6b7376" text-anchor="middle">first</text>
+          <!-- arrow to new -->
+          <path d="M104 108 h28 m-8 -6 l8 6 l-8 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- new bag -->
+          <path d="M144 58 h54 l5 90 h-64 z" fill="#c96f4a" stroke="#8a6a4f" stroke-width="3"/>
+          <path d="M142 54 q30 -10 58 0 l-3 8 q-27 -8 -52 0 z" fill="#d9663f"/>
+          <text x="172" y="106" font-size="9" fill="#fffdf8" text-anchor="middle" font-weight="700">then</text>
+          <text x="172" y="118" font-size="9" fill="#fffdf8" text-anchor="middle" font-weight="700">open</text>
+          <!-- wash bin / bubbles -->
+          <path d="M214 120 q10 -4 20 0 l-3 26 h-14 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.4"/>
+          <circle cx="220" cy="112" r="4" fill="#eef4f7"/>
+          <circle cx="230" cy="108" r="5" fill="#fffdf8"/>
+          <text x="60" y="172" font-size="11" fill="#3e7c59" font-weight="700">rotate old→new · wash the bin</text>
+        </svg>
+        <h4>Rotate &amp; clean</h4>
+        <p>Finish the old bag before you open the new one, so nothing sits forgotten at the bottom. Between bags, wash and thoroughly dry the bin — rancid crumbs and oil left behind will taint the fresh food you pour in on top of them.</p>
+      </div>
+      <div class="technique">
+        <svg viewBox="0 0 280 180" role="img" aria-label="Diagram of transitioning to a new food gradually by mixing increasing amounts of new food into the old over about a week, and checking each refill for freshness by smell and for bugs">
+          <!-- three bowls showing increasing new-food ratio -->
+          <g>
+            <path d="M28 96 h56 l-7 16 h-42 z" fill="#3e7c59"/>
+            <ellipse cx="56" cy="96" rx="28" ry="7" fill="#5e9a78"/>
+            <path d="M40 92 a16 5 0 0 0 20 0" fill="#c9822f"/>
+            <text x="56" y="130" font-size="9" fill="#6b7376" text-anchor="middle">75/25</text>
+          </g>
+          <g>
+            <path d="M112 96 h56 l-7 16 h-42 z" fill="#3e7c59"/>
+            <ellipse cx="140" cy="96" rx="28" ry="7" fill="#5e9a78"/>
+            <path d="M124 92 a16 5 0 0 0 32 0" fill="#c9822f"/>
+            <path d="M132 93 a8 4 0 0 0 16 0" fill="#c96f4a"/>
+            <text x="140" y="130" font-size="9" fill="#6b7376" text-anchor="middle">50/50</text>
+          </g>
+          <g>
+            <path d="M196 96 h56 l-7 16 h-42 z" fill="#3e7c59"/>
+            <ellipse cx="224" cy="96" rx="28" ry="7" fill="#5e9a78"/>
+            <path d="M208 92 a16 5 0 0 0 32 0" fill="#c96f4a"/>
+            <text x="224" y="130" font-size="9" fill="#6b7376" text-anchor="middle">25/75</text>
+          </g>
+          <!-- arrow across the week -->
+          <path d="M40 66 h200 m-10 -6 l10 6 l-10 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="140" y="56" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">mix in new food over ~a week</text>
+          <text x="140" y="152" font-size="10.5" fill="#d9663f" font-weight="700" text-anchor="middle">and smell / check for bugs each refill</text>
+        </svg>
+        <h4>Transition gradually if switching</h4>
+        <p>Changing foods? Mix a little of the new food into the old and shift the ratio over about a week so your pet's stomach keeps up — an abrupt switch is a classic cause of GI upset. And each time you refill the bowl, give the food a quick smell-and-look for freshness and bugs.</p>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Restock &amp; storage progress</span><span id="progText">0 of 11 steps</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+
+    <div id="checklist"></div>
+
+    <div class="done-banner" id="doneBanner">🎉 Reorder timed with a buffer, food stored airtight in its original bag, the bin clean, and any switch eased in gradually — no more 9pm scrambles or stale kibble. Check the level again in about a week.</div>
+    <button class="reset-btn" id="resetBtn">↺ Reset checklist</button>
+  </section>
+
+  <!-- ============ SIGNS / PRO ============ -->
+  <section id="signs">
+    <h2>Signs to act on — and when to call the vet</h2>
+    <p class="sub">A well-run food supply is quiet: the bag never quite runs dry, the kibble smells like kibble, and the bin stays bug-free. These are the signals to act — and the one that's a health issue rather than a logistics one:</p>
+    <div class="card">
+      <ul class="pro-list">
+        <li><strong>Down to about a week of food.</strong> This is your reorder trigger — not the empty bag. When the level hits roughly a week's worth, order the next bag or plan the pickup so it lands before you run out.</li>
+        <li><strong>Food that smells rancid or sour, looks moldy, or has bugs.</strong> Trust your nose. Oxidized fats smell off, mold is obvious, and pantry moths or weevils mean the batch is compromised. Toss it — don't feed it — and clean the bin before the next bag.</li>
+        <li><strong>A pet refusing food, vomiting, or with diarrhea after a food change.</strong> That's usually the switch happening too fast. Slow the transition down — go back to more of the old food and ease in the new more gradually. If the vomiting or diarrhea persists, is severe, or your pet seems unwell, call your vet.</li>
+        <li><strong>A recall on your food's batch.</strong> This is exactly why the original bag's lot/batch code matters — a recall is announced by lot number, and without the bag you can't tell whether your food is affected. Keep the bag with the code intact until the food is gone.</li>
+        <li><strong>Pro tip:</strong> if you can't finish a bag before its best-by date, you're buying too big — size down, even at a slightly higher cost per pound. Fresh food your pet actually eats beats a bulk bargain that goes stale in the bin.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>How often should I restock pet food?</summary>
+      <p>The honest answer is "before you run out," which for most households lands around monthly — but it depends entirely on how fast the food disappears. Multiple pets or one large dog can empty a big bag in a week or two; one small cat might take a couple of months on the same bag. The habit that matters more than any fixed interval is the buffer: when the bag is down to about a week's worth, reorder or plan a pickup right then. That way the next bag arrives while you still have food, and you never face the choice between a late-night store run and an abrupt, stomach-upsetting switch. An auto-ship subscription or a standing bulk order automates the buffer entirely.</p>
+    </details>
+    <details>
+      <summary>How do I store dry pet food to keep it fresh?</summary>
+      <p>Keep it airtight, cool, and dry — and keep it in its original bag inside the container. Once air reaches kibble, the fats begin to oxidize, so the food loses nutrients and flavor and slowly turns rancid; an airtight, latching bin dramatically slows that and locks out pests at the same time. Store the bin somewhere cool and dry — a cupboard or closet, never a hot garage, since heat speeds spoilage — and always use the food before its best-by date. Don't pour a new bag on top of the old residue; finish one bag, then wash and fully dry the bin before the next goes in, so rancid crumbs never taint fresh food.</p>
+    </details>
+    <details>
+      <summary>Should I keep the food in its original bag or dump it in a bin?</summary>
+      <p>Keep it in the original bag, and set that bag inside the bin. It's tempting to pour kibble straight into a nice sealed container, but the bag is doing real work: pet-food bags are often lined to preserve the fats and slow oxidation better than a plain plastic bin, and — the part people forget — the bag carries the best-by date and the lot/batch code. If there's ever a recall, it's announced by lot number, and without the bag you have no way to know whether your food is affected. The same code is what a manufacturer asks for if you report a quality problem. So use the bin for its airtight seal and pest protection, but let the bag stay with the food until it's gone.</p>
+    </details>
+    <details>
+      <summary>Does kibble go bad or rancid?</summary>
+      <p>Yes. Dry food isn't shelf-stable forever, and it degrades faster once the bag is open. Kibble is coated in fats and oils for flavor and nutrition, and those fats oxidize when exposed to air, warmth, and light — the food goes stale, loses nutritional value, and eventually turns genuinely rancid, which can make it unappetizing or upsetting to your pet. Heat accelerates all of it, which is why a hot garage is the wrong place to store food. The defenses are simple: buy a size you'll finish before the best-by date, store it airtight and cool, and give the food a quick sniff at each refill. If it smells sour or off, looks or feels greasy in a new way, or shows any bugs, throw it out.</p>
+    </details>
+    <details>
+      <summary>How do I switch my pet to a new food?</summary>
+      <p>Gradually — this is the single best way to avoid the diarrhea and vomiting that an abrupt change causes. Over roughly a week, mix increasing amounts of the new food into the old: start with mostly old food and a little new, then move toward roughly half-and-half, then mostly new, and finally all new. Your pet's digestive system adjusts to the change instead of being surprised by it. If you see loose stools or your pet turns their nose up, slow down — hold at the current ratio or step back for a few more days before increasing again. This is also exactly why the buffer matters: running out forces the fast switch you're trying to avoid. If GI upset is severe or persists, check with your vet.</p>
+    </details>
+    <details>
+      <summary>How do I keep pests out of pet food?</summary>
+      <p>An open or loosely stored bag is a magnet for pantry moths, weevils, ants, and even mice — the smell draws them and an unsealed bag lets them in. The fix is an airtight, latching container: it locks the scent in and the bugs out. Keep the bin in a cool, dry spot rather than a warm, humid one, since warmth and moisture make both spoilage and infestations worse. Wash and fully dry the container between bags so old crumbs don't harbor anything, and don't let food sit forgotten past its best-by date. If you do find moths or weevils, toss the affected food, clean the bin and the surrounding area thoroughly, and start fresh — the same airtight logic that protects kibble protects the rest of your dry goods too.</p>
+    </details>
+  </section>
+
+  <!-- ============ UPKEEP LEDGER ============ -->
+  <section id="track">
+    <div class="ledger-cta">
+      <div>
+        <h2>Running out of food is a stressful scramble — and open bags quietly go stale.</h2>
+        <p>Running out of pet food means a stressful store run or a stomach-upsetting switch — and open bags quietly go stale — so let Upkeep Ledger time your restock with a buffer and keep it fresh. It resurfaces the reorder before you hit the bottom, right alongside the pet's baths, the litter change, and every other quiet task that keeps the household running.</p>
+        <a class="cta-btn" href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=refill-pet-food&amp;utm_content=closing-card">Try Upkeep Ledger →</a>
+      </div>
+      <svg class="cta-art" viewBox="0 0 200 170" aria-hidden="true">
+        <rect x="26" y="14" width="148" height="44" rx="10" fill="#3e7c59"/>
+        <circle cx="48" cy="36" r="10" fill="#5e9a78"/>
+        <rect x="66" y="28" width="70" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="66" y="40" width="46" height="6" rx="3" fill="#5e9a78"/>
+        <rect x="14" y="68" width="172" height="58" rx="12" fill="#fffdf8"/>
+        <circle cx="42" cy="97" r="13" fill="#e3efe8"/>
+        <path d="M36 97 l4.5 4.5 l8 -9" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="64" y="84" width="68" height="8" rx="4" fill="#d8cfbe"/>
+        <rect x="64" y="98" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+        <rect x="142" y="87" width="36" height="17" rx="8.5" fill="#e0a93d"/>
+        <text x="160" y="99" font-size="9.5" font-weight="700" fill="#fffdf8" text-anchor="middle">Ready</text>
+        <rect x="26" y="136" width="148" height="22" rx="9" fill="#35684c"/>
+      </svg>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>UpkeepGuides.com</strong> — practical guides to the upkeep your life actually needs. <a href="index.html">← All upkeep guides</a></p>
+    <p>Keep the rest of your pet's routine on track — a fresh <a href="replace-pet-bed.html">pet bed</a>, <a href="bathe-pet.html">baths</a>, and (for cats) a <a href="replace-litter.html">litter change</a>; the same airtight-storage logic keeps your own <a href="inventory-pantry.html">pantry</a> pest-free.</p>
+    <p>From the makers of <a href="https://upkeepledger.com/?utm_source=upkeepguides&amp;utm_medium=content&amp;utm_campaign=refill-pet-food&amp;utm_content=footer">Upkeep Ledger</a> — one place to track every recurring task.</p>
+    <p>This is general information for planning, not veterinary advice — follow your vet's guidance on your pet's diet, any food transition, and any concerning symptoms.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ================= Quiz ================= */
+  var quizState = { pets: null, bag: null, storage: null, buy: null };
+
+  var FREQ_LABEL = {
+    0.5: "Every 2 weeks",
+    1: "Every month",
+    2: "Every 2 months"
+  };
+
+  function computePlan(s) {
+    var reasons = [];
+    var months = 1;
+    var faster = false;
+    var slower = false;
+
+    /* Pets — how many / how big */
+    if (s.pets === "many") {
+      if (months > 0.5) months = 0.5;
+      faster = true;
+      reasons.push("Multiple pets or one large dog plow through food fast, so you'll be restocking often — a big appetite is exactly what a bulk bag is for, since it gets finished while it's still fresh.");
+    } else if (s.pets === "small") {
+      if (months < 2) months = 2;
+      slower = true;
+      reasons.push("One small pet sips at a bag for weeks, so your main risk isn't running out — it's the food going stale before the bottom. Buy a size small enough to finish fresh.");
+    } else {
+      reasons.push("One medium pet on a sensibly sized bag is the ordinary case the monthly-ish default is written for.");
+    }
+
+    /* Bag — size bought */
+    if (s.bag === "big") {
+      reasons.push("A big bulk bag is cheaper per pound but only a bargain if it's finished before the best-by date — pair it with a big or multi-pet appetite, not a small one.");
+      if (s.pets !== "many") slower = true;
+    } else if (s.bag === "small") {
+      if (months > 0.5) months = Math.min(months, 1);
+      reasons.push("A small bag means more frequent trips or orders, but it's the freshest option for a light eater — you'll always be feeding a recently opened bag.");
+    } else {
+      reasons.push("A mid-size bag is a reasonable middle ground — big enough to not restock constantly, small enough to finish fresh for most single-pet homes.");
+    }
+
+    /* Storage — how the open bag is kept */
+    if (s.storage === "airtight") {
+      reasons.push("Storing the bag airtight slows the fats' oxidation and shuts out pests, so the food keeps well between refills — a real advantage if a bag lasts you a while.");
+    } else if (s.storage === "open") {
+      if (months > 1) months = 1;
+      faster = true;
+      reasons.push("A bag left open goes stale and draws pests quickly, so it won't stay good as long — get it into an airtight bin (bag and all) to actually get the freshness you're paying for.");
+    } else {
+      reasons.push("A rolled-and-clipped bag is better than open, but an airtight bin — with the original bag inside — protects the fats and keeps pests out far better.");
+    }
+
+    /* Buy — how you purchase */
+    if (s.buy === "auto") {
+      reasons.push("Auto-ship or a standing bulk order builds the buffer in for you — the food shows up before you run out, which is the whole game.");
+    } else if (s.buy === "adhoc") {
+      reasons.push("Buying \"whenever I remember\" is exactly how the 9pm scramble happens — set a reminder for when the bag hits about a week's worth, or switch to auto-ship.");
+    } else {
+      reasons.push("Planned store runs work well as long as you shop on the buffer — go when there's about a week of food left, not when the bag is empty.");
+    }
+
+    /* Balance: if both faster and slower signals fired, settle at monthly */
+    if (faster && slower) {
+      months = 1;
+    }
+
+    /* Closing note */
+    var note;
+    if (s.pets === "small" || s.bag === "big" && s.pets !== "many") {
+      note = "<strong>Watch for staleness, not just an empty bag:</strong> a light eater's real enemy is a big bag oxidizing before the bottom. Buy a size you'll finish before the best-by date, store it airtight, and sniff-check each refill.";
+    } else if (s.storage === "open" || s.storage === "rolled") {
+      note = "<strong>Get it into an airtight bin — bag and all:</strong> keep the original bag (with its best-by date and lot code) inside a sealed container, somewhere cool and dry. That's how you actually get the freshness and pest protection you're paying for.";
+    } else if (s.buy === "adhoc") {
+      note = "<strong>Automate the buffer:</strong> the surest fix for running out is auto-ship or a reminder set for when the bag hits about a week's worth. And if you ever must switch foods, do it gradually over ~a week to spare your pet's stomach.";
+    } else {
+      note = "<strong>Remember the two jobs:</strong> reorder with a week's buffer so you never run out, and store the food airtight in its original bag, cool and dry, so what you have stays fresh. Any new food goes in gradually over ~a week.";
+    }
+
+    return { months: months, reasons: reasons, note: note };
+  }
+
+  function onQuizChange() {
+    if (!quizState.pets || !quizState.bag || !quizState.storage || !quizState.buy) return;
+    var r = computePlan(quizState);
+    document.getElementById("resultFreq").textContent =
+      "Your plan: restock " + FREQ_LABEL[r.months].toLowerCase() + " — reordering with a buffer";
+    document.getElementById("resultBody").innerHTML =
+      "Reorder before you run out, then <strong>store the food airtight in its original bag, keep it cool and dry, buy a size you'll finish, and switch foods only gradually</strong>. Why this plan:";
+    var ul = document.getElementById("resultReasons");
+    ul.innerHTML = "";
+    r.reasons.forEach(function (t) {
+      var li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+    document.getElementById("flipNote").innerHTML = r.note;
+    document.getElementById("quizResult").classList.add("show");
+  }
+
+  document.querySelectorAll(".quiz-q").forEach(function (q) {
+    var key = q.getAttribute("data-q");
+    q.querySelectorAll(".pill").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        q.querySelectorAll(".pill").forEach(function (b) { b.classList.remove("selected"); });
+        btn.classList.add("selected");
+        quizState[key] = btn.getAttribute("data-v");
+        onQuizChange();
+      });
+    });
+  });
+
+  /* ================= Checklist ================= */
+  var STEPS = [
+    { phase: "Track & reorder", text: "Check the level whenever you scoop", note: "A quick glance at the bag tells you where you stand. You're watching for the moment it drops to about a week's worth of food — that's your reorder trigger, not the empty bag." },
+    { phase: "Track & reorder", text: "Reorder or plan a pickup with a week's buffer", note: "When there's roughly a week left, order the next bag or schedule the store run now, so it arrives while you still have food. This is what prevents the 9pm scramble and the abrupt switch that upsets your pet's stomach." },
+    { phase: "Track & reorder", text: "Buy a size you'll finish before the best-by date", note: "Match the bag to the appetite. A bulk bag is only a bargain if it's finished fresh; on a small eater, size down even at a higher cost per pound so nothing goes stale in the bin." },
+    { phase: "Store airtight", text: "Keep the food in its original bag", note: "Don't dump loose kibble into the bin. The bag is lined to preserve the fats and — crucially — carries the best-by date and the lot/batch code you'd need for a recall or a quality complaint. Keep it with the food until it's gone." },
+    { phase: "Store airtight", text: "Put the bag inside an airtight container", note: "Set the whole bag inside a latching, airtight bin. It locks out air, moisture, and pests, so the fats oxidize far more slowly and pantry moths and weevils stay out." },
+    { phase: "Store airtight", text: "Keep the bin somewhere cool and dry", note: "Heat speeds rancidity, so a hot garage or a sunny spot is the wrong place. A cool, dry cupboard or closet is ideal — and use the food before its best-by date." },
+    { phase: "Rotate & clean", text: "Finish the old bag before opening the new one", note: "Rotate your stock so nothing sits forgotten at the bottom. Empty the current bag first, then open the next — never run two open bags at once." },
+    { phase: "Rotate & clean", text: "Wash and fully dry the bin between bags", note: "Rancid crumbs and oil at the bottom of the bin will taint the fresh food you pour on top. Wash the container with mild soap, rinse, and dry it completely before the new bag goes in." },
+    { phase: "Rotate & clean", text: "Refrigerate opened wet or canned food", note: "Cover any opened wet or canned food and use it within a couple of days. Don't leave it sitting out, and keep the dry-food bin latched so pets can't break in and gorge." },
+    { phase: "Transition & check", text: "If switching foods, mix new into old over ~a week", note: "An abrupt change is a classic cause of GI upset. Start with mostly old food and a little new, shift toward half-and-half, then mostly new, then all new — slowing down if you see loose stools or refusal." },
+    { phase: "Transition & check", text: "Smell-and-look each refill, and log the restock", note: "At each refill, give the food a quick sniff and glance for rancid smell, mold, or bugs — toss anything off. Then note the date so the next reorder lands on your buffer and, if switching, your vet's guidance is followed." }
+  ];
+
+  var LS_KEY = "upkeepguides:refill-pet-food:checklist";
+  var saved = [];
+  try { saved = JSON.parse(localStorage.getItem(LS_KEY) || "[]"); } catch (e) { saved = []; }
+
+  var listEl = document.getElementById("checklist");
+  var currentPhase = null;
+  STEPS.forEach(function (s, i) {
+    if (s.phase !== currentPhase) {
+      currentPhase = s.phase;
+      var h = document.createElement("h3");
+      h.textContent = currentPhase;
+      var wrap = document.createElement("div");
+      wrap.className = "phase";
+      wrap.appendChild(h);
+      listEl.appendChild(wrap);
+    }
+    var label = document.createElement("label");
+    label.className = "step" + (saved.indexOf(i) !== -1 ? " done" : "");
+    label.innerHTML =
+      '<input type="checkbox" data-i="' + i + '"' + (saved.indexOf(i) !== -1 ? " checked" : "") + ">" +
+      '<span class="step-text">' + s.text + "<small>" + s.note + "</small></span>";
+    listEl.appendChild(label);
+  });
+
+  function refreshProgress() {
+    var boxes = listEl.querySelectorAll("input[type=checkbox]");
+    var done = [];
+    boxes.forEach(function (b) {
+      b.closest(".step").classList.toggle("done", b.checked);
+      if (b.checked) done.push(parseInt(b.getAttribute("data-i"), 10));
+    });
+    var pct = (done.length / STEPS.length) * 100;
+    document.getElementById("progFill").style.width = pct + "%";
+    document.getElementById("progText").textContent = done.length + " of " + STEPS.length + " steps";
+    document.getElementById("doneBanner").classList.toggle("show", done.length === STEPS.length);
+    try { localStorage.setItem(LS_KEY, JSON.stringify(done)); } catch (e) {}
+  }
+
+  listEl.addEventListener("change", refreshProgress);
+  refreshProgress();
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    listEl.querySelectorAll("input[type=checkbox]").forEach(function (b) { b.checked = false; });
+    refreshProgress();
+  });
+})();
+</script>
+</body>
+</html>
