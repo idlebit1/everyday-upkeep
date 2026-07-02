@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of contact lens care on a clean bathroom counter: a freshly washed hand balances a single clear contact lens on a fingertip above an open two-well lens case, a blister-pack box of fresh lenses sits beside a tall bottle of contact solution, and a folded towel and bar of soap rest nearby on the counter">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- bathroom counter surface -->
+      <rect x="36" y="330" width="498" height="14" rx="5" fill="#c9a06b"/>
+      <rect x="36" y="344" width="498" height="10" rx="4" fill="#b9b1a3"/>
+      <!-- backsplash / wall tint -->
+      <rect x="36" y="40" width="498" height="290" fill="#fffdf8" opacity="0.0"/>
+
+      <!-- bottle of contact solution, right -->
+      <rect x="420" y="150" width="72" height="178" rx="14" fill="#7fb3c8"/>
+      <rect x="420" y="150" width="72" height="60" rx="14" fill="#9cc3d4"/>
+      <rect x="438" y="120" width="36" height="34" rx="6" fill="#5e9a78"/>
+      <rect x="444" y="106" width="24" height="18" rx="4" fill="#3e7c59"/>
+      <!-- label on the bottle -->
+      <rect x="430" y="216" width="52" height="70" rx="6" fill="#fffdf8"/>
+      <rect x="438" y="228" width="36" height="6" rx="3" fill="#5e9a78"/>
+      <rect x="438" y="240" width="28" height="5" rx="2.5" fill="#dce8ee"/>
+      <g stroke="#7fb3c8" stroke-width="2" stroke-linecap="round">
+        <path d="M444 262 q5 5 0 10 q-5 5 0 10"/>
+      </g>
+      <text x="456" y="304" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">solution</text>
+
+      <!-- blister-pack box of fresh lenses, back-left -->
+      <rect x="60" y="176" width="118" height="150" rx="8" fill="#3e7c59"/>
+      <rect x="60" y="176" width="118" height="44" rx="8" fill="#2c5a40"/>
+      <rect x="74" y="190" width="74" height="8" rx="4" fill="#5e9a78"/>
+      <rect x="74" y="204" width="50" height="7" rx="3.5" fill="#5e9a78"/>
+      <!-- little eye glyph on the box -->
+      <ellipse cx="119" cy="266" rx="30" ry="18" fill="#fffdf8"/>
+      <circle cx="119" cy="266" r="11" fill="#7fb3c8"/>
+      <circle cx="119" cy="266" r="5" fill="#2c5a40"/>
+      <circle cx="123" cy="262" r="2" fill="#fffdf8"/>
+      <text x="119" y="312" font-size="10" fill="#fffdf8" font-weight="700" text-anchor="middle">30 lenses</text>
+      <!-- a couple of foil blister pucks beside the box -->
+      <circle cx="196" cy="312" r="13" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+      <circle cx="196" cy="312" r="6" fill="#fffdf8"/>
+      <circle cx="220" cy="316" r="11" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+      <circle cx="220" cy="316" r="5" fill="#fffdf8"/>
+
+      <!-- open two-well lens case, center-front on the counter -->
+      <ellipse cx="262" cy="312" rx="78" ry="20" fill="#5e9a78"/>
+      <ellipse cx="262" cy="308" rx="78" ry="18" fill="#3e7c59"/>
+      <!-- left well (R) with solution -->
+      <ellipse cx="232" cy="306" rx="24" ry="12" fill="#2c5a40"/>
+      <ellipse cx="232" cy="304" rx="20" ry="9" fill="#7fb3c8"/>
+      <text x="232" y="332" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">L</text>
+      <!-- right well (L) with solution -->
+      <ellipse cx="292" cy="306" rx="24" ry="12" fill="#2c5a40"/>
+      <ellipse cx="292" cy="304" rx="20" ry="9" fill="#7fb3c8"/>
+      <text x="292" y="332" font-size="11" fill="#2c5a40" font-weight="700" text-anchor="middle">R</text>
+      <!-- the two screw-off lids set beside the case -->
+      <ellipse cx="344" cy="320" rx="14" ry="7" fill="#5e9a78"/>
+      <ellipse cx="362" cy="324" rx="14" ry="7" fill="#3e7c59"/>
+
+      <!-- freshly washed hand with a lens balanced on a fingertip, upper-center -->
+      <!-- forearm -->
+      <path d="M250 240 q14 36 8 84" stroke="#e8b48f" stroke-width="26" fill="none" stroke-linecap="round"/>
+      <!-- palm -->
+      <path d="M232 188 q-14 16 -8 40 q4 18 26 22 q26 4 38 -14 q8 -14 0 -30 z" fill="#e8b48f"/>
+      <!-- folded fingers -->
+      <path d="M240 184 q4 -14 14 -12 q8 2 6 16" fill="#e8b48f"/>
+      <path d="M256 178 q4 -14 14 -12 q8 2 6 16" fill="#e8b48f"/>
+      <!-- the index fingertip held up, lens balanced on it -->
+      <path d="M226 196 q-4 -26 8 -40 q10 -10 18 0 q6 10 0 26 q-4 12 -10 18" fill="#e8b48f"/>
+      <path d="M232 158 q-3 6 -1 13" stroke="#d99c73" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <!-- the clear contact lens, a thin bowl on the fingertip -->
+      <ellipse cx="236" cy="150" rx="22" ry="9" fill="#dce8ee" opacity="0.85" stroke="#7fb3c8" stroke-width="2"/>
+      <path d="M214 150 q22 14 44 0" fill="none" stroke="#5e9a78" stroke-width="2" stroke-linecap="round"/>
+      <!-- tiny shine on the lens -->
+      <path d="M226 146 q6 -3 12 0" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <!-- sparkle near the lens -->
+      <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+        <path d="M270 132 l0 9 M265.5 136.5 l9 0"/>
+      </g>
+
+      <!-- folded towel, front-left corner of the counter -->
+      <path d="M44 352 h84 l-6 26 h-72 z" fill="#7fb3c8"/>
+      <path d="M44 352 h84 l-4 9 h-76 z" fill="#9cc3d4"/>
+      <g stroke="#cdd9de" stroke-width="1.6">
+        <line x1="58" y1="366" x2="112" y2="366"/>
+        <line x1="56" y1="372" x2="110" y2="372"/>
+      </g>
+
+      <!-- bar of soap by the towel -->
+      <rect x="138" y="356" width="40" height="20" rx="8" fill="#c96f4a"/>
+      <rect x="138" y="356" width="40" height="9" rx="6" fill="#d9663f"/>
+      <circle cx="150" cy="350" r="4" fill="#fffdf8" opacity="0.85"/>
+      <circle cx="160" cy="346" r="3" fill="#fffdf8" opacity="0.7"/>
+    </svg>

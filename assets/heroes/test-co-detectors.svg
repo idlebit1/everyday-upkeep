@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person on a step stool reaching up to press the test button on a wall-mounted carbon monoxide alarm near a bedroom door, with sound arcs ringing out, a gas furnace and water heater along the wall, and a pack of fresh batteries waiting on a side table">
+      <ellipse cx="280" cy="402" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- back wall line -->
+      <rect x="36" y="14" width="488" height="16" rx="4" fill="#efe7d8"/>
+      <line x1="36" y1="30" x2="524" y2="30" stroke="#d8cfbe" stroke-width="3"/>
+      <!-- CO alarm on the wall, near the bedroom -->
+      <rect x="276" y="78" width="58" height="44" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+      <g stroke="#9cc0d4" stroke-width="2.5" stroke-linecap="round">
+        <line x1="286" y1="90" x2="324" y2="90"/>
+        <line x1="286" y1="98" x2="324" y2="98"/>
+      </g>
+      <circle cx="290" cy="112" r="4.5" fill="#e0a93d"/>
+      <rect x="300" y="106" width="24" height="11" rx="3" fill="#dce8ee"/>
+      <text x="312" y="115" font-size="9" font-weight="800" fill="#5e9a78" text-anchor="middle">CO</text>
+      <!-- sound arcs -->
+      <g stroke="#d9663f" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M256 84 q-14 16 0 32"/>
+        <path d="M354 84 q14 16 0 32"/>
+      </g>
+      <g stroke="#e0a93d" stroke-width="3.5" fill="none" stroke-linecap="round">
+        <path d="M236 76 q-22 24 0 48"/>
+        <path d="M374 76 q22 24 0 48"/>
+      </g>
+      <!-- bedroom door, right of the alarm -->
+      <rect x="356" y="118" width="78" height="178" rx="4" fill="#e6dccb" stroke="#d8cfbe" stroke-width="3"/>
+      <rect x="366" y="128" width="58" height="74" rx="3" fill="#f1e9dc"/>
+      <rect x="366" y="210" width="58" height="78" rx="3" fill="#f1e9dc"/>
+      <circle cx="416" cy="208" r="4" fill="#b9b1a3"/>
+      <!-- gas furnace, far left (a CO source) -->
+      <rect x="52" y="232" width="86" height="120" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <rect x="64" y="246" width="62" height="30" rx="6" fill="#eef4f7"/>
+      <circle cx="95" cy="312" r="20" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5"/>
+      <!-- pilot flame -->
+      <path d="M95 322 c5 5 7 8 7 12 a7 7 0 0 1 -14 0 c0 -4 2 -7 7 -12 z" fill="#d9663f"/>
+      <path d="M95 328 c2.5 2.5 3.5 4 3.5 6 a3.5 3.5 0 0 1 -7 0 c0 -2 1 -3.5 3.5 -6 z" fill="#e0a93d"/>
+      <!-- flue pipe rising from the furnace -->
+      <rect x="120" y="190" width="14" height="46" fill="#b9b1a3"/>
+      <!-- water heater beside it (another CO source) -->
+      <rect x="150" y="252" width="52" height="100" rx="20" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <rect x="170" y="200" width="12" height="54" fill="#b9b1a3"/>
+      <circle cx="176" cy="320" r="6" fill="#e0a93d"/>
+      <!-- side table with battery pack -->
+      <rect x="450" y="320" width="92" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="460" y="330" width="10" height="60" fill="#8a6a4f"/>
+      <rect x="522" y="330" width="10" height="60" fill="#8a6a4f"/>
+      <rect x="470" y="290" width="38" height="30" rx="4" fill="#e0a93d"/>
+      <rect x="470" y="290" width="38" height="9" rx="4" fill="#d98e3b"/>
+      <text x="489" y="313" font-size="12" font-weight="800" fill="#fffdf8" text-anchor="middle">AA</text>
+      <rect x="514" y="300" width="14" height="20" rx="3" fill="#c96f4a"/>
+      <rect x="518" y="296" width="6" height="4" fill="#8a6a4f"/>
+      <!-- person on step stool, reaching up to the alarm -->
+      <rect x="216" y="358" width="84" height="12" rx="5" fill="#c96f4a"/>
+      <rect x="222" y="370" width="9" height="28" fill="#9a4f33"/>
+      <rect x="285" y="370" width="9" height="28" fill="#9a4f33"/>
+      <rect x="232" y="380" width="52" height="9" rx="4" fill="#c96f4a"/>
+      <!-- legs -->
+      <rect x="242" y="294" width="14" height="66" rx="6" fill="#2c5a40"/>
+      <rect x="262" y="294" width="14" height="66" rx="6" fill="#2c5a40"/>
+      <!-- torso -->
+      <rect x="234" y="216" width="50" height="86" rx="18" fill="#3e7c59"/>
+      <!-- reaching arm toward the alarm -->
+      <path d="M270 230 Q284 168 296 124" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="298" cy="118" r="7" fill="#c9a06b"/>
+      <!-- other arm -->
+      <path d="M240 240 Q224 262 230 284" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <circle cx="231" cy="290" r="6.5" fill="#c9a06b"/>
+      <!-- head -->
+      <circle cx="254" cy="192" r="18" fill="#c9a06b"/>
+      <path d="M236 188 q4 -16 20 -16 q12 0 16 10 q-10 -4 -18 -2 q-12 2 -18 8" fill="#8a6a4f"/>
+      <!-- plant for warmth -->
+      <circle cx="396" cy="346" r="17" fill="#5e9a78"/>
+      <circle cx="414" cy="334" r="14" fill="#3e7c59"/>
+      <circle cx="418" cy="354" r="11" fill="#5e9a78"/>
+      <rect x="392" y="362" width="30" height="28" rx="4" fill="#c96f4a"/>
+    </svg>

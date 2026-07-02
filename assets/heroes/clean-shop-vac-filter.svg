@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a shop vacuum filter: the vacuum sits with its lid off, the pleated cartridge filter pulled out, a gloved hand taps a cloud of dust out of the filter outdoors, a clean spare cartridge and a foam wet-filter sleeve sit beside it on the ground, a dust mask rests nearby, set in a garage workshop with a pegboard of tools on the wall">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- pegboard / workshop wall -->
+      <rect x="372" y="34" width="172" height="120" rx="8" fill="#c9a06b" opacity="0.5"/>
+      <g fill="#8a6a4f" opacity="0.4">
+        <circle cx="390" cy="50" r="2"/><circle cx="414" cy="50" r="2"/><circle cx="438" cy="50" r="2"/><circle cx="462" cy="50" r="2"/><circle cx="486" cy="50" r="2"/><circle cx="510" cy="50" r="2"/><circle cx="530" cy="50" r="2"/>
+        <circle cx="390" cy="74" r="2"/><circle cx="414" cy="74" r="2"/><circle cx="438" cy="74" r="2"/><circle cx="462" cy="74" r="2"/><circle cx="486" cy="74" r="2"/><circle cx="510" cy="74" r="2"/><circle cx="530" cy="74" r="2"/>
+        <circle cx="390" cy="98" r="2"/><circle cx="414" cy="98" r="2"/><circle cx="438" cy="98" r="2"/><circle cx="462" cy="98" r="2"/><circle cx="486" cy="98" r="2"/><circle cx="510" cy="98" r="2"/><circle cx="530" cy="98" r="2"/>
+      </g>
+      <!-- a hanging tool on the pegboard -->
+      <rect x="494" y="58" width="8" height="34" rx="3" fill="#5e9a78"/>
+      <rect x="486" y="56" width="24" height="8" rx="3" fill="#3e7c59"/>
+
+      <!-- shop vacuum body (drum) -->
+      <path d="M150 200 q-6 0 -6 8 l8 150 q1 14 15 14 h96 q14 0 15 -14 l8 -150 q0 -8 -6 -8 z" fill="#c96f4a"/>
+      <!-- drum highlight -->
+      <path d="M158 206 l7 144 q0 6 6 6 h10 l-9 -150 z" fill="#d9663f" opacity="0.5"/>
+      <!-- caster wheels -->
+      <circle cx="170" cy="380" r="12" fill="#8a6a4f"/>
+      <circle cx="262" cy="380" r="12" fill="#8a6a4f"/>
+      <circle cx="170" cy="380" r="4" fill="#b9b1a3"/>
+      <circle cx="262" cy="380" r="4" fill="#b9b1a3"/>
+      <!-- the lid / motor head, lifted OFF and set to the side -->
+      <g transform="rotate(-14 300 168)">
+        <ellipse cx="300" cy="170" rx="62" ry="20" fill="#2c5a40"/>
+        <rect x="238" y="138" width="124" height="34" rx="14" fill="#3e7c59"/>
+        <ellipse cx="300" cy="138" rx="62" ry="18" fill="#5e9a78"/>
+        <!-- carry handle on the lid -->
+        <path d="M280 130 q20 -22 40 0" fill="none" stroke="#2c5a40" stroke-width="7" stroke-linecap="round"/>
+        <!-- vents on the motor head -->
+        <g stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round">
+          <line x1="270" y1="150" x2="270" y2="160"/>
+          <line x1="284" y1="150" x2="284" y2="160"/>
+          <line x1="316" y1="150" x2="316" y2="160"/>
+          <line x1="330" y1="150" x2="330" y2="160"/>
+        </g>
+      </g>
+      <!-- the open drum rim showing it's lidless -->
+      <ellipse cx="225" cy="202" rx="72" ry="18" fill="#a85638"/>
+      <ellipse cx="225" cy="200" rx="64" ry="14" fill="#7a4128"/>
+      <!-- leftover debris inside the drum -->
+      <g fill="#b9b1a3" opacity="0.7">
+        <circle cx="206" cy="202" r="3"/>
+        <circle cx="232" cy="206" r="2.4"/>
+        <circle cx="248" cy="200" r="2.8"/>
+      </g>
+
+      <!-- gloved hand tapping the pleated cartridge filter outdoors -->
+      <!-- the pleated cartridge being held up -->
+      <g transform="rotate(8 110 150)">
+        <ellipse cx="110" cy="98" rx="34" ry="11" fill="#e0a93d"/>
+        <rect x="76" y="98" width="68" height="96" fill="#f0d59a"/>
+        <!-- pleat lines -->
+        <g stroke="#d98e3b" stroke-width="2.4">
+          <line x1="86" y1="98" x2="86" y2="194"/>
+          <line x1="96" y1="98" x2="96" y2="194"/>
+          <line x1="106" y1="98" x2="106" y2="194"/>
+          <line x1="116" y1="98" x2="116" y2="194"/>
+          <line x1="126" y1="98" x2="126" y2="194"/>
+          <line x1="136" y1="98" x2="136" y2="194"/>
+        </g>
+        <ellipse cx="110" cy="194" rx="34" ry="11" fill="#d98e3b"/>
+        <!-- top cap -->
+        <ellipse cx="110" cy="98" rx="34" ry="11" fill="none" stroke="#d98e3b" stroke-width="2.5"/>
+      </g>
+      <!-- gloved hand gripping the bottom of the cartridge -->
+      <ellipse cx="118" cy="206" rx="22" ry="15" fill="#7fb3c8"/>
+      <path d="M100 200 q-6 8 0 16" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M132 248 q14 18 0 36" stroke="#7fb3c8" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <!-- dust cloud knocked out of the filter -->
+      <g fill="#d8cfbe" opacity="0.7">
+        <circle cx="70" cy="150" r="14"/>
+        <circle cx="50" cy="166" r="11"/>
+        <circle cx="62" cy="182" r="13"/>
+        <circle cx="40" cy="148" r="9"/>
+        <circle cx="78" cy="172" r="9"/>
+        <circle cx="46" cy="190" r="8"/>
+      </g>
+      <g fill="#b9b1a3" opacity="0.6">
+        <circle cx="34" cy="160" r="2.4"/>
+        <circle cx="56" cy="140" r="2"/>
+        <circle cx="30" cy="178" r="2.2"/>
+        <circle cx="74" cy="196" r="2"/>
+      </g>
+
+      <!-- clean spare pleated cartridge standing on the ground, right -->
+      <g>
+        <ellipse cx="430" cy="300" rx="26" ry="8" fill="#5e9a78"/>
+        <rect x="404" y="300" width="52" height="74" fill="#a7d0b8"/>
+        <g stroke="#5e9a78" stroke-width="2">
+          <line x1="412" y1="300" x2="412" y2="374"/>
+          <line x1="420" y1="300" x2="420" y2="374"/>
+          <line x1="430" y1="300" x2="430" y2="374"/>
+          <line x1="440" y1="300" x2="440" y2="374"/>
+          <line x1="448" y1="300" x2="448" y2="374"/>
+        </g>
+        <ellipse cx="430" cy="374" rx="26" ry="8" fill="#3e7c59"/>
+        <ellipse cx="430" cy="300" rx="26" ry="8" fill="none" stroke="#3e7c59" stroke-width="2"/>
+        <!-- sparkle = clean -->
+        <g stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round">
+          <path d="M462 296 l0 9 M457.5 300.5 l9 0"/>
+        </g>
+        <text x="404" y="392" font-size="11" fill="#3e7c59" font-weight="700">clean</text>
+      </g>
+
+      <!-- foam wet-filter sleeve on the ground, front-right -->
+      <g>
+        <rect x="478" y="332" width="48" height="44" rx="10" fill="#dce8ee"/>
+        <rect x="478" y="332" width="48" height="44" rx="10" fill="none" stroke="#7fb3c8" stroke-width="3"/>
+        <!-- foam texture -->
+        <g fill="#7fb3c8" opacity="0.5">
+          <circle cx="490" cy="346" r="2.4"/>
+          <circle cx="504" cy="342" r="2.2"/>
+          <circle cx="516" cy="350" r="2.4"/>
+          <circle cx="496" cy="360" r="2.2"/>
+          <circle cx="512" cy="364" r="2.4"/>
+        </g>
+        <text x="476" y="392" font-size="10.5" fill="#7fb3c8" font-weight="700">foam (wet)</text>
+      </g>
+
+      <!-- dust mask resting on the ground, front-left -->
+      <g>
+        <path d="M196 360 q34 -20 68 0 q-2 30 -34 32 q-32 -2 -34 -32 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+        <path d="M196 360 q34 12 68 0" fill="none" stroke="#b9b1a3" stroke-width="2"/>
+        <!-- straps -->
+        <path d="M196 360 q-20 6 -22 26" fill="none" stroke="#d98e3b" stroke-width="3" stroke-linecap="round"/>
+        <path d="M264 360 q20 6 22 26" fill="none" stroke="#d98e3b" stroke-width="3" stroke-linecap="round"/>
+        <!-- exhalation valve -->
+        <circle cx="230" cy="372" r="6" fill="#8a6a4f"/>
+      </g>
+    </svg>

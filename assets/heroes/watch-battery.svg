@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a wristwatch opened face-down on a soft cloth at a workbench, its case back removed to reveal the movement and a round silver battery, with a small case-back tool, plastic tweezers holding a fresh battery, a loupe, and a window with sunlight nearby">
+      <ellipse cx="282" cy="402" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="402" y="42" width="114" height="118" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="459" y1="45" x2="459" y2="157" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="405" y1="101" x2="513" y2="101" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="484" cy="74" r="14" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="484" y1="51" x2="484" y2="57"/>
+        <line x1="506" y1="74" x2="500" y2="74"/>
+        <line x1="500" y1="58" x2="496" y2="62"/>
+      </g>
+      <rect x="390" y="34" width="138" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- desk -->
+      <rect x="36" y="338" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="60" y="354" width="14" height="42" rx="6" fill="#8a6a4f"/>
+      <rect x="486" y="354" width="14" height="42" rx="6" fill="#8a6a4f"/>
+      <!-- soft cloth under the watch -->
+      <path d="M120 312 q-8 -54 60 -60 q120 -10 188 4 q40 6 36 56 q-2 22 -40 24 q-130 8 -204 0 q-38 -4 -40 -24 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <!-- opened watch, face-down, case back off -->
+      <!-- case body -->
+      <circle cx="222" cy="232" r="78" fill="#b9b1a3"/>
+      <circle cx="222" cy="232" r="78" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- inner movement plate -->
+      <circle cx="222" cy="232" r="60" fill="#e3efe8"/>
+      <circle cx="222" cy="232" r="60" fill="none" stroke="#5e9a78" stroke-width="2.5"/>
+      <!-- gear hints -->
+      <circle cx="200" cy="214" r="13" fill="none" stroke="#5e9a78" stroke-width="3" stroke-dasharray="3 4"/>
+      <circle cx="244" cy="250" r="10" fill="none" stroke="#5e9a78" stroke-width="3" stroke-dasharray="3 4"/>
+      <circle cx="248" cy="210" r="7" fill="none" stroke="#5e9a78" stroke-width="2.5" stroke-dasharray="2 3"/>
+      <!-- the silver battery seated in the movement -->
+      <circle cx="222" cy="246" r="22" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <circle cx="222" cy="246" r="13" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <text x="222" y="250" font-size="11" font-weight="700" fill="#6b7376" text-anchor="middle" font-family="Georgia, serif">+</text>
+      <!-- retaining clip arm -->
+      <path d="M222 224 q26 -2 30 18" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- crown + stem on the side -->
+      <rect x="296" y="226" width="16" height="12" rx="3" fill="#8a6a4f"/>
+      <!-- the removed case back, leaning -->
+      <g transform="rotate(-16 330 286)">
+        <circle cx="330" cy="286" r="46" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+        <circle cx="330" cy="286" r="34" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-dasharray="2 5"/>
+        <text x="330" y="290" font-size="9.5" fill="#6b7376" text-anchor="middle">SR626SW</text>
+      </g>
+      <!-- case-back pry tool -->
+      <g transform="rotate(40 96 150)">
+        <rect x="78" y="146" width="74" height="12" rx="6" fill="#c96f4a"/>
+        <polygon points="152,148 168,152 152,156" fill="#b9b1a3"/>
+      </g>
+      <!-- plastic tweezers holding a fresh battery -->
+      <g transform="translate(360 150) rotate(28)">
+        <path d="M0 0 q40 14 78 6" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M0 14 q40 4 78 -2" stroke="#5e9a78" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <circle cx="92" cy="6" r="13" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+        <circle cx="92" cy="6" r="6" fill="#fffdf8"/>
+      </g>
+      <!-- loupe / magnifier -->
+      <g transform="translate(404 268)">
+        <circle cx="22" cy="22" r="22" fill="#dce8ee" opacity="0.6" stroke="#8a6a4f" stroke-width="4"/>
+        <line x1="38" y1="38" x2="62" y2="62" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <!-- plant -->
+      <ellipse cx="40" cy="318" rx="8" ry="13" fill="#5e9a78" transform="rotate(-26 40 318)"/>
+      <ellipse cx="58" cy="320" rx="8" ry="13" fill="#3e7c59" transform="rotate(22 58 320)"/>
+      <path d="M42 338 h22 l-4 -22 h-14 z" fill="#c96f4a" transform="translate(0 -2)"/>
+      <!-- floor shadow -->
+      <ellipse cx="282" cy="396" rx="150" ry="10" fill="#b9b1a3" opacity="0.45"/>
+    </svg>

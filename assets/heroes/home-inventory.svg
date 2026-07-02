@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person holding up a phone to photograph the contents of a living room — a sofa, a television, a lamp, and shelves — while a labeled list and a cloud-backup icon float beside it, representing a home inventory">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="70" cy="60" r="23" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="58" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="70" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- room: floor + back wall -->
+      <rect x="64" y="120" width="312" height="232" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="64" y="300" width="312" height="52" rx="8" fill="#f3ece0"/>
+      <!-- window on the wall -->
+      <rect x="92" y="148" width="74" height="60" rx="4" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="129" y1="148" x2="129" y2="208" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="92" y1="178" x2="166" y2="178" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- shelves with items -->
+      <rect x="296" y="150" width="64" height="10" rx="2" fill="#8a6a4f"/>
+      <rect x="296" y="196" width="64" height="10" rx="2" fill="#8a6a4f"/>
+      <rect x="302" y="124" width="12" height="26" rx="2" fill="#5e9a78"/>
+      <rect x="318" y="130" width="12" height="20" rx="2" fill="#c96f4a"/>
+      <rect x="334" y="126" width="12" height="24" rx="2" fill="#e0a93d"/>
+      <rect x="306" y="172" width="14" height="24" rx="2" fill="#7fb3c8"/>
+      <rect x="326" y="178" width="12" height="18" rx="2" fill="#d98e3b"/>
+      <!-- television -->
+      <rect x="196" y="156" width="78" height="48" rx="4" fill="#33393b"/>
+      <rect x="202" y="162" width="66" height="36" rx="2" fill="#5f93ad"/>
+      <rect x="228" y="204" width="14" height="10" fill="#8a6a4f"/>
+      <rect x="212" y="214" width="46" height="5" rx="2.5" fill="#8a6a4f"/>
+      <!-- sofa -->
+      <rect x="96" y="262" width="150" height="40" rx="10" fill="#c96f4a"/>
+      <rect x="92" y="234" width="26" height="68" rx="10" fill="#d9663f"/>
+      <rect x="224" y="234" width="26" height="68" rx="10" fill="#d9663f"/>
+      <rect x="118" y="248" width="52" height="26" rx="6" fill="#d9663f"/>
+      <rect x="172" y="248" width="52" height="26" rx="6" fill="#d9663f"/>
+      <!-- floor lamp -->
+      <line x1="338" y1="302" x2="338" y2="232" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M322 232 h32 l-8 -22 h-16 z" fill="#e0a93d"/>
+      <rect x="324" y="300" width="28" height="6" rx="3" fill="#8a6a4f"/>
+      <!-- person photographing -->
+      <circle cx="446" cy="232" r="22" fill="#d9a36b"/>
+      <path d="M446 254 q-34 0 -38 56 h76 q-4 -56 -38 -56 z" fill="#5e9a78"/>
+      <path d="M410 286 q-8 -30 26 -34" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <!-- phone held up, capturing the room -->
+      <rect x="402" y="238" width="36" height="56" rx="7" fill="#2c5a40" transform="rotate(-18 420 266)"/>
+      <rect x="408" y="246" width="24" height="40" rx="3" fill="#cfe3ec" transform="rotate(-18 420 266)"/>
+      <circle cx="416" cy="252" r="4" fill="#33393b" transform="rotate(-18 420 266)"/>
+      <!-- capture rays -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.85">
+        <line x1="384" y1="232" x2="364" y2="222"/>
+        <line x1="382" y1="252" x2="360" y2="252"/>
+        <line x1="386" y1="272" x2="366" y2="282"/>
+      </g>
+      <!-- floating inventory list card -->
+      <rect x="22" y="250" width="92" height="92" rx="9" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <rect x="34" y="262" width="44" height="8" rx="4" fill="#3e7c59"/>
+      <g stroke="#d8cfbe" stroke-width="5" stroke-linecap="round">
+        <line x1="46" y1="284" x2="100" y2="284"/>
+        <line x1="46" y1="300" x2="100" y2="300"/>
+        <line x1="46" y1="316" x2="86" y2="316"/>
+      </g>
+      <circle cx="36" cy="284" r="4" fill="#5e9a78"/>
+      <circle cx="36" cy="300" r="4" fill="#5e9a78"/>
+      <circle cx="36" cy="316" r="4" fill="#5e9a78"/>
+      <!-- cloud backup badge -->
+      <path d="M150 92 Q150 70 174 70 Q182 52 204 58 Q226 54 228 76 Q248 78 246 98 Q244 112 226 112 H166 Q150 110 150 92 Z" fill="#7fb3c8"/>
+      <path d="M198 80 v22 m0 0 l-8 -8 m8 8 l8 -8" stroke="#fffdf8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- shrubs -->
+      <circle cx="40" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="522" cy="388" r="14" fill="#5e9a78"/>
+      <circle cx="540" cy="394" r="10" fill="#3e7c59"/>
+    </svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a reassuring skin check: a friendly dermatologist holds a dermatoscope up to a patient's arm to examine the skin, a small ABCDE mole reference card sits nearby, a hand mirror for self-exams rests on the counter, and a bottle of sunscreen and a sun hat wait alongside for everyday sun protection">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- dermatologist figure (left) -->
+      <!-- head -->
+      <circle cx="150" cy="118" r="34" fill="#e8b48f"/>
+      <path d="M116 108 q34 -40 68 0 q-6 -30 -34 -30 q-28 0 -34 30 z" fill="#5a4634"/>
+      <!-- friendly eyes + smile -->
+      <circle cx="139" cy="118" r="3" fill="#33393b"/>
+      <circle cx="161" cy="118" r="3" fill="#33393b"/>
+      <path d="M141 130 q9 8 18 0" fill="none" stroke="#b9744f" stroke-width="2.6" stroke-linecap="round"/>
+      <!-- white coat / body -->
+      <path d="M104 160 q46 -22 92 0 l14 130 h-120 z" fill="#fffdf8" stroke="#e9e2d8" stroke-width="3"/>
+      <!-- coat lapels -->
+      <path d="M150 162 l-20 22 l16 10 z" fill="#eef2f0"/>
+      <path d="M150 162 l20 22 l-16 10 z" fill="#eef2f0"/>
+      <!-- collar of a green top under coat -->
+      <path d="M138 160 q12 14 24 0 l0 12 q-12 8 -24 0 z" fill="#3e7c59"/>
+      <!-- stethoscope-ish accent on coat -->
+      <path d="M126 172 q-6 40 18 52" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="145" cy="226" r="6" fill="#3e7c59"/>
+
+      <!-- extended arm holding the dermatoscope, reaching toward the patient -->
+      <path d="M188 200 q56 -8 92 26" stroke="#fffdf8" stroke-width="20" fill="none" stroke-linecap="round"/>
+      <path d="M188 200 q56 -8 92 26" stroke="#e9e2d8" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.35"/>
+      <!-- hand -->
+      <ellipse cx="284" cy="228" rx="14" ry="11" fill="#e8b48f"/>
+      <!-- dermatoscope body -->
+      <rect x="292" y="214" width="22" height="30" rx="6" fill="#5e9a78" transform="rotate(30 303 229)"/>
+      <circle cx="312" cy="244" r="12" fill="#dce8ee" stroke="#3e7c59" stroke-width="3"/>
+      <!-- lens glint -->
+      <circle cx="308" cy="240" r="3.2" fill="#fffdf8"/>
+
+      <!-- patient's arm being examined (right of center) -->
+      <path d="M436 250 q-70 4 -118 -2" stroke="#f0c6a3" stroke-width="34" fill="none" stroke-linecap="round"/>
+      <!-- the mole under the scope -->
+      <circle cx="330" cy="246" r="5" fill="#8a6a4f"/>
+      <!-- other small freckles on the arm -->
+      <g fill="#c79a6f">
+        <circle cx="372" cy="252" r="2.6"/>
+        <circle cx="400" cy="244" r="2"/>
+        <circle cx="416" cy="256" r="2.4"/>
+      </g>
+
+      <!-- ABCDE mole reference card (upper right) -->
+      <rect x="392" y="70" width="132" height="112" rx="10" fill="#fffdf8" stroke="#e0a93d" stroke-width="3"/>
+      <text x="404" y="92" font-size="13" fill="#3e7c59" font-weight="700">ABCDE</text>
+      <!-- A: asymmetry -->
+      <path d="M414 108 a10 10 0 0 1 10 -10 a14 7 0 0 1 4 20 a10 10 0 0 1 -14 -10 z" fill="#b98a5e"/>
+      <text x="432" y="112" font-size="9.5" fill="#6b7376">Asymmetry</text>
+      <!-- B: border -->
+      <path d="M414 130 q4 -8 10 -4 q8 -4 8 6 q6 6 -2 10 q-2 8 -10 3 q-10 2 -6 -8 z" fill="#a77b52"/>
+      <text x="436" y="134" font-size="9.5" fill="#6b7376">Border</text>
+      <!-- C: color (multi) -->
+      <circle cx="419" cy="150" r="7" fill="#8a6a4f"/>
+      <path d="M419 143 a7 7 0 0 1 0 14 z" fill="#5a4634"/>
+      <text x="432" y="154" font-size="9.5" fill="#6b7376">Color</text>
+      <!-- D + E line -->
+      <circle cx="419" cy="170" r="6" fill="#b98a5e"/>
+      <text x="432" y="174" font-size="9.5" fill="#6b7376">Diameter · Evolving</text>
+
+      <!-- hand mirror for self-exams (front left, on counter) -->
+      <ellipse cx="150" cy="330" rx="34" ry="40" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4"/>
+      <ellipse cx="150" cy="330" rx="24" ry="30" fill="#eef4f7"/>
+      <!-- mirror shine -->
+      <path d="M138 316 q-6 14 4 26" stroke="#fffdf8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <!-- handle -->
+      <rect x="143" y="368" width="14" height="34" rx="7" fill="#7fb3c8"/>
+
+      <!-- sunscreen bottle (prevention) front center-right -->
+      <rect x="300" y="330" width="34" height="60" rx="8" fill="#e0a93d"/>
+      <rect x="306" y="316" width="22" height="16" rx="4" fill="#d98e3b"/>
+      <rect x="305" y="348" width="24" height="22" rx="3" fill="#fffdf8"/>
+      <text x="317" y="363" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">SPF</text>
+
+      <!-- sun hat (prevention) front right -->
+      <ellipse cx="430" cy="376" rx="52" ry="14" fill="#c9a86a"/>
+      <path d="M400 376 q30 -46 60 0 z" fill="#e0c48c"/>
+      <path d="M400 372 q30 8 60 0" fill="none" stroke="#c9a86a" stroke-width="4"/>
+      <rect x="410" y="356" width="40" height="10" rx="4" fill="#3e7c59"/>
+
+      <!-- gentle sun glow (warmth) upper left -->
+      <circle cx="60" cy="70" r="24" fill="#faf0da"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.8">
+        <line x1="60" y1="34" x2="60" y2="42"/>
+        <line x1="60" y1="98" x2="60" y2="106"/>
+        <line x1="24" y1="70" x2="32" y2="70"/>
+        <line x1="88" y1="70" x2="96" y2="70"/>
+        <line x1="36" y1="46" x2="42" y2="52"/>
+        <line x1="78" y1="88" x2="84" y2="94"/>
+      </g>
+    </svg>

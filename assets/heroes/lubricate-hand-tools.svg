@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a workshop bench with hand tools being wiped down and oiled: a pair of pliers, a hand saw, garden pruners, and a wrench lie on a workbench, a hand tips an oil can to drop oil into a plier's pivot, an oily rag rests nearby, one tool shows an orange rust spot, and pegboard and a hanging tool line the wall of the garage">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- pegboard wall -->
+      <rect x="60" y="26" width="440" height="150" rx="8" fill="#c9a06b" opacity="0.35"/>
+      <g fill="#8a6a4f" opacity="0.4">
+        <circle cx="96" cy="52" r="2.4"/><circle cx="140" cy="52" r="2.4"/><circle cx="184" cy="52" r="2.4"/><circle cx="228" cy="52" r="2.4"/>
+        <circle cx="380" cy="52" r="2.4"/><circle cx="424" cy="52" r="2.4"/><circle cx="468" cy="52" r="2.4"/>
+        <circle cx="96" cy="96" r="2.4"/><circle cx="140" cy="96" r="2.4"/><circle cx="184" cy="96" r="2.4"/>
+        <circle cx="380" cy="96" r="2.4"/><circle cx="424" cy="96" r="2.4"/><circle cx="468" cy="96" r="2.4"/>
+        <circle cx="96" cy="140" r="2.4"/><circle cx="140" cy="140" r="2.4"/><circle cx="468" cy="140" r="2.4"/>
+      </g>
+      <!-- a wrench hanging on the pegboard -->
+      <g transform="rotate(8 430 108)">
+        <rect x="424" y="60" width="12" height="70" rx="5" fill="#b9b1a3"/>
+        <path d="M420 56 q10 -12 20 0 q-4 8 -10 8 q-6 0 -10 -8 z" fill="#8a6a4f"/>
+        <circle cx="430" cy="132" r="4" fill="#8a6a4f"/>
+      </g>
+
+      <!-- workbench top -->
+      <rect x="46" y="300" width="478" height="30" rx="6" fill="#c9a06b"/>
+      <rect x="46" y="300" width="478" height="9" rx="4" fill="#d9b784"/>
+      <g stroke="#b08a55" stroke-width="1.4" opacity="0.6">
+        <line x1="120" y1="309" x2="120" y2="330"/>
+        <line x1="250" y1="309" x2="250" y2="330"/>
+        <line x1="410" y1="309" x2="410" y2="330"/>
+      </g>
+      <!-- bench legs -->
+      <rect x="78" y="330" width="18" height="66" rx="3" fill="#8a6a4f"/>
+      <rect x="474" y="330" width="18" height="66" rx="3" fill="#8a6a4f"/>
+
+      <!-- hand saw laid across the back of the bench -->
+      <g transform="rotate(-6 250 262)">
+        <rect x="120" y="256" width="200" height="20" rx="4" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+        <path d="M120 276 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 l10 -8 z" fill="#b9b1a3"/>
+        <path d="M320 250 q34 4 30 30 q-2 14 -30 8 z" fill="#8a6a4f"/>
+        <ellipse cx="336" cy="272" rx="9" ry="12" fill="#c9a06b"/>
+      </g>
+
+      <!-- garden pruners on the left of the bench -->
+      <g transform="rotate(-18 150 300)">
+        <path d="M150 244 q-10 -6 -20 2 l14 40 q6 -4 10 -12 z" fill="#5e9a78"/>
+        <path d="M150 244 q10 -6 20 2 l-14 40 q-6 -4 -10 -12 z" fill="#3e7c59"/>
+        <path d="M138 284 q-16 24 -22 40" stroke="#c96f4a" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M156 284 q16 24 22 40" stroke="#d9663f" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <circle cx="150" cy="286" r="5" fill="#e0a93d"/>
+      </g>
+
+      <!-- pliers on the bench, being oiled -->
+      <g transform="translate(250 270)">
+        <path d="M0 0 q-8 -4 -10 -14 l-6 -36 q-1 -5 4 -6 q5 0 6 5 l6 34 q1 5 6 8 z" fill="#b9b1a3"/>
+        <path d="M14 0 q8 -4 10 -14 l6 -36 q1 -5 -4 -6 q-5 0 -6 5 l-6 34 q-1 5 -6 8 z" fill="#8a6a4f"/>
+        <!-- handles -->
+        <path d="M0 0 q-6 20 -20 34" stroke="#c96f4a" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <path d="M14 0 q6 20 20 34" stroke="#d9663f" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <!-- pivot -->
+        <circle cx="7" cy="0" r="6" fill="#e0a93d"/>
+        <circle cx="7" cy="0" r="2.4" fill="#d98e3b"/>
+      </g>
+
+      <!-- oil can with a drop landing on the plier pivot -->
+      <g transform="translate(300 214)">
+        <path d="M0 20 h44 q8 0 8 8 v16 q0 8 -8 8 h-44 q-8 0 -8 -8 v-16 q0 -8 8 -8 z" fill="#c96f4a"/>
+        <path d="M0 20 h44 q8 0 8 8 v4 h-60 v-4 q0 -8 8 -8 z" fill="#d9663f"/>
+        <rect x="16" y="8" width="14" height="14" rx="3" fill="#8a6a4f"/>
+        <!-- spout -->
+        <path d="M-8 30 q-22 -6 -40 8" stroke="#8a6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- oil drops falling toward the pivot -->
+        <path d="M-48 40 q-3 6 0 10 q3 -4 0 -10 z" fill="#e0a93d"/>
+        <circle cx="-48" cy="60" r="3" fill="#e0a93d" opacity="0.8"/>
+      </g>
+
+      <!-- a hand tipping the oil can -->
+      <ellipse cx="352" cy="228" rx="17" ry="13" fill="#c9a06b"/>
+      <path d="M342 224 q-6 6 -1 14" stroke="#b08a55" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M352 240 q22 20 52 22" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- oily rag folded on the bench, front-right -->
+      <path d="M400 296 q28 -10 60 -2 q6 14 -2 26 q-30 8 -58 0 q-6 -12 0 -24 z" fill="#7fb3c8"/>
+      <path d="M400 296 q28 -10 60 -2 q4 6 3 12 q-32 -6 -63 0 q1 -6 0 -10 z" fill="#9cc3d4"/>
+      <g fill="#8a6a4f" opacity="0.4">
+        <ellipse cx="426" cy="312" rx="6" ry="4"/>
+        <ellipse cx="444" cy="308" rx="4" ry="3"/>
+      </g>
+
+      <!-- a rust spot on a bare tool blade sticking out front-left -->
+      <rect x="70" y="290" width="72" height="16" rx="3" fill="#b9b1a3" transform="rotate(6 106 298)"/>
+      <g transform="rotate(6 106 298)">
+        <ellipse cx="96" cy="298" rx="9" ry="5" fill="#c96f4a" opacity="0.85"/>
+        <circle cx="110" cy="296" r="2.6" fill="#d9663f" opacity="0.8"/>
+        <circle cx="88" cy="300" r="2" fill="#c96f4a" opacity="0.7"/>
+      </g>
+      <text x="62" y="332" font-size="11" fill="#d9663f" font-weight="700">rust — clean it off first</text>
+    </svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a kitchen sink with a garbage disposal running: ice cubes and a lemon wedge dropping into the drain, fresh sparkles and citrus scent rising, a box of baking soda and a bottle of vinegar on the counter, a window with sun, and a small plant nearby">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="44" y="44" width="104" height="106" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="96" y1="47" x2="96" y2="147" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="47" y1="97" x2="145" y2="97" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="476" cy="66" r="20" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="476" y1="36" x2="476" y2="42"/>
+        <line x1="506" y1="66" x2="500" y2="66"/>
+        <line x1="497" y1="45" x2="493" y2="49"/>
+        <line x1="497" y1="87" x2="493" y2="83"/>
+      </g>
+      <!-- counter -->
+      <rect x="36" y="226" width="488" height="16" rx="6" fill="#c9a06b"/>
+      <rect x="56" y="242" width="448" height="62" fill="#b9b1a3"/>
+      <rect x="74" y="254" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <rect x="300" y="254" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <circle cx="246" cy="273" r="4" fill="#e0a93d"/>
+      <circle cx="308" cy="273" r="4" fill="#e0a93d"/>
+      <!-- sink basin set into the counter -->
+      <rect x="196" y="150" width="172" height="92" rx="12" fill="#dce8ee" stroke="#b9b1a3" stroke-width="3"/>
+      <rect x="210" y="164" width="144" height="70" rx="9" fill="#7fb3c8"/>
+      <ellipse cx="282" cy="226" rx="40" ry="9" fill="#5e9a78"/>
+      <!-- faucet arching over the basin -->
+      <path d="M188 150 v-58 q0 -16 16 -16 h66 q12 0 12 12 v18" fill="none" stroke="#8a6a4f" stroke-width="9" stroke-linecap="round"/>
+      <rect x="176" y="146" width="24" height="12" rx="5" fill="#5a4634"/>
+      <rect x="268" y="98" width="14" height="22" rx="5" fill="#8a6a4f"/>
+      <!-- water column into the drain -->
+      <g stroke="#dce8ee" stroke-width="3" stroke-linecap="round" opacity="0.9">
+        <line x1="276" y1="118" x2="276" y2="216"/>
+        <line x1="284" y1="118" x2="284" y2="216"/>
+        <line x1="280" y1="118" x2="280" y2="216"/>
+      </g>
+      <!-- drain opening + rubber splash guard flaps -->
+      <ellipse cx="282" cy="222" rx="30" ry="10" fill="#5a4634"/>
+      <ellipse cx="282" cy="220" rx="22" ry="7" fill="#33393b"/>
+      <g fill="#8a6a4f">
+        <path d="M264 218 l4 -10 h4 l-3 11 z"/>
+        <path d="M276 217 l2 -11 h4 l-1 11 z"/>
+        <path d="M288 217 l1 -11 h4 l2 11 z"/>
+        <path d="M298 218 l3 -11 h4 l4 10 z"/>
+      </g>
+      <!-- ice cubes + lemon wedge dropping in -->
+      <rect x="262" y="180" width="16" height="16" rx="3" fill="#fffdf8" stroke="#7fb3c8" stroke-width="1.5" transform="rotate(-14 270 188)"/>
+      <rect x="288" y="172" width="14" height="14" rx="3" fill="#fffdf8" stroke="#7fb3c8" stroke-width="1.5" transform="rotate(12 295 179)"/>
+      <path d="M296 196 a14 14 0 0 1 14 14 z" fill="#e0a93d" stroke="#d98e3b" stroke-width="1.5"/>
+      <path d="M299 200 l8 8 M303 198 l5 9" stroke="#faf0da" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- fresh sparkles + citrus scent rising -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="236" y1="186" x2="236" y2="198"/>
+        <line x1="230" y1="192" x2="242" y2="192"/>
+        <line x1="332" y1="180" x2="332" y2="192"/>
+        <line x1="326" y1="186" x2="338" y2="186"/>
+      </g>
+      <g stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+        <path d="M250 178 q-7 -12 0 -22 q7 -10 0 -20"/>
+        <path d="M316 174 q7 -12 0 -22 q-7 -10 0 -20"/>
+      </g>
+      <!-- baking soda box on the counter, left -->
+      <rect x="92" y="172" width="58" height="54" rx="4" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="92" y="172" width="58" height="18" rx="4" fill="#e0a93d"/>
+      <rect x="100" y="198" width="42" height="6" rx="3" fill="#dce8ee"/>
+      <rect x="100" y="208" width="30" height="5" rx="2.5" fill="#e9e2d8"/>
+      <!-- vinegar bottle, right of the box -->
+      <rect x="160" y="166" width="34" height="60" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="169" y="150" width="16" height="18" rx="4" fill="#2c5a40"/>
+      <rect x="164" y="186" width="26" height="32" rx="5" fill="#3e7c59"/>
+      <g stroke="#e3efe8" stroke-width="2.5" stroke-linecap="round">
+        <line x1="170" y1="198" x2="184" y2="198"/>
+        <line x1="170" y1="206" x2="180" y2="206"/>
+      </g>
+      <!-- citrus peels in a little bowl, right -->
+      <path d="M396 210 q26 18 52 0 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <path d="M404 206 a10 10 0 0 1 16 -2" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+      <path d="M424 204 a9 9 0 0 1 15 0" fill="none" stroke="#d98e3b" stroke-width="4" stroke-linecap="round"/>
+      <!-- plant at the right end of the counter -->
+      <path d="M492 226 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M492 226 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="479" cy="196" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 479 196)"/>
+      <ellipse cx="507" cy="200" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 507 200)"/>
+      <path d="M480 226 h24 l-4 22 h-16 z" fill="#c96f4a"/>
+      <!-- under-sink disposal unit + P-trap glimpse below the counter -->
+      <rect x="256" y="304" width="52" height="58" rx="10" fill="#b9b1a3"/>
+      <rect x="262" y="304" width="40" height="10" rx="4" fill="#8a6a4f"/>
+      <ellipse cx="282" cy="362" rx="26" ry="8" fill="#8a6a4f"/>
+      <rect x="262" y="318" width="40" height="6" rx="3" fill="#fffdf8"/>
+      <path d="M282 370 q0 18 22 18 q18 0 18 -16 v-8" fill="none" stroke="#b9b1a3" stroke-width="9" stroke-linecap="round"/>
+      <!-- drips -->
+      <g fill="#7fb3c8">
+        <circle cx="226" cy="248" r="3"/>
+        <circle cx="344" cy="252" r="3"/>
+        <circle cx="338" cy="244" r="2.5"/>
+      </g>
+    </svg>

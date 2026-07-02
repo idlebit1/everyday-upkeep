@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a backpack in a mudroom: a backpack is turned upside-down and shaken out over a bin with crumbs, a pen, and old receipts falling out, while the emptied pack hangs open on a hook being spot-cleaned with a soft brush and airing to dry, a care-label tag showing, and a spray bottle and cloth nearby">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- mudroom back wall shelf / peg rail -->
+      <rect x="60" y="70" width="440" height="10" rx="4" fill="#c9a06b"/>
+      <rect x="60" y="80" width="440" height="6" rx="2" fill="#b9b1a3"/>
+      <!-- wall hook the clean pack hangs from -->
+      <circle cx="392" cy="92" r="7" fill="#8a6a4f"/>
+      <rect x="389" y="92" width="6" height="18" rx="3" fill="#8a6a4f"/>
+
+      <!-- LEFT: backpack turned upside-down, shaking out -->
+      <!-- body of the upside-down pack (rounded top now at the bottom) -->
+      <path d="M96 150 q10 -26 40 -30 l60 0 q30 4 40 30 l6 108 q-8 20 -76 20 q-68 0 -76 -20 z" fill="#c96f4a" transform="rotate(180 156 218)"/>
+      <!-- front pocket panel -->
+      <path d="M120 210 q36 -10 72 0 l-4 42 q-32 8 -64 0 z" fill="#d9663f" transform="rotate(180 156 218)"/>
+      <!-- open gaping zipper mouth at the bottom, debris falling out -->
+      <path d="M116 296 q40 14 80 0 q-40 20 -80 0 z" fill="#dce8ee"/>
+      <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round">
+        <line x1="128" y1="298" x2="128" y2="304"/>
+        <line x1="146" y1="301" x2="146" y2="307"/>
+        <line x1="166" y1="302" x2="166" y2="308"/>
+        <line x1="186" y1="301" x2="186" y2="307"/>
+      </g>
+      <!-- shoulder straps flopping down (now at top since flipped) -->
+      <path d="M132 120 q-18 20 -12 44" fill="none" stroke="#a8542f" stroke-width="9" stroke-linecap="round"/>
+      <path d="M180 120 q18 20 12 44" fill="none" stroke="#a8542f" stroke-width="9" stroke-linecap="round"/>
+      <!-- debris raining out: crumbs, a pen, receipts -->
+      <!-- pen -->
+      <rect x="150" y="322" width="34" height="7" rx="3" fill="#3e7c59" transform="rotate(28 167 325)"/>
+      <rect x="176" y="332" width="8" height="7" rx="2" fill="#2c5a40" transform="rotate(28 180 335)"/>
+      <!-- old receipts fluttering -->
+      <path d="M112 330 l14 -4 l3 30 l-14 4 z" fill="#fffdf8" stroke="#e9e2d8" stroke-width="1.5" transform="rotate(-14 119 345)"/>
+      <g stroke="#b9b1a3" stroke-width="1.2">
+        <line x1="114" y1="336" x2="126" y2="333"/>
+        <line x1="115" y1="342" x2="127" y2="339"/>
+      </g>
+      <path d="M196 336 l13 -3 l4 26 l-13 3 z" fill="#faf0da" stroke="#e0a93d" stroke-width="1.2" transform="rotate(16 202 349)"/>
+      <!-- crumbs -->
+      <g fill="#8a6a4f">
+        <circle cx="140" cy="346" r="3"/>
+        <circle cx="158" cy="356" r="2.4"/>
+        <circle cx="176" cy="350" r="2.8"/>
+        <rect x="188" y="360" width="7" height="5" rx="2" transform="rotate(20 191 362)"/>
+        <circle cx="130" cy="362" r="2.2"/>
+      </g>
+      <!-- bin catching the debris -->
+      <path d="M104 366 h108 l-10 42 h-88 z" fill="#b9b1a3"/>
+      <rect x="100" y="360" width="116" height="9" rx="3" fill="#8a6a4f"/>
+
+      <!-- RIGHT: emptied pack hanging open, being spot-cleaned & airing -->
+      <!-- hanging loop over the hook -->
+      <path d="M360 108 q0 -14 12 -14 q12 0 12 14" fill="none" stroke="#3e7c59" stroke-width="5" stroke-linecap="round"/>
+      <!-- pack body -->
+      <path d="M312 132 q12 -14 34 -16 l52 0 q22 2 34 16 l8 132 q-8 18 -68 18 q-60 0 -68 -18 z" fill="#3e7c59"/>
+      <!-- lighter lining shown through the open top -->
+      <path d="M320 140 q52 -14 104 0 l4 34 q-56 16 -112 0 z" fill="#5e9a78"/>
+      <!-- open zipper mouth airing out -->
+      <path d="M326 146 q46 -12 92 0 q-46 22 -92 0 z" fill="#dce8ee"/>
+      <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round">
+        <line x1="340" y1="148" x2="340" y2="154"/>
+        <line x1="360" y1="145" x2="360" y2="151"/>
+        <line x1="384" y1="145" x2="384" y2="151"/>
+        <line x1="404" y1="148" x2="404" y2="154"/>
+      </g>
+      <!-- front pocket -->
+      <path d="M336 214 q38 -10 76 0 l-4 48 q-34 8 -68 0 z" fill="#2c5a40"/>
+      <!-- shoulder straps -->
+      <path d="M340 138 q-16 40 -8 118" fill="none" stroke="#2c5a40" stroke-width="10" stroke-linecap="round"/>
+      <path d="M408 138 q16 40 8 118" fill="none" stroke="#2c5a40" stroke-width="10" stroke-linecap="round"/>
+      <!-- soft brush spot-cleaning a stain on the front -->
+      <ellipse cx="372" cy="238" rx="12" ry="8" fill="#8a6a4f" opacity="0.4"/>
+      <rect x="392" y="210" width="40" height="9" rx="3" fill="#e0a93d" transform="rotate(28 412 214)"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+        <line x1="384" y1="230" x2="382" y2="236"/>
+        <line x1="390" y1="228" x2="388" y2="234"/>
+        <line x1="396" y1="226" x2="394" y2="232"/>
+      </g>
+      <!-- care-label tag hanging inside the mouth -->
+      <rect x="418" y="176" width="30" height="42" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="424" y1="164" x2="430" y2="178" stroke="#8a6a4f" stroke-width="2"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+        <line x1="424" y1="188" x2="442" y2="188"/>
+        <line x1="424" y1="196" x2="442" y2="196"/>
+        <line x1="424" y1="204" x2="438" y2="204"/>
+      </g>
+      <text x="433" y="216" font-size="7.5" fill="#6b7376" text-anchor="middle" font-weight="700">care</text>
+      <!-- fresh-air breeze marks rising from the open pack -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" opacity="0.7" fill="none">
+        <path d="M356 130 q7 -9 0 -18"/>
+        <path d="M382 126 q7 -9 0 -18"/>
+      </g>
+
+      <!-- spray bottle on the shelf, right -->
+      <rect x="462" y="38" width="26" height="32" rx="5" fill="#5e9a78"/>
+      <rect x="467" y="26" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <path d="M483 28 l14 -5 l0 6 l-14 4 z" fill="#2c5a40"/>
+      <rect x="465" y="50" width="20" height="14" rx="3" fill="#dce8ee" opacity="0.8"/>
+
+      <!-- folded cloth front-right -->
+      <path d="M448 372 h64 l-6 22 h-52 z" fill="#7fb3c8"/>
+      <path d="M448 372 h64 l-4 8 h-56 z" fill="#9cc3d4"/>
+      <g stroke="#cdd9de" stroke-width="1.6">
+        <line x1="462" y1="384" x2="500" y2="384"/>
+        <line x1="460" y1="390" x2="498" y2="390"/>
+      </g>
+    </svg>

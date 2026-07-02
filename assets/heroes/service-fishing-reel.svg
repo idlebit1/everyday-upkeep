@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of servicing a fishing reel: a spinning reel is partly disassembled on a soft cloth with the spool and handle removed and laid out beside it, small bottles of reel oil and a tub of grease sit nearby, a little brush and cotton swabs rest on the cloth, and a fishing rod and a tackle box wait in the background">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- work cloth -->
+      <rect x="70" y="230" width="430" height="150" rx="14" fill="#dce8ee"/>
+      <rect x="70" y="230" width="430" height="18" rx="9" fill="#c7d8e0"/>
+      <g stroke="#c7d8e0" stroke-width="2" opacity="0.7">
+        <line x1="110" y1="258" x2="110" y2="372"/>
+        <line x1="470" y1="258" x2="470" y2="372"/>
+      </g>
+
+      <!-- fishing rod leaning in the background -->
+      <path d="M40 60 q220 40 500 210" fill="none" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+      <path d="M40 60 q220 40 500 210" fill="none" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+      <g fill="#b9b1a3">
+        <circle cx="150" cy="88" r="4"/>
+        <circle cx="270" cy="118" r="4.5"/>
+        <circle cx="390" cy="168" r="5"/>
+      </g>
+
+      <!-- tackle box, back right -->
+      <rect x="410" y="150" width="118" height="74" rx="8" fill="#3e7c59"/>
+      <rect x="410" y="150" width="118" height="20" rx="8" fill="#2c5a40"/>
+      <rect x="446" y="140" width="46" height="14" rx="4" fill="#2c5a40"/>
+      <g stroke="#5e9a78" stroke-width="2.4">
+        <line x1="410" y1="188" x2="528" y2="188"/>
+        <line x1="410" y1="206" x2="528" y2="206"/>
+      </g>
+      <circle cx="469" cy="179" r="5" fill="#e0a93d"/>
+
+      <!-- MAIN: spinning reel body, partly disassembled, center-left -->
+      <!-- reel foot / stem mounting to nothing (off the rod) -->
+      <path d="M150 246 l40 0 l-6 -30 l-28 0 z" fill="#8a6a4f"/>
+      <rect x="158" y="212" width="24" height="14" rx="3" fill="#b9b1a3"/>
+      <!-- reel body housing -->
+      <ellipse cx="196" cy="212" rx="40" ry="30" fill="#5e9a78"/>
+      <ellipse cx="196" cy="212" rx="40" ry="30" fill="none" stroke="#2c5a40" stroke-width="3"/>
+      <!-- rotor / open front where the spool sits -->
+      <ellipse cx="238" cy="212" rx="20" ry="30" fill="#3e7c59"/>
+      <ellipse cx="238" cy="212" rx="9" ry="16" fill="#2c5a40"/>
+      <!-- main shaft sticking out (spool removed) -->
+      <rect x="238" y="208" width="34" height="7" rx="3" fill="#b9b1a3"/>
+      <circle cx="272" cy="211" r="4" fill="#8a6a4f"/>
+
+      <!-- SPOOL removed and set on the cloth, front -->
+      <ellipse cx="196" cy="322" rx="40" ry="26" fill="#7fb3c8"/>
+      <ellipse cx="196" cy="322" rx="40" ry="26" fill="none" stroke="#5e7f8c" stroke-width="3"/>
+      <ellipse cx="196" cy="322" rx="22" ry="14" fill="#5e9a78"/>
+      <ellipse cx="196" cy="322" rx="9" ry="6" fill="#2c5a40"/>
+      <!-- a little line wound on the spool -->
+      <g stroke="#dce8ee" stroke-width="1.6" opacity="0.8">
+        <path d="M158 316 q38 -12 76 0"/>
+        <path d="M158 328 q38 12 76 0"/>
+      </g>
+      <text x="176" y="360" font-size="11" fill="#5e7f8c" font-weight="700">spool</text>
+
+      <!-- HANDLE removed and laid out, front-right -->
+      <path d="M300 300 l0 40" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+      <rect x="286" y="292" width="56" height="12" rx="6" fill="#b9b1a3"/>
+      <ellipse cx="300" cy="348" rx="12" ry="9" fill="#c96f4a"/>
+      <text x="270" y="372" font-size="11" fill="#8a6a4f" font-weight="700">handle</text>
+
+      <!-- small springs & washers laid out IN ORDER -->
+      <g fill="none" stroke="#8a6a4f" stroke-width="2">
+        <circle cx="360" cy="300" r="8"/>
+        <circle cx="384" cy="300" r="6"/>
+      </g>
+      <path d="M404 294 q6 6 0 12 q-6 6 0 12" fill="none" stroke="#b9b1a3" stroke-width="2.4"/>
+      <text x="352" y="326" font-size="10" fill="#6b7376">parts in order</text>
+
+      <!-- reel OIL bottle -->
+      <rect x="88" y="278" width="22" height="46" rx="5" fill="#e0a93d"/>
+      <rect x="93" y="266" width="12" height="14" rx="3" fill="#d98e3b"/>
+      <path d="M99 266 l0 -8" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <rect x="90" y="296" width="18" height="16" rx="2" fill="#faf0da" opacity="0.85"/>
+      <text x="83" y="340" font-size="9.5" fill="#d98e3b" font-weight="700">oil</text>
+
+      <!-- GREASE tub -->
+      <ellipse cx="140" cy="330" rx="20" ry="8" fill="#c96f4a"/>
+      <rect x="120" y="308" width="40" height="22" fill="#d9663f"/>
+      <ellipse cx="140" cy="308" rx="20" ry="8" fill="#c96f4a"/>
+      <ellipse cx="140" cy="308" rx="14" ry="5" fill="#efb79c"/>
+      <text x="120" y="352" font-size="9.5" fill="#c96f4a" font-weight="700">grease</text>
+
+      <!-- small BRUSH on the cloth -->
+      <rect x="286" y="250" width="70" height="8" rx="4" fill="#8a6a4f" transform="rotate(-8 321 254)"/>
+      <path d="M282 254 l-16 -3 m16 6 l-16 1 m16 4 l-15 5" stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round"/>
+
+      <!-- COTTON SWABS -->
+      <g transform="rotate(20 400 250)">
+        <rect x="380" y="248" width="52" height="4" rx="2" fill="#fffdf8"/>
+        <circle cx="380" cy="250" r="6" fill="#fffdf8"/>
+        <circle cx="432" cy="250" r="6" fill="#fffdf8"/>
+      </g>
+      <g transform="rotate(30 410 268)">
+        <rect x="390" y="266" width="52" height="4" rx="2" fill="#fffdf8"/>
+        <circle cx="390" cy="268" r="6" fill="#fffdf8"/>
+        <circle cx="442" cy="268" r="6" fill="#e0d9c8"/>
+      </g>
+    </svg>

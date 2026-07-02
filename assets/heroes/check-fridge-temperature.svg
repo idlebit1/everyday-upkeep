@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an open refrigerator with an appliance thermometer sitting in a glass of water on a middle shelf reading about 37 degrees Fahrenheit, a freezer compartment at the top reading 0 degrees, neatly stocked shelves of food and a milk jug, and the warm kitchen around it">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- kitchen wall hint / counter line -->
+      <rect x="20" y="318" width="520" height="10" rx="3" fill="#c9a06b" opacity="0.5"/>
+
+      <!-- fridge body -->
+      <rect x="150" y="36" width="260" height="330" rx="14" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- freezer / fridge divide -->
+      <rect x="156" y="116" width="248" height="8" fill="#b9b1a3"/>
+
+      <!-- FREEZER compartment (top), open -->
+      <rect x="164" y="48" width="232" height="60" rx="6" fill="#dce8ee"/>
+      <!-- frost texture -->
+      <g fill="#fffdf8" opacity="0.8">
+        <circle cx="184" cy="66" r="3"/>
+        <circle cx="200" cy="58" r="2.4"/>
+        <circle cx="370" cy="70" r="3"/>
+        <circle cx="352" cy="60" r="2.2"/>
+      </g>
+      <!-- freezer thermometer reading 0 -->
+      <rect x="300" y="58" width="58" height="40" rx="6" fill="#fffdf8" stroke="#7fb3c8" stroke-width="3"/>
+      <text x="329" y="84" font-size="20" fill="#2c5a40" font-weight="800" text-anchor="middle">0°F</text>
+      <!-- a couple of frozen items -->
+      <rect x="180" y="80" width="40" height="22" rx="3" fill="#7fb3c8"/>
+      <rect x="230" y="78" width="34" height="24" rx="3" fill="#9cc3d4"/>
+
+      <!-- FRIDGE compartment (bottom), open, stocked shelves -->
+      <rect x="164" y="132" width="232" height="222" rx="6" fill="#dce8ee"/>
+      <!-- shelf lines -->
+      <g stroke="#b9b1a3" stroke-width="4">
+        <line x1="170" y1="196" x2="390" y2="196"/>
+        <line x1="170" y1="258" x2="390" y2="258"/>
+        <line x1="170" y1="316" x2="390" y2="316"/>
+      </g>
+
+      <!-- top shelf: milk jug + jar -->
+      <path d="M186 150 h30 l0 42 h-30 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <rect x="194" y="142" width="14" height="10" rx="2" fill="#c96f4a"/>
+      <rect x="232" y="158" width="26" height="34" rx="4" fill="#e0a93d"/>
+      <rect x="232" y="158" width="26" height="9" rx="3" fill="#d98e3b"/>
+
+      <!-- MIDDLE shelf: glass of water with the appliance thermometer -->
+      <!-- the glass -->
+      <path d="M276 206 h44 l-4 46 h-36 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <!-- water inside -->
+      <path d="M280 222 h36 l-3 28 h-30 z" fill="#7fb3c8" opacity="0.6"/>
+      <!-- thermometer standing in the water -->
+      <rect x="294" y="186" width="9" height="58" rx="4" fill="#fffdf8" stroke="#5e9a78" stroke-width="2.5"/>
+      <circle cx="298.5" cy="246" r="7" fill="#c96f4a"/>
+      <rect x="296.5" y="200" width="3" height="42" rx="1.5" fill="#c96f4a"/>
+      <!-- thermometer dial reading ~37 -->
+      <circle cx="298.5" cy="178" r="16" fill="#fffdf8" stroke="#5e9a78" stroke-width="2.5"/>
+      <text x="298.5" y="183" font-size="13" fill="#2c5a40" font-weight="800" text-anchor="middle">37</text>
+      <!-- a little fresh produce on the middle shelf -->
+      <circle cx="195" cy="232" r="11" fill="#c96f4a"/>
+      <circle cx="218" cy="234" r="10" fill="#d9663f"/>
+      <ellipse cx="356" cy="232" rx="11" ry="14" fill="#5e9a78"/>
+
+      <!-- lower shelf: leafy greens + container -->
+      <path d="M188 270 q14 -18 30 0 q-6 16 -30 0 z" fill="#3e7c59"/>
+      <path d="M196 268 q8 -14 18 0" fill="none" stroke="#5e9a78" stroke-width="2"/>
+      <rect x="320" y="270" width="48" height="34" rx="5" fill="#b9b1a3" opacity="0.6"/>
+      <rect x="320" y="270" width="48" height="9" rx="4" fill="#8a6a4f" opacity="0.6"/>
+
+      <!-- crisper drawer (bottom) -->
+      <rect x="172" y="324" width="216" height="24" rx="5" fill="#cdd9de"/>
+      <rect x="262" y="330" width="36" height="6" rx="3" fill="#b9b1a3"/>
+
+      <!-- open fridge door swung to the right with a tight seal gasket -->
+      <rect x="412" y="40" width="64" height="322" rx="10" fill="#f4efe4" stroke="#8a6a4f" stroke-width="5"/>
+      <!-- door gasket / seal -->
+      <rect x="416" y="48" width="10" height="306" rx="4" fill="#b9b1a3"/>
+      <!-- door shelf -->
+      <rect x="430" y="120" width="40" height="46" rx="5" fill="#dce8ee"/>
+      <rect x="430" y="220" width="40" height="46" rx="5" fill="#dce8ee"/>
+      <!-- a bottle in the door -->
+      <rect x="444" y="100" width="12" height="40" rx="4" fill="#5e9a78"/>
+      <!-- handle -->
+      <rect x="468" y="150" width="8" height="90" rx="4" fill="#8a6a4f"/>
+
+      <!-- cool-air wisps to suggest cold air circulating -->
+      <g stroke="#7fb3c8" stroke-width="3" stroke-linecap="round" opacity="0.6" fill="none">
+        <path d="M338 150 q10 8 0 18"/>
+        <path d="M348 286 q10 8 0 18"/>
+      </g>
+
+      <!-- a small warm-kitchen detail: a mug on the counter at left -->
+      <path d="M96 296 h34 l-3 22 h-28 z" fill="#c96f4a"/>
+      <path d="M130 300 q12 0 12 9 q0 9 -12 9" fill="none" stroke="#c96f4a" stroke-width="4"/>
+      <g stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round" opacity="0.7">
+        <path d="M106 290 q-3 -8 2 -14"/>
+        <path d="M118 290 q3 -8 -2 -14"/>
+      </g>
+    </svg>

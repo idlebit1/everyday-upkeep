@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an open, empty dishwasher being cleaned: the door is down, the top rack holds an upright cup of white vinegar and a cleaner tablet sits in the dispenser, the lower spray arm spins, the removable round filter is visible at the bottom of the tub, sparkle marks show it coming clean, and steam rises from the hot cycle">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- dishwasher body / cabinet -->
+      <rect x="120" y="40" width="320" height="300" rx="12" fill="#b9b1a3"/>
+      <rect x="134" y="54" width="292" height="240" rx="8" fill="#dce8ee"/>
+      <!-- interior tub (stainless feel via blue-grey) -->
+      <rect x="148" y="66" width="264" height="218" rx="6" fill="#cdd9de"/>
+      <rect x="148" y="66" width="264" height="218" rx="6" fill="#eef4f7" opacity="0.4"/>
+
+      <!-- open door, folded down -->
+      <rect x="120" y="332" width="320" height="64" rx="8" fill="#8a6a4f"/>
+      <rect x="128" y="340" width="304" height="20" rx="5" fill="#b9b1a3"/>
+      <!-- control panel strip on the door's inner top edge -->
+      <rect x="150" y="346" width="120" height="8" rx="4" fill="#5e9a78"/>
+      <circle cx="296" cy="350" r="4" fill="#3e7c59"/>
+      <circle cx="312" cy="350" r="4" fill="#e0a93d"/>
+      <!-- detergent/cleaner dispenser on the inside of the door -->
+      <rect x="330" y="366" width="44" height="22" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+      <rect x="336" y="370" width="32" height="14" rx="3" fill="#d9663f"/>
+      <text x="334" y="382" font-size="8.5" fill="#fffdf8" font-weight="700">tablet</text>
+
+      <!-- TOP RACK -->
+      <g stroke="#8a6a4f" stroke-width="3" opacity="0.7">
+        <line x1="156" y1="120" x2="404" y2="120"/>
+        <line x1="170" y1="104" x2="170" y2="132"/>
+        <line x1="200" y1="104" x2="200" y2="132"/>
+        <line x1="230" y1="104" x2="230" y2="132"/>
+        <line x1="260" y1="104" x2="260" y2="132"/>
+        <line x1="290" y1="104" x2="290" y2="132"/>
+        <line x1="320" y1="104" x2="320" y2="132"/>
+        <line x1="350" y1="104" x2="350" y2="132"/>
+        <line x1="384" y1="104" x2="384" y2="132"/>
+      </g>
+      <!-- cup of white vinegar, upright on the top rack -->
+      <path d="M188 92 h36 l-4 28 h-28 z" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2"/>
+      <path d="M190 100 h32 l-1.5 12 h-29 z" fill="#dce8ee"/>
+      <text x="186" y="86" font-size="10" fill="#3e7c59" font-weight="700">vinegar</text>
+
+      <!-- BOTTOM RACK (empty, tines) -->
+      <g stroke="#8a6a4f" stroke-width="3" opacity="0.55">
+        <line x1="156" y1="218" x2="404" y2="218"/>
+        <line x1="172" y1="202" x2="172" y2="230"/>
+        <line x1="204" y1="202" x2="204" y2="230"/>
+        <line x1="236" y1="202" x2="236" y2="230"/>
+        <line x1="268" y1="202" x2="268" y2="230"/>
+        <line x1="300" y1="202" x2="300" y2="230"/>
+        <line x1="332" y1="202" x2="332" y2="230"/>
+        <line x1="364" y1="202" x2="364" y2="230"/>
+      </g>
+
+      <!-- spray arm spinning at the bottom of the tub -->
+      <circle cx="280" cy="258" r="6" fill="#5e9a78"/>
+      <rect x="216" y="254" width="128" height="9" rx="4.5" fill="#5e9a78"/>
+      <rect x="276" y="240" width="9" height="36" rx="4.5" fill="#3e7c59"/>
+      <!-- jet holes on the arm -->
+      <g fill="#fffdf8">
+        <circle cx="238" cy="258" r="2"/>
+        <circle cx="258" cy="258" r="2"/>
+        <circle cx="302" cy="258" r="2"/>
+        <circle cx="322" cy="258" r="2"/>
+      </g>
+      <!-- spin motion arcs -->
+      <path d="M210 248 a72 72 0 0 1 14 -10" fill="none" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      <path d="M350 268 a72 72 0 0 1 -14 10" fill="none" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- removable round filter at the bottom of the tub -->
+      <ellipse cx="280" cy="284" rx="34" ry="10" fill="#8a6a4f"/>
+      <ellipse cx="280" cy="282" rx="34" ry="10" fill="#b9b1a3"/>
+      <ellipse cx="280" cy="282" rx="20" ry="6" fill="#cdd9de"/>
+      <g stroke="#8a6a4f" stroke-width="1.4" opacity="0.7">
+        <line x1="266" y1="282" x2="294" y2="282"/>
+        <line x1="270" y1="278" x2="290" y2="278"/>
+        <line x1="270" y1="286" x2="290" y2="286"/>
+      </g>
+      <text x="320" y="286" font-size="10" fill="#6b7376">filter</text>
+
+      <!-- steam from the hot cycle -->
+      <g fill="none" stroke="#dce8ee" stroke-width="4" stroke-linecap="round" opacity="0.85">
+        <path d="M240 70 q-8 -16 4 -28 q8 -10 0 -22"/>
+        <path d="M320 70 q8 -16 -4 -28 q-8 -10 0 -22"/>
+      </g>
+
+      <!-- sparkle marks showing it coming clean -->
+      <g stroke="#5e9a78" stroke-width="2.6" stroke-linecap="round">
+        <path d="M178 156 l0 12 M172 162 l12 0"/>
+        <path d="M392 188 l0 10 M387 193 l10 0"/>
+      </g>
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <path d="M360 150 l0 10 M355 155 l10 0"/>
+      </g>
+    </svg>

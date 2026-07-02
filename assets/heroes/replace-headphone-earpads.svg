@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing headphone earpads: a pair of over-ear headphones rests on a desk, one earcup has its old cracked and flaking pad peeled off and lying beside it while hands twist a fresh plush replacement pad onto the cup, and the other earcup shows the bare mounting ring exposed">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface line -->
+      <rect x="40" y="356" width="490" height="8" rx="4" fill="#d8cfbe"/>
+
+      <!-- ===== headphones: headband arc ===== -->
+      <path d="M150 250 q0 -180 260 0" fill="none" stroke="#3e7c59" stroke-width="20" stroke-linecap="round"/>
+      <path d="M150 250 q0 -180 260 0" fill="none" stroke="#5e9a78" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+      <!-- headband padding highlight -->
+      <path d="M232 92 q48 -12 96 0" fill="none" stroke="#2c5a40" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- ===== RIGHT earcup: bare mounting ring exposed ===== -->
+      <g transform="translate(410,250)">
+        <circle r="58" fill="#8a6a4f"/>
+        <circle r="58" fill="none" stroke="#6b7376" stroke-width="4" opacity="0.5"/>
+        <!-- inner mounting ring (the plastic ring the pad clips onto) -->
+        <circle r="42" fill="#b9b1a3"/>
+        <circle r="30" fill="#33393b"/>
+        <!-- driver-protecting mesh under the pad -->
+        <circle r="24" fill="#484f52"/>
+        <g stroke="#6b7376" stroke-width="1.4" opacity="0.7">
+          <line x1="-20" y1="-8" x2="20" y2="-8"/>
+          <line x1="-22" y1="0" x2="22" y2="0"/>
+          <line x1="-20" y1="8" x2="20" y2="8"/>
+        </g>
+        <text x="0" y="86" font-size="11" fill="#6b7376" text-anchor="middle">bare ring — mesh intact</text>
+      </g>
+
+      <!-- ===== LEFT earcup: hands twisting a fresh plush pad on ===== -->
+      <g transform="translate(150,250)">
+        <!-- cup body -->
+        <circle r="58" fill="#8a6a4f"/>
+        <circle r="58" fill="none" stroke="#6b7376" stroke-width="4" opacity="0.5"/>
+        <!-- fresh plush replacement pad seating on -->
+        <circle r="56" fill="#2c5a40"/>
+        <circle r="54" fill="#3e7c59"/>
+        <circle r="34" fill="#33393b"/>
+        <!-- plush sheen on the new pad -->
+        <path d="M-40 -22 q18 -20 44 -18" fill="none" stroke="#5e9a78" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+        <!-- twist arrow showing the seating motion -->
+        <path d="M44 -30 q22 18 6 44" fill="none" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+        <path d="M50 12 l1 -14 l-12 6 z" fill="#e0a93d"/>
+        <text x="0" y="88" font-size="11" fill="#3e7c59" text-anchor="middle" font-weight="700">twist the fresh pad on</text>
+      </g>
+
+      <!-- hands twisting/clipping the new pad (over the left cup) -->
+      <!-- upper hand -->
+      <ellipse cx="118" cy="196" rx="20" ry="14" fill="#e8b48f" transform="rotate(-24 118 196)"/>
+      <path d="M104 190 q-6 5 -2 12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M132 208 q30 -14 52 -6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- lower hand -->
+      <ellipse cx="120" cy="308" rx="20" ry="14" fill="#e8b48f" transform="rotate(20 120 308)"/>
+      <path d="M106 314 q-6 -5 -2 -12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M134 296 q30 14 52 6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- ===== old cracked, flaking pad lying on the desk ===== -->
+      <g transform="translate(285,338)">
+        <ellipse cx="0" cy="6" rx="60" ry="22" fill="#d8cfbe" opacity="0.5"/>
+        <!-- flattened worn ring -->
+        <ellipse cx="0" cy="0" rx="56" ry="26" fill="#5a5f61"/>
+        <ellipse cx="0" cy="0" rx="34" ry="15" fill="#33393b"/>
+        <!-- cracks in the leatherette cover -->
+        <g stroke="#33393b" stroke-width="2" stroke-linecap="round" opacity="0.85">
+          <path d="M-44 -8 l-8 -6"/>
+          <path d="M-30 12 l-6 8"/>
+          <path d="M40 -6 l10 -4"/>
+          <path d="M36 14 l8 8"/>
+          <path d="M-14 -18 l-3 -8 M14 18 l4 8"/>
+        </g>
+        <!-- peeling / lifted flakes of coating -->
+        <path d="M-52 -2 q-10 -4 -14 4 l12 2 z" fill="#6b7376"/>
+        <path d="M50 6 q10 6 16 0 l-12 -4 z" fill="#6b7376"/>
+        <!-- little black flakes scattered on the desk -->
+        <g fill="#484f52">
+          <path d="M-70 26 l4 -3 l3 4 z"/>
+          <path d="M62 24 l4 3 l-4 3 z"/>
+          <path d="M-40 34 l3 3 l-4 2 z"/>
+          <circle cx="30" cy="34" r="2"/>
+          <circle cx="-8" cy="38" r="1.6"/>
+          <circle cx="48" cy="36" r="1.8"/>
+        </g>
+        <text x="0" y="46" font-size="11" fill="#d9663f" text-anchor="middle" font-weight="700">old pad — cracked &amp; flaking</text>
+      </g>
+    </svg>

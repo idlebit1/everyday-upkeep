@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a backyard kettle grill with gentle smoke wisps rising from the lid vent, a spare grate with grill marks leaning beside it, and a caddy of cleaning tools on the patio">
+      <ellipse cx="290" cy="398" rx="240" ry="22" fill="#efe7d8"/>
+      <circle cx="78" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="462" cy="70" rx="44" ry="22" fill="#dce8ee"/>
+      <ellipse cx="424" cy="82" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- fence -->
+      <g fill="#c9a06b">
+        <rect x="376" y="208" width="14" height="96" rx="4"/>
+        <rect x="402" y="208" width="14" height="96" rx="4"/>
+        <rect x="428" y="208" width="14" height="96" rx="4"/>
+        <rect x="454" y="208" width="14" height="96" rx="4"/>
+        <rect x="480" y="208" width="14" height="96" rx="4"/>
+      </g>
+      <rect x="368" y="228" width="134" height="10" rx="5" fill="#b9886a" opacity="0.9"/>
+      <rect x="368" y="272" width="134" height="10" rx="5" fill="#b9886a" opacity="0.9"/>
+      <!-- bush -->
+      <circle cx="510" cy="338" r="26" fill="#5e9a78"/>
+      <circle cx="486" cy="350" r="18" fill="#3e7c59"/>
+      <!-- smoke wisps -->
+      <g stroke="#b9b1a3" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.75">
+        <path d="M236 138 q-10 -18 4 -32 q12 -12 4 -28"/>
+        <path d="M262 124 q-8 -16 6 -28 q12 -12 5 -26"/>
+      </g>
+      <!-- kettle grill -->
+      <path d="M158 192 a92 78 0 0 1 184 0 z" fill="#2c5a40"/>
+      <path d="M158 192 a92 78 0 0 1 184 0" fill="none" stroke="#234a34" stroke-width="3"/>
+      <rect x="236" y="96" width="28" height="10" rx="5" fill="#8a6a4f"/>
+      <ellipse cx="296" cy="150" rx="9" ry="5" fill="#5e9a78" transform="rotate(24 296 150)"/>
+      <rect x="150" y="192" width="200" height="14" rx="7" fill="#3e7c59"/>
+      <path d="M160 206 h180 a90 76 0 0 1 -180 0 z" fill="#3e7c59"/>
+      <path d="M178 252 q72 30 144 0 q-30 36 -72 36 q-42 0 -72 -36 z" fill="#2c5a40" opacity="0.45"/>
+      <circle cx="250" cy="300" r="9" fill="#8a6a4f"/>
+      <line x1="250" y1="306" x2="208" y2="372" stroke="#5a544a" stroke-width="8" stroke-linecap="round"/>
+      <line x1="250" y1="306" x2="292" y2="372" stroke="#5a544a" stroke-width="8" stroke-linecap="round"/>
+      <line x1="250" y1="308" x2="250" y2="376" stroke="#5a544a" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="208" cy="378" r="10" fill="#33393b"/>
+      <circle cx="208" cy="378" r="4" fill="#b9b1a3"/>
+      <circle cx="292" cy="378" r="10" fill="#33393b"/>
+      <circle cx="292" cy="378" r="4" fill="#b9b1a3"/>
+      <circle cx="250" cy="380" r="6" fill="#33393b"/>
+      <!-- spare grate with grill marks, leaning -->
+      <g transform="rotate(-8 92 320)">
+        <circle cx="92" cy="320" r="52" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+        <g stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round">
+          <line x1="56" y1="296" x2="128" y2="296"/>
+          <line x1="46" y1="312" x2="138" y2="312"/>
+          <line x1="46" y1="328" x2="138" y2="328"/>
+          <line x1="56" y1="344" x2="128" y2="344"/>
+        </g>
+        <g stroke="#c9a06b" stroke-width="3" stroke-linecap="round">
+          <line x1="76" y1="276" x2="76" y2="364"/>
+          <line x1="108" y1="276" x2="108" y2="364"/>
+        </g>
+      </g>
+      <!-- tool caddy -->
+      <rect x="368" y="334" width="96" height="48" rx="8" fill="#c96f4a"/>
+      <rect x="380" y="306" width="9" height="34" rx="4" fill="#8a6a4f"/>
+      <rect x="374" y="296" width="21" height="14" rx="4" fill="#e0a93d"/>
+      <line x1="408" y1="300" x2="408" y2="340" stroke="#5a544a" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="408" cy="296" r="6" fill="#7fb3c8"/>
+      <g stroke="#5a544a" stroke-width="4" stroke-linecap="round">
+        <line x1="428" y1="304" x2="424" y2="340"/>
+        <line x1="438" y1="304" x2="442" y2="340"/>
+      </g>
+      <path d="M428 304 q5 -8 10 0" stroke="#5a544a" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- grass tufts -->
+      <path d="M140 392 l3 -9 l3 9 M330 396 l3 -9 l3 9 M470 392 l3 -9 l3 9" stroke="#5e9a78" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </svg>

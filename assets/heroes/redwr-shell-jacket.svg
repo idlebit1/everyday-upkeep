@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of restoring a rain jacket's water repellency: a hardshell jacket where water beads up and rolls off one shoulder but soaks in and wets out darkly on the other, a spray-on DWR bottle and a wash-in DWR bottle standing nearby, and a tumble dryer and a warm iron with a press cloth to reactivate the coating, in an outdoor mudroom scene">
+      <ellipse cx="285" cy="404" rx="252" ry="20" fill="#efe7d8"/>
+
+      <!-- mudroom back wall + peg rail -->
+      <rect x="40" y="40" width="300" height="10" rx="4" fill="#c9a06b"/>
+      <circle cx="90" cy="60" r="5" fill="#8a6a4f"/>
+      <circle cx="150" cy="60" r="5" fill="#8a6a4f"/>
+      <circle cx="210" cy="60" r="5" fill="#8a6a4f"/>
+      <!-- hanger hook over the middle peg -->
+      <path d="M150 62 q6 -10 14 0" fill="none" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="112" y1="78" x2="216" y2="78" stroke="#8a6a4f" stroke-width="3"/>
+
+      <!-- the shell jacket, hanging, half beading / half wetting out -->
+      <!-- jacket body -->
+      <path d="M132 78 q32 -14 64 0 l22 26 l-24 16 l0 118 l-84 0 l0 -118 l-24 -16 z" fill="#7fb3c8"/>
+      <!-- collar -->
+      <path d="M148 78 q16 -8 32 0 l-8 12 q-8 -4 -16 0 z" fill="#5e9a78"/>
+      <!-- center zipper -->
+      <line x1="164" y1="90" x2="164" y2="238" stroke="#dce8ee" stroke-width="2.5"/>
+      <rect x="161" y="86" width="6" height="9" rx="2" fill="#d98e3b"/>
+
+      <!-- LEFT shoulder: DWR working — water beads roll off -->
+      <g fill="#dce8ee">
+        <circle cx="118" cy="120" r="5"/>
+        <circle cx="106" cy="140" r="4"/>
+        <circle cx="124" cy="158" r="4.4"/>
+        <circle cx="110" cy="176" r="3.4"/>
+        <circle cx="128" cy="194" r="3"/>
+      </g>
+      <!-- little roll-off trails on the beading side -->
+      <g stroke="#9cc3d4" stroke-width="2" stroke-linecap="round" opacity="0.7">
+        <path d="M118 126 q-4 8 -8 10"/>
+        <path d="M124 164 q-4 8 -10 10"/>
+      </g>
+      <text x="92" y="112" font-size="11" fill="#3e7c59" font-weight="700">beads</text>
+
+      <!-- RIGHT shoulder: wetted out — dark soaked patch -->
+      <path d="M172 100 q30 -6 44 18 l-24 16 l0 70 q-14 6 -20 4 l0 -74 q-2 -20 0 -34 z" fill="#5e8497" opacity="0.85"/>
+      <!-- darker soaked-in blotches -->
+      <g fill="#4a7385" opacity="0.7">
+        <ellipse cx="188" cy="150" rx="12" ry="16"/>
+        <ellipse cx="200" cy="186" rx="9" ry="13"/>
+      </g>
+      <text x="176" y="112" font-size="11" fill="#d9663f" font-weight="700">wets out</text>
+
+      <!-- wash-in DWR bottle, bottom-left -->
+      <rect x="56" y="322" width="34" height="56" rx="6" fill="#5e9a78"/>
+      <rect x="62" y="308" width="22" height="16" rx="3" fill="#3e7c59"/>
+      <rect x="60" y="336" width="26" height="26" rx="3" fill="#e3efe8"/>
+      <rect x="64" y="342" width="18" height="5" rx="2.5" fill="#3e7c59"/>
+      <text x="63" y="356" font-size="7.5" fill="#2c5a40" font-weight="700">WASH-IN</text>
+
+      <!-- spray-on DWR bottle, next to it -->
+      <rect x="104" y="330" width="28" height="48" rx="6" fill="#c96f4a"/>
+      <rect x="110" y="318" width="16" height="14" rx="3" fill="#b0512f"/>
+      <path d="M126 320 l16 -6 l0 6 l-16 4 z" fill="#8a6a4f"/>
+      <rect x="108" y="346" width="20" height="18" rx="3" fill="#fbe9e1" opacity="0.9"/>
+      <text x="107" y="358" font-size="7.5" fill="#8a4a2f" font-weight="700">SPRAY</text>
+
+      <!-- tumble dryer (reactivate with heat), bottom-right -->
+      <rect x="368" y="240" width="140" height="140" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="6"/>
+      <rect x="380" y="252" width="116" height="22" rx="6" fill="#dce8ee"/>
+      <circle cx="418" cy="264" r="6" fill="#3e7c59"/>
+      <circle cx="438" cy="322" r="52" fill="#e9e2d8"/>
+      <circle cx="438" cy="322" r="42" fill="#f6ede0"/>
+      <!-- gentle warmth waves inside the drum -->
+      <g stroke="#e0a93d" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+        <path d="M422 332 q6 -8 12 0 q6 8 12 0"/>
+        <path d="M424 314 q6 -8 12 0 q6 8 12 0"/>
+      </g>
+      <text x="376" y="300" font-size="11" fill="#3e7c59" font-weight="700">low / medium heat</text>
+
+      <!-- warm iron + press cloth, on a small table front-right -->
+      <rect x="300" y="356" width="70" height="10" rx="3" fill="#c9a06b"/>
+      <!-- press cloth draped -->
+      <rect x="306" y="340" width="56" height="18" rx="4" fill="#dce8ee"/>
+      <g stroke="#9cc3d4" stroke-width="1.4">
+        <line x1="314" y1="348" x2="354" y2="348"/>
+      </g>
+      <!-- iron on top of the cloth -->
+      <path d="M312 340 q40 -6 48 4 l-4 6 l-44 0 z" fill="#b9b1a3"/>
+      <rect x="316" y="322" width="34" height="12" rx="5" fill="#8a6a4f"/>
+      <!-- heat wave off the iron -->
+      <path d="M348 318 q3 -6 0 -12" stroke="#e0a93d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <text x="300" y="380" font-size="10.5" fill="#3e7c59" font-weight="700">warm iron + cloth</text>
+
+      <!-- muddy boots for the outdoor/mudroom feel, front-center -->
+      <path d="M228 372 h20 l4 -22 h-20 z" fill="#8a6a4f"/>
+      <path d="M228 372 h34 l0 10 h-34 z" fill="#5c4634"/>
+      <path d="M258 372 h20 l4 -22 h-20 z" fill="#8a6a4f"/>
+      <path d="M258 372 h34 l0 10 h-34 z" fill="#5c4634"/>
+      <g fill="#6b5540" opacity="0.7">
+        <circle cx="234" cy="360" r="2"/>
+        <circle cx="266" cy="358" r="1.8"/>
+      </g>
+    </svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Reassuring illustration of a friendly dog sitting on an exam table at the vet while a calm veterinarian in green scrubs holds a clipboard and a vaccination record card, a wall calendar hangs behind them, and a relaxed cat watches nearby">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall calendar behind -->
+      <rect x="40" y="40" width="96" height="92" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="40" y="40" width="96" height="22" rx="8" fill="#3e7c59"/>
+      <rect x="40" y="56" width="96" height="6" fill="#2c5a40"/>
+      <rect x="58" y="32" width="6" height="16" rx="3" fill="#8a6a4f"/>
+      <rect x="112" y="32" width="6" height="16" rx="3" fill="#8a6a4f"/>
+      <g fill="#dce8ee">
+        <rect x="50" y="72" width="14" height="11" rx="2"/>
+        <rect x="68" y="72" width="14" height="11" rx="2"/>
+        <rect x="86" y="72" width="14" height="11" rx="2"/>
+        <rect x="104" y="72" width="14" height="11" rx="2"/>
+        <rect x="50" y="88" width="14" height="11" rx="2"/>
+        <rect x="68" y="88" width="14" height="11" rx="2"/>
+        <rect x="86" y="88" width="14" height="11" rx="2"/>
+        <rect x="104" y="88" width="14" height="11" rx="2"/>
+        <rect x="50" y="104" width="14" height="11" rx="2"/>
+        <rect x="68" y="104" width="14" height="11" rx="2"/>
+      </g>
+      <!-- circled "due" day -->
+      <circle cx="93" cy="93.5" r="9" fill="none" stroke="#d9663f" stroke-width="3"/>
+
+      <!-- exam table -->
+      <rect x="150" y="272" width="262" height="18" rx="9" fill="#7fb3c8"/>
+      <rect x="158" y="290" width="246" height="8" rx="4" fill="#b9b1a3"/>
+      <rect x="176" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="372" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="176" y="344" width="210" height="9" rx="4.5" fill="#b9b1a3"/>
+
+      <!-- friendly dog sitting on the table -->
+      <ellipse cx="252" cy="228" rx="46" ry="48" fill="#c9a06b"/>
+      <ellipse cx="224" cy="242" rx="22" ry="32" fill="#b98c54"/>
+      <rect x="244" y="220" width="16" height="56" rx="8" fill="#c9a06b"/>
+      <rect x="268" y="220" width="16" height="56" rx="8" fill="#c9a06b"/>
+      <ellipse cx="252" cy="274" rx="11" ry="6" fill="#b98c54"/>
+      <ellipse cx="276" cy="274" rx="11" ry="6" fill="#b98c54"/>
+      <path d="M210 204 q-24 -4 -26 -26" stroke="#8a6a4f" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <circle cx="264" cy="152" r="36" fill="#c9a06b"/>
+      <ellipse cx="234" cy="144" rx="12" ry="22" fill="#8a6a4f" transform="rotate(20 234 144)"/>
+      <ellipse cx="294" cy="144" rx="12" ry="22" fill="#8a6a4f" transform="rotate(-20 294 144)"/>
+      <ellipse cx="264" cy="168" rx="15" ry="11" fill="#fffdf8"/>
+      <circle cx="264" cy="162" r="5" fill="#33393b"/>
+      <path d="M257 172 q7 6 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="251" cy="150" r="4" fill="#33393b"/>
+      <circle cx="278" cy="150" r="4" fill="#33393b"/>
+      <path d="M236 186 q28 12 56 0" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="264" cy="196" r="6" fill="#e0a93d"/>
+      <!-- little reassuring heart over the dog -->
+      <path d="M318 96 c5 -9 17 -6 17 3 c0 8 -10 14 -17 19 c-7 -5 -17 -11 -17 -19 c0 -9 12 -12 17 -3 z" fill="#c96f4a"/>
+
+      <!-- veterinarian with clipboard / record card -->
+      <circle cx="452" cy="118" r="30" fill="#f3ddc0"/>
+      <path d="M422 110 a30 30 0 0 1 60 0 l-8 0 q-10 -16 -22 -16 q-12 0 -22 16 z" fill="#8a6a4f"/>
+      <circle cx="443" cy="118" r="3.5" fill="#33393b"/>
+      <circle cx="461" cy="118" r="3.5" fill="#33393b"/>
+      <path d="M445 131 q7 5 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <rect x="410" y="150" width="84" height="128" rx="20" fill="#3e7c59"/>
+      <rect x="436" y="150" width="32" height="16" rx="6" fill="#2c5a40"/>
+      <!-- vaccination record card / clipboard in vet's hands -->
+      <g transform="rotate(-8 392 226)">
+        <rect x="356" y="196" width="72" height="92" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+        <rect x="378" y="190" width="28" height="10" rx="3" fill="#c96f4a"/>
+        <rect x="366" y="212" width="52" height="6" rx="3" fill="#dce8ee"/>
+        <rect x="366" y="226" width="52" height="6" rx="3" fill="#dce8ee"/>
+        <rect x="366" y="240" width="40" height="6" rx="3" fill="#e9e2d8"/>
+        <!-- green check = up to date -->
+        <circle cx="384" cy="266" r="11" fill="#e3efe8"/>
+        <path d="M379 266 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- vet's arm steadying the clipboard -->
+      <path d="M414 178 q-18 22 -28 36" stroke="#3e7c59" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <circle cx="386" cy="214" r="10" fill="#f3ddc0"/>
+      <!-- vet's legs -->
+      <rect x="424" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <rect x="458" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <ellipse cx="433" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+      <ellipse cx="471" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+
+      <!-- relaxed cat nearby on the floor, watching -->
+      <ellipse cx="96" cy="372" rx="34" ry="22" fill="#b9b1a3"/>
+      <circle cx="64" cy="356" r="19" fill="#b9b1a3"/>
+      <polygon points="50,346 53,330 64,342" fill="#b9b1a3"/>
+      <polygon points="78,346 75,330 64,342" fill="#b9b1a3"/>
+      <polygon points="52,344 54,334 62,342" fill="#fbe9e1"/>
+      <polygon points="76,344 74,334 66,342" fill="#fbe9e1"/>
+      <circle cx="58" cy="356" r="2.6" fill="#33393b"/>
+      <circle cx="70" cy="356" r="2.6" fill="#33393b"/>
+      <polygon points="61,361 67,361 64,365" fill="#c96f4a"/>
+      <path d="M128 380 q18 2 16 -16" stroke="#b9b1a3" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- foreground greenery -->
+      <circle cx="520" cy="392" r="14" fill="#5e9a78"/>
+      <circle cx="540" cy="396" r="10" fill="#3e7c59"/>
+    </svg>

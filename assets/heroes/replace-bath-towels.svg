@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tidy bathroom: a neat stack of plush, fresh folded towels sits next to a thin, frayed, faded old towel being set on a rag pile, a towel bar hangs on the wall, and two water droplets show the difference — one beading on top of the fresh towel and one soaking into it while the old towel just smears water around">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- back wall tile hint -->
+      <rect x="60" y="40" width="440" height="250" rx="8" fill="#dce8ee" opacity="0.35"/>
+      <g stroke="#7fb3c8" stroke-width="1.4" opacity="0.3">
+        <line x1="60" y1="120" x2="500" y2="120"/>
+        <line x1="60" y1="200" x2="500" y2="200"/>
+        <line x1="210" y1="40" x2="210" y2="290"/>
+        <line x1="360" y1="40" x2="360" y2="290"/>
+      </g>
+
+      <!-- towel bar on the wall -->
+      <rect x="92" y="92" width="180" height="7" rx="3.5" fill="#b9b1a3"/>
+      <circle cx="96" cy="95" r="6" fill="#8a6a4f"/>
+      <circle cx="268" cy="95" r="6" fill="#8a6a4f"/>
+      <!-- a fresh towel hanging from the bar -->
+      <rect x="120" y="98" width="120" height="92" rx="5" fill="#5e9a78"/>
+      <rect x="120" y="98" width="120" height="14" rx="5" fill="#3e7c59"/>
+      <g stroke="#3e7c59" stroke-width="1.6" opacity="0.6">
+        <line x1="120" y1="150" x2="240" y2="150"/>
+        <line x1="120" y1="170" x2="240" y2="170"/>
+      </g>
+
+      <!-- STACK of plush fresh folded towels, front-left -->
+      <g>
+        <rect x="96" y="320" width="150" height="26" rx="6" fill="#3e7c59"/>
+        <rect x="96" y="320" width="150" height="9" rx="5" fill="#5e9a78"/>
+        <rect x="100" y="296" width="142" height="26" rx="6" fill="#5e9a78"/>
+        <rect x="100" y="296" width="142" height="9" rx="5" fill="#7fb3c8" opacity="0.5"/>
+        <rect x="104" y="272" width="134" height="26" rx="6" fill="#3e7c59"/>
+        <rect x="104" y="272" width="134" height="9" rx="5" fill="#5e9a78"/>
+        <rect x="108" y="248" width="126" height="26" rx="6" fill="#5e9a78"/>
+        <rect x="108" y="248" width="126" height="9" rx="5" fill="#7fb3c8" opacity="0.5"/>
+        <!-- soft folded-edge curls on the right of the stack -->
+        <path d="M234 254 q10 11 0 22" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+        <path d="M238 278 q10 11 0 22" fill="none" stroke="#2c5a40" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <text x="118" y="372" font-size="12" fill="#3e7c59" font-weight="700">fresh &amp; plush</text>
+
+      <!-- water DROPLET beading on top of fresh towel, then soaking in -->
+      <path d="M168 230 q-6 -10 0 -16 q6 6 0 16 z" fill="#7fb3c8"/>
+      <circle cx="168" cy="226" r="2.2" fill="#dce8ee"/>
+      <!-- little soak-in arrow into the plush stack -->
+      <path d="M196 232 l0 12 m-4 -5 l4 5 l4 -5" stroke="#7fb3c8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- thin, frayed, faded OLD towel on a rag pile, front-right -->
+      <!-- rag pile base -->
+      <path d="M330 360 q40 -24 110 -8 q24 6 36 18 l0 8 q-90 -6 -146 6 z" fill="#c9a06b" opacity="0.55"/>
+      <!-- crumpled old rag underneath -->
+      <path d="M350 352 q30 -10 64 -2 q14 4 8 12 q-40 -4 -76 4 z" fill="#b9b1a3"/>
+      <!-- the thin, draped old towel -->
+      <path d="M338 300 q60 -22 130 -6 l-6 30 q-62 -14 -120 6 z" fill="#c9a06b"/>
+      <!-- faded patch / discolouration -->
+      <path d="M388 296 q30 -6 56 0 l-3 16 q-28 -6 -52 0 z" fill="#d8cfbe" opacity="0.7"/>
+      <!-- frayed bottom edge -->
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="344" y1="332" x2="342" y2="344"/>
+        <line x1="360" y1="334" x2="358" y2="347"/>
+        <line x1="378" y1="334" x2="377" y2="348"/>
+        <line x1="398" y1="333" x2="398" y2="347"/>
+        <line x1="418" y1="332" x2="419" y2="345"/>
+        <line x1="438" y1="330" x2="440" y2="342"/>
+        <line x1="456" y1="326" x2="459" y2="338"/>
+      </g>
+      <!-- a worn hole -->
+      <ellipse cx="412" cy="312" rx="7" ry="4.5" fill="#efe7d8"/>
+      <!-- thin/threadbare stitch lines -->
+      <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.5">
+        <line x1="350" y1="306" x2="456" y2="298"/>
+        <line x1="352" y1="316" x2="452" y2="310"/>
+      </g>
+      <text x="356" y="386" font-size="12" fill="#c96f4a" font-weight="700">thin · frayed · retire</text>
+
+      <!-- musty smell wafting off the old towel -->
+      <g stroke="#b9b1a3" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.7">
+        <path d="M430 290 q6 -10 0 -20 q-6 -10 0 -20"/>
+        <path d="M448 288 q6 -10 0 -20 q-6 -10 0 -20"/>
+      </g>
+
+      <!-- water just smearing / running OFF the old towel (not absorbing) -->
+      <path d="M396 286 q4 8 -2 14 q-6 -2 -4 -10 z" fill="#7fb3c8" opacity="0.8"/>
+      <path d="M404 286 q3 8 8 12" stroke="#7fb3c8" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- small folded soap / sponge for warmth, mid-front -->
+      <rect x="270" y="356" width="38" height="22" rx="6" fill="#e0a93d"/>
+      <rect x="270" y="356" width="38" height="8" rx="4" fill="#d98e3b"/>
+    </svg>

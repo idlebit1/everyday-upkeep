@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a bird feeder outdoors: a tube-and-hopper feeder has been taken down and is being scrubbed with a bottle brush in a bucket of soapy water, a pair of friendly songbirds wait on a leafy branch, a red hummingbird nectar feeder hangs nearby, and a pair of gloves rests in a sunny backyard">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- backyard ground stripe -->
+      <rect x="35" y="372" width="500" height="30" rx="14" fill="#efe7d8"/>
+      <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round" opacity="0.8">
+        <path d="M70 372 q3 -12 0 -22"/>
+        <path d="M82 372 q5 -14 12 -20"/>
+        <path d="M470 372 q-3 -12 0 -22"/>
+        <path d="M484 372 q5 -14 12 -20"/>
+      </g>
+
+      <!-- leafy branch top-right with two songbirds waiting -->
+      <path d="M560 96 q-90 6 -150 40" fill="none" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+      <path d="M470 116 q-22 -16 -40 -14" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="500" cy="96" rx="9" ry="15" fill="#3e7c59" transform="rotate(-32 500 96)"/>
+      <ellipse cx="524" cy="104" rx="9" ry="15" fill="#5e9a78" transform="rotate(24 524 104)"/>
+      <ellipse cx="446" cy="116" rx="8" ry="13" fill="#3e7c59" transform="rotate(-20 446 116)"/>
+      <!-- songbird 1 -->
+      <ellipse cx="436" cy="138" rx="20" ry="15" fill="#7fb3c8"/>
+      <circle cx="420" cy="130" r="10" fill="#7fb3c8"/>
+      <circle cx="416" cy="128" r="2" fill="#33393b"/>
+      <path d="M408 130 l-8 2 l8 4 z" fill="#e0a93d"/>
+      <path d="M448 140 l16 6 l-14 6 z" fill="#5e9a78"/>
+      <path d="M428 152 l-3 8 M436 153 l-2 8" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- songbird 2, smaller -->
+      <ellipse cx="496" cy="146" rx="16" ry="12" fill="#c96f4a"/>
+      <circle cx="484" cy="140" r="8" fill="#d9663f"/>
+      <circle cx="481" cy="138" r="1.7" fill="#33393b"/>
+      <path d="M475 140 l-7 2 l7 3 z" fill="#e0a93d"/>
+      <path d="M506 148 l13 5 l-11 5 z" fill="#b9583a"/>
+      <path d="M490 157 l-2 6 M497 158 l-2 6" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- hummingbird nectar feeder hanging on left -->
+      <path d="M96 40 q14 8 0 20" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <path d="M96 60 l0 28" stroke="#b9b1a3" stroke-width="3"/>
+      <!-- reservoir of red sugar water -->
+      <path d="M74 88 h44 v34 q0 18 -22 18 q-22 0 -22 -18 z" fill="#d9663f"/>
+      <path d="M74 88 h44 v14 h-44 z" fill="#e07a55"/>
+      <ellipse cx="96" cy="88" rx="22" ry="6" fill="#fffdf8" opacity="0.8"/>
+      <!-- base + flower ports -->
+      <path d="M70 122 h52 l-6 14 h-40 z" fill="#3e7c59"/>
+      <circle cx="82" cy="130" r="5" fill="#e0a93d"/>
+      <circle cx="96" cy="133" r="5" fill="#e0a93d"/>
+      <circle cx="110" cy="130" r="5" fill="#e0a93d"/>
+      <circle cx="82" cy="130" r="1.6" fill="#c96f4a"/>
+      <circle cx="96" cy="133" r="1.6" fill="#c96f4a"/>
+      <circle cx="110" cy="130" r="1.6" fill="#c96f4a"/>
+      <text x="60" y="160" font-size="11" fill="#d9663f" font-weight="700">nectar: clean often</text>
+
+      <!-- bucket of soapy water, center -->
+      <path d="M196 250 h150 l-16 110 h-118 z" fill="#7fb3c8"/>
+      <path d="M188 246 h166 l-5 12 h-156 z" fill="#9cc3d4"/>
+      <path d="M198 244 q73 -22 142 0" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+      <!-- soapy water surface + suds -->
+      <ellipse cx="271" cy="262" rx="70" ry="12" fill="#dce8ee"/>
+      <circle cx="224" cy="258" r="9" fill="#eef4f7"/>
+      <circle cx="246" cy="252" r="11" fill="#fffdf8"/>
+      <circle cx="300" cy="256" r="8" fill="#eef4f7"/>
+      <circle cx="320" cy="250" r="9" fill="#fffdf8"/>
+      <circle cx="270" cy="248" r="7" fill="#eef4f7"/>
+
+      <!-- the tube-and-hopper feeder taken down, standing in the bucket being scrubbed -->
+      <!-- hopper roof -->
+      <path d="M236 96 l34 -26 l34 26 z" fill="#c96f4a"/>
+      <path d="M236 96 l34 -26 l4 3 l-30 23 z" fill="#d9663f"/>
+      <!-- clear tube body with seed -->
+      <rect x="252" y="96" width="36" height="150" rx="8" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="258" y="150" width="24" height="90" rx="4" fill="#c9a06b"/>
+      <g fill="#b9b1a3">
+        <circle cx="266" cy="170" r="2"/>
+        <circle cx="276" cy="184" r="2"/>
+        <circle cx="264" cy="198" r="2"/>
+        <circle cx="278" cy="210" r="2"/>
+      </g>
+      <!-- feed ports + perches -->
+      <rect x="246" y="160" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="286" y="160" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="232" y="166" width="18" height="4" rx="2" fill="#8a6a4f"/>
+      <rect x="290" y="166" width="18" height="4" rx="2" fill="#8a6a4f"/>
+      <rect x="246" y="200" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="286" y="200" width="8" height="8" rx="2" fill="#2c5a40"/>
+      <rect x="232" y="206" width="18" height="4" rx="2" fill="#8a6a4f"/>
+      <rect x="290" y="206" width="18" height="4" rx="2" fill="#8a6a4f"/>
+
+      <!-- bottle brush scrubbing inside, with a hand -->
+      <rect x="316" y="120" width="9" height="120" rx="4" fill="#5e9a78" transform="rotate(14 320 180)"/>
+      <g fill="#3e7c59">
+        <ellipse cx="300" cy="150" rx="14" ry="8" transform="rotate(14 300 150)"/>
+        <ellipse cx="306" cy="170" rx="15" ry="9" transform="rotate(14 306 170)"/>
+        <ellipse cx="312" cy="190" rx="14" ry="8" transform="rotate(14 312 190)"/>
+      </g>
+      <!-- gloved hand on brush handle -->
+      <ellipse cx="350" cy="116" rx="18" ry="13" fill="#e0a93d"/>
+      <path d="M338 110 q-4 7 0 14" stroke="#d98e3b" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M352 128 q24 16 0 44" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+
+      <!-- spilled / clumped old seed dumped on the ground, front-left -->
+      <ellipse cx="120" cy="362" rx="38" ry="11" fill="#8a6a4f" opacity="0.55"/>
+      <g fill="#c9a06b">
+        <circle cx="104" cy="360" r="3"/>
+        <circle cx="118" cy="364" r="3.4"/>
+        <circle cx="134" cy="359" r="3"/>
+        <circle cx="126" cy="366" r="2.6"/>
+        <circle cx="110" cy="366" r="2.4"/>
+      </g>
+      <!-- a little mold tuft on the discarded seed -->
+      <circle cx="122" cy="356" r="5" fill="#5e9a78" opacity="0.6"/>
+      <text x="86" y="386" font-size="11" fill="#6b7376">toss moldy seed</text>
+
+      <!-- pair of gloves resting front-right -->
+      <path d="M408 348 q-4 -22 8 -30 q4 16 12 14 q4 18 -6 26 z" fill="#e0a93d"/>
+      <path d="M416 318 l-2 -10 M422 320 l1 -10 M428 322 l4 -8" stroke="#d98e3b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M438 352 q-2 -18 8 -24 q3 13 11 11 q4 15 -4 22 z" fill="#d98e3b"/>
+
+      <!-- sun for the dry-in-the-sun cue -->
+      <circle cx="496" cy="50" r="20" fill="#faf0da" stroke="#e0a93d" stroke-width="3"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="496" y1="16" x2="496" y2="24"/>
+        <line x1="528" y1="50" x2="536" y2="50"/>
+        <line x1="520" y1="26" x2="526" y2="20"/>
+        <line x1="520" y1="74" x2="526" y2="80"/>
+      </g>
+    </svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a transmission fluid service: a car raised on jack stands in a driveway garage with the transmission pan underneath being drained of old brown fluid into a catch pan, a bottle of fresh pink-red transmission fluid standing ready beside it, and an inset comparing two dipsticks — one bright red for fresh fluid and one dark brown for old, burnt fluid">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- garage / driveway backdrop -->
+      <rect x="40" y="60" width="300" height="150" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <line x1="40" y1="110" x2="340" y2="110" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="140" y1="60" x2="140" y2="210" stroke="#e9e2d8" stroke-width="3"/>
+      <line x1="240" y1="60" x2="240" y2="210" stroke="#e9e2d8" stroke-width="3"/>
+
+      <!-- car body, side profile raised on stands -->
+      <path d="M70 250 q4 -52 58 -58 l150 -8 q40 -2 70 22 l52 44 h66 q20 0 20 22 v18 q0 10 -14 10 h-462 q-12 0 -12 -12 v-46 q0 -16 22 -18 z" fill="#7fb3c8"/>
+      <path d="M130 196 l148 -8 q40 -2 70 22 l38 32 h-296 q6 -40 40 -46 z" fill="#9cc3d4"/>
+      <!-- windshield glint -->
+      <path d="M196 192 l82 -5 q26 -1 46 16 l20 16 h-164 z" fill="#dce8ee"/>
+
+      <!-- front wheel, lifted (gap to ground) -->
+      <circle cx="158" cy="300" r="32" fill="#33393b"/>
+      <circle cx="158" cy="300" r="14" fill="#b9b1a3"/>
+      <!-- rear wheel, lifted -->
+      <circle cx="398" cy="300" r="32" fill="#33393b"/>
+      <circle cx="398" cy="300" r="14" fill="#b9b1a3"/>
+
+      <!-- jack stands under the body -->
+      <path d="M236 360 l-16 -38 h32 z" fill="#c96f4a"/>
+      <rect x="228" y="316" width="16" height="8" rx="2" fill="#8a6a4f"/>
+      <rect x="216" y="356" width="40" height="8" rx="2" fill="#8a6a4f"/>
+      <path d="M316 360 l-16 -38 h32 z" fill="#c96f4a"/>
+      <rect x="308" y="316" width="16" height="8" rx="2" fill="#8a6a4f"/>
+      <rect x="296" y="356" width="40" height="8" rx="2" fill="#8a6a4f"/>
+
+      <!-- transmission pan underneath, between the stands -->
+      <rect x="252" y="282" width="60" height="22" rx="4" fill="#6b7376"/>
+      <rect x="256" y="286" width="52" height="14" rx="3" fill="#8a6a4f"/>
+      <!-- drain bolt / stream of old brown fluid -->
+      <circle cx="282" cy="304" r="3" fill="#33393b"/>
+      <path d="M282 308 q-2 14 0 28 q2 12 0 22" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M280 318 q-1 8 0 16" fill="none" stroke="#6b4a33" stroke-width="2.4" stroke-linecap="round"/>
+
+      <!-- catch pan on the ground catching old fluid -->
+      <path d="M236 360 h92 l-8 26 h-76 z" fill="#b9b1a3"/>
+      <path d="M232 358 h100 l-3 8 h-94 z" fill="#8a6a4f"/>
+      <!-- old brown fluid pooled in the pan -->
+      <path d="M244 366 h76 l-2 8 h-72 z" fill="#6b4a33"/>
+      <text x="282" y="396" font-size="10" fill="#8a6a4f" text-anchor="middle" font-weight="700">old fluid — burnt brown</text>
+
+      <!-- bottle of fresh pink/red transmission fluid, standing ready -->
+      <rect x="78" y="318" width="34" height="58" rx="6" fill="#fbe9e1"/>
+      <rect x="84" y="300" width="22" height="20" rx="4" fill="#c96f4a"/>
+      <rect x="88" y="290" width="14" height="12" rx="3" fill="#8a6a4f"/>
+      <!-- fresh reddish-pink fluid level inside -->
+      <rect x="82" y="334" width="26" height="38" rx="4" fill="#d9663f"/>
+      <rect x="82" y="334" width="26" height="14" rx="4" fill="#e08a6a"/>
+      <rect x="84" y="344" width="22" height="20" rx="3" fill="#fffdf8" opacity="0.55"/>
+      <text x="95" y="392" font-size="10" fill="#c96f4a" text-anchor="middle" font-weight="700">fresh ATF</text>
+
+      <!-- inset: dipstick comparison, top-right -->
+      <rect x="360" y="78" width="170" height="118" rx="10" fill="#fffdf8" stroke="#5e9a78" stroke-width="3"/>
+      <text x="445" y="98" font-size="11" fill="#2c5a40" text-anchor="middle" font-weight="700">read the dipstick</text>
+      <!-- fresh dipstick: bright red -->
+      <rect x="392" y="108" width="9" height="74" rx="4" fill="#b9b1a3"/>
+      <rect x="392" y="142" width="9" height="40" rx="4" fill="#d9663f"/>
+      <circle cx="396" cy="105" r="6" fill="#8a6a4f"/>
+      <text x="396" y="194" font-size="9" fill="#c96f4a" text-anchor="middle" font-weight="700">good</text>
+      <!-- old dipstick: dark brown -->
+      <rect x="488" y="108" width="9" height="74" rx="4" fill="#b9b1a3"/>
+      <rect x="488" y="142" width="9" height="40" rx="4" fill="#6b4a33"/>
+      <circle cx="492" cy="105" r="6" fill="#8a6a4f"/>
+      <text x="492" y="194" font-size="9" fill="#8a6a4f" text-anchor="middle" font-weight="700">overdue</text>
+      <!-- vs divider -->
+      <text x="445" y="150" font-size="12" fill="#6b7376" text-anchor="middle" font-weight="700">vs</text>
+    </svg>

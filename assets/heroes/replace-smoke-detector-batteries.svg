@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person on a step ladder swapping a fresh nine-volt battery into a ceiling smoke detector that has been twisted off its mount, with the old battery and a marker on a side table, a wall clock showing the yearly reminder, and a window with sunlight">
+      <ellipse cx="280" cy="402" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- ceiling -->
+      <rect x="36" y="14" width="488" height="16" rx="4" fill="#efe7d8"/>
+      <line x1="36" y1="30" x2="524" y2="30" stroke="#d8cfbe" stroke-width="3"/>
+      <!-- empty mounting bracket on the ceiling (alarm has been taken down) -->
+      <rect x="288" y="30" width="24" height="8" fill="#b9b1a3"/>
+      <circle cx="300" cy="50" r="16" fill="none" stroke="#b9b1a3" stroke-width="3.5" stroke-dasharray="5 4"/>
+      <!-- the alarm itself, held open, lower in the scene -->
+      <circle cx="300" cy="150" r="40" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+      <circle cx="300" cy="150" r="25" fill="#dce8ee"/>
+      <!-- open battery door -->
+      <path d="M300 110 l34 -14 v22 l-34 14 z" fill="#f1e9dc" stroke="#b9b1a3" stroke-width="2.5"/>
+      <circle cx="300" cy="150" r="7" fill="#e0a93d"/>
+      <!-- fresh 9V battery being inserted -->
+      <rect x="312" y="120" width="26" height="20" rx="4" fill="#e0a93d" transform="rotate(-20 312 120)"/>
+      <rect x="312" y="120" width="26" height="6" rx="3" fill="#d98e3b" transform="rotate(-20 312 120)"/>
+      <!-- window, left -->
+      <rect x="64" y="96" width="96" height="116" rx="4" fill="#cfe3ec" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="112" y1="96" x2="112" y2="212" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="64" y1="154" x2="160" y2="154" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="88" cy="120" r="12" fill="#f2cf7a"/>
+      <!-- side table with the OLD battery + marker -->
+      <rect x="70" y="320" width="104" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="82" y="330" width="10" height="62" fill="#8a6a4f"/>
+      <rect x="152" y="330" width="10" height="62" fill="#8a6a4f"/>
+      <rect x="92" y="292" width="34" height="28" rx="4" fill="#b9b1a3"/>
+      <rect x="92" y="292" width="34" height="8" rx="4" fill="#8a6a4f"/>
+      <text x="109" y="313" font-size="11" font-weight="800" fill="#fffdf8" text-anchor="middle">OLD</text>
+      <rect x="134" y="284" width="9" height="36" rx="3" fill="#c96f4a" transform="rotate(14 134 284)"/>
+      <rect x="135" y="280" width="7" height="8" rx="2" fill="#33393b" transform="rotate(14 135 280)"/>
+      <!-- wall clock, right (yearly reminder cue) -->
+      <circle cx="468" cy="140" r="34" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3.5"/>
+      <line x1="468" y1="140" x2="468" y2="118" stroke="#2c5a40" stroke-width="4" stroke-linecap="round"/>
+      <line x1="468" y1="140" x2="484" y2="148" stroke="#2c5a40" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="468" cy="140" r="4" fill="#d9663f"/>
+      <path d="M508 116 q10 -8 6 -20" stroke="#e0a93d" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <polygon points="510,92 520,100 506,104" fill="#e0a93d"/>
+      <!-- person on step ladder, reaching toward the alarm -->
+      <rect x="246" y="356" width="84" height="12" rx="5" fill="#c96f4a"/>
+      <rect x="252" y="368" width="9" height="30" fill="#9a4f33"/>
+      <rect x="315" y="368" width="9" height="30" fill="#9a4f33"/>
+      <rect x="262" y="380" width="52" height="9" rx="4" fill="#c96f4a"/>
+      <!-- legs -->
+      <rect x="272" y="292" width="14" height="66" rx="6" fill="#2c5a40"/>
+      <rect x="292" y="292" width="14" height="66" rx="6" fill="#2c5a40"/>
+      <!-- torso -->
+      <rect x="264" y="214" width="50" height="86" rx="18" fill="#3e7c59"/>
+      <!-- arm reaching up to the alarm -->
+      <path d="M300 230 Q312 200 318 172" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="320" cy="166" r="7" fill="#c9a06b"/>
+      <!-- other arm steadying the alarm -->
+      <path d="M270 238 Q278 196 290 168" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <circle cx="292" cy="162" r="6.5" fill="#c9a06b"/>
+      <!-- head -->
+      <circle cx="284" cy="190" r="18" fill="#c9a06b"/>
+      <path d="M266 186 q4 -16 20 -16 q12 0 16 10 q-10 -4 -18 -2 q-12 2 -18 8" fill="#8a6a4f"/>
+      <!-- plant, right -->
+      <circle cx="430" cy="346" r="17" fill="#5e9a78"/>
+      <circle cx="448" cy="334" r="14" fill="#3e7c59"/>
+      <circle cx="452" cy="354" r="11" fill="#5e9a78"/>
+      <rect x="426" y="362" width="30" height="28" rx="4" fill="#c96f4a"/>
+    </svg>

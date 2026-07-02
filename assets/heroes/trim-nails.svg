@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm nail-grooming scene: a relaxed hand with neatly trimmed, gently rounded fingernails rests beside a foot with toenails cut straight across, a pair of nail clippers and an emery file lie nearby, and a small bowl of warm water with a curl of steam sits ready for softening the nails first">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- soft towel surface under everything -->
+      <rect x="60" y="300" width="440" height="74" rx="18" fill="#dce8ee"/>
+      <rect x="60" y="300" width="440" height="16" rx="8" fill="#cdd9de"/>
+      <g stroke="#9cc3d4" stroke-width="2" stroke-linecap="round" opacity="0.7">
+        <line x1="96" y1="338" x2="180" y2="338"/>
+        <line x1="96" y1="350" x2="180" y2="350"/>
+        <line x1="360" y1="338" x2="448" y2="338"/>
+        <line x1="360" y1="350" x2="448" y2="350"/>
+      </g>
+
+      <!-- HAND, top-left: relaxed, palm-down, four fingers + thumb -->
+      <!-- forearm/wrist -->
+      <path d="M52 250 q40 -22 96 -10 l0 44 q-52 6 -96 -12 z" fill="#e8b48f"/>
+      <!-- palm/back of hand -->
+      <path d="M128 214 q60 -10 96 6 q26 12 18 40 q-10 30 -54 30 q-46 0 -66 -22 q-12 -30 6 -54 z" fill="#e8b48f"/>
+      <!-- fingers, gently splayed -->
+      <g fill="#e8b48f">
+        <rect x="208" y="200" width="26" height="58" rx="13" transform="rotate(14 221 229)"/>
+        <rect x="232" y="196" width="26" height="62" rx="13" transform="rotate(4 245 227)"/>
+        <rect x="256" y="200" width="25" height="58" rx="12.5" transform="rotate(-6 268 229)"/>
+        <rect x="278" y="210" width="23" height="50" rx="11.5" transform="rotate(-16 289 235)"/>
+      </g>
+      <!-- thumb -->
+      <rect x="150" y="250" width="24" height="48" rx="12" transform="rotate(36 162 274)" fill="#e8b48f"/>
+      <!-- gently rounded fingernails (paper-pink ovals) -->
+      <g fill="#fffdf8" stroke="#d99c73" stroke-width="1.4">
+        <ellipse cx="238" cy="206" rx="7" ry="9" transform="rotate(14 238 206)"/>
+        <ellipse cx="260" cy="202" rx="7.5" ry="9.5" transform="rotate(4 260 202)"/>
+        <ellipse cx="280" cy="206" rx="7" ry="9" transform="rotate(-6 280 206)"/>
+        <ellipse cx="300" cy="216" rx="6" ry="8" transform="rotate(-16 300 216)"/>
+      </g>
+      <!-- soft knuckle lines -->
+      <g stroke="#d99c73" stroke-width="1.6" stroke-linecap="round" opacity="0.6">
+        <path d="M226 240 q2 6 0 12"/>
+        <path d="M250 238 q1 6 0 12"/>
+        <path d="M272 240 q-1 6 -2 11"/>
+      </g>
+
+      <!-- FOOT, bottom-right: side-on, toenails straight across -->
+      <!-- ankle/leg -->
+      <path d="M468 250 q20 -26 44 -22 l0 50 q-26 6 -46 -8 z" fill="#e8b48f"/>
+      <!-- foot body -->
+      <path d="M300 330 q4 -40 60 -48 q56 -8 110 4 q22 6 18 30 q-6 26 -40 30 q-78 8 -118 4 q-32 -2 -30 -20 z" fill="#e8b48f"/>
+      <!-- heel rounding -->
+      <path d="M468 296 q26 8 40 -4 q6 -16 -4 -26 q-20 -6 -36 4 z" fill="#dca27d"/>
+      <!-- toes, big to small, left edge of the foot -->
+      <g fill="#e8b48f">
+        <ellipse cx="306" cy="316" rx="16" ry="18"/>
+        <ellipse cx="332" cy="306" rx="12" ry="14"/>
+        <ellipse cx="354" cy="302" rx="10" ry="12"/>
+        <ellipse cx="374" cy="302" rx="8.5" ry="10.5"/>
+        <ellipse cx="392" cy="306" rx="7" ry="9"/>
+      </g>
+      <!-- toenails cut STRAIGHT across (squared-off paper rectangles) -->
+      <g fill="#fffdf8" stroke="#d99c73" stroke-width="1.4">
+        <rect x="296" y="304" width="16" height="13" rx="3"/>
+        <rect x="325" y="298" width="13" height="11" rx="2.5"/>
+        <rect x="348" y="295" width="11" height="9.5" rx="2"/>
+        <rect x="369" y="296" width="9.5" height="8.5" rx="2"/>
+        <rect x="387" y="300" width="8" height="7.5" rx="2"/>
+      </g>
+
+      <!-- NAIL CLIPPERS, center-front -->
+      <g transform="rotate(-8 250 350)">
+        <rect x="214" y="346" width="74" height="14" rx="7" fill="#b9b1a3"/>
+        <rect x="214" y="346" width="74" height="6" rx="3" fill="#cdd9de"/>
+        <!-- lower jaw curve -->
+        <path d="M214 360 q36 12 74 0" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+        <!-- lever on top -->
+        <rect x="240" y="334" width="34" height="8" rx="4" fill="#8a6a4f"/>
+        <circle cx="256" cy="346" r="3.4" fill="#6b7376"/>
+        <!-- cutting tip highlight -->
+        <path d="M214 353 l-8 0" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- EMERY FILE / nail file, leaning front-left -->
+      <g transform="rotate(22 150 350)">
+        <rect x="108" y="338" width="88" height="16" rx="8" fill="#c96f4a"/>
+        <rect x="116" y="342" width="68" height="8" rx="4" fill="#d9663f"/>
+        <!-- grit texture -->
+        <g stroke="#fffdf8" stroke-width="1" opacity="0.5">
+          <line x1="124" y1="344" x2="124" y2="348"/>
+          <line x1="134" y1="344" x2="134" y2="348"/>
+          <line x1="144" y1="344" x2="144" y2="348"/>
+          <line x1="154" y1="344" x2="154" y2="348"/>
+          <line x1="164" y1="344" x2="164" y2="348"/>
+          <line x1="174" y1="344" x2="174" y2="348"/>
+        </g>
+      </g>
+
+      <!-- BOWL of warm water, back-right, with steam -->
+      <path d="M396 252 h84 l-12 40 q-30 12 -60 0 z" fill="#7fb3c8"/>
+      <ellipse cx="438" cy="252" rx="42" ry="11" fill="#9cc3d4"/>
+      <ellipse cx="438" cy="251" rx="34" ry="8" fill="#dce8ee"/>
+      <!-- gentle ripple on the water -->
+      <path d="M414 251 q8 -4 16 0 q8 4 16 0" fill="none" stroke="#7fb3c8" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <!-- curl of steam -->
+      <g stroke="#cdd9de" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8">
+        <path d="M428 240 q-8 -12 2 -22 q8 -8 0 -18"/>
+        <path d="M448 240 q8 -12 -2 -22 q-6 -8 2 -16"/>
+      </g>
+
+      <!-- a couple of clean clipped nail crescents on the towel -->
+      <g fill="#e9e2d8" stroke="#c9a06b" stroke-width="1">
+        <path d="M196 320 q8 -5 14 1 q-7 3 -14 -1 z"/>
+        <path d="M230 326 q7 -4 12 1 q-6 3 -12 -1 z"/>
+      </g>
+
+      <!-- little calm sparkle near the neat hand -->
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <path d="M256 178 l0 9 M251.5 182.5 l9 0"/>
+      </g>
+    </svg>

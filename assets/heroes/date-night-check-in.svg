@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a cozy date night at home: two people sit across a small table talking warmly over two mugs, a phone lies face-down and set aside off the table, and on the wall a calendar shows a recurring date marked with a heart, with a plant and soft lamp light for warmth">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall calendar with a recurring heart date -->
+      <rect x="392" y="40" width="132" height="118" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="392" y="40" width="132" height="26" rx="10" fill="#3e7c59"/>
+      <rect x="392" y="58" width="132" height="8" fill="#3e7c59"/>
+      <text x="458" y="59" font-size="12" fill="#fffdf8" font-weight="700" text-anchor="middle">DATE NIGHT</text>
+      <!-- calendar rings -->
+      <rect x="416" y="30" width="6" height="18" rx="3" fill="#8a6a4f"/>
+      <rect x="494" y="30" width="6" height="18" rx="3" fill="#8a6a4f"/>
+      <!-- calendar grid dots -->
+      <g fill="#d8cfbe">
+        <circle cx="410" cy="82" r="3.2"/><circle cx="430" cy="82" r="3.2"/><circle cx="450" cy="82" r="3.2"/><circle cx="470" cy="82" r="3.2"/><circle cx="490" cy="82" r="3.2"/><circle cx="510" cy="82" r="3.2"/>
+        <circle cx="410" cy="104" r="3.2"/><circle cx="430" cy="104" r="3.2"/><circle cx="450" cy="104" r="3.2"/><circle cx="490" cy="104" r="3.2"/><circle cx="510" cy="104" r="3.2"/>
+        <circle cx="410" cy="126" r="3.2"/><circle cx="430" cy="126" r="3.2"/><circle cx="450" cy="126" r="3.2"/><circle cx="490" cy="126" r="3.2"/><circle cx="510" cy="126" r="3.2"/>
+      </g>
+      <!-- recurring heart marks on a repeating day -->
+      <path d="M470 100 q-4 -6 -10 -3 q-5 3 0 9 l10 9 l10 -9 q5 -6 0 -9 q-6 -3 -10 3 z" fill="#d9663f"/>
+      <path d="M470 122 q-4 -6 -10 -3 q-5 3 0 9 l10 9 l10 -9 q5 -6 0 -9 q-6 -3 -10 3 z" fill="#d9663f" opacity="0.45"/>
+
+      <!-- hanging lamp for warmth -->
+      <line x1="150" y1="20" x2="150" y2="52" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M128 52 h44 l-8 26 h-28 z" fill="#e0a93d"/>
+      <ellipse cx="150" cy="80" rx="20" ry="6" fill="#faf0da" opacity="0.7"/>
+
+      <!-- small table -->
+      <rect x="150" y="300" width="220" height="16" rx="6" fill="#8a6a4f"/>
+      <rect x="168" y="316" width="12" height="70" rx="4" fill="#7a5c44"/>
+      <rect x="340" y="316" width="12" height="70" rx="4" fill="#7a5c44"/>
+
+      <!-- LEFT person -->
+      <ellipse cx="120" cy="248" rx="26" ry="27" fill="#e8b48f"/>
+      <path d="M94 240 q26 -34 52 0 q2 -30 -26 -32 q-28 2 -26 32 z" fill="#5b4636"/>
+      <!-- warm smile -->
+      <path d="M110 254 q10 8 20 0" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="112" cy="244" r="2.2" fill="#5b4636"/>
+      <circle cx="128" cy="244" r="2.2" fill="#5b4636"/>
+      <!-- body / shoulders -->
+      <path d="M84 316 q0 -40 36 -44 q36 4 36 44 z" fill="#3e7c59"/>
+
+      <!-- RIGHT person -->
+      <ellipse cx="300" cy="248" rx="26" ry="27" fill="#d99c73"/>
+      <path d="M274 244 q10 -36 52 -6 q4 -32 -26 -34 q-30 4 -26 40 z" fill="#8a6a4f"/>
+      <!-- warm smile -->
+      <path d="M290 254 q10 8 20 0" stroke="#6b4a34" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="292" cy="244" r="2.2" fill="#6b4a34"/>
+      <circle cx="308" cy="244" r="2.2" fill="#6b4a34"/>
+      <!-- body / shoulders -->
+      <path d="M264 316 q0 -40 36 -44 q36 4 36 44 z" fill="#c96f4a"/>
+
+      <!-- two mugs on the table -->
+      <path d="M196 276 h34 l-4 22 h-26 z" fill="#7fb3c8"/>
+      <path d="M230 280 q14 2 12 12 q-2 8 -12 6" fill="none" stroke="#5e9a78" stroke-width="3"/>
+      <ellipse cx="213" cy="276" rx="17" ry="4" fill="#9cc3d4"/>
+      <!-- steam -->
+      <path d="M208 268 q-4 -8 2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M218 268 q4 -8 -2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <path d="M290 276 h34 l-4 22 h-26 z" fill="#e0a93d"/>
+      <path d="M324 280 q14 2 12 12 q-2 8 -12 6" fill="none" stroke="#d98e3b" stroke-width="3"/>
+      <ellipse cx="307" cy="276" rx="17" ry="4" fill="#f0c877"/>
+      <!-- steam -->
+      <path d="M302 268 q-4 -8 2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M312 268 q4 -8 -2 -14" stroke="#cdd9de" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <!-- speech / connection hearts between them -->
+      <path d="M212 208 q-4 -6 -10 -3 q-5 3 0 9 l10 9 l10 -9 q5 -6 0 -9 q-6 -3 -10 3 z" fill="#e0a93d" opacity="0.8"/>
+      <path d="M244 190 q-3 -5 -8 -2 q-4 2 0 7 l8 7 l8 -7 q4 -5 0 -7 q-5 -3 -8 2 z" fill="#5e9a78" opacity="0.8"/>
+
+      <!-- phone set FACE-DOWN and aside, off the table -->
+      <rect x="60" y="380" width="46" height="26" rx="6" fill="#5b4636" transform="rotate(-8 83 393)"/>
+      <rect x="66" y="384" width="34" height="18" rx="3" fill="#4a3a2c" transform="rotate(-8 83 393)"/>
+      <circle cx="72" cy="399" r="1.8" fill="#8a6a4f" transform="rotate(-8 83 393)"/>
+      <text x="52" y="418" font-size="10.5" fill="#6b7376">phone away</text>
+
+      <!-- plant for warmth -->
+      <path d="M470 356 h30 l-4 30 h-22 z" fill="#c96f4a"/>
+      <path d="M484 356 q-4 -24 -14 -32" stroke="#3e7c59" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <path d="M484 356 q4 -22 16 -28" stroke="#3e7c59" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="467" cy="320" rx="8" ry="12" fill="#5e9a78" transform="rotate(-30 467 320)"/>
+      <ellipse cx="502" cy="326" rx="8" ry="12" fill="#3e7c59" transform="rotate(28 502 326)"/>
+    </svg>

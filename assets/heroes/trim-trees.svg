@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person standing safely on the ground using a long pole pruner to cut a low branch of a healthy shaped tree; a dead branch and a low limb are marked with an X for removal, a house stands nearby, and power lines run well to the side, kept at a safe distance">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- sun -->
+      <circle cx="492" cy="58" r="22" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round">
+        <line x1="492" y1="22" x2="492" y2="30"/>
+        <line x1="492" y1="86" x2="492" y2="94"/>
+        <line x1="456" y1="58" x2="464" y2="58"/>
+        <line x1="520" y1="58" x2="528" y2="58"/>
+        <line x1="467" y1="33" x2="473" y2="39"/>
+        <line x1="511" y1="77" x2="517" y2="83"/>
+        <line x1="517" y1="33" x2="511" y2="39"/>
+      </g>
+      <ellipse cx="120" cy="64" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="166" cy="78" rx="28" ry="14" fill="#dce8ee"/>
+
+      <!-- power lines kept WELL to the side, far right, at a safe distance -->
+      <line x1="540" y1="120" x2="540" y2="356" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <line x1="528" y1="148" x2="552" y2="148" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <line x1="528" y1="166" x2="552" y2="166" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M528 150 q-40 26 -78 18" fill="none" stroke="#6b7376" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <path d="M528 168 q-40 30 -84 26" fill="none" stroke="#6b7376" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <text x="498" y="116" font-size="10.5" fill="#d9663f" font-weight="700" text-anchor="middle">keep clear</text>
+
+      <!-- house nearby, to the left -->
+      <rect x="40" y="250" width="118" height="110" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <path d="M32 252 L99 200 L166 252 Z" fill="#c96f4a"/>
+      <rect x="62" y="284" width="28" height="28" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+      <rect x="110" y="284" width="28" height="28" rx="2" fill="#dce8ee" stroke="#8a6a4f" stroke-width="2"/>
+      <rect x="86" y="320" width="26" height="40" rx="2" fill="#8a6a4f"/>
+
+      <!-- healthy shaped tree, center-right -->
+      <!-- trunk -->
+      <path d="M352 360 L344 232 Q352 216 366 222 L366 360 Z" fill="#8a6a4f"/>
+      <path d="M352 360 L348 244 L358 244 L362 360 Z" fill="#6b4f37" opacity="0.5"/>
+      <!-- main canopy (healthy, rounded, shaped) -->
+      <ellipse cx="372" cy="160" rx="92" ry="78" fill="#2c5a40"/>
+      <ellipse cx="356" cy="148" rx="66" ry="56" fill="#3e7c59"/>
+      <ellipse cx="392" cy="170" rx="52" ry="44" fill="#5e9a78" opacity="0.6"/>
+      <!-- a few healthy structural branches -->
+      <g stroke="#6b4f37" stroke-width="6" stroke-linecap="round">
+        <path d="M358 232 q-30 -24 -48 -54"/>
+        <path d="M360 224 q24 -28 50 -50"/>
+        <path d="M362 250 q34 -10 60 -34"/>
+      </g>
+
+      <!-- DEAD branch up high, marked with X (bare, brown, no leaves) -->
+      <path d="M360 210 q40 -12 86 -8" stroke="#9a4f33" stroke-width="5" stroke-linecap="round" fill="none" stroke-dasharray="6 4"/>
+      <path d="M430 204 l8 -10 M444 203 l6 -8" stroke="#9a4f33" stroke-width="3" stroke-linecap="round"/>
+      <g stroke="#d9663f" stroke-width="3.5" stroke-linecap="round">
+        <line x1="396" y1="196" x2="410" y2="210"/>
+        <line x1="410" y1="196" x2="396" y2="210"/>
+      </g>
+      <text x="430" y="180" font-size="10.5" fill="#9a4f33" font-weight="700">dead</text>
+
+      <!-- LOW limb marked for removal — within ground reach, X marked -->
+      <path d="M356 270 q-44 6 -86 30" stroke="#6b4f37" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <g stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+        <path d="M300 286 l-6 -8 M286 292 l-5 -7 M272 298 l-5 -7"/>
+      </g>
+      <g stroke="#d9663f" stroke-width="3.5" stroke-linecap="round">
+        <line x1="322" y1="276" x2="336" y2="290"/>
+        <line x1="336" y1="276" x2="322" y2="290"/>
+      </g>
+      <text x="258" y="320" font-size="10.5" fill="#d9663f" font-weight="700">low limb</text>
+
+      <!-- person standing on the GROUND using a pole pruner -->
+      <g>
+        <!-- head -->
+        <circle cx="196" cy="262" r="15" fill="#e0a93d"/>
+        <path d="M184 254 q12 -12 24 0 q-2 -8 -12 -8 q-10 0 -12 8" fill="#8a6a4f"/>
+        <!-- body -->
+        <path d="M188 300 L182 360 L212 360 L206 300 Z" fill="#3e7c59"/>
+        <rect x="184" y="358" width="12" height="22" rx="4" fill="#33393b"/>
+        <rect x="200" y="358" width="12" height="22" rx="4" fill="#33393b"/>
+        <!-- arms gripping the pole, lifted but feet planted -->
+        <line x1="198" y1="306" x2="236" y2="270" stroke="#5e9a78" stroke-width="10" stroke-linecap="round"/>
+        <line x1="206" y1="312" x2="244" y2="288" stroke="#5e9a78" stroke-width="10" stroke-linecap="round"/>
+      </g>
+      <!-- POLE PRUNER reaching up to the low limb (long pole = stays on ground) -->
+      <line x1="238" y1="272" x2="312" y2="200" stroke="#b9b1a3" stroke-width="6" stroke-linecap="round"/>
+      <line x1="240" y1="278" x2="316" y2="206" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <!-- pruner head at the top -->
+      <path d="M312 200 q12 -6 22 2 l-6 10 q-10 -4 -16 -2 z" fill="#33393b"/>
+      <path d="M334 202 q6 6 4 14" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- ground-level emphasis: solid line under feet + tufts -->
+      <line x1="120" y1="382" x2="470" y2="382" stroke="#c9a06b" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+      <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round" fill="none">
+        <path d="M160 392 q-3 -12 -8 -17"/>
+        <path d="M236 394 q-3 -12 -8 -17"/>
+        <path d="M420 392 q2 -13 7 -19"/>
+      </g>
+      <!-- a fallen pruned branch on the ground + safety glasses note -->
+      <g stroke="#9a4f33" stroke-width="4" stroke-linecap="round">
+        <path d="M120 372 l40 6 M134 366 l14 8"/>
+      </g>
+      <text x="186" y="408" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">feet on the ground</text>
+    </svg>

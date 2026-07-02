@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of airing out a gym bag in a laundry room: a nylon duffel bag is turned inside out and hangs open on a drying rack with a care-label tag showing, a separate shoe pouch and a damp towel are being pulled out, a mesh laundry bag and a spray bottle of disinfectant sit nearby, and a box of baking soda rests on a shelf">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- laundry room back wall shelf -->
+      <rect x="60" y="70" width="440" height="10" rx="4" fill="#c9a06b"/>
+      <rect x="60" y="80" width="440" height="6" rx="2" fill="#b9b1a3"/>
+      <!-- box of baking soda on the shelf -->
+      <rect x="96" y="34" width="46" height="36" rx="3" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <rect x="102" y="42" width="34" height="10" rx="2" fill="#e0a93d"/>
+      <text x="119" y="63" font-size="8" fill="#6b7376" text-anchor="middle" font-weight="700">SODA</text>
+      <!-- disinfectant spray bottle on the shelf, right -->
+      <rect x="428" y="40" width="26" height="30" rx="5" fill="#5e9a78"/>
+      <rect x="433" y="28" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <path d="M449 30 l14 -5 l0 6 l-14 4 z" fill="#2c5a40"/>
+      <rect x="431" y="52" width="20" height="14" rx="3" fill="#dce8ee" opacity="0.8"/>
+
+      <!-- drying rack legs -->
+      <path d="M150 130 l-24 210" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+      <path d="M410 130 l24 210" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+      <!-- top rail the bag hangs from -->
+      <rect x="132" y="122" width="296" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- hooks over the rail -->
+      <path d="M232 122 q0 -12 12 -12 q12 0 12 12" fill="none" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+      <path d="M304 122 q0 -12 12 -12 q12 0 12 12" fill="none" stroke="#5e9a78" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- the duffel bag: turned inside out & airing open -->
+      <!-- body of the bag -->
+      <path d="M196 150 q84 -20 168 0 l14 150 q-98 26 -196 0 z" fill="#3e7c59"/>
+      <!-- inside-out lighter lining shown at the open mouth -->
+      <path d="M196 150 q84 -20 168 0 l6 44 q-90 24 -180 0 z" fill="#5e9a78"/>
+      <!-- open zipper mouth, gaping wide to air out -->
+      <path d="M206 158 q74 -16 148 0 q-74 30 -148 0 z" fill="#dce8ee"/>
+      <!-- zipper teeth along the open edge -->
+      <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round">
+        <line x1="216" y1="160" x2="216" y2="166"/>
+        <line x1="232" y1="156" x2="232" y2="162"/>
+        <line x1="250" y1="153" x2="250" y2="159"/>
+        <line x1="280" y1="152" x2="280" y2="158"/>
+        <line x1="310" y1="153" x2="310" y2="159"/>
+        <line x1="328" y1="156" x2="328" y2="162"/>
+        <line x1="344" y1="160" x2="344" y2="166"/>
+      </g>
+      <!-- zipper pull -->
+      <rect x="352" y="160" width="8" height="16" rx="3" fill="#e0a93d"/>
+      <!-- side handles / straps -->
+      <path d="M236 150 q44 -34 88 0" fill="none" stroke="#2c5a40" stroke-width="8" stroke-linecap="round"/>
+      <!-- end cap detail on the bag -->
+      <ellipse cx="284" cy="230" rx="10" ry="14" fill="#2c5a40" opacity="0.4"/>
+      <!-- care-label tag hanging from the bag -->
+      <rect x="360" y="250" width="34" height="46" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="368" y1="238" x2="374" y2="252" stroke="#8a6a4f" stroke-width="2"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+        <line x1="366" y1="262" x2="388" y2="262"/>
+        <line x1="366" y1="270" x2="388" y2="270"/>
+        <line x1="366" y1="278" x2="382" y2="278"/>
+      </g>
+      <text x="377" y="292" font-size="7.5" fill="#6b7376" text-anchor="middle" font-weight="700">care</text>
+
+      <!-- a damp towel being pulled out of the bag -->
+      <path d="M244 176 q10 40 -8 74 q-14 30 6 54 l40 6 q16 -50 4 -96 q-8 -32 -18 -44 z" fill="#7fb3c8"/>
+      <g stroke="#9cc3d4" stroke-width="2" opacity="0.8">
+        <path d="M238 250 q22 6 44 0"/>
+        <path d="M236 268 q22 6 46 0"/>
+      </g>
+      <text x="256" y="228" font-size="9" fill="#2c5a40" font-weight="700" transform="rotate(-6 256 228)">towel</text>
+
+      <!-- separate shoe pouch pulled out, front-left -->
+      <rect x="96" y="316" width="96" height="60" rx="10" fill="#c96f4a"/>
+      <rect x="96" y="316" width="96" height="16" rx="8" fill="#d9663f"/>
+      <!-- drawstring on the pouch -->
+      <path d="M118 320 q26 -12 52 0" fill="none" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <!-- a shoe peeking out of the pouch -->
+      <path d="M132 340 q16 -8 34 0 l4 18 q-22 6 -40 0 z" fill="#fffdf8"/>
+      <path d="M134 356 q18 6 34 0" fill="none" stroke="#b9b1a3" stroke-width="2"/>
+      <path d="M140 344 l8 -6 M150 344 l8 -6" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="144" y="372" font-size="9.5" fill="#fffdf8" font-weight="700">shoe pouch</text>
+
+      <!-- mesh laundry bag, front-right -->
+      <path d="M416 316 q30 -6 52 6 l-6 58 q-40 8 -58 -2 z" fill="#dce8ee" opacity="0.85"/>
+      <!-- mesh net crosshatch -->
+      <g stroke="#7fb3c8" stroke-width="1.2" opacity="0.9">
+        <line x1="424" y1="322" x2="458" y2="374"/>
+        <line x1="440" y1="318" x2="460" y2="352"/>
+        <line x1="412" y1="338" x2="454" y2="378"/>
+        <line x1="462" y1="330" x2="420" y2="374"/>
+        <line x1="466" y1="348" x2="436" y2="378"/>
+      </g>
+      <!-- drawstring top of mesh bag -->
+      <path d="M418 318 q26 -10 50 4" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <text x="440" y="392" font-size="9" fill="#6b7376" text-anchor="middle" font-weight="700">mesh wash bag</text>
+
+      <!-- little fresh-air breeze marks rising from the open bag -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" opacity="0.7" fill="none">
+        <path d="M270 138 q8 -10 0 -20"/>
+        <path d="M290 134 q8 -10 0 -20"/>
+      </g>
+    </svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tennis racquet workbench: one racquet has a broken, frayed string and notched, shifted strings, while a second racquet sits freshly and evenly strung on a stringing machine with clamps and a tension arm, a reel of string and an analog tension gauge rest on the stringer's bench">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- stringer's bench -->
+      <rect x="40" y="330" width="480" height="18" rx="5" fill="#b9b1a3"/>
+      <rect x="52" y="348" width="456" height="12" rx="4" fill="#8a6a4f"/>
+
+      <!-- ===== LEFT racquet: broken / dead strings ===== -->
+      <g transform="translate(96 60) rotate(-8 90 150)">
+        <!-- handle -->
+        <rect x="78" y="210" width="24" height="96" rx="8" fill="#8a6a4f"/>
+        <rect x="80" y="216" width="20" height="84" rx="6" fill="#c96f4a"/>
+        <!-- throat -->
+        <path d="M84 214 L60 176 M106 214 L130 176" stroke="#5e9a78" stroke-width="9" stroke-linecap="round"/>
+        <!-- head / hoop -->
+        <ellipse cx="95" cy="118" rx="66" ry="82" fill="none" stroke="#5e9a78" stroke-width="10"/>
+        <ellipse cx="95" cy="118" rx="58" ry="74" fill="#dce8ee" opacity="0.4"/>
+        <!-- string bed: mains (vertical) with a shifted, notched look -->
+        <g stroke="#b9b1a3" stroke-width="2.4">
+          <line x1="72" y1="46" x2="72" y2="190"/>
+          <line x1="88" y1="42" x2="86" y2="194"/>
+          <line x1="104" y1="42" x2="106" y2="194"/>
+          <line x1="120" y1="46" x2="120" y2="190"/>
+        </g>
+        <!-- crosses (horizontal), one broken and frayed -->
+        <g stroke="#b9b1a3" stroke-width="2.4">
+          <line x1="46" y1="72" x2="144" y2="72"/>
+          <line x1="42" y1="98" x2="148" y2="98"/>
+          <!-- broken cross string -->
+          <line x1="42" y1="124" x2="80" y2="122"/>
+          <line x1="112" y1="126" x2="148" y2="124"/>
+          <line x1="46" y1="150" x2="144" y2="150"/>
+        </g>
+        <!-- frayed broken ends -->
+        <path d="M80 122 l6 -4 l-3 6 l7 -2" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M112 126 l-6 4 l3 -6 l-7 2" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+        <!-- deep notches where strings cross -->
+        <g fill="#8a6a4f" opacity="0.7">
+          <circle cx="88" cy="98" r="2.6"/>
+          <circle cx="104" cy="72" r="2.4"/>
+          <circle cx="72" cy="150" r="2.4"/>
+        </g>
+        <text x="46" y="30" font-size="12" fill="#d9663f" font-weight="700">dead &amp; broken</text>
+      </g>
+
+      <!-- ===== RIGHT racquet: freshly strung on the machine ===== -->
+      <g transform="translate(300 44)">
+        <!-- machine turntable / mounting posts -->
+        <rect x="60" y="250" width="120" height="16" rx="5" fill="#5e9a78"/>
+        <rect x="108" y="266" width="26" height="42" rx="4" fill="#3e7c59"/>
+        <!-- machine clamps at 3 and 9 o'clock -->
+        <rect x="30" y="120" width="26" height="16" rx="3" fill="#2c5a40"/>
+        <rect x="186" y="120" width="26" height="16" rx="3" fill="#2c5a40"/>
+        <!-- tension arm coming in from the right -->
+        <rect x="196" y="90" width="70" height="9" rx="4" fill="#8a6a4f" transform="rotate(10 231 94)"/>
+        <circle cx="258" cy="100" r="9" fill="#e0a93d"/>
+        <!-- handle -->
+        <rect x="108" y="216" width="24" height="70" rx="8" fill="#8a6a4f"/>
+        <rect x="110" y="222" width="20" height="60" rx="6" fill="#2c5a40"/>
+        <!-- throat -->
+        <path d="M114 220 L92 184 M126 220 L148 184" stroke="#3e7c59" stroke-width="9" stroke-linecap="round"/>
+        <!-- head / hoop -->
+        <ellipse cx="120" cy="120" rx="70" ry="86" fill="none" stroke="#3e7c59" stroke-width="11"/>
+        <ellipse cx="120" cy="120" rx="61" ry="77" fill="#eef4f7" opacity="0.6"/>
+        <!-- crisp, even mains -->
+        <g stroke="#7fb3c8" stroke-width="2.6">
+          <line x1="90" y1="42" x2="90" y2="198"/>
+          <line x1="105" y1="38" x2="105" y2="202"/>
+          <line x1="120" y1="36" x2="120" y2="204"/>
+          <line x1="135" y1="38" x2="135" y2="202"/>
+          <line x1="150" y1="42" x2="150" y2="198"/>
+        </g>
+        <!-- crisp, even crosses -->
+        <g stroke="#7fb3c8" stroke-width="2.6">
+          <line x1="62" y1="64" x2="178" y2="64"/>
+          <line x1="56" y1="92" x2="184" y2="92"/>
+          <line x1="54" y1="120" x2="186" y2="120"/>
+          <line x1="56" y1="148" x2="184" y2="148"/>
+          <line x1="62" y1="176" x2="178" y2="176"/>
+        </g>
+        <!-- fresh-string sparkle -->
+        <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+          <path d="M120 100 l0 12 M114 106 l12 0"/>
+        </g>
+        <text x="58" y="30" font-size="12" fill="#3e7c59" font-weight="700">freshly strung</text>
+      </g>
+
+      <!-- reel of string on the bench, front-left -->
+      <ellipse cx="120" cy="366" rx="34" ry="14" fill="#c96f4a"/>
+      <ellipse cx="120" cy="360" rx="34" ry="14" fill="#d9663f"/>
+      <ellipse cx="120" cy="360" rx="12" ry="5" fill="#fffdf8"/>
+      <path d="M150 358 q26 -6 40 8" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="92" y="392" font-size="11" fill="#6b7376">string reel</text>
+
+      <!-- analog tension gauge on the bench, front-right -->
+      <rect x="392" y="338" width="70" height="40" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M400 368 a27 27 0 0 1 54 0" fill="none" stroke="#dce8ee" stroke-width="6"/>
+      <line x1="427" y1="368" x2="443" y2="350" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="427" cy="368" r="3.4" fill="#3e7c59"/>
+      <text x="398" y="392" font-size="11" fill="#6b7376">tension gauge</text>
+    </svg>

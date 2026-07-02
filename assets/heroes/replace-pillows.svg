@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bed freshly made up with two plump white pillows that sparkle, while an old flat yellowed pillow droops over the edge of a laundry basket on its way out the door, with sunlight through a window and a plant in the corner">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="50" y="50" width="114" height="132" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="107" y1="53" x2="107" y2="179" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="53" y1="116" x2="161" y2="116" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="84" cy="86" r="17" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="84" y1="59" x2="84" y2="65"/>
+        <line x1="111" y1="86" x2="105" y2="86"/>
+        <line x1="102" y1="68" x2="98" y2="72"/>
+      </g>
+      <rect x="38" y="42" width="138" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- bed -->
+      <rect x="196" y="124" width="20" height="204" rx="9" fill="#8a6a4f"/>
+      <rect x="206" y="142" width="14" height="126" rx="7" fill="#c9a06b"/>
+      <rect x="212" y="234" width="288" height="52" rx="12" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="212" y="286" width="288" height="24" rx="7" fill="#c9a06b"/>
+      <rect x="224" y="310" width="13" height="54" rx="5" fill="#8a6a4f"/>
+      <rect x="476" y="310" width="13" height="54" rx="5" fill="#8a6a4f"/>
+      <!-- fresh plump pillows -->
+      <rect x="222" y="186" width="92" height="44" rx="20" fill="#dce8ee" transform="rotate(-7 268 208)"/>
+      <rect x="238" y="168" width="90" height="42" rx="19" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-4 283 189)"/>
+      <!-- pinched pillow corners on the top pillow -->
+      <path d="M240 178 l-8 -8 M324 168 l8 -8" stroke="#e6dccb" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- folded duvet at the foot -->
+      <path d="M392 224 h96 q18 0 18 18 v28 q0 14 -13 14 h-101 q-12 0 -12 -14 v-28 q0 -18 12 -18 z" fill="#3e7c59"/>
+      <path d="M392 224 h96 q18 0 18 18 l-126 0 q0 -18 12 -18 z" fill="#5e9a78"/>
+      <path d="M424 244 q4 18 0 32 M462 244 q-4 18 0 32" stroke="#2c5a40" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- fresh sparkles over the new pillows -->
+      <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+        <path d="M300 138 v12 M294 144 h12"/>
+        <path d="M346 122 v10 M341 127 h10"/>
+        <path d="M252 142 v8 M248 146 h8"/>
+      </g>
+      <!-- laundry basket with the retired flat pillow -->
+      <path d="M58 322 h116 l-12 60 h-92 z" fill="#c96f4a"/>
+      <path d="M70 334 h92 M66 350 h100 M62 366 h106" stroke="#d9663f" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+      <!-- the sad flat pillow drooping over the rim, yellowed -->
+      <path d="M52 318 q34 -16 64 -6 q30 10 64 -2 q4 8 -2 12 q-32 12 -62 3 q-30 -9 -60 4 q-6 -4 -4 -11 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+      <ellipse cx="116" cy="316" rx="22" ry="6" fill="#e0a93d" opacity="0.35"/>
+      <ellipse cx="78" cy="314" rx="10" ry="4" fill="#e0a93d" opacity="0.3"/>
+      <!-- droop lines / lumps on the old pillow -->
+      <path d="M96 312 q6 4 12 0 M134 310 q6 4 12 0" stroke="#b9b1a3" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- arrow ushering the basket out -->
+      <path d="M180 348 q22 -4 38 6" stroke="#d98e3b" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <polygon points="222,346 234,360 210,362" fill="#d98e3b"/>
+      <!-- nightstand -->
+      <rect x="514" y="316" width="36" height="50" rx="5" fill="#c9a06b"/>
+      <rect x="508" y="308" width="48" height="10" rx="5" fill="#8a6a4f"/>
+      <circle cx="532" cy="338" r="4" fill="#8a6a4f"/>
+      <!-- plant -->
+      <path d="M520 296 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M520 296 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="504" cy="262" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 504 262)"/>
+      <ellipse cx="538" cy="266" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 538 266)"/>
+      <path d="M506 296 h28 l-4 14 h-20 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="356" cy="384" rx="122" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

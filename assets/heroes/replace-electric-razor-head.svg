@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an electric shaver on a bathroom counter with its foil-and-cutter head lifted off: a worn, dulled foil sits beside a fresh foil-and-cutter replacement set, a rotary shaver's three round heads are shown small nearby, and a cleaning brush rests on the counter">
+      <ellipse cx="280" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- bright bathroom wall panel behind the counter -->
+      <rect x="120" y="34" width="320" height="150" rx="10" fill="#dce8ee"/>
+      <g stroke="#fffdf8" stroke-width="6" stroke-linecap="round" opacity="0.7">
+        <line x1="150" y1="150" x2="206" y2="64"/>
+        <line x1="176" y1="158" x2="224" y2="88"/>
+      </g>
+
+      <!-- counter surface -->
+      <rect x="70" y="286" width="420" height="18" rx="5" fill="#b9b1a3"/>
+      <rect x="78" y="304" width="404" height="14" rx="4" fill="#8a6a4f"/>
+
+      <!-- the FOIL SHAVER body, standing on the counter, center -->
+      <rect x="180" y="150" width="70" height="136" rx="22" fill="#5e9a78"/>
+      <rect x="180" y="150" width="70" height="136" rx="22" fill="#3e7c59" opacity="0.25"/>
+      <!-- grip texture -->
+      <g stroke="#2c5a40" stroke-width="2" stroke-linecap="round" opacity="0.5">
+        <line x1="196" y1="210" x2="234" y2="210"/>
+        <line x1="196" y1="222" x2="234" y2="222"/>
+        <line x1="196" y1="234" x2="234" y2="234"/>
+      </g>
+      <!-- power button -->
+      <circle cx="215" cy="188" r="7" fill="#e0a93d"/>
+      <!-- the shaver's head SOCKET, now empty (head lifted off) -->
+      <rect x="176" y="132" width="78" height="20" rx="6" fill="#8a6a4f"/>
+      <ellipse cx="215" cy="132" rx="39" ry="8" fill="#6b7376"/>
+      <text x="215" y="176" font-size="10" fill="#fffdf8" font-weight="700" text-anchor="middle">head off</text>
+
+      <!-- the head LIFTED OFF, floating above the socket -->
+      <g transform="translate(0 -14)">
+        <rect x="178" y="96" width="74" height="26" rx="8" fill="#cdd9de" stroke="#9cc3d4" stroke-width="2"/>
+        <!-- two foil domes -->
+        <ellipse cx="200" cy="96" rx="17" ry="8" fill="#eef4f7" stroke="#9cc3d4" stroke-width="1.6"/>
+        <ellipse cx="230" cy="96" rx="17" ry="8" fill="#eef4f7" stroke="#9cc3d4" stroke-width="1.6"/>
+        <g stroke="#7fb3c8" stroke-width="1.4">
+          <line x1="186" y1="94" x2="214" y2="94"/>
+          <line x1="216" y1="94" x2="244" y2="94"/>
+        </g>
+        <!-- lift arrows -->
+        <path d="M262 108 l0 -16 m-5 6 l5 -6 l5 6" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- WORN foil, on the counter left -->
+      <rect x="96" y="252" width="72" height="26" rx="8" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2"/>
+      <ellipse cx="118" cy="252" rx="16" ry="7" fill="#c9c1b3"/>
+      <ellipse cx="146" cy="252" rx="16" ry="7" fill="#c9c1b3"/>
+      <!-- a tear / hole in the worn foil -->
+      <path d="M140 250 l6 -3 l3 4 l-5 3 z" fill="#8a6a4f"/>
+      <text x="132" y="294" font-size="10.5" fill="#d9663f" font-weight="700" text-anchor="middle">worn — torn</text>
+
+      <!-- FRESH foil-and-cutter set, on the counter right of the worn one -->
+      <rect x="298" y="248" width="76" height="28" rx="8" fill="#eef4f7" stroke="#9cc3d4" stroke-width="2.4"/>
+      <ellipse cx="322" cy="248" rx="17" ry="8" fill="#fffdf8" stroke="#9cc3d4" stroke-width="1.6"/>
+      <ellipse cx="352" cy="248" rx="17" ry="8" fill="#fffdf8" stroke="#9cc3d4" stroke-width="1.6"/>
+      <g stroke="#7fb3c8" stroke-width="1.4">
+        <line x1="308" y1="246" x2="336" y2="246"/>
+        <line x1="338" y1="246" x2="366" y2="246"/>
+      </g>
+      <!-- the matching cutter block below the fresh foil -->
+      <rect x="312" y="280" width="48" height="10" rx="3" fill="#9cc3d4"/>
+      <g stroke="#7fb3c8" stroke-width="1.6">
+        <line x1="318" y1="285" x2="318" y2="289"/>
+        <line x1="328" y1="285" x2="328" y2="289"/>
+        <line x1="338" y1="285" x2="338" y2="289"/>
+        <line x1="348" y1="285" x2="348" y2="289"/>
+      </g>
+      <!-- fresh sparkle -->
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <path d="M384 236 l0 10 M379 241 l10 0"/>
+      </g>
+      <text x="336" y="238" font-size="10.5" fill="#3e7c59" font-weight="700" text-anchor="middle">fresh foil + cutter</text>
+
+      <!-- ROTARY shaver's three round heads, shown small, right -->
+      <g transform="translate(430 244)">
+        <circle cx="16" cy="0" r="15" fill="#dce8ee" stroke="#9cc3d4" stroke-width="2"/>
+        <circle cx="42" cy="6" r="15" fill="#dce8ee" stroke="#9cc3d4" stroke-width="2"/>
+        <circle cx="29" cy="26" r="15" fill="#dce8ee" stroke="#9cc3d4" stroke-width="2"/>
+        <circle cx="16" cy="0" r="6" fill="#9cc3d4"/>
+        <circle cx="42" cy="6" r="6" fill="#9cc3d4"/>
+        <circle cx="29" cy="26" r="6" fill="#9cc3d4"/>
+        <text x="29" y="52" font-size="9.5" fill="#6b7376" font-weight="700" text-anchor="middle">rotary: 3 heads</text>
+      </g>
+
+      <!-- cleaning brush on the counter, front -->
+      <rect x="150" y="330" width="70" height="9" rx="4" fill="#c96f4a" transform="rotate(-8 185 334)"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+        <line x1="152" y1="340" x2="150" y2="348"/>
+        <line x1="160" y1="338" x2="158" y2="347"/>
+        <line x1="168" y1="336" x2="166" y2="345"/>
+        <line x1="176" y1="334" x2="174" y2="343"/>
+      </g>
+
+      <!-- small plant for warmth, right -->
+      <path d="M478 316 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <path d="M490 316 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M490 316 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="475" cy="284" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 475 284)"/>
+      <ellipse cx="505" cy="288" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 505 288)"/>
+    </svg>

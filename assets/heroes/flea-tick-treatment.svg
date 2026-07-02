@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a happy dog and cat sitting side by side in front of a large green protective shield with a gold sparkle, surrounded by small sparkles">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="72" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="472" cy="70" rx="44" ry="22" fill="#dce8ee"/>
+      <ellipse cx="432" cy="82" rx="28" ry="16" fill="#dce8ee"/>
+      <!-- protective shield -->
+      <path d="M285 64 C322 84 360 92 388 92 C388 188 358 258 285 296 C212 258 182 188 182 92 C210 92 248 84 285 64 Z" fill="#5e9a78"/>
+      <path d="M285 84 C316 100 348 107 370 107 C370 184 344 242 285 274 C226 242 200 184 200 107 C222 107 254 100 285 84 Z" fill="#e3efe8"/>
+      <path d="M285 116 l9 22 24 3 -17 17 4 24 -20 -11 -20 11 4 -24 -17 -17 24 -3 z" fill="#e0a93d"/>
+      <!-- floating sparkles -->
+      <g fill="#e0a93d">
+        <path d="M120 130 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+        <path d="M452 160 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 z"/>
+      </g>
+      <g fill="#7fb3c8">
+        <path d="M158 86 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z"/>
+        <path d="M416 240 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3 -7.5 -7.5 -3 7.5 -3 z"/>
+        <circle cx="106" cy="226" r="4"/>
+      </g>
+      <circle cx="468" cy="120" r="4" fill="#e0a93d"/>
+      <!-- dog (left) -->
+      <path d="M132 332 q-30 -8 -34 -38" stroke="#8a6a4f" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <ellipse cx="196" cy="332" rx="62" ry="62" fill="#c9a06b"/>
+      <ellipse cx="158" cy="346" rx="30" ry="40" fill="#b98c54"/>
+      <rect x="186" y="320" width="20" height="74" rx="10" fill="#c9a06b"/>
+      <rect x="216" y="320" width="20" height="74" rx="10" fill="#c9a06b"/>
+      <ellipse cx="196" cy="394" rx="14" ry="7" fill="#b98c54"/>
+      <ellipse cx="226" cy="394" rx="14" ry="7" fill="#b98c54"/>
+      <circle cx="214" cy="240" r="46" fill="#c9a06b"/>
+      <ellipse cx="176" cy="232" rx="15" ry="28" fill="#8a6a4f" transform="rotate(18 176 232)"/>
+      <ellipse cx="252" cy="232" rx="15" ry="28" fill="#8a6a4f" transform="rotate(-18 252 232)"/>
+      <ellipse cx="214" cy="262" rx="19" ry="14" fill="#fffdf8"/>
+      <circle cx="214" cy="255" r="6" fill="#33393b"/>
+      <path d="M206 266 q8 7 16 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="198" cy="238" r="4.5" fill="#33393b"/>
+      <circle cx="230" cy="238" r="4.5" fill="#33393b"/>
+      <path d="M178 282 q36 16 72 0" stroke="#3e7c59" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <circle cx="214" cy="294" r="7" fill="#e0a93d"/>
+      <!-- cat (right) -->
+      <path d="M428 386 q34 4 32 -28" stroke="#b9b1a3" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <ellipse cx="376" cy="348" rx="44" ry="50" fill="#b9b1a3"/>
+      <path d="M348 330 q12 6 24 0 M352 352 q12 6 22 0" stroke="#8a8377" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="358" y="350" width="15" height="46" rx="7.5" fill="#b9b1a3"/>
+      <rect x="382" y="350" width="15" height="46" rx="7.5" fill="#b9b1a3"/>
+      <ellipse cx="366" cy="394" rx="11" ry="6" fill="#a39b8d"/>
+      <ellipse cx="390" cy="394" rx="11" ry="6" fill="#a39b8d"/>
+      <circle cx="382" cy="278" r="34" fill="#b9b1a3"/>
+      <polygon points="354,260 360,228 380,252" fill="#b9b1a3"/>
+      <polygon points="410,260 404,228 384,252" fill="#b9b1a3"/>
+      <polygon points="359,254 362,238 372,250" fill="#c96f4a"/>
+      <polygon points="405,254 402,238 392,250" fill="#c96f4a"/>
+      <circle cx="370" cy="274" r="3.8" fill="#33393b"/>
+      <circle cx="394" cy="274" r="3.8" fill="#33393b"/>
+      <polygon points="378,284 386,284 382,289" fill="#c96f4a"/>
+      <path d="M382 289 q-5 6 -10 2 M382 289 q5 6 10 2" stroke="#33393b" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <g stroke="#8a8377" stroke-width="1.8" stroke-linecap="round">
+        <line x1="352" y1="282" x2="334" y2="278"/>
+        <line x1="352" y1="288" x2="335" y2="290"/>
+        <line x1="412" y1="282" x2="430" y2="278"/>
+        <line x1="412" y1="288" x2="429" y2="290"/>
+      </g>
+      <path d="M356 306 q26 12 52 0" stroke="#d9663f" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="382" cy="315" r="6" fill="#e0a93d"/>
+      <!-- foreground greenery -->
+      <circle cx="98" cy="386" r="14" fill="#5e9a78"/>
+      <circle cx="120" cy="392" r="11" fill="#3e7c59"/>
+      <circle cx="478" cy="390" r="12" fill="#5e9a78"/>
+    </svg>

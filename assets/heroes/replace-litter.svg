@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tidy bathroom-and-laundry corner where a litter box is being fully reset: an old box is tipped to empty its used litter into a waste bag, a scoop rests nearby, a jug of fresh litter pours a clean stream into a washed empty box, disposable gloves and a face mask sit ready, and a content cat watches from a distance">
+      <ellipse cx="280" cy="402" rx="248" ry="22" fill="#efe7d8"/>
+
+      <!-- back wall: small window for the tidy corner -->
+      <rect x="44" y="40" width="96" height="110" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="92" y1="43" x2="92" y2="147" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="47" y1="95" x2="137" y2="95" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="70" cy="68" r="12" fill="#e0a93d"/>
+
+      <!-- shelf with gloves and mask, ready -->
+      <rect x="392" y="64" width="150" height="9" rx="4.5" fill="#8a6a4f"/>
+      <!-- disposable gloves -->
+      <path d="M404 64 v-26 q0 -5 5 -5 q5 0 5 5 v8 q0 -7 5 -7 q5 0 5 7 q0 -6 5 -6 q5 0 5 6 v22 z" fill="#7fb3c8"/>
+      <path d="M404 50 h35 v14 h-35 z" fill="#9cc3d4"/>
+      <!-- face mask hanging by its loops -->
+      <rect x="468" y="40" width="46" height="22" rx="11" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <g stroke="#b9b1a3" stroke-width="1.6" fill="none">
+        <line x1="476" y1="46" x2="480" y2="54"/>
+        <line x1="482" y1="46" x2="486" y2="54"/>
+        <line x1="496" y1="46" x2="500" y2="54"/>
+        <line x1="502" y1="46" x2="506" y2="54"/>
+      </g>
+      <path d="M468 51 q-9 -3 -9 -11" fill="none" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+      <path d="M514 51 q9 -3 9 -11" fill="none" stroke="#b9b1a3" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- LEFT: old box tipped, emptying used litter into a waste bag -->
+      <g transform="rotate(-18 168 250)">
+        <path d="M118 232 l10 44 q2 9 11 9 h60 q9 0 11 -9 l10 -44 z" fill="#b9b1a3"/>
+        <rect x="112" y="222" width="124" height="14" rx="7" fill="#8a6a4f"/>
+      </g>
+      <!-- stream of used litter falling into the bag -->
+      <g fill="#c9a06b">
+        <ellipse cx="150" cy="296" rx="7" ry="9" transform="rotate(-12 150 296)"/>
+        <ellipse cx="160" cy="312" rx="6" ry="8" transform="rotate(-12 160 312)"/>
+        <ellipse cx="168" cy="328" rx="7" ry="9" transform="rotate(-12 168 328)"/>
+      </g>
+      <g fill="#8a6a4f" opacity="0.7">
+        <circle cx="146" cy="304" r="2"/>
+        <circle cx="164" cy="320" r="2.2"/>
+        <circle cx="156" cy="336" r="1.8"/>
+      </g>
+      <!-- the waste bag, knotted top -->
+      <path d="M120 332 h70 q9 0 9 10 v44 q0 8 -8 8 h-72 q-8 0 -8 -8 v-44 q0 -10 9 -10" fill="#5e9a78"/>
+      <path d="M132 332 q12 -16 26 0 z" fill="#3e7c59"/>
+      <rect x="138" y="328" width="14" height="10" rx="3" fill="#3e7c59"/>
+      <!-- "no toilet" reminder above the bag -->
+      <g transform="translate(96 286)">
+        <circle cx="0" cy="0" r="13" fill="none" stroke="#d9663f" stroke-width="3"/>
+        <line x1="-9" y1="9" x2="9" y2="-9" stroke="#d9663f" stroke-width="3"/>
+        <path d="M-6 4 q0 -8 6 -8 q6 0 6 8 z" fill="#7fb3c8"/>
+        <ellipse cx="0" cy="-4" rx="4" ry="2.5" fill="#dce8ee"/>
+      </g>
+
+      <!-- scoop resting against the bag -->
+      <g transform="rotate(20 226 348)">
+        <rect x="218" y="306" width="11" height="56" rx="5" fill="#5e9a78"/>
+        <path d="M206 362 h35 l-4 24 h-27 z" fill="#3e7c59"/>
+        <g stroke="#e3efe8" stroke-width="2.4" stroke-linecap="round">
+          <line x1="214" y1="368" x2="213" y2="380"/>
+          <line x1="223" y1="368" x2="223" y2="380"/>
+          <line x1="232" y1="368" x2="233" y2="380"/>
+        </g>
+      </g>
+
+      <!-- RIGHT: clean empty box getting fresh litter poured in -->
+      <path d="M300 318 l11 50 q2 10 12 10 h82 q10 0 12 -10 l11 -50 z" fill="#dce8ee"/>
+      <rect x="294" y="306" width="146" height="16" rx="8" fill="#7fb3c8"/>
+      <!-- a thin layer of fresh litter already in the bottom -->
+      <path d="M312 360 l3 12 h84 l3 -12 z" fill="#c9a06b"/>
+      <!-- jug of fresh litter, tilted, pouring -->
+      <g transform="rotate(34 400 250)">
+        <rect x="372" y="214" width="58" height="72" rx="12" fill="#c9a06b"/>
+        <rect x="384" y="200" width="34" height="18" rx="6" fill="#8a6a4f"/>
+        <rect x="384" y="234" width="34" height="30" rx="6" fill="#fffdf8"/>
+        <circle cx="401" cy="249" r="11" fill="#e0a93d"/>
+        <path d="M395 249 l4 4 l7 -8" stroke="#fffdf8" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- spout -->
+        <path d="M430 224 l16 -6 l2 14 l-18 4 z" fill="#b9b1a3"/>
+      </g>
+      <!-- pouring stream of fresh litter -->
+      <g fill="#c9a06b">
+        <ellipse cx="380" cy="300" rx="6" ry="8"/>
+        <ellipse cx="376" cy="320" rx="6" ry="8"/>
+        <ellipse cx="372" cy="340" rx="7" ry="9"/>
+      </g>
+      <g fill="#d6b483">
+        <circle cx="384" cy="312" r="2"/>
+        <circle cx="370" cy="330" r="2.2"/>
+      </g>
+      <!-- sparkle on the clean box -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M428 332 l0 10 M423 337 l10 0"/>
+      </g>
+
+      <!-- content cat watching from a distance, right -->
+      <g>
+        <ellipse cx="498" cy="356" rx="40" ry="30" fill="#b9b1a3"/>
+        <circle cx="476" cy="316" r="23" fill="#b9b1a3"/>
+        <polygon points="461,304 458,282 477,296" fill="#b9b1a3"/>
+        <polygon points="491,304 496,282 478,296" fill="#b9b1a3"/>
+        <polygon points="463,300 462,288 472,296" fill="#c96f4a"/>
+        <polygon points="489,300 492,288 482,296" fill="#c96f4a"/>
+        <circle cx="469" cy="315" r="3" fill="#33393b"/>
+        <circle cx="483" cy="315" r="3" fill="#33393b"/>
+        <path d="M472 324 q4 4 8 0" stroke="#33393b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="476" cy="320" rx="2.4" ry="1.6" fill="#c96f4a"/>
+        <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+          <line x1="461" y1="320" x2="447" y2="318"/>
+          <line x1="461" y1="324" x2="448" y2="327"/>
+          <line x1="491" y1="320" x2="505" y2="318"/>
+          <line x1="491" y1="324" x2="504" y2="327"/>
+        </g>
+        <path d="M536 352 q20 -8 14 -30" stroke="#b9b1a3" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <ellipse cx="480" cy="384" rx="11" ry="6" fill="#9a9384"/>
+        <ellipse cx="514" cy="384" rx="11" ry="6" fill="#9a9384"/>
+      </g>
+
+      <!-- clean litter mat waiting under the fresh box -->
+      <ellipse cx="372" cy="392" rx="80" ry="9" fill="#5e9a78" opacity="0.55"/>
+    </svg>

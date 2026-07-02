@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of renewing a vehicle registration: a car's rear license plate with a renewal sticker and the year on it, a hand pressing a fresh sticker onto the plate, a laptop and phone showing an online renewal next to a renewal notice letter, and a wall calendar with the expiration date circled — all in a driveway">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- driveway ground band -->
+      <rect x="20" y="356" width="530" height="46" rx="8" fill="#e6dccb"/>
+      <g stroke="#d8cfbe" stroke-width="3" stroke-linecap="round">
+        <line x1="120" y1="380" x2="160" y2="380"/>
+        <line x1="220" y1="380" x2="260" y2="380"/>
+        <line x1="320" y1="380" x2="360" y2="380"/>
+        <line x1="420" y1="380" x2="460" y2="380"/>
+      </g>
+
+      <!-- back of car with the license plate -->
+      <path d="M150 250 q4 -34 40 -34 h140 q36 0 40 34 l6 60 h-232 z" fill="#c96f4a"/>
+      <path d="M168 224 q4 -16 24 -16 h136 q20 0 24 16 l4 26 h-192 z" fill="#dce8ee"/>
+      <rect x="150" y="306" width="232" height="22" rx="6" fill="#a85636"/>
+      <!-- tail lights -->
+      <rect x="156" y="280" width="26" height="20" rx="4" fill="#d9663f"/>
+      <rect x="350" y="280" width="26" height="20" rx="4" fill="#d9663f"/>
+      <!-- bumper -->
+      <rect x="156" y="320" width="220" height="12" rx="4" fill="#8a6a4f"/>
+      <!-- license plate -->
+      <rect x="214" y="300" width="104" height="48" rx="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="3"/>
+      <text x="266" y="322" font-size="15" fill="#2c5a40" font-weight="700" text-anchor="middle" letter-spacing="1">UPK-2026</text>
+      <!-- registration sticker / tag with year, top corner of plate -->
+      <rect x="294" y="304" width="20" height="20" rx="3" fill="#3e7c59"/>
+      <text x="304" y="316" font-size="9" fill="#fffdf8" font-weight="700" text-anchor="middle">26</text>
+      <!-- small month sticker, other corner -->
+      <rect x="218" y="304" width="20" height="20" rx="3" fill="#e0a93d"/>
+      <text x="228" y="316" font-size="9" fill="#5a4410" font-weight="700" text-anchor="middle">07</text>
+
+      <!-- hand pressing a fresh sticker onto the plate -->
+      <rect x="300" y="270" width="22" height="22" rx="3" fill="#5e9a78" transform="rotate(-12 311 281)"/>
+      <text x="311" y="285" font-size="9" fill="#fffdf8" font-weight="700" text-anchor="middle" transform="rotate(-12 311 281)">27</text>
+      <ellipse cx="330" cy="262" rx="17" ry="13" fill="#e8b48f"/>
+      <path d="M320 258 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M330 250 q22 -22 50 -22" stroke="#c96f4a" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- laptop showing online renewal -->
+      <rect x="40" y="160" width="150" height="96" rx="8" fill="#33393b"/>
+      <rect x="48" y="168" width="134" height="80" rx="4" fill="#fffdf8"/>
+      <rect x="30" y="256" width="170" height="12" rx="4" fill="#6b7376"/>
+      <!-- screen content: DMV renewal -->
+      <rect x="56" y="176" width="118" height="16" rx="3" fill="#2c5a40"/>
+      <text x="115" y="188" font-size="9.5" fill="#fffdf8" font-weight="700" text-anchor="middle">DMV · Renew</text>
+      <g fill="#dce8ee">
+        <rect x="56" y="200" width="118" height="9" rx="2"/>
+        <rect x="56" y="214" width="90" height="9" rx="2"/>
+      </g>
+      <rect x="56" y="228" width="64" height="14" rx="7" fill="#3e7c59"/>
+      <path d="M70 235 l4 4 l8 -8" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="103" y="238" font-size="8" fill="#fffdf8" font-weight="700" text-anchor="middle">Pay</text>
+
+      <!-- phone showing renewal confirmation -->
+      <rect x="206" y="180" width="46" height="80" rx="8" fill="#2c5a40"/>
+      <rect x="211" y="188" width="36" height="64" rx="3" fill="#e3efe8"/>
+      <circle cx="229" cy="212" r="9" fill="#fffdf8"/>
+      <path d="M224 212 l3.5 3.5 l6 -7" stroke="#3e7c59" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#9cc8ad">
+        <rect x="216" y="230" width="26" height="6" rx="3"/>
+        <rect x="220" y="240" width="18" height="5" rx="2.5"/>
+      </g>
+
+      <!-- renewal notice letter -->
+      <g transform="rotate(-6 470 230)">
+        <rect x="420" y="180" width="100" height="124" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+        <rect x="420" y="180" width="100" height="22" rx="6" fill="#7fb3c8"/>
+        <text x="470" y="195" font-size="9" fill="#fffdf8" font-weight="700" text-anchor="middle">RENEWAL NOTICE</text>
+        <g stroke="#d8cfbe" stroke-width="4" stroke-linecap="round">
+          <line x1="434" y1="216" x2="506" y2="216"/>
+          <line x1="434" y1="230" x2="506" y2="230"/>
+          <line x1="434" y1="244" x2="486" y2="244"/>
+        </g>
+        <rect x="434" y="258" width="72" height="30" rx="4" fill="#fbe9e1"/>
+        <text x="470" y="272" font-size="8.5" fill="#d9663f" font-weight="700" text-anchor="middle">DUE BY</text>
+        <text x="470" y="283" font-size="9" fill="#d9663f" font-weight="700" text-anchor="middle">JUL 2026</text>
+      </g>
+
+      <!-- wall calendar with expiry circled -->
+      <rect x="430" y="62" width="96" height="98" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="430" y="62" width="96" height="24" rx="10" fill="#c96f4a"/>
+      <rect x="430" y="76" width="96" height="10" fill="#c96f4a"/>
+      <rect x="446" y="54" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <rect x="502" y="54" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <g fill="#d8cfbe">
+        <rect x="440" y="98" width="12" height="9" rx="2"/>
+        <rect x="458" y="98" width="12" height="9" rx="2"/>
+        <rect x="476" y="98" width="12" height="9" rx="2"/>
+        <rect x="494" y="98" width="12" height="9" rx="2"/>
+        <rect x="440" y="114" width="12" height="9" rx="2"/>
+        <rect x="476" y="114" width="12" height="9" rx="2"/>
+        <rect x="494" y="114" width="12" height="9" rx="2"/>
+        <rect x="440" y="130" width="12" height="9" rx="2"/>
+        <rect x="458" y="130" width="12" height="9" rx="2"/>
+      </g>
+      <circle cx="464" cy="118" r="13" fill="none" stroke="#3e7c59" stroke-width="3.5"/>
+      <rect x="458" y="114" width="12" height="9" rx="2" fill="#3e7c59"/>
+
+      <!-- small shrubs for warmth -->
+      <circle cx="40" cy="346" r="13" fill="#5e9a78"/>
+      <circle cx="528" cy="344" r="14" fill="#5e9a78"/>
+      <circle cx="544" cy="350" r="10" fill="#3e7c59"/>
+    </svg>

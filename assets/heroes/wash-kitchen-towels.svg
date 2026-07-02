@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a kitchen towel routine: a stack of folded dish towels going into an open front-loading washer set to a hot cycle, a damp towel hanging to dry over an oven door handle, a clean folded towel and a roll of paper towels kept for raw-meat cleanup on the counter, in a warm kitchen">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- counter surface -->
+      <rect x="20" y="300" width="520" height="14" rx="4" fill="#c9a06b"/>
+      <rect x="20" y="314" width="520" height="10" rx="3" fill="#8a6a4f"/>
+
+      <!-- ===== washing machine, left ===== -->
+      <rect x="46" y="150" width="150" height="150" rx="12" fill="#fffdf8" stroke="#b9b1a3" stroke-width="5"/>
+      <!-- control panel -->
+      <rect x="58" y="162" width="126" height="26" rx="6" fill="#dce8ee"/>
+      <circle cx="170" cy="175" r="8" fill="#5e9a78"/>
+      <path d="M170 175 l0 -6" stroke="#2c5a40" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- HOT dial marker -->
+      <circle cx="72" cy="175" r="7" fill="#d9663f"/>
+      <text x="86" y="179" font-size="9.5" fill="#d9663f" font-weight="700">HOT</text>
+      <!-- round door, open, warm water inside -->
+      <circle cx="121" cy="244" r="46" fill="#b9b1a3"/>
+      <circle cx="121" cy="244" r="38" fill="#dce8ee"/>
+      <circle cx="121" cy="244" r="30" fill="#7fb3c8" opacity="0.55"/>
+      <!-- warm-water shimmer -->
+      <g stroke="#d9663f" stroke-width="2" stroke-linecap="round" opacity="0.6">
+        <path d="M104 250 q6 -6 12 0 q6 6 12 0"/>
+        <path d="M104 238 q6 -6 12 0 q6 6 12 0"/>
+      </g>
+      <!-- towels tumbling in -->
+      <path d="M108 236 h26 l-4 18 h-18 z" fill="#5e9a78"/>
+      <path d="M113 244 h20 l-3 12 h-14 z" fill="#c96f4a" opacity="0.85"/>
+
+      <!-- stack of folded towels waiting to go in, on top of washer -->
+      <g>
+        <rect x="70" y="128" width="90" height="9" rx="3" fill="#7fb3c8"/>
+        <rect x="74" y="119" width="90" height="9" rx="3" fill="#5e9a78"/>
+        <rect x="70" y="110" width="90" height="9" rx="3" fill="#c96f4a"/>
+        <g stroke="#fffdf8" stroke-width="1.4" opacity="0.7">
+          <line x1="86" y1="132" x2="86" y2="136"/>
+          <line x1="90" y1="123" x2="90" y2="127"/>
+          <line x1="86" y1="114" x2="86" y2="118"/>
+        </g>
+      </g>
+
+      <!-- ===== oven with a damp towel over the handle, center-right ===== -->
+      <rect x="300" y="184" width="150" height="116" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="5"/>
+      <!-- oven window -->
+      <rect x="316" y="216" width="118" height="60" rx="6" fill="#8a6a4f"/>
+      <rect x="324" y="224" width="102" height="44" rx="4" fill="#d98e3b" opacity="0.45"/>
+      <!-- oven handle -->
+      <rect x="312" y="202" width="126" height="7" rx="3.5" fill="#b9b1a3"/>
+      <!-- damp towel hung to dry over the handle -->
+      <path d="M348 200 q-8 44 -4 78 h44 q4 -34 -4 -78 z" fill="#7fb3c8"/>
+      <path d="M348 200 q-8 44 -4 78 h44 q4 -34 -4 -78 z" fill="#9cc3d4" opacity="0.5"/>
+      <!-- fold line + stripe -->
+      <path d="M366 204 q-3 40 0 74" stroke="#5e9a78" stroke-width="2.4" fill="none"/>
+      <rect x="352" y="262" width="32" height="6" rx="2" fill="#3e7c59" opacity="0.7"/>
+      <!-- a drip drying -->
+      <path d="M370 280 q2 6 0 11" stroke="#7fb3c8" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <text x="352" y="176" font-size="10.5" fill="#3e7c59" font-weight="700">hang to dry</text>
+
+      <!-- ===== clean folded towel on the counter, right ===== -->
+      <g>
+        <rect x="472" y="276" width="60" height="10" rx="3" fill="#5e9a78"/>
+        <rect x="474" y="266" width="60" height="10" rx="3" fill="#3e7c59"/>
+        <g stroke="#e3efe8" stroke-width="1.4" opacity="0.8">
+          <line x1="486" y1="271" x2="522" y2="271"/>
+          <line x1="486" y1="281" x2="522" y2="281"/>
+        </g>
+      </g>
+      <!-- little clean sparkle -->
+      <g stroke="#e0a93d" stroke-width="2.2" stroke-linecap="round">
+        <path d="M500 250 l0 8 M496 254 l8 0"/>
+      </g>
+
+      <!-- ===== roll of paper towels for raw-meat jobs, front-center ===== -->
+      <g>
+        <rect x="236" y="256" width="70" height="44" rx="10" fill="#fffdf8" stroke="#e9e2d8" stroke-width="3"/>
+        <ellipse cx="236" cy="278" rx="10" ry="22" fill="#f4efe6"/>
+        <ellipse cx="236" cy="278" rx="4" ry="9" fill="#c9a06b"/>
+        <!-- a sheet torn off, ready for raw-meat cleanup -->
+        <path d="M306 262 h34 l0 34 h-34 z" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+        <g stroke="#dce8ee" stroke-width="1.4">
+          <line x1="312" y1="270" x2="334" y2="270"/>
+          <line x1="312" y1="278" x2="334" y2="278"/>
+          <line x1="312" y1="286" x2="334" y2="286"/>
+        </g>
+      </g>
+      <text x="228" y="322" font-size="10.5" fill="#d9663f" font-weight="700">paper towels for raw meat</text>
+
+      <!-- little herb pot for kitchen warmth, back-right -->
+      <path d="M498 300 h30 l-4 -22 h-22 z" fill="#c96f4a"/>
+      <ellipse cx="506" cy="266" rx="7" ry="11" fill="#5e9a78" transform="rotate(-26 506 266)"/>
+      <ellipse cx="522" cy="270" rx="7" ry="11" fill="#3e7c59" transform="rotate(24 522 270)"/>
+      <path d="M513 278 q-2 -14 -7 -20" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm, organized desk scene for reviewing estate documents: an open folder labeled Will and Estate with neatly stacked papers for a will, an advance directive, and a power of attorney, a pen resting on top, a small fireproof lockbox beside it, and a framed family photo — reassuring and orderly, not morbid">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface -->
+      <rect x="40" y="300" width="480" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="74" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+      <rect x="471" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+
+      <!-- open "Will & Estate" folder, center -->
+      <path d="M150 150 h150 l16 18 h94 v122 h-260 z" fill="#5e9a78"/>
+      <rect x="150" y="168" width="260" height="104" rx="6" fill="#3e7c59"/>
+      <!-- folder tab label -->
+      <rect x="166" y="156" width="120" height="16" rx="5" fill="#fffdf8"/>
+      <text x="176" y="168" font-size="11" fill="#2c5a40" font-weight="700">Will &amp; Estate</text>
+
+      <!-- the documents fanned inside the folder -->
+      <!-- back doc: power of attorney -->
+      <rect x="196" y="120" width="120" height="150" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-9 256 195)"/>
+      <g transform="rotate(-9 256 195)">
+        <rect x="208" y="132" width="44" height="9" rx="3" fill="#7fb3c8"/>
+        <text x="208" y="156" font-size="8.5" fill="#6b7376" font-weight="700">POWER OF</text>
+        <text x="208" y="166" font-size="8.5" fill="#6b7376" font-weight="700">ATTORNEY</text>
+        <line x1="208" y1="180" x2="300" y2="180" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="208" y1="190" x2="300" y2="190" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="208" y1="200" x2="282" y2="200" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <!-- middle doc: advance directive -->
+      <rect x="230" y="122" width="118" height="148" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(2 289 196)"/>
+      <g transform="rotate(2 289 196)">
+        <rect x="242" y="134" width="40" height="9" rx="3" fill="#c96f4a"/>
+        <text x="242" y="158" font-size="8.5" fill="#6b7376" font-weight="700">ADVANCE</text>
+        <text x="242" y="168" font-size="8.5" fill="#6b7376" font-weight="700">DIRECTIVE</text>
+        <line x1="242" y1="182" x2="340" y2="182" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="242" y1="192" x2="340" y2="192" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="242" y1="202" x2="320" y2="202" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <!-- front doc: the will -->
+      <rect x="252" y="118" width="124" height="156" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="3" transform="rotate(11 314 196)"/>
+      <g transform="rotate(11 314 196)">
+        <rect x="266" y="132" width="56" height="11" rx="4" fill="#e0a93d"/>
+        <text x="266" y="160" font-size="13" fill="#2c5a40" font-weight="800">WILL</text>
+        <line x1="266" y1="176" x2="362" y2="176" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="266" y1="188" x2="362" y2="188" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="266" y1="200" x2="362" y2="200" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <line x1="266" y1="212" x2="340" y2="212" stroke="#dce8ee" stroke-width="2.6" stroke-linecap="round"/>
+        <!-- signature line -->
+        <line x1="266" y1="244" x2="330" y2="244" stroke="#8a6a4f" stroke-width="2" stroke-linecap="round"/>
+        <path d="M270 240 q8 -8 14 0 q5 6 12 -2" fill="none" stroke="#2c5a40" stroke-width="2.2" stroke-linecap="round"/>
+        <!-- notary seal -->
+        <circle cx="346" cy="240" r="13" fill="none" stroke="#e0a93d" stroke-width="2.4"/>
+        <path d="M340 240 l4 4 l8 -8" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- pen resting on top of the will -->
+      <rect x="338" y="252" width="86" height="9" rx="4.5" fill="#2c5a40" transform="rotate(22 381 256)"/>
+      <path d="M414 262 l12 6 l-10 4 z" fill="#e0a93d" transform="rotate(22 420 266)"/>
+
+      <!-- fireproof lockbox, front-left -->
+      <rect x="58" y="244" width="92" height="60" rx="8" fill="#b9b1a3"/>
+      <rect x="58" y="244" width="92" height="16" rx="8" fill="#8a6a4f"/>
+      <rect x="58" y="252" width="92" height="6" fill="#8a6a4f"/>
+      <!-- lock + handle -->
+      <rect x="96" y="270" width="16" height="20" rx="3" fill="#fffdf8"/>
+      <circle cx="104" cy="280" r="3.2" fill="#e0a93d"/>
+      <rect x="86" y="236" width="36" height="8" rx="4" fill="#6b7376"/>
+      <text x="70" y="300" font-size="9" fill="#33393b" font-weight="700">FIREPROOF</text>
+
+      <!-- framed family photo, far right on desk -->
+      <rect x="430" y="226" width="74" height="74" rx="6" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <rect x="438" y="234" width="58" height="58" rx="3" fill="#dce8ee"/>
+      <!-- two figures + a small one -->
+      <circle cx="456" cy="256" r="8" fill="#c96f4a"/>
+      <path d="M444 288 q12 -16 24 0 z" fill="#c96f4a"/>
+      <circle cx="478" cy="258" r="7" fill="#5e9a78"/>
+      <path d="M468 288 q10 -14 20 0 z" fill="#5e9a78"/>
+      <circle cx="468" cy="270" r="5" fill="#e0a93d"/>
+      <path d="M461 290 q7 -9 14 0 z" fill="#e0a93d"/>
+      <!-- little sun for warmth in the photo -->
+      <circle cx="486" cy="244" r="4" fill="#e0a93d"/>
+    </svg>

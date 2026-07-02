@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bathroom counter scene for cleaning a phone case: a clear phone case popped off the phone and lying in a bowl of warm soapy water with a toothbrush scrubbing its button cutouts, the bare phone beside it being wiped with a microfiber cloth and a 70 percent isopropyl alcohol wipe, cotton swabs for the ports, and a plant by a sunny window">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="406" y="44" width="110" height="124" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="461" y1="47" x2="461" y2="165" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="409" y1="106" x2="513" y2="106" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="486" cy="78" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="486" y1="54" x2="486" y2="60"/>
+        <line x1="508" y1="78" x2="502" y2="78"/>
+        <line x1="502" y1="62" x2="498" y2="66"/>
+      </g>
+      <rect x="394" y="36" width="134" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- counter -->
+      <rect x="36" y="336" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="60" y="352" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <rect x="486" y="352" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <!-- bowl of warm soapy water with the case -->
+      <path d="M70 264 h180 l-16 58 q-2 10 -14 10 h-120 q-12 0 -14 -10 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <ellipse cx="160" cy="266" rx="90" ry="12" fill="#7fb3c8" opacity="0.4"/>
+      <!-- clear case in the bowl -->
+      <rect x="118" y="240" width="76" height="86" rx="16" fill="#7fb3c8" opacity="0.5" stroke="#7fb3c8" stroke-width="2.5"/>
+      <rect x="130" y="252" width="52" height="64" rx="10" fill="#dce8ee" opacity="0.5"/>
+      <!-- camera cutout on the case -->
+      <rect x="134" y="248" width="22" height="16" rx="5" fill="#5e9a78" opacity="0.7"/>
+      <!-- button cutouts on the case edge -->
+      <rect x="114" y="262" width="6" height="16" rx="3" fill="#5e9a78"/>
+      <rect x="114" y="284" width="6" height="10" rx="3" fill="#5e9a78"/>
+      <!-- toothbrush scrubbing the case -->
+      <rect x="196" y="216" width="9" height="56" rx="4.5" fill="#c96f4a" transform="rotate(20 200 244)"/>
+      <g stroke="#fffdf8" stroke-width="2" stroke-linecap="round">
+        <line x1="176" y1="270" x2="170" y2="278"/>
+        <line x1="182" y1="274" x2="177" y2="283"/>
+        <line x1="188" y1="278" x2="184" y2="287"/>
+      </g>
+      <!-- bubbles -->
+      <g fill="#fffdf8" opacity="0.85">
+        <circle cx="100" cy="280" r="5"/>
+        <circle cx="112" cy="272" r="3.5"/>
+        <circle cx="206" cy="284" r="4.5"/>
+        <circle cx="150" cy="290" r="3"/>
+      </g>
+      <!-- bare phone being wiped -->
+      <rect x="296" y="206" width="104" height="124" rx="18" fill="#2c5a40"/>
+      <rect x="306" y="218" width="84" height="100" rx="10" fill="#33393b"/>
+      <!-- camera bump -->
+      <rect x="312" y="224" width="28" height="20" rx="6" fill="#3e7c59"/>
+      <circle cx="320" cy="231" r="4" fill="#dce8ee"/>
+      <circle cx="332" cy="237" r="4" fill="#dce8ee"/>
+      <!-- microfiber cloth wiping the phone -->
+      <rect x="324" y="252" width="56" height="44" rx="10" fill="#7fb3c8" transform="rotate(-8 352 274)"/>
+      <path d="M334 268 q10 -4 20 0 q10 4 20 0" stroke="#fffdf8" stroke-width="2.4" fill="none" stroke-linecap="round" transform="rotate(-8 352 274)"/>
+      <!-- alcohol wipe packet leaning on the counter -->
+      <rect x="408" y="294" width="44" height="40" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="408" y="294" width="44" height="13" rx="6" fill="#5e9a78"/>
+      <text x="430" y="324" font-size="13" font-weight="800" fill="#2c5a40" text-anchor="middle" font-family="Georgia, serif">70%</text>
+      <!-- cotton swabs for the ports -->
+      <line x1="250" y1="334" x2="288" y2="320" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="250" cy="334" r="6" fill="#fffdf8"/>
+      <circle cx="288" cy="320" r="6" fill="#fffdf8"/>
+      <!-- sparkles -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="232" y1="216" x2="232" y2="228"/>
+        <line x1="226" y1="222" x2="238" y2="222"/>
+        <line x1="402" y1="196" x2="402" y2="206"/>
+        <line x1="397" y1="201" x2="407" y2="201"/>
+      </g>
+      <!-- plant -->
+      <path d="M514 388 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M514 388 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="498" cy="352" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 498 352)"/>
+      <ellipse cx="532" cy="356" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 532 356)"/>
+      <path d="M500 388 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+      <!-- floor shadow -->
+      <ellipse cx="280" cy="392" rx="130" ry="10" fill="#b9b1a3" opacity="0.4"/>
+    </svg>

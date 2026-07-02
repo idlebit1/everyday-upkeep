@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a shoe-shine setup on newspaper: a pair of brown leather dress shoes, one glossy and polished and one dull, a round tin of polish open beside them, a horsehair brush, a hand with a cloth wrapped around the fingers buffing the toe of a shoe, and a wooden shoe tree resting nearby">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- spread newspaper under everything -->
+      <rect x="58" y="250" width="446" height="150" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-2 281 325)"/>
+      <g stroke="#b9b1a3" stroke-width="2" opacity="0.5" stroke-linecap="round" transform="rotate(-2 281 325)">
+        <line x1="80" y1="272" x2="200" y2="272"/>
+        <line x1="80" y1="282" x2="190" y2="282"/>
+        <line x1="80" y1="292" x2="200" y2="292"/>
+        <line x1="300" y1="272" x2="430" y2="272"/>
+        <line x1="300" y1="282" x2="420" y2="282"/>
+        <line x1="300" y1="292" x2="436" y2="292"/>
+        <line x1="80" y1="378" x2="210" y2="378"/>
+        <line x1="320" y1="378" x2="436" y2="378"/>
+      </g>
+
+      <!-- LEFT shoe: glossy, polished -->
+      <path d="M96 318 q-8 -52 22 -56 q26 -4 30 26 l6 30 l58 4 q44 4 50 30 l3 16 q2 12 -12 12 h-150 q-14 0 -15 -16 z" fill="#8a6a4f"/>
+      <path d="M96 318 q-8 -52 22 -56 q26 -4 30 26 l2 18 q-28 8 -54 0 z" fill="#a07a52"/>
+      <path d="M154 318 l58 4 q44 4 50 30 l-118 0 z" fill="#6d5238"/>
+      <rect x="92" y="378" width="180" height="14" rx="7" fill="#5e4326"/>
+      <!-- laces -->
+      <g stroke="#fffdf8" stroke-width="3" stroke-linecap="round">
+        <line x1="108" y1="288" x2="132" y2="296"/>
+        <line x1="108" y1="302" x2="132" y2="310"/>
+        <line x1="108" y1="316" x2="132" y2="324"/>
+      </g>
+      <!-- mirror-shine highlight on the polished toe -->
+      <ellipse cx="218" cy="332" rx="26" ry="10" fill="#fffdf8" opacity="0.5"/>
+      <ellipse cx="148" cy="296" rx="14" ry="7" fill="#fffdf8" opacity="0.35"/>
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <path d="M232 318 v10 M227 323 h10"/>
+        <path d="M196 322 v8 M192 326 h8"/>
+      </g>
+      <text x="120" y="262" font-size="11" fill="#3e7c59" font-weight="700">glossy</text>
+
+      <!-- RIGHT shoe: dull, unpolished -->
+      <path d="M328 320 q-8 -50 22 -54 q26 -4 30 26 l6 28 l54 4 q42 4 48 28 l3 16 q2 12 -12 12 h-146 q-14 0 -15 -16 z" fill="#b9b1a3"/>
+      <path d="M328 320 q-8 -50 22 -54 q26 -4 30 26 l2 16 q-26 8 -52 0 z" fill="#c7bfb1"/>
+      <path d="M386 320 l54 4 q42 4 48 28 l-114 0 z" fill="#8a6a4f"/>
+      <rect x="324" y="378" width="172" height="14" rx="7" fill="#6d5238"/>
+      <!-- dull, dusty surface specks -->
+      <g fill="#8a6a4f" opacity="0.5">
+        <circle cx="372" cy="306" r="2"/>
+        <circle cx="400" cy="318" r="1.8"/>
+        <circle cx="428" cy="332" r="2.2"/>
+        <circle cx="356" cy="330" r="1.6"/>
+      </g>
+      <!-- a hairline scuff -->
+      <path d="M412 340 q14 -4 26 2" stroke="#8a6a4f" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <text x="350" y="262" font-size="11" fill="#6b7376">dull</text>
+
+      <!-- round polish tin, open, center-front -->
+      <ellipse cx="270" cy="372" rx="34" ry="11" fill="#2c5a40"/>
+      <ellipse cx="270" cy="368" rx="34" ry="11" fill="#3e7c59"/>
+      <ellipse cx="270" cy="368" rx="24" ry="7" fill="#5e4326"/>
+      <ellipse cx="270" cy="367" rx="18" ry="5" fill="#6d5238"/>
+      <!-- open lid leaning behind -->
+      <ellipse cx="316" cy="356" rx="26" ry="9" fill="#5e9a78" transform="rotate(-18 316 356)"/>
+      <ellipse cx="316" cy="354" rx="26" ry="9" fill="#3e7c59" transform="rotate(-18 316 354)"/>
+
+      <!-- horsehair brush, front-left -->
+      <rect x="62" y="360" width="92" height="20" rx="9" fill="#8a6a4f"/>
+      <rect x="62" y="360" width="92" height="7" rx="6" fill="#a07a52"/>
+      <g stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round">
+        <line x1="72" y1="380" x2="72" y2="392"/>
+        <line x1="84" y1="380" x2="84" y2="393"/>
+        <line x1="96" y1="380" x2="96" y2="392"/>
+        <line x1="108" y1="380" x2="108" y2="393"/>
+        <line x1="120" y1="380" x2="120" y2="392"/>
+        <line x1="132" y1="380" x2="132" y2="393"/>
+        <line x1="144" y1="380" x2="144" y2="392"/>
+      </g>
+
+      <!-- hand with cloth wrapped on fingers, buffing the polished toe -->
+      <ellipse cx="226" cy="304" rx="22" ry="15" fill="#dce8ee" transform="rotate(-12 226 304)"/>
+      <path d="M210 300 q18 -8 34 2" stroke="#7fb3c8" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="234" cy="296" rx="15" ry="11" fill="#e8b48f"/>
+      <path d="M226 290 q-4 6 0 12" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M242 290 q26 -22 56 -16" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- little buff motion sparkle -->
+      <g stroke="#fffdf8" stroke-width="2.4" stroke-linecap="round" opacity="0.8">
+        <path d="M252 320 l8 -6 M256 326 l8 -6"/>
+      </g>
+
+      <!-- wooden shoe tree, top-right -->
+      <ellipse cx="470" cy="206" rx="34" ry="20" fill="#c9a06b"/>
+      <ellipse cx="470" cy="202" rx="34" ry="20" fill="#d8b884"/>
+      <ellipse cx="470" cy="200" rx="22" ry="12" fill="#c9a06b" opacity="0.6"/>
+      <rect x="464" y="150" width="12" height="54" rx="6" fill="#a07a52"/>
+      <circle cx="470" cy="146" r="11" fill="#c9a06b"/>
+      <circle cx="470" cy="146" r="11" fill="none" stroke="#a07a52" stroke-width="2"/>
+      <g stroke="#a07a52" stroke-width="1.6" opacity="0.5" stroke-linecap="round">
+        <line x1="448" y1="206" x2="492" y2="206"/>
+      </g>
+    </svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an interior door swinging open on its frame, with a can of lubricant spraying at the top hinge and musical squeak notes turning into a calm silence symbol">
+      <ellipse cx="280" cy="398" rx="250" ry="24" fill="#efe7d8"/>
+      <circle cx="78" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="68" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="406" cy="80" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="150" cy="104" rx="30" ry="14" fill="#dce8ee"/>
+      <!-- door frame / jamb -->
+      <rect x="150" y="70" width="22" height="320" fill="#b9b1a3"/>
+      <rect x="150" y="70" width="22" height="320" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="172" y="70" width="170" height="14" fill="#b9b1a3"/>
+      <!-- the door, swung slightly open -->
+      <g transform="rotate(-12 172 230)">
+        <rect x="172" y="84" width="150" height="300" rx="6" fill="#c96f4a"/>
+        <rect x="172" y="84" width="150" height="300" rx="6" fill="none" stroke="#a5522f" stroke-width="3"/>
+        <!-- panel insets -->
+        <rect x="186" y="100" width="122" height="120" rx="6" fill="#d9663f"/>
+        <rect x="186" y="240" width="122" height="128" rx="6" fill="#d9663f"/>
+        <!-- door knob -->
+        <circle cx="300" cy="236" r="9" fill="#e0a93d"/>
+        <circle cx="300" cy="236" r="3.5" fill="#fffdf8"/>
+      </g>
+      <!-- hinges on the jamb edge -->
+      <g>
+        <rect x="160" y="118" width="26" height="40" rx="3" fill="#e0a93d"/>
+        <rect x="171.5" y="118" width="3" height="40" fill="#d98e3b"/>
+        <circle cx="173" cy="114" r="5" fill="#d98e3b"/>
+        <circle cx="173" cy="162" r="5" fill="#d98e3b"/>
+      </g>
+      <g>
+        <rect x="160" y="300" width="26" height="40" rx="3" fill="#e0a93d"/>
+        <rect x="171.5" y="300" width="3" height="40" fill="#d98e3b"/>
+        <circle cx="173" cy="296" r="5" fill="#d98e3b"/>
+        <circle cx="173" cy="344" r="5" fill="#d98e3b"/>
+      </g>
+      <!-- spray can aimed at the top hinge pin -->
+      <g transform="rotate(20 250 90)">
+        <rect x="250" y="44" width="40" height="78" rx="10" fill="#7fb3c8"/>
+        <rect x="258" y="30" width="24" height="18" rx="4" fill="#2c5a40"/>
+        <rect x="266" y="20" width="8" height="14" rx="3" fill="#33393b"/>
+        <rect x="256" y="64" width="28" height="24" rx="4" fill="#fffdf8"/>
+      </g>
+      <!-- the thin straw + spray hitting the pin -->
+      <line x1="246" y1="118" x2="178" y2="116" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <g fill="#7fb3c8">
+        <circle cx="196" cy="114" r="2.6"/>
+        <circle cx="206" cy="120" r="2.2"/>
+        <circle cx="200" cy="108" r="1.8"/>
+        <circle cx="188" cy="120" r="2"/>
+      </g>
+      <!-- squeak notes fading into silence at the top -->
+      <g stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.55">
+        <path d="M392 150 l0 -30"/>
+        <ellipse cx="388" cy="150" rx="6" ry="4.5" fill="#c96f4a" stroke="none"/>
+        <path d="M392 120 q10 -4 14 2"/>
+      </g>
+      <g stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35">
+        <path d="M430 116 l0 -26"/>
+        <ellipse cx="426" cy="116" rx="5.5" ry="4" fill="#d9663f" stroke="none"/>
+      </g>
+      <!-- calm "shhh" / silence: a soft check on a quiet bubble -->
+      <circle cx="476" cy="150" r="26" fill="#e3efe8"/>
+      <path d="M464 150 l8 8 l16 -18" stroke="#3e7c59" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- a couple drops wiped away on the floor -->
+      <ellipse cx="232" cy="392" rx="9" ry="4" fill="#dce8ee"/>
+      <ellipse cx="260" cy="396" rx="6" ry="3" fill="#dce8ee"/>
+      <!-- tufts of nothing — keep it tidy: a folded rag -->
+      <g transform="rotate(-6 360 386)">
+        <rect x="330" y="378" width="60" height="20" rx="6" fill="#5e9a78"/>
+        <rect x="330" y="378" width="60" height="6" rx="3" fill="#3e7c59"/>
+      </g>
+    </svg>

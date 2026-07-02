@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm dog standing in a tub of sudsy lukewarm water being lathered with pet shampoo from a green bottle, with a sprayer cup, fluffy towels, a brush, and a bone-shaped treat waiting nearby">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="74" cy="60" r="22" fill="#f2cf7a"/>
+      <ellipse cx="468" cy="66" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="428" cy="80" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- floating bubbles -->
+      <g fill="none" stroke="#7fb3c8" stroke-width="2.5">
+        <circle cx="150" cy="96" r="8"/>
+        <circle cx="176" cy="74" r="5"/>
+        <circle cx="400" cy="120" r="7"/>
+        <circle cx="376" cy="100" r="5"/>
+      </g>
+      <!-- tub -->
+      <path d="M120 250 q-8 0 -8 12 l16 96 q3 18 22 18 h220 q19 0 22 -18 l16 -96 q0 -12 -8 -12 z" fill="#dce8ee"/>
+      <rect x="108" y="238" width="344" height="20" rx="10" fill="#bfdce8"/>
+      <!-- water + suds line in tub -->
+      <path d="M132 296 q120 -18 296 0 l-8 46 q-2 14 -16 14 h-248 q-14 0 -16 -14 z" fill="#bfdce8"/>
+      <g fill="#fffdf8">
+        <circle cx="160" cy="296" r="13"/>
+        <circle cx="186" cy="302" r="9"/>
+        <circle cx="392" cy="298" r="12"/>
+        <circle cx="416" cy="292" r="8"/>
+        <circle cx="232" cy="306" r="9"/>
+      </g>
+      <!-- dog standing in the tub, lathered -->
+      <g>
+        <!-- body -->
+        <ellipse cx="278" cy="246" rx="92" ry="58" fill="#c9a06b"/>
+        <!-- suds patches on back -->
+        <g fill="#fffdf8">
+          <circle cx="244" cy="208" r="14"/>
+          <circle cx="270" cy="198" r="12"/>
+          <circle cx="298" cy="202" r="13"/>
+          <circle cx="324" cy="214" r="11"/>
+        </g>
+        <!-- head -->
+        <circle cx="208" cy="214" r="40" fill="#c9a06b"/>
+        <!-- ears -->
+        <path d="M180 184 q-18 -6 -22 18 q-2 18 14 24 z" fill="#8a6a4f"/>
+        <path d="M236 184 q18 -6 22 18 q2 18 -14 24 z" fill="#8a6a4f"/>
+        <!-- snout -->
+        <ellipse cx="178" cy="228" rx="22" ry="16" fill="#d9b885"/>
+        <circle cx="162" cy="226" r="6" fill="#33393b"/>
+        <!-- eyes -->
+        <circle cx="200" cy="206" r="4" fill="#33393b"/>
+        <circle cx="222" cy="206" r="4" fill="#33393b"/>
+        <path d="M198 226 q6 5 12 0" stroke="#33393b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- legs into the water -->
+        <rect x="236" y="290" width="16" height="26" rx="8" fill="#c9a06b"/>
+        <rect x="306" y="290" width="16" height="26" rx="8" fill="#c9a06b"/>
+        <!-- dripping -->
+        <g stroke="#7fb3c8" stroke-width="3" stroke-linecap="round">
+          <line x1="360" y1="276" x2="360" y2="288"/>
+          <line x1="346" y1="284" x2="346" y2="294"/>
+        </g>
+      </g>
+      <!-- pet shampoo bottle -->
+      <g>
+        <rect x="430" y="316" width="44" height="62" rx="9" fill="#3e7c59"/>
+        <rect x="440" y="300" width="24" height="18" rx="5" fill="#2c5a40"/>
+        <rect x="436" y="334" width="32" height="26" rx="4" fill="#fffdf8"/>
+        <circle cx="452" cy="347" r="6" fill="#5e9a78"/>
+      </g>
+      <!-- rinse cup -->
+      <g transform="rotate(-16 96 320)">
+        <path d="M72 300 h48 l-6 44 q-1 6 -8 6 h-20 q-7 0 -8 -6 z" fill="#7fb3c8"/>
+        <rect x="70" y="294" width="52" height="10" rx="5" fill="#5f93ad"/>
+        <line x1="96" y1="280" x2="96" y2="296" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <!-- stacked towels -->
+      <g>
+        <rect x="40" y="346" width="76" height="16" rx="6" fill="#d9663f"/>
+        <rect x="46" y="362" width="76" height="16" rx="6" fill="#e0a93d"/>
+        <rect x="40" y="378" width="76" height="14" rx="6" fill="#c96f4a"/>
+      </g>
+      <!-- brush -->
+      <g transform="rotate(12 176 372)">
+        <rect x="146" y="364" width="56" height="14" rx="7" fill="#8a6a4f"/>
+        <g stroke="#b9b1a3" stroke-width="3" stroke-linecap="round">
+          <line x1="154" y1="378" x2="154" y2="388"/>
+          <line x1="166" y1="378" x2="166" y2="388"/>
+          <line x1="178" y1="378" x2="178" y2="388"/>
+          <line x1="190" y1="378" x2="190" y2="388"/>
+        </g>
+      </g>
+      <!-- bone treat -->
+      <g transform="rotate(-12 384 384)">
+        <rect x="358" y="378" width="52" height="12" rx="6" fill="#e0a93d"/>
+        <circle cx="360" cy="378" r="7" fill="#e0a93d"/>
+        <circle cx="360" cy="390" r="7" fill="#e0a93d"/>
+        <circle cx="410" cy="378" r="7" fill="#e0a93d"/>
+        <circle cx="410" cy="390" r="7" fill="#e0a93d"/>
+      </g>
+      <!-- little plants -->
+      <circle cx="510" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="530" cy="396" r="10" fill="#3e7c59"/>
+      <circle cx="30" cy="398" r="11" fill="#5e9a78"/>
+    </svg>

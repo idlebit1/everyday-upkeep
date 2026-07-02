@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a cozy desk by a window: an open laptop showing simple green account bars trending up, a steaming coffee mug, an open notebook with a pen, and a potted plant — the weekly money review in progress">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- window with morning sun -->
+      <rect x="396" y="40" width="122" height="138" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="457" y1="43" x2="457" y2="175" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="399" y1="109" x2="515" y2="109" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="486" cy="76" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="486" y1="52" x2="486" y2="58"/>
+        <line x1="508" y1="76" x2="502" y2="76"/>
+        <line x1="501" y1="60" x2="497" y2="64"/>
+      </g>
+      <rect x="384" y="32" width="146" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- desk -->
+      <rect x="56" y="288" width="448" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="80" y="306" width="15" height="84" rx="6" fill="#8a6a4f"/>
+      <rect x="466" y="306" width="15" height="84" rx="6" fill="#8a6a4f"/>
+      <!-- laptop -->
+      <rect x="168" y="128" width="224" height="146" rx="12" fill="#8a6a4f"/>
+      <rect x="180" y="140" width="200" height="122" rx="6" fill="#fffdf8"/>
+      <!-- screen: simple account dashboard -->
+      <rect x="190" y="150" width="74" height="9" rx="4.5" fill="#b9b1a3"/>
+      <circle cx="366" cy="155" r="6" fill="#5e9a78"/>
+      <!-- account bars -->
+      <rect x="192" y="176" width="176" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="192" y="176" width="138" height="14" rx="7" fill="#3e7c59"/>
+      <rect x="192" y="198" width="176" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="192" y="198" width="96" height="14" rx="7" fill="#5e9a78"/>
+      <rect x="192" y="220" width="176" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="192" y="220" width="62" height="14" rx="7" fill="#e0a93d"/>
+      <!-- one flagged row -->
+      <rect x="192" y="242" width="122" height="11" rx="5.5" fill="#fbe9e1"/>
+      <circle cx="326" cy="247" r="7" fill="#d9663f"/>
+      <line x1="326" y1="243.5" x2="326" y2="248" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="326" cy="251" r="1.3" fill="#fffdf8"/>
+      <!-- laptop base -->
+      <rect x="150" y="272" width="260" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="252" y="272" width="56" height="7" rx="3.5" fill="#8a6a4f"/>
+      <!-- coffee mug with steam -->
+      <path d="M96 244 q3 -16 10 -22" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M118 240 q-3 -18 6 -28" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="84" y="248" width="52" height="42" rx="8" fill="#c96f4a"/>
+      <rect x="84" y="248" width="52" height="9" rx="4.5" fill="#d9663f"/>
+      <path d="M136 256 q18 2 18 14 q0 12 -18 12" stroke="#c96f4a" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- notebook + pen -->
+      <rect x="408" y="240" width="106" height="50" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-6 461 265)"/>
+      <line x1="424" y1="252" x2="494" y2="244" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <line x1="426" y1="264" x2="496" y2="256" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <line x1="428" y1="276" x2="474" y2="271" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round"/>
+      <rect x="486" y="262" width="44" height="7" rx="3.5" fill="#e0a93d" transform="rotate(24 508 265)"/>
+      <polygon points="528,283 536,289 527,291" fill="#8a6a4f"/>
+      <!-- plant on the left -->
+      <path d="M86 220 q-4 -30 -18 -42" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M86 220 q6 -28 20 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="64" cy="172" rx="10" ry="16" fill="#5e9a78" transform="rotate(-32 64 172)"/>
+      <ellipse cx="110" cy="176" rx="10" ry="16" fill="#3e7c59" transform="rotate(30 110 176)"/>
+      <ellipse cx="86" cy="160" rx="9" ry="15" fill="#5e9a78"/>
+      <path d="M68 220 h38 l-6 36 h-26 z" fill="#c96f4a"/>
+      <rect x="64" y="214" width="46" height="10" rx="5" fill="#d9663f"/>
+      <!-- phone face-down: distractions off -->
+      <rect x="316" y="312" width="64" height="14" rx="7" fill="#33393b" transform="rotate(4 348 319)"/>
+      <rect x="338" y="315" width="20" height="3" rx="1.5" fill="#6b7376" transform="rotate(4 348 319)"/>
+      <!-- rug -->
+      <ellipse cx="280" cy="394" rx="150" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

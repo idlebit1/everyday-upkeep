@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a refrigerator ice maker: the ice bin is pulled out and a hand wipes the inside reservoir with a cloth, clear ice cubes sit in and beside the bin, a bottle of food-safe cleaning solution and a sponge wait on the counter, and the water supply line runs to the freshly cleaned, fresh-looking maker">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- fridge / freezer body on the left -->
+      <rect x="40" y="40" width="190" height="320" rx="14" fill="#fffdf8" stroke="#b9b1a3" stroke-width="6"/>
+      <!-- freezer door split -->
+      <rect x="40" y="180" width="190" height="6" fill="#e9e2d8"/>
+      <!-- handle -->
+      <rect x="206" y="80" width="10" height="80" rx="5" fill="#b9b1a3"/>
+      <rect x="206" y="206" width="10" height="120" rx="5" fill="#b9b1a3"/>
+      <!-- in-door ice maker compartment (open) -->
+      <rect x="62" y="70" width="120" height="96" rx="8" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4"/>
+      <text x="74" y="62" font-size="12" fill="#6b7376">ice maker</text>
+      <!-- the maker mechanism / cube mold inside -->
+      <rect x="78" y="84" width="88" height="22" rx="4" fill="#cdd9de"/>
+      <g fill="#eef4f7" stroke="#9cc3d4" stroke-width="1.4">
+        <rect x="82" y="88" width="14" height="14" rx="2"/>
+        <rect x="100" y="88" width="14" height="14" rx="2"/>
+        <rect x="118" y="88" width="14" height="14" rx="2"/>
+        <rect x="136" y="88" width="14" height="14" rx="2"/>
+      </g>
+      <!-- dispenser chute below the maker -->
+      <rect x="100" y="112" width="44" height="44" rx="6" fill="#cdd9de"/>
+      <rect x="110" y="148" width="24" height="8" rx="3" fill="#b9b1a3"/>
+
+      <!-- water supply line running to the maker -->
+      <path d="M40 130 q-26 0 -26 60 q0 70 0 70" fill="none" stroke="#7fb3c8" stroke-width="6" stroke-linecap="round"/>
+      <rect x="8" y="256" width="14" height="22" rx="4" fill="#5e9a78"/>
+      <text x="2" y="296" font-size="10.5" fill="#6b7376">water line</text>
+
+      <!-- the ice bin pulled out, front-center -->
+      <path d="M250 250 h150 l-14 96 h-122 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="5"/>
+      <path d="M246 244 h158 l-4 14 h-150 z" fill="#9cc3d4"/>
+      <!-- bin handle -->
+      <path d="M300 244 q25 -16 50 0" fill="none" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+      <!-- clear ice cubes inside the bin -->
+      <g fill="#eef4f7" stroke="#9cc3d4" stroke-width="1.6">
+        <rect x="270" y="276" width="26" height="24" rx="4" transform="rotate(-8 283 288)"/>
+        <rect x="304" y="282" width="26" height="24" rx="4" transform="rotate(6 317 294)"/>
+        <rect x="340" y="276" width="26" height="24" rx="4" transform="rotate(-5 353 288)"/>
+        <rect x="292" y="306" width="26" height="22" rx="4" transform="rotate(10 305 317)"/>
+        <rect x="328" y="308" width="24" height="22" rx="4" transform="rotate(-6 340 319)"/>
+      </g>
+      <!-- shine on a couple of cubes -->
+      <g stroke="#fffdf8" stroke-width="3" stroke-linecap="round" opacity="0.9">
+        <line x1="276" y1="296" x2="286" y2="282"/>
+        <line x1="346" y1="296" x2="356" y2="282"/>
+      </g>
+
+      <!-- a few stray cubes beside the bin -->
+      <g fill="#eef4f7" stroke="#9cc3d4" stroke-width="1.6">
+        <rect x="420" y="324" width="26" height="24" rx="4" transform="rotate(12 433 336)"/>
+        <rect x="450" y="334" width="22" height="20" rx="4" transform="rotate(-8 461 344)"/>
+      </g>
+
+      <!-- hand wiping the inside of the bin with a cloth -->
+      <rect x="296" y="262" width="42" height="26" rx="6" fill="#7fb3c8" transform="rotate(-6 317 275)"/>
+      <rect x="296" y="262" width="42" height="9" rx="4" fill="#9cc3d4" transform="rotate(-6 317 275)"/>
+      <ellipse cx="324" cy="256" rx="17" ry="13" fill="#e8b48f"/>
+      <path d="M314 252 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M338 250 q34 -16 52 -44" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <!-- little sparkle where it's wiped clean -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M362 286 l0 10 M357 291 l10 0"/>
+      </g>
+
+      <!-- bottle of food-safe cleaning solution, right -->
+      <rect x="446" y="250" width="40" height="68" rx="8" fill="#5e9a78"/>
+      <rect x="452" y="236" width="28" height="18" rx="4" fill="#3e7c59"/>
+      <rect x="460" y="224" width="12" height="14" rx="3" fill="#2c5a40"/>
+      <rect x="450" y="270" width="32" height="30" rx="4" fill="#dce8ee" opacity="0.85"/>
+      <path d="M456 282 q3 -4 8 0" fill="none" stroke="#7fb3c8" stroke-width="2" stroke-linecap="round"/>
+      <text x="450" y="290" font-size="9" fill="#2c5a40" font-weight="700">food-safe</text>
+
+      <!-- sponge in front of the bottle -->
+      <rect x="430" y="312" width="34" height="20" rx="5" fill="#e0a93d"/>
+      <rect x="430" y="312" width="34" height="7" rx="4" fill="#d98e3b"/>
+
+      <!-- a small dish / cup of vinegar solution front-left -->
+      <path d="M150 322 h54 l-6 30 h-42 z" fill="#dce8ee"/>
+      <path d="M148 318 h58 l-2 8 h-54 z" fill="#9cc3d4"/>
+      <ellipse cx="177" cy="322" rx="27" ry="5" fill="#d9e6ed"/>
+      <text x="156" y="370" font-size="10" fill="#6b7376">vinegar mix</text>
+    </svg>

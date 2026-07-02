@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bright kitchen sink: a worn, frayed old sponge is being tossed toward a small bin while a fresh sponge stands upright on a holder where it can air-dry, a dish brush leans nearby, and soap suds float around the basin">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- window of bright kitchen behind the sink -->
+      <rect x="150" y="22" width="190" height="120" rx="8" fill="#dce8ee" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="242" y="26" width="6" height="112" fill="#8a6a4f"/>
+      <rect x="154" y="80" width="182" height="6" fill="#8a6a4f"/>
+      <!-- bright shine in the window -->
+      <g stroke="#fffdf8" stroke-width="6" stroke-linecap="round" opacity="0.8">
+        <line x1="170" y1="70" x2="208" y2="34"/>
+        <line x1="186" y1="74" x2="216" y2="44"/>
+      </g>
+      <!-- little plant on the sill for warmth -->
+      <path d="M360 132 h26 l-4 22 h-18 z" fill="#c96f4a"/>
+      <ellipse cx="362" cy="116" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 362 116)"/>
+      <ellipse cx="384" cy="118" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 384 118)"/>
+      <path d="M373 132 q-4 -16 -11 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- counter -->
+      <rect x="60" y="250" width="440" height="20" rx="4" fill="#c9a06b"/>
+      <rect x="60" y="270" width="440" height="14" rx="3" fill="#b9b1a3"/>
+
+      <!-- sink basin -->
+      <path d="M150 196 h220 l-14 60 h-192 z" fill="#dce8ee"/>
+      <path d="M150 196 h220 l-3 12 h-214 z" fill="#cdd9de"/>
+      <!-- inner basin shadow -->
+      <path d="M168 210 h184 l-10 40 h-164 z" fill="#cdd9de"/>
+
+      <!-- faucet -->
+      <path d="M256 150 q0 -28 36 -28 q22 0 22 26 l0 14" fill="none" stroke="#b9b1a3" stroke-width="9" stroke-linecap="round"/>
+      <rect x="248" y="148" width="18" height="20" rx="4" fill="#8a6a4f"/>
+      <!-- a thin stream of water -->
+      <line x1="314" y1="166" x2="314" y2="206" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- soap suds floating in the basin -->
+      <g>
+        <circle cx="206" cy="224" r="9" fill="#eef4f7"/>
+        <circle cx="222" cy="216" r="7" fill="#fffdf8"/>
+        <circle cx="236" cy="226" r="6" fill="#eef4f7"/>
+        <circle cx="328" cy="226" r="7" fill="#fffdf8"/>
+        <circle cx="340" cy="220" r="5" fill="#eef4f7"/>
+      </g>
+
+      <!-- FRESH sponge standing up to dry on a holder, right of the sink -->
+      <!-- caddy / holder -->
+      <path d="M404 224 h60 l-6 30 h-48 z" fill="#5e9a78"/>
+      <path d="M404 224 h60 l-3 8 h-54 z" fill="#3e7c59"/>
+      <!-- fresh sponge upright (airflow) -->
+      <rect x="418" y="178" width="34" height="48" rx="6" fill="#e0a93d"/>
+      <rect x="418" y="178" width="34" height="14" rx="6" fill="#d98e3b"/>
+      <!-- sparkle on the fresh sponge -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M435 162 l0 9 M430 166 l9 0"/>
+      </g>
+      <text x="406" y="270" font-size="11" fill="#3e7c59" font-weight="700">fresh — air-drying</text>
+
+      <!-- dish brush leaning nearby, far right -->
+      <rect x="474" y="150" width="12" height="70" rx="5" fill="#c96f4a" transform="rotate(12 480 185)"/>
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="492" y1="214" x2="498" y2="222"/>
+        <line x1="486" y1="218" x2="492" y2="226"/>
+        <line x1="480" y1="221" x2="485" y2="229"/>
+      </g>
+
+      <!-- small bin at lower left -->
+      <path d="M70 300 h66 l-6 86 h-54 z" fill="#8a6a4f"/>
+      <path d="M64 294 h78 l-2 12 h-74 z" fill="#b9b1a3"/>
+      <rect x="92" y="288" width="22" height="8" rx="3" fill="#b9b1a3"/>
+
+      <!-- OLD worn frayed sponge mid-toss toward the bin -->
+      <g transform="rotate(-18 150 250)">
+        <rect x="128" y="236" width="44" height="30" rx="6" fill="#b9b1a3"/>
+        <rect x="128" y="236" width="44" height="10" rx="5" fill="#8a6a4f"/>
+        <!-- grungy stains -->
+        <circle cx="142" cy="254" r="3.5" fill="#8a6a4f" opacity="0.7"/>
+        <circle cx="158" cy="250" r="3" fill="#6b7376" opacity="0.7"/>
+        <!-- frayed torn edge -->
+        <path d="M172 240 l7 4 l-6 5 l8 4 l-7 4" fill="none" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M128 244 l-6 4 l5 5 l-6 4" fill="none" stroke="#b9b1a3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <!-- stink/funk wavy lines off the old sponge -->
+      <g stroke="#5e9a78" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.75">
+        <path d="M118 226 q5 -8 0 -16 q-5 -8 0 -16"/>
+        <path d="M132 220 q5 -8 0 -16 q-5 -8 0 -16"/>
+      </g>
+      <!-- motion arc showing the toss toward the bin -->
+      <path d="M150 234 q-26 26 -45 54" fill="none" stroke="#c96f4a" stroke-width="2.6" stroke-dasharray="5 7" stroke-linecap="round"/>
+      <text x="104" y="232" font-size="11" fill="#d9663f" font-weight="700">toss it</text>
+    </svg>

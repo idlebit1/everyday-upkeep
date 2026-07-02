@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of caring for a suit between cleanings: a wool suit jacket hangs on a broad wooden hanger while a hand brushes it down with a clothes brush, a garment steamer sends steam up the fabric, a dress shirt is dropped separately into a laundry basket, and a small dry-cleaning ticket hangs nearby in a tidy bedroom closet">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- closet / wall behind, on the right -->
+      <rect x="398" y="40" width="140" height="316" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <rect x="408" y="50" width="120" height="296" rx="5" fill="#efe7d8"/>
+      <rect x="414" y="78" width="108" height="7" rx="3" fill="#8a6a4f"/>
+      <!-- a garment or two waiting in the closet -->
+      <path d="M426 82 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.2"/>
+      <path d="M420 90 l11 -8 l11 8 l-4 6 l-4 -3 l0 60 l-6 0 l0 -60 l-4 3 z" fill="#2c5a40"/>
+      <path d="M456 82 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.2"/>
+      <path d="M450 90 l11 -8 l11 8 l-4 6 l-4 -3 l0 54 l-6 0 l0 -54 l-4 3 z" fill="#5e9a78"/>
+      <!-- breathable garment bag with cedar hint on the shelf -->
+      <rect x="414" y="300" width="108" height="9" rx="2" fill="#8a6a4f"/>
+      <rect x="440" y="282" width="38" height="18" rx="4" fill="#c9a06b"/>
+      <rect x="440" y="282" width="38" height="6" rx="3" fill="#b9b1a3"/>
+      <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.7">
+        <path d="M448 286 q8 4 0 9"/>
+        <path d="M459 286 q8 4 0 9"/>
+        <path d="M469 286 q7 4 0 9"/>
+      </g>
+      <text x="440" y="277" font-size="10" fill="#8a6a4f" font-weight="700">cedar</text>
+
+      <!-- the wool suit jacket on a broad wooden hanger, center, being brushed -->
+      <!-- hook over a rail -->
+      <rect x="150" y="44" width="150" height="7" rx="3" fill="#8a6a4f"/>
+      <path d="M224 44 q9 -10 0 -18" fill="none" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <!-- broad wooden hanger (shaped shoulders) -->
+      <path d="M170 66 q54 -22 108 0" fill="none" stroke="#8a6a4f" stroke-width="9" stroke-linecap="round"/>
+      <!-- jacket body (charcoal-green wool) -->
+      <path d="M178 74 l46 -12 l46 12 l-8 26 l-12 -8 l0 156 q0 8 -8 8 h-44 q-8 0 -8 -8 l0 -156 l-12 8 z" fill="#2c5a40"/>
+      <!-- side shading for depth -->
+      <path d="M224 62 l46 12 l-8 26 l-12 -8 l0 156 q0 8 -8 8 h-18 z" fill="#24503a"/>
+      <!-- lapels -->
+      <path d="M224 62 l-20 18 l10 78 l10 -86 z" fill="#35684c"/>
+      <path d="M224 62 l20 18 l-10 78 l-10 -86 z" fill="#24503a"/>
+      <!-- collar -->
+      <path d="M204 80 l20 -14 l20 14 l-9 9 l-11 -7 l-11 7 z" fill="#35684c"/>
+      <!-- pocket square -->
+      <path d="M244 138 l14 0 l-2 -10 l-4 6 l-4 -6 z" fill="#fffdf8"/>
+      <!-- buttons -->
+      <circle cx="224" cy="168" r="3.4" fill="#e0a93d"/>
+      <circle cx="224" cy="190" r="3.4" fill="#e0a93d"/>
+      <!-- brush strokes / lifted lint marks on the fabric -->
+      <g stroke="#5e9a78" stroke-width="2" stroke-linecap="round" opacity="0.7">
+        <line x1="198" y1="150" x2="212" y2="140"/>
+        <line x1="200" y1="162" x2="214" y2="152"/>
+      </g>
+      <!-- clothes brush in a hand brushing downward -->
+      <rect x="150" y="150" width="40" height="14" rx="6" fill="#8a6a4f" transform="rotate(20 170 157)"/>
+      <g stroke="#c9a06b" stroke-width="2" stroke-linecap="round" transform="rotate(20 170 157)">
+        <line x1="154" y1="164" x2="153" y2="171"/>
+        <line x1="162" y1="164" x2="161" y2="171"/>
+        <line x1="170" y1="164" x2="169" y2="171"/>
+        <line x1="178" y1="164" x2="177" y2="171"/>
+        <line x1="186" y1="164" x2="185" y2="171"/>
+      </g>
+      <!-- hand on the brush -->
+      <ellipse cx="150" cy="146" rx="13" ry="10" fill="#e8b48f" transform="rotate(20 150 146)"/>
+      <path d="M142 142 q-5 5 -1 12" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M140 152 q-22 12 -28 40" stroke="#3e7c59" stroke-width="11" fill="none" stroke-linecap="round"/>
+
+      <!-- garment steamer at bottom-right, steam rising up the trousers -->
+      <!-- trousers hanging below the jacket line, folded over a bar -->
+      <rect x="292" y="70" width="70" height="7" rx="3" fill="#8a6a4f"/>
+      <path d="M300 78 l52 0 l-4 118 l-18 0 l-4 -78 l-4 78 l-18 0 z" fill="#2c5a40"/>
+      <path d="M300 78 l52 0 l-2 10 l-48 0 z" fill="#35684c"/>
+      <!-- crease lines on the trousers -->
+      <g stroke="#24503a" stroke-width="1.6">
+        <line x1="314" y1="92" x2="314" y2="190"/>
+        <line x1="338" y1="92" x2="338" y2="190"/>
+      </g>
+      <!-- steamer body + wand -->
+      <rect x="342" y="300" width="30" height="52" rx="7" fill="#5e9a78"/>
+      <rect x="346" y="310" width="22" height="16" rx="3" fill="#dce8ee" opacity="0.85"/>
+      <path d="M357 300 q6 -22 -18 -46" fill="none" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+      <!-- steamer head near the trousers -->
+      <rect x="326" y="240" width="22" height="14" rx="4" fill="#3e7c59" transform="rotate(-28 337 247)"/>
+      <!-- steam wisps rising -->
+      <g stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75">
+        <path d="M326 236 q-6 -14 4 -26 q6 -8 0 -18"/>
+        <path d="M338 232 q6 -12 -2 -24 q-4 -8 2 -16"/>
+      </g>
+      <text x="336" y="368" font-size="10" fill="#3e7c59" font-weight="700">steam</text>
+
+      <!-- dress shirt going into a laundry basket, front-left, separately -->
+      <path d="M40 322 h96 l-8 58 q-1 6 -7 6 h-66 q-6 0 -7 -6 z" fill="#c9a06b"/>
+      <path d="M40 322 h96 l-1 8 h-94 z" fill="#b9906b"/>
+      <!-- woven basket texture -->
+      <g stroke="#8a6a4f" stroke-width="1.4" opacity="0.55">
+        <line x1="50" y1="338" x2="126" y2="338"/>
+        <line x1="52" y1="352" x2="124" y2="352"/>
+        <line x1="54" y1="366" x2="122" y2="366"/>
+      </g>
+      <!-- crumpled dress shirt dropping in (white) -->
+      <path d="M56 300 l20 -14 l6 6 l6 -6 l20 14 l-8 14 q-24 8 -36 0 z" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+      <path d="M82 292 l0 18" stroke="#dce8ee" stroke-width="2"/>
+      <!-- collar of the shirt -->
+      <path d="M76 292 l6 6 l6 -6 l-6 -4 z" fill="#dce8ee"/>
+      <text x="44" y="398" font-size="10" fill="#6b7376">shirt → laundry, each wear</text>
+
+      <!-- little dry-cleaning ticket hanging on the rail, left -->
+      <g transform="rotate(-10 118 96)">
+        <line x1="118" y1="72" x2="118" y2="86" stroke="#8a6a4f" stroke-width="2"/>
+        <rect x="98" y="86" width="42" height="52" rx="5" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+        <circle cx="112" cy="94" r="3" fill="none" stroke="#8a6a4f" stroke-width="2"/>
+        <line x1="104" y1="106" x2="134" y2="106" stroke="#8a6a4f" stroke-width="1.6"/>
+        <line x1="104" y1="114" x2="134" y2="114" stroke="#8a6a4f" stroke-width="1.6"/>
+        <text x="106" y="130" font-size="8" fill="#d9663f" font-weight="700">#0421</text>
+      </g>
+    </svg>

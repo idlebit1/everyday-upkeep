@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a house with a leaf-filled gutter overflowing at one end while the downspout drains safely away from the foundation, beside an autumn tree dropping leaves">
+      <ellipse cx="300" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <circle cx="74" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="468" cy="74" rx="44" ry="22" fill="#dce8ee"/>
+      <ellipse cx="430" cy="84" rx="28" ry="16" fill="#dce8ee"/>
+      <g stroke="#9cc0d4" stroke-width="3" stroke-linecap="round">
+        <line x1="446" y1="106" x2="440" y2="124"/>
+        <line x1="466" y1="106" x2="460" y2="124"/>
+        <line x1="486" y1="106" x2="480" y2="124"/>
+      </g>
+      <rect x="100" y="262" width="16" height="130" rx="7" fill="#8a6a4f"/>
+      <circle cx="108" cy="200" r="56" fill="#e0a93d"/>
+      <circle cx="66" cy="228" r="34" fill="#d98e3b"/>
+      <circle cx="150" cy="232" r="32" fill="#c96f4a"/>
+      <ellipse cx="192" cy="186" rx="7" ry="4" fill="#d98e3b" transform="rotate(-28 192 186)"/>
+      <ellipse cx="214" cy="236" rx="7" ry="4" fill="#c96f4a" transform="rotate(24 214 236)"/>
+      <ellipse cx="180" cy="286" rx="7" ry="4" fill="#e0a93d" transform="rotate(48 180 286)"/>
+      <ellipse cx="206" cy="330" rx="7" ry="4" fill="#d98e3b" transform="rotate(-12 206 330)"/>
+      <rect x="232" y="206" width="200" height="186" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="312" y="312" width="44" height="80" rx="3" fill="#3e7c59"/>
+      <circle cx="348" cy="354" r="2.5" fill="#f2cf7a"/>
+      <rect x="256" y="248" width="38" height="40" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="275" y1="248" x2="275" y2="288" stroke="#fffdf8" stroke-width="2"/>
+      <rect x="372" y="248" width="38" height="40" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="391" y1="248" x2="391" y2="288" stroke="#fffdf8" stroke-width="2"/>
+      <rect x="370" y="128" width="22" height="46" fill="#b9b1a3"/>
+      <polygon points="214,208 332,108 450,208" fill="#c96f4a"/>
+      <rect x="208" y="202" width="248" height="13" rx="6.5" fill="#2c5a40"/>
+      <ellipse cx="232" cy="200" rx="8" ry="5" fill="#e0a93d"/>
+      <ellipse cx="252" cy="198" rx="8" ry="5" fill="#c96f4a"/>
+      <ellipse cx="271" cy="200" rx="7" ry="4.5" fill="#d98e3b"/>
+      <g fill="#7fb3c8">
+        <circle cx="212" cy="228" r="3"/>
+        <circle cx="218" cy="244" r="3"/>
+        <circle cx="210" cy="262" r="3"/>
+      </g>
+      <rect x="446" y="208" width="11" height="170" fill="#2c5a40"/>
+      <rect x="446" y="370" width="52" height="11" rx="5" fill="#2c5a40"/>
+      <path d="M500 376 q14 2 22 10" stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <circle cx="516" cy="372" r="3" fill="#7fb3c8"/>
+      <circle cx="528" cy="380" r="3" fill="#7fb3c8"/>
+      <circle cx="260" cy="386" r="14" fill="#5e9a78"/>
+      <circle cx="282" cy="390" r="11" fill="#3e7c59"/>
+    </svg>

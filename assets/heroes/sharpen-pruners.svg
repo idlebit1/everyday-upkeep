@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a pair of bypass pruners with a gleaming freshly sharpened blade resting on the ground beside a flowering shrub, freshly cut stems, and an oil can">
+      <ellipse cx="280" cy="398" rx="250" ry="24" fill="#efe7d8"/>
+      <circle cx="76" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="406" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="186" cy="106" rx="30" ry="14" fill="#dce8ee"/>
+      <!-- flowering shrub, freshly pruned -->
+      <rect x="116" y="298" width="14" height="96" rx="7" fill="#8a6a4f"/>
+      <circle cx="124" cy="240" r="58" fill="#3e7c59"/>
+      <circle cx="80" cy="272" r="36" fill="#5e9a78"/>
+      <circle cx="168" cy="270" r="34" fill="#2c5a40"/>
+      <circle cx="100" cy="230" r="9" fill="#c96f4a"/>
+      <circle cx="142" cy="210" r="9" fill="#d9663f"/>
+      <circle cx="158" cy="250" r="8" fill="#c96f4a"/>
+      <circle cx="112" cy="266" r="8" fill="#d9663f"/>
+      <circle cx="76" cy="248" r="7" fill="#c96f4a"/>
+      <!-- pruned branch stub with a clean angled cut -->
+      <line x1="186" y1="294" x2="222" y2="276" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+      <line x1="219" y1="270" x2="226" y2="282" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+      <!-- freshly cut stems on the ground -->
+      <line x1="206" y1="380" x2="252" y2="368" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="244" cy="362" rx="9" ry="5" fill="#5e9a78" transform="rotate(-24 244 362)"/>
+      <line x1="196" y1="396" x2="236" y2="392" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="228" cy="386" rx="8" ry="4" fill="#3e7c59" transform="rotate(-12 228 386)"/>
+      <!-- bypass pruners, blades up-left, handles down-right -->
+      <g>
+        <!-- counter-blade (hook), behind -->
+        <path d="M350 286 Q312 222 254 200 Q298 214 332 252 Q350 270 354 288 Z" fill="#8a6a4f"/>
+        <!-- cutting blade -->
+        <path d="M352 292 Q302 212 230 196 Q304 198 346 244 Q366 266 368 290 Z" fill="#b9b1a3"/>
+        <path d="M352 292 Q318 236 262 208 Q308 224 342 262 Q358 278 360 292 Z" fill="#dce8ee"/>
+        <!-- handles -->
+        <rect x="358" y="283" width="152" height="26" rx="13" fill="#c96f4a" transform="rotate(30 358 296)"/>
+        <rect x="358" y="283" width="142" height="26" rx="13" fill="#d9663f" transform="rotate(60 358 296)"/>
+        <!-- spring between the handles -->
+        <path d="M398 330 q14 8 24 2 M404 346 q14 8 24 2" stroke="#b9b1a3" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- pivot bolt -->
+        <circle cx="358" cy="296" r="13" fill="#e0a93d"/>
+        <circle cx="358" cy="296" r="5.5" fill="#fffdf8"/>
+      </g>
+      <!-- gleam on the freshly sharpened edge -->
+      <g stroke="#fffdf8" stroke-width="3.5" stroke-linecap="round">
+        <line x1="252" y1="186" x2="252" y2="202"/>
+        <line x1="244" y1="194" x2="260" y2="194"/>
+      </g>
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="294" y1="212" x2="294" y2="220"/>
+        <line x1="290" y1="216" x2="298" y2="216"/>
+        <line x1="330" y1="246" x2="330" y2="252"/>
+        <line x1="327" y1="249" x2="333" y2="249"/>
+      </g>
+      <circle cx="276" cy="224" r="2.5" fill="#fffdf8"/>
+      <!-- oil can -->
+      <rect x="466" y="338" width="46" height="44" rx="9" fill="#e0a93d"/>
+      <rect x="476" y="322" width="16" height="20" rx="4" fill="#d98e3b"/>
+      <path d="M492 328 l26 -18" stroke="#d98e3b" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="524" cy="300" r="4" fill="#e0a93d"/>
+      <circle cx="518" cy="288" r="2.5" fill="#e0a93d"/>
+      <!-- tufts of grass -->
+      <g stroke="#3e7c59" stroke-width="4" stroke-linecap="round">
+        <path d="M70 392 q-3 -12 -8 -17" fill="none"/>
+        <path d="M82 392 q2 -13 7 -19" fill="none"/>
+        <path d="M438 394 q-3 -12 -8 -17" fill="none"/>
+      </g>
+    </svg>

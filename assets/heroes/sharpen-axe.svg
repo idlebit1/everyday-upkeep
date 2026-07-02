@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of sharpening an axe at a workshop bench: the axe head is clamped edge-up in a bench vise, a hand works a round sharpening puck in small circles along the bevel, a mill file and a bottle of oil sit on the bench beside curls of wood shavings">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- workshop bench top -->
+      <rect x="40" y="300" width="490" height="34" rx="6" fill="#c9a06b"/>
+      <rect x="40" y="300" width="490" height="10" rx="5" fill="#d9b483"/>
+      <g stroke="#b9925b" stroke-width="2" opacity="0.5">
+        <line x1="120" y1="312" x2="120" y2="330"/>
+        <line x1="250" y1="312" x2="250" y2="330"/>
+        <line x1="400" y1="312" x2="400" y2="330"/>
+      </g>
+      <!-- bench legs -->
+      <rect x="70" y="334" width="20" height="56" rx="3" fill="#8a6a4f"/>
+      <rect x="480" y="334" width="20" height="56" rx="3" fill="#8a6a4f"/>
+
+      <!-- bench vise jaws clamping the axe head -->
+      <rect x="232" y="276" width="96" height="34" rx="5" fill="#5e9a78"/>
+      <rect x="232" y="276" width="96" height="10" rx="5" fill="#79b292"/>
+      <rect x="248" y="262" width="20" height="22" rx="3" fill="#3e7c59"/>
+      <rect x="292" y="262" width="20" height="22" rx="3" fill="#3e7c59"/>
+      <!-- vise screw handle -->
+      <rect x="324" y="288" width="58" height="9" rx="4" fill="#8a6a4f"/>
+      <circle cx="384" cy="292" r="9" fill="#b9b1a3"/>
+
+      <!-- axe head clamped edge-up between the jaws -->
+      <path d="M256 264 q4 -64 28 -98 q24 34 28 98 q-28 10 -56 0 z" fill="#8a6a4f"/>
+      <path d="M260 258 q4 -58 24 -90 q20 32 24 90 q-24 8 -48 0 z" fill="#b9b1a3"/>
+      <!-- the bright bevel / edge along the top -->
+      <path d="M270 178 q14 -22 28 0 q-14 -10 -28 0 z" fill="#dce8ee"/>
+      <path d="M268 174 q16 -26 32 0" fill="none" stroke="#fffdf8" stroke-width="4" stroke-linecap="round"/>
+      <!-- eye / handle hole hint at base -->
+      <ellipse cx="284" cy="250" rx="13" ry="8" fill="#8a6a4f"/>
+      <!-- shine sparkle on the fresh edge -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M298 168 l0 9 M293.5 172.5 l9 0"/>
+      </g>
+
+      <!-- hand working a round puck in circles on the bevel -->
+      <circle cx="222" cy="196" r="26" fill="#d9663f"/>
+      <circle cx="222" cy="196" r="26" fill="none" stroke="#c96f4a" stroke-width="3"/>
+      <circle cx="222" cy="196" r="13" fill="#c96f4a"/>
+      <!-- circular-motion arrows on the puck -->
+      <path d="M210 184 a16 16 0 1 1 -2 18" fill="none" stroke="#fffdf8" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M208 200 l-3 6 l7 -1" fill="none" stroke="#fffdf8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- hand over the puck -->
+      <ellipse cx="214" cy="178" rx="22" ry="15" fill="#e8b48f" transform="rotate(-16 214 178)"/>
+      <path d="M200 170 q-4 7 1 14 M210 166 q-3 7 1 14 M220 164 q-2 7 2 13" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M210 186 q-40 16 -64 56" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+
+      <!-- mill file resting on the bench, left -->
+      <rect x="58" y="282" width="120" height="13" rx="3" fill="#b9b1a3" transform="rotate(-7 58 288)"/>
+      <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.7" transform="rotate(-7 58 288)">
+        <line x1="74" y1="284" x2="80" y2="293"/>
+        <line x1="86" y1="284" x2="92" y2="293"/>
+        <line x1="98" y1="284" x2="104" y2="293"/>
+        <line x1="110" y1="284" x2="116" y2="293"/>
+        <line x1="122" y1="284" x2="128" y2="293"/>
+        <line x1="134" y1="284" x2="140" y2="293"/>
+      </g>
+      <!-- file handle -->
+      <rect x="166" y="276" width="30" height="16" rx="7" fill="#c96f4a" transform="rotate(-7 166 284)"/>
+
+      <!-- bottle of oil on the bench, right -->
+      <rect x="430" y="256" width="34" height="48" rx="6" fill="#e0a93d"/>
+      <rect x="430" y="256" width="34" height="14" rx="6" fill="#d98e3b"/>
+      <rect x="438" y="244" width="18" height="14" rx="3" fill="#8a6a4f"/>
+      <path d="M456 248 l14 -7 l0 6 l-14 5 z" fill="#5e9a78"/>
+      <rect x="436" y="276" width="22" height="18" rx="2" fill="#faf0da" opacity="0.85"/>
+      <text x="447" y="289" font-size="9" fill="#8a6a4f" text-anchor="middle" font-weight="700">OIL</text>
+
+      <!-- curls of wood shavings on the bench -->
+      <path d="M104 318 q14 -10 28 0 q-14 6 -28 0 z" fill="#c9a06b"/>
+      <path d="M104 318 q14 -10 28 0" fill="none" stroke="#b9925b" stroke-width="2"/>
+      <path d="M150 322 q12 -9 24 0 q-12 5 -24 0 z" fill="#d9b483"/>
+      <path d="M360 320 q16 -11 32 0 q-16 6 -32 0 z" fill="#c9a06b"/>
+      <path d="M360 320 q16 -11 32 0" fill="none" stroke="#b9925b" stroke-width="2"/>
+
+      <!-- wire brush hanging at the back, decorative -->
+      <rect x="430" y="120" width="60" height="14" rx="4" fill="#8a6a4f" transform="rotate(8 430 127)"/>
+      <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round" transform="rotate(8 430 127)">
+        <line x1="436" y1="134" x2="436" y2="144"/>
+        <line x1="446" y1="135" x2="446" y2="145"/>
+        <line x1="456" y1="136" x2="456" y2="146"/>
+        <line x1="466" y1="137" x2="466" y2="147"/>
+        <line x1="476" y1="138" x2="476" y2="148"/>
+      </g>
+
+      <!-- soft window of light, top left -->
+      <ellipse cx="92" cy="80" rx="46" ry="24" fill="#dce8ee" opacity="0.7"/>
+      <ellipse cx="150" cy="100" rx="26" ry="13" fill="#dce8ee" opacity="0.6"/>
+    </svg>

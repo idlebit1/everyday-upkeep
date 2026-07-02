@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a kitchen counter with an electric kettle being descaled: pale vinegar-and-water solution inside the kettle with steam rising and white scale flakes lifting off the heating element, a jug of white vinegar and a tub of citric acid and a lemon beside it, a window with sun, and a small plant at the end of the counter">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="48" y="46" width="112" height="118" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="104" y1="49" x2="104" y2="161" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="51" y1="105" x2="157" y2="105" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="82" cy="80" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="82" y1="56" x2="82" y2="61"/>
+        <line x1="106" y1="80" x2="101" y2="80"/>
+        <line x1="99" y1="63" x2="95" y2="67"/>
+      </g>
+      <rect x="36" y="38" width="136" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- counter + cabinets -->
+      <rect x="56" y="316" width="448" height="16" rx="6" fill="#c9a06b"/>
+      <rect x="76" y="332" width="408" height="62" fill="#b9b1a3"/>
+      <rect x="92" y="344" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <rect x="288" y="344" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <circle cx="182" cy="363" r="4" fill="#e0a93d"/>
+      <circle cx="378" cy="363" r="4" fill="#e0a93d"/>
+      <!-- electric kettle: power base on the counter -->
+      <rect x="246" y="300" width="120" height="18" rx="8" fill="#5a4634"/>
+      <ellipse cx="306" cy="300" rx="58" ry="8" fill="#8a6a4f"/>
+      <!-- kettle body -->
+      <path d="M256 296 q-6 -78 14 -118 q36 -10 72 0 q20 40 14 118 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <!-- solution level inside (1:1 mix) -->
+      <path d="M260 296 q-2 -38 2 -64 q44 -10 88 0 q4 26 2 64 z" fill="#7fb3c8"/>
+      <g stroke="#fffdf8" stroke-width="2" stroke-linecap="round" opacity="0.9">
+        <line x1="280" y1="250" x2="332" y2="250"/>
+        <line x1="276" y1="270" x2="336" y2="270"/>
+      </g>
+      <!-- heating element with scale lifting off -->
+      <ellipse cx="306" cy="290" rx="40" ry="6" fill="#b9b1a3"/>
+      <g fill="#fffdf8">
+        <circle cx="290" cy="288" r="2.6"/>
+        <circle cx="318" cy="289" r="2.2"/>
+        <circle cx="304" cy="286" r="2.4"/>
+      </g>
+      <!-- scale flecks drifting up in the solution -->
+      <g fill="#fffdf8" opacity="0.95">
+        <circle cx="288" cy="264" r="2.4"/>
+        <circle cx="322" cy="258" r="2"/>
+        <circle cx="300" cy="244" r="2.2"/>
+        <circle cx="316" cy="276" r="1.8"/>
+      </g>
+      <!-- lid + handle -->
+      <rect x="280" y="166" width="52" height="14" rx="7" fill="#5a4634"/>
+      <rect x="298" y="156" width="16" height="14" rx="5" fill="#8a6a4f"/>
+      <path d="M342 188 q40 6 30 78 q-2 18 -18 24" fill="none" stroke="#8a6a4f" stroke-width="11" stroke-linecap="round"/>
+      <!-- spout -->
+      <path d="M256 198 q-22 4 -26 26 l16 4 q4 -16 18 -20 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <!-- power button + indicator -->
+      <rect x="350" y="262" width="16" height="22" rx="4" fill="#5a4634"/>
+      <circle cx="358" cy="270" r="3" fill="#e0a93d"/>
+      <!-- steam curling off the spout -->
+      <g stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M236 196 q-7 -14 0 -26 q7 -12 0 -22"/>
+        <path d="M252 186 q7 -12 0 -22 q-7 -10 0 -20"/>
+      </g>
+      <!-- vinegar jug on the counter, left of the kettle -->
+      <rect x="150" y="226" width="52" height="90" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="164" y="206" width="24" height="24" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="160" y="198" width="32" height="12" rx="5" fill="#2c5a40"/>
+      <rect x="158" y="248" width="36" height="44" rx="6" fill="#3e7c59"/>
+      <g stroke="#e3efe8" stroke-width="3" stroke-linecap="round">
+        <line x1="166" y1="262" x2="186" y2="262"/>
+        <line x1="166" y1="272" x2="180" y2="272"/>
+      </g>
+      <!-- tub of citric acid powder -->
+      <rect x="96" y="262" width="44" height="54" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="96" y="262" width="44" height="16" rx="6" fill="#e0a93d"/>
+      <rect x="104" y="286" width="28" height="6" rx="3" fill="#dce8ee"/>
+      <rect x="104" y="298" width="18" height="5" rx="2.5" fill="#e9e2d8"/>
+      <!-- lemon on the counter -->
+      <ellipse cx="222" cy="306" rx="16" ry="11" fill="#e0a93d" stroke="#d98e3b" stroke-width="2"/>
+      <path d="M210 304 q12 -8 24 0" stroke="#faf0da" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- mug waiting at the far left -->
+      <rect x="430" y="288" width="34" height="28" rx="6" fill="#c96f4a"/>
+      <path d="M464 294 q12 4 0 16" stroke="#c96f4a" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- plant at right end of the counter -->
+      <path d="M486 296 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M486 296 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="473" cy="266" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 473 266)"/>
+      <ellipse cx="501" cy="270" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 501 270)"/>
+      <path d="M474 296 h24 l-4 22 h-16 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="300" cy="404" rx="130" ry="10" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of cleaning a ceiling bathroom exhaust fan: the white grille cover has been popped off and hangs by its spring clips, dust coats the fan blades inside the housing, a hand reaching up from a step stool brushes and vacuums the dust away, and steam rises from a shower running in the background">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- ceiling band across the top -->
+      <rect x="40" y="34" width="480" height="60" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <rect x="40" y="90" width="480" height="6" fill="#b9b1a3"/>
+
+      <!-- exhaust fan housing recessed in the ceiling -->
+      <rect x="196" y="44" width="150" height="58" rx="6" fill="#dce8ee" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="206" y="52" width="130" height="42" rx="4" fill="#cdd9de"/>
+      <!-- the motor unit inside -->
+      <circle cx="271" cy="73" r="15" fill="#b9b1a3"/>
+      <circle cx="271" cy="73" r="6" fill="#8a6a4f"/>
+
+      <!-- dusty fan blades inside the housing -->
+      <g fill="#b9b1a3" opacity="0.9">
+        <path d="M271 73 l16 -7 q4 7 -2 12 z"/>
+        <path d="M271 73 l-16 7 q-4 -7 2 -12 z"/>
+        <path d="M271 73 l7 16 q-7 4 -12 -2 z"/>
+        <path d="M271 73 l-7 -16 q7 -4 12 2 z"/>
+      </g>
+      <!-- felted dust mat over the blades -->
+      <g fill="#8a6a4f" opacity="0.55">
+        <circle cx="252" cy="64" r="3"/>
+        <circle cx="292" cy="66" r="2.6"/>
+        <circle cx="258" cy="86" r="2.8"/>
+        <circle cx="290" cy="84" r="2.4"/>
+        <circle cx="271" cy="60" r="2.2"/>
+      </g>
+
+      <!-- the grille cover popped off, hanging by its spring clips -->
+      <!-- spring clip wires from housing down to the cover -->
+      <path d="M214 100 q-6 24 -2 50" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M330 100 q6 24 2 50" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- the cover, tilted as it dangles -->
+      <g transform="rotate(8 273 168)">
+        <rect x="206" y="146" width="134" height="46" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+        <!-- vent louvers on the cover -->
+        <g stroke="#cdd9de" stroke-width="3" stroke-linecap="round">
+          <line x1="220" y1="156" x2="326" y2="156"/>
+          <line x1="220" y1="166" x2="326" y2="166"/>
+          <line x1="220" y1="176" x2="326" y2="176"/>
+          <line x1="220" y1="184" x2="326" y2="184"/>
+        </g>
+      </g>
+      <!-- a couple of dust tufts drifting off the cover -->
+      <g fill="#b9b1a3" opacity="0.6">
+        <circle cx="208" cy="206" r="3"/>
+        <circle cx="232" cy="214" r="2.2"/>
+      </g>
+
+      <!-- step stool -->
+      <g>
+        <rect x="60" y="320" width="118" height="14" rx="4" fill="#c96f4a"/>
+        <rect x="74" y="334" width="12" height="64" rx="3" fill="#8a6a4f"/>
+        <rect x="152" y="334" width="12" height="64" rx="3" fill="#8a6a4f"/>
+        <rect x="70" y="362" width="98" height="11" rx="3" fill="#d9663f"/>
+      </g>
+
+      <!-- a hand reaching up with a brush / vacuum nozzle to the fan -->
+      <!-- arm rising from the stool -->
+      <path d="M118 318 q40 -90 120 -154" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <!-- hand -->
+      <ellipse cx="232" cy="170" rx="15" ry="12" fill="#e8b48f" transform="rotate(-34 232 170)"/>
+      <path d="M224 162 q-5 5 -2 12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- a soft brush in the hand reaching into the housing -->
+      <rect x="236" y="116" width="12" height="48" rx="4" fill="#5e9a78" transform="rotate(-26 242 140)"/>
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <line x1="252" y1="112" x2="262" y2="104"/>
+        <line x1="248" y1="118" x2="259" y2="111"/>
+        <line x1="245" y1="124" x2="256" y2="118"/>
+      </g>
+
+      <!-- shower in the background, right, with rising steam -->
+      <!-- shower head -->
+      <rect x="468" y="118" width="12" height="26" rx="3" fill="#b9b1a3"/>
+      <path d="M456 144 h36 l-6 12 h-24 z" fill="#7fb3c8"/>
+      <!-- water spray -->
+      <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round" opacity="0.7">
+        <line x1="464" y1="160" x2="461" y2="186"/>
+        <line x1="474" y1="160" x2="474" y2="190"/>
+        <line x1="484" y1="160" x2="487" y2="186"/>
+      </g>
+      <!-- glass / wall edge -->
+      <rect x="448" y="200" width="64" height="172" rx="6" fill="#dce8ee" opacity="0.6"/>
+      <!-- rising steam curls -->
+      <g fill="none" stroke="#dce8ee" stroke-width="6" stroke-linecap="round" opacity="0.85">
+        <path d="M430 250 q14 -20 0 -40 q-14 -20 0 -40"/>
+        <path d="M408 270 q12 -18 0 -36 q-12 -18 0 -36"/>
+        <path d="M452 240 q12 -18 0 -36 q-12 -18 0 -36"/>
+      </g>
+
+      <!-- soapy bucket / cleaning the cover front-left -->
+      <path d="M196 350 h54 l-7 44 h-40 z" fill="#7fb3c8"/>
+      <path d="M192 348 h62 l-3 8 h-56 z" fill="#9cc3d4"/>
+      <path d="M198 344 q27 -14 50 0" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="210" cy="352" r="5" fill="#eef4f7"/>
+      <circle cx="224" cy="349" r="6" fill="#fffdf8"/>
+      <circle cx="237" cy="353" r="4.5" fill="#eef4f7"/>
+
+      <!-- small plant for warmth, far right floor -->
+      <path d="M512 372 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <ellipse cx="512" cy="342" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 512 342)"/>
+      <ellipse cx="538" cy="346" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 538 346)"/>
+    </svg>

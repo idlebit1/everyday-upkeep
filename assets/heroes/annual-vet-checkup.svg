@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a veterinarian in green scrubs listening to a happy dog's heart with a stethoscope on an exam table, while a cat watches from a carrier on the floor">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="66" cy="62" r="24" fill="#f2cf7a"/>
+      <ellipse cx="468" cy="60" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="428" cy="72" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- exam table -->
+      <rect x="142" y="272" width="270" height="18" rx="9" fill="#7fb3c8"/>
+      <rect x="150" y="290" width="254" height="8" rx="4" fill="#b9b1a3"/>
+      <rect x="168" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="372" y="298" width="14" height="92" rx="6" fill="#8a6a4f"/>
+      <rect x="168" y="344" width="218" height="9" rx="4.5" fill="#b9b1a3"/>
+      <!-- dog sitting on the table -->
+      <ellipse cx="248" cy="226" rx="48" ry="50" fill="#c9a06b"/>
+      <ellipse cx="218" cy="240" rx="24" ry="34" fill="#b98c54"/>
+      <rect x="240" y="216" width="17" height="60" rx="8.5" fill="#c9a06b"/>
+      <rect x="266" y="216" width="17" height="60" rx="8.5" fill="#c9a06b"/>
+      <ellipse cx="248" cy="274" rx="12" ry="6" fill="#b98c54"/>
+      <ellipse cx="274" cy="274" rx="12" ry="6" fill="#b98c54"/>
+      <path d="M204 200 q-26 -4 -28 -28" stroke="#8a6a4f" stroke-width="11" fill="none" stroke-linecap="round"/>
+      <circle cx="262" cy="148" r="38" fill="#c9a06b"/>
+      <ellipse cx="230" cy="140" rx="13" ry="24" fill="#8a6a4f" transform="rotate(20 230 140)"/>
+      <ellipse cx="294" cy="140" rx="13" ry="24" fill="#8a6a4f" transform="rotate(-20 294 140)"/>
+      <ellipse cx="262" cy="166" rx="16" ry="12" fill="#fffdf8"/>
+      <circle cx="262" cy="160" r="5" fill="#33393b"/>
+      <path d="M255 170 q7 6 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <circle cx="248" cy="146" r="4" fill="#33393b"/>
+      <circle cx="276" cy="146" r="4" fill="#33393b"/>
+      <path d="M232 184 q30 13 60 0" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="262" cy="194" r="6" fill="#e0a93d"/>
+      <!-- little heart over the dog -->
+      <path d="M318 96 c5 -9 17 -6 17 3 c0 8 -10 14 -17 19 c-7 -5 -17 -11 -17 -19 c0 -9 12 -12 17 -3 z" fill="#c96f4a"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="344" y1="86" x2="352" y2="78"/>
+        <line x1="350" y1="104" x2="360" y2="102"/>
+      </g>
+      <!-- veterinarian -->
+      <circle cx="452" cy="118" r="30" fill="#f3ddc0"/>
+      <path d="M422 110 a30 30 0 0 1 60 0 l-8 0 q-10 -16 -22 -16 q-12 0 -22 16 z" fill="#8a6a4f"/>
+      <circle cx="443" cy="118" r="3.5" fill="#33393b"/>
+      <circle cx="461" cy="118" r="3.5" fill="#33393b"/>
+      <path d="M445 131 q7 5 14 0" stroke="#33393b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <rect x="410" y="150" width="84" height="128" rx="20" fill="#3e7c59"/>
+      <rect x="436" y="150" width="32" height="16" rx="6" fill="#2c5a40"/>
+      <rect x="466" y="186" width="20" height="13" rx="4" fill="#e0a93d"/>
+      <!-- vet's arm reaching to the dog with stethoscope -->
+      <path d="M414 176 q-44 16 -88 38" stroke="#3e7c59" stroke-width="20" fill="none" stroke-linecap="round"/>
+      <circle cx="322" cy="216" r="11" fill="#f3ddc0"/>
+      <path d="M444 150 q-2 -12 8 -14 M460 150 q2 -12 -8 -14" stroke="#2c5a40" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M452 138 q4 36 -34 50 q-58 22 -114 36" stroke="#2c5a40" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="304" cy="224" r="10" fill="#e0a93d"/>
+      <circle cx="304" cy="224" r="5" fill="#d98e3b"/>
+      <!-- vet's legs -->
+      <rect x="424" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <rect x="458" y="276" width="22" height="100" rx="10" fill="#2c5a40"/>
+      <ellipse cx="433" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+      <ellipse cx="471" cy="382" rx="18" ry="8" fill="#8a6a4f"/>
+      <!-- cat carrier on the floor -->
+      <rect x="48" y="316" width="116" height="76" rx="14" fill="#c96f4a"/>
+      <path d="M82 316 q24 -18 48 0" stroke="#9a4f33" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <rect x="66" y="332" width="58" height="48" rx="8" fill="#fbe9e1"/>
+      <g stroke="#c96f4a" stroke-width="4" stroke-linecap="round">
+        <line x1="80" y1="332" x2="80" y2="380"/>
+        <line x1="95" y1="332" x2="95" y2="380"/>
+        <line x1="110" y1="332" x2="110" y2="380"/>
+      </g>
+      <circle cx="96" cy="356" r="17" fill="#b9b1a3"/>
+      <polygon points="82,346 85,330 96,342" fill="#b9b1a3"/>
+      <polygon points="110,346 107,330 96,342" fill="#b9b1a3"/>
+      <circle cx="90" cy="354" r="2.6" fill="#33393b"/>
+      <circle cx="102" cy="354" r="2.6" fill="#33393b"/>
+      <polygon points="93,360 99,360 96,364" fill="#c96f4a"/>
+      <circle cx="140" cy="370" r="9" fill="#fbe9e1"/>
+      <!-- foreground greenery -->
+      <circle cx="516" cy="390" r="14" fill="#5e9a78"/>
+      <circle cx="536" cy="394" r="10" fill="#3e7c59"/>
+      <circle cx="30" cy="396" r="11" fill="#5e9a78"/>
+    </svg>

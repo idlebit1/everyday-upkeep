@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration comparing two walking shoes: on the left a worn-out shoe with a compressed collapsed heel, smooth worn tread, and a deeply creased midsole; on the right a fresh shoe with intact plump cushioning and crisp tread; a phone above shows a step and mileage tracker, and both sit on a sidewalk">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- sun -->
+      <circle cx="76" cy="60" r="22" fill="#f2cf7a"/>
+      <!-- clouds -->
+      <ellipse cx="470" cy="60" rx="42" ry="18" fill="#dce8ee"/>
+      <ellipse cx="434" cy="72" rx="26" ry="13" fill="#dce8ee"/>
+
+      <!-- sidewalk -->
+      <rect x="30" y="356" width="500" height="26" rx="6" fill="#b9b1a3"/>
+      <line x1="196" y1="356" x2="196" y2="382" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="364" y1="356" x2="364" y2="382" stroke="#8a6a4f" stroke-width="3"/>
+
+      <!-- phone showing a step / mileage tracker -->
+      <rect x="212" y="96" width="136" height="94" rx="16" fill="#2c5a40"/>
+      <rect x="222" y="106" width="116" height="74" rx="8" fill="#fffdf8"/>
+      <!-- tracker: step figure -->
+      <circle cx="244" cy="126" r="6" fill="#3e7c59"/>
+      <path d="M244 132 l0 16 M244 138 l-8 6 M244 138 l8 4 M244 148 l-6 12 M244 148 l7 11" stroke="#3e7c59" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <text x="300" y="126" font-size="13" font-weight="800" fill="#2c5a40" text-anchor="middle">482 mi</text>
+      <text x="300" y="142" font-size="9" fill="#6b7376" text-anchor="middle">this pair</text>
+      <!-- mini progress bar toward replace -->
+      <rect x="268" y="150" width="62" height="8" rx="4" fill="#e9e2d8"/>
+      <rect x="268" y="150" width="54" height="8" rx="4" fill="#e0a93d"/>
+      <text x="300" y="172" font-size="8.5" fill="#d9663f" font-weight="700" text-anchor="middle">nearly due</text>
+      <line x1="266" y1="190" x2="150" y2="252" stroke="#e0a93d" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+      <line x1="294" y1="190" x2="404" y2="248" stroke="#3e7c59" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+
+      <!-- ===== LEFT shoe: WORN OUT ===== -->
+      <g>
+        <!-- upper (drab, tired) -->
+        <path d="M52 322 L52 268 Q52 246 74 244 Q100 242 110 262 Q116 274 134 268 Q140 254 156 256 Q186 262 208 280 Q236 302 248 306 Q258 308 258 318 L258 322 Z" fill="#8a9a8c"/>
+        <!-- collapsed / compressed heel collar -->
+        <path d="M52 268 Q52 246 74 244 Q100 242 110 262 L102 270 Q92 254 76 258 Q64 262 64 280 L64 322 L52 322 Z" fill="#6e7d70"/>
+        <!-- sagging heel dip -->
+        <path d="M56 250 q18 -2 32 8" stroke="#5a6a5c" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- lace panel (loose) -->
+        <g stroke="#dce8ee" stroke-width="3.5" stroke-linecap="round" opacity="0.8">
+          <line x1="150" y1="272" x2="172" y2="284"/>
+          <line x1="168" y1="266" x2="192" y2="280"/>
+        </g>
+        <!-- deeply creased midsole -->
+        <path d="M40 322 Q36 320 38 312 Q46 300 64 302 L250 310 Q262 311 262 322 Z" fill="#e6dccb" stroke="#c9bfa8" stroke-width="2"/>
+        <g stroke="#b9b1a3" stroke-width="2" fill="none" stroke-linecap="round">
+          <path d="M70 306 q3 8 0 14"/>
+          <path d="M100 308 q3 8 0 15"/>
+          <path d="M132 308 q3 8 0 15"/>
+          <path d="M166 309 q3 8 0 15"/>
+          <path d="M200 309 q3 8 0 14"/>
+        </g>
+        <!-- worn-smooth outsole, thin at heel -->
+        <path d="M36 322 L262 322 L258 336 Q258 340 252 340 L44 340 Q38 340 38 335 Z" fill="#b06a4a"/>
+        <!-- smooth spots (no tread) -->
+        <rect x="52" y="330" width="30" height="6" rx="3" fill="#9a5a3e"/>
+        <rect x="210" y="330" width="34" height="6" rx="3" fill="#9a5a3e"/>
+        <text x="70" y="360" font-size="12" fill="#d9663f" font-weight="700">worn — cushion dead</text>
+      </g>
+
+      <!-- ===== RIGHT shoe: FRESH ===== -->
+      <g>
+        <!-- upper -->
+        <path d="M310 322 L310 262 Q310 238 334 236 Q362 234 372 256 Q379 270 400 264 Q406 246 424 248 Q458 254 486 274 Q512 292 522 296 Q536 300 536 312 L536 322 Z" fill="#3e7c59"/>
+        <!-- crisp heel collar -->
+        <path d="M310 262 Q310 238 334 236 Q362 234 372 256 L364 264 Q352 248 334 250 Q320 252 320 268 L320 322 L310 322 Z" fill="#2c5a40"/>
+        <!-- side stripe -->
+        <path d="M344 322 Q378 284 444 272 Q428 294 410 322 Z" fill="#5e9a78"/>
+        <!-- lace panel -->
+        <g stroke="#fffdf8" stroke-width="4" stroke-linecap="round">
+          <line x1="410" y1="262" x2="434" y2="274"/>
+          <line x1="430" y1="256" x2="456" y2="270"/>
+        </g>
+        <circle cx="394" cy="260" r="4" fill="#fffdf8"/>
+        <!-- plump intact midsole (thick, no creases) -->
+        <path d="M298 322 Q294 318 296 306 Q306 292 326 294 L528 306 Q540 308 540 322 Z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+        <!-- gold cushioning accent -->
+        <path d="M304 316 Q308 304 326 304 L362 306 L362 316 Z" fill="#e0a93d"/>
+        <!-- crisp deep-tread outsole -->
+        <rect x="296" y="322" width="244" height="18" rx="9" fill="#c96f4a"/>
+        <g stroke="#d9663f" stroke-width="3" stroke-linecap="round">
+          <line x1="322" y1="331" x2="330" y2="331"/>
+          <line x1="352" y1="331" x2="360" y2="331"/>
+          <line x1="382" y1="331" x2="390" y2="331"/>
+          <line x1="412" y1="331" x2="420" y2="331"/>
+          <line x1="442" y1="331" x2="450" y2="331"/>
+          <line x1="472" y1="331" x2="480" y2="331"/>
+          <line x1="502" y1="331" x2="510" y2="331"/>
+        </g>
+        <!-- fresh sparkle -->
+        <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+          <path d="M470 244 l0 10 M465 249 l10 0"/>
+        </g>
+        <text x="356" y="360" font-size="12" fill="#3e7c59" font-weight="700">fresh — full cushioning</text>
+      </g>
+
+      <!-- greenery -->
+      <circle cx="60" cy="392" r="12" fill="#5e9a78"/>
+      <circle cx="80" cy="396" r="9" fill="#3e7c59"/>
+      <circle cx="512" cy="394" r="12" fill="#5e9a78"/>
+    </svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a flat-style green running shoe speeding along a road with motion lines trailing behind it and a mile counter above reading 400 miles">
+      <ellipse cx="290" cy="400" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="70" cy="64" r="24" fill="#f2cf7a"/>
+      <ellipse cx="462" cy="68" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="424" cy="80" rx="28" ry="14" fill="#dce8ee"/>
+      <!-- road -->
+      <rect x="38" y="352" width="486" height="28" rx="14" fill="#b9b1a3"/>
+      <g stroke="#fffdf8" stroke-width="4" stroke-linecap="round">
+        <line x1="72" y1="366" x2="104" y2="366"/>
+        <line x1="140" y1="366" x2="172" y2="366"/>
+        <line x1="208" y1="366" x2="240" y2="366"/>
+        <line x1="276" y1="366" x2="308" y2="366"/>
+        <line x1="344" y1="366" x2="376" y2="366"/>
+        <line x1="412" y1="366" x2="444" y2="366"/>
+        <line x1="480" y1="366" x2="500" y2="366"/>
+      </g>
+      <!-- mile counter (odometer) -->
+      <rect x="318" y="112" width="170" height="58" rx="29" fill="#fffdf8" stroke="#e0a93d" stroke-width="3"/>
+      <rect x="334" y="124" width="28" height="34" rx="6" fill="#2c5a40"/>
+      <rect x="366" y="124" width="28" height="34" rx="6" fill="#2c5a40"/>
+      <rect x="398" y="124" width="28" height="34" rx="6" fill="#2c5a40"/>
+      <text x="348" y="149" font-size="22" font-weight="800" fill="#fffdf8" text-anchor="middle">4</text>
+      <text x="380" y="149" font-size="22" font-weight="800" fill="#fffdf8" text-anchor="middle">0</text>
+      <text x="412" y="149" font-size="22" font-weight="800" fill="#fffdf8" text-anchor="middle">0</text>
+      <text x="456" y="148" font-size="16" font-weight="700" fill="#8a6a4f">mi</text>
+      <line x1="356" y1="174" x2="332" y2="218" stroke="#e0a93d" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+      <!-- motion lines -->
+      <g stroke="#7fb3c8" stroke-width="7" stroke-linecap="round">
+        <line x1="58" y1="244" x2="138" y2="244"/>
+        <line x1="40" y1="276" x2="128" y2="276"/>
+        <line x1="64" y1="308" x2="142" y2="308"/>
+      </g>
+      <!-- shoe -->
+      <g>
+        <!-- upper -->
+        <path d="M162 318 L162 252 Q162 226 186 224 Q214 222 224 244 Q231 258 252 252 Q258 234 276 236 Q310 242 340 262 Q388 290 436 296 Q452 298 452 310 L452 318 Z" fill="#3e7c59"/>
+        <!-- heel collar -->
+        <path d="M162 252 Q162 226 186 224 Q214 222 224 244 L216 252 Q204 236 186 238 Q172 240 172 256 L172 318 L162 318 Z" fill="#2c5a40"/>
+        <!-- side stripe -->
+        <path d="M196 318 Q230 280 296 268 Q280 290 262 318 Z" fill="#5e9a78"/>
+        <!-- lace panel -->
+        <g stroke="#fffdf8" stroke-width="4" stroke-linecap="round">
+          <line x1="262" y1="258" x2="286" y2="270"/>
+          <line x1="282" y1="252" x2="308" y2="266"/>
+          <line x1="304" y1="250" x2="330" y2="266"/>
+        </g>
+        <circle cx="246" cy="256" r="4" fill="#fffdf8"/>
+        <!-- midsole -->
+        <path d="M150 318 Q146 316 148 308 Q156 296 174 298 L444 308 Q456 309 456 318 Z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+        <!-- gold heel wedge accent -->
+        <path d="M156 314 Q160 304 176 304 L214 306 L214 314 Z" fill="#e0a93d"/>
+        <!-- outsole -->
+        <rect x="146" y="318" width="312" height="18" rx="9" fill="#c96f4a"/>
+        <g stroke="#d9663f" stroke-width="3" stroke-linecap="round">
+          <line x1="176" y1="327" x2="184" y2="327"/>
+          <line x1="216" y1="327" x2="224" y2="327"/>
+          <line x1="256" y1="327" x2="264" y2="327"/>
+          <line x1="296" y1="327" x2="304" y2="327"/>
+          <line x1="336" y1="327" x2="344" y2="327"/>
+          <line x1="376" y1="327" x2="384" y2="327"/>
+          <line x1="416" y1="327" x2="424" y2="327"/>
+        </g>
+      </g>
+      <!-- mile marker post -->
+      <rect x="506" y="270" width="8" height="84" rx="4" fill="#8a6a4f"/>
+      <rect x="490" y="246" width="42" height="30" rx="6" fill="#c9a06b"/>
+      <text x="511" y="267" font-size="14" font-weight="800" fill="#fffdf8" text-anchor="middle">400</text>
+      <!-- greenery -->
+      <circle cx="84" cy="390" r="14" fill="#5e9a78"/>
+      <circle cx="106" cy="394" r="11" fill="#3e7c59"/>
+      <circle cx="470" cy="392" r="12" fill="#5e9a78"/>
+    </svg>

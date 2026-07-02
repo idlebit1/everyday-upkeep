@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an espresso machine on a kitchen counter mid-descale: the machine is shown with a cutaway hint of white limescale crusting the boiler and inner pipes, a bottle of descaling solution stands beside it, pale solution drips from the group head into a carafe below, the steam wand lets off a wisp of steam, and a fresh espresso shot waits in a small cup">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- counter -->
+      <rect x="40" y="318" width="480" height="16" rx="6" fill="#c9a06b"/>
+      <rect x="64" y="334" width="432" height="58" fill="#b9b1a3"/>
+      <rect x="84" y="346" width="180" height="36" rx="5" fill="#8a6a4f"/>
+      <rect x="296" y="346" width="180" height="36" rx="5" fill="#8a6a4f"/>
+      <circle cx="174" cy="364" r="4" fill="#e0a93d"/>
+      <circle cx="386" cy="364" r="4" fill="#e0a93d"/>
+
+      <!-- ===== espresso machine body ===== -->
+      <!-- main chassis -->
+      <rect x="150" y="120" width="200" height="180" rx="14" fill="#d9663f"/>
+      <rect x="150" y="120" width="200" height="44" rx="14" fill="#c96f4a"/>
+      <!-- cup-warmer top rail -->
+      <rect x="162" y="108" width="176" height="16" rx="8" fill="#8a6a4f"/>
+      <!-- water tank at the back left, with mineral-y water -->
+      <rect x="120" y="150" width="38" height="120" rx="8" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <rect x="120" y="196" width="38" height="74" rx="8" fill="#7fb3c8"/>
+      <rect x="118" y="142" width="42" height="12" rx="6" fill="#8a6a4f"/>
+      <!-- descale light / counter on the front panel -->
+      <circle cx="196" cy="150" r="8" fill="#e0a93d"/>
+      <circle cx="196" cy="150" r="3.5" fill="#fffdf8"/>
+      <text x="210" y="154" font-size="10" fill="#fffdf8" font-weight="700">descale</text>
+      <!-- pressure gauge -->
+      <circle cx="306" cy="152" r="16" fill="#fffdf8" stroke="#8a6a4f" stroke-width="3"/>
+      <path d="M306 152 l9 -6" stroke="#d9663f" stroke-width="2.6" stroke-linecap="round"/>
+      <circle cx="306" cy="152" r="2.4" fill="#8a6a4f"/>
+
+      <!-- ===== cutaway hint of the boiler with limescale ===== -->
+      <!-- cutaway window into the chassis -->
+      <rect x="174" y="186" width="92" height="86" rx="10" fill="#fbe9e1" stroke="#8a6a4f" stroke-width="2.5" stroke-dasharray="6 5"/>
+      <!-- boiler vessel -->
+      <rect x="186" y="198" width="68" height="50" rx="14" fill="#b9b1a3"/>
+      <rect x="186" y="198" width="68" height="50" rx="14" fill="#c9a06b" opacity="0.5"/>
+      <!-- white limescale crust inside the boiler -->
+      <g fill="#fffdf8">
+        <path d="M190 240 q8 -10 16 0 q8 -10 16 0 q8 -10 16 0 q8 -10 14 0 l0 6 q-7 -8 -14 0 q-8 -8 -16 0 q-8 -8 -16 0 q-8 -8 -16 0 z"/>
+        <circle cx="200" cy="214" r="3.2"/>
+        <circle cx="216" cy="210" r="3.6"/>
+        <circle cx="232" cy="214" r="3"/>
+        <circle cx="244" cy="212" r="2.6"/>
+      </g>
+      <!-- scaled pipe leading down to the group -->
+      <rect x="214" y="246" width="12" height="34" rx="4" fill="#b9b1a3"/>
+      <g fill="#fffdf8">
+        <circle cx="220" cy="256" r="3"/>
+        <circle cx="220" cy="268" r="2.6"/>
+      </g>
+      <text x="178" y="266" font-size="9.5" fill="#d9663f" font-weight="700">limescale</text>
+
+      <!-- ===== group head + portafilter ===== -->
+      <rect x="266" y="262" width="56" height="22" rx="6" fill="#8a6a4f"/>
+      <rect x="278" y="284" width="32" height="14" rx="4" fill="#5a4634"/>
+      <!-- spouts -->
+      <rect x="285" y="298" width="5" height="10" rx="2.5" fill="#8a6a4f"/>
+      <rect x="298" y="298" width="5" height="10" rx="2.5" fill="#8a6a4f"/>
+      <!-- pale descaler dripping into the carafe -->
+      <g fill="#7fb3c8">
+        <circle cx="287" cy="312" r="2.6"/>
+        <circle cx="300" cy="316" r="2.4"/>
+        <circle cx="288" cy="326" r="2.6"/>
+      </g>
+
+      <!-- ===== steam wand on the right, with steam ===== -->
+      <path d="M348 196 q26 6 22 40" stroke="#8a6a4f" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <circle cx="370" cy="238" r="5" fill="#5a4634"/>
+      <g stroke="#b9b1a3" stroke-width="3.5" fill="none" stroke-linecap="round">
+        <path d="M372 230 q8 -12 1 -24 q-7 -11 1 -22"/>
+        <path d="M384 232 q9 -12 2 -24"/>
+      </g>
+
+      <!-- ===== descaling-solution bottle, left of machine ===== -->
+      <rect x="64" y="240" width="44" height="78" rx="9" fill="#3e7c59"/>
+      <rect x="76" y="222" width="20" height="22" rx="4" fill="#2c5a40"/>
+      <rect x="72" y="214" width="28" height="11" rx="5" fill="#5a4634"/>
+      <rect x="70" y="262" width="32" height="38" rx="5" fill="#fffdf8"/>
+      <g stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round">
+        <line x1="77" y1="276" x2="95" y2="276"/>
+        <line x1="77" y1="286" x2="89" y2="286"/>
+      </g>
+      <text x="86" y="258" font-size="8.5" fill="#fffdf8" font-weight="700" text-anchor="middle">DESCALER</text>
+
+      <!-- ===== carafe under the group ===== -->
+      <path d="M268 314 l-6 36 h78 l-6 -36 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <path d="M265 330 l-3 20 h76 l-3 -20 z" fill="#7fb3c8"/>
+      <rect x="268" y="306" width="62" height="10" rx="5" fill="#8a6a4f"/>
+      <path d="M340 318 q18 8 6 28" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+      <!-- ===== fresh espresso shot waiting, far right ===== -->
+      <path d="M430 290 l4 26 h30 l4 -26 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <path d="M434 298 l2 16 h26 l2 -16 z" fill="#5a4634"/>
+      <ellipse cx="449" cy="299" rx="13" ry="3.5" fill="#c9a06b"/>
+      <path d="M464 296 q12 4 2 16" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="426" y="316" width="44" height="6" rx="3" fill="#8a6a4f"/>
+      <g stroke="#b9b1a3" stroke-width="2.6" fill="none" stroke-linecap="round">
+        <path d="M444 286 q-5 -8 0 -16"/>
+        <path d="M454 286 q5 -8 0 -16"/>
+      </g>
+
+      <!-- scale flecks rinsing away near the carafe -->
+      <g fill="#b9b1a3">
+        <circle cx="258" cy="346" r="2.4"/>
+        <circle cx="266" cy="338" r="2"/>
+        <circle cx="252" cy="336" r="2"/>
+      </g>
+
+      <!-- small plant for warmth, right end -->
+      <path d="M498 296 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M498 296 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="485" cy="266" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 485 266)"/>
+      <ellipse cx="513" cy="270" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 513 270)"/>
+      <path d="M486 296 h24 l-4 22 h-16 z" fill="#c96f4a"/>
+    </svg>

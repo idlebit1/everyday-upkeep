@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of refreshing the baking soda in a fridge: an open refrigerator with tidy shelves holds a fresh, fully-opened box of baking soda with a date written on it, while an old crusty box is being poured down a kitchen sink drain nearby, with a jug of milk and a stick of butter on the clean shelves">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- fridge body -->
+      <rect x="70" y="34" width="230" height="330" rx="14" fill="#dce8ee" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- open door swung to the left -->
+      <rect x="18" y="46" width="52" height="306" rx="8" fill="#cdd9de" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="26" y="120" width="10" height="150" rx="5" fill="#b9b1a3"/>
+      <!-- interior back wall -->
+      <rect x="84" y="48" width="202" height="302" rx="8" fill="#eef4f7"/>
+
+      <!-- shelves -->
+      <g stroke="#b9b1a3" stroke-width="4">
+        <line x1="90" y1="132" x2="280" y2="132"/>
+        <line x1="90" y1="216" x2="280" y2="216"/>
+        <line x1="90" y1="300" x2="280" y2="300"/>
+      </g>
+
+      <!-- fresh open box of baking soda on the top shelf, toward the back -->
+      <rect x="196" y="82" width="70" height="46" rx="3" fill="#e0a93d" stroke="#d98e3b" stroke-width="2"/>
+      <!-- opened top flaps -->
+      <path d="M196 82 l-10 -16 l70 0 l-10 16 z" fill="#faf0da" stroke="#d98e3b" stroke-width="2"/>
+      <path d="M266 82 l14 -12 l0 12 z" fill="#f5e2b6"/>
+      <!-- label on the box -->
+      <rect x="204" y="94" width="54" height="26" rx="2" fill="#fffdf8"/>
+      <path d="M214 108 q6 -8 12 0 q6 8 12 0" fill="none" stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="231" y="118" font-size="7" fill="#6b7376" text-anchor="middle">SODA</text>
+      <!-- date written on the box -->
+      <rect x="216" y="70" width="34" height="12" rx="2" fill="#fffdf8" transform="rotate(-4 233 76)"/>
+      <text x="233" y="79" font-size="7.5" fill="#c96f4a" font-weight="700" text-anchor="middle" transform="rotate(-4 233 76)">3/1</text>
+      <text x="196" y="66" font-size="9" fill="#3e7c59" font-weight="700">fresh</text>
+
+      <!-- milk jug on the middle shelf -->
+      <path d="M112 168 h34 l4 44 h-42 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <rect x="122" y="156" width="16" height="14" rx="2" fill="#dce8ee"/>
+      <rect x="118" y="182" width="24" height="14" rx="2" fill="#e3efe8"/>
+      <!-- stick of butter beside it -->
+      <rect x="196" y="188" width="40" height="20" rx="3" fill="#f5e2b6" stroke="#e0a93d" stroke-width="2"/>
+      <rect x="200" y="188" width="10" height="20" fill="#faf0da" opacity="0.7"/>
+
+      <!-- a jar and leftovers on the bottom shelf -->
+      <rect x="112" y="252" width="30" height="40" rx="4" fill="#5e9a78"/>
+      <rect x="112" y="248" width="30" height="8" rx="3" fill="#3e7c59"/>
+      <rect x="164" y="258" width="46" height="34" rx="4" fill="#7fb3c8"/>
+      <rect x="164" y="258" width="46" height="10" rx="4" fill="#9cc3d4"/>
+
+      <!-- little fresh-air sparkles inside the tidy fridge -->
+      <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round">
+        <path d="M150 320 l0 9 M145.5 324.5 l9 0"/>
+        <path d="M258 250 l0 8 M254 254 l8 0"/>
+      </g>
+
+      <!-- kitchen sink with the OLD box being poured down the drain, right -->
+      <rect x="370" y="250" width="170" height="26" rx="6" fill="#b9b1a3"/>
+      <rect x="378" y="276" width="154" height="70" rx="8" fill="#cdd9de" stroke="#8a6a4f" stroke-width="4"/>
+      <!-- drain -->
+      <ellipse cx="455" cy="330" rx="22" ry="8" fill="#8a6a4f"/>
+      <ellipse cx="455" cy="328" rx="16" ry="5.5" fill="#6b7376"/>
+      <!-- faucet -->
+      <path d="M410 250 l0 -34 q0 -14 14 -14 l24 0" fill="none" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- old crusty box tipping over the sink -->
+      <g transform="rotate(38 470 216)">
+        <rect x="446" y="196" width="52" height="38" rx="3" fill="#c9a06b" stroke="#8a6a4f" stroke-width="2"/>
+        <path d="M446 196 l-8 -12 l52 0 l-8 12 z" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2"/>
+        <!-- crusty hardened patches -->
+        <circle cx="460" cy="216" r="3" fill="#8a6a4f" opacity="0.5"/>
+        <circle cx="478" cy="210" r="2.4" fill="#8a6a4f" opacity="0.5"/>
+        <text x="470" y="222" font-size="8" fill="#6b7376" text-anchor="middle" font-weight="700">OLD</text>
+      </g>
+      <!-- powder pouring toward the drain -->
+      <g fill="#e9e2d8">
+        <circle cx="462" cy="248" r="2.4"/>
+        <circle cx="458" cy="262" r="2"/>
+        <circle cx="464" cy="276" r="2.6"/>
+        <circle cx="459" cy="292" r="2.2"/>
+        <circle cx="461" cy="308" r="2.8"/>
+        <circle cx="466" cy="322" r="2"/>
+      </g>
+    </svg>

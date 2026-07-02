@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm desk scene for an annual financial review: a laptop showing a simple rising savings and net-worth chart, an open notebook with a checklist, a steaming coffee mug, a tidy stack of labeled folders for retirement, insurance, and budget, and a small potted plant — reassuring and organized, not stressful">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface -->
+      <rect x="40" y="300" width="480" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="74" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+      <rect x="471" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+
+      <!-- laptop with rising net-worth chart -->
+      <rect x="150" y="120" width="232" height="158" rx="12" fill="#8a6a4f"/>
+      <rect x="162" y="132" width="208" height="134" rx="6" fill="#fffdf8"/>
+      <!-- screen header -->
+      <rect x="174" y="144" width="78" height="9" rx="4.5" fill="#b9b1a3"/>
+      <circle cx="356" cy="149" r="6" fill="#5e9a78"/>
+      <!-- chart baseline & axis -->
+      <line x1="180" y1="246" x2="356" y2="246" stroke="#e9e2d8" stroke-width="2.5"/>
+      <line x1="180" y1="168" x2="180" y2="246" stroke="#e9e2d8" stroke-width="2.5"/>
+      <!-- rising bars (net worth year over year) -->
+      <rect x="196" y="218" width="22" height="28" rx="3" fill="#e3efe8"/>
+      <rect x="196" y="218" width="22" height="28" rx="3" fill="#5e9a78"/>
+      <rect x="232" y="204" width="22" height="42" rx="3" fill="#5e9a78"/>
+      <rect x="268" y="190" width="22" height="56" rx="3" fill="#3e7c59"/>
+      <rect x="304" y="174" width="22" height="72" rx="3" fill="#3e7c59"/>
+      <!-- rising trend line over the bars -->
+      <path d="M207 214 L243 200 L279 186 L315 170" fill="none" stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="315" cy="170" r="4" fill="#e0a93d"/>
+      <!-- laptop base -->
+      <rect x="132" y="276" width="268" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="236" y="276" width="60" height="7" rx="3.5" fill="#8a6a4f"/>
+
+      <!-- open notebook with a checklist, front-left -->
+      <rect x="58" y="252" width="104" height="60" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-7 110 282)"/>
+      <line x1="106" y1="256" x2="106" y2="312" stroke="#e9e2d8" stroke-width="2" transform="rotate(-7 110 282)"/>
+      <g transform="rotate(-7 110 282)">
+        <rect x="70" y="262" width="9" height="9" rx="2" fill="none" stroke="#3e7c59" stroke-width="1.8"/>
+        <path d="M72 266 l2 2 l3.5 -4" stroke="#3e7c59" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="84" y1="267" x2="100" y2="267" stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round"/>
+        <rect x="70" y="278" width="9" height="9" rx="2" fill="none" stroke="#3e7c59" stroke-width="1.8"/>
+        <path d="M72 282 l2 2 l3.5 -4" stroke="#3e7c59" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="84" y1="283" x2="98" y2="283" stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round"/>
+        <rect x="70" y="294" width="9" height="9" rx="2" fill="none" stroke="#b9b1a3" stroke-width="1.8"/>
+        <line x1="84" y1="299" x2="100" y2="299" stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+      <rect x="138" y="270" width="44" height="7" rx="3.5" fill="#e0a93d" transform="rotate(20 160 273)"/>
+      <polygon points="180,288 188,294 179,296" fill="#8a6a4f"/>
+
+      <!-- coffee mug with steam, left -->
+      <path d="M64 232 q3 -16 10 -22" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M84 228 q-3 -18 6 -28" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="52" y="236" width="50" height="40" rx="8" fill="#c96f4a"/>
+      <rect x="52" y="236" width="50" height="9" rx="4.5" fill="#d9663f"/>
+      <path d="M102 244 q18 2 18 14 q0 12 -18 12" stroke="#c96f4a" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- stack of labeled folders, right -->
+      <g>
+        <!-- bottom folder: budget -->
+        <rect x="396" y="252" width="118" height="22" rx="5" fill="#7fb3c8"/>
+        <rect x="396" y="248" width="46" height="9" rx="4" fill="#9cc3d4"/>
+        <text x="402" y="268" font-size="10" fill="#fffdf8" font-weight="700">Budget</text>
+        <!-- middle folder: insurance -->
+        <rect x="402" y="228" width="118" height="22" rx="5" fill="#e0a93d"/>
+        <rect x="402" y="224" width="52" height="9" rx="4" fill="#d98e3b"/>
+        <text x="408" y="244" font-size="10" fill="#fffdf8" font-weight="700">Insurance</text>
+        <!-- top folder: retirement -->
+        <rect x="408" y="204" width="118" height="22" rx="5" fill="#5e9a78"/>
+        <rect x="408" y="200" width="58" height="9" rx="4" fill="#3e7c59"/>
+        <text x="414" y="220" font-size="10" fill="#fffdf8" font-weight="700">Retirement</text>
+      </g>
+
+      <!-- small plant for warmth, far right on desk -->
+      <path d="M455 252 q-4 -28 -16 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M455 252 q6 -26 18 -34" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="436" cy="206" rx="9" ry="14" fill="#5e9a78" transform="rotate(-32 436 206)"/>
+      <ellipse cx="476" cy="210" rx="9" ry="14" fill="#3e7c59" transform="rotate(30 476 210)"/>
+      <ellipse cx="455" cy="194" rx="8" ry="13" fill="#5e9a78"/>
+      <path d="M438 252 h36 l-6 34 h-24 z" fill="#c96f4a"/>
+      <rect x="434" y="246" width="44" height="10" rx="5" fill="#d9663f"/>
+    </svg>

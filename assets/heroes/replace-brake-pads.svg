@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style green car raised on a jack stand with the front wheel removed, exposing a brake rotor and caliper, a fresh brake pad held up beside it, and a worn thin old pad and a C-clamp resting on the ground">
+      <ellipse cx="285" cy="398" rx="248" ry="22" fill="#efe7d8"/>
+      <circle cx="72" cy="66" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="68" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="410" cy="80" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="120" cy="120" rx="32" ry="15" fill="#dce8ee"/>
+      <!-- car body, raised at the front -->
+      <path d="M118 308 q0 -52 46 -56 l28 -3 q22 -36 70 -38 l92 0 q48 2 70 38 l36 5 q42 8 42 54 l0 22 q0 12 -12 12 l-360 0 q-12 0 -12 -12 z" fill="#3e7c59"/>
+      <path d="M194 252 q20 -30 64 -32 l88 0 q44 2 64 32 z" fill="#2c5a40"/>
+      <path d="M210 250 q16 -22 50 -24 l38 0 0 24 z" fill="#cfe3ec"/>
+      <path d="M310 226 l36 0 q34 2 50 24 l-86 0 z" fill="#cfe3ec"/>
+      <rect x="118" y="310" width="384" height="14" fill="#2c5a40"/>
+      <circle cx="484" cy="296" r="10" fill="#e0a93d"/>
+      <circle cx="134" cy="296" r="8" fill="#c96f4a"/>
+      <!-- rear wheel still on -->
+      <circle cx="434" cy="346" r="36" fill="#33393b"/>
+      <circle cx="434" cy="346" r="16" fill="#b9b1a3"/>
+      <circle cx="434" cy="346" r="5" fill="#8a6a4f"/>
+      <!-- front exposed: rotor + caliper (wheel removed) -->
+      <circle cx="206" cy="338" r="38" fill="#b9b1a3"/>
+      <circle cx="206" cy="338" r="38" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <circle cx="206" cy="338" r="16" fill="#8a6a4f"/>
+      <circle cx="206" cy="338" r="6" fill="#5a544a"/>
+      <!-- brake caliper hugging the rotor edge -->
+      <path d="M180 308 q-16 30 0 60 l20 0 q-18 -28 0 -60 z" fill="#c96f4a"/>
+      <rect x="176" y="328" width="14" height="20" rx="4" fill="#d9663f"/>
+      <!-- jack stand under the front -->
+      <path d="M170 332 l40 0 -8 50 -24 0 z" fill="#d9663f"/>
+      <rect x="160" y="382" width="60" height="9" rx="4.5" fill="#c96f4a"/>
+      <!-- wheel chock at rear -->
+      <path d="M474 392 l20 0 0 -16 z" fill="#8a6a4f"/>
+      <!-- FRESH pad held up beside the wheel -->
+      <g transform="rotate(-10 92 318)">
+        <rect x="74" y="300" width="44" height="20" rx="3" fill="#5a544a"/>
+        <rect x="74" y="296" width="44" height="8" rx="3" fill="#dce8ee"/>
+        <g stroke="#7fb3c8" stroke-width="2"><line x1="80" y1="300" x2="112" y2="300"/></g>
+      </g>
+      <!-- sparkle on the fresh pad -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="128" y1="288" x2="128" y2="298"/>
+        <line x1="122" y1="293" x2="134" y2="293"/>
+      </g>
+      <text x="96" y="340" font-size="14" font-weight="700" fill="#8a6a4f" text-anchor="middle">fresh pad</text>
+      <!-- OLD worn-thin pad on the ground -->
+      <g transform="rotate(8 318 384)">
+        <rect x="292" y="378" width="52" height="6" rx="2" fill="#33393b"/>
+        <rect x="292" y="374" width="52" height="6" rx="2" fill="#8a6a4f"/>
+      </g>
+      <text x="318" y="404" font-size="13" font-weight="700" fill="#8a6a4f" text-anchor="middle">worn out</text>
+      <!-- C-clamp resting on the ground (for compressing the piston) -->
+      <g transform="rotate(6 488 366)">
+        <path d="M466 348 l0 36 6 0 0 -30 30 0 0 -6 z" fill="none" stroke="#b9b1a3" stroke-width="7" stroke-linejoin="round"/>
+        <rect x="498" y="356" width="8" height="22" rx="3" fill="#8a6a4f"/>
+        <circle cx="502" cy="380" r="7" fill="#c96f4a"/>
+      </g>
+      <!-- shrubs -->
+      <circle cx="540" cy="380" r="13" fill="#5e9a78"/>
+      <circle cx="520" cy="388" r="10" fill="#3e7c59"/>
+    </svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of tuning skis in a garage workshop: a ski clamped base-up on a bench with a waxing iron dripping and ironing hot wax onto the base, a small snowboard leaning against the bench, an edge tool sharpening the steel edge, a P-Tex candle filling a base gouge, and a scraper and brush lying nearby">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- pegboard workshop wall, top -->
+      <rect x="40" y="20" width="480" height="96" rx="6" fill="#f3ecdd"/>
+      <g fill="#d8cfbe">
+        <circle cx="72" cy="44" r="2.4"/><circle cx="104" cy="44" r="2.4"/><circle cx="136" cy="44" r="2.4"/>
+        <circle cx="72" cy="72" r="2.4"/><circle cx="104" cy="72" r="2.4"/><circle cx="136" cy="72" r="2.4"/>
+      </g>
+      <!-- tools hung on the pegboard -->
+      <rect x="430" y="34" width="8" height="46" rx="3" fill="#c96f4a"/>
+      <rect x="424" y="30" width="20" height="8" rx="3" fill="#8a6a4f"/>
+      <rect x="466" y="34" width="8" height="40" rx="3" fill="#5e9a78"/>
+      <rect x="460" y="30" width="20" height="8" rx="3" fill="#3e7c59"/>
+
+      <!-- the workbench -->
+      <rect x="60" y="252" width="440" height="26" rx="4" fill="#b9662f" opacity="0"/>
+      <rect x="60" y="250" width="440" height="24" rx="4" fill="#c9a06b"/>
+      <rect x="60" y="272" width="440" height="8" rx="2" fill="#8a6a4f"/>
+      <!-- bench legs -->
+      <rect x="86" y="280" width="16" height="96" rx="3" fill="#8a6a4f"/>
+      <rect x="458" y="280" width="16" height="96" rx="3" fill="#8a6a4f"/>
+
+      <!-- vise holding the ski at center of the bench -->
+      <rect x="256" y="228" width="52" height="24" rx="4" fill="#6b7376"/>
+      <rect x="264" y="220" width="12" height="12" rx="2" fill="#8a8f92"/>
+      <rect x="288" y="220" width="12" height="12" rx="2" fill="#8a8f92"/>
+
+      <!-- the ski, clamped base-up, running across the bench -->
+      <path d="M96 214 q-22 2 -22 12 q0 10 22 12 l360 0 q30 -2 30 -12 q0 -10 -30 -12 z" fill="#2c5a40"/>
+      <!-- upturned tip on the left -->
+      <path d="M96 214 q-30 -6 -46 -22 q18 8 46 8 z" fill="#2c5a40"/>
+      <!-- the base surface (pale, being waxed) -->
+      <rect x="110" y="210" width="336" height="12" rx="3" fill="#dce8ee"/>
+      <!-- dry white patch near the tail (right) -->
+      <rect x="392" y="210" width="46" height="12" rx="3" fill="#eef4f7"/>
+      <!-- steel edges as bright lines -->
+      <line x1="112" y1="209" x2="446" y2="209" stroke="#8a8f92" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="112" y1="223" x2="446" y2="223" stroke="#8a8f92" stroke-width="2.4" stroke-linecap="round"/>
+
+      <!-- hot wax dripped in beads onto the base, center -->
+      <g fill="#e0a93d">
+        <circle cx="214" cy="212" r="3.4"/>
+        <circle cx="234" cy="212" r="3"/>
+        <circle cx="254" cy="212" r="3.4"/>
+      </g>
+      <!-- the waxing iron ironing it in, moving -->
+      <rect x="196" y="176" width="76" height="26" rx="6" fill="#5e9a78"/>
+      <rect x="196" y="196" width="76" height="8" rx="3" fill="#3e7c59"/>
+      <path d="M224 176 q10 -20 34 -20 l0 8 q-18 0 -26 16 z" fill="#8a6a4f"/>
+      <!-- motion streaks showing the iron moving -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" opacity="0.6">
+        <line x1="182" y1="184" x2="192" y2="184"/>
+        <line x1="178" y1="192" x2="192" y2="192"/>
+      </g>
+      <!-- heat wisps rising off the wax -->
+      <g stroke="#d9663f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5">
+        <path d="M228 174 q-4 -6 0 -12"/>
+        <path d="M244 174 q4 -6 0 -12"/>
+      </g>
+      <text x="196" y="170" font-size="10.5" fill="#3e7c59" font-weight="700">keep it moving</text>
+
+      <!-- edge tool sharpening the steel edge, left of the wax -->
+      <rect x="120" y="188" width="44" height="20" rx="4" fill="#c96f4a" transform="rotate(-6 142 198)"/>
+      <rect x="120" y="204" width="44" height="6" rx="2" fill="#8a6a4f" transform="rotate(-6 142 207)"/>
+      <!-- tiny filings sparking off the edge -->
+      <g fill="#8a8f92">
+        <circle cx="128" cy="216" r="1.4"/>
+        <circle cx="136" cy="220" r="1.2"/>
+        <circle cx="120" cy="219" r="1.2"/>
+      </g>
+      <text x="114" y="184" font-size="10.5" fill="#d9663f" font-weight="700">edge tool</text>
+
+      <!-- P-Tex candle filling a base gouge, right of the wax -->
+      <rect x="356" y="150" width="8" height="52" rx="3" fill="#b9b1a3"/>
+      <path d="M360 148 q-5 -8 0 -14 q5 6 0 14 z" fill="#d9663f"/>
+      <!-- a drip of molten P-Tex falling to the base -->
+      <circle cx="360" cy="206" r="3" fill="#8a6a4f"/>
+      <path d="M360 202 l0 4" stroke="#8a6a4f" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="336" y="146" font-size="10.5" fill="#8a6a4f" font-weight="700">fill the nick</text>
+
+      <!-- scraper lying on the bench, front-right -->
+      <rect x="404" y="256" width="60" height="14" rx="3" fill="#e0a93d"/>
+      <rect x="404" y="256" width="60" height="5" rx="2.5" fill="#d98e3b"/>
+      <!-- wax curls shaved off beside the scraper -->
+      <path d="M470 268 q6 -4 12 0 q-4 4 -12 2 z" fill="#e0a93d" opacity="0.8"/>
+      <path d="M474 262 q6 -4 12 0 q-4 4 -12 2 z" fill="#faf0da"/>
+
+      <!-- nylon brush lying on the bench, front-left -->
+      <rect x="96" y="256" width="70" height="12" rx="3" fill="#8a6a4f"/>
+      <g stroke="#b9b1a3" stroke-width="2" stroke-linecap="round">
+        <line x1="104" y1="268" x2="104" y2="276"/>
+        <line x1="114" y1="268" x2="114" y2="276"/>
+        <line x1="124" y1="268" x2="124" y2="276"/>
+        <line x1="134" y1="268" x2="134" y2="276"/>
+        <line x1="144" y1="268" x2="144" y2="276"/>
+        <line x1="154" y1="268" x2="154" y2="276"/>
+      </g>
+
+      <!-- small snowboard leaning against the bench, right -->
+      <g transform="rotate(14 508 320)">
+        <rect x="490" y="250" width="36" height="150" rx="18" fill="#c96f4a"/>
+        <rect x="490" y="250" width="36" height="150" rx="18" fill="none" stroke="#8a8f92" stroke-width="2"/>
+        <!-- binding straps -->
+        <rect x="498" y="292" width="20" height="8" rx="3" fill="#2c5a40"/>
+        <rect x="498" y="336" width="20" height="8" rx="3" fill="#2c5a40"/>
+      </g>
+    </svg>

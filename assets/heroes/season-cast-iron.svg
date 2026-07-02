@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a kitchen scene where a cast iron skillet rests on an open oven rack, glowing warm as its dark seasoning bakes on, with a bottle of oil and a folded paper towel on the counter, a window with sun, and a small plant nearby">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="48" y="46" width="112" height="118" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="104" y1="49" x2="104" y2="161" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="51" y1="105" x2="157" y2="105" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="82" cy="80" r="15" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="82" y1="56" x2="82" y2="61"/>
+        <line x1="106" y1="80" x2="101" y2="80"/>
+        <line x1="99" y1="63" x2="95" y2="67"/>
+      </g>
+      <rect x="36" y="38" width="136" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- counter -->
+      <rect x="56" y="316" width="448" height="16" rx="6" fill="#c9a06b"/>
+      <rect x="76" y="332" width="408" height="62" fill="#b9b1a3"/>
+      <rect x="92" y="344" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <rect x="288" y="344" width="180" height="38" rx="5" fill="#8a6a4f"/>
+      <circle cx="182" cy="363" r="4" fill="#e0a93d"/>
+      <circle cx="378" cy="363" r="4" fill="#e0a93d"/>
+      <!-- oven body -->
+      <rect x="300" y="150" width="180" height="166" rx="12" fill="#8a6a4f"/>
+      <rect x="312" y="158" width="156" height="10" rx="5" fill="#c9a06b"/>
+      <circle cx="330" cy="163" r="3.5" fill="#e0a93d"/>
+      <circle cx="346" cy="163" r="3.5" fill="#e0a93d"/>
+      <!-- open oven door, dropped forward -->
+      <rect x="296" y="300" width="188" height="18" rx="6" fill="#5a4634"/>
+      <rect x="300" y="296" width="180" height="8" rx="4" fill="#c9a06b"/>
+      <!-- oven cavity glow -->
+      <rect x="318" y="176" width="144" height="120" rx="8" fill="#d9663f" opacity="0.18"/>
+      <rect x="318" y="176" width="144" height="120" rx="8" fill="none" stroke="#5a4634" stroke-width="3"/>
+      <!-- foil-lined lower rack catching drips -->
+      <rect x="328" y="270" width="124" height="6" rx="3" fill="#dce8ee"/>
+      <g stroke="#b9b1a3" stroke-width="1.5" stroke-linecap="round">
+        <line x1="340" y1="270" x2="340" y2="276"/>
+        <line x1="360" y1="270" x2="360" y2="276"/>
+        <line x1="380" y1="270" x2="380" y2="276"/>
+        <line x1="400" y1="270" x2="400" y2="276"/>
+        <line x1="420" y1="270" x2="420" y2="276"/>
+        <line x1="440" y1="270" x2="440" y2="276"/>
+      </g>
+      <!-- upper rack -->
+      <g stroke="#5a4634" stroke-width="3" stroke-linecap="round">
+        <line x1="328" y1="214" x2="452" y2="214"/>
+        <line x1="338" y1="208" x2="338" y2="220"/>
+        <line x1="362" y1="208" x2="362" y2="220"/>
+        <line x1="386" y1="208" x2="386" y2="220"/>
+        <line x1="410" y1="208" x2="410" y2="220"/>
+        <line x1="434" y1="208" x2="434" y2="220"/>
+      </g>
+      <!-- skillet on the upper rack, baking upside down -->
+      <ellipse cx="390" cy="210" rx="52" ry="14" fill="#33393b"/>
+      <path d="M338 210 q52 30 104 0 l-6 -2 q-46 24 -92 0 z" fill="#5a4634"/>
+      <rect x="438" y="200" width="36" height="9" rx="4.5" fill="#33393b" transform="rotate(8 438 200)"/>
+      <!-- heat shimmer rising off the skillet -->
+      <g stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.55">
+        <path d="M362 198 q-6 -10 0 -20 q6 -10 0 -18"/>
+        <path d="M390 196 q6 -10 0 -20 q-6 -10 0 -18"/>
+        <path d="M418 198 q-6 -10 0 -20 q6 -10 0 -18"/>
+      </g>
+      <!-- bottle of seasoning oil on the counter -->
+      <rect x="196" y="222" width="46" height="94" rx="10" fill="#e0a93d"/>
+      <path d="M196 250 h46 v60 a10 10 0 0 1 -10 10 h-26 a10 10 0 0 1 -10 -10 z" fill="#d98e3b"/>
+      <rect x="210" y="202" width="18" height="22" rx="4" fill="#faf0da"/>
+      <rect x="207" y="196" width="24" height="10" rx="4" fill="#5a4634"/>
+      <rect x="204" y="262" width="30" height="34" rx="5" fill="#faf0da"/>
+      <g stroke="#d98e3b" stroke-width="2.5" stroke-linecap="round">
+        <line x1="210" y1="274" x2="228" y2="274"/>
+        <line x1="210" y1="283" x2="222" y2="283"/>
+      </g>
+      <!-- folded paper towel / cloth -->
+      <rect x="120" y="296" width="58" height="20" rx="4" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="139" y1="296" x2="139" y2="316" stroke="#e9e2d8" stroke-width="2"/>
+      <line x1="158" y1="296" x2="158" y2="316" stroke="#e9e2d8" stroke-width="2"/>
+      <!-- oven mitt on the counter, far left -->
+      <path d="M86 286 q-4 -22 14 -24 q20 -2 20 16 v22 h-12 v-8 q-10 0 -10 -10 q-8 0 -12 4 z" fill="#c96f4a"/>
+      <rect x="88" y="296" width="34" height="20" rx="4" fill="#c96f4a"/>
+      <rect x="88" y="310" width="34" height="6" rx="3" fill="#a8542f"/>
+      <!-- plant at right end of the counter -->
+      <path d="M492 296 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M492 296 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="479" cy="266" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 479 266)"/>
+      <ellipse cx="507" cy="270" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 507 270)"/>
+      <path d="M480 296 h24 l-4 22 h-16 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="300" cy="404" rx="130" ry="10" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

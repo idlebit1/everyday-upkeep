@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a refrigerator with its water and ice dispenser door open, a fresh cylindrical water filter being twisted into its housing in the top corner of the fridge while a darkened spent filter sits on the counter beside a glass of clean water">
+      <ellipse cx="280" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- window + sun -->
+      <rect x="44" y="44" width="92" height="80" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="90" y1="44" x2="90" y2="124" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="44" y1="84" x2="136" y2="84" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="80" cy="30" r="16" fill="#f2cf7a"/>
+      <!-- fridge body -->
+      <rect x="180" y="58" width="210" height="324" rx="14" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <line x1="180" y1="150" x2="390" y2="150" stroke="#e6dccb" stroke-width="2.5"/>
+      <!-- handles -->
+      <rect x="196" y="84" width="9" height="52" rx="4.5" fill="#b9b1a3"/>
+      <rect x="196" y="170" width="9" height="120" rx="4.5" fill="#b9b1a3"/>
+      <rect x="180" y="366" width="210" height="16" rx="6" fill="#dce8ee"/>
+      <!-- water + ice dispenser on the door -->
+      <rect x="300" y="180" width="74" height="96" rx="8" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="312" y="192" width="50" height="34" rx="5" fill="#1d2521"/>
+      <path d="M337 196 v22" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round"/>
+      <polygon points="337,218 332,210 342,210" fill="#7fb3c8"/>
+      <rect x="318" y="234" width="38" height="10" rx="5" fill="#5e9a78"/>
+      <rect x="320" y="252" width="34" height="16" rx="4" fill="#b9b1a3"/>
+      <!-- the filter housing: open compartment at the top-right interior -->
+      <rect x="298" y="74" width="80" height="58" rx="8" fill="#26302c"/>
+      <!-- NEW clean filter twisting into the housing -->
+      <g>
+        <rect x="318" y="80" width="40" height="46" rx="12" fill="#dce8ee"/>
+        <rect x="318" y="80" width="40" height="46" rx="12" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+        <ellipse cx="338" cy="82" rx="20" ry="6" fill="#7fb3c8"/>
+        <rect x="330" y="68" width="16" height="14" rx="4" fill="#5e9a78"/>
+        <!-- quarter-turn arrow -->
+        <path d="M360 96 a18 18 0 0 1 -8 22" stroke="#e0a93d" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <polygon points="352,118 360,113 362,123" fill="#e0a93d"/>
+      </g>
+      <!-- sparkle on the fresh filter -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="306" y1="60" x2="306" y2="70"/>
+        <line x1="298" y1="64" x2="304" y2="70"/>
+        <line x1="314" y1="64" x2="308" y2="70"/>
+      </g>
+      <!-- counter on the right -->
+      <rect x="404" y="300" width="138" height="14" rx="6" fill="#c9a06b"/>
+      <rect x="416" y="314" width="114" height="68" fill="#b9b1a3"/>
+      <!-- OLD spent filter set aside on the counter -->
+      <g transform="rotate(-8 452 282)">
+        <rect x="436" y="246" width="34" height="44" rx="11" fill="#8a6a4f"/>
+        <rect x="436" y="246" width="34" height="44" rx="11" fill="none" stroke="#6e5333" stroke-width="2.5"/>
+        <ellipse cx="453" cy="248" rx="17" ry="5" fill="#6e5333"/>
+        <rect x="446" y="236" width="14" height="12" rx="3.5" fill="#6e5333"/>
+        <!-- grime specks -->
+        <circle cx="447" cy="266" r="2.5" fill="#5a544a"/>
+        <circle cx="459" cy="276" r="2" fill="#5a544a"/>
+      </g>
+      <text x="452" y="304" font-size="13" font-weight="700" fill="#8a6a4f" text-anchor="middle" transform="rotate(-8 452 304)">6 months spent</text>
+      <!-- glass of clean filtered water on the counter -->
+      <path d="M482 252 l4 46 h28 l4 -46 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2.5"/>
+      <path d="M485 272 l2.5 26 h25 l2.5 -26 z" fill="#7fb3c8"/>
+      <!-- ice cubes in the glass -->
+      <rect x="490" y="262" width="9" height="9" rx="2" fill="#fffdf8" opacity="0.85"/>
+      <rect x="500" y="266" width="8" height="8" rx="2" fill="#fffdf8" opacity="0.85"/>
+      <!-- droplet rising off the glass -->
+      <path d="M498 244 q3 5 0 8 q-3 -3 0 -8" fill="#7fb3c8"/>
+    </svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a red fire extinguisher mounted on a kitchen or garage wall: a hand checks the round pressure gauge, the needle sitting in the green zone, the pull pin and tamper seal are in place at the handle, and a paper inspection tag hangs from the neck; the scene is calm and reassuring">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall panel behind the extinguisher -->
+      <rect x="120" y="30" width="320" height="330" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- subtle wall tile / board lines -->
+      <g stroke="#efe7d8" stroke-width="3">
+        <line x1="120" y1="120" x2="440" y2="120"/>
+        <line x1="120" y1="210" x2="440" y2="210"/>
+        <line x1="120" y1="300" x2="440" y2="300"/>
+      </g>
+      <!-- baseboard / floor edge -->
+      <rect x="110" y="356" width="340" height="14" rx="4" fill="#8a6a4f"/>
+
+      <!-- wall mounting bracket -->
+      <rect x="226" y="208" width="80" height="14" rx="4" fill="#8a6a4f"/>
+      <rect x="200" y="148" width="14" height="120" rx="4" fill="#b9b1a3"/>
+      <path d="M214 168 q34 -14 52 0" fill="none" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <path d="M214 250 q34 14 52 0" fill="none" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- extinguisher body (terracotta red-orange cylinder) -->
+      <rect x="216" y="120" width="100" height="180" rx="22" fill="#d9663f"/>
+      <!-- body shading stripe -->
+      <rect x="222" y="124" width="20" height="172" rx="10" fill="#c96f4a" opacity="0.55"/>
+      <!-- white instruction label band -->
+      <rect x="234" y="178" width="64" height="78" rx="8" fill="#fffdf8"/>
+      <g fill="#b9b1a3">
+        <rect x="242" y="188" width="48" height="6" rx="3"/>
+        <rect x="242" y="200" width="40" height="5" rx="2.5"/>
+        <rect x="242" y="210" width="44" height="5" rx="2.5"/>
+      </g>
+      <!-- little PASS pictograms on the label -->
+      <g fill="#d9663f">
+        <circle cx="248" cy="232" r="6"/>
+        <circle cx="266" cy="232" r="6"/>
+        <circle cx="284" cy="232" r="6"/>
+      </g>
+
+      <!-- neck / valve assembly -->
+      <rect x="244" y="100" width="44" height="24" rx="6" fill="#8a6a4f"/>
+      <!-- carry + squeeze handle -->
+      <path d="M236 96 h60 a8 8 0 0 1 8 8 v6 h-12 v-6 h-52 v6 h-12 v-6 a8 8 0 0 1 8 -8 z" fill="#5e9a78"/>
+      <rect x="248" y="86" width="40" height="12" rx="5" fill="#3e7c59"/>
+
+      <!-- pull pin + tamper seal -->
+      <circle cx="306" cy="104" r="9" fill="none" stroke="#e0a93d" stroke-width="5"/>
+      <line x1="306" y1="104" x2="232" y2="104" stroke="#e0a93d" stroke-width="5" stroke-linecap="round"/>
+      <!-- tamper seal -->
+      <path d="M306 113 l7 12 l-14 0 z" fill="#d98e3b"/>
+
+      <!-- pressure gauge (round, green zone) -->
+      <circle cx="262" cy="150" r="26" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <!-- green safe arc -->
+      <path d="M246 134 A22 22 0 0 1 278 134" fill="none" stroke="#3e7c59" stroke-width="7" stroke-linecap="round"/>
+      <!-- low / high fail edges -->
+      <path d="M243 138 A22 22 0 0 0 240 150" fill="none" stroke="#c96f4a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M281 138 A22 22 0 0 1 284 150" fill="none" stroke="#c96f4a" stroke-width="6" stroke-linecap="round"/>
+      <!-- needle pointing into the green -->
+      <line x1="262" y1="150" x2="262" y2="130" stroke="#33393b" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="262" cy="150" r="3.5" fill="#33393b"/>
+
+      <!-- hose curling down the side -->
+      <path d="M288 132 q40 6 34 60 q-4 40 -10 70" fill="none" stroke="#33393b" stroke-width="7" stroke-linecap="round"/>
+      <!-- nozzle -->
+      <path d="M306 296 l16 6 l-4 14 l-16 -6 z" fill="#5e9a78"/>
+
+      <!-- paper inspection tag hanging from the neck -->
+      <line x1="250" y1="112" x2="180" y2="138" stroke="#b9b1a3" stroke-width="2.5"/>
+      <rect x="150" y="138" width="44" height="58" rx="5" fill="#fffdf8" stroke="#c9a06b" stroke-width="2.5" transform="rotate(-6 172 167)"/>
+      <g transform="rotate(-6 172 167)">
+        <rect x="158" y="148" width="28" height="5" rx="2.5" fill="#3e7c59"/>
+        <rect x="158" y="160" width="24" height="4" rx="2" fill="#b9b1a3"/>
+        <rect x="158" y="170" width="26" height="4" rx="2" fill="#b9b1a3"/>
+        <path d="M160 184 l5 5 l9 -11" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- hand checking the gauge -->
+      <ellipse cx="246" cy="172" rx="17" ry="13" fill="#e8b48f" transform="rotate(-18 246 172)"/>
+      <!-- pointing finger toward gauge -->
+      <path d="M250 162 q10 -7 16 -14" stroke="#e8b48f" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M236 178 q-6 5 -2 12" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M240 184 q-26 22 -54 30" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+
+      <!-- small reassuring sparkle near the green gauge -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M300 158 l0 10 M295 163 l10 0"/>
+      </g>
+
+      <!-- a little potted plant for warmth, right -->
+      <path d="M404 332 h30 l-5 28 h-20 z" fill="#c96f4a"/>
+      <path d="M418 332 q-3 -22 -13 -30" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M418 332 q4 -20 15 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="402" cy="298" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 402 298)"/>
+      <ellipse cx="433" cy="302" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 433 302)"/>
+    </svg>

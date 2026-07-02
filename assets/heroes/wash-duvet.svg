@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a big front-loading laundromat washer with a fluffy white comforter and three wool dryer balls tumbling inside, a bottle of mild detergent beside it, a clothesline of freshly washed lofty comforters above, and sunlight through a window">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="60" y="46" width="112" height="128" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="116" y1="49" x2="116" y2="171" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="63" y1="110" x2="169" y2="110" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="93" cy="82" r="17" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="93" y1="56" x2="93" y2="62"/>
+        <line x1="120" y1="82" x2="114" y2="82"/>
+        <line x1="111" y1="64" x2="107" y2="68"/>
+      </g>
+      <rect x="48" y="38" width="136" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- clothesline of fresh lofty comforters -->
+      <line x1="206" y1="58" x2="512" y2="48" stroke="#b9b1a3" stroke-width="2.5"/>
+      <line x1="256" y1="56" x2="256" y2="48" stroke="#8a6a4f" stroke-width="2.5"/>
+      <line x1="332" y1="54" x2="332" y2="46" stroke="#8a6a4f" stroke-width="2.5"/>
+      <path d="M222 58 q40 -16 80 0 q4 30 -10 40 h-60 q-14 -10 -10 -40 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <path d="M236 70 q8 18 0 36 M268 66 q-6 22 0 40 M300 70 q8 18 0 36" stroke="#dce8ee" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M338 56 q34 -14 68 0 q3 26 -9 34 h-50 q-12 -8 -9 -34 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <!-- fresh sparkles over the line -->
+      <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+        <path d="M270 116 v12 M264 122 h12"/>
+        <path d="M372 102 v10 M367 107 h10"/>
+        <path d="M430 76 v9 M425 80 h10"/>
+      </g>
+      <!-- big laundromat washing machine -->
+      <rect x="234" y="158" width="204" height="206" rx="20" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <!-- control panel -->
+      <rect x="252" y="174" width="168" height="30" rx="8" fill="#e3efe8"/>
+      <circle cx="398" cy="189" r="9" fill="#3e7c59"/>
+      <circle cx="398" cy="189" r="3.5" fill="#fffdf8"/>
+      <rect x="266" y="184" width="44" height="6" rx="3" fill="#b9b1a3"/>
+      <rect x="266" y="194" width="30" height="5" rx="2.5" fill="#c9a06b"/>
+      <!-- coin slot, this is a laundromat machine -->
+      <rect x="328" y="184" width="22" height="6" rx="3" fill="#8a6a4f"/>
+      <!-- big door ring -->
+      <circle cx="336" cy="282" r="76" fill="#dce8ee" stroke="#b9b1a3" stroke-width="5"/>
+      <circle cx="336" cy="282" r="63" fill="#eaf2f6" stroke="#7fb3c8" stroke-width="2.5"/>
+      <!-- one big fluffy comforter tumbling inside -->
+      <path d="M290 250 q44 -22 92 -2 q10 34 -8 58 q-40 18 -82 2 q-16 -28 -2 -58 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5"/>
+      <path d="M308 262 q10 24 0 44 M336 256 q-8 28 0 50 M364 262 q10 24 0 44" stroke="#dce8ee" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <!-- water swirl -->
+      <path d="M300 320 q12 7 24 0 q12 -7 24 0 q12 7 24 0" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- door latch -->
+      <circle cx="412" cy="282" r="5" fill="#b9b1a3"/>
+      <!-- detergent bottle -->
+      <rect x="460" y="290" width="46" height="62" rx="8" fill="#3e7c59"/>
+      <rect x="468" y="274" width="20" height="18" rx="4" fill="#2c5a40"/>
+      <rect x="464" y="306" width="38" height="26" rx="4" fill="#fffdf8"/>
+      <rect x="469" y="313" width="28" height="5" rx="2.5" fill="#5e9a78"/>
+      <rect x="469" y="322" width="20" height="4" rx="2" fill="#b9b1a3"/>
+      <!-- wool dryer balls -->
+      <circle cx="472" cy="364" r="14" fill="#e0a93d"/>
+      <circle cx="500" cy="368" r="13" fill="#d98e3b"/>
+      <circle cx="454" cy="374" r="11" fill="#c9a06b"/>
+      <path d="M466 358 q6 6 12 12 M494 362 q6 6 12 12" stroke="#fffdf8" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+      <!-- machine feet -->
+      <rect x="246" y="364" width="16" height="14" rx="4" fill="#b9b1a3"/>
+      <rect x="410" y="364" width="16" height="14" rx="4" fill="#b9b1a3"/>
+      <!-- plant -->
+      <path d="M196 348 q-2 -24 -12 -34" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M196 348 q4 -22 14 -30" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="180" cy="314" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 180 314)"/>
+      <ellipse cx="214" cy="318" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 214 318)"/>
+      <path d="M182 348 h28 l-4 16 h-20 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="336" cy="386" rx="124" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

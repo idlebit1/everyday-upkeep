@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a warm, reassuring women's-health clinic scene: a friendly doctor stands with a clipboard beside a wall calendar marked with a yearly reminder, a labelled health-record folder rests on a small table, and a leafy plant adds warmth — calm and non-clinical, with no anatomical detail">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- soft room panel behind -->
+      <rect x="150" y="40" width="330" height="300" rx="14" fill="#fffdf8" stroke="#e9e2d8" stroke-width="4"/>
+      <!-- warm window on the wall letting in light -->
+      <rect x="332" y="66" width="120" height="128" rx="8" fill="#dce8ee" stroke="#8a6a4f" stroke-width="5"/>
+      <rect x="390" y="70" width="6" height="120" fill="#8a6a4f"/>
+      <rect x="336" y="126" width="112" height="6" fill="#8a6a4f"/>
+      <g stroke="#fffdf8" stroke-width="6" stroke-linecap="round" opacity="0.85">
+        <line x1="348" y1="176" x2="392" y2="96"/>
+        <line x1="366" y1="182" x2="404" y2="110"/>
+      </g>
+
+      <!-- wall calendar with a yearly reminder ring -->
+      <rect x="178" y="70" width="118" height="112" rx="10" fill="#fffdf8" stroke="#e9e2d8" stroke-width="3"/>
+      <rect x="178" y="70" width="118" height="26" rx="10" fill="#3e7c59"/>
+      <rect x="178" y="86" width="118" height="12" fill="#3e7c59"/>
+      <circle cx="200" cy="70" r="5" fill="#8a6a4f"/>
+      <circle cx="274" cy="70" r="5" fill="#8a6a4f"/>
+      <g fill="#cdd9de">
+        <rect x="188" y="106" width="16" height="12" rx="2"/>
+        <rect x="210" y="106" width="16" height="12" rx="2"/>
+        <rect x="232" y="106" width="16" height="12" rx="2"/>
+        <rect x="254" y="106" width="16" height="12" rx="2"/>
+        <rect x="188" y="124" width="16" height="12" rx="2"/>
+        <rect x="210" y="124" width="16" height="12" rx="2"/>
+        <rect x="254" y="124" width="16" height="12" rx="2"/>
+        <rect x="188" y="142" width="16" height="12" rx="2"/>
+        <rect x="232" y="142" width="16" height="12" rx="2"/>
+        <rect x="254" y="142" width="16" height="12" rx="2"/>
+      </g>
+      <!-- the annual reminder circled in gold -->
+      <circle cx="240" cy="130" r="14" fill="none" stroke="#e0a93d" stroke-width="3.5"/>
+      <path d="M234 130 l4 4 l7 -8" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- friendly doctor with a clipboard -->
+      <!-- head -->
+      <circle cx="118" cy="150" r="26" fill="#e8b48f"/>
+      <path d="M92 146 q0 -30 26 -30 q26 0 26 30 q-8 -12 -26 -12 q-18 0 -26 12 z" fill="#5b4636"/>
+      <!-- warm smile -->
+      <path d="M108 158 q10 8 20 0" stroke="#b5764f" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <circle cx="110" cy="147" r="2.4" fill="#5b4636"/>
+      <circle cx="126" cy="147" r="2.4" fill="#5b4636"/>
+      <!-- body / white coat -->
+      <path d="M78 320 q0 -110 40 -142 q40 32 40 142 z" fill="#fffdf8" stroke="#e9e2d8" stroke-width="3"/>
+      <!-- teal top under the coat -->
+      <path d="M104 188 q14 12 28 0 l0 40 q-14 10 -28 0 z" fill="#5e9a78"/>
+      <!-- coat lapels -->
+      <path d="M118 182 l-16 26 l10 6 z" fill="#f4f0e8"/>
+      <path d="M118 182 l16 26 l-10 6 z" fill="#f4f0e8"/>
+      <!-- stethoscope, gentle and non-clinical -->
+      <path d="M108 190 q-14 26 6 44 q20 18 20 -8" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="134" cy="228" r="6" fill="#5e9a78"/>
+      <!-- arm holding clipboard -->
+      <path d="M138 224 q22 6 30 26" stroke="#fffdf8" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M138 224 q22 6 30 26" stroke="#e9e2d8" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.4"/>
+      <!-- clipboard -->
+      <rect x="150" y="242" width="60" height="76" rx="6" fill="#c96f4a"/>
+      <rect x="156" y="250" width="48" height="60" rx="4" fill="#fffdf8"/>
+      <rect x="172" y="238" width="16" height="8" rx="3" fill="#8a6a4f"/>
+      <g stroke="#cdd9de" stroke-width="2.4" stroke-linecap="round">
+        <line x1="164" y1="264" x2="196" y2="264"/>
+        <line x1="164" y1="276" x2="196" y2="276"/>
+        <line x1="164" y1="288" x2="184" y2="288"/>
+      </g>
+      <g stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round">
+        <path d="M164 264 l-6 0 M161 261 l0 6"/>
+      </g>
+
+      <!-- small table with a labelled health-record folder -->
+      <rect x="330" y="300" width="150" height="12" rx="4" fill="#8a6a4f"/>
+      <rect x="342" y="312" width="10" height="30" rx="3" fill="#8a6a4f"/>
+      <rect x="458" y="312" width="10" height="30" rx="3" fill="#8a6a4f"/>
+      <!-- folder -->
+      <path d="M356 258 h44 l8 12 h44 v34 h-96 z" fill="#e0a93d"/>
+      <rect x="356" y="270" width="96" height="30" rx="3" fill="#f0c765"/>
+      <rect x="372" y="252" width="60" height="20" rx="4" fill="#fffdf8"/>
+      <g stroke="#d8cfbe" stroke-width="2" stroke-linecap="round">
+        <line x1="380" y1="260" x2="424" y2="260"/>
+        <line x1="380" y1="266" x2="412" y2="266"/>
+      </g>
+      <!-- little health cross on the folder tab -->
+      <g stroke="#c96f4a" stroke-width="3" stroke-linecap="round">
+        <path d="M402 256 l0 12 M396 262 l12 0"/>
+      </g>
+
+      <!-- plant for warmth -->
+      <path d="M486 344 h34 l-5 34 h-24 z" fill="#c96f4a"/>
+      <path d="M503 344 q-4 -26 -16 -36" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M503 344 q5 -24 18 -32" stroke="#3e7c59" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="484" cy="304" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 484 304)"/>
+      <ellipse cx="522" cy="308" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 522 308)"/>
+      <ellipse cx="503" cy="296" rx="7" ry="12" fill="#5e9a78"/>
+    </svg>

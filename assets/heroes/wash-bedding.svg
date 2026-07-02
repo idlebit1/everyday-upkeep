@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a cozy bed with plump pillows and a green duvet, sunlight through a window, and a neat stack of freshly folded linens on a wooden bench beside it">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="56" y="52" width="118" height="138" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="115" y1="55" x2="115" y2="187" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="59" y1="121" x2="171" y2="121" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="92" cy="90" r="18" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="92" y1="62" x2="92" y2="68"/>
+        <line x1="120" y1="90" x2="114" y2="90"/>
+        <line x1="111" y1="71" x2="107" y2="75"/>
+      </g>
+      <rect x="44" y="44" width="142" height="10" rx="5" fill="#8a6a4f"/>
+      <path d="M178 54 q14 60 6 136 l-14 0 q6 -76 -2 -136 z" fill="#c96f4a"/>
+      <!-- bed -->
+      <rect x="206" y="132" width="20" height="196" rx="9" fill="#8a6a4f"/>
+      <rect x="216" y="148" width="14" height="120" rx="7" fill="#c9a06b"/>
+      <rect x="222" y="238" width="288" height="50" rx="12" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="222" y="288" width="288" height="24" rx="7" fill="#c9a06b"/>
+      <rect x="234" y="312" width="13" height="52" rx="5" fill="#8a6a4f"/>
+      <rect x="486" y="312" width="13" height="52" rx="5" fill="#8a6a4f"/>
+      <!-- pillows -->
+      <rect x="230" y="190" width="86" height="40" rx="18" fill="#dce8ee" transform="rotate(-6 273 210)"/>
+      <rect x="244" y="174" width="84" height="38" rx="17" fill="#fffdf8" stroke="#e6dccb" stroke-width="2" transform="rotate(-4 286 193)"/>
+      <!-- duvet -->
+      <path d="M312 222 h170 q22 0 22 20 v26 q0 16 -14 16 h-178 q-14 0 -14 -16 v-26 q0 -20 14 -20 z" fill="#3e7c59"/>
+      <path d="M312 222 h170 q22 0 22 20 l-206 0 q0 -20 14 -20 z" fill="#5e9a78"/>
+      <path d="M352 242 q4 22 0 40 M404 242 q-4 22 0 40 M456 242 q4 22 0 40" stroke="#2c5a40" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- throw blanket at the foot -->
+      <path d="M442 224 h62 q12 0 12 14 v66 q0 10 -10 10 q-10 0 -10 -10 v-50 h-54 z" fill="#c96f4a"/>
+      <path d="M448 236 h62 M448 250 h62" stroke="#d9663f" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- fresh sparkles -->
+      <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+        <path d="M340 152 v12 M334 158 h12"/>
+        <path d="M390 132 v10 M385 137 h10"/>
+        <path d="M438 158 v8 M434 162 h8"/>
+      </g>
+      <!-- bench with folded linens -->
+      <rect x="58" y="330" width="108" height="13" rx="6" fill="#8a6a4f"/>
+      <rect x="68" y="343" width="10" height="34" rx="4" fill="#8a6a4f"/>
+      <rect x="146" y="343" width="10" height="34" rx="4" fill="#8a6a4f"/>
+      <rect x="68" y="312" width="88" height="18" rx="7" fill="#7fb3c8"/>
+      <line x1="112" y1="315" x2="112" y2="327" stroke="#dce8ee" stroke-width="3"/>
+      <rect x="72" y="296" width="80" height="16" rx="7" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="76" y="280" width="72" height="16" rx="7" fill="#e0a93d"/>
+      <line x1="112" y1="283" x2="112" y2="293" stroke="#d98e3b" stroke-width="3"/>
+      <!-- plant -->
+      <path d="M524 332 q-2 -26 -14 -38" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M524 332 q4 -24 16 -34" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="506" cy="290" rx="9" ry="14" fill="#5e9a78" transform="rotate(-32 506 290)"/>
+      <ellipse cx="544" cy="294" rx="9" ry="14" fill="#3e7c59" transform="rotate(30 544 294)"/>
+      <path d="M508 332 h34 l-5 34 h-24 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="360" cy="386" rx="120" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

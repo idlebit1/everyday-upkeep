@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tidy desk: a laptop showing a list of subscriptions with several being cancelled and money flowing back to a wallet, beside a phone with a shield and lock for security, and a cleared-out storage bar — the annual digital cleanup in progress">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="64" cy="60" r="20" fill="#f2cf7a"/>
+      <!-- coins floating back / savings -->
+      <circle cx="96" cy="120" r="16" fill="#e0a93d"/>
+      <text x="96" y="126" font-size="16" font-weight="800" fill="#fffdf8" text-anchor="middle">$</text>
+      <circle cx="128" cy="92" r="11" fill="#d98e3b"/>
+      <text x="128" y="97" font-size="11" font-weight="800" fill="#fffdf8" text-anchor="middle">$</text>
+      <!-- laptop: subscription list -->
+      <rect x="98" y="158" width="246" height="150" rx="12" fill="#8a6a4f"/>
+      <rect x="110" y="170" width="222" height="126" rx="6" fill="#fffdf8"/>
+      <rect x="122" y="182" width="92" height="10" rx="5" fill="#b9b1a3"/>
+      <circle cx="320" cy="187" r="6" fill="#5e9a78"/>
+      <!-- subscription rows: two cancelled (terracotta strike), two kept (green) -->
+      <rect x="122" y="204" width="198" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="122" y="204" width="120" height="14" rx="7" fill="#3e7c59"/>
+      <rect x="122" y="226" width="198" height="14" rx="7" fill="#fbe9e1"/>
+      <rect x="122" y="226" width="92" height="14" rx="7" fill="#d9663f"/>
+      <line x1="126" y1="233" x2="316" y2="233" stroke="#c96f4a" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="122" y="248" width="198" height="14" rx="7" fill="#e3efe8"/>
+      <rect x="122" y="248" width="74" height="14" rx="7" fill="#5e9a78"/>
+      <rect x="122" y="270" width="198" height="14" rx="7" fill="#fbe9e1"/>
+      <rect x="122" y="270" width="138" height="14" rx="7" fill="#d9663f"/>
+      <line x1="126" y1="277" x2="316" y2="277" stroke="#c96f4a" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- laptop base -->
+      <rect x="80" y="306" width="282" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="196" y="306" width="50" height="7" rx="3.5" fill="#8a6a4f"/>
+      <!-- arrow: cancellations -> wallet (money back) -->
+      <path d="M150 330 Q120 360 92 372" stroke="#e0a93d" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 11"/>
+      <polygon points="100,362 88,378 84,360" fill="#e0a93d"/>
+      <!-- wallet -->
+      <rect x="40" y="372" width="74" height="44" rx="9" fill="#8a6a4f"/>
+      <rect x="40" y="372" width="74" height="13" rx="6.5" fill="#c9a06b"/>
+      <rect x="84" y="388" width="26" height="16" rx="6" fill="#5e9a78"/>
+      <circle cx="97" cy="396" r="4" fill="#e0a93d"/>
+      <!-- phone: security shield -->
+      <rect x="404" y="180" width="84" height="156" rx="15" fill="#2c5a40"/>
+      <rect x="412" y="196" width="68" height="116" rx="7" fill="#fffdf8"/>
+      <!-- shield with lock -->
+      <path d="M446 210 l26 9 v22 c0 20 -14 30 -26 36 c-12 -6 -26 -16 -26 -36 v-22 z" fill="#e3efe8" stroke="#3e7c59" stroke-width="3"/>
+      <rect x="438" y="247" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <path d="M441 247 v-4 a5 5 0 0 1 10 0 v4" stroke="#3e7c59" stroke-width="2.5" fill="none"/>
+      <circle cx="446" cy="253" r="2.2" fill="#fffdf8"/>
+      <!-- 2FA check below -->
+      <circle cx="446" cy="294" r="11" fill="#e0a93d"/>
+      <path d="M441 294 l3.5 3.5 l6 -7" stroke="#fffdf8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="446" cy="326" r="4" fill="#5e9a78"/>
+      <!-- storage bar: freed up -->
+      <rect x="372" y="356" width="150" height="20" rx="10" fill="#dce8ee"/>
+      <rect x="372" y="356" width="54" height="20" rx="10" fill="#7fb3c8"/>
+      <text x="448" y="392" font-size="12" fill="#6b7376" text-anchor="middle">storage freed</text>
+      <!-- broom / sweep motif -->
+      <rect x="338" y="362" width="6" height="40" rx="3" fill="#8a6a4f" transform="rotate(28 341 382)"/>
+      <path d="M352 392 l20 10 l-6 14 l-22 -10 z" fill="#e0a93d" transform="rotate(28 360 404)"/>
+      <!-- plant -->
+      <path d="M520 360 q4 -26 -8 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M520 360 q-4 -24 -16 -32" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="508" cy="320" rx="9" ry="14" fill="#5e9a78" transform="rotate(-26 508 320)"/>
+      <ellipse cx="524" cy="324" rx="9" ry="14" fill="#3e7c59" transform="rotate(26 524 324)"/>
+      <path d="M504 360 h32 l-5 30 h-22 z" fill="#c96f4a"/>
+      <rect x="500" y="354" width="40" height="10" rx="5" fill="#d9663f"/>
+    </svg>

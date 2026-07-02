@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a green lawn with a thin bare patch being filled by a broadcast spreader scattering grass seed, with new seedlings sprouting, under a bright sun with a fence and shrubs behind">
+      <ellipse cx="290" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="478" cy="64" r="26" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round">
+        <line x1="478" y1="20" x2="478" y2="30"/>
+        <line x1="478" y1="98" x2="478" y2="108"/>
+        <line x1="434" y1="64" x2="444" y2="64"/>
+        <line x1="512" y1="64" x2="522" y2="64"/>
+        <line x1="447" y1="33" x2="454" y2="40"/>
+        <line x1="502" y1="88" x2="509" y2="95"/>
+        <line x1="509" y1="33" x2="502" y2="40"/>
+      </g>
+      <ellipse cx="120" cy="78" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="170" cy="92" rx="30" ry="16" fill="#dce8ee"/>
+      <ellipse cx="330" cy="56" rx="34" ry="17" fill="#dce8ee"/>
+      <!-- fence -->
+      <g fill="#b9b1a3">
+        <rect x="36" y="196" width="14" height="74" rx="4"/>
+        <rect x="76" y="196" width="14" height="74" rx="4"/>
+        <rect x="116" y="196" width="14" height="74" rx="4"/>
+        <rect x="156" y="196" width="14" height="74" rx="4"/>
+        <rect x="196" y="196" width="14" height="74" rx="4"/>
+      </g>
+      <rect x="28" y="208" width="190" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="28" y="240" width="190" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- shrubs -->
+      <circle cx="262" cy="248" r="28" fill="#2c5a40"/>
+      <circle cx="296" cy="258" r="22" fill="#3e7c59"/>
+      <circle cx="510" cy="262" r="26" fill="#5e9a78"/>
+      <circle cx="540" cy="272" r="18" fill="#3e7c59"/>
+      <!-- lawn -->
+      <path d="M10 290 Q280 262 550 290 L550 392 Q280 412 10 392 Z" fill="#3e7c59"/>
+      <path d="M10 322 Q280 298 550 322 L550 392 Q280 412 10 392 Z" fill="#5e9a78" opacity="0.45"/>
+      <!-- thin / bare patch being filled -->
+      <ellipse cx="180" cy="360" rx="46" ry="24" fill="#c9a06b" opacity="0.85"/>
+      <ellipse cx="180" cy="360" rx="46" ry="24" fill="none" stroke="#8a6a4f" stroke-width="1.5" opacity="0.4"/>
+      <!-- new seedlings sprouting in the patch -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" fill="none">
+        <path d="M162 366 v-9 M168 366 l3 -7 M156 366 l-3 -7"/>
+        <path d="M186 368 v-9 M192 368 l3 -7 M180 368 l-3 -7"/>
+        <path d="M204 362 v-8 M209 362 l3 -6 M199 362 l-3 -6"/>
+        <path d="M174 354 v-7 M194 356 v-7"/>
+      </g>
+      <!-- grass tufts -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round" fill="none">
+        <path d="M60 340 v-12 M67 340 l4 -10 M53 340 l-4 -10"/>
+        <path d="M460 350 v-12 M467 350 l4 -10 M453 350 l-4 -10"/>
+        <path d="M520 376 v-12 M527 376 l4 -10 M513 376 l-4 -10"/>
+        <path d="M90 384 v-11 M97 384 l4 -9 M83 384 l-4 -9"/>
+      </g>
+      <!-- seed fan landing on the patch -->
+      <g fill="#d9b06a">
+        <circle cx="222" cy="330" r="3.5"/>
+        <circle cx="200" cy="344" r="3.5"/>
+        <circle cx="234" cy="352" r="3"/>
+        <circle cx="210" cy="364" r="3"/>
+        <circle cx="244" cy="372" r="3"/>
+        <circle cx="186" cy="352" r="3"/>
+      </g>
+      <g fill="#c9a06b">
+        <circle cx="214" cy="316" r="3"/>
+        <circle cx="192" cy="332" r="3"/>
+        <circle cx="226" cy="340" r="2.5"/>
+        <circle cx="172" cy="346" r="2.5"/>
+        <circle cx="220" cy="360" r="2.5"/>
+      </g>
+      <!-- broadcast spreader -->
+      <g>
+        <line x1="330" y1="338" x2="408" y2="270" stroke="#8a6a4f" stroke-width="9" stroke-linecap="round"/>
+        <line x1="398" y1="262" x2="422" y2="282" stroke="#8a6a4f" stroke-width="9" stroke-linecap="round"/>
+        <path d="M296 308 L368 308 L350 352 L314 352 Z" fill="#c96f4a"/>
+        <path d="M296 308 L368 308 L362 322 L302 322 Z" fill="#d9663f"/>
+        <rect x="322" y="352" width="20" height="16" fill="#8a6a4f"/>
+        <circle cx="306" cy="378" r="18" fill="#33393b"/>
+        <circle cx="306" cy="378" r="7" fill="#b9b1a3"/>
+        <circle cx="360" cy="378" r="18" fill="#33393b"/>
+        <circle cx="360" cy="378" r="7" fill="#b9b1a3"/>
+        <ellipse cx="332" cy="372" rx="14" ry="5" fill="#7fb3c8"/>
+      </g>
+      <!-- seed in hopper -->
+      <g fill="#d9b06a">
+        <circle cx="316" cy="304" r="3"/>
+        <circle cx="332" cy="302" r="3"/>
+        <circle cx="348" cy="304" r="3"/>
+      </g>
+      <circle cx="120" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="142" cy="396" r="10" fill="#3e7c59"/>
+    </svg>

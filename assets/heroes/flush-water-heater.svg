@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a utility room where a tall water heater tank is being flushed: a garden hose runs from the drain valve at the bottom of the tank across the floor to a floor drain, carrying flecks of sediment, with the gas dial set to pilot, a bucket and wrench nearby, and shelves on the wall">
+      <ellipse cx="285" cy="400" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- wall shelf with supplies -->
+      <rect x="36" y="76" width="150" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="50" y="44" width="26" height="32" rx="4" fill="#c96f4a"/>
+      <rect x="86" y="50" width="34" height="26" rx="4" fill="#7fb3c8"/>
+      <rect x="130" y="40" width="20" height="36" rx="4" fill="#e0a93d"/>
+      <rect x="36" y="156" width="150" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="54" y="124" width="40" height="32" rx="4" fill="#dce8ee"/>
+      <rect x="106" y="118" width="28" height="38" rx="4" fill="#5e9a78"/>
+      <!-- flue pipe -->
+      <rect x="318" y="22" width="26" height="64" rx="6" fill="#b9b1a3"/>
+      <rect x="308" y="14" width="46" height="12" rx="6" fill="#8a6a4f"/>
+      <!-- cold inlet pipe with shutoff -->
+      <rect x="394" y="58" width="12" height="60" rx="5" fill="#b9b1a3"/>
+      <rect x="380" y="74" width="40" height="10" rx="5" fill="#d9663f"/>
+      <!-- water heater tank -->
+      <rect x="252" y="86" width="158" height="244" rx="34" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <rect x="252" y="120" width="158" height="14" rx="7" fill="#dce8ee"/>
+      <rect x="252" y="282" width="158" height="14" rx="7" fill="#dce8ee"/>
+      <!-- rating label -->
+      <rect x="294" y="160" width="74" height="92" rx="8" fill="#dce8ee"/>
+      <rect x="302" y="172" width="58" height="7" rx="3.5" fill="#fffdf8"/>
+      <rect x="302" y="186" width="44" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="302" y="198" width="50" height="6" rx="3" fill="#fffdf8"/>
+      <circle cx="312" cy="228" r="9" fill="#7fb3c8"/>
+      <rect x="328" y="222" width="30" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="328" y="234" width="22" height="6" rx="3" fill="#fffdf8"/>
+      <!-- T&P valve on the side -->
+      <rect x="404" y="148" width="26" height="12" rx="5" fill="#e0a93d"/>
+      <rect x="424" y="156" width="9" height="44" rx="4" fill="#b9b1a3"/>
+      <!-- gas control box with dial on PILOT -->
+      <rect x="282" y="296" width="56" height="34" rx="7" fill="#d98e3b"/>
+      <circle cx="300" cy="313" r="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+      <line x1="300" y1="313" x2="293" y2="306" stroke="#33393b" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="316" y="306" width="16" height="6" rx="3" fill="#faf0da"/>
+      <!-- gas supply line -->
+      <path d="M282 318 Q236 322 232 354" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- legs / base -->
+      <rect x="268" y="330" width="14" height="38" rx="5" fill="#b9b1a3"/>
+      <rect x="382" y="330" width="14" height="38" rx="5" fill="#b9b1a3"/>
+      <!-- drain valve + spigot -->
+      <rect x="396" y="306" width="26" height="14" rx="5" fill="#d9663f"/>
+      <circle cx="422" cy="313" r="8" fill="#e0a93d"/>
+      <!-- garden hose from drain valve to floor drain -->
+      <path d="M426 318 Q470 336 466 366 Q462 392 414 392 L160 392" stroke="#5e9a78" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <!-- sediment-flecked water at the hose mouth -->
+      <path d="M160 392 Q140 392 128 384" stroke="#7fb3c8" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <g fill="#8a6a4f">
+        <circle cx="142" cy="386" r="2.5"/>
+        <circle cx="126" cy="378" r="2.5"/>
+        <circle cx="112" cy="382" r="2"/>
+      </g>
+      <g fill="#7fb3c8">
+        <circle cx="118" cy="372" r="2.5"/>
+        <circle cx="104" cy="378" r="2.5"/>
+      </g>
+      <!-- floor drain -->
+      <ellipse cx="96" cy="390" rx="26" ry="9" fill="#b9b1a3"/>
+      <ellipse cx="96" cy="390" rx="16" ry="5" fill="#33393b" opacity="0.45"/>
+      <!-- bucket for the first sediment check -->
+      <path d="M192 332 h44 l-6 40 h-32 z" fill="#7fb3c8"/>
+      <path d="M192 332 h44 l-2 12 h-40 z" fill="#dce8ee"/>
+      <path d="M196 330 q18 -16 36 0" stroke="#8a6a4f" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <!-- wrench on the floor -->
+      <g transform="rotate(-18 488 380)">
+        <rect x="474" y="376" width="34" height="7" rx="3.5" fill="#8a6a4f"/>
+        <circle cx="472" cy="379" r="7" fill="#8a6a4f"/>
+        <circle cx="472" cy="379" r="3" fill="#efe7d8"/>
+      </g>
+      <!-- small plant for warmth -->
+      <path d="M210 268 q-2 -18 -10 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M210 268 q4 -16 12 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="197" cy="238" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 197 238)"/>
+      <ellipse cx="225" cy="242" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 225 242)"/>
+      <path d="M198 268 h26 l-4 24 h-18 z" fill="#c96f4a"/>
+    </svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration comparing insoles: on the left a worn, compressed insole with a flattened heel and a worn-through hole pulled out of a tired shoe whose insole is lifted; on the right a fresh, plump cushioned insole with intact arch support; a pair of scissors for trimming to fit rests nearby, and the shoes sit on a mudroom bench">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- mudroom bench / floor line -->
+      <rect x="34" y="356" width="492" height="20" rx="6" fill="#8a6a4f"/>
+      <rect x="34" y="376" width="492" height="10" rx="4" fill="#6f5540"/>
+      <!-- wall hooks / peg rail for a mudroom feel -->
+      <rect x="60" y="24" width="440" height="10" rx="4" fill="#b9b1a3"/>
+      <circle cx="120" cy="42" r="5" fill="#8a6a4f"/>
+      <circle cx="280" cy="42" r="5" fill="#8a6a4f"/>
+      <circle cx="440" cy="42" r="5" fill="#8a6a4f"/>
+
+      <!-- ===== LEFT: tired shoe with insole LIFTED ===== -->
+      <g>
+        <!-- shoe body (drab, tired) -->
+        <path d="M64 322 L64 276 Q64 256 86 254 Q112 252 122 272 Q128 284 146 278 Q152 264 168 266 Q198 272 220 290 Q244 308 250 312 L250 322 Z" fill="#8a9a8c"/>
+        <!-- collapsed heel collar -->
+        <path d="M64 276 Q64 256 86 254 Q112 252 122 272 L114 280 Q104 264 88 268 Q76 272 76 288 L76 322 L64 322 Z" fill="#6e7d70"/>
+        <!-- tired outsole -->
+        <path d="M56 322 L252 322 L248 336 Q248 340 242 340 L62 340 Q56 340 56 335 Z" fill="#b06a4a"/>
+        <!-- the insole LIFTED out and tilted up from the shoe -->
+        <path d="M120 258 Q108 214 128 190 Q150 168 188 172 Q214 176 218 200 Q222 234 208 262 Z" fill="#c9bfab" stroke="#b9b1a3" stroke-width="2.5"/>
+        <!-- compressed heel patch on the lifted insole -->
+        <ellipse cx="140" cy="242" rx="20" ry="16" fill="#b0a690"/>
+        <!-- worn-through hole -->
+        <ellipse cx="182" cy="206" rx="11" ry="14" fill="#8a9a8c"/>
+        <ellipse cx="182" cy="206" rx="6" ry="8" fill="#6e7d70"/>
+        <!-- creases showing it's packed flat -->
+        <g stroke="#a89e88" stroke-width="2" fill="none" stroke-linecap="round">
+          <path d="M132 224 q10 4 20 0"/>
+          <path d="M150 250 q10 4 22 -2"/>
+        </g>
+        <text x="88" y="360" font-size="12" fill="#d9663f" font-weight="700">worn — footbed dead</text>
+      </g>
+
+      <!-- ===== RIGHT: fresh cushioned insole ===== -->
+      <g>
+        <!-- fresh insole standing, plump with arch support -->
+        <path d="M356 320 Q342 268 366 226 Q390 190 434 196 Q466 200 470 232 Q474 280 456 316 Z" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <!-- gold cushioning zone (heel) -->
+        <ellipse cx="378" cy="298" rx="24" ry="18" fill="#e0a93d"/>
+        <ellipse cx="378" cy="298" rx="14" ry="10" fill="#d98e3b"/>
+        <!-- raised arch-support contour -->
+        <path d="M404 300 Q396 262 420 240 Q440 224 456 236" fill="none" stroke="#5e9a78" stroke-width="6" stroke-linecap="round"/>
+        <path d="M414 292 Q408 264 426 248" fill="none" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+        <!-- fresh sparkle -->
+        <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+          <path d="M448 208 l0 10 M443 213 l10 0"/>
+        </g>
+        <text x="366" y="360" font-size="12" fill="#3e7c59" font-weight="700">fresh — full cushion</text>
+      </g>
+
+      <!-- scissors for trimming to fit, front-center -->
+      <g transform="rotate(18 300 340)">
+        <!-- blades -->
+        <path d="M300 300 L336 336" stroke="#7fb3c8" stroke-width="6" stroke-linecap="round"/>
+        <path d="M300 300 L336 288" stroke="#9cc3d4" stroke-width="6" stroke-linecap="round"/>
+        <!-- handle loops -->
+        <circle cx="292" cy="300" r="10" fill="none" stroke="#5e9a78" stroke-width="5"/>
+        <circle cx="286" cy="314" r="10" fill="none" stroke="#3e7c59" stroke-width="5"/>
+        <!-- pivot -->
+        <circle cx="300" cy="300" r="3.5" fill="#8a6a4f"/>
+      </g>
+      <!-- dotted trim guide line under the scissors -->
+      <path d="M330 336 q30 -4 58 6" stroke="#d9663f" stroke-width="2.4" stroke-dasharray="2 6" fill="none" stroke-linecap="round"/>
+      <text x="330" y="330" font-size="11" fill="#d9663f" font-weight="700">trim to fit</text>
+
+      <!-- small plant on the bench for warmth -->
+      <path d="M500 344 h24 l-4 24 h-16 z" fill="#c96f4a"/>
+      <path d="M512 344 q-3 -18 -12 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M512 344 q4 -16 14 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="497" cy="316" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 497 316)"/>
+      <ellipse cx="527" cy="320" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 527 320)"/>
+    </svg>

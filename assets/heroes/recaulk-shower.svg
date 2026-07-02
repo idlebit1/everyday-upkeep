@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tiled shower-and-tub corner being re-caulked: a hand caulk gun lays a fresh white bead along the joint where the tub meets the tile, painter's tape runs along both sides of the line for crisp edges, the old cracked and black-mold-streaked caulk is being pulled out below, and a tube of silicone, a removal tool, rubbing alcohol, and a small plant sit nearby">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- tiled shower wall -->
+      <rect x="60" y="40" width="300" height="240" rx="10" fill="#eef4f7"/>
+      <g stroke="#dce8ee" stroke-width="3">
+        <line x1="60" y1="110" x2="360" y2="110"/>
+        <line x1="60" y1="180" x2="360" y2="180"/>
+        <line x1="60" y1="250" x2="360" y2="250"/>
+        <line x1="135" y1="40" x2="135" y2="280"/>
+        <line x1="210" y1="40" x2="210" y2="280"/>
+        <line x1="285" y1="40" x2="285" y2="280"/>
+      </g>
+
+      <!-- tub deck below, meeting the wall -->
+      <rect x="40" y="280" width="340" height="70" rx="12" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <ellipse cx="210" cy="320" rx="120" ry="20" fill="#dce8ee"/>
+
+      <!-- the joint line where wall meets tub -->
+      <rect x="60" y="276" width="300" height="8" rx="4" fill="#e9e2d8"/>
+
+      <!-- old cracked, moldy caulk on the left half being removed -->
+      <rect x="64" y="277" width="120" height="6" rx="3" fill="#d8cfbe"/>
+      <circle cx="84" cy="280" r="3" fill="#33393b" opacity="0.55"/>
+      <circle cx="104" cy="280" r="2.6" fill="#5e9a78" opacity="0.6"/>
+      <circle cx="126" cy="280" r="3" fill="#33393b" opacity="0.5"/>
+      <circle cx="150" cy="280" r="2.4" fill="#33393b" opacity="0.5"/>
+      <!-- cracks in the old caulk -->
+      <path d="M96 277 l3 6 M138 277 l-3 6 M170 277 l2 6" stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- a peeled-up curl of old caulk -->
+      <path d="M170 278 q14 -10 26 -2 q-6 6 -14 6 z" fill="#d8cfbe" stroke="#b9b1a3" stroke-width="1.6"/>
+
+      <!-- caulk-removal tool pulling the old bead out -->
+      <rect x="150" y="300" width="58" height="13" rx="6" fill="#c96f4a" transform="rotate(-12 150 300)"/>
+      <path d="M192 296 l14 -6 l2 8 z" fill="#8a6a4f"/>
+
+      <!-- painter's tape along both sides of the right half of the joint -->
+      <rect x="200" y="268" width="156" height="7" rx="2" fill="#e0a93d" opacity="0.85"/>
+      <rect x="200" y="285" width="156" height="7" rx="2" fill="#e0a93d" opacity="0.85"/>
+
+      <!-- fresh white silicone bead being laid between the tape -->
+      <rect x="200" y="276" width="150" height="8" rx="4" fill="#fffdf8" stroke="#e6dccb" stroke-width="1.6"/>
+
+      <!-- caulk gun laying the bead -->
+      <rect x="300" y="208" width="86" height="22" rx="6" fill="#3e7c59" transform="rotate(34 300 208)"/>
+      <!-- gun barrel / tube -->
+      <rect x="288" y="232" width="60" height="30" rx="8" fill="#5e9a78" transform="rotate(34 288 232)"/>
+      <!-- tapered nozzle reaching the joint -->
+      <path d="M330 258 l24 16 l-8 8 l-22 -16 z" fill="#8a6a4f"/>
+      <!-- trigger handle -->
+      <path d="M356 226 q14 8 8 26" stroke="#2c5a40" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- niche shelf on the right with supplies -->
+      <rect x="392" y="196" width="150" height="12" rx="6" fill="#8a6a4f"/>
+      <!-- tube of silicone caulk standing on the shelf -->
+      <rect x="410" y="116" width="34" height="80" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <path d="M427 116 l10 -16 l-2 16 z" fill="#b9b1a3"/>
+      <rect x="430" y="92" width="6" height="12" rx="2" fill="#8a6a4f"/>
+      <rect x="410" y="140" width="34" height="30" fill="#3e7c59"/>
+      <g stroke="#e3efe8" stroke-width="3" stroke-linecap="round">
+        <line x1="417" y1="152" x2="437" y2="152"/>
+        <line x1="417" y1="162" x2="431" y2="162"/>
+      </g>
+      <!-- bottle of rubbing alcohol -->
+      <rect x="456" y="150" width="30" height="46" rx="6" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2"/>
+      <rect x="464" y="138" width="14" height="14" rx="3" fill="#7fb3c8"/>
+      <rect x="460" y="160" width="22" height="20" rx="3" fill="#fffdf8"/>
+      <!-- folded rag -->
+      <rect x="496" y="172" width="44" height="24" rx="5" fill="#c96f4a"/>
+      <line x1="496" y1="184" x2="540" y2="184" stroke="#a85638" stroke-width="2"/>
+
+      <!-- utility knife on the shelf -->
+      <rect x="492" y="148" width="46" height="9" rx="4.5" fill="#7fb3c8" transform="rotate(-8 492 148)"/>
+      <path d="M530 142 l12 -3 l1 7 z" fill="#b9b1a3" transform="rotate(-8 530 142)"/>
+
+      <!-- small plant for warmth at the far right floor -->
+      <path d="M506 352 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <path d="M519 352 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M519 352 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="504" cy="320" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 504 320)"/>
+      <ellipse cx="534" cy="324" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 534 324)"/>
+    </svg>

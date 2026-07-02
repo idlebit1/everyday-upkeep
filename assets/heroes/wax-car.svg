@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style green car parked in the shade of a tree, with a foam applicator laying a thin coat of wax on the door, water beading up into tight droplets on the glossy hood, and a microfiber cloth and tin of wax resting nearby">
+      <ellipse cx="280" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- shade tree -->
+      <rect x="74" y="120" width="16" height="120" rx="6" fill="#8a6a4f"/>
+      <circle cx="82" cy="96" r="48" fill="#5e9a78"/>
+      <circle cx="44" cy="120" r="34" fill="#3e7c59"/>
+      <circle cx="120" cy="118" r="34" fill="#3e7c59"/>
+      <circle cx="82" cy="138" r="30" fill="#5e9a78"/>
+      <!-- car body -->
+      <path d="M150 318 q0 -50 44 -54 l26 -3 q22 -36 70 -38 l92 0 q48 2 70 38 l34 5 q40 8 40 52 l0 22 q0 12 -12 12 l-352 0 q-12 0 -12 -12 z" fill="#3e7c59"/>
+      <!-- glossy hood with sheen -->
+      <path d="M150 320 q0 -50 44 -54 l26 -3 q10 -16 28 -26 q-44 12 -64 40 l-20 2 q-40 8 -40 52 z" fill="#5e9a78" opacity="0.6"/>
+      <path d="M222 262 q20 -30 64 -32 l88 0 q44 2 64 32 z" fill="#2c5a40"/>
+      <path d="M238 260 q16 -22 50 -24 l38 0 0 24 z" fill="#cfe3ec"/>
+      <path d="M338 236 l36 0 q34 2 50 24 l-86 0 z" fill="#cfe3ec"/>
+      <rect x="150" y="320" width="368" height="14" fill="#2c5a40"/>
+      <circle cx="500" cy="306" r="9" fill="#e0a93d"/>
+      <!-- wheels -->
+      <circle cx="234" cy="346" r="32" fill="#33393b"/>
+      <circle cx="234" cy="346" r="14" fill="#b9b1a3"/>
+      <circle cx="234" cy="346" r="5" fill="#8a6a4f"/>
+      <circle cx="452" cy="346" r="32" fill="#33393b"/>
+      <circle cx="452" cy="346" r="14" fill="#b9b1a3"/>
+      <circle cx="452" cy="346" r="5" fill="#8a6a4f"/>
+      <!-- water beading tight on the glossy hood -->
+      <g fill="#7fb3c8">
+        <ellipse cx="300" cy="296" rx="7" ry="6"/>
+        <ellipse cx="324" cy="288" rx="5" ry="4.5"/>
+        <ellipse cx="346" cy="298" rx="6" ry="5.5"/>
+        <ellipse cx="312" cy="306" rx="4.5" ry="4"/>
+        <ellipse cx="368" cy="290" rx="5" ry="4.5"/>
+        <ellipse cx="288" cy="284" rx="4" ry="3.5"/>
+      </g>
+      <g fill="#dce8ee" opacity="0.85">
+        <ellipse cx="298" cy="294" rx="2.6" ry="2.2"/>
+        <ellipse cx="344" cy="296" rx="2.2" ry="1.8"/>
+        <ellipse cx="366" cy="288" rx="2" ry="1.6"/>
+      </g>
+      <!-- sheen sparkle on the clean paint -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="408" y1="288" x2="408" y2="298"/>
+        <line x1="403" y1="293" x2="413" y2="293"/>
+        <line x1="262" y1="280" x2="262" y2="288"/>
+        <line x1="258" y1="284" x2="266" y2="284"/>
+      </g>
+      <!-- foam applicator laying wax on the door -->
+      <g transform="rotate(16 384 318)">
+        <ellipse cx="384" cy="320" rx="26" ry="15" fill="#dce8ee"/>
+        <ellipse cx="384" cy="320" rx="26" ry="15" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+        <rect x="372" y="300" width="24" height="12" rx="5" fill="#b9b1a3"/>
+      </g>
+      <!-- haze swath the applicator leaves behind -->
+      <path d="M408 326 q24 -4 48 2" stroke="#cfe3ec" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <!-- tin of wax on the ground -->
+      <g>
+        <ellipse cx="118" cy="384" rx="34" ry="11" fill="#c96f4a"/>
+        <rect x="84" y="366" width="68" height="18" fill="#c96f4a"/>
+        <ellipse cx="118" cy="366" rx="34" ry="11" fill="#d9663f"/>
+        <ellipse cx="118" cy="366" rx="22" ry="7" fill="#e0a93d"/>
+        <text x="118" y="370" font-size="10" font-weight="800" fill="#fffdf8" text-anchor="middle">WAX</text>
+      </g>
+      <!-- folded microfiber cloth on the ground -->
+      <g transform="rotate(-6 196 392)">
+        <rect x="160" y="378" width="72" height="26" rx="6" fill="#dce8ee"/>
+        <rect x="160" y="378" width="72" height="26" rx="6" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+        <g stroke="#7fb3c8" stroke-width="2.5"><line x1="178" y1="380" x2="178" y2="402"/><line x1="196" y1="380" x2="196" y2="402"/><line x1="214" y1="380" x2="214" y2="402"/></g>
+      </g>
+      <text x="196" y="372" font-size="13" font-weight="700" fill="#8a6a4f" text-anchor="middle" transform="rotate(-6 196 372)">buff with this</text>
+    </svg>

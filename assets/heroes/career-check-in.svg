@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a calm desk for a career check-in: an open notebook headed 'Career check-in' with a short goals list, a steaming coffee mug, a laptop showing a simple goals list beside an updated résumé and LinkedIn profile, a small upward progress arrow, and a little potted plant — reflective and encouraging, not corporate or grim">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- desk surface -->
+      <rect x="40" y="300" width="480" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="74" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+      <rect x="471" y="318" width="15" height="80" rx="6" fill="#8a6a4f"/>
+
+      <!-- laptop showing a goals list + updated résumé / LinkedIn -->
+      <rect x="150" y="120" width="232" height="158" rx="12" fill="#8a6a4f"/>
+      <rect x="162" y="132" width="208" height="134" rx="6" fill="#fffdf8"/>
+      <!-- screen split: goals list (left) -->
+      <rect x="174" y="146" width="70" height="9" rx="4.5" fill="#3e7c59"/>
+      <g stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round">
+        <line x1="180" y1="170" x2="240" y2="170"/>
+        <line x1="180" y1="184" x2="234" y2="184"/>
+        <line x1="180" y1="198" x2="240" y2="198"/>
+      </g>
+      <!-- little check bullets on the goals -->
+      <g stroke="#5e9a78" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M168 168 l2.5 2.5 l4 -5"/>
+        <path d="M168 182 l2.5 2.5 l4 -5"/>
+        <path d="M168 196 l2.5 2.5 l4 -5"/>
+      </g>
+      <!-- résumé / LinkedIn card (right) -->
+      <rect x="288" y="150" width="70" height="102" rx="6" fill="#e3efe8" stroke="#3e7c59" stroke-width="2"/>
+      <circle cx="304" cy="170" r="8" fill="#5e9a78"/>
+      <rect x="318" y="164" width="30" height="5" rx="2.5" fill="#5e9a78"/>
+      <rect x="318" y="173" width="22" height="5" rx="2.5" fill="#9cc3d4"/>
+      <line x1="298" y1="192" x2="348" y2="192" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="298" y1="202" x2="348" y2="202" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="298" y1="212" x2="340" y2="212" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- small "updated" badge -->
+      <rect x="316" y="232" width="34" height="12" rx="6" fill="#e0a93d"/>
+      <text x="333" y="241" font-size="8" fill="#fffdf8" font-weight="700" text-anchor="middle">updated</text>
+      <!-- laptop base -->
+      <rect x="132" y="276" width="268" height="14" rx="7" fill="#b9b1a3"/>
+      <rect x="236" y="276" width="60" height="7" rx="3.5" fill="#8a6a4f"/>
+
+      <!-- open notebook headed "Career check-in", front-left -->
+      <rect x="58" y="248" width="108" height="64" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5" transform="rotate(-7 112 280)"/>
+      <line x1="108" y1="252" x2="108" y2="312" stroke="#e9e2d8" stroke-width="2" transform="rotate(-7 112 280)"/>
+      <g transform="rotate(-7 112 280)">
+        <rect x="68" y="256" width="44" height="7" rx="3.5" fill="#3e7c59"/>
+        <line x1="68" y1="272" x2="102" y2="272" stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="68" y1="282" x2="98" y2="282" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="68" y1="292" x2="102" y2="292" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="68" y1="302" x2="94" y2="302" stroke="#dce8ee" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <rect x="140" y="266" width="46" height="7" rx="3.5" fill="#e0a93d" transform="rotate(20 163 269)"/>
+      <polygon points="184,284 192,290 183,292" fill="#8a6a4f"/>
+
+      <!-- coffee mug with steam, left -->
+      <path d="M62 230 q3 -16 10 -22" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M82 226 q-3 -18 6 -28" stroke="#b9b1a3" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="50" y="234" width="50" height="40" rx="8" fill="#c96f4a"/>
+      <rect x="50" y="234" width="50" height="9" rx="4.5" fill="#d9663f"/>
+      <path d="M100 242 q18 2 18 14 q0 12 -18 12" stroke="#c96f4a" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+      <!-- small upward progress arrow on the desk, right -->
+      <g>
+        <rect x="398" y="248" width="118" height="64" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <line x1="412" y1="298" x2="502" y2="298" stroke="#e9e2d8" stroke-width="2.5"/>
+        <line x1="412" y1="266" x2="412" y2="298" stroke="#e9e2d8" stroke-width="2.5"/>
+        <path d="M418 292 l22 -16 l18 8 l40 -34" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M486 250 l12 0 l0 12" fill="none" stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="498" cy="250" r="3.5" fill="#e0a93d"/>
+      </g>
+
+      <!-- small plant for warmth, far right on desk -->
+      <path d="M455 248 q-4 -28 -16 -38" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M455 248 q6 -26 18 -34" stroke="#3e7c59" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="436" cy="202" rx="9" ry="14" fill="#5e9a78" transform="rotate(-32 436 202)"/>
+      <ellipse cx="476" cy="206" rx="9" ry="14" fill="#3e7c59" transform="rotate(30 476 206)"/>
+      <ellipse cx="455" cy="190" rx="8" ry="13" fill="#5e9a78"/>
+      <path d="M438 248 h36 l-6 34 h-24 z" fill="#c96f4a"/>
+      <rect x="434" y="242" width="44" height="10" rx="5" fill="#d9663f"/>
+    </svg>

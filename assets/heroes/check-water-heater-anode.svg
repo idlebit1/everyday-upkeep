@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a basement utility room where a tall water heater tank has its top hex-head anode plug being loosened with a long breaker bar and socket; a corroded, depleted anode rod is pulled partway out of the top of the tank, and a fresh new rod waits beside it; the cold-water and hot-water lines run across the top of the tank">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall shelf with supplies -->
+      <rect x="38" y="70" width="132" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="52" y="40" width="24" height="30" rx="4" fill="#c96f4a"/>
+      <rect x="84" y="46" width="30" height="24" rx="4" fill="#7fb3c8"/>
+      <rect x="124" y="36" width="18" height="34" rx="4" fill="#e0a93d"/>
+
+      <!-- water heater tank -->
+      <rect x="232" y="118" width="170" height="252" rx="36" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <!-- jacket bands -->
+      <rect x="232" y="158" width="170" height="13" rx="6.5" fill="#dce8ee"/>
+      <rect x="232" y="322" width="170" height="13" rx="6.5" fill="#dce8ee"/>
+      <!-- rating label -->
+      <rect x="276" y="198" width="82" height="96" rx="8" fill="#dce8ee"/>
+      <rect x="284" y="210" width="64" height="7" rx="3.5" fill="#fffdf8"/>
+      <rect x="284" y="224" width="48" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="284" y="236" width="56" height="6" rx="3" fill="#fffdf8"/>
+      <circle cx="296" cy="268" r="9" fill="#7fb3c8"/>
+      <rect x="312" y="262" width="34" height="6" rx="3" fill="#fffdf8"/>
+      <rect x="312" y="274" width="26" height="6" rx="3" fill="#fffdf8"/>
+      <!-- legs -->
+      <rect x="250" y="370" width="14" height="38" rx="5" fill="#b9b1a3"/>
+      <rect x="370" y="370" width="14" height="38" rx="5" fill="#b9b1a3"/>
+
+      <!-- top of tank dome -->
+      <path d="M232 136 q85 -34 170 0" fill="none" stroke="#e6dccb" stroke-width="3"/>
+
+      <!-- cold-water inlet line (blue) on top right -->
+      <rect x="356" y="78" width="12" height="46" rx="5" fill="#7fb3c8"/>
+      <rect x="342" y="92" width="40" height="11" rx="5" fill="#5e9a78"/>
+      <text x="362" y="72" font-size="10" fill="#7fb3c8" font-weight="700" text-anchor="middle">cold</text>
+      <!-- hot-water outlet line (terracotta) on top left -->
+      <rect x="262" y="78" width="12" height="46" rx="5" fill="#b9b1a3"/>
+      <rect x="248" y="92" width="40" height="11" rx="5" fill="#d9663f"/>
+      <text x="268" y="72" font-size="10" fill="#d9663f" font-weight="700" text-anchor="middle">hot</text>
+
+      <!-- anode hex-head plug, center top of tank -->
+      <polygon points="305,128 323,128 332,138 323,148 305,148 296,138" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="2"/>
+      <!-- depleted/corroded anode rod pulled partway up out of the plug -->
+      <rect x="311" y="40" width="6" height="92" rx="3" fill="#8a6a4f"/>
+      <!-- corrosion pitting on the old rod -->
+      <g fill="#c96f4a">
+        <circle cx="314" cy="58" r="4.5"/>
+        <circle cx="313" cy="74" r="3.5"/>
+        <circle cx="315" cy="90" r="4"/>
+        <circle cx="314" cy="106" r="3"/>
+      </g>
+      <!-- exposed bare core wire near the top -->
+      <line x1="314" y1="40" x2="314" y2="52" stroke="#b9b1a3" stroke-width="2"/>
+
+      <!-- breaker bar + socket loosening the hex head -->
+      <!-- socket over the hex -->
+      <rect x="300" y="120" width="28" height="20" rx="4" fill="#5e9a78"/>
+      <!-- long breaker bar handle angling up-right -->
+      <rect x="326" y="58" width="120" height="11" rx="5" fill="#3e7c59" transform="rotate(34 326 64)"/>
+      <!-- counter-clockwise loosen arrow -->
+      <path d="M356 120 a30 30 0 0 1 -44 -8" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round"/>
+      <path d="M312 112 l-2 9 l9 -2" fill="none" stroke="#e0a93d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- fresh new anode rod leaning beside the tank, ready -->
+      <rect x="442" y="156" width="9" height="214" rx="4.5" fill="#c9a06b"/>
+      <rect x="438" y="150" width="17" height="14" rx="3" fill="#8a6a4f"/>
+      <!-- bright shine on the new rod -->
+      <line x1="446" y1="172" x2="446" y2="350" stroke="#fffdf8" stroke-width="2" opacity="0.7"/>
+      <text x="447" y="388" font-size="11" fill="#3e7c59" font-weight="700" text-anchor="middle">new rod</text>
+
+      <!-- socket set / wrench on the floor -->
+      <g transform="rotate(-16 150 378)">
+        <rect x="136" y="374" width="36" height="7" rx="3.5" fill="#8a6a4f"/>
+        <circle cx="134" cy="377" r="7" fill="#8a6a4f"/>
+        <circle cx="134" cy="377" r="3" fill="#efe7d8"/>
+      </g>
+      <!-- a couple of sockets -->
+      <rect x="184" y="372" width="16" height="16" rx="3" fill="#b9b1a3"/>
+      <circle cx="192" cy="380" r="3.5" fill="#efe7d8"/>
+      <rect x="206" y="376" width="13" height="13" rx="3" fill="#5e9a78"/>
+
+      <!-- thread tape roll -->
+      <circle cx="100" cy="384" r="12" fill="#dce8ee"/>
+      <circle cx="100" cy="384" r="5" fill="#fffdf8"/>
+
+      <!-- small plant for warmth -->
+      <path d="M510 348 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M510 348 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="497" cy="316" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 497 316)"/>
+      <ellipse cx="525" cy="320" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 525 320)"/>
+      <path d="M498 348 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+    </svg>

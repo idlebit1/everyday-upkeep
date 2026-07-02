@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing bike brake pads in a workshop: a bicycle wheel with a rim-brake caliper clamped on the rim showing a worn pad with its grooves gone beside a fresh pad with clear grooves, a disc-brake rotor with a caliper shown in an inset, and a hand holding an Allen key to undo a pad bolt">
+      <ellipse cx="280" cy="402" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- workshop pegboard / wall -->
+      <rect x="36" y="28" width="172" height="116" rx="8" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <g fill="#c9a06b" opacity="0.6">
+        <circle cx="64" cy="56" r="3"/><circle cx="96" cy="56" r="3"/><circle cx="128" cy="56" r="3"/><circle cx="160" cy="56" r="3"/><circle cx="190" cy="56" r="3"/>
+        <circle cx="64" cy="90" r="3"/><circle cx="96" cy="90" r="3"/><circle cx="128" cy="90" r="3"/><circle cx="160" cy="90" r="3"/><circle cx="190" cy="90" r="3"/>
+        <circle cx="64" cy="122" r="3"/><circle cx="96" cy="122" r="3"/><circle cx="128" cy="122" r="3"/><circle cx="160" cy="122" r="3"/><circle cx="190" cy="122" r="3"/>
+      </g>
+      <!-- hung wrench silhouette on the wall -->
+      <rect x="82" y="62" width="9" height="40" rx="3" fill="#5e9a78"/>
+      <rect x="76" y="56" width="21" height="9" rx="3" fill="#3e7c59"/>
+
+      <!-- workbench top -->
+      <rect x="0" y="346" width="560" height="22" rx="4" fill="#8a6a4f"/>
+      <rect x="0" y="368" width="560" height="8" fill="#6f543c"/>
+
+      <!-- main wheel: tire + rim -->
+      <circle cx="250" cy="220" r="128" fill="none" stroke="#33393b" stroke-width="20"/>
+      <circle cx="250" cy="220" r="118" fill="none" stroke="#b9b1a3" stroke-width="9"/>
+      <circle cx="250" cy="220" r="108" fill="#efe7d8"/>
+      <!-- hub -->
+      <circle cx="250" cy="220" r="16" fill="#8a6a4f"/>
+      <circle cx="250" cy="220" r="7" fill="#6f543c"/>
+      <!-- spokes -->
+      <g stroke="#c9a06b" stroke-width="3">
+        <line x1="250" y1="220" x2="250" y2="108"/>
+        <line x1="250" y1="220" x2="346" y2="164"/>
+        <line x1="250" y1="220" x2="346" y2="276"/>
+        <line x1="250" y1="220" x2="250" y2="332"/>
+        <line x1="250" y1="220" x2="154" y2="276"/>
+        <line x1="250" y1="220" x2="154" y2="164"/>
+      </g>
+
+      <!-- rim-brake caliper arms straddling the rim, left side of wheel -->
+      <path d="M150 150 q-26 30 -16 84" fill="none" stroke="#5e9a78" stroke-width="9" stroke-linecap="round"/>
+      <path d="M124 150 q-2 40 18 80" fill="none" stroke="#3e7c59" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="137" cy="150" r="7" fill="#8a6a4f"/>
+
+      <!-- WORN pad (top) pressed to the rim — grooves gone, thin -->
+      <rect x="140" y="168" width="26" height="13" rx="3" fill="#c96f4a"/>
+      <rect x="140" y="168" width="26" height="4" rx="2" fill="#8a6a4f"/>
+      <text x="100" y="166" font-size="11" fill="#d9663f" font-weight="700">worn — grooves gone</text>
+      <path d="M133 172 l4 0" stroke="#d9663f" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- FRESH pad shown off the wheel to the lower-left — clear grooves, thick -->
+      <rect x="60" y="240" width="40" height="26" rx="4" fill="#33393b"/>
+      <rect x="62" y="240" width="38" height="18" rx="3" fill="#d9663f"/>
+      <g stroke="#fffdf8" stroke-width="2" opacity="0.85">
+        <line x1="70" y1="242" x2="70" y2="256"/>
+        <line x1="80" y1="242" x2="80" y2="256"/>
+        <line x1="90" y1="242" x2="90" y2="256"/>
+      </g>
+      <text x="56" y="282" font-size="11" fill="#3e7c59" font-weight="700">fresh — clear grooves</text>
+
+      <!-- hand with an Allen key undoing the pad bolt -->
+      <path d="M164 196 q26 16 54 14" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <ellipse cx="190" cy="206" rx="15" ry="11" fill="#e8b48f"/>
+      <path d="M181 203 q-5 5 -1 12" stroke="#d99c73" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <!-- the L-shaped Allen key -->
+      <path d="M178 200 l-22 -8 l0 -10" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- DISC-BRAKE inset to the right: rotor + caliper -->
+      <rect x="392" y="150" width="152" height="170" rx="12" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <text x="468" y="172" font-size="12" fill="#6b7376" text-anchor="middle" font-weight="700">disc brake</text>
+      <!-- rotor disc -->
+      <circle cx="468" cy="244" r="56" fill="none" stroke="#b9b1a3" stroke-width="10"/>
+      <circle cx="468" cy="244" r="44" fill="#dce8ee"/>
+      <circle cx="468" cy="244" r="12" fill="#8a6a4f"/>
+      <!-- rotor vent holes -->
+      <g fill="#7fb3c8">
+        <circle cx="468" cy="212" r="4"/>
+        <circle cx="498" cy="232" r="4"/>
+        <circle cx="488" cy="270" r="4"/>
+        <circle cx="448" cy="270" r="4"/>
+        <circle cx="438" cy="232" r="4"/>
+      </g>
+      <!-- disc caliper body clamped over the rotor edge (top) -->
+      <rect x="448" y="178" width="40" height="26" rx="5" fill="#5e9a78"/>
+      <rect x="452" y="182" width="32" height="9" rx="3" fill="#3e7c59"/>
+      <!-- a disc pad with its spring shown beside the caliper -->
+      <rect x="500" y="290" width="30" height="16" rx="3" fill="#33393b"/>
+      <rect x="500" y="290" width="30" height="9" rx="3" fill="#d9663f"/>
+      <path d="M500 290 q15 -8 30 0" fill="none" stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>

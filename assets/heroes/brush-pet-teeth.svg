@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a relaxed dog having its teeth brushed with a green-handled pet toothbrush, beside a tube of poultry-flavored pet toothpaste, a finger brush, and a bone-shaped treat on a soft blue mat">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="72" cy="62" r="24" fill="#f2cf7a"/>
+      <ellipse cx="470" cy="68" rx="44" ry="20" fill="#dce8ee"/>
+      <ellipse cx="430" cy="80" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- minty sparkles -->
+      <g stroke="#7fb3c8" stroke-width="3" stroke-linecap="round">
+        <line x1="150" y1="96" x2="150" y2="82"/>
+        <line x1="143" y1="89" x2="157" y2="89"/>
+        <line x1="402" y1="120" x2="402" y2="108"/>
+        <line x1="396" y1="114" x2="408" y2="114"/>
+      </g>
+      <!-- soft mat -->
+      <ellipse cx="262" cy="334" rx="190" ry="56" fill="#dce8ee"/>
+      <ellipse cx="262" cy="328" rx="170" ry="46" fill="#bfdce8"/>
+      <!-- dog, head turned, mouth open for brushing -->
+      <g>
+        <!-- body -->
+        <ellipse cx="300" cy="276" rx="96" ry="54" fill="#c9a06b"/>
+        <!-- head -->
+        <circle cx="214" cy="222" r="58" fill="#c9a06b"/>
+        <!-- ears -->
+        <path d="M176 178 q-22 -8 -28 20 q-3 22 18 28 z" fill="#8a6a4f"/>
+        <path d="M252 178 q22 -8 28 20 q3 22 -18 28 z" fill="#8a6a4f"/>
+        <!-- eye -->
+        <circle cx="226" cy="210" r="5" fill="#33393b"/>
+        <!-- snout / muzzle -->
+        <ellipse cx="166" cy="244" rx="40" ry="30" fill="#d9b885"/>
+        <!-- lip lifted, showing teeth + gumline -->
+        <path d="M132 248 q34 -16 70 -4 l-2 16 q-34 -12 -66 2 z" fill="#fbe9e1"/>
+        <!-- gum line -->
+        <path d="M132 248 q34 -16 70 -4" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+        <!-- teeth -->
+        <g fill="#fffdf8" stroke="#e9e2d8" stroke-width="1.5">
+          <path d="M138 250 l5 16 l6 -15 z"/>
+          <path d="M152 248 l5 17 l6 -16 z"/>
+          <path d="M167 247 l5 17 l6 -16 z"/>
+          <path d="M182 248 l5 16 l6 -15 z"/>
+        </g>
+        <!-- nose -->
+        <circle cx="132" cy="240" r="9" fill="#33393b"/>
+        <!-- legs -->
+        <rect x="276" y="312" width="16" height="26" rx="8" fill="#c9a06b"/>
+        <rect x="332" y="312" width="16" height="26" rx="8" fill="#c9a06b"/>
+      </g>
+      <!-- pet toothbrush at 45 degrees to the gumline -->
+      <g transform="rotate(40 150 196)">
+        <rect x="120" y="190" width="92" height="12" rx="6" fill="#3e7c59"/>
+        <rect x="110" y="187" width="20" height="18" rx="6" fill="#2c5a40"/>
+        <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round">
+          <line x1="118" y1="187" x2="118" y2="178"/>
+          <line x1="124" y1="187" x2="124" y2="178"/>
+          <line x1="130" y1="187" x2="130" y2="178"/>
+        </g>
+        <!-- dab of toothpaste on the bristles -->
+        <ellipse cx="124" cy="176" rx="10" ry="5" fill="#5e9a78"/>
+      </g>
+      <!-- pet toothpaste tube -->
+      <g transform="rotate(-12 96 348)">
+        <rect x="64" y="318" width="64" height="40" rx="10" fill="#c96f4a"/>
+        <rect x="120" y="328" width="14" height="20" rx="5" fill="#9a4f33"/>
+        <rect x="74" y="328" width="40" height="20" rx="4" fill="#fbe9e1"/>
+        <circle cx="94" cy="338" r="6" fill="#3e7c59"/>
+      </g>
+      <!-- finger brush -->
+      <g transform="rotate(16 458 336)">
+        <path d="M440 318 q18 -4 24 14 q4 22 -10 30 q-14 4 -18 -10 q-4 -22 4 -34 z" fill="#7fb3c8"/>
+        <g stroke="#5f93ad" stroke-width="3" stroke-linecap="round">
+          <line x1="450" y1="318" x2="450" y2="310"/>
+          <line x1="458" y1="319" x2="460" y2="311"/>
+        </g>
+      </g>
+      <!-- bone treat -->
+      <g transform="rotate(-14 388 384)">
+        <rect x="358" y="378" width="60" height="13" rx="6.5" fill="#e0a93d"/>
+        <circle cx="360" cy="378" r="8" fill="#e0a93d"/>
+        <circle cx="360" cy="391" r="8" fill="#e0a93d"/>
+        <circle cx="416" cy="378" r="8" fill="#e0a93d"/>
+        <circle cx="416" cy="391" r="8" fill="#e0a93d"/>
+      </g>
+      <!-- treat crumbs -->
+      <circle cx="436" cy="384" r="5" fill="#d98e3b"/>
+      <circle cx="128" cy="388" r="4" fill="#c96f4a"/>
+      <!-- little plants -->
+      <circle cx="510" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="530" cy="396" r="10" fill="#3e7c59"/>
+      <circle cx="34" cy="396" r="11" fill="#5e9a78"/>
+    </svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a person raking matted winter debris into a pile on a greening spring lawn, with a wheelbarrow and leaf bag nearby, garden beds being cleared, crocus and tulip shoots coming up, and budding bare trees under a bright spring sun">
+      <ellipse cx="290" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="478" cy="64" r="24" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round">
+        <line x1="478" y1="24" x2="478" y2="34"/>
+        <line x1="478" y1="94" x2="478" y2="104"/>
+        <line x1="438" y1="64" x2="448" y2="64"/>
+        <line x1="508" y1="64" x2="518" y2="64"/>
+        <line x1="449" y1="35" x2="456" y2="42"/>
+        <line x1="507" y1="86" x2="500" y2="79"/>
+        <line x1="507" y1="42" x2="500" y2="49"/>
+        <line x1="449" y1="86" x2="456" y2="79"/>
+      </g>
+      <ellipse cx="120" cy="78" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="170" cy="92" rx="30" ry="16" fill="#dce8ee"/>
+      <ellipse cx="330" cy="56" rx="34" ry="17" fill="#dce8ee"/>
+      <!-- fence -->
+      <g fill="#b9b1a3">
+        <rect x="36" y="196" width="14" height="74" rx="4"/>
+        <rect x="76" y="196" width="14" height="74" rx="4"/>
+        <rect x="116" y="196" width="14" height="74" rx="4"/>
+        <rect x="156" y="196" width="14" height="74" rx="4"/>
+        <rect x="196" y="196" width="14" height="74" rx="4"/>
+      </g>
+      <rect x="28" y="208" width="190" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="28" y="240" width="190" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- budding bare spring tree -->
+      <g>
+        <rect x="426" y="196" width="16" height="92" rx="5" fill="#8a6a4f"/>
+        <path d="M434 210 q-24 -22 -42 -30 M434 220 q26 -18 46 -22 M434 200 q-10 -26 -6 -44 M434 204 q18 -22 34 -28" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <circle cx="392" cy="178" r="7" fill="#5e9a78"/>
+        <circle cx="466" cy="196" r="7" fill="#5e9a78"/>
+        <circle cx="430" cy="156" r="7" fill="#3e7c59"/>
+        <circle cx="408" cy="166" r="6" fill="#5e9a78"/>
+        <circle cx="452" cy="170" r="6" fill="#3e7c59"/>
+        <circle cx="418" cy="186" r="5" fill="#5e9a78"/>
+      </g>
+      <!-- shrub waking up -->
+      <circle cx="262" cy="248" r="28" fill="#2c5a40"/>
+      <circle cx="296" cy="258" r="22" fill="#3e7c59"/>
+      <circle cx="246" cy="240" r="9" fill="#5e9a78"/>
+      <!-- fresh spring lawn -->
+      <path d="M10 290 Q280 262 550 290 L550 392 Q280 412 10 392 Z" fill="#3e7c59"/>
+      <path d="M10 322 Q280 298 550 322 L550 392 Q280 412 10 392 Z" fill="#5e9a78" opacity="0.5"/>
+      <!-- garden bed with crocus & tulip shoots -->
+      <ellipse cx="356" cy="356" rx="92" ry="26" fill="#8a6a4f"/>
+      <ellipse cx="356" cy="350" rx="78" ry="18" fill="#c9a06b" opacity="0.7"/>
+      <g stroke="#3e7c59" stroke-width="3" stroke-linecap="round">
+        <line x1="322" y1="354" x2="322" y2="334"/>
+        <line x1="340" y1="356" x2="340" y2="330"/>
+        <line x1="372" y1="356" x2="372" y2="332"/>
+        <line x1="390" y1="354" x2="390" y2="338"/>
+      </g>
+      <!-- crocus / tulip blooms -->
+      <ellipse cx="340" cy="328" rx="5" ry="8" fill="#c96f4a"/>
+      <ellipse cx="372" cy="330" rx="5" ry="8" fill="#e0a93d"/>
+      <circle cx="322" cy="333" r="4" fill="#d9663f"/>
+      <circle cx="390" cy="337" r="4" fill="#e0a93d"/>
+      <!-- leaf pile of matted winter debris -->
+      <ellipse cx="160" cy="378" rx="60" ry="22" fill="#8a6a4f"/>
+      <ellipse cx="160" cy="370" rx="46" ry="16" fill="#9a7150"/>
+      <g fill="#b9b1a3">
+        <ellipse cx="136" cy="372" rx="9" ry="4.5" transform="rotate(-20 136 372)"/>
+        <ellipse cx="182" cy="376" rx="9" ry="4.5" transform="rotate(18 182 376)"/>
+        <ellipse cx="158" cy="362" rx="9" ry="4.5" transform="rotate(-6 158 362)"/>
+      </g>
+      <g fill="#c9a06b">
+        <ellipse cx="148" cy="382" rx="8" ry="4" transform="rotate(12 148 382)"/>
+        <ellipse cx="176" cy="368" rx="8" ry="4" transform="rotate(-14 176 368)"/>
+      </g>
+      <!-- wheelbarrow -->
+      <g>
+        <path d="M64 330 L132 330 L120 360 L72 360 Z" fill="#c96f4a"/>
+        <path d="M66 330 L130 330 L128 338 L68 338 Z" fill="#d9663f"/>
+        <line x1="64" y1="332" x2="38" y2="346" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="96" cy="376" r="13" fill="#33393b"/>
+        <circle cx="96" cy="376" r="5" fill="#b9b1a3"/>
+        <g fill="#5e9a78"><ellipse cx="88" cy="326" rx="7" ry="3.5"/><ellipse cx="108" cy="324" rx="7" ry="3.5"/></g>
+      </g>
+      <!-- leaf bag & gloves -->
+      <path d="M236 344 L268 344 L264 392 L240 392 Z" fill="#8a6a4f"/>
+      <path d="M238 344 q14 -9 28 0 l0 5 q-14 -6 -28 0 Z" fill="#6f5740"/>
+      <ellipse cx="252" cy="340" rx="9" ry="3.5" fill="#b9b1a3"/>
+      <g fill="#d9663f"><ellipse cx="216" cy="392" rx="9" ry="5"/><ellipse cx="228" cy="390" rx="8" ry="4.5"/></g>
+      <!-- person raking matted debris -->
+      <g>
+        <circle cx="300" cy="244" r="16" fill="#e0a93d"/>
+        <path d="M288 234 q12 -12 24 0 q-2 -8 -12 -8 q-10 0 -12 8" fill="#8a6a4f"/>
+        <path d="M294 286 L288 318 L320 318 L314 286 Z" fill="#3e7c59"/>
+        <rect x="289" y="316" width="12" height="34" rx="4" fill="#33393b"/>
+        <rect x="307" y="316" width="12" height="34" rx="4" fill="#33393b"/>
+        <!-- arms reaching down to the rake -->
+        <line x1="298" y1="290" x2="252" y2="328" stroke="#c96f4a" stroke-width="9" stroke-linecap="round"/>
+        <line x1="312" y1="290" x2="260" y2="320" stroke="#c96f4a" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <!-- rake -->
+      <g>
+        <line x1="256" y1="326" x2="220" y2="372" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+        <path d="M202 388 L236 360" stroke="#b9b1a3" stroke-width="4" stroke-linecap="round"/>
+        <g stroke="#b9b1a3" stroke-width="3" stroke-linecap="round">
+          <line x1="204" y1="386" x2="198" y2="394"/>
+          <line x1="212" y1="380" x2="207" y2="389"/>
+          <line x1="220" y1="374" x2="216" y2="384"/>
+          <line x1="228" y1="368" x2="225" y2="378"/>
+          <line x1="236" y1="362" x2="234" y2="372"/>
+        </g>
+      </g>
+      <!-- fresh grass tufts -->
+      <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round">
+        <line x1="120" y1="396" x2="120" y2="386"/>
+        <line x1="128" y1="396" x2="130" y2="386"/>
+        <line x1="500" y1="392" x2="500" y2="382"/>
+        <line x1="508" y1="392" x2="510" y2="382"/>
+      </g>
+      <circle cx="120" cy="392" r="9" fill="#5e9a78" opacity="0.6"/>
+      <circle cx="142" cy="396" r="7" fill="#3e7c59" opacity="0.6"/>
+    </svg>

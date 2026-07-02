@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bathroom shelf with facial sunscreen being checked: a fresh green tube stands beside an open-jar PAO symbol reading 12M and a printed expiration date, an old separated tube tips into a wastebasket next to it, a nickel-sized dollop of cream sits on the shelf, and a warm sun motif glows in the window above">
+      <ellipse cx="280" cy="402" rx="248" ry="22" fill="#efe7d8"/>
+
+      <!-- window with warm sun -->
+      <rect x="56" y="40" width="126" height="130" rx="10" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="119" y1="43" x2="119" y2="167" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="59" y1="105" x2="179" y2="105" stroke="#fffdf8" stroke-width="4"/>
+      <!-- warm sun motif -->
+      <circle cx="92" cy="78" r="20" fill="#e0a93d"/>
+      <circle cx="92" cy="78" r="12" fill="#d98e3b"/>
+      <g stroke="#e0a93d" stroke-width="3.5" stroke-linecap="round">
+        <line x1="92" y1="46" x2="92" y2="53"/>
+        <line x1="124" y1="78" x2="117" y2="78"/>
+        <line x1="60" y1="78" x2="67" y2="78"/>
+        <line x1="114" y1="56" x2="109" y2="61"/>
+        <line x1="114" y1="100" x2="109" y2="95"/>
+        <line x1="70" y1="56" x2="75" y2="61"/>
+      </g>
+      <rect x="44" y="32" width="150" height="10" rx="5" fill="#8a6a4f"/>
+
+      <!-- bathroom shelf -->
+      <rect x="220" y="256" width="300" height="13" rx="6" fill="#c9a06b"/>
+      <rect x="240" y="269" width="11" height="22" rx="4" fill="#8a6a4f"/>
+      <rect x="488" y="269" width="11" height="22" rx="4" fill="#8a6a4f"/>
+
+      <!-- FRESH face SPF tube on the shelf -->
+      <rect x="250" y="150" width="46" height="106" rx="12" fill="#5e9a78"/>
+      <path d="M250 168 q23 -12 46 0 v-6 q-23 -12 -46 0 z" fill="#3e7c59"/>
+      <rect x="264" y="132" width="18" height="20" rx="4" fill="#2c5a40"/>
+      <!-- label window on the fresh tube -->
+      <rect x="256" y="186" width="34" height="48" rx="5" fill="#fffdf8"/>
+      <text x="273" y="204" font-size="10" fill="#3e7c59" font-weight="700" text-anchor="middle">SPF</text>
+      <text x="273" y="220" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">30+</text>
+      <!-- sun mark on label -->
+      <circle cx="273" cy="230" r="3.4" fill="#e0a93d"/>
+
+      <!-- PAO open-jar symbol tag on the shelf -->
+      <rect x="316" y="176" width="70" height="80" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <!-- open jar glyph -->
+      <path d="M334 196 h34 v20 q0 8 -8 8 h-18 q-8 0 -8 -8 z" fill="none" stroke="#8a6a4f" stroke-width="2.6"/>
+      <path d="M332 194 q19 -12 38 0" fill="none" stroke="#8a6a4f" stroke-width="2.6" stroke-linecap="round"/>
+      <text x="351" y="242" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle">12M</text>
+      <!-- printed expiration line -->
+      <rect x="322" y="166" width="58" height="14" rx="4" fill="#faf0da" stroke="#e0a93d" stroke-width="1.6"/>
+      <text x="351" y="176" font-size="9" fill="#8a6a4f" font-weight="700" text-anchor="middle">EXP 05/28</text>
+
+      <!-- nickel-sized dollop of cream on the shelf -->
+      <ellipse cx="418" cy="250" rx="17" ry="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <ellipse cx="418" cy="248" rx="11" ry="5" fill="#faf0da"/>
+      <text x="418" y="234" font-size="10" fill="#6b7376" font-weight="700" text-anchor="middle">nickel-size</text>
+
+      <!-- wastebasket with the old separated tube -->
+      <path d="M446 300 h78 l-9 76 q-1 8 -9 8 h-42 q-8 0 -9 -8 z" fill="#b9b1a3"/>
+      <path d="M446 300 h78 l-2 14 h-74 z" fill="#8a6a4f"/>
+      <!-- old tube tipped into basket, separated contents -->
+      <g transform="rotate(30 486 288)">
+        <rect x="466" y="252" width="40" height="70" rx="11" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <rect x="479" y="238" width="16" height="16" rx="4" fill="#b9b1a3"/>
+        <!-- separated / clumpy contents through label window -->
+        <rect x="472" y="276" width="28" height="40" rx="4" fill="#faf0da"/>
+        <path d="M472 292 q7 5 14 0 q7 -5 14 0 v20 q0 4 -4 4 h-20 q-4 0 -4 -4 z" fill="#e0a93d" opacity="0.55"/>
+        <circle cx="480" cy="302" r="2.2" fill="#d98e3b"/>
+        <circle cx="492" cy="308" r="2" fill="#d98e3b"/>
+      </g>
+      <!-- drips from old tube -->
+      <path d="M460 348 q-2 6 2 8 q4 -2 2 -8 l-2 -5 z" fill="#e0a93d" opacity="0.65"/>
+      <path d="M474 360 q-2 5 1.5 7 q3.5 -2 1.5 -7 l-1.5 -4 z" fill="#e0a93d" opacity="0.65"/>
+
+      <!-- small "old vs fresh" arrow: old going to bin -->
+      <path d="M406 300 q22 -8 40 -2" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <polygon points="446,298 438,292 439,304" fill="#d9663f"/>
+      <text x="404" y="292" font-size="10" fill="#d9663f" font-weight="700" text-anchor="end">toss the old</text>
+
+      <!-- plant for warmth -->
+      <path d="M206 390 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M206 390 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="190" cy="354" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 190 354)"/>
+      <ellipse cx="224" cy="358" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 224 358)"/>
+      <path d="M192 390 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+
+      <!-- sparkles by the fresh tube -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="308" y1="140" x2="308" y2="150"/>
+        <line x1="303" y1="145" x2="313" y2="145"/>
+        <line x1="236" y1="176" x2="236" y2="186"/>
+        <line x1="231" y1="181" x2="241" y2="181"/>
+      </g>
+    </svg>

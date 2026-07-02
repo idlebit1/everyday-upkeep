@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing an air purifier filter: a tower air purifier sits with its back panel open, a hand pulls a grey, dust-loaded cylindrical HEPA filter out of the unit, a clean white replacement filter stands ready beside it, a green indicator light glows on the front, and clean-air arcs rise from the vents at the top in a cozy room">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- clean-air arcs rising from the top of the purifier -->
+      <g fill="none" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round" opacity="0.75">
+        <path d="M196 88 q22 -26 44 0"/>
+        <path d="M212 70 q28 -30 56 0"/>
+        <path d="M230 54 q22 -22 44 0"/>
+      </g>
+      <g fill="#dce8ee">
+        <circle cx="188" cy="96" r="4"/>
+        <circle cx="276" cy="78" r="3.4"/>
+        <circle cx="252" cy="58" r="3"/>
+      </g>
+
+      <!-- purifier body (tower) -->
+      <rect x="150" y="104" width="140" height="250" rx="22" fill="#fffdf8" stroke="#b9b1a3" stroke-width="6"/>
+      <!-- top vent grille (clean air out) -->
+      <rect x="170" y="116" width="100" height="26" rx="13" fill="#dce8ee"/>
+      <g stroke="#9cc3d4" stroke-width="3" stroke-linecap="round">
+        <line x1="182" y1="122" x2="182" y2="136"/>
+        <line x1="196" y1="122" x2="196" y2="136"/>
+        <line x1="210" y1="122" x2="210" y2="136"/>
+        <line x1="224" y1="122" x2="224" y2="136"/>
+        <line x1="238" y1="122" x2="238" y2="136"/>
+        <line x1="252" y1="122" x2="252" y2="136"/>
+      </g>
+      <!-- control panel + green indicator light (filter OK) -->
+      <circle cx="220" cy="166" r="13" fill="#e3efe8" stroke="#b9b1a3" stroke-width="2"/>
+      <circle cx="220" cy="166" r="6" fill="#5e9a78"/>
+      <rect x="200" y="186" width="40" height="6" rx="3" fill="#e9e2d8"/>
+
+      <!-- open back panel, swung out to the left, exposing the filter cavity -->
+      <path d="M150 196 l-58 -14 v150 l58 -14 z" fill="#efe7d8" stroke="#b9b1a3" stroke-width="5"/>
+      <g stroke="#c9a06b" stroke-width="2.4" stroke-linecap="round" opacity="0.8">
+        <line x1="104" y1="200" x2="104" y2="312"/>
+        <line x1="118" y1="198" x2="118" y2="314"/>
+        <line x1="132" y1="197" x2="132" y2="315"/>
+      </g>
+      <!-- the dark cavity inside where the filter sits -->
+      <rect x="166" y="196" width="48" height="130" rx="8" fill="#8a6a4f" opacity="0.35"/>
+
+      <!-- the OLD grey, loaded HEPA filter being pulled out -->
+      <g>
+        <rect x="206" y="198" width="58" height="128" rx="10" fill="#b9b1a3"/>
+        <rect x="206" y="198" width="58" height="128" rx="10" fill="#8a6a4f" opacity="0.28"/>
+        <!-- accordion pleats -->
+        <g stroke="#8a6a4f" stroke-width="2.4">
+          <line x1="216" y1="206" x2="216" y2="318"/>
+          <line x1="226" y1="206" x2="226" y2="318"/>
+          <line x1="236" y1="206" x2="236" y2="318"/>
+          <line x1="246" y1="206" x2="246" y2="318"/>
+          <line x1="256" y1="206" x2="256" y2="318"/>
+        </g>
+        <!-- dust caked on it -->
+        <g fill="#8a6a4f" opacity="0.6">
+          <circle cx="221" cy="224" r="2.4"/>
+          <circle cx="241" cy="248" r="2"/>
+          <circle cx="231" cy="288" r="2.6"/>
+          <circle cx="252" cy="300" r="1.8"/>
+        </g>
+        <text x="208" y="344" font-size="11" fill="#6b7376" font-weight="700">loaded — toss</text>
+      </g>
+
+      <!-- hand pulling the old filter out -->
+      <ellipse cx="276" cy="262" rx="17" ry="13" fill="#e8b48f"/>
+      <path d="M266 256 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M276 274 q26 18 52 8" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- the CLEAN white replacement filter standing ready, front-right -->
+      <g>
+        <rect x="400" y="246" width="64" height="120" rx="12" fill="#fffdf8" stroke="#5e9a78" stroke-width="4"/>
+        <g stroke="#dce8ee" stroke-width="2.6">
+          <line x1="411" y1="254" x2="411" y2="358"/>
+          <line x1="422" y1="254" x2="422" y2="358"/>
+          <line x1="433" y1="254" x2="433" y2="358"/>
+          <line x1="444" y1="254" x2="444" y2="358"/>
+          <line x1="455" y1="254" x2="455" y2="358"/>
+        </g>
+        <!-- fresh / sparkle on the new filter -->
+        <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+          <path d="M432 288 l0 12 M426 294 l12 0"/>
+        </g>
+        <text x="404" y="382" font-size="11" fill="#3e7c59" font-weight="700">new HEPA</text>
+      </g>
+
+      <!-- small plant for warmth, far right -->
+      <path d="M506 348 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <path d="M518 348 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M518 348 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="503" cy="316" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 503 316)"/>
+      <ellipse cx="533" cy="320" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 533 320)"/>
+
+      <!-- a low side table / surface line under the new filter and plant -->
+      <rect x="384" y="366" width="170" height="10" rx="4" fill="#c9a06b"/>
+    </svg>

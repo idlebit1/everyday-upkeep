@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of dental floss restocking on a clean bathroom shelf: a nearly-empty floss container with its bare reel showing sits beside a fresh sealed backup pack, a few floss picks and a small interdental brush lie nearby, a toothbrush stands in a cup, all lined up on a tidy shelf">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- bathroom shelf -->
+      <rect x="70" y="322" width="430" height="14" rx="4" fill="#b9b1a3"/>
+      <rect x="70" y="336" width="430" height="8" rx="3" fill="#8a6a4f"/>
+
+      <!-- nearly-empty floss container (left), lid open, bare reel showing -->
+      <rect x="120" y="238" width="96" height="84" rx="14" fill="#7fb3c8"/>
+      <rect x="120" y="238" width="96" height="26" rx="13" fill="#9cc3d4"/>
+      <!-- open flip lid -->
+      <path d="M124 238 q-14 -20 6 -34 l70 0 q10 10 0 20" fill="#5e9a78"/>
+      <!-- bare reel showing through window -->
+      <circle cx="168" cy="288" r="26" fill="#eef4f7"/>
+      <circle cx="168" cy="288" r="20" fill="#dce8ee"/>
+      <circle cx="168" cy="288" r="8" fill="#b9b1a3"/>
+      <!-- last thin wisp of floss -->
+      <path d="M168 288 q10 8 4 22 q-4 8 6 14" fill="none" stroke="#fffdf8" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- little cutter notch -->
+      <rect x="196" y="252" width="16" height="7" rx="2" fill="#3e7c59"/>
+      <text x="126" y="230" font-size="11" fill="#d9663f" font-weight="700">nearly empty</text>
+
+      <!-- fresh sealed backup pack (center) -->
+      <rect x="248" y="222" width="104" height="100" rx="12" fill="#3e7c59"/>
+      <rect x="248" y="222" width="104" height="30" rx="12" fill="#5e9a78"/>
+      <!-- reel graphic on the pack -->
+      <circle cx="300" cy="284" r="24" fill="#e3efe8"/>
+      <circle cx="300" cy="284" r="15" fill="#fffdf8"/>
+      <circle cx="300" cy="284" r="6" fill="#5e9a78"/>
+      <!-- "NEW" tag -->
+      <rect x="258" y="230" width="42" height="15" rx="7.5" fill="#e0a93d"/>
+      <text x="279" y="241" font-size="10" font-weight="700" fill="#fffdf8" text-anchor="middle">NEW</text>
+      <text x="254" y="214" font-size="11" fill="#3e7c59" font-weight="700">backup ready</text>
+
+      <!-- toothbrush standing in a cup (right) -->
+      <path d="M420 262 h48 l-6 60 h-36 z" fill="#dce8ee"/>
+      <path d="M420 262 h48 l-2 8 h-44 z" fill="#cdd9de"/>
+      <!-- toothbrush handle -->
+      <rect x="438" y="176" width="12" height="92" rx="6" fill="#c96f4a"/>
+      <!-- brush head -->
+      <rect x="432" y="164" width="24" height="20" rx="6" fill="#5e9a78"/>
+      <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+        <line x1="437" y1="164" x2="437" y2="156"/>
+        <line x1="444" y1="164" x2="444" y2="154"/>
+        <line x1="451" y1="164" x2="451" y2="156"/>
+      </g>
+
+      <!-- a few floss picks lying on the shelf (front-left) -->
+      <g transform="rotate(-8 150 356)">
+        <path d="M120 352 h44 l4 10 l-4 10 h-44 z" fill="#e0a93d"/>
+        <path d="M164 352 l14 -18 l0 40 l-14 -18 z" fill="#d98e3b"/>
+        <line x1="168" y1="342" x2="176" y2="352" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g transform="rotate(6 210 366)">
+        <path d="M180 362 h44 l4 10 l-4 10 h-44 z" fill="#7fb3c8"/>
+        <path d="M224 362 l14 -18 l0 40 l-14 -18 z" fill="#5e9a78"/>
+        <line x1="228" y1="352" x2="236" y2="362" stroke="#fffdf8" stroke-width="2" stroke-linecap="round"/>
+      </g>
+
+      <!-- small interdental brush (front-center) -->
+      <g transform="rotate(14 330 360)">
+        <rect x="300" y="356" width="56" height="7" rx="3.5" fill="#5e9a78"/>
+        <rect x="356" y="354" width="26" height="11" rx="4" fill="#3e7c59"/>
+        <g stroke="#e0a93d" stroke-width="1.6" stroke-linecap="round">
+          <line x1="304" y1="352" x2="304" y2="345"/>
+          <line x1="312" y1="352" x2="312" y2="344"/>
+          <line x1="320" y1="352" x2="320" y2="345"/>
+          <line x1="328" y1="352" x2="328" y2="344"/>
+          <line x1="304" y1="367" x2="304" y2="374"/>
+          <line x1="312" y1="367" x2="312" y2="375"/>
+          <line x1="320" y1="367" x2="320" y2="374"/>
+          <line x1="328" y1="367" x2="328" y2="375"/>
+        </g>
+      </g>
+
+      <!-- small plant for warmth (right) -->
+      <path d="M486 300 h26 l-4 22 h-18 z" fill="#c96f4a"/>
+      <path d="M498 300 q-3 -18 -12 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M498 300 q4 -16 14 -20" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="483" cy="272" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 483 272)"/>
+      <ellipse cx="513" cy="276" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 513 276)"/>
+    </svg>

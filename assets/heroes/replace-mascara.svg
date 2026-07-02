@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of mascara replacement on a tidy vanity: a fresh mascara tube with its wand pulled out and a small open date written on it, a period-after-opening open-jar symbol marked 6M, an old dried and clumpy tube being dropped into a small bin next to the fresh one, and a simple eye-and-lashes motif above">
+      <ellipse cx="280" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- vanity counter -->
+      <rect x="40" y="330" width="480" height="16" rx="8" fill="#b9b1a3"/>
+      <rect x="60" y="346" width="440" height="10" rx="5" fill="#8a6a4f"/>
+
+      <!-- eye + lashes motif, top center -->
+      <path d="M232 66 q48 -34 96 0 q-48 34 -96 0 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+      <circle cx="280" cy="66" r="15" fill="#7fb3c8"/>
+      <circle cx="280" cy="66" r="7" fill="#2c5a40"/>
+      <circle cx="276" cy="62" r="2.4" fill="#fffdf8"/>
+      <g stroke="#33393b" stroke-width="3" stroke-linecap="round">
+        <line x1="240" y1="52" x2="234" y2="42"/>
+        <line x1="258" y1="46" x2="255" y2="35"/>
+        <line x1="280" y1="44" x2="280" y2="32"/>
+        <line x1="302" y1="46" x2="305" y2="35"/>
+        <line x1="320" y1="52" x2="326" y2="42"/>
+      </g>
+
+      <!-- FRESH mascara tube (right of center), wand pulled out, dated -->
+      <!-- tube body -->
+      <rect x="286" y="214" width="34" height="116" rx="12" fill="#2c5a40"/>
+      <rect x="286" y="214" width="34" height="20" rx="10" fill="#35684c"/>
+      <!-- date label on the fresh tube -->
+      <rect x="290" y="286" width="26" height="26" rx="4" fill="#fffdf8"/>
+      <text x="303" y="298" font-size="7.5" fill="#3e7c59" text-anchor="middle" font-weight="700">OPEN</text>
+      <text x="303" y="307" font-size="7.5" fill="#3e7c59" text-anchor="middle" font-weight="700">7/1</text>
+      <!-- wand: cap handle + brush, pulled out beside the tube -->
+      <rect x="352" y="150" width="14" height="70" rx="7" fill="#35684c"/>
+      <rect x="356" y="216" width="6" height="24" rx="3" fill="#b9b1a3"/>
+      <g fill="#3e7c59">
+        <path d="M359 238 l-9 4 l9 4 z"/>
+        <path d="M359 246 l-9 4 l9 4 z"/>
+        <path d="M359 254 l-9 4 l9 4 z"/>
+        <path d="M359 262 l-9 4 l9 4 z"/>
+        <path d="M359 238 l9 4 l-9 4 z"/>
+        <path d="M359 246 l9 4 l-9 4 z"/>
+        <path d="M359 254 l9 4 l-9 4 z"/>
+        <path d="M359 262 l9 4 l-9 4 z"/>
+      </g>
+      <text x="303" y="352" font-size="12" fill="#3e7c59" text-anchor="middle" font-weight="700">fresh — date it</text>
+
+      <!-- PAO open-jar symbol, upper left -->
+      <g>
+        <path d="M96 150 h44 v42 a22 22 0 0 1 -44 0 z" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+        <path d="M100 150 q18 -16 36 0" fill="none" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+        <text x="118" y="182" font-size="15" fill="#8a6a4f" text-anchor="middle" font-weight="700">6M</text>
+        <text x="118" y="210" font-size="10.5" fill="#6b7376" text-anchor="middle">outer limit</text>
+      </g>
+
+      <!-- OLD dried/clumpy tube going into the bin, lower left -->
+      <!-- small bin -->
+      <path d="M120 296 h64 l-7 46 h-50 z" fill="#c96f4a"/>
+      <path d="M114 292 h76 l-2 10 h-72 z" fill="#d9663f"/>
+      <!-- old tube tipping into the bin -->
+      <g transform="rotate(28 158 288)">
+        <rect x="144" y="252" width="28" height="82" rx="10" fill="#8a6a4f"/>
+        <rect x="144" y="252" width="28" height="16" rx="8" fill="#6f553f"/>
+        <!-- clumps / dried flakes -->
+        <circle cx="150" cy="278" r="3" fill="#5a4632"/>
+        <circle cx="164" cy="296" r="2.4" fill="#5a4632"/>
+        <circle cx="156" cy="312" r="2.8" fill="#5a4632"/>
+      </g>
+      <!-- stink / off lines above the old tube -->
+      <g stroke="#b9b1a3" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.85">
+        <path d="M132 244 q-4 -8 2 -14 q4 -6 0 -12"/>
+        <path d="M148 240 q-4 -8 2 -14 q4 -6 0 -12"/>
+      </g>
+      <text x="150" y="360" font-size="12" fill="#d9663f" text-anchor="middle" font-weight="700">old — toss it</text>
+
+      <!-- arrow: old out, fresh in -->
+      <path d="M198 250 q40 -18 80 0" fill="none" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+      <polygon points="278,250 268,244 270,256" fill="#3e7c59"/>
+
+      <!-- calendar / reminder card, right -->
+      <rect x="420" y="286" width="72" height="58" rx="8" fill="#fffdf8" stroke="#e0a93d" stroke-width="3"/>
+      <rect x="420" y="286" width="72" height="16" rx="8" fill="#e0a93d"/>
+      <line x1="436" y1="282" x2="436" y2="292" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+      <line x1="476" y1="282" x2="476" y2="292" stroke="#e0a93d" stroke-width="4" stroke-linecap="round"/>
+      <text x="456" y="326" font-size="15" fill="#3e7c59" text-anchor="middle" font-weight="700">3 mo</text>
+      <text x="456" y="338" font-size="8" fill="#6b7376" text-anchor="middle">next swap</text>
+
+      <!-- sparkle on the fresh tube -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="336" y1="204" x2="336" y2="214"/>
+        <line x1="331" y1="209" x2="341" y2="209"/>
+      </g>
+      <circle cx="264" cy="196" r="3" fill="#7fb3c8"/>
+    </svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of pet food being restocked and stored: kibble pours from its original bag through a scoop into an airtight storage bin in a pantry corner, the bag shows a best-by date and is nearly empty as a signal to reorder, and a happy dog and cat wait beside their bowls">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- pantry corner: back wall & shelf -->
+      <rect x="40" y="40" width="360" height="300" fill="#fffdf8"/>
+      <rect x="40" y="150" width="360" height="10" fill="#c9a06b"/>
+      <rect x="40" y="146" width="360" height="6" fill="#b9b1a3"/>
+
+      <!-- airtight storage bin on the floor -->
+      <path d="M96 250 h150 l-10 118 h-130 z" fill="#dce8ee" stroke="#7fb3c8" stroke-width="4"/>
+      <!-- bin body highlight -->
+      <path d="M104 258 h134 l-2 24 h-130 z" fill="#eef4f7"/>
+      <!-- clip-lock lid, tilted open -->
+      <path d="M88 236 h166 l-6 16 h-154 z" fill="#7fb3c8"/>
+      <rect x="86" y="232" width="172" height="8" rx="4" fill="#5e9a78"/>
+      <!-- side latch clips -->
+      <rect x="90" y="290" width="10" height="22" rx="3" fill="#5e9a78"/>
+      <rect x="240" y="290" width="10" height="22" rx="3" fill="#5e9a78"/>
+      <!-- original bag sitting INSIDE the bin (peeking above the rim) -->
+      <path d="M150 200 h70 l6 40 h-82 z" fill="#c96f4a"/>
+      <path d="M150 200 h70 l3 8 h-76 z" fill="#d9663f"/>
+      <text x="162" y="222" font-size="10" fill="#fffdf8" font-weight="700">bag inside</text>
+
+      <!-- the pouring bag, held above, tipping kibble out -->
+      <g transform="rotate(20 300 120)">
+        <path d="M262 60 h76 l10 130 h-96 z" fill="#c96f4a"/>
+        <path d="M262 60 h76 l4 12 h-84 z" fill="#8a6a4f"/>
+        <!-- rolled-open top -->
+        <path d="M258 56 q40 -14 84 0 l-4 10 q-38 -12 -76 0 z" fill="#d9663f"/>
+        <!-- best-by date panel on the bag -->
+        <rect x="276" y="150" width="52" height="26" rx="4" fill="#fffdf8"/>
+        <text x="302" y="162" font-size="8" fill="#6b7376" text-anchor="middle">BEST BY</text>
+        <text x="302" y="172" font-size="9" fill="#3e7c59" text-anchor="middle" font-weight="700">12/2026</text>
+        <!-- little paw logo on bag -->
+        <circle cx="302" cy="96" r="9" fill="#e0a93d"/>
+        <circle cx="299" cy="93" r="1.8" fill="#8a6a4f"/>
+        <circle cx="305" cy="93" r="1.8" fill="#8a6a4f"/>
+        <ellipse cx="302" cy="99" rx="4" ry="3" fill="#8a6a4f"/>
+      </g>
+
+      <!-- scoop catching the stream -->
+      <path d="M196 196 q22 -10 40 2 l-6 22 q-20 -8 -38 0 z" fill="#e0a93d"/>
+      <rect x="230" y="188" width="34" height="8" rx="4" fill="#d98e3b" transform="rotate(18 247 192)"/>
+
+      <!-- stream of kibble falling from bag into scoop / bin -->
+      <g fill="#b9772f">
+        <circle cx="286" cy="150" r="4.5"/>
+        <circle cx="278" cy="166" r="4"/>
+        <circle cx="290" cy="176" r="4.2"/>
+        <circle cx="280" cy="188" r="4"/>
+        <circle cx="292" cy="198" r="4.4"/>
+        <ellipse cx="272" cy="204" rx="5" ry="3.6"/>
+      </g>
+      <!-- kibble piled in the scoop -->
+      <g fill="#c9822f">
+        <circle cx="206" cy="200" r="4"/>
+        <circle cx="216" cy="198" r="4.4"/>
+        <circle cx="226" cy="201" r="4"/>
+      </g>
+
+      <!-- nearly-empty bag on the shelf, a reorder signal -->
+      <g transform="translate(330 66)">
+        <path d="M0 30 h40 l4 54 h-48 z" fill="#c9a06b"/>
+        <path d="M-2 26 q20 -8 44 0 l-2 8 q-20 -7 -40 0 z" fill="#b9b1a3"/>
+        <!-- slumped, almost-flat look -->
+        <path d="M2 66 h36 l2 18 h-40 z" fill="#8a6a4f" opacity="0.5"/>
+        <text x="20" y="100" font-size="9" fill="#d9663f" text-anchor="middle" font-weight="700">almost empty</text>
+        <text x="20" y="112" font-size="8" fill="#6b7376" text-anchor="middle">reorder!</text>
+      </g>
+
+      <!-- happy dog waiting by his bowl, front-left -->
+      <g transform="translate(60 300)">
+        <!-- body -->
+        <ellipse cx="46" cy="56" rx="42" ry="26" fill="#c9a06b"/>
+        <!-- head -->
+        <circle cx="16" cy="38" r="22" fill="#c9a06b"/>
+        <!-- ear -->
+        <path d="M2 22 q-12 4 -8 24 q10 -6 12 -18 z" fill="#8a6a4f"/>
+        <!-- snout -->
+        <ellipse cx="2" cy="44" rx="10" ry="8" fill="#e0c48f"/>
+        <circle cx="-4" cy="43" r="3" fill="#33393b"/>
+        <!-- happy eye -->
+        <path d="M12 32 q4 -4 8 0" stroke="#33393b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <!-- tongue / open smile -->
+        <path d="M0 50 q4 6 10 3" stroke="#c96f4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- wagging tail -->
+        <path d="M84 46 q22 -10 24 -30" stroke="#c9a06b" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <!-- front legs -->
+        <rect x="22" y="70" width="9" height="24" rx="4" fill="#c9a06b"/>
+        <rect x="52" y="72" width="9" height="22" rx="4" fill="#c9a06b"/>
+        <!-- food bowl -->
+        <path d="M8 96 h48 l-6 14 h-36 z" fill="#3e7c59"/>
+        <ellipse cx="32" cy="96" rx="24" ry="6" fill="#5e9a78"/>
+        <circle cx="24" cy="95" r="2.6" fill="#c9822f"/>
+        <circle cx="34" cy="96" r="2.6" fill="#b9772f"/>
+        <circle cx="42" cy="95" r="2.6" fill="#c9822f"/>
+      </g>
+
+      <!-- happy cat waiting by her bowl, front-right -->
+      <g transform="translate(410 320)">
+        <!-- body -->
+        <ellipse cx="40" cy="46" rx="34" ry="22" fill="#b9b1a3"/>
+        <!-- head -->
+        <circle cx="66" cy="28" r="18" fill="#b9b1a3"/>
+        <!-- ears -->
+        <path d="M54 14 l-4 -14 l12 8 z" fill="#b9b1a3"/>
+        <path d="M78 14 l4 -14 l-12 8 z" fill="#b9b1a3"/>
+        <path d="M55 12 l-2 -8 l7 5 z" fill="#c96f4a"/>
+        <path d="M77 12 l2 -8 l-7 5 z" fill="#c96f4a"/>
+        <!-- content eyes -->
+        <path d="M60 26 q3 -3 6 0" stroke="#33393b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <path d="M70 26 q3 -3 6 0" stroke="#33393b" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <!-- nose -->
+        <path d="M67 32 l4 0 l-2 3 z" fill="#c96f4a"/>
+        <!-- whiskers -->
+        <g stroke="#8a6a4f" stroke-width="1.2" stroke-linecap="round">
+          <line x1="66" y1="33" x2="50" y2="32"/>
+          <line x1="66" y1="35" x2="50" y2="38"/>
+          <line x1="72" y1="33" x2="88" y2="32"/>
+          <line x1="72" y1="35" x2="88" y2="38"/>
+        </g>
+        <!-- curled tail -->
+        <path d="M8 46 q-16 -4 -12 -22" stroke="#b9b1a3" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <!-- cat bowl -->
+        <path d="M18 66 h40 l-5 12 h-30 z" fill="#c96f4a"/>
+        <ellipse cx="38" cy="66" rx="20" ry="5" fill="#d9663f"/>
+        <circle cx="31" cy="65" r="2.2" fill="#c9822f"/>
+        <circle cx="40" cy="66" r="2.2" fill="#b9772f"/>
+      </g>
+    </svg>

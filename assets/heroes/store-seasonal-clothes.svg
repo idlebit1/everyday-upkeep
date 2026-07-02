@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a seasonal clothes swap: folded sweaters and off-season clothes being packed into a breathable cotton storage bin and a hanging cotton garment bag, a cedar block resting on the folded knits, an open closet beside it holding the current season's clothes on hangers, and a neatly folded wool sweater in the foreground; the scene is tidy and warm">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- closet on the right with current-season clothes hung -->
+      <rect x="356" y="56" width="170" height="296" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- closet interior -->
+      <rect x="366" y="66" width="150" height="276" rx="5" fill="#efe7d8"/>
+      <!-- hanging rail -->
+      <rect x="372" y="92" width="138" height="7" rx="3" fill="#8a6a4f"/>
+      <!-- hangers + current-season garments -->
+      <g>
+        <!-- garment 1 (terracotta shirt) -->
+        <path d="M386 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M380 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 78 l-6 0 l0 -78 l-4 3 z" fill="#c96f4a"/>
+        <!-- garment 2 (green dress) -->
+        <path d="M410 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M404 104 l11 -8 l11 8 l-5 8 l4 86 l-20 0 l4 -86 z" fill="#5e9a78"/>
+        <!-- garment 3 (gold top) -->
+        <path d="M436 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M430 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 70 l-6 0 l0 -70 l-4 3 z" fill="#e0a93d"/>
+        <!-- garment 4 (water-blue shirt) -->
+        <path d="M462 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M456 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 74 l-6 0 l0 -74 l-4 3 z" fill="#7fb3c8"/>
+        <!-- garment 5 (deep green) -->
+        <path d="M488 96 q5 -8 10 0" fill="none" stroke="#8a6a4f" stroke-width="2.4"/>
+        <path d="M482 104 l11 -8 l11 8 l-4 6 l-4 -3 l0 66 l-6 0 l0 -66 l-4 3 z" fill="#3e7c59"/>
+      </g>
+      <!-- a couple of folded items on the closet shelf -->
+      <rect x="372" y="300" width="138" height="9" rx="2" fill="#8a6a4f"/>
+      <rect x="380" y="312" width="58" height="22" rx="3" fill="#dce8ee"/>
+      <rect x="380" y="312" width="58" height="7" rx="3" fill="#cdd9de"/>
+      <rect x="446" y="312" width="58" height="22" rx="3" fill="#c9a06b"/>
+      <rect x="446" y="312" width="58" height="7" rx="3" fill="#b9b1a3"/>
+
+      <!-- breathable cotton storage bin on the left, being packed -->
+      <rect x="40" y="232" width="186" height="118" rx="10" fill="#c9a06b"/>
+      <rect x="40" y="232" width="186" height="118" rx="10" fill="#b9b1a3" opacity="0.25"/>
+      <!-- canvas weave hint -->
+      <g stroke="#8a6a4f" stroke-width="1.4" opacity="0.4">
+        <line x1="40" y1="262" x2="226" y2="262"/>
+        <line x1="40" y1="292" x2="226" y2="292"/>
+        <line x1="40" y1="322" x2="226" y2="322"/>
+        <line x1="94" y1="232" x2="94" y2="350"/>
+        <line x1="148" y1="232" x2="148" y2="350"/>
+      </g>
+      <!-- open lid flap folded back -->
+      <path d="M40 232 q93 -34 186 0 l0 -16 q-93 -30 -186 0 z" fill="#dce8ee"/>
+      <path d="M40 220 q93 -28 186 0" fill="none" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round"/>
+      <!-- folded sweaters stacked inside the bin -->
+      <rect x="56" y="240" width="154" height="20" rx="4" fill="#7fb3c8"/>
+      <rect x="56" y="240" width="154" height="6" rx="3" fill="#9cc3d4"/>
+      <rect x="62" y="262" width="142" height="20" rx="4" fill="#c96f4a"/>
+      <rect x="62" y="262" width="142" height="6" rx="3" fill="#d9663f"/>
+      <rect x="58" y="284" width="150" height="20" rx="4" fill="#5e9a78"/>
+      <rect x="58" y="284" width="150" height="6" rx="3" fill="#3e7c59"/>
+
+      <!-- cedar block resting on the folded knits -->
+      <rect x="150" y="222" width="40" height="20" rx="4" fill="#c9a06b"/>
+      <rect x="150" y="222" width="40" height="7" rx="3" fill="#b9b1a3"/>
+      <g stroke="#8a6a4f" stroke-width="1.2" opacity="0.7">
+        <path d="M156 226 q10 4 0 10"/>
+        <path d="M166 226 q8 4 0 10"/>
+        <path d="M176 226 q8 4 0 10"/>
+      </g>
+      <text x="150" y="216" font-size="10" fill="#8a6a4f" font-weight="700">cedar</text>
+
+      <!-- hanging cotton garment bag in the center -->
+      <!-- hook -->
+      <path d="M292 36 q10 -10 0 -20" fill="none" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <rect x="288" y="34" width="8" height="8" rx="2" fill="#8a6a4f"/>
+      <!-- bag body -->
+      <path d="M250 44 h84 q8 0 8 8 l0 196 q0 8 -8 8 h-84 q-8 0 -8 -8 l0 -196 q0 -8 8 -8 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- breathable weave hint on the bag -->
+      <g stroke="#e9e2d8" stroke-width="1.6">
+        <line x1="252" y1="78" x2="332" y2="78"/>
+        <line x1="252" y1="120" x2="332" y2="120"/>
+        <line x1="252" y1="162" x2="332" y2="162"/>
+        <line x1="252" y1="204" x2="332" y2="204"/>
+      </g>
+      <!-- zipper down the middle -->
+      <line x1="292" y1="48" x2="292" y2="252" stroke="#8a6a4f" stroke-width="2.4" stroke-dasharray="4 4"/>
+      <circle cx="292" cy="150" r="5" fill="#e0a93d"/>
+      <!-- garment shoulders peeking at the top of the bag -->
+      <path d="M268 56 l24 -10 l24 10 l-6 10 l-18 -6 l-18 6 z" fill="#2c5a40"/>
+      <text x="252" y="40" font-size="10" fill="#6b7376">garment bag</text>
+
+      <!-- neatly folded wool sweater in the foreground -->
+      <rect x="222" y="338" width="146" height="46" rx="8" fill="#d98e3b"/>
+      <rect x="222" y="338" width="146" height="14" rx="7" fill="#e0a93d"/>
+      <!-- folded sleeves crossing -->
+      <path d="M232 352 l40 18 l-10 6 l-30 -14 z" fill="#c96f4a"/>
+      <path d="M358 352 l-40 18 l10 6 l30 -14 z" fill="#c96f4a"/>
+      <!-- knit ribbing lines -->
+      <g stroke="#b9772b" stroke-width="1.4" opacity="0.7">
+        <line x1="240" y1="366" x2="240" y2="382"/>
+        <line x1="252" y1="366" x2="252" y2="382"/>
+        <line x1="338" y1="366" x2="338" y2="382"/>
+        <line x1="350" y1="366" x2="350" y2="382"/>
+      </g>
+      <!-- folded ribbed collar/hem -->
+      <rect x="278" y="370" width="34" height="14" rx="3" fill="#c9a06b"/>
+
+      <!-- a little lavender sachet for warmth, foreground left -->
+      <path d="M96 360 h40 l-5 24 h-30 z" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2"/>
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M106 360 l-2 -12 M116 360 l0 -14 M126 360 l2 -12"/>
+      </g>
+      <circle cx="104" cy="346" r="2.2" fill="#7c5ea0" opacity="0.55"/>
+      <circle cx="116" cy="344" r="2.2" fill="#7c5ea0" opacity="0.55"/>
+      <circle cx="128" cy="346" r="2.2" fill="#7c5ea0" opacity="0.55"/>
+    </svg>

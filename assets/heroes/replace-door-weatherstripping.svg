@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing weatherstripping on an exterior door: an open door in its frame with a bright line of daylight at the edge, a hand peels a cracked old strip off the jamb while a fresh roll of weatherstripping is pressed onto the clean wood above it, a new door sweep sits along the bottom of the door, and a cold draft with a blowing leaf streams through the old gap">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- outer door frame / jamb -->
+      <rect x="150" y="36" width="240" height="338" rx="6" fill="#b9b1a3"/>
+      <rect x="166" y="52" width="208" height="322" rx="4" fill="#8a6a4f"/>
+      <!-- daylight glowing through behind the door at the hinge edge -->
+      <rect x="182" y="60" width="170" height="306" rx="3" fill="#fffdf8"/>
+      <!-- bright daylight line down the latch edge gap -->
+      <rect x="346" y="60" width="10" height="306" fill="#faf0da"/>
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round" opacity="0.7">
+        <line x1="351" y1="120" x2="351" y2="150"/>
+        <line x1="351" y1="200" x2="351" y2="232"/>
+        <line x1="351" y1="280" x2="351" y2="308"/>
+      </g>
+
+      <!-- the door itself, swung slightly ajar -->
+      <rect x="196" y="60" width="150" height="306" rx="4" fill="#c9a06b" stroke="#8a6a4f" stroke-width="4"/>
+      <!-- recessed door panels -->
+      <rect x="210" y="76" width="122" height="86" rx="6" fill="#b9925e" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="210" y="174" width="122" height="86" rx="6" fill="#b9925e" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="210" y="272" width="122" height="66" rx="6" fill="#b9925e" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- door knob + latch on the right edge -->
+      <circle cx="324" cy="218" r="8" fill="#e0a93d"/>
+      <rect x="332" y="214" width="8" height="8" rx="2" fill="#d98e3b"/>
+
+      <!-- OLD cracked weatherstripping being peeled off the jamb (left/hinge side, upper) -->
+      <rect x="184" y="70" width="9" height="120" rx="3" fill="#c96f4a"/>
+      <!-- cracks in the old brittle strip -->
+      <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+        <line x1="184" y1="92" x2="193" y2="96"/>
+        <line x1="184" y1="118" x2="193" y2="114"/>
+        <line x1="184" y1="146" x2="193" y2="150"/>
+        <line x1="184" y1="172" x2="193" y2="168"/>
+      </g>
+      <!-- peeled-up curl of old strip -->
+      <path d="M184 70 q-26 -10 -40 6 q-12 12 -2 22" fill="none" stroke="#c96f4a" stroke-width="9" stroke-linecap="round"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" stroke-linecap="round">
+        <line x1="158" y1="64" x2="166" y2="70"/>
+        <line x1="146" y1="76" x2="153" y2="82"/>
+      </g>
+      <!-- a hand peeling the old strip away -->
+      <ellipse cx="128" cy="98" rx="17" ry="13" fill="#e8b48f"/>
+      <path d="M118 92 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M128 110 q-18 26 -44 30" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- FRESH weatherstripping pressed onto clean jamb (lower, with adhesive backing) -->
+      <rect x="184" y="210" width="9" height="146" rx="3" fill="#3e7c59"/>
+      <!-- little press-on shine on the new strip -->
+      <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round" opacity="0.8">
+        <line x1="187" y1="226" x2="187" y2="244"/>
+        <line x1="187" y1="290" x2="187" y2="312"/>
+      </g>
+      <!-- fresh roll of weatherstripping waiting nearby -->
+      <circle cx="470" cy="118" r="40" fill="#5e9a78"/>
+      <circle cx="470" cy="118" r="22" fill="#fffdf8"/>
+      <circle cx="470" cy="118" r="9" fill="#3e7c59"/>
+      <!-- a tail of strip unspooling toward the door -->
+      <path d="M444 140 q-40 30 -54 70" fill="none" stroke="#3e7c59" stroke-width="8" stroke-linecap="round"/>
+      <text x="436" y="176" font-size="11" fill="#3e7c59" font-weight="700">new strip</text>
+
+      <!-- NEW door sweep along the bottom of the door -->
+      <rect x="196" y="354" width="150" height="12" rx="3" fill="#5e9a78"/>
+      <rect x="196" y="366" width="150" height="7" rx="3" fill="#3e7c59"/>
+      <g stroke="#2c5a40" stroke-width="1.6">
+        <line x1="214" y1="372" x2="214" y2="378"/>
+        <line x1="240" y1="372" x2="240" y2="378"/>
+        <line x1="270" y1="372" x2="270" y2="378"/>
+        <line x1="300" y1="372" x2="300" y2="378"/>
+        <line x1="328" y1="372" x2="328" y2="378"/>
+      </g>
+      <!-- threshold under the sweep -->
+      <rect x="166" y="372" width="208" height="10" rx="3" fill="#8a6a4f"/>
+      <text x="206" y="392" font-size="11" fill="#3e7c59" font-weight="700">door sweep</text>
+
+      <!-- cold draft + blowing leaf streaming through the old gap -->
+      <g stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+        <path d="M392 130 q26 8 50 0"/>
+        <path d="M392 150 q30 10 56 -2"/>
+        <path d="M392 172 q24 6 46 0"/>
+      </g>
+      <!-- a leaf carried on the draft -->
+      <path d="M452 138 q14 -8 22 4 q-12 8 -22 -4 z" fill="#c96f4a"/>
+      <path d="M455 142 l14 0" stroke="#8a6a4f" stroke-width="1.4" stroke-linecap="round"/>
+
+      <!-- utility knife and a measuring tape on the ground for trimming -->
+      <rect x="92" y="382" width="46" height="10" rx="3" fill="#d9663f"/>
+      <path d="M138 387 l18 -3 l0 6 l-18 -3 z" fill="#b9b1a3"/>
+      <circle cx="208" cy="386" r="13" fill="#e0a93d"/>
+      <circle cx="208" cy="386" r="6" fill="#fffdf8"/>
+      <rect x="220" y="383" width="20" height="6" rx="2" fill="#d98e3b"/>
+    </svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a laundry room where a clothes dryer has been pulled away from the wall: a ribbed flexible duct lies disconnected on the floor, a flexible vent brush leans against the dryer, lint tufts sit on the floor, and an exterior vent hood with a louvered flap is mounted on the wall above, venting clean air outside">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- wall patch with the exterior vent hood -->
+      <rect x="40" y="60" width="150" height="150" rx="12" fill="#f1e9dc"/>
+      <rect x="72" y="104" width="44" height="52" rx="8" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5"/>
+      <path d="M116 104 l28 -11 v74 l-28 -11 z" fill="#b9b1a3"/>
+      <line x1="116" y1="104" x2="116" y2="156" stroke="#8a6a4f" stroke-width="2.5"/>
+      <!-- airflow out of the hood -->
+      <g stroke="#5e9a78" stroke-width="2.6" fill="none" stroke-linecap="round">
+        <path d="M152 116 q12 7 0 16"/>
+        <path d="M164 108 q16 11 0 30"/>
+      </g>
+      <!-- a couple of cleared lint flecks near the hood -->
+      <circle cx="60" cy="178" r="3" fill="#e9e2d8"/>
+      <circle cx="70" cy="186" r="2.5" fill="#d8cfbe"/>
+
+      <!-- shelf with detergent + box -->
+      <rect x="468" y="98" width="74" height="9" rx="4.5" fill="#8a6a4f"/>
+      <rect x="484" y="64" width="24" height="34" rx="5" fill="#5e9a78"/>
+      <rect x="490" y="55" width="12" height="10" rx="2.5" fill="#2c5a40"/>
+      <rect x="514" y="70" width="22" height="28" rx="3" fill="#e0a93d"/>
+      <rect x="519" y="78" width="12" height="5" rx="2.5" fill="#faf0da"/>
+
+      <!-- dryer body -->
+      <rect x="300" y="150" width="184" height="216" rx="20" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <!-- control panel -->
+      <rect x="312" y="160" width="160" height="30" rx="9" fill="#eef4f7"/>
+      <rect x="324" y="171" width="40" height="8" rx="4" fill="#dce8ee"/>
+      <rect x="372" y="171" width="22" height="8" rx="4" fill="#dce8ee"/>
+      <circle cx="452" cy="175" r="11" fill="#e0a93d" stroke="#8a6a4f" stroke-width="2"/>
+      <line x1="452" y1="175" x2="452" y2="168" stroke="#33393b" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- door -->
+      <circle cx="378" cy="282" r="64" fill="#dce8ee" stroke="#b9b1a3" stroke-width="3"/>
+      <circle cx="378" cy="282" r="47" fill="#eef4f7"/>
+      <path d="M348 262 a47 47 0 0 1 24 -22" stroke="#fffdf8" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- a hint of clothes tumbling inside -->
+      <ellipse cx="366" cy="292" rx="20" ry="12" fill="#7fb3c8" transform="rotate(-18 366 292)"/>
+      <ellipse cx="392" cy="278" rx="17" ry="10" fill="#e0a93d" transform="rotate(22 392 278)"/>
+      <!-- handle + feet -->
+      <rect x="446" y="266" width="9" height="34" rx="4.5" fill="#b9b1a3"/>
+      <rect x="320" y="362" width="16" height="14" rx="3" fill="#b9b1a3"/>
+      <rect x="448" y="362" width="16" height="14" rx="3" fill="#b9b1a3"/>
+
+      <!-- disconnected ribbed flexible duct on the floor -->
+      <path d="M300 340 q-34 8 -66 5 q-34 -3 -66 -1" stroke="#c9a06b" stroke-width="15" fill="none" stroke-linecap="round"/>
+      <g stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round">
+        <line x1="282" y1="336" x2="282" y2="348"/>
+        <line x1="262" y1="338" x2="262" y2="350"/>
+        <line x1="242" y1="340" x2="242" y2="352"/>
+        <line x1="216" y1="340" x2="216" y2="352"/>
+        <line x1="192" y1="340" x2="192" y2="352"/>
+      </g>
+      <!-- open duct end + lint spilling out -->
+      <ellipse cx="167" cy="344" rx="7" ry="11" fill="#8a6a4f"/>
+      <ellipse cx="167" cy="344" rx="3.5" ry="7" fill="#33393b" opacity="0.4"/>
+      <circle cx="150" cy="352" r="6" fill="#e9e2d8"/>
+      <circle cx="138" cy="358" r="5" fill="#d8cfbe"/>
+      <circle cx="158" cy="362" r="4" fill="#e9e2d8"/>
+      <circle cx="126" cy="354" r="3.5" fill="#e9e2d8"/>
+
+      <!-- flexible vent brush leaning against the dryer -->
+      <line x1="300" y1="356" x2="236" y2="232" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <g stroke="#3e7c59" stroke-width="2.4" stroke-linecap="round">
+        <line x1="246" y1="252" x2="234" y2="244"/>
+        <line x1="244" y1="246" x2="258" y2="244"/>
+        <line x1="240" y1="240" x2="228" y2="232"/>
+        <line x1="238" y1="234" x2="252" y2="232"/>
+        <line x1="234" y1="228" x2="222" y2="222"/>
+        <line x1="232" y1="222" x2="246" y2="220"/>
+      </g>
+      <circle cx="236" cy="232" r="5" fill="#2c5a40"/>
+
+      <!-- laundry basket with clothes, front-left -->
+      <path d="M66 340 h84 l-9 48 h-66 z" fill="#c96f4a"/>
+      <path d="M62 338 h92 l-3 11 h-86 z" fill="#d9663f"/>
+      <g stroke="#a85638" stroke-width="2" stroke-linecap="round">
+        <line x1="84" y1="352" x2="81" y2="384"/>
+        <line x1="108" y1="352" x2="108" y2="384"/>
+        <line x1="132" y1="352" x2="135" y2="384"/>
+      </g>
+      <ellipse cx="92" cy="338" rx="20" ry="11" fill="#7fb3c8"/>
+      <ellipse cx="122" cy="335" rx="17" ry="10" fill="#e0a93d"/>
+      <ellipse cx="106" cy="329" rx="15" ry="9" fill="#fffdf8"/>
+
+      <!-- small plant for warmth -->
+      <path d="M508 350 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <path d="M520 350 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M520 350 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="505" cy="318" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 505 318)"/>
+      <ellipse cx="535" cy="322" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 535 322)"/>
+    </svg>

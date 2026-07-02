@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a lawn in late fall with pop-up sprinkler heads blowing out fine mist, an air compressor connected near the house's backflow preventer, frost on the grass edges, and snowflakes starting to fall">
+      <ellipse cx="285" cy="400" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- pale low autumn sun -->
+      <circle cx="488" cy="62" r="24" fill="#f2cf7a"/>
+      <!-- frosty clouds -->
+      <ellipse cx="120" cy="64" rx="46" ry="20" fill="#dce8ee"/>
+      <ellipse cx="168" cy="76" rx="28" ry="14" fill="#dce8ee"/>
+      <ellipse cx="356" cy="52" rx="36" ry="16" fill="#dce8ee"/>
+      <!-- first snowflakes -->
+      <g stroke="#7fb3c8" stroke-width="2" stroke-linecap="round">
+        <g transform="translate(252 92)"><line x1="-6" y1="0" x2="6" y2="0"/><line x1="0" y1="-6" x2="0" y2="6"/><line x1="-4" y1="-4" x2="4" y2="4"/><line x1="4" y1="-4" x2="-4" y2="4"/></g>
+        <g transform="translate(430 118)"><line x1="-5" y1="0" x2="5" y2="0"/><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="3.5" y1="-3.5" x2="-3.5" y2="3.5"/></g>
+        <g transform="translate(64 142)"><line x1="-5" y1="0" x2="5" y2="0"/><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="3.5" y1="-3.5" x2="-3.5" y2="3.5"/></g>
+      </g>
+      <!-- house corner -->
+      <rect x="20" y="150" width="118" height="160" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <polygon points="10,152 79,98 148,152" fill="#c96f4a"/>
+      <rect x="44" y="184" width="34" height="36" rx="3" fill="#cfe3ec" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="61" y1="184" x2="61" y2="220" stroke="#fffdf8" stroke-width="2"/>
+      <!-- backflow preventer riser beside house -->
+      <rect x="148" y="252" width="9" height="58" rx="3" fill="#b9b1a3"/>
+      <rect x="170" y="252" width="9" height="58" rx="3" fill="#b9b1a3"/>
+      <rect x="140" y="236" width="47" height="20" rx="6" fill="#d98e3b"/>
+      <circle cx="152" cy="232" r="6" fill="#e0a93d"/>
+      <circle cx="175" cy="232" r="6" fill="#e0a93d"/>
+      <!-- drips from open test cocks -->
+      <g fill="#7fb3c8">
+        <circle cx="152" cy="268" r="2.5"/>
+        <circle cx="176" cy="278" r="2.5"/>
+      </g>
+      <!-- lawn -->
+      <path d="M12 310 Q280 286 548 310 L548 392 Q280 412 12 392 Z" fill="#3e7c59"/>
+      <path d="M12 344 Q280 322 548 344 L548 392 Q280 412 12 392 Z" fill="#5e9a78" opacity="0.4"/>
+      <!-- frost hints on the grass -->
+      <g stroke="#dce8ee" stroke-width="3" stroke-linecap="round" opacity="0.85">
+        <path d="M40 330 h22 M88 352 h16 M460 334 h20 M504 358 h16 M250 386 h18"/>
+      </g>
+      <!-- compressor on the lawn -->
+      <g>
+        <rect x="206" y="296" width="74" height="44" rx="10" fill="#c96f4a"/>
+        <rect x="216" y="282" width="34" height="18" rx="6" fill="#d9663f"/>
+        <circle cx="262" cy="292" r="9" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+        <line x1="262" y1="292" x2="267" y2="286" stroke="#33393b" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="220" cy="346" r="9" fill="#33393b"/>
+        <circle cx="266" cy="346" r="9" fill="#33393b"/>
+        <!-- air hose to the backflow connection -->
+        <path d="M206 318 Q176 322 172 296" stroke="#8a6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </g>
+      <!-- sprinkler heads blowing mist -->
+      <g>
+        <rect x="338" y="338" width="10" height="22" rx="3" fill="#2c5a40"/>
+        <path d="M343 334 Q325 314 312 308 M343 334 Q343 308 343 300 M343 334 Q361 314 374 308" stroke="#dce8ee" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="308" cy="304" r="3" fill="#dce8ee"/>
+        <circle cx="343" cy="294" r="3" fill="#dce8ee"/>
+        <circle cx="378" cy="304" r="3" fill="#dce8ee"/>
+      </g>
+      <g>
+        <rect x="452" y="350" width="10" height="20" rx="3" fill="#2c5a40"/>
+        <path d="M457 346 Q441 328 430 322 M457 346 Q457 322 457 314 M457 346 Q473 328 484 322" stroke="#dce8ee" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <circle cx="426" cy="318" r="3" fill="#dce8ee"/>
+        <circle cx="457" cy="308" r="3" fill="#dce8ee"/>
+        <circle cx="488" cy="318" r="3" fill="#dce8ee"/>
+      </g>
+      <!-- shrub + fallen leaves -->
+      <circle cx="528" cy="296" r="22" fill="#2c5a40"/>
+      <circle cx="548" cy="306" r="15" fill="#3e7c59"/>
+      <ellipse cx="320" cy="384" rx="7" ry="4" fill="#d98e3b" transform="rotate(-18 320 384)"/>
+      <ellipse cx="404" cy="376" rx="7" ry="4" fill="#c96f4a" transform="rotate(22 404 376)"/>
+      <ellipse cx="120" cy="380" rx="7" ry="4" fill="#e0a93d" transform="rotate(-30 120 380)"/>
+    </svg>

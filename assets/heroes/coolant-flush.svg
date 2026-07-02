@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of flushing engine coolant: a car with its hood open over the engine bay on a driveway, the radiator drain petcock open with old rusty brown coolant draining down into a catch pan below, the radiator cap removed and set aside on a cold engine, and a jug of fresh green coolant and a jug of distilled water standing ready beside the car">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- car body, front three-quarter -->
+      <path d="M70 322 q4 -56 60 -64 l150 -10 q40 -2 70 24 l54 46 h70 q20 0 20 22 v22 q0 12 -14 12 h-470 q-12 0 -12 -12 v-44 q0 -16 22 -18 z" fill="#7fb3c8"/>
+      <path d="M130 258 l150 -10 q40 -2 70 24 l40 34 h-300 q6 -42 40 -48 z" fill="#9cc3d4"/>
+      <!-- windshield glint -->
+      <path d="M196 254 l84 -6 q26 -1 46 16 l22 18 h-168 z" fill="#dce8ee"/>
+      <!-- front wheel -->
+      <circle cx="160" cy="370" r="34" fill="#33393b"/>
+      <circle cx="160" cy="370" r="15" fill="#b9b1a3"/>
+      <!-- rear wheel -->
+      <circle cx="404" cy="370" r="34" fill="#33393b"/>
+      <circle cx="404" cy="370" r="15" fill="#b9b1a3"/>
+
+      <!-- open hood, propped up over the engine bay -->
+      <path d="M70 258 l8 -120 q1 -14 16 -14 l150 4 q12 0 10 14 l-22 124 z" fill="#9cc3d4" stroke="#5e9a78" stroke-width="4"/>
+      <path d="M82 252 l6 -104 l136 4 l-18 102 z" fill="#dce8ee"/>
+      <!-- prop rod -->
+      <line x1="120" y1="246" x2="100" y2="150" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- engine bay opening -->
+      <rect x="232" y="186" width="180" height="76" rx="8" fill="#b9b1a3"/>
+      <rect x="240" y="194" width="164" height="60" rx="5" fill="#8a6a4f"/>
+      <!-- radiator block at the front of the bay -->
+      <rect x="248" y="198" width="56" height="52" rx="3" fill="#6b7376"/>
+      <g stroke="#33393b" stroke-width="2.4">
+        <line x1="256" y1="200" x2="256" y2="248"/>
+        <line x1="266" y1="200" x2="266" y2="248"/>
+        <line x1="276" y1="200" x2="276" y2="248"/>
+        <line x1="286" y1="200" x2="286" y2="248"/>
+        <line x1="296" y1="200" x2="296" y2="248"/>
+      </g>
+      <!-- engine block detail -->
+      <rect x="328" y="206" width="62" height="42" rx="4" fill="#6b7376"/>
+      <g stroke="#33393b" stroke-width="3">
+        <line x1="340" y1="206" x2="340" y2="248"/>
+        <line x1="354" y1="206" x2="354" y2="248"/>
+        <line x1="368" y1="206" x2="368" y2="248"/>
+      </g>
+
+      <!-- radiator cap removed, set aside on the engine (cold) -->
+      <circle cx="402" cy="196" r="11" fill="#c96f4a"/>
+      <circle cx="402" cy="196" r="5" fill="#8a6a4f"/>
+      <text x="402" y="180" font-size="9" fill="#2c5a40" text-anchor="middle" font-weight="700">cap off</text>
+
+      <!-- drain petcock at the bottom of the radiator, open -->
+      <rect x="262" y="250" width="14" height="9" rx="2" fill="#e0a93d"/>
+      <path d="M266 259 l4 0 l-2 8 z" fill="#8a6a4f"/>
+      <!-- stream of old rusty/brown coolant draining down -->
+      <path d="M268 266 q-2 24 -6 50 q-2 14 0 24" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <path d="M268 266 q-2 24 -6 50" fill="none" stroke="#c96f4a" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- catch pan on the ground, full of old brown coolant -->
+      <path d="M214 352 h120 l-10 30 h-100 z" fill="#b9b1a3"/>
+      <path d="M210 348 h128 l-4 8 h-120 z" fill="#8a6a4f"/>
+      <!-- old coolant pooled in the pan -->
+      <ellipse cx="274" cy="356" rx="58" ry="6" fill="#8a6a4f"/>
+      <ellipse cx="274" cy="356" rx="40" ry="4" fill="#6b4a2f" opacity="0.7"/>
+      <!-- a few floating rust flecks -->
+      <circle cx="256" cy="356" r="2" fill="#c96f4a"/>
+      <circle cx="288" cy="357" r="1.8" fill="#c96f4a"/>
+      <text x="274" y="394" font-size="10" fill="#d9663f" text-anchor="middle" font-weight="700">old &amp; rusty</text>
+
+      <!-- jug of FRESH coolant on the ground, right -->
+      <rect x="450" y="318" width="52" height="62" rx="8" fill="#5e9a78"/>
+      <rect x="450" y="318" width="52" height="14" rx="6" fill="#3e7c59"/>
+      <rect x="462" y="298" width="20" height="22" rx="4" fill="#3e7c59"/>
+      <rect x="460" y="292" width="24" height="9" rx="3" fill="#2c5a40"/>
+      <rect x="456" y="338" width="40" height="28" rx="4" fill="#fffdf8"/>
+      <text x="476" y="350" font-size="8" fill="#3e7c59" text-anchor="middle" font-weight="700">COOLANT</text>
+      <text x="476" y="360" font-size="6.5" fill="#6b7376" text-anchor="middle">fresh 50/50</text>
+
+      <!-- jug of DISTILLED WATER beside it -->
+      <rect x="398" y="330" width="44" height="50" rx="7" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <rect x="406" y="314" width="16" height="18" rx="3" fill="#9cc3d4"/>
+      <rect x="404" y="309" width="20" height="8" rx="3" fill="#7fb3c8"/>
+      <rect x="402" y="346" width="36" height="24" rx="3" fill="#fffdf8"/>
+      <text x="420" y="357" font-size="7.5" fill="#2c5a40" text-anchor="middle" font-weight="700">DISTILLED</text>
+      <text x="420" y="366" font-size="7" fill="#6b7376" text-anchor="middle">water</text>
+
+      <!-- "COLD" reminder tag -->
+      <rect x="92" y="300" width="78" height="26" rx="13" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <text x="131" y="317" font-size="12" fill="#2c5a40" text-anchor="middle" font-weight="700">engine COLD</text>
+    </svg>

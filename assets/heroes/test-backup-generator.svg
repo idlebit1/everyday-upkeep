@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a standby home backup generator running on a pad beside a house, set well away from the windows: a few windows in the house glow warm to show it is carrying a load, a propane tank and a small starter battery sit next to the generator, and inside the house a carbon-monoxide alarm on the wall shows a green light">
+      <ellipse cx="280" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- house on the right -->
+      <rect x="286" y="132" width="230" height="196" rx="4" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <path d="M276 136 L401 58 L526 136 Z" fill="#c96f4a"/>
+      <path d="M276 136 L401 58 L526 136 Z" fill="none" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- chimney -->
+      <rect x="470" y="74" width="20" height="40" rx="2" fill="#b9b1a3"/>
+
+      <!-- lit windows (carrying a load) -->
+      <rect x="308" y="160" width="44" height="44" rx="3" fill="#e0a93d" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="330" y1="160" x2="330" y2="204" stroke="#8a6a4f" stroke-width="2.4"/>
+      <line x1="308" y1="182" x2="352" y2="182" stroke="#8a6a4f" stroke-width="2.4"/>
+      <rect x="368" y="160" width="44" height="44" rx="3" fill="#e0a93d" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="390" y1="160" x2="390" y2="204" stroke="#8a6a4f" stroke-width="2.4"/>
+      <line x1="368" y1="182" x2="412" y2="182" stroke="#8a6a4f" stroke-width="2.4"/>
+      <!-- one unlit upper window for contrast -->
+      <rect x="428" y="160" width="44" height="44" rx="3" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+      <line x1="450" y1="160" x2="450" y2="204" stroke="#8a6a4f" stroke-width="2.4"/>
+      <line x1="428" y1="182" x2="472" y2="182" stroke="#8a6a4f" stroke-width="2.4"/>
+      <!-- glow rays from lit windows -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round" opacity="0.55">
+        <line x1="330" y1="150" x2="330" y2="140"/>
+        <line x1="390" y1="150" x2="390" y2="140"/>
+      </g>
+      <!-- lit door -->
+      <rect x="360" y="252" width="42" height="76" rx="3" fill="#8a6a4f"/>
+      <rect x="366" y="260" width="30" height="30" rx="2" fill="#e0a93d"/>
+      <circle cx="392" cy="292" r="2.4" fill="#e0a93d"/>
+
+      <!-- CO alarm indoors, on the wall inside the house (shown through) -->
+      <rect x="304" y="250" width="34" height="34" rx="8" fill="#fffdf8" stroke="#8a6a4f" stroke-width="2.5"/>
+      <circle cx="321" cy="267" r="6" fill="#5e9a78"/>
+      <g stroke="#8a6a4f" stroke-width="1.4">
+        <line x1="310" y1="278" x2="332" y2="278"/>
+        <line x1="310" y1="281" x2="332" y2="281"/>
+      </g>
+      <text x="300" y="298" font-size="9.5" fill="#3e7c59" font-weight="700">CO alarm</text>
+
+      <!-- clearance / distance label between house and generator -->
+      <text x="150" y="150" font-size="11" fill="#6b7376">set well away — clear of windows</text>
+      <path d="M244 168 h34 m-9 -5 l9 5 l-9 5" stroke="#6b7376" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- concrete pad -->
+      <rect x="44" y="326" width="196" height="20" rx="4" fill="#c9a06b"/>
+      <rect x="44" y="326" width="196" height="7" rx="4" fill="#d8c39a"/>
+
+      <!-- standby generator enclosure -->
+      <rect x="70" y="238" width="150" height="90" rx="10" fill="#3e7c59"/>
+      <rect x="70" y="238" width="150" height="20" rx="10" fill="#5e9a78"/>
+      <!-- louvered vents on the side -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+        <line x1="84" y1="272" x2="84" y2="312"/>
+        <line x1="94" y1="272" x2="94" y2="312"/>
+        <line x1="104" y1="272" x2="104" y2="312"/>
+        <line x1="114" y1="272" x2="114" y2="312"/>
+      </g>
+      <!-- status panel with green "running" light -->
+      <rect x="150" y="270" width="56" height="44" rx="6" fill="#2c5a40"/>
+      <circle cx="164" cy="284" r="5" fill="#5e9a78"/>
+      <rect x="176" y="280" width="22" height="7" rx="3.5" fill="#e3efe8"/>
+      <rect x="158" y="298" width="40" height="8" rx="3" fill="#7fb3c8"/>
+      <text x="150" y="230" font-size="11" fill="#3e7c59" font-weight="700">running under load</text>
+
+      <!-- exhaust with heat shimmer, pointing away from house -->
+      <rect x="52" y="278" width="22" height="14" rx="5" fill="#8a6a4f"/>
+      <rect x="42" y="281" width="12" height="8" rx="4" fill="#b9b1a3"/>
+      <g stroke="#b9b1a3" stroke-width="2.4" stroke-linecap="round" opacity="0.7" fill="none">
+        <path d="M40 274 q-6 -6 0 -12 q6 -6 0 -12"/>
+        <path d="M30 278 q-6 -6 0 -12 q6 -6 0 -12"/>
+      </g>
+
+      <!-- small starter battery beside the generator -->
+      <rect x="248" y="352" width="52" height="38" rx="5" fill="#33393b"/>
+      <rect x="248" y="352" width="52" height="10" rx="5" fill="#4a5153"/>
+      <!-- terminals -->
+      <rect x="256" y="344" width="10" height="10" rx="2" fill="#d9663f"/>
+      <rect x="282" y="344" width="10" height="10" rx="2" fill="#7fb3c8"/>
+      <text x="258" y="346" font-size="10" fill="#fffdf8" font-weight="700">+</text>
+      <!-- little charge bolt -->
+      <path d="M272 366 l-5 8 h5 l-6 10 l2 -8 h-4 z" fill="#e0a93d"/>
+      <text x="242" y="404" font-size="10" fill="#3e7c59" font-weight="700">starter battery</text>
+
+      <!-- propane / fuel tank in the back-left -->
+      <rect x="24" y="242" width="30" height="70" rx="15" fill="#dce8ee" stroke="#8a6a4f" stroke-width="3"/>
+      <rect x="24" y="252" width="30" height="10" rx="5" fill="#9cc3d4"/>
+      <rect x="34" y="230" width="10" height="14" rx="3" fill="#8a6a4f"/>
+      <path d="M39 230 l0 -8" stroke="#8a6a4f" stroke-width="3" stroke-linecap="round"/>
+      <text x="14" y="326" font-size="10" fill="#3e7c59" font-weight="700">fuel / propane</text>
+
+      <!-- a couple of shrubs at a safe distance for warmth -->
+      <ellipse cx="262" cy="330" rx="16" ry="11" fill="#5e9a78"/>
+      <ellipse cx="248" cy="336" rx="11" ry="8" fill="#3e7c59"/>
+    </svg>

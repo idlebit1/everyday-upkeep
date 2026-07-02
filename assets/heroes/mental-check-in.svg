@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Calm illustration of someone taking a mental check-in: a person sits under a tree with a warm cup of tea and an open journal on their lap, a soft sun glows overhead, a gentle path winds through grass and small plants, and a little note reads how am I, really — the mood is warm, quiet, and reassuring">
+      <ellipse cx="285" cy="404" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- soft sky glow -->
+      <circle cx="452" cy="96" r="52" fill="#faf0da"/>
+      <circle cx="452" cy="96" r="34" fill="#f6e6bf"/>
+      <!-- soft sun -->
+      <circle cx="452" cy="96" r="24" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round" opacity="0.8">
+        <line x1="452" y1="52" x2="452" y2="42"/>
+        <line x1="452" y1="150" x2="452" y2="140"/>
+        <line x1="408" y1="96" x2="398" y2="96"/>
+        <line x1="506" y1="96" x2="496" y2="96"/>
+        <line x1="420" y1="64" x2="413" y2="57"/>
+        <line x1="491" y1="135" x2="484" y2="128"/>
+        <line x1="420" y1="128" x2="413" y2="135"/>
+        <line x1="491" y1="57" x2="484" y2="64"/>
+      </g>
+
+      <!-- gentle winding path -->
+      <path d="M40 400 q90 -30 150 -20 q90 16 150 -18 q80 -26 180 -30" fill="none" stroke="#e9d9bf" stroke-width="20" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- tree behind the figure -->
+      <rect x="120" y="230" width="16" height="120" rx="6" fill="#8a6a4f"/>
+      <circle cx="128" cy="200" r="56" fill="#5e9a78"/>
+      <circle cx="92" cy="222" r="38" fill="#3e7c59"/>
+      <circle cx="162" cy="220" r="40" fill="#3e7c59"/>
+      <circle cx="128" cy="176" r="40" fill="#7bb894"/>
+      <!-- a couple of soft falling leaves -->
+      <ellipse cx="180" cy="252" rx="6" ry="9" fill="#7bb894" transform="rotate(30 180 252)"/>
+      <ellipse cx="76" cy="266" rx="5" ry="8" fill="#5e9a78" transform="rotate(-25 76 266)"/>
+
+      <!-- seated person -->
+      <!-- legs / lap blanket -->
+      <path d="M232 356 q40 -22 92 0 q6 22 -6 32 h-80 q-12 -10 -6 -32 z" fill="#c96f4a"/>
+      <path d="M240 360 q42 -14 76 0" fill="none" stroke="#b25c3a" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      <!-- torso -->
+      <path d="M246 300 q32 -26 64 0 l6 60 h-76 z" fill="#3e7c59"/>
+      <!-- left arm resting -->
+      <path d="M250 316 q-16 20 -6 44" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- right arm holding tea -->
+      <path d="M306 316 q22 14 30 34" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <!-- neck + head -->
+      <rect x="272" y="272" width="14" height="18" rx="6" fill="#e8b48f"/>
+      <circle cx="279" cy="256" r="24" fill="#e8b48f"/>
+      <!-- hair -->
+      <path d="M256 252 q4 -30 32 -28 q20 2 22 24 q-10 -10 -26 -8 q-18 2 -28 12 z" fill="#8a6a4f"/>
+      <!-- calm, closed-eye content face -->
+      <path d="M270 254 q4 4 8 0" stroke="#6b5240" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M284 254 q4 4 8 0" stroke="#6b5240" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M274 266 q6 5 12 0" stroke="#c96f4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <!-- open journal on the lap -->
+      <path d="M244 356 q34 -12 70 0 l0 6 q-34 -12 -70 0 z" fill="#8a6a4f"/>
+      <path d="M246 350 h32 v14 h-32 z" fill="#fffdf8" transform="rotate(-4 262 357)"/>
+      <path d="M282 350 h32 v14 h-32 z" fill="#fffdf8" transform="rotate(4 298 357)"/>
+      <g stroke="#cdd9de" stroke-width="1.4">
+        <line x1="250" y1="354" x2="272" y2="353"/>
+        <line x1="250" y1="359" x2="270" y2="358"/>
+        <line x1="288" y1="353" x2="310" y2="354"/>
+        <line x1="288" y1="358" x2="308" y2="359"/>
+      </g>
+
+      <!-- warm cup of tea with steam -->
+      <path d="M330 344 h30 l-3 22 h-24 z" fill="#fffdf8" stroke="#d8cfbe" stroke-width="2"/>
+      <path d="M360 348 q10 0 8 10 q-2 6 -9 5" fill="none" stroke="#d8cfbe" stroke-width="2.4"/>
+      <ellipse cx="345" cy="344" rx="15" ry="4" fill="#c96f4a"/>
+      <g stroke="#cdd9de" stroke-width="2.4" stroke-linecap="round" opacity="0.7">
+        <path d="M340 332 q-4 -6 0 -12"/>
+        <path d="M350 332 q4 -6 0 -12"/>
+      </g>
+
+      <!-- a small mood note pinned nearby -->
+      <g transform="rotate(-5 430 300)">
+        <rect x="392" y="270" width="88" height="64" rx="8" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+        <circle cx="436" cy="276" r="3" fill="#e0a93d"/>
+        <text x="436" y="300" font-size="12.5" fill="#3e7c59" font-weight="700" text-anchor="middle">how am I,</text>
+        <text x="436" y="318" font-size="12.5" fill="#3e7c59" font-weight="700" text-anchor="middle">really?</text>
+      </g>
+
+      <!-- small friendly plants near the path -->
+      <path d="M70 388 q-3 -18 -12 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M70 388 q3 -16 12 -22" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="56" cy="360" rx="6" ry="10" fill="#5e9a78" transform="rotate(-30 56 360)"/>
+      <ellipse cx="84" cy="364" rx="6" ry="10" fill="#3e7c59" transform="rotate(28 84 364)"/>
+      <circle cx="510" cy="388" r="5" fill="#e0a93d"/>
+      <path d="M510 388 q-2 -14 -10 -18" stroke="#5e9a78" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>

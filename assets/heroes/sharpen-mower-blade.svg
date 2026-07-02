@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a push mower parked on a green lawn with a sparkle gleaming on its freshly sharpened blade, under a sun and drifting clouds">
+      <ellipse cx="280" cy="398" rx="250" ry="24" fill="#efe7d8"/>
+      <circle cx="76" cy="68" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="170" cy="120" rx="30" ry="14" fill="#dce8ee"/>
+      <path d="M60 386 q110 -26 220 0 q110 26 220 0 l0 14 l-440 0 z" fill="#5e9a78"/>
+      <g stroke="#3e7c59" stroke-width="4" stroke-linecap="round">
+        <path d="M84 384 q-3 -14 -9 -20" fill="none"/>
+        <path d="M96 384 q1 -16 7 -23" fill="none"/>
+        <path d="M448 380 q-3 -14 -9 -20" fill="none"/>
+        <path d="M462 380 q2 -15 8 -22" fill="none"/>
+        <path d="M120 392 q-2 -12 -7 -17" fill="none"/>
+      </g>
+      <g stroke="#2c5a40" stroke-width="4" stroke-linecap="round">
+        <path d="M488 388 q3 -13 9 -18" fill="none"/>
+        <path d="M70 396 q3 -11 8 -15" fill="none"/>
+      </g>
+      <!-- clippings -->
+      <g fill="#5e9a78">
+        <ellipse cx="430" cy="402" rx="7" ry="3" transform="rotate(-16 430 402)"/>
+        <ellipse cx="452" cy="410" rx="6" ry="3" transform="rotate(12 452 410)"/>
+        <ellipse cx="120" cy="408" rx="6" ry="3" transform="rotate(20 120 408)"/>
+      </g>
+      <!-- handle -->
+      <path d="M352 312 L462 196" stroke="#8a6a4f" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <path d="M338 312 L448 196" stroke="#8a6a4f" stroke-width="11" stroke-linecap="round" fill="none"/>
+      <rect x="436" y="178" width="42" height="16" rx="8" fill="#2c5a40" transform="rotate(-46 457 186)"/>
+      <!-- deck -->
+      <rect x="176" y="296" width="196" height="52" rx="15" fill="#c96f4a"/>
+      <rect x="176" y="328" width="196" height="12" rx="6" fill="#d9663f"/>
+      <!-- discharge chute -->
+      <rect x="362" y="306" width="30" height="22" rx="7" fill="#d9663f"/>
+      <!-- engine -->
+      <rect x="226" y="244" width="92" height="58" rx="11" fill="#e0a93d"/>
+      <rect x="240" y="232" width="64" height="18" rx="7" fill="#b9b1a3"/>
+      <rect x="296" y="262" width="30" height="22" rx="5" fill="#d98e3b"/>
+      <circle cx="252" cy="270" r="13" fill="#d98e3b"/>
+      <circle cx="252" cy="270" r="5.5" fill="#fffdf8"/>
+      <path d="M318 254 q24 -8 36 6" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="350" y="256" width="14" height="8" rx="3.5" fill="#2c5a40"/>
+      <!-- wheels -->
+      <circle cx="208" cy="354" r="26" fill="#2c5a40"/>
+      <circle cx="208" cy="354" r="9" fill="#b9b1a3"/>
+      <circle cx="342" cy="352" r="30" fill="#2c5a40"/>
+      <circle cx="342" cy="352" r="11" fill="#b9b1a3"/>
+      <!-- blade peeking under the deck, freshly sharpened -->
+      <rect x="240" y="346" width="74" height="9" rx="4.5" fill="#b9b1a3"/>
+      <rect x="240" y="346" width="74" height="3.5" rx="1.75" fill="#dce8ee"/>
+      <!-- gleam / sparkles on the blade -->
+      <g stroke="#fffdf8" stroke-width="3.5" stroke-linecap="round">
+        <line x1="277" y1="328" x2="277" y2="344"/>
+        <line x1="269" y1="336" x2="285" y2="336"/>
+      </g>
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="305" y1="334" x2="305" y2="342"/>
+        <line x1="301" y1="338" x2="309" y2="338"/>
+        <line x1="251" y1="356" x2="251" y2="362"/>
+        <line x1="248" y1="359" x2="254" y2="359"/>
+      </g>
+      <circle cx="290" cy="330" r="2.5" fill="#fffdf8"/>
+    </svg>

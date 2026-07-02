@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tidy garden bed with a shrub and flowers ringed by a fresh layer of brown mulch, a wheelbarrow of mulch and a rake beside it, under a bright sun">
+      <ellipse cx="290" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <circle cx="478" cy="64" r="26" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="4" stroke-linecap="round">
+        <line x1="478" y1="20" x2="478" y2="30"/>
+        <line x1="478" y1="98" x2="478" y2="108"/>
+        <line x1="434" y1="64" x2="444" y2="64"/>
+        <line x1="512" y1="64" x2="522" y2="64"/>
+        <line x1="447" y1="33" x2="454" y2="40"/>
+        <line x1="502" y1="88" x2="509" y2="95"/>
+        <line x1="509" y1="33" x2="502" y2="40"/>
+      </g>
+      <ellipse cx="120" cy="78" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="170" cy="92" rx="30" ry="16" fill="#dce8ee"/>
+      <ellipse cx="330" cy="56" rx="34" ry="17" fill="#dce8ee"/>
+      <!-- back fence -->
+      <g fill="#b9b1a3">
+        <rect x="36" y="150" width="12" height="56" rx="4"/>
+        <rect x="84" y="150" width="12" height="56" rx="4"/>
+        <rect x="132" y="150" width="12" height="56" rx="4"/>
+      </g>
+      <rect x="28" y="162" width="124" height="9" rx="4.5" fill="#8a6a4f"/>
+      <rect x="28" y="188" width="124" height="9" rx="4.5" fill="#8a6a4f"/>
+      <!-- ground / lawn behind bed -->
+      <path d="M10 300 Q280 280 550 300 L550 392 Q280 412 10 392 Z" fill="#5e9a78"/>
+      <!-- mulch bed mound -->
+      <path d="M170 360 Q300 300 470 348 Q480 372 470 384 Q300 408 175 388 Q162 374 170 360 Z" fill="#8a6a4f"/>
+      <path d="M178 356 Q300 304 462 346 Q466 356 462 362 Q300 384 184 372 Q174 364 178 356 Z" fill="#a07a55"/>
+      <!-- mulch flecks -->
+      <g fill="#6f523a">
+        <ellipse cx="226" cy="356" rx="6" ry="2.4" transform="rotate(-18 226 356)"/>
+        <ellipse cx="288" cy="346" rx="6" ry="2.4" transform="rotate(12 288 346)"/>
+        <ellipse cx="352" cy="352" rx="6" ry="2.4" transform="rotate(-10 352 352)"/>
+        <ellipse cx="412" cy="358" rx="6" ry="2.4" transform="rotate(20 412 358)"/>
+        <ellipse cx="258" cy="372" rx="6" ry="2.4" transform="rotate(8 258 372)"/>
+        <ellipse cx="330" cy="376" rx="6" ry="2.4" transform="rotate(-22 330 376)"/>
+        <ellipse cx="396" cy="378" rx="6" ry="2.4" transform="rotate(14 396 378)"/>
+      </g>
+      <!-- shrub with mulch clearance ring at its base -->
+      <ellipse cx="300" cy="352" rx="40" ry="10" fill="#6f523a"/>
+      <rect x="293" y="280" width="14" height="66" rx="6" fill="#8a6a4f"/>
+      <circle cx="300" cy="252" r="34" fill="#2c5a40"/>
+      <circle cx="272" cy="266" r="22" fill="#3e7c59"/>
+      <circle cx="330" cy="264" r="24" fill="#5e9a78"/>
+      <circle cx="300" cy="232" r="22" fill="#3e7c59"/>
+      <!-- flowers in the bed -->
+      <g>
+        <line x1="392" y1="356" x2="392" y2="326" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="392" cy="320" r="8" fill="#c96f4a"/>
+        <circle cx="392" cy="320" r="3" fill="#e0a93d"/>
+      </g>
+      <g>
+        <line x1="416" y1="358" x2="416" y2="334" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="416" cy="328" r="7" fill="#d9663f"/>
+        <circle cx="416" cy="328" r="2.6" fill="#e0a93d"/>
+      </g>
+      <g>
+        <line x1="220" y1="360" x2="220" y2="334" stroke="#3e7c59" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="220" cy="328" r="7" fill="#e0a93d"/>
+        <circle cx="220" cy="328" r="2.6" fill="#d98e3b"/>
+      </g>
+      <!-- wheelbarrow of mulch -->
+      <g>
+        <path d="M56 332 L150 332 L138 374 L74 374 Z" fill="#c96f4a"/>
+        <path d="M56 332 L150 332 L145 346 L61 346 Z" fill="#d9663f"/>
+        <!-- mulch heaped in the barrow -->
+        <path d="M64 332 Q103 312 142 332 Z" fill="#8a6a4f"/>
+        <g fill="#6f523a">
+          <ellipse cx="88" cy="326" rx="5" ry="2.2" transform="rotate(-16 88 326)"/>
+          <ellipse cx="112" cy="324" rx="5" ry="2.2" transform="rotate(12 112 324)"/>
+          <ellipse cx="103" cy="330" rx="5" ry="2.2"/>
+        </g>
+        <line x1="150" y1="338" x2="190" y2="352" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+        <line x1="56" y1="338" x2="30" y2="356" stroke="#8a6a4f" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="92" cy="392" r="17" fill="#33393b"/>
+        <circle cx="92" cy="392" r="6.5" fill="#b9b1a3"/>
+      </g>
+      <!-- rake leaning -->
+      <g>
+        <line x1="506" y1="372" x2="476" y2="270" stroke="#8a6a4f" stroke-width="7" stroke-linecap="round"/>
+        <path d="M462 268 h30" stroke="#b9b1a3" stroke-width="5" stroke-linecap="round"/>
+        <g stroke="#b9b1a3" stroke-width="3" stroke-linecap="round">
+          <line x1="464" y1="268" x2="462" y2="280"/>
+          <line x1="472" y1="268" x2="471" y2="280"/>
+          <line x1="480" y1="268" x2="481" y2="280"/>
+          <line x1="488" y1="268" x2="490" y2="280"/>
+        </g>
+      </g>
+    </svg>

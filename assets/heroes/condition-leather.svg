@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a leather care kit on a wooden table: a supple brown leather boot and a soft conditioned bag beside a tin of leather conditioner, a soft cloth, and a horsehair brush, with a small swatch showing a dry cracked corner next to a smooth conditioned corner">
+      <ellipse cx="290" cy="402" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- wooden tabletop -->
+      <rect x="40" y="332" width="500" height="58" rx="10" fill="#c9a06b"/>
+      <rect x="40" y="332" width="500" height="12" rx="6" fill="#d8b884"/>
+      <g stroke="#8a6a4f" stroke-width="2" opacity="0.4" stroke-linecap="round">
+        <line x1="96" y1="356" x2="180" y2="356"/>
+        <line x1="240" y1="368" x2="340" y2="368"/>
+        <line x1="400" y1="358" x2="486" y2="358"/>
+      </g>
+      <!-- soft conditioned bag (left) -->
+      <path d="M120 230 q0 -26 56 -26 q56 0 56 26 l10 96 q2 16 -16 16 h-100 q-18 0 -16 -16 z" fill="#8a6a4f"/>
+      <path d="M120 230 q0 -26 56 -26 q56 0 56 26 l2 18 q-58 14 -116 0 z" fill="#a07a52"/>
+      <path d="M150 206 q0 -34 26 -34 q26 0 26 34" fill="none" stroke="#6d5238" stroke-width="7" stroke-linecap="round"/>
+      <rect x="160" y="262" width="32" height="22" rx="5" fill="#e0a93d"/>
+      <circle cx="176" cy="273" r="4" fill="#8a6a4f"/>
+      <!-- shine sparkle on bag -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <path d="M206 232 v10 M201 237 h10"/>
+      </g>
+      <!-- supple leather boot (right) -->
+      <path d="M352 196 q-6 -10 8 -12 q22 -2 22 18 l4 78 l54 6 q26 4 30 24 l2 18 q2 12 -12 12 h-110 q-14 0 -14 -14 z" fill="#c96f4a"/>
+      <path d="M352 196 q-6 -10 8 -12 q22 -2 22 18 l1 22 q-16 6 -30 0 z" fill="#d9663f"/>
+      <path d="M384 280 l54 6 q26 4 30 24 l-118 0 z" fill="#b35f3c"/>
+      <!-- boot laces -->
+      <g stroke="#fffdf8" stroke-width="3" stroke-linecap="round">
+        <line x1="360" y1="214" x2="380" y2="222"/>
+        <line x1="360" y1="230" x2="380" y2="238"/>
+        <line x1="360" y1="246" x2="380" y2="254"/>
+      </g>
+      <!-- boot sole -->
+      <rect x="346" y="334" width="132" height="14" rx="7" fill="#5e4326"/>
+      <!-- shine sparkle on boot -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <path d="M408 224 v10 M403 229 h10"/>
+        <path d="M438 250 v8 M434 254 h8"/>
+      </g>
+      <!-- conditioner tin (center) -->
+      <ellipse cx="276" cy="324" rx="40" ry="12" fill="#3e7c59"/>
+      <rect x="236" y="300" width="80" height="24" fill="#3e7c59"/>
+      <ellipse cx="276" cy="300" rx="40" ry="12" fill="#5e9a78"/>
+      <ellipse cx="276" cy="300" rx="28" ry="8" fill="#2c5a40"/>
+      <rect x="246" y="308" width="60" height="12" rx="3" fill="#fffdf8" opacity="0.85"/>
+      <!-- soft cloth folded -->
+      <path d="M58 344 q40 -18 90 -8 q8 18 -2 30 q-44 12 -90 0 q-6 -12 2 -22 z" fill="#dce8ee"/>
+      <path d="M70 346 q30 -8 64 -2" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- horsehair brush -->
+      <rect x="430" y="356" width="86" height="20" rx="8" fill="#8a6a4f"/>
+      <g stroke="#b9b1a3" stroke-width="2.5" stroke-linecap="round">
+        <line x1="438" y1="376" x2="438" y2="388"/>
+        <line x1="450" y1="376" x2="450" y2="389"/>
+        <line x1="462" y1="376" x2="462" y2="388"/>
+        <line x1="474" y1="376" x2="474" y2="389"/>
+        <line x1="486" y1="376" x2="486" y2="388"/>
+        <line x1="498" y1="376" x2="498" y2="389"/>
+        <line x1="508" y1="376" x2="508" y2="388"/>
+      </g>
+      <!-- before / after swatch (top left) -->
+      <rect x="58" y="60" width="150" height="86" rx="12" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <line x1="133" y1="68" x2="133" y2="138" stroke="#e9e2d8" stroke-width="2" stroke-dasharray="4 4"/>
+      <!-- dry cracked half -->
+      <rect x="70" y="76" width="54" height="54" rx="6" fill="#b9b1a3"/>
+      <g stroke="#8a6a4f" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <path d="M78 86 q8 6 4 16 q-2 8 6 14"/>
+        <path d="M100 82 q-4 10 4 18 q4 6 -2 14"/>
+        <path d="M86 120 q10 -2 16 4"/>
+      </g>
+      <text x="97" y="142" font-size="11" fill="#6b7376" text-anchor="middle">dry</text>
+      <!-- supple conditioned half -->
+      <rect x="142" y="76" width="54" height="54" rx="6" fill="#a07a52"/>
+      <ellipse cx="160" cy="92" rx="14" ry="6" fill="#fffdf8" opacity="0.25"/>
+      <g stroke="#e0a93d" stroke-width="2" stroke-linecap="round">
+        <path d="M182 86 v8 M178 90 h8"/>
+      </g>
+      <text x="169" y="142" font-size="11" fill="#6b7376" text-anchor="middle">conditioned</text>
+      <!-- belt coiled, foreground -->
+      <path d="M256 360 q40 -8 78 0 q40 8 78 0" fill="none" stroke="#6d5238" stroke-width="12" stroke-linecap="round"/>
+      <rect x="248" y="352" width="20" height="16" rx="3" fill="#e0a93d"/>
+    </svg>

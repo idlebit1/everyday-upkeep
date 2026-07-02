@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style green car raised slightly at the front, with golden oil pouring from a tipped oil can into a funnel, a drain pan catching dark old oil underneath, and a wrench leaning nearby">
+      <ellipse cx="290" cy="396" rx="248" ry="22" fill="#efe7d8"/>
+      <circle cx="70" cy="68" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <ellipse cx="118" cy="128" rx="34" ry="16" fill="#dce8ee"/>
+      <!-- car body -->
+      <path d="M120 318 q0 -52 46 -56 l28 -3 q22 -36 70 -38 l92 0 q48 2 70 38 l36 5 q42 8 42 54 l0 22 q0 12 -12 12 l-360 0 q-12 0 -12 -12 z" fill="#3e7c59"/>
+      <path d="M196 262 q20 -30 64 -32 l88 0 q44 2 64 32 z" fill="#2c5a40"/>
+      <path d="M212 260 q16 -22 50 -24 l38 0 0 24 z" fill="#cfe3ec"/>
+      <path d="M312 236 l36 0 q34 2 50 24 l-86 0 z" fill="#cfe3ec"/>
+      <rect x="120" y="320" width="384" height="14" fill="#2c5a40"/>
+      <circle cx="486" cy="306" r="10" fill="#e0a93d"/>
+      <circle cx="136" cy="306" r="8" fill="#c96f4a"/>
+      <!-- wheels: front raised on a stand -->
+      <circle cx="208" cy="346" r="34" fill="#33393b"/>
+      <circle cx="208" cy="346" r="15" fill="#b9b1a3"/>
+      <circle cx="208" cy="346" r="5" fill="#8a6a4f"/>
+      <circle cx="436" cy="356" r="34" fill="#33393b"/>
+      <circle cx="436" cy="356" r="15" fill="#b9b1a3"/>
+      <circle cx="436" cy="356" r="5" fill="#8a6a4f"/>
+      <!-- jack stand under front -->
+      <path d="M188 340 l40 0 -8 42 -24 0 z" fill="#d9663f"/>
+      <rect x="178" y="382" width="60" height="9" rx="4.5" fill="#c96f4a"/>
+      <!-- wheel chock at rear -->
+      <path d="M468 390 l20 0 0 -16 z" fill="#8a6a4f"/>
+      <!-- drain pan with old oil drips -->
+      <path d="M284 384 l84 0 -8 14 -68 0 z" fill="#b9b1a3"/>
+      <ellipse cx="326" cy="384" rx="42" ry="7" fill="#8a6a4f"/>
+      <g fill="#6e5333">
+        <ellipse cx="326" cy="348" rx="4" ry="6"/>
+        <ellipse cx="322" cy="364" rx="3.5" ry="5"/>
+        <ellipse cx="330" cy="374" rx="3" ry="4.5"/>
+      </g>
+      <!-- oil can pouring into funnel -->
+      <g transform="rotate(-32 88 236)">
+        <rect x="64" y="216" width="48" height="56" rx="8" fill="#e0a93d"/>
+        <rect x="64" y="216" width="48" height="14" rx="7" fill="#d98e3b"/>
+        <rect x="108" y="222" width="26" height="10" rx="5" fill="#d98e3b"/>
+        <ellipse cx="88" cy="248" rx="13" ry="13" fill="#fffdf8"/>
+        <path d="M84 242 c4 4 8 8 8 11 a4 4 0 1 1 -8 0 c0 -3 0 -7 0 -11" fill="#d98e3b"/>
+      </g>
+      <path d="M134 218 q14 16 14 34" stroke="#e0a93d" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <circle cx="150" cy="262" r="4" fill="#e0a93d"/>
+      <circle cx="153" cy="276" r="3.2" fill="#d98e3b"/>
+      <!-- funnel -->
+      <path d="M132 286 l44 0 -16 18 -12 0 z" fill="#7fb3c8"/>
+      <rect x="148" y="304" width="12" height="14" rx="3" fill="#7fb3c8"/>
+      <!-- wrench on the ground -->
+      <g transform="rotate(18 506 384)">
+        <rect x="488" y="380" width="40" height="7" rx="3.5" fill="#8a6a4f"/>
+        <circle cx="486" cy="383" r="8" fill="#b9b1a3"/>
+        <circle cx="486" cy="383" r="3.5" fill="#fffdf8"/>
+      </g>
+      <!-- shrubs -->
+      <circle cx="68" cy="382" r="14" fill="#5e9a78"/>
+      <circle cx="90" cy="388" r="11" fill="#3e7c59"/>
+      <circle cx="536" cy="392" r="10" fill="#5e9a78"/>
+    </svg>

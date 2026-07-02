@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone washing exterior windows from outdoors against house siding: a tall double-hung window has one sparkling-clean pane and one dull pane spotted with rain marks, pollen, and a cobweb in the corner, a person stands safely on the ground holding a long extension pole with a squeegee head up to the upper glass, a coiled garden hose and a soapy bucket sit nearby, and a leafy shrub adds warmth">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- house siding behind the window -->
+      <g fill="#c9a06b" opacity="0.55">
+        <rect x="96" y="30" width="380" height="14"/>
+        <rect x="96" y="58" width="380" height="14"/>
+        <rect x="96" y="86" width="380" height="14"/>
+        <rect x="96" y="114" width="380" height="14"/>
+        <rect x="96" y="142" width="380" height="14"/>
+        <rect x="96" y="170" width="380" height="14"/>
+        <rect x="96" y="198" width="380" height="14"/>
+        <rect x="96" y="226" width="380" height="14"/>
+        <rect x="96" y="254" width="380" height="14"/>
+        <rect x="96" y="282" width="380" height="14"/>
+        <rect x="96" y="310" width="380" height="14"/>
+      </g>
+
+      <!-- window frame -->
+      <rect x="150" y="40" width="270" height="300" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- outer sill / apron below -->
+      <rect x="140" y="336" width="290" height="20" rx="5" fill="#b9b1a3"/>
+      <rect x="148" y="352" width="274" height="12" rx="4" fill="#8a6a4f"/>
+      <!-- center mullion (double-hung divide) -->
+      <rect x="278" y="46" width="14" height="288" fill="#8a6a4f"/>
+      <!-- top rail of lower sash -->
+      <rect x="156" y="186" width="258" height="12" fill="#8a6a4f"/>
+
+      <!-- LEFT pane: clean & sparkling -->
+      <rect x="160" y="50" width="114" height="130" rx="3" fill="#dce8ee"/>
+      <rect x="160" y="202" width="114" height="128" rx="3" fill="#dce8ee"/>
+      <!-- bright diagonal shine streaks on the clean glass -->
+      <g stroke="#fffdf8" stroke-width="6" stroke-linecap="round" opacity="0.85">
+        <line x1="178" y1="160" x2="240" y2="74"/>
+        <line x1="198" y1="166" x2="252" y2="92"/>
+        <line x1="176" y1="312" x2="236" y2="230"/>
+      </g>
+      <!-- sparkle on the clean pane -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M224 118 l0 10 M219 123 l10 0"/>
+      </g>
+      <text x="166" y="64" font-size="11" fill="#3e7c59" font-weight="700">clean</text>
+
+      <!-- RIGHT pane: dull, rain-spotted, pollen, cobweb -->
+      <rect x="296" y="50" width="114" height="130" rx="3" fill="#cdd9de"/>
+      <rect x="296" y="202" width="114" height="128" rx="3" fill="#cdd9de"/>
+      <!-- pollen / weather film overlay -->
+      <rect x="296" y="50" width="114" height="130" rx="3" fill="#e0a93d" opacity="0.22"/>
+      <rect x="296" y="202" width="114" height="128" rx="3" fill="#d8cfbe" opacity="0.45"/>
+      <!-- rain spots: rings of dried droplets -->
+      <g stroke="#b9b1a3" stroke-width="2" fill="none" opacity="0.75">
+        <circle cx="330" cy="92" r="6"/>
+        <circle cx="356" cy="110" r="5"/>
+        <circle cx="378" cy="84" r="7"/>
+        <circle cx="344" cy="138" r="5"/>
+        <circle cx="392" cy="132" r="6"/>
+        <circle cx="324" cy="244" r="6"/>
+        <circle cx="372" cy="268" r="5"/>
+        <circle cx="350" cy="300" r="6"/>
+      </g>
+      <!-- cobweb in the top-right corner -->
+      <g stroke="#b9b1a3" stroke-width="1.3" fill="none" opacity="0.8">
+        <path d="M410 54 L386 60 M410 54 L398 76 M410 54 L408 84 M410 54 L370 58"/>
+        <path d="M384 60 q12 6 22 -2 M380 70 q14 8 28 -2 M378 80 q16 6 30 0"/>
+      </g>
+      <!-- bug splat -->
+      <ellipse cx="362" cy="222" rx="4" ry="2.6" fill="#8a6a4f" opacity="0.7"/>
+      <circle cx="358" cy="222" r="1.3" fill="#8a6a4f"/>
+      <!-- pollen dust specks -->
+      <g fill="#e0a93d" opacity="0.6">
+        <circle cx="318" cy="160" r="2.2"/>
+        <circle cx="402" cy="170" r="1.8"/>
+        <circle cx="340" cy="206" r="2"/>
+        <circle cx="396" cy="226" r="1.6"/>
+      </g>
+      <text x="302" y="64" font-size="11" fill="#6b7376">weathered</text>
+
+      <!-- person standing on the GROUND with a long extension pole -->
+      <!-- the long pole running from low-right hands up to the upper glass -->
+      <rect x="246" y="98" width="9" height="250" rx="4.5" fill="#5e9a78" transform="rotate(14 250 220)"/>
+      <!-- squeegee/wash head at the top of the pole on the glass -->
+      <rect x="200" y="92" width="56" height="9" rx="3" fill="#3e7c59" transform="rotate(14 228 96)"/>
+      <rect x="204" y="84" width="48" height="7" rx="3" fill="#7fb3c8" transform="rotate(14 228 87)"/>
+      <!-- the wet trail behind the head -->
+      <path d="M214 104 q40 18 6 44" fill="none" stroke="#7fb3c8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- person body: feet planted on the ground, both hands on the pole -->
+      <!-- head -->
+      <circle cx="470" cy="232" r="20" fill="#e8b48f"/>
+      <path d="M452 226 q18 -20 38 -2 q2 -16 -18 -18 q-22 -2 -20 20 z" fill="#5b4636"/>
+      <!-- torso -->
+      <path d="M452 252 q18 -8 36 0 l6 64 h-48 z" fill="#c96f4a"/>
+      <!-- legs -->
+      <rect x="452" y="312" width="16" height="68" rx="6" fill="#2c5a40"/>
+      <rect x="474" y="312" width="16" height="68" rx="6" fill="#2c5a40"/>
+      <!-- shoes -->
+      <path d="M448 378 h24 l2 8 h-30 z" fill="#33393b"/>
+      <path d="M472 378 h24 l2 8 h-30 z" fill="#33393b"/>
+      <!-- both arms reaching to the pole -->
+      <path d="M456 268 q-44 -14 -82 -42" stroke="#c96f4a" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <path d="M484 270 q-40 -22 -78 -54" stroke="#d9663f" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- hands on the pole -->
+      <ellipse cx="376" cy="228" rx="11" ry="9" fill="#e8b48f"/>
+      <ellipse cx="408" cy="218" rx="11" ry="9" fill="#e8b48f"/>
+
+      <!-- coiled garden hose on the ground -->
+      <g stroke="#5e9a78" stroke-width="6" fill="none">
+        <circle cx="96" cy="368" r="26"/>
+        <circle cx="96" cy="368" r="16"/>
+      </g>
+      <path d="M120 360 q22 -8 40 4" stroke="#3e7c59" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+      <!-- soapy bucket on the ground -->
+      <path d="M40 320 h60 l-8 54 h-44 z" fill="#7fb3c8"/>
+      <path d="M36 318 h68 l-3 10 h-62 z" fill="#9cc3d4"/>
+      <path d="M42 314 q28 -16 54 0" fill="none" stroke="#5e9a78" stroke-width="3" stroke-linecap="round"/>
+      <!-- soap suds -->
+      <circle cx="52" cy="322" r="6" fill="#eef4f7"/>
+      <circle cx="66" cy="318" r="7" fill="#fffdf8"/>
+      <circle cx="80" cy="323" r="5" fill="#eef4f7"/>
+
+      <!-- leafy shrub for warmth, front-left -->
+      <path d="M150 388 q-12 -42 6 -64 q22 -16 40 6 q20 -4 18 20 q6 22 -16 30 z" fill="#3e7c59"/>
+      <path d="M158 384 q-8 -30 4 -46" stroke="#2c5a40" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M186 386 q6 -28 -2 -44" stroke="#2c5a40" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <ellipse cx="168" cy="332" rx="8" ry="12" fill="#5e9a78" transform="rotate(-24 168 332)"/>
+      <ellipse cx="192" cy="340" rx="8" ry="12" fill="#5e9a78" transform="rotate(26 192 340)"/>
+    </svg>

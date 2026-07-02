@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a watchmaker at a bench wearing a loupe and opening the case back of a mechanical watch to reveal the movement with tiny gears; a fine oiler and tweezers rest nearby, a timing machine displays the watch's accuracy, and the workshop is lit by a window">
+      <ellipse cx="282" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- window with soft light behind the bench -->
+      <rect x="392" y="30" width="132" height="120" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="458" y1="33" x2="458" y2="147" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="395" y1="90" x2="521" y2="90" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="486" cy="64" r="13" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="486" y1="42" x2="486" y2="48"/>
+        <line x1="508" y1="64" x2="502" y2="64"/>
+        <line x1="502" y1="49" x2="498" y2="53"/>
+      </g>
+      <rect x="380" y="22" width="156" height="10" rx="5" fill="#8a6a4f"/>
+
+      <!-- the workbench -->
+      <rect x="24" y="330" width="512" height="18" rx="8" fill="#c9a06b"/>
+      <rect x="24" y="348" width="512" height="8" rx="4" fill="#8a6a4f"/>
+      <rect x="60" y="356" width="14" height="44" rx="6" fill="#8a6a4f"/>
+      <rect x="486" y="356" width="14" height="44" rx="6" fill="#8a6a4f"/>
+
+      <!-- watchmaker figure, seated, leaning over the bench -->
+      <!-- torso -->
+      <path d="M118 330 q6 -70 56 -70 q50 0 56 70 z" fill="#3e7c59"/>
+      <!-- shoulder / apron accent -->
+      <path d="M132 330 q10 -46 42 -46 q32 0 42 46 z" fill="#5e9a78"/>
+      <!-- head -->
+      <circle cx="174" cy="238" r="30" fill="#e8b48f"/>
+      <!-- hair -->
+      <path d="M148 226 q4 -26 26 -26 q22 0 26 24 q-10 -12 -26 -12 q-16 0 -26 14 z" fill="#8a6a4f"/>
+      <!-- loupe over one eye -->
+      <circle cx="188" cy="242" r="11" fill="#dce8ee" opacity="0.85" stroke="#2c5a40" stroke-width="3"/>
+      <circle cx="188" cy="242" r="11" fill="none" stroke="#8a6a4f" stroke-width="1.5"/>
+      <!-- other eye + slight smile -->
+      <circle cx="162" cy="240" r="2.4" fill="#33393b"/>
+      <path d="M160 254 q8 5 16 0" stroke="#c96f4a" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- arm reaching down to the watch -->
+      <path d="M204 300 q30 8 48 24" stroke="#5e9a78" stroke-width="15" fill="none" stroke-linecap="round"/>
+      <!-- hand -->
+      <ellipse cx="256" cy="326" rx="14" ry="10" fill="#e8b48f"/>
+
+      <!-- the open watch on the bench, case back off, movement exposed -->
+      <!-- case body -->
+      <circle cx="286" cy="316" r="52" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+      <!-- movement plate -->
+      <circle cx="286" cy="316" r="40" fill="#e3efe8" stroke="#5e9a78" stroke-width="2.5"/>
+      <!-- tiny gears / wheels of the movement -->
+      <g fill="none" stroke="#5e9a78" stroke-width="2.6">
+        <circle cx="270" cy="302" r="11" stroke-dasharray="3 4"/>
+        <circle cx="302" cy="330" r="9" stroke-dasharray="3 4"/>
+        <circle cx="304" cy="300" r="6" stroke-dasharray="2 3"/>
+        <circle cx="268" cy="332" r="7" stroke-dasharray="2 3"/>
+      </g>
+      <!-- balance wheel hint at center -->
+      <circle cx="286" cy="316" r="14" fill="none" stroke="#e0a93d" stroke-width="2.6"/>
+      <circle cx="286" cy="316" r="3" fill="#e0a93d"/>
+      <!-- crown + stem -->
+      <rect x="336" y="310" width="14" height="11" rx="3" fill="#8a6a4f"/>
+      <!-- the removed case back leaning against the case -->
+      <g transform="rotate(-18 356 356)">
+        <circle cx="356" cy="356" r="34" fill="#b9b1a3" stroke="#8a6a4f" stroke-width="3"/>
+        <circle cx="356" cy="356" r="24" fill="none" stroke="#8a6a4f" stroke-width="2" stroke-dasharray="2 5"/>
+      </g>
+
+      <!-- fine oiler applying a drop -->
+      <g transform="translate(220 246) rotate(52)">
+        <rect x="0" y="0" width="60" height="8" rx="4" fill="#c96f4a"/>
+        <polygon points="60,1 78,4 60,7" fill="#8a6a4f"/>
+        <circle cx="79" cy="4" r="2.4" fill="#e0a93d"/>
+      </g>
+
+      <!-- tweezers resting on the bench -->
+      <g transform="translate(96 316) rotate(-14)">
+        <path d="M0 0 q46 -8 82 -2" stroke="#7fb3c8" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M0 8 q46 0 82 -2" stroke="#7fb3c8" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- timing machine showing accuracy -->
+      <rect x="404" y="238" width="118" height="92" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <rect x="416" y="250" width="94" height="42" rx="6" fill="#2c5a40"/>
+      <!-- rate readout line -->
+      <polyline points="424,282 436,270 448,282 460,270 472,282 484,270 496,282" fill="none" stroke="#5e9a78" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="463" y="266" font-size="9.5" fill="#e0a93d" text-anchor="middle" font-family="Georgia, serif">+2 s/day</text>
+      <!-- machine buttons -->
+      <circle cx="424" cy="308" r="6" fill="#5e9a78"/>
+      <circle cx="444" cy="308" r="6" fill="#e0a93d"/>
+      <rect x="464" y="302" width="44" height="12" rx="6" fill="#dce8ee"/>
+
+      <!-- small parts tray on the bench -->
+      <rect x="106" y="356" width="70" height="14" rx="4" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <circle cx="122" cy="363" r="3" fill="#8a6a4f"/>
+      <circle cx="138" cy="363" r="2.4" fill="#8a6a4f"/>
+      <circle cx="156" cy="363" r="3" fill="#8a6a4f"/>
+
+      <!-- floor shadow -->
+      <ellipse cx="282" cy="398" rx="160" ry="10" fill="#b9b1a3" opacity="0.4"/>
+    </svg>

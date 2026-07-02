@@ -100,9 +100,15 @@
   .guide {
     background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
     box-shadow: var(--shadow); padding: 18px; text-decoration: none; color: var(--ink);
-    display: flex; flex-direction: column; transition: all 0.15s ease;
+    display: flex; flex-direction: column; transition: all 0.15s ease; overflow: hidden;
   }
   a.guide:hover { border-color: var(--accent); transform: translateY(-2px); }
+  a.guide:hover .g-hero { transform: scale(1.03); }
+  .g-hero {
+    width: calc(100% + 36px); margin: -18px -18px 14px; height: 122px; display: block;
+    object-fit: cover; object-position: center; background: #fbf8f2;
+    border-bottom: 1px solid var(--line); transition: transform 0.2s ease;
+  }
   .g-icon {
     width: 46px; height: 46px; border-radius: 14px; background: var(--accent-soft);
     display: flex; align-items: center; justify-content: center;
@@ -693,8 +699,11 @@
   function cardHTML(p) {
     var ready = GUIDES.hasOwnProperty(p.id);
     var status = ready ? '<span class="status">Guide ready</span>' : '<span class="status">Coming soon</span>';
+    var art = ready
+      ? '<img class="g-hero" src="assets/heroes/' + GUIDES[p.id].replace(/\.html$/, "") + '.svg" alt="" loading="lazy" decoding="async">'
+      : '<div class="g-icon">' + ICONS[p.cat] + "</div>";
     var inner =
-      '<div class="g-icon">' + ICONS[p.cat] + "</div>" +
+      art +
       "<h3>" + p.title + "</h3>" +
       "<p>" + p.desc + "</p>" +
       '<div class="card-meta"><span class="cadence">' + p.cadence + "</span>" + status + "</div>";

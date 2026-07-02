@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone cleaning window blinds: a tall window holds horizontal blinds that are half dusty grey and half freshly clean with the clean slats catching bright light, a hand wearing a microfiber cloth wipes across the slats, a vacuum brush attachment and a spray bottle sit on the sill, and a second window beside it has a soft fabric cellular shade">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- ===== LEFT WINDOW: horizontal blinds, half dusty / half clean ===== -->
+      <rect x="60" y="40" width="232" height="300" rx="10" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <!-- glass behind the slats -->
+      <rect x="72" y="52" width="208" height="270" rx="4" fill="#dce8ee"/>
+      <!-- sill / apron below -->
+      <rect x="50" y="336" width="252" height="20" rx="5" fill="#b9b1a3"/>
+      <rect x="58" y="352" width="236" height="12" rx="4" fill="#8a6a4f"/>
+      <!-- head rail of the blinds -->
+      <rect x="72" y="52" width="208" height="16" rx="3" fill="#c9a06b"/>
+      <!-- pull cord on the right, tied up out of reach (child-safety) -->
+      <path d="M268 68 q6 30 0 60 q-6 30 0 60" stroke="#b9b1a3" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <circle cx="268" cy="190" r="5" fill="#c9a06b"/>
+
+      <!-- CLEAN slats (top half) — bright, catching light -->
+      <g>
+        <rect x="78" y="76" width="196" height="9" rx="3" fill="#c9a06b"/>
+        <rect x="78" y="92" width="196" height="9" rx="3" fill="#c9a06b"/>
+        <rect x="78" y="108" width="196" height="9" rx="3" fill="#c9a06b"/>
+        <rect x="78" y="124" width="196" height="9" rx="3" fill="#c9a06b"/>
+        <rect x="78" y="140" width="196" height="9" rx="3" fill="#c9a06b"/>
+        <rect x="78" y="156" width="196" height="9" rx="3" fill="#c9a06b"/>
+        <rect x="78" y="172" width="196" height="9" rx="3" fill="#c9a06b"/>
+      </g>
+      <!-- shine streaks across the clean slats -->
+      <g stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity="0.85">
+        <line x1="96" y1="150" x2="158" y2="80"/>
+        <line x1="120" y1="160" x2="176" y2="92"/>
+      </g>
+      <!-- sparkle on the clean blinds -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <path d="M236 100 l0 10 M231 105 l10 0"/>
+      </g>
+      <text x="84" y="73" font-size="11" fill="#3e7c59" font-weight="700">clean</text>
+
+      <!-- DUSTY slats (bottom half) — grey, fuzzy -->
+      <g>
+        <rect x="78" y="200" width="196" height="9" rx="3" fill="#b9b1a3"/>
+        <rect x="78" y="216" width="196" height="9" rx="3" fill="#b9b1a3"/>
+        <rect x="78" y="232" width="196" height="9" rx="3" fill="#b9b1a3"/>
+        <rect x="78" y="248" width="196" height="9" rx="3" fill="#b9b1a3"/>
+        <rect x="78" y="264" width="196" height="9" rx="3" fill="#b9b1a3"/>
+        <rect x="78" y="280" width="196" height="9" rx="3" fill="#b9b1a3"/>
+        <rect x="78" y="296" width="196" height="9" rx="3" fill="#b9b1a3"/>
+      </g>
+      <!-- grey dust fuzz sitting on the dusty slats -->
+      <g fill="#8a6a4f" opacity="0.55">
+        <circle cx="104" cy="198" r="2.2"/>
+        <circle cx="150" cy="214" r="1.8"/>
+        <circle cx="206" cy="230" r="2"/>
+        <circle cx="128" cy="262" r="1.8"/>
+        <circle cx="232" cy="278" r="2.2"/>
+        <circle cx="176" cy="294" r="1.8"/>
+      </g>
+      <text x="84" y="320" font-size="11" fill="#6b7376">dusty</text>
+
+      <!-- hand wearing a microfiber cloth wiping across a slat -->
+      <!-- cloth draped over the hand -->
+      <path d="M150 230 q26 -10 52 0 l-4 22 q-22 8 -44 0 z" fill="#7fb3c8"/>
+      <path d="M150 230 q26 -10 52 0 l-2 8 q-24 -8 -48 0 z" fill="#9cc3d4"/>
+      <!-- hand under the cloth -->
+      <ellipse cx="176" cy="252" rx="17" ry="12" fill="#e8b48f"/>
+      <path d="M166 250 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M176 262 q12 30 42 40" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- motion lines for the wipe -->
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round" opacity="0.7">
+        <line x1="210" y1="238" x2="226" y2="236"/>
+        <line x1="210" y1="246" x2="228" y2="245"/>
+      </g>
+
+      <!-- ===== RIGHT WINDOW: soft fabric / cellular shade ===== -->
+      <rect x="320" y="60" width="170" height="240" rx="9" fill="#fffdf8" stroke="#8a6a4f" stroke-width="6"/>
+      <rect x="330" y="70" width="150" height="220" rx="4" fill="#dce8ee"/>
+      <!-- head rail -->
+      <rect x="330" y="70" width="150" height="14" rx="3" fill="#c9a06b"/>
+      <!-- cellular / honeycomb shade pulled partway down -->
+      <rect x="334" y="84" width="142" height="120" rx="3" fill="#efe7d8"/>
+      <g stroke="#d8cfbe" stroke-width="2">
+        <line x1="334" y1="104" x2="476" y2="104"/>
+        <line x1="334" y1="124" x2="476" y2="124"/>
+        <line x1="334" y1="144" x2="476" y2="144"/>
+        <line x1="334" y1="164" x2="476" y2="164"/>
+        <line x1="334" y1="184" x2="476" y2="184"/>
+      </g>
+      <!-- honeycomb cell hint at the edge -->
+      <g stroke="#c9a06b" stroke-width="1.4" fill="none" opacity="0.6">
+        <path d="M478 94 q6 5 0 10 q-6 5 0 10 q6 5 0 10"/>
+      </g>
+      <!-- bottom rail of the shade -->
+      <rect x="334" y="200" width="142" height="8" rx="3" fill="#c9a06b"/>
+      <text x="338" y="98" font-size="10.5" fill="#6b7376">fabric shade</text>
+
+      <!-- ===== vacuum brush attachment on the sill, front-left ===== -->
+      <rect x="84" y="356" width="64" height="14" rx="5" fill="#5e9a78"/>
+      <rect x="84" y="368" width="64" height="6" rx="2" fill="#2c5a40"/>
+      <!-- bristles -->
+      <g stroke="#3e7c59" stroke-width="2" stroke-linecap="round">
+        <line x1="92" y1="374" x2="92" y2="382"/>
+        <line x1="102" y1="374" x2="102" y2="382"/>
+        <line x1="112" y1="374" x2="112" y2="382"/>
+        <line x1="122" y1="374" x2="122" y2="382"/>
+        <line x1="132" y1="374" x2="132" y2="382"/>
+        <line x1="142" y1="374" x2="142" y2="382"/>
+      </g>
+      <!-- vacuum hose curling off -->
+      <path d="M148 363 q34 -6 40 -28" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+      <!-- ===== spray bottle on the sill, front-right ===== -->
+      <rect x="404" y="312" width="30" height="44" rx="6" fill="#5e9a78"/>
+      <rect x="410" y="300" width="18" height="14" rx="3" fill="#3e7c59"/>
+      <path d="M428 302 l16 -6 l0 6 l-16 4 z" fill="#2c5a40"/>
+      <rect x="408" y="328" width="22" height="16" rx="3" fill="#dce8ee" opacity="0.8"/>
+
+      <!-- ===== small plant for warmth, far right ===== -->
+      <path d="M500 336 h26 l-4 24 h-18 z" fill="#c96f4a"/>
+      <path d="M512 336 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M512 336 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="497" cy="304" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 497 304)"/>
+      <ellipse cx="527" cy="308" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 527 308)"/>
+    </svg>

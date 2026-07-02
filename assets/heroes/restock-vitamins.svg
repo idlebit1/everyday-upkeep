@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of restocking supplements on a kitchen counter: a nearly empty supplement bottle stands next to a full, fresh backup bottle, a hand fills a weekly seven-day pill organizer, an expiration date is marked on the bottle, and a glass of water sits ready alongside">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- kitchen counter surface -->
+      <rect x="40" y="330" width="490" height="18" rx="5" fill="#c7a982"/>
+      <rect x="40" y="348" width="490" height="12" rx="4" fill="#a98a63"/>
+      <!-- backsplash tiles behind -->
+      <g fill="#f2ece0" stroke="#e4dccb" stroke-width="2">
+        <rect x="40" y="120" width="70" height="46"/>
+        <rect x="110" y="120" width="70" height="46"/>
+        <rect x="180" y="120" width="70" height="46"/>
+        <rect x="75" y="166" width="70" height="46"/>
+        <rect x="145" y="166" width="70" height="46"/>
+      </g>
+
+      <!-- nearly-empty supplement bottle (left) -->
+      <rect x="86" y="214" width="74" height="116" rx="10" fill="#c96f4a"/>
+      <rect x="86" y="214" width="74" height="116" rx="10" fill="#000" opacity="0.05"/>
+      <!-- cap -->
+      <rect x="94" y="196" width="58" height="22" rx="6" fill="#8a6a4f"/>
+      <!-- label -->
+      <rect x="92" y="246" width="62" height="56" rx="4" fill="#fffdf8"/>
+      <rect x="98" y="254" width="50" height="6" rx="3" fill="#c96f4a"/>
+      <rect x="98" y="266" width="42" height="4" rx="2" fill="#d8cfbe"/>
+      <rect x="98" y="274" width="46" height="4" rx="2" fill="#d8cfbe"/>
+      <!-- a few pills left rattling at the bottom -->
+      <ellipse cx="106" cy="322" rx="6" ry="4.5" fill="#e0a93d"/>
+      <ellipse cx="122" cy="324" rx="6" ry="4.5" fill="#e0a93d"/>
+      <ellipse cx="138" cy="321" rx="6" ry="4.5" fill="#e0a93d"/>
+      <text x="98" y="238" font-size="11" fill="#6b7376" font-weight="700">almost out</text>
+
+      <!-- fresh full backup bottle (right of it) -->
+      <rect x="176" y="196" width="82" height="134" rx="10" fill="#3e7c59"/>
+      <rect x="176" y="196" width="82" height="134" rx="10" fill="#fff" opacity="0.06"/>
+      <!-- cap -->
+      <rect x="185" y="176" width="64" height="24" rx="6" fill="#2c5a40"/>
+      <!-- label -->
+      <rect x="183" y="234" width="68" height="66" rx="4" fill="#fffdf8"/>
+      <rect x="190" y="242" width="54" height="7" rx="3.5" fill="#3e7c59"/>
+      <rect x="190" y="256" width="46" height="4" rx="2" fill="#d8cfbe"/>
+      <rect x="190" y="264" width="50" height="4" rx="2" fill="#d8cfbe"/>
+      <!-- packed full of pills -->
+      <g fill="#5e9a78">
+        <ellipse cx="197" cy="284" rx="6" ry="4.5"/>
+        <ellipse cx="212" cy="288" rx="6" ry="4.5"/>
+        <ellipse cx="227" cy="284" rx="6" ry="4.5"/>
+        <ellipse cx="242" cy="288" rx="6" ry="4.5"/>
+        <ellipse cx="205" cy="294" rx="6" ry="4.5"/>
+        <ellipse cx="234" cy="294" rx="6" ry="4.5"/>
+      </g>
+      <!-- expiration date sticker on the fresh bottle -->
+      <rect x="192" y="206" width="52" height="18" rx="4" fill="#faf0da" stroke="#e0a93d" stroke-width="2"/>
+      <text x="218" y="219" font-size="9.5" fill="#b07d1e" font-weight="700" text-anchor="middle">EXP 09/27</text>
+      <text x="184" y="192" font-size="11" fill="#3e7c59" font-weight="700">fresh backup</text>
+
+      <!-- weekly pill organizer being filled (front-center) -->
+      <g>
+        <rect x="286" y="298" width="196" height="34" rx="8" fill="#7fb3c8"/>
+        <rect x="286" y="298" width="196" height="12" rx="8" fill="#9cc3d4"/>
+        <!-- seven day compartments with hinged lids -->
+        <g>
+          <rect x="292" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+          <rect x="318" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+          <rect x="344" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+          <rect x="370" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+          <rect x="396" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+          <rect x="422" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+          <rect x="448" y="304" width="24" height="24" rx="3" fill="#dce8ee" stroke="#5e9a78" stroke-width="1.6"/>
+        </g>
+        <!-- day letters -->
+        <g font-size="8" fill="#3e7c59" font-weight="700" text-anchor="middle">
+          <text x="304" y="321">M</text>
+          <text x="330" y="321">T</text>
+          <text x="356" y="321">W</text>
+          <text x="382" y="321">T</text>
+          <text x="408" y="321">F</text>
+          <text x="434" y="321">S</text>
+          <text x="460" y="321">S</text>
+        </g>
+        <!-- open lid on the last compartment -->
+        <rect x="448" y="286" width="24" height="16" rx="3" fill="#9cc3d4" transform="rotate(-14 460 294)"/>
+      </g>
+      <text x="286" y="352" font-size="11" fill="#3e7c59" font-weight="700">fill from the dated bottle</text>
+
+      <!-- hand dropping a pill into the organizer -->
+      <ellipse cx="452" cy="264" rx="17" ry="12" fill="#e8b48f"/>
+      <path d="M441 260 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <path d="M452 252 q18 -22 42 -22" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <!-- pill falling from the fingers -->
+      <ellipse cx="458" cy="284" rx="5" ry="3.8" fill="#e0a93d"/>
+
+      <!-- glass of water (far right) -->
+      <path d="M496 250 h34 l-5 78 h-24 z" fill="#dce8ee" opacity="0.9"/>
+      <path d="M496 250 h34 l-1.2 20 h-31.6 z" fill="#bcd6e2" opacity="0.85"/>
+      <rect x="494" y="246" width="38" height="6" rx="3" fill="#cdd9de"/>
+      <!-- water shine -->
+      <line x1="504" y1="266" x2="502" y2="316" stroke="#fffdf8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    </svg>

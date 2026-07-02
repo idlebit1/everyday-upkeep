@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a chef's knife being sharpened at an angle on a two-sided whetstone resting on a damp towel, on a kitchen counter beside a cutting board with a ripe tomato and slices, and a honing rod standing in a green utensil crock">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window -->
+      <rect x="64" y="58" width="150" height="116" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="139" y1="58" x2="139" y2="174" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="64" y1="116" x2="214" y2="116" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="104" cy="90" r="14" fill="#f2cf7a"/>
+      <!-- shelf with jars and plant -->
+      <rect x="316" y="98" width="180" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="334" y="60" width="28" height="38" rx="6" fill="#5e9a78"/>
+      <rect x="339" y="54" width="18" height="8" rx="3" fill="#2c5a40"/>
+      <rect x="376" y="68" width="24" height="30" rx="6" fill="#e0a93d"/>
+      <rect x="380" y="62" width="16" height="8" rx="3" fill="#d98e3b"/>
+      <rect x="424" y="80" width="24" height="18" rx="3" fill="#c96f4a"/>
+      <circle cx="430" cy="70" r="8" fill="#3e7c59"/>
+      <circle cx="442" cy="66" r="9" fill="#5e9a78"/>
+      <circle cx="438" cy="76" r="6" fill="#3e7c59"/>
+      <!-- counter -->
+      <rect x="36" y="298" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="56" y="314" width="448" height="74" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="280" y1="314" x2="280" y2="388" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="262" y="344" width="8" height="16" rx="4" fill="#e0a93d"/>
+      <rect x="290" y="344" width="8" height="16" rx="4" fill="#e0a93d"/>
+      <!-- damp towel + two-grit whetstone -->
+      <rect x="84" y="282" width="204" height="16" rx="8" fill="#dce8ee"/>
+      <rect x="110" y="252" width="76" height="30" fill="#7fb3c8"/>
+      <rect x="186" y="252" width="76" height="30" fill="#9cc0d4"/>
+      <rect x="110" y="252" width="152" height="30" rx="3" fill="none" stroke="#5f93ad" stroke-width="2.5"/>
+      <circle cx="148" cy="246" r="3" fill="#7fb3c8"/>
+      <circle cx="166" cy="242" r="2.5" fill="#7fb3c8"/>
+      <!-- knife on the stone -->
+      <polygon points="122,250 252,204 252,228" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="252,204 310,184 316,200 256,220" fill="#8a6a4f"/>
+      <circle cx="274" cy="203" r="2.6" fill="#e0a93d"/>
+      <circle cx="294" cy="196" r="2.6" fill="#e0a93d"/>
+      <g stroke="#f2cf7a" stroke-width="2.5" stroke-linecap="round">
+        <line x1="118" y1="238" x2="112" y2="230"/>
+        <line x1="126" y1="234" x2="124" y2="225"/>
+      </g>
+      <!-- cutting board with tomato -->
+      <rect x="330" y="276" width="160" height="22" rx="9" fill="#c9a06b"/>
+      <circle cx="472" cy="287" r="4" fill="#8a6a4f"/>
+      <circle cx="366" cy="258" r="18" fill="#d9663f"/>
+      <path d="M360 242 q6 -6 12 0 q-6 4 -12 0" fill="#3e7c59"/>
+      <circle cx="408" cy="268" r="11" fill="#d9663f"/>
+      <circle cx="408" cy="268" r="7" fill="#c96f4a"/>
+      <circle cx="405" cy="266" r="1.4" fill="#f2cf7a"/>
+      <circle cx="411" cy="267" r="1.4" fill="#f2cf7a"/>
+      <circle cx="408" cy="271" r="1.4" fill="#f2cf7a"/>
+      <circle cx="432" cy="272" r="8" fill="#d9663f"/>
+      <circle cx="432" cy="272" r="5" fill="#c96f4a"/>
+      <!-- honing rod in crock -->
+      <line x1="496" y1="252" x2="482" y2="166" stroke="#b9b1a3" stroke-width="7" stroke-linecap="round"/>
+      <rect x="468" y="136" width="22" height="30" rx="9" fill="#2c5a40" transform="rotate(-9 479 151)"/>
+      <line x1="478" y1="252" x2="500" y2="186" stroke="#c9a06b" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="502" cy="182" rx="8" ry="11" fill="#c9a06b" transform="rotate(18 502 182)"/>
+      <rect x="464" y="250" width="52" height="48" rx="9" fill="#3e7c59"/>
+    </svg>

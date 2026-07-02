@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone in a hallway near a bedroom door taking an old carbon monoxide detector down off the wall, the back of the old unit showing a faded replace-by date label, and a fresh new detector waiting on a side table beside it, calm and reassuring">
+      <ellipse cx="280" cy="402" rx="244" ry="22" fill="#efe7d8"/>
+      <!-- back wall line -->
+      <rect x="36" y="14" width="488" height="16" rx="4" fill="#efe7d8"/>
+      <line x1="36" y1="30" x2="524" y2="30" stroke="#d8cfbe" stroke-width="3"/>
+
+      <!-- bedroom door, right side of the hallway -->
+      <rect x="386" y="70" width="92" height="232" rx="4" fill="#e6dccb" stroke="#d8cfbe" stroke-width="3"/>
+      <rect x="398" y="82" width="68" height="94" rx="3" fill="#f1e9dc"/>
+      <rect x="398" y="186" width="68" height="104" rx="3" fill="#f1e9dc"/>
+      <circle cx="456" cy="196" r="4.5" fill="#b9b1a3"/>
+
+      <!-- empty mounting bracket left on the wall where the old unit hung -->
+      <circle cx="214" cy="96" r="22" fill="none" stroke="#d8cfbe" stroke-width="3" stroke-dasharray="5 5"/>
+      <circle cx="206" cy="90" r="2.5" fill="#b9b1a3"/>
+      <circle cx="222" cy="102" r="2.5" fill="#b9b1a3"/>
+
+      <!-- OLD detector being taken down, tilted, back facing us with a faded date label -->
+      <g transform="rotate(-14 250 150)">
+        <rect x="214" y="116" width="72" height="72" rx="16" fill="#f1e9dc" stroke="#b9b1a3" stroke-width="3.5"/>
+        <!-- faded replace-by label on the back -->
+        <rect x="228" y="132" width="44" height="30" rx="5" fill="#e9e2d8" stroke="#b9b1a3" stroke-width="2"/>
+        <text x="250" y="145" font-size="7.5" font-weight="700" fill="#8a6a4f" text-anchor="middle">REPLACE BY</text>
+        <text x="250" y="157" font-size="11" font-weight="800" fill="#9a4f33" text-anchor="middle">2024</text>
+        <rect x="232" y="170" width="36" height="6" rx="2" fill="#d8cfbe"/>
+      </g>
+      <!-- "expired" tag -->
+      <rect x="150" y="196" width="74" height="22" rx="8" fill="#d9663f"/>
+      <text x="187" y="211" font-size="11" font-weight="800" fill="#fffdf8" text-anchor="middle">expired</text>
+
+      <!-- person reaching up to lift the old unit off -->
+      <!-- step stool -->
+      <rect x="206" y="350" width="80" height="11" rx="5" fill="#c96f4a"/>
+      <rect x="212" y="361" width="9" height="26" fill="#9a4f33"/>
+      <rect x="271" y="361" width="9" height="26" fill="#9a4f33"/>
+      <rect x="222" y="370" width="48" height="9" rx="4" fill="#c96f4a"/>
+      <!-- legs -->
+      <rect x="232" y="290" width="14" height="62" rx="6" fill="#2c5a40"/>
+      <rect x="252" y="290" width="14" height="62" rx="6" fill="#2c5a40"/>
+      <!-- torso -->
+      <rect x="224" y="214" width="50" height="84" rx="18" fill="#3e7c59"/>
+      <!-- reaching arm up to the old unit -->
+      <path d="M262 228 Q272 178 256 150" stroke="#3e7c59" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="252" cy="146" r="7" fill="#c9a06b"/>
+      <!-- other arm down -->
+      <path d="M230 238 Q216 262 222 286" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <circle cx="223" cy="292" r="6.5" fill="#c9a06b"/>
+      <!-- head -->
+      <circle cx="244" cy="190" r="18" fill="#c9a06b"/>
+      <path d="M226 186 q4 -16 20 -16 q12 0 16 10 q-10 -4 -18 -2 q-12 2 -18 8" fill="#8a6a4f"/>
+
+      <!-- side table with the FRESH new detector, boxed and ready -->
+      <rect x="452" y="326" width="92" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="462" y="336" width="10" height="58" fill="#8a6a4f"/>
+      <rect x="524" y="336" width="10" height="58" fill="#8a6a4f"/>
+      <!-- new unit, clean and bright -->
+      <rect x="466" y="278" width="64" height="48" rx="14" fill="#fffdf8" stroke="#5e9a78" stroke-width="3.5"/>
+      <g stroke="#9cc0d4" stroke-width="2.4" stroke-linecap="round">
+        <line x1="478" y1="292" x2="518" y2="292"/>
+        <line x1="478" y1="300" x2="518" y2="300"/>
+      </g>
+      <rect x="484" y="308" width="28" height="12" rx="3" fill="#dce8ee"/>
+      <text x="498" y="318" font-size="9" font-weight="800" fill="#5e9a78" text-anchor="middle">CO</text>
+      <circle cx="474" cy="288" r="4" fill="#e0a93d"/>
+      <!-- a little "new" sparkle -->
+      <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+        <path d="M538 272 l0 8 M534 276 l8 0"/>
+      </g>
+      <rect x="466" y="262" width="46" height="16" rx="6" fill="#3e7c59"/>
+      <text x="489" y="274" font-size="10" font-weight="800" fill="#fffdf8" text-anchor="middle">fresh</text>
+
+      <!-- plant for warmth, low left -->
+      <circle cx="96" cy="346" r="17" fill="#5e9a78"/>
+      <circle cx="114" cy="334" r="14" fill="#3e7c59"/>
+      <circle cx="118" cy="354" r="11" fill="#5e9a78"/>
+      <rect x="92" y="362" width="30" height="28" rx="4" fill="#c96f4a"/>
+    </svg>

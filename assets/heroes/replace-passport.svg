@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an open passport book on a table beside a stamp, an airplane, and a calendar with a circled renewal date — a metaphor for planning a passport renewal ahead of travel">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="66" cy="62" r="23" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="64" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="408" cy="76" rx="28" ry="16" fill="#dce8ee"/>
+      <ellipse cx="130" cy="112" rx="34" ry="16" fill="#dce8ee"/>
+      <!-- airplane crossing the sky -->
+      <path d="M392 120 l44 -16 q10 -4 14 4 l-30 30 l28 4 l10 -10 l10 4 l-14 22 l-26 -2 l-22 18 l-8 -4 l8 -24 z" fill="#7fb3c8"/>
+      <path d="M404 118 l28 -10 l-14 20 z" fill="#5f93ad"/>
+      <g stroke="#dce8ee" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 10">
+        <path d="M300 150 q40 -28 86 -38" fill="none"/>
+      </g>
+      <!-- open passport book -->
+      <path d="M150 262 l130 -22 v150 l-130 18 z" fill="#2c5a40"/>
+      <path d="M410 262 l-130 -22 v150 l130 18 z" fill="#35684c"/>
+      <path d="M158 268 l122 -20 v138 l-122 16 z" fill="#fffdf8"/>
+      <path d="M402 268 l-122 -20 v138 l122 16 z" fill="#f4efe4"/>
+      <rect x="276" y="244" width="8" height="158" rx="2" fill="#244a34"/>
+      <!-- left page: photo + lines -->
+      <rect x="174" y="286" width="40" height="50" rx="3" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2" transform="rotate(-4 194 311)"/>
+      <circle cx="194" cy="304" r="9" fill="#9cc8ad" transform="rotate(-4 194 311)"/>
+      <path d="M183 328 q11 -12 22 0 z" fill="#9cc8ad" transform="rotate(-4 194 311)"/>
+      <g stroke="#d8cfbe" stroke-width="4" stroke-linecap="round">
+        <line x1="226" y1="292" x2="266" y2="286"/>
+        <line x1="226" y1="306" x2="266" y2="300"/>
+        <line x1="226" y1="320" x2="258" y2="315"/>
+      </g>
+      <!-- gold emblem on left page -->
+      <circle cx="196" cy="354" r="9" fill="#e0a93d"/>
+      <circle cx="196" cy="354" r="4" fill="#faf0da"/>
+      <!-- right page: stamps -->
+      <rect x="298" y="288" width="42" height="34" rx="3" fill="#fbe9e1" transform="rotate(-8 319 305)"/>
+      <path d="M308 305 a11 11 0 1 1 22 0 a11 11 0 1 1 -22 0" fill="none" stroke="#d9663f" stroke-width="2.5" transform="rotate(-8 319 305)"/>
+      <rect x="346" y="316" width="42" height="30" rx="3" fill="#e3efe8" transform="rotate(6 367 331)"/>
+      <path d="M356 331 h22 M367 322 v18" stroke="#3e7c59" stroke-width="2.5" stroke-linecap="round" transform="rotate(6 367 331)"/>
+      <g stroke="#d8cfbe" stroke-width="3.5" stroke-linecap="round">
+        <line x1="300" y1="356" x2="386" y2="368"/>
+        <line x1="300" y1="368" x2="372" y2="378"/>
+      </g>
+      <!-- ink stamp -->
+      <rect x="426" y="316" width="52" height="22" rx="6" fill="#8a6a4f"/>
+      <rect x="442" y="306" width="20" height="14" rx="4" fill="#c9a06b"/>
+      <circle cx="452" cy="296" r="14" fill="#d9663f"/>
+      <circle cx="452" cy="296" r="8" fill="none" stroke="#fbe9e1" stroke-width="2.5"/>
+      <path d="M452 290 v12 M446 296 h12" stroke="#fbe9e1" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- calendar with circled date -->
+      <rect x="64" y="252" width="92" height="96" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="64" y="252" width="92" height="24" rx="10" fill="#c96f4a"/>
+      <rect x="64" y="266" width="92" height="10" fill="#c96f4a"/>
+      <rect x="78" y="244" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <rect x="134" y="244" width="8" height="18" rx="4" fill="#8a6a4f"/>
+      <g fill="#d8cfbe">
+        <rect x="74" y="288" width="12" height="9" rx="2"/>
+        <rect x="92" y="288" width="12" height="9" rx="2"/>
+        <rect x="110" y="288" width="12" height="9" rx="2"/>
+        <rect x="74" y="304" width="12" height="9" rx="2"/>
+        <rect x="110" y="304" width="12" height="9" rx="2"/>
+        <rect x="74" y="320" width="12" height="9" rx="2"/>
+        <rect x="92" y="320" width="12" height="9" rx="2"/>
+      </g>
+      <circle cx="134" cy="309" r="13" fill="none" stroke="#3e7c59" stroke-width="3.5"/>
+      <rect x="128" y="304" width="12" height="9" rx="2" fill="#3e7c59"/>
+      <!-- shrubs -->
+      <circle cx="38" cy="392" r="13" fill="#5e9a78"/>
+      <circle cx="520" cy="388" r="14" fill="#5e9a78"/>
+      <circle cx="538" cy="394" r="10" fill="#3e7c59"/>
+    </svg>

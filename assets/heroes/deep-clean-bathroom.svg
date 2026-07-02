@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bathroom mid-deep-clean: a tiled shower with a grout brush scrubbing a mildew-stained grout line and spray cleaner dwelling on the wall, a toilet beside it with the seat up, an exhaust fan in the ceiling with its cover off, a sink with a mirror, and a caddy of cleaning supplies and a spray bottle, a squeegee, and a small plant adding warmth">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- ceiling exhaust fan with cover removed -->
+      <rect x="206" y="20" width="64" height="44" rx="8" fill="#eef4f7" stroke="#b9b1a3" stroke-width="2.5"/>
+      <circle cx="238" cy="42" r="14" fill="#dce8ee"/>
+      <g stroke="#8a6a4f" stroke-width="2.6" stroke-linecap="round">
+        <line x1="238" y1="42" x2="238" y2="30"/>
+        <line x1="238" y1="42" x2="249" y2="48"/>
+        <line x1="238" y1="42" x2="227" y2="48"/>
+      </g>
+      <!-- removed fan cover leaning below -->
+      <rect x="282" y="40" width="36" height="26" rx="5" fill="#fffdf8" stroke="#d8cfbe" stroke-width="2"/>
+      <g stroke="#dce8ee" stroke-width="2.4">
+        <line x1="290" y1="46" x2="310" y2="46"/>
+        <line x1="290" y1="53" x2="310" y2="53"/>
+        <line x1="290" y1="60" x2="310" y2="60"/>
+      </g>
+
+      <!-- tiled shower wall, left -->
+      <rect x="44" y="78" width="190" height="232" rx="10" fill="#eef4f7"/>
+      <g stroke="#dce8ee" stroke-width="3">
+        <line x1="44" y1="138" x2="234" y2="138"/>
+        <line x1="44" y1="198" x2="234" y2="198"/>
+        <line x1="44" y1="258" x2="234" y2="258"/>
+        <line x1="108" y1="78" x2="108" y2="310"/>
+        <line x1="170" y1="78" x2="170" y2="310"/>
+      </g>
+      <!-- grout lines being scrubbed, with mildew specks on one -->
+      <circle cx="128" cy="198" r="3" fill="#33393b" opacity="0.5"/>
+      <circle cx="142" cy="198" r="2.6" fill="#33393b" opacity="0.45"/>
+      <circle cx="156" cy="198" r="2.6" fill="#5e9a78" opacity="0.5"/>
+      <!-- soap-scum / hard-water film cloud on the upper tile -->
+      <ellipse cx="84" cy="118" rx="22" ry="13" fill="#dce8ee" opacity="0.6"/>
+      <circle cx="76" cy="114" r="2.4" fill="#b9b1a3"/>
+      <circle cx="90" cy="122" r="2.2" fill="#b9b1a3"/>
+
+      <!-- shower head up top, descaling cross-reference nod -->
+      <path d="M150 96 l26 17 l-17 26 l-26 -17 z" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5"/>
+      <g stroke="#7fb3c8" stroke-width="2.2" stroke-linecap="round">
+        <line x1="150" y1="120" x2="148" y2="140"/>
+        <line x1="160" y1="126" x2="159" y2="144"/>
+      </g>
+
+      <!-- grout brush scrubbing the stained line -->
+      <line x1="138" y1="200" x2="206" y2="252" stroke="#8a6a4f" stroke-width="6" stroke-linecap="round"/>
+      <rect x="120" y="186" width="30" height="13" rx="5" fill="#3e7c59" transform="rotate(34 120 186)"/>
+      <g stroke="#2c5a40" stroke-width="2.2" stroke-linecap="round">
+        <line x1="126" y1="200" x2="120" y2="208"/>
+        <line x1="132" y1="204" x2="126" y2="212"/>
+        <line x1="138" y1="208" x2="132" y2="216"/>
+      </g>
+
+      <!-- spray bottle dwelling on the wall -->
+      <rect x="190" y="150" width="26" height="40" rx="5" fill="#c96f4a"/>
+      <rect x="196" y="138" width="14" height="14" rx="3" fill="#d9663f"/>
+      <path d="M190 150 l-14 -8 m14 14 l-16 -4 m16 12 l-15 2" stroke="#7fb3c8" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+      <!-- toilet, middle-right -->
+      <ellipse cx="318" cy="332" rx="40" ry="20" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <ellipse cx="318" cy="330" rx="26" ry="12" fill="#dce8ee"/>
+      <!-- tank -->
+      <rect x="296" y="246" width="46" height="56" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <rect x="300" y="238" width="38" height="12" rx="4" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <!-- raised seat lid -->
+      <path d="M296 300 q44 -22 50 -56 l8 4 q-6 38 -52 58 z" fill="#eef4f7" stroke="#d8cfbe" stroke-width="2"/>
+      <!-- a grime smudge at the base / behind -->
+      <ellipse cx="318" cy="350" rx="30" ry="8" fill="#e9e2d8"/>
+      <circle cx="300" cy="352" r="3" fill="#b9b1a3"/>
+      <circle cx="336" cy="351" r="2.6" fill="#b9b1a3"/>
+
+      <!-- sink + mirror, far right -->
+      <rect x="430" y="120" width="86" height="60" rx="8" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5"/>
+      <line x1="430" y1="150" x2="516" y2="150" stroke="#cdd9de" stroke-width="2"/>
+      <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round">
+        <path d="M500 132 l0 8 M496 136 l8 0"/>
+      </g>
+      <path d="M444 230 q30 -8 58 0 v40 q-30 8 -58 0 z" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <ellipse cx="473" cy="244" rx="20" ry="8" fill="#dce8ee"/>
+      <rect x="468" y="206" width="10" height="26" rx="4" fill="#b9b1a3"/>
+      <path d="M473 206 q0 -10 10 -10" stroke="#b9b1a3" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+      <!-- caddy of supplies + squeegee, front -->
+      <rect x="384" y="338" width="70" height="40" rx="7" fill="#e0a93d"/>
+      <rect x="380" y="332" width="78" height="10" rx="5" fill="#d98e3b"/>
+      <rect x="394" y="306" width="16" height="34" rx="4" fill="#5e9a78"/>
+      <rect x="398" y="298" width="9" height="10" rx="2.5" fill="#2c5a40"/>
+      <rect x="416" y="312" width="16" height="28" rx="4" fill="#7fb3c8"/>
+      <rect x="436" y="318" width="14" height="22" rx="4" fill="#fffdf8" stroke="#d8cfbe" stroke-width="1.6"/>
+      <!-- squeegee leaning -->
+      <line x1="466" y1="378" x2="466" y2="312" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <rect x="456" y="306" width="22" height="9" rx="3" fill="#7fb3c8"/>
+
+      <!-- small plant for warmth -->
+      <path d="M508 352 h26 l-4 24 h-18 z" fill="#c96f4a"/>
+      <path d="M520 352 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M520 352 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="505" cy="320" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 505 320)"/>
+      <ellipse cx="535" cy="324" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 535 324)"/>
+    </svg>

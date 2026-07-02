@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a front-loading washing machine with two plump white pillows tumbling inside, a bottle of detergent and three wool dryer balls beside it, a clothesline of freshly washed sparkling pillows above, and sunlight through a window">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="60" y="46" width="112" height="128" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="116" y1="49" x2="116" y2="171" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="63" y1="110" x2="169" y2="110" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="93" cy="82" r="17" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="93" y1="56" x2="93" y2="62"/>
+        <line x1="120" y1="82" x2="114" y2="82"/>
+        <line x1="111" y1="64" x2="107" y2="68"/>
+      </g>
+      <rect x="48" y="38" width="136" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- clothesline of fresh pillows -->
+      <line x1="206" y1="58" x2="512" y2="48" stroke="#b9b1a3" stroke-width="2.5"/>
+      <line x1="252" y1="56" x2="252" y2="48" stroke="#8a6a4f" stroke-width="2.5"/>
+      <line x1="296" y1="55" x2="296" y2="47" stroke="#8a6a4f" stroke-width="2.5"/>
+      <rect x="226" y="56" width="64" height="40" rx="18" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="298" y="55" width="64" height="40" rx="18" fill="#dce8ee" stroke="#7fb3c8" stroke-width="2"/>
+      <!-- fresh sparkles over the line -->
+      <g stroke="#7fb3c8" stroke-width="2.5" stroke-linecap="round">
+        <path d="M258 110 v12 M252 116 h12"/>
+        <path d="M330 108 v10 M325 113 h10"/>
+        <path d="M388 76 v9 M383 80 h10"/>
+      </g>
+      <!-- washing machine -->
+      <rect x="244" y="160" width="184" height="200" rx="20" fill="#fffdf8" stroke="#e6dccb" stroke-width="3"/>
+      <!-- control panel -->
+      <rect x="262" y="176" width="148" height="30" rx="8" fill="#e3efe8"/>
+      <circle cx="388" cy="191" r="9" fill="#3e7c59"/>
+      <circle cx="388" cy="191" r="3.5" fill="#fffdf8"/>
+      <rect x="276" y="186" width="40" height="6" rx="3" fill="#b9b1a3"/>
+      <rect x="276" y="196" width="26" height="5" rx="2.5" fill="#c9a06b"/>
+      <!-- door ring -->
+      <circle cx="336" cy="280" r="68" fill="#dce8ee" stroke="#b9b1a3" stroke-width="5"/>
+      <circle cx="336" cy="280" r="56" fill="#eaf2f6" stroke="#7fb3c8" stroke-width="2.5"/>
+      <!-- two pillows tumbling inside -->
+      <rect x="290" y="248" width="64" height="30" rx="15" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5" transform="rotate(-16 322 263)"/>
+      <rect x="316" y="282" width="64" height="30" rx="15" fill="#fffdf8" stroke="#b9b1a3" stroke-width="2.5" transform="rotate(14 348 297)"/>
+      <!-- water swirl -->
+      <path d="M296 304 q14 8 28 0 q14 -8 28 0 q14 8 28 0" stroke="#7fb3c8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- door latch -->
+      <circle cx="404" cy="280" r="5" fill="#b9b1a3"/>
+      <!-- detergent bottle -->
+      <rect x="452" y="288" width="46" height="62" rx="8" fill="#3e7c59"/>
+      <rect x="460" y="272" width="20" height="18" rx="4" fill="#2c5a40"/>
+      <rect x="456" y="304" width="38" height="26" rx="4" fill="#fffdf8"/>
+      <rect x="461" y="311" width="28" height="5" rx="2.5" fill="#5e9a78"/>
+      <rect x="461" y="320" width="20" height="4" rx="2" fill="#b9b1a3"/>
+      <!-- wool dryer balls -->
+      <circle cx="466" cy="362" r="14" fill="#e0a93d"/>
+      <circle cx="494" cy="366" r="13" fill="#d98e3b"/>
+      <circle cx="448" cy="372" r="11" fill="#c9a06b"/>
+      <path d="M460 356 q6 6 12 12 M488 360 q6 6 12 12" stroke="#fffdf8" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+      <!-- machine feet -->
+      <rect x="256" y="360" width="16" height="14" rx="4" fill="#b9b1a3"/>
+      <rect x="400" y="360" width="16" height="14" rx="4" fill="#b9b1a3"/>
+      <!-- plant -->
+      <path d="M196 346 q-2 -24 -12 -34" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M196 346 q4 -22 14 -30" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="180" cy="312" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 180 312)"/>
+      <ellipse cx="214" cy="316" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 214 316)"/>
+      <path d="M182 346 h28 l-4 16 h-20 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="336" cy="384" rx="124" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

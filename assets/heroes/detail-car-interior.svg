@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a friendly flat-style car interior being detailed: a vacuum nozzle cleaning a clean seat, a microfiber cloth wiping a sparkling dashboard, a floor mat pulled out to the side, and sparkle marks showing the cabin is fresh">
+      <ellipse cx="280" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- cabin shell -->
+      <path d="M70 300 q0 -150 130 -176 l180 0 q120 18 120 176 l0 8 q0 10 -10 10 l-410 0 q-10 0 -10 -10 z" fill="#3e7c59"/>
+      <!-- windshield band -->
+      <path d="M150 150 q40 -40 110 -42 l60 0 q70 4 100 42 l0 8 -270 0 z" fill="#cfe3ec"/>
+      <path d="M200 116 q26 -8 54 -8 l44 0 0 42 -118 0 q4 -22 20 -34 z" fill="#dce8ee"/>
+      <!-- dashboard slab (freshly wiped) -->
+      <rect x="96" y="190" width="368" height="58" rx="14" fill="#2c5a40"/>
+      <!-- dash vents -->
+      <rect x="120" y="206" width="64" height="26" rx="6" fill="#1d2521"/>
+      <g stroke="#5e9a78" stroke-width="4" stroke-linecap="round">
+        <line x1="132" y1="211" x2="132" y2="227"/>
+        <line x1="144" y1="211" x2="144" y2="227"/>
+        <line x1="156" y1="211" x2="156" y2="227"/>
+        <line x1="168" y1="211" x2="168" y2="227"/>
+      </g>
+      <!-- center touchscreen -->
+      <rect x="240" y="200" width="80" height="40" rx="6" fill="#1d2521"/>
+      <rect x="248" y="208" width="64" height="24" rx="3" fill="#7fb3c8"/>
+      <!-- steering wheel -->
+      <circle cx="404" cy="224" r="26" fill="none" stroke="#26302c" stroke-width="9"/>
+      <circle cx="404" cy="224" r="8" fill="#26302c"/>
+      <!-- microfiber cloth wiping the dash -->
+      <g transform="rotate(-12 300 184)">
+        <rect x="270" y="166" width="60" height="44" rx="8" fill="#dce8ee"/>
+        <rect x="270" y="166" width="60" height="44" rx="8" fill="none" stroke="#7fb3c8" stroke-width="2.5"/>
+        <g stroke="#7fb3c8" stroke-width="2.5"><line x1="282" y1="170" x2="282" y2="206"/><line x1="300" y1="170" x2="300" y2="206"/><line x1="318" y1="170" x2="318" y2="206"/></g>
+      </g>
+      <!-- sparkle on the clean dash -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="206" y1="176" x2="206" y2="186"/>
+        <line x1="200" y1="181" x2="212" y2="181"/>
+        <line x1="350" y1="172" x2="350" y2="180"/>
+        <line x1="346" y1="176" x2="354" y2="176"/>
+      </g>
+      <!-- clean seat -->
+      <g>
+        <path d="M120 376 l0 -78 q0 -14 14 -14 l72 0 q14 0 14 14 l0 78 z" fill="#5e9a78"/>
+        <path d="M126 300 l84 0 0 -22 q0 -10 -10 -10 l-64 0 q-10 0 -10 10 z" fill="#3e7c59"/>
+        <line x1="166" y1="300" x2="166" y2="370" stroke="#3e7c59" stroke-width="4"/>
+      </g>
+      <!-- vacuum nozzle cleaning the seat -->
+      <g transform="rotate(20 250 320)">
+        <rect x="236" y="300" width="22" height="60" rx="6" fill="#b9b1a3"/>
+        <path d="M236 360 l22 0 -4 16 -14 0 z" fill="#8a6a4f"/>
+        <rect x="240" y="288" width="14" height="16" rx="5" fill="#8a6a4f"/>
+      </g>
+      <!-- suction sparkle near nozzle -->
+      <g stroke="#7fb3c8" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+        <path d="M262 348 q10 -2 18 4"/>
+        <path d="M260 360 q12 2 20 -2"/>
+      </g>
+      <!-- floor mat pulled out, leaning -->
+      <g transform="rotate(8 470 350)">
+        <rect x="430" y="296" width="80" height="96" rx="10" fill="#26302c"/>
+        <rect x="430" y="296" width="80" height="96" rx="10" fill="none" stroke="#1d2521" stroke-width="3"/>
+        <g stroke="#3e7c59" stroke-width="3"><line x1="446" y1="306" x2="446" y2="382"/><line x1="466" y1="306" x2="466" y2="382"/><line x1="486" y1="306" x2="486" y2="382"/></g>
+        <rect x="446" y="316" width="48" height="26" rx="4" fill="#1d2521"/>
+      </g>
+      <text x="470" y="408" font-size="13" font-weight="700" fill="#8a6a4f" text-anchor="middle" transform="rotate(8 470 408)">mats out</text>
+    </svg>

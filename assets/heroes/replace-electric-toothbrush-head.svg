@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bathroom counter with an electric toothbrush handle on its charging base, a fresh replacement brush head with straight blue indicator bristles standing in a cup, a worn head with splayed faded bristles set aside, a multipack box of heads, and a wall calendar marking the three-month swap">
+      <ellipse cx="280" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- mirror -->
+      <rect x="206" y="46" width="168" height="120" rx="16" fill="#dce8ee" stroke="#b9b1a3" stroke-width="5"/>
+      <line x1="242" y1="146" x2="330" y2="64" stroke="#fffdf8" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+      <line x1="268" y1="150" x2="344" y2="78" stroke="#fffdf8" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+      <!-- wall calendar marking the 3-month swap -->
+      <rect x="70" y="76" width="92" height="100" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="70" y="76" width="92" height="24" rx="8" fill="#c96f4a"/>
+      <rect x="70" y="92" width="92" height="8" fill="#c96f4a"/>
+      <g fill="#b9b1a3">
+        <circle cx="88" cy="116" r="3.5"/><circle cx="106" cy="116" r="3.5"/><circle cx="124" cy="116" r="3.5"/><circle cx="142" cy="116" r="3.5"/>
+        <circle cx="88" cy="134" r="3.5"/><circle cx="106" cy="134" r="3.5"/><circle cx="124" cy="134" r="3.5"/><circle cx="142" cy="134" r="3.5"/>
+        <circle cx="88" cy="152" r="3.5"/><circle cx="106" cy="152" r="3.5"/>
+      </g>
+      <circle cx="124" cy="134" r="3.5" fill="#3e7c59"/>
+      <circle cx="124" cy="134" r="9" fill="none" stroke="#e0a93d" stroke-width="3"/>
+      <!-- counter -->
+      <rect x="56" y="298" width="448" height="16" rx="8" fill="#b9b1a3"/>
+      <rect x="84" y="314" width="14" height="72" fill="#8a6a4f"/>
+      <rect x="462" y="314" width="14" height="72" fill="#8a6a4f"/>
+      <!-- plant -->
+      <polygon points="104,298 140,298 134,262 110,262" fill="#c96f4a"/>
+      <circle cx="110" cy="246" r="14" fill="#5e9a78"/>
+      <circle cx="134" cy="242" r="15" fill="#3e7c59"/>
+      <circle cx="122" cy="228" r="12" fill="#5e9a78"/>
+      <!-- cup holding the fresh replacement head -->
+      <rect x="232" y="240" width="60" height="58" rx="9" fill="#c96f4a"/>
+      <rect x="232" y="240" width="60" height="12" rx="6" fill="#d9663f"/>
+      <!-- fresh head: short collar + straight bristles, blue indicator center -->
+      <rect x="255" y="180" width="14" height="70" rx="7" fill="#dce8ee"/>
+      <rect x="252" y="156" width="20" height="28" rx="9" fill="#5e9a78"/>
+      <g stroke="#5e9a78" stroke-width="2.6" stroke-linecap="round">
+        <line x1="254" y1="154" x2="254" y2="140"/>
+        <line x1="262" y1="154" x2="262" y2="138"/>
+        <line x1="270" y1="154" x2="270" y2="140"/>
+      </g>
+      <line x1="262" y1="154" x2="262" y2="138" stroke="#7fb3c8" stroke-width="3.2" stroke-linecap="round"/>
+      <!-- worn head set aside on the counter, splayed faded bristles -->
+      <g transform="rotate(74 360 286)">
+        <rect x="352" y="248" width="16" height="62" rx="8" fill="#dce8ee"/>
+        <rect x="349" y="224" width="22" height="28" rx="9" fill="#b9b1a3"/>
+        <g stroke="#b9b1a3" stroke-width="2.6" stroke-linecap="round">
+          <line x1="352" y1="222" x2="343" y2="210"/>
+          <line x1="357" y1="222" x2="354" y2="206"/>
+          <line x1="363" y1="222" x2="366" y2="206"/>
+          <line x1="368" y1="222" x2="377" y2="211"/>
+        </g>
+      </g>
+      <!-- multipack box of heads -->
+      <rect x="392" y="252" width="74" height="46" rx="6" fill="#5e9a78"/>
+      <rect x="392" y="252" width="74" height="14" rx="6" fill="#3e7c59"/>
+      <g stroke="#fffdf8" stroke-width="2.2" stroke-linecap="round" opacity="0.85">
+        <line x1="404" y1="278" x2="404" y2="290"/>
+        <line x1="418" y1="278" x2="418" y2="290"/>
+        <line x1="432" y1="278" x2="432" y2="290"/>
+        <line x1="446" y1="278" x2="446" y2="290"/>
+      </g>
+      <text x="429" y="248" font-size="11" fill="#8a6a4f" text-anchor="middle" font-weight="700">4-pack</text>
+      <!-- electric handle on charger -->
+      <rect x="300" y="286" width="58" height="14" rx="7" fill="#8a6a4f"/>
+      <circle cx="329" cy="293" r="4" fill="#e0a93d"/>
+      <rect x="314" y="184" width="30" height="104" rx="14" fill="#7fb3c8"/>
+      <circle cx="329" cy="236" r="6" fill="#fffdf8"/>
+      <rect x="325" y="237" width="8" height="20" rx="3" fill="#dce8ee"/>
+      <!-- shaft + seated fresh head on the handle -->
+      <rect x="324" y="160" width="10" height="26" rx="4" fill="#b9b1a3"/>
+      <rect x="320" y="134" width="18" height="30" rx="9" fill="#5e9a78"/>
+      <g stroke="#5e9a78" stroke-width="2.4" stroke-linecap="round">
+        <line x1="324" y1="132" x2="324" y2="120"/>
+        <line x1="329" y1="132" x2="329" y2="118"/>
+        <line x1="334" y1="132" x2="334" y2="120"/>
+      </g>
+      <line x1="329" y1="132" x2="329" y2="118" stroke="#7fb3c8" stroke-width="3" stroke-linecap="round"/>
+      <!-- sparkles -->
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="220" y1="206" x2="220" y2="218"/>
+        <line x1="214" y1="212" x2="226" y2="212"/>
+        <line x1="296" y1="146" x2="296" y2="156"/>
+        <line x1="291" y1="151" x2="301" y2="151"/>
+      </g>
+      <circle cx="204" cy="262" r="3" fill="#7fb3c8"/>
+      <circle cx="302" cy="200" r="3" fill="#7fb3c8"/>
+      <!-- soap dish -->
+      <circle cx="188" cy="384" r="13" fill="#5e9a78"/>
+      <circle cx="210" cy="388" r="10" fill="#3e7c59"/>
+    </svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a bedroom where a mattress is being rotated head-to-foot on its frame, shown by two large curved gold arrows circling above it, with pillows set aside on a bench, a cleared nightstand, and a plant by the window">
+      <ellipse cx="290" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window with sun -->
+      <rect x="44" y="48" width="110" height="128" rx="8" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="99" y1="51" x2="99" y2="173" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="47" y1="112" x2="151" y2="112" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="78" cy="84" r="16" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="78" y1="58" x2="78" y2="64"/>
+        <line x1="104" y1="84" x2="98" y2="84"/>
+        <line x1="96" y1="66" x2="92" y2="70"/>
+      </g>
+      <rect x="32" y="40" width="134" height="10" rx="5" fill="#8a6a4f"/>
+      <!-- bed frame -->
+      <rect x="186" y="128" width="20" height="208" rx="9" fill="#8a6a4f"/>
+      <rect x="196" y="146" width="14" height="130" rx="7" fill="#c9a06b"/>
+      <rect x="206" y="290" width="304" height="26" rx="8" fill="#c9a06b"/>
+      <rect x="220" y="316" width="13" height="52" rx="5" fill="#8a6a4f"/>
+      <rect x="488" y="316" width="13" height="52" rx="5" fill="#8a6a4f"/>
+      <!-- slats peeking out under the mattress -->
+      <g fill="#8a6a4f">
+        <rect x="238" y="296" width="9" height="14" rx="3"/>
+        <rect x="294" y="296" width="9" height="14" rx="3"/>
+        <rect x="350" y="296" width="9" height="14" rx="3"/>
+        <rect x="406" y="296" width="9" height="14" rx="3"/>
+        <rect x="462" y="296" width="9" height="14" rx="3"/>
+      </g>
+      <!-- mattress, mid-rotation: slightly tilted -->
+      <g transform="rotate(-5 360 254)">
+        <rect x="216" y="226" width="288" height="58" rx="14" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+        <rect x="216" y="226" width="288" height="18" rx="9" fill="#dce8ee"/>
+        <g stroke="#e6dccb" stroke-width="2" stroke-linecap="round">
+          <line x1="262" y1="252" x2="262" y2="276"/>
+          <line x1="318" y1="252" x2="318" y2="276"/>
+          <line x1="374" y1="252" x2="374" y2="276"/>
+          <line x1="430" y1="252" x2="430" y2="276"/>
+        </g>
+        <!-- side handle -->
+        <rect x="332" y="258" width="56" height="9" rx="4.5" fill="#b9b1a3"/>
+      </g>
+      <!-- rotation arrows -->
+      <path d="M268 176 q92 -58 184 0" stroke="#e0a93d" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <polygon points="452,158 478,184 442,190" fill="#e0a93d"/>
+      <path d="M452 218 q-92 50 -184 0" stroke="#d98e3b" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <polygon points="278,236 244,216 282,204" fill="#d98e3b"/>
+      <!-- bench with pillows set aside -->
+      <rect x="48" y="328" width="112" height="13" rx="6" fill="#8a6a4f"/>
+      <rect x="58" y="341" width="10" height="36" rx="4" fill="#8a6a4f"/>
+      <rect x="138" y="341" width="10" height="36" rx="4" fill="#8a6a4f"/>
+      <rect x="56" y="306" width="78" height="26" rx="13" fill="#fffdf8" stroke="#e6dccb" stroke-width="2" transform="rotate(-5 95 319)"/>
+      <rect x="72" y="288" width="72" height="24" rx="12" fill="#dce8ee" transform="rotate(4 108 300)"/>
+      <!-- cleared nightstand -->
+      <rect x="516" y="318" width="36" height="50" rx="5" fill="#c9a06b"/>
+      <rect x="510" y="310" width="48" height="10" rx="5" fill="#8a6a4f"/>
+      <circle cx="534" cy="340" r="4" fill="#8a6a4f"/>
+      <!-- plant -->
+      <path d="M196 388 q-2 -22 -12 -32" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M196 388 q4 -20 14 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="180" cy="352" rx="8" ry="13" fill="#5e9a78" transform="rotate(-30 180 352)"/>
+      <ellipse cx="214" cy="356" rx="8" ry="13" fill="#3e7c59" transform="rotate(28 214 356)"/>
+      <path d="M182 388 h30 l-5 30 h-20 z" fill="#c96f4a"/>
+      <!-- rug -->
+      <ellipse cx="360" cy="386" rx="125" ry="11" fill="#b9b1a3" opacity="0.5"/>
+    </svg>

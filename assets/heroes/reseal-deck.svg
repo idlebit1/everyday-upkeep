@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a backyard deck and fence being resealed: the left half of the boards is freshly stained rich warm brown, the right half is weathered gray and cracking, and a brush on a pole applies a stripe of stain along the dividing line while a paint tray and a can of sealer sit on the deck, with a wood fence and a shrub behind under a bright sun">
+      <ellipse cx="285" cy="400" rx="248" ry="22" fill="#efe7d8"/>
+      <!-- sun -->
+      <circle cx="492" cy="58" r="22" fill="#e0a93d"/>
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="492" y1="22" x2="492" y2="30"/>
+        <line x1="528" y1="58" x2="520" y2="58"/>
+        <line x1="518" y1="32" x2="512" y2="38"/>
+        <line x1="518" y1="84" x2="512" y2="78"/>
+      </g>
+      <!-- back fence: left freshly stained, right weathered gray -->
+      <g>
+        <rect x="22" y="120" width="30" height="120" rx="4" fill="#8a6a4f"/>
+        <rect x="58" y="120" width="30" height="120" rx="4" fill="#9a764f"/>
+        <rect x="94" y="120" width="30" height="120" rx="4" fill="#8a6a4f"/>
+        <rect x="130" y="120" width="30" height="120" rx="4" fill="#9a764f"/>
+        <rect x="166" y="120" width="30" height="120" rx="4" fill="#b9b1a3"/>
+        <rect x="202" y="120" width="30" height="120" rx="4" fill="#c7c0b4"/>
+        <!-- grain on weathered panels -->
+        <g stroke="#8a8077" stroke-width="1.5" opacity="0.6">
+          <line x1="174" y1="132" x2="174" y2="232"/>
+          <line x1="186" y1="132" x2="186" y2="232"/>
+          <line x1="210" y1="132" x2="210" y2="232"/>
+          <line x1="222" y1="132" x2="222" y2="232"/>
+        </g>
+        <!-- cracks on weathered panels -->
+        <g stroke="#6b6357" stroke-width="2" stroke-linecap="round">
+          <path d="M180 150 l3 22 l-2 18"/>
+          <path d="M216 168 l-2 20 l3 16"/>
+        </g>
+        <!-- fence rails -->
+        <rect x="18" y="150" width="218" height="10" rx="4" fill="#6f543e"/>
+        <rect x="18" y="210" width="218" height="10" rx="4" fill="#6f543e"/>
+      </g>
+      <!-- shrub tucked at the fence base -->
+      <circle cx="46" cy="252" r="24" fill="#2c5a40"/>
+      <circle cx="68" cy="262" r="16" fill="#3e7c59"/>
+      <!-- deck platform: clean half (left) vs weathered half (right) -->
+      <g>
+        <!-- freshly stained half: rich warm boards -->
+        <g fill="#9a5d34">
+          <polygon points="60,272 290,272 280,288 46,288"/>
+          <polygon points="44,292 278,292 268,308 30,308"/>
+          <polygon points="28,312 266,312 256,328 14,328"/>
+        </g>
+        <g stroke="#7a4526" stroke-width="2" opacity="0.5">
+          <line x1="170" y1="274" x2="160" y2="286"/>
+          <line x1="150" y1="294" x2="140" y2="306"/>
+          <line x1="132" y1="314" x2="122" y2="326"/>
+        </g>
+        <!-- weathered half: faded gray boards -->
+        <g fill="#bdb6aa">
+          <polygon points="290,272 522,272 530,288 280,288"/>
+          <polygon points="278,292 528,292 536,308 268,308"/>
+          <polygon points="266,312 534,312 542,328 256,328"/>
+        </g>
+        <!-- cracks + graying on weathered boards -->
+        <g stroke="#8a8077" stroke-width="2" stroke-linecap="round" opacity="0.7">
+          <path d="M360 276 l40 0"/>
+          <path d="M430 296 l46 0"/>
+          <path d="M340 316 l52 0"/>
+          <path d="M470 316 l48 0"/>
+        </g>
+        <!-- deck skirt -->
+        <polygon points="14,328 256,328 256,354 14,354" fill="#7a4526"/>
+        <polygon points="256,328 542,328 542,354 256,354" fill="#9a948a"/>
+        <g stroke="#6f543e" stroke-width="2" opacity="0.6">
+          <line x1="70" y1="330" x2="70" y2="352"/>
+          <line x1="140" y1="330" x2="140" y2="352"/>
+          <line x1="210" y1="330" x2="210" y2="352"/>
+        </g>
+      </g>
+      <!-- sealed/weathered contrast line -->
+      <line x1="290" y1="268" x2="258" y2="330" stroke="#d98e3b" stroke-width="5" stroke-linecap="round"/>
+      <!-- water beading on the sealed half -->
+      <g fill="#7fb3c8">
+        <ellipse cx="120" cy="284" rx="6" ry="4"/>
+        <ellipse cx="92" cy="302" rx="7" ry="4.5"/>
+        <ellipse cx="150" cy="306" rx="5" ry="3.5"/>
+        <ellipse cx="78" cy="320" rx="6" ry="4"/>
+      </g>
+      <!-- pole brush applying a stripe at the line -->
+      <g>
+        <rect x="356" y="150" width="13" height="120" rx="6" transform="rotate(30 356 150)" fill="#8a6a4f"/>
+        <rect x="300" y="246" width="26" height="14" rx="3" transform="rotate(30 300 246)" fill="#33393b"/>
+        <polygon points="296,252 286,272 310,278 318,258" fill="#5e4326"/>
+        <!-- wet stain stripe trailing the brush -->
+        <polygon points="300,272 268,288 274,296 306,280" fill="#9a5d34" opacity="0.85"/>
+      </g>
+      <!-- paint tray with sealer + can set on the deck -->
+      <g>
+        <polygon points="404,344 488,344 480,366 412,366" fill="#b9b1a3"/>
+        <polygon points="404,344 488,344 484,352 408,352" fill="#cdc6ba"/>
+        <ellipse cx="446" cy="358" rx="30" ry="6" fill="#9a5d34"/>
+        <!-- roller in the tray -->
+        <rect x="418" y="330" width="40" height="12" rx="6" fill="#dce8ee"/>
+        <line x1="458" y1="336" x2="486" y2="326" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- sealer can -->
+      <g>
+        <rect x="498" y="332" width="40" height="34" rx="3" fill="#c96f4a"/>
+        <rect x="498" y="332" width="40" height="11" rx="3" fill="#d9663f"/>
+        <rect x="506" y="346" width="24" height="13" rx="2" fill="#fbe9e1"/>
+        <path d="M504 332 q16 -10 28 0" stroke="#8a6a4f" stroke-width="3" fill="none"/>
+      </g>
+      <!-- a couple of leaves swept aside -->
+      <ellipse cx="170" cy="384" rx="7" ry="4" fill="#d98e3b" transform="rotate(-20 170 384)"/>
+      <ellipse cx="396" cy="392" rx="7" ry="4" fill="#c96f4a" transform="rotate(24 396 392)"/>
+    </svg>

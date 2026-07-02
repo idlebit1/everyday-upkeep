@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of testing garage door safety sensors: an open sectional garage door over a driveway, two photo-eye sensors mounted near the floor on each track with small green LED lights, a dotted beam running between them, a broom breaking the beam as the door starts down, and an up-arrow showing the door reversing back up">
+      <ellipse cx="285" cy="406" rx="255" ry="22" fill="#efe7d8"/>
+
+      <!-- garage opening header / lintel -->
+      <rect x="120" y="34" width="320" height="20" rx="4" fill="#8a6a4f"/>
+      <rect x="128" y="30" width="304" height="8" rx="3" fill="#b9b1a3"/>
+
+      <!-- side jambs -->
+      <rect x="120" y="54" width="16" height="300" rx="3" fill="#b9b1a3"/>
+      <rect x="424" y="54" width="16" height="300" rx="3" fill="#b9b1a3"/>
+
+      <!-- vertical tracks just inside the jambs -->
+      <rect x="146" y="60" width="10" height="294" rx="3" fill="#c9a06b"/>
+      <rect x="404" y="60" width="10" height="294" rx="3" fill="#c9a06b"/>
+
+      <!-- the OPEN sectional door, raised up under the header -->
+      <rect x="150" y="56" width="260" height="58" rx="4" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <g stroke="#b9b1a3" stroke-width="2.6">
+        <line x1="150" y1="75" x2="410" y2="75"/>
+        <line x1="150" y1="94" x2="410" y2="94"/>
+      </g>
+      <g fill="#f3ece0" stroke="#dce8ee" stroke-width="1.4">
+        <rect x="162" y="62" width="110" height="11" rx="2"/>
+        <rect x="288" y="62" width="110" height="11" rx="2"/>
+        <rect x="162" y="80" width="110" height="11" rx="2"/>
+        <rect x="288" y="80" width="110" height="11" rx="2"/>
+      </g>
+      <!-- door is moving DOWN: a thin leading edge below the open panels -->
+      <rect x="150" y="116" width="260" height="9" rx="3" fill="#8a6a4f"/>
+
+      <!-- driveway / garage floor inside the opening -->
+      <rect x="156" y="330" width="248" height="24" fill="#dce8ee" opacity="0.5"/>
+
+      <!-- LEFT photo-eye sensor near the floor -->
+      <rect x="158" y="300" width="22" height="34" rx="5" fill="#5e9a78"/>
+      <rect x="161" y="304" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <!-- lens facing inward -->
+      <circle cx="180" cy="312" r="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="2"/>
+      <circle cx="182" cy="312" r="2.6" fill="#7fb3c8"/>
+      <!-- green indicator LED -->
+      <circle cx="168" cy="328" r="3.4" fill="#3e7c59"/>
+      <circle cx="168" cy="328" r="6" fill="none" stroke="#5e9a78" stroke-width="1.4" opacity="0.7"/>
+
+      <!-- RIGHT photo-eye sensor near the floor -->
+      <rect x="380" y="300" width="22" height="34" rx="5" fill="#5e9a78"/>
+      <rect x="383" y="304" width="16" height="14" rx="3" fill="#3e7c59"/>
+      <circle cx="380" cy="312" r="6" fill="#fffdf8" stroke="#2c5a40" stroke-width="2"/>
+      <circle cx="378" cy="312" r="2.6" fill="#7fb3c8"/>
+      <circle cx="392" cy="328" r="3.4" fill="#3e7c59"/>
+      <circle cx="392" cy="328" r="6" fill="none" stroke="#5e9a78" stroke-width="1.4" opacity="0.7"/>
+
+      <!-- the invisible beam between the two eyes, shown as a dotted line -->
+      <line x1="188" y1="312" x2="372" y2="312" stroke="#e0a93d" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 11"/>
+
+      <!-- a broom breaking the beam -->
+      <!-- broom handle -->
+      <rect x="276" y="150" width="8" height="150" rx="4" fill="#c9a06b" transform="rotate(10 280 225)"/>
+      <!-- broom head down in the beam path -->
+      <rect x="258" y="298" width="40" height="14" rx="4" fill="#c96f4a" transform="rotate(10 278 305)"/>
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="262" y1="312" x2="260" y2="324"/>
+        <line x1="270" y1="314" x2="269" y2="326"/>
+        <line x1="278" y1="315" x2="278" y2="327"/>
+        <line x1="286" y1="316" x2="288" y2="328"/>
+        <line x1="294" y1="317" x2="297" y2="329"/>
+      </g>
+      <!-- beam-broken burst where the broom crosses the beam -->
+      <g stroke="#d9663f" stroke-width="2.4" stroke-linecap="round">
+        <line x1="278" y1="300" x2="278" y2="292"/>
+        <line x1="266" y1="304" x2="260" y2="298"/>
+        <line x1="290" y1="304" x2="296" y2="298"/>
+      </g>
+
+      <!-- big up-arrow: the door REVERSES -->
+      <g>
+        <path d="M470 320 l0 -150" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round"/>
+        <path d="M448 196 l22 -30 l22 30" stroke="#3e7c59" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <rect x="438" y="332" width="66" height="20" rx="6" fill="#3e7c59"/>
+      <text x="471" y="346" font-size="11" fill="#fffdf8" font-weight="700" text-anchor="middle">REVERSES</text>
+
+      <!-- little label on the beam -->
+      <text x="280" y="280" font-size="11" fill="#d98e3b" font-weight="700" text-anchor="middle">beam</text>
+    </svg>

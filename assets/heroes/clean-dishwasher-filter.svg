@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of an open dishwasher with the bottom rack pulled out onto the door, revealing the round twist-out filter glowing in the tub floor, with sparkles, a soap bottle, and a brush nearby">
+      <ellipse cx="290" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- window + sun -->
+      <rect x="58" y="44" width="86" height="74" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="101" y1="44" x2="101" y2="118" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="58" y1="81" x2="144" y2="81" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="478" cy="60" r="22" fill="#f2cf7a"/>
+      <!-- counter + cabinet on the left -->
+      <rect x="44" y="166" width="116" height="14" rx="4" fill="#c9a06b"/>
+      <rect x="54" y="180" width="96" height="160" fill="#b9b1a3"/>
+      <rect x="64" y="194" width="76" height="62" rx="4" fill="#8a6a4f"/>
+      <circle cx="102" cy="225" r="4" fill="#e0a93d"/>
+      <rect x="64" y="266" width="76" height="62" rx="4" fill="#8a6a4f"/>
+      <circle cx="102" cy="297" r="4" fill="#e0a93d"/>
+      <!-- dishwasher body -->
+      <rect x="186" y="96" width="248" height="248" rx="10" fill="#b9b1a3"/>
+      <rect x="186" y="96" width="248" height="26" rx="10" fill="#8a6a4f"/>
+      <circle cx="208" cy="109" r="5" fill="#e0a93d"/>
+      <rect x="222" y="105" width="44" height="8" rx="4" fill="#fffdf8"/>
+      <!-- tub interior -->
+      <rect x="200" y="130" width="220" height="200" rx="6" fill="#dce8ee"/>
+      <rect x="200" y="130" width="220" height="200" rx="6" fill="none" stroke="#7fb3c8" stroke-width="2"/>
+      <!-- upper rack with glasses -->
+      <line x1="208" y1="178" x2="412" y2="178" stroke="#7fb3c8" stroke-width="4" stroke-linecap="round"/>
+      <g stroke="#7fb3c8" stroke-width="2.5">
+        <line x1="228" y1="178" x2="228" y2="166"/>
+        <line x1="262" y1="178" x2="262" y2="166"/>
+        <line x1="296" y1="178" x2="296" y2="166"/>
+        <line x1="330" y1="178" x2="330" y2="166"/>
+        <line x1="364" y1="178" x2="364" y2="166"/>
+        <line x1="398" y1="178" x2="398" y2="166"/>
+      </g>
+      <path d="M238 174 v-20 h14 v20" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <path d="M306 174 v-20 h14 v20" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <path d="M372 174 v-20 h14 v20" fill="#fffdf8" stroke="#7fb3c8" stroke-width="2"/>
+      <!-- spray arm -->
+      <ellipse cx="310" cy="226" rx="74" ry="11" fill="#5e9a78"/>
+      <circle cx="310" cy="226" r="9" fill="#2c5a40"/>
+      <circle cx="262" cy="226" r="3" fill="#dce8ee"/>
+      <circle cx="286" cy="226" r="3" fill="#dce8ee"/>
+      <circle cx="334" cy="226" r="3" fill="#dce8ee"/>
+      <circle cx="358" cy="226" r="3" fill="#dce8ee"/>
+      <!-- tub floor + highlighted round filter -->
+      <rect x="200" y="288" width="220" height="42" rx="6" fill="#7fb3c8"/>
+      <circle cx="310" cy="306" r="30" fill="#e0a93d"/>
+      <circle cx="310" cy="306" r="22" fill="#fffdf8"/>
+      <g stroke="#8a6a4f" stroke-width="1.6">
+        <line x1="296" y1="298" x2="324" y2="298"/>
+        <line x1="293" y1="306" x2="327" y2="306"/>
+        <line x1="296" y1="314" x2="324" y2="314"/>
+        <line x1="302" y1="291" x2="302" y2="321"/>
+        <line x1="310" y1="289" x2="310" y2="323"/>
+        <line x1="318" y1="291" x2="318" y2="321"/>
+      </g>
+      <!-- sparkles around the filter -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="262" y1="280" x2="262" y2="292"/>
+        <line x1="256" y1="286" x2="268" y2="286"/>
+        <line x1="362" y1="276" x2="362" y2="290"/>
+        <line x1="355" y1="283" x2="369" y2="283"/>
+        <line x1="344" y1="330" x2="344" y2="340"/>
+        <line x1="339" y1="335" x2="349" y2="335"/>
+      </g>
+      <!-- open door folded down in front -->
+      <polygon points="186,344 434,344 480,392 232,392" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <polygon points="186,344 434,344 442,352 194,352" fill="#dce8ee"/>
+      <!-- bottom rack pulled out onto the door -->
+      <g stroke="#2c5a40" stroke-width="3" stroke-linecap="round">
+        <line x1="252" y1="368" x2="420" y2="368"/>
+        <line x1="262" y1="368" x2="256" y2="352"/>
+        <line x1="294" y1="368" x2="288" y2="352"/>
+        <line x1="326" y1="368" x2="320" y2="352"/>
+        <line x1="358" y1="368" x2="352" y2="352"/>
+        <line x1="390" y1="368" x2="384" y2="352"/>
+        <line x1="414" y1="368" x2="408" y2="352"/>
+      </g>
+      <circle cx="282" cy="346" r="13" fill="#c96f4a"/>
+      <circle cx="306" cy="348" r="13" fill="#d9663f"/>
+      <circle cx="332" cy="346" r="13" fill="#c96f4a"/>
+      <circle cx="368" cy="368" r="5" fill="#5e9a78"/>
+      <circle cx="398" cy="368" r="5" fill="#5e9a78"/>
+      <!-- soap bottle + brush on the floor -->
+      <rect x="496" y="330" width="26" height="54" rx="8" fill="#3e7c59"/>
+      <rect x="503" y="318" width="12" height="14" rx="4" fill="#2c5a40"/>
+      <rect x="500" y="346" width="18" height="20" rx="3" fill="#e3efe8"/>
+      <rect x="120" y="368" width="46" height="10" rx="5" fill="#c9a06b"/>
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="128" y1="368" x2="128" y2="360"/>
+        <line x1="136" y1="368" x2="136" y2="359"/>
+        <line x1="144" y1="368" x2="144" y2="360"/>
+        <line x1="152" y1="368" x2="152" y2="359"/>
+      </g>
+      <!-- drips -->
+      <g fill="#7fb3c8">
+        <circle cx="226" cy="380" r="3"/>
+        <circle cx="452" cy="384" r="3"/>
+        <circle cx="462" cy="376" r="2.5"/>
+      </g>
+    </svg>

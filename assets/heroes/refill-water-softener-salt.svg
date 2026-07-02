@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of refilling a water softener in a basement utility area: a tall brine tank stands with its lid off, salt pellets are about halfway up inside, a bag of salt is being tipped and poured into the open tank, a broom leans nearby for breaking a salt bridge, and the softener's control head and resin tank sit alongside">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- back wall of utility area -->
+      <rect x="40" y="30" width="480" height="300" fill="#f4eee3"/>
+      <rect x="40" y="30" width="480" height="300" fill="none" stroke="#e9e2d8" stroke-width="4"/>
+      <!-- pipe run along the wall -->
+      <rect x="60" y="70" width="440" height="9" rx="4" fill="#b9b1a3"/>
+      <rect x="120" y="79" width="9" height="40" fill="#b9b1a3"/>
+      <rect x="420" y="79" width="9" height="46" fill="#b9b1a3"/>
+
+      <!-- resin tank (the softener's mineral tank), right -->
+      <rect x="392" y="150" width="96" height="196" rx="14" fill="#5e9a78"/>
+      <rect x="392" y="150" width="96" height="196" rx="14" fill="none" stroke="#3e7c59" stroke-width="5"/>
+      <!-- control head / valve on top -->
+      <rect x="398" y="120" width="84" height="40" rx="10" fill="#3e7c59"/>
+      <circle cx="440" cy="140" r="11" fill="#e3efe8"/>
+      <path d="M440 140 l0 -7 M440 140 l6 4" stroke="#3e7c59" stroke-width="2.6" stroke-linecap="round"/>
+      <!-- connecting bypass pipe between resin tank and brine tank -->
+      <path d="M392 200 q-34 0 -34 34" fill="none" stroke="#b9b1a3" stroke-width="9" stroke-linecap="round"/>
+
+      <!-- BRINE TANK (the salt tank), lid off -->
+      <rect x="160" y="150" width="176" height="196" rx="16" fill="#dce8ee"/>
+      <rect x="160" y="150" width="176" height="196" rx="16" fill="none" stroke="#7fb3c8" stroke-width="5"/>
+      <!-- lid, set aside leaning against the tank -->
+      <ellipse cx="118" cy="316" rx="10" ry="40" fill="#9cc3d4"/>
+      <ellipse cx="118" cy="316" rx="10" ry="40" fill="none" stroke="#7fb3c8" stroke-width="3"/>
+      <!-- open rim of the tank -->
+      <ellipse cx="248" cy="150" rx="88" ry="16" fill="#c7dae2"/>
+      <ellipse cx="248" cy="150" rx="88" ry="16" fill="none" stroke="#7fb3c8" stroke-width="4"/>
+      <ellipse cx="248" cy="150" rx="74" ry="11" fill="#eef4f7"/>
+
+      <!-- salt level at about half: pellets filling the lower part of the tank -->
+      <path d="M164 250 h168 v90 a12 12 0 0 1 -12 12 h-144 a12 12 0 0 1 -12 -12 z" fill="#fffdf8"/>
+      <!-- salt-level line marker -->
+      <line x1="160" y1="250" x2="336" y2="250" stroke="#7fb3c8" stroke-width="2" stroke-dasharray="6 5" opacity="0.8"/>
+      <text x="342" y="254" font-size="11" fill="#3e7c59" font-weight="700">~half</text>
+      <!-- pellet texture -->
+      <g fill="#efe7d8">
+        <circle cx="186" cy="268" r="7"/>
+        <circle cx="206" cy="278" r="6"/>
+        <circle cx="228" cy="266" r="7"/>
+        <circle cx="252" cy="280" r="6"/>
+        <circle cx="276" cy="268" r="7"/>
+        <circle cx="300" cy="278" r="6"/>
+        <circle cx="200" cy="300" r="6"/>
+        <circle cx="240" cy="304" r="7"/>
+        <circle cx="284" cy="302" r="6"/>
+        <circle cx="312" cy="292" r="6"/>
+        <circle cx="172" cy="290" r="5"/>
+      </g>
+      <!-- a little brine (water) pooling at the very bottom, blue -->
+      <path d="M168 336 h160 a12 12 0 0 1 -12 12 h-136 a12 12 0 0 1 -12 -12 z" fill="#7fb3c8" opacity="0.55"/>
+
+      <!-- BAG of salt being tipped and poured in -->
+      <g transform="rotate(-32 300 96)">
+        <rect x="256" y="52" width="92" height="120" rx="10" fill="#c96f4a"/>
+        <rect x="256" y="52" width="92" height="120" rx="10" fill="none" stroke="#a85636" stroke-width="3"/>
+        <!-- label band -->
+        <rect x="256" y="92" width="92" height="34" fill="#fffdf8"/>
+        <rect x="264" y="100" width="76" height="6" rx="3" fill="#c96f4a"/>
+        <rect x="264" y="112" width="52" height="5" rx="2.5" fill="#d9663f"/>
+        <!-- little salt-crystal mark on the label -->
+        <path d="M330 104 l0 12 M324 110 l12 0" stroke="#7fb3c8" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+      <!-- stream of pellets pouring from the bag mouth into the tank -->
+      <g fill="#fffdf8">
+        <circle cx="288" cy="120" r="5"/>
+        <circle cx="280" cy="138" r="4.5"/>
+        <circle cx="272" cy="158" r="5"/>
+        <circle cx="266" cy="178" r="4.5"/>
+        <circle cx="260" cy="200" r="5"/>
+        <circle cx="256" cy="222" r="4.5"/>
+      </g>
+      <g fill="#efe7d8">
+        <circle cx="296" cy="132" r="3.5"/>
+        <circle cx="286" cy="152" r="3.5"/>
+        <circle cx="278" cy="172" r="3.5"/>
+        <circle cx="270" cy="196" r="3.5"/>
+      </g>
+
+      <!-- BROOM leaning nearby for breaking a salt bridge -->
+      <line x1="70" y1="120" x2="104" y2="344" stroke="#c9a06b" stroke-width="7" stroke-linecap="round"/>
+      <path d="M96 336 h30 l8 34 h-46 z" fill="#e0a93d"/>
+      <g stroke="#d98e3b" stroke-width="1.6" stroke-linecap="round">
+        <line x1="102" y1="352" x2="100" y2="368"/>
+        <line x1="110" y1="352" x2="110" y2="368"/>
+        <line x1="118" y1="352" x2="120" y2="368"/>
+        <line x1="126" y1="352" x2="128" y2="368"/>
+      </g>
+
+      <!-- small hazard-free warmth: coiled hose on the floor, right -->
+      <ellipse cx="470" cy="368" rx="30" ry="9" fill="none" stroke="#5e9a78" stroke-width="5"/>
+      <ellipse cx="470" cy="360" rx="22" ry="6" fill="none" stroke="#3e7c59" stroke-width="5"/>
+    </svg>

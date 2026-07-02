@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a laptop and a phone syncing up to a cloud, with a second arrow copying the laptop's data down to an external drive on the ground">
+      <ellipse cx="285" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <circle cx="62" cy="62" r="22" fill="#f2cf7a"/>
+      <!-- cloud -->
+      <ellipse cx="300" cy="86" rx="78" ry="36" fill="#dce8ee"/>
+      <ellipse cx="240" cy="98" rx="46" ry="26" fill="#dce8ee"/>
+      <ellipse cx="362" cy="100" rx="44" ry="24" fill="#dce8ee"/>
+      <circle cx="300" cy="88" r="22" fill="#fffdf8"/>
+      <path d="M289 88 l8 8 l15 -16" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- sync arrows: laptop -> cloud -->
+      <path d="M208 230 Q198 168 250 122" stroke="#3e7c59" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 12"/>
+      <polygon points="244,110 262,114 250,132" fill="#3e7c59"/>
+      <!-- sync arrows: phone -> cloud -->
+      <path d="M438 218 Q450 162 392 124" stroke="#d9663f" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 12"/>
+      <polygon points="400,114 382,112 390,133" fill="#d9663f"/>
+      <!-- laptop -->
+      <rect x="110" y="206" width="180" height="118" rx="9" fill="#2c5a40"/>
+      <rect x="121" y="216" width="158" height="98" rx="4" fill="#fffdf8"/>
+      <rect x="132" y="228" width="62" height="42" rx="4" fill="#7fb3c8"/>
+      <circle cx="148" cy="242" r="7" fill="#e0a93d"/>
+      <path d="M132 262 l16 -14 l14 10 l18 -16 l14 12 v16 h-62 z" fill="#5e9a78"/>
+      <rect x="204" y="228" width="64" height="8" rx="4" fill="#d8cfbe"/>
+      <rect x="204" y="242" width="48" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="204" y="255" width="56" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="132" y="282" width="136" height="9" rx="4.5" fill="#e3efe8"/>
+      <rect x="132" y="282" width="98" height="9" rx="4.5" fill="#3e7c59"/>
+      <path d="M92 324 h216 l22 26 h-260 z" fill="#b9b1a3"/>
+      <rect x="172" y="332" width="56" height="7" rx="3.5" fill="#8a6a4f"/>
+      <!-- phone -->
+      <rect x="396" y="196" width="78" height="146" rx="14" fill="#2c5a40"/>
+      <rect x="404" y="210" width="62" height="112" rx="6" fill="#fffdf8"/>
+      <rect x="410" y="218" width="23" height="23" rx="3" fill="#e0a93d"/>
+      <rect x="437" y="218" width="23" height="23" rx="3" fill="#c96f4a"/>
+      <rect x="410" y="245" width="23" height="23" rx="3" fill="#5e9a78"/>
+      <rect x="437" y="245" width="23" height="23" rx="3" fill="#7fb3c8"/>
+      <rect x="410" y="276" width="50" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="410" y="289" width="36" height="7" rx="3.5" fill="#e9e2d8"/>
+      <rect x="410" y="304" width="50" height="9" rx="4.5" fill="#e3efe8"/>
+      <rect x="410" y="304" width="34" height="9" rx="4.5" fill="#d98e3b"/>
+      <circle cx="435" cy="332" r="5" fill="#5e9a78"/>
+      <!-- laptop -> external drive arrow -->
+      <path d="M312 300 Q360 332 416 366" stroke="#e0a93d" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="2 12"/>
+      <polygon points="424,358 432,375 408,374" fill="#e0a93d"/>
+      <!-- external drive -->
+      <rect x="438" y="362" width="92" height="30" rx="8" fill="#8a6a4f"/>
+      <rect x="438" y="362" width="92" height="11" rx="5.5" fill="#c9a06b"/>
+      <circle cx="516" cy="382" r="3.5" fill="#e0a93d"/>
+      <rect x="448" y="378" width="34" height="6" rx="3" fill="#c9a06b"/>
+      <!-- plants -->
+      <circle cx="62" cy="384" r="14" fill="#5e9a78"/>
+      <circle cx="84" cy="390" r="11" fill="#3e7c59"/>
+    </svg>

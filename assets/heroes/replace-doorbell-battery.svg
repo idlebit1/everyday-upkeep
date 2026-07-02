@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of maintaining a video doorbell: a smart doorbell has been lifted off its mount beside a front door on a porch, its rechargeable battery pack slides out with a USB charging cable attached, a phone nearby shows a low-battery notification, and a small screwdriver rests on the step">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- porch floor -->
+      <rect x="30" y="382" width="500" height="22" rx="4" fill="#c9a06b"/>
+      <g stroke="#b9915c" stroke-width="2" opacity="0.6">
+        <line x1="120" y1="382" x2="120" y2="404"/>
+        <line x1="230" y1="382" x2="230" y2="404"/>
+        <line x1="340" y1="382" x2="340" y2="404"/>
+        <line x1="450" y1="382" x2="450" y2="404"/>
+      </g>
+
+      <!-- house wall on the right -->
+      <rect x="300" y="24" width="240" height="360" fill="#dce8ee" opacity="0.55"/>
+      <!-- front door -->
+      <rect x="336" y="70" width="150" height="314" rx="6" fill="#c96f4a"/>
+      <rect x="348" y="84" width="126" height="290" rx="4" fill="#b95f3c"/>
+      <!-- door panels -->
+      <rect x="360" y="100" width="102" height="118" rx="4" fill="#c96f4a"/>
+      <rect x="360" y="240" width="102" height="118" rx="4" fill="#c96f4a"/>
+      <!-- door knob -->
+      <circle cx="352" cy="230" r="7" fill="#e0a93d"/>
+      <!-- door frame trim -->
+      <rect x="326" y="60" width="170" height="12" rx="3" fill="#fffdf8"/>
+
+      <!-- doorbell mount plate on the trim, left of door -->
+      <rect x="296" y="176" width="34" height="70" rx="8" fill="#b9b1a3"/>
+      <circle cx="313" cy="196" r="3.4" fill="#8a6a4f"/>
+      <circle cx="313" cy="226" r="3.4" fill="#8a6a4f"/>
+      <!-- small wire nub where it hangs -->
+      <path d="M313 244 q0 8 -6 12" stroke="#8a6a4f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+      <!-- the video doorbell, lifted OFF the mount, held mid-air to the left -->
+      <g transform="rotate(-10 190 210)">
+        <rect x="150" y="150" width="80" height="130" rx="18" fill="#3e7c59"/>
+        <rect x="150" y="150" width="80" height="130" rx="18" fill="none" stroke="#2c5a40" stroke-width="3"/>
+        <!-- camera lens -->
+        <circle cx="190" cy="182" r="16" fill="#2c5a40"/>
+        <circle cx="190" cy="182" r="9" fill="#7fb3c8"/>
+        <circle cx="186" cy="178" r="3" fill="#dce8ee"/>
+        <!-- ring light around lens -->
+        <circle cx="190" cy="182" r="20" fill="none" stroke="#5e9a78" stroke-width="2.4" opacity="0.7"/>
+        <!-- big round call button, lit -->
+        <circle cx="190" cy="240" r="17" fill="#5e9a78"/>
+        <circle cx="190" cy="240" r="10" fill="#7fb3c8"/>
+        <circle cx="190" cy="240" r="4" fill="#dce8ee"/>
+      </g>
+
+      <!-- rechargeable battery pack sliding out from behind, with USB cable -->
+      <g transform="rotate(-10 118 320)">
+        <rect x="86" y="286" width="64" height="34" rx="6" fill="#e0a93d"/>
+        <rect x="86" y="286" width="64" height="10" rx="5" fill="#d98e3b"/>
+        <!-- battery cells texture -->
+        <g stroke="#d98e3b" stroke-width="2">
+          <line x1="108" y1="298" x2="108" y2="314"/>
+          <line x1="128" y1="298" x2="128" y2="314"/>
+        </g>
+        <!-- + / - marks -->
+        <path d="M96 304 l6 0 M99 301 l0 6" stroke="#8a6a4f" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M138 304 l6 0" stroke="#8a6a4f" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+      <!-- USB cable running down to the porch -->
+      <path d="M96 328 q-30 30 -18 56" fill="none" stroke="#8a6a4f" stroke-width="5" stroke-linecap="round"/>
+      <!-- USB connector at the pack -->
+      <rect x="88" y="318" width="18" height="12" rx="2" fill="#b9b1a3" transform="rotate(-10 97 324)"/>
+
+      <!-- phone on the step showing a low-battery notification -->
+      <g transform="rotate(6 430 320)">
+        <rect x="398" y="272" width="76" height="108" rx="12" fill="#2c5a40"/>
+        <rect x="404" y="284" width="64" height="84" rx="5" fill="#fffdf8"/>
+        <!-- notification banner -->
+        <rect x="410" y="292" width="52" height="26" rx="5" fill="#fbe9e1"/>
+        <!-- low-battery glyph -->
+        <rect x="415" y="299" width="16" height="10" rx="2" fill="none" stroke="#d9663f" stroke-width="2"/>
+        <rect x="431" y="302" width="2.4" height="4" rx="1" fill="#d9663f"/>
+        <rect x="417" y="301" width="4" height="6" fill="#d9663f"/>
+        <rect x="436" y="298" width="20" height="4" rx="2" fill="#d9663f"/>
+        <rect x="436" y="306" width="14" height="3.5" rx="1.8" fill="#e9e2d8"/>
+        <!-- app rows -->
+        <rect x="410" y="326" width="52" height="6" rx="3" fill="#e9e2d8"/>
+        <rect x="410" y="338" width="40" height="6" rx="3" fill="#e9e2d8"/>
+        <rect x="410" y="350" width="46" height="6" rx="3" fill="#e9e2d8"/>
+      </g>
+
+      <!-- screwdriver resting on the porch step, front-left -->
+      <g transform="rotate(-20 220 372)">
+        <rect x="196" y="366" width="52" height="10" rx="3" fill="#c96f4a"/>
+        <rect x="248" y="368" width="30" height="6" rx="2" fill="#b9b1a3"/>
+        <rect x="278" y="369" width="8" height="4" rx="1" fill="#8a6a4f"/>
+      </g>
+
+      <!-- little potted plant for porch warmth, far right -->
+      <path d="M504 356 h30 l-5 26 h-20 z" fill="#c96f4a"/>
+      <path d="M519 356 q-4 -20 -14 -26" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M519 356 q5 -18 15 -22" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="503" cy="326" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 503 326)"/>
+      <ellipse cx="535" cy="330" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 535 330)"/>
+    </svg>

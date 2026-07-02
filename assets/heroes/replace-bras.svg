@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of replacing worn-out bras: an old bra lies flat with a stretched-out, wavy band and an underwire poking out through the fabric, beside a fresh, supportive bra with a firm level band, a mesh laundry bag and a folding drying rack show hand-washing and air-drying, a row of bras hangs rotating on wall hooks, and a tidy laundry area frames the scene">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- laundry-area back wall panel -->
+      <rect x="150" y="24" width="270" height="150" rx="10" fill="#fffdf8" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- row of rotating bras on wall hooks -->
+      <g stroke="#8a6a4f" stroke-width="4" stroke-linecap="round">
+        <line x1="190" y1="40" x2="190" y2="52"/>
+        <line x1="250" y1="40" x2="250" y2="52"/>
+        <line x1="310" y1="40" x2="310" y2="52"/>
+        <line x1="370" y1="40" x2="370" y2="52"/>
+      </g>
+      <!-- hanging bras (little cups + straps) -->
+      <g>
+        <path d="M178 54 q6 16 12 0 q6 16 12 0" fill="none" stroke="#c96f4a" stroke-width="3"/>
+        <path d="M184 62 a6 6 0 0 0 12 0" fill="#d9663f"/>
+        <path d="M196 62 a6 6 0 0 0 12 0" fill="#d9663f"/>
+      </g>
+      <g>
+        <path d="M238 54 q6 16 12 0 q6 16 12 0" fill="none" stroke="#5e9a78" stroke-width="3"/>
+        <path d="M244 62 a6 6 0 0 0 12 0" fill="#3e7c59"/>
+        <path d="M256 62 a6 6 0 0 0 12 0" fill="#3e7c59"/>
+      </g>
+      <g>
+        <path d="M298 54 q6 16 12 0 q6 16 12 0" fill="none" stroke="#e0a93d" stroke-width="3"/>
+        <path d="M304 62 a6 6 0 0 0 12 0" fill="#d98e3b"/>
+        <path d="M316 62 a6 6 0 0 0 12 0" fill="#d98e3b"/>
+      </g>
+      <g>
+        <path d="M358 54 q6 16 12 0 q6 16 12 0" fill="none" stroke="#7fb3c8" stroke-width="3"/>
+        <path d="M364 62 a6 6 0 0 0 12 0" fill="#9cc3d4"/>
+        <path d="M376 62 a6 6 0 0 0 12 0" fill="#9cc3d4"/>
+      </g>
+      <text x="158" y="98" font-size="11" fill="#3e7c59" font-weight="700">rotate — don't wear the same one</text>
+
+      <!-- OLD bra laid flat, left: stretched wavy band + poking underwire -->
+      <g transform="translate(30 210)">
+        <text x="8" y="-6" font-size="11" fill="#d9663f" font-weight="700">worn out</text>
+        <!-- two cups -->
+        <path d="M20 22 a26 22 0 0 0 50 0 z" fill="#cdb9a6"/>
+        <path d="M74 22 a26 22 0 0 0 50 0 z" fill="#cdb9a6"/>
+        <path d="M20 22 h104" stroke="#b9b1a3" stroke-width="3"/>
+        <!-- stretched-out wavy band -->
+        <path d="M20 22 q-10 8 -20 2 q-8 -6 -14 4" fill="none" stroke="#b9b1a3" stroke-width="5" stroke-linecap="round"/>
+        <path d="M124 22 q10 8 20 2 q8 -6 14 4" fill="none" stroke="#b9b1a3" stroke-width="5" stroke-linecap="round"/>
+        <!-- droopy straps -->
+        <path d="M40 22 q-6 -20 -20 -26" fill="none" stroke="#b9b1a3" stroke-width="4" stroke-linecap="round"/>
+        <path d="M104 22 q6 -20 20 -26" fill="none" stroke="#b9b1a3" stroke-width="4" stroke-linecap="round"/>
+        <!-- underwire poking out through the fabric -->
+        <path d="M96 40 q4 8 14 9" fill="none" stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="110" y1="49" x2="120" y2="52" stroke="#8a6a4f" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="121" cy="52" r="2.6" fill="#8a6a4f"/>
+      </g>
+
+      <!-- FRESH supportive bra laid flat, right: firm level band -->
+      <g transform="translate(330 210)">
+        <text x="8" y="-6" font-size="11" fill="#3e7c59" font-weight="700">fresh &amp; supportive</text>
+        <path d="M20 22 a26 22 0 0 0 50 0 z" fill="#5e9a78"/>
+        <path d="M74 22 a26 22 0 0 0 50 0 z" fill="#5e9a78"/>
+        <path d="M20 22 h104" stroke="#3e7c59" stroke-width="3"/>
+        <!-- firm, level band -->
+        <path d="M20 22 h-30" stroke="#3e7c59" stroke-width="6" stroke-linecap="round"/>
+        <path d="M124 22 h30" stroke="#3e7c59" stroke-width="6" stroke-linecap="round"/>
+        <!-- neat straps -->
+        <path d="M40 22 q-4 -22 -18 -28" fill="none" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+        <path d="M104 22 q4 -22 18 -28" fill="none" stroke="#3e7c59" stroke-width="4" stroke-linecap="round"/>
+        <!-- hooks at the band end -->
+        <g stroke="#2c5a40" stroke-width="2.4">
+          <circle cx="-24" cy="18" r="2.2" fill="none"/>
+          <circle cx="-24" cy="26" r="2.2" fill="none"/>
+        </g>
+        <!-- little support sparkle -->
+        <g stroke="#e0a93d" stroke-width="2.4" stroke-linecap="round">
+          <path d="M72 44 l0 10 M67 49 l10 0"/>
+        </g>
+      </g>
+
+      <!-- mesh laundry bag (hand-wash), front-left -->
+      <g transform="translate(96 320)">
+        <rect x="0" y="0" width="70" height="56" rx="12" fill="#dce8ee" stroke="#7fb3c8" stroke-width="3"/>
+        <!-- mesh grid -->
+        <g stroke="#9cc3d4" stroke-width="1.4">
+          <line x1="14" y1="6" x2="14" y2="50"/>
+          <line x1="28" y1="6" x2="28" y2="50"/>
+          <line x1="42" y1="6" x2="42" y2="50"/>
+          <line x1="56" y1="6" x2="56" y2="50"/>
+          <line x1="6" y1="18" x2="64" y2="18"/>
+          <line x1="6" y1="30" x2="64" y2="30"/>
+          <line x1="6" y1="42" x2="64" y2="42"/>
+        </g>
+        <!-- zipper -->
+        <rect x="4" y="-3" width="62" height="6" rx="3" fill="#7fb3c8"/>
+        <circle cx="35" cy="0" r="3" fill="#5e9a78"/>
+        <text x="2" y="72" font-size="10.5" fill="#3e7c59" font-weight="700">mesh bag</text>
+      </g>
+
+      <!-- folding drying rack (air-dry), front-right -->
+      <g transform="translate(400 300)">
+        <!-- X-frame legs -->
+        <line x1="6" y1="18" x2="70" y2="86" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+        <line x1="70" y1="18" x2="6" y2="86" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+        <!-- horizontal drying bars -->
+        <g stroke="#c9a06b" stroke-width="3" stroke-linecap="round">
+          <line x1="4" y1="24" x2="72" y2="24"/>
+          <line x1="8" y1="36" x2="68" y2="36"/>
+          <line x1="12" y1="48" x2="64" y2="48"/>
+        </g>
+        <!-- a bra laid flat to dry over the top bar -->
+        <path d="M22 24 a9 7 0 0 0 18 0 z" fill="#c96f4a"/>
+        <path d="M40 24 a9 7 0 0 0 18 0 z" fill="#c96f4a"/>
+        <!-- drip / air marks -->
+        <g stroke="#7fb3c8" stroke-width="2" stroke-linecap="round" opacity="0.7">
+          <line x1="30" y1="40" x2="30" y2="46"/>
+          <line x1="48" y1="40" x2="48" y2="46"/>
+        </g>
+        <text x="8" y="102" font-size="10.5" fill="#3e7c59" font-weight="700">air-dry — no dryer</text>
+      </g>
+    </svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a cobbler's workbench: a brown leather dress shoe sits on a metal cobbler's last with its sole worn through and its heel ground down, a fresh leather sole and a new rubber heel tap lie beside it, and cobbler tools — an awl, a curved knife, and a hammer — rest on the workshop bench">
+      <ellipse cx="285" cy="404" rx="252" ry="22" fill="#efe7d8"/>
+
+      <!-- workshop back wall shelf with tools hanging -->
+      <rect x="46" y="46" width="468" height="70" rx="8" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="46" y="106" width="468" height="8" rx="3" fill="#c9a06b"/>
+      <!-- hanging tools on the shelf -->
+      <g stroke="#8a6a4f" stroke-width="4" stroke-linecap="round">
+        <line x1="96" y1="60" x2="96" y2="98"/>
+        <line x1="150" y1="60" x2="150" y2="94"/>
+      </g>
+      <path d="M88 96 l16 0 l-4 12 l-8 0 z" fill="#b9b1a3"/>
+      <rect x="144" y="90" width="12" height="16" rx="3" fill="#c96f4a"/>
+      <circle cx="220" cy="80" r="16" fill="none" stroke="#8a6a4f" stroke-width="4"/>
+      <line x1="220" y1="64" x2="220" y2="58" stroke="#8a6a4f" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- cobbler's metal last (foot-shaped stand) -->
+      <rect x="252" y="330" width="20" height="58" rx="4" fill="#8a6a4f"/>
+      <ellipse cx="262" cy="388" rx="46" ry="12" fill="#6d5238"/>
+      <!-- the last's foot form -->
+      <path d="M214 300 q-6 -34 24 -34 q22 0 30 22 l6 18 l42 4 q30 4 34 20 l1 8 q1 8 -8 8 h-118 q-12 0 -12 -12 z" fill="#b9b1a3"/>
+
+      <!-- the DRESS SHOE on the last: worn-through sole, ground-down heel -->
+      <!-- upper -->
+      <path d="M210 296 q-6 -40 26 -42 q24 -2 28 24 l6 22 l46 3 q34 4 40 24 l2 12 q1 10 -10 10 h-126 q-12 0 -13 -14 z" fill="#8a6a4f" stroke="#6d5238" stroke-width="2.5"/>
+      <!-- vamp highlight -->
+      <path d="M210 296 q-6 -40 26 -42 q24 -2 28 24 l2 16 q-30 8 -58 0 z" fill="#a07a52"/>
+      <!-- laces -->
+      <g stroke="#fffdf8" stroke-width="2.6" stroke-linecap="round">
+        <line x1="224" y1="272" x2="246" y2="280"/>
+        <line x1="224" y1="284" x2="246" y2="292"/>
+      </g>
+      <!-- welt strip (highlighted so it reads as the thing to protect) -->
+      <path d="M198 352 h140 q10 0 10 -6 l-1 -6 q-6 -12 -30 -14 l-46 -3 h-58 q-24 2 -30 14 l-1 6 q0 6 10 6 z" fill="#c9a06b"/>
+      <g stroke="#a07a52" stroke-width="1.4" stroke-linecap="round" opacity="0.8">
+        <line x1="206" y1="348" x2="206" y2="356"/>
+        <line x1="222" y1="349" x2="222" y2="357"/>
+        <line x1="238" y1="349" x2="238" y2="357"/>
+        <line x1="254" y1="349" x2="254" y2="357"/>
+        <line x1="270" y1="349" x2="270" y2="357"/>
+        <line x1="286" y1="349" x2="286" y2="357"/>
+        <line x1="302" y1="348" x2="302" y2="356"/>
+      </g>
+      <text x="300" y="342" font-size="10.5" fill="#3e7c59" font-weight="700">welt</text>
+      <!-- worn-through sole with a hole -->
+      <rect x="196" y="356" width="150" height="12" rx="5" fill="#5e4326"/>
+      <ellipse cx="248" cy="362" rx="12" ry="4.5" fill="#33393b"/>
+      <text x="196" y="384" font-size="11" fill="#d9663f" font-weight="700">sole worn through</text>
+      <!-- ground-down heel -->
+      <path d="M320 356 h26 l-2 20 q-1 6 -8 6 h-12 q-6 0 -6 -6 z" fill="#5e4326"/>
+      <path d="M320 372 q13 -6 26 0 l0 4 q-13 6 -26 0 z" fill="#8a6a4f" opacity="0.6"/>
+
+      <!-- FRESH replacement leather sole leaning at left -->
+      <path d="M60 250 q-8 4 -6 40 q2 40 10 78 q4 18 22 16 q16 -2 16 -20 q0 -60 -8 -100 q-4 -18 -34 -14 z" fill="#c9a06b" stroke="#a07a52" stroke-width="2.5"/>
+      <path d="M60 250 q-8 4 -6 40 q2 40 10 78 q4 18 22 16 q16 -2 16 -20 q0 -60 -8 -100 q-4 -18 -34 -14 z" fill="#d8b884" opacity="0.4"/>
+      <g stroke="#a07a52" stroke-width="1.4" stroke-linecap="round" opacity="0.6">
+        <path d="M64 268 q18 -4 32 2 M62 300 q22 -4 38 2 M64 336 q20 -4 34 2"/>
+      </g>
+      <text x="46" y="240" font-size="11" fill="#3e7c59" font-weight="700">new leather sole</text>
+
+      <!-- NEW rubber heel tap beside it -->
+      <rect x="118" y="356" width="46" height="30" rx="6" fill="#33393b"/>
+      <rect x="118" y="356" width="46" height="10" rx="5" fill="#4a4f52"/>
+      <g stroke="#6b7376" stroke-width="1.6" stroke-linecap="round">
+        <line x1="126" y1="374" x2="156" y2="374"/>
+        <line x1="126" y1="380" x2="156" y2="380"/>
+      </g>
+      <text x="112" y="400" font-size="10.5" fill="#6b7376">rubber heel tap</text>
+
+      <!-- cobbler tools on the bench, front-right: awl -->
+      <rect x="392" y="372" width="70" height="8" rx="4" fill="#8a6a4f" transform="rotate(-8 427 376)"/>
+      <path d="M456 370 l24 -6 l0 6 l-24 4 z" fill="#b9b1a3" transform="rotate(-8 468 372)"/>
+      <!-- curved cobbler's knife -->
+      <rect x="398" y="392" width="40" height="9" rx="4" fill="#c96f4a"/>
+      <path d="M438 396 q26 -2 34 -14 q-4 16 -34 20 z" fill="#b9b1a3"/>
+      <!-- small hammer -->
+      <rect x="470" y="320" width="10" height="46" rx="4" fill="#8a6a4f"/>
+      <rect x="458" y="312" width="34" height="14" rx="4" fill="#6b7376"/>
+      <rect x="458" y="312" width="10" height="14" rx="4" fill="#8a8f92"/>
+    </svg>

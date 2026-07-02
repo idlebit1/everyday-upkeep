@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a car tire with a pressure gauge pressed onto its valve stem, next to a small portable air pump with its hose connected, on a sunny day">
+      <ellipse cx="280" cy="396" rx="248" ry="24" fill="#efe7d8"/>
+      <circle cx="80" cy="68" r="24" fill="#f2cf7a"/>
+      <ellipse cx="452" cy="70" rx="46" ry="22" fill="#dce8ee"/>
+      <ellipse cx="412" cy="82" rx="28" ry="15" fill="#dce8ee"/>
+      <!-- tire -->
+      <circle cx="330" cy="266" r="124" fill="#3a4144"/>
+      <circle cx="330" cy="266" r="122" fill="none" stroke="#2c3234" stroke-width="6" stroke-dasharray="14 12"/>
+      <circle cx="330" cy="266" r="78" fill="#dce8ee"/>
+      <circle cx="330" cy="266" r="78" fill="none" stroke="#b9b1a3" stroke-width="4"/>
+      <g fill="#b9b1a3">
+        <circle cx="330" cy="220" r="9"/>
+        <circle cx="374" cy="252" r="9"/>
+        <circle cx="357" cy="304" r="9"/>
+        <circle cx="303" cy="304" r="9"/>
+        <circle cx="286" cy="252" r="9"/>
+      </g>
+      <circle cx="330" cy="266" r="20" fill="#7fb3c8"/>
+      <circle cx="330" cy="266" r="8" fill="#fffdf8"/>
+      <!-- valve stem with gauge -->
+      <rect x="200" y="240" width="22" height="10" rx="4" fill="#8a6a4f" transform="rotate(-18 211 245)"/>
+      <rect x="148" y="222" width="56" height="22" rx="8" fill="#c96f4a" transform="rotate(-18 176 233)"/>
+      <circle cx="124" cy="222" r="34" fill="#e0a93d"/>
+      <circle cx="124" cy="222" r="25" fill="#fffdf8"/>
+      <path d="M124 222 L136 206" stroke="#d9663f" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="124" cy="222" r="4" fill="#33393b"/>
+      <g stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round">
+        <line x1="124" y1="201" x2="124" y2="206"/>
+        <line x1="143" y1="212" x2="139" y2="215"/>
+        <line x1="105" y1="212" x2="109" y2="215"/>
+      </g>
+      <!-- air pump -->
+      <rect x="48" y="318" width="96" height="60" rx="12" fill="#2c5a40"/>
+      <rect x="60" y="330" width="44" height="22" rx="5" fill="#dce8ee"/>
+      <text x="82" y="346" font-size="13" font-weight="700" fill="#2c5a40" text-anchor="middle">35</text>
+      <circle cx="124" cy="341" r="8" fill="#e0a93d"/>
+      <rect x="62" y="306" width="68" height="12" rx="6" fill="#5e9a78"/>
+      <path d="M144 348 q60 28 116 -28 q24 -24 22 -56" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- escaping-air sparkles -->
+      <g fill="#7fb3c8">
+        <circle cx="216" cy="206" r="3.5"/>
+        <circle cx="228" cy="194" r="3"/>
+        <circle cx="240" cy="206" r="2.5"/>
+      </g>
+      <!-- shrubs -->
+      <circle cx="476" cy="376" r="15" fill="#5e9a78"/>
+      <circle cx="500" cy="382" r="11" fill="#3e7c59"/>
+      <ellipse cx="60" cy="392" rx="6" ry="3.5" fill="#c96f4a" transform="rotate(18 60 392)"/>
+      <ellipse cx="448" cy="398" rx="6" ry="3.5" fill="#d98e3b" transform="rotate(-14 448 398)"/>
+    </svg>

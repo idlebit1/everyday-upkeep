@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of someone pumping up a bike tire in a garage: a floor pump with a round pressure gauge has its hose connected to the tire valve, a hand grips the pump handle, the bike's wheel and tire fill the scene with the sidewall showing a PSI range, and small insets show a tall skinny presta valve next to a fatter car-style schrader valve">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- garage / workshop back wall -->
+      <rect x="40" y="40" width="120" height="120" rx="6" fill="#fffdf8" stroke="#b9b1a3" stroke-width="3"/>
+      <line x1="100" y1="40" x2="100" y2="160" stroke="#b9b1a3" stroke-width="2"/>
+      <line x1="40" y1="100" x2="160" y2="100" stroke="#b9b1a3" stroke-width="2"/>
+      <!-- pegboard tools hint -->
+      <rect x="68" y="58" width="6" height="26" rx="2" fill="#8a6a4f"/>
+      <rect x="120" y="58" width="6" height="22" rx="2" fill="#c96f4a"/>
+      <rect x="116" y="116" width="28" height="8" rx="3" fill="#5e9a78"/>
+
+      <!-- bike frame hint (top tube + seat) angling in from the right -->
+      <path d="M398 150 l86 -34" stroke="#3e7c59" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M474 112 l16 -6 l4 12 l-16 6 z" fill="#2c5a40"/>
+
+      <!-- rear wheel / tire (the one being pumped) -->
+      <circle cx="360" cy="270" r="118" fill="#3a4144"/>
+      <circle cx="360" cy="270" r="116" fill="none" stroke="#2c3234" stroke-width="6" stroke-dasharray="13 11"/>
+      <!-- tire sidewall band showing PSI range -->
+      <circle cx="360" cy="270" r="100" fill="none" stroke="#5b6366" stroke-width="14"/>
+      <circle cx="360" cy="270" r="86" fill="#dce8ee"/>
+      <circle cx="360" cy="270" r="86" fill="none" stroke="#b9b1a3" stroke-width="4"/>
+      <!-- spokes -->
+      <g stroke="#cdd9de" stroke-width="3">
+        <line x1="360" y1="186" x2="360" y2="354"/>
+        <line x1="276" y1="270" x2="444" y2="270"/>
+        <line x1="301" y1="211" x2="419" y2="329"/>
+        <line x1="419" y1="211" x2="301" y2="329"/>
+      </g>
+      <!-- hub -->
+      <circle cx="360" cy="270" r="16" fill="#7fb3c8"/>
+      <circle cx="360" cy="270" r="7" fill="#fffdf8"/>
+      <!-- PSI range printed on the sidewall -->
+      <text x="360" y="200" font-size="13" fill="#2c5a40" font-weight="700" text-anchor="middle" transform="rotate(0 360 200)">MAX 65 PSI</text>
+      <text x="360" y="350" font-size="11" fill="#6b7376" font-weight="700" text-anchor="middle">40–65 PSI</text>
+
+      <!-- valve stem at bottom of wheel with pump head clamped on -->
+      <rect x="356" y="354" width="8" height="20" rx="2" fill="#8a6a4f"/>
+      <rect x="346" y="372" width="28" height="16" rx="4" fill="#2c5a40"/>
+
+      <!-- floor pump barrel -->
+      <rect x="150" y="150" width="26" height="210" rx="8" fill="#c96f4a"/>
+      <rect x="150" y="150" width="26" height="40" rx="8" fill="#d9663f"/>
+      <!-- pump base -->
+      <path d="M120 372 h86 l-8 12 h-70 z" fill="#5b6366"/>
+      <rect x="120" y="368" width="86" height="8" rx="3" fill="#3a4144"/>
+      <!-- pump handle + hand -->
+      <rect x="138" y="122" width="50" height="12" rx="6" fill="#3a4144"/>
+      <ellipse cx="163" cy="128" rx="17" ry="12" fill="#e8b48f"/>
+      <path d="M152 124 q-5 6 -1 13" stroke="#d99c73" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <!-- arm -->
+      <path d="M178 130 q34 -10 60 -6" stroke="#3e7c59" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+      <!-- round pressure gauge mounted on the pump base -->
+      <circle cx="210" cy="320" r="34" fill="#fffdf8" stroke="#8a6a4f" stroke-width="4"/>
+      <circle cx="210" cy="320" r="26" fill="#faf0da"/>
+      <!-- gauge ticks -->
+      <g stroke="#8a6a4f" stroke-width="2" stroke-linecap="round">
+        <line x1="210" y1="298" x2="210" y2="303"/>
+        <line x1="232" y1="320" x2="227" y2="320"/>
+        <line x1="188" y1="320" x2="193" y2="320"/>
+        <line x1="194" y1="304" x2="198" y2="308"/>
+        <line x1="226" y1="304" x2="222" y2="308"/>
+      </g>
+      <!-- needle pointing to target -->
+      <line x1="210" y1="320" x2="224" y2="306" stroke="#d9663f" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="210" cy="320" r="3.5" fill="#3a4144"/>
+      <text x="210" y="354" font-size="9" fill="#6b7376" font-weight="700" text-anchor="middle">PSI</text>
+
+      <!-- hose from pump gauge to valve -->
+      <path d="M236 322 q60 30 110 56" fill="none" stroke="#3a4144" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- valve insets, lower-left: presta vs schrader -->
+      <rect x="44" y="300" width="56" height="92" rx="8" fill="#fffdf8" stroke="#e9e2d8" stroke-width="2"/>
+      <!-- presta (skinny, tall, with locknut) -->
+      <rect x="58" y="330" width="6" height="40" rx="2" fill="#b9b1a3"/>
+      <rect x="57" y="320" width="8" height="14" rx="2" fill="#8a6a4f"/>
+      <circle cx="61" cy="318" r="3" fill="#e0a93d"/>
+      <text x="61" y="384" font-size="8" fill="#6b7376" font-weight="700" text-anchor="middle">presta</text>
+      <!-- schrader (fatter, car-style) -->
+      <rect x="80" y="338" width="12" height="32" rx="3" fill="#b9b1a3"/>
+      <rect x="78" y="334" width="16" height="8" rx="2" fill="#8a6a4f"/>
+      <circle cx="86" cy="338" r="2" fill="#3a4144"/>
+      <text x="86" y="384" font-size="8" fill="#6b7376" font-weight="700" text-anchor="middle">schrader</text>
+    </svg>

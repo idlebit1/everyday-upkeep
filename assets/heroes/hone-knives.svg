@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a chef's knife being drawn down a honing steel held upright with its tip resting on a folded towel, on a kitchen counter beside a cutting board with a ripe tomato and slices, a window with sun, and a small plant on a shelf">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window -->
+      <rect x="64" y="58" width="150" height="116" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="3"/>
+      <line x1="139" y1="58" x2="139" y2="174" stroke="#fffdf8" stroke-width="4"/>
+      <line x1="64" y1="116" x2="214" y2="116" stroke="#fffdf8" stroke-width="4"/>
+      <circle cx="104" cy="90" r="14" fill="#f2cf7a"/>
+      <g stroke="#e0a93d" stroke-width="2.5" stroke-linecap="round">
+        <line x1="104" y1="68" x2="104" y2="73"/>
+        <line x1="126" y1="90" x2="121" y2="90"/>
+        <line x1="120" y1="74" x2="116" y2="78"/>
+      </g>
+      <!-- shelf with jars and plant -->
+      <rect x="316" y="98" width="180" height="10" rx="5" fill="#8a6a4f"/>
+      <rect x="334" y="60" width="28" height="38" rx="6" fill="#5e9a78"/>
+      <rect x="339" y="54" width="18" height="8" rx="3" fill="#2c5a40"/>
+      <rect x="376" y="68" width="24" height="30" rx="6" fill="#e0a93d"/>
+      <rect x="380" y="62" width="16" height="8" rx="3" fill="#d98e3b"/>
+      <rect x="424" y="80" width="24" height="18" rx="3" fill="#c96f4a"/>
+      <circle cx="430" cy="70" r="8" fill="#3e7c59"/>
+      <circle cx="442" cy="66" r="9" fill="#5e9a78"/>
+      <circle cx="438" cy="76" r="6" fill="#3e7c59"/>
+      <!-- counter -->
+      <rect x="36" y="298" width="488" height="16" rx="8" fill="#c9a06b"/>
+      <rect x="56" y="314" width="448" height="74" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="280" y1="314" x2="280" y2="388" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="262" y="344" width="8" height="16" rx="4" fill="#e0a93d"/>
+      <rect x="290" y="344" width="8" height="16" rx="4" fill="#e0a93d"/>
+      <!-- folded towel under the honing steel -->
+      <rect x="120" y="286" width="120" height="14" rx="7" fill="#dce8ee"/>
+      <line x1="160" y1="286" x2="160" y2="300" stroke="#c6d8e1" stroke-width="2"/>
+      <line x1="200" y1="286" x2="200" y2="300" stroke="#c6d8e1" stroke-width="2"/>
+      <!-- honing steel held upright, tip on the towel -->
+      <line x1="180" y1="286" x2="208" y2="120" stroke="#b9b1a3" stroke-width="9" stroke-linecap="round"/>
+      <line x1="178" y1="286" x2="206" y2="124" stroke="#cfc8bb" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="210" cy="104" rx="13" ry="18" fill="#2c5a40"/>
+      <circle cx="210" cy="88" r="7" fill="#3e7c59"/>
+      <!-- knife being drawn down the steel, heel to tip -->
+      <polygon points="214,176 330,214 330,238 220,200" fill="#dce8ee" stroke="#b9b1a3" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="330,214 392,232 388,256 330,238" fill="#8a6a4f"/>
+      <circle cx="350" cy="226" r="2.6" fill="#e0a93d"/>
+      <circle cx="370" cy="232" r="2.6" fill="#e0a93d"/>
+      <!-- motion arc of the stroke -->
+      <path d="M236 188 q-18 26 -42 40" stroke="#d9663f" stroke-width="2.5" fill="none" stroke-dasharray="6 5"/>
+      <polygon points="190,234 184,224 200,222" fill="#d9663f"/>
+      <!-- gleam at the contact point -->
+      <g stroke="#fffdf8" stroke-width="3" stroke-linecap="round">
+        <line x1="206" y1="178" x2="206" y2="192"/>
+        <line x1="199" y1="185" x2="213" y2="185"/>
+      </g>
+      <!-- cutting board with tomato -->
+      <rect x="330" y="276" width="160" height="22" rx="9" fill="#c9a06b"/>
+      <circle cx="472" cy="287" r="4" fill="#8a6a4f"/>
+      <circle cx="366" cy="258" r="18" fill="#d9663f"/>
+      <path d="M360 242 q6 -6 12 0 q-6 4 -12 0" fill="#3e7c59"/>
+      <circle cx="408" cy="268" r="11" fill="#d9663f"/>
+      <circle cx="408" cy="268" r="7" fill="#c96f4a"/>
+      <circle cx="405" cy="266" r="1.4" fill="#f2cf7a"/>
+      <circle cx="411" cy="267" r="1.4" fill="#f2cf7a"/>
+      <circle cx="408" cy="271" r="1.4" fill="#f2cf7a"/>
+      <circle cx="432" cy="272" r="8" fill="#d9663f"/>
+      <circle cx="432" cy="272" r="5" fill="#c96f4a"/>
+      <!-- small plant in a crock, far right -->
+      <rect x="464" y="250" width="44" height="48" rx="9" fill="#3e7c59"/>
+      <path d="M486 250 q-2 -20 -10 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M486 250 q4 -18 12 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="473" cy="220" rx="7" ry="11" fill="#5e9a78" transform="rotate(-28 473 220)"/>
+      <ellipse cx="501" cy="224" rx="7" ry="11" fill="#3e7c59" transform="rotate(26 501 224)"/>
+    </svg>

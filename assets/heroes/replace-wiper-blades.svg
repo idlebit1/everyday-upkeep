@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of the front of a car in the rain, where a fresh wiper blade has just swept a clean fan-shaped arc across an otherwise droplet-covered windshield, under two rain clouds">
+      <ellipse cx="280" cy="400" rx="250" ry="22" fill="#efe7d8"/>
+      <!-- rain clouds -->
+      <ellipse cx="118" cy="54" rx="58" ry="24" fill="#b9b1a3"/>
+      <ellipse cx="170" cy="66" rx="40" ry="18" fill="#dce8ee"/>
+      <ellipse cx="442" cy="48" rx="62" ry="26" fill="#b9b1a3"/>
+      <ellipse cx="386" cy="62" rx="38" ry="17" fill="#dce8ee"/>
+      <!-- rain -->
+      <g stroke="#7fb3c8" stroke-width="3.5" stroke-linecap="round">
+        <line x1="90" y1="92" x2="82" y2="114"/>
+        <line x1="128" y1="100" x2="120" y2="122"/>
+        <line x1="168" y1="94" x2="160" y2="116"/>
+        <line x1="396" y1="92" x2="388" y2="114"/>
+        <line x1="436" y1="100" x2="428" y2="122"/>
+        <line x1="476" y1="90" x2="468" y2="112"/>
+        <line x1="62" y1="142" x2="54" y2="164"/>
+        <line x1="500" y1="140" x2="492" y2="162"/>
+        <line x1="36" y1="220" x2="28" y2="242"/>
+        <line x1="524" y1="216" x2="516" y2="238"/>
+      </g>
+      <!-- side mirrors -->
+      <rect x="106" y="198" width="36" height="20" rx="8" fill="#c96f4a"/>
+      <rect x="418" y="198" width="36" height="20" rx="8" fill="#c96f4a"/>
+      <!-- wheels -->
+      <circle cx="188" cy="358" r="22" fill="#33393b"/>
+      <circle cx="372" cy="358" r="22" fill="#33393b"/>
+      <!-- roof -->
+      <rect x="158" y="90" width="244" height="30" rx="14" fill="#c96f4a"/>
+      <!-- windshield frame + glass -->
+      <rect x="148" y="114" width="264" height="144" rx="16" fill="#33393b"/>
+      <rect x="157" y="123" width="246" height="126" rx="12" fill="#dce8ee"/>
+      <!-- clean swept arc -->
+      <path d="M296 246 L188 197 A 119 119 0 0 1 404 197 Z" fill="#fffdf8"/>
+      <!-- droplets on the un-swept glass -->
+      <g fill="#7fb3c8">
+        <circle cx="172" cy="138" r="4"/>
+        <circle cx="190" cy="160" r="3.5"/>
+        <circle cx="168" cy="184" r="3"/>
+        <circle cx="206" cy="138" r="3"/>
+        <circle cx="386" cy="140" r="4"/>
+        <circle cx="368" cy="162" r="3.5"/>
+        <circle cx="392" cy="186" r="3"/>
+        <circle cx="350" cy="140" r="3"/>
+        <circle cx="172" cy="232" r="3.5"/>
+        <circle cx="390" cy="234" r="3.5"/>
+      </g>
+      <!-- fresh wiper mid-sweep -->
+      <line x1="296" y1="246" x2="206" y2="176" stroke="#33393b" stroke-width="8" stroke-linecap="round"/>
+      <rect x="166" y="171" width="78" height="10" rx="5" fill="#2c5a40" transform="rotate(-52 205 176)"/>
+      <!-- parked passenger wiper -->
+      <rect x="304" y="238" width="92" height="8" rx="4" fill="#33393b" transform="rotate(-10 350 242)"/>
+      <!-- sweep sparkle -->
+      <g stroke="#e0a93d" stroke-width="3" stroke-linecap="round">
+        <line x1="252" y1="152" x2="258" y2="144"/>
+        <line x1="282" y1="142" x2="282" y2="132"/>
+        <line x1="312" y1="150" x2="306" y2="142"/>
+      </g>
+      <!-- hood -->
+      <rect x="140" y="254" width="280" height="36" rx="12" fill="#d9663f"/>
+      <!-- bumper / grille / lights -->
+      <rect x="126" y="286" width="308" height="62" rx="18" fill="#c96f4a"/>
+      <rect x="232" y="304" width="96" height="16" rx="8" fill="#8a6a4f"/>
+      <circle cx="176" cy="312" r="16" fill="#e0a93d"/>
+      <circle cx="176" cy="312" r="8" fill="#faf0da"/>
+      <circle cx="384" cy="312" r="16" fill="#e0a93d"/>
+      <circle cx="384" cy="312" r="8" fill="#faf0da"/>
+      <rect x="150" y="336" width="260" height="9" rx="4.5" fill="#8a6a4f"/>
+      <!-- puddles -->
+      <ellipse cx="100" cy="392" rx="42" ry="7" fill="#7fb3c8" opacity="0.45"/>
+      <ellipse cx="462" cy="394" rx="36" ry="6" fill="#7fb3c8" opacity="0.45"/>
+    </svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a basement furnace with a fresh pleated filter being slid into its slot: dusty air swirls into the return duct on the left, clean air flows out of the supply duct above, and a spent gray filter leans against the wall">
+      <ellipse cx="280" cy="400" rx="240" ry="22" fill="#efe7d8"/>
+      <!-- supply duct + clean air -->
+      <rect x="338" y="46" width="64" height="116" fill="#b9b1a3"/>
+      <rect x="330" y="118" width="80" height="44" fill="#8a6a4f" opacity="0.25"/>
+      <g stroke="#7fb3c8" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M352 36 q6 -14 -2 -24"/>
+        <path d="M372 38 q8 -16 -1 -28"/>
+        <path d="M392 36 q6 -14 -2 -24"/>
+      </g>
+      <circle cx="346" cy="6" r="3" fill="#7fb3c8"/>
+      <circle cx="398" cy="8" r="3" fill="#7fb3c8"/>
+      <ellipse cx="476" cy="60" rx="42" ry="20" fill="#dce8ee"/>
+      <ellipse cx="448" cy="74" rx="26" ry="14" fill="#dce8ee"/>
+      <!-- furnace cabinet -->
+      <rect x="318" y="158" width="124" height="226" rx="6" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <line x1="318" y1="252" x2="442" y2="252" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="338" y="180" width="84" height="46" rx="6" fill="#dce8ee"/>
+      <circle cx="358" cy="203" r="9" fill="#7fb3c8"/>
+      <rect x="376" y="194" width="34" height="7" rx="3.5" fill="#9cc0d4"/>
+      <rect x="376" y="207" width="24" height="6" rx="3" fill="#9cc0d4"/>
+      <circle cx="430" cy="268" r="5" fill="#e0a93d"/>
+      <g stroke="#b9b1a3" stroke-width="4" stroke-linecap="round">
+        <line x1="340" y1="320" x2="420" y2="320"/>
+        <line x1="340" y1="334" x2="420" y2="334"/>
+        <line x1="340" y1="348" x2="420" y2="348"/>
+      </g>
+      <!-- return duct from the left, with dusty air -->
+      <rect x="96" y="236" width="186" height="64" fill="#b9b1a3"/>
+      <rect x="96" y="236" width="186" height="10" fill="#8a6a4f" opacity="0.35"/>
+      <g fill="#8a6a4f" opacity="0.75">
+        <circle cx="120" cy="258" r="3.4"/>
+        <circle cx="142" cy="276" r="2.6"/>
+        <circle cx="160" cy="254" r="3"/>
+        <circle cx="184" cy="282" r="2.6"/>
+        <circle cx="204" cy="262" r="3.4"/>
+        <circle cx="226" cy="278" r="2.4"/>
+      </g>
+      <g stroke="#c9a06b" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8">
+        <path d="M112 270 q12 -8 24 0"/>
+        <path d="M170 268 q12 -8 24 0"/>
+      </g>
+      <!-- filter slot between return and furnace -->
+      <rect x="282" y="222" width="36" height="92" rx="4" fill="#8a6a4f"/>
+      <rect x="290" y="230" width="20" height="76" rx="3" fill="#5a4632"/>
+      <!-- fresh filter sliding in (angled above the slot) -->
+      <g transform="rotate(-24 300 170)">
+        <rect x="272" y="96" width="56" height="148" rx="6" fill="#fffdf8" stroke="#3e7c59" stroke-width="4"/>
+        <path d="M284 108 l32 10 l-32 10 l32 10 l-32 10 l32 10 l-32 10 l32 10 l-32 10 l32 10 l-32 10 l32 10" stroke="#dce8ee" stroke-width="3" fill="none" stroke-linejoin="round"/>
+        <line x1="300" y1="120" x2="300" y2="186" stroke="#d9663f" stroke-width="5" stroke-linecap="round"/>
+        <polygon points="290,186 310,186 300,206" fill="#d9663f"/>
+      </g>
+      <!-- motion lines suggesting the slide -->
+      <g stroke="#5e9a78" stroke-width="3" stroke-linecap="round">
+        <line x1="236" y1="142" x2="252" y2="158"/>
+        <line x1="226" y1="166" x2="240" y2="180"/>
+      </g>
+      <!-- spent dirty filter leaning against the furnace -->
+      <g transform="rotate(10 480 360)">
+        <rect x="456" y="284" width="48" height="118" rx="5" fill="#efe7d8" stroke="#b9b1a3" stroke-width="3.5"/>
+        <path d="M466 296 l28 9 l-28 9 l28 9 l-28 9 l28 9 l-28 9 l28 9 l-28 9 l28 9" stroke="#c9a06b" stroke-width="3" fill="none" stroke-linejoin="round"/>
+        <circle cx="470" cy="318" r="2.6" fill="#8a6a4f"/>
+        <circle cx="488" cy="346" r="2.2" fill="#8a6a4f"/>
+        <circle cx="474" cy="376" r="2.6" fill="#8a6a4f"/>
+      </g>
+      <!-- spare filter box + plant for warmth -->
+      <rect x="120" y="338" width="92" height="54" rx="5" fill="#c9a06b"/>
+      <rect x="120" y="338" width="92" height="14" rx="5" fill="#8a6a4f"/>
+      <rect x="138" y="362" width="56" height="8" rx="4" fill="#fffdf8"/>
+      <circle cx="64" cy="356" r="16" fill="#5e9a78"/>
+      <circle cx="80" cy="346" r="13" fill="#3e7c59"/>
+      <rect x="60" y="368" width="26" height="24" rx="4" fill="#c96f4a"/>
+    </svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a tiled shower wall where a fixed shower head is being descaled: a clear plastic bag of pale vinegar is tied over the head with a rubber band so all the spray nozzles are submerged, white limescale flecks float in the solution, an old toothbrush and a jug of white vinegar sit on a ledge nearby, and a small plant adds warmth">
+      <ellipse cx="285" cy="404" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- tiled shower wall -->
+      <rect x="60" y="40" width="320" height="320" rx="10" fill="#eef4f7"/>
+      <g stroke="#dce8ee" stroke-width="3">
+        <line x1="60" y1="120" x2="380" y2="120"/>
+        <line x1="60" y1="200" x2="380" y2="200"/>
+        <line x1="60" y1="280" x2="380" y2="280"/>
+        <line x1="140" y1="40" x2="140" y2="360"/>
+        <line x1="220" y1="40" x2="220" y2="360"/>
+        <line x1="300" y1="40" x2="300" y2="360"/>
+      </g>
+
+      <!-- shower arm coming out of the wall -->
+      <path d="M150 96 q40 4 70 30" stroke="#b9b1a3" stroke-width="13" fill="none" stroke-linecap="round"/>
+      <rect x="138" y="84" width="26" height="26" rx="7" fill="#8a6a4f"/>
+      <circle cx="151" cy="97" r="6" fill="#5a4634"/>
+
+      <!-- shower head -->
+      <path d="M214 122 l34 22 l-22 34 l-34 -22 z" fill="#dce8ee" stroke="#b9b1a3" stroke-width="3"/>
+      <path d="M204 138 l30 19 l-9 14 l-30 -19 z" fill="#eef4f7"/>
+
+      <!-- clear bag of vinegar tied over the head -->
+      <path d="M176 128 q-22 28 -6 86 q8 30 44 36 q40 6 64 -22 q20 -24 8 -60 q-8 -24 -30 -42 q-44 -22 -80 2 z" fill="#dce8ee" fill-opacity="0.55" stroke="#7fb3c8" stroke-width="2.5"/>
+      <!-- vinegar fill inside the bag -->
+      <path d="M168 196 q6 34 50 44 q40 8 66 -20 q14 -16 14 -36 q-66 26 -130 12 z" fill="#faf0da" fill-opacity="0.85"/>
+      <!-- limescale flecks floating in the solution -->
+      <circle cx="206" cy="224" r="3.5" fill="#b9b1a3"/>
+      <circle cx="232" cy="238" r="3" fill="#d8cfbe"/>
+      <circle cx="258" cy="220" r="2.5" fill="#b9b1a3"/>
+      <circle cx="220" cy="252" r="2.5" fill="#d8cfbe"/>
+      <circle cx="248" cy="246" r="3" fill="#b9b1a3"/>
+      <!-- rubber band cinch around the neck -->
+      <path d="M196 150 q24 -16 52 4" stroke="#c96f4a" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M198 156 q24 -14 50 2" stroke="#d9663f" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- ledge / niche shelf on the right with supplies -->
+      <rect x="392" y="232" width="150" height="12" rx="6" fill="#8a6a4f"/>
+      <!-- jug of white vinegar -->
+      <rect x="416" y="150" width="52" height="82" rx="10" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="430" y="132" width="24" height="20" rx="5" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="426" y="124" width="32" height="12" rx="5" fill="#2c5a40"/>
+      <rect x="424" y="168" width="36" height="44" rx="6" fill="#3e7c59"/>
+      <g stroke="#e3efe8" stroke-width="3" stroke-linecap="round">
+        <line x1="432" y1="182" x2="452" y2="182"/>
+        <line x1="432" y1="192" x2="446" y2="192"/>
+      </g>
+      <!-- old toothbrush resting on the ledge -->
+      <rect x="478" y="214" width="56" height="9" rx="4.5" fill="#7fb3c8" transform="rotate(-8 478 214)"/>
+      <g stroke="#5e9a78" stroke-width="2.2" stroke-linecap="round">
+        <line x1="482" y1="208" x2="482" y2="200"/>
+        <line x1="488" y1="207" x2="488" y2="199"/>
+        <line x1="494" y1="206" x2="494" y2="198"/>
+        <line x1="500" y1="205" x2="500" y2="197"/>
+      </g>
+
+      <!-- cloth folded on the ledge -->
+      <rect x="486" y="250" width="48" height="26" rx="5" fill="#c96f4a"/>
+      <line x1="486" y1="262" x2="534" y2="262" stroke="#a85638" stroke-width="2"/>
+
+      <!-- small plant for warmth at the far right floor -->
+      <path d="M506 352 h26 l-4 26 h-18 z" fill="#c96f4a"/>
+      <path d="M519 352 q-3 -20 -12 -28" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M519 352 q4 -18 14 -24" stroke="#3e7c59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="504" cy="320" rx="7" ry="11" fill="#5e9a78" transform="rotate(-30 504 320)"/>
+      <ellipse cx="534" cy="324" rx="7" ry="11" fill="#3e7c59" transform="rotate(28 534 324)"/>
+
+      <!-- a couple of cleared mineral flecks rinsing toward the drain -->
+      <circle cx="150" cy="372" r="3" fill="#e9e2d8"/>
+      <circle cx="166" cy="378" r="2.5" fill="#d8cfbe"/>
+      <circle cx="134" cy="380" r="2.5" fill="#e9e2d8"/>
+    </svg>

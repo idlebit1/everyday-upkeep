@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of regripping a golf club in a garage workshop: an iron's shaft is clamped in a vise with a rubber shaft clamp, a worn, shiny old grip is being peeled off, a fresh tacky new grip sits ready beside it, a roll of double-sided grip tape and a can of grip solvent stand on the bench, and a golf bag full of clubs leans nearby">
+      <ellipse cx="285" cy="402" rx="250" ry="22" fill="#efe7d8"/>
+
+      <!-- workbench top -->
+      <rect x="40" y="300" width="480" height="18" rx="4" fill="#8a6a4f"/>
+      <rect x="40" y="318" width="480" height="10" rx="3" fill="#6b5238" opacity="0.5"/>
+      <!-- pegboard behind bench -->
+      <rect x="60" y="60" width="200" height="150" rx="6" fill="#efe7d8" stroke="#b9b1a3" stroke-width="3"/>
+      <g fill="#c9a06b" opacity="0.55">
+        <circle cx="84" cy="84" r="2.4"/><circle cx="112" cy="84" r="2.4"/><circle cx="140" cy="84" r="2.4"/><circle cx="168" cy="84" r="2.4"/>
+        <circle cx="84" cy="112" r="2.4"/><circle cx="112" cy="112" r="2.4"/><circle cx="140" cy="112" r="2.4"/><circle cx="168" cy="112" r="2.4"/>
+        <circle cx="84" cy="140" r="2.4"/><circle cx="112" cy="140" r="2.4"/><circle cx="140" cy="140" r="2.4"/><circle cx="168" cy="140" r="2.4"/>
+      </g>
+
+      <!-- vise clamping the shaft -->
+      <rect x="230" y="286" width="70" height="20" rx="3" fill="#5e9a78"/>
+      <rect x="238" y="264" width="24" height="26" rx="3" fill="#3e7c59"/>
+      <rect x="270" y="264" width="24" height="26" rx="3" fill="#3e7c59"/>
+      <!-- rubber shaft clamp between the jaws -->
+      <rect x="256" y="258" width="20" height="34" rx="6" fill="#c96f4a"/>
+      <text x="252" y="330" font-size="10.5" fill="#c96f4a" font-weight="700">shaft clamp</text>
+
+      <!-- clamped iron shaft rising up, tilted -->
+      <rect x="262" y="90" width="9" height="176" rx="4" fill="#b9b1a3" transform="rotate(8 266 178)"/>
+      <!-- iron head at the bottom, resting near the jaws -->
+      <path d="M240 250 q-26 4 -34 24 l38 6 q6 -18 4 -28 z" fill="#8a6a4f"/>
+      <rect x="206" y="270" width="34" height="10" rx="3" fill="#b9b1a3"/>
+
+      <!-- OLD worn grip being peeled off the top of the shaft (shiny, glazed) -->
+      <g transform="rotate(8 290 130)">
+        <rect x="279" y="86" width="22" height="86" rx="10" fill="#6b7376"/>
+        <!-- glossy shine streak -->
+        <rect x="284" y="94" width="6" height="60" rx="3" fill="#9aa1a4" opacity="0.85"/>
+        <!-- peeling top curling away -->
+        <path d="M279 86 q-16 -14 -30 -6 q10 6 18 6 z" fill="#6b7376"/>
+        <text x="248" y="72" font-size="10.5" fill="#6b7376" font-weight="700">old &amp; slick</text>
+      </g>
+
+      <!-- FRESH new tacky grip lying on the bench, ready -->
+      <g transform="rotate(-16 400 262)">
+        <rect x="372" y="222" width="26" height="96" rx="12" fill="#2c5a40"/>
+        <rect x="372" y="222" width="26" height="18" rx="9" fill="#3e7c59"/>
+        <!-- tacky texture dots -->
+        <g fill="#5e9a78" opacity="0.75">
+          <circle cx="380" cy="252" r="1.6"/><circle cx="390" cy="252" r="1.6"/>
+          <circle cx="380" cy="268" r="1.6"/><circle cx="390" cy="268" r="1.6"/>
+          <circle cx="380" cy="284" r="1.6"/><circle cx="390" cy="284" r="1.6"/>
+        </g>
+        <!-- alignment stripe -->
+        <rect x="383" y="240" width="4" height="70" rx="2" fill="#e0a93d"/>
+      </g>
+      <text x="410" y="228" font-size="10.5" fill="#3e7c59" font-weight="700">new &amp; tacky</text>
+
+      <!-- roll of double-sided grip tape on the bench -->
+      <ellipse cx="120" cy="290" rx="30" ry="12" fill="#dce8ee"/>
+      <ellipse cx="120" cy="284" rx="30" ry="12" fill="#7fb3c8"/>
+      <ellipse cx="120" cy="284" rx="12" ry="5" fill="#fffdf8"/>
+      <text x="92" y="316" font-size="10.5" fill="#3e7c59" font-weight="700">grip tape</text>
+
+      <!-- can of grip solvent -->
+      <rect x="168" y="252" width="40" height="48" rx="5" fill="#d9663f"/>
+      <rect x="168" y="252" width="40" height="12" rx="5" fill="#c96f4a"/>
+      <rect x="180" y="240" width="16" height="14" rx="3" fill="#8a6a4f"/>
+      <rect x="176" y="270" width="24" height="18" rx="3" fill="#fffdf8" opacity="0.85"/>
+      <text x="164" y="316" font-size="10.5" fill="#d9663f" font-weight="700">solvent</text>
+
+      <!-- golf bag full of clubs leaning at the right -->
+      <path d="M470 300 q-10 -120 6 -160 q22 -6 44 0 q16 40 6 160 z" fill="#3e7c59"/>
+      <path d="M476 140 q22 -6 44 0 l0 14 q-22 -6 -44 0 z" fill="#2c5a40"/>
+      <!-- pocket + stripe -->
+      <rect x="480" y="220" width="30" height="30" rx="6" fill="#2c5a40"/>
+      <path d="M474 180 l44 0" stroke="#5e9a78" stroke-width="4" stroke-linecap="round"/>
+      <!-- club heads poking out the top -->
+      <g stroke="#b9b1a3" stroke-width="5" stroke-linecap="round">
+        <line x1="486" y1="60" x2="490" y2="140"/>
+        <line x1="498" y1="52" x2="500" y2="140"/>
+        <line x1="510" y1="60" x2="510" y2="140"/>
+      </g>
+      <circle cx="484" cy="58" r="7" fill="#2c5a40"/>
+      <circle cx="498" cy="50" r="7" fill="#c96f4a"/>
+      <circle cx="512" cy="58" r="7" fill="#e0a93d"/>
+    </svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 430" role="img" aria-label="Illustration of a refrigerator pulled away from the kitchen wall, dusty black condenser coils exposed on its back, with an unplugged power cord, a coil brush, a canister vacuum, and a shedding cat watching nearby">
+      <ellipse cx="280" cy="400" rx="245" ry="22" fill="#efe7d8"/>
+      <!-- window + sun -->
+      <rect x="48" y="44" width="88" height="76" rx="6" fill="#dce8ee" stroke="#e6dccb" stroke-width="2"/>
+      <line x1="92" y1="44" x2="92" y2="120" stroke="#fffdf8" stroke-width="3"/>
+      <line x1="48" y1="82" x2="136" y2="82" stroke="#fffdf8" stroke-width="3"/>
+      <circle cx="84" cy="30" r="18" fill="#f2cf7a"/>
+      <!-- wall on the right -->
+      <rect x="496" y="36" width="18" height="354" fill="#b9b1a3"/>
+      <rect x="490" y="36" width="6" height="354" fill="#d8cfbe"/>
+      <!-- outlet + unplugged cord -->
+      <rect x="470" y="170" width="22" height="32" rx="4" fill="#fffdf8" stroke="#e6dccb" stroke-width="2"/>
+      <rect x="477" y="178" width="3" height="8" rx="1.5" fill="#8a6a4f"/>
+      <rect x="484" y="178" width="3" height="8" rx="1.5" fill="#8a6a4f"/>
+      <path d="M438 250 q22 30 30 78 q4 26 -12 36" stroke="#8a6a4f" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <rect x="446" y="358" width="18" height="12" rx="4" fill="#8a6a4f"/>
+      <line x1="464" y1="361" x2="472" y2="361" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="464" y1="367" x2="472" y2="367" stroke="#8a6a4f" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- fridge body, pulled out from the wall -->
+      <rect x="206" y="64" width="172" height="316" rx="12" fill="#fffdf8" stroke="#e6dccb" stroke-width="2.5"/>
+      <line x1="206" y1="168" x2="378" y2="168" stroke="#e6dccb" stroke-width="2.5"/>
+      <rect x="220" y="92" width="9" height="56" rx="4.5" fill="#b9b1a3"/>
+      <rect x="220" y="186" width="9" height="96" rx="4.5" fill="#b9b1a3"/>
+      <rect x="206" y="362" width="172" height="18" rx="6" fill="#dce8ee"/>
+      <!-- coils on the fridge back (right side, in the gap) -->
+      <rect x="378" y="92" width="58" height="252" rx="8" fill="#e3efe8" stroke="#e6dccb" stroke-width="2"/>
+      <path d="M388 108 h38 q8 0 8 9 t-8 9 h-38 q-8 0 -8 9 t8 9 h38 q8 0 8 9 t-8 9 h-38 q-8 0 -8 9 t8 9 h38 q8 0 8 9 t-8 9 h-38 q-8 0 -8 9 t8 9 h38 q8 0 8 9 t-8 9 h-38 q-8 0 -8 9 t8 9 h38 q8 0 8 9 t-8 9 h-38 q-8 0 -8 9 t8 9 h38" stroke="#2c5a40" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- dust on the coils -->
+      <g fill="#b9b1a3">
+        <ellipse cx="398" cy="126" rx="10" ry="5"/>
+        <ellipse cx="424" cy="162" rx="12" ry="5.5"/>
+        <ellipse cx="396" cy="200" rx="9" ry="4.5"/>
+        <ellipse cx="420" cy="238" rx="11" ry="5"/>
+        <ellipse cx="400" cy="276" rx="10" ry="4.5"/>
+        <ellipse cx="422" cy="312" rx="9" ry="4"/>
+      </g>
+      <!-- dust drifting off / on the floor -->
+      <g fill="#d8cfbe">
+        <ellipse cx="452" cy="384" rx="16" ry="5"/>
+        <ellipse cx="416" cy="390" rx="11" ry="4"/>
+        <circle cx="446" cy="332" r="3.5"/>
+        <circle cx="456" cy="300" r="3"/>
+        <circle cx="444" cy="268" r="2.5"/>
+      </g>
+      <!-- coil brush leaning on the fridge -->
+      <line x1="170" y1="216" x2="196" y2="372" stroke="#d98e3b" stroke-width="7" stroke-linecap="round"/>
+      <g stroke="#3e7c59" stroke-width="3.5" stroke-linecap="round">
+        <line x1="164" y1="224" x2="176" y2="222"/>
+        <line x1="166" y1="236" x2="179" y2="234"/>
+        <line x1="168" y1="248" x2="181" y2="246"/>
+        <line x1="170" y1="260" x2="183" y2="258"/>
+        <line x1="172" y1="272" x2="185" y2="270"/>
+      </g>
+      <!-- canister vacuum -->
+      <ellipse cx="92" cy="352" rx="46" ry="32" fill="#c96f4a"/>
+      <ellipse cx="92" cy="344" rx="46" ry="26" fill="#d9663f"/>
+      <circle cx="76" cy="386" r="7" fill="#8a6a4f"/>
+      <circle cx="112" cy="386" r="7" fill="#8a6a4f"/>
+      <circle cx="92" cy="340" r="8" fill="#fffdf8"/>
+      <path d="M124 330 q44 -36 76 18 q6 12 2 24" stroke="#8a6a4f" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <rect x="194" y="368" width="16" height="20" rx="5" fill="#5e9a78"/>
+      <!-- shedding cat -->
+      <ellipse cx="312" cy="412" rx="40" ry="7" fill="#e6dccb"/>
+      <ellipse cx="312" cy="396" rx="26" ry="17" fill="#e0a93d"/>
+      <circle cx="334" cy="382" r="13" fill="#e0a93d"/>
+      <polygon points="326,372 330,360 336,371" fill="#e0a93d"/>
+      <polygon points="338,371 344,360 346,372" fill="#e0a93d"/>
+      <circle cx="331" cy="381" r="1.8" fill="#33393b"/>
+      <circle cx="339" cy="381" r="1.8" fill="#33393b"/>
+      <path d="M286 398 q-16 -2 -18 -16" stroke="#e0a93d" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <g stroke="#d98e3b" stroke-width="2" stroke-linecap="round">
+        <line x1="282" y1="372" x2="288" y2="366"/>
+        <line x1="296" y1="366" x2="300" y2="358"/>
+        <line x1="310" y1="370" x2="316" y2="364"/>
+      </g>
+    </svg>
